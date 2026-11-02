@@ -60,38 +60,6 @@ test('navigation, course search and empty states', async ({ page }) => {
   await page.getByRole('link', { name: 'Настройки', exact: true }).click();
   await expect(page).toHaveURL('/settings');
 });
-test('lesson feedback, score, restart and exit', async ({ page }) => {
-  await page.goto('/');
-  await page.getByRole('link', { name: 'Продолжить урок' }).click();
-  await expect(
-    page.getByRole('button', { name: 'Проверить', exact: true }),
-  ).toBeDisabled();
-  for (const [answer, last] of [
-    ['Hello', false],
-    ['Please', false],
-    ['Nice to meet you', true],
-  ] as const) {
-    await page.getByRole('button', { name: new RegExp(answer) }).click();
-    await page.getByRole('button', { name: 'Проверить', exact: true }).click();
-    await expect(
-      page.getByRole('button', { name: new RegExp(answer) }),
-    ).toBeDisabled();
-    if (answer === 'Please')
-      await expect(page.getByText('Новый опыт — тоже прогресс')).toBeVisible();
-    await page
-      .getByRole('button', {
-        name: last ? 'Завершить урок' : 'Дальше',
-        exact: true,
-      })
-      .click();
-  }
-  await expect(page.getByText('2 / 3')).toBeVisible();
-  await expect(page.getByText('20 XP', { exact: true })).toBeVisible();
-  await page.getByRole('button', { name: 'Ещё один полёт' }).click();
-  await expect(page.getByText('Привет!', { exact: true })).toBeVisible();
-  await page.getByRole('link', { name: 'Выйти из демоурока' }).click();
-  await expect(page).toHaveURL('/learn');
-});
 test('settings switches reset and missing route', async ({ page }) => {
   await page.goto('/settings');
   const sound = page.getByRole('switch', { name: 'Звуки', exact: true });

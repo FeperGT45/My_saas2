@@ -59,8 +59,8 @@ export default function LearnPage() {
                   className="text-primary mt-1 inline-flex min-h-11 items-center text-xs font-bold"
                 >
                   {lesson.state === 'done'
-                    ? 'Повторить демоурок →'
-                    : 'Начать демоурок →'}
+                    ? 'Открыть учебный урок →'
+                    : 'Начать учебный урок →'}
                 </Link>
               ) : (
                 <p className="text-muted-foreground mt-2 text-[10px]">

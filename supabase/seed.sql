@@ -9,3 +9,14 @@ INSERT INTO public.exercise_options(exercise_id,label,position,is_correct) VALUE
 ('50000000-0000-0000-0000-000000000001','Hello',1,true),('50000000-0000-0000-0000-000000000001','Goodbye',2,false);
 INSERT INTO public.achievements(code,title,description,target) VALUES('first_lesson','Первый контакт','Заверши первый урок',1),('week_streak','В ударе','Занимайся семь дней подряд',7);
 COMMIT;
+
+BEGIN;
+INSERT INTO public.lessons(id,unit_id,title,position,published,xp_reward) VALUES('40000000-0000-0000-0000-000000000002','30000000-0000-0000-0000-000000000001','На одной волне',2,true,30);
+INSERT INTO public.exercises(lesson_id,kind,prompt,explanation,position,public_payload,answer_key) VALUES
+('40000000-0000-0000-0000-000000000002','single_choice','Выбери перевод: привет','Hello — универсальное приветствие.',1,'{"options":[{"id":"bye","label":"Goodbye"},{"id":"hello","label":"Hello"}]}','{"value":"hello"}'),
+('40000000-0000-0000-0000-000000000002','sentence','Составь: Я люблю читать','I like reading — я люблю читать. После like возможно окончание -ing.',2,'{"tokens":[{"id":"reading","label":"reading"},{"id":"i","label":"I"},{"id":"like","label":"like"}]}','{"value":["i","like","reading"]}'),
+('40000000-0000-0000-0000-000000000002','gap','Вставь пропущенное слово','После I используется am: I am a student.',3,'{"sentence":"I ___ a student."}','{"accepted":["am"]}'),
+('40000000-0000-0000-0000-000000000002','matching','Найди пары слов','Cat — кот, dog — собака.',4,'{"left":[{"id":"cat","label":"cat"},{"id":"dog","label":"dog"}],"right":[{"id":"dog_ru","label":"собака"},{"id":"cat_ru","label":"кот"}]}','{"pairs":{"cat":"cat_ru","dog":"dog_ru"}}'),
+('40000000-0000-0000-0000-000000000002','grammar','Выбери правильную форму: She ___ English.','В Present Simple после she добавляется -s: She speaks English.',5,'{"options":[{"id":"speak","label":"speak"},{"id":"speaks","label":"speaks"}]}','{"value":"speaks"}'),
+('40000000-0000-0000-0000-000000000002','listening','Послушай и выбери перевод','Good morning — доброе утро.',6,'{"text":"Good morning","lang":"en-US","options":[{"id":"night","label":"Спокойной ночи"},{"id":"morning","label":"Доброе утро"}]}','{"value":"morning"}');
+COMMIT;

@@ -74,29 +74,6 @@ export const demoLessons = [
     state: 'locked',
   },
 ] as const;
-export const demoQuestions = [
-  {
-    prompt: 'Привет!',
-    hint: 'Выбери перевод на английский',
-    options: ['Goodbye', 'Hello', 'Thanks', 'Sorry'],
-    answer: 'Hello',
-    explanation: 'Hello — универсальное приветствие при знакомстве.',
-  },
-  {
-    prompt: 'Спасибо',
-    hint: 'Как поблагодарить собеседника?',
-    options: ['Please', 'Hello', 'Thank you', 'Good night'],
-    answer: 'Thank you',
-    explanation: 'Thank you — вежливый способ сказать «спасибо».',
-  },
-  {
-    prompt: 'Рад знакомству',
-    hint: 'Заверши ваше первое знакомство',
-    options: ['See you', 'Nice to meet you', 'Excuse me', 'Good morning'],
-    answer: 'Nice to meet you',
-    explanation: 'Nice to meet you говорят при первой встрече.',
-  },
-];
 export const demoRanking = [
   { name: 'Мия', initials: 'МИ', xp: 1820, color: 'purple' },
   { name: 'Марк', initials: 'МА', xp: 1650, color: 'teal' },

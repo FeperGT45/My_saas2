@@ -98,8 +98,8 @@ export default function ProfilePage() {
       </Card>
       <p className="text-muted-foreground mt-5 flex items-start gap-2 text-[11px] leading-relaxed">
         <ShieldCheck size={17} className="shrink-0" />
-        Это вымышленный профиль. Telegram-авторизация и сохранение прогресса ещё
-        не подключены.
+        Статистика здесь демонстрационная. Реальные результаты учебных уроков
+        сохраняются отдельно после входа через Telegram.
       </p>
     </>
   );
