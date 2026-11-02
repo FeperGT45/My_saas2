@@ -1,0 +1,14 @@
+project_id = "lingorush"
+[api]
+enabled = true
+port = 54321
+schemas = ["public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 17
+[db.seed]
+enabled = true
+sql_paths = ["./seed.sql"]
