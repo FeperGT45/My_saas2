@@ -9,6 +9,7 @@ const routes = [
   '/profile',
   '/friends',
   '/premium',
+  '/admin',
   '/settings',
 ];
 for (const width of [320, 390, 768]) {

@@ -33,6 +33,12 @@ export default function ProfilePage() {
       >
         Premium · статус и возможности →
       </Link>
+      <Link
+        href="/admin"
+        className="text-muted-foreground mb-5 flex min-h-11 items-center text-xs"
+      >
+        Администрирование →
+      </Link>
       <GameDashboard />
     </>
   );

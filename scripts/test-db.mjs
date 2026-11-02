@@ -181,7 +181,7 @@ const ready = (
   await db.query('SELECT public.voklumi_database_status() AS data')
 ).rows[0].data;
 assert.equal(ready.ready, true);
-assert.equal(ready.tables.length, 21);
+assert.equal(ready.tables.length, 22);
 await db.exec('RESET ROLE;SET ROLE anon');
 await rejects('SELECT public.voklumi_database_status()');
 await db.exec(

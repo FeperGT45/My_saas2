@@ -23,7 +23,8 @@
     "test:supabase": "node --import tsx --test tests/supabase/*.test.ts",
     "test:social": "node scripts/test-social.mjs",
     "test:payments": "node --import tsx --test tests/payments/*.test.ts && node scripts/test-payments.mjs",
-    "stars:refund": "node --env-file-if-exists=.env.local --conditions=react-server --import tsx scripts/refund-stars.ts"
+    "stars:refund": "node --env-file-if-exists=.env.local --conditions=react-server --import tsx scripts/refund-stars.ts",
+    "test:admin": "node --import tsx --test tests/admin/*.test.ts && node scripts/test-admin.mjs"
   },
   "repository": {
     "type": "git",

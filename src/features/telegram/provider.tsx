@@ -102,9 +102,13 @@ export function TelegramProvider({ children }: { children: React.ReactNode }) {
           router.push(
             pathname === '/lesson'
               ? '/learn'
-              : ['/settings', '/achievements', '/friends', '/premium'].includes(
-                    pathname,
-                  )
+              : [
+                    '/settings',
+                    '/achievements',
+                    '/friends',
+                    '/premium',
+                    '/admin',
+                  ].includes(pathname)
                 ? '/profile'
                 : '/',
           ),
