@@ -7,7 +7,8 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-primary text-primary-foreground hover:bg-primary/90',
+        default:
+          'game-button bg-primary text-primary-foreground hover:bg-primary/90',
         outline: 'border border-border bg-card hover:bg-muted',
       },
       size: { default: 'min-h-12 px-5 py-3', sm: 'min-h-10 px-4 py-2' },
