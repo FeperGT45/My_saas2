@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { TelegramAccount } from '@/features/telegram/account';
 import {
   Settings,
   ChevronRight,
@@ -27,6 +28,7 @@ export default function ProfilePage() {
           </Link>
         }
       />
+      <TelegramAccount />
       <Card className="starfield text-center">
         <div className="border-primary/50 shadow-primary/10 mx-auto flex size-20 items-center justify-center rounded-[28px] border-2 bg-gradient-to-br from-purple-400 to-blue-500 text-2xl font-black text-white shadow-lg">
           {demoPlayer.initials}

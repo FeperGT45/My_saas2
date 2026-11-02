@@ -96,3 +96,14 @@ button:disabled {
     scroll-behavior: auto !important;
   }
 }
+/* Telegram viewport safe areas, with browser fallbacks. */
+#main {
+  padding-top: max(1.5rem, var(--tg-viewport-content-safe-area-inset-top, 0px));
+}
+nav[aria-label='Основная навигация'] {
+  padding-bottom: max(
+    0.75rem,
+    env(safe-area-inset-bottom),
+    var(--tg-viewport-safe-area-inset-bottom, 0px)
+  );
+}

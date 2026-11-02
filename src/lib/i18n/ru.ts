@@ -1,5 +1,5 @@
 export const ru = {
-  appName: 'LingoRush',
+  appName: 'Voklumi',
   tagline: 'Маленькие шаги. Большой прогресс.',
   nav: {
     home: 'Главная',

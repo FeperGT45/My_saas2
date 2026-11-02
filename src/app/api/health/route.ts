@@ -1,3 +1,3 @@
 export function GET() {
-  return Response.json({ status: 'ok', app: 'LingoRush' });
+  return Response.json({ status: 'ok', app: 'Voklumi' });
 }

@@ -38,7 +38,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           <span className="bg-primary/15 text-primary rounded-xl p-2">
             <Zap size={21} fill="currentColor" />
           </span>
-          Lingo<span className="text-primary -ml-2">Rush</span>
+          Vok<span className="text-primary -ml-2">lumi</span>
         </Link>
         <div className="flex items-center gap-2">
           <span className="flex items-center gap-1 rounded-full bg-orange-400/10 px-2 py-1 text-xs font-bold text-orange-300">

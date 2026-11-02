@@ -1,11 +1,15 @@
 'use client';
 import { useTelegram } from './provider';
 export function TelegramStatus() {
-  const { status } = useTelegram();
+  const { status, account, authError } = useTelegram();
   const labels = {
     loading: 'Проверяем Telegram…',
     demo: 'Локальный режим',
-    telegram: 'Telegram · без авторизации',
+    telegram: account
+      ? 'Telegram · вход выполнен'
+      : authError
+        ? 'Telegram · ошибка входа'
+        : 'Telegram · вход не выполнен',
     outside: 'Обзор в браузере',
     error: 'Telegram недоступен · обзор',
   };

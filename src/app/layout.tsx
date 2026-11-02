@@ -3,7 +3,7 @@ import { AppShell } from '@/components/layout/app-shell';
 import { TelegramProvider } from '@/features/telegram/provider';
 import './globals.css';
 export const metadata: Metadata = {
-  title: { default: 'LingoRush — учись играя', template: '%s · LingoRush' },
+  title: { default: 'Voklumi — учись играя', template: '%s · Voklumi' },
   description: 'Изучение иностранных языков маленькими шагами в Telegram.',
 };
 export const viewport: Viewport = {

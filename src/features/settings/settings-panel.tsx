@@ -119,7 +119,7 @@ export function SettingsPanel() {
         Переключатели выше не управляют устройством.
       </p>
       <p className="text-muted-foreground mt-6 text-center text-[10px]">
-        LINGORUSH · UI PREVIEW 0.2
+        VOKLUMI · UI PREVIEW 0.2
       </p>
     </>
   );

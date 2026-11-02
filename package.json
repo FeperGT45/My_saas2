@@ -1,7 +1,7 @@
 {
-  "name": "lingorush",
+  "name": "voklumi",
   "version": "0.1.0",
-  "description": "LingoRush Telegram Mini App foundation",
+  "description": "Voklumi Telegram Mini App foundation",
   "scripts": {
     "dev": "next dev --hostname 0.0.0.0",
     "build": "next build",
@@ -11,7 +11,9 @@
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "test:ui": "playwright test",
-    "test:db": "node scripts/test-db.mjs"
+    "test:db": "node scripts/test-db.mjs",
+    "test:auth": "node --import tsx --test tests/auth/*.test.ts",
+    "telegram:setup": "node --env-file=.env.local scripts/setup-telegram.mjs"
   },
   "repository": {
     "type": "git",
@@ -50,6 +52,7 @@
     "prettier": "^3.9.10",
     "prettier-plugin-tailwindcss": "^0.8.1",
     "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.15",
     "typescript": "^6.0.3"
   },
   "private": true,

@@ -6,7 +6,7 @@ export function Mascot({ className = '' }: { className?: string }) {
     <svg
       viewBox="0 0 240 220"
       role="img"
-      aria-label="Ри — космический скат, маскот LingoRush"
+      aria-label="Ри — космический скат, маскот Voklumi"
       className={className}
     >
       <defs>

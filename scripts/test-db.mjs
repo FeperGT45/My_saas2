@@ -137,4 +137,43 @@ assert.equal(
 console.log(
   'PASS: migrations, seed, RLS isolation, draft visibility, answer secrecy, client write denial, integrity and idempotent XP',
 );
+// Telegram session provisioning is service-only, atomic and rejects reused signed data.
+const telegramAuthId = 'a0000000-0000-0000-0000-000000000003';
+await db.exec(`INSERT INTO auth.users VALUES('${telegramAuthId}')`);
+await db.exec('SET ROLE authenticated');
+await rejects('SELECT * FROM public.telegram_sessions');
+await rejects(
+  `SELECT public.create_telegram_session('${telegramAuthId}',12345,'Name',NULL,NULL,repeat('a',64),repeat('b',64))`,
+);
+await db.exec('RESET ROLE; SET ROLE service_role');
+assert.equal(
+  (
+    await db.query(
+      `SELECT public.create_telegram_session('${telegramAuthId}',12345,'Name',NULL,'https://example.com/avatar.jpg',repeat('a',64),repeat('b',64)) AS uid`,
+    )
+  ).rows[0].uid,
+  telegramAuthId,
+);
+await rejects(
+  `SELECT public.create_telegram_session('${telegramAuthId}',12345,'Name',NULL,NULL,repeat('c',64),repeat('b',64))`,
+);
+assert.equal(
+  (await db.query('SELECT count(*)::int AS n FROM public.telegram_sessions'))
+    .rows[0].n,
+  1,
+);
+await db.exec('RESET ROLE');
+await db.exec('SET ROLE service_role');
+assert.equal(
+  (
+    await db.query(
+      `SELECT public.create_telegram_session('${telegramAuthId}',12345,'Updated',NULL,NULL,repeat('d',64),repeat('e',64)) AS uid`,
+    )
+  ).rows[0].uid,
+  telegramAuthId,
+);
+await db.exec('RESET ROLE');
+console.log(
+  'PASS: Telegram profile/session provisioning, replay uniqueness and session RLS',
+);
 await db.close();
