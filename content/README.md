@@ -56,7 +56,7 @@ npm run content:import
 
 Набор не входит в `supabase/seed.sql` автоматически: это отдельная управляемая операция. После импорта данные доступны в БД; карточки демокаталога на этом этапе не менялись. Для запуска урока используйте `/lesson?lesson=<uuid из lessons>`; стабильные ID также возвращает `importPayload` в `scripts/content/catalog.mjs`.
 
-Удалённая Supabase в этой задаче не настраивалась и импорт туда не выполнялся.
+Набор импортирован в удалённый проект `wpctwlgfnkekgulgkxad`; подробности — в [docs/SUPABASE_DEPLOYMENT.md](../docs/SUPABASE_DEPLOYMENT.md).
 
 ## Что проверяют тесты
 
