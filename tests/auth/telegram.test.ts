@@ -157,3 +157,32 @@ test('bounded request reader rejects oversized streaming bodies', async () => {
     ),
   );
 });
+
+test('referral attribution is extracted only from signed start_param', () => {
+  const code = 'a'.repeat(32);
+  const raw = signed({ start_param: `r_${code}` });
+  assert.equal(validateInitData(raw, token, now).referralCode, code);
+  assert.throws(() =>
+    validateInitData(raw.replace(code, 'b'.repeat(32)), token, now),
+  );
+  assert.equal(
+    validateInitData(signed({ start_param: 'r_notvalid' }), token, now)
+      .referralCode,
+    undefined,
+  );
+});
+
+test('Telegram invitation URLs are restricted to own code and configured bot', async () => {
+  const { telegramInviteUrl } = await import('../../src/lib/social/invite');
+  const code = 'a'.repeat(32);
+  assert.equal(
+    telegramInviteUrl(code),
+    'https://t.me/Voklumi_bot?startapp=r_' + code,
+  );
+  assert.equal(
+    telegramInviteUrl(code, 'Voklumi_bot', 'learn'),
+    'https://t.me/Voklumi_bot/learn?startapp=r_' + code,
+  );
+  assert.throws(() => telegramInviteUrl('bad'));
+  assert.throws(() => telegramInviteUrl(code, 'evil.example/path'));
+});

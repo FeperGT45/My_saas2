@@ -96,7 +96,8 @@ export async function createTelegramSession(
     authId = result.data.user.id;
     created = true;
   }
-  const result = await db.rpc('create_telegram_session', {
+  const result = await db.rpc('create_social_telegram_session', {
+    p_referral_code: user.referralCode ?? null,
     p_auth_id: authId,
     p_telegram_id: user.id,
     p_name: [user.firstName, user.lastName]

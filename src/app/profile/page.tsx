@@ -21,6 +21,12 @@ export default function ProfilePage() {
         }
       />
       <TelegramAccount />
+      <Link
+        href="/friends"
+        className="border-border bg-card text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
+      >
+        Друзья и приглашения →
+      </Link>
       <GameDashboard />
     </>
   );

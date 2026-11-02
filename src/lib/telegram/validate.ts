@@ -5,6 +5,7 @@ export type TelegramIdentity = {
   lastName?: string;
   username?: string;
   photoUrl?: string;
+  referralCode?: string;
 };
 export function validateInitData(
   raw: string,
@@ -58,6 +59,9 @@ export function validateInitData(
       photoUrl = url.href;
   }
   return {
+    referralCode: /^r_[a-f0-9]{32}$/.test(params.get('start_param') ?? '')
+      ? params.get('start_param')!.slice(2)
+      : undefined,
     id: Number(user.id),
     firstName: user.first_name.slice(0, 80),
     lastName:

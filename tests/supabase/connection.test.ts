@@ -11,7 +11,7 @@ import {
   isDatabaseReady,
 } from '../../src/lib/supabase/readiness';
 const healthy = () => ({
-  schemaVersion: '202611020007',
+  schemaVersion: '202611020008',
   ready: true,
   protectedColumns: true,
   rpcPermissions: true,

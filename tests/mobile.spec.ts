@@ -7,6 +7,7 @@ const routes = [
   '/leaderboard',
   '/achievements',
   '/profile',
+  '/friends',
   '/settings',
 ];
 for (const width of [320, 390, 768]) {
@@ -52,8 +53,13 @@ test('navigation, course search and empty states', async ({ page }) => {
   await page.getByRole('link', { name: 'Продолжить путь' }).click();
   await expect(page).toHaveURL('/learn');
   await page.goto('/leaderboard');
-  await page.getByRole('button', { name: 'Друзья', exact: true }).click();
-  await expect(page.getByText('Твоя команда ещё в пути')).toBeVisible();
+  await page
+    .getByRole('link', { name: 'Друзья и приглашения', exact: true })
+    .click();
+  await expect(page).toHaveURL('/friends');
+  await expect(
+    page.getByText(/Войди через Telegram, чтобы увидеть рейтинг/),
+  ).toBeVisible();
   await page.goto('/profile');
   await page.getByRole('link', { name: /Мои достижения/ }).click();
   await expect(page).toHaveURL('/achievements');

@@ -20,7 +20,8 @@
     "test:content": "node scripts/test-content.mjs",
     "test:gamification": "node scripts/test-gamification.mjs",
     "db:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-supabase.ts",
-    "test:supabase": "node --import tsx --test tests/supabase/*.test.ts"
+    "test:supabase": "node --import tsx --test tests/supabase/*.test.ts",
+    "test:social": "node scripts/test-social.mjs"
   },
   "repository": {
     "type": "git",

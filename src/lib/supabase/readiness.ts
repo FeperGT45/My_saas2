@@ -36,7 +36,7 @@ export function isDatabaseReady(value: unknown): value is DatabaseReadiness {
   if (!value || typeof value !== 'object') return false;
   const data = value as DatabaseReadiness;
   return (
-    data.schemaVersion === '202611020007' &&
+    data.schemaVersion === '202611020008' &&
     data.ready === true &&
     data.protectedColumns === true &&
     data.rpcPermissions === true &&
