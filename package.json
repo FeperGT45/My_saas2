@@ -31,7 +31,7 @@
     "deploy:vinext": "vinext-cloudflare deploy",
     "build:cloudflare": "vite build",
     "preview:cloudflare": "vite preview --host 127.0.0.1 --port 3002",
-    "deploy:cloudflare": "cf deploy --prebuilt --mode production",
+    "deploy:cloudflare": "node scripts/deploy-cloudflare.mjs",
     "check:cloudflare": "cf deploy --prebuilt --mode production --dry-run",
     "test:cloudflare": "playwright test --config playwright.cloudflare.config.ts"
   },

@@ -105,3 +105,17 @@ Supabase подключается через `@supabase/supabase-js` 2.118.0 и 
 Проверены оба build, dry-run и локальные тесты SQL/SDK/авторизации. Браузерный набор проверяет экраны на 320/390/768px, шесть форматов уроков, клиентскую навигацию и защищённые API на локальном Workers preview. Его отдельный admin integration fixture запускает production Next.js против локального HTTPS PostgREST/PGlite; это не удалённая проверка администратора на Cloudflare. Остальные SQL-backed browser fixtures подменяют транспорт данных, не заявляют реальный доступ к удалённой Supabase.
 
 Удалённое соединение Supabase и полный Telegram WebView не проверялись: в этом окружении нет настроенных runtime credentials. Новые миграции, Worker, домен, webhook и реальные платежи не публиковались и не изменялись. В сборке beta-adapter остаются некритические предупреждения об оптимизации импортов/картах исходников; они не означают успешный production-платёж или проверку всех возможностей Next.js.
+
+## Результат попытки публикации после разрешения владельца
+
+В аккаунте Cloudflare зарегистрирован account subdomain `voklumi67.workers.dev`. Планируемый адрес приложения: `https://voklumi.voklumi67.workers.dev`. Это ещё не подтверждённый работающий сайт.
+
+Cloudflare принял статические assets, но остановил создание Worker из-за отсутствия `TELEGRAM_BOT_TOKEN`, `TELEGRAM_WEBHOOK_SECRET`, `SUPABASE_SECRET_KEY`. Не создавались фиктивные ключи и не отключалась проверка обязательных secrets. Автоматическая отправка кода в GitHub также завершилась HTTP 403: текущая Git-авторизация не имеет права push в `FeperGT45/My_saas2`.
+
+Для первого deploy нового Worker secrets нельзя добавить к ещё не существующему скрипту. Поэтому `npm run deploy:cloudflare` теперь использует защищённый bootstrap: читает три обязательных значения (и необязательные admin/health secrets) из окружения, создаёт временный JSON вне репозитория с правами 0600, вызывает официальный `cf deploy --prebuilt --mode production --secrets-file …`, затем удаляет временный каталог. Значения не передаются аргументами команд и не печатаются bootstrap-скриптом.
+
+Чтобы продолжить из Codex, в **Settings → Environments → окружение репозитория → Secrets** задайте три обязательных runtime-секрета; webhook secret — отдельная случайная строка от 32 символов. В обычных переменных задайте `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `APP_URL=https://voklumi.voklumi67.workers.dev`, фактический `TELEGRAM_BOT_USERNAME`. Обеспечьте доступность значений именно runtime процесса задачи; не копируйте их в Git или сообщения. После изменения подключите обновлённое окружение к задаче.
+
+Для Cloudflare Workers Builds при использовании нового bootstrap значения runtime Secrets должны также безопасно поступать в процесс deploy как Build Secrets (отдельно от публичных Build variables); скрипт загрузит их как runtime secrets. Для уже существующего Worker можно пользоваться прямым `cf deploy --prebuilt --mode production` с ранее настроенными runtime secrets. Выберите один способ управления secrets и не подменяйте их пустыми значениями.
+
+После настройки окружения: повторить build, dry-run, deploy, затем проверить доступность сайта и DB readiness. Для миграций 009/010 потребуется отдельный административный доступ Supabase. Не включать реальные платежи вместе с первым размещением.
