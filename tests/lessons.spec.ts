@@ -130,6 +130,10 @@ test('six mobile exercise types use database grading, recover a lost response, s
     await expect(page.getByText('5 / 6')).toBeVisible();
     await expect(page.getByText('30 XP', { exact: true })).toBeVisible();
     await expect(
+      page.getByRole('status', { name: 'Награды за урок' }),
+    ).toBeVisible();
+    await expect(page.getByText('+30 монет', { exact: true })).toBeVisible();
+    await expect(
       page.getByText('Результат сохранён на сервере.'),
     ).toBeVisible();
     expect(

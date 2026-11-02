@@ -5,6 +5,7 @@ import { motion, useReducedMotion } from 'motion/react';
 import { X, ArrowRight, RotateCcw, CheckCircle2, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, Progress } from '@/components/ui/game';
+import { RewardBurst } from '@/features/gamification/reward-burst';
 import { Mascot } from '@/components/ui/mascot';
 import { ExerciseControls, answerReady } from './exercise-controls';
 import {
@@ -150,13 +151,18 @@ export function LessonPlayer({
             <div>
               <p className="text-primary text-2xl font-black">{state.xp} XP</p>
               <p className="text-muted-foreground mt-1 text-xs">
-                {state.xp ? 'Начислено за урок' : 'Награда уже получена'}
+                {state.xp
+                  ? 'Начислено за урок'
+                  : state.rewards?.eligible === false
+                    ? 'Нужно от 60%'
+                    : 'Награда уже получена'}
               </p>
             </div>
           </Card>
           <p className="mb-5 text-xs text-teal-200">
             Результат сохранён на сервере.
           </p>
+          <RewardBurst rewards={state.rewards} />
           <Button
             className="w-full"
             disabled={busy}

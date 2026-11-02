@@ -17,7 +17,8 @@
     "test:lessons": "node scripts/test-lessons.mjs",
     "content:check": "node scripts/import-content.mjs",
     "content:import": "node --env-file=.env.local scripts/import-content.mjs --apply",
-    "test:content": "node scripts/test-content.mjs"
+    "test:content": "node scripts/test-content.mjs",
+    "test:gamification": "node scripts/test-gamification.mjs"
   },
   "repository": {
     "type": "git",

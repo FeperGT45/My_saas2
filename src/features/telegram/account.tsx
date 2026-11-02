@@ -45,7 +45,8 @@ export function TelegramAccount() {
         </div>
       </div>
       <p className="text-muted-foreground my-3 text-xs">
-        Данные аккаунта подтверждены. Статистика ниже остаётся демонстрационной.
+        Данные аккаунта подтверждены. Прогресс и награды ниже загружаются с
+        сервера.
       </p>
       <Button
         variant="outline"

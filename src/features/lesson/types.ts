@@ -1,3 +1,4 @@
+import type { Rewards } from '@/features/gamification/types';
 // Browser DTOs deliberately contain no answer key, correctness flags or pre-check explanations.
 export type Kind =
   'single_choice' | 'sentence' | 'gap' | 'matching' | 'grammar' | 'listening';
@@ -26,6 +27,7 @@ export type LessonState = {
   correct: number;
   score: number | null;
   xp: number;
+  rewards?: Rewards;
   exercise: Exercise | null;
 };
 export type Answer = string | string[] | Record<string, string>;

@@ -9,9 +9,7 @@ import {
   Zap,
   Layers,
   Settings,
-  Flame,
 } from 'lucide-react';
-import { demoPlayer } from '@/features/demo/data';
 import { getDictionary } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
 import { TelegramStatus } from '@/features/telegram/status';
@@ -41,10 +39,13 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           Vok<span className="text-primary -ml-2">lumi</span>
         </Link>
         <div className="flex items-center gap-2">
-          <span className="flex items-center gap-1 rounded-full bg-orange-400/10 px-2 py-1 text-xs font-bold text-orange-300">
-            <Flame size={15} />
-            {demoPlayer.streak}
-          </span>
+          <Link
+            href="/profile"
+            className="text-primary flex min-h-11 items-center gap-1 rounded-xl px-2 text-xs"
+          >
+            <UserRound size={16} />
+            Прогресс
+          </Link>
           <Link
             href="/settings"
             aria-label="Настройки"
