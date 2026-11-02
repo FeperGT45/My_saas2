@@ -372,3 +372,15 @@ npm run test:ui
 ```
 
 Настройка первого администратора, возможности, публикация и границы безопасности описаны в [docs/ADMIN.md](docs/ADMIN.md).
+
+## Cloudflare Workers
+
+Для Voklumi подготовлена параллельная сборка Workers через официальный vinext: серверные API, Telegram-сессии и Supabase RPC требуют серверного runtime. Обычные `npm run dev/build/start` сохранены; Pages static export не используется. Нужен Node.js **24.22.0**.
+
+```bash
+npm run build:cloudflare
+npm run check:cloudflare
+npm run test:cloudflare
+```
+
+`npm run deploy:cloudflare` публикует готовую сборку и выполняется только после разрешения владельца. Здесь публикация не выполнялась. Точные настройки GitHub/Cloudflare, build/runtime variables и последовательность запуска — в [docs/CLOUDFLARE.md](docs/CLOUDFLARE.md).

@@ -8,3 +8,8 @@ coverage/
 .DS_Store
 playwright-report/
 test-results/
+/dist/
+.vinext/
+.cloudflare/
+
+.dev.vars*
