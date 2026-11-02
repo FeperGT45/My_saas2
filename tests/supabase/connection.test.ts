@@ -11,7 +11,7 @@ import {
   isDatabaseReady,
 } from '../../src/lib/supabase/readiness';
 const healthy = () => ({
-  schemaVersion: '202611020008',
+  schemaVersion: '202611020009',
   ready: true,
   protectedColumns: true,
   rpcPermissions: true,
@@ -148,7 +148,7 @@ test('CLI checks connection read-only, returns nonzero on failure and redacts se
     };
     const success = await cli(env);
     assert.equal(success.code, 0);
-    assert.match(success.output, /19 tables/);
+    assert.match(success.output, /21 tables/);
     assert.ok(!success.output.includes(canary));
     status = 400;
     report = { message: `INTERNAL_PRIVATE_ERROR ${canary}` };

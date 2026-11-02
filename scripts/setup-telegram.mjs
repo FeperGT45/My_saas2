@@ -37,7 +37,11 @@ async function call(method, body) {
 }
 await call('setMyName', { name: 'Voklumi' });
 await call('setMyCommands', {
-  commands: [{ command: 'start', description: 'Открыть Voklumi' }],
+  commands: [
+    { command: 'start', description: 'Открыть Voklumi' },
+    { command: 'paysupport', description: 'Помощь с покупками' },
+    { command: 'terms', description: 'Условия покупки' },
+  ],
 });
 await call('setChatMenuButton', {
   menu_button: {
@@ -49,7 +53,7 @@ await call('setChatMenuButton', {
 await call('setWebhook', {
   url: new URL('/api/telegram/webhook', url).href,
   secret_token: secret,
-  allowed_updates: ['message'],
+  allowed_updates: ['message', 'pre_checkout_query'],
   drop_pending_updates: false,
 });
 console.log('Voklumi bot name, /start, menu button and webhook configured.');

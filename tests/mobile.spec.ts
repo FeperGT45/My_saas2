@@ -8,6 +8,7 @@ const routes = [
   '/achievements',
   '/profile',
   '/friends',
+  '/premium',
   '/settings',
 ];
 for (const width of [320, 390, 768]) {

@@ -18,6 +18,8 @@ export const requiredTables = [
   'lesson_attempt_items',
   'exercise_submissions',
   'coin_events',
+  'star_orders',
+  'star_events',
 ] as const;
 export type DatabaseReadiness = {
   schemaVersion: string;
@@ -36,7 +38,7 @@ export function isDatabaseReady(value: unknown): value is DatabaseReadiness {
   if (!value || typeof value !== 'object') return false;
   const data = value as DatabaseReadiness;
   return (
-    data.schemaVersion === '202611020008' &&
+    data.schemaVersion === '202611020009' &&
     data.ready === true &&
     data.protectedColumns === true &&
     data.rpcPermissions === true &&

@@ -1,3 +1,5 @@
+import { handleStarsWebhook } from '@/lib/billing/webhook';
+import { telegramCall } from '@/lib/billing/telegram';
 import { readBodyText } from '@/lib/auth/body';
 import { equalSecret } from '@/lib/auth/security';
 import { miniAppUrl, startMessage } from '@/lib/telegram/bot';
@@ -17,7 +19,26 @@ export async function POST(request: Request) {
     const raw = await readBodyText(request, 32768);
     if (raw.length > 32768) return new Response(null, { status: 413 });
     const update = JSON.parse(raw);
+    if (await handleStarsWebhook(update)) return Response.json({ ok: true });
     const message = update.message;
+    if (
+      message?.chat?.type === 'private' &&
+      message.chat.id === message.from?.id &&
+      /^\/(paysupport|support|terms)(?:@\w+)?(?:\s|$)/.test(message.text ?? '')
+    ) {
+      const isTerms = message.text.startsWith('/terms');
+      const url = isTerms
+        ? process.env.PREMIUM_TERMS_URL
+        : process.env.PAYMENT_SUPPORT_URL;
+      await telegramCall('sendMessage', {
+        chat_id: message.chat.id,
+        text: url
+          ? (isTerms ? 'Условия покупки: ' : 'Поддержка покупок Voklumi: ') +
+            url
+          : 'Платные покупки пока выключены. Условия и канал поддержки ещё готовятся.',
+      });
+      return Response.json({ ok: true });
+    }
     if (
       !message ||
       message.chat?.type !== 'private' ||

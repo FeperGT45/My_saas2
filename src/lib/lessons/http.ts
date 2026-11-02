@@ -53,6 +53,8 @@ export async function lessonRequest(
 }
 export function rpcError(error: { message: string }) {
   const message = error.message;
+  if (message.includes('premium required'))
+    return json({ error: 'Для этого задания нужен действующий Premium.' }, 403);
   if (message.includes('invalid answer'))
     return json({ error: 'Некорректный формат ответа.' }, 400);
   if (/unavailable|closed/.test(message))
