@@ -1,7 +1,7 @@
 import 'server-only';
 import { createHash, randomBytes, randomUUID } from 'node:crypto';
 import { cookies } from 'next/headers';
-import { createClient } from '@supabase/supabase-js';
+import { createServiceClient } from '@/lib/supabase/service';
 import type { TelegramIdentity } from '@/lib/telegram/validate';
 import { localAuthAllowed, validLocalSession } from './security';
 export const sessionCookie =
@@ -18,14 +18,7 @@ export const cookieOptions = {
 };
 export const hashToken = (value: string) =>
   createHash('sha256').update(value).digest('hex');
-export function adminClient() {
-  const url = process.env.NEXT_PUBLIC_SUPABASE_URL,
-    key = process.env.SUPABASE_SERVICE_ROLE_KEY;
-  if (!url || !key) throw new Error('Server database unavailable');
-  return createClient(url, key, {
-    auth: { persistSession: false, autoRefreshToken: false },
-  });
-}
+export const adminClient = createServiceClient;
 export type SessionUser = {
   id: string;
   name: string;

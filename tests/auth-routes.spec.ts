@@ -20,3 +20,11 @@ test('production auth routes reject unauthenticated and cross-origin requests', 
     ).status(),
   ).toBe(403);
 });
+
+test('database health is disabled by default and never exposes schema details anonymously', async ({
+  request,
+}) => {
+  const response = await request.get('/api/health/database');
+  expect([401, 404]).toContain(response.status());
+  expect(await response.text()).not.toContain('tables');
+});

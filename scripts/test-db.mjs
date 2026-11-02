@@ -176,4 +176,63 @@ await db.exec('RESET ROLE');
 console.log(
   'PASS: Telegram profile/session provisioning, replay uniqueness and session RLS',
 );
+await db.exec('RESET ROLE;SET ROLE service_role');
+const ready = (
+  await db.query('SELECT public.voklumi_database_status() AS data')
+).rows[0].data;
+assert.equal(ready.ready, true);
+assert.equal(ready.tables.length, 19);
+await db.exec('RESET ROLE;SET ROLE anon');
+await rejects('SELECT public.voklumi_database_status()');
+await db.exec(
+  'RESET ROLE;GRANT UPDATE(amount) ON public.xp_events TO authenticated;SET ROLE service_role',
+);
+assert.equal(
+  (await db.query('SELECT public.voklumi_database_status() AS data')).rows[0]
+    .data.ready,
+  false,
+);
+await db.exec(
+  'RESET ROLE;REVOKE UPDATE(amount) ON public.xp_events FROM authenticated;GRANT SELECT(answer_key) ON public.exercises TO anon;SET ROLE service_role',
+);
+assert.equal(
+  (await db.query('SELECT public.voklumi_database_status() AS data')).rows[0]
+    .data.protectedColumns,
+  false,
+);
+await db.exec(
+  'RESET ROLE;REVOKE SELECT(answer_key) ON public.exercises FROM anon;ALTER TABLE public.coin_events DISABLE ROW LEVEL SECURITY;SET ROLE service_role',
+);
+assert.equal(
+  (await db.query('SELECT public.voklumi_database_status() AS data')).rows[0]
+    .data.ready,
+  false,
+);
+await db.exec(
+  'RESET ROLE;ALTER TABLE public.coin_events ENABLE ROW LEVEL SECURITY;SET ROLE service_role',
+);
+assert.equal(
+  (await db.query('SELECT public.voklumi_database_status() AS data')).rows[0]
+    .data.ready,
+  true,
+);
+await db.exec(
+  'RESET ROLE;GRANT EXECUTE ON FUNCTION public.lesson_state(uuid,uuid) TO anon;SET ROLE service_role',
+);
+assert.equal(
+  (await db.query('SELECT public.voklumi_database_status() AS data')).rows[0]
+    .data.rpcPermissions,
+  false,
+);
+await db.exec(
+  'RESET ROLE;REVOKE EXECUTE ON FUNCTION public.lesson_state(uuid,uuid) FROM anon;SET ROLE service_role',
+);
+assert.equal(
+  (await db.query('SELECT public.voklumi_database_status() AS data')).rows[0]
+    .data.ready,
+  true,
+);
+console.log(
+  'PASS: database readiness checks real schema, RLS, RPC ACL and column-level leak/write regressions',
+);
 await db.close();

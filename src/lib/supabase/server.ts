@@ -1,5 +1,6 @@
 import 'server-only';
 import { createClient } from '@supabase/supabase-js';
+import { validatePublicKey } from './config';
 
 /** Per-request JWT client. Never shares authentication between requests. */
 async function authenticatedClient(accessToken: string) {
@@ -7,7 +8,7 @@ async function authenticatedClient(accessToken: string) {
   const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
   if (!url || !key) throw new Error('Supabase is not configured');
   if (!accessToken) throw new Error('Authentication required');
-  const client = createClient(url, key, {
+  const client = createClient(url, validatePublicKey(key), {
     global: { headers: { Authorization: `Bearer ${accessToken}` } },
     auth: {
       persistSession: false,
@@ -55,7 +56,7 @@ export async function getPublishedCourses() {
   const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
   const key = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
   if (!url || !key) throw new Error('Supabase is not configured');
-  const client = createClient(url, key, {
+  const client = createClient(url, validatePublicKey(key), {
     auth: { persistSession: false, autoRefreshToken: false },
   });
   const { data, error } = await client
