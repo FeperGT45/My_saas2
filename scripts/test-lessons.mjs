@@ -94,7 +94,7 @@ try {
   await assert.rejects(state(other));
   await assert.rejects(submit(2, good[1]));
   await assert.rejects(submit(1, 'made-up-option'));
-  await assert.rejects(submit(1, {correct:true}));
+  await assert.rejects(submit(1, { correct: true }));
   // Source changes cannot change this attempt or its reward.
   await db.exec(
     `UPDATE public.exercises SET answer_key='{"value":"bye"}' WHERE lesson_id='${lesson}' AND position=1;UPDATE public.lessons SET xp_reward=99 WHERE id='${lesson}';`,
