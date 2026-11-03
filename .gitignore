@@ -13,3 +13,5 @@ test-results/
 .cloudflare/
 
 .dev.vars*
+
+supabase/.temp/
