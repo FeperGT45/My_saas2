@@ -233,7 +233,7 @@ function Result({
         </p>
       </Card>
       <Button asChild className="w-full">
-        <Link href={first ? `/lesson?lesson=${first.lesson_id}` : '/courses'}>
+        <Link href="/learning-plan">
           Начать обучение
           <ArrowRight size={18} />
         </Link>

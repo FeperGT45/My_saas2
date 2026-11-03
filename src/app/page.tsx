@@ -1,3 +1,4 @@
+import { LearningPlanLink } from '@/features/learning/learning-panel';
 import Link from 'next/link';
 import {
   ArrowRight,
@@ -27,6 +28,7 @@ export default function HomePage() {
         </div>
       </div>
       <PlacementHome />
+      <LearningPlanLink />
       <section className="starfield relative overflow-hidden rounded-[28px] border border-purple-400/25 bg-gradient-to-br from-[#393067] via-[#28234e] to-[#1d2944] p-5">
         <p className="eyebrow flex items-center gap-1.5 !text-teal-200">
           <Sparkles size={13} /> Твоя языковая вселенная

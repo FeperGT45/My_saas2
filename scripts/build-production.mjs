@@ -60,6 +60,7 @@ try {
   const env = { ...process.env, TELEGRAM_BOT_USERNAME: username };
   await run('db:check', env);
   await run('placement:check', env);
+  await run('learning:check', env);
   await run('build:cloudflare', env);
 } catch (error) {
   console.error(

@@ -1,6 +1,7 @@
 import { lessonRequest, json } from '@/lib/lessons/http';
 import { readBodyText } from '@/lib/auth/body';
 import { placementCommand } from '@/lib/placement/validation';
+import { buildLearningPath } from '@/lib/learning/server';
 const unavailable = () =>
   json({ error: 'Тест временно недоступен. Повтори попытку позже.' }, 503);
 export async function GET(request: Request) {
@@ -69,6 +70,16 @@ export async function POST(request: Request) {
       if (error.message === 'placement unavailable')
         return json({ error: 'Попытка недоступна.' }, 404);
       return unavailable();
+    }
+    const status = action === 'answer' ? data?.status : data;
+    // Assessment commits independently: a transient plan outage must never lose a graded answer.
+    // Opening /learning-plan safely retries generation from the saved assessment.
+    if (status?.assessment && !status.attempt) {
+      try {
+        await buildLearningPath(userId, db, true);
+      } catch {
+        /* Recover on the plan screen. */
+      }
     }
     return json(action === 'answer' ? data : { status: data });
   });

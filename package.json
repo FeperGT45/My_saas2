@@ -43,7 +43,9 @@
     "placement:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-placement.ts",
     "placement:content": "node scripts/import-placement.mjs",
     "placement:import": "node --env-file-if-exists=.env.local scripts/import-placement.mjs --apply",
-    "test:placement": "vitest run tests/unit/placement.test.ts"
+    "test:placement": "vitest run tests/unit/placement.test.ts",
+    "learning:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-learning.ts",
+    "test:learning": "vitest run tests/unit/learning.test.ts"
   },
   "repository": {
     "type": "git",

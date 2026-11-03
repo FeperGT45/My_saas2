@@ -67,7 +67,7 @@ test('first launch, beginner A1, recommendation fallback and a persistent profil
     ).toBeVisible();
     await expect(
       page.getByRole('link', { name: 'Начать обучение', exact: true }),
-    ).toHaveAttribute('href', /\/lesson\?lesson=/);
+    ).toHaveAttribute('href', '/learning-plan');
     await page.getByLabel('Изменить учебный маршрут').selectOption('C2');
     await expect(
       page.getByText(

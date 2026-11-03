@@ -152,6 +152,26 @@ export async function adminServer() {
                 [b.p_user, b.p_attempt, b.p_question, b.p_request, b.p_option],
               )
             ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/learning_path_context')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.learning_path_context($1) AS data',
+                [b.p_user],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/learning_path_preferences') {
+            await db.query(
+              'SELECT public.learning_path_preferences($1,$2,$3)',
+              [b.p_user, b.p_goal, b.p_course],
+            );
+            data = null;
+          } else if (url.pathname === '/rest/v1/rpc/learning_path_store')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.learning_path_store($1,$2,$3::jsonb) AS data',
+                [b.p_user, b.p_token, JSON.stringify(b.p_plan)],
+              )
+            ).rows[0].data;
           else if (url.pathname === '/rest/v1/rpc/game_summary')
             data = (
               await db.query<{ data: unknown }>(

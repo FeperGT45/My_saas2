@@ -1,5 +1,11 @@
+import { LearningPlanLink } from '@/features/learning/learning-panel';
 import { SettingsPanel } from '@/features/settings/settings-panel';
 export const metadata = { title: 'Настройки' };
 export default function SettingsPage() {
-  return <SettingsPanel />;
+  return (
+    <>
+      <SettingsPanel />
+      <LearningPlanLink />
+    </>
+  );
 }

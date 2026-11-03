@@ -29,6 +29,7 @@ function scenario(overrides = {}) {
       require('node:fs').appendFileSync(process.env.TEST_LOG, JSON.stringify({script: process.argv[3], username: process.env.TELEGRAM_BOT_USERNAME})+'\\n');
       if (process.argv[3] === 'db:check' && process.env.TEST_DB_FAIL) process.exit(1);
       if (process.argv[3] === 'placement:check' && process.env.TEST_PLACEMENT_FAIL) process.exit(1);
+      if (process.argv[3] === 'learning:check' && process.env.TEST_LEARNING_FAIL) process.exit(1);
     `,
       { mode: 0o700 },
     );
@@ -69,6 +70,7 @@ test('production build verifies database first and uses the verified bot usernam
   assert.deepEqual(result.calls, [
     { script: 'db:check', username: 'Verified_bot' },
     { script: 'placement:check', username: 'Verified_bot' },
+    { script: 'learning:check', username: 'Verified_bot' },
     { script: 'build:cloudflare', username: 'Verified_bot' },
   ]);
 });
@@ -106,5 +108,15 @@ test('missing placement schema or bank blocks production publication', () => {
   assert.deepEqual(
     result.calls.map((call) => call.script),
     ['db:check', 'placement:check'],
+  );
+});
+
+test('learning readiness failure blocks publication', () => {
+  const r = scenario({ TEST_LEARNING_FAIL: '1' });
+  assert.notEqual(r.status, 0);
+  assert.match(r.output, /learning:check failed/);
+  assert.equal(
+    r.calls.some((c) => c.script === 'build:cloudflare'),
+    false,
   );
 });

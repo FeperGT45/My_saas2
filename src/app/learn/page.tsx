@@ -1,3 +1,4 @@
+import { LearningPlanLink } from '@/features/learning/learning-panel';
 import Link from 'next/link';
 import { Check, LockKeyhole, Play, Flag, ArrowUpRight } from 'lucide-react';
 import { PageTitle, Progress } from '@/components/ui/game';
@@ -19,6 +20,7 @@ export default function LearnPage() {
           </Link>
         }
       />
+      <LearningPlanLink />
       <section className="border-primary/25 bg-primary/10 rounded-2xl border p-4">
         <div className="mb-3 flex items-center justify-between text-xs">
           <span className="font-bold">Глава 01 · Первый контакт</span>

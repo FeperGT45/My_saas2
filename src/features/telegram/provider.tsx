@@ -119,6 +119,7 @@ export function TelegramProvider({ children }: { children: React.ReactNode }) {
                     '/premium',
                     '/admin',
                     '/placement',
+                    '/learning-plan',
                   ].includes(pathname)
                 ? '/profile'
                 : '/',

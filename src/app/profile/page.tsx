@@ -1,3 +1,4 @@
+import { LearningPlanLink } from '@/features/learning/learning-panel';
 import Link from 'next/link';
 import { Settings } from 'lucide-react';
 import { PageTitle } from '@/components/ui/game';
@@ -41,6 +42,7 @@ export default function ProfilePage() {
         Администрирование →
       </Link>
       <PlacementProfile />
+      <LearningPlanLink />
       <GameDashboard />
     </>
   );
