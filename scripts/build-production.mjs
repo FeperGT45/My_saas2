@@ -59,6 +59,7 @@ try {
   // Resolve username from the authenticated Bot API, rather than trusting a placeholder.
   const env = { ...process.env, TELEGRAM_BOT_USERNAME: username };
   await run('db:check', env);
+  await run('placement:check', env);
   await run('build:cloudflare', env);
 } catch (error) {
   console.error(

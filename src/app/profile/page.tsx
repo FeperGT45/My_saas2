@@ -2,6 +2,7 @@ import Link from 'next/link';
 import { Settings } from 'lucide-react';
 import { PageTitle } from '@/components/ui/game';
 import { TelegramAccount } from '@/features/telegram/account';
+import { PlacementProfile } from '@/features/placement/placement-panel';
 import { GameDashboard } from '@/features/gamification/dashboard';
 export const metadata = { title: 'Профиль' };
 export default function ProfilePage() {
@@ -39,6 +40,7 @@ export default function ProfilePage() {
       >
         Администрирование →
       </Link>
+      <PlacementProfile />
       <GameDashboard />
     </>
   );

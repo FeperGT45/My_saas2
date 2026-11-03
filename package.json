@@ -39,7 +39,11 @@
     "test:cloudflare": "playwright test --config playwright.cloudflare.config.ts",
     "test": "vitest run",
     "test:unit": "vitest run",
-    "test:regression": "npm run test:db && npm run test:auth && npm run test:lessons && npm run test:content && npm run test:gamification && npm run test:supabase && npm run test:social && npm run test:payments && npm run test:admin && npm run test:production"
+    "test:regression": "npm run test:db && npm run test:auth && npm run test:lessons && npm run test:content && npm run test:gamification && npm run test:supabase && npm run test:social && npm run test:payments && npm run test:admin && npm run test:production",
+    "placement:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-placement.ts",
+    "placement:content": "node scripts/import-placement.mjs",
+    "placement:import": "node --env-file-if-exists=.env.local scripts/import-placement.mjs --apply",
+    "test:placement": "vitest run tests/unit/placement.test.ts"
   },
   "repository": {
     "type": "git",

@@ -390,3 +390,9 @@ npm run test:cloudflare
 Отчёт и границы проверки: [docs/AUDIT-2026-11-03.md](docs/AUDIT-2026-11-03.md).
 
 `npm run test:unit` запускает Vitest, `npm run test:regression` — существующие SQL/security-наборы. После `npm run build` команда `npm run test:ui` проверяет production Next.js; после `npm run build:cloudflare` команда `npm run test:cloudflare` проверяет локальный Worker. Для установки используйте `npm ci` и поддерживаемый Node.js из `.node-version`.
+
+## Этап A: уровень английского
+
+Рабочий адаптивный тест `/placement`, onboarding на главной и «Мой уровень английского» в профиле. 120 вопросов A1–C2; проверка, сохранение и рекомендации работают на сервере. [Алгоритм, приватность, ограничения и применение](docs/PLACEMENT.md).
+
+Команды: `npm run placement:content`, `npm run placement:import`, `npm run placement:check`, `npm run test:placement`. Банк не содержит аудирования без проверенных материалов; результат явно предварительный. Retest не сбрасывает пройденные уроки или награды.

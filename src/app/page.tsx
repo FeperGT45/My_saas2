@@ -12,20 +12,21 @@ import { Button } from '@/components/ui/button';
 import { Reveal } from '@/components/ui/reveal';
 import { Mascot } from '@/components/ui/mascot';
 import { Card, Progress } from '@/components/ui/game';
-import { demoPlayer } from '@/features/demo/data';
+import { PlacementHome } from '@/features/placement/placement-panel';
 export default function HomePage() {
   return (
     <Reveal>
       <div className="mb-5 flex items-center justify-between">
         <div>
           <p className="text-muted-foreground text-sm">
-            Привет, {demoPlayer.name} ✦
+            Твоя языковая вселенная ✦
           </p>
           <h1 className="mt-1 text-[26px] font-extrabold tracking-tight">
             Время нового уровня
           </h1>
         </div>
       </div>
+      <PlacementHome />
       <section className="starfield relative overflow-hidden rounded-[28px] border border-purple-400/25 bg-gradient-to-br from-[#393067] via-[#28234e] to-[#1d2944] p-5">
         <p className="eyebrow flex items-center gap-1.5 !text-teal-200">
           <Sparkles size={13} /> Твоя языковая вселенная

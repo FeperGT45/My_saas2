@@ -4,6 +4,7 @@ const routes = [
   '/learn',
   '/courses',
   '/lesson',
+  '/placement',
   '/leaderboard',
   '/achievements',
   '/profile',

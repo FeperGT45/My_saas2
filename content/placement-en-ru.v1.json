@@ -1,0 +1,3368 @@
+{
+  "version": "placement-en-ru-v1",
+  "language": "en",
+  "interfaceLanguage": "ru",
+  "categories": ["grammar", "vocabulary", "reading"],
+  "questions": [
+    {
+      "code": "en-ru-v1-a1-grammar-01",
+      "level": "A1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: I ___ a student.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "is"
+        },
+        {
+          "id": "b",
+          "label": "be"
+        },
+        {
+          "id": "c",
+          "label": "are"
+        },
+        {
+          "id": "d",
+          "label": "am"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "С местоимением I используется am.",
+      "topic": "Глагол be"
+    },
+    {
+      "code": "en-ru-v1-a1-grammar-02",
+      "level": "A1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: She ___ two brothers.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "to have"
+        },
+        {
+          "id": "b",
+          "label": "has"
+        },
+        {
+          "id": "c",
+          "label": "have"
+        },
+        {
+          "id": "d",
+          "label": "having"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "В Present Simple после she используется has.",
+      "topic": "Have / has"
+    },
+    {
+      "code": "en-ru-v1-a1-grammar-03",
+      "level": "A1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: We ___ in a small town.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "to live"
+        },
+        {
+          "id": "b",
+          "label": "living"
+        },
+        {
+          "id": "c",
+          "label": "lives"
+        },
+        {
+          "id": "d",
+          "label": "live"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "После we в Present Simple окончание -s не нужно.",
+      "topic": "Present Simple"
+    },
+    {
+      "code": "en-ru-v1-a1-grammar-04",
+      "level": "A1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: This is ___ apple.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "an"
+        },
+        {
+          "id": "b",
+          "label": "these"
+        },
+        {
+          "id": "c",
+          "label": "two"
+        },
+        {
+          "id": "d",
+          "label": "a"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Перед исчисляемым существительным с гласным звуком нужен an.",
+      "topic": "Артикли a / an"
+    },
+    {
+      "code": "en-ru-v1-a1-grammar-05",
+      "level": "A1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: ___ you like tea?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "Is"
+        },
+        {
+          "id": "b",
+          "label": "Do"
+        },
+        {
+          "id": "c",
+          "label": "Are"
+        },
+        {
+          "id": "d",
+          "label": "Does"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Вопрос с like после you строится с Do.",
+      "topic": "Простые вопросы"
+    },
+    {
+      "code": "en-ru-v1-a1-grammar-06",
+      "level": "A1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: My keys are ___ the table.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "from"
+        },
+        {
+          "id": "b",
+          "label": "to"
+        },
+        {
+          "id": "c",
+          "label": "at"
+        },
+        {
+          "id": "d",
+          "label": "on"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "On обозначает положение на поверхности стола.",
+      "topic": "Предлоги места"
+    },
+    {
+      "code": "en-ru-v1-a1-grammar-07",
+      "level": "A1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: He ___ speak French.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "does not"
+        },
+        {
+          "id": "b",
+          "label": "is not"
+        },
+        {
+          "id": "c",
+          "label": "not"
+        },
+        {
+          "id": "d",
+          "label": "do not"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Для отрицания с he и обычным глаголом нужны does not.",
+      "topic": "Отрицания"
+    },
+    {
+      "code": "en-ru-v1-a1-grammar-08",
+      "level": "A1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: These ___ my books.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "be"
+        },
+        {
+          "id": "b",
+          "label": "am"
+        },
+        {
+          "id": "c",
+          "label": "are"
+        },
+        {
+          "id": "d",
+          "label": "is"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "These указывает на несколько предметов, поэтому используется are.",
+      "topic": "Множественное число"
+    },
+    {
+      "code": "en-ru-v1-a1-vocabulary-01",
+      "level": "A1",
+      "category": "vocabulary",
+      "prompt": "Как переводится слово «sister»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "сестра"
+        },
+        {
+          "id": "b",
+          "label": "мать"
+        },
+        {
+          "id": "c",
+          "label": "брат"
+        },
+        {
+          "id": "d",
+          "label": "дочь"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sister — сестра.",
+      "topic": "Семья"
+    },
+    {
+      "code": "en-ru-v1-a1-vocabulary-02",
+      "level": "A1",
+      "category": "vocabulary",
+      "prompt": "Какое слово обозначает число 15?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "fifteen"
+        },
+        {
+          "id": "b",
+          "label": "fifty"
+        },
+        {
+          "id": "c",
+          "label": "fourteen"
+        },
+        {
+          "id": "d",
+          "label": "five"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Fifteen — пятнадцать; fifty — пятьдесят.",
+      "topic": "Числа"
+    },
+    {
+      "code": "en-ru-v1-a1-vocabulary-03",
+      "level": "A1",
+      "category": "vocabulary",
+      "prompt": "Как переводится «breakfast»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "напиток"
+        },
+        {
+          "id": "b",
+          "label": "обед"
+        },
+        {
+          "id": "c",
+          "label": "ужин"
+        },
+        {
+          "id": "d",
+          "label": "завтрак"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Breakfast — первый приём пищи, завтрак.",
+      "topic": "Еда"
+    },
+    {
+      "code": "en-ru-v1-a1-vocabulary-04",
+      "level": "A1",
+      "category": "vocabulary",
+      "prompt": "Какое слово обозначает синий цвет?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "blue"
+        },
+        {
+          "id": "b",
+          "label": "green"
+        },
+        {
+          "id": "c",
+          "label": "brown"
+        },
+        {
+          "id": "d",
+          "label": "black"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Blue — синий или голубой, в зависимости от оттенка.",
+      "topic": "Цвета"
+    },
+    {
+      "code": "en-ru-v1-a1-vocabulary-05",
+      "level": "A1",
+      "category": "vocabulary",
+      "prompt": "Как переводится «to read»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "писать"
+        },
+        {
+          "id": "b",
+          "label": "читать"
+        },
+        {
+          "id": "c",
+          "label": "бегать"
+        },
+        {
+          "id": "d",
+          "label": "слушать"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Read — читать.",
+      "topic": "Повседневные действия"
+    },
+    {
+      "code": "en-ru-v1-a1-vocabulary-06",
+      "level": "A1",
+      "category": "vocabulary",
+      "prompt": "Что означает «How are you?»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "Как тебя зовут?"
+        },
+        {
+          "id": "b",
+          "label": "Как у тебя дела?"
+        },
+        {
+          "id": "c",
+          "label": "Сколько тебе лет?"
+        },
+        {
+          "id": "d",
+          "label": "Где ты живёшь?"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Так обычно спрашивают о самочувствии или делах.",
+      "topic": "Приветствия"
+    },
+    {
+      "code": "en-ru-v1-a1-reading-01",
+      "level": "A1",
+      "category": "reading",
+      "prompt": "Сколько лет Анне?",
+      "passage": "My name is Anna. I am eighteen. I live in Moscow with my parents.",
+      "options": [
+        {
+          "id": "a",
+          "label": "20"
+        },
+        {
+          "id": "b",
+          "label": "18"
+        },
+        {
+          "id": "c",
+          "label": "28"
+        },
+        {
+          "id": "d",
+          "label": "8"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "В тексте сказано: I am eighteen.",
+      "topic": "Личная информация"
+    },
+    {
+      "code": "en-ru-v1-a1-reading-02",
+      "level": "A1",
+      "category": "reading",
+      "prompt": "Когда открывается кафе?",
+      "passage": "The café opens at 9 a.m. and closes at 5 p.m. It is next to the library.",
+      "options": [
+        {
+          "id": "a",
+          "label": "В девять утра"
+        },
+        {
+          "id": "b",
+          "label": "В девять вечера"
+        },
+        {
+          "id": "c",
+          "label": "В пять вечера"
+        },
+        {
+          "id": "d",
+          "label": "В восемь утра"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "9 a.m. означает девять утра.",
+      "topic": "Время"
+    },
+    {
+      "code": "en-ru-v1-a1-reading-03",
+      "level": "A1",
+      "category": "reading",
+      "prompt": "Какое животное есть у Тома?",
+      "passage": "Tom has a cat. Its name is Snow. Snow is white and likes milk.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Птица"
+        },
+        {
+          "id": "b",
+          "label": "Кот"
+        },
+        {
+          "id": "c",
+          "label": "Рыбка"
+        },
+        {
+          "id": "d",
+          "label": "Собака"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "A cat — кот или кошка.",
+      "topic": "Дом и животные"
+    },
+    {
+      "code": "en-ru-v1-a1-reading-04",
+      "level": "A1",
+      "category": "reading",
+      "prompt": "Как Мэри добирается в школу?",
+      "passage": "Mary goes to school by bus. Her school is not near her house.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Пешком"
+        },
+        {
+          "id": "b",
+          "label": "На велосипеде"
+        },
+        {
+          "id": "c",
+          "label": "На поезде"
+        },
+        {
+          "id": "d",
+          "label": "На автобусе"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "By bus означает на автобусе.",
+      "topic": "Транспорт"
+    },
+    {
+      "code": "en-ru-v1-a1-reading-05",
+      "level": "A1",
+      "category": "reading",
+      "prompt": "Что нужно купить?",
+      "passage": "Please buy bread and milk. We have eggs at home. Thank you!",
+      "options": [
+        {
+          "id": "a",
+          "label": "Хлеб и молоко"
+        },
+        {
+          "id": "b",
+          "label": "Чай и сахар"
+        },
+        {
+          "id": "c",
+          "label": "Хлеб и сыр"
+        },
+        {
+          "id": "d",
+          "label": "Молоко и яйца"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "В записке названы bread and milk.",
+      "topic": "Покупки"
+    },
+    {
+      "code": "en-ru-v1-a1-reading-06",
+      "level": "A1",
+      "category": "reading",
+      "prompt": "Какое занятие нравится Бену?",
+      "passage": "Ben is my friend. He likes football. We play in the park on Sundays.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Плавание"
+        },
+        {
+          "id": "b",
+          "label": "Теннис"
+        },
+        {
+          "id": "c",
+          "label": "Рисование"
+        },
+        {
+          "id": "d",
+          "label": "Футбол"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "He likes football прямо сообщает о его увлечении.",
+      "topic": "Увлечения"
+    },
+    {
+      "code": "en-ru-v1-a2-grammar-01",
+      "level": "A2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: We ___ a film last night.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "watching"
+        },
+        {
+          "id": "b",
+          "label": "watched"
+        },
+        {
+          "id": "c",
+          "label": "watch"
+        },
+        {
+          "id": "d",
+          "label": "watches"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Last night указывает на завершённое прошлое: watched.",
+      "topic": "Past Simple"
+    },
+    {
+      "code": "en-ru-v1-a2-grammar-02",
+      "level": "A2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: Look! The children ___ in the garden.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "played"
+        },
+        {
+          "id": "b",
+          "label": "plays"
+        },
+        {
+          "id": "c",
+          "label": "are playing"
+        },
+        {
+          "id": "d",
+          "label": "play"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Look обращает внимание на действие сейчас: are playing.",
+      "topic": "Present Continuous"
+    },
+    {
+      "code": "en-ru-v1-a2-grammar-03",
+      "level": "A2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: There is not ___ sugar left.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "many"
+        },
+        {
+          "id": "b",
+          "label": "several"
+        },
+        {
+          "id": "c",
+          "label": "much"
+        },
+        {
+          "id": "d",
+          "label": "a few"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Sugar — неисчисляемое существительное, поэтому much.",
+      "topic": "Исчисляемость"
+    },
+    {
+      "code": "en-ru-v1-a2-grammar-04",
+      "level": "A2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: My bag is ___ than yours.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "heavier"
+        },
+        {
+          "id": "b",
+          "label": "heaviest"
+        },
+        {
+          "id": "c",
+          "label": "more heavyest"
+        },
+        {
+          "id": "d",
+          "label": "heavy"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Для сравнения двух сумок используется heavier.",
+      "topic": "Сравнительные степени"
+    },
+    {
+      "code": "en-ru-v1-a2-grammar-05",
+      "level": "A2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: I ___ visit my grandparents tomorrow.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "was going"
+        },
+        {
+          "id": "b",
+          "label": "am going to"
+        },
+        {
+          "id": "c",
+          "label": "have"
+        },
+        {
+          "id": "d",
+          "label": "going"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Для запланированного действия подходит am going to visit.",
+      "topic": "Планы на будущее"
+    },
+    {
+      "code": "en-ru-v1-a2-grammar-06",
+      "level": "A2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: You ___ see a doctor if you feel ill.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "should"
+        },
+        {
+          "id": "b",
+          "label": "can to"
+        },
+        {
+          "id": "c",
+          "label": "are"
+        },
+        {
+          "id": "d",
+          "label": "must to"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Should выражает совет; после него глагол без to.",
+      "topic": "Советы с should"
+    },
+    {
+      "code": "en-ru-v1-a2-grammar-07",
+      "level": "A2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: She can speak Spanish very ___.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "nice"
+        },
+        {
+          "id": "b",
+          "label": "good"
+        },
+        {
+          "id": "c",
+          "label": "betterest"
+        },
+        {
+          "id": "d",
+          "label": "well"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Способ действия описывает наречие well.",
+      "topic": "Прилагательные и наречия"
+    },
+    {
+      "code": "en-ru-v1-a2-grammar-08",
+      "level": "A2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: ___ did the train arrive? At six.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "When"
+        },
+        {
+          "id": "b",
+          "label": "Whose"
+        },
+        {
+          "id": "c",
+          "label": "Who"
+        },
+        {
+          "id": "d",
+          "label": "Which"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Ответ со временем соответствует вопросу When.",
+      "topic": "Вопросительные слова"
+    },
+    {
+      "code": "en-ru-v1-a2-vocabulary-01",
+      "level": "A2",
+      "category": "vocabulary",
+      "prompt": "Что означает «boarding pass» в аэропорту?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "паспортный контроль"
+        },
+        {
+          "id": "b",
+          "label": "багажная бирка"
+        },
+        {
+          "id": "c",
+          "label": "посадочный талон"
+        },
+        {
+          "id": "d",
+          "label": "билет на автобус"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Boarding pass предъявляют при посадке в самолёт.",
+      "topic": "Путешествия"
+    },
+    {
+      "code": "en-ru-v1-a2-vocabulary-02",
+      "level": "A2",
+      "category": "vocabulary",
+      "prompt": "Какой глагол подходит: «___ the dishes»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "take"
+        },
+        {
+          "id": "b",
+          "label": "do up"
+        },
+        {
+          "id": "c",
+          "label": "make"
+        },
+        {
+          "id": "d",
+          "label": "wash"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Wash the dishes — мыть посуду.",
+      "topic": "Домашние дела"
+    },
+    {
+      "code": "en-ru-v1-a2-vocabulary-03",
+      "level": "A2",
+      "category": "vocabulary",
+      "prompt": "Как переводится «crowded» о месте?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "очень тихий"
+        },
+        {
+          "id": "b",
+          "label": "переполненный людьми"
+        },
+        {
+          "id": "c",
+          "label": "закрытый на ремонт"
+        },
+        {
+          "id": "d",
+          "label": "совершенно пустой"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Crowded описывает место с большим количеством людей.",
+      "topic": "Город"
+    },
+    {
+      "code": "en-ru-v1-a2-vocabulary-04",
+      "level": "A2",
+      "category": "vocabulary",
+      "prompt": "Что означает «I am looking for my keys»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "Я нашёл свои ключи"
+        },
+        {
+          "id": "b",
+          "label": "Я отдаю свои ключи"
+        },
+        {
+          "id": "c",
+          "label": "Я ищу свои ключи"
+        },
+        {
+          "id": "d",
+          "label": "Я смотрю на ключи"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Look for — искать; look at — смотреть на.",
+      "topic": "Фразовые глаголы"
+    },
+    {
+      "code": "en-ru-v1-a2-vocabulary-05",
+      "level": "A2",
+      "category": "vocabulary",
+      "prompt": "Какое слово противоположно «expensive»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "large"
+        },
+        {
+          "id": "b",
+          "label": "rich"
+        },
+        {
+          "id": "c",
+          "label": "cheap"
+        },
+        {
+          "id": "d",
+          "label": "busy"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Cheap — дешёвый, противоположность expensive.",
+      "topic": "Покупки"
+    },
+    {
+      "code": "en-ru-v1-a2-vocabulary-06",
+      "level": "A2",
+      "category": "vocabulary",
+      "prompt": "Что значит «appointment» в выражении «a doctor’s appointment»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "рецепт на лекарство"
+        },
+        {
+          "id": "b",
+          "label": "запись на приём к врачу"
+        },
+        {
+          "id": "c",
+          "label": "больничная палата"
+        },
+        {
+          "id": "d",
+          "label": "результат анализа"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Appointment — заранее назначенная встреча или приём.",
+      "topic": "Здоровье"
+    },
+    {
+      "code": "en-ru-v1-a2-reading-01",
+      "level": "A2",
+      "category": "reading",
+      "prompt": "Почему Кейт не придёт на ужин?",
+      "passage": "Hi Dan, thanks for inviting me to dinner on Friday. I cannot come because I have to work late. Can we meet on Saturday instead? Kate",
+      "options": [
+        {
+          "id": "a",
+          "label": "Она работает допоздна"
+        },
+        {
+          "id": "b",
+          "label": "Она заболела"
+        },
+        {
+          "id": "c",
+          "label": "Она уже поужинала"
+        },
+        {
+          "id": "d",
+          "label": "Она уезжает утром"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Кейт объясняет отказ словами I have to work late.",
+      "topic": "Короткие сообщения"
+    },
+    {
+      "code": "en-ru-v1-a2-reading-02",
+      "level": "A2",
+      "category": "reading",
+      "prompt": "Где теперь останавливается автобус 12?",
+      "passage": "Road works: bus 12 will not stop at the library this week. Please use the temporary stop outside the supermarket.",
+      "options": [
+        {
+          "id": "a",
+          "label": "У супермаркета"
+        },
+        {
+          "id": "b",
+          "label": "У библиотеки"
+        },
+        {
+          "id": "c",
+          "label": "У школы"
+        },
+        {
+          "id": "d",
+          "label": "На мосту"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Остановка временно перенесена outside the supermarket.",
+      "topic": "Объявления"
+    },
+    {
+      "code": "en-ru-v1-a2-reading-03",
+      "level": "A2",
+      "category": "reading",
+      "prompt": "Что нужно сделать до экскурсии?",
+      "passage": "The museum tour starts at ten. Tickets cost £8. Booking is necessary because each group can have only twelve visitors.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Забронировать место"
+        },
+        {
+          "id": "b",
+          "label": "Позвонить после экскурсии"
+        },
+        {
+          "id": "c",
+          "label": "Принести обед для группы"
+        },
+        {
+          "id": "d",
+          "label": "Купить фотоаппарат"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Booking is necessary означает обязательное бронирование.",
+      "topic": "Инструкции"
+    },
+    {
+      "code": "en-ru-v1-a2-reading-04",
+      "level": "A2",
+      "category": "reading",
+      "prompt": "Что изменилось в расписании магазина?",
+      "passage": "Our shop is open every day from 9 a.m. to 8 p.m. On Sundays we close at 4 p.m. to give our staff a shorter working day.",
+      "options": [
+        {
+          "id": "a",
+          "label": "В воскресенье он закрывается раньше"
+        },
+        {
+          "id": "b",
+          "label": "Теперь он открыт всю ночь"
+        },
+        {
+          "id": "c",
+          "label": "В субботу он не работает"
+        },
+        {
+          "id": "d",
+          "label": "В будни он закрыт"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Обычно закрытие в восемь, в воскресенье — в четыре.",
+      "topic": "Расписание"
+    },
+    {
+      "code": "en-ru-v1-a2-reading-05",
+      "level": "A2",
+      "category": "reading",
+      "prompt": "Почему Эмма выбрала поезд?",
+      "passage": "Emma wanted to fly to Edinburgh, but train tickets were cheaper. The journey took longer, so she brought a book to read.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Она боялась летать"
+        },
+        {
+          "id": "b",
+          "label": "Аэропорт был закрыт"
+        },
+        {
+          "id": "c",
+          "label": "Так было дешевле"
+        },
+        {
+          "id": "d",
+          "label": "Поезд шёл быстрее самолёта"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "В тексте прямо указано: train tickets were cheaper.",
+      "topic": "Причины выбора"
+    },
+    {
+      "code": "en-ru-v1-a2-reading-06",
+      "level": "A2",
+      "category": "reading",
+      "prompt": "Что Сэм просит вернуть?",
+      "passage": "Hi Alex, I lent you my phone charger yesterday. Could you bring it to class tomorrow? My phone battery is almost empty. Sam",
+      "options": [
+        {
+          "id": "a",
+          "label": "Зарядное устройство"
+        },
+        {
+          "id": "b",
+          "label": "Куртку"
+        },
+        {
+          "id": "c",
+          "label": "Зонт"
+        },
+        {
+          "id": "d",
+          "label": "Книгу"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Sam одолжил зарядку и просит принести её завтра.",
+      "topic": "Просьбы"
+    },
+    {
+      "code": "en-ru-v1-b1-grammar-01",
+      "level": "B1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: I have lived here ___ 2020.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "during"
+        },
+        {
+          "id": "b",
+          "label": "for"
+        },
+        {
+          "id": "c",
+          "label": "since"
+        },
+        {
+          "id": "d",
+          "label": "from"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Since вводит начальную точку периода, продолжающегося до настоящего.",
+      "topic": "Present Perfect: since / for"
+    },
+    {
+      "code": "en-ru-v1-b1-grammar-02",
+      "level": "B1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: When you called, I ___ dinner.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "was cooking"
+        },
+        {
+          "id": "b",
+          "label": "have cooked"
+        },
+        {
+          "id": "c",
+          "label": "am cooking"
+        },
+        {
+          "id": "d",
+          "label": "cook"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Длительное действие в момент звонка выражается Past Continuous.",
+      "topic": "Past Continuous"
+    },
+    {
+      "code": "en-ru-v1-b1-grammar-03",
+      "level": "B1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: If it rains tomorrow, we ___ at home.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "had stayed"
+        },
+        {
+          "id": "b",
+          "label": "will stay"
+        },
+        {
+          "id": "c",
+          "label": "stayed"
+        },
+        {
+          "id": "d",
+          "label": "would stay"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "В первом условном после if используется настоящее, в главной части — will.",
+      "topic": "First Conditional"
+    },
+    {
+      "code": "en-ru-v1-b1-grammar-04",
+      "level": "B1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: If I had more time, I ___ a new language.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "learned"
+        },
+        {
+          "id": "b",
+          "label": "will learn"
+        },
+        {
+          "id": "c",
+          "label": "would learn"
+        },
+        {
+          "id": "d",
+          "label": "had learned"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Нереальная ситуация в настоящем: if + past, would + infinitive.",
+      "topic": "Second Conditional"
+    },
+    {
+      "code": "en-ru-v1-b1-grammar-05",
+      "level": "B1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: The woman ___ lives next door is a nurse.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "where"
+        },
+        {
+          "id": "b",
+          "label": "whose"
+        },
+        {
+          "id": "c",
+          "label": "which"
+        },
+        {
+          "id": "d",
+          "label": "who"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Who относится к человеку и служит подлежащим придаточного.",
+      "topic": "Относительные предложения"
+    },
+    {
+      "code": "en-ru-v1-b1-grammar-06",
+      "level": "B1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: This bridge ___ in 1990.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "was built"
+        },
+        {
+          "id": "b",
+          "label": "is building"
+        },
+        {
+          "id": "c",
+          "label": "built"
+        },
+        {
+          "id": "d",
+          "label": "has building"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Мост был построен: нужен пассив в Past Simple.",
+      "topic": "Пассивный залог"
+    },
+    {
+      "code": "en-ru-v1-b1-grammar-07",
+      "level": "B1",
+      "category": "grammar",
+      "prompt": "Передай слова «I am tired» с обычным согласованием времён: He said that he ___ tired.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "had been"
+        },
+        {
+          "id": "b",
+          "label": "would be"
+        },
+        {
+          "id": "c",
+          "label": "was"
+        },
+        {
+          "id": "d",
+          "label": "is"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "При обычном согласовании времён после said используется was.",
+      "topic": "Косвенная речь"
+    },
+    {
+      "code": "en-ru-v1-b1-grammar-08",
+      "level": "B1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: I enjoy ___ in the sea.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "to swim"
+        },
+        {
+          "id": "b",
+          "label": "swam"
+        },
+        {
+          "id": "c",
+          "label": "swim"
+        },
+        {
+          "id": "d",
+          "label": "swimming"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "После enjoy используется форма -ing.",
+      "topic": "Герундий"
+    },
+    {
+      "code": "en-ru-v1-b1-vocabulary-01",
+      "level": "B1",
+      "category": "vocabulary",
+      "prompt": "Что означает «look after» в «She looks after her younger brother»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "искать"
+        },
+        {
+          "id": "b",
+          "label": "смотреть вслед"
+        },
+        {
+          "id": "c",
+          "label": "присматривать за"
+        },
+        {
+          "id": "d",
+          "label": "быть похожим на"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Look after — заботиться о ком-либо или присматривать.",
+      "topic": "Забота и обязанности"
+    },
+    {
+      "code": "en-ru-v1-b1-vocabulary-02",
+      "level": "B1",
+      "category": "vocabulary",
+      "prompt": "Какое сочетание верно: «___ a decision»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "make"
+        },
+        {
+          "id": "b",
+          "label": "do"
+        },
+        {
+          "id": "c",
+          "label": "take up"
+        },
+        {
+          "id": "d",
+          "label": "set"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Устойчивое сочетание: make a decision.",
+      "topic": "Устойчивые сочетания"
+    },
+    {
+      "code": "en-ru-v1-b1-vocabulary-03",
+      "level": "B1",
+      "category": "vocabulary",
+      "prompt": "Что значит «Could I borrow your pen?»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "Можно купить твою ручку?"
+        },
+        {
+          "id": "b",
+          "label": "Можно одолжить у тебя ручку?"
+        },
+        {
+          "id": "c",
+          "label": "Можно дать тебе мою ручку?"
+        },
+        {
+          "id": "d",
+          "label": "Можно выбросить эту ручку?"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Borrow — брать взаймы, lend — давать взаймы.",
+      "topic": "Borrow / lend"
+    },
+    {
+      "code": "en-ru-v1-b1-vocabulary-04",
+      "level": "B1",
+      "category": "vocabulary",
+      "prompt": "Что означает «They turned down the offer»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "Они приняли предложение"
+        },
+        {
+          "id": "b",
+          "label": "Они повысили цену"
+        },
+        {
+          "id": "c",
+          "label": "Они отклонили предложение"
+        },
+        {
+          "id": "d",
+          "label": "Они повторили предложение"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Turn down an offer — отказаться от предложения.",
+      "topic": "Работа и предложения"
+    },
+    {
+      "code": "en-ru-v1-b1-vocabulary-05",
+      "level": "B1",
+      "category": "vocabulary",
+      "prompt": "Что означает «We have run out of coffee»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "Мы отказались пить кофе навсегда"
+        },
+        {
+          "id": "b",
+          "label": "Мы разлили кофе"
+        },
+        {
+          "id": "c",
+          "label": "Мы выбежали за кофе"
+        },
+        {
+          "id": "d",
+          "label": "У нас закончился кофе"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Run out of something — израсходовать запас.",
+      "topic": "Повседневные ситуации"
+    },
+    {
+      "code": "en-ru-v1-b1-vocabulary-06",
+      "level": "B1",
+      "category": "vocabulary",
+      "prompt": "Что означает «reliable» о человеке?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "тот, кто любит рисковать"
+        },
+        {
+          "id": "b",
+          "label": "тот, кто часто опаздывает"
+        },
+        {
+          "id": "c",
+          "label": "тот, на кого можно положиться"
+        },
+        {
+          "id": "d",
+          "label": "тот, кто мало разговаривает"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Reliable описывает надёжного человека или надёжную вещь.",
+      "topic": "Описание людей"
+    },
+    {
+      "code": "en-ru-v1-b1-reading-01",
+      "level": "B1",
+      "category": "reading",
+      "prompt": "Почему сотрудникам предлагают работать из дома в пятницу?",
+      "passage": "The office will be closed this Friday while repairs to the heating system are carried out. Staff should work from home as usual. Please contact your manager if you cannot access your files remotely.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Каждая пятница стала выходным"
+        },
+        {
+          "id": "b",
+          "label": "Компания закрывается"
+        },
+        {
+          "id": "c",
+          "label": "В офисе будут ремонтировать отопление"
+        },
+        {
+          "id": "d",
+          "label": "На улице ожидается жара"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "В письме указана конкретная причина: repairs to the heating system.",
+      "topic": "Рабочая переписка"
+    },
+    {
+      "code": "en-ru-v1-b1-reading-02",
+      "level": "B1",
+      "category": "reading",
+      "prompt": "Как автор оценивает поездку?",
+      "passage": "Our train left an hour late, which was frustrating. Once we arrived, however, the scenery and friendly local people made the trip worthwhile. I would happily visit again, though next time I would allow more time for travel.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Автор не смог попасть в поезд"
+        },
+        {
+          "id": "b",
+          "label": "Погода была единственным плюсом"
+        },
+        {
+          "id": "c",
+          "label": "В целом положительно, несмотря на задержку"
+        },
+        {
+          "id": "d",
+          "label": "Она полностью разочаровала автора"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Задержка названа небольшим неудобством на фоне приятного путешествия.",
+      "topic": "Общее впечатление"
+    },
+    {
+      "code": "en-ru-v1-b1-reading-03",
+      "level": "B1",
+      "category": "reading",
+      "prompt": "Что нужно сделать читателю, если он хочет участвовать?",
+      "passage": "The community garden is looking for volunteers. No gardening experience is needed, and tools will be provided. If you would like to join, submit the online form by Monday so we can organise the teams.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Просто прийти в понедельник без записи"
+        },
+        {
+          "id": "b",
+          "label": "Оплатить годовой абонемент"
+        },
+        {
+          "id": "c",
+          "label": "Написать отчёт после встречи"
+        },
+        {
+          "id": "d",
+          "label": "Отправить форму до понедельника"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Нужно submit the online form by Monday.",
+      "topic": "Условия участия"
+    },
+    {
+      "code": "en-ru-v1-b1-reading-04",
+      "level": "B1",
+      "category": "reading",
+      "prompt": "Почему ресторан изменил меню?",
+      "passage": "After several customers asked for more vegetarian options, the restaurant added three meat-free dishes. The original menu is still available, and the chef plans to review the new dishes after a month.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Поставщики перестали привозить мясо"
+        },
+        {
+          "id": "b",
+          "label": "Владелец запретил все горячие блюда"
+        },
+        {
+          "id": "c",
+          "label": "Ресторан работает только на доставку"
+        },
+        {
+          "id": "d",
+          "label": "Посетители просили больше вегетарианских блюд"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Изменение последовало после просьб посетителей.",
+      "topic": "Причина и следствие"
+    },
+    {
+      "code": "en-ru-v1-b1-reading-05",
+      "level": "B1",
+      "category": "reading",
+      "prompt": "Какова основная цель письма?",
+      "passage": "Our project meeting has moved from 2 p.m. to 3 p.m. because the client’s flight is arriving late. The location has not changed. Please let me know if the new time causes a problem.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Пригласить на вечеринку"
+        },
+        {
+          "id": "b",
+          "label": "Попросить оплатить счёт"
+        },
+        {
+          "id": "c",
+          "label": "Предупредить об изменении времени встречи"
+        },
+        {
+          "id": "d",
+          "label": "Отменить весь проект"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Автор сообщает новое время и просит подтвердить возможность прийти.",
+      "topic": "Цель сообщения"
+    },
+    {
+      "code": "en-ru-v1-b1-reading-06",
+      "level": "B1",
+      "category": "reading",
+      "prompt": "Что можно заключить о новой работе Луизы?",
+      "passage": "Louise finds some tasks in her new job difficult, but her colleagues are always willing to help. She says she learns something useful every day and is beginning to feel more confident.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Она уже хочет немедленно уволиться"
+        },
+        {
+          "id": "b",
+          "label": "Все задачи даются ей без усилий"
+        },
+        {
+          "id": "c",
+          "label": "Она работает без коллег"
+        },
+        {
+          "id": "d",
+          "label": "Ей нравится коллектив, но она ещё учится"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Она довольна поддержкой коллег, хотя задачи пока сложные.",
+      "topic": "Вывод из текста"
+    },
+    {
+      "code": "en-ru-v1-b2-grammar-01",
+      "level": "B2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: By the time we arrived, the film ___.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "was already start"
+        },
+        {
+          "id": "b",
+          "label": "had already started"
+        },
+        {
+          "id": "c",
+          "label": "has already starting"
+        },
+        {
+          "id": "d",
+          "label": "already starts"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Past Perfect обозначает событие, предшествовавшее другому моменту в прошлом.",
+      "topic": "Past Perfect"
+    },
+    {
+      "code": "en-ru-v1-b2-grammar-02",
+      "level": "B2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: If I had known about the delay, I ___ later.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "will leave"
+        },
+        {
+          "id": "b",
+          "label": "would have left"
+        },
+        {
+          "id": "c",
+          "label": "would leave"
+        },
+        {
+          "id": "d",
+          "label": "had left"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Нереальное условие в прошлом: would have + третья форма.",
+      "topic": "Third Conditional"
+    },
+    {
+      "code": "en-ru-v1-b2-grammar-03",
+      "level": "B2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: If she had accepted that job, she ___ in London now.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "had lived"
+        },
+        {
+          "id": "b",
+          "label": "will have lived"
+        },
+        {
+          "id": "c",
+          "label": "would have live"
+        },
+        {
+          "id": "d",
+          "label": "would be living"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Прошлое условие связано с настоящим результатом: would be living.",
+      "topic": "Mixed Conditionals"
+    },
+    {
+      "code": "en-ru-v1-b2-grammar-04",
+      "level": "B2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: You ___ him yesterday; he was abroad all week.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "cannot have seen"
+        },
+        {
+          "id": "b",
+          "label": "can have saw"
+        },
+        {
+          "id": "c",
+          "label": "should see"
+        },
+        {
+          "id": "d",
+          "label": "must have seen"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Cannot have + причастие выражает невозможность события в прошлом.",
+      "topic": "Модальные выводы о прошлом"
+    },
+    {
+      "code": "en-ru-v1-b2-grammar-05",
+      "level": "B2",
+      "category": "grammar",
+      "prompt": "Выбери вариант для сожаления о прошлом: I wish I ___ the contract more carefully before I signed it yesterday.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "have read"
+        },
+        {
+          "id": "b",
+          "label": "would read"
+        },
+        {
+          "id": "c",
+          "label": "had read"
+        },
+        {
+          "id": "d",
+          "label": "read"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Сожаление о прошлом после wish выражается Past Perfect.",
+      "topic": "Wish о прошлом"
+    },
+    {
+      "code": "en-ru-v1-b2-grammar-06",
+      "level": "B2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: Not only ___ late, but he also forgot the documents.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "arrived he"
+        },
+        {
+          "id": "b",
+          "label": "he arrived"
+        },
+        {
+          "id": "c",
+          "label": "he did arrive"
+        },
+        {
+          "id": "d",
+          "label": "did he arrive"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "После вынесенного Not only требуется инверсия с did.",
+      "topic": "Инверсия"
+    },
+    {
+      "code": "en-ru-v1-b2-grammar-07",
+      "level": "B2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: The documents ___ yesterday are on your desk.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "which signing"
+        },
+        {
+          "id": "b",
+          "label": "signed"
+        },
+        {
+          "id": "c",
+          "label": "signing"
+        },
+        {
+          "id": "d",
+          "label": "were signed"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Signed — сокращённое пассивное определение: документы, подписанные вчера.",
+      "topic": "Причастные определения"
+    },
+    {
+      "code": "en-ru-v1-b2-grammar-08",
+      "level": "B2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: Despite ___ exhausted, she finished the report.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "to be"
+        },
+        {
+          "id": "b",
+          "label": "being"
+        },
+        {
+          "id": "c",
+          "label": "she was"
+        },
+        {
+          "id": "d",
+          "label": "was"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "После despite без the fact that нужна именная конструкция или -ing.",
+      "topic": "Уступительные конструкции"
+    },
+    {
+      "code": "en-ru-v1-b2-vocabulary-01",
+      "level": "B2",
+      "category": "vocabulary",
+      "prompt": "Что означает «reluctant» в «He was reluctant to agree»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "неохотно соглашающийся"
+        },
+        {
+          "id": "b",
+          "label": "полностью уверенный"
+        },
+        {
+          "id": "c",
+          "label": "стремящийся согласиться немедленно"
+        },
+        {
+          "id": "d",
+          "label": "неспособный понять слова"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Reluctant означает не желающий что-либо делать или делающий это неохотно.",
+      "topic": "Оттенки отношения"
+    },
+    {
+      "code": "en-ru-v1-b2-vocabulary-02",
+      "level": "B2",
+      "category": "vocabulary",
+      "prompt": "Что означает «undermine confidence»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "укреплять уверенность"
+        },
+        {
+          "id": "b",
+          "label": "скрывать хорошую новость"
+        },
+        {
+          "id": "c",
+          "label": "подрывать доверие или уверенность"
+        },
+        {
+          "id": "d",
+          "label": "измерять уверенность"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Undermine — постепенно ослаблять основу чего-либо.",
+      "topic": "Абстрактные сочетания"
+    },
+    {
+      "code": "en-ru-v1-b2-vocabulary-03",
+      "level": "B2",
+      "category": "vocabulary",
+      "prompt": "Что значит «take something for granted»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "получать деньги на проект"
+        },
+        {
+          "id": "b",
+          "label": "официально разрешать что-либо"
+        },
+        {
+          "id": "c",
+          "label": "считать что-либо само собой разумеющимся"
+        },
+        {
+          "id": "d",
+          "label": "откладывать решение"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Так говорят о вещах, ценность или наличие которых не ставят под вопрос.",
+      "topic": "Идиоматические выражения"
+    },
+    {
+      "code": "en-ru-v1-b2-vocabulary-04",
+      "level": "B2",
+      "category": "vocabulary",
+      "prompt": "Что означает «rule out a possibility»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "подтвердить неизбежность"
+        },
+        {
+          "id": "b",
+          "label": "проверить грамматику"
+        },
+        {
+          "id": "c",
+          "label": "записать правило"
+        },
+        {
+          "id": "d",
+          "label": "исключить возможность"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Rule out — исключать как возможный вариант.",
+      "topic": "Аргументация"
+    },
+    {
+      "code": "en-ru-v1-b2-vocabulary-05",
+      "level": "B2",
+      "category": "vocabulary",
+      "prompt": "Что означает «a temporary setback»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "окончательная победа"
+        },
+        {
+          "id": "b",
+          "label": "временная неудача или задержка"
+        },
+        {
+          "id": "c",
+          "label": "обязательная награда"
+        },
+        {
+          "id": "d",
+          "label": "постоянная привычка"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Setback мешает продвижению, но не обязательно означает окончательный провал.",
+      "topic": "Работа с трудностями"
+    },
+    {
+      "code": "en-ru-v1-b2-vocabulary-06",
+      "level": "B2",
+      "category": "vocabulary",
+      "prompt": "Что значит «break even» о бизнесе?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "выйти на безубыточность"
+        },
+        {
+          "id": "b",
+          "label": "обанкротиться"
+        },
+        {
+          "id": "c",
+          "label": "закрыться на выходные"
+        },
+        {
+          "id": "d",
+          "label": "удвоить прибыль"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Доходы покрывают расходы, без прибыли и убытка.",
+      "topic": "Деловой английский"
+    },
+    {
+      "code": "en-ru-v1-b2-reading-01",
+      "level": "B2",
+      "category": "reading",
+      "prompt": "Почему автор осторожно относится к результатам?",
+      "passage": "A trial of the four-day working week at one small company reported higher staff satisfaction. The finding is encouraging, but the trial involved only twenty employees. Larger studies would be needed before assuming that the same benefits apply across different industries.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Результаты уже опровергнуты"
+        },
+        {
+          "id": "b",
+          "label": "Выборка слишком мала для широкого вывода"
+        },
+        {
+          "id": "c",
+          "label": "Исследование не проводилось"
+        },
+        {
+          "id": "d",
+          "label": "Все участники дали одинаковые ответы"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Небольшая выборка не даёт уверенно переносить вывод на всех сотрудников.",
+      "topic": "Ограничения исследования"
+    },
+    {
+      "code": "en-ru-v1-b2-reading-02",
+      "level": "B2",
+      "category": "reading",
+      "prompt": "Какова позиция автора о бесплатном транспорте?",
+      "passage": "Making buses free could help people on low incomes. Yet price is only one reason why many drivers avoid them. Unless services become more frequent and reliable, removing fares alone is unlikely to persuade large numbers of people to leave their cars at home.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Идея полезна, но нужны дополнительные меры"
+        },
+        {
+          "id": "b",
+          "label": "Любое снижение цены бессмысленно"
+        },
+        {
+          "id": "c",
+          "label": "Общественный транспорт нужно отменить"
+        },
+        {
+          "id": "d",
+          "label": "Идея гарантированно решит все проблемы"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Автор поддерживает идею, но указывает на значение частоты и надёжности рейсов.",
+      "topic": "Позиция автора"
+    },
+    {
+      "code": "en-ru-v1-b2-reading-03",
+      "level": "B2",
+      "category": "reading",
+      "prompt": "На что намекает автор отзыва?",
+      "passage": "The device offers an impressive range of features for its price. Unfortunately, finding those features requires working through several confusing menus. Enthusiasts may enjoy exploring it, but anyone wanting a straightforward everyday tool should probably look elsewhere.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Устройство не имеет полезных функций"
+        },
+        {
+          "id": "b",
+          "label": "Высокая цена гарантирует удобство"
+        },
+        {
+          "id": "c",
+          "label": "Технических характеристик недостаточно для удобства"
+        },
+        {
+          "id": "d",
+          "label": "Все отзывы покупателей ложные"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Много функций противопоставлено запутанному управлению.",
+      "topic": "Подтекст отзыва"
+    },
+    {
+      "code": "en-ru-v1-b2-reading-04",
+      "level": "B2",
+      "category": "reading",
+      "prompt": "Почему предложение пока не принято?",
+      "passage": "The committee agreed that extending the library’s opening hours would benefit students. However, members disagreed over whether the extra staffing costs should come from the university or local council. The proposal will be reconsidered once funding responsibilities are clearer.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Неясно, кто оплатит его реализацию"
+        },
+        {
+          "id": "b",
+          "label": "Никто не обсуждал его преимущества"
+        },
+        {
+          "id": "c",
+          "label": "Решение уже запрещено законом"
+        },
+        {
+          "id": "d",
+          "label": "Участники считают проблему вымышленной"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Участники признают пользу, но спорят о распределении расходов.",
+      "topic": "Деловые решения"
+    },
+    {
+      "code": "en-ru-v1-b2-reading-05",
+      "level": "B2",
+      "category": "reading",
+      "prompt": "Какой вывод поддерживает текст?",
+      "passage": "Online courses offer flexibility, especially for people who work irregular hours. But students without a quiet place to study may find them difficult to follow. A useful education policy should therefore offer a range of options rather than treating one format as ideal for everyone.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Очное обучение полностью устарело"
+        },
+        {
+          "id": "b",
+          "label": "Доступ к интернету не имеет значения"
+        },
+        {
+          "id": "c",
+          "label": "Обучение должно учитывать разные потребности"
+        },
+        {
+          "id": "d",
+          "label": "Один формат одинаково удобен всем"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Преимущества гибкости сопоставлены с ограничениями отдельных учащихся.",
+      "topic": "Сопоставление аргументов"
+    },
+    {
+      "code": "en-ru-v1-b2-reading-06",
+      "level": "B2",
+      "category": "reading",
+      "prompt": "Что означает обещание компании в контексте?",
+      "passage": "After complaints about battery life, the company promised a software update next month. It said the update should reduce power use, but independent reviewers have not yet tested it. Customers can still request a refund under the existing policy.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Она планирует улучшения, но ещё не доказала результат"
+        },
+        {
+          "id": "b",
+          "label": "Возвраты денег больше не нужны"
+        },
+        {
+          "id": "c",
+          "label": "Все неисправности уже устранены"
+        },
+        {
+          "id": "d",
+          "label": "Компания прекращает выпуск продукта"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Обещание будущих изменений не равно подтверждённому устранению текущих проблем.",
+      "topic": "Факт и обещание"
+    },
+    {
+      "code": "en-ru-v1-c1-grammar-01",
+      "level": "C1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: The committee recommended that the report ___ immediately.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "be published"
+        },
+        {
+          "id": "b",
+          "label": "has published"
+        },
+        {
+          "id": "c",
+          "label": "is publishing"
+        },
+        {
+          "id": "d",
+          "label": "was publish"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "В формальном мандативном сослагательном наклонении используется be published.",
+      "topic": "Мандативные конструкции"
+    },
+    {
+      "code": "en-ru-v1-c1-grammar-02",
+      "level": "C1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: ___ the warning, we would have taken a different route.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "Have we seen"
+        },
+        {
+          "id": "b",
+          "label": "If we would see"
+        },
+        {
+          "id": "c",
+          "label": "Had we seen"
+        },
+        {
+          "id": "d",
+          "label": "Did we seen"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Had we seen заменяет If we had seen в формальном условном предложении.",
+      "topic": "Условная инверсия"
+    },
+    {
+      "code": "en-ru-v1-c1-grammar-03",
+      "level": "C1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: It was the lack of evidence ___ concerned the judge.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "where"
+        },
+        {
+          "id": "b",
+          "label": "that"
+        },
+        {
+          "id": "c",
+          "label": "whose"
+        },
+        {
+          "id": "d",
+          "label": "what"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "В cleft-конструкции It was ... that выделяется причина беспокойства.",
+      "topic": "Эмфатические конструкции"
+    },
+    {
+      "code": "en-ru-v1-c1-grammar-04",
+      "level": "C1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: ___ persuasive the argument may seem, it lacks evidence.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "Whatever of"
+        },
+        {
+          "id": "b",
+          "label": "Despite"
+        },
+        {
+          "id": "c",
+          "label": "However"
+        },
+        {
+          "id": "d",
+          "label": "Although of"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "However + прилагательное вводит уступку: как бы убедительно ни казалось.",
+      "topic": "Формальная уступка"
+    },
+    {
+      "code": "en-ru-v1-c1-grammar-05",
+      "level": "C1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: They kept the documents secure lest they ___ into the wrong hands.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "fell"
+        },
+        {
+          "id": "b",
+          "label": "fall"
+        },
+        {
+          "id": "c",
+          "label": "have fallen"
+        },
+        {
+          "id": "d",
+          "label": "are falling"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "После lest в формальном английском возможна базовая форма fall.",
+      "topic": "Lest и сослагательное наклонение"
+    },
+    {
+      "code": "en-ru-v1-c1-grammar-06",
+      "level": "C1",
+      "category": "grammar",
+      "prompt": "Выбери оборот, подчёркивающий завершение анализа до пересмотра вывода: ___ the data, the researchers revised their conclusion.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "Having re-examining"
+        },
+        {
+          "id": "b",
+          "label": "To re-examine"
+        },
+        {
+          "id": "c",
+          "label": "Re-examining"
+        },
+        {
+          "id": "d",
+          "label": "Having re-examined"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Having + причастие обозначает предшествующее действие того же субъекта.",
+      "topic": "Перфектные причастные обороты"
+    },
+    {
+      "code": "en-ru-v1-c1-grammar-07",
+      "level": "C1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: No sooner had she arrived ___ the discussion began.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "when"
+        },
+        {
+          "id": "b",
+          "label": "that"
+        },
+        {
+          "id": "c",
+          "label": "than"
+        },
+        {
+          "id": "d",
+          "label": "then"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Устойчивая конструкция: no sooner ... than.",
+      "topic": "Парные конструкции"
+    },
+    {
+      "code": "en-ru-v1-c1-grammar-08",
+      "level": "C1",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: Were it not for your support, I ___ the project now.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "would be struggling with"
+        },
+        {
+          "id": "b",
+          "label": "will struggle with"
+        },
+        {
+          "id": "c",
+          "label": "would have struggled yesterday with"
+        },
+        {
+          "id": "d",
+          "label": "had struggled with"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Were it not for описывает нереальное условие в настоящем.",
+      "topic": "Нереальное настоящее"
+    },
+    {
+      "code": "en-ru-v1-c1-vocabulary-01",
+      "level": "C1",
+      "category": "vocabulary",
+      "prompt": "Что означает «mitigate the impact»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "измерить только стоимость"
+        },
+        {
+          "id": "b",
+          "label": "полностью отрицать последствия"
+        },
+        {
+          "id": "c",
+          "label": "смягчить последствия"
+        },
+        {
+          "id": "d",
+          "label": "немедленно усилить воздействие"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Mitigate — уменьшить тяжесть или негативное воздействие, не обязательно устранить.",
+      "topic": "Академические сочетания"
+    },
+    {
+      "code": "en-ru-v1-c1-vocabulary-02",
+      "level": "C1",
+      "category": "vocabulary",
+      "prompt": "Что передаёт «ostensibly»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "абсолютно доказанную причину"
+        },
+        {
+          "id": "b",
+          "label": "только неожиданную причину"
+        },
+        {
+          "id": "c",
+          "label": "отсутствие всякой причины"
+        },
+        {
+          "id": "d",
+          "label": "заявленную или внешне очевидную причину, которая может отличаться от реальной"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Ostensibly часто показывает дистанцию между заявленной и возможной реальной целью.",
+      "topic": "Позиция говорящего"
+    },
+    {
+      "code": "en-ru-v1-c1-vocabulary-03",
+      "level": "C1",
+      "category": "vocabulary",
+      "prompt": "Что означает «a nuanced account»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "описание, учитывающее тонкие различия"
+        },
+        {
+          "id": "b",
+          "label": "список без пояснений"
+        },
+        {
+          "id": "c",
+          "label": "крайне упрощённое описание"
+        },
+        {
+          "id": "d",
+          "label": "точная сумма на банковском счёте"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Nuanced подчёркивает внимание к оттенкам и сложности.",
+      "topic": "Точность описания"
+    },
+    {
+      "code": "en-ru-v1-c1-vocabulary-04",
+      "level": "C1",
+      "category": "vocabulary",
+      "prompt": "Что значит «preclude further discussion»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "попросить выступить первым"
+        },
+        {
+          "id": "b",
+          "label": "начать обсуждение заново"
+        },
+        {
+          "id": "c",
+          "label": "исключить возможность дальнейшего обсуждения"
+        },
+        {
+          "id": "d",
+          "label": "подвести предварительный итог"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Preclude — делать событие невозможным или не допускать его.",
+      "topic": "Формальная лексика"
+    },
+    {
+      "code": "en-ru-v1-c1-vocabulary-05",
+      "level": "C1",
+      "category": "vocabulary",
+      "prompt": "Что означает «corroborate a claim»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "опровергнуть утверждение без доказательств"
+        },
+        {
+          "id": "b",
+          "label": "изменить тему разговора"
+        },
+        {
+          "id": "c",
+          "label": "повторить утверждение громче"
+        },
+        {
+          "id": "d",
+          "label": "подкрепить утверждение независимыми данными"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Corroborate — подтверждать или подкреплять другими свидетельствами.",
+      "topic": "Работа с доказательствами"
+    },
+    {
+      "code": "en-ru-v1-c1-vocabulary-06",
+      "level": "C1",
+      "category": "vocabulary",
+      "prompt": "Что означает «an equivocal response»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "однозначное согласие"
+        },
+        {
+          "id": "b",
+          "label": "подробный технический отчёт"
+        },
+        {
+          "id": "c",
+          "label": "грамматически неверный ответ"
+        },
+        {
+          "id": "d",
+          "label": "неоднозначный, уклончивый ответ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Equivocal допускает несколько толкований или избегает ясной позиции.",
+      "topic": "Интерпретация речи"
+    },
+    {
+      "code": "en-ru-v1-c1-reading-01",
+      "level": "C1",
+      "category": "reading",
+      "prompt": "Какой вывод обоснован результатом исследования?",
+      "passage": "Employees who drank coffee reported greater productivity in a survey. The authors caution that the study was observational: coffee drinkers may also have differed in sleep patterns or job responsibilities. The association is worth investigating, but it does not establish that coffee itself caused the higher productivity.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Продуктивные люди никогда не пьют чай"
+        },
+        {
+          "id": "b",
+          "label": "Связь найдена, но причинность ещё не установлена"
+        },
+        {
+          "id": "c",
+          "label": "Наблюдательные исследования бесполезны"
+        },
+        {
+          "id": "d",
+          "label": "Кофе доказанно повышает продуктивность любого человека"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Авторы отделяют наблюдаемую корреляцию от доказательства причины.",
+      "topic": "Корреляция и причинность"
+    },
+    {
+      "code": "en-ru-v1-c1-reading-02",
+      "level": "C1",
+      "category": "reading",
+      "prompt": "Какую функцию выполняет последняя фраза?",
+      "passage": "Publishing performance data may improve accountability by making poor outcomes harder to ignore. Yet figures can be selected strategically, and what is measurable is not always what matters most. Transparency is therefore valuable only when the public also has enough context to interpret the information meaningfully.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Ограничивает применимость предложенного решения"
+        },
+        {
+          "id": "b",
+          "label": "Объявляет о завершённом эксперименте"
+        },
+        {
+          "id": "c",
+          "label": "Повторяет финансовые данные"
+        },
+        {
+          "id": "d",
+          "label": "Полностью отменяет все предыдущие аргументы"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Последнее предложение вводит условие, при котором мера может работать.",
+      "topic": "Структура аргумента"
+    },
+    {
+      "code": "en-ru-v1-c1-reading-03",
+      "level": "C1",
+      "category": "reading",
+      "prompt": "Как автор относится к восстановлению исторического здания?",
+      "passage": "Restoring the old theatre would preserve a distinctive part of the town’s identity. Turning it into affordable housing would meet a pressing practical need. Neither option is cost-free: the decision involves competing public values, not simply a choice between people who care about heritage and those who do not.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Утверждает, что существует единственное верное решение"
+        },
+        {
+          "id": "b",
+          "label": "Требует точной копии любой ценой"
+        },
+        {
+          "id": "c",
+          "label": "Поддерживает сохранение, но признаёт сложность выбора"
+        },
+        {
+          "id": "d",
+          "label": "Считает историю неважной"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Автор описывает конфликт ценностей, не сводя его к простому ответу.",
+      "topic": "Сложная авторская позиция"
+    },
+    {
+      "code": "en-ru-v1-c1-reading-04",
+      "level": "C1",
+      "category": "reading",
+      "prompt": "Что подразумевает автор под критикой показателя?",
+      "passage": "A call centre began rewarding staff for handling calls quickly. Average call length fell, but repeat complaints increased. The target encouraged employees to end conversations before problems were resolved. Measuring an activity can change the activity itself, sometimes at the expense of the outcome the measure was intended to improve.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Сотрудники не реагируют на оценивание"
+        },
+        {
+          "id": "b",
+          "label": "Показатель может изменить поведение вопреки исходной цели"
+        },
+        {
+          "id": "c",
+          "label": "Поведение людей невозможно наблюдать"
+        },
+        {
+          "id": "d",
+          "label": "Любые числовые показатели всегда точны"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Награждение за скорость способно ухудшить качество, ради которого вводили оценку.",
+      "topic": "Побочные эффекты политики"
+    },
+    {
+      "code": "en-ru-v1-c1-reading-05",
+      "level": "C1",
+      "category": "reading",
+      "prompt": "Почему автор упоминает предыдущие исследования?",
+      "passage": "Earlier studies suggested that financial incentives reliably improve attendance. The new study found little effect among workers whose main difficulty was unpredictable childcare. This does not render the earlier evidence irrelevant; rather, it identifies a setting in which a commonly useful intervention may fail to address the actual barrier.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Чтобы показать, что новый результат уточняет, а не полностью отвергает прежние выводы"
+        },
+        {
+          "id": "b",
+          "label": "Чтобы доказать недобросовестность всех прежних авторов"
+        },
+        {
+          "id": "c",
+          "label": "Чтобы заявить об отсутствии новых данных"
+        },
+        {
+          "id": "d",
+          "label": "Чтобы заменить анализ ссылками"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Новый результат относится к особым условиям и ограничивает широту старого вывода.",
+      "topic": "Сопоставление исследований"
+    },
+    {
+      "code": "en-ru-v1-c1-reading-06",
+      "level": "C1",
+      "category": "reading",
+      "prompt": "Какой принцип отстаивает автор?",
+      "passage": "Policymakers rarely enjoy complete information, and waiting for certainty can itself be costly. The appropriate response is not to abandon evidence but to make decisions proportionate to its strength, explain the remaining uncertainty and remain willing to revise the policy when better information becomes available.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Соразмерность уверенности качеству доказательств"
+        },
+        {
+          "id": "b",
+          "label": "Необходимость одинаковой уверенности во всех выводах"
+        },
+        {
+          "id": "c",
+          "label": "Запрет любых решений при неполной информации"
+        },
+        {
+          "id": "d",
+          "label": "Приоритет популярного мнения над фактами"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Неопределённость допускает действие, но требует честно обозначать пределы знания.",
+      "topic": "Эпистемическая осторожность"
+    },
+    {
+      "code": "en-ru-v1-c2-grammar-01",
+      "level": "C2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: Much ___ I admire her research, I question this conclusion.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "as"
+        },
+        {
+          "id": "b",
+          "label": "however of"
+        },
+        {
+          "id": "c",
+          "label": "that"
+        },
+        {
+          "id": "d",
+          "label": "despite"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Much as вводит уступку: хотя я высоко ценю её исследование.",
+      "topic": "Стилистическая уступка"
+    },
+    {
+      "code": "en-ru-v1-c2-grammar-02",
+      "level": "C2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: ___ to withdraw its support, the scheme would collapse.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "If the council would"
+        },
+        {
+          "id": "b",
+          "label": "Had the council"
+        },
+        {
+          "id": "c",
+          "label": "Should the council had"
+        },
+        {
+          "id": "d",
+          "label": "Were the council"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Were ... to выражает гипотетическое будущее условие с инверсией.",
+      "topic": "Формальное гипотетическое условие"
+    },
+    {
+      "code": "en-ru-v1-c2-grammar-03",
+      "level": "C2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: Little ___ that the decision would have such consequences.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "had they realise"
+        },
+        {
+          "id": "b",
+          "label": "did they realise"
+        },
+        {
+          "id": "c",
+          "label": "they did realise"
+        },
+        {
+          "id": "d",
+          "label": "they were realised"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Вынесенное отрицательное Little требует инверсии did they realise.",
+      "topic": "Отрицательная инверсия"
+    },
+    {
+      "code": "en-ru-v1-c2-grammar-04",
+      "level": "C2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: Only after the archive had been opened ___ the scale of the problem.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "did historians appreciate"
+        },
+        {
+          "id": "b",
+          "label": "had historians appreciate"
+        },
+        {
+          "id": "c",
+          "label": "historians appreciated"
+        },
+        {
+          "id": "d",
+          "label": "historians did appreciated"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "После Only after ... в главной части требуется инверсия.",
+      "topic": "Область действия инверсии"
+    },
+    {
+      "code": "en-ru-v1-c2-grammar-05",
+      "level": "C2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: Convincing ___ the account appears, several details remain unverified.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "what"
+        },
+        {
+          "id": "b",
+          "label": "though"
+        },
+        {
+          "id": "c",
+          "label": "however"
+        },
+        {
+          "id": "d",
+          "label": "despite"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "При вынесенном прилагательном though связывает уступительную конструкцию.",
+      "topic": "Формальная письменная речь"
+    },
+    {
+      "code": "en-ru-v1-c2-grammar-06",
+      "level": "C2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: The policy may well prove effective. Как передать ту же степень уверенности?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "The policy is certain to be effective."
+        },
+        {
+          "id": "b",
+          "label": "The policy cannot be effective."
+        },
+        {
+          "id": "c",
+          "label": "The policy has already proved effective."
+        },
+        {
+          "id": "d",
+          "label": "The policy could quite possibly turn out to be effective."
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "May well выражает заметную вероятность, но не доказанный факт или гарантию.",
+      "topic": "Модальность и степень уверенности"
+    },
+    {
+      "code": "en-ru-v1-c2-grammar-07",
+      "level": "C2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: Выбери формальный эквивалент без изменения смысла: We did not receive the report until Monday.",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "Not until Monday we did receive the report."
+        },
+        {
+          "id": "b",
+          "label": "It was Monday that we had never received the report."
+        },
+        {
+          "id": "c",
+          "label": "Not until Monday did we receive the report."
+        },
+        {
+          "id": "d",
+          "label": "Until Monday did we not received the report."
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Not until в начале требует инверсии; смысл ограничения по времени сохраняется.",
+      "topic": "Точное перефразирование"
+    },
+    {
+      "code": "en-ru-v1-c2-grammar-08",
+      "level": "C2",
+      "category": "grammar",
+      "prompt": "Выбери вариант, который завершает предложение: She would have objected, had she been consulted. Что означает had she been consulted?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "because someone had consulted her"
+        },
+        {
+          "id": "b",
+          "label": "if someone had consulted her"
+        },
+        {
+          "id": "c",
+          "label": "although no one needed to consult her"
+        },
+        {
+          "id": "d",
+          "label": "after someone consulted her"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Инверсия had she been consulted вводит нереальное условие в прошлом.",
+      "topic": "Синтаксический подтекст"
+    },
+    {
+      "code": "en-ru-v1-c2-vocabulary-01",
+      "level": "C2",
+      "category": "vocabulary",
+      "prompt": "Что означает «disingenuous» о заявлении?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "всегда намеренно смешное"
+        },
+        {
+          "id": "b",
+          "label": "неискреннее, скрывающее истинные мотивы под видом простодушия"
+        },
+        {
+          "id": "c",
+          "label": "просто непонятное из-за терминов"
+        },
+        {
+          "id": "d",
+          "label": "основанное на точных расчётах"
+        }
+      ],
+      "correctOption": "b",
+      "explanation": "Disingenuous предполагает притворную искренность или невинность, а не просто ошибку.",
+      "topic": "Оценка искренности"
+    },
+    {
+      "code": "en-ru-v1-c2-vocabulary-02",
+      "level": "C2",
+      "category": "vocabulary",
+      "prompt": "Что означает «an inchoate idea»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "идея с единственным толкованием"
+        },
+        {
+          "id": "b",
+          "label": "идея, которую уже запретили"
+        },
+        {
+          "id": "c",
+          "label": "идея, проверенная годами"
+        },
+        {
+          "id": "d",
+          "label": "идея, которая ещё не оформилась"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Inchoate описывает начальную, ещё не организованную форму.",
+      "topic": "Стадии формирования"
+    },
+    {
+      "code": "en-ru-v1-c2-vocabulary-03",
+      "level": "C2",
+      "category": "vocabulary",
+      "prompt": "Чем характеризуется «a specious argument»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "Он обязательно содержит оскорбление"
+        },
+        {
+          "id": "b",
+          "label": "Он выражен предельно кратко"
+        },
+        {
+          "id": "c",
+          "label": "Он доказан без исключений"
+        },
+        {
+          "id": "d",
+          "label": "Он кажется убедительным, но на деле ошибочен"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Specious — внешне правдоподобный, но вводящий в заблуждение.",
+      "topic": "Критическая оценка аргумента"
+    },
+    {
+      "code": "en-ru-v1-c2-vocabulary-04",
+      "level": "C2",
+      "category": "vocabulary",
+      "prompt": "Что означает «obviate the need»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "устранить необходимость"
+        },
+        {
+          "id": "b",
+          "label": "сделать потребность очевидной"
+        },
+        {
+          "id": "c",
+          "label": "увеличить необходимость"
+        },
+        {
+          "id": "d",
+          "label": "отложить обсуждение потребности"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Obviate the need — сделать что-либо ненужным, а не просто заметным.",
+      "topic": "Точность формальной лексики"
+    },
+    {
+      "code": "en-ru-v1-c2-vocabulary-05",
+      "level": "C2",
+      "category": "vocabulary",
+      "prompt": "Что означает «a tendentious interpretation»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "толкование, понятное только детям"
+        },
+        {
+          "id": "b",
+          "label": "временно забытое толкование"
+        },
+        {
+          "id": "c",
+          "label": "беспристрастное перечисление фактов"
+        },
+        {
+          "id": "d",
+          "label": "интерпретация, продвигающая определённую предвзятую позицию"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Tendentious указывает на пристрастность и намерение поддержать определённую точку зрения.",
+      "topic": "Предвзятость текста"
+    },
+    {
+      "code": "en-ru-v1-c2-vocabulary-06",
+      "level": "C2",
+      "category": "vocabulary",
+      "prompt": "Что означает «a laconic reply»?",
+      "passage": null,
+      "options": [
+        {
+          "id": "a",
+          "label": "намеренно противоречивый ответ"
+        },
+        {
+          "id": "b",
+          "label": "восторженная длинная речь"
+        },
+        {
+          "id": "c",
+          "label": "ответ со множеством пояснений"
+        },
+        {
+          "id": "d",
+          "label": "предельно краткий ответ"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Laconic — немногословный, часто сдержанный ответ.",
+      "topic": "Регистр и стиль"
+    },
+    {
+      "code": "en-ru-v1-c2-reading-01",
+      "level": "C2",
+      "category": "reading",
+      "prompt": "Какую тонкую критику содержит текст?",
+      "passage": "The commission congratulated itself on releasing thousands of pages. Few readers, however, could discover how a particular decision had been reached, since the documents were neither indexed nor linked to the relevant votes. Transparency had been achieved in the narrowest sense: the information was available, while the reasoning remained effectively beyond scrutiny.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Объявленная открытость может скрывать отсутствие реальной подотчётности"
+        },
+        {
+          "id": "b",
+          "label": "Любое большое количество документов гарантирует прозрачность"
+        },
+        {
+          "id": "c",
+          "label": "Комиссия вообще не публиковала документов"
+        },
+        {
+          "id": "d",
+          "label": "Автор требует полностью закрыть заседания"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Автор противопоставляет формальное раскрытие документов возможности понять и оспорить решение.",
+      "topic": "Риторический подтекст"
+    },
+    {
+      "code": "en-ru-v1-c2-reading-02",
+      "level": "C2",
+      "category": "reading",
+      "prompt": "Как автор переосмысливает понятие независимости?",
+      "passage": "An expert may have no financial stake in a proposal and still approach it through assumptions absorbed over decades. This is not an argument against expertise. It is a reminder that independence is better understood as a disciplined awareness of one’s commitments than as a condition magically conferred by the absence of a declared conflict.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Экспертам вообще нельзя доверять"
+        },
+        {
+          "id": "b",
+          "label": "Независимый эксперт обязан игнорировать любые данные"
+        },
+        {
+          "id": "c",
+          "label": "Отсутствие связей автоматически исключает предвзятость"
+        },
+        {
+          "id": "d",
+          "label": "Независимость требует осознавать собственные ограничения, а не отрицать их"
+        }
+      ],
+      "correctOption": "d",
+      "explanation": "Отсутствие прямых интересов отделяется от более широких интеллектуальных и социальных влияний.",
+      "topic": "Концептуальные различия"
+    },
+    {
+      "code": "en-ru-v1-c2-reading-03",
+      "level": "C2",
+      "category": "reading",
+      "prompt": "Что означает оговорка автора?",
+      "passage": "The programme’s graduates earned more than non-participants, a result the organisers understandably celebrated. Yet enrolment was voluntary, and those joining had already demonstrated unusual persistence. Unless that pre-existing difference is accounted for, the earnings gap cannot straightforwardly be attributed to the programme, however plausible its benefits may be.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Эксперимент доказал неэффективность программы для всех"
+        },
+        {
+          "id": "b",
+          "label": "Высокая мотивация не связана с результатами"
+        },
+        {
+          "id": "c",
+          "label": "Положительный результат может быть следствием особенностей отбора участников"
+        },
+        {
+          "id": "d",
+          "label": "Все участники были выбраны случайно"
+        }
+      ],
+      "correctOption": "c",
+      "explanation": "Добровольный выбор участия создаёт альтернативное объяснение успеха, которое нужно отделить от эффекта программы.",
+      "topic": "Методологическая интерпретация"
+    },
+    {
+      "code": "en-ru-v1-c2-reading-04",
+      "level": "C2",
+      "category": "reading",
+      "prompt": "Какую позицию занимает автор по отношению к компромиссу?",
+      "passage": "Compromise is often praised as though splitting the difference were intrinsically wise. But a midpoint between two positions inherits no automatic claim to justice. Negotiation earns its value when it reconciles legitimate concerns; it loses that value when agreement itself becomes a substitute for asking whether the resulting settlement can be defended.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Компромисс полезен не сам по себе, а при сохранении обоснованных принципов"
+        },
+        {
+          "id": "b",
+          "label": "Уступки всегда свидетельствуют о слабости"
+        },
+        {
+          "id": "c",
+          "label": "Любой компромисс обязательно справедлив"
+        },
+        {
+          "id": "d",
+          "label": "Несогласие нужно устранять любой ценой"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Автор различает переговорное решение и механический отказ от принципов ради согласия.",
+      "topic": "Нормативная аргументация"
+    },
+    {
+      "code": "en-ru-v1-c2-reading-05",
+      "level": "C2",
+      "category": "reading",
+      "prompt": "Как следует понимать последнюю фразу?",
+      "passage": "The department announced a bold new era of responsiveness, complete with a redesigned logo and an ambitious statement of values. Applicants continued to receive the same unsigned template letters, usually after the same lengthy delay. Whatever had been transformed, it was not yet the experience of those waiting for an answer.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Автор сомневается, что громкое объявление сопровождалось существенным изменением"
+        },
+        {
+          "id": "b",
+          "label": "Автор утверждает, что проект окончательно завершён"
+        },
+        {
+          "id": "c",
+          "label": "Автор считает любое объявление ненужным"
+        },
+        {
+          "id": "d",
+          "label": "Автор восхищается скоростью всех преобразований"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Контраст между торжественной риторикой и повторением старой практики создаёт сдержанную иронию.",
+      "topic": "Ирония и авторская дистанция"
+    },
+    {
+      "code": "en-ru-v1-c2-reading-06",
+      "level": "C2",
+      "category": "reading",
+      "prompt": "Какой вывод лучше сохраняет нюанс исходного текста?",
+      "passage": "A model’s omissions are not necessarily defects: simplification is what makes modelling possible. The difficulty arises when a useful abstraction hardens into a complete account of reality. Knowing where a model ceases to illuminate is therefore part of understanding it, not an admission that the enterprise of modelling has failed.",
+      "options": [
+        {
+          "id": "a",
+          "label": "Знание пределов модели помогает применять её, не превращая в универсальное объяснение"
+        },
+        {
+          "id": "b",
+          "label": "Любая модель бесполезна, если существуют исключения"
+        },
+        {
+          "id": "c",
+          "label": "Исключения нужно исключить из анализа"
+        },
+        {
+          "id": "d",
+          "label": "Простота модели доказывает её универсальность"
+        }
+      ],
+      "correctOption": "a",
+      "explanation": "Автор защищает ограниченную полезность модели и предостерегает от смешения инструмента с самой реальностью.",
+      "topic": "Синтез сложного текста"
+    }
+  ]
+}

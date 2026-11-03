@@ -25,6 +25,7 @@ export async function adminServer() {
   for (const file of (await readdir('supabase/migrations')).sort())
     await db.exec(await readFile(`supabase/migrations/${file}`, 'utf8'));
   await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+  await db.exec(await readFile('supabase/placement-seed.sql', 'utf8'));
   await db.query('INSERT INTO auth.users VALUES($1),($2)', [admin, student]);
   await db.query(
     "INSERT INTO public.users(id,display_name,telegram_id) VALUES($1,'Owner',123),($2,'Student',456)",
@@ -114,6 +115,48 @@ export async function adminServer() {
                   JSON.stringify(b.p_data),
                   b.p_confirmation,
                 ],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/placement_status')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.placement_status($1) AS data',
+                [b.p_user],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/placement_start')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.placement_start($1,$2) AS data',
+                [b.p_user, b.p_request],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/placement_beginner')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.placement_beginner($1) AS data',
+                [b.p_user],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/placement_set_route')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.placement_set_route($1,$2) AS data',
+                [b.p_user, b.p_level],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/placement_answer')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.placement_answer($1,$2,$3,$4,$5) AS data',
+                [b.p_user, b.p_attempt, b.p_question, b.p_request, b.p_option],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/game_summary')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.game_summary($1) AS data',
+                [b.p_user],
               )
             ).rows[0].data;
           else throw new Error('unsupported fixture RPC');
