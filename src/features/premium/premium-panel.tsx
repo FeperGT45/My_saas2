@@ -1,4 +1,5 @@
 'use client';
+import { fetchWithTimeout, readJson } from '@/lib/http/client';
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { Check, Crown, ShieldCheck, RefreshCw } from 'lucide-react';
@@ -48,20 +49,20 @@ export function PremiumPanel() {
   useEffect(() => {
     if (account?.mode !== 'telegram') return;
     let active = true;
-    void fetch('/api/premium', { cache: 'no-store' })
+    void fetchWithTimeout('/api/premium', { cache: 'no-store' })
       .then(async (r) => {
-        const data = await r.json();
+        const data = await readJson(r);
         if (!r.ok) throw new Error(data.error);
         if (active) {
           setLoaded({ owner: account.id, status: data });
           setError(null);
         }
         if (data.premium) {
-          const response = await fetch('/api/premium/features', {
+          const response = await fetchWithTimeout('/api/premium/features', {
             cache: 'no-store',
           });
           if (!response.ok) throw new Error('Не удалось загрузить статистику.');
-          const detail = await response.json();
+          const detail = await readJson(response);
           if (active) setFeatures({ owner: account.id, data: detail });
         }
       })
@@ -81,7 +82,7 @@ export function PremiumPanel() {
       const sdk = await import('@tma.js/sdk-react');
       if (!sdk.invoice.openUrl.isAvailable())
         throw new Error('Открой Premium в мобильном Telegram.');
-      const response = await fetch('/api/premium/invoice', {
+      const response = await fetchWithTimeout('/api/premium/invoice', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -89,7 +90,7 @@ export function PremiumPanel() {
           acceptTerms: agreed,
         }),
       });
-      const data = await response.json();
+      const data = await readJson(response);
       if (!response.ok) {
         if (response.status === 409) request.current = null;
         throw new Error(data.error);
@@ -174,12 +175,12 @@ export function PremiumPanel() {
           </Card>
         ))}
       </div>
-      {!account && (
+      {account?.mode !== 'telegram' && (
         <p className="text-muted-foreground my-4 text-sm">
           Войди через Telegram, чтобы проверить свой статус.
         </p>
       )}
-      {account && !status && !error && (
+      {account?.mode === 'telegram' && !status && !error && (
         <p role="status" className="text-muted-foreground my-4 text-sm">
           Проверяем подписку…
         </p>

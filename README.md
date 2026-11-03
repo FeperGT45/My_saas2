@@ -384,3 +384,9 @@ npm run test:cloudflare
 ```
 
 `npm run deploy:cloudflare` публикует готовую сборку и выполняется только после разрешения владельца. Здесь публикация не выполнялась. Точные настройки GitHub/Cloudflare, build/runtime variables и последовательность запуска — в [docs/CLOUDFLARE.md](docs/CLOUDFLARE.md).
+
+## Комплексный аудит
+
+Отчёт и границы проверки: [docs/AUDIT-2026-11-03.md](docs/AUDIT-2026-11-03.md).
+
+`npm run test:unit` запускает Vitest, `npm run test:regression` — существующие SQL/security-наборы. После `npm run build` команда `npm run test:ui` проверяет production Next.js; после `npm run build:cloudflare` команда `npm run test:cloudflare` проверяет локальный Worker. Для установки используйте `npm ci` и поддерживаемый Node.js из `.node-version`.

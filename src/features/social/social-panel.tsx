@@ -1,4 +1,5 @@
 'use client';
+import { fetchWithTimeout, readJson } from '@/lib/http/client';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import {
@@ -31,11 +32,11 @@ export function SocialPanel({ friends = false }: { friends?: boolean }) {
   useEffect(() => {
     if (account?.mode !== 'telegram') return;
     let active = true;
-    void fetch(`/api/social?scope=${scope}&offset=${offset}`, {
+    void fetchWithTimeout(`/api/social?scope=${scope}&offset=${offset}`, {
       cache: 'no-store',
     })
       .then(async (r) => {
-        const data = await r.json();
+        const data = await readJson(r);
         if (!r.ok) throw new Error(data.error);
         if (active) {
           setLoaded({ owner: account.id, data });
@@ -279,12 +280,12 @@ export function SocialPanel({ friends = false }: { friends?: boolean }) {
             setNotice('');
             setError(null);
             try {
-              const r = await fetch('/api/social/privacy', {
+              const r = await fetchWithTimeout('/api/social/privacy', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ visible, alias }),
               });
-              const result = await r.json();
+              const result = await readJson(r);
               if (!r.ok) throw new Error(result.error);
               setNotice('Настройки приватности сохранены.');
               setRetry((n) => n + 1);

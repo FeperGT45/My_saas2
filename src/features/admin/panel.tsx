@@ -1,4 +1,5 @@
 'use client';
+import { fetchWithTimeout, readJson } from '@/lib/http/client';
 import { useEffect, useState } from 'react';
 import {
   BarChart3,
@@ -87,12 +88,12 @@ export function AdminPanel({ owner }: { owner: string }) {
   useEffect(() => {
     if (!account || account.id !== owner || account.mode !== 'telegram') return;
     const abort = new AbortController();
-    void fetch(`/api/admin?${query}`, {
+    void fetchWithTimeout(`/api/admin?${query}`, {
       cache: 'no-store',
       signal: abort.signal,
     })
       .then(async (r) => {
-        const result = await r.json();
+        const result = await readJson(r);
         if (!r.ok) throw new Error(result.error);
         setLoaded({ key: requestKey, owner: account.id, data: result });
         setError(null);
@@ -105,13 +106,13 @@ export function AdminPanel({ owner }: { owner: string }) {
   useEffect(() => {
     if (!account || account.id !== owner || current.view !== 'courses') return;
     const abort = new AbortController();
-    void fetch('/api/admin?view=languages', {
+    void fetchWithTimeout('/api/admin?view=languages', {
       cache: 'no-store',
       signal: abort.signal,
     })
       .then(async (r) => {
         if (!r.ok) throw new Error();
-        const data = await r.json();
+        const data = await readJson(r);
         setLanguages(data.items);
       })
       .catch(() => {});

@@ -1,4 +1,5 @@
 'use client';
+import { fetchWithTimeout } from '@/lib/http/client';
 import { useState } from 'react';
 import { useTelegram } from './provider';
 import { Card } from '@/components/ui/game';
@@ -35,8 +36,8 @@ export function TelegramAccount() {
             className="size-12 rounded-2xl object-cover"
           />
         )}
-        <div>
-          <p className="font-bold">{account.name}</p>
+        <div className="min-w-0 flex-1">
+          <p className="font-bold break-words">{account.name}</p>
           {account.telegramId && (
             <p className="text-muted-foreground text-xs">
               Telegram ID: {account.telegramId}
@@ -53,7 +54,9 @@ export function TelegramAccount() {
         onClick={async () => {
           setError(false);
           try {
-            const r = await fetch('/api/auth/logout', { method: 'POST' });
+            const r = await fetchWithTimeout('/api/auth/logout', {
+              method: 'POST',
+            });
             if (!r.ok) throw new Error();
             await refresh();
           } catch {

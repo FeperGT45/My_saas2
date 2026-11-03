@@ -54,9 +54,13 @@ export function validateInitData(
   const value = user as Record<string, unknown>;
   let photoUrl: string | undefined;
   if (typeof value.photo_url === 'string') {
-    const url = new URL(value.photo_url);
-    if (url.protocol === 'https:' && !url.username && !url.password)
-      photoUrl = url.href;
+    try {
+      const url = new URL(value.photo_url);
+      if (url.protocol === 'https:' && !url.username && !url.password)
+        photoUrl = url.href;
+    } catch {
+      // An optional malformed avatar must not reject a correctly signed identity.
+    }
   }
   return {
     referralCode: /^r_[a-f0-9]{32}$/.test(params.get('start_param') ?? '')

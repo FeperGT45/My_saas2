@@ -28,3 +28,41 @@ test('database health is disabled by default and never exposes schema details an
   expect([401, 404]).toContain(response.status());
   expect(await response.text()).not.toContain('tables');
 });
+
+test('all personal APIs refuse anonymous requests and forged role headers', async ({
+  request,
+}) => {
+  for (const path of [
+    '/api/game',
+    '/api/social',
+    '/api/premium',
+    '/api/premium/features',
+    '/api/admin?view=users',
+    '/api/lessons/60000000-0000-0000-0000-000000000001',
+  ]) {
+    const response = await request.get(path, {
+      headers: {
+        'x-user-id': 'a0000000-0000-0000-0000-000000000001',
+        'x-role': 'admin',
+      },
+    });
+    expect(response.status(), path).toBe(401);
+    expect(response.headers()['cache-control']).toContain('no-store');
+    const text = await response.text();
+    expect(text).not.toMatch(
+      /answer_key|token_hash|service_role|stack|SELECT /,
+    );
+  }
+  for (const path of [
+    '/api/lessons/start',
+    '/api/game/timezone',
+    '/api/social/privacy',
+    '/api/admin',
+  ]) {
+    const response = await request.post(path, {
+      headers: { origin: 'https://evil.example' },
+      data: { userId: 'forged', xp: 999999, role: 'admin' },
+    });
+    expect(response.status(), path).toBe(403);
+  }
+});

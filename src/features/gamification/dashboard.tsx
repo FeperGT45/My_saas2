@@ -1,4 +1,5 @@
 'use client';
+import { fetchWithTimeout, readJson } from '@/lib/http/client';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useTelegram } from '@/features/telegram/provider';
@@ -29,9 +30,9 @@ export function GameDashboard({
   useEffect(() => {
     if (!account || account.mode !== 'telegram') return;
     let active = true;
-    void fetch('/api/game', { cache: 'no-store' })
+    void fetchWithTimeout('/api/game', { cache: 'no-store' })
       .then(async (response) => {
-        const body = await response.json();
+        const body = await readJson(response);
         if (!response.ok) throw new Error(body.error);
         if (active) {
           setData(body);
@@ -216,12 +217,12 @@ export function GameDashboard({
               setPending(true);
               setError(null);
               try {
-                const response = await fetch('/api/game/timezone', {
+                const response = await fetchWithTimeout('/api/game/timezone', {
                   method: 'POST',
                   headers: { 'Content-Type': 'application/json' },
                   body: JSON.stringify({ timeZone: zone }),
                 });
-                const result = await response.json();
+                const result = await readJson(response);
                 if (!response.ok) throw new Error(result.error);
                 setRetry((v) => v + 1);
               } catch (e) {

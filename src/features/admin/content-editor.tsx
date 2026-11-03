@@ -1,4 +1,5 @@
 'use client';
+import { fetchWithTimeout, readJson } from '@/lib/http/client';
 import { useRef, useState, type FormEvent } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/game';
@@ -85,7 +86,7 @@ export function ContentEditor({
       const signature = JSON.stringify(data);
       if (pending.current?.signature !== signature)
         pending.current = { signature, requestId: crypto.randomUUID() };
-      const response = await fetch('/api/admin', {
+      const response = await fetchWithTimeout('/api/admin', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -95,7 +96,7 @@ export function ContentEditor({
           confirmation: `SAVE:${entity}:${id}`,
         }),
       });
-      const result = await response.json();
+      const result = await readJson(response);
       if (!response.ok) throw new Error(result.error);
       onSaved();
     } catch (e) {

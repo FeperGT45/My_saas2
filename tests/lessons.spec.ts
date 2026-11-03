@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
 import { PGlite } from '@electric-sql/pglite';
 import { readFile, readdir } from 'node:fs/promises';
 test('six mobile exercise types use database grading, recover a lost response, save and repeat', async ({
@@ -91,6 +92,13 @@ test('six mobile exercise types use database grading, recover a lost response, s
     await page.getByRole('button', { name: 'Проверить', exact: true }).click();
     await page.getByRole('button', { name: 'Дальше', exact: true }).click();
     await page.getByRole('textbox', { name: 'Пропущенное слово' }).fill('am');
+    expect(
+      (
+        await new AxeBuilder({ page })
+          .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
+          .analyze()
+      ).violations,
+    ).toEqual([]);
     await page.getByRole('button', { name: 'Проверить', exact: true }).click();
     await page.getByRole('button', { name: 'Дальше', exact: true }).click();
     for (const [left, right] of [

@@ -1,5 +1,6 @@
 'use client';
-import { useEffect, useRef, useState } from 'react';
+import { fetchWithTimeout, readJson } from '@/lib/http/client';
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import Link from 'next/link';
 import { motion, useReducedMotion } from 'motion/react';
 import { X, ArrowRight, RotateCcw, CheckCircle2, Info } from 'lucide-react';
@@ -22,15 +23,16 @@ const labels = {
   grammar: 'Грамматика',
   listening: 'Аудирование',
 };
+const subscribeHydration = () => () => {};
 async function api<T>(url: string, body?: unknown): Promise<T> {
-  const response = await fetch(url, {
+  const response = await fetchWithTimeout(url, {
     method: body === undefined ? 'GET' : 'POST',
     headers:
       body === undefined ? undefined : { 'Content-Type': 'application/json' },
     body: body === undefined ? undefined : JSON.stringify(body),
     cache: 'no-store',
   });
-  const data = await response.json();
+  const data = await readJson(response);
   if (!response.ok)
     throw new Error(data.error ?? 'Не удалось связаться с сервером.');
   return data;
@@ -50,6 +52,11 @@ export function LessonPlayer({
   const locked = useRef(false);
   const requestId = useRef<string | null>(null);
   const reduced = useReducedMotion();
+  const hydrated = useSyncExternalStore(
+    subscribeHydration,
+    () => true,
+    () => false,
+  );
   useEffect(() => {
     if (!initialAttempt) return;
     let active = true;
@@ -263,7 +270,11 @@ export function LessonPlayer({
             Шесть форматов заданий, проверка ответов и сохранение прогресса. Для
             начала войди через Telegram.
           </p>
-          <Button className="w-full" disabled={busy} onClick={() => start()}>
+          <Button
+            className="w-full"
+            disabled={busy || !hydrated}
+            onClick={() => start()}
+          >
             {busy ? 'Загружаем…' : 'Начать урок'}
           </Button>
         </>

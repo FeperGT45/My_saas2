@@ -1,5 +1,6 @@
 'use client';
-import { createContext, useContext, useEffect, useState } from 'react';
+import { createContext, useContext, useEffect, useRef, useState } from 'react';
+import { fetchWithTimeout, readJson } from '@/lib/http/client';
 import { usePathname, useRouter } from 'next/navigation';
 import { isLocalDemo } from '@/config/env';
 type Account = {
@@ -25,20 +26,29 @@ export function TelegramProvider({ children }: { children: React.ReactNode }) {
   const [status, setStatus] = useState<TelegramState['status']>('loading');
   const [account, setAccount] = useState<Account | null>(null);
   const [authError, setAuthError] = useState(false);
+  const refreshVersion = useRef(0);
   const pathname = usePathname();
   const router = useRouter();
   async function refresh() {
+    const version = ++refreshVersion.current;
     try {
-      const response = await fetch('/api/auth/session', { cache: 'no-store' });
+      const response = await fetchWithTimeout('/api/auth/session', {
+        cache: 'no-store',
+      });
+      if (version !== refreshVersion.current) return;
       if (response.status === 401) {
         setAccount(null);
+        setAuthError(false);
         return;
       }
       if (!response.ok) throw new Error();
-      const data = await response.json();
+      const data = await readJson(response);
+      if (version !== refreshVersion.current) return;
       setAccount(data.user);
       setAuthError(false);
     } catch {
+      if (version !== refreshVersion.current) return;
+      setAccount(null);
       setAuthError(true);
     }
   }
@@ -64,7 +74,7 @@ export function TelegramProvider({ children }: { children: React.ReactNode }) {
         setStatus('telegram');
         const initData = sdk.retrieveRawInitData();
         if (!initData) throw new Error();
-        const response = await fetch('/api/auth/telegram', {
+        const response = await fetchWithTimeout('/api/auth/telegram', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ initData }),

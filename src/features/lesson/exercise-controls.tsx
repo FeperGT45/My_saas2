@@ -29,17 +29,22 @@ function AudioPrompt({ text, lang }: { text: string; lang: string }) {
         disabled={!supported || speaking}
         onClick={() => {
           setError(false);
-          window.speechSynthesis.cancel();
-          const utterance = new SpeechSynthesisUtterance(text);
-          utterance.lang = lang;
-          utterance.rate = 0.85;
-          utterance.onend = () => setSpeaking(false);
-          utterance.onerror = () => {
+          try {
+            window.speechSynthesis.cancel();
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = lang;
+            utterance.rate = 0.85;
+            utterance.onend = () => setSpeaking(false);
+            utterance.onerror = () => {
+              setSpeaking(false);
+              setError(true);
+            };
+            setSpeaking(true);
+            window.speechSynthesis.speak(utterance);
+          } catch {
             setSpeaking(false);
             setError(true);
-          };
-          setSpeaking(true);
-          window.speechSynthesis.speak(utterance);
+          }
         }}
         className="w-full"
       >

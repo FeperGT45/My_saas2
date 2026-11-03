@@ -1,4 +1,5 @@
 import { test, expect } from '@playwright/test';
+import AxeBuilder from '@axe-core/playwright';
 import { randomUUID } from 'node:crypto';
 import { adminServer } from './helpers/admin-server';
 test('real server restricts admin page/API and mobile editor saves validated content with confirmation', async ({
@@ -82,6 +83,13 @@ test('real server restricts admin page/API and mobile editor saves validated con
       .click();
     await page.getByLabel('Название', { exact: true }).fill('Travel English');
     await page.getByLabel('Slug курса').fill('travel-english');
+    expect(
+      (
+        await new AxeBuilder({ page })
+          .withTags(['wcag2a', 'wcag2aa', 'wcag21aa'])
+          .analyze()
+      ).violations,
+    ).toEqual([]);
     page.once('dialog', (dialog) => dialog.dismiss());
     await page
       .getByRole('button', { name: 'Сохранить с подтверждением' })

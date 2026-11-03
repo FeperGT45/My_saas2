@@ -28,7 +28,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       <a href="#main" className="sr-only focus:not-sr-only">
         К содержимому
       </a>
-      <header className="flex items-center justify-between gap-2 px-5 pt-[max(1.25rem,env(safe-area-inset-top))] pb-4">
+      <header className="flex flex-wrap items-center justify-between gap-2 px-5 pt-[max(1.25rem,env(safe-area-inset-top))] pb-4">
         <Link
           href="/"
           className="flex items-center gap-2 text-xl font-black tracking-tight"
@@ -38,7 +38,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           </span>
           Vok<span className="text-primary -ml-2">lumi</span>
         </Link>
-        <div className="flex items-center gap-2">
+        <div className="flex max-w-full flex-wrap items-center gap-2">
           <Link
             href="/profile"
             className="text-primary flex min-h-11 items-center gap-1 rounded-xl px-2 text-xs"
