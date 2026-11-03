@@ -114,8 +114,9 @@ function AccountLearningPanel() {
         <p role="status" className="text-muted-foreground mt-3 text-sm">
           {!account && status === 'telegram' && !authError
             ? 'Подключаем аккаунт…'
-            : (authError ??
-              'Открой Voklumi через Telegram: план сохраняется в твоём аккаунте. Локальный режим не создаёт реальные результаты.')}
+            : authError
+              ? 'Не удалось проверить вход. Открой профиль и повтори авторизацию.'
+              : 'Открой Voklumi через Telegram: план сохраняется в твоём аккаунте. Локальный режим не создаёт реальные результаты.'}
         </p>
         <Link
           href="/profile"

@@ -17,8 +17,10 @@ import {
 import type { GameSummary } from './types';
 export function GameDashboard({
   onlyAchievements = false,
+  compact = false,
 }: {
   onlyAchievements?: boolean;
+  compact?: boolean;
 }) {
   const { account, status } = useTelegram();
   const [data, setData] = useState<GameSummary | null>(null);
@@ -125,11 +127,29 @@ export function GameDashboard({
     </div>
   );
   if (onlyAchievements) return badges;
+  if (compact)
+    return (
+      <Card>
+        <h2 className="font-bold">Твой прогресс</h2>
+        <p className="mt-3">
+          {data.xp} XP · {data.streak.current} дней подряд ·{' '}
+          {data.completedLessons} зачтённых уроков
+        </p>
+        <Link
+          className="text-primary inline-flex min-h-11 items-center"
+          href="/profile"
+        >
+          Статистика и награды →
+        </Link>
+      </Card>
+    );
   return (
     <>
       <Card className="starfield">
         <p className="eyebrow">Твой настоящий прогресс</p>
-        <h2 className="mt-2 text-2xl font-extrabold">Уровень {data.level}</h2>
+        <h2 className="mt-2 text-2xl font-extrabold">
+          Уровень опыта {data.level}
+        </h2>
         <p className="text-muted-foreground mt-2 text-xs">
           {data.xp} XP всего · следующий уровень с {data.nextLevelXp} XP
         </p>

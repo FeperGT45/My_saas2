@@ -5,6 +5,7 @@ import { PageTitle } from '@/components/ui/game';
 import { TelegramAccount } from '@/features/telegram/account';
 import { PlacementProfile } from '@/features/placement/placement-panel';
 import { GameDashboard } from '@/features/gamification/dashboard';
+import { LearnerOverviewPanel } from '@/features/learning/overview-panel';
 export const metadata = { title: 'Профиль' };
 export default function ProfilePage() {
   return (
@@ -42,6 +43,7 @@ export default function ProfilePage() {
         Администрирование →
       </Link>
       <PlacementProfile />
+      <LearnerOverviewPanel mode="profile" />
       <LearningPlanLink />
       <Link
         href="/review"
