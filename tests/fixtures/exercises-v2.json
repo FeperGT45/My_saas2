@@ -1,0 +1,553 @@
+{
+  "version": "interactive-v2",
+  "purpose": "Local QA examples; not a published course or learner API payload.",
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери перевод слова «привет».",
+      "public_payload": {
+        "options": [
+          {
+            "id": "hello",
+            "label": "Hello"
+          },
+          {
+            "id": "bye",
+            "label": "Goodbye"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "hello"
+      },
+      "reference_answer": "hello",
+      "incorrect_answer": "bye",
+      "explanation": "Hello — привет; goodbye — до свидания."
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери все названия животных.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "a",
+            "label": "cat"
+          },
+          {
+            "id": "b",
+            "label": "dog"
+          },
+          {
+            "id": "c",
+            "label": "table"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["a", "b"]
+      },
+      "reference_answer": ["b", "a"],
+      "incorrect_answer": ["a", "c"],
+      "explanation": "Cat — кот и dog — собака; table — стол."
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Составь предложение «Я читаю книги».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "books",
+            "label": "books"
+          },
+          {
+            "id": "i",
+            "label": "I"
+          },
+          {
+            "id": "read",
+            "label": "read"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["i", "read", "books"]
+      },
+      "reference_answer": ["i", "read", "books"],
+      "incorrect_answer": ["books", "read", "i"],
+      "explanation": "I read books: сначала подлежащее I, затем сказуемое read и дополнение books."
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Расставь слова в порядке «Я читаю книги».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "books",
+            "label": "books"
+          },
+          {
+            "id": "i",
+            "label": "I"
+          },
+          {
+            "id": "read",
+            "label": "read"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["i", "read", "books"]
+      },
+      "reference_answer": ["i", "read", "books"],
+      "incorrect_answer": ["books", "read", "i"],
+      "explanation": "I read books: сначала подлежащее I, затем сказуемое read и дополнение books."
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи предложение на английский.",
+      "public_payload": {
+        "source": "Я не люблю кофе."
+      },
+      "answer_key": {
+        "accepted": ["I do not like coffee.", "I dislike coffee."]
+      },
+      "reference_answer": " I DON’T like   coffee! ",
+      "incorrect_answer": "I like coffee.",
+      "explanation": "I do not like coffee и I dislike coffee передают отрицательное отношение к кофе. Сокращение don’t допустимо."
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь пропущенную форму to be.",
+      "public_payload": {
+        "sentence": "I ___ a student."
+      },
+      "answer_key": {
+        "accepted": ["am"]
+      },
+      "reference_answer": " AM ",
+      "incorrect_answer": "is",
+      "explanation": "После I используется am: I am a student."
+    },
+    {
+      "kind": "matching",
+      "prompt": "Сопоставь слова и переводы.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "cat",
+            "label": "cat"
+          },
+          {
+            "id": "dog",
+            "label": "dog"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2",
+            "label": "собака"
+          },
+          {
+            "id": "r1",
+            "label": "кот"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "cat": "r1",
+          "dog": "r2"
+        }
+      },
+      "reference_answer": {
+        "cat": "r1",
+        "dog": "r2"
+      },
+      "incorrect_answer": {
+        "cat": "r2",
+        "dog": "r1"
+      },
+      "explanation": "Cat — кот; dog — собака."
+    },
+    {
+      "kind": "error_identification",
+      "prompt": "Найди слово с грамматической ошибкой.",
+      "public_payload": {
+        "sentence": "She go to school every day.",
+        "options": [
+          {
+            "id": "she",
+            "label": "She"
+          },
+          {
+            "id": "go",
+            "label": "go"
+          },
+          {
+            "id": "school",
+            "label": "school"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "go"
+      },
+      "reference_answer": "go",
+      "incorrect_answer": "she",
+      "explanation": "В Present Simple после she нужно goes: She goes to school every day."
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку, сохранив отрицание.",
+      "public_payload": {
+        "sentence": "He do not play tennis."
+      },
+      "answer_key": {
+        "accepted": ["He does not play tennis.", "He doesn't play tennis."]
+      },
+      "reference_answer": "he doesn’t play tennis",
+      "incorrect_answer": "He does play tennis.",
+      "explanation": "После he используется does not / doesn’t; смысл отрицания должен сохраниться."
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери подходящий глагол по контексту.",
+      "public_payload": {
+        "sentence": "Please ___ the window. It is cold in here.",
+        "options": [
+          {
+            "id": "close",
+            "label": "close"
+          },
+          {
+            "id": "open",
+            "label": "open"
+          },
+          {
+            "id": "read",
+            "label": "read"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "close"
+      },
+      "reference_answer": "close",
+      "incorrect_answer": "open",
+      "explanation": "В комнате холодно, поэтому просят закрыть окно: close the window."
+    },
+    {
+      "kind": "listening",
+      "prompt": "Послушай приветствие и выбери перевод.",
+      "public_payload": {
+        "text": "Good morning",
+        "lang": "en-US",
+        "options": [
+          {
+            "id": "morning",
+            "label": "Доброе утро"
+          },
+          {
+            "id": "night",
+            "label": "Спокойной ночи"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "morning"
+      },
+      "reference_answer": "morning",
+      "incorrect_answer": "night",
+      "explanation": "Good morning — доброе утро. При отсутствии озвучки доступен текст."
+    },
+    {
+      "kind": "dictation",
+      "prompt": "Прослушай фразу и запиши её.",
+      "public_payload": {
+        "text": "We are ready.",
+        "lang": "en-US"
+      },
+      "answer_key": {
+        "accepted": ["We are ready."]
+      },
+      "reference_answer": "We’re ready!",
+      "incorrect_answer": "We are late.",
+      "explanation": "We are ready — мы готовы. Сокращение we’re равнозначно we are."
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему сегодня Мия идёт пешком?",
+      "public_payload": {
+        "passage": "Mia usually takes the bus to work. Today the buses are not running, so she is walking. She has left home early because the walk takes forty minutes.",
+        "options": [
+          {
+            "id": "a",
+            "label": "The buses are not running."
+          },
+          {
+            "id": "b",
+            "label": "She has moved closer to work."
+          },
+          {
+            "id": "c",
+            "label": "She dislikes buses."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "a"
+      },
+      "reference_answer": "a",
+      "incorrect_answer": "c",
+      "explanation": "В тексте прямо сказано: Today the buses are not running — сегодня автобусы не ходят."
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери естественное продолжение диалога от имени Sam.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Alex",
+            "text": "Would you like some tea?"
+          },
+          {
+            "speaker": "Sam",
+            "text": "Yes, please. Do you have any milk?"
+          },
+          {
+            "speaker": "Alex",
+            "text": "Of course. Here you are."
+          }
+        ],
+        "options": [
+          {
+            "id": "thanks",
+            "label": "Thank you."
+          },
+          {
+            "id": "bye",
+            "label": "I live in London."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "thanks"
+      },
+      "reference_answer": "thanks",
+      "incorrect_answer": "bye",
+      "explanation": "После того как человеку дали чай и молоко, уместно поблагодарить: Thank you."
+    },
+    {
+      "kind": "response_choice",
+      "prompt": "Выбери вежливый ответ на вопрос о свободном месте.",
+      "public_payload": {
+        "context": "Excuse me, is this seat taken?",
+        "options": [
+          {
+            "id": "free",
+            "label": "No, please sit down."
+          },
+          {
+            "id": "weather",
+            "label": "The weather is lovely."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "free"
+      },
+      "reference_answer": "free",
+      "incorrect_answer": "weather",
+      "explanation": "No, please sit down — нет, присаживайтесь — отвечает на вопрос о свободном месте."
+    },
+    {
+      "kind": "spelling",
+      "prompt": "Собери английское слово «книга».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "k",
+            "label": "k"
+          },
+          {
+            "id": "o1",
+            "label": "o"
+          },
+          {
+            "id": "b",
+            "label": "b"
+          },
+          {
+            "id": "o2",
+            "label": "o"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["b", "o1", "o2", "k"]
+      },
+      "reference_answer": ["b", "o2", "o1", "k"],
+      "incorrect_answer": ["k", "o1", "o2", "b"],
+      "explanation": "Book — книга. Обе одинаковые буквы o взаимозаменяемы."
+    },
+    {
+      "kind": "tenses",
+      "prompt": "Выбери время для законченного действия с yesterday.",
+      "public_payload": {
+        "sentence": "We ___ the museum yesterday.",
+        "options": [
+          {
+            "id": "past",
+            "label": "visited"
+          },
+          {
+            "id": "present",
+            "label": "visit"
+          },
+          {
+            "id": "perfect",
+            "label": "have visited"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "past"
+      },
+      "reference_answer": "past",
+      "incorrect_answer": "perfect",
+      "explanation": "Yesterday обозначает завершённое время в прошлом: We visited the museum yesterday."
+    },
+    {
+      "kind": "synonym_antonym",
+      "prompt": "Найди антоним слова happy.",
+      "public_payload": {
+        "word": "happy",
+        "relation": "antonym",
+        "options": [
+          {
+            "id": "sad",
+            "label": "sad"
+          },
+          {
+            "id": "glad",
+            "label": "glad"
+          },
+          {
+            "id": "pleased",
+            "label": "pleased"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "sad"
+      },
+      "reference_answer": "sad",
+      "incorrect_answer": "glad",
+      "explanation": "Sad — грустный — противоположно happy. Glad и pleased близки по значению к happy."
+    },
+    {
+      "kind": "word_review",
+      "prompt": "Повтори значение изучаемого слова.",
+      "public_payload": {
+        "word": "reliable",
+        "options": [
+          {
+            "id": "a",
+            "label": "надёжный"
+          },
+          {
+            "id": "b",
+            "label": "случайный"
+          },
+          {
+            "id": "c",
+            "label": "скучный"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "a"
+      },
+      "reference_answer": "a",
+      "incorrect_answer": "b",
+      "explanation": "Reliable — надёжный, тот, на кого можно положиться. Расписание повторений добавляется отдельно на этапе E."
+    },
+    {
+      "kind": "unit_test",
+      "prompt": "Проверь изученные слова и форму to be.",
+      "public_payload": {
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "Выбери приветствие.",
+            "options": [
+              {
+                "id": "hello",
+                "label": "Hello"
+              },
+              {
+                "id": "bye",
+                "label": "Goodbye"
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "prompt": "Выбери верное предложение.",
+            "options": [
+              {
+                "id": "is",
+                "label": "She is a student."
+              },
+              {
+                "id": "are",
+                "label": "She are a student."
+              }
+            ]
+          }
+        ]
+      },
+      "answer_key": {
+        "answers": {
+          "q1": "hello",
+          "q2": "is"
+        },
+        "explanations": {
+          "q1": "Hello — приветствие.",
+          "q2": "После she используется is."
+        }
+      },
+      "reference_answer": {
+        "q1": "hello",
+        "q2": "is"
+      },
+      "incorrect_answer": {
+        "q1": "bye",
+        "q2": "is"
+      },
+      "explanation": "Контрольный блок засчитывается при правильном ответе на каждый вопрос. Ниже — разбор отдельных ответов."
+    },
+    {
+      "kind": "grammar",
+      "prompt": "Выбери форму: She ___ a student.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "is",
+            "label": "is"
+          },
+          {
+            "id": "are",
+            "label": "are"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "is"
+      },
+      "reference_answer": "is",
+      "incorrect_answer": "are",
+      "explanation": "После she используется is. Этот прежний формат сохранён для совместимости."
+    }
+  ]
+}

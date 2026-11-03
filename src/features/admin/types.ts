@@ -10,23 +10,17 @@ export type AdminView =
   | 'activity'
   | 'subscriptions'
   | 'audit';
-export type ExerciseKind =
-  'single_choice' | 'sentence' | 'gap' | 'matching' | 'grammar' | 'listening';
-export type Option = { id: string; label: string };
-export type ExercisePayload = {
-  options?: Option[];
-  tokens?: Option[];
-  left?: Option[];
-  right?: Option[];
-  sentence?: string;
-  text?: string;
-  lang?: string;
-};
-export type AnswerKey = {
-  value?: string | string[];
-  accepted?: string[];
-  pairs?: Record<string, string>;
-};
+export type {
+  ExerciseKind,
+  ExerciseItem as Option,
+  ExercisePayload,
+  ExerciseKey as AnswerKey,
+} from '@/lib/exercises/contracts';
+import type {
+  ExerciseKind,
+  ExercisePayload,
+  ExerciseKey as AnswerKey,
+} from '@/lib/exercises/contracts';
 export type AdminRow = {
   id: string;
   title?: string;

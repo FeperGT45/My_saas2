@@ -149,7 +149,9 @@ test('local demo identity cannot get stuck checking a real subscription', async 
   );
   await page.goto('/premium');
   await expect(
-    page.getByText('Войди через Telegram, чтобы проверить свой статус.'),
+    page
+      .getByText('Войди через Telegram, чтобы проверить свой статус.')
+      .filter({ visible: true }),
   ).toBeVisible();
   await expect(page.getByText('Проверяем подписку…')).toHaveCount(0);
 });

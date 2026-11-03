@@ -5,7 +5,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import type { Answer, Exercise } from './types';
 const subscribeSupport = () => () => {};
-function AudioPrompt({ text, lang }: { text: string; lang: string }) {
+export function AudioPrompt({ text, lang }: { text: string; lang: string }) {
   const supported = useSyncExternalStore(
     subscribeSupport,
     () =>
@@ -98,13 +98,17 @@ export function ExerciseControls({
   const array = Array.isArray(answer) ? answer : [];
   const pairs =
     typeof answer === 'object' && !Array.isArray(answer) ? answer : {};
-  if (exercise.kind === 'sentence')
+  if (['sentence', 'word_order', 'spelling'].includes(exercise.kind))
     return (
       <div>
         <div
           className="border-primary/30 mb-4 flex min-h-24 flex-wrap items-start gap-2 rounded-2xl border-2 border-dashed p-3"
           role="group"
-          aria-label="Собранное предложение"
+          aria-label={
+            exercise.kind === 'spelling'
+              ? 'Собранное слово'
+              : 'Собранное предложение'
+          }
         >
           {array.length ? (
             array.map((id, i) => (
@@ -122,11 +126,17 @@ export function ExerciseControls({
             ))
           ) : (
             <p className="text-muted-foreground self-center text-xs">
-              Нажимай слова в нужном порядке
+              {exercise.kind === 'spelling'
+                ? 'Нажимай буквы в нужном порядке'
+                : 'Нажимай слова в нужном порядке'}
             </p>
           )}
         </div>
-        <div className="flex flex-wrap gap-2" role="group" aria-label="Слова">
+        <div
+          className="flex flex-wrap gap-2"
+          role="group"
+          aria-label={exercise.kind === 'spelling' ? 'Буквы' : 'Слова'}
+        >
           {p.tokens?.map((token) => (
             <button
               key={token.id}

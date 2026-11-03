@@ -1,4 +1,6 @@
 import type { AdminView, Entity, ExerciseKind } from '@/features/admin/types';
+import { exerciseKinds } from '@/lib/exercises/contracts';
+import { validateExtendedExercise } from '@/lib/exercises/authoring';
 export class AdminValidationError extends Error {}
 function fail(message: string): never {
   throw new AdminValidationError(message);
@@ -61,6 +63,12 @@ export function validateExercise(
   payload: unknown,
   answer: unknown,
 ) {
+  try {
+    const extended = validateExtendedExercise(kind, payload, answer);
+    if (extended) return extended;
+  } catch (error) {
+    fail(error instanceof Error ? error.message : 'Некорректное задание.');
+  }
   const p = object(payload),
     a = object(answer);
   if (['single_choice', 'grammar', 'listening'].includes(kind)) {
@@ -242,14 +250,7 @@ export function parseAdminCommand(value: unknown) {
       'public_payload',
       'answer_key',
     ]);
-    const kind = oneOf<ExerciseKind>(d.kind, [
-      'single_choice',
-      'sentence',
-      'gap',
-      'matching',
-      'grammar',
-      'listening',
-    ]);
+    const kind = oneOf<ExerciseKind>(d.kind, exerciseKinds);
     Object.assign(data, {
       lesson_id: id(d.lesson_id),
       position: integer(d.position, 'Позиция', 1, 10000),

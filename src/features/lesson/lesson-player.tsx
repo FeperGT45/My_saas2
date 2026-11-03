@@ -8,21 +8,14 @@ import { Button } from '@/components/ui/button';
 import { Card, Progress } from '@/components/ui/game';
 import { RewardBurst } from '@/features/gamification/reward-burst';
 import { Mascot } from '@/components/ui/mascot';
-import { ExerciseControls, answerReady } from './exercise-controls';
+import { ExerciseControls, answerReady } from './interactive-controls';
 import {
   defaultLessonId,
   type LessonState,
   type Answer,
   type Feedback,
 } from './types';
-const labels = {
-  single_choice: 'Выбор перевода',
-  sentence: 'Собери предложение',
-  gap: 'Пропущенное слово',
-  matching: 'Найди пары',
-  grammar: 'Грамматика',
-  listening: 'Аудирование',
-};
+import { exerciseLabels as labels } from '@/lib/exercises/contracts';
 const subscribeHydration = () => () => {};
 async function api<T>(url: string, body?: unknown): Promise<T> {
   const response = await fetchWithTimeout(url, {
@@ -236,6 +229,25 @@ export function LessonPlayer({
                 <p className="text-muted-foreground mt-2 text-sm leading-relaxed">
                   {feedback.explanation}
                 </p>
+                {feedback.details && (
+                  <ul className="mt-3 space-y-2">
+                    {feedback.details.map((d, i) => (
+                      <li key={d.questionId} className="text-sm">
+                        <span
+                          className={
+                            d.correct ? 'text-teal-200' : 'text-rose-200'
+                          }
+                        >
+                          Вопрос {i + 1}:{' '}
+                          {d.correct ? 'верно' : 'нужно закрепить'}
+                        </span>
+                        <p className="text-muted-foreground mt-1">
+                          {d.explanation}
+                        </p>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </Card>
             </motion.div>
           )}
@@ -267,7 +279,7 @@ export function LessonPlayer({
           <h1 className="text-2xl font-extrabold">Новый урок — новый мир</h1>
           <Mascot className="mx-auto my-5 w-44" />
           <p className="text-muted-foreground mb-5 text-sm leading-relaxed">
-            Шесть форматов заданий, проверка ответов и сохранение прогресса. Для
+            Интерактивные задания, проверка ответов и сохранение прогресса. Для
             начала войди через Telegram.
           </p>
           <Button

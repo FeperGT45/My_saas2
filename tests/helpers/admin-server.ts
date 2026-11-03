@@ -172,6 +172,32 @@ export async function adminServer() {
                 [b.p_user, b.p_token, JSON.stringify(b.p_plan)],
               )
             ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/start_lesson')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.start_lesson($1,$2,$3) AS data',
+                [b.p_user, b.p_lesson, b.p_request],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/lesson_state')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.lesson_state($1,$2) AS data',
+                [b.p_user, b.p_attempt],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/submit_lesson_answer')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.submit_lesson_answer($1,$2,$3,$4::jsonb) AS data',
+                [
+                  b.p_user,
+                  b.p_attempt,
+                  b.p_position,
+                  JSON.stringify(b.p_answer),
+                ],
+              )
+            ).rows[0].data;
           else if (url.pathname === '/rest/v1/rpc/game_summary')
             data = (
               await db.query<{ data: unknown }>(
