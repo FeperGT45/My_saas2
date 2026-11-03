@@ -8,6 +8,7 @@ coverage/
 .DS_Store
 playwright-report/
 test-results/
+test-results-cloudflare/
 /dist/
 .vinext/
 .cloudflare/

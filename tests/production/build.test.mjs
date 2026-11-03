@@ -10,6 +10,7 @@ import {
 import { tmpdir } from 'node:os';
 import { join, resolve } from 'node:path';
 import { spawnSync } from 'node:child_process';
+import { pathToFileURL } from 'node:url';
 
 function scenario(overrides = {}) {
   const directory = mkdtempSync(join(tmpdir(), 'voklumi-preflight-test-'));
@@ -24,7 +25,7 @@ function scenario(overrides = {}) {
     };`,
     );
     writeFileSync(
-      join(directory, 'npm'),
+      join(directory, 'npm.cjs'),
       `#!/usr/bin/env node
       require('node:fs').appendFileSync(process.env.TEST_LOG, JSON.stringify({script: process.argv[3], username: process.env.TELEGRAM_BOT_USERNAME})+'\\n');
       if (process.argv[3] === 'db:check' && process.env.TEST_DB_FAIL) process.exit(1);
@@ -37,12 +38,16 @@ function scenario(overrides = {}) {
     );
     const result = spawnSync(
       process.execPath,
-      ['--import', preload, resolve('scripts/build-production.mjs')],
+      [
+        '--import',
+        pathToFileURL(preload).href,
+        resolve('scripts/build-production.mjs'),
+      ],
       {
         encoding: 'utf8',
         env: {
           ...process.env,
-          PATH: `${directory}:${process.env.PATH}`,
+          npm_execpath: join(directory, 'npm.cjs'),
           TEST_LOG: log,
           APP_URL: 'https://app.example.com',
           NEXT_PUBLIC_SUPABASE_URL: 'https://project.supabase.co',

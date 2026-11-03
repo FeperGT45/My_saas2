@@ -1,10 +1,11 @@
 // Isolated HTTPS PostgREST fixture + the real production Next server. No auth bypass in app code.
 import { createServer } from 'node:https';
 import { createServer as createTcpServer } from 'node:net';
-import { mkdtemp, readFile, readdir, rm } from 'node:fs/promises';
+import { mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
-import { spawn, execFileSync } from 'node:child_process';
+import { spawn } from 'node:child_process';
+import { generate } from 'selfsigned';
 import { createHash } from 'node:crypto';
 import { PGlite } from '@electric-sql/pglite';
 export async function adminServer() {
@@ -41,31 +42,22 @@ export async function adminServer() {
         key === 'expired' ? -1 : 1,
       ],
     );
-  execFileSync(
-    'openssl',
-    [
-      'req',
-      '-x509',
-      '-newkey',
-      'rsa:2048',
-      '-nodes',
-      '-keyout',
-      join(dir, 'key.pem'),
-      '-out',
-      join(dir, 'cert.pem'),
-      '-days',
-      '1',
-      '-subj',
-      '/CN=127.0.0.1',
-      '-addext',
-      'subjectAltName=IP:127.0.0.1',
-    ],
-    { stdio: 'ignore' },
+  const certificate = await generate(
+    [{ name: 'commonName', value: '127.0.0.1' }],
+    {
+      algorithm: 'sha256',
+      notAfterDate: new Date(Date.now() + 86400000),
+      extensions: [
+        { name: 'basicConstraints', cA: true },
+        { name: 'subjectAltName', altNames: [{ type: 7, ip: '127.0.0.1' }] },
+      ],
+    },
   );
+  await writeFile(join(dir, 'cert.pem'), certificate.cert);
   const backend = createServer(
     {
-      key: await readFile(join(dir, 'key.pem')),
-      cert: await readFile(join(dir, 'cert.pem')),
+      key: certificate.private,
+      cert: certificate.cert,
     },
     async (req, res) => {
       res.setHeader('Content-Type', 'application/json');
@@ -202,6 +194,27 @@ export async function adminServer() {
             data = (
               await db.query<{ data: unknown }>(
                 'SELECT public.curriculum_library() AS data',
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/learner_statistics')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.learner_statistics($1) AS data',
+                [b.p_user],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/word_review_queue')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.word_review_queue($1) AS data',
+                [b.p_user],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/word_review_answer')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.word_review_answer($1,$2,$3,$4,$5) AS data',
+                [b.p_user, b.p_request, b.p_word, b.p_version, b.p_rating],
               )
             ).rows[0].data;
           else if (url.pathname === '/rest/v1/rpc/game_summary')

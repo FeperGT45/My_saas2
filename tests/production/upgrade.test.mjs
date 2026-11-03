@@ -24,8 +24,11 @@ test('manual upgrade preserves content, records history and safely repeats on 01
     ).rows;
     const sql = await upgradeSql();
     assert.equal(
-      sql,
-      await readFile('supabase/manual-upgrade-008-010.sql', 'utf8'),
+      sql.replace(/\r\n/g, '\n'),
+      (await readFile('supabase/manual-upgrade-008-010.sql', 'utf8')).replace(
+        /\r\n/g,
+        '\n',
+      ),
     );
     for (let run = 0; run < 2; run++) {
       await db.exec(sql);

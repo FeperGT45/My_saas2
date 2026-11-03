@@ -9,6 +9,7 @@ const routes = [
   '/lesson',
   '/placement',
   '/learning-plan',
+  '/review',
   '/leaderboard',
   '/achievements',
   '/profile',

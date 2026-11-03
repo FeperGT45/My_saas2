@@ -34,6 +34,9 @@ test('all personal APIs refuse anonymous requests and forged role headers', asyn
 }) => {
   for (const path of [
     '/api/game',
+    '/api/overview',
+    '/api/placement',
+    '/api/learning-plan',
     '/api/social',
     '/api/premium',
     '/api/premium/features',
@@ -55,6 +58,9 @@ test('all personal APIs refuse anonymous requests and forged role headers', asyn
   }
   for (const path of [
     '/api/lessons/start',
+    '/api/review',
+    '/api/placement',
+    '/api/learning-plan',
     '/api/game/timezone',
     '/api/social/privacy',
     '/api/admin',

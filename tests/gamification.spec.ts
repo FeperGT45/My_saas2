@@ -57,7 +57,7 @@ test('real SQL summary renders progress, timezone, daily goals and achievements 
     await page.setViewportSize({ width: 320, height: 780 });
     await page.goto('/profile');
     await expect(
-      page.getByRole('heading', { name: 'Уровень 1', exact: true }),
+      page.getByRole('heading', { name: 'Уровень опыта 1', exact: true }),
     ).toBeVisible();
     await page
       .getByRole('textbox', { name: 'Часовой пояс IANA' })

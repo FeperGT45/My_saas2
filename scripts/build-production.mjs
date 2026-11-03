@@ -11,7 +11,12 @@ const required = [
 const missing = required.filter((key) => !process.env[key]?.trim());
 async function run(script, env = process.env) {
   const code = await new Promise((resolve, reject) => {
-    const child = spawn('npm', ['run', script], { stdio: 'inherit', env });
+    const child = env.npm_execpath
+      ? spawn(process.execPath, [env.npm_execpath, 'run', script], {
+          stdio: 'inherit',
+          env,
+        })
+      : spawn('npm', ['run', script], { stdio: 'inherit', env });
     child.once('error', reject);
     child.once('exit', (value) => resolve(value ?? 1));
   });

@@ -7,6 +7,7 @@ const routes = [
   '/lesson',
   '/placement',
   '/learning-plan',
+  '/review',
   '/leaderboard',
   '/achievements',
   '/profile',
@@ -35,7 +36,9 @@ for (const width of [320, 390, 768]) {
     expect(errors).toEqual([]);
   });
 }
-test('navigation, course search and empty states', async ({ page }) => {
+test('navigation follows the real catalog, learning plan and profile screens', async ({
+  page,
+}) => {
   await page.goto('/');
   const nav = page.getByRole('navigation');
   for (const [label, path] of [
@@ -52,11 +55,13 @@ test('navigation, course search and empty states', async ({ page }) => {
     ).toHaveAttribute('aria-current', 'page');
   }
   await page.goto('/courses');
-  await page.getByRole('textbox', { name: 'Поиск курсов' }).fill('японский');
-  await expect(page.getByText('Такого курса пока нет')).toBeVisible();
-  await page.getByRole('textbox').fill('английский');
-  await page.getByRole('link', { name: 'Продолжить путь' }).click();
-  await expect(page).toHaveURL('/learn');
+  await expect(
+    page.getByRole('textbox', { name: 'Поиск уроков' }),
+  ).toBeVisible();
+  await page
+    .getByRole('link', { name: 'Мой учебный план', exact: true })
+    .click();
+  await expect(page).toHaveURL('/learning-plan');
   await page.goto('/leaderboard');
   await page
     .getByRole('link', { name: 'Друзья и приглашения', exact: true })
