@@ -43,6 +43,12 @@ export default function ProfilePage() {
       </Link>
       <PlacementProfile />
       <LearningPlanLink />
+      <Link
+        href="/review"
+        className="text-primary my-3 inline-flex min-h-11 items-center"
+      >
+        Повторить слова →
+      </Link>
       <GameDashboard />
     </>
   );
