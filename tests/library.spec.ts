@@ -35,7 +35,7 @@ test('published library uses real Supabase RPCs, filters by CEFR, plays a new le
     await page.goto(server.origin + '/courses');
     await page.getByRole('link', { name: 'Библиотека уроков из базы' }).click();
     await expect(
-      page.getByText('Уроков в каталоге: 32 · Курсов: 7'),
+      page.getByText('Уроков в каталоге: 62 · Курсов: 7'),
     ).toBeVisible();
     await page
       .getByRole('combobox', { name: 'Уровень материалов', exact: true })
@@ -148,7 +148,7 @@ test('published library uses real Supabase RPCs, filters by CEFR, plays a new le
       .getByRole('button', { name: 'Повторить загрузку библиотеки' })
       .click();
     await expect(
-      page.getByText('Уроков в каталоге: 32 · Курсов: 7'),
+      page.getByText('Уроков в каталоге: 62 · Курсов: 7'),
     ).toBeVisible();
   } finally {
     await context.close();
@@ -181,7 +181,7 @@ test('library client works on the configured Next or Worker runtime with SQL-bac
     );
     await page.goto('/library');
     await expect(
-      page.getByText('Уроков в каталоге: 32 · Курсов: 7'),
+      page.getByText('Уроков в каталоге: 62 · Курсов: 7'),
     ).toBeVisible();
     await page
       .getByRole('combobox', { name: 'Уровень материалов', exact: true })

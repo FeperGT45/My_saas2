@@ -1,0 +1,262 @@
+{
+  "key": "a2/giving-advice",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A2 · пакет 2",
+    "position": 2
+  },
+  "position": 6,
+  "title": "Практичный совет",
+  "description": "Даём мягкие советы с should и отличаем их от строгого запрета.",
+  "level": "A2",
+  "objectives": [
+    "Посоветовать действие с should",
+    "Обосновать совет через because"
+  ],
+  "notes": [
+    "Should + глагол без to выражает совет.",
+    "Shouldn't — рекомендация не делать, а не обязательно формальный запрет."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "advice",
+      "ru": "совет"
+    },
+    {
+      "en": "rest",
+      "ru": "отдыхать"
+    },
+    {
+      "en": "practise",
+      "ru": "практиковаться"
+    },
+    {
+      "en": "regularly",
+      "ru": "регулярно"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери совет человеку, который устал.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "You should to gets some rest."
+          },
+          {
+            "id": "o2",
+            "label": "You should getting some rest."
+          },
+          {
+            "id": "o3",
+            "label": "You should get some rest."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "You should get some rest.",
+      "explanation": "После should нужна начальная форма get.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "You have an exam tomorrow. You ___ stay up all night."
+      },
+      "answer_key": {
+        "accepted": ["shouldn't"]
+      },
+      "reference_answer": "shouldn't",
+      "incorrect_answer": "should",
+      "editorial_answer": "shouldn't",
+      "explanation": "Для подготовки к экзамену полезен сон, поэтому совет отрицательный.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери совет практиковаться каждый день.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "practise"
+          },
+          {
+            "id": "t4",
+            "label": "a"
+          },
+          {
+            "id": "t5",
+            "label": "little"
+          },
+          {
+            "id": "t6",
+            "label": "every"
+          },
+          {
+            "id": "t7",
+            "label": "day."
+          },
+          {
+            "id": "t1",
+            "label": "You"
+          },
+          {
+            "id": "t2",
+            "label": "should"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "You should practise a little every day.",
+      "explanation": "Should не изменяется, practise идёт без to.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь форму",
+      "public_payload": {
+        "sentence": "He should drinks more water."
+      },
+      "answer_key": {
+        "accepted": ["He should drink more water."]
+      },
+      "reference_answer": "He should drink more water.",
+      "incorrect_answer": "He should drinks more water.",
+      "editorial_answer": "He should drink more water.",
+      "explanation": "После should не добавляем -s.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Тебе стоит спросить учителя."
+      },
+      "answer_key": {
+        "accepted": [
+          "You should ask the teacher.",
+          "You ought to ask the teacher."
+        ]
+      },
+      "reference_answer": "You should ask the teacher.",
+      "incorrect_answer": "You should ignore the teacher.",
+      "editorial_answer": "You should ask the teacher.",
+      "explanation": "Ask — спросить; ignore — игнорировать.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое изменение предлагает учитель?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Short daily practice."
+          },
+          {
+            "id": "o2",
+            "label": "Studying only on Sunday."
+          },
+          {
+            "id": "o3",
+            "label": "Stopping writing entirely."
+          }
+        ],
+        "passage": "Marta wants to improve her English, but she only studies for three hours on Sunday. Her teacher suggests ten minutes of practice each day instead. She also suggests writing down new phrases and using them in short sentences. Marta decides to try the new routine for two weeks before deciding whether it helps."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Short daily practice.",
+      "explanation": "Учитель предлагает ten minutes each day вместо одной длинной сессии.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Дай конкретный совет.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "You remembered them yesterday."
+          },
+          {
+            "id": "o2",
+            "label": "You should use them in your own sentences."
+          },
+          {
+            "id": "o3",
+            "label": "I can see a dictionary."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Friend",
+            "text": "I keep forgetting new words. What should I do?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "You should use them in your own sentences.",
+      "explanation": "Ответ предлагает действие, связанное с запоминанием слов.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери причину для совета взять зонт.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "although"
+          },
+          {
+            "id": "o2",
+            "label": "unless"
+          },
+          {
+            "id": "o3",
+            "label": "because"
+          }
+        ],
+        "sentence": "You should take an umbrella ___ it might rain."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "because",
+      "explanation": "Because вводит причину совета: возможный дождь.",
+      "key": "e08"
+    }
+  ]
+}

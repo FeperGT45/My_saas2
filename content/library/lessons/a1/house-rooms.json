@@ -1,0 +1,251 @@
+{
+  "key": "a1/house-rooms",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 10,
+  "title": "Комнаты и домашние дела",
+  "description": "Называем комнаты и говорим, где происходит простое действие.",
+  "level": "A1",
+  "objectives": ["Назвать комнаты дома", "Использовать there is и there are"],
+  "notes": [
+    "There is употребляется с одним предметом, there are — с несколькими.",
+    "In the kitchen — на кухне; английский использует in."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "kitchen",
+      "ru": "кухня"
+    },
+    {
+      "en": "bedroom",
+      "ru": "спальня"
+    },
+    {
+      "en": "bathroom",
+      "ru": "ванная"
+    },
+    {
+      "en": "living room",
+      "ru": "гостиная"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как сказать, что в доме две спальни?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "There is two bedrooms."
+          },
+          {
+            "id": "o2",
+            "label": "There are two bedrooms."
+          },
+          {
+            "id": "o3",
+            "label": "There two bedrooms."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "There are two bedrooms.",
+      "explanation": "Two bedrooms требует there are.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "We cook ___ the kitchen."
+      },
+      "answer_key": {
+        "accepted": ["in"]
+      },
+      "reference_answer": "in",
+      "incorrect_answer": "at",
+      "editorial_answer": "in",
+      "explanation": "Для помещения в этом предложении используется in.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери вопрос о ванной.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "a"
+          },
+          {
+            "id": "t4",
+            "label": "bathroom"
+          },
+          {
+            "id": "t5",
+            "label": "upstairs?"
+          },
+          {
+            "id": "t1",
+            "label": "Is"
+          },
+          {
+            "id": "t2",
+            "label": "there"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Is there a bathroom upstairs?",
+      "explanation": "Вопрос от there is начинается с is there.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь число связки",
+      "public_payload": {
+        "sentence": "There are a sofa in the living room."
+      },
+      "answer_key": {
+        "accepted": ["There is a sofa in the living room."]
+      },
+      "reference_answer": "There is a sofa in the living room.",
+      "incorrect_answer": "There are a sofa in the living room.",
+      "editorial_answer": "There is a sofa in the living room.",
+      "explanation": "Одна sofa требует there is.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "В моей комнате есть письменный стол."
+      },
+      "answer_key": {
+        "accepted": [
+          "There is a desk in my room.",
+          "There's a desk in my room."
+        ]
+      },
+      "reference_answer": "There is a desk in my room.",
+      "incorrect_answer": "There is a bed in my room.",
+      "editorial_answer": "There is a desk in my room.",
+      "explanation": "Desk — письменный стол; bed — кровать.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где находится письменный стол рассказчика?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "In the kitchen."
+          },
+          {
+            "id": "o2",
+            "label": "In the bathroom."
+          },
+          {
+            "id": "o3",
+            "label": "In the bedroom."
+          }
+        ],
+        "passage": "Our flat has two bedrooms and a small kitchen. The living room has a sofa and a table. My desk is in my bedroom, where I do my homework. We eat in the kitchen."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "In the bedroom.",
+      "explanation": "My desk is in my bedroom прямо называет место.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Направь гостя в ванную.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The bathroom is on your left."
+          },
+          {
+            "id": "o2",
+            "label": "The bedroom has a bed."
+          },
+          {
+            "id": "o3",
+            "label": "We have two windows."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Guest",
+            "text": "Where can I wash my hands?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The bathroom is on your left.",
+      "explanation": "Bathroom — подходящая комната для этой просьбы.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери комнату для приготовления еды.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "bedroom"
+          },
+          {
+            "id": "o2",
+            "label": "kitchen"
+          },
+          {
+            "id": "o3",
+            "label": "garage"
+          }
+        ],
+        "sentence": "Dad is making soup in the ___."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "kitchen",
+      "explanation": "Готовят еду обычно на кухне: kitchen.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "key": "a1/birthdays",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 8,
+  "title": "Возраст и день рождения",
+  "description": "Говорим о возрасте и месяце рождения без переноса русской конструкции «мне есть».",
+  "level": "A1",
+  "objectives": ["Назвать возраст с be", "Использовать in с месяцем"],
+  "notes": [
+    "I am twenty, а не I have twenty, когда речь о возрасте.",
+    "Перед месяцем употребляется in: in May."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "birthday",
+      "ru": "день рождения"
+    },
+    {
+      "en": "month",
+      "ru": "месяц"
+    },
+    {
+      "en": "May",
+      "ru": "май"
+    },
+    {
+      "en": "years old",
+      "ru": "лет, о возрасте"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как сказать «Ему двенадцать лет»?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "He has twelve years old."
+          },
+          {
+            "id": "o2",
+            "label": "He are twelve years old."
+          },
+          {
+            "id": "o3",
+            "label": "He is twelve years old."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "He is twelve years old.",
+      "explanation": "Английский возраст выражается с be.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "Her birthday is ___ June."
+      },
+      "answer_key": {
+        "accepted": ["in"]
+      },
+      "reference_answer": "in",
+      "incorrect_answer": "on",
+      "editorial_answer": "in",
+      "explanation": "С одним названием месяца используем in.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери вопрос о возрасте сестры.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "your"
+          },
+          {
+            "id": "t5",
+            "label": "sister?"
+          },
+          {
+            "id": "t1",
+            "label": "How"
+          },
+          {
+            "id": "t2",
+            "label": "old"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "How old is your sister?",
+      "explanation": "How old — вопросительное сочетание о возрасте.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь конструкцию возраста",
+      "public_payload": {
+        "sentence": "I have twenty years old."
+      },
+      "answer_key": {
+        "accepted": ["I am twenty years old."]
+      },
+      "reference_answer": "I am twenty years old.",
+      "incorrect_answer": "I have twenty years old.",
+      "editorial_answer": "I am twenty years old.",
+      "explanation": "Для возраста нужна форма am.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Мой день рождения в марте."
+      },
+      "answer_key": {
+        "accepted": ["My birthday is in March.", "My birthday's in March."]
+      },
+      "reference_answer": "My birthday is in March.",
+      "incorrect_answer": "My birthday is in May.",
+      "editorial_answer": "My birthday is in March.",
+      "explanation": "March — март; May — май.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько лет Джеку сегодня?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Eleven."
+          },
+          {
+            "id": "o2",
+            "label": "Eight."
+          },
+          {
+            "id": "o3",
+            "label": "December."
+          }
+        ],
+        "passage": "Today is Jack's birthday. He is eleven. His sister is eight. They have a small cake at home. Jack's birthday is in May, but his sister's is in December."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Eleven.",
+      "explanation": "He is eleven относится к Джеку; eight — возраст сестры.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь, что он в июле.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I'm thirteen."
+          },
+          {
+            "id": "o2",
+            "label": "It's in July."
+          },
+          {
+            "id": "o3",
+            "label": "It's a big cake."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Friend",
+            "text": "When is your birthday?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "It's in July.",
+      "explanation": "When спрашивает когда, а не сколько лет.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, обозначающее месяц.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Monday"
+          },
+          {
+            "id": "o2",
+            "label": "morning"
+          },
+          {
+            "id": "o3",
+            "label": "April"
+          }
+        ],
+        "sentence": "My birthday is in ___."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "April",
+      "explanation": "April — месяц; Monday — день недели.",
+      "key": "e08"
+    }
+  ]
+}

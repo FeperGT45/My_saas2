@@ -1,0 +1,266 @@
+{
+  "key": "b1/past-habits",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика B1 · пакет 2",
+    "position": 2
+  },
+  "position": 1,
+  "title": "Привычки, которые изменились",
+  "description": "Сравниваем прошлый и нынешний образ жизни с used to и Past Simple.",
+  "level": "B1",
+  "objectives": [
+    "Описать прежнее состояние с used to",
+    "Построить отрицание didn't use to"
+  ],
+  "notes": [
+    "Used to описывает привычку или состояние, которые теперь изменились.",
+    "После didn't пишем use to без -d."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "used to",
+      "ru": "раньше обычно"
+    },
+    {
+      "en": "nowadays",
+      "ru": "в наши дни"
+    },
+    {
+      "en": "commute",
+      "ru": "ездить на работу"
+    },
+    {
+      "en": "move away",
+      "ru": "переехать в другое место"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как описать прежнюю привычку, которой больше нет?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I am used cycle yesterday."
+          },
+          {
+            "id": "o2",
+            "label": "I use cycling to work last year."
+          },
+          {
+            "id": "o3",
+            "label": "I used to cycle to work, but now I take the bus."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "I used to cycle to work, but now I take the bus.",
+      "explanation": "Used to и but now явно сопоставляют прошлое и настоящее.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "I didn't ___ to enjoy cooking, but now I do."
+      },
+      "answer_key": {
+        "accepted": ["use"]
+      },
+      "reference_answer": "use",
+      "incorrect_answer": "used",
+      "editorial_answer": "use",
+      "explanation": "После didn't используется use без -d.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери вопрос о прежнем месте жительства.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "use"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "live"
+          },
+          {
+            "id": "t6",
+            "label": "near"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "sea?"
+          },
+          {
+            "id": "t1",
+            "label": "Did"
+          },
+          {
+            "id": "t2",
+            "label": "you"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "Did you use to live near the sea?",
+      "explanation": "После did глагольная часть use to без -d.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь форму после didn't",
+      "public_payload": {
+        "sentence": "She didn't used to wear glasses."
+      },
+      "answer_key": {
+        "accepted": ["She didn't use to wear glasses."]
+      },
+      "reference_answer": "She didn't use to wear glasses.",
+      "incorrect_answer": "She didn't used to wear glasses.",
+      "editorial_answer": "She didn't use to wear glasses.",
+      "explanation": "Отрицание строится didn't use to.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Раньше здесь была фабрика."
+      },
+      "answer_key": {
+        "accepted": [
+          "There used to be a factory here.",
+          "A factory used to stand here."
+        ]
+      },
+      "reference_answer": "There used to be a factory here.",
+      "incorrect_answer": "There will be a factory here.",
+      "editorial_answer": "There used to be a factory here.",
+      "explanation": "Used to be/stand описывает прежнее состояние, не будущее.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что изменилось после переезда Оливера?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "His usual way of getting to work."
+          },
+          {
+            "id": "o2",
+            "label": "His interest in cycling disappeared completely."
+          },
+          {
+            "id": "o3",
+            "label": "He stopped leaving the city at weekends."
+          }
+        ],
+        "passage": "When Oliver lived in a village, he used to cycle to work along a quiet road. After moving to the city, he tried cycling once, but the heavy traffic made him uncomfortable. He now takes the underground during the week. He still enjoys cycling at weekends, when he can choose quieter routes outside the centre."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "His usual way of getting to work.",
+      "explanation": "Он сменил способ поездки на работу, но продолжает кататься в выходные.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Расскажи о прежней застенчивости.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I am shy tomorrow because yesterday."
+          },
+          {
+            "id": "o2",
+            "label": "I used to be shy, but joining the drama club helped."
+          },
+          {
+            "id": "o3",
+            "label": "I used to confident every weekend."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Former classmate",
+            "text": "You seem much more confident now."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "I used to be shy, but joining the drama club helped.",
+      "explanation": "Used to be shy описывает изменившееся состояние.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери связку для сравнения прошлого и настоящего.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "so that"
+          },
+          {
+            "id": "o2",
+            "label": "despite of"
+          },
+          {
+            "id": "o3",
+            "label": "but"
+          }
+        ],
+        "sentence": "I used to buy printed newspapers, ___ now I read the news online."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "but",
+      "explanation": "But противопоставляет две привычки.",
+      "key": "e08"
+    }
+  ]
+}

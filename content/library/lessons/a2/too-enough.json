@@ -1,0 +1,254 @@
+{
+  "key": "a2/too-enough",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A2 · пакет 2",
+    "position": 2
+  },
+  "position": 9,
+  "title": "Достаточно или слишком",
+  "description": "Описываем практические ограничения с too и enough без смешения порядка слов.",
+  "level": "A2",
+  "objectives": [
+    "Поставить enough после прилагательного",
+    "Использовать too для чрезмерного признака"
+  ],
+  "notes": [
+    "Too small означает слишком маленький для цели.",
+    "Enough ставится после прилагательного: warm enough."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "enough",
+      "ru": "достаточно"
+    },
+    {
+      "en": "too",
+      "ru": "слишком"
+    },
+    {
+      "en": "carry",
+      "ru": "нести"
+    },
+    {
+      "en": "fit",
+      "ru": "подходить по размеру"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как сказать, что сумка слишком тяжёлая?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The bag is heavy too much."
+          },
+          {
+            "id": "o2",
+            "label": "The bag is enough heavy."
+          },
+          {
+            "id": "o3",
+            "label": "The bag is too heavy."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The bag is too heavy.",
+      "explanation": "Too стоит перед прилагательным heavy.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "The room isn't warm ___ to sleep in."
+      },
+      "answer_key": {
+        "accepted": ["enough"]
+      },
+      "reference_answer": "enough",
+      "incorrect_answer": "too",
+      "editorial_answer": "enough",
+      "explanation": "Enough после warm указывает на достаточность температуры.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери: «Эта коробка достаточно большая».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "big"
+          },
+          {
+            "id": "t5",
+            "label": "enough."
+          },
+          {
+            "id": "t1",
+            "label": "This"
+          },
+          {
+            "id": "t2",
+            "label": "box"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "This box is big enough.",
+      "explanation": "Enough следует за прилагательным big.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь порядок слов",
+      "public_payload": {
+        "sentence": "The shelf is enough strong for these books."
+      },
+      "answer_key": {
+        "accepted": ["The shelf is strong enough for these books."]
+      },
+      "reference_answer": "The shelf is strong enough for these books.",
+      "incorrect_answer": "The shelf is enough strong for these books.",
+      "editorial_answer": "The shelf is strong enough for these books.",
+      "explanation": "С прилагательным порядок strong enough.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Этот кофе слишком горячий, чтобы пить."
+      },
+      "answer_key": {
+        "accepted": [
+          "This coffee is too hot to drink.",
+          "This coffee is too hot to drink now."
+        ]
+      },
+      "reference_answer": "This coffee is too hot to drink.",
+      "incorrect_answer": "This coffee is cold enough to drink.",
+      "editorial_answer": "This coffee is too hot to drink.",
+      "explanation": "Too hot описывает чрезмерную температуру, которая мешает пить.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Лили не выбирает большую сумку?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It is too heavy to carry comfortably."
+          },
+          {
+            "id": "o2",
+            "label": "It has no space for clothes."
+          },
+          {
+            "id": "o3",
+            "label": "It is too small for a weekend."
+          }
+        ],
+        "passage": "Lily needs a bag for a weekend trip. The small bag is light, but it is not big enough for her clothes. The large bag has enough space, but it is too heavy for her to carry comfortably. She chooses a medium-sized bag with wheels, which has space for her clothes and is easy to move."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It is too heavy to carry comfortably.",
+      "explanation": "Места достаточно, проблема в весе.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь, что рукава слишком короткие.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Yes, the sleeves are too short."
+          },
+          {
+            "id": "o2",
+            "label": "No, the sleeves are too short."
+          },
+          {
+            "id": "o3",
+            "label": "No, it is a coat."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Shop assistant",
+            "text": "Does the coat fit?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "No, the sleeves are too short.",
+      "explanation": "Отрицательный ответ согласуется с проблемой посадки.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, показывающее чрезмерность.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "enough"
+          },
+          {
+            "id": "o2",
+            "label": "many"
+          },
+          {
+            "id": "o3",
+            "label": "too"
+          }
+        ],
+        "sentence": "I can't reach the cupboard. It's ___ high."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "too",
+      "explanation": "Too high объясняет, почему шкаф недоступен.",
+      "key": "e08"
+    }
+  ]
+}

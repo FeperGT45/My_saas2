@@ -1,0 +1,266 @@
+{
+  "key": "b1/passive-processes",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика B1 · пакет 2",
+    "position": 2
+  },
+  "position": 3,
+  "title": "Как устроен процесс",
+  "description": "Описываем производство и обслуживание в Present Simple Passive, когда исполнитель не важен.",
+  "level": "B1",
+  "objectives": [
+    "Построить is/are + past participle",
+    "Различить действие и объект процесса"
+  ],
+  "notes": [
+    "Пассив строится be + причастие: The parcels are checked.",
+    "В описании процесса исполнитель часто не называется, если он очевиден."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "sort",
+      "ru": "сортировать"
+    },
+    {
+      "en": "deliver",
+      "ru": "доставлять"
+    },
+    {
+      "en": "package",
+      "ru": "упаковывать"
+    },
+    {
+      "en": "inspect",
+      "ru": "осматривать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как описать регулярную доставку без указания курьера?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The parcels deliver every morning."
+          },
+          {
+            "id": "o2",
+            "label": "The parcels are delivered every morning."
+          },
+          {
+            "id": "o3",
+            "label": "The parcels are deliver every morning."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The parcels are delivered every morning.",
+      "explanation": "Are delivered — пассивная форма с причастием.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "This cheese is ___ from milk."
+      },
+      "answer_key": {
+        "accepted": ["made"]
+      },
+      "reference_answer": "made",
+      "incorrect_answer": "make",
+      "editorial_answer": "made",
+      "explanation": "После is для пассива нужно причастие made.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери описание первого этапа обработки.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "are"
+          },
+          {
+            "id": "t4",
+            "label": "washed"
+          },
+          {
+            "id": "t5",
+            "label": "before"
+          },
+          {
+            "id": "t6",
+            "label": "they"
+          },
+          {
+            "id": "t7",
+            "label": "are"
+          },
+          {
+            "id": "t8",
+            "label": "filled."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "bottles"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The bottles are washed before they are filled.",
+      "explanation": "Оба действия над бутылками выражены пассивом.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь причастие",
+      "public_payload": {
+        "sentence": "Every order is check before delivery."
+      },
+      "answer_key": {
+        "accepted": ["Every order is checked before delivery."]
+      },
+      "reference_answer": "Every order is checked before delivery.",
+      "incorrect_answer": "Every order is check before delivery.",
+      "editorial_answer": "Every order is checked before delivery.",
+      "explanation": "После is нужна форма checked.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Эти велосипеды производят в Италии."
+      },
+      "answer_key": {
+        "accepted": [
+          "These bicycles are made in Italy.",
+          "These bikes are manufactured in Italy."
+        ]
+      },
+      "reference_answer": "These bicycles are made in Italy.",
+      "incorrect_answer": "These bicycles make Italy.",
+      "editorial_answer": "These bicycles are made in Italy.",
+      "explanation": "Are made/manufactured показывает действие над велосипедами.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что происходит до нарезки овощей?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "They are labelled with the date."
+          },
+          {
+            "id": "o2",
+            "label": "They are delivered to customers' homes."
+          },
+          {
+            "id": "o3",
+            "label": "They are inspected and washed."
+          }
+        ],
+        "passage": "At a small food company, vegetables are delivered early each morning. They are inspected and washed before they are cut. The prepared vegetables are packed in sealed containers, which are labelled with the date. Some orders are collected by local cafés, while others are delivered to homes. Products that fail the inspection are not used in customer orders."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "They are inspected and washed.",
+      "explanation": "Перед cut в тексте стоят inspected and washed.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Объясни, что заказы упаковывают сотрудники.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "No, the orders are packed by our staff."
+          },
+          {
+            "id": "o2",
+            "label": "No, customers are packing yesterday."
+          },
+          {
+            "id": "o3",
+            "label": "Yes, our staff packs every order for them."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Visitor",
+            "text": "Do customers pack the orders themselves?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No, the orders are packed by our staff.",
+      "explanation": "Отрицательный ответ и passive by our staff согласуются с вопросом.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери форму для нескольких писем.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "is"
+          },
+          {
+            "id": "o2",
+            "label": "are"
+          },
+          {
+            "id": "o3",
+            "label": "be"
+          }
+        ],
+        "sentence": "All application letters ___ read before interviews are arranged."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "are",
+      "explanation": "Letters во множественном числе требует are.",
+      "key": "e08"
+    }
+  ]
+}

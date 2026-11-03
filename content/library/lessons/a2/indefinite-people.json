@@ -1,0 +1,254 @@
+{
+  "key": "a2/indefinite-people",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A2 · пакет 2",
+    "position": 2
+  },
+  "position": 10,
+  "title": "Кто-то, никто и каждый",
+  "description": "Выбираем someone, anyone и nobody в простых сообщениях и вопросах.",
+  "level": "A2",
+  "objectives": [
+    "Употребить someone и anyone в типичных контекстах",
+    "Избежать двойного отрицания с nobody"
+  ],
+  "notes": [
+    "Someone часто используется в утверждении; anyone — в нейтральном вопросе или отрицании.",
+    "Nobody уже содержит отрицание: Nobody knows, без doesn't."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "someone",
+      "ru": "кто-то"
+    },
+    {
+      "en": "anyone",
+      "ru": "кто-нибудь; никто в отрицании"
+    },
+    {
+      "en": "nobody",
+      "ru": "никто"
+    },
+    {
+      "en": "everyone",
+      "ru": "каждый; все"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери грамматически правильное отрицательное предложение.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Nobody knows the answer."
+          },
+          {
+            "id": "o2",
+            "label": "Nobody doesn't know the answer."
+          },
+          {
+            "id": "o3",
+            "label": "Nobody know the answer."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Nobody knows the answer.",
+      "explanation": "Nobody требует положительной формы knows и уже выражает отрицание.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "Is there ___ at reception?"
+      },
+      "answer_key": {
+        "accepted": ["anyone", "anybody", "someone", "somebody"]
+      },
+      "reference_answer": "anyone",
+      "incorrect_answer": "nobody doesn't",
+      "editorial_answer": "anyone",
+      "explanation": "В нейтральном вопросе Is there anyone …? спрашивают, есть ли кто-нибудь.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери: «Кто-то оставил здесь сумку».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "a"
+          },
+          {
+            "id": "t4",
+            "label": "bag"
+          },
+          {
+            "id": "t5",
+            "label": "here."
+          },
+          {
+            "id": "t1",
+            "label": "Someone"
+          },
+          {
+            "id": "t2",
+            "label": "left"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Someone left a bag here.",
+      "explanation": "Someone — подлежащее; left — прошедшая форма leave.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Убери двойное отрицание, сохрани смысл «Никто не пришёл»",
+      "public_payload": {
+        "sentence": "Nobody didn't come."
+      },
+      "answer_key": {
+        "accepted": ["Nobody came."]
+      },
+      "reference_answer": "Nobody came.",
+      "incorrect_answer": "Nobody didn't come.",
+      "editorial_answer": "Nobody came.",
+      "explanation": "Nobody уже означает никто; дополнительное didn't меняет или усложняет смысл.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Я никого не знаю в этом городе."
+      },
+      "answer_key": {
+        "accepted": [
+          "I don't know anyone in this town.",
+          "I do not know anybody in this town."
+        ]
+      },
+      "reference_answer": "I don't know anyone in this town.",
+      "incorrect_answer": "I know everyone in this town.",
+      "editorial_answer": "I don't know anyone in this town.",
+      "explanation": "Don't know anyone/anybody означает никого не знать.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему группа собралась в библиотеке?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Nobody wanted to study that day."
+          },
+          {
+            "id": "o2",
+            "label": "Someone was repairing the classroom windows."
+          },
+          {
+            "id": "o3",
+            "label": "Dan was repairing his phone."
+          }
+        ],
+        "passage": "When Dan arrived at the classroom, nobody was there. He checked his phone and found a message from his teacher. Everyone was meeting in the library that day because someone was repairing the classroom windows. Dan went to the library and found the rest of the group waiting near the main desk."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Someone was repairing the classroom windows.",
+      "explanation": "В тексте прямо названа причина смены помещения.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь: знаешь только хозяйку.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Yes, I don't know anyone at all."
+          },
+          {
+            "id": "o2",
+            "label": "No, I know everyone here."
+          },
+          {
+            "id": "o3",
+            "label": "Yes, I know the host, but nobody else."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Friend",
+            "text": "Do you know anyone at this party?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Yes, I know the host, but nobody else.",
+      "explanation": "Первый ответ последовательно называет одного знакомого.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово для всей группы.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Everyone"
+          },
+          {
+            "id": "o2",
+            "label": "Nobody"
+          },
+          {
+            "id": "o3",
+            "label": "Anyone didn't"
+          }
+        ],
+        "sentence": "All twelve students passed. ___ was pleased."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Everyone",
+      "explanation": "Everyone относится ко всем участникам.",
+      "key": "e08"
+    }
+  ]
+}

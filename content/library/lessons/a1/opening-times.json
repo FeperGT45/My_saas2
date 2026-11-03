@@ -1,0 +1,258 @@
+{
+  "key": "a1/opening-times",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 4,
+  "title": "Расписание и часы работы",
+  "description": "Читаем часы работы и уточняем дни и время посещения.",
+  "level": "A1",
+  "objectives": [
+    "Найти время открытия и закрытия",
+    "Использовать at со временем и on с днём недели"
+  ],
+  "notes": [
+    "At употребляется с точным временем, on — с днём недели.",
+    "From nine to five означает с девяти до пяти."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "open",
+      "ru": "открытый; открываться"
+    },
+    {
+      "en": "close",
+      "ru": "закрываться"
+    },
+    {
+      "en": "weekday",
+      "ru": "будний день"
+    },
+    {
+      "en": "Sunday",
+      "ru": "воскресенье"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери правильное сочетание с днём недели.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "on Monday"
+          },
+          {
+            "id": "o2",
+            "label": "at Monday"
+          },
+          {
+            "id": "o3",
+            "label": "in Monday"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "on Monday",
+      "explanation": "Перед названием дня употребляется on.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "The museum opens ___ ten o'clock."
+      },
+      "answer_key": {
+        "accepted": ["at"]
+      },
+      "reference_answer": "at",
+      "incorrect_answer": "on",
+      "editorial_answer": "at",
+      "explanation": "С точным временем используем at.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери вопрос: «Во сколько закрывается библиотека?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "does"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "library"
+          },
+          {
+            "id": "t6",
+            "label": "close?"
+          },
+          {
+            "id": "t1",
+            "label": "What"
+          },
+          {
+            "id": "t2",
+            "label": "time"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "What time does the library close?",
+      "explanation": "После does используется close без -s.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь предлог.",
+      "public_payload": {
+        "sentence": "The shop is closed at Sundays."
+      },
+      "answer_key": {
+        "accepted": ["The shop is closed on Sundays."]
+      },
+      "reference_answer": "The shop is closed on Sundays.",
+      "incorrect_answer": "The shop is closed at Sundays.",
+      "editorial_answer": "The shop is closed on Sundays.",
+      "explanation": "On Sundays означает по воскресеньям.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Банк открыт с девяти до пяти."
+      },
+      "answer_key": {
+        "accepted": [
+          "The bank is open from nine to five.",
+          "The bank is open from 9 to 5."
+        ]
+      },
+      "reference_answer": "The bank is open from nine to five.",
+      "incorrect_answer": "The bank is closed from nine to five.",
+      "editorial_answer": "The bank is open from nine to five.",
+      "explanation": "Is open — открыт; from … to … задаёт интервал.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда библиотека открывается в субботу?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "At nine."
+          },
+          {
+            "id": "o2",
+            "label": "At ten."
+          },
+          {
+            "id": "o3",
+            "label": "At six."
+          }
+        ],
+        "passage": "The town library opens at nine on weekdays and at ten on Saturdays. It closes at six every day that it is open. It is closed on Sundays."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "At ten.",
+      "explanation": "В субботу указано at ten; шесть — время закрытия.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь: по воскресеньям закрыто.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Yes, at the entrance."
+          },
+          {
+            "id": "o2",
+            "label": "No, it costs two pounds."
+          },
+          {
+            "id": "o3",
+            "label": "No, we're closed on Sundays."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Visitor",
+            "text": "Are you open on Sunday?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "No, we're closed on Sundays.",
+      "explanation": "Вопрос о работе в воскресенье требует ответа о дне работы.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово с противоположным значением open.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "enter"
+          },
+          {
+            "id": "o2",
+            "label": "sleep"
+          },
+          {
+            "id": "o3",
+            "label": "cook"
+          }
+        ],
+        "sentence": "The sign says CLOSED, so we cannot ___ now."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "enter",
+      "explanation": "Закрытое заведение сейчас нельзя посетить: enter — войти.",
+      "key": "e08"
+    }
+  ]
+}

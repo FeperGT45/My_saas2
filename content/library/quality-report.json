@@ -1,33 +1,33 @@
 {
   "package": "english-path-core",
-  "revision": 1,
+  "revision": 2,
   "summary": {
-    "lessons": 30,
-    "exercises": 240,
-    "levels": { "A1": 5, "A2": 5, "B1": 5, "B2": 5, "C1": 5, "C2": 5 }
+    "lessons": 60,
+    "exercises": 480,
+    "levels": { "A1": 20, "A2": 15, "B1": 10, "B2": 5, "C1": 5, "C2": 5 }
   },
   "structure": "passed",
   "crossLegacyDuplicateCheck": "passed",
   "gradingCheck": "npm run test:library verifies all positive/negative references with the production SQL grader",
   "methodology": "Author review and automated checks; CEFR labels remain provisional, without external psychometric calibration.",
   "types": {
-    "context_choice": 23,
-    "correction": 21,
-    "dialogue": 16,
+    "context_choice": 53,
+    "correction": 51,
+    "dialogue": 46,
     "dictation": 3,
     "error_identification": 4,
-    "gap": 21,
+    "gap": 51,
     "grammar": 1,
     "matching": 7,
     "multiple_choice": 15,
-    "reading": 32,
+    "reading": 62,
     "response_choice": 9,
-    "sentence": 9,
-    "single_choice": 10,
+    "sentence": 39,
+    "single_choice": 40,
     "spelling": 1,
     "synonym_antonym": 8,
     "tenses": 7,
-    "translation": 29,
+    "translation": 59,
     "unit_test": 6,
     "word_order": 13,
     "word_review": 5
@@ -272,6 +272,246 @@
       "types": 8,
       "readingWords": [123],
       "sha256": "d0db88e65c2fed2994d56172ae8306147d7f6edb54b87f27f38c22a8a6c1e33a"
+    },
+    {
+      "key": "a1/morning-routine",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [28],
+      "sha256": "afb4d1b3241b7f5a8b7f90369699d350afa80ec41947b96ca76827050285dbb6"
+    },
+    {
+      "key": "a1/family-relations",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [28],
+      "sha256": "dbc02cec18e92dd1fcaa6c84e649c7219e32f79ef0c11364598f6321cddaa7a7"
+    },
+    {
+      "key": "a1/weather-clothes",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [27],
+      "sha256": "a2d65d249047a6ac8511428ab9ead3aba1c6dc8cb9a368f3e67c2d07d802c743"
+    },
+    {
+      "key": "a1/opening-times",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [28],
+      "sha256": "30aa0301c4c8831fa8d6f7c524a03e8d2114be4d6cd318a368233bfdc726a4a9"
+    },
+    {
+      "key": "a1/can-and-cannot",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [27],
+      "sha256": "31bf325ad33973434ca7a11ea7dd0f0f6e155f1c35919b7d86737d0fe6c74312"
+    },
+    {
+      "key": "a2/polite-invitations",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [54],
+      "sha256": "e2e59d5a21ffeeb1845f831762bfbb230c1036cf0a8d1c089e49b5137f56b06b"
+    },
+    {
+      "key": "a2/past-interrupted",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [51],
+      "sha256": "3bd7e79c98a2cd53abd74138da493d9790bc953c1d7426f16fbd44ccde83803a"
+    },
+    {
+      "key": "a2/hotel-problems",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [52],
+      "sha256": "3efd3bde036c785719ea89f8741ae445416d0e958a26eefab597ef4b5003f305"
+    },
+    {
+      "key": "a2/rules-obligations",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [56],
+      "sha256": "9fcce47007e037b7abd19570554155bc19413206513ee0c3f7904e5d3ae50b3b"
+    },
+    {
+      "key": "a2/instructions-sequence",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [55],
+      "sha256": "36afb2d817640beac01d34666c1b70ebaaacfcd33af89264c2c00e5cea0cdf09"
+    },
+    {
+      "key": "a1/spelling-names",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [24],
+      "sha256": "2c2ef5186d0868b8cee57281713af7d4b0a890b02dccc62299645a5fbe12bfcf"
+    },
+    {
+      "key": "a1/contact-details",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [34],
+      "sha256": "6b71221ecab7ea8c93eb27497829c9dd5b9b8e5d89971005f78cfa0f290d2d88"
+    },
+    {
+      "key": "a1/birthdays",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [29],
+      "sha256": "39a97a368f62043e01797a43ac18586666fa0f482b36d6e3995172db84f06646"
+    },
+    {
+      "key": "a1/food-preferences",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [31],
+      "sha256": "d6216cbf7c040f0edf7c8a8210aabd87ff250d007e39c611939e47a1b839058b"
+    },
+    {
+      "key": "a1/house-rooms",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [34],
+      "sha256": "01258c0a5141167837482afc1294204b0c409bdf5323b3be853e953f8fde263c"
+    },
+    {
+      "key": "a2/giving-advice",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [53],
+      "sha256": "a36b65bd24d81a8441ddc9676767880ac849696b8860478c4f3f09c3ea32a5cb"
+    },
+    {
+      "key": "a2/returning-purchase",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [50],
+      "sha256": "39eed63cde4a6c3b6ee461508e6a6e69bdb05d34fb95840a623af3ddef2d79f3"
+    },
+    {
+      "key": "a2/travel-delays",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [54],
+      "sha256": "b707aab87cfb61d3f2582f57e5379f5f9da7f117466d2f88c4c096720da2c7d5"
+    },
+    {
+      "key": "a2/too-enough",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [56],
+      "sha256": "171d7864dba897b907598b2ba26b9d4e869528a3793dee4b79d7b82c685e5eeb"
+    },
+    {
+      "key": "a2/indefinite-people",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [52],
+      "sha256": "4ec52af324ad89f7e789318583bbc03b95d9caf27249a098febe594caf0e2555"
+    },
+    {
+      "key": "a1/pets-care",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [28],
+      "sha256": "afc43cc13ddb7fb95039326a03a0969fa74a23bdcf9c812bc3211f640179bda4"
+    },
+    {
+      "key": "a1/getting-to-work",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [33],
+      "sha256": "ccca97074c443e2044c62c8655828a46caf95c2938628ba5d8d8bb8347a6e903"
+    },
+    {
+      "key": "a1/how-many",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [35],
+      "sha256": "00b3684c04d6f17e5efecee0dd081ac0f8d81540eafb794479560b96b9c141de"
+    },
+    {
+      "key": "a1/polite-requests",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [31],
+      "sha256": "62a673b704bc8fc34547b202feda1ce9389e90e1dd2a28f9ae005a42725d50ff"
+    },
+    {
+      "key": "a1/prices-payment",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [32],
+      "sha256": "7601756b69981248ab7f6ac699b86ce3f710c7313bdb57f307c373fa2b7eda82"
+    },
+    {
+      "key": "b1/past-habits",
+      "level": "B1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [55],
+      "sha256": "dd8d07ad40449bc695e1a30c9420e1714016b9594b64e6fcc7572c7afcaca87e"
+    },
+    {
+      "key": "b1/defining-relatives",
+      "level": "B1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [57],
+      "sha256": "ab9ba45046436724d1956a1d51f57bacbd8243471bb99aed7925259673c38125"
+    },
+    {
+      "key": "b1/passive-processes",
+      "level": "B1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [58],
+      "sha256": "eb7c7f794a69d238b45d5e0a5490c2ba0cd3436df5059dd570d1d9ae25996619"
+    },
+    {
+      "key": "b1/indirect-questions",
+      "level": "B1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [60],
+      "sha256": "74b77583e1e4ece5a6ad453cac70c4dad8be6585604be9b4c843054dc030f989"
+    },
+    {
+      "key": "b1/verb-patterns",
+      "level": "B1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [59],
+      "sha256": "b0396031b3d0e5592f49dcb70a0f30f19cd03df310acab11185aaae2f12b08c7"
     }
   ]
 }

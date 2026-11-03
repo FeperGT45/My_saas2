@@ -1,0 +1,287 @@
+{
+  "key": "a2/returning-purchase",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A2 · пакет 2",
+    "position": 2
+  },
+  "position": 7,
+  "title": "Возвращаем покупку",
+  "description": "Объясняем причину возврата, предъявляем чек и различаем обмен и возврат денег.",
+  "level": "A2",
+  "objectives": [
+    "Сообщить о проблеме с покупкой",
+    "Попросить обмен или возврат денег"
+  ],
+  "notes": [
+    "Refund означает возврат денег, exchange — обмен товара.",
+    "I bought it yesterday использует Past Simple для завершённого времени."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "receipt",
+      "ru": "чек"
+    },
+    {
+      "en": "refund",
+      "ru": "возврат денег"
+    },
+    {
+      "en": "exchange",
+      "ru": "обменять"
+    },
+    {
+      "en": "size",
+      "ru": "размер"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Что означает I'd like a refund?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I want my money back."
+          },
+          {
+            "id": "o2",
+            "label": "I want a larger size."
+          },
+          {
+            "id": "o3",
+            "label": "I want to pay twice."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "I want my money back.",
+      "explanation": "Refund означает вернуть уплаченные деньги.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "I ___ these shoes yesterday."
+      },
+      "answer_key": {
+        "accepted": ["bought"]
+      },
+      "reference_answer": "bought",
+      "incorrect_answer": "buy",
+      "editorial_answer": "bought",
+      "explanation": "Yesterday требует прошедшего времени: bought.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери просьбу обменять рубашку.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "exchange"
+          },
+          {
+            "id": "t4",
+            "label": "this"
+          },
+          {
+            "id": "t5",
+            "label": "shirt"
+          },
+          {
+            "id": "t6",
+            "label": "for"
+          },
+          {
+            "id": "t7",
+            "label": "a"
+          },
+          {
+            "id": "t8",
+            "label": "larger"
+          },
+          {
+            "id": "t9",
+            "label": "size?"
+          },
+          {
+            "id": "t1",
+            "label": "Could"
+          },
+          {
+            "id": "t2",
+            "label": "I"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "Could I exchange this shirt for a larger size?",
+      "explanation": "Exchange … for … указывает, что меняется и на что.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь форму прошедшего времени",
+      "public_payload": {
+        "sentence": "I buyed this jacket last week."
+      },
+      "answer_key": {
+        "accepted": ["I bought this jacket last week."]
+      },
+      "reference_answer": "I bought this jacket last week.",
+      "incorrect_answer": "I buyed this jacket last week.",
+      "editorial_answer": "I bought this jacket last week.",
+      "explanation": "Buy — неправильный глагол, прошедшая форма bought.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "У меня есть чек."
+      },
+      "answer_key": {
+        "accepted": ["I have the receipt.", "I've got the receipt."]
+      },
+      "reference_answer": "I have the receipt.",
+      "incorrect_answer": "I have the recipe.",
+      "editorial_answer": "I have the receipt.",
+      "explanation": "Receipt — чек; recipe — рецепт блюда.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Амир выбрал возврат денег вместо обмена?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "He had lost the receipt."
+          },
+          {
+            "id": "o2",
+            "label": "There were no shirts in his size."
+          },
+          {
+            "id": "o3",
+            "label": "He wanted a different colour."
+          }
+        ],
+        "passage": "Amir bought a blue shirt on Monday. At home, he noticed a small hole in the sleeve. On Tuesday, he returned to the shop with the receipt. The assistant offered another shirt, but there were none in his size. Amir therefore asked for his money back, and the assistant agreed."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "There were no shirts in his size.",
+      "explanation": "Нужного размера не было; чек он принёс.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Объясни неисправность молнии.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It is in a shopping bag."
+          },
+          {
+            "id": "o2",
+            "label": "I usually wear jackets."
+          },
+          {
+            "id": "o3",
+            "label": "The zip doesn't close properly."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Assistant",
+            "text": "What's wrong with the jacket?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The zip doesn't close properly.",
+      "explanation": "Ответ называет конкретный дефект.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери документ, подтверждающий покупку.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "receipt"
+          },
+          {
+            "id": "o2",
+            "label": "recipe"
+          },
+          {
+            "id": "o3",
+            "label": "menu"
+          }
+        ],
+        "sentence": "Please keep your ___ if you might return the item."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "receipt",
+      "explanation": "Receipt подтверждает покупку.",
+      "key": "e08"
+    }
+  ]
+}

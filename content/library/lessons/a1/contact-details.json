@@ -1,0 +1,254 @@
+{
+  "key": "a1/contact-details",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 7,
+  "title": "Контактные данные",
+  "description": "Сообщаем номер телефона и адрес электронной почты в простой анкете.",
+  "level": "A1",
+  "objectives": [
+    "Понять вопрос о номере телефона",
+    "Различить email address и home address"
+  ],
+  "notes": [
+    "What's your phone number? спрашивает о номере телефона.",
+    "At в электронной почте обозначает символ @."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "phone number",
+      "ru": "номер телефона"
+    },
+    {
+      "en": "email address",
+      "ru": "адрес электронной почты"
+    },
+    {
+      "en": "double",
+      "ru": "двойной; два одинаковых подряд"
+    },
+    {
+      "en": "form",
+      "ru": "анкета"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как спросить номер телефона?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "What's your phone colour?"
+          },
+          {
+            "id": "o2",
+            "label": "What's your phone number?"
+          },
+          {
+            "id": "o3",
+            "label": "Where is your telephone shop?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "What's your phone number?",
+      "explanation": "Phone number означает номер, а не цвет или магазин.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни вопрос притяжательным местоимением «твой».",
+      "public_payload": {
+        "sentence": "Is this ___ email address?"
+      },
+      "answer_key": {
+        "accepted": ["your"]
+      },
+      "reference_answer": "your",
+      "incorrect_answer": "you",
+      "editorial_answer": "your",
+      "explanation": "Перед email address нужно притяжательное your.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери просьбу записать номер.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "your"
+          },
+          {
+            "id": "t4",
+            "label": "number"
+          },
+          {
+            "id": "t5",
+            "label": "here."
+          },
+          {
+            "id": "t1",
+            "label": "Please"
+          },
+          {
+            "id": "t2",
+            "label": "write"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Please write your number here.",
+      "explanation": "Write — записать; here указывает место.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь связку",
+      "public_payload": {
+        "sentence": "My email address are on the form."
+      },
+      "answer_key": {
+        "accepted": ["My email address is on the form."]
+      },
+      "reference_answer": "My email address is on the form.",
+      "incorrect_answer": "My email address are on the form.",
+      "editorial_answer": "My email address is on the form.",
+      "explanation": "Address — единственное число, поэтому is.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Это мой новый номер телефона."
+      },
+      "answer_key": {
+        "accepted": [
+          "This is my new phone number.",
+          "This is my new telephone number."
+        ]
+      },
+      "reference_answer": "This is my new phone number.",
+      "incorrect_answer": "This is my new home address.",
+      "editorial_answer": "This is my new phone number.",
+      "explanation": "Номер телефона — phone/telephone number.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какие данные Оуэн исправляет?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "His name."
+          },
+          {
+            "id": "o2",
+            "label": "The club's name."
+          },
+          {
+            "id": "o3",
+            "label": "His email address."
+          }
+        ],
+        "passage": "Owen joins a sports club. He writes his name and phone number on a form. His email address is already there, but it is old. He crosses it out and writes his new one."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "His email address.",
+      "explanation": "Old относится к email address.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Уточни, что это цифра ноль.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It's zero."
+          },
+          {
+            "id": "o2",
+            "label": "It's Tuesday."
+          },
+          {
+            "id": "o3",
+            "label": "It's my surname."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Club assistant",
+            "text": "Is that zero or the letter O?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It's zero.",
+      "explanation": "Zero — название цифры 0.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Две одинаковые цифры подряд можно назвать так:",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "half"
+          },
+          {
+            "id": "o2",
+            "label": "double"
+          },
+          {
+            "id": "o3",
+            "label": "single"
+          }
+        ],
+        "sentence": "In this phone number, 55 is ___ five."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "double",
+      "explanation": "Double five — две пятёрки подряд.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "key": "a1/pets-care",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 11,
+  "title": "Забота о питомце",
+  "description": "Называем простые действия по уходу за животным и рассказываем о его привычках.",
+  "level": "A1",
+  "objectives": [
+    "Описать привычки питомца",
+    "Использовать he/she/it с глаголом в Present Simple"
+  ],
+  "notes": [
+    "Для животного можно использовать it; если пол известен, также he или she.",
+    "После it в Present Simple добавляется -s: it sleeps."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "feed",
+      "ru": "кормить"
+    },
+    {
+      "en": "pet",
+      "ru": "питомец"
+    },
+    {
+      "en": "bowl",
+      "ru": "миска"
+    },
+    {
+      "en": "walk the dog",
+      "ru": "выгуливать собаку"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери правильное предложение о кошке.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The cat sleeps on the sofa."
+          },
+          {
+            "id": "o2",
+            "label": "The cat sleep on the sofa."
+          },
+          {
+            "id": "o3",
+            "label": "The cat sleeping on the sofa."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The cat sleeps on the sofa.",
+      "explanation": "The cat — единственное число; нужна форма sleeps.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "My dog ___ twice a day."
+      },
+      "answer_key": {
+        "accepted": ["eats"]
+      },
+      "reference_answer": "eats",
+      "incorrect_answer": "eat",
+      "editorial_answer": "eats",
+      "explanation": "С my dog глагол получает -s.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери просьбу покормить кошку.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "cat"
+          },
+          {
+            "id": "t5",
+            "label": "before"
+          },
+          {
+            "id": "t6",
+            "label": "school."
+          },
+          {
+            "id": "t1",
+            "label": "Please"
+          },
+          {
+            "id": "t2",
+            "label": "feed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Please feed the cat before school.",
+      "explanation": "Feed the cat — покорми кошку.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь вспомогательный глагол",
+      "public_payload": {
+        "sentence": "Does your dog likes water?"
+      },
+      "answer_key": {
+        "accepted": ["Does your dog like water?"]
+      },
+      "reference_answer": "Does your dog like water?",
+      "incorrect_answer": "Does your dog likes water?",
+      "editorial_answer": "Does your dog like water?",
+      "explanation": "После does глагол like без -s.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "У собаки есть миска."
+      },
+      "answer_key": {
+        "accepted": ["The dog has a bowl.", "The dog has got a bowl."]
+      },
+      "reference_answer": "The dog has a bowl.",
+      "incorrect_answer": "The dog is a bowl.",
+      "editorial_answer": "The dog has a bowl.",
+      "explanation": "Has/has got означает имеет; is меняет смысл.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто кормит кролика утром?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The narrator's teacher."
+          },
+          {
+            "id": "o2",
+            "label": "The narrator's sister."
+          },
+          {
+            "id": "o3",
+            "label": "The narrator's father."
+          }
+        ],
+        "passage": "Our rabbit is called Snow. It eats vegetables and drinks water from a small bowl. My sister feeds it in the morning. I clean its home after school."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The narrator's sister.",
+      "explanation": "My sister feeds it in the morning — прямой ответ.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь: два раза в день.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It's a brown dog."
+          },
+          {
+            "id": "o2",
+            "label": "At the pet shop."
+          },
+          {
+            "id": "o3",
+            "label": "Twice a day."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Neighbour",
+            "text": "How often do you walk your dog?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Twice a day.",
+      "explanation": "How often требует частоты: twice a day.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери предмет для воды питомца.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "bowl"
+          },
+          {
+            "id": "o2",
+            "label": "lead"
+          },
+          {
+            "id": "o3",
+            "label": "blanket"
+          }
+        ],
+        "sentence": "There is fresh water in the cat's ___."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "bowl",
+      "explanation": "Bowl — миска; lead — поводок.",
+      "key": "e08"
+    }
+  ]
+}

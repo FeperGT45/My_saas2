@@ -1,0 +1,290 @@
+{
+  "key": "b1/indirect-questions",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика B1 · пакет 2",
+    "position": 2
+  },
+  "position": 4,
+  "title": "Уточняем вежливо",
+  "description": "Используем косвенные вопросы в незнакомом месте и сохраняем прямой порядок слов.",
+  "level": "B1",
+  "objectives": [
+    "Построить Could you tell me …?",
+    "Использовать if в косвенном общем вопросе"
+  ],
+  "notes": [
+    "В косвенной части порядок как в утверждении: where the station is.",
+    "После introductory phrase вопросительное do/does в косвенной части не нужно."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "wonder",
+      "ru": "интересоваться; хотеть узнать"
+    },
+    {
+      "en": "available",
+      "ru": "доступный; свободный"
+    },
+    {
+      "en": "explain",
+      "ru": "объяснить"
+    },
+    {
+      "en": "direct",
+      "ru": "прямой"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери корректный вежливый вопрос.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Could you tell me where is the station?"
+          },
+          {
+            "id": "o2",
+            "label": "Could you tell me where does the station is?"
+          },
+          {
+            "id": "o3",
+            "label": "Could you tell me where the station is?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Could you tell me where the station is?",
+      "explanation": "В косвенной части station is, без инверсии.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "Do you know ___ this bus goes to the airport?"
+      },
+      "answer_key": {
+        "accepted": ["if"]
+      },
+      "reference_answer": "if",
+      "incorrect_answer": "what",
+      "editorial_answer": "if",
+      "explanation": "Общий вопрос без вопросительного слова присоединяется через if/whether.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери косвенный вопрос о цене билета.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "tell"
+          },
+          {
+            "id": "t4",
+            "label": "me"
+          },
+          {
+            "id": "t5",
+            "label": "how"
+          },
+          {
+            "id": "t6",
+            "label": "much"
+          },
+          {
+            "id": "t7",
+            "label": "a"
+          },
+          {
+            "id": "t8",
+            "label": "ticket"
+          },
+          {
+            "id": "t9",
+            "label": "costs?"
+          },
+          {
+            "id": "t1",
+            "label": "Could"
+          },
+          {
+            "id": "t2",
+            "label": "you"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "Could you tell me how much a ticket costs?",
+      "explanation": "Внутри how much a ticket costs используется прямой порядок.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь порядок слов",
+      "public_payload": {
+        "sentence": "Do you know when does the shop close?"
+      },
+      "answer_key": {
+        "accepted": ["Do you know when the shop closes?"]
+      },
+      "reference_answer": "Do you know when the shop closes?",
+      "incorrect_answer": "Do you know when does the shop close?",
+      "editorial_answer": "Do you know when the shop closes?",
+      "explanation": "Убираем does и ставим closes после the shop.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Не подскажете, где находится выход?"
+      },
+      "answer_key": {
+        "accepted": [
+          "Could you tell me where the exit is?",
+          "Can you tell me where the exit is?"
+        ]
+      },
+      "reference_answer": "Could you tell me where the exit is?",
+      "incorrect_answer": "Could you tell me where is the exit?",
+      "editorial_answer": "Could you tell me where the exit is?",
+      "explanation": "После introductory phrase используется the exit is.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Елена выясняет о дневном занятии?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It is full, but she can join a waiting list."
+          },
+          {
+            "id": "o2",
+            "label": "It has been cancelled entirely."
+          },
+          {
+            "id": "o3",
+            "label": "Registration is no longer needed."
+          }
+        ],
+        "passage": "Elena arrives at a conference centre for the first time. Rather than interrupting a speaker, she goes to the information desk. She asks whether the afternoon workshop still has places and where the registration form is. The assistant explains that the workshop is full, but a waiting list is available. Elena asks how she can add her name to it."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It is full, but she can join a waiting list.",
+      "explanation": "Full означает отсутствие свободных мест, а не отмену.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Вежливо спроси о времени открытия.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Could you tell me what time does the library open?"
+          },
+          {
+            "id": "o2",
+            "label": "Could you tell me what time the library opens?"
+          },
+          {
+            "id": "o3",
+            "label": "Could you tell me what time opens the library?"
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Visitor",
+            "text": "I need some information about the library."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Could you tell me what time the library opens?",
+      "explanation": "В косвенном вопросе подлежащее стоит перед opens.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери форму в косвенной части.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "does take place?"
+          },
+          {
+            "id": "o2",
+            "label": "take places"
+          },
+          {
+            "id": "o3",
+            "label": "takes place"
+          }
+        ],
+        "sentence": "I'd like to know where the meeting ___."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "takes place",
+      "explanation": "После where здесь прямой порядок с takes place.",
+      "key": "e08"
+    }
+  ]
+}

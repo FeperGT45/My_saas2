@@ -1,0 +1,262 @@
+{
+  "key": "a1/how-many",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 13,
+  "title": "Считаем предметы",
+  "description": "Задаём вопросы о количестве считаемых предметов и образуем простое множественное число.",
+  "level": "A1",
+  "objectives": [
+    "Использовать How many с множественным числом",
+    "Различить один предмет и несколько"
+  ],
+  "notes": [
+    "How many используется с исчисляемым существительным во множественном числе.",
+    "Обычное множественное число получает -s, но child → children."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "chair",
+      "ru": "стул"
+    },
+    {
+      "en": "child",
+      "ru": "ребёнок"
+    },
+    {
+      "en": "children",
+      "ru": "дети"
+    },
+    {
+      "en": "shelf",
+      "ru": "полка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери правильный вопрос о количестве стульев.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "How much chairs is there?"
+          },
+          {
+            "id": "o2",
+            "label": "How many chair are there?"
+          },
+          {
+            "id": "o3",
+            "label": "How many chairs are there?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "How many chairs are there?",
+      "explanation": "Chairs — считаемые предметы во множественном числе.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "There are three ___ in the room."
+      },
+      "answer_key": {
+        "accepted": ["children"]
+      },
+      "reference_answer": "children",
+      "incorrect_answer": "child",
+      "editorial_answer": "children",
+      "explanation": "После three используется множественное children.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери: «На столе четыре книги».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "four"
+          },
+          {
+            "id": "t4",
+            "label": "books"
+          },
+          {
+            "id": "t5",
+            "label": "on"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "table."
+          },
+          {
+            "id": "t1",
+            "label": "There"
+          },
+          {
+            "id": "t2",
+            "label": "are"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "There are four books on the table.",
+      "explanation": "Четыре книги требуют there are.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь число существительного",
+      "public_payload": {
+        "sentence": "I have two pencil."
+      },
+      "answer_key": {
+        "accepted": ["I have two pencils."]
+      },
+      "reference_answer": "I have two pencils.",
+      "incorrect_answer": "I have two pencil.",
+      "editorial_answer": "I have two pencils.",
+      "explanation": "После two нужно pencils.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Сколько у тебя братьев?"
+      },
+      "answer_key": {
+        "accepted": [
+          "How many brothers do you have?",
+          "How many brothers have you got?"
+        ]
+      },
+      "reference_answer": "How many brothers do you have?",
+      "incorrect_answer": "How old is your brother?",
+      "editorial_answer": "How many brothers do you have?",
+      "explanation": "How many спрашивает количество, а how old — возраст.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько стульев используется сегодня?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Five."
+          },
+          {
+            "id": "o2",
+            "label": "Four."
+          },
+          {
+            "id": "o3",
+            "label": "Six."
+          }
+        ],
+        "passage": "There are six chairs in our kitchen, but only four people live in our house. Two extra chairs are for visitors. Today, one visitor is having lunch with us, so five chairs are in use."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Five.",
+      "explanation": "Четыре жильца и один гость используют пять стульев; текст это подтверждает.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Попроси три карандаша.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It's a pencil."
+          },
+          {
+            "id": "o2",
+            "label": "Three, please."
+          },
+          {
+            "id": "o3",
+            "label": "The pencil is blue."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Teacher",
+            "text": "How many pencils do you need?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Three, please.",
+      "explanation": "На вопрос о количестве отвечают числом.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово для вопроса о количестве яблок.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "much"
+          },
+          {
+            "id": "o2",
+            "label": "old"
+          },
+          {
+            "id": "o3",
+            "label": "many"
+          }
+        ],
+        "sentence": "How ___ apples are in the bag?"
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "many",
+      "explanation": "С исчисляемыми apples используется many.",
+      "key": "e08"
+    }
+  ]
+}

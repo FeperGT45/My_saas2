@@ -1,0 +1,251 @@
+{
+  "key": "a1/can-and-cannot",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 5,
+  "title": "Что я умею",
+  "description": "Говорим об умениях и задаём вопросы с can без лишнего to.",
+  "level": "A1",
+  "objectives": [
+    "Использовать can/can't с начальной формой глагола",
+    "Задать вопрос об умении"
+  ],
+  "notes": [
+    "После can и can't глагол идёт без to.",
+    "В вопросе can стоит перед подлежащим: Can you swim?"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "swim",
+      "ru": "плавать"
+    },
+    {
+      "en": "ride",
+      "ru": "ездить верхом или на велосипеде"
+    },
+    {
+      "en": "draw",
+      "ru": "рисовать"
+    },
+    {
+      "en": "speak",
+      "ru": "говорить"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери правильное предложение об умении.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "She cans swim."
+          },
+          {
+            "id": "o2",
+            "label": "She can swim."
+          },
+          {
+            "id": "o3",
+            "label": "She can to swim."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "She can swim.",
+      "explanation": "Can не меняется после she, а to перед swim не нужно.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "Ben does not know how to swim. He ___ swim."
+      },
+      "answer_key": {
+        "accepted": ["can't"]
+      },
+      "reference_answer": "can't",
+      "incorrect_answer": "can",
+      "editorial_answer": "can't",
+      "explanation": "Does not know how to swim означает, что Бен не умеет плавать.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери вопрос об игре на гитаре.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "play"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "guitar?"
+          },
+          {
+            "id": "t1",
+            "label": "Can"
+          },
+          {
+            "id": "t2",
+            "label": "you"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Can you play the guitar?",
+      "explanation": "Can ставим перед you; play остаётся в начальной форме.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Убери лишнее слово.",
+      "public_payload": {
+        "sentence": "We can to speak English."
+      },
+      "answer_key": {
+        "accepted": ["We can speak English."]
+      },
+      "reference_answer": "We can speak English.",
+      "incorrect_answer": "We can to speak English.",
+      "editorial_answer": "We can speak English.",
+      "explanation": "После can частица to не употребляется.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Я не умею водить машину."
+      },
+      "answer_key": {
+        "accepted": ["I cannot drive a car.", "I can't drive a car."]
+      },
+      "reference_answer": "I cannot drive a car.",
+      "incorrect_answer": "I can drive a car.",
+      "editorial_answer": "I cannot drive a car.",
+      "explanation": "Cannot и can't — отрицательные формы can.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Чему хочет научиться Айша?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Drawing animals."
+          },
+          {
+            "id": "o2",
+            "label": "Riding a bike."
+          },
+          {
+            "id": "o3",
+            "label": "Swimming."
+          }
+        ],
+        "passage": "Aisha can ride a bike and draw animals. Her brother can swim, but Aisha cannot. On Saturdays, they go to the pool because Aisha wants to learn."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Swimming.",
+      "explanation": "Айша уже рисует и ездит на велосипеде, но пока не умеет плавать.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Согласись помочь.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Yes, of course."
+          },
+          {
+            "id": "o2",
+            "label": "Yes, it is Friday."
+          },
+          {
+            "id": "o3",
+            "label": "No, she is eleven."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Classmate",
+            "text": "Can you help me with this word?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Yes, of course.",
+      "explanation": "Yes, of course естественно выражает согласие на просьбу.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери подходящий глагол после can.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "ride"
+          },
+          {
+            "id": "o2",
+            "label": "speak"
+          },
+          {
+            "id": "o3",
+            "label": "draw"
+          }
+        ],
+        "sentence": "I know French and English. I can ___ two languages."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "speak",
+      "explanation": "О владении языками говорят speak languages.",
+      "key": "e08"
+    }
+  ]
+}

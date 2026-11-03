@@ -1,0 +1,266 @@
+{
+  "key": "a2/instructions-sequence",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A2 · пакет 2",
+    "position": 2
+  },
+  "position": 5,
+  "title": "Объясняем порядок действий",
+  "description": "Делаем простую инструкцию понятной с помощью порядка действий и предупреждений.",
+  "level": "A2",
+  "objectives": [
+    "Связать действия с first, then и finally",
+    "Использовать отрицательный императив для предупреждения"
+  ],
+  "notes": [
+    "Императив начинается с начальной формы глагола: Press the button.",
+    "Отрицательная инструкция строится с don't + глагол: Don't open it."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "press",
+      "ru": "нажимать"
+    },
+    {
+      "en": "plug in",
+      "ru": "подключать к розетке"
+    },
+    {
+      "en": "lid",
+      "ru": "крышка"
+    },
+    {
+      "en": "finally",
+      "ru": "наконец; последним шагом"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как запретить открывать крышку?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Don't open the lid."
+          },
+          {
+            "id": "o2",
+            "label": "Not opening the lid."
+          },
+          {
+            "id": "o3",
+            "label": "Doesn't open the lid."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Don't open the lid.",
+      "explanation": "Для отрицательной команды используется Don't + начальная форма.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "First, wash the fruit. ___ cut it into small pieces."
+      },
+      "answer_key": {
+        "accepted": ["Then", "Next", "Afterwards", "Afterward"]
+      },
+      "reference_answer": "Then",
+      "incorrect_answer": "Yesterday",
+      "editorial_answer": "Then",
+      "explanation": "Then связывает последовательные действия в инструкции.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери команду о выключении прибора.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "machine"
+          },
+          {
+            "id": "t5",
+            "label": "before"
+          },
+          {
+            "id": "t6",
+            "label": "you"
+          },
+          {
+            "id": "t7",
+            "label": "clean"
+          },
+          {
+            "id": "t8",
+            "label": "it."
+          },
+          {
+            "id": "t1",
+            "label": "Turn"
+          },
+          {
+            "id": "t2",
+            "label": "off"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "Turn off the machine before you clean it.",
+      "explanation": "Before показывает, что выключение предшествует очистке.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь отрицательную команду.",
+      "public_payload": {
+        "sentence": "Don't to touch the hot plate."
+      },
+      "answer_key": {
+        "accepted": ["Don't touch the hot plate."]
+      },
+      "reference_answer": "Don't touch the hot plate.",
+      "incorrect_answer": "Don't to touch the hot plate.",
+      "editorial_answer": "Don't touch the hot plate.",
+      "explanation": "После don't в команде не используется to.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Сначала прочитай инструкцию."
+      },
+      "answer_key": {
+        "accepted": [
+          "Read the instructions first.",
+          "First, read the instructions."
+        ]
+      },
+      "reference_answer": "Read the instructions first.",
+      "incorrect_answer": "First, write the instructions.",
+      "editorial_answer": "Read the instructions first.",
+      "explanation": "Read — прочитать; write — написать, что меняет действие.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что следует делать при красном сигнале?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Pull the paper out immediately."
+          },
+          {
+            "id": "o2",
+            "label": "Ask a member of staff for help."
+          },
+          {
+            "id": "o3",
+            "label": "Switch on your computer again."
+          }
+        ],
+        "passage": "To use the printer, first switch it on and check that there is paper in the tray. Then choose the file on your computer and select Print. Wait until the printer finishes before you collect the pages. If the red light appears, do not pull the paper out. Ask a member of staff for help."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Ask a member of staff for help.",
+      "explanation": "Инструкция прямо запрещает вытягивать бумагу и советует обратиться к сотруднику.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Назови следующий шаг печати.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I printed something last week."
+          },
+          {
+            "id": "o2",
+            "label": "The file belongs to Maria."
+          },
+          {
+            "id": "o3",
+            "label": "Select Print and wait for the pages."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Colleague",
+            "text": "What should I do after I choose the file?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Select Print and wait for the pages.",
+      "explanation": "Ответ должен продолжить последовательность, а не сообщить прошлый факт.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово для последнего шага.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Finally"
+          },
+          {
+            "id": "o2",
+            "label": "Before"
+          },
+          {
+            "id": "o3",
+            "label": "Yesterday"
+          }
+        ],
+        "sentence": "First, add the tea. Then pour in hot water. ___, leave it for three minutes."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Finally",
+      "explanation": "Finally обозначает завершающий шаг инструкции.",
+      "key": "e08"
+    }
+  ]
+}

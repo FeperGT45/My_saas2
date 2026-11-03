@@ -1,0 +1,262 @@
+{
+  "key": "a2/travel-delays",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A2 · пакет 2",
+    "position": 2
+  },
+  "position": 8,
+  "title": "Задержка поезда",
+  "description": "Понимаем объявление о задержке и уточняем следующий возможный рейс.",
+  "level": "A2",
+  "objectives": [
+    "Отличить delayed от cancelled",
+    "Спросить о времени следующего поезда"
+  ],
+  "notes": [
+    "Delayed означает задержан, cancelled — отменён.",
+    "How long …? спрашивает о длительности ожидания."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "delay",
+      "ru": "задержка"
+    },
+    {
+      "en": "cancelled",
+      "ru": "отменённый"
+    },
+    {
+      "en": "platform",
+      "ru": "платформа"
+    },
+    {
+      "en": "announcement",
+      "ru": "объявление"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Что значит The train is delayed?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It will not run at all."
+          },
+          {
+            "id": "o2",
+            "label": "It will leave later than planned."
+          },
+          {
+            "id": "o3",
+            "label": "It has arrived early."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "It will leave later than planned.",
+      "explanation": "Delayed сообщает о более позднем отправлении, не обязательно об отмене.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "How ___ is the delay?"
+      },
+      "answer_key": {
+        "accepted": ["long"]
+      },
+      "reference_answer": "long",
+      "incorrect_answer": "many",
+      "editorial_answer": "long",
+      "explanation": "How long спрашивает о длительности.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери вопрос о следующем поезде.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "does"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "next"
+          },
+          {
+            "id": "t6",
+            "label": "train"
+          },
+          {
+            "id": "t7",
+            "label": "leave?"
+          },
+          {
+            "id": "t1",
+            "label": "What"
+          },
+          {
+            "id": "t2",
+            "label": "time"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "What time does the next train leave?",
+      "explanation": "После does глагол leave без -s.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь вспомогательный глагол",
+      "public_payload": {
+        "sentence": "When do the next bus arrive?"
+      },
+      "answer_key": {
+        "accepted": ["When does the next bus arrive?"]
+      },
+      "reference_answer": "When does the next bus arrive?",
+      "incorrect_answer": "When do the next bus arrive?",
+      "editorial_answer": "When does the next bus arrive?",
+      "explanation": "The next bus — единственное число, поэтому does.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Поезд опаздывает на двадцать минут."
+      },
+      "answer_key": {
+        "accepted": [
+          "The train is twenty minutes late.",
+          "The train is delayed by twenty minutes."
+        ]
+      },
+      "reference_answer": "The train is twenty minutes late.",
+      "incorrect_answer": "The train is twenty minutes early.",
+      "editorial_answer": "The train is twenty minutes late.",
+      "explanation": "Late/delayed — опоздание; early — раньше срока.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Нужно ли пассажирам задержанного поезда покупать новые билеты?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Yes, all tickets are cancelled."
+          },
+          {
+            "id": "o2",
+            "label": "Only passengers on platform four must pay again."
+          },
+          {
+            "id": "o3",
+            "label": "No, their tickets remain valid."
+          }
+        ],
+        "passage": "The 10:15 train to York is delayed by thirty minutes because of a signal problem. It will still leave from platform four. Passengers for Leeds should use platform two for the 10:25 train. The announcement says that tickets for the delayed York service remain valid, so passengers do not need to buy new ones."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "No, their tickets remain valid.",
+      "explanation": "Remain valid означает, что прежние билеты продолжают действовать.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Объясни, что он задержан, но не отменён.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "No, it's delayed. It should leave in twenty minutes."
+          },
+          {
+            "id": "o2",
+            "label": "Yes, it leaves every morning."
+          },
+          {
+            "id": "o3",
+            "label": "No, your seat is by the window."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Passenger",
+            "text": "Has the train been cancelled?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No, it's delayed. It should leave in twenty minutes.",
+      "explanation": "Ответ различает отмену и задержку.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово для места посадки на поезд.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "gate number for boarding a plane"
+          },
+          {
+            "id": "o2",
+            "label": "platform"
+          },
+          {
+            "id": "o3",
+            "label": "bus driver"
+          }
+        ],
+        "sentence": "The train leaves from ___ three."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "platform",
+      "explanation": "Для железной дороги используется platform; остальные варианты не обозначают платформу.",
+      "key": "e08"
+    }
+  ]
+}

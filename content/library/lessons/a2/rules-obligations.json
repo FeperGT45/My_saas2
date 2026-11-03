@@ -1,0 +1,290 @@
+{
+  "key": "a2/rules-obligations",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A2 · пакет 2",
+    "position": 2
+  },
+  "position": 4,
+  "title": "Правила и необходимость",
+  "description": "Различаем запрет и отсутствие необходимости в знакомых бытовых ситуациях.",
+  "level": "A2",
+  "objectives": [
+    "Различить mustn't и don't have to",
+    "Использовать have to для практической необходимости"
+  ],
+  "notes": [
+    "Mustn't означает запрет: делать нельзя.",
+    "Don't have to означает отсутствие необходимости: можно, но не обязательно."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "required",
+      "ru": "обязательный"
+    },
+    {
+      "en": "allowed",
+      "ru": "разрешённый"
+    },
+    {
+      "en": "entrance",
+      "ru": "вход"
+    },
+    {
+      "en": "permission",
+      "ru": "разрешение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери значение You don't have to bring lunch.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Bringing lunch is forbidden."
+          },
+          {
+            "id": "o2",
+            "label": "You must bring lunch."
+          },
+          {
+            "id": "o3",
+            "label": "Bringing lunch is optional."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Bringing lunch is optional.",
+      "explanation": "Don't have to снимает обязанность, а не запрещает действие.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "The sign says NO SMOKING. You ___ smoke here."
+      },
+      "answer_key": {
+        "accepted": ["mustn't", "must not", "can't", "cannot"]
+      },
+      "reference_answer": "mustn't",
+      "incorrect_answer": "don't have to",
+      "editorial_answer": "mustn't",
+      "explanation": "Знак запрещает курить, поэтому требуется mustn't.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери правило об обязательном билете.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "to"
+          },
+          {
+            "id": "t4",
+            "label": "show"
+          },
+          {
+            "id": "t5",
+            "label": "your"
+          },
+          {
+            "id": "t6",
+            "label": "ticket"
+          },
+          {
+            "id": "t7",
+            "label": "at"
+          },
+          {
+            "id": "t8",
+            "label": "the"
+          },
+          {
+            "id": "t9",
+            "label": "entrance."
+          },
+          {
+            "id": "t1",
+            "label": "You"
+          },
+          {
+            "id": "t2",
+            "label": "have"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "You have to show your ticket at the entrance.",
+      "explanation": "Have to описывает требование предъявить билет.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь форму после doesn't.",
+      "public_payload": {
+        "sentence": "She doesn't has to work on Sunday."
+      },
+      "answer_key": {
+        "accepted": ["She doesn't have to work on Sunday."]
+      },
+      "reference_answer": "She doesn't have to work on Sunday.",
+      "incorrect_answer": "She doesn't has to work on Sunday.",
+      "editorial_answer": "She doesn't have to work on Sunday.",
+      "explanation": "После doesn't используется have, не has.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Тебе не обязательно вставать рано завтра."
+      },
+      "answer_key": {
+        "accepted": [
+          "You don't have to get up early tomorrow.",
+          "You do not have to get up early tomorrow."
+        ]
+      },
+      "reference_answer": "You don't have to get up early tomorrow.",
+      "incorrect_answer": "You mustn't get up early tomorrow.",
+      "editorial_answer": "You don't have to get up early tomorrow.",
+      "explanation": "Отсутствие необходимости передаёт don't have to; mustn't был бы запретом.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что сказано о полотенцах?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Visitors can bring one, but it is not necessary."
+          },
+          {
+            "id": "o2",
+            "label": "Visitors are forbidden to bring one."
+          },
+          {
+            "id": "o3",
+            "label": "Every visitor must buy a new one."
+          }
+        ],
+        "passage": "Visitors to the sports centre have to show a membership card at the entrance. They must not run beside the swimming pool. Towels are available for a small fee, so visitors do not have to bring their own. Children under twelve must be with an adult in the pool area. The café is open to everyone."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Visitors can bring one, but it is not necessary.",
+      "explanation": "Do not have to bring their own означает, что своё полотенце необязательно.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь, что это обязательно.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "No, you mustn't forget one."
+          },
+          {
+            "id": "o2",
+            "label": "Yes, everyone has to wear one."
+          },
+          {
+            "id": "o3",
+            "label": "Yes, you don't have to wear one."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "New member",
+            "text": "Do I have to wear a swimming cap?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Yes, everyone has to wear one.",
+      "explanation": "Yes и has to согласованно сообщают об обязательности.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери форму обязанности с she.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "have to"
+          },
+          {
+            "id": "o2",
+            "label": "must to"
+          },
+          {
+            "id": "o3",
+            "label": "has to"
+          }
+        ],
+        "sentence": "Her shift starts at seven, so she ___ leave home early."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "has to",
+      "explanation": "С she используется has to; после must частица to не ставится.",
+      "key": "e08"
+    }
+  ]
+}

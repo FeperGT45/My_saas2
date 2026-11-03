@@ -1,0 +1,262 @@
+{
+  "key": "a2/polite-invitations",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A2 · пакет 2",
+    "position": 2
+  },
+  "position": 1,
+  "title": "Приглашаем и договариваемся",
+  "description": "Делаем приглашение, принимаем его или вежливо отказываемся с причиной.",
+  "level": "A2",
+  "objectives": [
+    "Пригласить с Would you like to …?",
+    "Отличить приглашение от вопроса о привычках"
+  ],
+  "notes": [
+    "Would you like to join us? — приглашение; Do you like …? — вопрос о предпочтениях.",
+    "I'd love to, but … позволяет вежливо объяснить отказ."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "join",
+      "ru": "присоединиться"
+    },
+    {
+      "en": "invite",
+      "ru": "пригласить"
+    },
+    {
+      "en": "available",
+      "ru": "свободный в указанное время"
+    },
+    {
+      "en": "another time",
+      "ru": "в другой раз"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как пригласить друга поужинать сегодня?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Do you have dinner every day?"
+          },
+          {
+            "id": "o2",
+            "label": "Did you have dinner yesterday?"
+          },
+          {
+            "id": "o3",
+            "label": "Would you like to have dinner with us tonight?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Would you like to have dinner with us tonight?",
+      "explanation": "Would you like to …? предлагает совместное действие.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "Would you like ___ join our picnic?"
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "to",
+      "explanation": "После would like перед глаголом нужен to.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери вежливый отказ с причиной.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "to,"
+          },
+          {
+            "id": "t4",
+            "label": "but"
+          },
+          {
+            "id": "t5",
+            "label": "I'm"
+          },
+          {
+            "id": "t6",
+            "label": "working"
+          },
+          {
+            "id": "t7",
+            "label": "tonight."
+          },
+          {
+            "id": "t1",
+            "label": "I'd"
+          },
+          {
+            "id": "t2",
+            "label": "love"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "I'd love to, but I'm working tonight.",
+      "explanation": "But вводит причину, по которой приглашение нельзя принять.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь форму глагола.",
+      "public_payload": {
+        "sentence": "Would you like coming to my party?"
+      },
+      "answer_key": {
+        "accepted": ["Would you like to come to my party?"]
+      },
+      "reference_answer": "Would you like to come to my party?",
+      "incorrect_answer": "Would you like coming to my party?",
+      "editorial_answer": "Would you like to come to my party?",
+      "explanation": "После would like используется to come, а не coming.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Как насчёт встречи в субботу?"
+      },
+      "answer_key": {
+        "accepted": [
+          "How about meeting on Saturday?",
+          "What about meeting on Saturday?"
+        ]
+      },
+      "reference_answer": "How about meeting on Saturday?",
+      "incorrect_answer": "How about met on Saturday?",
+      "editorial_answer": "How about meeting on Saturday?",
+      "explanation": "После how/what about глагол принимает форму -ing.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Во сколько они договорились встретиться?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "At 6:45 on Saturday."
+          },
+          {
+            "id": "o2",
+            "label": "At 7:00 on Friday."
+          },
+          {
+            "id": "o3",
+            "label": "At 7:15 on Saturday."
+          }
+        ],
+        "passage": "Nora invites Pavel to a film on Friday evening. Pavel would love to go, but he is visiting his grandparents that evening. He asks whether Nora is free on Saturday instead. Nora checks the cinema website and finds the same film at seven on Saturday. They agree to meet outside at quarter to seven."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "At 6:45 on Saturday.",
+      "explanation": "Quarter to seven — 6:45; суббота выбрана вместо пятницы.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Прими приглашение и уточни время.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I went yesterday because it rained."
+          },
+          {
+            "id": "o2",
+            "label": "I'd love to. What time shall we meet?"
+          },
+          {
+            "id": "o3",
+            "label": "No, the cinema is a building."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Nora",
+            "text": "Would you like to come to the cinema on Saturday?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "I'd love to. What time shall we meet?",
+      "explanation": "I'd love to принимает приглашение, а следующий вопрос уточняет время.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери связку, которая объясняет отказ.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "because of"
+          },
+          {
+            "id": "o2",
+            "label": "so that"
+          },
+          {
+            "id": "o3",
+            "label": "but"
+          }
+        ],
+        "sentence": "Thanks for inviting me, ___ I have to work that evening."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "but",
+      "explanation": "But соединяет благодарность с контрастирующим отказом.",
+      "key": "e08"
+    }
+  ]
+}

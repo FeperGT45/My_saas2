@@ -1,0 +1,258 @@
+{
+  "key": "a1/polite-requests",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 14,
+  "title": "Простые вежливые просьбы",
+  "description": "Просим открыть окно, передать предмет или повторить фразу и реагируем на просьбу.",
+  "level": "A1",
+  "objectives": [
+    "Построить Can you …, please?",
+    "Согласиться выполнить просьбу"
+  ],
+  "notes": [
+    "Can you open …? может быть просьбой, а не проверкой способности.",
+    "Please делает просьбу вежливее; после can глагол без to."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "pass",
+      "ru": "передавать"
+    },
+    {
+      "en": "repeat",
+      "ru": "повторять"
+    },
+    {
+      "en": "window",
+      "ru": "окно"
+    },
+    {
+      "en": "certainly",
+      "ru": "конечно"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как вежливо попросить открыть окно?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Can you open the window, please?"
+          },
+          {
+            "id": "o2",
+            "label": "You opening the window?"
+          },
+          {
+            "id": "o3",
+            "label": "Can you to open the window?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Can you open the window, please?",
+      "explanation": "Can you + open без to образует просьбу.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "Pass me the salt, ___."
+      },
+      "answer_key": {
+        "accepted": ["please"]
+      },
+      "reference_answer": "please",
+      "incorrect_answer": "yesterday",
+      "editorial_answer": "please",
+      "explanation": "Please уместно завершает вежливую просьбу.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери просьбу повторить вопрос.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "repeat"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "question,"
+          },
+          {
+            "id": "t6",
+            "label": "please?"
+          },
+          {
+            "id": "t1",
+            "label": "Could"
+          },
+          {
+            "id": "t2",
+            "label": "you"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Could you repeat the question, please?",
+      "explanation": "Could you + repeat — вежливая форма просьбы.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Убери лишнее слово",
+      "public_payload": {
+        "sentence": "Can you to help me?"
+      },
+      "answer_key": {
+        "accepted": ["Can you help me?"]
+      },
+      "reference_answer": "Can you help me?",
+      "incorrect_answer": "Can you to help me?",
+      "editorial_answer": "Can you help me?",
+      "explanation": "После can не нужно to.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Можешь говорить медленнее, пожалуйста?"
+      },
+      "answer_key": {
+        "accepted": [
+          "Can you speak more slowly, please?",
+          "Could you speak more slowly, please?"
+        ]
+      },
+      "reference_answer": "Can you speak more slowly, please?",
+      "incorrect_answer": "Can you speak louder, please?",
+      "editorial_answer": "Can you speak more slowly, please?",
+      "explanation": "More slowly — медленнее; louder — громче.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Нина просит открыть окно?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Her book is missing."
+          },
+          {
+            "id": "o2",
+            "label": "The room is warm."
+          },
+          {
+            "id": "o3",
+            "label": "Max is outside."
+          }
+        ],
+        "passage": "The classroom is warm. Nina asks Max to open the window. Max says, 'Of course,' and opens it. Then Nina asks him to pass her book, which is on his desk."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The room is warm.",
+      "explanation": "Первое предложение сообщает о тёплой комнате.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Согласись и передай линейку.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "No, I'm a ruler."
+          },
+          {
+            "id": "o2",
+            "label": "It was last month."
+          },
+          {
+            "id": "o3",
+            "label": "Of course. Here you are."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Classmate",
+            "text": "Can you pass me that ruler, please?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Of course. Here you are.",
+      "explanation": "Here you are сопровождает передачу предмета.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери глагол для просьбы сказать ещё раз.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "repeat"
+          },
+          {
+            "id": "o2",
+            "label": "borrow"
+          },
+          {
+            "id": "o3",
+            "label": "close"
+          }
+        ],
+        "sentence": "Sorry, I didn't hear you. Could you ___ that?"
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "repeat",
+      "explanation": "Repeat означает повторить.",
+      "key": "e08"
+    }
+  ]
+}

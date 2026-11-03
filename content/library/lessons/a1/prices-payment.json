@@ -1,0 +1,248 @@
+{
+  "key": "a1/prices-payment",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 15,
+  "title": "Цена и оплата",
+  "description": "Спрашиваем цену товара и понимаем простую сумму и способ оплаты.",
+  "level": "A1",
+  "objectives": ["Спросить цену с How much", "Попросить оплатить картой"],
+  "notes": [
+    "How much is this …? спрашивает цену одного предмета.",
+    "Pay by card — платить картой; pay in cash — платить наличными."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "price",
+      "ru": "цена"
+    },
+    {
+      "en": "cash",
+      "ru": "наличные"
+    },
+    {
+      "en": "card",
+      "ru": "карта"
+    },
+    {
+      "en": "change",
+      "ru": "сдача"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как спросить цену одной книги?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "How many is this book?"
+          },
+          {
+            "id": "o2",
+            "label": "How much is this book?"
+          },
+          {
+            "id": "o3",
+            "label": "How old costs this book?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "How much is this book?",
+      "explanation": "О цене спрашивают How much.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "Can I pay ___ card?"
+      },
+      "answer_key": {
+        "accepted": ["by"]
+      },
+      "reference_answer": "by",
+      "incorrect_answer": "on",
+      "editorial_answer": "by",
+      "explanation": "Оплатить картой — pay by card.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери: «Эти ручки стоят три фунта».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "cost"
+          },
+          {
+            "id": "t4",
+            "label": "three"
+          },
+          {
+            "id": "t5",
+            "label": "pounds."
+          },
+          {
+            "id": "t1",
+            "label": "These"
+          },
+          {
+            "id": "t2",
+            "label": "pens"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "These pens cost three pounds.",
+      "explanation": "Pens — множественное число; глагол cost без -s.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь связку",
+      "public_payload": {
+        "sentence": "How much are this bag?"
+      },
+      "answer_key": {
+        "accepted": ["How much is this bag?"]
+      },
+      "reference_answer": "How much is this bag?",
+      "incorrect_answer": "How much are this bag?",
+      "editorial_answer": "How much is this bag?",
+      "explanation": "This bag — один предмет, поэтому is.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Можно оплатить наличными?"
+      },
+      "answer_key": {
+        "accepted": ["Can I pay in cash?", "Could I pay in cash?"]
+      },
+      "reference_answer": "Can I pay in cash?",
+      "incorrect_answer": "Can I pay by card?",
+      "editorial_answer": "Can I pay in cash?",
+      "explanation": "In cash — наличными, by card — картой.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько сдачи получает Мина?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Four pounds."
+          },
+          {
+            "id": "o2",
+            "label": "Five pounds."
+          },
+          {
+            "id": "o3",
+            "label": "One pound."
+          }
+        ],
+        "passage": "A notebook costs four pounds. Mina gives the shop assistant a five-pound note. She puts the notebook in her bag and receives one pound in change. She does not buy a pen."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "One pound.",
+      "explanation": "Пять минус четыре — один фунт; сумма названа в тексте.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Назови цену за весь набор: два фунта.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "They're two pounds altogether."
+          },
+          {
+            "id": "o2",
+            "label": "It's two postcards yesterday."
+          },
+          {
+            "id": "o3",
+            "label": "They're on the counter."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Customer",
+            "text": "How much are these postcards?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "They're two pounds altogether.",
+      "explanation": "Altogether уточняет общую цену.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово для сдачи.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "recipe"
+          },
+          {
+            "id": "o2",
+            "label": "change"
+          },
+          {
+            "id": "o3",
+            "label": "size"
+          }
+        ],
+        "sentence": "The assistant gives me my ___ after I pay."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "change",
+      "explanation": "Change после оплаты — сдача.",
+      "key": "e08"
+    }
+  ]
+}

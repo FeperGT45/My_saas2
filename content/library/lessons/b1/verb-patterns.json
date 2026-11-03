@@ -1,0 +1,258 @@
+{
+  "key": "b1/verb-patterns",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика B1 · пакет 2",
+    "position": 2
+  },
+  "position": 5,
+  "title": "Планы, привычки и формы глагола",
+  "description": "Различаем распространённые сочетания глаголов с -ing и to-infinitive без изменения смысла.",
+  "level": "B1",
+  "objectives": [
+    "Использовать enjoy/avoid + -ing",
+    "Использовать decide/hope + to-infinitive"
+  ],
+  "notes": [
+    "После enjoy и avoid используется форма -ing.",
+    "После decide и hope используется to + начальная форма; это модель конкретного глагола."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "avoid",
+      "ru": "избегать"
+    },
+    {
+      "en": "decide",
+      "ru": "решить"
+    },
+    {
+      "en": "hope",
+      "ru": "надеяться"
+    },
+    {
+      "en": "suggest",
+      "ru": "предлагать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери правильное сочетание после enjoy.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I enjoy learning new skills."
+          },
+          {
+            "id": "o2",
+            "label": "I enjoy to learn new skills."
+          },
+          {
+            "id": "o3",
+            "label": "I enjoy learn new skills."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "I enjoy learning new skills.",
+      "explanation": "Enjoy требует learning в этой конструкции.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "We decided ___ leave early."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "to",
+      "explanation": "Decide сочетается с to-infinitive.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение о тренировках.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "driving"
+          },
+          {
+            "id": "t4",
+            "label": "during"
+          },
+          {
+            "id": "t5",
+            "label": "rush"
+          },
+          {
+            "id": "t6",
+            "label": "hour."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "avoids"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "She avoids driving during rush hour.",
+      "explanation": "После avoids используется driving.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь форму",
+      "public_payload": {
+        "sentence": "He suggested to take a short break."
+      },
+      "answer_key": {
+        "accepted": ["He suggested taking a short break."]
+      },
+      "reference_answer": "He suggested taking a short break.",
+      "incorrect_answer": "He suggested to take a short break.",
+      "editorial_answer": "He suggested taking a short break.",
+      "explanation": "После suggested здесь нужна форма taking.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Я надеюсь найти новую работу."
+      },
+      "answer_key": {
+        "accepted": [
+          "I hope to find a new job.",
+          "I am hoping to find a new job."
+        ]
+      },
+      "reference_answer": "I hope to find a new job.",
+      "incorrect_answer": "I enjoy finding a new job.",
+      "editorial_answer": "I hope to find a new job.",
+      "explanation": "Hope to find передаёт надежду; enjoy обозначает удовольствие.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Джон выбрал работу в поддержке?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "He wanted to avoid communicating with colleagues."
+          },
+          {
+            "id": "o2",
+            "label": "He enjoyed helping people with technical problems."
+          },
+          {
+            "id": "o3",
+            "label": "He had already been offered a job by his friend."
+          }
+        ],
+        "passage": "Jon wanted to change jobs, but he was unsure where to begin. A friend suggested making a list of the tasks he enjoyed doing. Jon realised that he liked helping colleagues solve technical problems and avoided working alone for long periods. He decided to apply for a support role and hoped to find a team that valued patient communication."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "He enjoyed helping people with technical problems.",
+      "explanation": "Его интерес к помощи людям соответствует выбранной роли.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Предложи заранее отправлять повестку.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I suggest to sending the agenda in advance."
+          },
+          {
+            "id": "o2",
+            "label": "I suggest send the agenda in advance."
+          },
+          {
+            "id": "o3",
+            "label": "I suggest sending the agenda in advance."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Colleague",
+            "text": "How can we make our meetings shorter?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "I suggest sending the agenda in advance.",
+      "explanation": "Suggest + sending — правильная модель.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери форму после looking forward to.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "meeting"
+          },
+          {
+            "id": "o2",
+            "label": "meet"
+          },
+          {
+            "id": "o3",
+            "label": "met"
+          }
+        ],
+        "sentence": "I'm looking forward to ___ the new team."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "meeting",
+      "explanation": "To здесь предлог в устойчивом выражении, поэтому после него -ing.",
+      "key": "e08"
+    }
+  ]
+}

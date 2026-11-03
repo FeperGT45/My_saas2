@@ -1,0 +1,254 @@
+{
+  "key": "a1/morning-routine",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 1,
+  "title": "Утро по будням",
+  "description": "Описываем обычное утро и отличаем привычку от действия прямо сейчас.",
+  "level": "A1",
+  "objectives": [
+    "Описать утренние привычки в Present Simple",
+    "Поставить наречие usually перед смысловым глаголом"
+  ],
+  "notes": [
+    "После I, you, we, they используется начальная форма глагола.",
+    "Usually обычно стоит перед смысловым глаголом: I usually walk."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "wake up",
+      "ru": "просыпаться"
+    },
+    {
+      "en": "breakfast",
+      "ru": "завтрак"
+    },
+    {
+      "en": "leave",
+      "ru": "уходить"
+    },
+    {
+      "en": "usually",
+      "ru": "обычно"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери предложение об обычном утре Мии.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Mia gets up at seven."
+          },
+          {
+            "id": "o2",
+            "label": "Mia get up at seven."
+          },
+          {
+            "id": "o3",
+            "label": "Mia getting up at seven."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Mia gets up at seven.",
+      "explanation": "После she или имени одного человека в Present Simple добавляем -s.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "We ___ breakfast at home."
+      },
+      "answer_key": {
+        "accepted": ["have", "eat"]
+      },
+      "reference_answer": "have",
+      "incorrect_answer": "has",
+      "editorial_answer": "have",
+      "explanation": "С we употребляем have, а не has.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери: «Я обычно иду в школу пешком».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "walk"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "school."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "usually"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "I usually walk to school.",
+      "explanation": "Usually ставим перед walk.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь глагол.",
+      "public_payload": {
+        "sentence": "He brush his teeth every morning."
+      },
+      "answer_key": {
+        "accepted": ["He brushes his teeth every morning."]
+      },
+      "reference_answer": "He brushes his teeth every morning.",
+      "incorrect_answer": "He brush his teeth every morning.",
+      "editorial_answer": "He brushes his teeth every morning.",
+      "explanation": "После he у brush окончание -es: brushes.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Мы завтракаем в восемь."
+      },
+      "answer_key": {
+        "accepted": [
+          "We have breakfast at eight.",
+          "We eat breakfast at eight."
+        ]
+      },
+      "reference_answer": "We have breakfast at eight.",
+      "incorrect_answer": "We have dinner at eight.",
+      "editorial_answer": "We have breakfast at eight.",
+      "explanation": "Have/eat breakfast означает завтракать; dinner — другой приём пищи.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как Лена добирается до школы по будням?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "By bus."
+          },
+          {
+            "id": "o2",
+            "label": "On foot."
+          },
+          {
+            "id": "o3",
+            "label": "By car."
+          }
+        ],
+        "passage": "Lena gets up at seven on weekdays. She has breakfast with her brother. They leave home at eight and walk to school. On Sundays, Lena gets up later."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "On foot.",
+      "explanation": "Walk to school — идти в школу пешком.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь на вопрос о времени начала работы.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "In the office."
+          },
+          {
+            "id": "o2",
+            "label": "With my sister."
+          },
+          {
+            "id": "o3",
+            "label": "At nine o'clock."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "A colleague",
+            "text": "What time do you start work?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "At nine o'clock.",
+      "explanation": "What time спрашивает о времени, поэтому нужен ответ at nine.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу: речь об обычном действии.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "usually"
+          },
+          {
+            "id": "o2",
+            "label": "yesterday"
+          },
+          {
+            "id": "o3",
+            "label": "tomorrow"
+          }
+        ],
+        "sentence": "I ___ check my bag before I leave home."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "usually",
+      "explanation": "Usually обозначает привычную частоту; yesterday и tomorrow — отдельные дни.",
+      "key": "e08"
+    }
+  ]
+}

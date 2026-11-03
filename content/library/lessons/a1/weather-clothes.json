@@ -1,0 +1,255 @@
+{
+  "key": "a1/weather-clothes",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 3,
+  "title": "Одежда по погоде",
+  "description": "Подбираем одежду под простое описание погоды и используем wear.",
+  "level": "A1",
+  "objectives": [
+    "Назвать одежду для дождя и холода",
+    "Различить единственное и множественное число в описании одежды"
+  ],
+  "notes": [
+    "It's cold/rainy — стандартный способ описать погоду.",
+    "Trousers употребляется с are; a coat — с is."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "coat",
+      "ru": "пальто"
+    },
+    {
+      "en": "boots",
+      "ru": "сапоги"
+    },
+    {
+      "en": "rainy",
+      "ru": "дождливый"
+    },
+    {
+      "en": "warm",
+      "ru": "тёплый"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как описать холодную погоду?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It cold today."
+          },
+          {
+            "id": "o2",
+            "label": "They cold today."
+          },
+          {
+            "id": "o3",
+            "label": "It's cold today."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "It's cold today.",
+      "explanation": "В описании погоды нужна связка is: It is cold.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "These boots ___ new."
+      },
+      "answer_key": {
+        "accepted": ["are"]
+      },
+      "reference_answer": "are",
+      "incorrect_answer": "is",
+      "editorial_answer": "are",
+      "explanation": "Boots — множественное число, поэтому are.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери: «На мне тёплое пальто».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "wearing"
+          },
+          {
+            "id": "t4",
+            "label": "a"
+          },
+          {
+            "id": "t5",
+            "label": "warm"
+          },
+          {
+            "id": "t6",
+            "label": "coat."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "am"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "I am wearing a warm coat.",
+      "explanation": "Am wearing описывает одежду на человеке сейчас.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь форму be.",
+      "public_payload": {
+        "sentence": "My trousers is black."
+      },
+      "answer_key": {
+        "accepted": ["My trousers are black."]
+      },
+      "reference_answer": "My trousers are black.",
+      "incorrect_answer": "My trousers is black.",
+      "editorial_answer": "My trousers are black.",
+      "explanation": "Trousers требует are, даже если речь об одной паре брюк.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Сегодня идёт дождь."
+      },
+      "answer_key": {
+        "accepted": ["It is raining today.", "It's raining today."]
+      },
+      "reference_answer": "It is raining today.",
+      "incorrect_answer": "It is snowing today.",
+      "editorial_answer": "It is raining today.",
+      "explanation": "Raining — идёт дождь; snowing — идёт снег.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Сэм берёт дополнительно к одежде?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "An umbrella."
+          },
+          {
+            "id": "o2",
+            "label": "A T-shirt."
+          },
+          {
+            "id": "o3",
+            "label": "A swimming cap."
+          }
+        ],
+        "passage": "It is cold and rainy this morning. Sam puts on a warm coat and boots. He takes an umbrella, too. His yellow T-shirt stays in the wardrobe."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "An umbrella.",
+      "explanation": "В тексте сказано He takes an umbrella.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь: на улице холодно.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Yes, they're boots."
+          },
+          {
+            "id": "o2",
+            "label": "No, it's cold."
+          },
+          {
+            "id": "o3",
+            "label": "No, I like yellow."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Friend",
+            "text": "Is it hot outside?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "No, it's cold.",
+      "explanation": "Вопрос о погоде требует ответа с it и прилагательным cold.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери одежду для рук в холодную погоду.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "sunglasses"
+          },
+          {
+            "id": "o2",
+            "label": "sandals"
+          },
+          {
+            "id": "o3",
+            "label": "gloves"
+          }
+        ],
+        "sentence": "My hands are cold. I need my ___."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "gloves",
+      "explanation": "Gloves — перчатки; остальные варианты не защищают руки.",
+      "key": "e08"
+    }
+  ]
+}

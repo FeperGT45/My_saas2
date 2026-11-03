@@ -1,0 +1,262 @@
+{
+  "key": "a2/past-interrupted",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A2 · пакет 2",
+    "position": 2
+  },
+  "position": 2,
+  "title": "Что происходило в тот момент",
+  "description": "Различаем длительное действие в прошлом и короткое событие, которое его прервало.",
+  "level": "A2",
+  "objectives": [
+    "Построить Past Continuous с was/were",
+    "Соединить фоновое действие и событие с when"
+  ],
+  "notes": [
+    "Was/were + -ing описывает действие в процессе в прошлом.",
+    "Короткое событие на фоне длительного часто выражается Past Simple."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "ring",
+      "ru": "звонить"
+    },
+    {
+      "en": "while",
+      "ru": "пока; в то время как"
+    },
+    {
+      "en": "suddenly",
+      "ru": "вдруг"
+    },
+    {
+      "en": "interrupt",
+      "ru": "прерывать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери действие в процессе вчера в восемь.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I was cooking at eight yesterday."
+          },
+          {
+            "id": "o2",
+            "label": "I am cook at eight yesterday."
+          },
+          {
+            "id": "o3",
+            "label": "I were cooking at eight yesterday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "I was cooking at eight yesterday.",
+      "explanation": "После I в Past Continuous используется was + cooking.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "They ___ waiting when the bus arrived."
+      },
+      "answer_key": {
+        "accepted": ["were"]
+      },
+      "reference_answer": "were",
+      "incorrect_answer": "was",
+      "editorial_answer": "were",
+      "explanation": "С they используется were.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение о звонке во время чтения.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "reading"
+          },
+          {
+            "id": "t4",
+            "label": "when"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "phone"
+          },
+          {
+            "id": "t7",
+            "label": "rang."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "was"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "I was reading when the phone rang.",
+      "explanation": "Was reading — фон, rang — короткое событие.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь вспомогательный глагол.",
+      "public_payload": {
+        "sentence": "We was watching a film at nine."
+      },
+      "answer_key": {
+        "accepted": ["We were watching a film at nine."]
+      },
+      "reference_answer": "We were watching a film at nine.",
+      "incorrect_answer": "We was watching a film at nine.",
+      "editorial_answer": "We were watching a film at nine.",
+      "explanation": "С we нужна форма were.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Когда я пришёл домой, она спала."
+      },
+      "answer_key": {
+        "accepted": [
+          "She was sleeping when I came home.",
+          "When I came home, she was sleeping."
+        ]
+      },
+      "reference_answer": "She was sleeping when I came home.",
+      "incorrect_answer": "She sleeps when I came home.",
+      "editorial_answer": "She was sleeping when I came home.",
+      "explanation": "Was sleeping показывает процесс в момент возвращения.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Карим делал, когда погас свет?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "He was buying a torch."
+          },
+          {
+            "id": "o2",
+            "label": "He was preparing dinner."
+          },
+          {
+            "id": "o3",
+            "label": "He was doing homework."
+          }
+        ],
+        "passage": "At six yesterday, Karim was preparing dinner. His sister was doing her homework at the kitchen table. Suddenly, the lights went out. Karim stopped cooking and found a torch. His sister saved her work on her laptop, which still had battery power. They waited together until the lights came back on."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "He was preparing dinner.",
+      "explanation": "Начало текста задаёт фон: Karim was preparing dinner.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Объясни, что в тот момент был в душе.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Sorry, I have a shower every morning."
+          },
+          {
+            "id": "o2",
+            "label": "Sorry, I will buy a phone."
+          },
+          {
+            "id": "o3",
+            "label": "Sorry, I was having a shower."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Friend",
+            "text": "Why didn't you answer my call at eight?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Sorry, I was having a shower.",
+      "explanation": "Was having объясняет ситуацию в конкретный прошлый момент.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери форму короткого события.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "started"
+          },
+          {
+            "id": "o2",
+            "label": "was start"
+          },
+          {
+            "id": "o3",
+            "label": "starting"
+          }
+        ],
+        "sentence": "We were walking home when it suddenly ___ to rain."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "started",
+      "explanation": "Внезапное начало на фоне walking выражается Past Simple: started.",
+      "key": "e08"
+    }
+  ]
+}

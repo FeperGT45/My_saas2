@@ -1,0 +1,254 @@
+{
+  "key": "a1/food-preferences",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 9,
+  "title": "Что нравится на завтрак",
+  "description": "Рассказываем о предпочтениях в еде и задаём вопросы с do.",
+  "level": "A1",
+  "objectives": [
+    "Сказать, что нравится и не нравится",
+    "Задать вопрос Do you like …?"
+  ],
+  "notes": [
+    "После I отрицание в Present Simple строится с don't.",
+    "Like + название продукта выражает предпочтение, а не текущий заказ."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "porridge",
+      "ru": "каша"
+    },
+    {
+      "en": "eggs",
+      "ru": "яйца"
+    },
+    {
+      "en": "juice",
+      "ru": "сок"
+    },
+    {
+      "en": "prefer",
+      "ru": "предпочитать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери правильный вопрос о предпочтении.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Do you like porridge?"
+          },
+          {
+            "id": "o2",
+            "label": "Are you like porridge?"
+          },
+          {
+            "id": "o3",
+            "label": "Does you like porridge?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Do you like porridge?",
+      "explanation": "С you используется do.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Сделай предложение отрицательным.",
+      "public_payload": {
+        "sentence": "I ___ like cold eggs."
+      },
+      "answer_key": {
+        "accepted": ["don't", "do not"]
+      },
+      "reference_answer": "don't",
+      "incorrect_answer": "doesn't",
+      "editorial_answer": "don't",
+      "explanation": "С I используется don't.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери: «Мой брат любит апельсиновый сок».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "likes"
+          },
+          {
+            "id": "t4",
+            "label": "orange"
+          },
+          {
+            "id": "t5",
+            "label": "juice."
+          },
+          {
+            "id": "t1",
+            "label": "My"
+          },
+          {
+            "id": "t2",
+            "label": "brother"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "My brother likes orange juice.",
+      "explanation": "Brother — третье лицо единственного числа, поэтому likes.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь окончание",
+      "public_payload": {
+        "sentence": "She don't like milk."
+      },
+      "answer_key": {
+        "accepted": ["She doesn't like milk."]
+      },
+      "reference_answer": "She doesn't like milk.",
+      "incorrect_answer": "She don't like milk.",
+      "editorial_answer": "She doesn't like milk.",
+      "explanation": "С she отрицание строится через doesn't.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Я люблю яйца, но не люблю кашу."
+      },
+      "answer_key": {
+        "accepted": [
+          "I like eggs, but I don't like porridge.",
+          "I like eggs but I do not like porridge."
+        ]
+      },
+      "reference_answer": "I like eggs, but I don't like porridge.",
+      "incorrect_answer": "I like porridge, but I don't like eggs.",
+      "editorial_answer": "I like eggs, but I don't like porridge.",
+      "explanation": "But соединяет противоположные предпочтения; продукты нельзя менять местами.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой напиток нравится Саре?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Milk."
+          },
+          {
+            "id": "o2",
+            "label": "Apple juice."
+          },
+          {
+            "id": "o3",
+            "label": "Coffee."
+          }
+        ],
+        "passage": "For breakfast, Sara likes eggs and apple juice. Her father likes porridge with milk. Sara does not like porridge, so she has eggs today. They eat together before work and school."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Apple juice.",
+      "explanation": "Apple juice указан в первом предложении; milk относится к каше отца.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь, что пьёшь чай без молока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Yes, I am milk."
+          },
+          {
+            "id": "o2",
+            "label": "No, I live near the station."
+          },
+          {
+            "id": "o3",
+            "label": "No, thank you. I like it without milk."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Host",
+            "text": "Do you like milk in your tea?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "No, thank you. I like it without milk.",
+      "explanation": "Without milk — без молока, соответствует отрицательному ответу.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, противопоставляющее предпочтения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "but"
+          },
+          {
+            "id": "o2",
+            "label": "because of"
+          },
+          {
+            "id": "o3",
+            "label": "before to"
+          }
+        ],
+        "sentence": "I like tea, ___ my sister likes coffee."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "but",
+      "explanation": "But подходит для противопоставления двух предпочтений.",
+      "key": "e08"
+    }
+  ]
+}

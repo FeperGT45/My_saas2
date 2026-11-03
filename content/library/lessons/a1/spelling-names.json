@@ -1,0 +1,252 @@
+{
+  "key": "a1/spelling-names",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 6,
+  "title": "Имена по буквам",
+  "description": "Уточняем написание имени и понимаем простые вопросы при знакомстве.",
+  "level": "A1",
+  "objectives": ["Попросить назвать имя по буквам", "Отличить имя от фамилии"],
+  "notes": [
+    "How do you spell …? спрашивает о написании по буквам.",
+    "First name — личное имя; surname/last name — фамилия."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "spell",
+      "ru": "произносить по буквам"
+    },
+    {
+      "en": "surname",
+      "ru": "фамилия"
+    },
+    {
+      "en": "letter",
+      "ru": "буква"
+    },
+    {
+      "en": "first name",
+      "ru": "имя"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как спросить, как пишется фамилия?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "How do you spell your surname?"
+          },
+          {
+            "id": "o2",
+            "label": "How old is your surname?"
+          },
+          {
+            "id": "o3",
+            "label": "Where does your surname live?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "How do you spell your surname?",
+      "explanation": "Spell относится к написанию слова.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "My first ___ is Alex."
+      },
+      "answer_key": {
+        "accepted": ["name"]
+      },
+      "reference_answer": "name",
+      "incorrect_answer": "age",
+      "editorial_answer": "name",
+      "explanation": "First name — личное имя.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери просьбу повторить имя.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "say"
+          },
+          {
+            "id": "t4",
+            "label": "your"
+          },
+          {
+            "id": "t5",
+            "label": "name"
+          },
+          {
+            "id": "t6",
+            "label": "again?"
+          },
+          {
+            "id": "t1",
+            "label": "Can"
+          },
+          {
+            "id": "t2",
+            "label": "you"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Can you say your name again?",
+      "explanation": "Again означает ещё раз.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь порядок слов",
+      "public_payload": {
+        "sentence": "What your name is?"
+      },
+      "answer_key": {
+        "accepted": ["What is your name?"]
+      },
+      "reference_answer": "What is your name?",
+      "incorrect_answer": "What your name is?",
+      "editorial_answer": "What is your name?",
+      "explanation": "В вопросе is стоит перед your name.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Как пишется твоё имя?"
+      },
+      "answer_key": {
+        "accepted": ["How do you spell your name?", "How is your name spelled?"]
+      },
+      "reference_answer": "How do you spell your name?",
+      "incorrect_answer": "How old are you?",
+      "editorial_answer": "How do you spell your name?",
+      "explanation": "Вопрос просит написание, а не возраст.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какая у Ким фамилия?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Kim."
+          },
+          {
+            "id": "o2",
+            "label": "Park."
+          },
+          {
+            "id": "o3",
+            "label": "Receptionist."
+          }
+        ],
+        "passage": "The receptionist asks for Kim's first name and surname. Her first name is Kim and her surname is Park. Kim spells her surname P-A-R-K."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Park.",
+      "explanation": "Her surname is Park — прямое указание.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь, что фамилия Reed, по буквам.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I'm nineteen."
+          },
+          {
+            "id": "o2",
+            "label": "I'm from Leeds."
+          },
+          {
+            "id": "o3",
+            "label": "R-E-E-D."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Receptionist",
+            "text": "Could you spell your surname, please?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "R-E-E-D.",
+      "explanation": "В ответ на spell нужно назвать буквы.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово для фамилии.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "surname"
+          },
+          {
+            "id": "o2",
+            "label": "country"
+          },
+          {
+            "id": "o3",
+            "label": "birthday"
+          }
+        ],
+        "sentence": "My first name is Rosa and my ___ is Hill."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "surname",
+      "explanation": "Surname дополняет first name в представлении.",
+      "key": "e08"
+    }
+  ]
+}

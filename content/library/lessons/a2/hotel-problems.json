@@ -1,0 +1,258 @@
+{
+  "key": "a2/hotel-problems",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A2 · пакет 2",
+    "position": 2
+  },
+  "position": 3,
+  "title": "Решаем проблему в гостинице",
+  "description": "Сообщаем о конкретной неисправности и вежливо просим помощь на стойке регистрации.",
+  "level": "A2",
+  "objectives": [
+    "Описать неисправность с doesn't work",
+    "Попросить помощь с Could you …?"
+  ],
+  "notes": [
+    "The shower doesn't work сообщает о неисправности; после doesn't глагол без -s.",
+    "Could you check it, please? — вежливая просьба проверить вещь."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "reception",
+      "ru": "стойка регистрации"
+    },
+    {
+      "en": "towel",
+      "ru": "полотенце"
+    },
+    {
+      "en": "shower",
+      "ru": "душ"
+    },
+    {
+      "en": "key card",
+      "ru": "ключ-карта"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как сообщить, что ключ-карта не работает?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "My key card doesn't works."
+          },
+          {
+            "id": "o2",
+            "label": "My key card doesn't work."
+          },
+          {
+            "id": "o3",
+            "label": "My key card don't work."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "My key card doesn't work.",
+      "explanation": "После doesn't используется work без окончания.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "There aren't ___ clean towels in my room."
+      },
+      "answer_key": {
+        "accepted": ["any"]
+      },
+      "reference_answer": "any",
+      "incorrect_answer": "some",
+      "editorial_answer": "any",
+      "explanation": "В нейтральном отрицании обычно используется any.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери просьбу проверить душ.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "check"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "shower,"
+          },
+          {
+            "id": "t6",
+            "label": "please?"
+          },
+          {
+            "id": "t1",
+            "label": "Could"
+          },
+          {
+            "id": "t2",
+            "label": "you"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Could you check the shower, please?",
+      "explanation": "После could you нужен check в начальной форме.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь глагол.",
+      "public_payload": {
+        "sentence": "The air conditioner doesn't works."
+      },
+      "answer_key": {
+        "accepted": ["The air conditioner doesn't work."]
+      },
+      "reference_answer": "The air conditioner doesn't work.",
+      "incorrect_answer": "The air conditioner doesn't works.",
+      "editorial_answer": "The air conditioner doesn't work.",
+      "explanation": "Doesn't уже несёт показатель третьего лица; works меняется на work.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Можно мне ещё одно полотенце, пожалуйста?"
+      },
+      "answer_key": {
+        "accepted": [
+          "Could I have another towel, please?",
+          "Can I have another towel, please?"
+        ]
+      },
+      "reference_answer": "Could I have another towel, please?",
+      "incorrect_answer": "Could I have another key, please?",
+      "editorial_answer": "Could I have another towel, please?",
+      "explanation": "Another towel — ещё одно полотенце; key — другой предмет.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что предлагает сотрудник гостиницы?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "To cancel Eva's booking."
+          },
+          {
+            "id": "o2",
+            "label": "To move Eva to another hotel."
+          },
+          {
+            "id": "o3",
+            "label": "To send someone to check the shower."
+          }
+        ],
+        "passage": "Eva arrives at her hotel after a long journey. Her room is clean, but the shower only gives cold water. She calls reception and explains the problem. The receptionist offers to send someone in ten minutes. Eva does not need to change rooms because the hotel can repair the shower that evening."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "To send someone to check the shower.",
+      "explanation": "Сотрудник обещает прислать человека через десять минут.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи, что в номере нет полотенец.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "There aren't any towels in my room."
+          },
+          {
+            "id": "o2",
+            "label": "My room number was yesterday."
+          },
+          {
+            "id": "o3",
+            "label": "I would like the weather, please."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Receptionist",
+            "text": "How can I help you?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "There aren't any towels in my room.",
+      "explanation": "Ответ называет конкретную проблему, с которой может помочь reception.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери место, куда обращаются за помощью в гостинице.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "the runway"
+          },
+          {
+            "id": "o2",
+            "label": "reception"
+          },
+          {
+            "id": "o3",
+            "label": "the harbour"
+          }
+        ],
+        "sentence": "If your key card stops working, ask at ___."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "reception",
+      "explanation": "Reception — стойка регистрации; runway и harbour относятся к транспорту.",
+      "key": "e08"
+    }
+  ]
+}

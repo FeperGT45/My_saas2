@@ -55,16 +55,16 @@ afterAll(async () => {
   await db.close();
 });
 describe('modular learning content quality', () => {
-  it('contains thirty complete new lessons and 240 varied exercises covering all CEFR levels', () => {
+  it('contains sixty modular lessons and 480 varied exercises covering all CEFR levels', () => {
     expect(validateLibrary(library)).toEqual({
-      lessons: 30,
-      exercises: 240,
-      levels: { A1: 5, A2: 5, B1: 5, B2: 5, C1: 5, C2: 5 },
+      lessons: 60,
+      exercises: 480,
+      levels: { A1: 20, A2: 15, B1: 10, B2: 5, C1: 5, C2: 5 },
     });
     expect(
       new Set(payload.exercises.map((e) => e.kind)).size,
     ).toBeGreaterThanOrEqual(17);
-    expect(new Set(payload.exercises.map((e) => e.id)).size).toBe(240);
+    expect(new Set(payload.exercises.map((e) => e.id)).size).toBe(480);
   });
   it('preserves IDs across revisions, file ordering and wording changes', () => {
     const changed = structuredClone(library);
@@ -158,13 +158,66 @@ describe('modular learning content quality', () => {
   });
 });
 describe('transactional curriculum import', () => {
+  it('expands revision one atomically without changing its existing lesson and exercise IDs', async () => {
+    const old = structuredClone(payload);
+    const originalIds = new Set(old.lessons.slice(0, 30).map((l) => l.id));
+    old.revision = 1;
+    old.lessons = old.lessons.filter((l) => originalIds.has(l.id));
+    old.exercises = old.exercises.filter((e) => originalIds.has(e.lesson_id));
+    old.units = old.units.filter((u) =>
+      old.lessons.some((l) => l.unit_id === (u as { id: string }).id),
+    );
+    await db.exec('BEGIN');
+    try {
+      await rpc('import_curriculum_package', [JSON.stringify(old)]);
+      const originalRows = (
+        await db.query(
+          'SELECT id,lesson_id,answer_key FROM public.exercises WHERE content_package_id=$1 ORDER BY id',
+          [payload.package_id],
+        )
+      ).rows;
+      expect(
+        await rpc('import_curriculum_package', [JSON.stringify(payload)]),
+      ).toMatchObject({ lessons: 60, exercises: 480, unchanged: false });
+      const expandedRows = (
+        await db.query<{ id: string; lesson_id: string; answer_key: unknown }>(
+          'SELECT id,lesson_id,answer_key FROM public.exercises WHERE content_package_id=$1 ORDER BY id',
+          [payload.package_id],
+        )
+      ).rows;
+      expect(
+        expandedRows.filter((e) => originalIds.has(e.lesson_id as string)),
+      ).toEqual(originalRows);
+      expect(
+        await rpc('import_curriculum_package', [JSON.stringify(payload)]),
+      ).toMatchObject({ unchanged: true });
+    } finally {
+      await db.exec('ROLLBACK');
+    }
+  });
+  it('grades every accepted open-answer variant in the new batch, not only the first reference', async () => {
+    for (const lesson of library.lessons.slice(30)) {
+      expect(lesson.exercises).toHaveLength(8);
+      for (const exercise of lesson.exercises) {
+        for (const answer of exercise.answer_key.accepted ?? []) {
+          const result = await rpc<boolean>('lesson_check_answer', [
+            exercise.kind,
+            JSON.stringify(exercise.public_payload),
+            JSON.stringify(exercise.answer_key),
+            JSON.stringify(answer),
+          ]);
+          expect(result, `${lesson.key}: ${answer}`).toBe(true);
+        }
+      }
+    }
+  });
   it('imports the package without replacing legacy lessons and repeats without writes', async () => {
     const legacy = (await db.query('SELECT * FROM public.lessons ORDER BY id'))
       .rows;
     await db.exec('SET ROLE service_role');
     expect(
       await rpc('import_curriculum_package', [JSON.stringify(payload)]),
-    ).toMatchObject({ lessons: 30, exercises: 240, unchanged: false });
+    ).toMatchObject({ lessons: 60, exercises: 480, unchanged: false });
     const versions = (
       await db.query(
         'SELECT id,admin_version FROM public.exercises WHERE content_package_id=$1 ORDER BY id',
@@ -246,14 +299,14 @@ describe('transactional curriculum import', () => {
           [id],
         )
       ).rows[0].n,
-    ).toBe(30);
+    ).toBe(60);
   }, 30000);
   it('publishes safe library metadata and integrates advanced recommendations with real available courses', async () => {
     const catalog =
       await rpc<{ level: string; lessons: { id: string }[] }[]>(
         'curriculum_library',
       );
-    expect(catalog.flatMap((c) => c.lessons)).toHaveLength(32);
+    expect(catalog.flatMap((c) => c.lessons)).toHaveLength(62);
     expect(JSON.stringify(catalog)).not.toMatch(
       /answer_key|reference_answer|incorrect_answer|accepted/,
     );
@@ -275,15 +328,15 @@ describe('transactional curriculum import', () => {
         p.revision = 0;
       },
       (p: typeof payload) => {
-        p.revision = 2;
+        p.revision = payload.revision + 1;
         p.exercises[0].answer_key = { value: 'forged' };
       },
       (p: typeof payload) => {
-        p.revision = 2;
+        p.revision = payload.revision + 1;
         p.exercises.push(p.exercises[0]);
       },
       (p: typeof payload) => {
-        p.revision = 2;
+        p.revision = payload.revision + 1;
         delete (p.lessons[0] as Partial<(typeof p.lessons)[0]>)
           .estimated_minutes;
       },

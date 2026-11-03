@@ -1,0 +1,262 @@
+{
+  "key": "b1/defining-relatives",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика B1 · пакет 2",
+    "position": 2
+  },
+  "position": 2,
+  "title": "Уточняем, о ком и о чём говорим",
+  "description": "Опознаём людей, предметы и места с defining relative clauses без лишнего местоимения.",
+  "level": "B1",
+  "objectives": [
+    "Выбрать who, which и where по смыслу",
+    "Убрать повтор подлежащего в относительном предложении"
+  ],
+  "notes": [
+    "Who связывает описание с человеком, which — с предметом; where обозначает место действия.",
+    "The woman who lives next door: после who не нужно повторять she."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "neighbour",
+      "ru": "сосед"
+    },
+    {
+      "en": "device",
+      "ru": "устройство"
+    },
+    {
+      "en": "recommend",
+      "ru": "рекомендовать"
+    },
+    {
+      "en": "identify",
+      "ru": "определять; опознавать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери фразу без лишнего подлежащего.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The man who lives upstairs is a nurse."
+          },
+          {
+            "id": "o2",
+            "label": "The man who he lives upstairs is a nurse."
+          },
+          {
+            "id": "o3",
+            "label": "The man which lives upstairs is a nurse."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The man who lives upstairs is a nurse.",
+      "explanation": "Who заменяет подлежащее в придаточном о человеке.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "This is the café ___ we first met."
+      },
+      "answer_key": {
+        "accepted": ["where"]
+      },
+      "reference_answer": "where",
+      "incorrect_answer": "who",
+      "editorial_answer": "where",
+      "explanation": "В кафе происходило действие, поэтому where.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери описание человека, который помог.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "who"
+          },
+          {
+            "id": "t4",
+            "label": "helped"
+          },
+          {
+            "id": "t5",
+            "label": "me"
+          },
+          {
+            "id": "t6",
+            "label": "works"
+          },
+          {
+            "id": "t7",
+            "label": "here."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "woman"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The woman who helped me works here.",
+      "explanation": "Who helped me уточняет женщину; works — сказуемое главной части.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Убери повтор местоимения",
+      "public_payload": {
+        "sentence": "The book which you recommended it was useful."
+      },
+      "answer_key": {
+        "accepted": ["The book which you recommended was useful."]
+      },
+      "reference_answer": "The book which you recommended was useful.",
+      "incorrect_answer": "The book which you recommended it was useful.",
+      "editorial_answer": "The book which you recommended was useful.",
+      "explanation": "Book уже является дополнением recommended; повтор it не нужен.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Я знаю человека, который может это починить."
+      },
+      "answer_key": {
+        "accepted": [
+          "I know someone who can fix it.",
+          "I know a person who can repair it."
+        ]
+      },
+      "reference_answer": "I know someone who can fix it.",
+      "incorrect_answer": "I know someone which can fix it.",
+      "editorial_answer": "I know someone who can fix it.",
+      "explanation": "Для человека подходят who и варианты fix/repair по смыслу.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое описание относится к столу?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It is the woman who repairs radios."
+          },
+          {
+            "id": "o2",
+            "label": "It is the place where the volunteer works."
+          },
+          {
+            "id": "o3",
+            "label": "It is the lamp that the student brought."
+          }
+        ],
+        "passage": "At the repair café, volunteers help people fix household objects. A woman who used to repair radios is examining an old speaker. The table where she works is covered with small tools. A student brings her a lamp which stopped working after he moved house. She asks him to describe exactly what happened before choosing a tool."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "It is the place where the volunteer works.",
+      "explanation": "Where she works описывает место, то есть стол.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Уточни, что речь о Саре из отдела дизайна.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Sara is a name that yesterday."
+          },
+          {
+            "id": "o2",
+            "label": "The design that she who Sara."
+          },
+          {
+            "id": "o3",
+            "label": "The Sara who works in the design team."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Colleague",
+            "text": "Which Sara do you mean?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The Sara who works in the design team.",
+      "explanation": "Относительное придаточное опознаёт нужного человека.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери местоимение для устройства.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "which"
+          },
+          {
+            "id": "o2",
+            "label": "who"
+          },
+          {
+            "id": "o3",
+            "label": "where"
+          }
+        ],
+        "sentence": "I need a device ___ can record sound clearly."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "which",
+      "explanation": "Device — предмет, поэтому which.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "key": "a1/family-relations",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 2,
+  "title": "Кто кому родственник",
+  "description": "Знакомим собеседника с семьёй и различаем родственные связи.",
+  "level": "A1",
+  "objectives": [
+    "Назвать основные родственные связи",
+    "Использовать притяжательную форму с 's"
+  ],
+  "notes": [
+    "My mother's brother — брат моей мамы, то есть мой дядя.",
+    "Апостроф и s показывают принадлежность: Anna's sister."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "uncle",
+      "ru": "дядя"
+    },
+    {
+      "en": "aunt",
+      "ru": "тётя"
+    },
+    {
+      "en": "cousin",
+      "ru": "двоюродный брат или сестра"
+    },
+    {
+      "en": "parents",
+      "ru": "родители"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как назвать сестру своей мамы?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "uncle"
+          },
+          {
+            "id": "o2",
+            "label": "aunt"
+          },
+          {
+            "id": "o3",
+            "label": "cousin"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "aunt",
+      "explanation": "Сестра мамы или папы — aunt.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "My cousin ___ ten years old."
+      },
+      "answer_key": {
+        "accepted": ["is"]
+      },
+      "reference_answer": "is",
+      "incorrect_answer": "are",
+      "editorial_answer": "is",
+      "explanation": "My cousin — один человек, поэтому is.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери: «Это брат Анны».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "Anna's"
+          },
+          {
+            "id": "t4",
+            "label": "brother."
+          },
+          {
+            "id": "t1",
+            "label": "This"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4"],
+      "incorrect_answer": ["t2", "t3", "t4", "t1"],
+      "editorial_answer": "This is Anna's brother.",
+      "explanation": "Anna's показывает, чей это брат.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только притяжательное местоимение.",
+      "public_payload": {
+        "sentence": "I live with me parents."
+      },
+      "answer_key": {
+        "accepted": ["I live with my parents."]
+      },
+      "reference_answer": "I live with my parents.",
+      "incorrect_answer": "I live with me parents.",
+      "editorial_answer": "I live with my parents.",
+      "explanation": "Перед parents нужно my — мои; me не обозначает принадлежность.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "У моей сестры есть сын."
+      },
+      "answer_key": {
+        "accepted": ["My sister has a son.", "My sister has got a son."]
+      },
+      "reference_answer": "My sister has a son.",
+      "incorrect_answer": "My sister is a son.",
+      "editorial_answer": "My sister has a son.",
+      "explanation": "Has/has got обозначает наличие; is означает «является».",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кем Элла приходится Лео?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "His mother."
+          },
+          {
+            "id": "o2",
+            "label": "His aunt."
+          },
+          {
+            "id": "o3",
+            "label": "His cousin."
+          }
+        ],
+        "passage": "My name is Leo. My mother has one brother, Mark. Mark lives near our house with his daughter Ella. Ella and I play board games together after school."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "His cousin.",
+      "explanation": "Элла — дочь дяди Лео, следовательно, двоюродная сестра.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь: Том — твой двоюродный брат.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "No, he's my cousin."
+          },
+          {
+            "id": "o2",
+            "label": "Yes, she's my aunt."
+          },
+          {
+            "id": "o3",
+            "label": "No, they're my parents."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "New friend",
+            "text": "Is Tom your brother?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No, he's my cousin.",
+      "explanation": "He's my cousin правильно обозначает родство и одного человека.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Кто такие родители?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "children"
+          },
+          {
+            "id": "o2",
+            "label": "parents"
+          },
+          {
+            "id": "o3",
+            "label": "cousins"
+          }
+        ],
+        "sentence": "My mother and father are my ___."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "parents",
+      "explanation": "Mother and father вместе — parents.",
+      "key": "e08"
+    }
+  ]
+}

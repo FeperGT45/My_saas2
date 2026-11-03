@@ -1,0 +1,252 @@
+{
+  "key": "a1/getting-to-work",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-02",
+    "title": "Практика A1 · пакет 2",
+    "position": 2
+  },
+  "position": 12,
+  "title": "Как добраться на работу",
+  "description": "Говорим о привычном способе передвижения и различаем by bus и on foot.",
+  "level": "A1",
+  "objectives": ["Описать поездку с by", "Использовать on foot для ходьбы"],
+  "notes": [
+    "By bus/train/car — на автобусе/поезде/машине, без артикля.",
+    "On foot означает пешком; by foot в этом учебном контексте не используется."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "bus stop",
+      "ru": "автобусная остановка"
+    },
+    {
+      "en": "on foot",
+      "ru": "пешком"
+    },
+    {
+      "en": "by train",
+      "ru": "на поезде"
+    },
+    {
+      "en": "journey",
+      "ru": "поездка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери правильное выражение «на автобусе».",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "on bus by"
+          },
+          {
+            "id": "o2",
+            "label": "by bus"
+          },
+          {
+            "id": "o3",
+            "label": "with bus"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "by bus",
+      "explanation": "Устойчивое сочетание by bus не требует артикля.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение подходящим словом или краткой формой.",
+      "public_payload": {
+        "sentence": "I go to the station ___ foot."
+      },
+      "answer_key": {
+        "accepted": ["on"]
+      },
+      "reference_answer": "on",
+      "incorrect_answer": "by",
+      "editorial_answer": "on",
+      "explanation": "Пешком — on foot.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери вопрос о дороге на работу.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "you"
+          },
+          {
+            "id": "t4",
+            "label": "get"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "work?"
+          },
+          {
+            "id": "t1",
+            "label": "How"
+          },
+          {
+            "id": "t2",
+            "label": "do"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "How do you get to work?",
+      "explanation": "How … get to work спрашивает о способе передвижения.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь предлог",
+      "public_payload": {
+        "sentence": "My dad travels to work with train."
+      },
+      "answer_key": {
+        "accepted": ["My dad travels to work by train."]
+      },
+      "reference_answer": "My dad travels to work by train.",
+      "incorrect_answer": "My dad travels to work with train.",
+      "editorial_answer": "My dad travels to work by train.",
+      "explanation": "Для способа поездки используем by train.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи на английский.",
+      "public_payload": {
+        "source": "Я езжу в школу на велосипеде."
+      },
+      "answer_key": {
+        "accepted": ["I go to school by bike.", "I ride my bike to school."]
+      },
+      "reference_answer": "I go to school by bike.",
+      "incorrect_answer": "I walk to school.",
+      "editorial_answer": "I go to school by bike.",
+      "explanation": "By bike/ride my bike означает ехать на велосипеде, не идти.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько длится поездка Дэна на автобусе?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Two hours."
+          },
+          {
+            "id": "o2",
+            "label": "Five minutes."
+          },
+          {
+            "id": "o3",
+            "label": "Twenty minutes."
+          }
+        ],
+        "passage": "Dan lives far from his office. He walks to the bus stop and takes a bus to the city centre. The bus journey takes twenty minutes. His office is beside the last stop."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Twenty minutes.",
+      "explanation": "The bus journey takes twenty minutes задаёт длительность.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь, что ездишь на поезде.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "No, I take the train."
+          },
+          {
+            "id": "o2",
+            "label": "Yes, I take the train."
+          },
+          {
+            "id": "o3",
+            "label": "No, my work is interesting."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Colleague",
+            "text": "Do you drive to work?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No, I take the train.",
+      "explanation": "Отрицание согласуется с другим видом транспорта.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери место ожидания автобуса.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "kitchen table"
+          },
+          {
+            "id": "o2",
+            "label": "bus stop"
+          },
+          {
+            "id": "o3",
+            "label": "ticket price"
+          }
+        ],
+        "sentence": "We wait for the bus at the ___."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "bus stop",
+      "explanation": "Bus stop — остановка.",
+      "key": "e08"
+    }
+  ]
+}
