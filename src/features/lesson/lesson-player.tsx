@@ -16,6 +16,7 @@ import {
   type Feedback,
 } from './types';
 import { exerciseLabels as labels } from '@/lib/exercises/contracts';
+import { useSoundEffects } from '@/features/sound/sound-provider';
 const subscribeHydration = () => () => {};
 async function api<T>(url: string, body?: unknown): Promise<T> {
   const response = await fetchWithTimeout(url, {
@@ -45,6 +46,7 @@ export function LessonPlayer({
   const locked = useRef(false);
   const requestId = useRef<string | null>(null);
   const reduced = useReducedMotion();
+  const playSound = useSoundEffects();
   const hydrated = useSyncExternalStore(
     subscribeHydration,
     () => true,
@@ -106,6 +108,7 @@ export function LessonPlayer({
         { position: state.exercise.position, answer },
       );
       setFeedback(result);
+      playSound(result.correct ? 'correct' : 'incorrect');
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Не удалось сохранить ответ.');
     } finally {
@@ -258,6 +261,8 @@ export function LessonPlayer({
             }
             onClick={() => {
               if (feedback) {
+                if (feedback.state.status === 'completed')
+                  playSound('complete');
                 setState(feedback.state);
                 setFeedback(null);
                 setAnswer('');

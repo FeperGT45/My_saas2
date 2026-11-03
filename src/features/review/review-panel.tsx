@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
 import { useTelegram } from '@/features/telegram/provider';
 import { fetchWithTimeout, readJson } from '@/lib/http/client';
+import { playSound } from '@/lib/sound/audio';
 type Card = { key: string; front: string; back: string; version: number };
 type Queue = {
   total: number;
@@ -95,6 +96,9 @@ function ReviewContent() {
       if (active.current) {
         setQueue(q);
         setShown(false);
+        playSound(
+          q.due === 0 ? 'complete' : rating >= 3 ? 'correct' : 'incorrect',
+        );
       }
     } catch (e) {
       if (active.current)

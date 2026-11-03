@@ -82,7 +82,9 @@ test('settings switches reset and missing route', async ({ page }) => {
   await expect(sound).toHaveAttribute('aria-checked', 'true');
   await sound.click();
   await expect(sound).toHaveAttribute('aria-checked', 'false');
-  await page.getByRole('button', { name: 'Сбросить настройки демо' }).click();
+  await page
+    .getByRole('button', { name: 'Сбросить настройки', exact: true })
+    .click();
   await expect(sound).toHaveAttribute('aria-checked', 'true');
   const response = await page.goto('/does-not-exist');
   expect(response?.status()).toBe(404);

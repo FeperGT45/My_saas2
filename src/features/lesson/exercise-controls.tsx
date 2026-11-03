@@ -1,9 +1,11 @@
 'use client';
-import { useEffect, useState, useSyncExternalStore } from 'react';
+import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import { Volume2, RotateCcw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import type { Answer, Exercise } from './types';
+import { useSoundPreferences } from '@/features/sound/sound-provider';
+import { speakExercise } from '@/lib/sound/audio';
 const subscribeSupport = () => () => {};
 export function AudioPrompt({ text, lang }: { text: string; lang: string }) {
   const supported = useSyncExternalStore(
@@ -17,46 +19,61 @@ export function AudioPrompt({ text, lang }: { text: string; lang: string }) {
   const [error, setError] = useState(false);
   const [showText, setShowText] = useState(false);
   const [speaking, setSpeaking] = useState(false);
-  useEffect(() => {
-    return () => {
-      window.speechSynthesis?.cancel();
-    };
-  }, []);
+  const preferences = useSoundPreferences();
+  const allowed = preferences.enabled && preferences.speech;
+  const stop = useRef<(() => void) | null>(null);
+  useEffect(
+    () => () => {
+      stop.current?.();
+    },
+    [],
+  );
+  function listen(rate: number) {
+    setError(false);
+    setSpeaking(true);
+    stop.current = speakExercise(
+      text,
+      lang,
+      rate,
+      () => setSpeaking(false),
+      () => {
+        setSpeaking(false);
+        setError(true);
+      },
+    );
+    if (!stop.current) {
+      setSpeaking(false);
+      setError(true);
+    }
+  }
   return (
-    <div className="border-primary/30 bg-primary/10 mb-4 rounded-2xl border p-4">
+    <div
+      data-sound="off"
+      className="border-primary/30 bg-primary/10 mb-4 rounded-2xl border p-4"
+    >
       <Button
         variant="outline"
-        disabled={!supported || speaking}
-        onClick={() => {
-          setError(false);
-          try {
-            window.speechSynthesis.cancel();
-            const utterance = new SpeechSynthesisUtterance(text);
-            utterance.lang = lang;
-            utterance.rate = 0.85;
-            utterance.onend = () => setSpeaking(false);
-            utterance.onerror = () => {
-              setSpeaking(false);
-              setError(true);
-            };
-            setSpeaking(true);
-            window.speechSynthesis.speak(utterance);
-          } catch {
-            setSpeaking(false);
-            setError(true);
-          }
-        }}
+        disabled={!supported || !allowed || speaking}
+        onClick={() => listen(0.85)}
         className="w-full"
       >
         <Volume2 size={18} />
         {speaking ? 'Слушаем…' : 'Прослушать фразу'}
+      </Button>
+      <Button
+        variant="outline"
+        className="mt-2 w-full"
+        disabled={!supported || !allowed || speaking}
+        onClick={() => listen(0.6)}
+      >
+        Медленно
       </Button>
       {speaking && (
         <Button
           variant="outline"
           className="mt-2 w-full"
           onClick={() => {
-            window.speechSynthesis.cancel();
+            stop.current?.();
             setSpeaking(false);
           }}
         >
@@ -71,10 +88,13 @@ export function AudioPrompt({ text, lang }: { text: string; lang: string }) {
           {showText ? 'Скрыть текст' : 'Показать текст вместо аудио'}
         </button>
       )}
-      {(!supported || error || showText) && (
+      {(!supported || !allowed || error || showText) && (
         <p role="status" className="mt-3 text-sm">
           Текстовый режим: <span lang={lang}>{text}</span>
         </p>
+      )}
+      {!allowed && (
+        <p className="mt-2 text-xs">Озвучка выключена в настройках звука.</p>
       )}
       <p className="text-muted-foreground mt-2 text-[11px]">
         Озвучка браузера · зависит от доступных голосов устройства

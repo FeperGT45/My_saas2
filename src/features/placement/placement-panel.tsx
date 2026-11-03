@@ -24,6 +24,7 @@ import {
 } from '@/lib/placement/types';
 import { usePlacement } from './use-placement';
 import { useTelegram } from '@/features/telegram/provider';
+import { useSoundEffects } from '@/features/sound/sound-provider';
 
 function Welcome({
   name,
@@ -264,6 +265,7 @@ function PlacementPanelForAccount({ retest = false }: { retest?: boolean }) {
     data: PlacementFeedback;
     question: PlacementQuestion;
   } | null>(null);
+  const playSound = useSoundEffects();
   const startRequest = useRef<string | null>(null);
   const answerRequest = useRef<{ question: string; id: string } | null>(null);
   async function start() {
@@ -300,6 +302,7 @@ function PlacementPanelForAccount({ retest = false }: { retest?: boolean }) {
       option: selected,
     });
     if (r?.feedback) {
+      playSound(r.feedback.correct ? 'correct' : 'incorrect');
       setRetake(false);
       setFeedback({ data: r.feedback, question: q });
     }
@@ -418,6 +421,7 @@ function PlacementPanelForAccount({ retest = false }: { retest?: boolean }) {
               if (feedback) {
                 setFeedback(null);
                 setSelected('');
+                if (!data.attempt) playSound('complete');
               } else void check();
             }}
           >

@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { AppShell } from '@/components/layout/app-shell';
 import { TelegramProvider } from '@/features/telegram/provider';
+import { SoundProvider } from '@/features/sound/sound-provider';
 import './globals.css';
 export const metadata: Metadata = {
   title: { default: 'Voklumi — учись играя', template: '%s · Voklumi' },
@@ -18,9 +19,11 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
-        <TelegramProvider>
-          <AppShell>{children}</AppShell>
-        </TelegramProvider>
+        <SoundProvider>
+          <TelegramProvider>
+            <AppShell>{children}</AppShell>
+          </TelegramProvider>
+        </SoundProvider>
       </body>
     </html>
   );

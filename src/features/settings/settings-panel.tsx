@@ -11,19 +11,34 @@ import {
 } from 'lucide-react';
 import { Card, PageTitle } from '@/components/ui/game';
 import { Button } from '@/components/ui/button';
+import { useSoundPreferences } from '@/features/sound/sound-provider';
+import {
+  setSoundPreferences,
+  defaultSoundPreferences,
+  unlockSounds,
+  playSound,
+} from '@/lib/sound/audio';
 export function SettingsPanel() {
   const [settings, setSettings] = useState({
     sound: true,
+    speech: true,
     haptics: false,
     effects: true,
   });
   const [notice, setNotice] = useState('');
+  const sound = useSoundPreferences();
+  const checked = (key: keyof typeof settings) =>
+    key === 'sound'
+      ? sound.enabled
+      : key === 'speech'
+        ? sound.speech
+        : settings[key];
   return (
     <>
       <PageTitle
         eyebrow="Твой ритм"
         title="Всё под тебя"
-        description="Демонстрация настроек. Изменения действуют только на этом экране и сбрасываются при выходе."
+        description="Настройки звука сохраняются на этом устройстве. Виброотклик и эффекты пока работают в демонстрационном режиме."
       />
       <Card>
         <h2 className="eyebrow mb-2">Впечатления</h2>
@@ -32,7 +47,14 @@ export function SettingsPanel() {
             key: 'sound' as const,
             icon: Volume2,
             label: 'Звуки',
-            description: 'Пример настройки звуков',
+            description:
+              'Все звуки: нажатия, ответы, завершение уроков и голос',
+          },
+          {
+            key: 'speech' as const,
+            icon: Volume2,
+            label: 'Озвучка упражнений',
+            description: 'Чтение фраз при нажатии кнопки прослушивания',
           },
           {
             key: 'haptics' as const,
@@ -62,26 +84,47 @@ export function SettingsPanel() {
             </div>
             <button
               role="switch"
-              aria-checked={settings[key]}
+              aria-checked={checked(key)}
               aria-labelledby={`label-${key}`}
+              data-sound={
+                key === 'sound' || key === 'speech' ? 'off' : undefined
+              }
               onClick={() => {
-                setSettings((s) => ({ ...s, [key]: !s[key] }));
+                if (key === 'sound')
+                  setSoundPreferences({ enabled: !sound.enabled });
+                else if (key === 'speech')
+                  setSoundPreferences({ speech: !sound.speech });
+                else setSettings((s) => ({ ...s, [key]: !s[key] }));
                 setNotice(
-                  'Демонстрационный переключатель изменён. Настройка не сохранена.',
+                  key === 'sound' || key === 'speech'
+                    ? 'Настройки звука применены.'
+                    : 'Демонстрационный переключатель изменён. Настройка не сохранена.',
                 );
               }}
               className="flex min-h-11 min-w-12 items-center justify-center"
             >
               <span
-                className={`flex h-6 w-11 items-center rounded-full p-1 transition-colors ${settings[key] ? 'bg-primary' : 'bg-muted'}`}
+                className={`flex h-6 w-11 items-center rounded-full p-1 transition-colors ${checked(key) ? 'bg-primary' : 'bg-muted'}`}
               >
                 <span
-                  className={`size-4 rounded-full bg-white shadow transition-transform ${settings[key] ? 'translate-x-5' : ''}`}
+                  className={`size-4 rounded-full bg-white shadow transition-transform ${checked(key) ? 'translate-x-5' : ''}`}
                 />
               </span>
             </button>
           </div>
         ))}
+        <Button
+          variant="outline"
+          className="mt-3 w-full"
+          data-sound="off"
+          disabled={!sound.enabled}
+          onClick={() => {
+            unlockSounds();
+            playSound('complete');
+          }}
+        >
+          Проверить звук
+        </Button>
       </Card>
       <Card className="mt-4">
         <h2 className="eyebrow mb-2">Приложение</h2>
@@ -100,12 +143,18 @@ export function SettingsPanel() {
         variant="outline"
         className="mt-5 w-full"
         onClick={() => {
-          setSettings({ sound: true, haptics: false, effects: true });
-          setNotice('Демонстрационные настройки сброшены.');
+          setSettings({
+            sound: true,
+            speech: true,
+            haptics: false,
+            effects: true,
+          });
+          setSoundPreferences(defaultSoundPreferences);
+          setNotice('Настройки сброшены.');
         }}
       >
         <RotateCcw size={16} />
-        Сбросить настройки демо
+        Сбросить настройки
       </Button>
       <p
         role="status"
@@ -116,7 +165,8 @@ export function SettingsPanel() {
       <p className="text-muted-foreground mt-3 flex gap-2 text-[11px] leading-relaxed">
         <ShieldCheck size={18} className="shrink-0" />
         Системная настройка уменьшения движения учитывается автоматически.
-        Переключатели выше не управляют устройством.
+        Громкость устройства регулируется отдельно. Виброотклик и эффекты
+        остаются демонстрационными.
       </p>
       <p className="text-muted-foreground mt-6 text-center text-[10px]">
         VOKLUMI · UI PREVIEW 0.2
