@@ -1,5 +1,7 @@
 # Размещение Voklumi на Cloudflare Workers
 
+Актуальное состояние размещения и исправленная production-последовательность на 3 ноября: [PRODUCTION.md](PRODUCTION.md). Ниже сохранено описание исходной подготовки; текущая команда production build — `npm run build:production`, deploy — `npm run deploy:cloudflare && npm run telegram:setup`.
+
 Проверено 2 ноября 2026 года. Репозиторий: `FeperGT45/My_saas2`, приложение в корне, Next.js **16.4.3**, App Router, TypeScript. Здесь есть серверные route handlers, HttpOnly Telegram-сессии, проверка HMAC через `node:crypto`, административный allowlist, серверные SQL RPC Supabase и обработка Stars webhook. Статический экспорт на Pages отключил бы эти функции. Выбран **Cloudflare Workers с vinext 1.4.1**, рекомендованным текущей документацией Cloudflare. vinext имеет статус beta; обычный Next.js оставлен для разработки и регрессионной проверки.
 
 Официальные источники:
