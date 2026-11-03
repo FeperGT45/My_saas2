@@ -53,7 +53,8 @@
     "library:import": "node --env-file-if-exists=.env.local --import tsx scripts/import-library.ts --apply",
     "library:db-check": "node --env-file-if-exists=.env.local --import tsx scripts/check-library.ts",
     "test:library": "vitest run tests/unit/library.test.ts",
-    "library:report": "node --import tsx scripts/report-library.ts"
+    "library:report": "node --import tsx scripts/report-library.ts",
+    "premium:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-premium.ts"
   },
   "repository": {
     "type": "git",

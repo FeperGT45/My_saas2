@@ -196,6 +196,27 @@ export async function adminServer() {
                 'SELECT public.curriculum_library() AS data',
               )
             ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/premium_status')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.premium_status($1) AS data',
+                [b.p_user],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/has_feature')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.has_feature($1,$2) AS data',
+                [b.p_user, b.p_feature],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/premium_features')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.premium_features($1) AS data',
+                [b.p_user],
+              )
+            ).rows[0].data;
           else if (url.pathname === '/rest/v1/rpc/learner_statistics')
             data = (
               await db.query<{ data: unknown }>(

@@ -6,16 +6,8 @@ import { Check, Crown, ShieldCheck, RefreshCw } from 'lucide-react';
 import { Card } from '@/components/ui/game';
 import { Button } from '@/components/ui/button';
 import { useTelegram } from '@/features/telegram/provider';
-type Status = {
-  premium: boolean;
-  expiresAt: string | null;
-  autoRenew: false;
-  status?: string;
-  enabled: boolean;
-  amount: number | null;
-  termsUrl: string | null;
-  supportUrl: string | null;
-};
+import { usePremium } from './use-premium';
+
 type Features = {
   accuracy: number;
   completedAttempts: number;
@@ -28,10 +20,7 @@ type Features = {
 };
 export function PremiumPanel() {
   const { account } = useTelegram();
-  const [loaded, setLoaded] = useState<{
-    owner: string;
-    status: Status;
-  } | null>(null);
+  const { status, error: accessError, refresh, can } = usePremium();
   const [featureState, setFeatures] = useState<{
     owner: string;
     data: Features;
@@ -43,36 +32,30 @@ export function PremiumPanel() {
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [agreed, setAgreed] = useState(false);
-  const [refresh, setRefresh] = useState(0);
   const request = useRef<string | null>(null);
-  const status = loaded && loaded.owner === account?.id ? loaded.status : null;
   useEffect(() => {
-    if (account?.mode !== 'telegram') return;
+    if (
+      account?.mode !== 'telegram' ||
+      !status?.premium ||
+      !status.features.advanced_statistics ||
+      !status.features.lesson_review_plan
+    )
+      return;
     let active = true;
-    void fetchWithTimeout('/api/premium', { cache: 'no-store' })
-      .then(async (r) => {
-        const data = await readJson(r);
-        if (!r.ok) throw new Error(data.error);
-        if (active) {
-          setLoaded({ owner: account.id, status: data });
-          setError(null);
-        }
-        if (data.premium) {
-          const response = await fetchWithTimeout('/api/premium/features', {
-            cache: 'no-store',
-          });
-          if (!response.ok) throw new Error('Не удалось загрузить статистику.');
-          const detail = await readJson(response);
-          if (active) setFeatures({ owner: account.id, data: detail });
-        }
-      })
-      .catch((e) => {
-        if (active) setError(e.message);
+    void (async () => {
+      const response = await fetchWithTimeout('/api/premium/features', {
+        cache: 'no-store',
       });
+      if (!response.ok) throw new Error('Не удалось загрузить статистику.');
+      const detail = await readJson(response);
+      if (active) setFeatures({ owner: account.id, data: detail });
+    })().catch((e) => {
+      if (active) setError(e.message);
+    });
     return () => {
       active = false;
     };
-  }, [account, refresh]);
+  }, [account, status]);
   async function buy() {
     if (busy) return;
     setBusy(true);
@@ -96,7 +79,7 @@ export function PremiumPanel() {
         throw new Error(data.error);
       }
       await sdk.invoice.openUrl(data.invoiceUrl);
-      setRefresh((v) => v + 1);
+      refresh();
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Оплата недоступна.');
     } finally {
@@ -122,21 +105,38 @@ export function PremiumPanel() {
             ? 'Возврат обрабатывается'
             : status?.status === 'refunded'
               ? 'Платёж возвращён · Free'
-              : status?.premium
-                ? 'Premium активен'
-                : status?.expiresAt
-                  ? 'Период завершён · Free'
-                  : status
-                    ? 'Текущий доступ: Free'
-                    : account
-                      ? 'Статус не подтверждён'
-                      : 'Free · войди для проверки'}
+              : status?.status === 'scheduled'
+                ? 'Premium начнётся позже · Free'
+                : status?.status === 'cancelled'
+                  ? 'Подписка отменена · Free'
+                  : status?.premium
+                    ? 'Premium активен'
+                    : status?.status === 'expired'
+                      ? 'Период завершён · Free'
+                      : status
+                        ? 'Текущий доступ: Free'
+                        : account
+                          ? 'Статус не подтверждён'
+                          : 'Free · войди для проверки'}
         </p>
         {status?.expiresAt && (
           <p className="text-muted-foreground mt-2 text-xs">
             Срок: {new Date(status.expiresAt).toLocaleString('ru-RU')}
           </p>
         )}
+        {status?.startsAt && (
+          <p className="text-muted-foreground mt-2 text-xs">
+            Начало периода: {new Date(status.startsAt).toLocaleString('ru-RU')}
+          </p>
+        )}
+        {status &&
+          !status.premium &&
+          ['expired', 'cancelled', 'refunded'].includes(status.status) && (
+            <p className="mt-3 text-sm">
+              Прогресс сохранён. Бесплатные уроки доступны; Premium можно
+              активировать снова.
+            </p>
+          )}
       </Card>
       <div className="my-5 space-y-4">
         {[
@@ -180,7 +180,7 @@ export function PremiumPanel() {
           Войди через Telegram, чтобы проверить свой статус.
         </p>
       )}
-      {account?.mode === 'telegram' && !status && !error && (
+      {account?.mode === 'telegram' && !status && !error && !accessError && (
         <p role="status" className="text-muted-foreground my-4 text-sm">
           Проверяем подписку…
         </p>
@@ -222,7 +222,10 @@ export function PremiumPanel() {
       <Button
         variant="outline"
         className="mt-3 w-full"
-        onClick={() => setRefresh((n) => n + 1)}
+        onClick={() => {
+          setError(null);
+          refresh();
+        }}
       >
         <RefreshCw size={16} />
         Проверить статус
@@ -254,40 +257,43 @@ export function PremiumPanel() {
           </a>
         )}
       </div>
-      {error && (
+      {(error || accessError) && (
         <p role="alert" className="my-4 text-sm text-rose-300">
-          {error}
+          {error || accessError}
         </p>
       )}
-      {status?.premium && features && (
-        <Card className="mt-5">
-          <h2 className="text-lg font-bold">Твой учебный ритм</h2>
-          <p className="text-muted-foreground my-3 text-sm">
-            Точность: {features.accuracy}% · Завершено попыток:{' '}
-            {features.completedAttempts}
-          </p>
-          <h3 className="font-bold">План повторения</h3>
-          {features.reviewPlan.length ? (
-            features.reviewPlan.map((item) => (
-              <Link
-                key={item.lessonId}
-                href={`/lesson?lesson=${item.lessonId}`}
-                className="border-border mt-3 block rounded-xl border p-3 text-sm"
-              >
-                <span className="font-semibold">{item.title}</span>
-                <span className="text-muted-foreground mt-1 block text-xs">
-                  Лучший результат {item.score}% · Повторить после{' '}
-                  {new Date(item.reviewAfter).toLocaleDateString('ru-RU')}
-                </span>
-              </Link>
-            ))
-          ) : (
-            <p className="text-muted-foreground mt-3 text-xs">
-              Пройди урок, чтобы получить план повторения.
+      {status?.premium &&
+        can('advanced_statistics') &&
+        can('lesson_review_plan') &&
+        features && (
+          <Card className="mt-5">
+            <h2 className="text-lg font-bold">Твой учебный ритм</h2>
+            <p className="text-muted-foreground my-3 text-sm">
+              Точность: {features.accuracy}% · Завершено попыток:{' '}
+              {features.completedAttempts}
             </p>
-          )}
-        </Card>
-      )}
+            <h3 className="font-bold">План повторения</h3>
+            {features.reviewPlan.length ? (
+              features.reviewPlan.map((item) => (
+                <Link
+                  key={item.lessonId}
+                  href={`/lesson?lesson=${item.lessonId}`}
+                  className="border-border mt-3 block rounded-xl border p-3 text-sm"
+                >
+                  <span className="font-semibold">{item.title}</span>
+                  <span className="text-muted-foreground mt-1 block text-xs">
+                    Лучший результат {item.score}% · Повторить после{' '}
+                    {new Date(item.reviewAfter).toLocaleDateString('ru-RU')}
+                  </span>
+                </Link>
+              ))
+            ) : (
+              <p className="text-muted-foreground mt-3 text-xs">
+                Пройди урок, чтобы получить план повторения.
+              </p>
+            )}
+          </Card>
+        )}
     </>
   );
 }

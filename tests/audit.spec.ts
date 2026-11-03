@@ -94,6 +94,16 @@ test('Premium loading, failure and retry never invent subscription access', asyn
     return route.fulfill({
       json: {
         premium: false,
+        version: 'permissions-v1',
+        plan: 'free',
+        startsAt: null,
+        serverTime: new Date().toISOString(),
+        features: {
+          premium_courses: false,
+          extra_exercises: false,
+          advanced_statistics: false,
+          lesson_review_plan: false,
+        },
         expiresAt: null,
         autoRenew: false,
         status: 'free',

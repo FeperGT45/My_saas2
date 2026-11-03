@@ -68,6 +68,7 @@ try {
   await run('learning:check', env);
   await run('exercises:check', env);
   await run('library:db-check', env);
+  await run('premium:check', env);
   await run('build:cloudflare', env);
 } catch (error) {
   console.error(
