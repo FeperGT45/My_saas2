@@ -30,6 +30,7 @@
     "start:vinext": "vite preview",
     "deploy:vinext": "vinext-cloudflare deploy",
     "build:cloudflare": "vite build",
+    "build:production": "node scripts/build-production.mjs",
     "preview:cloudflare": "vite preview --host 127.0.0.1 --port 3002",
     "deploy:cloudflare": "node scripts/deploy-cloudflare.mjs",
     "check:cloudflare": "cf deploy --prebuilt --mode production --dry-run",

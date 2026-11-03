@@ -30,6 +30,12 @@ export default defineConfig({
       TELEGRAM_BOT_TOKEN: bindings.secret(),
       TELEGRAM_WEBHOOK_SECRET: bindings.secret(),
       SUPABASE_SECRET_KEY: bindings.secret(),
+      ...(process.env.ADMIN_USER_IDS?.trim()
+        ? { ADMIN_USER_IDS: bindings.secret() }
+        : {}),
+      ...(process.env.SUPABASE_HEALTHCHECK_SECRET?.trim()
+        ? { SUPABASE_HEALTHCHECK_SECRET: bindings.secret() }
+        : {}),
       ENABLE_LOCAL_AUTH: bindings.text('false'),
       TELEGRAM_STARS_PAYMENTS_ENABLED: bindings.text('false'),
       TELEGRAM_STARS_OWNER_REVIEWED: bindings.text('false'),

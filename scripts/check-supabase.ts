@@ -40,8 +40,15 @@ async function main() {
       return;
     }
     if (!isDatabaseReady(data)) {
+      const version =
+        data &&
+        typeof data === 'object' &&
+        typeof data.schemaVersion === 'string' &&
+        /^\d{12}$/.test(data.schemaVersion)
+          ? data.schemaVersion
+          : 'unknown';
       console.error(
-        'Database is reachable but schema or permissions are not ready. Review migrations and RLS; no writes performed.',
+        `Database is reachable but schema or permissions are not ready (observed ${version}; required 202611020010). Review migrations and RLS; no writes performed.`,
       );
       process.exitCode = 1;
       return;
