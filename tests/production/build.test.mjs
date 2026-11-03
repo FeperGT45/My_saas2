@@ -31,6 +31,7 @@ function scenario(overrides = {}) {
       if (process.argv[3] === 'placement:check' && process.env.TEST_PLACEMENT_FAIL) process.exit(1);
       if (process.argv[3] === 'learning:check' && process.env.TEST_LEARNING_FAIL) process.exit(1);
       if (process.argv[3] === 'exercises:check' && process.env.TEST_EXERCISES_FAIL) process.exit(1);
+      if (process.argv[3] === 'library:db-check' && process.env.TEST_LIBRARY_FAIL) process.exit(1);
     `,
       { mode: 0o700 },
     );
@@ -73,6 +74,7 @@ test('production build verifies database first and uses the verified bot usernam
     { script: 'placement:check', username: 'Verified_bot' },
     { script: 'learning:check', username: 'Verified_bot' },
     { script: 'exercises:check', username: 'Verified_bot' },
+    { script: 'library:db-check', username: 'Verified_bot' },
     { script: 'build:cloudflare', username: 'Verified_bot' },
   ]);
 });
@@ -127,6 +129,16 @@ test('exercise engine readiness failure blocks publication', () => {
   const r = scenario({ TEST_EXERCISES_FAIL: '1' });
   assert.notEqual(r.status, 0);
   assert.match(r.output, /exercises:check failed/);
+  assert.equal(
+    r.calls.some((c) => c.script === 'build:cloudflare'),
+    false,
+  );
+});
+
+test('missing curriculum package blocks publication', () => {
+  const r = scenario({ TEST_LIBRARY_FAIL: '1' });
+  assert.notEqual(r.status, 0);
+  assert.match(r.output, /library:db-check failed/);
   assert.equal(
     r.calls.some((c) => c.script === 'build:cloudflare'),
     false,

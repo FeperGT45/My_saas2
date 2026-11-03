@@ -1,0 +1,310 @@
+{
+  "key": "c2/precision",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика C2 · пакет 1",
+    "position": 1
+  },
+  "position": 5,
+  "title": "Лексическая точность и границы вывода",
+  "description": "Выбираем точное слово по его функции в сложном тексте и сохраняем различия близких понятий.",
+  "level": "C2",
+  "objectives": [
+    "Различать impartiality и отсутствие интереса",
+    "Сохранять разницу между отсутствием доказательства и доказательством отсутствия"
+  ],
+  "notes": [
+    "В формальном контексте disinterested часто означает беспристрастный; uninterested — не проявляющий интереса. Контекст нужен, потому что употребление варьируется.",
+    "Failure to establish an effect не означает автоматически установление отсутствия эффекта."
+  ],
+  "skills": ["reading", "vocabulary", "grammar"],
+  "estimated_minutes": 12,
+  "prerequisites": ["c2/rhetoric"],
+  "lexicon": [
+    {
+      "en": "disinterested",
+      "ru": "беспристрастный (в данном формальном контексте)"
+    },
+    {
+      "en": "uninterested",
+      "ru": "не заинтересованный"
+    },
+    {
+      "en": "inadvertent",
+      "ru": "непреднамеренный"
+    },
+    {
+      "en": "inconclusive",
+      "ru": "не позволяющий сделать определённый вывод"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "prompt": "Какую мысль автор защищает, различая два отрицательных вывода?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The report asks for reviewers who will not read the evidence."
+          },
+          {
+            "id": "o2",
+            "label": "An inconclusive result warrants neither a proven benefit nor a proven absence of benefit."
+          },
+          {
+            "id": "o3",
+            "label": "Every inconclusive result confirms that an intervention works."
+          }
+        ],
+        "passage": "An evaluation found no clear improvement after a small pilot. In the report, the result was described as inconclusive: the measures were too imprecise and the sample too limited to distinguish a modest benefit from no benefit. A summary then announced that the pilot had “proved the intervention ineffective”. That is a stronger claim. The original report had not established a benefit, but neither had it demonstrated the absence of one. This distinction is not an invitation to assume that the intervention works. It is a requirement to keep the conclusion within what the evidence can discriminate. The same report also called for disinterested reviewers, meaning reviewers without a stake in the outcome, not people who could not be bothered to examine it."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "An inconclusive result warrants neither a proven benefit nor a proven absence of benefit.",
+      "explanation": "Неопределённый результат не доказывает ни пользу, ни её отсутствие; беспристрастность не равна равнодушию.",
+      "key": "e01"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "В формальном контексте выбери слово о рецензенте без личной выгоды от результата.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "inadvertent"
+          },
+          {
+            "id": "o2",
+            "label": "uninterested"
+          },
+          {
+            "id": "o3",
+            "label": "disinterested"
+          }
+        ],
+        "sentence": "The panel needs a ___ reviewer who has no financial stake in the outcome."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "disinterested",
+      "explanation": "Здесь disinterested означает беспристрастный; uninterested означало бы отсутствие интереса.",
+      "key": "e02"
+    },
+    {
+      "kind": "synonym_antonym",
+      "prompt": "Выбери ближайший синоним inadvertent при описании ошибки.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "unrelated"
+          },
+          {
+            "id": "o2",
+            "label": "unavoidable"
+          },
+          {
+            "id": "o3",
+            "label": "unintentional"
+          }
+        ],
+        "word": "inadvertent",
+        "relation": "synonym"
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "unintentional",
+      "explanation": "Inadvertent — непреднамеренный. Unavoidable означало бы неизбежный — это другое утверждение.",
+      "key": "e03"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи осторожное описание результата.",
+      "public_payload": {
+        "source": "Исследование не установило эффект; это не равнозначно доказательству его отсутствия."
+      },
+      "answer_key": {
+        "accepted": [
+          "The study did not establish an effect; this is not equivalent to proving its absence.",
+          "The study failed to establish an effect; that is not the same as proving that there was none."
+        ]
+      },
+      "reference_answer": "The study did not establish an effect; this is not equivalent to proving its absence.",
+      "incorrect_answer": "The study conclusively proved that there was no effect.",
+      "editorial_answer": "The study did not establish an effect; this is not equivalent to proving its absence.",
+      "explanation": "Нужно сохранить различие между failed to establish и proved absence; conclusively неоправданно усиливает вывод.",
+      "key": "e04"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери два точных различия значений.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "A disinterested reviewer need not be an uninterested reviewer."
+          },
+          {
+            "id": "o2",
+            "label": "An inconclusive result is always proof of complete ineffectiveness."
+          },
+          {
+            "id": "o3",
+            "label": "An inadvertent error need not be an unavoidable error."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o1", "o3"]
+      },
+      "reference_answer": ["o3", "o1"],
+      "incorrect_answer": ["o2"],
+      "editorial_answer": "An inadvertent error need not be an unavoidable error.; A disinterested reviewer need not be an uninterested reviewer.",
+      "explanation": "Непреднамеренность не означает неизбежность; беспристрастность не означает отсутствие интереса.",
+      "key": "e05"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь согласование, сохранив осторожный вывод.",
+      "public_payload": {
+        "sentence": "The absence of clear findings do not establish that the intervention is ineffective."
+      },
+      "answer_key": {
+        "accepted": [
+          "The absence of clear findings does not establish that the intervention is ineffective."
+        ]
+      },
+      "reference_answer": "The absence of clear findings does not establish that the intervention is ineffective.",
+      "incorrect_answer": "The absence of clear findings proves that the intervention is ineffective.",
+      "editorial_answer": "The absence of clear findings does not establish that the intervention is ineffective.",
+      "explanation": "Подлежащее absence в единственном числе требует does not. Осторожный смысл нельзя заменять на proves.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери ответ, который не подменяет отсутствие доказательств доказательством отсутствия.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "No; an undetected benefit must therefore exist."
+          },
+          {
+            "id": "o2",
+            "label": "Not on that basis alone; we need to consider what effects the study could reliably detect."
+          },
+          {
+            "id": "o3",
+            "label": "Yes; any failure to detect something proves it impossible."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Colleague",
+            "text": "The pilot did not establish a benefit. Can we say there is definitely none?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Not on that basis alone; we need to consider what effects the study could reliably detect.",
+      "explanation": "Нужно учитывать различающую способность исследования; ни отсутствие, ни наличие пользы автоматически не доказано.",
+      "key": "e07"
+    },
+    {
+      "kind": "unit_test",
+      "prompt": "Проверь подтекст, оговорки и точность C2.",
+      "public_payload": {
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "Что означает qualified praise в аналитическом тексте?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "Praise without any reservation."
+              },
+              {
+                "id": "o2",
+                "label": "Praise limited by reservations."
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "prompt": "Что нужно сохранить при упрощении формального условия?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "Only the shortest possible wording."
+              },
+              {
+                "id": "o2",
+                "label": "Its exceptions, conditions and modal force."
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "prompt": "Что позволяет заключить один лишь inconclusive result?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "That one side has been conclusively proved."
+              },
+              {
+                "id": "o2",
+                "label": "That the available evidence does not settle the issue."
+              }
+            ]
+          }
+        ]
+      },
+      "answer_key": {
+        "answers": {
+          "q1": "o2",
+          "q2": "o2",
+          "q3": "o2"
+        },
+        "explanations": {
+          "q1": "Qualified ограничивает похвалу оговорками.",
+          "q2": "Простота не оправдывает потерю условий, исключений и модальной силы.",
+          "q3": "Inconclusive — не позволяющий решить вопрос на имеющихся данных."
+        }
+      },
+      "reference_answer": {
+        "q1": "o2",
+        "q2": "o2",
+        "q3": "o2"
+      },
+      "incorrect_answer": {
+        "q1": "o1",
+        "q2": "o2",
+        "q3": "o2"
+      },
+      "editorial_answer": "Praise limited by reservations.; Its exceptions, conditions and modal force.; That the available evidence does not settle the issue.",
+      "explanation": "Контрольный блок засчитывается при всех верных ответах. Разбор каждого вопроса показан отдельно.",
+      "key": "e08"
+    }
+  ]
+}

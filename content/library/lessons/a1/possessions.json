@@ -1,0 +1,347 @@
+{
+  "key": "a1/possessions",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика A1 · пакет 1",
+    "position": 1
+  },
+  "position": 5,
+  "title": "Мои вещи и твои вещи",
+  "description": "Различаем my/your/his/her и описываем принадлежность знакомых предметов.",
+  "level": "A1",
+  "objectives": [
+    "Использовать притяжательные слова перед существительным",
+    "Говорить о наличии вещи с have got"
+  ],
+  "notes": [
+    "My, your, his, her стоят перед названием предмета: my bag.",
+    "I have got a bike и I have a bike могут описывать наличие велосипеда."
+  ],
+  "skills": ["vocabulary", "grammar", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a1/today"],
+  "lexicon": [
+    {
+      "en": "mine",
+      "ru": "мой, моя, моё (без существительного)"
+    },
+    {
+      "en": "bag",
+      "ru": "сумка"
+    },
+    {
+      "en": "bike",
+      "ru": "велосипед"
+    },
+    {
+      "en": "whose",
+      "ru": "чей"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Как описать сумку Анны?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "her"
+          },
+          {
+            "id": "o2",
+            "label": "his"
+          },
+          {
+            "id": "o3",
+            "label": "their"
+          }
+        ],
+        "sentence": "Anna has a blue bag. This is ___ bag."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "her",
+      "explanation": "Анна — владелица, поэтому her bag.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Выбери притяжательное слово говорящего.",
+      "public_payload": {
+        "sentence": "I have a bike. This is ___ bike."
+      },
+      "answer_key": {
+        "accepted": ["my"]
+      },
+      "reference_answer": "my",
+      "incorrect_answer": "your",
+      "editorial_answer": "I have a bike. This is my bike.",
+      "explanation": "Если велосипед принадлежит говорящему, используется my.",
+      "key": "e02"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Сопоставь притяжательные сочетания.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "my book"
+          },
+          {
+            "id": "l2",
+            "label": "your bag"
+          },
+          {
+            "id": "l3",
+            "label": "his pen"
+          },
+          {
+            "id": "l4",
+            "label": "her bike"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "моя книга"
+          },
+          {
+            "id": "r2",
+            "label": "твоя сумка"
+          },
+          {
+            "id": "r3",
+            "label": "его ручка"
+          },
+          {
+            "id": "r4",
+            "label": "её велосипед"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "reference_answer": {
+        "l1": "r1",
+        "l2": "r2",
+        "l3": "r3",
+        "l4": "r4"
+      },
+      "incorrect_answer": {
+        "l1": "r2",
+        "l2": "r3",
+        "l3": "r4",
+        "l4": "r1"
+      },
+      "editorial_answer": "my book — моя книга; your bag — твоя сумка; his pen — его ручка; her bike — её велосипед",
+      "explanation": "My — мой, your — твой/ваш, his — его, her — её.",
+      "key": "e03"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Собери: «У меня есть красный велосипед».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "bike."
+          },
+          {
+            "id": "t3",
+            "label": "a"
+          },
+          {
+            "id": "t4",
+            "label": "have"
+          },
+          {
+            "id": "t5",
+            "label": "red"
+          },
+          {
+            "id": "t6",
+            "label": "got"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t4", "t6", "t3", "t5", "t2"]
+      },
+      "reference_answer": ["t1", "t4", "t6", "t3", "t5", "t2"],
+      "incorrect_answer": ["t4", "t6", "t3", "t5", "t2", "t1"],
+      "editorial_answer": "I have got a red bike.",
+      "explanation": "Have got выражает наличие; red стоит перед bike.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кому принадлежит зелёная ручка?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "May."
+          },
+          {
+            "id": "o2",
+            "label": "Their teacher."
+          },
+          {
+            "id": "o3",
+            "label": "Leo."
+          }
+        ],
+        "passage": "Leo has a black pen. His sister May has a green pen. Leo’s bag is blue, and May’s bag is red. They take their pens to school."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "May.",
+      "explanation": "У May зелёная ручка: May has a green pen.",
+      "key": "e05"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи фразу о своей вещи.",
+      "public_payload": {
+        "source": "Это моя сумка."
+      },
+      "answer_key": {
+        "accepted": ["This is my bag.", "This bag is mine."]
+      },
+      "reference_answer": "This is my bag.",
+      "incorrect_answer": "This is your bag.",
+      "editorial_answer": "This is my bag.",
+      "explanation": "My bag и bag is mine выражают принадлежность говорящему. Your означает другого владельца.",
+      "key": "e06"
+    },
+    {
+      "kind": "response_choice",
+      "prompt": "Ответь на вопрос о владельце ручки от своего имени.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It is mine."
+          },
+          {
+            "id": "o2",
+            "label": "It is a pen."
+          },
+          {
+            "id": "o3",
+            "label": "I am fine."
+          }
+        ],
+        "context": "Whose pen is this?"
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It is mine.",
+      "explanation": "Whose спрашивает «чей?». It is mine сообщает владельца.",
+      "key": "e07"
+    },
+    {
+      "kind": "unit_test",
+      "prompt": "Повтори ключевые конструкции курса A1.",
+      "public_payload": {
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "Как сказать, что в комнате два стула?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "There are two chairs."
+              },
+              {
+                "id": "o2",
+                "label": "There is two chairs."
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "prompt": "Какая просьба в кафе вежливая?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "Can I have some water, please?"
+              },
+              {
+                "id": "o2",
+                "label": "I am some water."
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "prompt": "Как описать действие сейчас?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "She reading now."
+              },
+              {
+                "id": "o2",
+                "label": "She is reading now."
+              }
+            ]
+          }
+        ]
+      },
+      "answer_key": {
+        "answers": {
+          "q1": "o1",
+          "q2": "o1",
+          "q3": "o2"
+        },
+        "explanations": {
+          "q1": "Множественное число требует there are.",
+          "q2": "Can I have …, please? — вежливая просьба.",
+          "q3": "Перед reading необходима форма is."
+        }
+      },
+      "reference_answer": {
+        "q1": "o1",
+        "q2": "o1",
+        "q3": "o2"
+      },
+      "incorrect_answer": {
+        "q1": "o2",
+        "q2": "o1",
+        "q3": "o2"
+      },
+      "editorial_answer": "There are two chairs.; Can I have some water, please?; She is reading now.",
+      "explanation": "Контрольный блок засчитывается при всех верных ответах. Разбор каждого вопроса показан отдельно.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "key": "a2/plans",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика A2 · пакет 1",
+    "position": 1
+  },
+  "position": 3,
+  "title": "Планы и договорённости",
+  "description": "Обсуждаем намерения, простые планы и время встречи.",
+  "level": "A2",
+  "objectives": [
+    "Говорить о намерении с be going to",
+    "Подтвердить время и место встречи"
+  ],
+  "notes": [
+    "Be going to выражает план: I am going to visit …",
+    "Let’s … предлагает совместное действие: Let’s meet at six."
+  ],
+  "skills": ["grammar", "reading", "vocabulary"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a2/travel-choices"],
+  "lexicon": [
+    {
+      "en": "plan",
+      "ru": "план"
+    },
+    {
+      "en": "meet",
+      "ru": "встретиться"
+    },
+    {
+      "en": "next week",
+      "ru": "на следующей неделе"
+    },
+    {
+      "en": "free",
+      "ru": "свободный (о времени)"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "tenses",
+      "prompt": "Выбери полную форму запланированного действия.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "are going to visit"
+          },
+          {
+            "id": "o2",
+            "label": "going visit"
+          },
+          {
+            "id": "o3",
+            "label": "went to visit"
+          }
+        ],
+        "sentence": "We ___ our grandparents next Sunday."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "are going to visit",
+      "explanation": "Для we нужна форма are going to visit.",
+      "key": "e01"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Согласуй время встречи.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It is under the chair."
+          },
+          {
+            "id": "o2",
+            "label": "Let’s meet at three."
+          },
+          {
+            "id": "o3",
+            "label": "I met at yesterday."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Ella",
+            "text": "Are you free on Saturday?"
+          },
+          {
+            "speaker": "Max",
+            "text": "Yes. Shall we meet at the café?"
+          },
+          {
+            "speaker": "Ella",
+            "text": "Good idea. What time?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Let’s meet at three.",
+      "explanation": "Вопрос What time? требует времени встречи: at three.",
+      "key": "e02"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение о намерении.",
+      "public_payload": {
+        "sentence": "She ___ going to learn Spanish."
+      },
+      "answer_key": {
+        "accepted": ["is"]
+      },
+      "reference_answer": "is",
+      "incorrect_answer": "are",
+      "editorial_answer": "She is going to learn Spanish.",
+      "explanation": "После she нужна is в конструкции is going to.",
+      "key": "e03"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Собери предложение: «Давай встретимся у библиотеки».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "meet"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          },
+          {
+            "id": "t3",
+            "label": "library."
+          },
+          {
+            "id": "t4",
+            "label": "outside"
+          },
+          {
+            "id": "t5",
+            "label": "Let’s"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t5", "t1", "t4", "t2", "t3"]
+      },
+      "reference_answer": ["t5", "t1", "t4", "t2", "t3"],
+      "incorrect_answer": ["t1", "t4", "t2", "t3", "t5"],
+      "editorial_answer": "Let’s meet outside the library.",
+      "explanation": "Let’s + начальная форма meet — предложение совместного действия.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где друзья собираются встретиться?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Outside the library."
+          },
+          {
+            "id": "o2",
+            "label": "Inside the cinema."
+          },
+          {
+            "id": "o3",
+            "label": "At Rita’s home."
+          }
+        ],
+        "passage": "Sam and Rita are planning their Saturday. They are going to see a film at four, but first they want to have lunch. They agree to meet outside the library at one and walk to a nearby café together."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Outside the library.",
+      "explanation": "Договорённость: meet outside the library at one. Кино — последующий план.",
+      "key": "e05"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи своё намерение.",
+      "public_payload": {
+        "source": "Я собираюсь учиться завтра."
+      },
+      "answer_key": {
+        "accepted": [
+          "I am going to study tomorrow.",
+          "I'm going to study tomorrow."
+        ]
+      },
+      "reference_answer": "I am going to study tomorrow.",
+      "incorrect_answer": "I studied yesterday.",
+      "editorial_answer": "I am going to study tomorrow.",
+      "explanation": "Am going to study — намерение на будущее; studied yesterday — прошлое.",
+      "key": "e06"
+    },
+    {
+      "kind": "error_identification",
+      "prompt": "Найди ошибку в будущем плане.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "is"
+          },
+          {
+            "id": "o2",
+            "label": "going"
+          },
+          {
+            "id": "o3",
+            "label": "visit"
+          }
+        ],
+        "sentence": "They is going to visit us."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "is",
+      "explanation": "С they используется are: They are going to visit us.",
+      "key": "e07"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери два естественных способа предложить встречу.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Shall we meet tomorrow?"
+          },
+          {
+            "id": "o2",
+            "label": "Let’s meet at six."
+          },
+          {
+            "id": "o3",
+            "label": "We met tomorrow yesterday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o1", "o2"]
+      },
+      "reference_answer": ["o2", "o1"],
+      "incorrect_answer": ["o3"],
+      "editorial_answer": "Let’s meet at six.; Shall we meet tomorrow?",
+      "explanation": "Let’s … и Shall we …? подходят для предложения совместного плана.",
+      "key": "e08"
+    }
+  ]
+}

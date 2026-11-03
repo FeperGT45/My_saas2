@@ -1,0 +1,344 @@
+{
+  "key": "c1/nominalisation",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика C1 · пакет 1",
+    "position": 1
+  },
+  "position": 2,
+  "title": "Номинализация без перегруза",
+  "description": "Читаем формальную прозу и выбираем между ясной глагольной конструкцией и уместной номинализацией.",
+  "level": "C1",
+  "objectives": [
+    "Распознавать действия, скрытые в существительных",
+    "Сохранять субъект и причинность при редактуре"
+  ],
+  "notes": [
+    "A reduction in costs может передавать costs were reduced, но сам по себе не называет исполнителя.",
+    "Номинализация не всегда улучшает стиль: цепочка абстрактных существительных может скрыть действие."
+  ],
+  "skills": ["vocabulary", "reading", "grammar"],
+  "estimated_minutes": 12,
+  "prerequisites": ["c1/inversion"],
+  "lexicon": [
+    {
+      "en": "implementation",
+      "ru": "внедрение"
+    },
+    {
+      "en": "reduction",
+      "ru": "снижение"
+    },
+    {
+      "en": "accountability",
+      "ru": "подотчётность"
+    },
+    {
+      "en": "attribution",
+      "ru": "приписывание, установление авторства или причины"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери существительное для формального описания внедрения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "implementation"
+          },
+          {
+            "id": "o2",
+            "label": "implication"
+          },
+          {
+            "id": "o3",
+            "label": "imitation"
+          }
+        ],
+        "sentence": "The ___ of the policy took six months."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "implementation",
+      "explanation": "Implementation of a policy — внедрение политики; implication означает следствие.",
+      "key": "e01"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую проблему редактор видит в исходной фразе?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Every noun phrase is unsuitable for professional writing."
+          },
+          {
+            "id": "o2",
+            "label": "The revision itself was necessarily a mistake."
+          },
+          {
+            "id": "o3",
+            "label": "The noun-heavy wording obscures the actor and the action."
+          }
+        ],
+        "passage": "The draft report stated that “the implementation of the revision of the allocation procedure was undertaken.” A reader could see that something had happened, but not who had done what. The editor replaced the sentence with “The finance team revised the allocation procedure.” This version sacrifices some of the abstract formality while making the responsible actor and the main action visible. The editor did not argue that nominalisation should disappear from professional writing. In a heading such as “Implementation costs”, a noun phrase may be economical and useful. The objection was to an unnecessary chain of nouns that obscured responsibility in a particular sentence."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The noun-heavy wording obscures the actor and the action.",
+      "explanation": "Критика относится к перегруженной фразе, скрывающей ответственность; не ко всем существительным и не к факту пересмотра.",
+      "key": "e02"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи формальное сообщение о снижении затрат.",
+      "public_payload": {
+        "source": "Снижение затрат не привело к потере качества."
+      },
+      "answer_key": {
+        "accepted": [
+          "The reduction in costs did not lead to a loss of quality.",
+          "Reducing costs did not result in a loss of quality."
+        ]
+      },
+      "reference_answer": "The reduction in costs did not lead to a loss of quality.",
+      "incorrect_answer": "The reduction in costs caused a loss of quality.",
+      "editorial_answer": "The reduction in costs did not lead to a loss of quality.",
+      "explanation": "Важны отсутствие потери качества и сохранение причинного отношения; cause без отрицания меняет смысл.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Сделай фразу яснее, назвав уже указанного исполнителя.",
+      "public_payload": {
+        "sentence": "The carrying out of the review was done by the committee."
+      },
+      "answer_key": {
+        "accepted": [
+          "The committee carried out the review.",
+          "The committee conducted the review."
+        ]
+      },
+      "reference_answer": "The committee carried out the review.",
+      "incorrect_answer": "The committee cancelled the review.",
+      "editorial_answer": "The committee carried out the review.",
+      "explanation": "Оба варианта раскрывают действие глаголом и сохраняют committee как исполнителя. Cancelled — другое действие.",
+      "key": "e04"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Сопоставь абстрактные существительные и значения.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "implementation"
+          },
+          {
+            "id": "l2",
+            "label": "allocation"
+          },
+          {
+            "id": "l3",
+            "label": "accountability"
+          },
+          {
+            "id": "l4",
+            "label": "revision"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "подотчётность"
+          },
+          {
+            "id": "r2",
+            "label": "пересмотр"
+          },
+          {
+            "id": "r3",
+            "label": "внедрение"
+          },
+          {
+            "id": "r4",
+            "label": "распределение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1": "r3",
+          "l2": "r4",
+          "l3": "r1",
+          "l4": "r2"
+        }
+      },
+      "reference_answer": {
+        "l1": "r3",
+        "l2": "r4",
+        "l3": "r1",
+        "l4": "r2"
+      },
+      "incorrect_answer": {
+        "l1": "r4",
+        "l2": "r1",
+        "l3": "r2",
+        "l4": "r3"
+      },
+      "editorial_answer": "implementation — внедрение; allocation — распределение; accountability — подотчётность; revision — пересмотр",
+      "explanation": "Эти существительные часто встречаются в деловых текстах; accountability не тождественно просто blame — обвинению.",
+      "key": "e05"
+    },
+    {
+      "kind": "single_choice",
+      "prompt": "Какая редактура сохраняет исполнителя и действие?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The responses were never collected."
+          },
+          {
+            "id": "o2",
+            "label": "An analysis existed somewhere."
+          },
+          {
+            "id": "o3",
+            "label": "The research team analysed the responses."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The research team analysed the responses.",
+      "explanation": "Первый вариант ясно называет команду и действие, не добавляя отсутствия данных.",
+      "key": "e06"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери вывод о стиле без абсолютного запрета.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "can"
+          },
+          {
+            "id": "t2",
+            "label": "be"
+          },
+          {
+            "id": "t3",
+            "label": "it"
+          },
+          {
+            "id": "t4",
+            "label": "useful"
+          },
+          {
+            "id": "t5",
+            "label": "when"
+          },
+          {
+            "id": "t6",
+            "label": "a"
+          },
+          {
+            "id": "t7",
+            "label": "clear"
+          },
+          {
+            "id": "t8",
+            "label": "serves"
+          },
+          {
+            "id": "t9",
+            "label": "Nominalisation"
+          },
+          {
+            "id": "t10",
+            "label": "purpose."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t9", "t1", "t2", "t4", "t5", "t3", "t8", "t6", "t7", "t10"]
+      },
+      "reference_answer": [
+        "t9",
+        "t1",
+        "t2",
+        "t4",
+        "t5",
+        "t3",
+        "t8",
+        "t6",
+        "t7",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t1",
+        "t2",
+        "t4",
+        "t5",
+        "t3",
+        "t8",
+        "t6",
+        "t7",
+        "t10",
+        "t9"
+      ],
+      "editorial_answer": "Nominalisation can be useful when it serves a clear purpose.",
+      "explanation": "Can и when ограничивают вывод: уместность зависит от функции, а не от механического правила.",
+      "key": "e07"
+    },
+    {
+      "kind": "word_review",
+      "prompt": "Что означает accountability в управленческом контексте?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "гарантия отсутствия любых ошибок"
+          },
+          {
+            "id": "o2",
+            "label": "обязанность объяснять решения и отвечать за них"
+          },
+          {
+            "id": "o3",
+            "label": "полное отсутствие полномочий"
+          }
+        ],
+        "word": "accountability"
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "обязанность объяснять решения и отвечать за них",
+      "explanation": "Accountability — подотчётность и ответственность за решения, а не обещание безошибочности.",
+      "key": "e08"
+    }
+  ]
+}

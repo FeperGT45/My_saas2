@@ -110,19 +110,21 @@ export function TelegramProvider({ children }: { children: React.ReactNode }) {
       if (sdk.backButton.onClick.isAvailable())
         off = sdk.backButton.onClick(() =>
           router.push(
-            pathname === '/lesson'
-              ? '/learn'
-              : [
-                    '/settings',
-                    '/achievements',
-                    '/friends',
-                    '/premium',
-                    '/admin',
-                    '/placement',
-                    '/learning-plan',
-                  ].includes(pathname)
-                ? '/profile'
-                : '/',
+            pathname === '/library'
+              ? '/courses'
+              : pathname === '/lesson'
+                ? '/learn'
+                : [
+                      '/settings',
+                      '/achievements',
+                      '/friends',
+                      '/premium',
+                      '/admin',
+                      '/placement',
+                      '/learning-plan',
+                    ].includes(pathname)
+                  ? '/profile'
+                  : '/',
           ),
         );
     });

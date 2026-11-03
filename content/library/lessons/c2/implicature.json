@@ -1,0 +1,268 @@
+{
+  "key": "c2/implicature",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика C2 · пакет 1",
+    "position": 1
+  },
+  "position": 1,
+  "title": "Похвала, ирония и недосказанность",
+  "description": "Различаем буквальную похвалу, ироническую оценку и ограниченный вывод из контекста.",
+  "level": "C2",
+  "objectives": [
+    "Интерпретировать ироническую похвалу по контексту",
+    "Сохранять сдержанную критику в переводе"
+  ],
+  "notes": [
+    "Ироническая оценка определяется контекстом, а не самим наличием положительного прилагательного.",
+    "An ambitious interpretation может вежливо намекать на чрезмерность вывода, но не всегда является насмешкой."
+  ],
+  "skills": ["reading", "vocabulary", "grammar"],
+  "estimated_minutes": 12,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "understatement",
+      "ru": "сдержанное преуменьшение"
+    },
+    {
+      "en": "ironic",
+      "ru": "иронический"
+    },
+    {
+      "en": "qualified praise",
+      "ru": "похвала с оговорками"
+    },
+    {
+      "en": "overstatement",
+      "ru": "преувеличение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "prompt": "В чём заключается ирония рецензента?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The board has made indecision more efficient while presenting it as progress."
+          },
+          {
+            "id": "o2",
+            "label": "The reviewer proves that every member is deliberately dishonest."
+          },
+          {
+            "id": "o3",
+            "label": "The reviewer approves of the board’s substantive decision."
+          }
+        ],
+        "passage": "The reviewer congratulates the board on its “remarkable efficiency”: a decision postponed at six consecutive meetings has finally been postponed without the inconvenience of a meeting at all. Read in isolation, the opening compliment might suggest approval. The surrounding account reverses that expectation. The board has streamlined the procedure for avoiding a decision, not the work the procedure was meant to accomplish. Yet the reviewer stops short of alleging that every member is deliberately obstructive. A later paragraph acknowledges that the proposal contains genuine uncertainties. The target is the institution’s self-congratulatory language, which presents the removal of an administrative step as though it were substantive progress. The humour depends on preserving that distinction rather than merely treating every positive word as a negative one."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The board has made indecision more efficient while presenting it as progress.",
+      "explanation": "Похвала относится к эффективности уклонения от решения. Текст не доказывает намеренную нечестность всех членов совета.",
+      "key": "e01"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое ограничение критики автор явно сохраняет?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The proposal contains real uncertainties, and universal bad faith is not alleged."
+          },
+          {
+            "id": "o2",
+            "label": "Administrative changes can never have any value."
+          },
+          {
+            "id": "o3",
+            "label": "All positive language must always be interpreted ironically."
+          }
+        ],
+        "passage": "The reviewer congratulates the board on its “remarkable efficiency”: a decision postponed at six consecutive meetings has finally been postponed without the inconvenience of a meeting at all. Read in isolation, the opening compliment might suggest approval. The surrounding account reverses that expectation. The board has streamlined the procedure for avoiding a decision, not the work the procedure was meant to accomplish. Yet the reviewer stops short of alleging that every member is deliberately obstructive. A later paragraph acknowledges that the proposal contains genuine uncertainties. The target is the institution’s self-congratulatory language, which presents the removal of an administrative step as though it were substantive progress. The humour depends on preserving that distinction rather than merely treating every positive word as a negative one."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The proposal contains real uncertainties, and universal bad faith is not alleged.",
+      "explanation": "Автор признаёт реальные неопределённости и не приписывает всем участникам умышленное препятствование.",
+      "key": "e02"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Определи наиболее обоснованный подтекст замечания.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The member has formally approved the tripled budget."
+          },
+          {
+            "id": "o2",
+            "label": "The member doubts whether enthusiasm is justified before the costs are examined."
+          },
+          {
+            "id": "o3",
+            "label": "The member wants the presentation to contain more colours."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Chair",
+            "text": "The budget has tripled, but the presentation is certainly colourful."
+          },
+          {
+            "speaker": "Member",
+            "text": "Perhaps we could cost the proposal before celebrating it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The member doubts whether enthusiasm is justified before the costs are examined.",
+      "explanation": "Противопоставление celebrating и costing делает сомнение в обоснованности энтузиазма явным.",
+      "key": "e03"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи сдержанную оценку, не превращая её в восторг или полное отрицание.",
+      "public_payload": {
+        "source": "Предложение не лишено достоинств, но его преимущества преувеличены."
+      },
+      "answer_key": {
+        "accepted": [
+          "The proposal is not without merit, but its benefits have been overstated.",
+          "The proposal has some merit, but its advantages have been exaggerated."
+        ]
+      },
+      "reference_answer": "The proposal is not without merit, but its benefits have been overstated.",
+      "incorrect_answer": "The proposal is worthless and has no advantages.",
+      "editorial_answer": "The proposal is not without merit, but its benefits have been overstated.",
+      "explanation": "Not without merit — ограниченная положительная оценка; overstated критикует масштаб заявленных выгод.",
+      "key": "e04"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово для намеренно сдержанного описания серьёзной проблемы.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "specification"
+          },
+          {
+            "id": "o2",
+            "label": "endorsement"
+          },
+          {
+            "id": "o3",
+            "label": "understatement"
+          }
+        ],
+        "sentence": "Calling the collapse of the entire schedule “a slight inconvenience” is an ___."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "understatement",
+      "explanation": "Understatement — преуменьшение; endorsement было бы одобрением.",
+      "key": "e05"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери два вывода, допустимых при анализе иронического комментария.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "A criticism can be ironic without accusing everyone of bad faith."
+          },
+          {
+            "id": "o2",
+            "label": "Every polite adjective proves that the writer means its exact opposite."
+          },
+          {
+            "id": "o3",
+            "label": "Context can reverse the apparent force of a compliment."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o1", "o3"]
+      },
+      "reference_answer": ["o3", "o1"],
+      "incorrect_answer": ["o2"],
+      "editorial_answer": "Context can reverse the apparent force of a compliment.; A criticism can be ironic without accusing everyone of bad faith.",
+      "explanation": "Ирония зависит от контекста; механическое обращение любого прилагательного в противоположность неверно.",
+      "key": "e06"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь модальный инфинитив, сохранив ретроспективную критику.",
+      "public_payload": {
+        "sentence": "The board ought to has examined the figures before praising the outcome."
+      },
+      "answer_key": {
+        "accepted": [
+          "The board ought to have examined the figures before praising the outcome."
+        ]
+      },
+      "reference_answer": "The board ought to have examined the figures before praising the outcome.",
+      "incorrect_answer": "The board ought to praise the figures without examining them.",
+      "editorial_answer": "The board ought to have examined the figures before praising the outcome.",
+      "explanation": "Ought to have examined выражает оценку прошлого; has после to здесь невозможно.",
+      "key": "e07"
+    },
+    {
+      "kind": "synonym_antonym",
+      "prompt": "Выбери ближайшее значение qualified в qualified praise.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "officially certified"
+          },
+          {
+            "id": "o2",
+            "label": "limited by reservations"
+          },
+          {
+            "id": "o3",
+            "label": "unreservedly enthusiastic"
+          }
+        ],
+        "word": "qualified",
+        "relation": "synonym"
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "limited by reservations",
+      "explanation": "Qualified praise — похвала с оговорками, а не безусловный восторг.",
+      "key": "e08"
+    }
+  ]
+}

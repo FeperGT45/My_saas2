@@ -17,6 +17,13 @@ export default function CoursesPage() {
         title="Мир говорит с тобой"
         description="А ты на каком языке ответишь?"
       />
+      <Button asChild className="mb-5 w-full">
+        <Link href="/library">
+          <BookOpen size={18} />
+          Библиотека уроков из базы
+          <ArrowRight size={16} />
+        </Link>
+      </Button>
       <label className="border-border bg-card text-muted-foreground mb-6 flex items-center gap-3 rounded-2xl border px-4">
         <Search size={18} />
         <input

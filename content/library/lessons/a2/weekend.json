@@ -1,0 +1,255 @@
+{
+  "key": "a2/weekend",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика A2 · пакет 1",
+    "position": 1
+  },
+  "position": 1,
+  "title": "Как прошли выходные",
+  "description": "Рассказываем о завершённых событиях и задаём вопросы о прошлом.",
+  "level": "A2",
+  "objectives": [
+    "Использовать Past Simple с yesterday и last weekend",
+    "Строить вопросы с did"
+  ],
+  "notes": [
+    "После did в вопросе используется начальная форма: Did you visit?",
+    "Go → went и buy → bought — неправильные формы прошедшего времени."
+  ],
+  "skills": ["grammar", "reading", "vocabulary"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "went",
+      "ru": "пошёл, поехал"
+    },
+    {
+      "en": "bought",
+      "ru": "купил"
+    },
+    {
+      "en": "last weekend",
+      "ru": "в прошлые выходные"
+    },
+    {
+      "en": "enjoy",
+      "ru": "наслаждаться, получать удовольствие"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "tenses",
+      "prompt": "Выбери форму для законченного события в прошлом.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "go"
+          },
+          {
+            "id": "o2",
+            "label": "went"
+          },
+          {
+            "id": "o3",
+            "label": "have gone"
+          }
+        ],
+        "sentence": "We ___ to the market last Saturday."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "went",
+      "explanation": "Last Saturday обозначает законченное время: went.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни вопрос о выходных.",
+      "public_payload": {
+        "sentence": "___ you enjoy the concert yesterday?"
+      },
+      "answer_key": {
+        "accepted": ["Did", "did"]
+      },
+      "reference_answer": "Did",
+      "incorrect_answer": "Do",
+      "editorial_answer": "Did you enjoy the concert yesterday?",
+      "explanation": "С yesterday задаём вопрос в Past Simple: Did you enjoy …?",
+      "key": "e02"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь вопрос, сохранив значение.",
+      "public_payload": {
+        "sentence": "Did you went to the park?"
+      },
+      "answer_key": {
+        "accepted": ["Did you go to the park?"]
+      },
+      "reference_answer": "Did you go to the park?",
+      "incorrect_answer": "Do you go to the park?",
+      "editorial_answer": "Did you go to the park?",
+      "explanation": "После did нужен инфинитив без to: go, а не went. Do изменило бы время.",
+      "key": "e03"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Составь: «Вчера я купил новый рюкзак».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "backpack"
+          },
+          {
+            "id": "t2",
+            "label": "yesterday."
+          },
+          {
+            "id": "t3",
+            "label": "a"
+          },
+          {
+            "id": "t4",
+            "label": "new"
+          },
+          {
+            "id": "t5",
+            "label": "bought"
+          },
+          {
+            "id": "t6",
+            "label": "I"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t6", "t5", "t3", "t4", "t1", "t2"]
+      },
+      "reference_answer": ["t6", "t5", "t3", "t4", "t1", "t2"],
+      "incorrect_answer": ["t5", "t3", "t4", "t1", "t2", "t6"],
+      "editorial_answer": "I bought a new backpack yesterday.",
+      "explanation": "Bought — прошедшая форма buy. Yesterday указывает на завершённое прошлое.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Омар остался дома в воскресенье?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Because the shop was closed."
+          },
+          {
+            "id": "o2",
+            "label": "Because his cousin visited him on Sunday."
+          },
+          {
+            "id": "o3",
+            "label": "Because it rained all day."
+          }
+        ],
+        "passage": "Omar had a busy weekend. On Saturday he visited his cousin and bought a birthday present for her. On Sunday it rained all day, so he stayed at home and watched a film. He enjoyed the quiet afternoon."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Because it rained all day.",
+      "explanation": "Причина названа прямо: it rained all day, so he stayed at home.",
+      "key": "e05"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери ответ о прошлом вечере.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I watched a film with my brother."
+          },
+          {
+            "id": "o2",
+            "label": "I watch films every week."
+          },
+          {
+            "id": "o3",
+            "label": "I am watching tomorrow."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Jo",
+            "text": "What did you do last night?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "I watched a film with my brother.",
+      "explanation": "Watched отвечает о конкретном прошлом вечере; every week описывает привычку.",
+      "key": "e06"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи отрицание о вчерашнем дне.",
+      "public_payload": {
+        "source": "Вчера мы не работали."
+      },
+      "answer_key": {
+        "accepted": ["We did not work yesterday.", "We didn't work yesterday."]
+      },
+      "reference_answer": "We did not work yesterday.",
+      "incorrect_answer": "We worked yesterday.",
+      "editorial_answer": "We did not work yesterday.",
+      "explanation": "Отрицание Past Simple строится did not + work; работали без not изменило бы смысл.",
+      "key": "e07"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери обе правильные формы Past Simple.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "They went home."
+          },
+          {
+            "id": "o2",
+            "label": "He goed home."
+          },
+          {
+            "id": "o3",
+            "label": "She bought a ticket."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o1", "o3"]
+      },
+      "reference_answer": ["o3", "o1"],
+      "incorrect_answer": ["o2"],
+      "editorial_answer": "She bought a ticket.; They went home.",
+      "explanation": "Buy → bought и go → went. Формы goed в стандартном английском нет.",
+      "key": "e08"
+    }
+  ]
+}

@@ -3,6 +3,7 @@ const routes = [
   '/',
   '/learn',
   '/courses',
+  '/library',
   '/lesson',
   '/placement',
   '/learning-plan',

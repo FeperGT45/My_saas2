@@ -1,0 +1,339 @@
+{
+  "key": "b1/phrasal-verbs",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика B1 · пакет 1",
+    "position": 1
+  },
+  "position": 5,
+  "title": "Фразовые глаголы в разговоре",
+  "description": "Понимаем распространённые фразовые глаголы в бытовом и рабочем контексте.",
+  "level": "B1",
+  "objectives": [
+    "Различать look after, give up и find out",
+    "Правильно размещать местоимение с turn off"
+  ],
+  "notes": [
+    "Look after somebody — заботиться о ком-то; look for — искать.",
+    "С местоимением у отделяемого turn off: turn it off, не turn off it."
+  ],
+  "skills": ["vocabulary", "reading", "listening"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/story"],
+  "lexicon": [
+    {
+      "en": "look after",
+      "ru": "заботиться о"
+    },
+    {
+      "en": "give up",
+      "ru": "бросить, отказаться от"
+    },
+    {
+      "en": "find out",
+      "ru": "выяснить"
+    },
+    {
+      "en": "turn off",
+      "ru": "выключить"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери глагол о присмотре за ребёнком.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "look for"
+          },
+          {
+            "id": "o2",
+            "label": "look after"
+          },
+          {
+            "id": "o3",
+            "label": "look up"
+          }
+        ],
+        "sentence": "Could you ___ my little brother while I am out?"
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "look after",
+      "explanation": "Look after — присматривать, заботиться; look for означало бы искать.",
+      "key": "e01"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Сопоставь фразовые глаголы и значения.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "give up"
+          },
+          {
+            "id": "l2",
+            "label": "find out"
+          },
+          {
+            "id": "l3",
+            "label": "turn off"
+          },
+          {
+            "id": "l4",
+            "label": "pick up"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "забрать, подобрать"
+          },
+          {
+            "id": "r2",
+            "label": "бросить занятие"
+          },
+          {
+            "id": "r3",
+            "label": "выяснить"
+          },
+          {
+            "id": "r4",
+            "label": "выключить"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1": "r2",
+          "l2": "r3",
+          "l3": "r4",
+          "l4": "r1"
+        }
+      },
+      "reference_answer": {
+        "l1": "r2",
+        "l2": "r3",
+        "l3": "r4",
+        "l4": "r1"
+      },
+      "incorrect_answer": {
+        "l1": "r3",
+        "l2": "r4",
+        "l3": "r1",
+        "l4": "r2"
+      },
+      "editorial_answer": "give up — бросить занятие; find out — выяснить; turn off — выключить; pick up — забрать, подобрать",
+      "explanation": "Фразовые глаголы нужно понимать в контексте; здесь pick up — забрать человека или предмет.",
+      "key": "e02"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Зак позвонил в офис?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "To give up his job."
+          },
+          {
+            "id": "o2",
+            "label": "To ask someone to look after a child."
+          },
+          {
+            "id": "o3",
+            "label": "To check if he could collect the parcel at six."
+          }
+        ],
+        "passage": "Zack was going to pick up a parcel after work. Before leaving, he found out that the collection office had changed its opening hours. He called to check whether it would still be open at six. The employee explained that it closed at five, so Zack arranged to collect the parcel the next morning."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "To check if he could collect the parcel at six.",
+      "explanation": "Он уточняет часы работы, чтобы забрать посылку. Остальные значения не соответствуют ситуации.",
+      "key": "e03"
+    },
+    {
+      "kind": "single_choice",
+      "prompt": "Какое предложение с местоимением правильно?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Please it turn off."
+          },
+          {
+            "id": "o2",
+            "label": "Please turn it off."
+          },
+          {
+            "id": "o3",
+            "label": "Please turn off it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Please turn it off.",
+      "explanation": "В отделяемом turn off местоимение it ставится между глаголом и частицей.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи обещание заботиться о кошке.",
+      "public_payload": {
+        "source": "Я присмотрю за твоей кошкой."
+      },
+      "answer_key": {
+        "accepted": [
+          "I will look after your cat.",
+          "I'll take care of your cat."
+        ]
+      },
+      "reference_answer": "I will look after your cat.",
+      "incorrect_answer": "I will look for your cat.",
+      "editorial_answer": "I will look after your cat.",
+      "explanation": "Look after / take care of означает заботиться; look for — искать, это другой смысл.",
+      "key": "e05"
+    },
+    {
+      "kind": "dictation",
+      "prompt": "Запиши вопрос о том, что удалось выяснить.",
+      "public_payload": {
+        "text": "Did you find out the answer?",
+        "lang": "en-US"
+      },
+      "answer_key": {
+        "accepted": ["Did you find out the answer?"]
+      },
+      "reference_answer": "Did you find out the answer?",
+      "incorrect_answer": "Did you give up the answer?",
+      "editorial_answer": "Did you find out the answer?",
+      "explanation": "Find out the answer — выяснить ответ; замена на give up не передаёт исходный смысл.",
+      "key": "e06"
+    },
+    {
+      "kind": "response_choice",
+      "prompt": "Ответь на просьбу выключить свет.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Sure, I will turn it off."
+          },
+          {
+            "id": "o2",
+            "label": "Sure, I will look it after."
+          },
+          {
+            "id": "o3",
+            "label": "Sure, I found it tomorrow."
+          }
+        ],
+        "context": "Could you turn off the light before you leave?"
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Sure, I will turn it off.",
+      "explanation": "Turn it off — корректная конструкция с местоимением it.",
+      "key": "e07"
+    },
+    {
+      "kind": "unit_test",
+      "prompt": "Проверь опыт, условия и связность речи B1.",
+      "public_payload": {
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "Выбери форму с yesterday.",
+            "options": [
+              {
+                "id": "o1",
+                "label": "I have seen her yesterday."
+              },
+              {
+                "id": "o2",
+                "label": "I saw her yesterday."
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "prompt": "Выбери реальное условие о будущем.",
+            "options": [
+              {
+                "id": "o1",
+                "label": "If I get home early, I will call."
+              },
+              {
+                "id": "o2",
+                "label": "If I will get home early, I call."
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "prompt": "Какой вариант о заботе верен?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "She looks after her grandmother."
+              },
+              {
+                "id": "o2",
+                "label": "She looks up her grandmother every day."
+              }
+            ]
+          }
+        ]
+      },
+      "answer_key": {
+        "answers": {
+          "q1": "o2",
+          "q2": "o1",
+          "q3": "o1"
+        },
+        "explanations": {
+          "q1": "Завершённое время yesterday требует Past Simple.",
+          "q2": "В if-части используется Present Simple.",
+          "q3": "Look after выражает заботу в этом контексте."
+        }
+      },
+      "reference_answer": {
+        "q1": "o2",
+        "q2": "o1",
+        "q3": "o1"
+      },
+      "incorrect_answer": {
+        "q1": "o1",
+        "q2": "o1",
+        "q3": "o1"
+      },
+      "editorial_answer": "I saw her yesterday.; If I get home early, I will call.; She looks after her grandmother.",
+      "explanation": "Контрольный блок засчитывается при всех верных ответах. Разбор каждого вопроса показан отдельно.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,267 @@
+{
+  "key": "b1/story",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика B1 · пакет 1",
+    "position": 1
+  },
+  "position": 4,
+  "title": "Рассказ с фоном и событием",
+  "description": "Соединяем фоновые действия и короткие события в понятном рассказе.",
+  "level": "B1",
+  "objectives": [
+    "Различать Past Continuous и Past Simple",
+    "Использовать while и when"
+  ],
+  "notes": [
+    "Past Continuous показывает процесс в определённый момент прошлого.",
+    "Past Simple часто обозначает событие, которое прерывает фоновое действие."
+  ],
+  "skills": ["grammar", "reading", "vocabulary"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/work-email"],
+  "lexicon": [
+    {
+      "en": "while",
+      "ru": "пока, в то время как"
+    },
+    {
+      "en": "suddenly",
+      "ru": "вдруг"
+    },
+    {
+      "en": "notice",
+      "ru": "заметить"
+    },
+    {
+      "en": "realise",
+      "ru": "осознать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "tenses",
+      "prompt": "Выбери фоновое действие в прошлом.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "have walked"
+          },
+          {
+            "id": "o2",
+            "label": "walked every day"
+          },
+          {
+            "id": "o3",
+            "label": "was walking"
+          }
+        ],
+        "sentence": "I ___ home when my phone rang."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "was walking",
+      "explanation": "Was walking описывает процесс, во время которого зазвонил телефон.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь прошедшую форму be для they.",
+      "public_payload": {
+        "sentence": "They ___ waiting outside when the doors opened."
+      },
+      "answer_key": {
+        "accepted": ["were"]
+      },
+      "reference_answer": "were",
+      "incorrect_answer": "was",
+      "editorial_answer": "They were waiting outside when the doors opened.",
+      "explanation": "С they используется were в Past Continuous.",
+      "key": "e02"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Эмма сначала не заметила остановку автобуса?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "She had already left the bus."
+          },
+          {
+            "id": "o2",
+            "label": "She was talking to the driver the whole time."
+          },
+          {
+            "id": "o3",
+            "label": "She was looking at a message on her phone."
+          }
+        ],
+        "passage": "Emma was travelling home after a long day. She was reading a message on her phone while the bus was moving through the town centre. When she looked up, she realised that the bus had stopped at a different place because the usual road was closed. She asked the driver how to reach her street."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "She was looking at a message on her phone.",
+      "explanation": "В начале Emma was reading a message, поэтому не следила за остановкой.",
+      "key": "e03"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Собери описание прерванного действия.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "lights"
+          },
+          {
+            "id": "t3",
+            "label": "when"
+          },
+          {
+            "id": "t4",
+            "label": "was"
+          },
+          {
+            "id": "t5",
+            "label": "cooking"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "out."
+          },
+          {
+            "id": "t8",
+            "label": "went"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t4", "t5", "t3", "t6", "t2", "t8", "t7"]
+      },
+      "reference_answer": ["t1", "t4", "t5", "t3", "t6", "t2", "t8", "t7"],
+      "incorrect_answer": ["t4", "t5", "t3", "t6", "t2", "t8", "t7", "t1"],
+      "editorial_answer": "I was cooking when the lights went out.",
+      "explanation": "Was cooking — фон; went out — краткое событие, прервавшее его.",
+      "key": "e04"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь фоновую форму прошедшего времени.",
+      "public_payload": {
+        "sentence": "We was having lunch when she arrived."
+      },
+      "answer_key": {
+        "accepted": ["We were having lunch when she arrived."]
+      },
+      "reference_answer": "We were having lunch when she arrived.",
+      "incorrect_answer": "We are having lunch when she arrives.",
+      "editorial_answer": "We were having lunch when she arrived.",
+      "explanation": "После we нужна were; обе части остаются в прошлом.",
+      "key": "e05"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери объяснение того, что происходило в момент звонка.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I will take a shower tomorrow."
+          },
+          {
+            "id": "o2",
+            "label": "I take a shower every day."
+          },
+          {
+            "id": "o3",
+            "label": "I was taking a shower."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Mum",
+            "text": "Why didn’t you answer the phone at eight?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "I was taking a shower.",
+      "explanation": "Was taking описывает процесс в указанный прошлый момент.",
+      "key": "e06"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи фразу о двух одновременных действиях в прошлом.",
+      "public_payload": {
+        "source": "Пока я готовил, она читала."
+      },
+      "answer_key": {
+        "accepted": [
+          "While I was cooking, she was reading.",
+          "She was reading while I was cooking."
+        ]
+      },
+      "reference_answer": "While I was cooking, she was reading.",
+      "incorrect_answer": "While I am cooking, she is reading.",
+      "editorial_answer": "While I was cooking, she was reading.",
+      "explanation": "Оба процесса относятся к прошлому: was cooking и was reading.",
+      "key": "e07"
+    },
+    {
+      "kind": "word_review",
+      "prompt": "Повтори значение слова suddenly в рассказе.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "обычно"
+          },
+          {
+            "id": "o2",
+            "label": "заранее"
+          },
+          {
+            "id": "o3",
+            "label": "вдруг"
+          }
+        ],
+        "word": "suddenly"
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "вдруг",
+      "explanation": "Suddenly обозначает неожиданное появление события.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,283 @@
+{
+  "key": "a1/town",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика A1 · пакет 1",
+    "position": 1
+  },
+  "position": 3,
+  "title": "Ориентиры в городе",
+  "description": "Учимся спрашивать, где находится место, и понимать короткие указания направления.",
+  "level": "A1",
+  "objectives": [
+    "Спросить о месте с Where is …?",
+    "Понять turn left и next to"
+  ],
+  "notes": [
+    "Where is the station? — Где вокзал?",
+    "Next to означает «рядом с», opposite — «напротив»."
+  ],
+  "skills": ["vocabulary", "grammar", "reading", "listening"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a1/cafe"],
+  "lexicon": [
+    {
+      "en": "station",
+      "ru": "вокзал"
+    },
+    {
+      "en": "left",
+      "ru": "налево"
+    },
+    {
+      "en": "right",
+      "ru": "направо"
+    },
+    {
+      "en": "opposite",
+      "ru": "напротив"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как спросить, где вокзал?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Where is the station?"
+          },
+          {
+            "id": "o2",
+            "label": "When station?"
+          },
+          {
+            "id": "o3",
+            "label": "Who is the station?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Where is the station?",
+      "explanation": "Where спрашивает о месте; who — о человеке.",
+      "key": "e01"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Сопоставь указания направления.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "turn left"
+          },
+          {
+            "id": "l2",
+            "label": "turn right"
+          },
+          {
+            "id": "l3",
+            "label": "go straight"
+          },
+          {
+            "id": "l4",
+            "label": "next to"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "рядом с"
+          },
+          {
+            "id": "r2",
+            "label": "идите прямо"
+          },
+          {
+            "id": "r3",
+            "label": "поверните направо"
+          },
+          {
+            "id": "r4",
+            "label": "поверните налево"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r3",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "reference_answer": {
+        "l1": "r4",
+        "l2": "r3",
+        "l3": "r2",
+        "l4": "r1"
+      },
+      "incorrect_answer": {
+        "l1": "r3",
+        "l2": "r2",
+        "l3": "r1",
+        "l4": "r4"
+      },
+      "editorial_answer": "turn left — поверните налево; turn right — поверните направо; go straight — идите прямо; next to — рядом с",
+      "explanation": "Указания turn left/right обозначают поворот, go straight — движение прямо.",
+      "key": "e02"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь вопросительное слово о месте.",
+      "public_payload": {
+        "sentence": "___ is the bank?"
+      },
+      "answer_key": {
+        "accepted": ["Where", "where"]
+      },
+      "reference_answer": "Where",
+      "incorrect_answer": "Who",
+      "editorial_answer": "Where is the bank?",
+      "explanation": "Место спрашивают словом where: Where is the bank?",
+      "key": "e03"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Составь вопрос: «Где автобусная остановка?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "Where"
+          },
+          {
+            "id": "t2",
+            "label": "bus"
+          },
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "stop?"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t3", "t5", "t2", "t4"]
+      },
+      "reference_answer": ["t1", "t3", "t5", "t2", "t4"],
+      "incorrect_answer": ["t3", "t5", "t2", "t4", "t1"],
+      "editorial_answer": "Where is the bus stop?",
+      "explanation": "В вопросе Where is …? связка стоит перед названием места.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что находится рядом с парком?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The school."
+          },
+          {
+            "id": "o2",
+            "label": "The library."
+          },
+          {
+            "id": "o3",
+            "label": "The station."
+          }
+        ],
+        "passage": "There is a park in our town. The library is next to the park. The bank is opposite the library. The station is far away."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The library.",
+      "explanation": "Рядом с парком находится library — библиотека, а не вокзал.",
+      "key": "e05"
+    },
+    {
+      "kind": "response_choice",
+      "prompt": "Ответь на вопрос о местонахождении библиотеки.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It is next to the park."
+          },
+          {
+            "id": "o2",
+            "label": "My name is Ana."
+          },
+          {
+            "id": "o3",
+            "label": "I am twelve."
+          }
+        ],
+        "context": "Excuse me, where is the library?"
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It is next to the park.",
+      "explanation": "Вопрос Where …? требует ответа о месте.",
+      "key": "e06"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь вопрос о местонахождении банка.",
+      "public_payload": {
+        "sentence": "Where the bank is?"
+      },
+      "answer_key": {
+        "accepted": ["Where is the bank?"]
+      },
+      "reference_answer": "Where is the bank?",
+      "incorrect_answer": "Where is the library?",
+      "editorial_answer": "Where is the bank?",
+      "explanation": "В прямом вопросе со связкой is порядок такой: Where is the bank? Нельзя менять bank на library.",
+      "key": "e07"
+    },
+    {
+      "kind": "dictation",
+      "prompt": "Прослушай короткое указание и запиши его.",
+      "public_payload": {
+        "text": "Turn left at the bank.",
+        "lang": "en-US"
+      },
+      "answer_key": {
+        "accepted": ["Turn left at the bank."]
+      },
+      "reference_answer": "Turn left at the bank.",
+      "incorrect_answer": "Turn right at the bank.",
+      "editorial_answer": "Turn left at the bank.",
+      "explanation": "Turn left — поверните налево; right изменило бы направление. При отсутствии озвучки используй текст.",
+      "key": "e08"
+    }
+  ]
+}

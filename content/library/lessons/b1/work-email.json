@@ -1,0 +1,269 @@
+{
+  "key": "b1/work-email",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика B1 · пакет 1",
+    "position": 1
+  },
+  "position": 3,
+  "title": "Понятное рабочее письмо",
+  "description": "Пишем короткие запросы, уточняем детали и связываем информацию относительными придаточными.",
+  "level": "B1",
+  "objectives": [
+    "Сформулировать вежливый рабочий запрос",
+    "Использовать who и which в описании"
+  ],
+  "notes": [
+    "Could you …, please? делает запрос вежливее прямого приказа.",
+    "Who относится к людям; which — к предметам и документам."
+  ],
+  "skills": ["reading", "grammar", "vocabulary"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/contingency"],
+  "lexicon": [
+    {
+      "en": "attachment",
+      "ru": "вложение"
+    },
+    {
+      "en": "deadline",
+      "ru": "срок сдачи"
+    },
+    {
+      "en": "confirm",
+      "ru": "подтвердить"
+    },
+    {
+      "en": "colleague",
+      "ru": "коллега"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "response_choice",
+      "prompt": "Выбери вежливый ответ на запрос коллеги.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Why you not do it yesterday?"
+          },
+          {
+            "id": "o2",
+            "label": "I am a report."
+          },
+          {
+            "id": "o3",
+            "label": "Certainly. I will send it this afternoon."
+          }
+        ],
+        "context": "Could you send me the updated report, please?"
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Certainly. I will send it this afternoon.",
+      "explanation": "Certainly + конкретный срок отвечает на вежливую просьбу по делу.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь относительное местоимение для человека.",
+      "public_payload": {
+        "sentence": "The colleague ___ helped me works in sales."
+      },
+      "answer_key": {
+        "accepted": ["who", "that"]
+      },
+      "reference_answer": "who",
+      "incorrect_answer": "which",
+      "editorial_answer": "The colleague who helped me works in sales.",
+      "explanation": "Who или that может относиться к человеку; which обычно относится к предмету.",
+      "key": "e02"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово о документе в электронном письме.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "platform"
+          },
+          {
+            "id": "o2",
+            "label": "attachment"
+          },
+          {
+            "id": "o3",
+            "label": "appointment"
+          }
+        ],
+        "sentence": "Please see the ___ for the updated timetable."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "attachment",
+      "explanation": "Attachment — вложение в письмо.",
+      "key": "e03"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что адресат должен подтвердить?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Whether the room should be changed."
+          },
+          {
+            "id": "o2",
+            "label": "Whether the workshop can start an hour later."
+          },
+          {
+            "id": "o3",
+            "label": "Whether Tuesday is convenient for the team."
+          }
+        ],
+        "passage": "Hello Priya, I have attached the revised schedule for next week’s workshop. We have moved the opening session from Monday to Tuesday because the speaker is travelling on Monday. Could you confirm that the new date is convenient for your team? The room and the start time remain unchanged. Best wishes, Owen."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Whether Tuesday is convenient for the team.",
+      "explanation": "Просят подтвердить удобство новой даты. Комната и время начала не меняются.",
+      "key": "e04"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери запрос «Могли бы вы подтвердить срок сдачи?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "Could"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          },
+          {
+            "id": "t3",
+            "label": "you"
+          },
+          {
+            "id": "t4",
+            "label": "please?"
+          },
+          {
+            "id": "t5",
+            "label": "confirm"
+          },
+          {
+            "id": "t6",
+            "label": "deadline,"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t3", "t5", "t2", "t6", "t4"]
+      },
+      "reference_answer": ["t1", "t3", "t5", "t2", "t6", "t4"],
+      "incorrect_answer": ["t3", "t5", "t2", "t6", "t4", "t1"],
+      "editorial_answer": "Could you confirm the deadline, please?",
+      "explanation": "Could you confirm …, please? — вежливый запрос уточнения.",
+      "key": "e05"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи сообщение о приложенном документе.",
+      "public_payload": {
+        "source": "Я приложил документ, который вам нужен."
+      },
+      "answer_key": {
+        "accepted": [
+          "I have attached the document that you need.",
+          "I have attached the document which you need."
+        ]
+      },
+      "reference_answer": "I have attached the document that you need.",
+      "incorrect_answer": "I have deleted the document that you need.",
+      "editorial_answer": "I have attached the document that you need.",
+      "explanation": "Attached — приложил, а не deleted. Для документа допустимы that и which.",
+      "key": "e06"
+    },
+    {
+      "kind": "error_identification",
+      "prompt": "Найди неверное относительное местоимение.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "yesterday"
+          },
+          {
+            "id": "o2",
+            "label": "helped"
+          },
+          {
+            "id": "o3",
+            "label": "which"
+          }
+        ],
+        "sentence": "The person which helped me yesterday is my manager."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "which",
+      "explanation": "О человеке, который помог, говорят who/that helped me.",
+      "key": "e07"
+    },
+    {
+      "kind": "synonym_antonym",
+      "prompt": "Выбери близкое по смыслу слово для confirm в контексте договорённости.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "cancel"
+          },
+          {
+            "id": "o2",
+            "label": "verify"
+          },
+          {
+            "id": "o3",
+            "label": "ignore"
+          }
+        ],
+        "word": "confirm",
+        "relation": "synonym"
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "verify",
+      "explanation": "Confirm и verify могут означать подтвердить/проверить достоверность; cancel — отменить.",
+      "key": "e08"
+    }
+  ]
+}

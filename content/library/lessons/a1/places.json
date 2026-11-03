@@ -1,0 +1,303 @@
+{
+  "key": "a1/places",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика A1 · пакет 1",
+    "position": 1
+  },
+  "position": 1,
+  "title": "Где находятся вещи",
+  "description": "Учимся описывать комнату, находить предметы и различать один объект и несколько.",
+  "level": "A1",
+  "objectives": [
+    "Использовать there is / there are",
+    "Описывать положение предметов"
+  ],
+  "notes": [
+    "There is используется с одним предметом, there are — с несколькими.",
+    "In — внутри, on — на поверхности, under — под предметом."
+  ],
+  "skills": ["vocabulary", "grammar", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "shelf",
+      "ru": "полка"
+    },
+    {
+      "en": "desk",
+      "ru": "письменный стол"
+    },
+    {
+      "en": "under",
+      "ru": "под"
+    },
+    {
+      "en": "between",
+      "ru": "между"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери предлог: книга лежит на столе.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "under"
+          },
+          {
+            "id": "o2",
+            "label": "in"
+          },
+          {
+            "id": "o3",
+            "label": "on"
+          }
+        ],
+        "sentence": "The book is ___ the desk."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "on",
+      "explanation": "On the desk — на поверхности стола; under означает «под».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Опиши один стул в комнате.",
+      "public_payload": {
+        "sentence": "There ___ a chair in the room."
+      },
+      "answer_key": {
+        "accepted": ["is"]
+      },
+      "reference_answer": "is",
+      "incorrect_answer": "are",
+      "editorial_answer": "There is a chair in the room.",
+      "explanation": "A chair — один стул, поэтому there is.",
+      "key": "e02"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери оба предложения о нескольких предметах.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "There are three books."
+          },
+          {
+            "id": "o2",
+            "label": "There are two lamps."
+          },
+          {
+            "id": "o3",
+            "label": "There is a desk."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o1", "o2"]
+      },
+      "reference_answer": ["o2", "o1"],
+      "incorrect_answer": ["o3"],
+      "editorial_answer": "There are two lamps.; There are three books.",
+      "explanation": "Two lamps и three books — множественное число; a desk — один предмет.",
+      "key": "e03"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Составь: «Ключ под столом».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "under"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          },
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "The"
+          },
+          {
+            "id": "t5",
+            "label": "table."
+          },
+          {
+            "id": "t6",
+            "label": "key"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t4", "t6", "t2", "t1", "t3", "t5"]
+      },
+      "reference_answer": ["t4", "t6", "t2", "t1", "t3", "t5"],
+      "incorrect_answer": ["t6", "t2", "t1", "t3", "t5", "t4"],
+      "editorial_answer": "The key is under the table.",
+      "explanation": "Порядок: предмет The key, связка is, место under the table.",
+      "key": "e04"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Сопоставь предметы комнаты.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "shelf"
+          },
+          {
+            "id": "l2",
+            "label": "desk"
+          },
+          {
+            "id": "l3",
+            "label": "lamp"
+          },
+          {
+            "id": "l4",
+            "label": "chair"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "стул"
+          },
+          {
+            "id": "r2",
+            "label": "лампа"
+          },
+          {
+            "id": "r3",
+            "label": "письменный стол"
+          },
+          {
+            "id": "r4",
+            "label": "полка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r3",
+          "l3": "r2",
+          "l4": "r1"
+        }
+      },
+      "reference_answer": {
+        "l1": "r4",
+        "l2": "r3",
+        "l3": "r2",
+        "l4": "r1"
+      },
+      "incorrect_answer": {
+        "l1": "r3",
+        "l2": "r2",
+        "l3": "r1",
+        "l4": "r4"
+      },
+      "editorial_answer": "shelf — полка; desk — письменный стол; lamp — лампа; chair — стул",
+      "explanation": "Shelf — полка, desk — письменный стол, lamp — лампа, chair — стул.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где находится сумка Нины?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "By the door."
+          },
+          {
+            "id": "o2",
+            "label": "On the shelf."
+          },
+          {
+            "id": "o3",
+            "label": "Under the desk."
+          }
+        ],
+        "passage": "This is Nina’s room. There is a desk by the window. Her bag is under the desk. Two books are on the shelf."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Under the desk.",
+      "explanation": "В тексте: Her bag is under the desk. Книги, а не сумка, находятся на полке.",
+      "key": "e06"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи описание предметов.",
+      "public_payload": {
+        "source": "На полке две книги."
+      },
+      "answer_key": {
+        "accepted": [
+          "There are two books on the shelf.",
+          "Two books are on the shelf."
+        ]
+      },
+      "reference_answer": "There are two books on the shelf.",
+      "incorrect_answer": "There is one book on the shelf.",
+      "editorial_answer": "There are two books on the shelf.",
+      "explanation": "Две книги требуют множественного числа; допустимы оба указанных порядка слов.",
+      "key": "e07"
+    },
+    {
+      "kind": "error_identification",
+      "prompt": "Найди слово с ошибкой в описании комнаты.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "is"
+          },
+          {
+            "id": "o2",
+            "label": "two"
+          },
+          {
+            "id": "o3",
+            "label": "chairs"
+          }
+        ],
+        "sentence": "There is two chairs in the room."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "is",
+      "explanation": "Для двух стульев нужно are: There are two chairs.",
+      "key": "e08"
+    }
+  ]
+}

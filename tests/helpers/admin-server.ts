@@ -198,6 +198,12 @@ export async function adminServer() {
                 ],
               )
             ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/curriculum_library')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.curriculum_library() AS data',
+              )
+            ).rows[0].data;
           else if (url.pathname === '/rest/v1/rpc/game_summary')
             data = (
               await db.query<{ data: unknown }>(

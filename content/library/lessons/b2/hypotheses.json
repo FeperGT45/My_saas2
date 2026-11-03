@@ -1,0 +1,311 @@
+{
+  "key": "b2/hypotheses",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика B2 · пакет 1",
+    "position": 1
+  },
+  "position": 1,
+  "title": "Гипотезы и упущенные возможности",
+  "description": "Различаем нереальное настоящее и альтернативное прошлое, не смешивая временные значения.",
+  "level": "B2",
+  "objectives": [
+    "Строить second и third conditional",
+    "Объяснять последствия несостоявшегося решения"
+  ],
+  "notes": [
+    "If I had more time, I would travel — гипотеза о настоящем.",
+    "If I had known, I would have called — альтернативное прошлое; had known не утверждает, что человек знал."
+  ],
+  "skills": ["grammar", "reading", "vocabulary"],
+  "estimated_minutes": 10,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "otherwise",
+      "ru": "иначе"
+    },
+    {
+      "en": "regret",
+      "ru": "сожалеть"
+    },
+    {
+      "en": "opportunity",
+      "ru": "возможность"
+    },
+    {
+      "en": "outcome",
+      "ru": "исход, результат"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "tenses",
+      "prompt": "Выбери форму для альтернативного прошлого.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "would know"
+          },
+          {
+            "id": "o2",
+            "label": "had known"
+          },
+          {
+            "id": "o3",
+            "label": "have known"
+          }
+        ],
+        "sentence": "If I ___ about the meeting, I would have attended."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "had known",
+      "explanation": "Для нереального условия в прошлом нужен Past Perfect: had known.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни следствие нереальной ситуации в настоящем.",
+      "public_payload": {
+        "sentence": "If I lived closer, I ___ walk to work."
+      },
+      "answer_key": {
+        "accepted": ["would"]
+      },
+      "reference_answer": "would",
+      "incorrect_answer": "will",
+      "editorial_answer": "If I lived closer, I would walk to work.",
+      "explanation": "Would walk выражает гипотетическое следствие; will описывало бы другой тип условия.",
+      "key": "e02"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой вывод о подаче заявки следует из текста?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "He did not apply because he misunderstood the eligibility rules."
+          },
+          {
+            "id": "o2",
+            "label": "He submitted a project but the judges rejected it."
+          },
+          {
+            "id": "o3",
+            "label": "The text proves that he would have won."
+          }
+        ],
+        "passage": "When a design competition was announced, Felix decided not to apply because he assumed that only experienced professionals were eligible. After the deadline, he discovered that students could enter too. He had a strong project ready and now regrets not checking the rules. He says that, if he had read them carefully, he would have submitted his work. There is no suggestion that his project would definitely have won."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "He did not apply because he misunderstood the eligibility rules.",
+      "explanation": "Он не подавал заявку из-за неверного предположения. Возможность участия не гарантирует победу.",
+      "key": "e03"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи нереальное условие о настоящем.",
+      "public_payload": {
+        "source": "Если бы у меня было больше времени, я бы чаще путешествовал."
+      },
+      "answer_key": {
+        "accepted": [
+          "If I had more time, I would travel more often.",
+          "I would travel more often if I had more time."
+        ]
+      },
+      "reference_answer": "If I had more time, I would travel more often.",
+      "incorrect_answer": "If I have more time, I will travel more often.",
+      "editorial_answer": "If I had more time, I would travel more often.",
+      "explanation": "Had + would travel выражает гипотезу о настоящем; have + will — реальную будущую возможность.",
+      "key": "e04"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь if-часть альтернативного прошлого.",
+      "public_payload": {
+        "sentence": "If she would have left earlier, she would have caught the train."
+      },
+      "answer_key": {
+        "accepted": [
+          "If she had left earlier, she would have caught the train."
+        ]
+      },
+      "reference_answer": "If she had left earlier, she would have caught the train.",
+      "incorrect_answer": "If she leaves earlier, she will catch the train.",
+      "editorial_answer": "If she had left earlier, she would have caught the train.",
+      "explanation": "В if-части third conditional нужен had left, не would have left. Время события сохраняется прошлым.",
+      "key": "e05"
+    },
+    {
+      "kind": "response_choice",
+      "prompt": "Ответь гипотетическим советом о нынешней ситуации.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "If I am you, I asked yesterday."
+          },
+          {
+            "id": "o2",
+            "label": "If I were you, I would ask for clarification."
+          },
+          {
+            "id": "o3",
+            "label": "If I had known yesterday, I would have asked."
+          }
+        ],
+        "context": "I do not understand the new instructions. What should I do now?"
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "If I were you, I would ask for clarification.",
+      "explanation": "If I were you, I would … — стандартный гипотетический совет здесь и сейчас.",
+      "key": "e06"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Собери альтернативное следствие прошлого.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "had"
+          },
+          {
+            "id": "t2",
+            "label": "earlier"
+          },
+          {
+            "id": "t3",
+            "label": "have"
+          },
+          {
+            "id": "t4",
+            "label": "We"
+          },
+          {
+            "id": "t5",
+            "label": "would"
+          },
+          {
+            "id": "t6",
+            "label": "we"
+          },
+          {
+            "id": "t7",
+            "label": "arrived"
+          },
+          {
+            "id": "t8",
+            "label": "taxi."
+          },
+          {
+            "id": "t9",
+            "label": "a"
+          },
+          {
+            "id": "t10",
+            "label": "taken"
+          },
+          {
+            "id": "t11",
+            "label": "if"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t4",
+          "t5",
+          "t3",
+          "t7",
+          "t2",
+          "t11",
+          "t6",
+          "t1",
+          "t10",
+          "t9",
+          "t8"
+        ]
+      },
+      "reference_answer": [
+        "t4",
+        "t5",
+        "t3",
+        "t7",
+        "t2",
+        "t11",
+        "t6",
+        "t1",
+        "t10",
+        "t9",
+        "t8"
+      ],
+      "incorrect_answer": [
+        "t5",
+        "t3",
+        "t7",
+        "t2",
+        "t11",
+        "t6",
+        "t1",
+        "t10",
+        "t9",
+        "t8",
+        "t4"
+      ],
+      "editorial_answer": "We would have arrived earlier if we had taken a taxi.",
+      "explanation": "Would have arrived сочетается с had taken для альтернативного прошлого.",
+      "key": "e07"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери два корректных нереальных условия.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "If I would know, I would tell you."
+          },
+          {
+            "id": "o2",
+            "label": "If he had called, I would have answered."
+          },
+          {
+            "id": "o3",
+            "label": "If I were taller, I could reach the shelf."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o2", "o3"]
+      },
+      "reference_answer": ["o3", "o2"],
+      "incorrect_answer": ["o1"],
+      "editorial_answer": "If I were taller, I could reach the shelf.; If he had called, I would have answered.",
+      "explanation": "Первые два примера корректно разделяют условие и следствие; would обычно не ставится в такой if-части.",
+      "key": "e08"
+    }
+  ]
+}

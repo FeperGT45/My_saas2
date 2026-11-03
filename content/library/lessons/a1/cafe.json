@@ -1,0 +1,276 @@
+{
+  "key": "a1/cafe",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика A1 · пакет 1",
+    "position": 1
+  },
+  "position": 2,
+  "title": "Заказ в кафе",
+  "description": "Разбираем простое меню и учимся вежливо просить напиток или еду.",
+  "level": "A1",
+  "objectives": ["Сделать простой заказ с please", "Понять вопрос о напитке"],
+  "notes": [
+    "Can I have …, please? — вежливая просьба при заказе.",
+    "A sandwich — один сэндвич; water обычно употребляется без a, если речь не о порции."
+  ],
+  "skills": ["reading", "vocabulary", "grammar"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a1/places"],
+  "lexicon": [
+    {
+      "en": "sandwich",
+      "ru": "сэндвич"
+    },
+    {
+      "en": "water",
+      "ru": "вода"
+    },
+    {
+      "en": "menu",
+      "ru": "меню"
+    },
+    {
+      "en": "please",
+      "ru": "пожалуйста"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "dialogue",
+      "prompt": "Продолжи заказ покупателя.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I am a sandwich."
+          },
+          {
+            "id": "o2",
+            "label": "A sandwich, please."
+          },
+          {
+            "id": "o3",
+            "label": "The sandwich is a teacher."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Server",
+            "text": "Hello. What would you like?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "A sandwich, please.",
+      "explanation": "При заказе достаточно назвать блюдо и добавить please.",
+      "key": "e01"
+    },
+    {
+      "kind": "single_choice",
+      "prompt": "Как попросить меню?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Can I have the menu, please?"
+          },
+          {
+            "id": "o2",
+            "label": "I am the menu."
+          },
+          {
+            "id": "o3",
+            "label": "The menu has me."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Can I have the menu, please?",
+      "explanation": "Can I have the menu, please? — Можно меню, пожалуйста?",
+      "key": "e02"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни вежливую просьбу в кафе.",
+      "public_payload": {
+        "sentence": "A tea, ___."
+      },
+      "answer_key": {
+        "accepted": ["please"]
+      },
+      "reference_answer": "please",
+      "incorrect_answer": "thanks",
+      "editorial_answer": "A tea, please.",
+      "explanation": "Please добавляют к просьбе; thanks обычно выражает благодарность после неё.",
+      "key": "e03"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери заказ: «Можно мне немного воды, пожалуйста?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "please?"
+          },
+          {
+            "id": "t2",
+            "label": "Can"
+          },
+          {
+            "id": "t3",
+            "label": "have"
+          },
+          {
+            "id": "t4",
+            "label": "I"
+          },
+          {
+            "id": "t5",
+            "label": "some"
+          },
+          {
+            "id": "t6",
+            "label": "water,"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t2", "t4", "t3", "t5", "t6", "t1"]
+      },
+      "reference_answer": ["t2", "t4", "t3", "t5", "t6", "t1"],
+      "incorrect_answer": ["t4", "t3", "t5", "t6", "t1", "t2"],
+      "editorial_answer": "Can I have some water, please?",
+      "explanation": "Can I have …? — готовая вежливая конструкция; some water — немного воды.",
+      "key": "e04"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Какой напиток нужен человеку, который не хочет кофе?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "rice"
+          },
+          {
+            "id": "o2",
+            "label": "bread"
+          },
+          {
+            "id": "o3",
+            "label": "tea"
+          }
+        ],
+        "sentence": "No coffee for me, thank you. I would like some ___."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "tea",
+      "explanation": "Tea — чай; bread и rice — еда, а не напитки.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что заказывает Бен?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Coffee and cake."
+          },
+          {
+            "id": "o2",
+            "label": "Tea and rice."
+          },
+          {
+            "id": "o3",
+            "label": "A sandwich and water."
+          }
+        ],
+        "passage": "Ben is at a small café. He wants a cheese sandwich and some water. He does not want coffee. He pays five pounds."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "A sandwich and water.",
+      "explanation": "В тексте прямо названы a cheese sandwich and some water.",
+      "key": "e06"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи вежливую просьбу о чашке чая.",
+      "public_payload": {
+        "source": "Можно мне чашку чая, пожалуйста?"
+      },
+      "answer_key": {
+        "accepted": [
+          "Can I have a cup of tea, please?",
+          "Could I have a cup of tea, please?"
+        ]
+      },
+      "reference_answer": "Can I have a cup of tea, please?",
+      "incorrect_answer": "I have no tea.",
+      "editorial_answer": "Can I have a cup of tea, please?",
+      "explanation": "Can I have …? и более вежливое Could I have …? передают просьбу, а не утверждение.",
+      "key": "e07"
+    },
+    {
+      "kind": "spelling",
+      "prompt": "Собери слово «вода».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "t"
+          },
+          {
+            "id": "t2",
+            "label": "e"
+          },
+          {
+            "id": "t3",
+            "label": "w"
+          },
+          {
+            "id": "t4",
+            "label": "r"
+          },
+          {
+            "id": "t5",
+            "label": "a"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t3", "t5", "t1", "t2", "t4"]
+      },
+      "reference_answer": ["t3", "t5", "t1", "t2", "t4"],
+      "incorrect_answer": ["t5", "t1", "t2", "t4", "t3"],
+      "editorial_answer": "water",
+      "explanation": "Water пишется w-a-t-e-r.",
+      "key": "e08"
+    }
+  ]
+}

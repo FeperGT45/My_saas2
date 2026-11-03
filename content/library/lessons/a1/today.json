@@ -1,0 +1,264 @@
+{
+  "key": "a1/today",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика A1 · пакет 1",
+    "position": 1
+  },
+  "position": 4,
+  "title": "Что происходит сейчас",
+  "description": "Описываем действия в данный момент с помощью am/is/are + -ing.",
+  "level": "A1",
+  "objectives": [
+    "Отличить действие сейчас от обычного факта",
+    "Использовать am/is/are перед -ing"
+  ],
+  "notes": [
+    "Для действия сейчас можно сказать I am reading.",
+    "В конструкции am/is/are + -ing нельзя пропускать am, is или are."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a1/town"],
+  "lexicon": [
+    {
+      "en": "now",
+      "ru": "сейчас"
+    },
+    {
+      "en": "read",
+      "ru": "читать"
+    },
+    {
+      "en": "wait",
+      "ru": "ждать"
+    },
+    {
+      "en": "cook",
+      "ru": "готовить еду"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "tenses",
+      "prompt": "Выбери форму для действия, которое происходит сейчас.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "cook"
+          },
+          {
+            "id": "o2",
+            "label": "cooking"
+          },
+          {
+            "id": "o3",
+            "label": "is cooking"
+          }
+        ],
+        "sentence": "She ___ dinner now."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "is cooking",
+      "explanation": "После she для действия сейчас нужна полная форма is cooking.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни описание своего действия.",
+      "public_payload": {
+        "sentence": "I ___ reading a book now."
+      },
+      "answer_key": {
+        "accepted": ["am"]
+      },
+      "reference_answer": "am",
+      "incorrect_answer": "is",
+      "editorial_answer": "I am reading a book now.",
+      "explanation": "После I используется am: I am reading.",
+      "key": "e02"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери два грамматически верных описания действий сейчас.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "He is waiting."
+          },
+          {
+            "id": "o2",
+            "label": "We waiting now."
+          },
+          {
+            "id": "o3",
+            "label": "They are walking."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o1", "o3"]
+      },
+      "reference_answer": ["o3", "o1"],
+      "incorrect_answer": ["o2"],
+      "editorial_answer": "They are walking.; He is waiting.",
+      "explanation": "В двух верных фразах есть are/is перед -ing. В We waiting пропущено are.",
+      "key": "e03"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери: «Мы сейчас играем».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "are"
+          },
+          {
+            "id": "t3",
+            "label": "now."
+          },
+          {
+            "id": "t4",
+            "label": "playing"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t4", "t3"]
+      },
+      "reference_answer": ["t1", "t2", "t4", "t3"],
+      "incorrect_answer": ["t2", "t4", "t3", "t1"],
+      "editorial_answer": "We are playing now.",
+      "explanation": "We are playing now: подлежащее, are, форма playing, обстоятельство now.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что делает отец Тома?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "He is washing the car."
+          },
+          {
+            "id": "o2",
+            "label": "He is reading."
+          },
+          {
+            "id": "o3",
+            "label": "He is going to work."
+          }
+        ],
+        "passage": "It is Sunday morning. Tom is reading in the garden. His mother is cooking. His father is washing the car. They are all at home."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "He is washing the car.",
+      "explanation": "Отец washing the car — моет машину; читает Том.",
+      "key": "e05"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери ответ человека, который сейчас читает.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I read every Monday."
+          },
+          {
+            "id": "o2",
+            "label": "I am reading a book."
+          },
+          {
+            "id": "o3",
+            "label": "I am a book."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Eva",
+            "text": "What are you doing?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "I am reading a book.",
+      "explanation": "Вопрос What are you doing? спрашивает о действии сейчас.",
+      "key": "e06"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи описание действия сейчас.",
+      "public_payload": {
+        "source": "Они сейчас ждут автобус."
+      },
+      "answer_key": {
+        "accepted": [
+          "They are waiting for the bus now.",
+          "They are waiting for a bus now."
+        ]
+      },
+      "reference_answer": "They are waiting for the bus now.",
+      "incorrect_answer": "They waited for the bus yesterday.",
+      "editorial_answer": "They are waiting for the bus now.",
+      "explanation": "Are waiting for — ждут сейчас. Yesterday и waited переводят событие в прошлое.",
+      "key": "e07"
+    },
+    {
+      "kind": "error_identification",
+      "prompt": "Найди ошибочную форму в описании игры.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "now"
+          },
+          {
+            "id": "o2",
+            "label": "are"
+          },
+          {
+            "id": "o3",
+            "label": "football"
+          }
+        ],
+        "sentence": "He are playing football now."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "are",
+      "explanation": "С he используется is: He is playing football now.",
+      "key": "e08"
+    }
+  ]
+}

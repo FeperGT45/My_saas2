@@ -1,0 +1,245 @@
+{
+  "key": "b2/argument",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика B2 · пакет 1",
+    "position": 1
+  },
+  "position": 3,
+  "title": "Аргументы без крайностей",
+  "description": "Строим сбалансированное рассуждение, различаем аргумент и чрезмерное обобщение.",
+  "level": "B2",
+  "objectives": [
+    "Использовать although, despite и however",
+    "Выделять ограниченный, обоснованный вывод"
+  ],
+  "notes": [
+    "Despite требует существительного или -ing; although вводит придаточное с подлежащим и сказуемым.",
+    "However связывает противопоставленные идеи; одно преимущество не доказывает отсутствие недостатков."
+  ],
+  "skills": ["vocabulary", "grammar", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b2/reporting"],
+  "lexicon": [
+    {
+      "en": "drawback",
+      "ru": "недостаток"
+    },
+    {
+      "en": "nevertheless",
+      "ru": "тем не менее"
+    },
+    {
+      "en": "flexibility",
+      "ru": "гибкость"
+    },
+    {
+      "en": "trade-off",
+      "ru": "компромисс, баланс потерь и выгод"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери связку перед существительным the cost.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Although"
+          },
+          {
+            "id": "o2",
+            "label": "Despite"
+          },
+          {
+            "id": "o3",
+            "label": "Because"
+          }
+        ],
+        "sentence": "___ the cost, the training was useful."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Despite",
+      "explanation": "Despite the cost — несмотря на стоимость; although требовало бы полноценного придаточного.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь although в придаточное уступки.",
+      "public_payload": {
+        "sentence": "___ the system is faster, it is not easier to use."
+      },
+      "answer_key": {
+        "accepted": ["Although", "although"]
+      },
+      "reference_answer": "Although",
+      "incorrect_answer": "Despite",
+      "editorial_answer": "Although the system is faster, it is not easier to use.",
+      "explanation": "После although следует the system is faster; despite в такой структуре не подходит.",
+      "key": "e02"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой вывод лучше всего отражает позицию автора?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Remote-working policies should reflect the requirements of different roles."
+          },
+          {
+            "id": "o2",
+            "label": "Remote work has no advantages."
+          },
+          {
+            "id": "o3",
+            "label": "Every employee should work from home permanently."
+          }
+        ],
+        "passage": "Working from home can reduce commuting time and allow employees to organise some tasks more flexibly. However, these advantages do not remove every difficulty. New staff may find it harder to learn informally from colleagues, and some roles require access to equipment at the workplace. A policy that works for an experienced designer may not suit a laboratory assistant. The writer therefore favours decisions based on the needs of a role rather than a single rule for everyone."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Remote-working policies should reflect the requirements of different roles.",
+      "explanation": "Автор признаёт плюсы и ограничения и предлагает учитывать требования роли, а не универсальное правило.",
+      "key": "e03"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи уступку, сохранив обе идеи.",
+      "public_payload": {
+        "source": "Хотя решение дорогое, оно может сэкономить время."
+      },
+      "answer_key": {
+        "accepted": [
+          "Although the solution is expensive, it may save time.",
+          "The solution may save time although it is expensive."
+        ]
+      },
+      "reference_answer": "Although the solution is expensive, it may save time.",
+      "incorrect_answer": "Because the solution is cheap, it will always save time.",
+      "editorial_answer": "Although the solution is expensive, it may save time.",
+      "explanation": "Although выражает уступку; may сохраняет возможность, а не гарантию результата.",
+      "key": "e04"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери два осторожных, не абсолютных утверждения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The results suggest a possible improvement."
+          },
+          {
+            "id": "o2",
+            "label": "The change may benefit some teams."
+          },
+          {
+            "id": "o3",
+            "label": "The change will solve every problem without exception."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o1", "o2"]
+      },
+      "reference_answer": ["o2", "o1"],
+      "incorrect_answer": ["o3"],
+      "editorial_answer": "The change may benefit some teams.; The results suggest a possible improvement.",
+      "explanation": "May, some и suggest a possible ограничивают вывод. Every problem without exception необоснованно абсолютно.",
+      "key": "e05"
+    },
+    {
+      "kind": "response_choice",
+      "prompt": "Сформулируй конструктивное возражение на совещании.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "That may be true, but we should also consider the cost."
+          },
+          {
+            "id": "o2",
+            "label": "There are no costs in any project."
+          },
+          {
+            "id": "o3",
+            "label": "You are always wrong about everything."
+          }
+        ],
+        "context": "This software will make the team more efficient."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "That may be true, but we should also consider the cost.",
+      "explanation": "Первый ответ признаёт возможную правоту собеседника и добавляет конкретный аспект.",
+      "key": "e06"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь структуру с despite, сохранив уступку.",
+      "public_payload": {
+        "sentence": "Despite it was raining, we continued the survey."
+      },
+      "answer_key": {
+        "accepted": [
+          "Although it was raining, we continued the survey.",
+          "Despite the rain, we continued the survey."
+        ]
+      },
+      "reference_answer": "Although it was raining, we continued the survey.",
+      "incorrect_answer": "Because it was raining, we cancelled the survey.",
+      "editorial_answer": "Although it was raining, we continued the survey.",
+      "explanation": "Допустимы although + придаточное и despite + существительное. Continued нельзя заменять cancelled.",
+      "key": "e07"
+    },
+    {
+      "kind": "word_review",
+      "prompt": "Повтори значение drawback при обсуждении решения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "недостаток"
+          },
+          {
+            "id": "o2",
+            "label": "разрешение"
+          },
+          {
+            "id": "o3",
+            "label": "гарантия"
+          }
+        ],
+        "word": "drawback"
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "недостаток",
+      "explanation": "Drawback — недостаток или отрицательная сторона решения.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "key": "c2/register-fidelity",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика C2 · пакет 1",
+    "position": 1
+  },
+  "position": 2,
+  "title": "Точность при смене регистра",
+  "description": "Передаём сложное формальное условие простым языком, не уничтожая его оговорки.",
+  "level": "C2",
+  "objectives": [
+    "Сохранять исключения и модальную силу формулировки",
+    "Отличать понятность текста от изменения обязательства"
+  ],
+  "notes": [
+    "May выражает разрешение или возможность, shall в формальном условии может задавать обязанность.",
+    "Переписывая текст простыми словами, нельзя молча убирать unless, subject to или временное ограничение."
+  ],
+  "skills": ["reading", "vocabulary", "grammar"],
+  "estimated_minutes": 12,
+  "prerequisites": ["c2/implicature"],
+  "lexicon": [
+    {
+      "en": "subject to",
+      "ru": "при условии, с учётом"
+    },
+    {
+      "en": "waiver",
+      "ru": "отказ от права или требования"
+    },
+    {
+      "en": "provision",
+      "ru": "положение документа"
+    },
+    {
+      "en": "plain language",
+      "ru": "понятный, незатруднённый язык"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "prompt": "Какая переформулировка сохраняет условие уведомления?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "You can always leave without paying, regardless of notice."
+          },
+          {
+            "id": "o2",
+            "label": "You can leave without a fee if written notice arrives at least fourteen days before the event."
+          },
+          {
+            "id": "o3",
+            "label": "You must leave exactly fourteen days before the event."
+          }
+        ],
+        "passage": "A fictional agreement states that a participant may withdraw without a fee provided that written notice is received at least fourteen days before the scheduled event. A later clause allows the organiser to waive the fee in exceptional circumstances even when that period has not been met. An editor is asked to make the wording easier to follow. “You can always leave without paying” is shorter, but it erases the notice requirement and turns a discretionary exception into a universal entitlement. The problem is not that plain language is inherently imprecise. A faithful revision can use familiar words while retaining the deadline, the requirement for writing, and the organiser’s limited discretion. This passage is a language exercise, not advice about an actual agreement."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "You can leave without a fee if written notice arrives at least fourteen days before the event.",
+      "explanation": "Сохраняются письменная форма, крайний срок и условность освобождения от платы.",
+      "key": "e01"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери фразу, сохраняющую условность одобрения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "in defiance of"
+          },
+          {
+            "id": "o2",
+            "label": "subject to"
+          },
+          {
+            "id": "o3",
+            "label": "regardless of"
+          }
+        ],
+        "sentence": "The arrangement will proceed ___ final approval."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "subject to",
+      "explanation": "Subject to approval — при условии одобрения; regardless of исключило бы зависимость от него.",
+      "key": "e02"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи оговорку без превращения возможности в обязанность.",
+      "public_payload": {
+        "source": "Организатор может отменить сбор в исключительных обстоятельствах."
+      },
+      "answer_key": {
+        "accepted": [
+          "The organiser may waive the fee in exceptional circumstances.",
+          "The organizer may waive the fee in exceptional circumstances."
+        ]
+      },
+      "reference_answer": "The organiser may waive the fee in exceptional circumstances.",
+      "incorrect_answer": "The organiser must waive the fee in all circumstances.",
+      "editorial_answer": "The organiser may waive the fee in exceptional circumstances.",
+      "explanation": "May сохраняет усмотрение; must и all circumstances неоправданно усиливают правило.",
+      "key": "e03"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери точное редакторское замечание.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "it makes the original condition more explicit."
+          },
+          {
+            "id": "o2",
+            "label": "it preserves every restriction exactly."
+          },
+          {
+            "id": "o3",
+            "label": "it removes a condition rather than merely simplifying the wording."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Writer",
+            "text": "I shortened “provided that written notice is received” to “whenever you like”."
+          },
+          {
+            "speaker": "Editor",
+            "text": "The revision is shorter, but …"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "it removes a condition rather than merely simplifying the wording.",
+      "explanation": "Whenever you like устраняет требование уведомления, а не просто заменяет сложные слова простыми.",
+      "key": "e04"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери два элемента, которые нужно сохранить при верной переформулировке условия.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Whether an exception is discretionary or automatic."
+          },
+          {
+            "id": "o2",
+            "label": "The deadline for receiving notice."
+          },
+          {
+            "id": "o3",
+            "label": "The exact number of syllables in every sentence."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o1", "o2"]
+      },
+      "reference_answer": ["o2", "o1"],
+      "incorrect_answer": ["o3"],
+      "editorial_answer": "The deadline for receiving notice.; Whether an exception is discretionary or automatic.",
+      "explanation": "Смысловые условия важны; длина слов и слогов не обязана совпадать.",
+      "key": "e05"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь относительную конструкцию, не меняя ограничение.",
+      "public_payload": {
+        "sentence": "The fee may be waived only in circumstances which the organiser considers them exceptional."
+      },
+      "answer_key": {
+        "accepted": [
+          "The fee may be waived only in circumstances which the organiser considers exceptional.",
+          "The fee may be waived only in circumstances that the organiser considers exceptional."
+        ]
+      },
+      "reference_answer": "The fee may be waived only in circumstances which the organiser considers exceptional.",
+      "incorrect_answer": "The fee must be waived in every circumstance.",
+      "editorial_answer": "The fee may be waived only in circumstances which the organiser considers exceptional.",
+      "explanation": "Which/that уже выполняет роль объекта considers; дополнительное them избыточно. Only и may сохраняются.",
+      "key": "e06"
+    },
+    {
+      "kind": "word_review",
+      "prompt": "Что означает waiver в формальном документе?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "обязательное увеличение платы"
+          },
+          {
+            "id": "o2",
+            "label": "доказательство преступления"
+          },
+          {
+            "id": "o3",
+            "label": "отказ от применения определённого права или требования"
+          }
+        ],
+        "word": "waiver"
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "отказ от применения определённого права или требования",
+      "explanation": "Waiver означает отказ от права/требования или его применения, в зависимости от контекста.",
+      "key": "e07"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Собери оговорку, сохранив разрешение и условие.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "waived"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          },
+          {
+            "id": "t3",
+            "label": "provided"
+          },
+          {
+            "id": "t4",
+            "label": "be"
+          },
+          {
+            "id": "t5",
+            "label": "may"
+          },
+          {
+            "id": "t6",
+            "label": "requirement"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "that"
+          },
+          {
+            "id": "t9",
+            "label": "met."
+          },
+          {
+            "id": "t10",
+            "label": "The"
+          },
+          {
+            "id": "t11",
+            "label": "notice"
+          },
+          {
+            "id": "t12",
+            "label": "fee"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t10",
+          "t12",
+          "t5",
+          "t4",
+          "t1",
+          "t3",
+          "t8",
+          "t7",
+          "t11",
+          "t6",
+          "t2",
+          "t9"
+        ]
+      },
+      "reference_answer": [
+        "t10",
+        "t12",
+        "t5",
+        "t4",
+        "t1",
+        "t3",
+        "t8",
+        "t7",
+        "t11",
+        "t6",
+        "t2",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t12",
+        "t5",
+        "t4",
+        "t1",
+        "t3",
+        "t8",
+        "t7",
+        "t11",
+        "t6",
+        "t2",
+        "t9",
+        "t10"
+      ],
+      "editorial_answer": "The fee may be waived provided that the notice requirement is met.",
+      "explanation": "May сохраняет возможность, provided that — условие; перепорядочивание не должно менять их связь.",
+      "key": "e08"
+    }
+  ]
+}

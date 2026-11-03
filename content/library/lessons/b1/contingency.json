@@ -1,0 +1,247 @@
+{
+  "key": "b1/contingency",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика B1 · пакет 1",
+    "position": 1
+  },
+  "position": 2,
+  "title": "Если планы изменятся",
+  "description": "Строим реальные условия о будущем и обсуждаем запасной план поездки.",
+  "level": "B1",
+  "objectives": ["Использовать first conditional", "Различать if и unless"],
+  "notes": [
+    "В реальном условии о будущем: If + Present Simple, will + начальная форма.",
+    "Unless означает «если не»; второе отрицание обычно не нужно."
+  ],
+  "skills": ["vocabulary", "grammar", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/experiences"],
+  "lexicon": [
+    {
+      "en": "unless",
+      "ru": "если не"
+    },
+    {
+      "en": "delay",
+      "ru": "задержка"
+    },
+    {
+      "en": "refund",
+      "ru": "возврат денег"
+    },
+    {
+      "en": "backup plan",
+      "ru": "запасной план"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Дополни реальное условие о погоде.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "rains"
+          },
+          {
+            "id": "o2",
+            "label": "would rain"
+          },
+          {
+            "id": "o3",
+            "label": "will rain"
+          }
+        ],
+        "sentence": "If it ___ tomorrow, we will stay indoors."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "rains",
+      "explanation": "В придаточном с if для реального будущего нужен Present Simple: rains.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни главное предложение о возможной задержке.",
+      "public_payload": {
+        "sentence": "If the train is late, we ___ call you."
+      },
+      "answer_key": {
+        "accepted": ["will"]
+      },
+      "reference_answer": "will",
+      "incorrect_answer": "would",
+      "editorial_answer": "If the train is late, we will call you.",
+      "explanation": "Will call — ожидаемое действие при реальном будущем условии.",
+      "key": "e02"
+    },
+    {
+      "kind": "single_choice",
+      "prompt": "Какой смысл у Unless you hurry, you will miss the bus?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "If you hurry, you will miss the bus."
+          },
+          {
+            "id": "o2",
+            "label": "You missed the bus because you hurried."
+          },
+          {
+            "id": "o3",
+            "label": "If you do not hurry, you will miss the bus."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "If you do not hurry, you will miss the bus.",
+      "explanation": "Unless = if not. Это условие будущего, а не сообщение о прошлом.",
+      "key": "e03"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что группа сделает при отмене лодочной экскурсии?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "They will take the boat even in strong wind."
+          },
+          {
+            "id": "o2",
+            "label": "They will lose all their money."
+          },
+          {
+            "id": "o3",
+            "label": "They will visit the science museum."
+          }
+        ],
+        "passage": "A group of friends has booked a boat trip for Saturday. The company says the trip will go ahead unless the wind is too strong. If it is cancelled, the group will receive a refund. They have agreed to visit the science museum instead, so the day will not be wasted."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "They will visit the science museum.",
+      "explanation": "Запасной план прямо указан: visit the science museum instead; при отмене будет refund.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи реальное условие о билете.",
+      "public_payload": {
+        "source": "Если я найду билет, я тебе позвоню."
+      },
+      "answer_key": {
+        "accepted": [
+          "If I find a ticket, I will call you.",
+          "If I find a ticket, I'll call you."
+        ]
+      },
+      "reference_answer": "If I find a ticket, I will call you.",
+      "incorrect_answer": "If I found a ticket, I would call you.",
+      "editorial_answer": "If I find a ticket, I will call you.",
+      "explanation": "Find + will call описывает реальную будущую возможность; found + would меняет тип условия.",
+      "key": "e05"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Предложи запасной план.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "We already went next week."
+          },
+          {
+            "id": "o2",
+            "label": "If it cancelled yesterday, we go tomorrow."
+          },
+          {
+            "id": "o3",
+            "label": "If it is cancelled, we can go to the cinema."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Dan",
+            "text": "The outdoor concert may be cancelled."
+          },
+          {
+            "speaker": "Lia",
+            "text": "What shall we do if that happens?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "If it is cancelled, we can go to the cinema.",
+      "explanation": "If it is cancelled задаёт реальное условие; can предлагает возможный вариант действий.",
+      "key": "e06"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь форму после unless.",
+      "public_payload": {
+        "sentence": "Unless you will leave now, you will be late."
+      },
+      "answer_key": {
+        "accepted": ["Unless you leave now, you will be late."]
+      },
+      "reference_answer": "Unless you leave now, you will be late.",
+      "incorrect_answer": "Unless you leave now, you will not be late.",
+      "editorial_answer": "Unless you leave now, you will be late.",
+      "explanation": "После unless в таком условии нужен Present Simple. Отрицание в главной части изменило бы смысл.",
+      "key": "e07"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери оба корректных реальных условия.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "We will wait unless you call."
+          },
+          {
+            "id": "o2",
+            "label": "If I see Maya, I will tell her."
+          },
+          {
+            "id": "o3",
+            "label": "If I will see Maya, I will tell her."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o1", "o2"]
+      },
+      "reference_answer": ["o2", "o1"],
+      "incorrect_answer": ["o3"],
+      "editorial_answer": "If I see Maya, I will tell her.; We will wait unless you call.",
+      "explanation": "После if/unless о реальном будущем используем Present Simple, а не will.",
+      "key": "e08"
+    }
+  ]
+}

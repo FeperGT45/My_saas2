@@ -1,0 +1,284 @@
+{
+  "key": "c1/evidence",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика C1 · пакет 1",
+    "position": 1
+  },
+  "position": 4,
+  "title": "Оценка предложения и источников",
+  "description": "Сравниваем убедительность профессиональных аргументов и отделяем свидетельство от рекламного обещания.",
+  "level": "C1",
+  "objectives": [
+    "Различать независимое подтверждение и заинтересованное заявление",
+    "Уточнять критерии сравнения"
+  ],
+  "notes": [
+    "A testimonial — отзыв; он не равен независимому сравнительному исследованию.",
+    "Like-for-like comparison требует сравнивать сопоставимые условия, а не только красивые итоговые числа."
+  ],
+  "skills": ["reading", "vocabulary", "grammar"],
+  "estimated_minutes": 12,
+  "prerequisites": ["c1/hedging"],
+  "lexicon": [
+    {
+      "en": "testimonial",
+      "ru": "отзыв, свидетельство клиента"
+    },
+    {
+      "en": "independent",
+      "ru": "независимый"
+    },
+    {
+      "en": "benchmark",
+      "ru": "ориентир для сравнения"
+    },
+    {
+      "en": "corroborate",
+      "ru": "подтверждать дополнительными данными"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "prompt": "Какие сведения лучше всего помогли бы сравнить предложения?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "A larger number of enthusiastic slogans."
+          },
+          {
+            "id": "o2",
+            "label": "The assumption that every pilot is directly transferable."
+          },
+          {
+            "id": "o3",
+            "label": "Measurements of comparable tasks under stated conditions."
+          }
+        ],
+        "passage": "Two suppliers claim that their software will reduce administrative work. The first provides enthusiastic customer testimonials but no details about how time savings were measured. The second describes a pilot and lists the tasks included in its calculation, although the pilot took place in a larger organisation than the buyer’s. Neither proposal can simply be accepted at face value. The procurement team asks both suppliers for measurements of comparable tasks under clearly stated conditions. This request is not a claim that testimonials are dishonest or that pilots are useless. It aims to create a basis on which differences between the proposals can be interpreted fairly."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Measurements of comparable tasks under stated conditions.",
+      "explanation": "Команда запрашивает сопоставимые измерения, а не отвергает все отзывы или пилоты.",
+      "key": "e01"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово о независимом подтверждении утверждения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "corroborate"
+          },
+          {
+            "id": "o2",
+            "label": "postpone"
+          },
+          {
+            "id": "o3",
+            "label": "decorate"
+          }
+        ],
+        "sentence": "We need independent evidence to ___ the supplier’s claim."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "corroborate",
+      "explanation": "Corroborate a claim — подтвердить его дополнительными данными.",
+      "key": "e02"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи просьбу о сопоставимых данных.",
+      "public_payload": {
+        "source": "Можете ли вы предоставить данные, полученные в сопоставимых условиях?"
+      },
+      "answer_key": {
+        "accepted": [
+          "Could you provide data collected under comparable conditions?",
+          "Can you provide data gathered under comparable conditions?"
+        ]
+      },
+      "reference_answer": "Could you provide data collected under comparable conditions?",
+      "incorrect_answer": "Could you hide the data from comparable trials?",
+      "editorial_answer": "Could you provide data collected under comparable conditions?",
+      "explanation": "Provide data — предоставить данные; comparable conditions — сопоставимые условия, не сокрытие данных.",
+      "key": "e03"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Уточни утверждение поставщика профессионально.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Which tasks and time period does that figure cover?"
+          },
+          {
+            "id": "o2",
+            "label": "Thirty per cent is always the same in every role."
+          },
+          {
+            "id": "o3",
+            "label": "So no other evidence will ever be necessary."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Supplier",
+            "text": "Our clients save thirty per cent of their time."
+          },
+          {
+            "speaker": "Buyer",
+            "text": "That sounds useful, but we need to understand the calculation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Which tasks and time period does that figure cover?",
+      "explanation": "Конкретный вопрос уточняет охват показателя и помогает оценить сопоставимость.",
+      "key": "e04"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери два вопроса, которые помогают оценить достоверность сравнения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Can we ignore the measurement method if the headline is attractive?"
+          },
+          {
+            "id": "o2",
+            "label": "How were the participants selected?"
+          },
+          {
+            "id": "o3",
+            "label": "Were the same tasks measured?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o2", "o3"]
+      },
+      "reference_answer": ["o3", "o2"],
+      "incorrect_answer": ["o1"],
+      "editorial_answer": "Were the same tasks measured?; How were the participants selected?",
+      "explanation": "Сопоставимость задач и отбор участников влияют на интерпретацию; привлекательный заголовок не заменяет метод.",
+      "key": "e05"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Собери рекомендацию о проверке утверждения.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "should"
+          },
+          {
+            "id": "t2",
+            "label": "The"
+          },
+          {
+            "id": "t3",
+            "label": "be"
+          },
+          {
+            "id": "t4",
+            "label": "evidence."
+          },
+          {
+            "id": "t5",
+            "label": "assessed"
+          },
+          {
+            "id": "t6",
+            "label": "against"
+          },
+          {
+            "id": "t7",
+            "label": "independent"
+          },
+          {
+            "id": "t8",
+            "label": "claim"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t2", "t8", "t1", "t3", "t5", "t6", "t7", "t4"]
+      },
+      "reference_answer": ["t2", "t8", "t1", "t3", "t5", "t6", "t7", "t4"],
+      "incorrect_answer": ["t8", "t1", "t3", "t5", "t6", "t7", "t4", "t2"],
+      "editorial_answer": "The claim should be assessed against independent evidence.",
+      "explanation": "Assessed against evidence — оценено с опорой на данные; should be assessed — пассивная рекомендация.",
+      "key": "e06"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь устойчивое сочетание при оценке предложения.",
+      "public_payload": {
+        "sentence": "We should not take the figures at face price."
+      },
+      "answer_key": {
+        "accepted": ["We should not take the figures at face value."]
+      },
+      "reference_answer": "We should not take the figures at face value.",
+      "incorrect_answer": "We should take all figures as proven facts.",
+      "editorial_answer": "We should not take the figures at face value.",
+      "explanation": "At face value означает принимать без дополнительной проверки. Face price здесь не употребляется.",
+      "key": "e07"
+    },
+    {
+      "kind": "word_review",
+      "prompt": "Что означает like-for-like comparison?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "сравнение только понравившихся результатов"
+          },
+          {
+            "id": "o2",
+            "label": "сравнение сопоставимых объектов и условий"
+          },
+          {
+            "id": "o3",
+            "label": "выбор самого короткого документа"
+          }
+        ],
+        "word": "like-for-like comparison"
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "сравнение сопоставимых объектов и условий",
+      "explanation": "Like-for-like требует сопоставимой основы, а не отбора удобных результатов.",
+      "key": "e08"
+    }
+  ]
+}

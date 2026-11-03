@@ -1,0 +1,268 @@
+{
+  "key": "c2/counterarguments",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика C2 · пакет 1",
+    "position": 1
+  },
+  "position": 3,
+  "title": "Уступка и пределы контраргумента",
+  "description": "Разбираем многоступенчатое рассуждение, в котором признание слабости не равносильно отказу от тезиса.",
+  "level": "C2",
+  "objectives": [
+    "Проследить область действия уступки",
+    "Не выводить из условного допущения утверждение о факте"
+  ],
+  "notes": [
+    "For all its limitations = despite its limitations; оборот признаёт ограничение, но не задаёт итоговую оценку сам по себе.",
+    "Even were … to … может вводить формальное гипотетическое допущение, не подтверждая его реальность."
+  ],
+  "skills": ["reading", "vocabulary", "grammar"],
+  "estimated_minutes": 12,
+  "prerequisites": ["c2/register-fidelity"],
+  "lexicon": [
+    {
+      "en": "concede",
+      "ru": "признавать довод"
+    },
+    {
+      "en": "undermine",
+      "ru": "подрывать"
+    },
+    {
+      "en": "contingent",
+      "ru": "зависящий от обстоятельств"
+    },
+    {
+      "en": "decisive",
+      "ru": "решающий"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "prompt": "Какова функция уступки о неполноте архива?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It proves that missing documents support the historian."
+          },
+          {
+            "id": "o2",
+            "label": "It limits the strength of the reconstruction without making all accounts equally plausible."
+          },
+          {
+            "id": "o3",
+            "label": "It makes every reconstruction worthless."
+          }
+        ],
+        "passage": "For all its gaps, the archive remains the most detailed record currently available of the negotiations. A critic is right to note that several private exchanges were never recorded. It does not follow, however, that the surviving material tells us nothing, or that every reconstruction is equally plausible. The historian’s argument is comparative: one account fits the available letters and minutes better than its rivals, while still leaving room for revision if new documents emerge. Even were the missing correspondence to contradict part of that account, the consequences would depend on what it contradicted. The concession narrows the claim to a defensible one; it is not a covert assertion that the missing material must support the preferred interpretation."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "It limits the strength of the reconstruction without making all accounts equally plausible.",
+      "explanation": "Автор ограничивает уверенность и сохраняет сравнительное преимущество одной реконструкции; содержание пропущенных документов неизвестно.",
+      "key": "e01"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что утверждает оборот Even were the missing correspondence to contradict …?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The missing correspondence has already been found and analysed."
+          },
+          {
+            "id": "o2",
+            "label": "Any contradiction would automatically invalidate every historical statement."
+          },
+          {
+            "id": "o3",
+            "label": "A hypothetical contradiction would need to be assessed for its specific significance."
+          }
+        ],
+        "passage": "For all its gaps, the archive remains the most detailed record currently available of the negotiations. A critic is right to note that several private exchanges were never recorded. It does not follow, however, that the surviving material tells us nothing, or that every reconstruction is equally plausible. The historian’s argument is comparative: one account fits the available letters and minutes better than its rivals, while still leaving room for revision if new documents emerge. Even were the missing correspondence to contradict part of that account, the consequences would depend on what it contradicted. The concession narrows the claim to a defensible one; it is not a covert assertion that the missing material must support the preferred interpretation."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "A hypothetical contradiction would need to be assessed for its specific significance.",
+      "explanation": "Это гипотетическое допущение, причём последствия зависели бы от конкретного содержания противоречия.",
+      "key": "e02"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери уступительный оборот со значением «несмотря на все ограничения».",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "For all its"
+          },
+          {
+            "id": "o2",
+            "label": "In order to its"
+          },
+          {
+            "id": "o3",
+            "label": "Because of all its"
+          }
+        ],
+        "sentence": "___ limitations, the account remains informative."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "For all its",
+      "explanation": "For all its limitations — несмотря на ограничения; сам оборот не отменяет последующий положительный вывод.",
+      "key": "e03"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи оговорку, не добавляя полной достоверности.",
+      "public_payload": {
+        "source": "Это ослабляет аргумент, но не опровергает его полностью."
+      },
+      "answer_key": {
+        "accepted": [
+          "This weakens the argument, but it does not refute it entirely.",
+          "This undermines the argument, but it does not completely refute it."
+        ]
+      },
+      "reference_answer": "This weakens the argument, but it does not refute it entirely.",
+      "incorrect_answer": "This conclusively proves that the argument is entirely correct.",
+      "editorial_answer": "This weakens the argument, but it does not refute it entirely.",
+      "explanation": "Weakens/undermines — ослабляет; does not entirely refute сохраняет предел критики.",
+      "key": "e04"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери два логически допустимых прочтения уступки.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "A hypothetical counterexample is not necessarily an established fact."
+          },
+          {
+            "id": "o2",
+            "label": "Acknowledging a limitation can make a claim more precisely bounded."
+          },
+          {
+            "id": "o3",
+            "label": "Any conceded weakness proves that the opposite thesis is wholly true."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o1", "o2"]
+      },
+      "reference_answer": ["o2", "o1"],
+      "incorrect_answer": ["o3"],
+      "editorial_answer": "Acknowledging a limitation can make a claim more precisely bounded.; A hypothetical counterexample is not necessarily an established fact.",
+      "explanation": "Уступка ограничивает тезис; она не доказывает автоматически полную истинность противоположного тезиса.",
+      "key": "e05"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь формальное гипотетическое условие.",
+      "public_payload": {
+        "sentence": "Even were the documents to contradict the account, it would not necessarily follows that every detail is false."
+      },
+      "answer_key": {
+        "accepted": [
+          "Even were the documents to contradict the account, it would not necessarily follow that every detail is false."
+        ]
+      },
+      "reference_answer": "Even were the documents to contradict the account, it would not necessarily follow that every detail is false.",
+      "incorrect_answer": "The documents prove that every detail is false.",
+      "editorial_answer": "Even were the documents to contradict the account, it would not necessarily follow that every detail is false.",
+      "explanation": "После would not нужна начальная форма follow, не follows. Necessarily и every сохраняют предел вывода, а не превращают допущение в факт.",
+      "key": "e06"
+    },
+    {
+      "kind": "synonym_antonym",
+      "prompt": "Выбери антоним contingent в значении зависимости вывода от обстоятельств.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "dependent"
+          },
+          {
+            "id": "o2",
+            "label": "unconditional"
+          },
+          {
+            "id": "o3",
+            "label": "conditional"
+          }
+        ],
+        "word": "contingent",
+        "relation": "antonym"
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "unconditional",
+      "explanation": "Unconditional — безусловный; contingent, conditional и dependent передают зависимость.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери ответ, который сохраняет предел уступки.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "it proves that every competing account is equally sound."
+          },
+          {
+            "id": "o2",
+            "label": "we still need to ask which claims the surviving evidence can support."
+          },
+          {
+            "id": "o3",
+            "label": "it guarantees that no new evidence could matter."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Critic",
+            "text": "You admit that the source is incomplete. Surely that settles the issue."
+          },
+          {
+            "speaker": "Historian",
+            "text": "It establishes a limitation, but …"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "we still need to ask which claims the surviving evidence can support.",
+      "explanation": "Уместно уточнить, какие выводы поддерживает оставшаяся информация, а не объявить все версии равными.",
+      "key": "e08"
+    }
+  ]
+}

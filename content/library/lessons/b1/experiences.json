@@ -1,0 +1,263 @@
+{
+  "key": "b1/experiences",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика B1 · пакет 1",
+    "position": 1
+  },
+  "position": 1,
+  "title": "Опыт и конкретное прошлое",
+  "description": "Различаем жизненный опыт и событие, привязанное к завершённому времени.",
+  "level": "B1",
+  "objectives": [
+    "Различать Present Perfect и Past Simple",
+    "Использовать ever, never и already"
+  ],
+  "notes": [
+    "Have you ever …? спрашивает об опыте без указания законченного времени.",
+    "С last year и yesterday обычно нужен Past Simple, а не Present Perfect."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "experience",
+      "ru": "опыт"
+    },
+    {
+      "en": "already",
+      "ru": "уже"
+    },
+    {
+      "en": "yet",
+      "ru": "ещё, уже (в вопросах и отрицаниях)"
+    },
+    {
+      "en": "abroad",
+      "ru": "за границей"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "tenses",
+      "prompt": "Выбери форму для вопроса о жизненном опыте.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Did you ever went"
+          },
+          {
+            "id": "o2",
+            "label": "Have you ever been"
+          },
+          {
+            "id": "o3",
+            "label": "Are you ever been"
+          }
+        ],
+        "sentence": "___ to Scotland?"
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Have you ever been",
+      "explanation": "Have you ever been …? спрашивает, случалось ли бывать в месте, без конкретной даты.",
+      "key": "e01"
+    },
+    {
+      "kind": "tenses",
+      "prompt": "Выбери форму с завершённым периодом last year.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "visited"
+          },
+          {
+            "id": "o2",
+            "label": "have been visiting"
+          },
+          {
+            "id": "o3",
+            "label": "have visited"
+          }
+        ],
+        "sentence": "I ___ Edinburgh last year."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "visited",
+      "explanation": "Last year — законченный период, поэтому visited.",
+      "key": "e02"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово, означающее «никогда».",
+      "public_payload": {
+        "sentence": "I have ___ tried surfing, but I would like to."
+      },
+      "answer_key": {
+        "accepted": ["never"]
+      },
+      "reference_answer": "never",
+      "incorrect_answer": "already",
+      "editorial_answer": "I have never tried surfing, but I would like to.",
+      "explanation": "Never отрицает наличие опыта. Already означало бы, что опыт уже есть.",
+      "key": "e03"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи сообщение об уже выполненной работе.",
+      "public_payload": {
+        "source": "Я уже отправил письмо."
+      },
+      "answer_key": {
+        "accepted": [
+          "I have already sent the email.",
+          "I've already sent the email."
+        ]
+      },
+      "reference_answer": "I have already sent the email.",
+      "incorrect_answer": "I have not sent the email yet.",
+      "editorial_answer": "I have already sent the email.",
+      "explanation": "Already подчёркивает, что письмо уже отправлено; not … yet означало бы обратное.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой вывод об опыте Марты соответствует тексту?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "She stopped working for the company three years ago."
+          },
+          {
+            "id": "o2",
+            "label": "She visited Japan last spring."
+          },
+          {
+            "id": "o3",
+            "label": "The Tokyo trip would be her first visit to Japan."
+          }
+        ],
+        "passage": "Marta has worked for a small travel company for three years. She has visited several countries for work, but she has never been to Japan. Last spring she spent a week in Italy. Her manager has just offered her a trip to Tokyo, and she is looking forward to her first visit."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The Tokyo trip would be her first visit to Japan.",
+      "explanation": "Она never been to Japan и ждёт first visit. Last spring относится к Италии.",
+      "key": "e05"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери ответ о конкретной дате опыта.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I have never taken one."
+          },
+          {
+            "id": "o2",
+            "label": "I took one last summer."
+          },
+          {
+            "id": "o3",
+            "label": "I have taken one yesterday."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Ali",
+            "text": "Have you ever taken a night train?"
+          },
+          {
+            "speaker": "Bea",
+            "text": "Yes, I have."
+          },
+          {
+            "speaker": "Ali",
+            "text": "When did you take it?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "I took one last summer.",
+      "explanation": "После уточнения When …? и last summer нужен Past Simple: took.",
+      "key": "e06"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь время, сохранив указание yesterday.",
+      "public_payload": {
+        "sentence": "I have finished the report yesterday."
+      },
+      "answer_key": {
+        "accepted": ["I finished the report yesterday."]
+      },
+      "reference_answer": "I finished the report yesterday.",
+      "incorrect_answer": "I have finished the report already.",
+      "editorial_answer": "I finished the report yesterday.",
+      "explanation": "Yesterday требует Past Simple. В корректном ответе сохраняется исходное обстоятельство.",
+      "key": "e07"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Собери вопрос «Ты когда-нибудь жил за границей?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "abroad?"
+          },
+          {
+            "id": "t2",
+            "label": "you"
+          },
+          {
+            "id": "t3",
+            "label": "lived"
+          },
+          {
+            "id": "t4",
+            "label": "Have"
+          },
+          {
+            "id": "t5",
+            "label": "ever"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t4", "t2", "t5", "t3", "t1"]
+      },
+      "reference_answer": ["t4", "t2", "t5", "t3", "t1"],
+      "incorrect_answer": ["t2", "t5", "t3", "t1", "t4"],
+      "editorial_answer": "Have you ever lived abroad?",
+      "explanation": "В Present Perfect have стоит перед подлежащим, lived — после ever.",
+      "key": "e08"
+    }
+  ]
+}

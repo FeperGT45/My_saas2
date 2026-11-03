@@ -1,0 +1,260 @@
+{
+  "key": "c1/inversion",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика C1 · пакет 1",
+    "position": 1
+  },
+  "position": 1,
+  "title": "Инверсия и смысловой акцент",
+  "description": "Используем инверсию для выделения ограничения и различаем формальный акцент и обычный порядок слов.",
+  "level": "C1",
+  "objectives": [
+    "Строить инверсию после restrictive adverbials",
+    "Сохранять смысл при переформулировании условия"
+  ],
+  "notes": [
+    "После Only after … в главной части возможна инверсия: Only after the review did we understand …",
+    "Had I known … соответствует If I had known …; это формальный вариант нереального прошлого."
+  ],
+  "skills": ["vocabulary", "grammar", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": [],
+  "lexicon": [
+    {
+      "en": "only after",
+      "ru": "только после"
+    },
+    {
+      "en": "seldom",
+      "ru": "редко"
+    },
+    {
+      "en": "under no circumstances",
+      "ru": "ни при каких обстоятельствах"
+    },
+    {
+      "en": "implication",
+      "ru": "следствие, подразумеваемый смысл"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери порядок слов после начального ограничения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "we did realise"
+          },
+          {
+            "id": "o2",
+            "label": "we realised did"
+          },
+          {
+            "id": "o3",
+            "label": "did we realise"
+          }
+        ],
+        "sentence": "Only then ___ how serious the problem was."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "did we realise",
+      "explanation": "После Only then в главной части нужен вспомогательный did перед we.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни инверсию с отрицательным наречием.",
+      "public_payload": {
+        "sentence": "Never ___ I seen such a thorough analysis."
+      },
+      "answer_key": {
+        "accepted": ["have"]
+      },
+      "reference_answer": "have",
+      "incorrect_answer": "I",
+      "editorial_answer": "Never have I seen such a thorough analysis.",
+      "explanation": "После начального Never вспомогательный have ставится перед I.",
+      "key": "e02"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что подчёркивает начальное Only after в позиции автора?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The review proved that every record was false."
+          },
+          {
+            "id": "o2",
+            "label": "No employee had ever noticed any individual discrepancy."
+          },
+          {
+            "id": "o3",
+            "label": "A broader understanding emerged only following the independent review."
+          }
+        ],
+        "passage": "Only after the independent reviewers examined the original records did the team recognise the extent of the reporting problem. Before that review, each department had assumed that the inconsistencies were confined to its own files. The reviewers did not discover a single dramatic error; rather, they showed that many small discrepancies pointed in the same direction. The opening phrase therefore matters: it identifies the review as the point at which a broader understanding became possible. It does not claim that every record was unreliable, nor does it imply that no member of staff had previously noticed any discrepancy at all."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "A broader understanding emerged only following the independent review.",
+      "explanation": "Ограничение относится к общему осознанию масштаба, а не к отсутствию любых прежних наблюдений.",
+      "key": "e03"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи условие формальной инверсией или обычным if.",
+      "public_payload": {
+        "source": "Если бы я знал об ограничении, я бы упомянул его."
+      },
+      "answer_key": {
+        "accepted": [
+          "Had I known about the limitation, I would have mentioned it.",
+          "If I had known about the limitation, I would have mentioned it."
+        ]
+      },
+      "reference_answer": "Had I known about the limitation, I would have mentioned it.",
+      "incorrect_answer": "If I know about the limitation, I will mention it.",
+      "editorial_answer": "Had I known about the limitation, I would have mentioned it.",
+      "explanation": "Had I known = If I had known; следствие остаётся would have mentioned в нереальном прошлом.",
+      "key": "e04"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь порядок слов после Only after.",
+      "public_payload": {
+        "sentence": "Only after the audit we understood the risk."
+      },
+      "answer_key": {
+        "accepted": ["Only after the audit did we understand the risk."]
+      },
+      "reference_answer": "Only after the audit did we understand the risk.",
+      "incorrect_answer": "We understood the risk before the audit.",
+      "editorial_answer": "Only after the audit did we understand the risk.",
+      "explanation": "После начального ограничительного оборота нужна инверсия did we understand. Before меняет временной смысл.",
+      "key": "e05"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Собери формальный запрет с инверсией.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "files"
+          },
+          {
+            "id": "t2",
+            "label": "confidential"
+          },
+          {
+            "id": "t3",
+            "label": "no"
+          },
+          {
+            "id": "t4",
+            "label": "be"
+          },
+          {
+            "id": "t5",
+            "label": "Under"
+          },
+          {
+            "id": "t6",
+            "label": "shared."
+          },
+          {
+            "id": "t7",
+            "label": "circumstances"
+          },
+          {
+            "id": "t8",
+            "label": "should"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t5", "t3", "t7", "t8", "t2", "t1", "t4", "t6"]
+      },
+      "reference_answer": ["t5", "t3", "t7", "t8", "t2", "t1", "t4", "t6"],
+      "incorrect_answer": ["t3", "t7", "t8", "t2", "t1", "t4", "t6", "t5"],
+      "editorial_answer": "Under no circumstances should confidential files be shared.",
+      "explanation": "После Under no circumstances модальный should предшествует подлежащему; be shared — пассив.",
+      "key": "e06"
+    },
+    {
+      "kind": "single_choice",
+      "prompt": "Какой обычный условный оборот соответствует Had the data been available, we would have used it?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Because the data was available, we used it."
+          },
+          {
+            "id": "o2",
+            "label": "If the data is available, we use it."
+          },
+          {
+            "id": "o3",
+            "label": "If the data had been available, we would have used it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "If the data had been available, we would have used it.",
+      "explanation": "Had the data been available — инверсия условного Past Perfect, не утверждение о доступности данных.",
+      "key": "e07"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери два корректных примера ограничительной инверсии.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Not until Friday did they publish the results."
+          },
+          {
+            "id": "o2",
+            "label": "Seldom we have seen such a detailed response."
+          },
+          {
+            "id": "o3",
+            "label": "Rarely do we encounter such a clear explanation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o1", "o3"]
+      },
+      "reference_answer": ["o3", "o1"],
+      "incorrect_answer": ["o2"],
+      "editorial_answer": "Rarely do we encounter such a clear explanation.; Not until Friday did they publish the results.",
+      "explanation": "Rarely do we … и Not until … did they … используют инверсию; в третьем примере её нет.",
+      "key": "e08"
+    }
+  ]
+}

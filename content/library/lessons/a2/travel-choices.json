@@ -1,0 +1,299 @@
+{
+  "key": "a2/travel-choices",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика A2 · пакет 1",
+    "position": 1
+  },
+  "position": 2,
+  "title": "Выбираем поездку",
+  "description": "Сравниваем варианты транспорта, время и стоимость без потери смысла.",
+  "level": "A2",
+  "objectives": [
+    "Использовать сравнительную степень прилагательных",
+    "Понять причины выбора транспорта"
+  ],
+  "notes": [
+    "Fast → faster, cheap → cheaper; сравнение вводится than.",
+    "Comfortable → more comfortable, не comfortabler."
+  ],
+  "skills": ["vocabulary", "grammar", "reading", "listening"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a2/weekend"],
+  "lexicon": [
+    {
+      "en": "cheaper",
+      "ru": "дешевле"
+    },
+    {
+      "en": "faster",
+      "ru": "быстрее"
+    },
+    {
+      "en": "comfortable",
+      "ru": "удобный"
+    },
+    {
+      "en": "journey",
+      "ru": "поездка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Сравни цену автобуса и поезда.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "cheaper"
+          },
+          {
+            "id": "o2",
+            "label": "cheapest"
+          },
+          {
+            "id": "o3",
+            "label": "more cheap"
+          }
+        ],
+        "sentence": "The bus costs £8 and the train costs £15. The bus is ___ than the train."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "cheaper",
+      "explanation": "При сравнении двух цен используется cheaper than.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово сравнения.",
+      "public_payload": {
+        "sentence": "The train is faster ___ the bus."
+      },
+      "answer_key": {
+        "accepted": ["than"]
+      },
+      "reference_answer": "than",
+      "incorrect_answer": "then",
+      "editorial_answer": "The train is faster than the bus.",
+      "explanation": "Than вводит объект сравнения; then означает «затем». Тут это разные слова.",
+      "key": "e02"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Сопоставь выражения для выбора поездки.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "single ticket"
+          },
+          {
+            "id": "l2",
+            "label": "return ticket"
+          },
+          {
+            "id": "l3",
+            "label": "departure time"
+          },
+          {
+            "id": "l4",
+            "label": "platform"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "время отправления"
+          },
+          {
+            "id": "r2",
+            "label": "билет туда и обратно"
+          },
+          {
+            "id": "r3",
+            "label": "платформа"
+          },
+          {
+            "id": "r4",
+            "label": "билет в одну сторону"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1": "r4",
+          "l2": "r2",
+          "l3": "r1",
+          "l4": "r3"
+        }
+      },
+      "reference_answer": {
+        "l1": "r4",
+        "l2": "r2",
+        "l3": "r1",
+        "l4": "r3"
+      },
+      "incorrect_answer": {
+        "l1": "r2",
+        "l2": "r1",
+        "l3": "r3",
+        "l4": "r4"
+      },
+      "editorial_answer": "single ticket — билет в одну сторону; return ticket — билет туда и обратно; departure time — время отправления; platform — платформа",
+      "explanation": "Single — в одну сторону, return — туда и обратно; departure — отправление.",
+      "key": "e03"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Лена выбирает автобус?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It is cheaper, and she has enough time."
+          },
+          {
+            "id": "o2",
+            "label": "The train does not run today."
+          },
+          {
+            "id": "o3",
+            "label": "It is faster than the train."
+          }
+        ],
+        "passage": "Lena wants to visit her aunt in another town. The train takes forty minutes and costs twelve pounds. The bus takes an hour and costs five pounds. Lena has plenty of time and wants to save money, so she chooses the bus."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It is cheaper, and she has enough time.",
+      "explanation": "Автобус дешевле, хотя едет дольше; в тексте у Лены достаточно времени.",
+      "key": "e04"
+    },
+    {
+      "kind": "response_choice",
+      "prompt": "Уточни нужный тип билета.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "A return ticket, please."
+          },
+          {
+            "id": "o2",
+            "label": "I return yesterday."
+          },
+          {
+            "id": "o3",
+            "label": "I am a platform."
+          }
+        ],
+        "context": "Would you like a single or a return ticket?"
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "A return ticket, please.",
+      "explanation": "A return ticket — билет туда и обратно.",
+      "key": "e05"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Составь: «Этот поезд удобнее автобуса».",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "bus."
+          },
+          {
+            "id": "t2",
+            "label": "This"
+          },
+          {
+            "id": "t3",
+            "label": "comfortable"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "is"
+          },
+          {
+            "id": "t6",
+            "label": "more"
+          },
+          {
+            "id": "t7",
+            "label": "than"
+          },
+          {
+            "id": "t8",
+            "label": "train"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t2", "t8", "t5", "t6", "t3", "t7", "t4", "t1"]
+      },
+      "reference_answer": ["t2", "t8", "t5", "t6", "t3", "t7", "t4", "t1"],
+      "incorrect_answer": ["t8", "t5", "t6", "t3", "t7", "t4", "t1", "t2"],
+      "editorial_answer": "This train is more comfortable than the bus.",
+      "explanation": "Длинное прилагательное comfortable образует сравнение с more.",
+      "key": "e06"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи сравнение цен.",
+      "public_payload": {
+        "source": "Этот билет дешевле того."
+      },
+      "answer_key": {
+        "accepted": [
+          "This ticket is cheaper than that one.",
+          "This ticket is cheaper than that ticket."
+        ]
+      },
+      "reference_answer": "This ticket is cheaper than that one.",
+      "incorrect_answer": "This ticket is more expensive than that one.",
+      "editorial_answer": "This ticket is cheaper than that one.",
+      "explanation": "Cheaper — дешевле; more expensive выражает противоположное сравнение.",
+      "key": "e07"
+    },
+    {
+      "kind": "dictation",
+      "prompt": "Запиши вопрос о времени отправления.",
+      "public_payload": {
+        "text": "What time does the train leave?",
+        "lang": "en-US"
+      },
+      "answer_key": {
+        "accepted": ["What time does the train leave?"]
+      },
+      "reference_answer": "What time does the train leave?",
+      "incorrect_answer": "What time does the bus leave?",
+      "editorial_answer": "What time does the train leave?",
+      "explanation": "Нужно сохранить train — поезд. Leave здесь означает отправляться.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,266 @@
+{
+  "key": "b2/deduction",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика B2 · пакет 1",
+    "position": 1
+  },
+  "position": 4,
+  "title": "Что могло произойти",
+  "description": "Различаем вывод, возможность и невозможность при обсуждении прошлого.",
+  "level": "B2",
+  "objectives": [
+    "Использовать must/might/can’t have + причастие",
+    "Не выдавать предположение за доказанный факт"
+  ],
+  "notes": [
+    "Must have — сильный вывод о прошлом на основании признаков, а не обязательство.",
+    "Might have — возможность; can’t have — вывод о невозможности."
+  ],
+  "skills": ["vocabulary", "grammar", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b2/argument"],
+  "lexicon": [
+    {
+      "en": "deduce",
+      "ru": "делать вывод"
+    },
+    {
+      "en": "apparently",
+      "ru": "по-видимому"
+    },
+    {
+      "en": "unlikely",
+      "ru": "маловероятный"
+    },
+    {
+      "en": "assumption",
+      "ru": "предположение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери конструкцию вероятного, но не уверенного объяснения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "must miss"
+          },
+          {
+            "id": "o2",
+            "label": "can’t missing"
+          },
+          {
+            "id": "o3",
+            "label": "might have missed"
+          }
+        ],
+        "sentence": "She has not replied. She ___ the message."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "might have missed",
+      "explanation": "Might have missed допускает, что человек пропустил сообщение, не утверждая это наверняка.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни сильный вывод о прошлом.",
+      "public_payload": {
+        "sentence": "The ground is wet. It must ___ rained."
+      },
+      "answer_key": {
+        "accepted": ["have"]
+      },
+      "reference_answer": "have",
+      "incorrect_answer": "has",
+      "editorial_answer": "The ground is wet. It must have rained.",
+      "explanation": "После must о прошлом используется have + причастие, а не has.",
+      "key": "e02"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему автор допускает несколько объяснений?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The available clues do not establish a single certain explanation."
+          },
+          {
+            "id": "o2",
+            "label": "An empty room always means a meeting was cancelled."
+          },
+          {
+            "id": "o3",
+            "label": "The cups prove that no meeting took place."
+          }
+        ],
+        "passage": "When Karim returned to the office, the meeting room was empty and the lights were off. He initially assumed that the meeting had been cancelled. Then he noticed that the chairs had been rearranged and there were used cups on the table. The meeting might already have finished, or the group could have moved to another room. Karim decided to check the calendar and ask a colleague rather than treat his first assumption as a fact."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The available clues do not establish a single certain explanation.",
+      "explanation": "Признаки допускают несколько версий, поэтому Karim решает уточнить, а не объявить первую догадку фактом.",
+      "key": "e03"
+    },
+    {
+      "kind": "single_choice",
+      "prompt": "Что означает He can’t have written this yesterday?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "He was not allowed to write anything yesterday."
+          },
+          {
+            "id": "o2",
+            "label": "He will probably write it tomorrow."
+          },
+          {
+            "id": "o3",
+            "label": "The speaker believes it was impossible for him to write it yesterday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The speaker believes it was impossible for him to write it yesterday.",
+      "explanation": "Can’t have written — вывод о невозможности события в прошлом, не запрет.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи осторожное предположение.",
+      "public_payload": {
+        "source": "Возможно, они забыли о встрече."
+      },
+      "answer_key": {
+        "accepted": [
+          "They might have forgotten about the meeting.",
+          "They may have forgotten about the meeting."
+        ]
+      },
+      "reference_answer": "They might have forgotten about the meeting.",
+      "incorrect_answer": "They definitely cancelled the meeting.",
+      "editorial_answer": "They might have forgotten about the meeting.",
+      "explanation": "Might/may have forgotten сохраняет предположение; definitely cancelled добавляет уверенность и другой факт.",
+      "key": "e05"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Собери сильный вывод о потерянном ключе.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "your"
+          },
+          {
+            "id": "t2",
+            "label": "must"
+          },
+          {
+            "id": "t3",
+            "label": "You"
+          },
+          {
+            "id": "t4",
+            "label": "key"
+          },
+          {
+            "id": "t5",
+            "label": "left"
+          },
+          {
+            "id": "t6",
+            "label": "have"
+          },
+          {
+            "id": "t7",
+            "label": "at"
+          },
+          {
+            "id": "t8",
+            "label": "home."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t3", "t2", "t6", "t5", "t1", "t4", "t7", "t8"]
+      },
+      "reference_answer": ["t3", "t2", "t6", "t5", "t1", "t4", "t7", "t8"],
+      "incorrect_answer": ["t2", "t6", "t5", "t1", "t4", "t7", "t8", "t3"],
+      "editorial_answer": "You must have left your key at home.",
+      "explanation": "Must have left — вывод о том, что произошло раньше.",
+      "key": "e06"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь конструкцию вывода о прошлом.",
+      "public_payload": {
+        "sentence": "She must has misunderstood the question."
+      },
+      "answer_key": {
+        "accepted": ["She must have misunderstood the question."]
+      },
+      "reference_answer": "She must have misunderstood the question.",
+      "incorrect_answer": "She must understand the question tomorrow.",
+      "editorial_answer": "She must have misunderstood the question.",
+      "explanation": "После модального must используется have, даже с she; misunderstood сохраняет прошлое.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь, сохранив неуверенность в причине опоздания.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "He must be arrive yesterday."
+          },
+          {
+            "id": "o2",
+            "label": "He definitely invented all the traffic."
+          },
+          {
+            "id": "o3",
+            "label": "He might have been delayed by traffic."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Rae",
+            "text": "Why was Oliver late?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "He might have been delayed by traffic.",
+      "explanation": "Might have been delayed выражает возможное объяснение без неподтверждённой уверенности.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "package": "english-path-core",
+  "revision": 1,
+  "summary": {
+    "lessons": 30,
+    "exercises": 240,
+    "levels": { "A1": 5, "A2": 5, "B1": 5, "B2": 5, "C1": 5, "C2": 5 }
+  },
+  "structure": "passed",
+  "crossLegacyDuplicateCheck": "passed",
+  "gradingCheck": "npm run test:library verifies all positive/negative references with the production SQL grader",
+  "methodology": "Author review and automated checks; CEFR labels remain provisional, without external psychometric calibration.",
+  "types": {
+    "context_choice": 23,
+    "correction": 21,
+    "dialogue": 16,
+    "dictation": 3,
+    "error_identification": 4,
+    "gap": 21,
+    "grammar": 1,
+    "matching": 7,
+    "multiple_choice": 15,
+    "reading": 32,
+    "response_choice": 9,
+    "sentence": 9,
+    "single_choice": 10,
+    "spelling": 1,
+    "synonym_antonym": 8,
+    "tenses": 7,
+    "translation": 29,
+    "unit_test": 6,
+    "word_order": 13,
+    "word_review": 5
+  },
+  "lessons": [
+    {
+      "key": "a1/places",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [23],
+      "sha256": "966bae550dfa38a1c327b845a3f816a952c1ca08e9a9f729878b7bd5cc4a5e09"
+    },
+    {
+      "key": "a1/cafe",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [23],
+      "sha256": "4f3dd0722efb2e1cedcb33da26d42a1b22e55d2e23498e2571bef841ebaa1b44"
+    },
+    {
+      "key": "a1/town",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [25],
+      "sha256": "b972a691caf794aad624d5ad738ef5bfb6617edf199e5385c9deab116dcec454"
+    },
+    {
+      "key": "a1/today",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [25],
+      "sha256": "0c6de50b467f1b163653186115369bf8e520b5dc09efc6d1c1b1ae0dfd60ccef"
+    },
+    {
+      "key": "a1/possessions",
+      "level": "A1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [27],
+      "sha256": "bb9d3de8068e86c605409f051099d1e8f53b0aea4f29760c6c9918066fd709e6"
+    },
+    {
+      "key": "a2/weekend",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [38],
+      "sha256": "632bc7667d83e21e81bfe83e7020b850bd1dff4c68ce6f85579ef2fab3fa6c02"
+    },
+    {
+      "key": "a2/travel-choices",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [42],
+      "sha256": "74d484da9a4fd1ceca7d1ffec189460d9bd4328ccd265ac7402267048364b2a9"
+    },
+    {
+      "key": "a2/plans",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [39],
+      "sha256": "857fea2c8e0d32fd80c5cf5c507c1855ee8f82b0c21025ce518bfa6c46c24b06"
+    },
+    {
+      "key": "a2/shopping",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [41],
+      "sha256": "ba00d482c0efb3a62a5f8240586753b14ddf888d9f7f0383b6876c790ae83c95"
+    },
+    {
+      "key": "a2/feeling-unwell",
+      "level": "A2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [37],
+      "sha256": "f07321395759e2a662ddc86a04676540aed9314da9d5daad687d8b6abaf7b29d"
+    },
+    {
+      "key": "b1/experiences",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [52],
+      "sha256": "60d649fa4da6888109146e8b90351776ae5cb151056efb18c5030d0f0c662207"
+    },
+    {
+      "key": "b1/contingency",
+      "level": "B1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [51],
+      "sha256": "a0cbf4ad271bc9572b621935fbb0a03adc8a3ccb8e2d54db4c1511a11ba24098"
+    },
+    {
+      "key": "b1/work-email",
+      "level": "B1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [52],
+      "sha256": "75bbf45a29bc3d3fcd121f94a8b20e8bff36d108a36235a6fcb92280e532c4d5"
+    },
+    {
+      "key": "b1/story",
+      "level": "B1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [55],
+      "sha256": "7d18e89ab5ccb7bf115477412ee18b0f2ee5c5a8737e2786e41adc798b91685c"
+    },
+    {
+      "key": "b1/phrasal-verbs",
+      "level": "B1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [54],
+      "sha256": "b1ec8fb8836194f115fe20662c14d83c1bf3f9999dab23954b23ca31119bb916"
+    },
+    {
+      "key": "b2/hypotheses",
+      "level": "B2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [69],
+      "sha256": "83d1cac819891476d65592298f5cbc09f66fe194b06d6628492b2b18e68074ce"
+    },
+    {
+      "key": "b2/reporting",
+      "level": "B2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [73],
+      "sha256": "27ba6ee2bdfde129c0296a616ddc8cb37486fdeb797bcdeacbeb7427922dfd65"
+    },
+    {
+      "key": "b2/argument",
+      "level": "B2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [78],
+      "sha256": "4c11cbd5448f30dde158889b574dd24ccc0f268b2f5c3583f2472ac05107390e"
+    },
+    {
+      "key": "b2/deduction",
+      "level": "B2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [76],
+      "sha256": "92e4d5a6a8c25ed835d9027ce6253b0697cf6959be49a22c272b61e8b66d77a3"
+    },
+    {
+      "key": "b2/register",
+      "level": "B2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [75],
+      "sha256": "7dce6c1273065118e2376009334ac091f15fc2769c17c0e62b89f27cee2bf254"
+    },
+    {
+      "key": "c1/inversion",
+      "level": "C1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [100],
+      "sha256": "7325ee4ec6bc765e17db01dc6e7654dbe33a681089808f6a2b20ee086253be9a"
+    },
+    {
+      "key": "c1/nominalisation",
+      "level": "C1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [104],
+      "sha256": "890e3b8f34d3021a8f7757c308c4436a94f0920e3d84bb58c52f48ce44af9c0e"
+    },
+    {
+      "key": "c1/hedging",
+      "level": "C1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [105],
+      "sha256": "a47a4172a4303e56a9deea8369df44bc35babdff58c2ee989be0cf48c9e29599"
+    },
+    {
+      "key": "c1/evidence",
+      "level": "C1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [105],
+      "sha256": "b42277162a8ca37a2d2c18c0751cf622c1537eaeff2c3a1faeeb843f90411706"
+    },
+    {
+      "key": "c1/concession",
+      "level": "C1",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [103],
+      "sha256": "cf07f7a0a5a098e076dfc728fdb63e4f59042a844b0081e7aca5b75cf06c388e"
+    },
+    {
+      "key": "c2/implicature",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [124, 124],
+      "sha256": "08ae714637bedd43cbce72105d76a7d93bea3600ccaaf2fa8283daa8bbb81097"
+    },
+    {
+      "key": "c2/register-fidelity",
+      "level": "C2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [123],
+      "sha256": "1fa59cecd8623fa49c9b30f72f48d7ae9cdfe9b69c7be810a02a3e732d469aa8"
+    },
+    {
+      "key": "c2/counterarguments",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [118, 118],
+      "sha256": "01a0845eb045453e1d1be832a37ed18d7867ca0ae2fdbb49c766b6d04e09cebd"
+    },
+    {
+      "key": "c2/rhetoric",
+      "level": "C2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [125],
+      "sha256": "9bfcfb6860639c88a9a428d12f6787f5bdf323aa6271c7eb76d21518c3b88890"
+    },
+    {
+      "key": "c2/precision",
+      "level": "C2",
+      "exercises": 8,
+      "types": 8,
+      "readingWords": [123],
+      "sha256": "d0db88e65c2fed2994d56172ae8306147d7f6edb54b87f27f38c22a8a6c1e33a"
+    }
+  ]
+}

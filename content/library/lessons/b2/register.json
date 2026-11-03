@@ -1,0 +1,381 @@
+{
+  "key": "b2/register",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика B2 · пакет 1",
+    "position": 1
+  },
+  "position": 5,
+  "title": "Тон и уместность речи",
+  "description": "Выбираем естественные сочетания и меняем тон просьбы в зависимости от ситуации.",
+  "level": "B2",
+  "objectives": [
+    "Различать неформальный и рабочий регистр",
+    "Использовать устойчивые сочетания без буквального перевода"
+  ],
+  "notes": [
+    "Raise a concern — выразить опасение; make a decision — принять решение.",
+    "Неформальное get back to you можно заменить более формальным respond to you, сохранив смысл."
+  ],
+  "skills": ["vocabulary", "reading", "grammar"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b2/deduction"],
+  "lexicon": [
+    {
+      "en": "raise a concern",
+      "ru": "выразить опасение"
+    },
+    {
+      "en": "get back to",
+      "ru": "связаться позже с ответом"
+    },
+    {
+      "en": "deadline extension",
+      "ru": "продление срока"
+    },
+    {
+      "en": "take into account",
+      "ru": "учитывать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери естественное сочетание с concern.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "do"
+          },
+          {
+            "id": "o2",
+            "label": "perform"
+          },
+          {
+            "id": "o3",
+            "label": "raise"
+          }
+        ],
+        "sentence": "I would like to ___ a concern about the schedule."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "raise",
+      "explanation": "Устойчивое сочетание — raise a concern.",
+      "key": "e01"
+    },
+    {
+      "kind": "synonym_antonym",
+      "prompt": "Выбери близкое по смыслу выражение в рабочей переписке.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "respond later"
+          },
+          {
+            "id": "o2",
+            "label": "reject immediately"
+          },
+          {
+            "id": "o3",
+            "label": "arrive earlier"
+          }
+        ],
+        "word": "get back to someone",
+        "relation": "synonym"
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "respond later",
+      "explanation": "Get back to someone в этом контексте означает ответить или связаться позже.",
+      "key": "e02"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери уместную просьбу руководителю о переносе срока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I have never had any deadlines anywhere."
+          },
+          {
+            "id": "o2",
+            "label": "Would it be possible to extend the deadline until Monday?"
+          },
+          {
+            "id": "o3",
+            "label": "Give me more time, or else."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Manager",
+            "text": "Is everything on track for Friday?"
+          },
+          {
+            "speaker": "Analyst",
+            "text": "I need more time to check the figures."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Would it be possible to extend the deadline until Monday?",
+      "explanation": "Would it be possible …? — вежливая конкретная просьба; угроза неуместна.",
+      "key": "e03"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую разницу в тоне объясняет текст?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Longer messages are automatically more accurate."
+          },
+          {
+            "id": "o2",
+            "label": "The same deadline can be expressed with different degrees of politeness."
+          },
+          {
+            "id": "o3",
+            "label": "A professional message must always avoid stating a deadline."
+          }
+        ],
+        "passage": "Two colleagues need the same information from a supplier. One writes, “Send the figures today.” The other writes, “Could you please send the figures by the end of today?” Both messages state a deadline, but the second frames the request more politely. This does not mean that every business message should be long or indirect. A short message can still be professional if it gives the necessary context and shows reasonable consideration for the reader."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The same deadline can be expressed with different degrees of politeness.",
+      "explanation": "Обе просьбы задают срок, но вторая вежливее. Автор не утверждает, что длина гарантирует качество.",
+      "key": "e04"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи просьбу учесть расходы.",
+      "public_payload": {
+        "source": "Пожалуйста, учтите дополнительные расходы."
+      },
+      "answer_key": {
+        "accepted": [
+          "Please take the additional costs into account.",
+          "Please take into account the additional costs.",
+          "Please consider the additional costs."
+        ]
+      },
+      "reference_answer": "Please take the additional costs into account.",
+      "incorrect_answer": "Please ignore the additional costs.",
+      "editorial_answer": "Please take the additional costs into account.",
+      "explanation": "Take into account / consider означает учитывать; ignore — противоположное действие.",
+      "key": "e05"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь устойчивое сочетание.",
+      "public_payload": {
+        "sentence": "We need to do a decision before Friday."
+      },
+      "answer_key": {
+        "accepted": ["We need to make a decision before Friday."]
+      },
+      "reference_answer": "We need to make a decision before Friday.",
+      "incorrect_answer": "We need to avoid a decision before Friday.",
+      "editorial_answer": "We need to make a decision before Friday.",
+      "explanation": "Говорят make a decision, а не do a decision. Смысл необходимости решения сохраняется.",
+      "key": "e06"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери вежливое уточнение срока ответа.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "response?"
+          },
+          {
+            "id": "t2",
+            "label": "me"
+          },
+          {
+            "id": "t3",
+            "label": "can"
+          },
+          {
+            "id": "t4",
+            "label": "you"
+          },
+          {
+            "id": "t5",
+            "label": "when"
+          },
+          {
+            "id": "t6",
+            "label": "Could"
+          },
+          {
+            "id": "t7",
+            "label": "know"
+          },
+          {
+            "id": "t8",
+            "label": "let"
+          },
+          {
+            "id": "t9",
+            "label": "a"
+          },
+          {
+            "id": "t10",
+            "label": "I"
+          },
+          {
+            "id": "t11",
+            "label": "expect"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t6",
+          "t4",
+          "t8",
+          "t2",
+          "t7",
+          "t5",
+          "t10",
+          "t3",
+          "t11",
+          "t9",
+          "t1"
+        ]
+      },
+      "reference_answer": [
+        "t6",
+        "t4",
+        "t8",
+        "t2",
+        "t7",
+        "t5",
+        "t10",
+        "t3",
+        "t11",
+        "t9",
+        "t1"
+      ],
+      "incorrect_answer": [
+        "t4",
+        "t8",
+        "t2",
+        "t7",
+        "t5",
+        "t10",
+        "t3",
+        "t11",
+        "t9",
+        "t1",
+        "t6"
+      ],
+      "editorial_answer": "Could you let me know when I can expect a response?",
+      "explanation": "Could you let me know …? — вежливый запрос; внутри косвенного вопроса порядок I can expect.",
+      "key": "e07"
+    },
+    {
+      "kind": "unit_test",
+      "prompt": "Проверь гипотезы, осторожность и связность B2.",
+      "public_payload": {
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "Выбери альтернативное прошлое.",
+            "options": [
+              {
+                "id": "o1",
+                "label": "If I would have checked, I had noticed."
+              },
+              {
+                "id": "o2",
+                "label": "If I had checked, I would have noticed."
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "prompt": "Как выразить возможность в прошлом?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "They might have left early."
+              },
+              {
+                "id": "o2",
+                "label": "They certainly must leaving early."
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "prompt": "Выбери верную уступительную структуру.",
+            "options": [
+              {
+                "id": "o1",
+                "label": "Despite we were late, we finished."
+              },
+              {
+                "id": "o2",
+                "label": "Despite the delay, we finished."
+              }
+            ]
+          }
+        ]
+      },
+      "answer_key": {
+        "answers": {
+          "q1": "o2",
+          "q2": "o1",
+          "q3": "o2"
+        },
+        "explanations": {
+          "q1": "If + Past Perfect сочетается с would have + причастие.",
+          "q2": "Might have left допускает событие, но не подтверждает его.",
+          "q3": "После despite подходит существительное; для придаточного нужен although."
+        }
+      },
+      "reference_answer": {
+        "q1": "o2",
+        "q2": "o1",
+        "q3": "o2"
+      },
+      "incorrect_answer": {
+        "q1": "o1",
+        "q2": "o1",
+        "q3": "o2"
+      },
+      "editorial_answer": "If I had checked, I would have noticed.; They might have left early.; Despite the delay, we finished.",
+      "explanation": "Контрольный блок засчитывается при всех верных ответах. Разбор каждого вопроса показан отдельно.",
+      "key": "e08"
+    }
+  ]
+}

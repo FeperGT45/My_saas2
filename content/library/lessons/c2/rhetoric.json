@@ -1,0 +1,338 @@
+{
+  "key": "c2/rhetoric",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика C2 · пакет 1",
+    "position": 1
+  },
+  "position": 4,
+  "title": "Метафора и рамка аргумента",
+  "description": "Читаем редакционный текст, различаем образную формулировку и конкретное основание критики.",
+  "level": "C2",
+  "objectives": [
+    "Интерпретировать метафору через описанную ситуацию",
+    "Различать смену критерия и нормальное уточнение"
+  ],
+  "notes": [
+    "Move the goalposts означает менять критерии так, что достижение цели становится менее доступным.",
+    "Метафора сама по себе не доказывает мотив; нужно смотреть, какую последовательность действий описывает автор."
+  ],
+  "skills": ["reading", "vocabulary", "grammar"],
+  "estimated_minutes": 12,
+  "prerequisites": ["c2/counterarguments"],
+  "lexicon": [
+    {
+      "en": "move the goalposts",
+      "ru": "менять критерии достижения цели"
+    },
+    {
+      "en": "yardstick",
+      "ru": "мерило, критерий оценки"
+    },
+    {
+      "en": "pretext",
+      "ru": "предлог, отговорка"
+    },
+    {
+      "en": "rationale",
+      "ru": "обоснование"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "prompt": "Что конкретно поддерживает метафору moving the goalposts?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The panel merely repeated an unchanged criterion."
+          },
+          {
+            "id": "o2",
+            "label": "The metaphor proves a secret intention to favour one team."
+          },
+          {
+            "id": "o3",
+            "label": "A substantial new requirement was introduced after applications had relied on the original criteria."
+          }
+        ],
+        "passage": "The editorial accuses the funding panel of “moving the goalposts”. Applicants were first told that proposals would be judged on their potential public benefit. After the shortlist was announced, the panel introduced a requirement for an existing commercial partner, which several shortlisted teams could not meet within the remaining week. The writer distinguishes this change from a routine clarification of ambiguous wording: it added a substantial condition after applicants had acted on the published criteria. The metaphor draws attention to that sequence. It does not, by itself, prove that the panel intended to favour a particular team, and the editorial supplies no evidence for such a motive. A reader can accept the procedural criticism without endorsing an allegation that has not been made or substantiated."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "A substantial new requirement was introduced after applications had relied on the original criteria.",
+      "explanation": "Основание — новая существенная обязанность после начала отбора. Мотив фаворитизма текстом не доказан.",
+      "key": "e01"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово для критерия оценки, не для оправдания.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "afterthought"
+          },
+          {
+            "id": "o2",
+            "label": "pretext"
+          },
+          {
+            "id": "o3",
+            "label": "yardstick"
+          }
+        ],
+        "sentence": "Public benefit was supposed to be the principal ___ for assessing proposals."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "yardstick",
+      "explanation": "Yardstick — мерило или критерий; pretext — предлог/отговорка.",
+      "key": "e02"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи процедурную критику без неподтверждённого обвинения в мотиве.",
+      "public_payload": {
+        "source": "Изменение ставит под вопрос справедливость процедуры, но не доказывает фаворитизм."
+      },
+      "answer_key": {
+        "accepted": [
+          "The change calls the fairness of the procedure into question, but it does not prove favouritism.",
+          "The change raises questions about the fairness of the process, but it does not demonstrate favoritism."
+        ]
+      },
+      "reference_answer": "The change calls the fairness of the procedure into question, but it does not prove favouritism.",
+      "incorrect_answer": "The change proves that the panel secretly favoured one team.",
+      "editorial_answer": "The change calls the fairness of the procedure into question, but it does not prove favouritism.",
+      "explanation": "Сохраняется различие между сомнением в процедуре и недоказанным мотивом.",
+      "key": "e03"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери ответ на чрезмерное прочтение метафоры.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It criticises the changing criteria; the motive would require separate evidence."
+          },
+          {
+            "id": "o2",
+            "label": "No, it means the panel physically moved sports equipment."
+          },
+          {
+            "id": "o3",
+            "label": "Yes, any metaphor establishes a criminal motive."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Reader",
+            "text": "So “moving the goalposts” proves that the panel was corrupt?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It criticises the changing criteria; the motive would require separate evidence.",
+      "explanation": "Образ описывает процедуру; мотив требует отдельных данных. Буквальное спортивное чтение также неверно.",
+      "key": "e04"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери два признака внимательного критического прочтения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Treating every vivid metaphor as independent proof."
+          },
+          {
+            "id": "o2",
+            "label": "Separating an observable sequence from an inferred motive."
+          },
+          {
+            "id": "o3",
+            "label": "Checking whether the new requirement changes substance or only clarifies wording."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o2", "o3"]
+      },
+      "reference_answer": ["o3", "o2"],
+      "incorrect_answer": ["o1"],
+      "editorial_answer": "Separating an observable sequence from an inferred motive.; Checking whether the new requirement changes substance or only clarifies wording.",
+      "explanation": "Образность не заменяет проверку фактов; последовательность и мотив — разные уровни утверждения.",
+      "key": "e05"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь согласование в формальном аргументе.",
+      "public_payload": {
+        "sentence": "The introduction of additional criteria undermine confidence in the procedure."
+      },
+      "answer_key": {
+        "accepted": [
+          "The introduction of additional criteria undermines confidence in the procedure."
+        ]
+      },
+      "reference_answer": "The introduction of additional criteria undermines confidence in the procedure.",
+      "incorrect_answer": "The additional criteria guarantee confidence in the procedure.",
+      "editorial_answer": "The introduction of additional criteria undermines confidence in the procedure.",
+      "explanation": "Главное подлежащее — introduction в единственном числе, поэтому undermines; criteria не определяет согласование.",
+      "key": "e06"
+    },
+    {
+      "kind": "synonym_antonym",
+      "prompt": "Выбери ближайший синоним substantiated для обвинения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "merely repeated"
+          },
+          {
+            "id": "o2",
+            "label": "supported by evidence"
+          },
+          {
+            "id": "o3",
+            "label": "deliberately vague"
+          }
+        ],
+        "word": "substantiated",
+        "relation": "synonym"
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "supported by evidence",
+      "explanation": "Substantiated означает подкреплённый доказательствами, а не просто повторённый.",
+      "key": "e07"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери ограниченный вывод о процедуре и мотиве.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "not"
+          },
+          {
+            "id": "t2",
+            "label": "claim"
+          },
+          {
+            "id": "t3",
+            "label": "sequence"
+          },
+          {
+            "id": "t4",
+            "label": "a"
+          },
+          {
+            "id": "t5",
+            "label": "definitive"
+          },
+          {
+            "id": "t6",
+            "label": "procedural"
+          },
+          {
+            "id": "t7",
+            "label": "supports"
+          },
+          {
+            "id": "t8",
+            "label": "a"
+          },
+          {
+            "id": "t9",
+            "label": "about"
+          },
+          {
+            "id": "t10",
+            "label": "criticism,"
+          },
+          {
+            "id": "t11",
+            "label": "The"
+          },
+          {
+            "id": "t12",
+            "label": "motive."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t11",
+          "t3",
+          "t7",
+          "t8",
+          "t6",
+          "t10",
+          "t1",
+          "t4",
+          "t5",
+          "t2",
+          "t9",
+          "t12"
+        ]
+      },
+      "reference_answer": [
+        "t11",
+        "t3",
+        "t7",
+        "t8",
+        "t6",
+        "t10",
+        "t1",
+        "t4",
+        "t5",
+        "t2",
+        "t9",
+        "t12"
+      ],
+      "incorrect_answer": [
+        "t3",
+        "t7",
+        "t8",
+        "t6",
+        "t10",
+        "t1",
+        "t4",
+        "t5",
+        "t2",
+        "t9",
+        "t12",
+        "t11"
+      ],
+      "editorial_answer": "The sequence supports a procedural criticism, not a definitive claim about motive.",
+      "explanation": "Not противопоставляет две силы вывода: процедурное основание и недоказанный мотив.",
+      "key": "e08"
+    }
+  ]
+}

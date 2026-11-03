@@ -1,0 +1,262 @@
+{
+  "key": "b2/reporting",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика B2 · пакет 1",
+    "position": 1
+  },
+  "position": 2,
+  "title": "Сообщения и осторожные выводы",
+  "description": "Передаём чужие сообщения и отличаем подтверждённый факт от сообщения о нём.",
+  "level": "B2",
+  "objectives": [
+    "Использовать reporting passive",
+    "Сохранять источник и степень уверенности"
+  ],
+  "notes": [
+    "The company is said to … передаёт распространённое сообщение, а не личное подтверждение автора.",
+    "В пересказе из прошлого reported speech может требовать сдвига времени, если ситуация относится к тому прошлому контексту."
+  ],
+  "skills": ["vocabulary", "grammar", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b2/hypotheses"],
+  "lexicon": [
+    {
+      "en": "reportedly",
+      "ru": "по сообщениям"
+    },
+    {
+      "en": "claim",
+      "ru": "утверждать"
+    },
+    {
+      "en": "deny",
+      "ru": "отрицать"
+    },
+    {
+      "en": "evidence",
+      "ru": "доказательства, данные"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как грамматически передать «Считается, что компания прибыльна»?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The company believes to be profitable."
+          },
+          {
+            "id": "o2",
+            "label": "The company is believe profitable."
+          },
+          {
+            "id": "o3",
+            "label": "The company is believed to be profitable."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The company is believed to be profitable.",
+      "explanation": "Reporting passive: is believed + to be. Это сообщение об убеждении, а не гарантия прибыли.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни передачу сообщения об открытии здания.",
+      "public_payload": {
+        "sentence": "The new centre is expected ___ open in June."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "The new centre is expected to open in June.",
+      "explanation": "После is expected для действия используется инфинитив с to.",
+      "key": "e02"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что читатель вправе считать подтверждённым?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The town has definitely been selected."
+          },
+          {
+            "id": "o2",
+            "label": "The company is considering possible locations."
+          },
+          {
+            "id": "o3",
+            "label": "Construction will certainly start next month."
+          }
+        ],
+        "passage": "A local newspaper reports that a manufacturer may open a new plant near the town. The company has confirmed that it is examining several possible locations, but it has not announced a final decision. The council says the project could create jobs if it goes ahead. An anonymous source claims that construction will begin next month, yet no planning application has been published. The article therefore distinguishes official statements from an unverified prediction."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The company is considering possible locations.",
+      "explanation": "Официально подтверждено только рассмотрение площадок. Срок строительства приписан анонимному источнику и не проверен.",
+      "key": "e03"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи сообщение, сохранив его осторожный характер.",
+      "public_payload": {
+        "source": "Сообщается, что проект задерживается."
+      },
+      "answer_key": {
+        "accepted": [
+          "The project is reported to be delayed.",
+          "It is reported that the project is delayed."
+        ]
+      },
+      "reference_answer": "The project is reported to be delayed.",
+      "incorrect_answer": "The project is definitely cancelled.",
+      "editorial_answer": "The project is reported to be delayed.",
+      "explanation": "Reported передаёт источник сообщения; definitely cancelled добавляет неподтверждённую отмену.",
+      "key": "e04"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, которое явно указывает на источник сообщения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "reportedly"
+          },
+          {
+            "id": "o2",
+            "label": "personally"
+          },
+          {
+            "id": "o3",
+            "label": "certainly"
+          }
+        ],
+        "sentence": "The director has ___ resigned, although the company has not confirmed the news."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "reportedly",
+      "explanation": "Reportedly — по сообщениям; certainly выражает уверенность, а personally — личную позицию.",
+      "key": "e05"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь форму пассива.",
+      "public_payload": {
+        "sentence": "The decision was announce yesterday."
+      },
+      "answer_key": {
+        "accepted": ["The decision was announced yesterday."]
+      },
+      "reference_answer": "The decision was announced yesterday.",
+      "incorrect_answer": "The decision will be announced tomorrow.",
+      "editorial_answer": "The decision was announced yesterday.",
+      "explanation": "Пассив прошедшего времени: was + announced. Нельзя менять yesterday на tomorrow.",
+      "key": "e06"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери сообщение о предполагаемом прошлом событии.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "He"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          },
+          {
+            "id": "t3",
+            "label": "have"
+          },
+          {
+            "id": "t4",
+            "label": "left"
+          },
+          {
+            "id": "t5",
+            "label": "said"
+          },
+          {
+            "id": "t6",
+            "label": "country."
+          },
+          {
+            "id": "t7",
+            "label": "to"
+          },
+          {
+            "id": "t8",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t8", "t5", "t7", "t3", "t4", "t2", "t6"]
+      },
+      "reference_answer": ["t1", "t8", "t5", "t7", "t3", "t4", "t2", "t6"],
+      "incorrect_answer": ["t8", "t5", "t7", "t3", "t4", "t2", "t6", "t1"],
+      "editorial_answer": "He is said to have left the country.",
+      "explanation": "To have left показывает, что предполагаемое отбытие предшествует нынешнему сообщению.",
+      "key": "e07"
+    },
+    {
+      "kind": "synonym_antonym",
+      "prompt": "Выбери антоним confirm в контексте истинности утверждения.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "refute"
+          },
+          {
+            "id": "o2",
+            "label": "corroborate"
+          },
+          {
+            "id": "o3",
+            "label": "verify"
+          }
+        ],
+        "word": "confirm",
+        "relation": "antonym"
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "refute",
+      "explanation": "Refute — опровергать; verify и corroborate направлены на проверку или подтверждение.",
+      "key": "e08"
+    }
+  ]
+}

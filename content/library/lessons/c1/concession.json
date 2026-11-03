@@ -1,0 +1,365 @@
+{
+  "key": "c1/concession",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика C1 · пакет 1",
+    "position": 1
+  },
+  "position": 5,
+  "title": "Уступка без потери позиции",
+  "description": "Строим аргумент, который признаёт ограничение, но сохраняет основную обоснованную позицию.",
+  "level": "C1",
+  "objectives": [
+    "Различать уступку, условие и контраст",
+    "Использовать even if, whereas и nonetheless"
+  ],
+  "notes": [
+    "Even if вводит условие, которое не меняет главный вывод; оно не подтверждает, что условие выполнено.",
+    "Whereas сопоставляет разные положения дел; nonetheless сохраняет вывод вопреки названному ограничению."
+  ],
+  "skills": ["vocabulary", "reading", "grammar"],
+  "estimated_minutes": 12,
+  "prerequisites": ["c1/evidence"],
+  "lexicon": [
+    {
+      "en": "nonetheless",
+      "ru": "тем не менее"
+    },
+    {
+      "en": "whereas",
+      "ru": "тогда как"
+    },
+    {
+      "en": "concede",
+      "ru": "признавать довод или уступать"
+    },
+    {
+      "en": "feasibility",
+      "ru": "осуществимость"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери связку контраста между двумя подходами.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Whereas"
+          },
+          {
+            "id": "o2",
+            "label": "Unless"
+          },
+          {
+            "id": "o3",
+            "label": "Because of"
+          }
+        ],
+        "sentence": "___ one team prioritises speed, the other emphasises reliability."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Whereas",
+      "explanation": "Whereas сопоставляет контрастирующие позиции; because of не вводит такое придаточное.",
+      "key": "e01"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что автор признаёт, не отказываясь от предложения?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The scheme should immediately be imposed across the organisation."
+          },
+          {
+            "id": "o2",
+            "label": "Popularity alone will prove long-term feasibility."
+          },
+          {
+            "id": "o3",
+            "label": "The scheme has a real staffing cost, but a limited trial may still be worthwhile."
+          }
+        ],
+        "passage": "The committee accepts that the proposed mentoring scheme would require staff time that is already in short supply. Nonetheless, it recommends a limited trial, arguing that the current lack of support for new colleagues also has a cost. The recommendation is deliberately narrower than immediate organisation-wide adoption. Participants would be drawn from two departments, and the trial would be reviewed after one term. Even if the trial proved popular, the committee says that popularity alone would not settle the question of long-term feasibility. The argument therefore concedes a genuine resource constraint while proposing a way to gather information before making a larger commitment."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The scheme has a real staffing cost, but a limited trial may still be worthwhile.",
+      "explanation": "Автор признаёт ресурсное ограничение и предлагает небольшой проверяемый пилот, а не немедленное внедрение повсюду.",
+      "key": "e02"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни связку сохранения вывода вопреки трудности.",
+      "public_payload": {
+        "sentence": "The proposal is demanding; ___, it deserves consideration."
+      },
+      "answer_key": {
+        "accepted": ["nonetheless", "nevertheless"]
+      },
+      "reference_answer": "nonetheless",
+      "incorrect_answer": "therefore",
+      "editorial_answer": "The proposal is demanding; nonetheless, it deserves consideration.",
+      "explanation": "Nonetheless / nevertheless — тем не менее. Therefore выражало бы следствие, а не уступку.",
+      "key": "e03"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи условие, которое не меняет решения.",
+      "public_payload": {
+        "source": "Даже если расходы возрастут, мы не откажемся от проверки безопасности."
+      },
+      "answer_key": {
+        "accepted": [
+          "Even if costs rise, we will not abandon the safety review.",
+          "We will not abandon the safety review even if costs increase."
+        ]
+      },
+      "reference_answer": "Even if costs rise, we will not abandon the safety review.",
+      "incorrect_answer": "Because costs have risen, we have abandoned the safety review.",
+      "editorial_answer": "Even if costs rise, we will not abandon the safety review.",
+      "explanation": "Even if не утверждает, что расходы уже выросли, и сохраняет отрицание will not abandon.",
+      "key": "e04"
+    },
+    {
+      "kind": "single_choice",
+      "prompt": "Что подразумевает Even if the trial succeeds, further evaluation will be needed?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Further evaluation will be unnecessary after success."
+          },
+          {
+            "id": "o2",
+            "label": "Success would not remove the need for further evaluation."
+          },
+          {
+            "id": "o3",
+            "label": "The trial has already succeeded."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Success would not remove the need for further evaluation.",
+      "explanation": "Even if представляет допущение, при котором необходимость оценки сохраняется.",
+      "key": "e05"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь структуру уступки после in spite of.",
+      "public_payload": {
+        "sentence": "In spite of the scheme was popular, its cost remained uncertain."
+      },
+      "answer_key": {
+        "accepted": [
+          "Although the scheme was popular, its cost remained uncertain.",
+          "In spite of the scheme’s popularity, its cost remained uncertain."
+        ]
+      },
+      "reference_answer": "Although the scheme was popular, its cost remained uncertain.",
+      "incorrect_answer": "Because the scheme was unpopular, its cost was known.",
+      "editorial_answer": "Although the scheme was popular, its cost remained uncertain.",
+      "explanation": "In spite of требует именной группы; although вводит придаточное. Исходная неопределённость затрат сохраняется.",
+      "key": "e06"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери осторожную уступительную рекомендацию.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "trial"
+          },
+          {
+            "id": "t2",
+            "label": "still"
+          },
+          {
+            "id": "t3",
+            "label": "limited,"
+          },
+          {
+            "id": "t4",
+            "label": "be"
+          },
+          {
+            "id": "t5",
+            "label": "evidence"
+          },
+          {
+            "id": "t6",
+            "label": "is"
+          },
+          {
+            "id": "t7",
+            "label": "While"
+          },
+          {
+            "id": "t8",
+            "label": "small"
+          },
+          {
+            "id": "t9",
+            "label": "the"
+          },
+          {
+            "id": "t10",
+            "label": "may"
+          },
+          {
+            "id": "t11",
+            "label": "a"
+          },
+          {
+            "id": "t12",
+            "label": "justified."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t7",
+          "t9",
+          "t5",
+          "t6",
+          "t3",
+          "t11",
+          "t8",
+          "t1",
+          "t10",
+          "t2",
+          "t4",
+          "t12"
+        ]
+      },
+      "reference_answer": [
+        "t7",
+        "t9",
+        "t5",
+        "t6",
+        "t3",
+        "t11",
+        "t8",
+        "t1",
+        "t10",
+        "t2",
+        "t4",
+        "t12"
+      ],
+      "incorrect_answer": [
+        "t9",
+        "t5",
+        "t6",
+        "t3",
+        "t11",
+        "t8",
+        "t1",
+        "t10",
+        "t2",
+        "t4",
+        "t12",
+        "t7"
+      ],
+      "editorial_answer": "While the evidence is limited, a small trial may still be justified.",
+      "explanation": "While здесь уступительное; may still сохраняет ограниченный, а не категоричный вывод.",
+      "key": "e07"
+    },
+    {
+      "kind": "unit_test",
+      "prompt": "Проверь точность академической и профессиональной речи C1.",
+      "public_payload": {
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "Выбери корректную инверсию.",
+            "options": [
+              {
+                "id": "o1",
+                "label": "Only then did we understand the issue."
+              },
+              {
+                "id": "o2",
+                "label": "Only then we did understood the issue."
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "prompt": "Какой вывод осторожнее?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "The findings prove every possible causal link."
+              },
+              {
+                "id": "o2",
+                "label": "The findings may indicate an association."
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "prompt": "Как читать even if?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "It introduces a condition that does not alter the main conclusion."
+              },
+              {
+                "id": "o2",
+                "label": "It confirms that the condition has definitely occurred."
+              }
+            ]
+          }
+        ]
+      },
+      "answer_key": {
+        "answers": {
+          "q1": "o1",
+          "q2": "o2",
+          "q3": "o1"
+        },
+        "explanations": {
+          "q1": "После Only then нужна инверсия did we understand.",
+          "q2": "May indicate соразмеряет уверенность ограниченным данным.",
+          "q3": "Even if не утверждает фактическое выполнение условия."
+        }
+      },
+      "reference_answer": {
+        "q1": "o1",
+        "q2": "o2",
+        "q3": "o1"
+      },
+      "incorrect_answer": {
+        "q1": "o2",
+        "q2": "o2",
+        "q3": "o1"
+      },
+      "editorial_answer": "Only then did we understand the issue.; The findings may indicate an association.; It introduces a condition that does not alter the main conclusion.",
+      "explanation": "Контрольный блок засчитывается при всех верных ответах. Разбор каждого вопроса показан отдельно.",
+      "key": "e08"
+    }
+  ]
+}

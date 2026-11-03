@@ -1,0 +1,315 @@
+{
+  "key": "a2/feeling-unwell",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика A2 · пакет 1",
+    "position": 1
+  },
+  "position": 5,
+  "title": "Самочувствие и простые советы",
+  "description": "Описываем обычные симптомы и понимаем вежливые бытовые советы.",
+  "level": "A2",
+  "objectives": [
+    "Использовать have a headache и feel tired",
+    "Давать простой совет с should"
+  ],
+  "notes": [
+    "I have a headache — у меня болит голова.",
+    "Should + начальная форма выражает совет; это языковая практика, а не медицинская консультация."
+  ],
+  "skills": ["vocabulary", "grammar", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a2/shopping"],
+  "lexicon": [
+    {
+      "en": "headache",
+      "ru": "головная боль"
+    },
+    {
+      "en": "tired",
+      "ru": "уставший"
+    },
+    {
+      "en": "appointment",
+      "ru": "запись на приём"
+    },
+    {
+      "en": "rest",
+      "ru": "отдыхать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Как сказать «У меня болит голова»?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I do a headache."
+          },
+          {
+            "id": "o2",
+            "label": "I am a headache."
+          },
+          {
+            "id": "o3",
+            "label": "I have a headache."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "I have a headache.",
+      "explanation": "В стандартном выражении о головной боли используется have a headache.",
+      "key": "e01"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери грамматически правильный совет уставшему человеку.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "should resting"
+          },
+          {
+            "id": "o2",
+            "label": "should to rest"
+          },
+          {
+            "id": "o3",
+            "label": "should rest"
+          }
+        ],
+        "sentence": "You look tired. You ___."
+      },
+      "answer_key": {
+        "value": "o3"
+      },
+      "reference_answer": "o3",
+      "incorrect_answer": "o1",
+      "editorial_answer": "should rest",
+      "explanation": "После should нужна начальная форма без to.",
+      "key": "e02"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни просьбу записать на приём.",
+      "public_payload": {
+        "sentence": "I would like to make an ___."
+      },
+      "answer_key": {
+        "accepted": ["appointment"]
+      },
+      "reference_answer": "appointment",
+      "incorrect_answer": "apartment",
+      "editorial_answer": "I would like to make an appointment.",
+      "explanation": "Appointment — запись на приём; apartment — квартира.",
+      "key": "e03"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери ответ на вопрос о самочувствии.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "I feel a little better, thanks."
+          },
+          {
+            "id": "o2",
+            "label": "It costs six pounds."
+          },
+          {
+            "id": "o3",
+            "label": "I am at seven o’clock."
+          }
+        ],
+        "lines": [
+          {
+            "speaker": "Friend",
+            "text": "How are you feeling today?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "I feel a little better, thanks.",
+      "explanation": "Вопрос о самочувствии требует ответа о состоянии, а не цене или времени.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда назначен приём Норы?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Tuesday at twelve."
+          },
+          {
+            "id": "o2",
+            "label": "Tuesday at ten."
+          },
+          {
+            "id": "o3",
+            "label": "Monday at ten."
+          }
+        ],
+        "passage": "Nora feels unwell and calls the clinic. She asks for an appointment on Monday, but there are no free times that day. The receptionist offers Tuesday at ten. Nora accepts and writes the time in her diary."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Tuesday at ten.",
+      "explanation": "Она принимает предложение Tuesday at ten, хотя сначала спрашивает о понедельнике.",
+      "key": "e05"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи описание состояния.",
+      "public_payload": {
+        "source": "Сегодня я чувствую себя лучше."
+      },
+      "answer_key": {
+        "accepted": ["I feel better today.", "I am feeling better today."]
+      },
+      "reference_answer": "I feel better today.",
+      "incorrect_answer": "I feel worse today.",
+      "editorial_answer": "I feel better today.",
+      "explanation": "Better — лучше; worse означает хуже и меняет смысл.",
+      "key": "e06"
+    },
+    {
+      "kind": "word_order",
+      "prompt": "Составь вежливую просьбу о записи на приём.",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t1",
+            "label": "appointment,"
+          },
+          {
+            "id": "t2",
+            "label": "make"
+          },
+          {
+            "id": "t3",
+            "label": "an"
+          },
+          {
+            "id": "t4",
+            "label": "I"
+          },
+          {
+            "id": "t5",
+            "label": "Can"
+          },
+          {
+            "id": "t6",
+            "label": "please?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t5", "t4", "t2", "t3", "t1", "t6"]
+      },
+      "reference_answer": ["t5", "t4", "t2", "t3", "t1", "t6"],
+      "incorrect_answer": ["t4", "t2", "t3", "t1", "t6", "t5"],
+      "editorial_answer": "Can I make an appointment, please?",
+      "explanation": "Make an appointment — записаться на приём; Can I …, please? — вежливая просьба.",
+      "key": "e07"
+    },
+    {
+      "kind": "unit_test",
+      "prompt": "Повтори грамматику и ситуации уровня A2.",
+      "public_payload": {
+        "questions": [
+          {
+            "id": "q1",
+            "prompt": "Какой вопрос о вчерашнем дне верен?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "Did you go out yesterday?"
+              },
+              {
+                "id": "o2",
+                "label": "Did you went out yesterday?"
+              }
+            ]
+          },
+          {
+            "id": "q2",
+            "prompt": "Как спросить количество молока?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "How many milk?"
+              },
+              {
+                "id": "o2",
+                "label": "How much milk?"
+              }
+            ]
+          },
+          {
+            "id": "q3",
+            "prompt": "Как выразить запланированное намерение?",
+            "options": [
+              {
+                "id": "o1",
+                "label": "We are going to travel."
+              },
+              {
+                "id": "o2",
+                "label": "We going travel."
+              }
+            ]
+          }
+        ]
+      },
+      "answer_key": {
+        "answers": {
+          "q1": "o1",
+          "q2": "o2",
+          "q3": "o1"
+        },
+        "explanations": {
+          "q1": "После did используется go.",
+          "q2": "Milk неисчисляемое: much.",
+          "q3": "Нужна полная конструкция are going to travel."
+        }
+      },
+      "reference_answer": {
+        "q1": "o1",
+        "q2": "o2",
+        "q3": "o1"
+      },
+      "incorrect_answer": {
+        "q1": "o2",
+        "q2": "o2",
+        "q3": "o1"
+      },
+      "editorial_answer": "Did you go out yesterday?; How much milk?; We are going to travel.",
+      "explanation": "Контрольный блок засчитывается при всех верных ответах. Разбор каждого вопроса показан отдельно.",
+      "key": "e08"
+    }
+  ]
+}

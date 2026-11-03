@@ -1,0 +1,243 @@
+{
+  "key": "c1/hedging",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика C1 · пакет 1",
+    "position": 1
+  },
+  "position": 3,
+  "title": "Осторожность научного вывода",
+  "description": "Соразмеряем силу утверждения данным и не подменяем ограниченный результат универсальным правилом.",
+  "level": "C1",
+  "objectives": [
+    "Использовать hedging для ограниченных данных",
+    "Различать may suggest и conclusively proves"
+  ],
+  "notes": [
+    "May suggest указывает на возможный вывод; conclusively proves заявляет гораздо большую силу доказательства.",
+    "Оговорка о выборке меняет область применимости вывода и не равна признанию полной бесполезности исследования."
+  ],
+  "skills": ["reading", "vocabulary", "grammar"],
+  "estimated_minutes": 12,
+  "prerequisites": ["c1/nominalisation"],
+  "lexicon": [
+    {
+      "en": "tentative",
+      "ru": "предварительный, осторожный"
+    },
+    {
+      "en": "sample",
+      "ru": "выборка"
+    },
+    {
+      "en": "generalisable",
+      "ru": "пригодный для обобщения"
+    },
+    {
+      "en": "limitation",
+      "ru": "ограничение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "reading",
+      "prompt": "Какой вывод соответствует ограничениям исследования?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The tool is proven to improve productivity in every organisation."
+          },
+          {
+            "id": "o2",
+            "label": "The results offer tentative evidence of a benefit in the tested setting."
+          },
+          {
+            "id": "o3",
+            "label": "The researchers have demonstrated that scheduling tools never work."
+          }
+        ],
+        "passage": "A small company tested a new scheduling tool with twelve volunteers from one department. Most participants reported that planning their week became easier, but there was no comparison group and the test lasted only a fortnight. The researchers wrote that the findings “may indicate a practical benefit in this setting”. They deliberately avoided claiming that the tool would improve productivity in every organisation. A larger sample would not automatically remove every limitation: differences in roles and the absence of a comparison group would still require attention. The cautious wording therefore reflects the design of the study rather than a desire to conceal an unfavourable result."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The results offer tentative evidence of a benefit in the tested setting.",
+      "explanation": "Ограниченная добровольная выборка без группы сравнения поддерживает лишь осторожный контекстный вывод.",
+      "key": "e01"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери формулировку, соразмерную предварительным данным.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "may suggest"
+          },
+          {
+            "id": "o2",
+            "label": "conclusively prove"
+          },
+          {
+            "id": "o3",
+            "label": "inevitably guarantee"
+          }
+        ],
+        "sentence": "These preliminary observations ___ that further investigation is worthwhile."
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "may suggest",
+      "explanation": "May suggest сохраняет предварительный характер наблюдения.",
+      "key": "e02"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни оговорку об ограниченной выборке.",
+      "public_payload": {
+        "sentence": "The findings should be interpreted ___ caution."
+      },
+      "answer_key": {
+        "accepted": ["with"]
+      },
+      "reference_answer": "with",
+      "incorrect_answer": "without",
+      "editorial_answer": "The findings should be interpreted with caution.",
+      "explanation": "With caution — с осторожностью; without caution означало бы противоположный подход.",
+      "key": "e03"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи осторожный вывод, не усиливая его.",
+      "public_payload": {
+        "source": "Результаты могут указывать на связь, но не доказывают причинность."
+      },
+      "answer_key": {
+        "accepted": [
+          "The results may indicate an association, but they do not prove causation.",
+          "The findings may suggest an association, but they do not demonstrate causation."
+        ]
+      },
+      "reference_answer": "The results may indicate an association, but they do not prove causation.",
+      "incorrect_answer": "The results prove that one factor causes the other.",
+      "editorial_answer": "The results may indicate an association, but they do not prove causation.",
+      "explanation": "Association — связь; causation — причинность. Оговорка об отсутствии доказательства обязательна.",
+      "key": "e04"
+    },
+    {
+      "kind": "multiple_choice",
+      "prompt": "Выбери две формулировки с явно ограниченной областью вывода.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The pattern must occur in every population."
+          },
+          {
+            "id": "o2",
+            "label": "In this sample, the pattern was observed twice."
+          },
+          {
+            "id": "o3",
+            "label": "The findings may not generalise to other settings."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["o2", "o3"]
+      },
+      "reference_answer": ["o3", "o2"],
+      "incorrect_answer": ["o1"],
+      "editorial_answer": "In this sample, the pattern was observed twice.; The findings may not generalise to other settings.",
+      "explanation": "In this sample и may not generalise явно ограничивают область применимости.",
+      "key": "e05"
+    },
+    {
+      "kind": "response_choice",
+      "prompt": "Ответь коллеге, который чрезмерно обобщил результат.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "No result can ever provide any useful information."
+          },
+          {
+            "id": "o2",
+            "label": "The evidence is promising, but the design does not support that broad a claim."
+          },
+          {
+            "id": "o3",
+            "label": "Exactly; twelve volunteers prove every possible outcome."
+          }
+        ],
+        "context": "So this proves that the tool will work for everyone, doesn’t it?"
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "The evidence is promising, but the design does not support that broad a claim.",
+      "explanation": "Первый ответ признаёт ценность данных и ограничивает силу вывода без другой крайности.",
+      "key": "e06"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Согласуй глагол с множественным findings, сохранив осторожность.",
+      "public_payload": {
+        "sentence": "These findings suggests that the approach may help."
+      },
+      "answer_key": {
+        "accepted": ["These findings suggest that the approach may help."]
+      },
+      "reference_answer": "These findings suggest that the approach may help.",
+      "incorrect_answer": "These findings prove that the approach always works.",
+      "editorial_answer": "These findings suggest that the approach may help.",
+      "explanation": "С findings нужен suggest. Замена на prove и always необоснованно усиливает вывод.",
+      "key": "e07"
+    },
+    {
+      "kind": "synonym_antonym",
+      "prompt": "Выбери ближайший синоним tentative для вывода.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "provisional"
+          },
+          {
+            "id": "o2",
+            "label": "irrelevant"
+          },
+          {
+            "id": "o3",
+            "label": "conclusive"
+          }
+        ],
+        "word": "tentative",
+        "relation": "synonym"
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "provisional",
+      "explanation": "Tentative и provisional обозначают предварительный характер; conclusive означает окончательный.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "key": "a2/shopping",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-01",
+    "title": "Практика A2 · пакет 1",
+    "position": 1
+  },
+  "position": 4,
+  "title": "Покупки и количество",
+  "description": "Спрашиваем о количестве, читаем список покупок и используем much/many.",
+  "level": "A2",
+  "objectives": [
+    "Различать исчисляемые и неисчисляемые существительные",
+    "Задавать вопросы How much / How many"
+  ],
+  "notes": [
+    "Many употребляется с исчисляемыми предметами: many apples.",
+    "Much употребляется с неисчисляемым: much milk. Для порций можно назвать bottles или cups."
+  ],
+  "skills": ["vocabulary", "grammar", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a2/plans"],
+  "lexicon": [
+    {
+      "en": "bottle",
+      "ru": "бутылка"
+    },
+    {
+      "en": "receipt",
+      "ru": "чек"
+    },
+    {
+      "en": "enough",
+      "ru": "достаточно"
+    },
+    {
+      "en": "a few",
+      "ru": "несколько (с исчисляемыми)"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "context_choice",
+      "prompt": "Спроси количество яблок.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "many"
+          },
+          {
+            "id": "o2",
+            "label": "much"
+          },
+          {
+            "id": "o3",
+            "label": "any"
+          }
+        ],
+        "sentence": "How ___ apples do we need?"
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "many",
+      "explanation": "Apples можно посчитать, поэтому how many.",
+      "key": "e01"
+    },
+    {
+      "kind": "grammar",
+      "prompt": "Выбери правильную фразу о молоке в холодильнике.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "There isn’t many milks."
+          },
+          {
+            "id": "o2",
+            "label": "There isn’t much milk."
+          },
+          {
+            "id": "o3",
+            "label": "There aren’t many milk."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "There isn’t much milk.",
+      "explanation": "Milk неисчисляемое, поэтому much milk и isn’t.",
+      "key": "e02"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни просьбу о нескольких помидорах.",
+      "public_payload": {
+        "sentence": "We need a ___ tomatoes for the salad."
+      },
+      "answer_key": {
+        "accepted": ["few"]
+      },
+      "reference_answer": "few",
+      "incorrect_answer": "little",
+      "editorial_answer": "We need a few tomatoes for the salad.",
+      "explanation": "A few употребляется с исчисляемым множественным tomatoes; a little — с неисчисляемым.",
+      "key": "e03"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Сопоставь единицы и продукты.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1",
+            "label": "a bottle of water"
+          },
+          {
+            "id": "l2",
+            "label": "a loaf of bread"
+          },
+          {
+            "id": "l3",
+            "label": "a kilo of rice"
+          },
+          {
+            "id": "l4",
+            "label": "a cup of tea"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1",
+            "label": "бутылка воды"
+          },
+          {
+            "id": "r2",
+            "label": "буханка хлеба"
+          },
+          {
+            "id": "r3",
+            "label": "килограмм риса"
+          },
+          {
+            "id": "r4",
+            "label": "чашка чая"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1": "r1",
+          "l2": "r2",
+          "l3": "r3",
+          "l4": "r4"
+        }
+      },
+      "reference_answer": {
+        "l1": "r1",
+        "l2": "r2",
+        "l3": "r3",
+        "l4": "r4"
+      },
+      "incorrect_answer": {
+        "l1": "r2",
+        "l2": "r3",
+        "l3": "r4",
+        "l4": "r1"
+      },
+      "editorial_answer": "a bottle of water — бутылка воды; a loaf of bread — буханка хлеба; a kilo of rice — килограмм риса; a cup of tea — чашка чая",
+      "explanation": "Слова bottle, loaf, kilo и cup позволяют назвать измеримую порцию продукта.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что ещё нужно купить для ужина?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Milk."
+          },
+          {
+            "id": "o2",
+            "label": "Eggs."
+          },
+          {
+            "id": "o3",
+            "label": "Rice."
+          }
+        ],
+        "passage": "Maya checks the kitchen before she goes shopping. There are a few potatoes and plenty of rice, but there are no eggs. She writes eggs on her list. She does not buy any milk because there is enough in the fridge."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Eggs.",
+      "explanation": "Яиц нет, и Maya записывает eggs в список. Риса и молока достаточно.",
+      "key": "e05"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь вопрос о количестве воды.",
+      "public_payload": {
+        "sentence": "How many water do you drink?"
+      },
+      "answer_key": {
+        "accepted": ["How much water do you drink?"]
+      },
+      "reference_answer": "How much water do you drink?",
+      "incorrect_answer": "How much tea do you drink?",
+      "editorial_answer": "How much water do you drink?",
+      "explanation": "С неисчисляемым water нужно much. Tea изменило бы предмет вопроса.",
+      "key": "e06"
+    },
+    {
+      "kind": "response_choice",
+      "prompt": "Попроси чек после оплаты.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The receipt is hungry."
+          },
+          {
+            "id": "o2",
+            "label": "Could I have the receipt, please?"
+          },
+          {
+            "id": "o3",
+            "label": "I am a receipt."
+          }
+        ],
+        "context": "That’s eight pounds. Thank you."
+      },
+      "answer_key": {
+        "value": "o2"
+      },
+      "reference_answer": "o2",
+      "incorrect_answer": "o1",
+      "editorial_answer": "Could I have the receipt, please?",
+      "explanation": "Receipt — чек; Could I have …? — вежливая просьба.",
+      "key": "e07"
+    },
+    {
+      "kind": "translation",
+      "prompt": "Переведи сообщение о достаточном количестве.",
+      "public_payload": {
+        "source": "У нас достаточно хлеба."
+      },
+      "answer_key": {
+        "accepted": ["We have enough bread.", "We've got enough bread."]
+      },
+      "reference_answer": "We have enough bread.",
+      "incorrect_answer": "We do not have any bread.",
+      "editorial_answer": "We have enough bread.",
+      "explanation": "Enough bread — достаточно хлеба; отрицание any bread означало бы, что хлеба нет.",
+      "key": "e08"
+    }
+  ]
+}
