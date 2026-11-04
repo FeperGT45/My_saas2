@@ -7,6 +7,7 @@ import { Card } from '@/components/ui/game';
 import { Button } from '@/components/ui/button';
 import { useTelegram } from '@/features/telegram/provider';
 import { usePremium } from './use-premium';
+import { PremiumShowcase } from './premium-showcase';
 
 type Features = {
   accuracy: number;
@@ -32,6 +33,7 @@ export function PremiumPanel() {
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
   const [agreed, setAgreed] = useState(false);
+  const [notice, setNotice] = useState('');
   const request = useRef<string | null>(null);
   useEffect(() => {
     if (
@@ -78,7 +80,14 @@ export function PremiumPanel() {
         if (response.status === 409) request.current = null;
         throw new Error(data.error);
       }
-      await sdk.invoice.openUrl(data.invoiceUrl);
+      const outcome = await sdk.invoice.openUrl(data.invoiceUrl);
+      setNotice(
+        outcome === 'paid'
+          ? 'Telegram сообщил об оплате. Ожидаем подтверждение сервера.'
+          : outcome === 'failed'
+            ? 'Telegram не подтвердил оплату. Проверь статус перед повтором.'
+            : 'Окно оплаты закрыто. Можно проверить статус Premium.',
+      );
       refresh();
     } catch (e) {
       setError(e instanceof Error ? e.message : 'Оплата недоступна.');
@@ -138,6 +147,7 @@ export function PremiumPanel() {
             </p>
           )}
       </Card>
+      <PremiumShowcase />
       <div className="my-5 space-y-4">
         {[
           {
@@ -157,6 +167,8 @@ export function PremiumPanel() {
               'Полный каталог интерактивных историй',
               'Персональная тренировка слабых тем',
               'Недельные испытания и косметические награды',
+              'Темы, рамки, значки и эффекты завершения',
+              'Расширенный адаптивный тест из 36 вопросов',
               'Аналитика английского за 7, 30 и 90 дней',
               'Дополнительные задания при наличии материалов',
               'Персональный учебный план на 7 дней',
@@ -201,6 +213,13 @@ export function PremiumPanel() {
           владельцем.
         </p>
       )}
+      {status?.amount !== null &&
+        status?.amount !== undefined &&
+        !status.enabled && (
+          <p className="mb-4 text-center font-bold">
+            Настроенная цена: {status.amount} ⭐ за 30 дней · покупки выключены
+          </p>
+        )}
       {status?.enabled && !status.premium && (
         <>
           <p className="mb-3 text-center text-lg font-bold text-amber-200">
@@ -245,6 +264,27 @@ export function PremiumPanel() {
         Доступ появляется только после подтверждения сервером. Закрытие
         платёжного окна само по себе не активирует Premium.
       </p>
+      {notice && (
+        <p role="status" className="my-3 text-sm">
+          {notice}
+        </p>
+      )}
+      <Card className="mt-4">
+        <h2 className="font-bold">Продление, отмена и возврат</h2>
+        <p className="text-muted-foreground mt-2 text-sm">
+          Это разовая покупка доступа на 30 дней. Автоматического списания и
+          автопродления нет, поэтому отключать его не требуется. После окончания
+          доступ становится Free, прогресс сохраняется. Продлить доступ можно
+          новой подтверждённой покупкой.
+        </p>
+        <p className="text-muted-foreground mt-2 text-sm">
+          По вопросам оплаты и возврата обратись в поддержку Voklumi: команда
+          /paysupport в боте или ссылка ниже. Возврат обрабатывается сервером
+          после подтверждения Telegram. Кнопка «Проверить статус»
+          восстанавливает отображение уже подтверждённого доступа, но не создаёт
+          подписку.
+        </p>
+      </Card>
       <div className="text-primary my-4 flex flex-wrap gap-4 text-xs">
         {status?.termsUrl && (
           <a

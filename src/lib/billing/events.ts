@@ -57,7 +57,9 @@ export function parseStarsUpdate(update: unknown): Checkout | Receipt | null {
     !string(p.currency) ||
     !string(p.invoice_payload) ||
     !string(p.telegram_payment_charge_id) ||
-    p.is_recurring === true
+    p.is_recurring === true ||
+    p.is_first_recurring === true ||
+    p.subscription_expiration_date !== undefined
   )
     throw new Error('Invalid receipt');
   if (m.successful_payment && record(m.from).id !== chat.id)

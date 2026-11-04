@@ -40,6 +40,7 @@ function scenario(overrides = {}) {
         if (process.argv[3] === 'stories:check' && process.env.TEST_STORIES_FAIL) process.exit(1);
         if (process.argv[3] === 'weak:check' && process.env.TEST_WEAK_FAIL) process.exit(1);
         if (process.argv[3] === 'challenges:check' && process.env.TEST_CHALLENGES_FAIL) process.exit(1);
+        if (process.argv[3] === 'premium:expansion-check' && process.env.TEST_EXPANSION_FAIL) process.exit(1);
     `,
       { mode: 0o700 },
     );
@@ -94,6 +95,7 @@ test('production build verifies database first and uses the verified bot usernam
     { script: 'stories:check', username: 'Verified_bot' },
     { script: 'weak:check', username: 'Verified_bot' },
     { script: 'challenges:check', username: 'Verified_bot' },
+    { script: 'premium:expansion-check', username: 'Verified_bot' },
     { script: 'build:cloudflare', username: 'Verified_bot' },
   ]);
 });
@@ -213,5 +215,12 @@ test('unsafe or missing challenges schema blocks publication', () => {
   const r = scenario({ TEST_CHALLENGES_FAIL: '1' });
   assert.equal(r.status, 1);
   assert.match(r.output, /challenges:check failed/);
+  assert.ok(!r.calls.some((c) => c.script === 'build:cloudflare'));
+});
+
+test('appearance and extended assessment readiness blocks incomplete publication', () => {
+  const r = scenario({ TEST_EXPANSION_FAIL: '1' });
+  assert.equal(r.status, 1);
+  assert.match(r.output, /premium:expansion-check failed/);
   assert.ok(!r.calls.some((c) => c.script === 'build:cloudflare'));
 });

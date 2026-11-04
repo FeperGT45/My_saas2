@@ -25,6 +25,18 @@ export default function ProfilePage() {
         }
       />
       <TelegramAccount />
+      <Link
+        href="/appearance"
+        className="text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
+      >
+        Оформление интерфейса →
+      </Link>
+      <Link
+        href="/extended-test"
+        className="text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
+      >
+        Расширенный тест английского →
+      </Link>
       <ChallengeProfileStyle />
       <Link
         href="/challenges"

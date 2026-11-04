@@ -4,9 +4,11 @@ import { useState } from 'react';
 import { useTelegram } from './provider';
 import { Card } from '@/components/ui/game';
 import { Button } from '@/components/ui/button';
+import { useAppearance } from '@/features/personalization/appearance';
 export function TelegramAccount() {
   const { account, authError, refresh } = useTelegram();
   const [error, setError] = useState(false);
+  const appearance = useAppearance().data?.effective;
   if (!account)
     return authError ? (
       <Card className="mb-4">
@@ -23,8 +25,12 @@ export function TelegramAccount() {
           ? 'Локальная тестовая сессия'
           : 'Аккаунт Telegram'}
       </p>
-      <div className="flex items-center gap-3">
-        {account.avatarUrl && (
+      <div
+        className="appearance-identity flex items-center gap-3 rounded-2xl"
+        data-frame={appearance?.frame}
+        data-decoration={appearance?.decoration}
+      >
+        {account.avatarUrl ? (
           // Telegram-signed remote avatar; no server proxy or credentials sent to image host.
           // eslint-disable-next-line @next/next/no-img-element
           <img
@@ -33,11 +39,25 @@ export function TelegramAccount() {
             width={48}
             height={48}
             referrerPolicy="no-referrer"
-            className="size-12 rounded-2xl object-cover"
+            className="appearance-avatar size-12 rounded-2xl object-cover"
           />
+        ) : (
+          <span
+            className="appearance-avatar border-primary flex size-12 shrink-0 items-center justify-center rounded-2xl border-2 font-bold"
+            aria-label="Аватар"
+          >
+            {account.name.slice(0, 1).toUpperCase()}
+          </span>
         )}
         <div className="min-w-0 flex-1">
-          <p className="font-bold break-words">{account.name}</p>
+          <p className="font-bold break-words">
+            {account.name}
+            {appearance?.badge === 'star'
+              ? ' ✦'
+              : appearance?.badge === 'leaf'
+                ? ' ❧'
+                : ''}
+          </p>
           {account.telegramId && (
             <p className="text-muted-foreground text-xs">
               Telegram ID: {account.telegramId}

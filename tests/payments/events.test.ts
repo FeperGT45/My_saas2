@@ -38,6 +38,25 @@ const receipt = {
     },
   },
 };
+
+test('one-time access rejects unsupported recurring receipt metadata', () => {
+  for (const extra of [
+    { is_recurring: true },
+    { is_first_recurring: true },
+    { subscription_expiration_date: 2000000000 },
+  ])
+    assert.throws(() =>
+      parseStarsUpdate({
+        message: {
+          ...receipt.message,
+          successful_payment: {
+            ...receipt.message.successful_payment,
+            ...extra,
+          },
+        },
+      }),
+    );
+});
 test('payments are off by default and require explicit review, price and support policies', () => {
   assert.equal(billingConfiguration({}).enabled, false);
   assert.equal(billingConfiguration(config).enabled, true);

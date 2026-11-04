@@ -75,6 +75,7 @@ try {
   await run('stories:check', env);
   await run('weak:check', env);
   await run('challenges:check', env);
+  await run('premium:expansion-check', env);
   await run('build:cloudflare', env);
 } catch (error) {
   console.error(

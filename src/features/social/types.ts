@@ -2,7 +2,13 @@ export type SocialSummary = {
   scope: 'weekly' | 'global';
   weekStart: string;
   weekEnd: string;
-  entries: { rank: number; alias: string; xp: number; isMe: boolean }[];
+  entries: {
+    rank: number;
+    alias: string;
+    xp: number;
+    isMe: boolean;
+    appearance?: import('@/lib/premium/appearance').Appearance;
+  }[];
   total: number;
   offset: number;
   myPosition: number | null;

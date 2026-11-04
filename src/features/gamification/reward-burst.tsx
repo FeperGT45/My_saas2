@@ -3,6 +3,7 @@ import { motion, useReducedMotion } from 'motion/react';
 import { Coins, Sparkles, Flame, Trophy } from 'lucide-react';
 import { Card } from '@/components/ui/game';
 import type { Rewards } from './types';
+import { LessonFinishEffect } from '@/features/personalization/appearance';
 export function RewardBurst({ rewards }: { rewards?: Rewards }) {
   const reduced = useReducedMotion();
   if (!rewards || rewards.eligible === undefined) return null;
@@ -22,6 +23,7 @@ export function RewardBurst({ rewards }: { rewards?: Rewards }) {
       transition={{ duration: 0.35 }}
     >
       <Card className="border-primary/40 from-primary/15 my-4 bg-gradient-to-br to-teal-300/5 text-left">
+        <LessonFinishEffect />
         <p className="eyebrow mb-3 flex items-center gap-2">
           <Sparkles size={16} />
           Твои награды

@@ -88,6 +88,8 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 '/analytics',
                 '/dictionary',
                 '/challenges',
+                '/appearance',
+                '/extended-test',
               ].includes(path));
           return (
             <Link

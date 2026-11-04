@@ -15,6 +15,7 @@ import { useTelegram } from '@/features/telegram/provider';
 import { Card, EmptyState } from '@/components/ui/game';
 import { Button } from '@/components/ui/button';
 import type { SocialSummary } from './types';
+import { StyledIdentity } from '@/features/personalization/appearance';
 export function SocialPanel({ friends = false }: { friends?: boolean }) {
   const { account, status } = useTelegram();
   const [scope, setScope] = useState<'weekly' | 'global'>('weekly');
@@ -227,12 +228,15 @@ export function SocialPanel({ friends = false }: { friends?: boolean }) {
               <span className="text-primary min-w-7 text-sm font-bold">
                 {entry.rank}
               </span>
-              <span className="min-w-0 flex-1 text-sm font-bold break-words">
-                {entry.alias}
+              <div className="min-w-0 flex-1 text-sm font-bold break-words">
+                <StyledIdentity
+                  settings={entry.appearance}
+                  name={entry.alias}
+                />
                 {entry.isMe && (
                   <span className="text-primary ml-2 text-[10px]">ты</span>
                 )}
-              </span>
+              </div>
               <span className="shrink-0 text-xs text-teal-200">
                 {entry.xp} XP
               </span>

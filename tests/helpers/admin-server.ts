@@ -8,7 +8,9 @@ import { spawn } from 'node:child_process';
 import { generate } from 'selfsigned';
 import { createHash } from 'node:crypto';
 import { PGlite } from '@electric-sql/pglite';
-export async function adminServer(options: { currentCatalog?: boolean } = {}) {
+export async function adminServer(
+  options: { currentCatalog?: boolean; billingWebhook?: boolean } = {},
+) {
   const db = new PGlite(),
     dir = await mkdtemp(join(tmpdir(), 'voklumi-admin-'));
   const admin = 'a0000000-0000-0000-0000-000000000001',
@@ -97,7 +99,56 @@ export async function adminServer(options: { currentCatalog?: boolean } = {}) {
           const chunks: Buffer[] = [];
           for await (const chunk of req) chunks.push(Buffer.from(chunk));
           const b = JSON.parse(Buffer.concat(chunks).toString());
-          if (url.pathname === '/rest/v1/rpc/challenge_dashboard')
+          if (url.pathname === '/rest/v1/rpc/appearance_read')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.appearance_read($1) AS data',
+                [b.p_user],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/appearance_save')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.appearance_save($1,$2::jsonb,$3) AS data',
+                [b.p_user, JSON.stringify(b.p_data), b.p_version],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/extended_read')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.extended_read($1,$2) AS data',
+                [b.p_user, b.p_id],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/extended_start')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.extended_start($1,$2) AS data',
+                [b.p_user, b.p_request],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/extended_answer')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.extended_answer($1,$2,$3,$4,$5) AS data',
+                [b.p_user, b.p_id, b.p_request, b.p_question, b.p_option],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/apply_star_event')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.apply_star_event($1,$2,$3,$4,$5,$6) AS data',
+                [
+                  b.p_payload,
+                  b.p_tg,
+                  b.p_currency,
+                  b.p_amount,
+                  b.p_charge,
+                  b.p_refund,
+                ],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/challenge_dashboard')
             data = (
               await db.query<{ data: unknown }>(
                 'SELECT public.challenge_dashboard($1) AS data',
@@ -456,6 +507,12 @@ export async function adminServer(options: { currentCatalog?: boolean } = {}) {
         APP_URL: origin,
         TELEGRAM_STARS_PAYMENTS_ENABLED: 'false',
         TELEGRAM_STARS_OWNER_REVIEWED: 'false',
+        ...(options.billingWebhook
+          ? {
+              TELEGRAM_BOT_TOKEN: 'test-token-never-used-for-network',
+              TELEGRAM_WEBHOOK_SECRET: 'x'.repeat(32),
+            }
+          : {}),
       },
       stdio: 'ignore',
     },
