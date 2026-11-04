@@ -12,6 +12,12 @@ export default function LearnPage() {
       />
       <LearnerOverviewPanel mode="map" />
       <Link
+        href="/weak-training"
+        className="border-primary/30 bg-primary/10 text-primary mt-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
+      >
+        Тренировка слабых тем →
+      </Link>
+      <Link
         href="/stories"
         className="border-primary/30 bg-primary/10 text-primary mt-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
       >

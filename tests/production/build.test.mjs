@@ -38,6 +38,7 @@ function scenario(overrides = {}) {
       if (process.argv[3] === 'analytics:check' && process.env.TEST_ANALYTICS_FAIL) process.exit(1);
       if (process.argv[3] === 'dictionary:check' && process.env.TEST_DICTIONARY_FAIL) process.exit(1);
         if (process.argv[3] === 'stories:check' && process.env.TEST_STORIES_FAIL) process.exit(1);
+        if (process.argv[3] === 'weak:check' && process.env.TEST_WEAK_FAIL) process.exit(1);
     `,
       { mode: 0o700 },
     );
@@ -90,6 +91,7 @@ test('production build verifies database first and uses the verified bot usernam
     { script: 'analytics:check', username: 'Verified_bot' },
     { script: 'dictionary:check', username: 'Verified_bot' },
     { script: 'stories:check', username: 'Verified_bot' },
+    { script: 'weak:check', username: 'Verified_bot' },
     { script: 'build:cloudflare', username: 'Verified_bot' },
   ]);
 });
@@ -195,5 +197,12 @@ test('missing stories schema or catalog blocks publication', () => {
   const r = scenario({ TEST_STORIES_FAIL: '1' });
   assert.equal(r.status, 1);
   assert.match(r.output, /stories:check failed/);
+  assert.ok(!r.calls.some((c) => c.script === 'build:cloudflare'));
+});
+
+test('unsafe or missing weak training schema blocks publication', () => {
+  const r = scenario({ TEST_WEAK_FAIL: '1' });
+  assert.equal(r.status, 1);
+  assert.match(r.output, /weak:check failed/);
   assert.ok(!r.calls.some((c) => c.script === 'build:cloudflare'));
 });

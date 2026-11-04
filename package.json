@@ -58,6 +58,7 @@
     "stories:seed": "node --import tsx scripts/import-stories.ts --write-seed",
     "stories:import": "node --env-file-if-exists=.env.local --import tsx scripts/import-stories.ts --apply",
     "stories:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-stories.ts",
+    "weak:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-weak.ts",
     "dictionary:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-dictionary.ts",
     "analytics:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-analytics.ts",
     "weekly:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-weekly.ts",
