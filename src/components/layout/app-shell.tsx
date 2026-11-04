@@ -69,7 +69,9 @@ export function AppShell({ children }: { children: React.ReactNode }) {
           const active =
             path === href ||
             (href === '/learn' &&
-              ['/lesson', '/placement', '/learning-plan'].includes(path)) ||
+              ['/lesson', '/placement', '/learning-plan', '/stories'].includes(
+                path,
+              )) ||
             (href === '/courses' && path === '/library') ||
             (href === '/profile' &&
               [
