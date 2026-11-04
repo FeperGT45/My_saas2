@@ -89,7 +89,36 @@ export async function adminServer() {
           const chunks: Buffer[] = [];
           for await (const chunk of req) chunks.push(Buffer.from(chunk));
           const b = JSON.parse(Buffer.concat(chunks).toString());
-          if (url.pathname === '/rest/v1/rpc/admin_read')
+          if (url.pathname === '/rest/v1/rpc/weekly_plan_snapshot')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.weekly_plan_snapshot($1,$2,$3) AS data',
+                [b.p_user, b.p_goal, b.p_minutes],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/weekly_plan_store')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.weekly_plan_store($1,$2,$3,$4,$5::jsonb) AS data',
+                [
+                  b.p_user,
+                  b.p_id,
+                  b.p_revision,
+                  b.p_token,
+                  JSON.stringify(b.p_days),
+                ],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/weekly_plan_move') {
+            await db.query('SELECT public.weekly_plan_move($1,$2,$3,$4,$5)', [
+              b.p_user,
+              b.p_id,
+              b.p_day,
+              b.p_date,
+              b.p_revision,
+            ]);
+            data = null;
+          } else if (url.pathname === '/rest/v1/rpc/admin_read')
             data = (
               await db.query<{ data: unknown }>(
                 'SELECT public.admin_read($1,$2,$3,$4) AS data',

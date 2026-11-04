@@ -60,7 +60,10 @@ export type LearningPlan = {
 };
 const rank = (level: CefrLevel) => cefrLevels.indexOf(level);
 /** Pure, deterministic rules: no UI, clock, network, answer keys or XP writes. */
-export function recommendLearningPath(context: LearningContext): LearningPlan {
+export function recommendLearningPath(
+  context: LearningContext,
+  limit = 12,
+): LearningPlan {
   const skills = (
     ['grammar', 'vocabulary', 'reading', 'listening'] as const
   ).flatMap((skill) => {
@@ -171,7 +174,7 @@ export function recommendLearningPath(context: LearningContext): LearningPlan {
     (l.goals.includes(context.goal) ? 0 : 10) +
     (l.skills.some((s) => weak.has(s)) ? 0 : 2);
   // Topological selection preserves prerequisites; upcoming steps never imply a permanent lock.
-  while (result.items.length < 12) {
+  while (result.items.length < Math.max(1, Math.min(28, limit))) {
     const next = fresh
       .filter((l) => !planned.has(l.id) && eligible(l))
       .sort(

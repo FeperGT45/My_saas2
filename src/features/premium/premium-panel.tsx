@@ -155,7 +155,7 @@ export function PremiumPanel() {
               'Все опубликованные курсы',
               'Расширенная статистика',
               'Дополнительные задания при наличии материалов',
-              'Персональный план повторения',
+              'Персональный учебный план на 7 дней',
             ],
           },
         ].map((plan) => (
@@ -175,6 +175,9 @@ export function PremiumPanel() {
           </Card>
         ))}
       </div>
+      <Button asChild className="mb-5 w-full" variant="outline">
+        <Link href="/learning-plan">Открыть учебный план</Link>
+      </Button>
       {account?.mode !== 'telegram' && (
         <p className="text-muted-foreground my-4 text-sm">
           Войди через Telegram, чтобы проверить свой статус.
