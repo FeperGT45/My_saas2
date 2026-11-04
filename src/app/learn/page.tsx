@@ -6,8 +6,8 @@ export default function LearnPage() {
     <>
       <PageTitle
         eyebrow="Твой маршрут"
-        title="К звёздам, шаг за шагом"
-        description="Карта доступных уроков, твои результаты и следующий шаг."
+        title="Мои уроки"
+        description="Начни с рекомендованного урока или выбери тему ниже. Пройденные уроки отмечены галочкой."
       />
       <LearnerOverviewPanel mode="map" />
     </>

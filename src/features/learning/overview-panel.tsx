@@ -129,6 +129,7 @@ function AccountOverview({ mode }: { mode: 'map' | 'profile' | 'home' }) {
     );
   if (!data) return <p role="status">Загружаем твою карту и статистику…</p>;
   const stats = data.statistics;
+  if (mode === 'home' && !data.plan.level) return null;
   return (
     <div className="space-y-4">
       <button
@@ -143,7 +144,7 @@ function AccountOverview({ mode }: { mode: 'map' | 'profile' | 'home' }) {
       </button>
       <Card>
         <h2 className="font-bold">
-          {mode === 'map' ? 'Твой следующий шаг' : 'Мой учебный план'}
+          {mode === 'profile' ? 'Мой учебный план' : 'Следующий урок'}
         </h2>
         {data.next ? (
           <>
@@ -151,10 +152,10 @@ function AccountOverview({ mode }: { mode: 'map' | 'profile' | 'home' }) {
               {reasons[data.next.reason]}
             </p>
             <Link
-              className="text-primary mt-2 inline-flex min-h-12 items-center gap-2 font-bold"
+              className="bg-primary text-primary-foreground mt-3 flex min-h-12 items-center justify-center gap-2 rounded-2xl px-4 py-3 font-bold"
               href={`/lesson?lesson=${data.next.id}`}
             >
-              {data.next.title}
+              Начать: {data.next.title}
               <Play size={16} />
             </Link>
           </>
@@ -170,7 +171,7 @@ function AccountOverview({ mode }: { mode: 'map' | 'profile' | 'home' }) {
             className="text-primary inline-flex min-h-11 items-center"
             href="/placement"
           >
-            Мой английский →
+            Определить уровень →
           </Link>
           <Link
             className="text-primary inline-flex min-h-11 items-center"
@@ -191,9 +192,11 @@ function AccountOverview({ mode }: { mode: 'map' | 'profile' | 'home' }) {
         className="border-primary/30 bg-primary/10 flex min-h-14 items-center gap-3 rounded-2xl border p-4 font-bold"
       >
         <RotateCcw size={20} />
-        Повторить слова · доступно {stats.dueWords}
+        {stats.dueWords
+          ? `Повторить слова · ${stats.dueWords} на сегодня`
+          : 'Повторение слов'}
       </Link>
-      {mode !== 'map' && (
+      {mode === 'profile' && (
         <Card>
           <h2 className="font-bold">Моя статистика</h2>
           <dl className="mt-4 grid grid-cols-2 gap-4">
@@ -228,7 +231,7 @@ function AccountOverview({ mode }: { mode: 'map' | 'profile' | 'home' }) {
           </p>
         </Card>
       )}
-      {!!data.plan.skills.length && (
+      {mode !== 'home' && !!data.plan.skills.length && (
         <Card>
           <h2 className="font-bold">Навыки и рекомендуемые темы</h2>
           {data.plan.skills.map((s) => (

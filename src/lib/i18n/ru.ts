@@ -3,8 +3,8 @@ export const ru = {
   tagline: 'Маленькие шаги. Большой прогресс.',
   nav: {
     home: 'Главная',
-    learn: 'Карта',
-    courses: 'Курсы',
+    learn: 'Мои уроки',
+    courses: 'Все уроки',
     leaderboard: 'Рейтинг',
     profile: 'Профиль',
   },

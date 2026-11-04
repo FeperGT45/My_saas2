@@ -83,11 +83,11 @@ test('mobile map reflects progress, saves course choice, retries failures and cl
   });
   await page.goto('/learn');
   await expect(
-    page.getByRole('link', { name: 'Повторить слова · доступно 3' }),
+    page.getByRole('link', { name: 'Повторить слова · 3 на сегодня' }),
   ).toBeVisible();
   await expect(page.getByText('Зачтено 1 из 1')).toBeVisible();
   await expect(
-    page.getByRole('link', { name: 'Планирование поездки' }),
+    page.getByRole('link', { name: 'Начать: Планирование поездки' }),
   ).toHaveAttribute('href', `/lesson?lesson=${other}`);
   expect(
     await page.evaluate(
@@ -117,7 +117,7 @@ test('mobile map reflects progress, saves course choice, retries failures and cl
   ).toBeVisible();
   await expect(page.getByText('Заказ билета', { exact: true })).toHaveCount(0);
 });
-test('home uses evidence-based statistics and exposes no fictional XP or rank', async ({
+test('home prioritizes the next lesson and keeps detailed statistics in the profile', async ({
   page,
 }) => {
   await page.route('**/api/auth/session', (r) =>
@@ -129,24 +129,25 @@ test('home uses evidence-based statistics and exposes no fictional XP or rank', 
     r.fulfill({ json: { ...buildLearningMap(context), statistics } }),
   );
   await page.route('**/api/game', (r) =>
-    r.fulfill({
-      json: {
-        xp: 30,
-        streak: { current: 1 },
-        completedLessons: 1,
-        achievements: [],
-      },
-    }),
+    r.fulfill({ status: 503, json: { error: 'Награды временно недоступны' } }),
   );
   await page.route('**/api/placement', (r) =>
     r.fulfill({ status: 503, json: { error: 'Тест недоступен' } }),
   );
   await page.goto('/');
+  await expect(
+    page.getByRole('heading', { name: 'Следующий урок' }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('link', { name: 'Начать: Планирование поездки' }),
+  ).toHaveAttribute('href', `/lesson?lesson=${other}`);
+  await expect(page.getByText('Моя статистика', { exact: true })).toHaveCount(
+    0,
+  );
+  await expect(page.getByText('70% (7/10)', { exact: true })).toHaveCount(0);
+  await page.goto('/profile');
   await expect(page.getByText('Моя статистика', { exact: true })).toBeVisible();
   await expect(page.getByText('70% (7/10)', { exact: true })).toBeVisible();
-  await expect(
-    page.getByText('30 XP · 1 дней подряд · 1 зачтённых уроков'),
-  ).toBeVisible();
   await expect(page.getByText('1 240', { exact: true })).toHaveCount(0);
   await expect(page.getByText('#4', { exact: true })).toHaveCount(0);
 });

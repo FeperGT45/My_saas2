@@ -4,7 +4,7 @@ import { usePathname } from 'next/navigation';
 import {
   BookOpen,
   Home,
-  Trophy,
+  RotateCcw,
   UserRound,
   Zap,
   Layers,
@@ -18,7 +18,7 @@ const links = [
   { href: '/', label: t.nav.home, icon: Home },
   { href: '/learn', label: t.nav.learn, icon: BookOpen },
   { href: '/courses', label: t.nav.courses, icon: Layers },
-  { href: '/leaderboard', label: t.nav.leaderboard, icon: Trophy },
+  { href: '/review', label: 'Повторение', icon: RotateCcw },
   { href: '/profile', label: t.nav.profile, icon: UserRound },
 ];
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -68,9 +68,18 @@ export function AppShell({ children }: { children: React.ReactNode }) {
         {links.map(({ href, label, icon: Icon }) => {
           const active =
             path === href ||
-            (href === '/learn' && path === '/lesson') ||
+            (href === '/learn' &&
+              ['/lesson', '/placement', '/learning-plan'].includes(path)) ||
+            (href === '/courses' && path === '/library') ||
             (href === '/profile' &&
-              ['/settings', '/achievements'].includes(path));
+              [
+                '/settings',
+                '/achievements',
+                '/leaderboard',
+                '/friends',
+                '/premium',
+                '/admin',
+              ].includes(path));
           return (
             <Link
               key={href}

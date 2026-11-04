@@ -7,15 +7,15 @@ export default function CoursesPage() {
     <>
       <PageTitle
         eyebrow="Выбери направление"
-        title="Мир говорит с тобой"
-        description="Опубликованные курсы и уроки из библиотеки."
+        title="Все уроки"
+        description="Выбери курс по уровню и интересующей теме. A1 — начало, A2 — базовый, B1–B2 — для продолжающих."
       />
       <LibraryPanel />
       <Link
         href="/library"
         className="text-primary my-3 inline-flex min-h-11 items-center"
       >
-        Библиотека уроков из базы
+        Открыть полный каталог
       </Link>
     </>
   );

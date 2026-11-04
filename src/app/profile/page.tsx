@@ -12,7 +12,7 @@ export default function ProfilePage() {
     <>
       <PageTitle
         eyebrow="Твоя история"
-        title="Капитан своего пути"
+        title="Мой профиль"
         action={
           <Link
             href="/settings"
@@ -50,6 +50,12 @@ export default function ProfilePage() {
         className="text-primary my-3 inline-flex min-h-11 items-center"
       >
         Повторить слова →
+      </Link>
+      <Link
+        href="/leaderboard"
+        className="text-primary my-3 flex min-h-11 items-center"
+      >
+        Рейтинг учеников →
       </Link>
       <GameDashboard />
     </>

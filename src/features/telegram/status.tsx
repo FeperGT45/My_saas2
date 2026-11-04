@@ -16,11 +16,11 @@ export function TelegramStatus() {
   return (
     <p
       role="status"
-      className="text-muted-foreground flex items-center gap-2 rounded-lg bg-white/[.03] px-3 py-2 text-[10px]"
+      className="text-muted-foreground flex items-center gap-2 rounded-lg bg-white/[.03] px-3 py-2 text-xs"
     >
       <span className="size-1.5 shrink-0 rounded-full bg-teal-300" />
       <span>
-        ДЕМО-ОБОЛОЧКА · {labels[status]} ·{' '}
+        {labels[status]} ·{' '}
         {account?.mode === 'telegram'
           ? 'сохранение уроков включено'
           : 'для сохранения уроков нужен вход'}
