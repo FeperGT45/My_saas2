@@ -1,4 +1,5 @@
 import { LearningPlanLink } from '@/features/learning/learning-panel';
+import { ChallengeProfileStyle } from '@/features/challenges/cosmetics';
 import Link from 'next/link';
 import { Settings } from 'lucide-react';
 import { PageTitle } from '@/components/ui/game';
@@ -24,6 +25,13 @@ export default function ProfilePage() {
         }
       />
       <TelegramAccount />
+      <ChallengeProfileStyle />
+      <Link
+        href="/challenges"
+        className="border-primary/30 bg-primary/10 text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
+      >
+        Испытания и косметические награды →
+      </Link>
       <Link
         href="/weak-training"
         className="border-primary/30 bg-primary/10 text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"

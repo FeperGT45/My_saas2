@@ -97,7 +97,35 @@ export async function adminServer(options: { currentCatalog?: boolean } = {}) {
           const chunks: Buffer[] = [];
           for await (const chunk of req) chunks.push(Buffer.from(chunk));
           const b = JSON.parse(Buffer.concat(chunks).toString());
-          if (url.pathname === '/rest/v1/rpc/weak_dashboard')
+          if (url.pathname === '/rest/v1/rpc/challenge_dashboard')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.challenge_dashboard($1) AS data',
+                [b.p_user],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/challenge_showcase')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.challenge_showcase($1) AS data',
+                [b.p_user],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/challenge_sprint_state')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.challenge_sprint_state($1,$2) AS data',
+                [b.p_user, b.p_run],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/challenge_command')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.challenge_command($1,$2::jsonb) AS data',
+                [b.p_user, JSON.stringify(b.p_command)],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/weak_dashboard')
             data = (
               await db.query<{ data: unknown }>(
                 'SELECT public.weak_dashboard($1) AS data',

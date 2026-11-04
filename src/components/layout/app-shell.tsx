@@ -87,6 +87,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 '/admin',
                 '/analytics',
                 '/dictionary',
+                '/challenges',
               ].includes(path));
           return (
             <Link

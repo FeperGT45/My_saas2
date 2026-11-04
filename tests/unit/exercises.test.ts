@@ -49,7 +49,15 @@ beforeAll(async () => {
   const stage = migrations.find((f) =>
     f.endsWith('_interactive_exercise_types.sql'),
   )!;
-  for (const f of migrations.filter((f) => f !== stage))
+  // This fixture delays v2 to exercise legacy snapshots. Challenge backfill uses v2 skill helpers.
+  const afterV2 = migrations.filter(
+    (f) =>
+      f.endsWith('_premium_challenges.sql') ||
+      f.endsWith('_challenge_equipment_indexes.sql') ||
+      f.endsWith('_challenge_short_practice.sql') ||
+      f.endsWith('_challenge_monotonic_progress.sql'),
+  );
+  for (const f of migrations.filter((f) => f !== stage && !afterV2.includes(f)))
     await db.exec(await readFile(`supabase/migrations/${f}`, 'utf8'));
   await db.exec(
     await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'),
@@ -65,6 +73,8 @@ beforeAll(async () => {
     oldAttempt,
   ]);
   await db.exec(await readFile(`supabase/migrations/${stage}`, 'utf8'));
+  for (const f of afterV2)
+    await db.exec(await readFile(`supabase/migrations/${f}`, 'utf8'));
   await db.query(
     "INSERT INTO public.lessons(id,unit_id,title,position,published) VALUES($1,'30000000-0000-0000-0000-000000000001','Local QA, not production content',3,true)",
     [lesson],
