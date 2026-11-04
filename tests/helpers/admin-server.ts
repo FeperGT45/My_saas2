@@ -89,7 +89,14 @@ export async function adminServer() {
           const chunks: Buffer[] = [];
           for await (const chunk of req) chunks.push(Buffer.from(chunk));
           const b = JSON.parse(Buffer.concat(chunks).toString());
-          if (url.pathname === '/rest/v1/rpc/weekly_plan_snapshot')
+          if (url.pathname === '/rest/v1/rpc/english_analytics')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.english_analytics($1,$2,$3) AS data',
+                [b.p_user, b.p_days, b.p_offset],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/weekly_plan_snapshot')
             data = (
               await db.query<{ data: unknown }>(
                 'SELECT public.weekly_plan_snapshot($1,$2,$3) AS data',

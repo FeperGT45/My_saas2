@@ -79,6 +79,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 '/friends',
                 '/premium',
                 '/admin',
+                '/analytics',
               ].includes(path));
           return (
             <Link

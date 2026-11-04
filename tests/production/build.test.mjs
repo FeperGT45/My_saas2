@@ -35,6 +35,7 @@ function scenario(overrides = {}) {
       if (process.argv[3] === 'library:db-check' && process.env.TEST_LIBRARY_FAIL) process.exit(1);
       if (process.argv[3] === 'premium:check' && process.env.TEST_PREMIUM_FAIL) process.exit(1);
       if (process.argv[3] === 'weekly:check' && process.env.TEST_WEEKLY_FAIL) process.exit(1);
+      if (process.argv[3] === 'analytics:check' && process.env.TEST_ANALYTICS_FAIL) process.exit(1);
     `,
       { mode: 0o700 },
     );
@@ -84,6 +85,7 @@ test('production build verifies database first and uses the verified bot usernam
     { script: 'library:db-check', username: 'Verified_bot' },
     { script: 'premium:check', username: 'Verified_bot' },
     { script: 'weekly:check', username: 'Verified_bot' },
+    { script: 'analytics:check', username: 'Verified_bot' },
     { script: 'build:cloudflare', username: 'Verified_bot' },
   ]);
 });
@@ -168,5 +170,12 @@ test('missing weekly schema blocks publication', () => {
   const r = scenario({ TEST_WEEKLY_FAIL: '1' });
   assert.equal(r.status, 1);
   assert.match(r.output, /weekly:check failed/);
+  assert.ok(!r.calls.some((c) => c.script === 'build:cloudflare'));
+});
+
+test('missing analytics schema blocks publication', () => {
+  const r = scenario({ TEST_ANALYTICS_FAIL: '1' });
+  assert.equal(r.status, 1);
+  assert.match(r.output, /analytics:check failed/);
   assert.ok(!r.calls.some((c) => c.script === 'build:cloudflare'));
 });

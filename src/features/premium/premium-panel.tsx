@@ -153,7 +153,7 @@ export function PremiumPanel() {
             title: 'Premium',
             items: [
               'Все опубликованные курсы',
-              'Расширенная статистика',
+              'Аналитика английского за 7, 30 и 90 дней',
               'Дополнительные задания при наличии материалов',
               'Персональный учебный план на 7 дней',
             ],
@@ -177,6 +177,9 @@ export function PremiumPanel() {
       </div>
       <Button asChild className="mb-5 w-full" variant="outline">
         <Link href="/learning-plan">Открыть учебный план</Link>
+      </Button>
+      <Button asChild className="mb-5 w-full" variant="outline">
+        <Link href="/analytics">Открыть аналитику английского</Link>
       </Button>
       {account?.mode !== 'telegram' && (
         <p className="text-muted-foreground my-4 text-sm">
@@ -272,8 +275,8 @@ export function PremiumPanel() {
           <Card className="mt-5">
             <h2 className="text-lg font-bold">Твой учебный ритм</h2>
             <p className="text-muted-foreground my-3 text-sm">
-              Точность: {features.accuracy}% · Завершено попыток:{' '}
-              {features.completedAttempts}
+              Завершено попыток: {features.completedAttempts}. Точность по
+              сохранённым ответам — в подробном отчёте.
             </p>
             <h3 className="font-bold">План повторения</h3>
             {features.reviewPlan.length ? (

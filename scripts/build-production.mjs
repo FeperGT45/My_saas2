@@ -70,6 +70,7 @@ try {
   await run('library:db-check', env);
   await run('premium:check', env);
   await run('weekly:check', env);
+  await run('analytics:check', env);
   await run('build:cloudflare', env);
 } catch (error) {
   console.error(
