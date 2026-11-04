@@ -9,7 +9,7 @@ CREATE FUNCTION auth.uid() RETURNS uuid LANGUAGE sql STABLE AS $$ SELECT nullif(
 GRANT USAGE ON SCHEMA auth TO anon,authenticated; GRANT EXECUTE ON FUNCTION auth.uid() TO anon,authenticated;`);
 for (const name of (await readdir('supabase/migrations')).sort())
   await db.exec(await readFile(`supabase/migrations/${name}`, 'utf8'));
-await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+await db.exec(await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'));
 const a = 'a0000000-0000-0000-0000-000000000001',
   b = 'a0000000-0000-0000-0000-000000000002';
 const lesson = '40000000-0000-0000-0000-000000000001';

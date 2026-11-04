@@ -10,7 +10,9 @@ try {
   );
   for (const file of (await readdir('supabase/migrations')).sort())
     await db.exec(await readFile(`supabase/migrations/${file}`, 'utf8'));
-  await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+  await db.exec(
+    await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'),
+  );
   let sequence = 100;
   const hash = (s) => createHash('sha256').update(s).digest('hex');
   async function register(key, ref = null) {

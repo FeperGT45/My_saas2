@@ -307,7 +307,9 @@ test('all exercise clients run on the configured runtime with SQL-backed transpo
     );
     for (const f of (await readdir('supabase/migrations')).sort())
       await db.exec(await readFile(`supabase/migrations/${f}`, 'utf8'));
-    await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+    await db.exec(
+      await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'),
+    );
     await db.query('INSERT INTO auth.users VALUES($1)', [user]);
     await db.query(
       "INSERT INTO public.users(id,display_name) VALUES($1,'Runtime learner')",

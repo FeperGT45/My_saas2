@@ -75,7 +75,9 @@ beforeAll(async () => {
   );
   for (const f of (await readdir('supabase/migrations')).sort())
     await db.exec(await readFile(`supabase/migrations/${f}`, 'utf8'));
-  await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+  await db.exec(
+    await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'),
+  );
   await db.exec(await readFile('supabase/placement-seed.sql', 'utf8'));
 }, 30000);
 afterEach(async () => {

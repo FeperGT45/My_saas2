@@ -8,7 +8,7 @@ import { spawn } from 'node:child_process';
 import { generate } from 'selfsigned';
 import { createHash } from 'node:crypto';
 import { PGlite } from '@electric-sql/pglite';
-export async function adminServer() {
+export async function adminServer(options: { currentCatalog?: boolean } = {}) {
   const db = new PGlite(),
     dir = await mkdtemp(join(tmpdir(), 'voklumi-admin-'));
   const admin = 'a0000000-0000-0000-0000-000000000001',
@@ -25,7 +25,14 @@ export async function adminServer() {
   );
   for (const file of (await readdir('supabase/migrations')).sort())
     await db.exec(await readFile(`supabase/migrations/${file}`, 'utf8'));
-  await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+  await db.exec(
+    await readFile(
+      options.currentCatalog
+        ? 'supabase/seed.sql'
+        : 'tests/fixtures/legacy-engine-seed.sql',
+      'utf8',
+    ),
+  );
   await db.exec(await readFile('supabase/placement-seed.sql', 'utf8'));
   await db.query('INSERT INTO auth.users VALUES($1),($2)', [admin, student]);
   await db.query(
@@ -89,7 +96,42 @@ export async function adminServer() {
           const chunks: Buffer[] = [];
           for await (const chunk of req) chunks.push(Buffer.from(chunk));
           const b = JSON.parse(Buffer.concat(chunks).toString());
-          if (url.pathname === '/rest/v1/rpc/english_analytics')
+          if (url.pathname === '/rest/v1/rpc/dictionary_read')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.dictionary_read($1,$2,$3,$4,$5) AS data',
+                [b.p_user, b.p_source, b.p_collection, b.p_search, b.p_offset],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/dictionary_mutate')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.dictionary_mutate($1,$2,$3,$4::jsonb) AS data',
+                [b.p_user, b.p_request, b.p_action, JSON.stringify(b.p_data)],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/dictionary_train')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.dictionary_train($1,$2) AS data',
+                [b.p_user, b.p_collection],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/dictionary_answer')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.dictionary_answer($1,$2,$3,$4,$5,$6) AS data',
+                [
+                  b.p_user,
+                  b.p_id,
+                  b.p_request,
+                  b.p_key,
+                  b.p_version,
+                  b.p_rating,
+                ],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/english_analytics')
             data = (
               await db.query<{ data: unknown }>(
                 'SELECT public.english_analytics($1,$2,$3) AS data',

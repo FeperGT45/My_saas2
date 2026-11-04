@@ -25,6 +25,12 @@ export default function ProfilePage() {
       />
       <TelegramAccount />
       <Link
+        href="/dictionary"
+        className="border-primary/30 bg-primary/10 text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
+      >
+        Мой словарь →
+      </Link>
+      <Link
         href="/analytics"
         className="border-primary/40 bg-primary/10 text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
       >

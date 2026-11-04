@@ -80,6 +80,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
                 '/premium',
                 '/admin',
                 '/analytics',
+                '/dictionary',
               ].includes(path));
           return (
             <Link

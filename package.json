@@ -54,6 +54,7 @@
     "library:db-check": "node --env-file-if-exists=.env.local --import tsx scripts/check-library.ts",
     "test:library": "vitest run tests/unit/library.test.ts",
     "library:report": "node --import tsx scripts/report-library.ts",
+    "dictionary:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-dictionary.ts",
     "analytics:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-analytics.ts",
     "weekly:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-weekly.ts",
     "premium:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-premium.ts"

@@ -166,7 +166,9 @@ test('library client works on the configured Next or Worker runtime with SQL-bac
     );
     for (const f of (await readdir('supabase/migrations')).sort())
       await db.exec(await readFile(`supabase/migrations/${f}`, 'utf8'));
-    await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+    await db.exec(
+      await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'),
+    );
     await db.query('SELECT public.import_curriculum_package($1::jsonb)', [
       JSON.stringify(libraryPayload(await loadLibrary())),
     ]);

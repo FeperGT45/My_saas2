@@ -8,6 +8,7 @@ INSERT INTO public.exercises(id,lesson_id,prompt,explanation,position) VALUES('5
 INSERT INTO public.exercise_options(exercise_id,label,position,is_correct) VALUES
 ('50000000-0000-0000-0000-000000000001','Hello',1,true),('50000000-0000-0000-0000-000000000001','Goodbye',2,false);
 INSERT INTO public.achievements(code,title,description,target) VALUES('first_lesson','Первый контакт','Заверши первый урок',1),('week_streak','В ударе','Занимайся семь дней подряд',7) ON CONFLICT(code) DO NOTHING;
+DO $$ BEGIN IF to_regprocedure('public.retire_audio_lessons()') IS NOT NULL THEN PERFORM public.retire_audio_lessons(); END IF; END $$;
 COMMIT;
 
 BEGIN;
@@ -19,4 +20,5 @@ INSERT INTO public.exercises(lesson_id,kind,prompt,explanation,position,public_p
 ('40000000-0000-0000-0000-000000000002','matching','Найди пары слов','Cat — кот, dog — собака.',4,'{"left":[{"id":"cat","label":"cat"},{"id":"dog","label":"dog"}],"right":[{"id":"dog_ru","label":"собака"},{"id":"cat_ru","label":"кот"}]}','{"pairs":{"cat":"cat_ru","dog":"dog_ru"}}'),
 ('40000000-0000-0000-0000-000000000002','grammar','Выбери правильную форму: She ___ English.','В Present Simple после she добавляется -s: She speaks English.',5,'{"options":[{"id":"speak","label":"speak"},{"id":"speaks","label":"speaks"}]}','{"value":"speaks"}'),
 ('40000000-0000-0000-0000-000000000002','listening','Послушай и выбери перевод','Good morning — доброе утро.',6,'{"text":"Good morning","lang":"en-US","options":[{"id":"night","label":"Спокойной ночи"},{"id":"morning","label":"Доброе утро"}]}','{"value":"morning"}');
+DO $$ BEGIN IF to_regprocedure('public.retire_audio_lessons()') IS NOT NULL THEN PERFORM public.retire_audio_lessons(); END IF; END $$;
 COMMIT;

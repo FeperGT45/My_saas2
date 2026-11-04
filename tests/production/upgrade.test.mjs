@@ -18,7 +18,9 @@ test('manual upgrade preserves content, records history and safely repeats on 01
       (file) => file.slice(0, 12) <= '202611020008',
     ))
       await db.exec(await readFile(`supabase/migrations/${file}`, 'utf8'));
-    await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+    await db.exec(
+      await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'),
+    );
     const before = (
       await db.query('SELECT id,title FROM public.lessons ORDER BY id')
     ).rows;

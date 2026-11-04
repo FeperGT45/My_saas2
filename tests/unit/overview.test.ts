@@ -92,7 +92,9 @@ beforeAll(async () => {
   );
   for (const f of (await readdir('supabase/migrations')).sort())
     await db.exec(await readFile('supabase/migrations/' + f, 'utf8'));
-  await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+  await db.exec(
+    await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'),
+  );
   await db.query('insert into auth.users values($1),($2)', [a, b]);
   await db.query(
     "insert into public.users(id,display_name) values($1,'Learner'),($2,'Other')",

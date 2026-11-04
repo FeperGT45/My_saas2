@@ -13,7 +13,9 @@ beforeAll(async () => {
     GRANT USAGE ON SCHEMA auth TO anon,authenticated; GRANT EXECUTE ON FUNCTION auth.uid() TO anon,authenticated;`);
   for (const file of (await readdir('supabase/migrations')).sort())
     await db.exec(await readFile(`supabase/migrations/${file}`, 'utf8'));
-  await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+  await db.exec(
+    await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'),
+  );
   await db.query('INSERT INTO auth.users VALUES($1),($2)', [user, other]);
   await db.query(
     "INSERT INTO public.users(id,display_name) VALUES($1,'A'),($2,'B')",

@@ -71,6 +71,7 @@ try {
   await run('premium:check', env);
   await run('weekly:check', env);
   await run('analytics:check', env);
+  await run('dictionary:check', env);
   await run('build:cloudflare', env);
 } catch (error) {
   console.error(

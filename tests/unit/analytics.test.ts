@@ -82,7 +82,9 @@ beforeAll(async () => {
   );
   for (const name of (await readdir('supabase/migrations')).sort())
     await db.exec(await readFile('supabase/migrations/' + name, 'utf8'));
-  await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+  await db.exec(
+    await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'),
+  );
 }, 60000);
 afterEach(() => db.exec('RESET ROLE'));
 afterAll(() => db.close());

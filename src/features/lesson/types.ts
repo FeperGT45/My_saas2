@@ -34,4 +34,4 @@ export type Feedback = {
   state: LessonState;
   details?: { questionId: string; correct: boolean; explanation: string }[];
 };
-export const defaultLessonId = '40000000-0000-0000-0000-000000000002';
+export const defaultLessonId = '40000000-0000-0000-0000-000000000001';

@@ -14,7 +14,9 @@ test('opt-in rankings, privacy and invitations use real SQL on a mobile screen',
     );
     for (const file of (await readdir('supabase/migrations')).sort())
       await db.exec(await readFile(`supabase/migrations/${file}`, 'utf8'));
-    await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+    await db.exec(
+      await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'),
+    );
     const user = 'a0000000-0000-0000-0000-000000000001';
     await db.exec(
       `INSERT INTO auth.users VALUES('${user}');INSERT INTO public.users(id,display_name) VALUES('${user}','PRIVATE ACTUAL NAME');INSERT INTO public.lesson_attempts(id,user_id,lesson_id,status,score,started_at,completed_at) VALUES('70000000-0000-0000-0000-000000000001','${user}','40000000-0000-0000-0000-000000000001','completed',100,now()-interval '5 minutes',now());SET ROLE service_role;SELECT public.award_completed_lesson('70000000-0000-0000-0000-000000000001');`,

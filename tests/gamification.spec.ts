@@ -12,7 +12,9 @@ test('real SQL summary renders progress, timezone, daily goals and achievements 
     );
     for (const file of (await readdir('supabase/migrations')).sort())
       await db.exec(await readFile(`supabase/migrations/${file}`, 'utf8'));
-    await db.exec(await readFile('supabase/seed.sql', 'utf8'));
+    await db.exec(
+      await readFile('tests/fixtures/legacy-engine-seed.sql', 'utf8'),
+    );
     const user = 'a0000000-0000-0000-0000-000000000001';
     await db.exec(
       `INSERT INTO auth.users VALUES('${user}');INSERT INTO public.users(id,display_name) VALUES('${user}','Реальный профиль');SET ROLE service_role;`,
