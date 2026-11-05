@@ -3,6 +3,7 @@ import { telegramCall } from '@/lib/billing/telegram';
 import { readBodyText } from '@/lib/auth/body';
 import { equalSecret } from '@/lib/auth/security';
 import { miniAppUrl, startMessage } from '@/lib/telegram/bot';
+import { premiumSupportUrl } from '@/lib/billing/plans';
 export const runtime = 'nodejs';
 export async function POST(request: Request) {
   const token = process.env.TELEGRAM_BOT_TOKEN,
@@ -27,9 +28,7 @@ export async function POST(request: Request) {
       /^\/(paysupport|support|terms)(?:@\w+)?(?:\s|$)/.test(message.text ?? '')
     ) {
       const isTerms = message.text.startsWith('/terms');
-      const url = isTerms
-        ? process.env.PREMIUM_TERMS_URL
-        : process.env.PAYMENT_SUPPORT_URL;
+      const url = isTerms ? process.env.PREMIUM_TERMS_URL : premiumSupportUrl;
       await telegramCall('sendMessage', {
         chat_id: message.chat.id,
         text: url

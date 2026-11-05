@@ -8,6 +8,11 @@ import { Button } from '@/components/ui/button';
 import { useTelegram } from '@/features/telegram/provider';
 import { usePremium } from './use-premium';
 import { PremiumShowcase } from './premium-showcase';
+import {
+  premiumPlans,
+  premiumSupportUrl,
+  type PremiumPlanId,
+} from '@/lib/billing/plans';
 
 type Features = {
   accuracy: number;
@@ -34,6 +39,7 @@ export function PremiumPanel() {
   const [busy, setBusy] = useState(false);
   const [agreed, setAgreed] = useState(false);
   const [notice, setNotice] = useState('');
+  const [selectedPlan, setSelectedPlan] = useState<PremiumPlanId>('month');
   const request = useRef<string | null>(null);
   useEffect(() => {
     if (
@@ -73,6 +79,7 @@ export function PremiumPanel() {
         body: JSON.stringify({
           requestId: request.current,
           acceptTerms: agreed,
+          plan: selectedPlan,
         }),
       });
       const data = await readJson(response);
@@ -103,7 +110,7 @@ export function PremiumPanel() {
           Больше пространства для роста
         </h2>
         <p className="text-muted-foreground mt-3 text-sm">
-          Premium на 30 дней · без автопродления
+          Premium на 7 или 30 дней · без автопродления
         </p>
         <p
           role="status"
@@ -209,22 +216,41 @@ export function PremiumPanel() {
       )}
       {!status?.enabled && (
         <p className="bg-muted text-muted-foreground mb-4 rounded-2xl p-4 text-sm">
-          Покупки пока выключены. Цена и условия будут доступны после проверки
-          владельцем.
+          Покупки пока выключены. Тарифы утверждены; запуск оплаты ожидает
+          проверки условий и разрешения владельца.
         </p>
       )}
-      {status?.amount !== null &&
-        status?.amount !== undefined &&
-        !status.enabled && (
-          <p className="mb-4 text-center font-bold">
-            Настроенная цена: {status.amount} ⭐ за 30 дней · покупки выключены
-          </p>
-        )}
+      <fieldset className="mb-4 grid grid-cols-2 gap-3" disabled={busy}>
+        <legend className="mb-3 font-bold">Выбери срок Premium</legend>
+        {premiumPlans.map((plan) => (
+          <label
+            key={plan.id}
+            className={
+              'bg-card rounded-2xl border p-4 text-sm ' +
+              (selectedPlan === plan.id ? 'border-primary' : 'border-border')
+            }
+          >
+            <input
+              type="radio"
+              name="premium-plan"
+              value={plan.id}
+              checked={selectedPlan === plan.id}
+              onChange={() => {
+                setSelectedPlan(plan.id);
+                request.current = null;
+              }}
+              className="mr-2 accent-purple-400"
+            />
+            {plan.title}
+            <span className="mt-2 block font-bold">{plan.amount} ⭐</span>
+            <span className="text-muted-foreground text-xs">
+              {plan.days} дней доступа
+            </span>
+          </label>
+        ))}
+      </fieldset>
       {status?.enabled && !status.premium && (
         <>
-          <p className="mb-3 text-center text-lg font-bold text-amber-200">
-            {status.amount} ⭐ за 30 дней
-          </p>
           <label className="mb-4 flex items-start gap-3 text-xs leading-relaxed">
             <input
               type="checkbox"
@@ -272,10 +298,10 @@ export function PremiumPanel() {
       <Card className="mt-4">
         <h2 className="font-bold">Продление, отмена и возврат</h2>
         <p className="text-muted-foreground mt-2 text-sm">
-          Это разовая покупка доступа на 30 дней. Автоматического списания и
-          автопродления нет, поэтому отключать его не требуется. После окончания
-          доступ становится Free, прогресс сохраняется. Продлить доступ можно
-          новой подтверждённой покупкой.
+          Это разовая покупка доступа на 7 или 30 дней по выбранному тарифу.
+          Автоматического списания и автопродления нет, поэтому отключать его не
+          требуется. После окончания доступ становится Free, прогресс
+          сохраняется. Продлить доступ можно новой подтверждённой покупкой.
         </p>
         <p className="text-muted-foreground mt-2 text-sm">
           По вопросам оплаты и возврата обратись в поддержку Voklumi: команда
@@ -296,16 +322,16 @@ export function PremiumPanel() {
             Условия покупки
           </a>
         )}
-        {status?.supportUrl && (
+        {
           <a
-            href={status.supportUrl}
+            href={premiumSupportUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="min-h-11 py-3"
           >
-            Поддержка и возвраты
+            Поддержка и возвраты · @feper145
           </a>
-        )}
+        }
       </div>
       {(error || accessError) && (
         <p role="alert" className="my-4 text-sm text-rose-300">

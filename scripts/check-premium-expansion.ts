@@ -7,6 +7,11 @@ const db = createClient(url, key, {
   auth: { persistSession: false, autoRefreshToken: false },
 });
 const { data, error } = await db.rpc('premium_expansion_status');
-if (error || data?.version !== 'premium-expansion-v1' || data?.ready !== true)
+if (
+  error ||
+  data?.version !== 'premium-expansion-v1' ||
+  data?.starPlans !== 'week-month-v1' ||
+  data?.ready !== true
+)
   throw Error('Premium expansion schema not ready');
 console.log('Appearance and extended assessment ready.');

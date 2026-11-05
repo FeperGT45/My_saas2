@@ -50,6 +50,158 @@ beforeAll(async () => {
 }, 60000);
 afterEach(() => db.exec('RESET ROLE'));
 afterAll(() => db.close());
+it('locks approved prices and durations, switches only unpaid plans and rejects client execution', async () => {
+  const u = await user(false);
+  await db.query('UPDATE public.users SET telegram_id=74101 WHERE id=$1', [u]);
+  const key = randomUUID();
+  const week = await rpc<{ payload: string; amount: number; days: number }>(
+    'create_star_plan_order',
+    [u, key, 'week'],
+  );
+  expect(week.amount).toBe(49);
+  expect(week.days).toBe(7);
+  expect(await rpc('create_star_plan_order', [u, key, 'week'])).toEqual(week);
+  await expect(
+    rpc('create_star_plan_order', [u, key, 'month']),
+  ).rejects.toThrow('request plan mismatch');
+  await expect(
+    rpc('create_star_plan_order', [u, randomUUID(), 'lifetime']),
+  ).rejects.toThrow('invalid premium plan');
+  const month = await rpc<{ payload: string; amount: number; days: number }>(
+    'create_star_plan_order',
+    [u, randomUUID(), 'month'],
+  );
+  expect(month.amount).toBe(149);
+  expect(month.days).toBe(30);
+  expect(
+    await rpc('check_star_checkout', [
+      week.payload,
+      74101,
+      'XTR',
+      49,
+      'old-week',
+    ]),
+  ).toBe(false);
+  expect(
+    await rpc('check_star_checkout', [
+      month.payload,
+      74101,
+      'XTR',
+      49,
+      'bad-price',
+    ]),
+  ).toBe(false);
+  expect(
+    await rpc('check_star_checkout', [
+      month.payload,
+      74101,
+      'XTR',
+      149,
+      'month-q',
+    ]),
+  ).toBe(true);
+  await expect(
+    rpc('create_star_plan_order', [u, randomUUID(), 'week']),
+  ).rejects.toThrow('checkout already approved');
+  await db.exec('SET ROLE authenticated');
+  await expect(
+    rpc('create_star_plan_order', [u, randomUUID(), 'week']),
+  ).rejects.toThrow('permission denied');
+});
+it.each([
+  ['week', 7, 49, 'month', 30, 149],
+  ['month', 30, 149, 'week', 7, 49],
+] as const)(
+  'grants %s accurately, preserves mixed durations through duplicate delivery, refund and reactivation',
+  async (first, firstDays, firstPrice, second, secondDays, secondPrice) => {
+    const u = await user(false),
+      tg = first === 'week' ? 74102 : 74103;
+    await db.query('UPDATE public.users SET telegram_id=$1 WHERE id=$2', [
+      tg,
+      u,
+    ]);
+    const a = await rpc<{ payload: string }>('create_star_plan_order', [
+      u,
+      randomUUID(),
+      first,
+    ]);
+    await rpc('check_star_checkout', [
+      a.payload,
+      tg,
+      'XTR',
+      firstPrice,
+      'a-' + u,
+    ]);
+    await db.query(
+      "UPDATE public.star_orders SET expires_at=now()-interval '1 minute' WHERE user_id=$1",
+      [u],
+    );
+    const b = await rpc<{ payload: string }>('create_star_plan_order', [
+      u,
+      randomUUID(),
+      second,
+    ]);
+    await rpc('check_star_checkout', [
+      b.payload,
+      tg,
+      'XTR',
+      secondPrice,
+      'b-' + u,
+    ]);
+    const paid = (
+      o: { payload: string },
+      price: number,
+      charge: string,
+      refund = false,
+    ) =>
+      rpc('apply_star_event', [
+        o.payload,
+        tg,
+        'XTR',
+        price,
+        charge + u,
+        refund,
+      ]);
+    await expect(paid(a, firstPrice + 1, 'a')).rejects.toThrow(
+      'payment mismatch',
+    );
+    await paid(a, firstPrice, 'a');
+    await paid(a, firstPrice, 'a');
+    await paid(b, secondPrice, 'b');
+    const durations = () =>
+      db.query<{ days: number }>(
+        "SELECT extract(epoch FROM(ends_at-starts_at))/86400 AS days FROM public.subscriptions WHERE user_id=$1 AND status='active' ORDER BY starts_at",
+        [u],
+      );
+    expect((await durations()).rows.map((r) => Number(r.days))).toEqual([
+      firstDays,
+      secondDays,
+    ]);
+    await paid(a, firstPrice, 'a', true);
+    expect((await durations()).rows.map((r) => Number(r.days))).toEqual([
+      secondDays,
+    ]);
+    expect(await rpc('has_premium', [u])).toBe(true);
+    await paid(b, secondPrice, 'b', true);
+    expect(await rpc('has_premium', [u])).toBe(false);
+    const again = await rpc<{ payload: string }>('create_star_plan_order', [
+      u,
+      randomUUID(),
+      first,
+    ]);
+    await rpc('check_star_checkout', [
+      again.payload,
+      tg,
+      'XTR',
+      firstPrice,
+      'again-' + u,
+    ]);
+    await paid(again, firstPrice, 'again');
+    expect((await durations()).rows.map((r) => Number(r.days))).toEqual([
+      firstDays,
+    ]);
+  },
+);
 it('preserves free themes, protects Premium settings, persists previews and falls back after expiry without deleting choices', async () => {
   const free = await user(false);
   expect(Object.values(themes).filter((t) => !t.premium)).toHaveLength(3);

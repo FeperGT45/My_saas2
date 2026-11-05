@@ -279,10 +279,32 @@ test('new pages render on configured runtime and protected endpoints deny anonym
   page,
   request,
 }) => {
+  await page.setViewportSize({ width: 320, height: 844 });
   for (const path of ['/appearance', '/extended-test', '/premium']) {
     await page.goto(path);
     await expect(page.getByRole('main')).toBeVisible();
   }
+  await expect(page.getByText('49 ⭐', { exact: true })).toBeVisible();
+  await expect(page.getByText('149 ⭐', { exact: true })).toBeVisible();
+  await page.getByRole('radio', { name: /Неделя/ }).check();
+  await expect(page.getByRole('radio', { name: /Неделя/ })).toBeChecked();
+  await page.getByRole('radio', { name: /Месяц/ }).check();
+  expect(
+    await page.evaluate(
+      () => document.documentElement.scrollWidth <= innerWidth,
+    ),
+  ).toBe(true);
+  expect(
+    (await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa']).analyze())
+      .violations,
+  ).toEqual([]);
+  await page.screenshot({
+    path: 'test-results/premium-plans-mobile.png',
+    fullPage: true,
+  });
+  await expect(
+    page.getByRole('link', { name: 'Поддержка и возвраты · @feper145' }),
+  ).toHaveAttribute('href', 'https://t.me/feper145');
   expect((await request.get('/api/appearance')).status()).toBe(401);
   expect((await request.get('/api/extended-test')).status()).toBe(401);
 });

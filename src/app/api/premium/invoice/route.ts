@@ -2,6 +2,7 @@ import { lessonRequest, json, isUuid } from '@/lib/lessons/http';
 import { readBodyText } from '@/lib/auth/body';
 import { billingConfiguration, invoiceParameters } from '@/lib/billing/config';
 import { telegramCall } from '@/lib/billing/telegram';
+import { premiumPlans } from '@/lib/billing/plans';
 export async function POST(request: Request) {
   const config = billingConfiguration(process.env);
   if (!config.enabled)
@@ -19,19 +20,28 @@ export async function POST(request: Request) {
     if (
       !isUuid(body?.requestId) ||
       body.acceptTerms !== true ||
-      Object.keys(body).some((k) => !['requestId', 'acceptTerms'].includes(k))
+      !premiumPlans.some((p) => p.id === body.plan) ||
+      Object.keys(body).some(
+        (k) => !['requestId', 'acceptTerms', 'plan'].includes(k),
+      )
     )
       return json({ error: 'Подтверди условия покупки.' }, 400);
-    const { data, error } = await db.rpc('create_star_order', {
+    const plan = premiumPlans.find((p) => p.id === body.plan)!;
+    const { data, error } = await db.rpc('create_star_plan_order', {
       p_user: userId,
       p_request: body.requestId,
-      p_amount: config.amount,
+      p_plan: plan.id,
     });
-    if (error || !['pending', 'approved'].includes(data?.state))
+    if (
+      error ||
+      !['pending', 'approved'].includes(data?.state) ||
+      data.amount !== plan.amount ||
+      data.days !== plan.days
+    )
       return json({ error: 'Счёт недоступен или Premium уже активен.' }, 409);
     const result = await telegramCall(
       'createInvoiceLink',
-      invoiceParameters(data.payload, data.amount),
+      invoiceParameters(data.payload, data.amount, plan.days),
     );
     if (typeof result !== 'string' || !/^https:\/\/t.me\//.test(result))
       return json({ error: 'Не удалось создать счёт.' }, 503);

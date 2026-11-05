@@ -11,11 +11,9 @@ import {
 const config = {
   TELEGRAM_STARS_PAYMENTS_ENABLED: 'true',
   TELEGRAM_STARS_OWNER_REVIEWED: 'true',
-  TELEGRAM_STARS_PREMIUM_PRICE: '99',
   TELEGRAM_BOT_TOKEN: 'fake-test-token',
   TELEGRAM_WEBHOOK_SECRET: 'x'.repeat(32),
   PREMIUM_TERMS_URL: 'https://example.com/terms',
-  PAYMENT_SUPPORT_URL: 'https://example.com/support',
 };
 const checkout = {
   pre_checkout_query: {
@@ -57,7 +55,7 @@ test('one-time access rejects unsupported recurring receipt metadata', () => {
       }),
     );
 });
-test('payments are off by default and require explicit review, price and support policies', () => {
+test('owner-approved week/month prices and support stay fixed; live checkout requires review and terms', () => {
   assert.equal(billingConfiguration({}).enabled, false);
   assert.equal(billingConfiguration(config).enabled, true);
   for (const key of Object.keys(config)) {
@@ -71,26 +69,21 @@ test('payments are off by default and require explicit review, price and support
     { label: 'Premium · 30 дней', amount: 99 },
   ]);
   assert.equal('subscription_period' in invoice, false);
-  for (const price of ['0', '-1', '1.5', '10001', 'invalid']) {
-    assert.equal(
-      billingConfiguration({ ...config, TELEGRAM_STARS_PREMIUM_PRICE: price })
-        .enabled,
-      false,
-    );
-  }
+  assert.deepEqual(billingConfiguration({}).plans, [
+    { id: 'week', title: 'Неделя', days: 7, amount: 49 },
+    { id: 'month', title: 'Месяц', days: 30, amount: 149 },
+  ]);
+  assert.equal(billingConfiguration({}).supportUrl, 'https://t.me/feper145');
+  const week = invoiceParameters('weekly-order', 49, 7);
+  assert.equal(week.title, 'Voklumi Premium · 7 дней');
+  assert.equal(week.prices[0].amount, 49);
+  assert.equal('subscription_period' in week, false);
   assert.equal(
     billingConfiguration({
       ...config,
       PREMIUM_TERMS_URL: 'javascript:alert(1)',
     }).termsUrl,
     null,
-  );
-  assert.equal(
-    billingConfiguration({
-      ...config,
-      PAYMENT_SUPPORT_URL: 'https://user:pass@example.com/',
-    }).enabled,
-    false,
   );
 });
 test('persistence failures propagate for webhook retry instead of acknowledging lost payments', async () => {

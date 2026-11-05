@@ -134,9 +134,7 @@ describe('privileges and untrusted input', () => {
       TELEGRAM_STARS_OWNER_REVIEWED: 'true',
       TELEGRAM_BOT_TOKEN: 'fixture',
       TELEGRAM_WEBHOOK_SECRET: 'x'.repeat(32),
-      TELEGRAM_STARS_PREMIUM_PRICE: '99',
       PREMIUM_TERMS_URL: 'https://example.com/terms',
-      PAYMENT_SUPPORT_URL: 'https://example.com/support',
     };
     expect(billingConfiguration(configured).enabled).toBe(true);
     for (const name of Object.keys(configured))
