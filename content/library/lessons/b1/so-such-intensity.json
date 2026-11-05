@@ -1,0 +1,372 @@
+{
+  "key": "b1/so-such-intensity",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 4,
+  "title": "Такой сильный эффект: so и such",
+  "description": "Такой сильный эффект: so и such: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать so перед прилагательным",
+    "Использовать such перед группой a/an + прилагательное + существительное"
+  ],
+  "notes": [
+    "So + прилагательное: so noisy; such + именная группа: such a noisy room.",
+    "Связка ... that может вводить результат: It was so noisy that we moved."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/reported-statements"],
+  "lexicon": [
+    {
+      "en": "noisy",
+      "ru": "шумный"
+    },
+    {
+      "en": "unexpected",
+      "ru": "неожиданный"
+    },
+    {
+      "en": "delay",
+      "ru": "задержка"
+    },
+    {
+      "en": "impression",
+      "ru": "впечатление"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: It was ___ an unexpected delay that we missed the introduction.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v67ec9a61bb0f",
+            "label": "too of"
+          },
+          {
+            "id": "vbc109bd067ec",
+            "label": "such"
+          },
+          {
+            "id": "v25bedc0f3593",
+            "label": "so"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbc109bd067ec"
+      },
+      "reference_answer": "vbc109bd067ec",
+      "incorrect_answer": "v25bedc0f3593",
+      "editorial_answer": "such",
+      "explanation": "Перед an unexpected delay используется such.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: so / such.",
+      "public_payload": {
+        "sentence": "The room was ___ noisy that we could not hear the speaker."
+      },
+      "answer_key": {
+        "accepted": ["so"]
+      },
+      "reference_answer": "so",
+      "incorrect_answer": "such",
+      "editorial_answer": "The room was so noisy that we could not hear the speaker.",
+      "explanation": "Перед прилагательным noisy без существительного нужен so.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Это было такое полезное обсуждение, что мы остались дольше.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "such"
+          },
+          {
+            "id": "t4",
+            "label": "a"
+          },
+          {
+            "id": "t5",
+            "label": "useful"
+          },
+          {
+            "id": "t6",
+            "label": "discussion"
+          },
+          {
+            "id": "t7",
+            "label": "that"
+          },
+          {
+            "id": "t8",
+            "label": "we"
+          },
+          {
+            "id": "t9",
+            "label": "stayed"
+          },
+          {
+            "id": "t10",
+            "label": "longer."
+          },
+          {
+            "id": "t1",
+            "label": "It"
+          },
+          {
+            "id": "t2",
+            "label": "was"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "It was such a useful discussion that we stayed longer.",
+      "explanation": "Such относится ко всей группе a useful discussion.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "It was so a busy afternoon that we forgot lunch."
+      },
+      "answer_key": {
+        "accepted": ["It was such a busy afternoon that we forgot lunch."]
+      },
+      "reference_answer": "It was such a busy afternoon that we forgot lunch.",
+      "incorrect_answer": "It was so a busy afternoon that we forgot lunch.",
+      "editorial_answer": "It was such a busy afternoon that we forgot lunch.",
+      "explanation": "Перед a busy afternoon нужно such, не so.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему некоторые посетители стояли у двери?",
+      "public_payload": {
+        "passage": "A design club invited a local artist to speak. The room was so crowded that several visitors had to stand near the door. Despite the lack of seats, the artist gave such a clear explanation of her methods that most people stayed for the questions. Afterwards, the organiser decided to book a larger room for the next event.",
+        "options": [
+          {
+            "id": "vc19aee57dbd3",
+            "label": "The room was very crowded."
+          },
+          {
+            "id": "ve587a21c6a60",
+            "label": "They were not allowed to hear the artist."
+          },
+          {
+            "id": "v561282d2e11a",
+            "label": "Every chair had been removed for repairs."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc19aee57dbd3"
+      },
+      "reference_answer": "vc19aee57dbd3",
+      "incorrect_answer": "ve587a21c6a60",
+      "editorial_answer": "The room was very crowded.",
+      "explanation": "Текст связывает стояние с переполненностью, не с запретом или ремонтом.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le36b35816967",
+            "label": "noisy"
+          },
+          {
+            "id": "l1cde487dd0b7",
+            "label": "unexpected"
+          },
+          {
+            "id": "laa3fcbd43faa",
+            "label": "delay"
+          },
+          {
+            "id": "ld1462c2e6bcf",
+            "label": "impression"
+          }
+        ],
+        "right": [
+          {
+            "id": "rebac23c319f7",
+            "label": "задержка"
+          },
+          {
+            "id": "r8198c1cd3bf9",
+            "label": "впечатление"
+          },
+          {
+            "id": "ra0ccb2bee782",
+            "label": "шумный"
+          },
+          {
+            "id": "r9e88595c92b7",
+            "label": "неожиданный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le36b35816967": "ra0ccb2bee782",
+          "l1cde487dd0b7": "r9e88595c92b7",
+          "laa3fcbd43faa": "rebac23c319f7",
+          "ld1462c2e6bcf": "r8198c1cd3bf9"
+        }
+      },
+      "reference_answer": {
+        "le36b35816967": "ra0ccb2bee782",
+        "l1cde487dd0b7": "r9e88595c92b7",
+        "laa3fcbd43faa": "rebac23c319f7",
+        "ld1462c2e6bcf": "r8198c1cd3bf9"
+      },
+      "incorrect_answer": {
+        "le36b35816967": "r9e88595c92b7",
+        "l1cde487dd0b7": "ra0ccb2bee782",
+        "laa3fcbd43faa": "rebac23c319f7",
+        "ld1462c2e6bcf": "r8198c1cd3bf9"
+      },
+      "editorial_answer": "noisy — шумный; unexpected — неожиданный; delay — задержка; impression — впечатление",
+      "explanation": "В этих контекстах: noisy — шумный; unexpected — неожиданный; delay — задержка; impression — впечатление.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что организатор решил изменить?",
+      "public_payload": {
+        "passage": "A design club invited a local artist to speak. The room was so crowded that several visitors had to stand near the door. Despite the lack of seats, the artist gave such a clear explanation of her methods that most people stayed for the questions. Afterwards, the organiser decided to book a larger room for the next event.",
+        "options": [
+          {
+            "id": "va6ac15736a4f",
+            "label": "Stop inviting local artists."
+          },
+          {
+            "id": "v0bc09a180152",
+            "label": "Remove the question period permanently."
+          },
+          {
+            "id": "va851bbd4afd8",
+            "label": "Book a larger room next time."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va851bbd4afd8"
+      },
+      "reference_answer": "va851bbd4afd8",
+      "incorrect_answer": "va6ac15736a4f",
+      "editorial_answer": "Book a larger room next time.",
+      "explanation": "В конце названо решение о более просторной комнате.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери усиление прилагательного с результатом.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Why did everyone pause?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v9a03e3766346",
+            "label": "The noise was so loud that we could not continue."
+          },
+          {
+            "id": "v0ed7f9f9d9ac",
+            "label": "The noise was such loud that we could not continue."
+          },
+          {
+            "id": "vf103f220fcdc",
+            "label": "The noise was so a loud that we could not continue."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9a03e3766346"
+      },
+      "reference_answer": "v9a03e3766346",
+      "incorrect_answer": "v0ed7f9f9d9ac",
+      "editorial_answer": "The noise was so loud that we could not continue.",
+      "explanation": "So loud that правильно соединяет степень громкости и следствие.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Something that happens without being anticipated is ___.",
+        "options": [
+          {
+            "id": "v95fd615eef3e",
+            "label": "routine by definition"
+          },
+          {
+            "id": "vbade7b1aee6c",
+            "label": "scheduled exactly"
+          },
+          {
+            "id": "v9fe38b189b3a",
+            "label": "unexpected"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9fe38b189b3a"
+      },
+      "reference_answer": "v9fe38b189b3a",
+      "incorrect_answer": "v95fd615eef3e",
+      "editorial_answer": "unexpected",
+      "explanation": "Unexpected — неожиданное, не запланированное событие.",
+      "key": "e09"
+    }
+  ]
+}

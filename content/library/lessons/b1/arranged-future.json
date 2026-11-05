@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o3",
+            "id": "vadac5061ace2",
             "label": "have met yesterday"
           },
           {
-            "id": "o1",
+            "id": "vd51366456c0d",
             "label": "are meeting"
           },
           {
-            "id": "o2",
+            "id": "v22fe35899d83",
             "label": "met"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vd51366456c0d"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vd51366456c0d",
+      "incorrect_answer": "v22fe35899d83",
       "editorial_answer": "are meeting",
       "explanation": "Согласованная будущая встреча выражается are meeting с tomorrow.",
       "key": "e01"
@@ -159,24 +159,24 @@
         "passage": "Nina emailed her tutor to arrange a meeting. They agreed on Thursday at three in the library. On Wednesday the tutor asked to move it to four because of another appointment. Nina checked her work schedule and agreed. She is meeting the tutor at four tomorrow. She has written down two questions, so she will not forget what she wants to discuss.",
         "options": [
           {
-            "id": "o1",
+            "id": "vb2ce031c42b9",
             "label": "Thursday at four."
           },
           {
-            "id": "o2",
+            "id": "v622e1c6298ba",
             "label": "Wednesday at three."
           },
           {
-            "id": "o3",
+            "id": "v03e379e6ccab",
             "label": "Thursday at three."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vb2ce031c42b9"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vb2ce031c42b9",
+      "incorrect_answer": "v622e1c6298ba",
       "editorial_answer": "Thursday at four.",
       "explanation": "Изначальные три часа заменили четырьмя; письмо о переносе пришло в среду.",
       "key": "e05"
@@ -188,24 +188,24 @@
         "passage": "Nina emailed her tutor to arrange a meeting. They agreed on Thursday at three in the library. On Wednesday the tutor asked to move it to four because of another appointment. Nina checked her work schedule and agreed. She is meeting the tutor at four tomorrow. She has written down two questions, so she will not forget what she wants to discuss.",
         "options": [
           {
-            "id": "o2",
+            "id": "v2bca857116c8",
             "label": "To cancel the meeting."
           },
           {
-            "id": "o3",
+            "id": "v886d9c7c0563",
             "label": "To change the tutor’s work schedule."
           },
           {
-            "id": "o1",
+            "id": "v80311b405552",
             "label": "To remember what she wants to discuss."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v80311b405552"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v80311b405552",
+      "incorrect_answer": "v2bca857116c8",
       "editorial_answer": "To remember what she wants to discuss.",
       "explanation": "Цель записи прямо указана в последнем предложении.",
       "key": "e06"
@@ -222,24 +222,24 @@
         ],
         "options": [
           {
-            "id": "o1",
+            "id": "v943e83988527",
             "label": "Sorry, I am having a driving lesson then."
           },
           {
-            "id": "o2",
+            "id": "vce7e36b2762e",
             "label": "Sorry, I had a driving lesson tomorrow."
           },
           {
-            "id": "o3",
+            "id": "ve07ca831e172",
             "label": "Sorry, I have been tomorrow."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v943e83988527"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v943e83988527",
+      "incorrect_answer": "vce7e36b2762e",
       "editorial_answer": "Sorry, I am having a driving lesson then.",
       "explanation": "Am having с then относится к конкретной будущей договорённости.",
       "key": "e07"
@@ -251,24 +251,24 @@
         "sentence": "We need a different time. Could we ___ the appointment?",
         "options": [
           {
-            "id": "o2",
+            "id": "v2727691d67f5",
             "label": "confirm yesterday"
           },
           {
-            "id": "o3",
+            "id": "vfb9b1ddca257",
             "label": "borrow"
           },
           {
-            "id": "o1",
+            "id": "v42b510eb479e",
             "label": "reschedule"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v42b510eb479e"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v42b510eb479e",
+      "incorrect_answer": "v2727691d67f5",
       "editorial_answer": "reschedule",
       "explanation": "Reschedule означает перенести назначенную встречу на другое время.",
       "key": "e08"

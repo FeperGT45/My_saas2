@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o3",
+            "id": "v53300f470577",
             "label": "a literal description of a container in the accounts"
           },
           {
-            "id": "o1",
+            "id": "v42b0a8115b5c",
             "label": "a frame that highlights loss"
           },
           {
-            "id": "o2",
+            "id": "ve88e5f9e8423",
             "label": "measurement proving every expense is waste"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v42b0a8115b5c"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v42b0a8115b5c",
+      "incorrect_answer": "ve88e5f9e8423",
       "editorial_answer": "a frame that highlights loss",
       "explanation": "Образ акцентирует утечки, но не заменяет анализ конкретных расходов.",
       "key": "e01"
@@ -216,24 +216,24 @@
         "passage": "A councillor described the library budget as a leaking bucket, arguing that additional funding would merely disappear into an inefficient system. A librarian replied that the bucket image made waste salient while leaving the value of the service out of view. She did not deny that particular costs deserved scrutiny. Rather, she questioned whether an image of leakage could establish which expenditure was avoidable and which supported public access. Another councillor proposed a different metaphor, calling the library shared infrastructure. That image highlighted long-term benefit but could also obscure operational failings. The committee eventually requested itemised costs and usage evidence. Neither metaphor was prohibited; neither was allowed to substitute for the evidence needed to judge the budget.",
         "options": [
           {
-            "id": "o1",
+            "id": "v4914ca3c81cb",
             "label": "It highlights waste without establishing which spending is avoidable."
           },
           {
-            "id": "o2",
+            "id": "vc7fe61b836cf",
             "label": "It proves that every item of expenditure has equal value."
           },
           {
-            "id": "o3",
+            "id": "va39fc1e7444b",
             "label": "It prevents anyone from asking about operational costs."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v4914ca3c81cb"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v4914ca3c81cb",
+      "incorrect_answer": "vc7fe61b836cf",
       "editorial_answer": "It highlights waste without establishing which spending is avoidable.",
       "explanation": "Рамка делает потери заметными, но не различает конкретные виды расходов.",
       "key": "e05"
@@ -245,24 +245,24 @@
         "passage": "A councillor described the library budget as a leaking bucket, arguing that additional funding would merely disappear into an inefficient system. A librarian replied that the bucket image made waste salient while leaving the value of the service out of view. She did not deny that particular costs deserved scrutiny. Rather, she questioned whether an image of leakage could establish which expenditure was avoidable and which supported public access. Another councillor proposed a different metaphor, calling the library shared infrastructure. That image highlighted long-term benefit but could also obscure operational failings. The committee eventually requested itemised costs and usage evidence. Neither metaphor was prohibited; neither was allowed to substitute for the evidence needed to judge the budget.",
         "options": [
           {
-            "id": "o2",
+            "id": "v600a624cc079",
             "label": "Shared infrastructure can never have public value."
           },
           {
-            "id": "o3",
+            "id": "vc1fc45daf427",
             "label": "Replacing one metaphor with another produces itemised evidence."
           },
           {
-            "id": "o1",
+            "id": "v03bb33e00619",
             "label": "It may highlight benefit while obscuring operational failings."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v03bb33e00619"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v03bb33e00619",
+      "incorrect_answer": "v600a624cc079",
       "editorial_answer": "It may highlight benefit while obscuring operational failings.",
       "explanation": "Текст применяет симметричную критику: обе рамки выделяют часть ситуации.",
       "key": "e06"
@@ -279,24 +279,24 @@
         ],
         "options": [
           {
-            "id": "o1",
+            "id": "ve744d3e98053",
             "label": "No; its explanatory appeal must be checked against relevant evidence."
           },
           {
-            "id": "o2",
+            "id": "vdb3365266403",
             "label": "Yes; vividness guarantees factual correspondence."
           },
           {
-            "id": "o3",
+            "id": "v3b4aaaa549c8",
             "label": "Yes; an analogy contains all the measurements it evokes."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "ve744d3e98053"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "ve744d3e98053",
+      "incorrect_answer": "vdb3365266403",
       "editorial_answer": "No; its explanatory appeal must be checked against relevant evidence.",
       "explanation": "Уместность сравнения не делает перенос всех свойств автоматически истинным.",
       "key": "e07"
@@ -308,24 +308,24 @@
         "sentence": "A detail made especially noticeable by a particular description becomes ___.",
         "options": [
           {
-            "id": "o2",
+            "id": "ved762437d543",
             "label": "irrelevant by definition"
           },
           {
-            "id": "o3",
+            "id": "vdf2985dc31ba",
             "label": "unrecorded"
           },
           {
-            "id": "o1",
+            "id": "v7448984ce4d1",
             "label": "salient"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v7448984ce4d1"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v7448984ce4d1",
+      "incorrect_answer": "ved762437d543",
       "editorial_answer": "salient",
       "explanation": "Salient — выделяющийся и заметный; это характеристика внимания, а не гарантия истинности.",
       "key": "e08"

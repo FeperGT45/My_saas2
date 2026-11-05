@@ -1,0 +1,342 @@
+{
+  "key": "b2/wish-would-change",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 4,
+  "title": "Просим изменить раздражающее поведение",
+  "description": "Просим изменить раздражающее поведение: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать wish ... would для желаемого изменения",
+    "Не путать такую просьбу с сожалением о завершённом прошлом"
+  ],
+  "notes": [
+    "I wish they would reply выражает желание, чтобы кто-то изменил поведение или ситуацию.",
+    "Wish ... had replied относится к несостоявшемуся прошлому; временной смысл не одинаков."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/being-done"],
+  "lexicon": [
+    {
+      "en": "persistent",
+      "ru": "постоянно повторяющийся"
+    },
+    {
+      "en": "disturb",
+      "ru": "мешать"
+    },
+    {
+      "en": "considerate",
+      "ru": "внимательный к другим"
+    },
+    {
+      "en": "respond",
+      "ru": "отвечать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: They repeatedly leave the door open. I wish they ___ it.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v05252163e5e1",
+            "label": "would close"
+          },
+          {
+            "id": "vfc821e63a61b",
+            "label": "would closed"
+          },
+          {
+            "id": "v0f0e7f36b8aa",
+            "label": "had closing"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v05252163e5e1"
+      },
+      "reference_answer": "v05252163e5e1",
+      "incorrect_answer": "vfc821e63a61b",
+      "editorial_answer": "would close",
+      "explanation": "Would close выражает желаемое изменение повторяющегося поведения.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: lower / lowered.",
+      "public_payload": {
+        "sentence": "I wish the neighbours would ___ the volume after midnight."
+      },
+      "answer_key": {
+        "accepted": ["lower"]
+      },
+      "reference_answer": "lower",
+      "incorrect_answer": "lowered",
+      "editorial_answer": "I wish the neighbours would lower the volume after midnight.",
+      "explanation": "После would нужна начальная форма lower.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Хотелось бы, чтобы они начали отвечать на наши сообщения.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "they"
+          },
+          {
+            "id": "t4",
+            "label": "would"
+          },
+          {
+            "id": "t5",
+            "label": "respond"
+          },
+          {
+            "id": "t6",
+            "label": "to"
+          },
+          {
+            "id": "t7",
+            "label": "our"
+          },
+          {
+            "id": "t8",
+            "label": "messages."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "wish"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "I wish they would respond to our messages.",
+      "explanation": "Would respond выражает желаемое изменение, а не утверждает, что ответы уже были.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I wish he would stops interrupting."
+      },
+      "answer_key": {
+        "accepted": ["I wish he would stop interrupting."]
+      },
+      "reference_answer": "I wish he would stop interrupting.",
+      "incorrect_answer": "I wish he would stops interrupting.",
+      "editorial_answer": "I wish he would stop interrupting.",
+      "explanation": "После would используется stop без -s.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое изменение поведения требуется?",
+      "public_payload": {
+        "passage": "A tenant had asked several times for the shared entrance to be kept clear. Bicycles were still being left across the doorway, making access difficult. In a message to the residents, she wrote, “I wish everyone would use the bicycle store.” She was asking for a change in current behaviour, not claiming that the store had always been available in the past. The building manager then checked whether all residents had keys to it before repeating the request.",
+        "options": [
+          {
+            "id": "v6f0fcb40f018",
+            "label": "Removing the doorway permanently."
+          },
+          {
+            "id": "vf1fbdf55984f",
+            "label": "Stopping residents from entering their homes."
+          },
+          {
+            "id": "v85b2ed96aa24",
+            "label": "Keeping bicycles in the store rather than across the doorway."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v85b2ed96aa24"
+      },
+      "reference_answer": "v85b2ed96aa24",
+      "incorrect_answer": "v6f0fcb40f018",
+      "editorial_answer": "Keeping bicycles in the store rather than across the doorway.",
+      "explanation": "Желаемое изменение — использовать помещение для велосипедов.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l7a634c377660",
+            "label": "persistent"
+          },
+          {
+            "id": "l25d55e39676c",
+            "label": "disturb"
+          },
+          {
+            "id": "l532014ef79be",
+            "label": "considerate"
+          },
+          {
+            "id": "l3f4b5479ccab",
+            "label": "respond"
+          }
+        ],
+        "right": [
+          {
+            "id": "rc5d35be04c56",
+            "label": "внимательный к другим"
+          },
+          {
+            "id": "r7d8af774986f",
+            "label": "отвечать"
+          },
+          {
+            "id": "r32abeeb2c2a3",
+            "label": "постоянно повторяющийся"
+          },
+          {
+            "id": "r15dda26fb29a",
+            "label": "мешать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l7a634c377660": "r32abeeb2c2a3",
+          "l25d55e39676c": "r15dda26fb29a",
+          "l532014ef79be": "rc5d35be04c56",
+          "l3f4b5479ccab": "r7d8af774986f"
+        }
+      },
+      "reference_answer": {
+        "l7a634c377660": "r32abeeb2c2a3",
+        "l25d55e39676c": "r15dda26fb29a",
+        "l532014ef79be": "rc5d35be04c56",
+        "l3f4b5479ccab": "r7d8af774986f"
+      },
+      "incorrect_answer": {
+        "l7a634c377660": "r15dda26fb29a",
+        "l25d55e39676c": "r32abeeb2c2a3",
+        "l532014ef79be": "rc5d35be04c56",
+        "l3f4b5479ccab": "r7d8af774986f"
+      },
+      "editorial_answer": "persistent — постоянно повторяющийся; disturb — мешать; considerate — внимательный к другим; respond — отвечать",
+      "explanation": "В этих контекстах: persistent — постоянно повторяющийся; disturb — мешать; considerate — внимательный к другим; respond — отвечать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем менеджер проверил наличие ключей?",
+      "public_payload": {
+        "passage": "A tenant had asked several times for the shared entrance to be kept clear. Bicycles were still being left across the doorway, making access difficult. In a message to the residents, she wrote, “I wish everyone would use the bicycle store.” She was asking for a change in current behaviour, not claiming that the store had always been available in the past. The building manager then checked whether all residents had keys to it before repeating the request.",
+        "options": [
+          {
+            "id": "v7d0afa3529be",
+            "label": "To establish that the past could be changed."
+          },
+          {
+            "id": "v0e2342ff6cad",
+            "label": "To check whether residents could actually use the proposed alternative."
+          },
+          {
+            "id": "vf9d6db9d3507",
+            "label": "To prove that everyone had deliberately ignored the tenant."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0e2342ff6cad"
+      },
+      "reference_answer": "v0e2342ff6cad",
+      "incorrect_answer": "vf9d6db9d3507",
+      "editorial_answer": "To check whether residents could actually use the proposed alternative.",
+      "explanation": "Доступность альтернативы нельзя молча считать одинаковой для всех.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Вырази желание изменить нынешнюю практику ответов.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "The office never answers our calls promptly."
+          }
+        ],
+        "options": [
+          {
+            "id": "v8d5df36cafc7",
+            "label": "I wish they would responded more quickly."
+          },
+          {
+            "id": "vb059ec181063",
+            "label": "I wish they will responding more quickly."
+          },
+          {
+            "id": "v5fef0cc11670",
+            "label": "I wish they would respond more quickly."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5fef0cc11670"
+      },
+      "reference_answer": "v5fef0cc11670",
+      "incorrect_answer": "v8d5df36cafc7",
+      "editorial_answer": "I wish they would respond more quickly.",
+      "explanation": "Wish they would respond соответствует просьбе об изменении поведения.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Repeated noise that makes it hard to work can ___ people.",
+        "options": [
+          {
+            "id": "v4b2912af1b0b",
+            "label": "reimburse"
+          },
+          {
+            "id": "v396b83353929",
+            "label": "disturb"
+          },
+          {
+            "id": "vbe39eaa9bcc3",
+            "label": "certify"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v396b83353929"
+      },
+      "reference_answer": "v396b83353929",
+      "incorrect_answer": "vbe39eaa9bcc3",
+      "editorial_answer": "disturb",
+      "explanation": "Disturb — мешать или нарушать покой.",
+      "key": "e09"
+    }
+  ]
+}

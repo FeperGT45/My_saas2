@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o2",
+            "id": "vb96569ea4149",
             "label": "judging it the most probable explanation"
           },
           {
-            "id": "o3",
+            "id": "vdfc4bd9c5cf0",
             "label": "claiming documentary proof of it"
           },
           {
-            "id": "o1",
+            "id": "v05b06915deff",
             "label": "retaining it as a possibility"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v05b06915deff"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v05b06915deff",
+      "incorrect_answer": "vb96569ea4149",
       "editorial_answer": "retaining it as a possibility",
       "explanation": "Cannot be ruled out не ранжирует вероятность и не объявляет доказательство.",
       "key": "e01"
@@ -157,24 +157,24 @@
         "passage": "A historian found no record of a meeting in a committee’s surviving minute books. One commentator treated the omission as proof that the meeting had never occurred. The historian was more circumspect. The books were incomplete, informal discussions were rarely minuted, and two letters referred ambiguously to a conversation around the relevant date. None of this established that a meeting had taken place. It did, however, weaken the claim that archival silence decisively established its absence. The historian distinguished an unconfirmed possibility from a positive reconstruction, and an incomplete record from a recording system known to be comprehensive. Whether silence counted strongly against an event depended on what the archive would normally have been expected to preserve.",
         "options": [
           {
-            "id": "o3",
+            "id": "v345cb6599a3d",
             "label": "The historian has shown that no meeting could ever be recorded."
           },
           {
-            "id": "o1",
+            "id": "vb34f61ca9005",
             "label": "The archive is incomplete and informal discussions were rarely recorded."
           },
           {
-            "id": "o2",
+            "id": "v8b969cdb9d6c",
             "label": "The letters conclusively prove a formal committee meeting."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vb34f61ca9005"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vb34f61ca9005",
+      "incorrect_answer": "v8b969cdb9d6c",
       "editorial_answer": "The archive is incomplete and informal discussions were rarely recorded.",
       "explanation": "Нужно учитывать полноту архива и обычную практику записи именно таких событий.",
       "key": "e05"
@@ -186,24 +186,24 @@
         "passage": "A historian found no record of a meeting in a committee’s surviving minute books. One commentator treated the omission as proof that the meeting had never occurred. The historian was more circumspect. The books were incomplete, informal discussions were rarely minuted, and two letters referred ambiguously to a conversation around the relevant date. None of this established that a meeting had taken place. It did, however, weaken the claim that archival silence decisively established its absence. The historian distinguished an unconfirmed possibility from a positive reconstruction, and an incomplete record from a recording system known to be comprehensive. Whether silence counted strongly against an event depended on what the archive would normally have been expected to preserve.",
         "options": [
           {
-            "id": "o1",
+            "id": "vab8ef1afee92",
             "label": "That a meeting has been positively established."
           },
           {
-            "id": "o2",
+            "id": "v4f6510ad82c6",
             "label": "That the surviving minute books are incomplete."
           },
           {
-            "id": "o3",
+            "id": "v8d0a872aaaa4",
             "label": "That the evidential weight of silence depends on expected recording."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vab8ef1afee92"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vab8ef1afee92",
+      "incorrect_answer": "v4f6510ad82c6",
       "editorial_answer": "That a meeting has been positively established.",
       "explanation": "Критика доказательства отсутствия не является позитивным доказательством события.",
       "key": "e06"
@@ -220,24 +220,24 @@
         ],
         "options": [
           {
-            "id": "o3",
+            "id": "ve33ffbccbf24",
             "label": "Yes; inability to exclude is documentary confirmation."
           },
           {
-            "id": "o1",
+            "id": "v44fbba831baf",
             "label": "No; non-exclusion alone does not establish probability."
           },
           {
-            "id": "o2",
+            "id": "vcedb4e22b363",
             "label": "Yes; any unexcluded possibility is the most likely one."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v44fbba831baf"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v44fbba831baf",
+      "incorrect_answer": "vcedb4e22b363",
       "editorial_answer": "No; non-exclusion alone does not establish probability.",
       "explanation": "Из открытой возможности не следует её преимущество перед альтернативами.",
       "key": "e07"
@@ -249,24 +249,24 @@
         "sentence": "An archive preserving some kinds of material much better than others is ___.",
         "options": [
           {
-            "id": "o1",
+            "id": "vcf8d55bd24aa",
             "label": "selective"
           },
           {
-            "id": "o2",
+            "id": "v3b18e04f3157",
             "label": "comprehensive by definition"
           },
           {
-            "id": "o3",
+            "id": "v73e90bc47872",
             "label": "conclusive"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vcf8d55bd24aa"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vcf8d55bd24aa",
+      "incorrect_answer": "v3b18e04f3157",
       "editorial_answer": "selective",
       "explanation": "Selective обозначает избирательность сохранения, а не полноту или окончательность вывода.",
       "key": "e08"

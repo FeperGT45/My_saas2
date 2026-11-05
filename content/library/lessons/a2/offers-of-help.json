@@ -1,0 +1,334 @@
+{
+  "key": "a2/offers-of-help",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 8,
+  "title": "Предлагаем помощь в момент разговора",
+  "description": "Предлагаем помощь в момент разговора: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Предлагать помощь через I will",
+    "Отличать предложение помощи от описания чужого плана"
+  ],
+  "notes": [
+    "I will carry it может выражать решение помочь в момент речи.",
+    "Shall I ...? — один из способов предложить помощь; после shall используется начальная форма."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/will-predictions"],
+  "lexicon": [
+    {
+      "en": "carry",
+      "ru": "нести"
+    },
+    {
+      "en": "offer",
+      "ru": "предлагать"
+    },
+    {
+      "en": "heavy",
+      "ru": "тяжёлый"
+    },
+    {
+      "en": "upstairs",
+      "ru": "наверх, наверху"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Your bag looks heavy. ___ carry it for you.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v70c4b20f7913",
+            "label": "I did yesterday"
+          },
+          {
+            "id": "vdef2f57f1931",
+            "label": "I will"
+          },
+          {
+            "id": "v250ce005341a",
+            "label": "I was"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdef2f57f1931"
+      },
+      "reference_answer": "vdef2f57f1931",
+      "incorrect_answer": "v250ce005341a",
+      "editorial_answer": "I will",
+      "explanation": "I will carry it — предложение помощи сейчас.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: open / opened.",
+      "public_payload": {
+        "sentence": "Shall I ___ the window for you?"
+      },
+      "answer_key": {
+        "accepted": ["open"]
+      },
+      "reference_answer": "open",
+      "incorrect_answer": "opened",
+      "editorial_answer": "Shall I open the window for you?",
+      "explanation": "После shall нужна начальная форма open.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я отнесу коробку наверх.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "carry"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "box"
+          },
+          {
+            "id": "t6",
+            "label": "upstairs."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "will"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "I will carry the box upstairs.",
+      "explanation": "Will carry здесь выражает добровольное решение помочь.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Shall I to help you with the chairs?"
+      },
+      "answer_key": {
+        "accepted": ["Shall I help you with the chairs?"]
+      },
+      "reference_answer": "Shall I help you with the chairs?",
+      "incorrect_answer": "Shall I to help you with the chairs?",
+      "editorial_answer": "Shall I help you with the chairs?",
+      "explanation": "После shall используется help без to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Лука предлагает сделать?",
+      "public_payload": {
+        "passage": "Luca sees his neighbour carrying two heavy boxes. He asks, “Shall I carry one upstairs?” She thanks him and gives him the smaller box. The lift is not working, so they use the stairs. After carrying the boxes, Luca goes back to collect his own shopping.",
+        "options": [
+          {
+            "id": "v965c8257e753",
+            "label": "Carry one box upstairs."
+          },
+          {
+            "id": "vc1312bad610b",
+            "label": "Repair the lift immediately."
+          },
+          {
+            "id": "vf8688d75e4ab",
+            "label": "Take all the neighbour’s shopping home."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v965c8257e753"
+      },
+      "reference_answer": "v965c8257e753",
+      "incorrect_answer": "vc1312bad610b",
+      "editorial_answer": "Carry one box upstairs.",
+      "explanation": "Его предложение относится к одной коробке.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "ld70fb6b38001",
+            "label": "carry"
+          },
+          {
+            "id": "ld9c459e68bee",
+            "label": "offer"
+          },
+          {
+            "id": "ldfc103e5419f",
+            "label": "heavy"
+          },
+          {
+            "id": "l337247fe5784",
+            "label": "upstairs"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2fe61d24b563",
+            "label": "тяжёлый"
+          },
+          {
+            "id": "reba4752d972f",
+            "label": "наверх, наверху"
+          },
+          {
+            "id": "rc90637f2f25a",
+            "label": "нести"
+          },
+          {
+            "id": "r5b924c880d59",
+            "label": "предлагать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "ld70fb6b38001": "rc90637f2f25a",
+          "ld9c459e68bee": "r5b924c880d59",
+          "ldfc103e5419f": "r2fe61d24b563",
+          "l337247fe5784": "reba4752d972f"
+        }
+      },
+      "reference_answer": {
+        "ld70fb6b38001": "rc90637f2f25a",
+        "ld9c459e68bee": "r5b924c880d59",
+        "ldfc103e5419f": "r2fe61d24b563",
+        "l337247fe5784": "reba4752d972f"
+      },
+      "incorrect_answer": {
+        "ld70fb6b38001": "r5b924c880d59",
+        "ld9c459e68bee": "rc90637f2f25a",
+        "ldfc103e5419f": "r2fe61d24b563",
+        "l337247fe5784": "reba4752d972f"
+      },
+      "editorial_answer": "carry — нести; offer — предлагать; heavy — тяжёлый; upstairs — наверх, наверху",
+      "explanation": "В этих контекстах: carry — нести; offer — предлагать; heavy — тяжёлый; upstairs — наверх, наверху.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему они идут по лестнице?",
+      "public_payload": {
+        "passage": "Luca sees his neighbour carrying two heavy boxes. He asks, “Shall I carry one upstairs?” She thanks him and gives him the smaller box. The lift is not working, so they use the stairs. After carrying the boxes, Luca goes back to collect his own shopping.",
+        "options": [
+          {
+            "id": "v30dc42f31958",
+            "label": "The neighbour is afraid of every lift."
+          },
+          {
+            "id": "va2c437905df2",
+            "label": "Luca wants to sell the boxes."
+          },
+          {
+            "id": "v0e76428ae818",
+            "label": "The lift is not working."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0e76428ae818"
+      },
+      "reference_answer": "v0e76428ae818",
+      "incorrect_answer": "v30dc42f31958",
+      "editorial_answer": "The lift is not working.",
+      "explanation": "Причина прямо названа в тексте, другие мотивы не указаны.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Предложи включить свет.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I cannot reach the light switch."
+          }
+        ],
+        "options": [
+          {
+            "id": "ve908fbeffdcd",
+            "label": "Shall I turn it on for you?"
+          },
+          {
+            "id": "ve05a42db3cd3",
+            "label": "Shall I turned it yesterday?"
+          },
+          {
+            "id": "v7c4125c466c8",
+            "label": "Shall I to turning it?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve908fbeffdcd"
+      },
+      "reference_answer": "ve908fbeffdcd",
+      "incorrect_answer": "ve05a42db3cd3",
+      "editorial_answer": "Shall I turn it on for you?",
+      "explanation": "Shall I turn ...? использует начальную форму turn.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "This suitcase is difficult to lift because it is ___.",
+        "options": [
+          {
+            "id": "ve254f288f693",
+            "label": "early"
+          },
+          {
+            "id": "v385968045c9f",
+            "label": "available"
+          },
+          {
+            "id": "v14f2d6415760",
+            "label": "heavy"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v14f2d6415760"
+      },
+      "reference_answer": "v14f2d6415760",
+      "incorrect_answer": "ve254f288f693",
+      "editorial_answer": "heavy",
+      "explanation": "Heavy означает тяжёлый по весу.",
+      "key": "e09"
+    }
+  ]
+}

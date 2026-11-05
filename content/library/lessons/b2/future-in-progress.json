@@ -1,0 +1,344 @@
+{
+  "key": "b2/future-in-progress",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 1,
+  "title": "В процессе в определённый момент будущего",
+  "description": "В процессе в определённый момент будущего: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать will be + -ing для будущего процесса",
+    "Отличать процесс в момент времени от завершения к сроку"
+  ],
+  "notes": [
+    "Future Continuous: At ten tomorrow, we will be travelling. Действие будет идти в этот момент.",
+    "Will have finished к тому же моменту обозначало бы завершение; will be working не утверждает, что работа закончится."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/despite-concession"],
+  "lexicon": [
+    {
+      "en": "in progress",
+      "ru": "в процессе"
+    },
+    {
+      "en": "shift",
+      "ru": "рабочая смена"
+    },
+    {
+      "en": "available",
+      "ru": "свободный по времени"
+    },
+    {
+      "en": "reschedule",
+      "ru": "перенести"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: At this time tomorrow, we ___ the equipment, so we will not be available.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "ve6733dc7cd22",
+            "label": "will be testing"
+          },
+          {
+            "id": "v49d334cee871",
+            "label": "will testing"
+          },
+          {
+            "id": "vd975365b1998",
+            "label": "will be test"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve6733dc7cd22"
+      },
+      "reference_answer": "ve6733dc7cd22",
+      "incorrect_answer": "v49d334cee871",
+      "editorial_answer": "will be testing",
+      "explanation": "Will be testing показывает процесс в указанный будущий момент.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: checked / checking.",
+      "public_payload": {
+        "sentence": "At noon, the technicians will be ___ the new system."
+      },
+      "answer_key": {
+        "accepted": ["checking"]
+      },
+      "reference_answer": "checking",
+      "incorrect_answer": "checked",
+      "editorial_answer": "At noon, the technicians will be checking the new system.",
+      "explanation": "После will be в Future Continuous требуется checking.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «В десять мы будем проверять оборудование.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "be"
+          },
+          {
+            "id": "t4",
+            "label": "testing"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "equipment"
+          },
+          {
+            "id": "t7",
+            "label": "at"
+          },
+          {
+            "id": "t8",
+            "label": "ten."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "will"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "We will be testing the equipment at ten.",
+      "explanation": "Будущий процесс не равен обещанию закончить проверку к десяти.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "At three tomorrow, she will working with the volunteers."
+      },
+      "answer_key": {
+        "accepted": [
+          "At three tomorrow, she will be working with the volunteers."
+        ]
+      },
+      "reference_answer": "At three tomorrow, she will be working with the volunteers.",
+      "incorrect_answer": "At three tomorrow, she will working with the volunteers.",
+      "editorial_answer": "At three tomorrow, she will be working with the volunteers.",
+      "explanation": "Для будущего продолженного времени между will и working требуется be.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему команда не могла созвониться в два?",
+      "public_payload": {
+        "passage": "A research team scheduled a live demonstration for Thursday afternoon. When a visitor requested a call at two, the coordinator explained that they would be testing the equipment at that time. The visitor suggested three instead. The coordinator accepted provisionally, noting that testing might run longer if faults appeared. The schedule described what would be in progress at two; it did not guarantee that all tests would have been completed by three. The team promised to confirm availability once the morning checks were finished.",
+        "options": [
+          {
+            "id": "ve89691977eaa",
+            "label": "Every test was guaranteed to be finished before noon."
+          },
+          {
+            "id": "v132bddae6d20",
+            "label": "The visitor had cancelled the demonstration."
+          },
+          {
+            "id": "v48b38b15416a",
+            "label": "Equipment testing would be in progress."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v48b38b15416a"
+      },
+      "reference_answer": "v48b38b15416a",
+      "incorrect_answer": "ve89691977eaa",
+      "editorial_answer": "Equipment testing would be in progress.",
+      "explanation": "Будущий процесс в два часа препятствовал звонку.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l6def0a6852e0",
+            "label": "in progress"
+          },
+          {
+            "id": "l7e25d7ad9bd1",
+            "label": "shift"
+          },
+          {
+            "id": "l66cc18ef0a6b",
+            "label": "available"
+          },
+          {
+            "id": "l3a7991ee4501",
+            "label": "reschedule"
+          }
+        ],
+        "right": [
+          {
+            "id": "r42f7636fcd22",
+            "label": "свободный по времени"
+          },
+          {
+            "id": "rb197d852923e",
+            "label": "перенести"
+          },
+          {
+            "id": "rb1cbb45b75d4",
+            "label": "в процессе"
+          },
+          {
+            "id": "r0d43cf8fdc74",
+            "label": "рабочая смена"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l6def0a6852e0": "rb1cbb45b75d4",
+          "l7e25d7ad9bd1": "r0d43cf8fdc74",
+          "l66cc18ef0a6b": "r42f7636fcd22",
+          "l3a7991ee4501": "rb197d852923e"
+        }
+      },
+      "reference_answer": {
+        "l6def0a6852e0": "rb1cbb45b75d4",
+        "l7e25d7ad9bd1": "r0d43cf8fdc74",
+        "l66cc18ef0a6b": "r42f7636fcd22",
+        "l3a7991ee4501": "rb197d852923e"
+      },
+      "incorrect_answer": {
+        "l6def0a6852e0": "r0d43cf8fdc74",
+        "l7e25d7ad9bd1": "rb1cbb45b75d4",
+        "l66cc18ef0a6b": "r42f7636fcd22",
+        "l3a7991ee4501": "rb197d852923e"
+      },
+      "editorial_answer": "in progress — в процессе; shift — рабочая смена; available — свободный по времени; reschedule — перенести",
+      "explanation": "В этих контекстах: in progress — в процессе; shift — рабочая смена; available — свободный по времени; reschedule — перенести.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой статус у договорённости на три?",
+      "public_payload": {
+        "passage": "A research team scheduled a live demonstration for Thursday afternoon. When a visitor requested a call at two, the coordinator explained that they would be testing the equipment at that time. The visitor suggested three instead. The coordinator accepted provisionally, noting that testing might run longer if faults appeared. The schedule described what would be in progress at two; it did not guarantee that all tests would have been completed by three. The team promised to confirm availability once the morning checks were finished.",
+        "options": [
+          {
+            "id": "v053ecbfe43eb",
+            "label": "Rejected without any alternative."
+          },
+          {
+            "id": "v22e5e10b1613",
+            "label": "Provisional, because testing could overrun."
+          },
+          {
+            "id": "v83ac8294cb78",
+            "label": "Guaranteed regardless of faults."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v22e5e10b1613"
+      },
+      "reference_answer": "v22e5e10b1613",
+      "incorrect_answer": "v83ac8294cb78",
+      "editorial_answer": "Provisional, because testing could overrun.",
+      "explanation": "Предварительное согласие связано с возможностью затянувшейся проверки.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Укажи будущий процесс и предложи другое время.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can we call you at ten tomorrow?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v0b3848d54d9c",
+            "label": "I will travelling then; could we speak at noon?"
+          },
+          {
+            "id": "v46123799f6eb",
+            "label": "I will be travel then; could we speak at noon?"
+          },
+          {
+            "id": "v7d0aa3553a73",
+            "label": "I will be travelling then; could we speak at noon?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7d0aa3553a73"
+      },
+      "reference_answer": "v7d0aa3553a73",
+      "incorrect_answer": "v0b3848d54d9c",
+      "editorial_answer": "I will be travelling then; could we speak at noon?",
+      "explanation": "Will be travelling — правильная форма Future Continuous.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "If a task is still happening, it is ___.",
+        "options": [
+          {
+            "id": "v051a93945e90",
+            "label": "cancelled by definition"
+          },
+          {
+            "id": "vc9e060f62857",
+            "label": "in progress"
+          },
+          {
+            "id": "vb4ebed148711",
+            "label": "completed beyond doubt"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc9e060f62857"
+      },
+      "reference_answer": "vc9e060f62857",
+      "incorrect_answer": "vb4ebed148711",
+      "editorial_answer": "in progress",
+      "explanation": "In progress означает продолжающееся выполнение.",
+      "key": "e09"
+    }
+  ]
+}

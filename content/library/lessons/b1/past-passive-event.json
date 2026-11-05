@@ -1,0 +1,338 @@
+{
+  "key": "b1/past-passive-event",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 7,
+  "title": "Что было сделано: пассив в прошлом",
+  "description": "Что было сделано: пассив в прошлом: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать was/were + причастие для прошлого события",
+    "Выбирать фокус на объекте действия"
+  ],
+  "notes": [
+    "Past Simple Passive: The hall was repaired; the windows were replaced.",
+    "By вводит исполнителя, если он важен: The mural was painted by local students."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/going-to-evidence"],
+  "lexicon": [
+    {
+      "en": "restore",
+      "ru": "восстанавливать"
+    },
+    {
+      "en": "replace",
+      "ru": "заменять"
+    },
+    {
+      "en": "mural",
+      "ru": "настенная роспись"
+    },
+    {
+      "en": "volunteer",
+      "ru": "волонтёр"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The old windows ___ replaced last summer.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v40451f99e410",
+            "label": "are been"
+          },
+          {
+            "id": "v0a4f6b6228d5",
+            "label": "were"
+          },
+          {
+            "id": "vf9f32e2ff7ac",
+            "label": "was"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0a4f6b6228d5"
+      },
+      "reference_answer": "v0a4f6b6228d5",
+      "incorrect_answer": "vf9f32e2ff7ac",
+      "editorial_answer": "were",
+      "explanation": "Windows — множественное число, событие относится к прошлому: were replaced.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: restoring / restored.",
+      "public_payload": {
+        "sentence": "The hall was ___ by local volunteers."
+      },
+      "answer_key": {
+        "accepted": ["restored"]
+      },
+      "reference_answer": "restored",
+      "incorrect_answer": "restoring",
+      "editorial_answer": "The hall was restored by local volunteers.",
+      "explanation": "В пассиве после was нужно причастие restored.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Роспись была выполнена местными студентами.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "was"
+          },
+          {
+            "id": "t4",
+            "label": "painted"
+          },
+          {
+            "id": "t5",
+            "label": "by"
+          },
+          {
+            "id": "t6",
+            "label": "local"
+          },
+          {
+            "id": "t7",
+            "label": "students."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "mural"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The mural was painted by local students.",
+      "explanation": "Was painted фокусирует роспись, by называет исполнителей.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The roof were repaired in June."
+      },
+      "answer_key": {
+        "accepted": ["The roof was repaired in June."]
+      },
+      "reference_answer": "The roof was repaired in June.",
+      "incorrect_answer": "The roof were repaired in June.",
+      "editorial_answer": "The roof was repaired in June.",
+      "explanation": "The roof — единственное число, поэтому was.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда заменили окна?",
+      "public_payload": {
+        "passage": "The neighbourhood hall reopened in September after several months of work. The roof was repaired in June, and the windows were replaced in July. Local students painted a mural in the entrance. Most of the repair costs were covered by a grant, while volunteers helped with cleaning. The reopening notice thanked both the funders and the people who gave their time.",
+        "options": [
+          {
+            "id": "v389322d5470b",
+            "label": "In July."
+          },
+          {
+            "id": "v8fef883534df",
+            "label": "In June."
+          },
+          {
+            "id": "v04874babb509",
+            "label": "In September after reopening."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v389322d5470b"
+      },
+      "reference_answer": "v389322d5470b",
+      "incorrect_answer": "v8fef883534df",
+      "editorial_answer": "In July.",
+      "explanation": "June относится к крыше, July — к окнам.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l5bd9c6cb37c6",
+            "label": "restore"
+          },
+          {
+            "id": "l5b7046a51951",
+            "label": "replace"
+          },
+          {
+            "id": "l77762395355e",
+            "label": "mural"
+          },
+          {
+            "id": "lb3b639e5d93f",
+            "label": "volunteer"
+          }
+        ],
+        "right": [
+          {
+            "id": "r5a98de168dc2",
+            "label": "настенная роспись"
+          },
+          {
+            "id": "r7bfb8e3c229c",
+            "label": "волонтёр"
+          },
+          {
+            "id": "r4d55369a6198",
+            "label": "восстанавливать"
+          },
+          {
+            "id": "r8ce9c3f5e57b",
+            "label": "заменять"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l5bd9c6cb37c6": "r4d55369a6198",
+          "l5b7046a51951": "r8ce9c3f5e57b",
+          "l77762395355e": "r5a98de168dc2",
+          "lb3b639e5d93f": "r7bfb8e3c229c"
+        }
+      },
+      "reference_answer": {
+        "l5bd9c6cb37c6": "r4d55369a6198",
+        "l5b7046a51951": "r8ce9c3f5e57b",
+        "l77762395355e": "r5a98de168dc2",
+        "lb3b639e5d93f": "r7bfb8e3c229c"
+      },
+      "incorrect_answer": {
+        "l5bd9c6cb37c6": "r8ce9c3f5e57b",
+        "l5b7046a51951": "r4d55369a6198",
+        "l77762395355e": "r5a98de168dc2",
+        "lb3b639e5d93f": "r7bfb8e3c229c"
+      },
+      "editorial_answer": "restore — восстанавливать; replace — заменять; mural — настенная роспись; volunteer — волонтёр",
+      "explanation": "В этих контекстах: restore — восстанавливать; replace — заменять; mural — настенная роспись; volunteer — волонтёр.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "За что в том числе благодарили волонтёров?",
+      "public_payload": {
+        "passage": "The neighbourhood hall reopened in September after several months of work. The roof was repaired in June, and the windows were replaced in July. Local students painted a mural in the entrance. Most of the repair costs were covered by a grant, while volunteers helped with cleaning. The reopening notice thanked both the funders and the people who gave their time.",
+        "options": [
+          {
+            "id": "v51807dc7080d",
+            "label": "For personally funding every repair."
+          },
+          {
+            "id": "v6dda0c327a60",
+            "label": "For refusing the grant."
+          },
+          {
+            "id": "vf2cf831e08f6",
+            "label": "For helping with cleaning."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf2cf831e08f6"
+      },
+      "reference_answer": "vf2cf831e08f6",
+      "incorrect_answer": "v51807dc7080d",
+      "editorial_answer": "For helping with cleaning.",
+      "explanation": "Текст различает финансовую поддержку и добровольную работу.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи о результате, не выдумывая исполнителя.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Who repaired the bridge? We do not know the name."
+          }
+        ],
+        "options": [
+          {
+            "id": "vd66cb3d01636",
+            "label": "The bridge was repaired last month."
+          },
+          {
+            "id": "vaeb89b09b00b",
+            "label": "The bridge repaired itself last month."
+          },
+          {
+            "id": "v5d1dd82815b9",
+            "label": "The bridge was repairing last month by unknown."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd66cb3d01636"
+      },
+      "reference_answer": "vd66cb3d01636",
+      "incorrect_answer": "vaeb89b09b00b",
+      "editorial_answer": "The bridge was repaired last month.",
+      "explanation": "Пассив позволяет не называть неизвестного исполнителя.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To put a new window in place of an old one is to ___ it.",
+        "options": [
+          {
+            "id": "va8dcc3004c59",
+            "label": "restore every time without change"
+          },
+          {
+            "id": "v7acdedf93305",
+            "label": "attend"
+          },
+          {
+            "id": "vf8d84f71c4a5",
+            "label": "replace"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf8d84f71c4a5"
+      },
+      "reference_answer": "vf8d84f71c4a5",
+      "incorrect_answer": "va8dcc3004c59",
+      "editorial_answer": "replace",
+      "explanation": "Replace — заменить предмет другим.",
+      "key": "e09"
+    }
+  ]
+}

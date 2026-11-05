@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o2",
+            "id": "v215e0b92f0dd",
             "label": "will installing"
           },
           {
-            "id": "o3",
+            "id": "v3cb81200fac5",
             "label": "have installed yesterday"
           },
           {
-            "id": "o1",
+            "id": "vb8f9a9baa806",
             "label": "will have installed"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vb8f9a9baa806"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vb8f9a9baa806",
+      "incorrect_answer": "v215e0b92f0dd",
       "editorial_answer": "will have installed",
       "explanation": "Will have installed показывает ожидаемое завершение до прибытия гостей.",
       "key": "e01"
@@ -159,24 +159,24 @@
         "passage": "The museum team has three days to prepare a temporary exhibition. The paintings are already in place, but the labels still need to be printed. According to the current schedule, the team will have completed the labels by noon on Thursday. A separate safety inspection is planned for Thursday afternoon. The exhibition can open on Friday only if that inspection is successful. Finishing the labels is therefore an important milestone, but it is not the only condition for opening.",
         "options": [
           {
-            "id": "o3",
+            "id": "v33899800d6a8",
             "label": "Completing every future museum exhibition."
           },
           {
-            "id": "o1",
+            "id": "vd9c5d06bcd6c",
             "label": "Preparing the labels."
           },
           {
-            "id": "o2",
+            "id": "v9f153a486911",
             "label": "Welcoming the first Friday visitors."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vd9c5d06bcd6c"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vd9c5d06bcd6c",
+      "incorrect_answer": "v9f153a486911",
       "editorial_answer": "Preparing the labels.",
       "explanation": "По графику к этому времени будут готовы подписи.",
       "key": "e05"
@@ -188,24 +188,24 @@
         "passage": "The museum team has three days to prepare a temporary exhibition. The paintings are already in place, but the labels still need to be printed. According to the current schedule, the team will have completed the labels by noon on Thursday. A separate safety inspection is planned for Thursday afternoon. The exhibition can open on Friday only if that inspection is successful. Finishing the labels is therefore an important milestone, but it is not the only condition for opening.",
         "options": [
           {
-            "id": "o1",
+            "id": "vef17447307fa",
             "label": "No; the safety inspection must also succeed."
           },
           {
-            "id": "o2",
+            "id": "v81e802b57f47",
             "label": "Yes; no other conditions remain."
           },
           {
-            "id": "o3",
+            "id": "vf63e1dbcf02c",
             "label": "No; the paintings have not arrived."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vef17447307fa"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vef17447307fa",
+      "incorrect_answer": "v81e802b57f47",
       "editorial_answer": "No; the safety inspection must also succeed.",
       "explanation": "Текст вводит отдельное условие — успешную проверку безопасности.",
       "key": "e06"
@@ -222,24 +222,24 @@
         ],
         "options": [
           {
-            "id": "o3",
+            "id": "v1e219954adfa",
             "label": "Yes, we have send it tomorrow."
           },
           {
-            "id": "o1",
+            "id": "vc0bb7de53371",
             "label": "Yes, we will have sent it by then."
           },
           {
-            "id": "o2",
+            "id": "vcdaf4ff39ee8",
             "label": "Yes, we will have sending it by then."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vc0bb7de53371"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vc0bb7de53371",
+      "incorrect_answer": "vcdaf4ff39ee8",
       "editorial_answer": "Yes, we will have sent it by then.",
       "explanation": "Will have sent согласует завершённую отправку с by then.",
       "key": "e07"
@@ -251,24 +251,24 @@
         "sentence": "A significant stage used to track progress is a ___.",
         "options": [
           {
-            "id": "o1",
+            "id": "v611ab425daf5",
             "label": "milestone"
           },
           {
-            "id": "o2",
+            "id": "v20aeff17337c",
             "label": "distraction"
           },
           {
-            "id": "o3",
+            "id": "va50326bca10d",
             "label": "receipt"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v611ab425daf5"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v611ab425daf5",
+      "incorrect_answer": "v20aeff17337c",
       "editorial_answer": "milestone",
       "explanation": "Milestone — контрольная точка, по которой отслеживают ход работы.",
       "key": "e08"

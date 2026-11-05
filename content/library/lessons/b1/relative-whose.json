@@ -1,0 +1,342 @@
+{
+  "key": "b1/relative-whose",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 2,
+  "title": "Чей предмет: придаточное с whose",
+  "description": "Чей предмет: придаточное с whose: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Соединять человека с принадлежащим ему предметом через whose",
+    "Отличать whose от who и who’s"
+  ],
+  "notes": [
+    "Whose + существительное выражает принадлежность: the student whose bag was missing.",
+    "Who’s сокращает who is или who has и не заменяет whose перед предметом в этой конструкции."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/purpose-and-access"],
+  "lexicon": [
+    {
+      "en": "owner",
+      "ru": "владелец"
+    },
+    {
+      "en": "belong",
+      "ru": "принадлежать"
+    },
+    {
+      "en": "label",
+      "ru": "бирка"
+    },
+    {
+      "en": "identify",
+      "ru": "опознавать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The student ___ coat was missing came to reception.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v7b69d7cdb909",
+            "label": "whose"
+          },
+          {
+            "id": "vb62a33d6f681",
+            "label": "who’s"
+          },
+          {
+            "id": "v77c8d06ebf05",
+            "label": "who"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7b69d7cdb909"
+      },
+      "reference_answer": "v7b69d7cdb909",
+      "incorrect_answer": "vb62a33d6f681",
+      "editorial_answer": "whose",
+      "explanation": "Перед coat нужно притяжательное whose.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: whose / who.",
+      "public_payload": {
+        "sentence": "I spoke to the visitor ___ phone we had found."
+      },
+      "answer_key": {
+        "accepted": ["whose"]
+      },
+      "reference_answer": "whose",
+      "incorrect_answer": "who",
+      "editorial_answer": "I spoke to the visitor whose phone we had found.",
+      "explanation": "Whose phone связывает посетителя с принадлежащим ему телефоном.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Женщина, чью сумку мы нашли, поблагодарила нас.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "whose"
+          },
+          {
+            "id": "t4",
+            "label": "bag"
+          },
+          {
+            "id": "t5",
+            "label": "we"
+          },
+          {
+            "id": "t6",
+            "label": "found"
+          },
+          {
+            "id": "t7",
+            "label": "thanked"
+          },
+          {
+            "id": "t8",
+            "label": "us."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "woman"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The woman whose bag we found thanked us.",
+      "explanation": "Whose bag обозначает сумку этой женщины.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The boy who’s bicycle was damaged called the shop."
+      },
+      "answer_key": {
+        "accepted": ["The boy whose bicycle was damaged called the shop."]
+      },
+      "reference_answer": "The boy whose bicycle was damaged called the shop.",
+      "incorrect_answer": "The boy who’s bicycle was damaged called the shop.",
+      "editorial_answer": "The boy whose bicycle was damaged called the shop.",
+      "explanation": "Перед bicycle нужна форма whose, а не who is/who has.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое изображение помогло найти возможного владельца?",
+      "public_payload": {
+        "passage": "A volunteer found a backpack after a sports event. There was no name label, but a photograph inside showed a red bicycle. The volunteer remembered a visitor whose bicycle had been parked by the entrance. Rather than hand over the bag immediately, she asked him to describe its contents. His description matched, and he collected the backpack.",
+        "options": [
+          {
+            "id": "v4d1d52c510f6",
+            "label": "A train timetable."
+          },
+          {
+            "id": "v254e8f091d64",
+            "label": "A photograph of the volunteer."
+          },
+          {
+            "id": "v941ef9775e18",
+            "label": "A red bicycle."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v941ef9775e18"
+      },
+      "reference_answer": "v941ef9775e18",
+      "incorrect_answer": "v4d1d52c510f6",
+      "editorial_answer": "A red bicycle.",
+      "explanation": "Фотография велосипеда связала сумку с замеченным посетителем.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l913b2e1c682c",
+            "label": "owner"
+          },
+          {
+            "id": "la785164192e9",
+            "label": "belong"
+          },
+          {
+            "id": "l30a378ecee90",
+            "label": "label"
+          },
+          {
+            "id": "l460260de2729",
+            "label": "identify"
+          }
+        ],
+        "right": [
+          {
+            "id": "r9c2d74ec9cdb",
+            "label": "бирка"
+          },
+          {
+            "id": "rc3e274fbf857",
+            "label": "опознавать"
+          },
+          {
+            "id": "rcd51fdd246b7",
+            "label": "владелец"
+          },
+          {
+            "id": "rc3d6525f32da",
+            "label": "принадлежать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l913b2e1c682c": "rcd51fdd246b7",
+          "la785164192e9": "rc3d6525f32da",
+          "l30a378ecee90": "r9c2d74ec9cdb",
+          "l460260de2729": "rc3e274fbf857"
+        }
+      },
+      "reference_answer": {
+        "l913b2e1c682c": "rcd51fdd246b7",
+        "la785164192e9": "rc3d6525f32da",
+        "l30a378ecee90": "r9c2d74ec9cdb",
+        "l460260de2729": "rc3e274fbf857"
+      },
+      "incorrect_answer": {
+        "l913b2e1c682c": "rc3d6525f32da",
+        "la785164192e9": "rcd51fdd246b7",
+        "l30a378ecee90": "r9c2d74ec9cdb",
+        "l460260de2729": "rc3e274fbf857"
+      },
+      "editorial_answer": "owner — владелец; belong — принадлежать; label — бирка; identify — опознавать",
+      "explanation": "В этих контекстах: owner — владелец; belong — принадлежать; label — бирка; identify — опознавать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему сумку не отдали сразу?",
+      "public_payload": {
+        "passage": "A volunteer found a backpack after a sports event. There was no name label, but a photograph inside showed a red bicycle. The volunteer remembered a visitor whose bicycle had been parked by the entrance. Rather than hand over the bag immediately, she asked him to describe its contents. His description matched, and he collected the backpack.",
+        "options": [
+          {
+            "id": "va8bf28903e8a",
+            "label": "Every bag at the event belonged to the same person."
+          },
+          {
+            "id": "vbbd7c32e4129",
+            "label": "The volunteer checked whether he could describe what was inside."
+          },
+          {
+            "id": "v3314bd504ec6",
+            "label": "The volunteer wanted to keep it permanently."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbbd7c32e4129"
+      },
+      "reference_answer": "vbbd7c32e4129",
+      "incorrect_answer": "v3314bd504ec6",
+      "editorial_answer": "The volunteer checked whether he could describe what was inside.",
+      "explanation": "Описание содержимого стало дополнительной проверкой принадлежности.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Укажи человека по имени на бирке.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which visitor should we contact about the missing hat?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v216c7bd3afa6",
+            "label": "The visitor who’s name is on the label."
+          },
+          {
+            "id": "v376090a45be7",
+            "label": "The visitor which name is on the label."
+          },
+          {
+            "id": "v97747a80a0ed",
+            "label": "The visitor whose name is on the label."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v97747a80a0ed"
+      },
+      "reference_answer": "v97747a80a0ed",
+      "incorrect_answer": "v216c7bd3afa6",
+      "editorial_answer": "The visitor whose name is on the label.",
+      "explanation": "Whose name передаёт принадлежность имени посетителю.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The person to whom the bag belongs is its ___.",
+        "options": [
+          {
+            "id": "v9bd2e4e2362f",
+            "label": "entrance"
+          },
+          {
+            "id": "vc55c602a568e",
+            "label": "owner"
+          },
+          {
+            "id": "vdf75ec60a2e0",
+            "label": "label"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc55c602a568e"
+      },
+      "reference_answer": "vc55c602a568e",
+      "incorrect_answer": "vdf75ec60a2e0",
+      "editorial_answer": "owner",
+      "explanation": "Owner обозначает владельца, а не деталь сумки или место.",
+      "key": "e09"
+    }
+  ]
+}

@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o1",
+            "id": "vefc416a43cf4",
             "label": "Despite"
           },
           {
-            "id": "o2",
+            "id": "vd8a7a934c030",
             "label": "Although"
           },
           {
-            "id": "o3",
+            "id": "v597d0cbabc91",
             "label": "Despite of"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vefc416a43cf4"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vefc416a43cf4",
+      "incorrect_answer": "vd8a7a934c030",
       "editorial_answer": "Despite",
       "explanation": "После despite стоит именная группа the heavy rain; although потребовало бы целую часть.",
       "key": "e01"
@@ -159,24 +159,24 @@
         "passage": "A neighbourhood festival lost one of its sponsors a month before opening. Despite this setback, the organisers decided not to cancel. They reduced the number of printed programmes and borrowed equipment from a nearby school. Attendance was lower than the previous year, although most scheduled activities took place. The organisers described the event as worthwhile but financially difficult. Their report did not call the festival a complete success or a failure; it recorded both the community benefit and the remaining budget problem.",
         "options": [
           {
-            "id": "o2",
+            "id": "vd50a5896df44",
             "label": "They cancelled all scheduled activities."
           },
           {
-            "id": "o3",
+            "id": "v26e138bde372",
             "label": "They secured a larger sponsor immediately."
           },
           {
-            "id": "o1",
+            "id": "va427eb5f7a49",
             "label": "They printed fewer programmes and borrowed equipment."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "va427eb5f7a49"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "va427eb5f7a49",
+      "incorrect_answer": "vd50a5896df44",
       "editorial_answer": "They printed fewer programmes and borrowed equipment.",
       "explanation": "Обе меры названы в тексте как ответ на потерю спонсора.",
       "key": "e05"
@@ -188,24 +188,24 @@
         "passage": "A neighbourhood festival lost one of its sponsors a month before opening. Despite this setback, the organisers decided not to cancel. They reduced the number of printed programmes and borrowed equipment from a nearby school. Attendance was lower than the previous year, although most scheduled activities took place. The organisers described the event as worthwhile but financially difficult. Their report did not call the festival a complete success or a failure; it recorded both the community benefit and the remaining budget problem.",
         "options": [
           {
-            "id": "o3",
+            "id": "v56392a819f99",
             "label": "No activities took place because the sponsor left."
           },
           {
-            "id": "o1",
+            "id": "v2ed0977760e5",
             "label": "The event benefited the community despite financial difficulty."
           },
           {
-            "id": "o2",
+            "id": "v71005e7db596",
             "label": "High attendance solved every budget problem."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v2ed0977760e5"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v2ed0977760e5",
+      "incorrect_answer": "v71005e7db596",
       "editorial_answer": "The event benefited the community despite financial difficulty.",
       "explanation": "Нужно сохранить пользу события и финансовые сложности одновременно.",
       "key": "e06"
@@ -222,24 +222,24 @@
         ],
         "options": [
           {
-            "id": "o2",
+            "id": "v4b60e5fc5118",
             "label": "Despite the start was delayed, the workshop finished on time."
           },
           {
-            "id": "o3",
+            "id": "v95ae639b9a5b",
             "label": "Although the delay, the workshop finished on time."
           },
           {
-            "id": "o1",
+            "id": "v486f8242f7ba",
             "label": "Although the start was delayed, the workshop finished on time."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v486f8242f7ba"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v486f8242f7ba",
+      "incorrect_answer": "v4b60e5fc5118",
       "editorial_answer": "Although the start was delayed, the workshop finished on time.",
       "explanation": "Although + the start was delayed — полноценная часть с подлежащим и глаголом.",
       "key": "e07"
@@ -251,24 +251,24 @@
         "sentence": "We had to ___ the match until Saturday rather than cancel it.",
         "options": [
           {
-            "id": "o3",
+            "id": "va81526623e71",
             "label": "complete"
           },
           {
-            "id": "o1",
+            "id": "v15c619cc9c29",
             "label": "postpone"
           },
           {
-            "id": "o2",
+            "id": "vbec897440fd9",
             "label": "abandon permanently"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v15c619cc9c29"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v15c619cc9c29",
+      "incorrect_answer": "vbec897440fd9",
       "editorial_answer": "postpone",
       "explanation": "Postpone означает перенести на более позднее время, а не отменить навсегда.",
       "key": "e08"

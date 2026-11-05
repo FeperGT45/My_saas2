@@ -1,0 +1,326 @@
+{
+  "key": "a1/classroom-actions",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 4,
+  "title": "Короткие инструкции на занятии",
+  "description": "Короткие инструкции на занятии: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Понимать утвердительные инструкции",
+    "Строить запрет с do not + глагол"
+  ],
+  "notes": [
+    "Инструкция часто начинается с глагола: Open your book.",
+    "Отрицательная инструкция: Do not open the window. После do not нужен инфинитив без to."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/free-time-activities"],
+  "lexicon": [
+    {
+      "en": "open",
+      "ru": "открывать"
+    },
+    {
+      "en": "close",
+      "ru": "закрывать"
+    },
+    {
+      "en": "listen",
+      "ru": "слушать"
+    },
+    {
+      "en": "write",
+      "ru": "писать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Выбери инструкцию «Открой книгу».",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vf622d0c320fe",
+            "label": "Open your book."
+          },
+          {
+            "id": "v4514c23e3d2c",
+            "label": "Opens your book."
+          },
+          {
+            "id": "v0efc5d032a06",
+            "label": "To opened your book."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf622d0c320fe"
+      },
+      "reference_answer": "vf622d0c320fe",
+      "incorrect_answer": "v4514c23e3d2c",
+      "editorial_answer": "Open your book.",
+      "explanation": "В инструкции используется начальная форма Open.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: write / writes.",
+      "public_payload": {
+        "sentence": "Do not ___ on the desk."
+      },
+      "answer_key": {
+        "accepted": ["write"]
+      },
+      "reference_answer": "write",
+      "incorrect_answer": "writes",
+      "editorial_answer": "Do not write on the desk.",
+      "explanation": "После do not нужен write без -s.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Пожалуйста, закрой окно.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "window."
+          },
+          {
+            "id": "t1",
+            "label": "Please"
+          },
+          {
+            "id": "t2",
+            "label": "close"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4"],
+      "incorrect_answer": ["t2", "t3", "t4", "t1"],
+      "editorial_answer": "Please close the window.",
+      "explanation": "Please делает инструкцию вежливее; close остаётся в начальной форме.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Do not to close the door."
+      },
+      "answer_key": {
+        "accepted": ["Do not close the door."]
+      },
+      "reference_answer": "Do not close the door.",
+      "incorrect_answer": "Do not to close the door.",
+      "editorial_answer": "Do not close the door.",
+      "explanation": "После do not убирается лишнее to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где нужно написать имена?",
+      "public_payload": {
+        "passage": "The teacher says, “Open your books. Write your names at the top. Do not write on the desks. Close the window, please.”",
+        "options": [
+          {
+            "id": "v84aa257844a1",
+            "label": "On the desks."
+          },
+          {
+            "id": "vf25b59441940",
+            "label": "On the window."
+          },
+          {
+            "id": "v927f941b3a00",
+            "label": "At the top of the books."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v927f941b3a00"
+      },
+      "reference_answer": "v927f941b3a00",
+      "incorrect_answer": "v84aa257844a1",
+      "editorial_answer": "At the top of the books.",
+      "explanation": "Your names at the top следует после Open your books; писать на столах запрещено.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l10dbc8205608",
+            "label": "open"
+          },
+          {
+            "id": "lfea98ec59ecc",
+            "label": "close"
+          },
+          {
+            "id": "l1a4850a3333c",
+            "label": "listen"
+          },
+          {
+            "id": "l51683bbe88bf",
+            "label": "write"
+          }
+        ],
+        "right": [
+          {
+            "id": "r89bf740b2677",
+            "label": "слушать"
+          },
+          {
+            "id": "r0a3752d5567b",
+            "label": "писать"
+          },
+          {
+            "id": "rd94140daeea8",
+            "label": "открывать"
+          },
+          {
+            "id": "r02a510bd580d",
+            "label": "закрывать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l10dbc8205608": "rd94140daeea8",
+          "lfea98ec59ecc": "r02a510bd580d",
+          "l1a4850a3333c": "r89bf740b2677",
+          "l51683bbe88bf": "r0a3752d5567b"
+        }
+      },
+      "reference_answer": {
+        "l10dbc8205608": "rd94140daeea8",
+        "lfea98ec59ecc": "r02a510bd580d",
+        "l1a4850a3333c": "r89bf740b2677",
+        "l51683bbe88bf": "r0a3752d5567b"
+      },
+      "incorrect_answer": {
+        "l10dbc8205608": "r02a510bd580d",
+        "lfea98ec59ecc": "rd94140daeea8",
+        "l1a4850a3333c": "r89bf740b2677",
+        "l51683bbe88bf": "r0a3752d5567b"
+      },
+      "editorial_answer": "open — открывать; close — закрывать; listen — слушать; write — писать",
+      "explanation": "В этих контекстах: open — открывать; close — закрывать; listen — слушать; write — писать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что нужно закрыть?",
+      "public_payload": {
+        "passage": "The teacher says, “Open your books. Write your names at the top. Do not write on the desks. Close the window, please.”",
+        "options": [
+          {
+            "id": "v78ff83242225",
+            "label": "The classroom door."
+          },
+          {
+            "id": "v4742bb56671f",
+            "label": "The window."
+          },
+          {
+            "id": "v7f0112dc13f7",
+            "label": "Every book."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4742bb56671f"
+      },
+      "reference_answer": "v4742bb56671f",
+      "incorrect_answer": "v7f0112dc13f7",
+      "editorial_answer": "The window.",
+      "explanation": "Последняя инструкция относится к окну.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Попроси слушать и не разговаривать.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I cannot hear the teacher. What can I ask my friend?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v6d8a57304573",
+            "label": "Please listens and talks."
+          },
+          {
+            "id": "v56480b459108",
+            "label": "Please listened tomorrow."
+          },
+          {
+            "id": "vf505de211daf",
+            "label": "Please listen and do not talk."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf505de211daf"
+      },
+      "reference_answer": "vf505de211daf",
+      "incorrect_answer": "v6d8a57304573",
+      "editorial_answer": "Please listen and do not talk.",
+      "explanation": "Listen — утвердительная инструкция, do not talk — отрицательная.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The window is open and the room is cold. Please ___ it.",
+        "options": [
+          {
+            "id": "vd054ecba3405",
+            "label": "read"
+          },
+          {
+            "id": "v0851a041f387",
+            "label": "close"
+          },
+          {
+            "id": "v5c939508d02e",
+            "label": "write"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0851a041f387"
+      },
+      "reference_answer": "v0851a041f387",
+      "incorrect_answer": "v5c939508d02e",
+      "editorial_answer": "close",
+      "explanation": "Close it означает закрыть уже названное окно.",
+      "key": "e09"
+    }
+  ]
+}

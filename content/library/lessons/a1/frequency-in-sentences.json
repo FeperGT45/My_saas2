@@ -1,0 +1,330 @@
+{
+  "key": "a1/frequency-in-sentences",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 7,
+  "title": "Usually и never: как часто",
+  "description": "Usually и never: как часто: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Ставить наречие частоты перед обычным глаголом",
+    "Ставить наречие частоты после am/is/are"
+  ],
+  "notes": [
+    "В простом утверждении usually стоит перед смысловым глаголом: I usually walk.",
+    "С глаголом be обычно наоборот: She is usually early. Never уже содержит отрицательный смысл."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/week-and-clock"],
+  "lexicon": [
+    {
+      "en": "usually",
+      "ru": "обычно"
+    },
+    {
+      "en": "never",
+      "ru": "никогда"
+    },
+    {
+      "en": "early",
+      "ru": "рано"
+    },
+    {
+      "en": "late",
+      "ru": "поздно"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Выбери нейтральный порядок слов.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v1e6156835b58",
+            "label": "She is usually early."
+          },
+          {
+            "id": "v9e1d53c80c67",
+            "label": "She usually is early is."
+          },
+          {
+            "id": "vb5942c0b7d07",
+            "label": "She is early usually is."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1e6156835b58"
+      },
+      "reference_answer": "v1e6156835b58",
+      "incorrect_answer": "v9e1d53c80c67",
+      "editorial_answer": "She is usually early.",
+      "explanation": "В нейтральном порядке usually следует за is.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: never / usually.",
+      "public_payload": {
+        "sentence": "He ___ walks to school; he does this on most school days."
+      },
+      "answer_key": {
+        "accepted": ["usually"]
+      },
+      "reference_answer": "usually",
+      "incorrect_answer": "never",
+      "editorial_answer": "He usually walks to school; he does this on most school days.",
+      "explanation": "Most school days указывает на обычное, а не отсутствующее действие.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я обычно хожу в школу пешком.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "walk"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "school."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "usually"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "I usually walk to school.",
+      "explanation": "Usually располагается перед смысловым walk.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She is usually arrives early."
+      },
+      "answer_key": {
+        "accepted": ["She usually arrives early."]
+      },
+      "reference_answer": "She usually arrives early.",
+      "incorrect_answer": "She is usually arrives early.",
+      "editorial_answer": "She usually arrives early.",
+      "explanation": "Смысловой arrives не требует is; usually ставится перед arrives.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как Нора обычно добирается до школы?",
+      "public_payload": {
+        "passage": "Nora usually walks to school. On rainy days, she takes the bus. Her brother always takes the bus. Nora is never late for her first lesson.",
+        "options": [
+          {
+            "id": "vb3a6137aa94c",
+            "label": "She always takes a train."
+          },
+          {
+            "id": "vb81473dd17f1",
+            "label": "She never goes to school."
+          },
+          {
+            "id": "v6de3dcdb84b2",
+            "label": "She walks."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6de3dcdb84b2"
+      },
+      "reference_answer": "v6de3dcdb84b2",
+      "incorrect_answer": "vb3a6137aa94c",
+      "editorial_answer": "She walks.",
+      "explanation": "Usually walks описывает обычный способ.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lb2d46aaa8efd",
+            "label": "usually"
+          },
+          {
+            "id": "l2de30a8d42b4",
+            "label": "never"
+          },
+          {
+            "id": "le0586064f36b",
+            "label": "early"
+          },
+          {
+            "id": "l168a1df3dbad",
+            "label": "late"
+          }
+        ],
+        "right": [
+          {
+            "id": "r5af2f6473109",
+            "label": "рано"
+          },
+          {
+            "id": "r79c10d9abd31",
+            "label": "поздно"
+          },
+          {
+            "id": "re5a3611ad133",
+            "label": "обычно"
+          },
+          {
+            "id": "rd56ab94ae920",
+            "label": "никогда"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lb2d46aaa8efd": "re5a3611ad133",
+          "l2de30a8d42b4": "rd56ab94ae920",
+          "le0586064f36b": "r5af2f6473109",
+          "l168a1df3dbad": "r79c10d9abd31"
+        }
+      },
+      "reference_answer": {
+        "lb2d46aaa8efd": "re5a3611ad133",
+        "l2de30a8d42b4": "rd56ab94ae920",
+        "le0586064f36b": "r5af2f6473109",
+        "l168a1df3dbad": "r79c10d9abd31"
+      },
+      "incorrect_answer": {
+        "lb2d46aaa8efd": "rd56ab94ae920",
+        "l2de30a8d42b4": "re5a3611ad133",
+        "le0586064f36b": "r5af2f6473109",
+        "l168a1df3dbad": "r79c10d9abd31"
+      },
+      "editorial_answer": "usually — обычно; never — никогда; early — рано; late — поздно",
+      "explanation": "В этих контекстах: usually — обычно; never — никогда; early — рано; late — поздно.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что делает Нора в дождливые дни?",
+      "public_payload": {
+        "passage": "Nora usually walks to school. On rainy days, she takes the bus. Her brother always takes the bus. Nora is never late for her first lesson.",
+        "options": [
+          {
+            "id": "ve6ad2c2cd242",
+            "label": "She takes a boat."
+          },
+          {
+            "id": "v55bcc2fe866b",
+            "label": "She takes the bus."
+          },
+          {
+            "id": "v93c68f3f4018",
+            "label": "She stays at home every time."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v55bcc2fe866b"
+      },
+      "reference_answer": "v55bcc2fe866b",
+      "incorrect_answer": "v93c68f3f4018",
+      "editorial_answer": "She takes the bus.",
+      "explanation": "On rainy days ограничивает ситуации, когда она едет на автобусе.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь с never и правильной формой be.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Are you often late?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v7b6bdc87b6e5",
+            "label": "No, I never am late am."
+          },
+          {
+            "id": "vfa543d1a9fbc",
+            "label": "No, I do not never late."
+          },
+          {
+            "id": "v17c42bd46458",
+            "label": "No, I am never late."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v17c42bd46458"
+      },
+      "reference_answer": "v17c42bd46458",
+      "incorrect_answer": "v7b6bdc87b6e5",
+      "editorial_answer": "No, I am never late.",
+      "explanation": "Never после am уже передаёт отрицание; do not здесь не требуется.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The lesson starts at nine. I arrive at eight fifty, so I am ___.",
+        "options": [
+          {
+            "id": "v02f822f138fc",
+            "label": "closed"
+          },
+          {
+            "id": "va988c9763828",
+            "label": "early"
+          },
+          {
+            "id": "v89afd17f5ba8",
+            "label": "late"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va988c9763828"
+      },
+      "reference_answer": "va988c9763828",
+      "incorrect_answer": "v89afd17f5ba8",
+      "editorial_answer": "early",
+      "explanation": "Eight fifty раньше девяти, следовательно early.",
+      "key": "e09"
+    }
+  ]
+}

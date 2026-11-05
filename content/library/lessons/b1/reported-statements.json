@@ -1,0 +1,342 @@
+{
+  "key": "b1/reported-statements",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 3,
+  "title": "Передаём вчерашнее сообщение",
+  "description": "Передаём вчерашнее сообщение: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Передавать прошлое сообщение через said that",
+    "Различать say и tell someone"
+  ],
+  "notes": [
+    "При пересказе прошлого сообщения часто используется сдвиг am → was: She said that she was tired.",
+    "Tell требует адресата: He told me ...; say не получает me без to: He said to me ..."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/relative-whose"],
+  "lexicon": [
+    {
+      "en": "message",
+      "ru": "сообщение"
+    },
+    {
+      "en": "explain",
+      "ru": "объяснять"
+    },
+    {
+      "en": "confirm",
+      "ru": "подтверждать"
+    },
+    {
+      "en": "available",
+      "ru": "свободный, доступный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Yesterday, Sara said, “I am tired.” При пересказе со сдвигом времени: Sara said that she ___ tired.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vd6d514670a8f",
+            "label": "am"
+          },
+          {
+            "id": "vbf32158a6c9e",
+            "label": "were"
+          },
+          {
+            "id": "vf380dfce72fa",
+            "label": "was"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf380dfce72fa"
+      },
+      "reference_answer": "vf380dfce72fa",
+      "incorrect_answer": "vd6d514670a8f",
+      "editorial_answer": "was",
+      "explanation": "Для she и сдвига am в прошлое используется was.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: said / told.",
+      "public_payload": {
+        "sentence": "He ___ me that the room was available."
+      },
+      "answer_key": {
+        "accepted": ["told"]
+      },
+      "reference_answer": "told",
+      "incorrect_answer": "said",
+      "editorial_answer": "He told me that the room was available.",
+      "explanation": "Перед me без to нужен told.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Она сказала нам, что встреча отменена.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "us"
+          },
+          {
+            "id": "t4",
+            "label": "that"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "meeting"
+          },
+          {
+            "id": "t7",
+            "label": "was"
+          },
+          {
+            "id": "t8",
+            "label": "cancelled."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "told"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "She told us that the meeting was cancelled.",
+      "explanation": "Told принимает адресата us; сообщение передаётся через that.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The organiser said me that the room was closed."
+      },
+      "answer_key": {
+        "accepted": ["The organiser told me that the room was closed."]
+      },
+      "reference_answer": "The organiser told me that the room was closed.",
+      "incorrect_answer": "The organiser said me that the room was closed.",
+      "editorial_answer": "The organiser told me that the room was closed.",
+      "explanation": "В задании сохраняем me без предлога и заменяем said на told.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Сара не пришла на встречу?",
+      "public_payload": {
+        "passage": "On Monday, I asked Sara whether she could join our planning meeting that afternoon. She said that she was tired after travelling and wanted to rest. I told the organiser that Sara would not attend. The next morning, Sara emailed a written suggestion, so the group could still consider her idea even though she had missed the discussion.",
+        "options": [
+          {
+            "id": "v2bad312637d4",
+            "label": "She had no ideas about the project."
+          },
+          {
+            "id": "v76bc1003fa02",
+            "label": "She was tired after travelling and wanted to rest."
+          },
+          {
+            "id": "v8e236e6fbfb9",
+            "label": "The organiser had refused to invite her."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v76bc1003fa02"
+      },
+      "reference_answer": "v76bc1003fa02",
+      "incorrect_answer": "v8e236e6fbfb9",
+      "editorial_answer": "She was tired after travelling and wanted to rest.",
+      "explanation": "Её причина передана через said that; отказа в приглашении нет.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l14cfa40f02d4",
+            "label": "message"
+          },
+          {
+            "id": "l19f68f47dd45",
+            "label": "explain"
+          },
+          {
+            "id": "l81784ad8a69f",
+            "label": "confirm"
+          },
+          {
+            "id": "l820a0fc507e8",
+            "label": "available"
+          }
+        ],
+        "right": [
+          {
+            "id": "r9bf4282369b3",
+            "label": "подтверждать"
+          },
+          {
+            "id": "r471902358c2c",
+            "label": "свободный, доступный"
+          },
+          {
+            "id": "r538520b527a3",
+            "label": "сообщение"
+          },
+          {
+            "id": "r5f33b85e61f4",
+            "label": "объяснять"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l14cfa40f02d4": "r538520b527a3",
+          "l19f68f47dd45": "r5f33b85e61f4",
+          "l81784ad8a69f": "r9bf4282369b3",
+          "l820a0fc507e8": "r471902358c2c"
+        }
+      },
+      "reference_answer": {
+        "l14cfa40f02d4": "r538520b527a3",
+        "l19f68f47dd45": "r5f33b85e61f4",
+        "l81784ad8a69f": "r9bf4282369b3",
+        "l820a0fc507e8": "r471902358c2c"
+      },
+      "incorrect_answer": {
+        "l14cfa40f02d4": "r5f33b85e61f4",
+        "l19f68f47dd45": "r538520b527a3",
+        "l81784ad8a69f": "r9bf4282369b3",
+        "l820a0fc507e8": "r471902358c2c"
+      },
+      "editorial_answer": "message — сообщение; explain — объяснять; confirm — подтверждать; available — свободный, доступный",
+      "explanation": "В этих контекстах: message — сообщение; explain — объяснять; confirm — подтверждать; available — свободный, доступный.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как её идея попала в обсуждение группы?",
+      "public_payload": {
+        "passage": "On Monday, I asked Sara whether she could join our planning meeting that afternoon. She said that she was tired after travelling and wanted to rest. I told the organiser that Sara would not attend. The next morning, Sara emailed a written suggestion, so the group could still consider her idea even though she had missed the discussion.",
+        "options": [
+          {
+            "id": "v9141a36ce59b",
+            "label": "She sent a written suggestion the next morning."
+          },
+          {
+            "id": "vb938314e47e9",
+            "label": "She attended the entire Monday meeting."
+          },
+          {
+            "id": "v3c261f38c60c",
+            "label": "The organiser invented a suggestion in her name."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9141a36ce59b"
+      },
+      "reference_answer": "v9141a36ce59b",
+      "incorrect_answer": "vb938314e47e9",
+      "editorial_answer": "She sent a written suggestion the next morning.",
+      "explanation": "Сара отправила письменное предложение уже после пропущенной встречи.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани адресата me без предлога.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How can I report his message without changing “me” to “to me”?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v9e5ece3d126d",
+            "label": "He told that me the train delayed."
+          },
+          {
+            "id": "v48afcb0ed55e",
+            "label": "He told me that the train was delayed."
+          },
+          {
+            "id": "v751606c54a48",
+            "label": "He said me that the train was delayed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v48afcb0ed55e"
+      },
+      "reference_answer": "v48afcb0ed55e",
+      "incorrect_answer": "v751606c54a48",
+      "editorial_answer": "He told me that the train was delayed.",
+      "explanation": "Told me — нужная модель; said потребовало бы to me.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To make an arrangement definite is to ___ it.",
+        "options": [
+          {
+            "id": "v92c84081001a",
+            "label": "confirm"
+          },
+          {
+            "id": "va3744d1a001a",
+            "label": "cancel automatically"
+          },
+          {
+            "id": "v71518e3800d1",
+            "label": "overlook"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v92c84081001a"
+      },
+      "reference_answer": "v92c84081001a",
+      "incorrect_answer": "va3744d1a001a",
+      "editorial_answer": "confirm",
+      "explanation": "Confirm — подтвердить, а не отменить или забыть.",
+      "key": "e09"
+    }
+  ]
+}

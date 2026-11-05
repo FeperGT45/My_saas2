@@ -1,0 +1,326 @@
+{
+  "key": "a2/careful-carefully",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 6,
+  "title": "Признак человека и способ действия",
+  "description": "Признак человека и способ действия: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Различать adjective и adverb",
+    "Использовать careful/carefully и good/well"
+  ],
+  "notes": [
+    "Careful описывает существительное: a careful driver. Carefully описывает действие: drives carefully.",
+    "Good — прилагательное, well в значении способа действия — наречие: She plays well."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/street-directions"],
+  "lexicon": [
+    {
+      "en": "careful",
+      "ru": "осторожный"
+    },
+    {
+      "en": "carefully",
+      "ru": "осторожно"
+    },
+    {
+      "en": "good",
+      "ru": "хороший"
+    },
+    {
+      "en": "well",
+      "ru": "хорошо"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Please read the instructions ___ before using the tool.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vf2f907469960",
+            "label": "carefully"
+          },
+          {
+            "id": "v2348dccf2483",
+            "label": "careful"
+          },
+          {
+            "id": "v4d7504d6f120",
+            "label": "carefulness"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf2f907469960"
+      },
+      "reference_answer": "vf2f907469960",
+      "incorrect_answer": "v2348dccf2483",
+      "editorial_answer": "carefully",
+      "explanation": "Нужно описать действие read, поэтому наречие carefully.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: careful / carefully.",
+      "public_payload": {
+        "sentence": "She is a ___ driver."
+      },
+      "answer_key": {
+        "accepted": ["careful"]
+      },
+      "reference_answer": "careful",
+      "incorrect_answer": "carefully",
+      "editorial_answer": "She is a careful driver.",
+      "explanation": "Driver описывается прилагательным careful.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мой брат хорошо готовит.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "cooks"
+          },
+          {
+            "id": "t4",
+            "label": "well."
+          },
+          {
+            "id": "t1",
+            "label": "My"
+          },
+          {
+            "id": "t2",
+            "label": "brother"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4"],
+      "incorrect_answer": ["t2", "t3", "t4", "t1"],
+      "editorial_answer": "My brother cooks well.",
+      "explanation": "Well характеризует действие cooks.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He drives very careful on this road."
+      },
+      "answer_key": {
+        "accepted": ["He drives very carefully on this road."]
+      },
+      "reference_answer": "He drives very carefully on this road.",
+      "incorrect_answer": "He drives very careful on this road.",
+      "editorial_answer": "He drives very carefully on this road.",
+      "explanation": "Способ действия drives выражается наречием carefully.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как Марта читает новые рецепты?",
+      "public_payload": {
+        "passage": "Marta is a good cook, but she does not work quickly. She reads new recipes carefully and checks every ingredient. Her brother works faster, but sometimes forgets the salt. They cook together on Sundays: Marta checks the recipe while her brother prepares the vegetables.",
+        "options": [
+          {
+            "id": "v410c16913a6b",
+            "label": "Without checking anything."
+          },
+          {
+            "id": "ve95fc73c98f9",
+            "label": "Only after cooking."
+          },
+          {
+            "id": "v553efd4abad3",
+            "label": "Carefully."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v553efd4abad3"
+      },
+      "reference_answer": "v553efd4abad3",
+      "incorrect_answer": "v410c16913a6b",
+      "editorial_answer": "Carefully.",
+      "explanation": "She reads new recipes carefully сообщает о способе действия.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc412eed66e6c",
+            "label": "careful"
+          },
+          {
+            "id": "l63a44ae0efb7",
+            "label": "carefully"
+          },
+          {
+            "id": "l06e8370d21ff",
+            "label": "good"
+          },
+          {
+            "id": "ld8c3a0ff5949",
+            "label": "well"
+          }
+        ],
+        "right": [
+          {
+            "id": "r905b095b169b",
+            "label": "хороший"
+          },
+          {
+            "id": "rd23748b53ba0",
+            "label": "хорошо"
+          },
+          {
+            "id": "re0ad81458334",
+            "label": "осторожный"
+          },
+          {
+            "id": "r038228a8b727",
+            "label": "осторожно"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc412eed66e6c": "re0ad81458334",
+          "l63a44ae0efb7": "r038228a8b727",
+          "l06e8370d21ff": "r905b095b169b",
+          "ld8c3a0ff5949": "rd23748b53ba0"
+        }
+      },
+      "reference_answer": {
+        "lc412eed66e6c": "re0ad81458334",
+        "l63a44ae0efb7": "r038228a8b727",
+        "l06e8370d21ff": "r905b095b169b",
+        "ld8c3a0ff5949": "rd23748b53ba0"
+      },
+      "incorrect_answer": {
+        "lc412eed66e6c": "r038228a8b727",
+        "l63a44ae0efb7": "re0ad81458334",
+        "l06e8370d21ff": "r905b095b169b",
+        "ld8c3a0ff5949": "rd23748b53ba0"
+      },
+      "editorial_answer": "careful — осторожный; carefully — осторожно; good — хороший; well — хорошо",
+      "explanation": "В этих контекстах: careful — осторожный; carefully — осторожно; good — хороший; well — хорошо.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что иногда забывает брат?",
+      "public_payload": {
+        "passage": "Marta is a good cook, but she does not work quickly. She reads new recipes carefully and checks every ingredient. Her brother works faster, but sometimes forgets the salt. They cook together on Sundays: Marta checks the recipe while her brother prepares the vegetables.",
+        "options": [
+          {
+            "id": "v3f06752ef6a4",
+            "label": "The name of Sunday."
+          },
+          {
+            "id": "vc9947b420b10",
+            "label": "The salt."
+          },
+          {
+            "id": "vae061830b01d",
+            "label": "Every vegetable."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc9947b420b10"
+      },
+      "reference_answer": "vc9947b420b10",
+      "incorrect_answer": "vae061830b01d",
+      "editorial_answer": "The salt.",
+      "explanation": "Слово sometimes относится к забыванию соли.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Охарактеризуй качество игры.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How does your sister play the piano?"
+          }
+        ],
+        "options": [
+          {
+            "id": "va5013cd47d1e",
+            "label": "She plays very goodly."
+          },
+          {
+            "id": "v6680acfc174a",
+            "label": "She plays a well pianist."
+          },
+          {
+            "id": "v812da3620caa",
+            "label": "She plays very well."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v812da3620caa"
+      },
+      "reference_answer": "v812da3620caa",
+      "incorrect_answer": "va5013cd47d1e",
+      "editorial_answer": "She plays very well.",
+      "explanation": "Well — стандартное наречие для plays.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A person who checks details before acting is often ___.",
+        "options": [
+          {
+            "id": "va6a5ce9e9220",
+            "label": "carefulness"
+          },
+          {
+            "id": "v58c646b59e80",
+            "label": "careful"
+          },
+          {
+            "id": "v9807deda21ee",
+            "label": "carefully"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v58c646b59e80"
+      },
+      "reference_answer": "v58c646b59e80",
+      "incorrect_answer": "v9807deda21ee",
+      "editorial_answer": "careful",
+      "explanation": "После is для качества человека нужно прилагательное careful.",
+      "key": "e09"
+    }
+  ]
+}

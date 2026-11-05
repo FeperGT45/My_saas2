@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o2",
+            "id": "v7186371c89e1",
             "label": "is practising yesterday"
           },
           {
-            "id": "o3",
+            "id": "vee03f4684aad",
             "label": "had practised tomorrow"
           },
           {
-            "id": "o1",
+            "id": "v2542e88c733f",
             "label": "has been practising"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v2542e88c733f"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v2542e88c733f",
+      "incorrect_answer": "v7186371c89e1",
       "editorial_answer": "has been practising",
       "explanation": "Has been practising показывает процесс, продолжающийся до настоящего.",
       "key": "e01"
@@ -183,24 +183,24 @@
         "passage": "Maya joined a small theatre group in September. For three months she has been practising after work. At first she forgot her lines, but now she can perform most scenes without help. The group has not performed for an audience yet. Their first show is next Saturday. Maya is nervous, although she feels that regular practice has helped her.",
         "options": [
           {
-            "id": "o3",
+            "id": "vcd694d8007c6",
             "label": "Maya has been teaching professional actors."
           },
           {
-            "id": "o1",
+            "id": "v9ceccbcd5c1d",
             "label": "Maya has been practising after work."
           },
           {
-            "id": "o2",
+            "id": "va032b8edca50",
             "label": "The group has been performing for paying audiences."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v9ceccbcd5c1d"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v9ceccbcd5c1d",
+      "incorrect_answer": "va032b8edca50",
       "editorial_answer": "Maya has been practising after work.",
       "explanation": "Практика продолжается; первое публичное выступление ещё впереди.",
       "key": "e05"
@@ -212,24 +212,24 @@
         "passage": "Maya joined a small theatre group in September. For three months she has been practising after work. At first she forgot her lines, but now she can perform most scenes without help. The group has not performed for an audience yet. Their first show is next Saturday. Maya is nervous, although she feels that regular practice has helped her.",
         "options": [
           {
-            "id": "o1",
+            "id": "vd16f12949b69",
             "label": "Maya can now perform most scenes without help."
           },
           {
-            "id": "o2",
+            "id": "ve83b94711d28",
             "label": "Maya never feels nervous."
           },
           {
-            "id": "o3",
+            "id": "va7d779b7af87",
             "label": "Every member has learnt every line perfectly."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vd16f12949b69"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vd16f12949b69",
+      "incorrect_answer": "ve83b94711d28",
       "editorial_answer": "Maya can now perform most scenes without help.",
       "explanation": "В тексте говорится об улучшении Майи, но не об идеальном знании всех участников.",
       "key": "e06"
@@ -246,24 +246,24 @@
         ],
         "options": [
           {
-            "id": "o3",
+            "id": "v72cbdf5c7a1e",
             "label": "We are paint it for Tuesday."
           },
           {
-            "id": "o1",
+            "id": "v0dcc9d6ebcd9",
             "label": "We have been painting it since Tuesday."
           },
           {
-            "id": "o2",
+            "id": "v2e6a81146846",
             "label": "We painted it next Tuesday."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v0dcc9d6ebcd9"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v0dcc9d6ebcd9",
+      "incorrect_answer": "v2e6a81146846",
       "editorial_answer": "We have been painting it since Tuesday.",
       "explanation": "Have been painting и since Tuesday согласуют процесс и начальную точку.",
       "key": "e07"
@@ -275,24 +275,24 @@
         "sentence": "The actors meet every evening, so they rehearse ___.",
         "options": [
           {
-            "id": "o1",
+            "id": "v2f11152486c9",
             "label": "regularly"
           },
           {
-            "id": "o2",
+            "id": "v890787cb83eb",
             "label": "accidentally"
           },
           {
-            "id": "o3",
+            "id": "vd0439a7853a5",
             "label": "rarely"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v2f11152486c9"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v2f11152486c9",
+      "incorrect_answer": "v890787cb83eb",
       "editorial_answer": "regularly",
       "explanation": "Every evening указывает на регулярность, а не редкость или случайность.",
       "key": "e08"

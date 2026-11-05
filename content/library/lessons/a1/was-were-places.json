@@ -1,0 +1,334 @@
+{
+  "key": "a1/was-were-places",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 8,
+  "title": "Где мы были вчера",
+  "description": "Где мы были вчера: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать was с I/he/she/it",
+    "Использовать were с you/we/they"
+  ],
+  "notes": [
+    "Для состояния или места в прошлом: I was at home; she was at work.",
+    "С we/they/you используется were: They were in the park. Yesterday помогает увидеть прошлое время."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/frequency-in-sentences"],
+  "lexicon": [
+    {
+      "en": "yesterday",
+      "ru": "вчера"
+    },
+    {
+      "en": "park",
+      "ru": "парк"
+    },
+    {
+      "en": "cinema",
+      "ru": "кинотеатр"
+    },
+    {
+      "en": "tired",
+      "ru": "уставший"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Yesterday, my parents ___ at the cinema.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vcb24e1d6e885",
+            "label": "was"
+          },
+          {
+            "id": "v556bcd9fe571",
+            "label": "is"
+          },
+          {
+            "id": "v8e2c49f82802",
+            "label": "were"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8e2c49f82802"
+      },
+      "reference_answer": "v8e2c49f82802",
+      "incorrect_answer": "vcb24e1d6e885",
+      "editorial_answer": "were",
+      "explanation": "My parents соответствует they, поэтому в прошлом were.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: was / were.",
+      "public_payload": {
+        "sentence": "I ___ tired after the walk yesterday."
+      },
+      "answer_key": {
+        "accepted": ["was"]
+      },
+      "reference_answer": "was",
+      "incorrect_answer": "were",
+      "editorial_answer": "I was tired after the walk yesterday.",
+      "explanation": "С I в этой форме прошедшего времени используется was.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Вчера мы были в парке.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "in"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "park"
+          },
+          {
+            "id": "t6",
+            "label": "yesterday."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "were"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "We were in the park yesterday.",
+      "explanation": "We требует were; yesterday задаёт прошлое.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She were at the cinema yesterday."
+      },
+      "answer_key": {
+        "accepted": ["She was at the cinema yesterday."]
+      },
+      "reference_answer": "She was at the cinema yesterday.",
+      "incorrect_answer": "She were at the cinema yesterday.",
+      "editorial_answer": "She was at the cinema yesterday.",
+      "explanation": "С she нужен was, не were.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где были родители?",
+      "public_payload": {
+        "passage": "Yesterday was Sunday. Tom was at the cinema with his sister. Their parents were in the park. In the evening, everyone was at home.",
+        "options": [
+          {
+            "id": "v3c04a78ed707",
+            "label": "At work all day."
+          },
+          {
+            "id": "v0a5be948a6ec",
+            "label": "In the park."
+          },
+          {
+            "id": "v807a80da9f0e",
+            "label": "At the cinema with Tom."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0a5be948a6ec"
+      },
+      "reference_answer": "v0a5be948a6ec",
+      "incorrect_answer": "v807a80da9f0e",
+      "editorial_answer": "In the park.",
+      "explanation": "Their parents were in the park — отдельная группа людей.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lfa6051c8d992",
+            "label": "yesterday"
+          },
+          {
+            "id": "l8a119d5662d6",
+            "label": "park"
+          },
+          {
+            "id": "l90c2708140cf",
+            "label": "cinema"
+          },
+          {
+            "id": "l11ea427c25c4",
+            "label": "tired"
+          }
+        ],
+        "right": [
+          {
+            "id": "rad76a42894ba",
+            "label": "кинотеатр"
+          },
+          {
+            "id": "r4065ef07b5ec",
+            "label": "уставший"
+          },
+          {
+            "id": "rbd33c60350b4",
+            "label": "вчера"
+          },
+          {
+            "id": "rd406d269f626",
+            "label": "парк"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lfa6051c8d992": "rbd33c60350b4",
+          "l8a119d5662d6": "rd406d269f626",
+          "l90c2708140cf": "rad76a42894ba",
+          "l11ea427c25c4": "r4065ef07b5ec"
+        }
+      },
+      "reference_answer": {
+        "lfa6051c8d992": "rbd33c60350b4",
+        "l8a119d5662d6": "rd406d269f626",
+        "l90c2708140cf": "rad76a42894ba",
+        "l11ea427c25c4": "r4065ef07b5ec"
+      },
+      "incorrect_answer": {
+        "lfa6051c8d992": "rd406d269f626",
+        "l8a119d5662d6": "rbd33c60350b4",
+        "l90c2708140cf": "rad76a42894ba",
+        "l11ea427c25c4": "r4065ef07b5ec"
+      },
+      "editorial_answer": "yesterday — вчера; park — парк; cinema — кинотеатр; tired — уставший",
+      "explanation": "В этих контекстах: yesterday — вчера; park — парк; cinema — кинотеатр; tired — уставший.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где все были вечером?",
+      "public_payload": {
+        "passage": "Yesterday was Sunday. Tom was at the cinema with his sister. Their parents were in the park. In the evening, everyone was at home.",
+        "options": [
+          {
+            "id": "vb89b9e7b8abb",
+            "label": "At home."
+          },
+          {
+            "id": "ve69881e59dc3",
+            "label": "At the station."
+          },
+          {
+            "id": "v853187ddebaa",
+            "label": "In the cinema."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb89b9e7b8abb"
+      },
+      "reference_answer": "vb89b9e7b8abb",
+      "incorrect_answer": "ve69881e59dc3",
+      "editorial_answer": "At home.",
+      "explanation": "Последняя фраза объединяет всех дома.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о своём местонахождении вчера.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Were you at school yesterday?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v5ac74a9a6c9e",
+            "label": "No, I am at home yesterday."
+          },
+          {
+            "id": "va7a7c05ef882",
+            "label": "No, I was at home."
+          },
+          {
+            "id": "vad9c02ef091a",
+            "label": "No, I were at home."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va7a7c05ef882"
+      },
+      "reference_answer": "va7a7c05ef882",
+      "incorrect_answer": "vad9c02ef091a",
+      "editorial_answer": "No, I was at home.",
+      "explanation": "В ответе с I используется was.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Today is Tuesday. ___ was Monday.",
+        "options": [
+          {
+            "id": "v1e10413ccf39",
+            "label": "Yesterday"
+          },
+          {
+            "id": "v523b43b62c39",
+            "label": "Tomorrow"
+          },
+          {
+            "id": "v766515a746f3",
+            "label": "Tonight"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1e10413ccf39"
+      },
+      "reference_answer": "v1e10413ccf39",
+      "incorrect_answer": "v523b43b62c39",
+      "editorial_answer": "Yesterday",
+      "explanation": "Yesterday обозначает предыдущий день.",
+      "key": "e09"
+    }
+  ]
+}

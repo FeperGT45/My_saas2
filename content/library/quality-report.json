@@ -1,18 +1,18 @@
 {
   "package": "english-path-core",
-  "revision": 4,
+  "revision": 5,
   "summary": {
-    "lessons": 92,
-    "exercises": 736,
-    "levels": { "A1": 20, "A2": 15, "B1": 18, "B2": 13, "C1": 13, "C2": 13 }
+    "lessons": 132,
+    "exercises": 1096,
+    "levels": { "A1": 30, "A2": 25, "B1": 28, "B2": 23, "C1": 13, "C2": 13 }
   },
   "availability": {
-    "publishedNonAudioFullLessons": 89,
+    "publishedNonAudioFullLessons": 129,
     "archivedAudioLessons": 3,
     "introductoryLessonsIncluded": false,
     "targetFullLessons": 300,
-    "remaining": 211,
-    "byLevel": { "A1": 19, "A2": 14, "B1": 17, "B2": 13, "C1": 13, "C2": 13 },
+    "remaining": 171,
+    "byLevel": { "A1": 29, "A2": 24, "B1": 27, "B2": 23, "C1": 13, "C2": 13 },
     "basis": "Local modular sources after audio retirement; verify production count separately after import."
   },
   "structure": "passed",
@@ -20,19 +20,19 @@
   "gradingCheck": "npm run test:library verifies all positive/negative references with the production SQL grader",
   "methodology": "Author review and automated checks; CEFR labels remain provisional, without external psychometric calibration.",
   "types": {
-    "context_choice": 85,
-    "correction": 83,
-    "dialogue": 78,
+    "context_choice": 125,
+    "correction": 123,
+    "dialogue": 118,
     "dictation": 3,
     "error_identification": 4,
-    "gap": 83,
+    "gap": 123,
     "grammar": 1,
-    "matching": 7,
+    "matching": 47,
     "multiple_choice": 15,
-    "reading": 126,
+    "reading": 206,
     "response_choice": 9,
-    "sentence": 71,
-    "single_choice": 72,
+    "sentence": 111,
+    "single_choice": 112,
     "spelling": 1,
     "synonym_antonym": 8,
     "tenses": 7,
@@ -528,7 +528,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [60, 60],
-      "sha256": "97d383b31bdd11bf27574f46734b876017c29dddd9c2a105d6da1c86dcfd699e"
+      "sha256": "087fdb964675558739d0cf600698a2fb688eb797a7e4d70422866f85de3ff4e7"
     },
     {
       "key": "b1/ongoing-effort",
@@ -536,7 +536,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [59, 59],
-      "sha256": "8121e4c2055d5a6b685d3a8734e9a63e81b9d9cc2b91312949be90c9217e90fb"
+      "sha256": "d2ae5b7e783631d76b01c6eb7d8329ee2cf58e7286c2b2820c5e112d753aacae"
     },
     {
       "key": "b1/arranged-future",
@@ -544,7 +544,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [62, 62],
-      "sha256": "2e091d8514f2f7b975bd440f875a0f6ddb8fe40972f253e2631363261a37284b"
+      "sha256": "01d17f1a1875dca3706f19d8eca1ad22a0e936d3a807b0a163b0e355a14d18c8"
     },
     {
       "key": "b1/embedded-questions",
@@ -552,7 +552,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [60, 60],
-      "sha256": "2c33283f5b7c08e614eb53a728b1bdd72724068446dd3c909d3c3a87b5b88644"
+      "sha256": "4ad988e464d4aefa5b3ea8bd1f318a6294e747c9ce6486f4856a27153cf03248"
     },
     {
       "key": "b1/both-neither",
@@ -560,7 +560,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [62, 62],
-      "sha256": "0f9bd85d29fca6bea29e55b27f76415dba3cf75f5f759d56d8b3514fd0afd99c"
+      "sha256": "7c5e6bea884cef18b93f86db2193d01de70b7be9db23a2bc692f0196a5588512"
     },
     {
       "key": "b1/reported-requests",
@@ -568,7 +568,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [59, 59],
-      "sha256": "8bc2197aa5c2b227522c4bc6d654c87d0223628fb166db65537700406516b74c"
+      "sha256": "a5f34b708a82daf4484032d08e1f62e5450ecc9ac90f9ded87565cd5ee1aebe1"
     },
     {
       "key": "b1/articles-in-context",
@@ -576,7 +576,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [60, 60],
-      "sha256": "e784d5b0f5218954242fc062b9f27987441ca628c2d5278b31b78e16cafd5cfd"
+      "sha256": "27a178b529b2cd8471d45affb2fd87d68764d8be33fbf41753d7812bdf0eb40c"
     },
     {
       "key": "b1/unless-plans",
@@ -584,7 +584,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [63, 63],
-      "sha256": "b0b0cbd8380a674353df687c5fdc73a461758f4e88fdad81c78547965c47426f"
+      "sha256": "f65b6bf8e181c2a31f140ef96f69d59f9f5caf5bcc4272a9588ce42383d8b6e3"
     },
     {
       "key": "b2/mixed-time-conditions",
@@ -592,7 +592,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [80, 80],
-      "sha256": "c3f8a373d8c81b01c9ddb001a4feb31401252bcadf58987b5cd44b524c663958"
+      "sha256": "a0ad07086394ef569ebb3bb4cfc411bdd8a3db3c899d7c19141c9f3dcae980cd"
     },
     {
       "key": "b2/wish-past-regret",
@@ -600,7 +600,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [79, 79],
-      "sha256": "4eeb7fd1e87aa8320a62e7b4fc0fe3684a1cfbfd3db1933fcdbec349f80674e7"
+      "sha256": "a2a98b174c414a5721be78c28044d5294f3a0bc5e2505d37b41c141c1c9862f0"
     },
     {
       "key": "b2/future-perfect-deadline",
@@ -608,7 +608,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [79, 79],
-      "sha256": "d078f6331a08db6f55e16c1bf02112a5ea165c230a5b241d78c7a36fda99a633"
+      "sha256": "9ddce6899688c2a4bf79100598e358cecfa2eb7d436b2a8c0831f74fad055bc2"
     },
     {
       "key": "b2/causative-services",
@@ -616,7 +616,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [81, 81],
-      "sha256": "470dc79c7a22986d65782b6a858c8935c82549dc079445e5f0b7d86bfd1afe48"
+      "sha256": "89c5e52e69d63266fa8755b3334c46eeb21a11b8e838ae953b2f6215e493621f"
     },
     {
       "key": "b2/passive-reporting",
@@ -624,7 +624,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [80, 80],
-      "sha256": "edeab584752217306510586b2dc75e06a89bc035c768ff1d8fb706265e9786df"
+      "sha256": "7333bbe89e74e4e32507f2bb626d6d818c8dc30648daa401d9af32c0fcb8d3d4"
     },
     {
       "key": "b2/participle-sequence",
@@ -632,7 +632,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [78, 78],
-      "sha256": "81bafd097d9932e33b983de93a0e6f2f0ade5b1cda09ec0cb76a4184a259563d"
+      "sha256": "69805e3826bc295d8d5b988f46d6e83fcb461b855298102b38ecd7d15aaf3fa9"
     },
     {
       "key": "b2/cleft-focus",
@@ -640,7 +640,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [79, 79],
-      "sha256": "7d89646fab9ec21f7de19956c73baffd0b8fccd8c8283220bbc08bba1d8a403d"
+      "sha256": "3aea5d5cd49fbd37b9c0a6bb0f327f200db1523f2b77ea8f776cef595233ff16"
     },
     {
       "key": "b2/despite-concession",
@@ -648,7 +648,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [82, 82],
-      "sha256": "99c01df0e0807fd484b8e57241a28dbaa88e9410d3e536d54a5e7cc1c9120311"
+      "sha256": "19aa444d01834137f85a330f17cfb44426ad7952ba8dfb13cf699929387c5456"
     },
     {
       "key": "c1/inverted-conditions",
@@ -656,7 +656,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [104, 104],
-      "sha256": "d0a54e5ca59d7d07f8273ea96e9bb4a6a2090e80bbd1c6844d06778289bc76c5"
+      "sha256": "6f916543195967ea4902247a4c75c7aec62f4f5283873e9dcaf79193fdf52f0e"
     },
     {
       "key": "c1/fronting-contrast",
@@ -664,7 +664,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [106, 106],
-      "sha256": "03518c86059fc2049246c71790c0d55e7c0b254e7c05abaa29c93089d6578519"
+      "sha256": "1252838ed254d280895c27fa9a42439d901a88bfb9726803d2eedd01ae279beb"
     },
     {
       "key": "c1/reference-cohesion",
@@ -672,7 +672,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [103, 103],
-      "sha256": "d27388e3ceac9aa9380007307db3fe8f8763af117d880ddb75fb1549c49746c8"
+      "sha256": "24794249b89ff21007d5a144cc4ed99c8a1b0a2fc2d16cc004c3016e9bd04e88"
     },
     {
       "key": "c1/professional-disagreement",
@@ -680,7 +680,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [101, 101],
-      "sha256": "b797ac167d8cdefe8723f1bb4f330d8e4a9823b13e4c8d1f48008fa8435aa03a"
+      "sha256": "fc90a797abc7fd0dd86dbdbc4357ed7cf42e61a0fd42bbe6b4d67a55a486978f"
     },
     {
       "key": "c1/quantifier-scope",
@@ -688,7 +688,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [98, 98],
-      "sha256": "fc92bcca4e7392cacb97ee50018c82bd4d88d7a50a4bad1c75673986034ad161"
+      "sha256": "7c23a26be50564514f9586883bef5549d1fc9c49ec039e1b0541df157813a78c"
     },
     {
       "key": "c1/cautious-comparisons",
@@ -696,7 +696,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [103, 103],
-      "sha256": "0ce7caf31f6ea04fa92536c01105f0cc7817476076308dbb4cd357da7b89c20b"
+      "sha256": "396067523302a573e13e57675cc004f2955073af42f7fb88514b3a953f2eb4f7"
     },
     {
       "key": "c1/causal-alternatives",
@@ -704,7 +704,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [105, 105],
-      "sha256": "f32395d1d40bdc42b057dadd1aa54b4ebf6d5ec6dc00a885bd3d1c46ca262665"
+      "sha256": "625fa974cdc96824adc678496184a94a91f71ab8cc8f09835b9e9c128fd6c4ed"
     },
     {
       "key": "c1/source-attribution",
@@ -712,7 +712,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [103, 103],
-      "sha256": "fafad0d064acaa50a2803307fd88fbe19c0e344a0ffca9e7aa92282bbad0ae4c"
+      "sha256": "283b9964b8331203b08165be4a05c2ff3be8eec2071ad5dea73cfcd5531312b6"
     },
     {
       "key": "c2/qualified-endorsement",
@@ -720,7 +720,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [122, 122],
-      "sha256": "1fc1ba437ecbd38d5ee9cbed76e479a947e10ac299f08c4f6fe0aed331f23392"
+      "sha256": "67835f974c7bb91f499528c3b97e4fb14be3b1330bc8e280ada0a3b8e2836d13"
     },
     {
       "key": "c2/epistemic-distance",
@@ -728,7 +728,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [123, 123],
-      "sha256": "976389bfc51ebe1af01b684af913dd2a889c4e13e79b598f5894b687e381bcfc"
+      "sha256": "b6c8bab59011bf1be0569904c73f38e7c83a80f2d49a5f010b31c594b41a5b56"
     },
     {
       "key": "c2/scope-of-only",
@@ -736,7 +736,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [118, 118],
-      "sha256": "8ede1ccdbd137d5aa21d3a1c398a5a7b2ac36c4b02e3e8a8b810de5fcfcaaeed"
+      "sha256": "990c185fdebc0f54650241afe0fc521dae16eba3abf9aa3dc30163179190d9cf"
     },
     {
       "key": "c2/strategic-concession",
@@ -744,7 +744,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [119, 119],
-      "sha256": "340602efd0e970dbf708e7c7c0069454df244d2a3c7a13136ac5d6bc88f9e3bc"
+      "sha256": "19a91634afecee55b9d4e8bcb9378714d6d418d4eab45cc6a5ebb244aedbeb7f"
     },
     {
       "key": "c2/loaded-presupposition",
@@ -752,7 +752,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [120, 120],
-      "sha256": "f34b75dd67df1aa3c07557f28dfe17f3908924b2e720a5bb1ac32354e21639b4"
+      "sha256": "912f366cc0cbb7864f4173f32e9d2bb039dea31e682e4bf571f2492df4c0fd4f"
     },
     {
       "key": "c2/metaphor-and-policy",
@@ -760,7 +760,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [117, 117],
-      "sha256": "2c23343ba922f0193cc719a8d0138c045efcc3f1bd393ad06f6015f8d5b57d16"
+      "sha256": "856eaef1b6b3cab78c2e14a03a3aee5ee4b97d3b983a8c271e5523a575b63062"
     },
     {
       "key": "c2/mediating-a-critical-review",
@@ -768,7 +768,7 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [121, 121],
-      "sha256": "0a0c41d08b272298e11bfa021a1515ad6dc6257874b2264878d0bf64e0c3a6a8"
+      "sha256": "e4ff0e9365e576d940ec0a17bd9e593dc98d1b2151ac1c2f28bfcc510e15da1d"
     },
     {
       "key": "c2/silence-and-selective-records",
@@ -776,7 +776,327 @@
       "exercises": 8,
       "types": 7,
       "readingWords": [117, 117],
-      "sha256": "b6b1d9d79d1cfa61fa5779331fddb978002e2bfc84ce8dc448e3f3e74e8fd92b"
+      "sha256": "d3a0f99c757c101e6ce5cc635ad98e7e42fd4ddbea94b674af003f31957b615d"
+    },
+    {
+      "key": "a1/jobs-workplaces",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [19, 19],
+      "sha256": "f93baf89d6e5b001e67b9d909baf9ba98a126adbf9a20cd7b6b7bee939983e0b"
+    },
+    {
+      "key": "a1/object-pronouns",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [22, 22],
+      "sha256": "18c82032523440c8c2c0958687b4949a65445767ca0076b879481cd744ed88f6"
+    },
+    {
+      "key": "a1/free-time-activities",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [24, 24],
+      "sha256": "84ef3e5248fb1e41c1eb4f55196d6b653632697e892db93a4cd255c91b585d1a"
+    },
+    {
+      "key": "a1/classroom-actions",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [22, 22],
+      "sha256": "b18a06a0038e0338ee027c640541e8ff1013e1f538bd525028ce3ceeb283e961"
+    },
+    {
+      "key": "a1/colours-and-sizes",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [23, 23],
+      "sha256": "86ce0b29f36757501196f428b0fbb1427c5ca6b3baa3b5bb9c100734a4430ac9"
+    },
+    {
+      "key": "a1/week-and-clock",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [26, 26],
+      "sha256": "e60f37d5cb6ffe55b71b459e6467d437a845f3e84be2dc10ac596757149ae212"
+    },
+    {
+      "key": "a1/frequency-in-sentences",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [26, 26],
+      "sha256": "6f33c56bab83e47a5cefee3331eeddcc7d5f92f1615ea9f0c663f0f5453283ee"
+    },
+    {
+      "key": "a1/was-were-places",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [24, 24],
+      "sha256": "be036fc8b72c983fa39daa3221a35aabd5450c09958c718ca49828bc2695f229"
+    },
+    {
+      "key": "a1/regular-plural-objects",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [25, 25],
+      "sha256": "3927c7e7e62ffa1ddd3e7bd5d7dabe9f568c6cd7b90cf14fcff6351d052b6d77"
+    },
+    {
+      "key": "a1/be-short-answers",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [26, 26],
+      "sha256": "838a759146e3a92767b49ae4d352b90cdbfd61fcaab46b351a25f66ce5544706"
+    },
+    {
+      "key": "a2/superlatives-nearby",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [44, 44],
+      "sha256": "12d3791ac8f100974198e32fbd95234cb1b8f7975929dea8f0b9e55a7fb87fb4"
+    },
+    {
+      "key": "a2/first-experiences-ever",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [45, 45],
+      "sha256": "fcb6de45d86b5642dc0527534ddb821eea7880c61565c80fed13aa49a402fc29"
+    },
+    {
+      "key": "a2/lost-item-past",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [49, 49],
+      "sha256": "8ad05f5014695d8091d630ce67876f350a613042e8f7d9760680c5d8285c3abf"
+    },
+    {
+      "key": "a2/picnic-some-any",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [44, 44],
+      "sha256": "a9e87ec6690e2ae237ef9b18213de73051d2f4113fb3a8ac73ca9222b9c77b74"
+    },
+    {
+      "key": "a2/street-directions",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [41, 41],
+      "sha256": "58cbcf826f88a66c8660fc7c42574a09761b7f0a02c76a0ffe581b88fe23f626"
+    },
+    {
+      "key": "a2/careful-carefully",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [44, 44],
+      "sha256": "7ff724eaacc7135e507048bc8fd7145c1a35b19aadcdc95713e0ee07ca8c7f76"
+    },
+    {
+      "key": "a2/will-predictions",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [49, 49],
+      "sha256": "e071e56cb2352c8a9d819f1c7b97c14d2259a8c9b0512acf35a4b0e1794239f3"
+    },
+    {
+      "key": "a2/offers-of-help",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [46, 46],
+      "sha256": "71c4948f5ae571158516779d17f38f81c0f770e66df41f0a9a4d078489a7fd26"
+    },
+    {
+      "key": "a2/as-as-comparison",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [49, 49],
+      "sha256": "d5f75023b766c1912f5c316f98f5feece496e78ba8f06ce5feaee2060bfcd511"
+    },
+    {
+      "key": "a2/because-and-so",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [48, 48],
+      "sha256": "db9390baa7176ffbee4bdd3a5bd01c877ac6eebd91705d78ad1ba310bb266744"
+    },
+    {
+      "key": "b1/purpose-and-access",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [58, 58],
+      "sha256": "9b43b13799e06832255b4dc87ea71bdcf0c9107f6da56b9023881a0f98fdeac8"
+    },
+    {
+      "key": "b1/relative-whose",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [57, 57],
+      "sha256": "017e6b66180e908d0b89e6f56759b5a15a92fa0d92116f4ba347bb46df378422"
+    },
+    {
+      "key": "b1/reported-statements",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [58, 58],
+      "sha256": "cf4caa1a4837c268019e9c4429114a9a0e5d92f42a6ace297bcce641974409c8"
+    },
+    {
+      "key": "b1/so-such-intensity",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [58, 58],
+      "sha256": "ae69c27fdcb08125a64839add3847eba7791289363970502d40b20149d19a13e"
+    },
+    {
+      "key": "b1/simultaneous-past",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [57, 57],
+      "sha256": "ddd126c6cf82de8ba1367e7bad330a2fae0721fea74024d851f31363aef02cea"
+    },
+    {
+      "key": "b1/going-to-evidence",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [60, 60],
+      "sha256": "617e64f78a9a5ae5f394c2865c28e72205e4373bcc9f2ecf4fc6c47c30f03a6b"
+    },
+    {
+      "key": "b1/past-passive-event",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [61, 61],
+      "sha256": "b748478d0e6ace956389b290245782a2ebfebdca865911c08859678ab9bf770c"
+    },
+    {
+      "key": "b1/either-or-choices",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [56, 56],
+      "sha256": "daadaca5e730adcf010b50abdbe56d3d1dfc62bc4122bb26dd0efda4e4731481"
+    },
+    {
+      "key": "b1/deduction-now",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [57, 57],
+      "sha256": "4655cbce1f1a0e062f77b01e8b23c0d33a6f6155b484362d50ad242e4fed17b1"
+    },
+    {
+      "key": "b1/preposition-gerunds",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [58, 58],
+      "sha256": "0b6c7cd5a22519d83860a6a3717577981728e6150f41529e8c919f4f99de265f"
+    },
+    {
+      "key": "b2/future-in-progress",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [84, 84],
+      "sha256": "51d170774740e839503e4108e4acbf1566c9b5586e79aa6b21955f127c62dbfa"
+    },
+    {
+      "key": "b2/duration-before-past",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [80, 80],
+      "sha256": "64c7665b7f2f046e257d92f95e783d9fb8548b1a9b0564e3179d44406e461c80"
+    },
+    {
+      "key": "b2/being-done",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [77, 77],
+      "sha256": "a0a3bdf5d5b02cc42e794eab6f424799a5ceba39e7ba49ab182ba4736e7c322e"
+    },
+    {
+      "key": "b2/wish-would-change",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [78, 78],
+      "sha256": "c4d71c1d47ec26aeec16b80abb63c535c0d5314125833939870e9e8f0e2c9fdb"
+    },
+    {
+      "key": "b2/rather-and-better",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [77, 77],
+      "sha256": "c149b2a642349fcd093287666873724f1be32158211ed04c6b10a4644a7c94d2"
+    },
+    {
+      "key": "b2/neednt-have-done",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [82, 82],
+      "sha256": "70a24d1fa13bc92b6af09a7a76d3f9c7eaca72724086b11a4b79f36172b6806a"
+    },
+    {
+      "key": "b2/nondefining-which",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [83, 83],
+      "sha256": "51e9e50ce14109b09a7c30406ce3fe9b8db0049ba40e57de8be15dad34a86eee"
+    },
+    {
+      "key": "b2/emphatic-do",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [80, 80],
+      "sha256": "ad949817a75b63d219e3a4415c48bab6b0573122631d5d6870187f073d528de5"
+    },
+    {
+      "key": "b2/provided-that-conditions",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [85, 85],
+      "sha256": "cb9656404db23230612fe0c02c4a90d968b419ca8d65861b719d9003d71b538f"
+    },
+    {
+      "key": "b2/whereas-evaluations",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [89, 89],
+      "sha256": "fd6be9bea58316219d4a5565040a9734195968b74b8145c19aad45517f97a2b2"
     }
   ]
 }

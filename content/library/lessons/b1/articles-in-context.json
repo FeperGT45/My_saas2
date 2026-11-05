@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o1",
+            "id": "v0f8ebc38f41f",
             "label": "The"
           },
           {
-            "id": "o2",
+            "id": "vbd2b0c46136f",
             "label": "An"
           },
           {
-            "id": "o3",
+            "id": "v535a53379fd2",
             "label": "A of"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v0f8ebc38f41f"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v0f8ebc38f41f",
+      "incorrect_answer": "vbd2b0c46136f",
       "editorial_answer": "The",
       "explanation": "Второе упоминание того же ключа требует the.",
       "key": "e01"
@@ -155,24 +155,24 @@
         "passage": "While cleaning a desk, Sara found an envelope in a drawer. The envelope contained a photograph and a small note. The note had no name, but the photograph showed the previous owner of the desk. Sara contacted the shop where she had bought it. The shop agreed to pass a message to the owner, without sharing the owner’s personal details.",
         "options": [
           {
-            "id": "o2",
+            "id": "v76411cde575c",
             "label": "A key and an umbrella."
           },
           {
-            "id": "o3",
+            "id": "v807ac75e210a",
             "label": "The shop owner’s private address."
           },
           {
-            "id": "o1",
+            "id": "v1ed9e4245b38",
             "label": "A photograph and a small note."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v1ed9e4245b38"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v1ed9e4245b38",
+      "incorrect_answer": "v76411cde575c",
       "editorial_answer": "A photograph and a small note.",
       "explanation": "Содержимое перечислено во втором предложении.",
       "key": "e05"
@@ -184,24 +184,24 @@
         "passage": "While cleaning a desk, Sara found an envelope in a drawer. The envelope contained a photograph and a small note. The note had no name, but the photograph showed the previous owner of the desk. Sara contacted the shop where she had bought it. The shop agreed to pass a message to the owner, without sharing the owner’s personal details.",
         "options": [
           {
-            "id": "o3",
+            "id": "v49e0ba352ce6",
             "label": "Buy the photograph immediately."
           },
           {
-            "id": "o1",
+            "id": "v22c5131815b4",
             "label": "Pass a message to the previous owner."
           },
           {
-            "id": "o2",
+            "id": "v7bb6c059d267",
             "label": "Give Sara the owner’s personal details."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v22c5131815b4"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v22c5131815b4",
+      "incorrect_answer": "v7bb6c059d267",
       "editorial_answer": "Pass a message to the previous owner.",
       "explanation": "Магазин передаст сообщение, сохранив личные данные владельца.",
       "key": "e06"
@@ -218,24 +218,24 @@
         ],
         "options": [
           {
-            "id": "o2",
+            "id": "v393960d48533",
             "label": "An dog followed me to the gate."
           },
           {
-            "id": "o3",
+            "id": "v1f84e2f90300",
             "label": "A of dog followed me to the gate."
           },
           {
-            "id": "o1",
+            "id": "vf96c03a178ca",
             "label": "The dog followed me to the gate."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vf96c03a178ca"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vf96c03a178ca",
+      "incorrect_answer": "v393960d48533",
       "editorial_answer": "The dog followed me to the gate.",
       "explanation": "The dog отсылает к собаке из первой реплики.",
       "key": "e07"
@@ -247,24 +247,24 @@
         "sentence": "The sticker giving information about the parcel is its ___.",
         "options": [
           {
-            "id": "o3",
+            "id": "v340091677fe1",
             "label": "envelope"
           },
           {
-            "id": "o1",
+            "id": "v9a28c2e2afd4",
             "label": "label"
           },
           {
-            "id": "o2",
+            "id": "vcd1e86344a7f",
             "label": "drawer"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v9a28c2e2afd4"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v9a28c2e2afd4",
+      "incorrect_answer": "vcd1e86344a7f",
       "editorial_answer": "label",
       "explanation": "Label — этикетка с информацией; drawer — ящик, envelope — конверт.",
       "key": "e08"

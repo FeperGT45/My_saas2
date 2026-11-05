@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o2",
+            "id": "v40023a8bdbde",
             "label": "both"
           },
           {
-            "id": "o3",
+            "id": "v157625b0d362",
             "label": "every of"
           },
           {
-            "id": "o1",
+            "id": "v5481a4ca9519",
             "label": "neither"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v5481a4ca9519"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v5481a4ca9519",
+      "incorrect_answer": "v40023a8bdbde",
       "editorial_answer": "neither",
       "explanation": "Из двух вариантов ни один не прямой: neither route is direct.",
       "key": "e01"
@@ -151,24 +151,24 @@
         "passage": "Eli compared two bus routes to the museum. Both routes passed the central market, but neither went directly to the museum. The first required a transfer near the station; the second required one outside the hospital. Eli chose the first because he knew the station well. It was not the fastest option, but he felt more confident about finding the connecting bus.",
         "options": [
           {
-            "id": "o3",
+            "id": "ve78188657d13",
             "label": "Both require a transfer outside the hospital."
           },
           {
-            "id": "o1",
+            "id": "vef6ec54160fb",
             "label": "Both pass the central market."
           },
           {
-            "id": "o2",
+            "id": "v658eff39073d",
             "label": "Both go directly to the museum."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vef6ec54160fb"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vef6ec54160fb",
+      "incorrect_answer": "v658eff39073d",
       "editorial_answer": "Both pass the central market.",
       "explanation": "Оба проходят рынок; пересадки находятся в разных местах.",
       "key": "e05"
@@ -180,24 +180,24 @@
         "passage": "Eli compared two bus routes to the museum. Both routes passed the central market, but neither went directly to the museum. The first required a transfer near the station; the second required one outside the hospital. Eli chose the first because he knew the station well. It was not the fastest option, but he felt more confident about finding the connecting bus.",
         "options": [
           {
-            "id": "o1",
+            "id": "v4fcb8ff2e1f5",
             "label": "He was familiar with the station."
           },
           {
-            "id": "o2",
+            "id": "vbc28e0a39796",
             "label": "It was definitely the fastest."
           },
           {
-            "id": "o3",
+            "id": "v918ceddaac45",
             "label": "It required no transfer."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v4fcb8ff2e1f5"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v4fcb8ff2e1f5",
+      "incorrect_answer": "vbc28e0a39796",
       "editorial_answer": "He was familiar with the station.",
       "explanation": "Причина — знакомое место пересадки; текст прямо отрицает наибольшую скорость.",
       "key": "e06"
@@ -214,24 +214,24 @@
         ],
         "options": [
           {
-            "id": "o3",
+            "id": "v36138481296a",
             "label": "No, every of them stops there."
           },
           {
-            "id": "o1",
+            "id": "va1100ebc5675",
             "label": "No, neither of them stops there."
           },
           {
-            "id": "o2",
+            "id": "v7f409a0144ec",
             "label": "No, both of them stop there."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "va1100ebc5675"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "va1100ebc5675",
+      "incorrect_answer": "v7f409a0144ec",
       "editorial_answer": "No, neither of them stops there.",
       "explanation": "Neither of them передаёт отрицание обоих вариантов без двойного отрицания.",
       "key": "e07"
@@ -243,24 +243,24 @@
         "sentence": "A journey with no change of bus is a ___ journey.",
         "options": [
           {
-            "id": "o1",
+            "id": "v45393aa0dda7",
             "label": "direct"
           },
           {
-            "id": "o2",
+            "id": "v0d29d0cd3b0c",
             "label": "connecting"
           },
           {
-            "id": "o3",
+            "id": "v188ff460a2e6",
             "label": "delayed"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v45393aa0dda7"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v45393aa0dda7",
+      "incorrect_answer": "v0d29d0cd3b0c",
       "editorial_answer": "direct",
       "explanation": "Direct означает без пересадки; connecting предполагает стыковку.",
       "key": "e08"

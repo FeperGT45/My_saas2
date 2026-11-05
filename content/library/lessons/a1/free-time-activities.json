@@ -1,0 +1,330 @@
+{
+  "key": "a1/free-time-activities",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 3,
+  "title": "Что нравится делать в свободное время",
+  "description": "Что нравится делать в свободное время: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Называть занятия с like + -ing",
+    "Говорить об увлечениях с likes/does not like"
+  ],
+  "notes": [
+    "После like можно назвать занятие через -ing: I like drawing. В этом уроке используем именно эту модель.",
+    "He likes, she likes, но после does not — like без -s."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/object-pronouns"],
+  "lexicon": [
+    {
+      "en": "draw",
+      "ru": "рисовать"
+    },
+    {
+      "en": "swim",
+      "ru": "плавать"
+    },
+    {
+      "en": "read",
+      "ru": "читать"
+    },
+    {
+      "en": "free time",
+      "ru": "свободное время"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Выбери модель like + -ing: I like ___ pictures.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v116ef5405d60",
+            "label": "drew"
+          },
+          {
+            "id": "v057233265133",
+            "label": "drawing"
+          },
+          {
+            "id": "v3e88b146b411",
+            "label": "draws"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v057233265133"
+      },
+      "reference_answer": "v057233265133",
+      "incorrect_answer": "v3e88b146b411",
+      "editorial_answer": "drawing",
+      "explanation": "Drawing — нужная -ing-форма для занятия.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: likes / like.",
+      "public_payload": {
+        "sentence": "She does not ___ swimming."
+      },
+      "answer_key": {
+        "accepted": ["like"]
+      },
+      "reference_answer": "like",
+      "incorrect_answer": "likes",
+      "editorial_answer": "She does not like swimming.",
+      "explanation": "После does not основной глагол используется без -s.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мой друг любит читать комиксы.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "likes"
+          },
+          {
+            "id": "t4",
+            "label": "reading"
+          },
+          {
+            "id": "t5",
+            "label": "comics."
+          },
+          {
+            "id": "t1",
+            "label": "My"
+          },
+          {
+            "id": "t2",
+            "label": "friend"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "My friend likes reading comics.",
+      "explanation": "Likes согласуется с my friend; reading называет занятие.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He like drawing maps."
+      },
+      "answer_key": {
+        "accepted": ["He likes drawing maps."]
+      },
+      "reference_answer": "He likes drawing maps.",
+      "incorrect_answer": "He like drawing maps.",
+      "editorial_answer": "He likes drawing maps.",
+      "explanation": "С he в утвердительном Present Simple нужен likes.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что любит делать брат Мии?",
+      "public_payload": {
+        "passage": "On Saturday, Mia reads comics at home. Her brother likes swimming. Mia does not like swimming, but she likes drawing pictures of the sea.",
+        "options": [
+          {
+            "id": "vc3465367ef39",
+            "label": "Swimming."
+          },
+          {
+            "id": "v0282370964a7",
+            "label": "Drawing maps."
+          },
+          {
+            "id": "v4137f9de8532",
+            "label": "Reading only at school."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc3465367ef39"
+      },
+      "reference_answer": "vc3465367ef39",
+      "incorrect_answer": "v0282370964a7",
+      "editorial_answer": "Swimming.",
+      "explanation": "Her brother likes swimming — прямое сообщение текста.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lb5f577d7caf7",
+            "label": "draw"
+          },
+          {
+            "id": "l9e9d458ba7b5",
+            "label": "swim"
+          },
+          {
+            "id": "l8ef2dac1551d",
+            "label": "read"
+          },
+          {
+            "id": "l54867bb901ea",
+            "label": "free time"
+          }
+        ],
+        "right": [
+          {
+            "id": "r39114df88f58",
+            "label": "читать"
+          },
+          {
+            "id": "r5cd7b0a5428d",
+            "label": "свободное время"
+          },
+          {
+            "id": "r2d32c61164f9",
+            "label": "рисовать"
+          },
+          {
+            "id": "r593836588214",
+            "label": "плавать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lb5f577d7caf7": "r2d32c61164f9",
+          "l9e9d458ba7b5": "r593836588214",
+          "l8ef2dac1551d": "r39114df88f58",
+          "l54867bb901ea": "r5cd7b0a5428d"
+        }
+      },
+      "reference_answer": {
+        "lb5f577d7caf7": "r2d32c61164f9",
+        "l9e9d458ba7b5": "r593836588214",
+        "l8ef2dac1551d": "r39114df88f58",
+        "l54867bb901ea": "r5cd7b0a5428d"
+      },
+      "incorrect_answer": {
+        "lb5f577d7caf7": "r593836588214",
+        "l9e9d458ba7b5": "r2d32c61164f9",
+        "l8ef2dac1551d": "r39114df88f58",
+        "l54867bb901ea": "r5cd7b0a5428d"
+      },
+      "editorial_answer": "draw — рисовать; swim — плавать; read — читать; free time — свободное время",
+      "explanation": "В этих контекстах: draw — рисовать; swim — плавать; read — читать; free time — свободное время.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Мия рисует?",
+      "public_payload": {
+        "passage": "On Saturday, Mia reads comics at home. Her brother likes swimming. Mia does not like swimming, but she likes drawing pictures of the sea.",
+        "options": [
+          {
+            "id": "v0b8c4e16e677",
+            "label": "Pictures of the station."
+          },
+          {
+            "id": "v208a916c9223",
+            "label": "Only school timetables."
+          },
+          {
+            "id": "vd2d3e8e2c7c7",
+            "label": "Pictures of the sea."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd2d3e8e2c7c7"
+      },
+      "reference_answer": "vd2d3e8e2c7c7",
+      "incorrect_answer": "v0b8c4e16e677",
+      "editorial_answer": "Pictures of the sea.",
+      "explanation": "Последняя фраза называет море как тему рисунков.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о своём увлечении моделью like + -ing.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Do you like drawing?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v0e8e5cf29400",
+            "label": "Yes, I like drawing animals."
+          },
+          {
+            "id": "v615b33b2f587",
+            "label": "Yes, I likes drawing animals."
+          },
+          {
+            "id": "va89712ed4358",
+            "label": "Yes, I liking animals yesterday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0e8e5cf29400"
+      },
+      "reference_answer": "v0e8e5cf29400",
+      "incorrect_answer": "v615b33b2f587",
+      "editorial_answer": "Yes, I like drawing animals.",
+      "explanation": "С I нужен like, а drawing называет деятельность.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "I have no lessons today. I can read in my ___.",
+        "options": [
+          {
+            "id": "v7a198397f741",
+            "label": "driver"
+          },
+          {
+            "id": "ve1750996cc78",
+            "label": "hospital"
+          },
+          {
+            "id": "vd5c86c96e863",
+            "label": "free time"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd5c86c96e863"
+      },
+      "reference_answer": "vd5c86c96e863",
+      "incorrect_answer": "v7a198397f741",
+      "editorial_answer": "free time",
+      "explanation": "Free time — время, свободное от занятий или работы.",
+      "key": "e09"
+    }
+  ]
+}

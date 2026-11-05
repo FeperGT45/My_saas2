@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o2",
+            "id": "vad66253673d5",
             "label": "of"
           },
           {
-            "id": "o3",
+            "id": "vc192966280f5",
             "label": "to"
           },
           {
-            "id": "o1",
+            "id": "v54fae8647e60",
             "label": "from"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v54fae8647e60"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v54fae8647e60",
+      "incorrect_answer": "vad66253673d5",
       "editorial_answer": "from",
       "explanation": "Устойчивое выражение benefit from указывает, какое улучшение было бы полезно.",
       "key": "e01"
@@ -147,24 +147,24 @@
         "passage": "During a design review, an engineer wrote that a proposal was “optimistic”. The project manager initially read this as a dismissive judgement of the whole team. In a follow-up note, the engineer specified that the projected savings excluded maintenance costs and depended on an untested assumption about demand. She supported a small pilot but did not recommend full implementation on the evidence available. The clarification made the disagreement actionable: the team could revise the calculation and test the assumption. It also preserved the distinction between questioning a forecast and questioning the competence or intentions of the people who had prepared it.",
         "options": [
           {
-            "id": "o3",
+            "id": "ve57b4c9e22ee",
             "label": "Abandoning any attempt to revise the calculation."
           },
           {
-            "id": "o1",
+            "id": "vb196c27bf31e",
             "label": "A small pilot, rather than full implementation."
           },
           {
-            "id": "o2",
+            "id": "v755ba16aaa01",
             "label": "Immediate full implementation without further evidence."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vb196c27bf31e"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vb196c27bf31e",
+      "incorrect_answer": "v755ba16aaa01",
       "editorial_answer": "A small pilot, rather than full implementation.",
       "explanation": "Поддержка пилота не равна поддержке немедленного полномасштабного внедрения.",
       "key": "e05"
@@ -176,24 +176,24 @@
         "passage": "During a design review, an engineer wrote that a proposal was “optimistic”. The project manager initially read this as a dismissive judgement of the whole team. In a follow-up note, the engineer specified that the projected savings excluded maintenance costs and depended on an untested assumption about demand. She supported a small pilot but did not recommend full implementation on the evidence available. The clarification made the disagreement actionable: the team could revise the calculation and test the assumption. It also preserved the distinction between questioning a forecast and questioning the competence or intentions of the people who had prepared it.",
         "options": [
           {
-            "id": "o1",
+            "id": "vb2c92c236fa1",
             "label": "It identified omissions and an assumption that could be checked."
           },
           {
-            "id": "o2",
+            "id": "v5595ec52f914",
             "label": "It proved that the team had dishonest intentions."
           },
           {
-            "id": "o3",
+            "id": "vc12d751aafe9",
             "label": "It removed every disagreement about future demand."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vb2c92c236fa1"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vb2c92c236fa1",
+      "incorrect_answer": "v5595ec52f914",
       "editorial_answer": "It identified omissions and an assumption that could be checked.",
       "explanation": "Указаны проверяемые элементы расчёта; личная нечестность не устанавливается.",
       "key": "e06"
@@ -210,24 +210,24 @@
         ],
         "options": [
           {
-            "id": "o3",
+            "id": "v76128cf3ca79",
             "label": "Your intention must have been to mislead us."
           },
           {
-            "id": "o1",
+            "id": "v92df5bf71c0f",
             "label": "Could you explain how the estimate accounts for maintenance?"
           },
           {
-            "id": "o2",
+            "id": "v252e395e423a",
             "label": "Only an incompetent person would produce that estimate."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v92df5bf71c0f"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v92df5bf71c0f",
+      "incorrect_answer": "v252e395e423a",
       "editorial_answer": "Could you explain how the estimate accounts for maintenance?",
       "explanation": "Вопрос о методе расчёта проверяем; два других варианта приписывают личные качества и намерения.",
       "key": "e07"
@@ -239,24 +239,24 @@
         "sentence": "A proposal that can realistically be carried out is ___.",
         "options": [
           {
-            "id": "o1",
+            "id": "v197c5da95a3e",
             "label": "feasible"
           },
           {
-            "id": "o2",
+            "id": "ve99b63333f58",
             "label": "infallible"
           },
           {
-            "id": "o3",
+            "id": "v21ac6de1e0d2",
             "label": "retrospective"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v197c5da95a3e"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v197c5da95a3e",
+      "incorrect_answer": "ve99b63333f58",
       "editorial_answer": "feasible",
       "explanation": "Feasible означает осуществимый, а не безошибочный или относящийся к прошлому.",
       "key": "e08"

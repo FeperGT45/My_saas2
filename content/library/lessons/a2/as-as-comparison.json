@@ -1,0 +1,390 @@
+{
+  "key": "a2/as-as-comparison",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 9,
+  "title": "Такой же или не такой",
+  "description": "Такой же или не такой: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Выражать равенство признака через as ... as",
+    "Выражать неравенство через not as ... as"
+  ],
+  "notes": [
+    "Для равенства: This room is as large as that one. Между as ставится исходная форма прилагательного.",
+    "Not as expensive as означает меньшую стоимость, а не большую."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/offers-of-help"],
+  "lexicon": [
+    {
+      "en": "equal",
+      "ru": "равный"
+    },
+    {
+      "en": "spacious",
+      "ru": "просторный"
+    },
+    {
+      "en": "expensive",
+      "ru": "дорогой"
+    },
+    {
+      "en": "similar",
+      "ru": "похожий"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The two rooms have the same size. This room is ___ large as that one.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v301dc1daa588",
+            "label": "as"
+          },
+          {
+            "id": "v1d78082577aa",
+            "label": "than"
+          },
+          {
+            "id": "v66b89033c0e6",
+            "label": "more as"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v301dc1daa588"
+      },
+      "reference_answer": "v301dc1daa588",
+      "incorrect_answer": "v1d78082577aa",
+      "editorial_answer": "as",
+      "explanation": "Равенство выражается as large as, без сравнительной степени.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: expensiver / expensive.",
+      "public_payload": {
+        "sentence": "This bag is as ___ as mine; they cost the same."
+      },
+      "answer_key": {
+        "accepted": ["expensive"]
+      },
+      "reference_answer": "expensive",
+      "incorrect_answer": "expensiver",
+      "editorial_answer": "This bag is as expensive as mine; they cost the same.",
+      "explanation": "В as ... as нужна исходная форма expensive.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Синяя комната не такая большая, как зелёная.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "room"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "not"
+          },
+          {
+            "id": "t6",
+            "label": "as"
+          },
+          {
+            "id": "t7",
+            "label": "large"
+          },
+          {
+            "id": "t8",
+            "label": "as"
+          },
+          {
+            "id": "t9",
+            "label": "the"
+          },
+          {
+            "id": "t10",
+            "label": "green"
+          },
+          {
+            "id": "t11",
+            "label": "room."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "blue"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11"
+        ]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11",
+        "t1"
+      ],
+      "editorial_answer": "The blue room is not as large as the green room.",
+      "explanation": "Not as large as означает меньший размер синей комнаты.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "This train is as faster as the other one."
+      },
+      "answer_key": {
+        "accepted": ["This train is as fast as the other one."]
+      },
+      "reference_answer": "This train is as fast as the other one.",
+      "incorrect_answer": "This train is as faster as the other one.",
+      "editorial_answer": "This train is as fast as the other one.",
+      "explanation": "Между as используется fast, а не faster.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что одинаково у двух комнат?",
+      "public_payload": {
+        "passage": "Two friends are choosing a room for a study group. The blue room is not as large as the green room, but it is as quiet. Both rooms cost the same for an hour. They choose the green room because eight people are coming and they need more space.",
+        "options": [
+          {
+            "id": "va240f922aecd",
+            "label": "Their size only."
+          },
+          {
+            "id": "vde51e6d8fb6b",
+            "label": "Their colour and furniture."
+          },
+          {
+            "id": "v636083c61702",
+            "label": "Their quietness and hourly price."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v636083c61702"
+      },
+      "reference_answer": "v636083c61702",
+      "incorrect_answer": "va240f922aecd",
+      "editorial_answer": "Their quietness and hourly price.",
+      "explanation": "As quiet и cost the same указывают на тишину и цену.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l87d80eb67442",
+            "label": "equal"
+          },
+          {
+            "id": "l0ba5ba36c848",
+            "label": "spacious"
+          },
+          {
+            "id": "ld53ea4ffa7f6",
+            "label": "expensive"
+          },
+          {
+            "id": "l1848681dc8a8",
+            "label": "similar"
+          }
+        ],
+        "right": [
+          {
+            "id": "r51540e8939a4",
+            "label": "дорогой"
+          },
+          {
+            "id": "ra31ea86dd8e8",
+            "label": "похожий"
+          },
+          {
+            "id": "rc59d46a0001f",
+            "label": "равный"
+          },
+          {
+            "id": "r8cbb4ee9cb96",
+            "label": "просторный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l87d80eb67442": "rc59d46a0001f",
+          "l0ba5ba36c848": "r8cbb4ee9cb96",
+          "ld53ea4ffa7f6": "r51540e8939a4",
+          "l1848681dc8a8": "ra31ea86dd8e8"
+        }
+      },
+      "reference_answer": {
+        "l87d80eb67442": "rc59d46a0001f",
+        "l0ba5ba36c848": "r8cbb4ee9cb96",
+        "ld53ea4ffa7f6": "r51540e8939a4",
+        "l1848681dc8a8": "ra31ea86dd8e8"
+      },
+      "incorrect_answer": {
+        "l87d80eb67442": "r8cbb4ee9cb96",
+        "l0ba5ba36c848": "rc59d46a0001f",
+        "ld53ea4ffa7f6": "r51540e8939a4",
+        "l1848681dc8a8": "ra31ea86dd8e8"
+      },
+      "editorial_answer": "equal — равный; spacious — просторный; expensive — дорогой; similar — похожий",
+      "explanation": "В этих контекстах: equal — равный; spacious — просторный; expensive — дорогой; similar — похожий.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему выбрали зелёную комнату?",
+      "public_payload": {
+        "passage": "Two friends are choosing a room for a study group. The blue room is not as large as the green room, but it is as quiet. Both rooms cost the same for an hour. They choose the green room because eight people are coming and they need more space.",
+        "options": [
+          {
+            "id": "v1ba2683dd0c2",
+            "label": "The blue room is too noisy to use."
+          },
+          {
+            "id": "vda9fdce923f2",
+            "label": "It has more space for eight people."
+          },
+          {
+            "id": "vec4d76d43696",
+            "label": "It is cheaper for an hour."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vda9fdce923f2"
+      },
+      "reference_answer": "vda9fdce923f2",
+      "incorrect_answer": "vec4d76d43696",
+      "editorial_answer": "It has more space for eight people.",
+      "explanation": "Решающим фактором была вместимость, не цена и не шум.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи, что цены одинаковы.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Is the new chair more expensive?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vcad4ccf5fbe8",
+            "label": "No, it is as more expensive as the old one."
+          },
+          {
+            "id": "va90903d88aee",
+            "label": "No, it is than expensive as the old one."
+          },
+          {
+            "id": "v8b6d03ff494d",
+            "label": "No, it is as expensive as the old one."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8b6d03ff494d"
+      },
+      "reference_answer": "v8b6d03ff494d",
+      "incorrect_answer": "vcad4ccf5fbe8",
+      "editorial_answer": "No, it is as expensive as the old one.",
+      "explanation": "As expensive as описывает одинаковую цену.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "These two designs are not identical, but they look ___.",
+        "options": [
+          {
+            "id": "va0649ec65865",
+            "label": "yesterday"
+          },
+          {
+            "id": "v431c378ada9d",
+            "label": "similar"
+          },
+          {
+            "id": "v611001c41809",
+            "label": "equalled"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v431c378ada9d"
+      },
+      "reference_answer": "v431c378ada9d",
+      "incorrect_answer": "v611001c41809",
+      "editorial_answer": "similar",
+      "explanation": "Similar означает похожие, не обязательно полностью одинаковые.",
+      "key": "e09"
+    }
+  ]
+}

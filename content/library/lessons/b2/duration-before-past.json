@@ -1,0 +1,366 @@
+{
+  "key": "b2/duration-before-past",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 2,
+  "title": "Как долго это продолжалось до события",
+  "description": "Как долго это продолжалось до события: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Строить had been + -ing",
+    "Различать длительный предшествующий процесс и момент события"
+  ],
+  "notes": [
+    "Past Perfect Continuous: They had been waiting for an hour when the door opened.",
+    "Had been waiting подчёркивает длительность до прошлого момента; оно само не сообщает точную общую длительность после этого момента."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/future-in-progress"],
+  "lexicon": [
+    {
+      "en": "queue",
+      "ru": "очередь"
+    },
+    {
+      "en": "delay",
+      "ru": "задержка"
+    },
+    {
+      "en": "exhausted",
+      "ru": "измотанный"
+    },
+    {
+      "en": "eventually",
+      "ru": "в конце концов"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: They ___ for an hour when the doors finally opened.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vb859c7311d88",
+            "label": "had waiting"
+          },
+          {
+            "id": "v8fe8fa3c8516",
+            "label": "have been waited"
+          },
+          {
+            "id": "v018fc9877677",
+            "label": "had been waiting"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v018fc9877677"
+      },
+      "reference_answer": "v018fc9877677",
+      "incorrect_answer": "vb859c7311d88",
+      "editorial_answer": "had been waiting",
+      "explanation": "Длительный процесс до момента в прошлом выражается had been waiting.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: investigating / investigated.",
+      "public_payload": {
+        "sentence": "The team had been ___ the fault all morning before the cause was found."
+      },
+      "answer_key": {
+        "accepted": ["investigating"]
+      },
+      "reference_answer": "investigating",
+      "incorrect_answer": "investigated",
+      "editorial_answer": "The team had been investigating the fault all morning before the cause was found.",
+      "explanation": "После had been для активного процесса нужна investigating.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «К моменту прибытия она ехала всю ночь.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "been"
+          },
+          {
+            "id": "t4",
+            "label": "travelling"
+          },
+          {
+            "id": "t5",
+            "label": "all"
+          },
+          {
+            "id": "t6",
+            "label": "night"
+          },
+          {
+            "id": "t7",
+            "label": "when"
+          },
+          {
+            "id": "t8",
+            "label": "she"
+          },
+          {
+            "id": "t9",
+            "label": "arrived."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "had"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "She had been travelling all night when she arrived.",
+      "explanation": "Had been travelling связывает длительный процесс с последующим прошлым событием.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "We had been waited for two hours when help arrived."
+      },
+      "answer_key": {
+        "accepted": ["We had been waiting for two hours when help arrived."]
+      },
+      "reference_answer": "We had been waiting for two hours when help arrived.",
+      "incorrect_answer": "We had been waited for two hours when help arrived.",
+      "editorial_answer": "We had been waiting for two hours when help arrived.",
+      "explanation": "В активном Past Perfect Continuous требуется waiting.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как долго волонтёры работали к полудню?",
+      "public_payload": {
+        "passage": "The volunteers looked exhausted when the event manager arrived at noon. They had been arranging the outdoor stalls since seven, and a delivery delay had forced them to move several tables twice. The manager first assumed that the work had been poorly planned. After hearing the sequence of events, she realised that an unexpected missing delivery had added to the workload. She brought in two extra helpers rather than criticising the volunteers on the basis of their tired appearance alone.",
+        "options": [
+          {
+            "id": "v0a676c42e73b",
+            "label": "For exactly two days."
+          },
+          {
+            "id": "v92002ee5cd00",
+            "label": "Since seven that morning, about five hours."
+          },
+          {
+            "id": "vc3a14357c5dd",
+            "label": "Only since the manager arrived."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v92002ee5cd00"
+      },
+      "reference_answer": "v92002ee5cd00",
+      "incorrect_answer": "vc3a14357c5dd",
+      "editorial_answer": "Since seven that morning, about five hours.",
+      "explanation": "Начало в семь и прибытие в полдень задают около пяти часов.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1532e1af10db",
+            "label": "queue"
+          },
+          {
+            "id": "lced107a4aef7",
+            "label": "delay"
+          },
+          {
+            "id": "l69219999b413",
+            "label": "exhausted"
+          },
+          {
+            "id": "ld2fa112abdc3",
+            "label": "eventually"
+          }
+        ],
+        "right": [
+          {
+            "id": "r5ab512276c06",
+            "label": "измотанный"
+          },
+          {
+            "id": "r2b9c69c31017",
+            "label": "в конце концов"
+          },
+          {
+            "id": "rb822f6ea7929",
+            "label": "очередь"
+          },
+          {
+            "id": "r0b2f136beeed",
+            "label": "задержка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1532e1af10db": "rb822f6ea7929",
+          "lced107a4aef7": "r0b2f136beeed",
+          "l69219999b413": "r5ab512276c06",
+          "ld2fa112abdc3": "r2b9c69c31017"
+        }
+      },
+      "reference_answer": {
+        "l1532e1af10db": "rb822f6ea7929",
+        "lced107a4aef7": "r0b2f136beeed",
+        "l69219999b413": "r5ab512276c06",
+        "ld2fa112abdc3": "r2b9c69c31017"
+      },
+      "incorrect_answer": {
+        "l1532e1af10db": "r0b2f136beeed",
+        "lced107a4aef7": "rb822f6ea7929",
+        "l69219999b413": "r5ab512276c06",
+        "ld2fa112abdc3": "r2b9c69c31017"
+      },
+      "editorial_answer": "queue — очередь; delay — задержка; exhausted — измотанный; eventually — в конце концов",
+      "explanation": "В этих контекстах: queue — очередь; delay — задержка; exhausted — измотанный; eventually — в конце концов.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как изменилась оценка менеджера?",
+      "public_payload": {
+        "passage": "The volunteers looked exhausted when the event manager arrived at noon. They had been arranging the outdoor stalls since seven, and a delivery delay had forced them to move several tables twice. The manager first assumed that the work had been poorly planned. After hearing the sequence of events, she realised that an unexpected missing delivery had added to the workload. She brought in two extra helpers rather than criticising the volunteers on the basis of their tired appearance alone.",
+        "options": [
+          {
+            "id": "v8aa723cbe568",
+            "label": "She recognised an additional workload caused by an unexpected delay."
+          },
+          {
+            "id": "ve6bc09b0a397",
+            "label": "She proved that tiredness always means poor planning."
+          },
+          {
+            "id": "v0ff8d9e119f9",
+            "label": "She cancelled the work without hearing any explanation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8aa723cbe568"
+      },
+      "reference_answer": "v8aa723cbe568",
+      "incorrect_answer": "ve6bc09b0a397",
+      "editorial_answer": "She recognised an additional workload caused by an unexpected delay.",
+      "explanation": "Выяснение последовательности событий изменило исходное предположение.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Объясни усталость процессом, предшествующим прибытию.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Why was the team so tired when you arrived?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v50ace0126229",
+            "label": "They have been moved equipment tomorrow."
+          },
+          {
+            "id": "vbe56c01510a9",
+            "label": "They had been moving equipment since dawn."
+          },
+          {
+            "id": "v101b4e5b5729",
+            "label": "They had moving equipment since dawn."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbe56c01510a9"
+      },
+      "reference_answer": "vbe56c01510a9",
+      "incorrect_answer": "v101b4e5b5729",
+      "editorial_answer": "They had been moving equipment since dawn.",
+      "explanation": "Had been moving выражает длительную активную работу до прошлого момента.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Extremely tired after sustained effort means ___.",
+        "options": [
+          {
+            "id": "v6313744e9fc1",
+            "label": "exhausted"
+          },
+          {
+            "id": "vf8a8e630ebe2",
+            "label": "available"
+          },
+          {
+            "id": "v616dba6cf796",
+            "label": "unaffected"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6313744e9fc1"
+      },
+      "reference_answer": "v6313744e9fc1",
+      "incorrect_answer": "vf8a8e630ebe2",
+      "editorial_answer": "exhausted",
+      "explanation": "Exhausted — сильная усталость, а не просто занятость или доступность.",
+      "key": "e09"
+    }
+  ]
+}

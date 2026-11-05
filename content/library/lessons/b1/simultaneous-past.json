@@ -1,0 +1,366 @@
+{
+  "key": "b1/simultaneous-past",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 5,
+  "title": "Два процесса в один момент прошлого",
+  "description": "Два процесса в один момент прошлого: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Описывать одновременные действия через was/were + -ing",
+    "Различать фоновый процесс и единичное завершённое действие"
+  ],
+  "notes": [
+    "While может связать два процесса: While I was cooking, they were setting the table.",
+    "Was/were согласуется с подлежащим; смысловой глагол получает -ing."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/so-such-intensity"],
+  "lexicon": [
+    {
+      "en": "meanwhile",
+      "ru": "тем временем"
+    },
+    {
+      "en": "prepare",
+      "ru": "готовить"
+    },
+    {
+      "en": "set the table",
+      "ru": "накрывать на стол"
+    },
+    {
+      "en": "interrupt",
+      "ru": "прерывать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: While I was preparing the slides, my colleagues ___ the equipment.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v659eee1b9c41",
+            "label": "were checking"
+          },
+          {
+            "id": "v2c30ad84fd74",
+            "label": "was checking"
+          },
+          {
+            "id": "v44491cfc2b19",
+            "label": "were check"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v659eee1b9c41"
+      },
+      "reference_answer": "v659eee1b9c41",
+      "incorrect_answer": "v2c30ad84fd74",
+      "editorial_answer": "were checking",
+      "explanation": "My colleagues — множественное число, поэтому were checking.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: practised / practising.",
+      "public_payload": {
+        "sentence": "At seven yesterday, she was ___ the presentation."
+      },
+      "answer_key": {
+        "accepted": ["practising"]
+      },
+      "reference_answer": "practising",
+      "incorrect_answer": "practised",
+      "editorial_answer": "At seven yesterday, she was practising the presentation.",
+      "explanation": "После was для процесса нужна -ing-форма practising.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Пока я готовил, они накрывали на стол.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "was"
+          },
+          {
+            "id": "t4",
+            "label": "cooking,"
+          },
+          {
+            "id": "t5",
+            "label": "they"
+          },
+          {
+            "id": "t6",
+            "label": "were"
+          },
+          {
+            "id": "t7",
+            "label": "setting"
+          },
+          {
+            "id": "t8",
+            "label": "the"
+          },
+          {
+            "id": "t9",
+            "label": "table."
+          },
+          {
+            "id": "t1",
+            "label": "While"
+          },
+          {
+            "id": "t2",
+            "label": "I"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "While I was cooking, they were setting the table.",
+      "explanation": "Два Past Continuous показывают параллельные процессы.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "While we was cleaning, he was packing the tools."
+      },
+      "answer_key": {
+        "accepted": ["While we were cleaning, he was packing the tools."]
+      },
+      "reference_answer": "While we were cleaning, he was packing the tools.",
+      "incorrect_answer": "While we was cleaning, he was packing the tools.",
+      "editorial_answer": "While we were cleaning, he was packing the tools.",
+      "explanation": "С we используется were; второй процесс с he was уже оформлен правильно.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что делал Омар, пока Прия развешивала указатели?",
+      "public_payload": {
+        "passage": "The volunteers arrived early to prepare the hall. While Priya was putting signs on the doors, Omar was arranging chairs. Two other volunteers were checking the microphones. At eight, the first guest arrived and asked where to leave a coat. Priya stopped her work for a moment and showed him the cloakroom before returning to the signs.",
+        "options": [
+          {
+            "id": "vdb16d3b9a4a4",
+            "label": "Repairing the doors."
+          },
+          {
+            "id": "v76cd7680046a",
+            "label": "Showing a guest the car park."
+          },
+          {
+            "id": "v73f471c2ac3b",
+            "label": "Arranging chairs."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v73f471c2ac3b"
+      },
+      "reference_answer": "v73f471c2ac3b",
+      "incorrect_answer": "vdb16d3b9a4a4",
+      "editorial_answer": "Arranging chairs.",
+      "explanation": "Его параллельное действие прямо названо во второй фразе.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l2d491d9bf884",
+            "label": "meanwhile"
+          },
+          {
+            "id": "lbac9557a99e1",
+            "label": "prepare"
+          },
+          {
+            "id": "lef33571335f1",
+            "label": "set the table"
+          },
+          {
+            "id": "l0343e7f0a678",
+            "label": "interrupt"
+          }
+        ],
+        "right": [
+          {
+            "id": "r75fb35a056b7",
+            "label": "накрывать на стол"
+          },
+          {
+            "id": "r32b6d5563a5d",
+            "label": "прерывать"
+          },
+          {
+            "id": "rd9b696d9e337",
+            "label": "тем временем"
+          },
+          {
+            "id": "r831bd6311bbd",
+            "label": "готовить"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l2d491d9bf884": "rd9b696d9e337",
+          "lbac9557a99e1": "r831bd6311bbd",
+          "lef33571335f1": "r75fb35a056b7",
+          "l0343e7f0a678": "r32b6d5563a5d"
+        }
+      },
+      "reference_answer": {
+        "l2d491d9bf884": "rd9b696d9e337",
+        "lbac9557a99e1": "r831bd6311bbd",
+        "lef33571335f1": "r75fb35a056b7",
+        "l0343e7f0a678": "r32b6d5563a5d"
+      },
+      "incorrect_answer": {
+        "l2d491d9bf884": "r831bd6311bbd",
+        "lbac9557a99e1": "rd9b696d9e337",
+        "lef33571335f1": "r75fb35a056b7",
+        "l0343e7f0a678": "r32b6d5563a5d"
+      },
+      "editorial_answer": "meanwhile — тем временем; prepare — готовить; set the table — накрывать на стол; interrupt — прерывать",
+      "explanation": "В этих контекстах: meanwhile — тем временем; prepare — готовить; set the table — накрывать на стол; interrupt — прерывать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое событие ненадолго прервало работу Прии?",
+      "public_payload": {
+        "passage": "The volunteers arrived early to prepare the hall. While Priya was putting signs on the doors, Omar was arranging chairs. Two other volunteers were checking the microphones. At eight, the first guest arrived and asked where to leave a coat. Priya stopped her work for a moment and showed him the cloakroom before returning to the signs.",
+        "options": [
+          {
+            "id": "ve3cb430611b3",
+            "label": "Omar cancelled the event."
+          },
+          {
+            "id": "vf64174f9b7b2",
+            "label": "A guest asked where to leave a coat."
+          },
+          {
+            "id": "v5140e3228fbe",
+            "label": "Every microphone stopped working."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf64174f9b7b2"
+      },
+      "reference_answer": "vf64174f9b7b2",
+      "incorrect_answer": "v5140e3228fbe",
+      "editorial_answer": "A guest asked where to leave a coat.",
+      "explanation": "Единичная просьба гостя вызвала короткую остановку работы.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о параллельном процессе в прошлом.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What were you doing while the others tested the sound?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v513c4955e704",
+            "label": "I were preparing the welcome desk."
+          },
+          {
+            "id": "v408aa02a64b8",
+            "label": "I was prepare the welcome desk."
+          },
+          {
+            "id": "v6a5bd56b2ffd",
+            "label": "I was preparing the welcome desk."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6a5bd56b2ffd"
+      },
+      "reference_answer": "v6a5bd56b2ffd",
+      "incorrect_answer": "v513c4955e704",
+      "editorial_answer": "I was preparing the welcome desk.",
+      "explanation": "С I нужен was, затем preparing.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "One team was checking tickets. ___, another team was guiding guests to their seats.",
+        "options": [
+          {
+            "id": "vccec96d263e3",
+            "label": "Unless of"
+          },
+          {
+            "id": "v63a5e30f12b5",
+            "label": "Meanwhile"
+          },
+          {
+            "id": "v7c99770705d2",
+            "label": "Never"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v63a5e30f12b5"
+      },
+      "reference_answer": "v63a5e30f12b5",
+      "incorrect_answer": "v7c99770705d2",
+      "editorial_answer": "Meanwhile",
+      "explanation": "Meanwhile связывает одновременные действия разных команд.",
+      "key": "e09"
+    }
+  ]
+}

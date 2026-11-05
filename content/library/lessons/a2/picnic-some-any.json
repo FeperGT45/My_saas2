@@ -1,0 +1,338 @@
+{
+  "key": "a2/picnic-some-any",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 4,
+  "title": "Что есть и чего нет для пикника",
+  "description": "Что есть и чего нет для пикника: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать some в утвердительных сообщениях",
+    "Использовать any в отрицании с неисчисляемым существительным"
+  ],
+  "notes": [
+    "В обычном утверждении о наличии: We have some bread.",
+    "В обычном отрицании: We do not have any bread. Some может встречаться в предложениях и просьбах, но здесь проверяется сообщение о наличии."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/lost-item-past"],
+  "lexicon": [
+    {
+      "en": "bread",
+      "ru": "хлеб"
+    },
+    {
+      "en": "cheese",
+      "ru": "сыр"
+    },
+    {
+      "en": "juice",
+      "ru": "сок"
+    },
+    {
+      "en": "blanket",
+      "ru": "плед"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We have ___ bread, so we do not need to buy more.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v2065813ad7f3",
+            "label": "any of"
+          },
+          {
+            "id": "v0ca54b0da376",
+            "label": "a many"
+          },
+          {
+            "id": "v0e5975bc16f1",
+            "label": "some"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0e5975bc16f1"
+      },
+      "reference_answer": "v0e5975bc16f1",
+      "incorrect_answer": "v2065813ad7f3",
+      "editorial_answer": "some",
+      "explanation": "В утвердительном сообщении о неопределённом количестве хлеба нужно some.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: any / some.",
+      "public_payload": {
+        "sentence": "We do not have ___ juice left at all."
+      },
+      "answer_key": {
+        "accepted": ["any"]
+      },
+      "reference_answer": "any",
+      "incorrect_answer": "some",
+      "editorial_answer": "We do not have any juice left at all.",
+      "explanation": "Обычное отрицание наличия с at all требует any.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «У нас в сумке есть немного сыра.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "some"
+          },
+          {
+            "id": "t4",
+            "label": "cheese"
+          },
+          {
+            "id": "t5",
+            "label": "in"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "bag."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "have"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "We have some cheese in the bag.",
+      "explanation": "Cheese в этом значении неисчисляемое, some обозначает неопределённое количество.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "We do not have some water left at all."
+      },
+      "answer_key": {
+        "accepted": ["We do not have any water left at all."]
+      },
+      "reference_answer": "We do not have any water left at all.",
+      "incorrect_answer": "We do not have some water left at all.",
+      "editorial_answer": "We do not have any water left at all.",
+      "explanation": "В заданном общем отрицании наличия используется any.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Макс идёт купить?",
+      "public_payload": {
+        "passage": "Ava and Max are packing for a picnic. They have some bread and cheese, but they do not have any juice. Max goes to buy two bottles. Ava puts a clean blanket in the bag. They leave after Max comes back from the shop.",
+        "options": [
+          {
+            "id": "v76f36c29f8c1",
+            "label": "More cheese."
+          },
+          {
+            "id": "va6155344088f",
+            "label": "Juice."
+          },
+          {
+            "id": "v0b86d98ba4b4",
+            "label": "A blanket."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va6155344088f"
+      },
+      "reference_answer": "va6155344088f",
+      "incorrect_answer": "v0b86d98ba4b4",
+      "editorial_answer": "Juice.",
+      "explanation": "Не хватает сока; два bottles относятся к этой покупке.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l9389e2654c44",
+            "label": "bread"
+          },
+          {
+            "id": "ld9dc75ac6c69",
+            "label": "cheese"
+          },
+          {
+            "id": "le3ad9286c36a",
+            "label": "juice"
+          },
+          {
+            "id": "l57723b2e51fa",
+            "label": "blanket"
+          }
+        ],
+        "right": [
+          {
+            "id": "r5c3268fe89e3",
+            "label": "сок"
+          },
+          {
+            "id": "re6c30fc8a9b0",
+            "label": "плед"
+          },
+          {
+            "id": "r9a28ed94a123",
+            "label": "хлеб"
+          },
+          {
+            "id": "r13b7eed91ce6",
+            "label": "сыр"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l9389e2654c44": "r9a28ed94a123",
+          "ld9dc75ac6c69": "r13b7eed91ce6",
+          "le3ad9286c36a": "r5c3268fe89e3",
+          "l57723b2e51fa": "re6c30fc8a9b0"
+        }
+      },
+      "reference_answer": {
+        "l9389e2654c44": "r9a28ed94a123",
+        "ld9dc75ac6c69": "r13b7eed91ce6",
+        "le3ad9286c36a": "r5c3268fe89e3",
+        "l57723b2e51fa": "re6c30fc8a9b0"
+      },
+      "incorrect_answer": {
+        "l9389e2654c44": "r13b7eed91ce6",
+        "ld9dc75ac6c69": "r9a28ed94a123",
+        "le3ad9286c36a": "r5c3268fe89e3",
+        "l57723b2e51fa": "re6c30fc8a9b0"
+      },
+      "editorial_answer": "bread — хлеб; cheese — сыр; juice — сок; blanket — плед",
+      "explanation": "В этих контекстах: bread — хлеб; cheese — сыр; juice — сок; blanket — плед.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда они отправляются на пикник?",
+      "public_payload": {
+        "passage": "Ava and Max are packing for a picnic. They have some bread and cheese, but they do not have any juice. Max goes to buy two bottles. Ava puts a clean blanket in the bag. They leave after Max comes back from the shop.",
+        "options": [
+          {
+            "id": "v0762dca65c50",
+            "label": "After Max returns from the shop."
+          },
+          {
+            "id": "v5f156db4cd45",
+            "label": "Before Max goes shopping."
+          },
+          {
+            "id": "va4ed1e6e7bb8",
+            "label": "Before Ava packs the blanket."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0762dca65c50"
+      },
+      "reference_answer": "v0762dca65c50",
+      "incorrect_answer": "v5f156db4cd45",
+      "editorial_answer": "After Max returns from the shop.",
+      "explanation": "Последняя фраза задаёт порядок действий.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь утвердительно о хлебе.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Have we got any bread?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v147a5c98a5e3",
+            "label": "Yes, there are a bread."
+          },
+          {
+            "id": "v0c4354a40a0d",
+            "label": "Yes, there is some in the bag."
+          },
+          {
+            "id": "va48aa33415d0",
+            "label": "Yes, there is any at all not."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0c4354a40a0d"
+      },
+      "reference_answer": "v0c4354a40a0d",
+      "incorrect_answer": "va48aa33415d0",
+      "editorial_answer": "Yes, there is some in the bag.",
+      "explanation": "Some подходит для утвердительного наличия неисчисляемого bread.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "We sit on the grass and put the food on a ___.",
+        "options": [
+          {
+            "id": "v173adc25fd9c",
+            "label": "blanket"
+          },
+          {
+            "id": "vc1ffb426ae64",
+            "label": "pocket"
+          },
+          {
+            "id": "vb5aad3ad35f0",
+            "label": "driver"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v173adc25fd9c"
+      },
+      "reference_answer": "v173adc25fd9c",
+      "incorrect_answer": "vc1ffb426ae64",
+      "editorial_answer": "blanket",
+      "explanation": "Blanket в контексте пикника — плед, который можно расстелить.",
+      "key": "e09"
+    }
+  ]
+}

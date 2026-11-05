@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o3",
+            "id": "v2aa053c4a356",
             "label": "unanimously positive"
           },
           {
-            "id": "o1",
+            "id": "vb8bbe91c93e0",
             "label": "not unanimous"
           },
           {
-            "id": "o2",
+            "id": "v9e07d3d8afcc",
             "label": "entirely absent"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vb8bbe91c93e0"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vb8bbe91c93e0",
+      "incorrect_answer": "v9e07d3d8afcc",
       "editorial_answer": "not unanimous",
       "explanation": "Not all исключает полное единодушие, но не утверждает отсутствие поддержки.",
       "key": "e01"
@@ -151,24 +151,24 @@
         "passage": "The consultation summary stated that not all respondents favoured extending the opening hours. A headline paraphrased this as “Residents reject longer hours”. The underlying responses did not support that generalisation: some welcomed later access, some preferred the existing schedule, and others supported an extension only on weekends. The summary did not provide a representative estimate of opinion across the entire town, because participation was voluntary. A careful account therefore needed to preserve both the range of views and the limits of the sample. Neither unanimous support nor universal opposition could legitimately be inferred from the phrase “not all”.",
         "options": [
           {
-            "id": "o1",
+            "id": "v442ebea65bc0",
             "label": "A mixture of supportive and non-supportive responses."
           },
           {
-            "id": "o2",
+            "id": "v76e65c5d019f",
             "label": "Proof that nobody supported any extension."
           },
           {
-            "id": "o3",
+            "id": "vbdc43e77bf44",
             "label": "Proof of unanimous support."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v442ebea65bc0"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v442ebea65bc0",
+      "incorrect_answer": "v76e65c5d019f",
       "editorial_answer": "A mixture of supportive and non-supportive responses.",
       "explanation": "Not all отрицает универсальность, а текст затем прямо описывает разные мнения.",
       "key": "e05"
@@ -180,24 +180,24 @@
         "passage": "The consultation summary stated that not all respondents favoured extending the opening hours. A headline paraphrased this as “Residents reject longer hours”. The underlying responses did not support that generalisation: some welcomed later access, some preferred the existing schedule, and others supported an extension only on weekends. The summary did not provide a representative estimate of opinion across the entire town, because participation was voluntary. A careful account therefore needed to preserve both the range of views and the limits of the sample. Neither unanimous support nor universal opposition could legitimately be inferred from the phrase “not all”.",
         "options": [
           {
-            "id": "o2",
+            "id": "v327d7db2bbd0",
             "label": "The responses prove exactly what every resident thinks."
           },
           {
-            "id": "o3",
+            "id": "ve4ac7da7e9f2",
             "label": "Weekend views were excluded from the responses."
           },
           {
-            "id": "o1",
+            "id": "ve8632fb8b926",
             "label": "Voluntary participation may not represent the whole town."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "ve8632fb8b926"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "ve8632fb8b926",
+      "incorrect_answer": "v327d7db2bbd0",
       "editorial_answer": "Voluntary participation may not represent the whole town.",
       "explanation": "Самоотбор участников ограничивает обобщение на всех жителей.",
       "key": "e06"
@@ -214,24 +214,24 @@
         ],
         "options": [
           {
-            "id": "o1",
+            "id": "v99700989d221",
             "label": "It is not true that every reviewer found an error."
           },
           {
-            "id": "o2",
+            "id": "v295da3b8c27b",
             "label": "No reviewer found an error."
           },
           {
-            "id": "o3",
+            "id": "v2caefd969915",
             "label": "Every reviewer found the same error."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v99700989d221"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v99700989d221",
+      "incorrect_answer": "v295da3b8c27b",
       "editorial_answer": "It is not true that every reviewer found an error.",
       "explanation": "Первый вариант повторяет логическое содержание; none и every создают другие утверждения.",
       "key": "e07"
@@ -243,24 +243,24 @@
         "sentence": "A decision supported by every member is ___.",
         "options": [
           {
-            "id": "o2",
+            "id": "v96bb96a843d5",
             "label": "conditional"
           },
           {
-            "id": "o3",
+            "id": "v6229a27582c3",
             "label": "inconclusive"
           },
           {
-            "id": "o1",
+            "id": "v5c506f3d05fe",
             "label": "unanimous"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v5c506f3d05fe"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v5c506f3d05fe",
+      "incorrect_answer": "v96bb96a843d5",
       "editorial_answer": "unanimous",
       "explanation": "Unanimous обозначает согласие всех, в отличие от частичного или условного согласия.",
       "key": "e08"

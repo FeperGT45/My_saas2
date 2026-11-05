@@ -38,12 +38,12 @@ test('published library uses real Supabase RPCs, filters by CEFR, plays a new le
       .getByRole('link', { name: 'Открыть полный каталог', exact: true })
       .click();
     await expect(
-      page.getByText('Уроков в каталоге: 91 · Курсов: 7'),
+      page.getByText('Уроков в каталоге: 131 · Курсов: 7'),
     ).toBeVisible();
     await page
       .getByRole('combobox', { name: 'Уровень материалов', exact: true })
-      .selectOption('C2');
-    await expect(page.getByRole('heading', { level: 3 })).toHaveCount(13);
+      .selectOption('B2');
+    await expect(page.getByRole('heading', { level: 3 })).toHaveCount(23);
     await page
       .getByRole('textbox', { name: 'Поиск уроков', exact: true })
       .fill('несуществующий-урок-123');
@@ -66,7 +66,7 @@ test('published library uses real Supabase RPCs, filters by CEFR, plays a new le
       ).violations,
     ).toEqual([]);
     const first = payload.lessons.find(
-      (l) => l.title === 'Молчание документа и предел вывода',
+      (l) => l.title === 'Сделали, хотя необходимости не было',
     )!;
     await page
       .getByRole('textbox', { name: 'Поиск уроков', exact: true })
@@ -80,7 +80,7 @@ test('published library uses real Supabase RPCs, filters by CEFR, plays a new le
       .getByRole('button', { name: 'Начать урок', exact: true })
       .click();
     await expect(
-      page.getByText('Задание 1 из 8', { exact: true }),
+      page.getByText('Задание 1 из 9', { exact: true }),
     ).toBeVisible();
     const attempt = new URL(page.url()).searchParams.get('attempt')!;
     const es = payload.exercises.filter((e) => e.lesson_id === first.id),
@@ -156,7 +156,7 @@ test('published library uses real Supabase RPCs, filters by CEFR, plays a new le
       .getByRole('button', { name: 'Повторить загрузку библиотеки' })
       .click();
     await expect(
-      page.getByText('Уроков в каталоге: 91 · Курсов: 7'),
+      page.getByText('Уроков в каталоге: 131 · Курсов: 7'),
     ).toBeVisible();
   } finally {
     await context.close();
@@ -191,12 +191,12 @@ test('library client works on the configured Next or Worker runtime with SQL-bac
     );
     await page.goto('/library');
     await expect(
-      page.getByText('Уроков в каталоге: 91 · Курсов: 7'),
+      page.getByText('Уроков в каталоге: 131 · Курсов: 7'),
     ).toBeVisible();
     await page
       .getByRole('combobox', { name: 'Уровень материалов', exact: true })
       .selectOption('B2');
-    await expect(page.getByRole('heading', { level: 3 })).toHaveCount(13);
+    await expect(page.getByRole('heading', { level: 3 })).toHaveCount(23);
     await page
       .getByRole('textbox', { name: 'Поиск уроков', exact: true })
       .fill('упущенные');

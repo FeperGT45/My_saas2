@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o1",
+            "id": "va57ad867a52c",
             "label": "one premise while resisting a broader conclusion"
           },
           {
-            "id": "o2",
+            "id": "va679cd292ca5",
             "label": "the whole case without reservation"
           },
           {
-            "id": "o3",
+            "id": "v092a3af6e50c",
             "label": "that lifetime cost is irrelevant"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "va57ad867a52c"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "va57ad867a52c",
+      "incorrect_answer": "va679cd292ca5",
       "editorial_answer": "one premise while resisting a broader conclusion",
       "explanation": "Granted признаёт меньшую начальную цену, но не итоговую экономичность.",
       "key": "e01"
@@ -185,24 +185,24 @@
         "passage": "In a debate about replacing staffed counters with kiosks, one speaker conceded that kiosks could reduce the cost of routine transactions. She then argued that the saving did not answer the question of access for people unable to use them independently. Her opponent celebrated the concession as acceptance of the replacement policy. This conflated agreement on a possible efficiency gain with agreement on what should follow from it. The speaker’s argument was instead that, even if the saving materialised, an accessible alternative would still be required. She had not demonstrated that kiosks were always unsuitable, nor had she withdrawn the accessibility objection. Her concession narrowed the dispute to the conditions under which efficiency could justify a change in service.",
         "options": [
           {
-            "id": "o2",
+            "id": "vf88eba6bede8",
             "label": "All staffed alternatives should immediately close."
           },
           {
-            "id": "o3",
+            "id": "vfe73da6460a9",
             "label": "Everyone can independently use a kiosk."
           },
           {
-            "id": "o1",
+            "id": "v3911be344131",
             "label": "Kiosks could reduce the cost of routine transactions."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v3911be344131"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v3911be344131",
+      "incorrect_answer": "vf88eba6bede8",
       "editorial_answer": "Kiosks could reduce the cost of routine transactions.",
       "explanation": "Уступка касается возможной экономии, а не всей политики замены.",
       "key": "e05"
@@ -214,24 +214,24 @@
         "passage": "In a debate about replacing staffed counters with kiosks, one speaker conceded that kiosks could reduce the cost of routine transactions. She then argued that the saving did not answer the question of access for people unable to use them independently. Her opponent celebrated the concession as acceptance of the replacement policy. This conflated agreement on a possible efficiency gain with agreement on what should follow from it. The speaker’s argument was instead that, even if the saving materialised, an accessible alternative would still be required. She had not demonstrated that kiosks were always unsuitable, nor had she withdrawn the accessibility objection. Her concession narrowed the dispute to the conditions under which efficiency could justify a change in service.",
         "options": [
           {
-            "id": "o3",
+            "id": "v07a9e7e5726f",
             "label": "Whether the speaker has proved that all kiosks are unsuitable."
           },
           {
-            "id": "o1",
+            "id": "v0b093ed66138",
             "label": "Whether efficiency can justify the change without an accessible alternative."
           },
           {
-            "id": "o2",
+            "id": "v814cbd736658",
             "label": "Whether any transaction ever has a cost."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v0b093ed66138"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v0b093ed66138",
+      "incorrect_answer": "v814cbd736658",
       "editorial_answer": "Whether efficiency can justify the change without an accessible alternative.",
       "explanation": "Спор сужен до условий оправданности изменения и сохранения доступности.",
       "key": "e06"
@@ -248,24 +248,24 @@
         ],
         "options": [
           {
-            "id": "o2",
+            "id": "v6b98f35a1c9a",
             "label": "Yes; every conceded premise settles the conclusion."
           },
           {
-            "id": "o3",
+            "id": "v187df43c3468",
             "label": "Yes; a concession withdraws all unrelated objections."
           },
           {
-            "id": "o1",
+            "id": "v0387df703854",
             "label": "No; other considerations may still defeat the overall recommendation."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v0387df703854"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v0387df703854",
+      "incorrect_answer": "v6b98f35a1c9a",
       "editorial_answer": "No; other considerations may still defeat the overall recommendation.",
       "explanation": "Один плюс не устанавливает перевес над всеми существенными минусами.",
       "key": "e07"
@@ -277,24 +277,24 @@
         "sentence": "A conclusion that depends on specified circumstances is ___.",
         "options": [
           {
-            "id": "o3",
+            "id": "v6ac8984bd1dd",
             "label": "self-evident"
           },
           {
-            "id": "o1",
+            "id": "v21353bf49980",
             "label": "contingent"
           },
           {
-            "id": "o2",
+            "id": "v3d157262d60a",
             "label": "unconditional"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v21353bf49980"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v21353bf49980",
+      "incorrect_answer": "v3d157262d60a",
       "editorial_answer": "contingent",
       "explanation": "Contingent означает зависящий от условий, в отличие от unconditional.",
       "key": "e08"

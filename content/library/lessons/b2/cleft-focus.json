@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o3",
+            "id": "v118c383e88ef",
             "label": "whose"
           },
           {
-            "id": "o1",
+            "id": "v5cd9b4550993",
             "label": "that"
           },
           {
-            "id": "o2",
+            "id": "v904eaff59cae",
             "label": "what"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v5cd9b4550993"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v5cd9b4550993",
+      "incorrect_answer": "v904eaff59cae",
       "editorial_answer": "that",
       "explanation": "В этой cleft-конструкции после выделенной причины используется that.",
       "key": "e01"
@@ -159,24 +159,24 @@
         "passage": "When the committee discussed the new booking system, several members were described as opposing the change. Their written comments told a more specific story. They supported the system itself but objected to introducing it during the busiest week of the year. One member explained, “It was the timing that worried us, not the idea.” The chair later revised the public summary to reflect that distinction. The launch date changed, while the main features of the system remained the same.",
         "options": [
           {
-            "id": "o1",
+            "id": "v73b51c39f2e3",
             "label": "The timing of the introduction."
           },
           {
-            "id": "o2",
+            "id": "v229e6c77aaac",
             "label": "Every feature of the system."
           },
           {
-            "id": "o3",
+            "id": "v0f3ceb5b265f",
             "label": "The existence of any booking system."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v73b51c39f2e3"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v73b51c39f2e3",
+      "incorrect_answer": "v229e6c77aaac",
       "editorial_answer": "The timing of the introduction.",
       "explanation": "Комментарий противопоставляет timing и idea.",
       "key": "e05"
@@ -188,24 +188,24 @@
         "passage": "When the committee discussed the new booking system, several members were described as opposing the change. Their written comments told a more specific story. They supported the system itself but objected to introducing it during the busiest week of the year. One member explained, “It was the timing that worried us, not the idea.” The chair later revised the public summary to reflect that distinction. The launch date changed, while the main features of the system remained the same.",
         "options": [
           {
-            "id": "o2",
+            "id": "v179b767837c1",
             "label": "The system was abandoned entirely."
           },
           {
-            "id": "o3",
+            "id": "v108fb748a87e",
             "label": "The busiest week was removed from the calendar."
           },
           {
-            "id": "o1",
+            "id": "v4a687612de69",
             "label": "The date changed but the main features stayed."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v4a687612de69"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v4a687612de69",
+      "incorrect_answer": "v179b767837c1",
       "editorial_answer": "The date changed but the main features stayed.",
       "explanation": "Перенесли запуск, сохранив основные функции.",
       "key": "e06"
@@ -222,24 +222,24 @@
         ],
         "options": [
           {
-            "id": "o1",
+            "id": "vd037e4a82cfe",
             "label": "No, it was the unclear cancellation policy that concerned me."
           },
           {
-            "id": "o2",
+            "id": "v2166d58e8513",
             "label": "No, it what unclear policy concerned."
           },
           {
-            "id": "o3",
+            "id": "v631d627951fa",
             "label": "No, it was concerned me the unclear policy."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vd037e4a82cfe"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vd037e4a82cfe",
+      "incorrect_answer": "v2166d58e8513",
       "editorial_answer": "No, it was the unclear cancellation policy that concerned me.",
       "explanation": "It was ... that выделяет конкретную причину сомнений.",
       "key": "e07"
@@ -251,24 +251,24 @@
         "sentence": "A request to explain an unclear statement is a request for ___.",
         "options": [
           {
-            "id": "o2",
+            "id": "vae5f5a26db03",
             "label": "cancellation"
           },
           {
-            "id": "o3",
+            "id": "v87eea29da06a",
             "label": "competition"
           },
           {
-            "id": "o1",
+            "id": "va09ea76e8a81",
             "label": "clarification"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "va09ea76e8a81"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "va09ea76e8a81",
+      "incorrect_answer": "vae5f5a26db03",
       "editorial_answer": "clarification",
       "explanation": "Clarification означает прояснение смысла, а не отмену решения.",
       "key": "e08"

@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o1",
+            "id": "v20b5114b5273",
             "label": "the reception desk is"
           },
           {
-            "id": "o2",
+            "id": "vdfacbc368c76",
             "label": "is the reception desk"
           },
           {
-            "id": "o3",
+            "id": "v5c4e2a7b9993",
             "label": "does the reception desk"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v20b5114b5273"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v20b5114b5273",
+      "incorrect_answer": "vdfacbc368c76",
       "editorial_answer": "the reception desk is",
       "explanation": "После where в косвенном вопросе подлежащее идёт перед is.",
       "key": "e01"
@@ -183,24 +183,24 @@
         "passage": "On his first day at college, Amir could not find the language office. He asked a receptionist, “Could you tell me where the language office is?” She explained that it was upstairs, beside the library. Amir also asked whether he needed an appointment. She said that students could come without one before noon, but appointments were required in the afternoon.",
         "options": [
           {
-            "id": "o2",
+            "id": "vb822549fad10",
             "label": "Downstairs, inside the library."
           },
           {
-            "id": "o3",
+            "id": "v2dadddca2020",
             "label": "Outside the college entrance."
           },
           {
-            "id": "o1",
+            "id": "vf1b3b949259f",
             "label": "Upstairs, beside the library."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vf1b3b949259f"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vf1b3b949259f",
+      "incorrect_answer": "vb822549fad10",
       "editorial_answer": "Upstairs, beside the library.",
       "explanation": "Сотрудница назвала этаж и ориентир beside the library.",
       "key": "e05"
@@ -212,24 +212,24 @@
         "passage": "On his first day at college, Amir could not find the language office. He asked a receptionist, “Could you tell me where the language office is?” She explained that it was upstairs, beside the library. Amir also asked whether he needed an appointment. She said that students could come without one before noon, but appointments were required in the afternoon.",
         "options": [
           {
-            "id": "o3",
+            "id": "vbc851a6070df",
             "label": "Only after the library closes."
           },
           {
-            "id": "o1",
+            "id": "vc016775372e3",
             "label": "Before noon."
           },
           {
-            "id": "o2",
+            "id": "vc3873821b855",
             "label": "At any time in the afternoon."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vc016775372e3"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vc016775372e3",
+      "incorrect_answer": "vc3873821b855",
       "editorial_answer": "Before noon.",
       "explanation": "До полудня запись не нужна; после полудня требуется.",
       "key": "e06"
@@ -246,24 +246,24 @@
         ],
         "options": [
           {
-            "id": "o2",
+            "id": "v0855ae10503b",
             "label": "Could you tell me how much does the course cost?"
           },
           {
-            "id": "o3",
+            "id": "vaa7744461efc",
             "label": "Could you tell me how much cost the course?"
           },
           {
-            "id": "o1",
+            "id": "vc79b89466a43",
             "label": "Could you tell me how much the course costs?"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vc79b89466a43"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vc79b89466a43",
+      "incorrect_answer": "v0855ae10503b",
       "editorial_answer": "Could you tell me how much the course costs?",
       "explanation": "Косвенная часть — the course costs, без does.",
       "key": "e07"
@@ -275,24 +275,24 @@
         "sentence": "The receptionist gave me clear ___ to the language office.",
         "options": [
           {
-            "id": "o3",
+            "id": "vdbb946f234b4",
             "label": "appointments"
           },
           {
-            "id": "o1",
+            "id": "vb43112990ff2",
             "label": "directions"
           },
           {
-            "id": "o2",
+            "id": "ve4a84693a5c1",
             "label": "entrances"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vb43112990ff2"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vb43112990ff2",
+      "incorrect_answer": "ve4a84693a5c1",
       "editorial_answer": "directions",
       "explanation": "Directions здесь означает объяснение пути, а не сами входы или записи.",
       "key": "e08"

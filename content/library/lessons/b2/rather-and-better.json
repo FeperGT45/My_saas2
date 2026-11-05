@@ -1,0 +1,338 @@
+{
+  "key": "b2/rather-and-better",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 5,
+  "title": "Предпочтение и настоятельный совет",
+  "description": "Предпочтение и настоятельный совет: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Различать would rather и had better",
+    "Использовать начальную форму после обеих конструкций"
+  ],
+  "notes": [
+    "Would rather выражает предпочтение: I would rather wait.",
+    "Had better выражает настоятельный совет с возможными последствиями: You had better check. Отрицание: had better not go."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/wish-would-change"],
+  "lexicon": [
+    {
+      "en": "preference",
+      "ru": "предпочтение"
+    },
+    {
+      "en": "advice",
+      "ru": "совет"
+    },
+    {
+      "en": "consequence",
+      "ru": "последствие"
+    },
+    {
+      "en": "urgent",
+      "ru": "срочный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The route is flooded. You had better ___ the road report before leaving.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vcd62cc95c32e",
+            "label": "to check"
+          },
+          {
+            "id": "ve04d6c4f82fb",
+            "label": "checking"
+          },
+          {
+            "id": "v20cdc1b719df",
+            "label": "check"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v20cdc1b719df"
+      },
+      "reference_answer": "v20cdc1b719df",
+      "incorrect_answer": "vcd62cc95c32e",
+      "editorial_answer": "check",
+      "explanation": "После had better нужен инфинитив без to; контекст даёт вескую причину совета.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: waiting / wait.",
+      "public_payload": {
+        "sentence": "I would rather ___ until we have more information."
+      },
+      "answer_key": {
+        "accepted": ["wait"]
+      },
+      "reference_answer": "wait",
+      "incorrect_answer": "waiting",
+      "editorial_answer": "I would rather wait until we have more information.",
+      "explanation": "После would rather в этой конструкции используется wait.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Тебе лучше не игнорировать предупреждение.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "better"
+          },
+          {
+            "id": "t4",
+            "label": "not"
+          },
+          {
+            "id": "t5",
+            "label": "ignore"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "warning."
+          },
+          {
+            "id": "t1",
+            "label": "You"
+          },
+          {
+            "id": "t2",
+            "label": "had"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "You had better not ignore the warning.",
+      "explanation": "Отрицание ставится после had better и перед смысловым глаголом.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I would rather to speak to the organiser first."
+      },
+      "answer_key": {
+        "accepted": ["I would rather speak to the organiser first."]
+      },
+      "reference_answer": "I would rather speak to the organiser first.",
+      "incorrect_answer": "I would rather to speak to the organiser first.",
+      "editorial_answer": "I would rather speak to the organiser first.",
+      "explanation": "После would rather лишнее to убирается.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какая реплика выражает предпочтение?",
+      "public_payload": {
+        "passage": "Two colleagues were choosing how to reach a training centre after heavy rain. One said she would rather take the train than drive. The other preferred driving because of the equipment they needed to carry. Before deciding, their manager warned that the main road might be flooded and said they had better check the travel updates. The advice did not remove their choice of transport, but it made checking the conditions important before acting on either preference.",
+        "options": [
+          {
+            "id": "v41bc09cbaba8",
+            "label": "The main road might be flooded."
+          },
+          {
+            "id": "v47436636bb02",
+            "label": "She would rather take the train."
+          },
+          {
+            "id": "ve1096aa251bd",
+            "label": "They had better check the travel updates."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v47436636bb02"
+      },
+      "reference_answer": "v47436636bb02",
+      "incorrect_answer": "ve1096aa251bd",
+      "editorial_answer": "She would rather take the train.",
+      "explanation": "Would rather обозначает предпочтение; had better — совет, might — возможность.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lb3abe1914412",
+            "label": "preference"
+          },
+          {
+            "id": "lca6ea4585aac",
+            "label": "advice"
+          },
+          {
+            "id": "l2dff74723f73",
+            "label": "consequence"
+          },
+          {
+            "id": "l89b64e040b0d",
+            "label": "urgent"
+          }
+        ],
+        "right": [
+          {
+            "id": "ra252e9d166ba",
+            "label": "последствие"
+          },
+          {
+            "id": "r4294538e93ac",
+            "label": "срочный"
+          },
+          {
+            "id": "r37cfc07a1b15",
+            "label": "предпочтение"
+          },
+          {
+            "id": "r98ddbb296f16",
+            "label": "совет"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lb3abe1914412": "r37cfc07a1b15",
+          "lca6ea4585aac": "r98ddbb296f16",
+          "l2dff74723f73": "ra252e9d166ba",
+          "l89b64e040b0d": "r4294538e93ac"
+        }
+      },
+      "reference_answer": {
+        "lb3abe1914412": "r37cfc07a1b15",
+        "lca6ea4585aac": "r98ddbb296f16",
+        "l2dff74723f73": "ra252e9d166ba",
+        "l89b64e040b0d": "r4294538e93ac"
+      },
+      "incorrect_answer": {
+        "lb3abe1914412": "r98ddbb296f16",
+        "lca6ea4585aac": "r37cfc07a1b15",
+        "l2dff74723f73": "ra252e9d166ba",
+        "l89b64e040b0d": "r4294538e93ac"
+      },
+      "editorial_answer": "preference — предпочтение; advice — совет; consequence — последствие; urgent — срочный",
+      "explanation": "В этих контекстах: preference — предпочтение; advice — совет; consequence — последствие; urgent — срочный.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что следует из предупреждения менеджера?",
+      "public_payload": {
+        "passage": "Two colleagues were choosing how to reach a training centre after heavy rain. One said she would rather take the train than drive. The other preferred driving because of the equipment they needed to carry. Before deciding, their manager warned that the main road might be flooded and said they had better check the travel updates. The advice did not remove their choice of transport, but it made checking the conditions important before acting on either preference.",
+        "options": [
+          {
+            "id": "vf5acd48e0522",
+            "label": "They should check conditions before choosing how to travel."
+          },
+          {
+            "id": "v513550bffb04",
+            "label": "Driving has been conclusively prohibited everywhere."
+          },
+          {
+            "id": "v624e53ad578a",
+            "label": "The train is guaranteed to have room for all equipment."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf5acd48e0522"
+      },
+      "reference_answer": "vf5acd48e0522",
+      "incorrect_answer": "v513550bffb04",
+      "editorial_answer": "They should check conditions before choosing how to travel.",
+      "explanation": "Совет не устанавливает всеобщий запрет или гарантию другого варианта.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Вырази предпочтение дождаться отчёта.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Would you like to decide now?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v505139707dd5",
+            "label": "I had rather waiting the report."
+          },
+          {
+            "id": "v8ec9d945a070",
+            "label": "I would rather wait for the inspection report."
+          },
+          {
+            "id": "v6a7309161802",
+            "label": "I would rather to wait for the inspection report."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8ec9d945a070"
+      },
+      "reference_answer": "v8ec9d945a070",
+      "incorrect_answer": "v6a7309161802",
+      "editorial_answer": "I would rather wait for the inspection report.",
+      "explanation": "Would rather wait — стандартная конструкция предпочтения.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A matter requiring prompt attention is ___.",
+        "options": [
+          {
+            "id": "v0f0a5f602f71",
+            "label": "urgent"
+          },
+          {
+            "id": "v2d4da1121e64",
+            "label": "optional in every circumstance"
+          },
+          {
+            "id": "v954cc2260b87",
+            "label": "retrospective"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0f0a5f602f71"
+      },
+      "reference_answer": "v0f0a5f602f71",
+      "incorrect_answer": "v2d4da1121e64",
+      "editorial_answer": "urgent",
+      "explanation": "Urgent означает срочный, требующий внимания без долгого откладывания.",
+      "key": "e09"
+    }
+  ]
+}

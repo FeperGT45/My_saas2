@@ -1,0 +1,334 @@
+{
+  "key": "b2/emphatic-do",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 8,
+  "title": "Подчёркиваем: я действительно это сделал",
+  "description": "Подчёркиваем: я действительно это сделал: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать do/does/did для усиления утверждения",
+    "Оставлять смысловой глагол в начальной форме"
+  ],
+  "notes": [
+    "В утвердительном предложении do может усиливать смысл: I do understand.",
+    "После did в таком усилении нужна начальная форма: I did send it, не did sent."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/nondefining-which"],
+  "lexicon": [
+    {
+      "en": "emphasis",
+      "ru": "усиление"
+    },
+    {
+      "en": "acknowledge",
+      "ru": "признавать, подтверждать"
+    },
+    {
+      "en": "misunderstanding",
+      "ru": "недоразумение"
+    },
+    {
+      "en": "dispute",
+      "ru": "оспаривать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: You say I forgot, but I ___ send the form yesterday.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v9396b6664c50",
+            "label": "have did"
+          },
+          {
+            "id": "v63f44d002679",
+            "label": "was do"
+          },
+          {
+            "id": "vab8c16d7520d",
+            "label": "did"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vab8c16d7520d"
+      },
+      "reference_answer": "vab8c16d7520d",
+      "incorrect_answer": "v9396b6664c50",
+      "editorial_answer": "did",
+      "explanation": "Did усиливает утверждение о вчерашней отправке; далее send.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: does / do.",
+      "public_payload": {
+        "sentence": "She ___ recognise the problem, although she disagrees about the cause."
+      },
+      "answer_key": {
+        "accepted": ["does"]
+      },
+      "reference_answer": "does",
+      "incorrect_answer": "do",
+      "editorial_answer": "She does recognise the problem, although she disagrees about the cause.",
+      "explanation": "С she в Present Simple усиление оформляется does recognise.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я действительно отправил сообщение вчера.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "send"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "message"
+          },
+          {
+            "id": "t6",
+            "label": "yesterday."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "did"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "I did send the message yesterday.",
+      "explanation": "Утвердительное did подчёркивает факт отправки, не доказывая доставку.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I did sent the attachment with the email."
+      },
+      "answer_key": {
+        "accepted": ["I did send the attachment with the email."]
+      },
+      "reference_answer": "I did send the attachment with the email.",
+      "incorrect_answer": "I did sent the attachment with the email.",
+      "editorial_answer": "I did send the attachment with the email.",
+      "explanation": "После did используется send без прошедшего окончания.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что подчёркивает студент с did send?",
+      "public_payload": {
+        "passage": "A student complained that an application had not been processed. The administrator replied that no form had arrived. “I did send it on Monday,” the student said, showing a saved message. The message supported the fact that he had attempted to send the form, but the address contained a spelling error. The administrator explained the difference between sending to an address and successful delivery to the correct office. They corrected the address together and agreed on how to confirm receipt.",
+        "options": [
+          {
+            "id": "v3147be012a7b",
+            "label": "That no address was needed."
+          },
+          {
+            "id": "v965e4969e2d9",
+            "label": "That he sent the message rather than forgot to send it."
+          },
+          {
+            "id": "v695e8a9e84eb",
+            "label": "That the correct office necessarily received it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v965e4969e2d9"
+      },
+      "reference_answer": "v965e4969e2d9",
+      "incorrect_answer": "v695e8a9e84eb",
+      "editorial_answer": "That he sent the message rather than forgot to send it.",
+      "explanation": "Усиление относится к действию отправки, не автоматически к успешному получению.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l487f06a075be",
+            "label": "emphasis"
+          },
+          {
+            "id": "l8295b8899ac7",
+            "label": "acknowledge"
+          },
+          {
+            "id": "ld275582af79b",
+            "label": "misunderstanding"
+          },
+          {
+            "id": "ld51a030473ab",
+            "label": "dispute"
+          }
+        ],
+        "right": [
+          {
+            "id": "red9930e3e967",
+            "label": "недоразумение"
+          },
+          {
+            "id": "rbee22d6a6f2c",
+            "label": "оспаривать"
+          },
+          {
+            "id": "r103d9026b9b9",
+            "label": "усиление"
+          },
+          {
+            "id": "raffc7f4fd2fe",
+            "label": "признавать, подтверждать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l487f06a075be": "r103d9026b9b9",
+          "l8295b8899ac7": "raffc7f4fd2fe",
+          "ld275582af79b": "red9930e3e967",
+          "ld51a030473ab": "rbee22d6a6f2c"
+        }
+      },
+      "reference_answer": {
+        "l487f06a075be": "r103d9026b9b9",
+        "l8295b8899ac7": "raffc7f4fd2fe",
+        "ld275582af79b": "red9930e3e967",
+        "ld51a030473ab": "rbee22d6a6f2c"
+      },
+      "incorrect_answer": {
+        "l487f06a075be": "raffc7f4fd2fe",
+        "l8295b8899ac7": "r103d9026b9b9",
+        "ld275582af79b": "red9930e3e967",
+        "ld51a030473ab": "rbee22d6a6f2c"
+      },
+      "editorial_answer": "emphasis — усиление; acknowledge — признавать, подтверждать; misunderstanding — недоразумение; dispute — оспаривать",
+      "explanation": "В этих контекстах: emphasis — усиление; acknowledge — признавать, подтверждать; misunderstanding — недоразумение; dispute — оспаривать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что объяснило отсутствие формы в офисе?",
+      "public_payload": {
+        "passage": "A student complained that an application had not been processed. The administrator replied that no form had arrived. “I did send it on Monday,” the student said, showing a saved message. The message supported the fact that he had attempted to send the form, but the address contained a spelling error. The administrator explained the difference between sending to an address and successful delivery to the correct office. They corrected the address together and agreed on how to confirm receipt.",
+        "options": [
+          {
+            "id": "v1fa82ea6c03b",
+            "label": "The email address contained a spelling error."
+          },
+          {
+            "id": "v073553643706",
+            "label": "The administrator had deleted every application."
+          },
+          {
+            "id": "v821bb1cd5c5b",
+            "label": "The student had never attempted to send anything."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1fa82ea6c03b"
+      },
+      "reference_answer": "v1fa82ea6c03b",
+      "incorrect_answer": "v073553643706",
+      "editorial_answer": "The email address contained a spelling error.",
+      "explanation": "Сохранённое сообщение и ошибка адреса объясняют различие между отправкой и доставкой.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Подчеркни понимание, не утверждая согласие с решением.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Do you understand the concern at all?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v1b375ce3654e",
+            "label": "I am do understand it yesterday."
+          },
+          {
+            "id": "v79a291267a8f",
+            "label": "I do understand it; I disagree about the proposed solution."
+          },
+          {
+            "id": "v9e77258077a1",
+            "label": "I do understands it; I disagree about the solution."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v79a291267a8f"
+      },
+      "reference_answer": "v79a291267a8f",
+      "incorrect_answer": "v9e77258077a1",
+      "editorial_answer": "I do understand it; I disagree about the proposed solution.",
+      "explanation": "Do understand усиливает утверждение, а последующая часть сохраняет несогласие.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To confirm that a message has been received is to ___ receipt.",
+        "options": [
+          {
+            "id": "v6185fbe50eac",
+            "label": "acknowledge"
+          },
+          {
+            "id": "v8c645c4b16e7",
+            "label": "dispute every"
+          },
+          {
+            "id": "ve5c8e7bc8903",
+            "label": "predict"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6185fbe50eac"
+      },
+      "reference_answer": "v6185fbe50eac",
+      "incorrect_answer": "v8c645c4b16e7",
+      "editorial_answer": "acknowledge",
+      "explanation": "Acknowledge receipt — подтвердить получение.",
+      "key": "e09"
+    }
+  ]
+}

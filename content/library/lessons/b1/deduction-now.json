@@ -1,0 +1,338 @@
+{
+  "key": "b1/deduction-now",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 9,
+  "title": "Догадка о настоящем с must и might",
+  "description": "Догадка о настоящем с must и might: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Строить модальный вывод с начальной формой",
+    "Отличать возможное объяснение от сильного предположения"
+  ],
+  "notes": [
+    "Might be выражает возможное объяснение; must be может выражать сильный вывод по имеющимся признакам.",
+    "Даже сильный модальный вывод остаётся выводом говорящего; проверка может дать другое объяснение."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/either-or-choices"],
+  "lexicon": [
+    {
+      "en": "clue",
+      "ru": "подсказка, признак"
+    },
+    {
+      "en": "possible",
+      "ru": "возможный"
+    },
+    {
+      "en": "certain",
+      "ru": "уверенный"
+    },
+    {
+      "en": "check",
+      "ru": "проверять"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The lights are on, but I am not sure anyone is inside. Someone ___ there.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vfb3f6c305859",
+            "label": "might is"
+          },
+          {
+            "id": "v10483d4622c6",
+            "label": "might being"
+          },
+          {
+            "id": "vf03a5b8bbd71",
+            "label": "might be"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf03a5b8bbd71"
+      },
+      "reference_answer": "vf03a5b8bbd71",
+      "incorrect_answer": "vfb3f6c305859",
+      "editorial_answer": "might be",
+      "explanation": "После might нужен be; неопределённость явно указана в контексте.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: is / be.",
+      "public_payload": {
+        "sentence": "The answer must ___ in the final paragraph."
+      },
+      "answer_key": {
+        "accepted": ["be"]
+      },
+      "reference_answer": "be",
+      "incorrect_answer": "is",
+      "editorial_answer": "The answer must be in the final paragraph.",
+      "explanation": "После must требуется начальная форма be.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Возможно, она в переговорной.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "be"
+          },
+          {
+            "id": "t4",
+            "label": "in"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "meeting"
+          },
+          {
+            "id": "t7",
+            "label": "room."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "might"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "She might be in the meeting room.",
+      "explanation": "Might be не делает местонахождение установленным фактом.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He must is tired after that long walk."
+      },
+      "answer_key": {
+        "accepted": ["He must be tired after that long walk."]
+      },
+      "reference_answer": "He must be tired after that long walk.",
+      "incorrect_answer": "He must is tired after that long walk.",
+      "editorial_answer": "He must be tired after that long walk.",
+      "explanation": "После must используется be, не is.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что предположила Майя по включённому свету?",
+      "public_payload": {
+        "passage": "The office lights were on when Maya arrived, so she thought someone might still be working. She called before opening the door. A colleague answered and explained that a cleaner was inside, while the rest of the team had left. The light was a useful clue, but it did not show which person was there or why.",
+        "options": [
+          {
+            "id": "v174ef08fdde4",
+            "label": "The office had no electricity."
+          },
+          {
+            "id": "v33196362188e",
+            "label": "Someone might still be working."
+          },
+          {
+            "id": "vb870f9ccc05a",
+            "label": "Every colleague was definitely in a meeting."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v33196362188e"
+      },
+      "reference_answer": "v33196362188e",
+      "incorrect_answer": "vb870f9ccc05a",
+      "editorial_answer": "Someone might still be working.",
+      "explanation": "Свет поддерживал возможность присутствия, но не определял человека.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l523aa5aa93d6",
+            "label": "clue"
+          },
+          {
+            "id": "l585251a6c9f3",
+            "label": "possible"
+          },
+          {
+            "id": "l5b33e87c9ae7",
+            "label": "certain"
+          },
+          {
+            "id": "l58d13d5ba9c2",
+            "label": "check"
+          }
+        ],
+        "right": [
+          {
+            "id": "r275f86f868a7",
+            "label": "уверенный"
+          },
+          {
+            "id": "rfd5ee17e041a",
+            "label": "проверять"
+          },
+          {
+            "id": "r07f5ca2d7113",
+            "label": "подсказка, признак"
+          },
+          {
+            "id": "r93b816181748",
+            "label": "возможный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l523aa5aa93d6": "r07f5ca2d7113",
+          "l585251a6c9f3": "r93b816181748",
+          "l5b33e87c9ae7": "r275f86f868a7",
+          "l58d13d5ba9c2": "rfd5ee17e041a"
+        }
+      },
+      "reference_answer": {
+        "l523aa5aa93d6": "r07f5ca2d7113",
+        "l585251a6c9f3": "r93b816181748",
+        "l5b33e87c9ae7": "r275f86f868a7",
+        "l58d13d5ba9c2": "rfd5ee17e041a"
+      },
+      "incorrect_answer": {
+        "l523aa5aa93d6": "r93b816181748",
+        "l585251a6c9f3": "r07f5ca2d7113",
+        "l5b33e87c9ae7": "r275f86f868a7",
+        "l58d13d5ba9c2": "rfd5ee17e041a"
+      },
+      "editorial_answer": "clue — подсказка, признак; possible — возможный; certain — уверенный; check — проверять",
+      "explanation": "В этих контекстах: clue — подсказка, признак; possible — возможный; certain — уверенный; check — проверять.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что выяснилось после звонка?",
+      "public_payload": {
+        "passage": "The office lights were on when Maya arrived, so she thought someone might still be working. She called before opening the door. A colleague answered and explained that a cleaner was inside, while the rest of the team had left. The light was a useful clue, but it did not show which person was there or why.",
+        "options": [
+          {
+            "id": "ved412075e5de",
+            "label": "A cleaner was inside."
+          },
+          {
+            "id": "vdbdd1eb6ab4b",
+            "label": "The entire team was still at work."
+          },
+          {
+            "id": "v9b2c9954a2df",
+            "label": "Nobody had left the office."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ved412075e5de"
+      },
+      "reference_answer": "ved412075e5de",
+      "incorrect_answer": "vdbdd1eb6ab4b",
+      "editorial_answer": "A cleaner was inside.",
+      "explanation": "Звонок уточнил объяснение; остальные сотрудники уже ушли.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Предложи возможное местонахождение без ложной уверенности.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Do you know where Alex is?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v1dc2933021a4",
+            "label": "He might upstairs be is."
+          },
+          {
+            "id": "v96d035b0aadc",
+            "label": "He might be upstairs, but I have not checked."
+          },
+          {
+            "id": "v2b59034b9d8c",
+            "label": "He might is upstairs, but I have not checked."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v96d035b0aadc"
+      },
+      "reference_answer": "v96d035b0aadc",
+      "incorrect_answer": "v2b59034b9d8c",
+      "editorial_answer": "He might be upstairs, but I have not checked.",
+      "explanation": "Might be и оговорка о проверке сохраняют неопределённость.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A piece of information that helps you work something out is a ___.",
+        "options": [
+          {
+            "id": "v417ac4e1560b",
+            "label": "clue"
+          },
+          {
+            "id": "v08dcddf2fdb1",
+            "label": "guarantee in every case"
+          },
+          {
+            "id": "v1dbd241fce1b",
+            "label": "verdict by definition"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v417ac4e1560b"
+      },
+      "reference_answer": "v417ac4e1560b",
+      "incorrect_answer": "v08dcddf2fdb1",
+      "editorial_answer": "clue",
+      "explanation": "Clue помогает выводу, но сам по себе не равен гарантии или окончательному решению.",
+      "key": "e09"
+    }
+  ]
+}

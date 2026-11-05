@@ -1,0 +1,334 @@
+{
+  "key": "a2/first-experiences-ever",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 2,
+  "title": "Был ли такой опыт раньше",
+  "description": "Был ли такой опыт раньше: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Спрашивать об опыте с Have you ever ...?",
+    "Использовать been в вопросах о посещении места"
+  ],
+  "notes": [
+    "Have you ever been to ...? спрашивает, случалось ли посещение когда-либо до настоящего.",
+    "Been — причастие в have been; конкретное завершённое время вроде yesterday обычно требует Past Simple."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/superlatives-nearby"],
+  "lexicon": [
+    {
+      "en": "ever",
+      "ru": "когда-либо"
+    },
+    {
+      "en": "experience",
+      "ru": "опыт"
+    },
+    {
+      "en": "visit",
+      "ru": "посещать"
+    },
+    {
+      "en": "museum",
+      "ru": "музей"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ you ever been to a science museum?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vfead6ebb7cfb",
+            "label": "Do"
+          },
+          {
+            "id": "v4ef6d85c9bf9",
+            "label": "Have"
+          },
+          {
+            "id": "vec635d3b569b",
+            "label": "Did"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4ef6d85c9bf9"
+      },
+      "reference_answer": "v4ef6d85c9bf9",
+      "incorrect_answer": "vec635d3b569b",
+      "editorial_answer": "Have",
+      "explanation": "Опыт до настоящего выражается Have you ever been ...?",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: been / went.",
+      "public_payload": {
+        "sentence": "I have never ___ to a science museum."
+      },
+      "answer_key": {
+        "accepted": ["been"]
+      },
+      "reference_answer": "been",
+      "incorrect_answer": "went",
+      "editorial_answer": "I have never been to a science museum.",
+      "explanation": "После have используется been, а не форма Past Simple went.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Ты когда-нибудь посещал этот музей?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "ever"
+          },
+          {
+            "id": "t4",
+            "label": "visited"
+          },
+          {
+            "id": "t5",
+            "label": "this"
+          },
+          {
+            "id": "t6",
+            "label": "museum?"
+          },
+          {
+            "id": "t1",
+            "label": "Have"
+          },
+          {
+            "id": "t2",
+            "label": "you"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Have you ever visited this museum?",
+      "explanation": "Ever связывает вопрос с опытом до настоящего, без конкретной даты.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл. Для опыта посещения используй been.",
+      "public_payload": {
+        "sentence": "Have you ever went to a space exhibition?"
+      },
+      "answer_key": {
+        "accepted": ["Have you ever been to a space exhibition?"]
+      },
+      "reference_answer": "Have you ever been to a space exhibition?",
+      "incorrect_answer": "Have you ever went to a space exhibition?",
+      "editorial_answer": "Have you ever been to a space exhibition?",
+      "explanation": "В этой модели опыта требуется have been to, а не have went.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "У кого уже есть опыт посещения?",
+      "public_payload": {
+        "passage": "Kai has never been to a science museum. His friend Isla has visited one twice. They are planning a visit together next month. Isla says there is a room about space, but Kai wants to see the machines first. They have not bought tickets yet.",
+        "options": [
+          {
+            "id": "vd403203c5f61",
+            "label": "Isla."
+          },
+          {
+            "id": "v0a255ff28f4f",
+            "label": "Kai."
+          },
+          {
+            "id": "v58cdee7f77c6",
+            "label": "Neither friend."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd403203c5f61"
+      },
+      "reference_answer": "vd403203c5f61",
+      "incorrect_answer": "v0a255ff28f4f",
+      "editorial_answer": "Isla.",
+      "explanation": "Исла уже посетила музей дважды, а Кай не был ни разу: Isla has visited one twice; Kai has never been.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "la4f11ab6a2e6",
+            "label": "ever"
+          },
+          {
+            "id": "l02ed477e6cfa",
+            "label": "experience"
+          },
+          {
+            "id": "l9d13efe0bb29",
+            "label": "visit"
+          },
+          {
+            "id": "lc005ca3a7839",
+            "label": "museum"
+          }
+        ],
+        "right": [
+          {
+            "id": "r02c261677670",
+            "label": "посещать"
+          },
+          {
+            "id": "rb72a2641cfc5",
+            "label": "музей"
+          },
+          {
+            "id": "r6ab581ea0224",
+            "label": "когда-либо"
+          },
+          {
+            "id": "r8517e9026efc",
+            "label": "опыт"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "la4f11ab6a2e6": "r6ab581ea0224",
+          "l02ed477e6cfa": "r8517e9026efc",
+          "l9d13efe0bb29": "r02c261677670",
+          "lc005ca3a7839": "rb72a2641cfc5"
+        }
+      },
+      "reference_answer": {
+        "la4f11ab6a2e6": "r6ab581ea0224",
+        "l02ed477e6cfa": "r8517e9026efc",
+        "l9d13efe0bb29": "r02c261677670",
+        "lc005ca3a7839": "rb72a2641cfc5"
+      },
+      "incorrect_answer": {
+        "la4f11ab6a2e6": "r8517e9026efc",
+        "l02ed477e6cfa": "r6ab581ea0224",
+        "l9d13efe0bb29": "r02c261677670",
+        "lc005ca3a7839": "rb72a2641cfc5"
+      },
+      "editorial_answer": "ever — когда-либо; experience — опыт; visit — посещать; museum — музей",
+      "explanation": "В этих контекстах: ever — когда-либо; experience — опыт; visit — посещать; museum — музей.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что они ещё не сделали?",
+      "public_payload": {
+        "passage": "Kai has never been to a science museum. His friend Isla has visited one twice. They are planning a visit together next month. Isla says there is a room about space, but Kai wants to see the machines first. They have not bought tickets yet.",
+        "options": [
+          {
+            "id": "v3eab563c19d0",
+            "label": "Discussed what Kai wants to see."
+          },
+          {
+            "id": "vd0247dc7367a",
+            "label": "Chosen any month for their visit."
+          },
+          {
+            "id": "ve2afd208da10",
+            "label": "Bought tickets."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve2afd208da10"
+      },
+      "reference_answer": "ve2afd208da10",
+      "incorrect_answer": "v3eab563c19d0",
+      "editorial_answer": "Bought tickets.",
+      "explanation": "Билеты ещё не куплены; месяц и интерес Кая уже обсуждены.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь об отсутствии такого опыта.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Have you ever tried rock climbing?"
+          }
+        ],
+        "options": [
+          {
+            "id": "ve6562902e9a5",
+            "label": "No, I have never tried it."
+          },
+          {
+            "id": "vf938ee4b7ceb",
+            "label": "No, I have never try it."
+          },
+          {
+            "id": "vded9a77a2031",
+            "label": "No, I did never been it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve6562902e9a5"
+      },
+      "reference_answer": "ve6562902e9a5",
+      "incorrect_answer": "vf938ee4b7ceb",
+      "editorial_answer": "No, I have never tried it.",
+      "explanation": "Have never tried использует причастие tried.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A new activity can give you useful ___.",
+        "options": [
+          {
+            "id": "vf43572211e96",
+            "label": "yesterday"
+          },
+          {
+            "id": "v4ccf687e5a36",
+            "label": "nearest"
+          },
+          {
+            "id": "v8d8e73557041",
+            "label": "experience"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8d8e73557041"
+      },
+      "reference_answer": "v8d8e73557041",
+      "incorrect_answer": "vf43572211e96",
+      "editorial_answer": "experience",
+      "explanation": "Experience означает полученный опыт; другие варианты не подходят по смыслу и форме.",
+      "key": "e09"
+    }
+  ]
+}

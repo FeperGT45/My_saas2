@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o3",
+            "id": "v8886699785b2",
             "label": "close to"
           },
           {
-            "id": "o1",
+            "id": "vde95310b1305",
             "label": "to close"
           },
           {
-            "id": "o2",
+            "id": "vad952bf07a9f",
             "label": "closing"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vde95310b1305"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vde95310b1305",
+      "incorrect_answer": "vad952bf07a9f",
       "editorial_answer": "to close",
       "explanation": "В конструкции asked us to close нужен to-infinitive.",
       "key": "e01"
@@ -183,24 +183,24 @@
         "passage": "Before the workshop, a technician checked the computers. She asked the students to keep drinks away from the desks. She also asked them not to unplug any cables. When one screen went dark, Ben remembered the request and called her instead of changing the cables himself. The technician found a loose connection and thanked him for waiting for help.",
         "options": [
           {
-            "id": "o1",
+            "id": "v822ecfe2b34e",
             "label": "Unplug any cables."
           },
           {
-            "id": "o2",
+            "id": "v5539d16e35a6",
             "label": "Call her when there was a problem."
           },
           {
-            "id": "o3",
+            "id": "vb3b14903b99c",
             "label": "Use the computers during the workshop."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v822ecfe2b34e"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v822ecfe2b34e",
+      "incorrect_answer": "v5539d16e35a6",
       "editorial_answer": "Unplug any cables.",
       "explanation": "Запрет в просьбе относится к отключению кабелей.",
       "key": "e05"
@@ -212,24 +212,24 @@
         "passage": "Before the workshop, a technician checked the computers. She asked the students to keep drinks away from the desks. She also asked them not to unplug any cables. When one screen went dark, Ben remembered the request and called her instead of changing the cables himself. The technician found a loose connection and thanked him for waiting for help.",
         "options": [
           {
-            "id": "o2",
+            "id": "vea288445b14f",
             "label": "He unplugged every cable."
           },
           {
-            "id": "o3",
+            "id": "v7cca00c94585",
             "label": "He moved his drink onto the desk."
           },
           {
-            "id": "o1",
+            "id": "v0ff19c82feaf",
             "label": "He called the technician and waited."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v0ff19c82feaf"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v0ff19c82feaf",
+      "incorrect_answer": "vea288445b14f",
       "editorial_answer": "He called the technician and waited.",
       "explanation": "Бен сообщил о проблеме, сохранив оборудование как было.",
       "key": "e06"
@@ -246,24 +246,24 @@
         ],
         "options": [
           {
-            "id": "o1",
+            "id": "v8f2591a3f9b6",
             "label": "The organiser asked me not to move the box."
           },
           {
-            "id": "o2",
+            "id": "v19c8766bd9a4",
             "label": "The organiser asked me to not moving the box."
           },
           {
-            "id": "o3",
+            "id": "va421e50af897",
             "label": "The organiser asked to me moved the box."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v8f2591a3f9b6"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v8f2591a3f9b6",
+      "incorrect_answer": "v19c8766bd9a4",
       "editorial_answer": "The organiser asked me not to move the box.",
       "explanation": "Asked me not to move сохраняет адресата и отрицание.",
       "key": "e07"
@@ -275,24 +275,24 @@
         "sentence": "You should obtain ___ before using someone else’s equipment.",
         "options": [
           {
-            "id": "o2",
+            "id": "vceff27883924",
             "label": "prediction"
           },
           {
-            "id": "o3",
+            "id": "va12a7ad936eb",
             "label": "departure"
           },
           {
-            "id": "o1",
+            "id": "v6cb2bd60207d",
             "label": "permission"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v6cb2bd60207d"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v6cb2bd60207d",
+      "incorrect_answer": "vceff27883924",
       "editorial_answer": "permission",
       "explanation": "Permission — разрешение на действие; остальные слова не выражают согласие владельца.",
       "key": "e08"

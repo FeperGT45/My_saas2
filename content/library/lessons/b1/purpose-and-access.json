@@ -1,0 +1,342 @@
+{
+  "key": "b1/purpose-and-access",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 1,
+  "title": "Зачем мы меняем план",
+  "description": "Зачем мы меняем план: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Выражать цель через in order to",
+    "Вводить цель с отдельным подлежащим через so that"
+  ],
+  "notes": [
+    "In order to + инфинитив обозначает цель действия: We moved in order to make space.",
+    "So that может вводить отдельного исполнителя: We spoke slowly so that everyone could follow."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/unless-plans"],
+  "lexicon": [
+    {
+      "en": "purpose",
+      "ru": "цель"
+    },
+    {
+      "en": "access",
+      "ru": "доступ"
+    },
+    {
+      "en": "follow",
+      "ru": "понимать ход объяснения"
+    },
+    {
+      "en": "adjust",
+      "ru": "корректировать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We printed larger labels so that everyone ___ read them.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v55143e5e546d",
+            "label": "for"
+          },
+          {
+            "id": "v4b2633fbf95a",
+            "label": "could"
+          },
+          {
+            "id": "vea2e39149a0f",
+            "label": "to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4b2633fbf95a"
+      },
+      "reference_answer": "v4b2633fbf95a",
+      "incorrect_answer": "vea2e39149a0f",
+      "editorial_answer": "could",
+      "explanation": "После so that и подлежащего everyone нужен глагол could read.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: for / to.",
+      "public_payload": {
+        "sentence": "The group moved the chairs in order ___ create more space."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "The group moved the chairs in order to create more space.",
+      "explanation": "In order to сочетается с начальной формой create.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы говорили медленно, чтобы все могли понять объяснение.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "slowly"
+          },
+          {
+            "id": "t4",
+            "label": "so"
+          },
+          {
+            "id": "t5",
+            "label": "that"
+          },
+          {
+            "id": "t6",
+            "label": "everyone"
+          },
+          {
+            "id": "t7",
+            "label": "could"
+          },
+          {
+            "id": "t8",
+            "label": "follow."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "spoke"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "We spoke slowly so that everyone could follow.",
+      "explanation": "So that вводит отдельное подлежащее everyone; цель относится к пониманию слушателей.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She opened the side door in order make access easier."
+      },
+      "answer_key": {
+        "accepted": ["She opened the side door in order to make access easier."]
+      },
+      "reference_answer": "She opened the side door in order to make access easier.",
+      "incorrect_answer": "She opened the side door in order make access easier.",
+      "editorial_answer": "She opened the side door in order to make access easier.",
+      "explanation": "После in order требуется to перед инфинитивом make.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем выступающих попросили говорить медленнее?",
+      "public_payload": {
+        "passage": "At a community workshop, the organiser noticed that some visitors could not read the small labels. She printed larger ones and moved a lamp nearer the table. She also asked speakers to slow down so that everyone could follow the instructions. These changes took only a few minutes, but visitors said they made the activity easier to join.",
+        "options": [
+          {
+            "id": "vb85f542e9c97",
+            "label": "So visitors could follow the instructions."
+          },
+          {
+            "id": "ve5fed6b48310",
+            "label": "So the labels would become physically larger."
+          },
+          {
+            "id": "va3a63403e347",
+            "label": "So the workshop would end immediately."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb85f542e9c97"
+      },
+      "reference_answer": "vb85f542e9c97",
+      "incorrect_answer": "ve5fed6b48310",
+      "editorial_answer": "So visitors could follow the instructions.",
+      "explanation": "Цель названа после so that: понимание инструкций.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l54d6c780b23e",
+            "label": "purpose"
+          },
+          {
+            "id": "l8d5f24f67610",
+            "label": "access"
+          },
+          {
+            "id": "l39def55792a5",
+            "label": "follow"
+          },
+          {
+            "id": "le7f9cc2e2770",
+            "label": "adjust"
+          }
+        ],
+        "right": [
+          {
+            "id": "r843639c4e455",
+            "label": "понимать ход объяснения"
+          },
+          {
+            "id": "rb6a39a5733f7",
+            "label": "корректировать"
+          },
+          {
+            "id": "r4cdbb912ab81",
+            "label": "цель"
+          },
+          {
+            "id": "r91d9b06d0d62",
+            "label": "доступ"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l54d6c780b23e": "r4cdbb912ab81",
+          "l8d5f24f67610": "r91d9b06d0d62",
+          "l39def55792a5": "r843639c4e455",
+          "le7f9cc2e2770": "rb6a39a5733f7"
+        }
+      },
+      "reference_answer": {
+        "l54d6c780b23e": "r4cdbb912ab81",
+        "l8d5f24f67610": "r91d9b06d0d62",
+        "l39def55792a5": "r843639c4e455",
+        "le7f9cc2e2770": "rb6a39a5733f7"
+      },
+      "incorrect_answer": {
+        "l54d6c780b23e": "r91d9b06d0d62",
+        "l8d5f24f67610": "r4cdbb912ab81",
+        "l39def55792a5": "r843639c4e455",
+        "le7f9cc2e2770": "rb6a39a5733f7"
+      },
+      "editorial_answer": "purpose — цель; access — доступ; follow — понимать ход объяснения; adjust — корректировать",
+      "explanation": "В этих контекстах: purpose — цель; access — доступ; follow — понимать ход объяснения; adjust — корректировать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что известно об изменениях?",
+      "public_payload": {
+        "passage": "At a community workshop, the organiser noticed that some visitors could not read the small labels. She printed larger ones and moved a lamp nearer the table. She also asked speakers to slow down so that everyone could follow the instructions. These changes took only a few minutes, but visitors said they made the activity easier to join.",
+        "options": [
+          {
+            "id": "vbe0156e7dff3",
+            "label": "They required the workshop to close for a week."
+          },
+          {
+            "id": "v78e55f187d37",
+            "label": "Every visitor had previously understood every label."
+          },
+          {
+            "id": "vbe52426e8973",
+            "label": "They took a few minutes and visitors found them helpful."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbe52426e8973"
+      },
+      "reference_answer": "vbe52426e8973",
+      "incorrect_answer": "vbe0156e7dff3",
+      "editorial_answer": "They took a few minutes and visitors found them helpful.",
+      "explanation": "Текст описывает небольшие по времени меры и положительный отзыв, не всеобщую прежнюю доступность.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Объясни цель с отдельным подлежащим participants.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Why did you add a written summary?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vba20300b918e",
+            "label": "So that participants could check the main points later."
+          },
+          {
+            "id": "v5c730d8f8f0c",
+            "label": "In order participants could to check later."
+          },
+          {
+            "id": "vdd3de226eeea",
+            "label": "Because of participants to checking later."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vba20300b918e"
+      },
+      "reference_answer": "vba20300b918e",
+      "incorrect_answer": "v5c730d8f8f0c",
+      "editorial_answer": "So that participants could check the main points later.",
+      "explanation": "So that participants could ... — полноценная целевая часть.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Making the doorway easier to use improves ___ to the room.",
+        "options": [
+          {
+            "id": "v6d3d3135ece0",
+            "label": "purpose"
+          },
+          {
+            "id": "vac806c0ca08c",
+            "label": "ownership"
+          },
+          {
+            "id": "v63de34b20f11",
+            "label": "access"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v63de34b20f11"
+      },
+      "reference_answer": "v63de34b20f11",
+      "incorrect_answer": "v6d3d3135ece0",
+      "editorial_answer": "access",
+      "explanation": "Access — возможность попасть в помещение или пользоваться им.",
+      "key": "e09"
+    }
+  ]
+}

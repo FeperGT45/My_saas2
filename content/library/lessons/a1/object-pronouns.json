@@ -1,0 +1,330 @@
+{
+  "key": "a1/object-pronouns",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 2,
+  "title": "Me, him, her и us",
+  "description": "Me, him, her и us: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Заменять дополнение объектным местоимением",
+    "Различать we/us и she/her после глагола"
+  ],
+  "notes": [
+    "После help используются объектные формы: help me, help him, help her, help us.",
+    "I, he, she, we обычно выполняют роль подлежащего; me, him, her, us — дополнения."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/jobs-workplaces"],
+  "lexicon": [
+    {
+      "en": "help",
+      "ru": "помогать"
+    },
+    {
+      "en": "call",
+      "ru": "звонить"
+    },
+    {
+      "en": "friend",
+      "ru": "друг"
+    },
+    {
+      "en": "wait",
+      "ru": "ждать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Anna is my friend. I call ___ every Friday.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vf5779bd12c03",
+            "label": "she"
+          },
+          {
+            "id": "vd65008338a3e",
+            "label": "hers"
+          },
+          {
+            "id": "v7e4cbe8f3fd6",
+            "label": "her"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7e4cbe8f3fd6"
+      },
+      "reference_answer": "v7e4cbe8f3fd6",
+      "incorrect_answer": "vf5779bd12c03",
+      "editorial_answer": "her",
+      "explanation": "После call нужно объектное her, когда речь об Анне.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: us / we.",
+      "public_payload": {
+        "sentence": "We need help. Please help ___."
+      },
+      "answer_key": {
+        "accepted": ["us"]
+      },
+      "reference_answer": "us",
+      "incorrect_answer": "we",
+      "editorial_answer": "We need help. Please help us.",
+      "explanation": "После help требуется us, а не форма подлежащего we.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Пожалуйста, позвони мне после обеда.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "me"
+          },
+          {
+            "id": "t4",
+            "label": "after"
+          },
+          {
+            "id": "t5",
+            "label": "lunch."
+          },
+          {
+            "id": "t1",
+            "label": "Please"
+          },
+          {
+            "id": "t2",
+            "label": "call"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Please call me after lunch.",
+      "explanation": "Me обозначает получателя действия call.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "My teacher helps I."
+      },
+      "answer_key": {
+        "accepted": ["My teacher helps me."]
+      },
+      "reference_answer": "My teacher helps me.",
+      "incorrect_answer": "My teacher helps I.",
+      "editorial_answer": "My teacher helps me.",
+      "explanation": "В дополнении после helps нужна форма me.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кому звонит рассказчик?",
+      "public_payload": {
+        "passage": "Ben and I are at the station. Our friend Ella can help us. I call her. She says, “Wait near the door.”",
+        "options": [
+          {
+            "id": "v0055a0e1728e",
+            "label": "A driver."
+          },
+          {
+            "id": "v5aa5b1f6acbb",
+            "label": "Ella."
+          },
+          {
+            "id": "v7838f5f8eb66",
+            "label": "Ben’s teacher."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5aa5b1f6acbb"
+      },
+      "reference_answer": "v5aa5b1f6acbb",
+      "incorrect_answer": "v7838f5f8eb66",
+      "editorial_answer": "Ella.",
+      "explanation": "Her относится к упомянутой подруге Элле.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le6ed6e0c0e15",
+            "label": "help"
+          },
+          {
+            "id": "lb3c371ca78ed",
+            "label": "call"
+          },
+          {
+            "id": "l20320c3cced1",
+            "label": "friend"
+          },
+          {
+            "id": "lb7452809ad06",
+            "label": "wait"
+          }
+        ],
+        "right": [
+          {
+            "id": "r363a27731663",
+            "label": "друг"
+          },
+          {
+            "id": "rcc5516aaac32",
+            "label": "ждать"
+          },
+          {
+            "id": "r6df532132a15",
+            "label": "помогать"
+          },
+          {
+            "id": "r2c9c42db8470",
+            "label": "звонить"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le6ed6e0c0e15": "r6df532132a15",
+          "lb3c371ca78ed": "r2c9c42db8470",
+          "l20320c3cced1": "r363a27731663",
+          "lb7452809ad06": "rcc5516aaac32"
+        }
+      },
+      "reference_answer": {
+        "le6ed6e0c0e15": "r6df532132a15",
+        "lb3c371ca78ed": "r2c9c42db8470",
+        "l20320c3cced1": "r363a27731663",
+        "lb7452809ad06": "rcc5516aaac32"
+      },
+      "incorrect_answer": {
+        "le6ed6e0c0e15": "r2c9c42db8470",
+        "lb3c371ca78ed": "r6df532132a15",
+        "l20320c3cced1": "r363a27731663",
+        "lb7452809ad06": "rcc5516aaac32"
+      },
+      "editorial_answer": "help — помогать; call — звонить; friend — друг; wait — ждать",
+      "explanation": "В этих контекстах: help — помогать; call — звонить; friend — друг; wait — ждать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что просит сделать Элла?",
+      "public_payload": {
+        "passage": "Ben and I are at the station. Our friend Ella can help us. I call her. She says, “Wait near the door.”",
+        "options": [
+          {
+            "id": "v932d0f86ed8b",
+            "label": "Wait near the door."
+          },
+          {
+            "id": "v0a30004c5492",
+            "label": "Leave the station."
+          },
+          {
+            "id": "v0e2cf40d0871",
+            "label": "Call after dinner."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v932d0f86ed8b"
+      },
+      "reference_answer": "v932d0f86ed8b",
+      "incorrect_answer": "v0a30004c5492",
+      "editorial_answer": "Wait near the door.",
+      "explanation": "Реплика Эллы прямо задаёт место ожидания.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь, обращаясь к двум собеседникам.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can you help my brother and me?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v400e9d2fc74a",
+            "label": "Yes, I can help yours."
+          },
+          {
+            "id": "vf62817787aba",
+            "label": "Yes, I can help you."
+          },
+          {
+            "id": "v1597a9b66422",
+            "label": "Yes, I can help your."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf62817787aba"
+      },
+      "reference_answer": "vf62817787aba",
+      "incorrect_answer": "v1597a9b66422",
+      "editorial_answer": "Yes, I can help you.",
+      "explanation": "You подходит и для одного, и для нескольких адресатов; your/yours не объектные формы.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "I cannot carry this bag alone. Please ___ me.",
+        "options": [
+          {
+            "id": "v8b5e67ee3615",
+            "label": "help"
+          },
+          {
+            "id": "veae53a7a9b9e",
+            "label": "wait"
+          },
+          {
+            "id": "vd39394217ce6",
+            "label": "blue"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8b5e67ee3615"
+      },
+      "reference_answer": "v8b5e67ee3615",
+      "incorrect_answer": "veae53a7a9b9e",
+      "editorial_answer": "help",
+      "explanation": "Help me означает помочь мне; wait не используется так в значении помощи.",
+      "key": "e09"
+    }
+  ]
+}

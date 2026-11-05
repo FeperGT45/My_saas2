@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o2",
+            "id": "vf5b6d6666789",
             "label": "Should"
           },
           {
-            "id": "o3",
+            "id": "v254e0f2f86e9",
             "label": "Were to"
           },
           {
-            "id": "o1",
+            "id": "v6bad5905d304",
             "label": "Had"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v6bad5905d304"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v6bad5905d304",
+      "incorrect_answer": "vf5b6d6666789",
       "editorial_answer": "Had",
       "explanation": "Had the defect been disclosed = If the defect had been disclosed; речь о прошлом.",
       "key": "e01"
@@ -185,24 +185,24 @@
         "passage": "The supplier’s letter acknowledged that an inspection had identified a fault before the equipment was shipped. It did not say when the purchasing team had been informed. “Had the defect been disclosed prior to dispatch, we might have reconsidered acceptance,” the buyer replied. The wording deliberately left two matters open: whether timely disclosure had occurred and what decision the buyer would then have made. A colleague proposed replacing might with would, but the legal adviser objected. The available records supported concern about the process, not certainty about an alternative decision. The final response therefore requested the dated inspection report rather than alleging deliberate concealment.",
         "options": [
           {
-            "id": "o3",
+            "id": "v64450ba1cd77",
             "label": "To confirm deliberate concealment by the supplier."
           },
           {
-            "id": "o1",
+            "id": "v64c2bca1e782",
             "label": "To avoid claiming certainty about a hypothetical decision."
           },
           {
-            "id": "o2",
+            "id": "v2bb35ff3fe86",
             "label": "To state that the defect never existed."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v64c2bca1e782"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v64c2bca1e782",
+      "incorrect_answer": "v2bb35ff3fe86",
       "editorial_answer": "To avoid claiming certainty about a hypothetical decision.",
       "explanation": "Might не превращает возможный пересмотр в гарантированное альтернативное решение.",
       "key": "e05"
@@ -214,24 +214,24 @@
         "passage": "The supplier’s letter acknowledged that an inspection had identified a fault before the equipment was shipped. It did not say when the purchasing team had been informed. “Had the defect been disclosed prior to dispatch, we might have reconsidered acceptance,” the buyer replied. The wording deliberately left two matters open: whether timely disclosure had occurred and what decision the buyer would then have made. A colleague proposed replacing might with would, but the legal adviser objected. The available records supported concern about the process, not certainty about an alternative decision. The final response therefore requested the dated inspection report rather than alleging deliberate concealment.",
         "options": [
           {
-            "id": "o1",
+            "id": "v134a439dbe6a",
             "label": "The dated inspection report."
           },
           {
-            "id": "o2",
+            "id": "v45c66adff451",
             "label": "A statement admitting deliberate concealment."
           },
           {
-            "id": "o3",
+            "id": "ve6cb7ee65779",
             "label": "Proof that the buyer would certainly have refused acceptance."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v134a439dbe6a"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v134a439dbe6a",
+      "incorrect_answer": "v45c66adff451",
       "editorial_answer": "The dated inspection report.",
       "explanation": "Запрос направлен на недостающую хронологию, а не на заранее установленную вину.",
       "key": "e06"
@@ -248,24 +248,24 @@
         ],
         "options": [
           {
-            "id": "o3",
+            "id": "v6dbd30fd3618",
             "label": "Had any difficulties arise tomorrow, please notify the project lead."
           },
           {
-            "id": "o1",
+            "id": "v3e098b4ebf84",
             "label": "Should any difficulties arise, please notify the project lead."
           },
           {
-            "id": "o2",
+            "id": "v8d2f8686fa43",
             "label": "Should any difficulties arose, please notify the project lead."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v3e098b4ebf84"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v3e098b4ebf84",
+      "incorrect_answer": "v8d2f8686fa43",
       "editorial_answer": "Should any difficulties arise, please notify the project lead.",
       "explanation": "Should + подлежащее + arise описывает возможную будущую ситуацию.",
       "key": "e07"
@@ -277,24 +277,24 @@
         "sentence": "Information given before dispatch constitutes ___ disclosure.",
         "options": [
           {
-            "id": "o1",
+            "id": "vc785b8819896",
             "label": "prior"
           },
           {
-            "id": "o2",
+            "id": "vdd19ea6f72e4",
             "label": "subsequent"
           },
           {
-            "id": "o3",
+            "id": "v2527f2ffc14f",
             "label": "simultaneous only"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vc785b8819896"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vc785b8819896",
+      "incorrect_answer": "vdd19ea6f72e4",
       "editorial_answer": "prior",
       "explanation": "Prior означает предшествующий; subsequent — последующий.",
       "key": "e08"

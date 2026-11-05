@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o3",
+            "id": "va1cebf5ec5fa",
             "label": "was have"
           },
           {
-            "id": "o1",
+            "id": "va1b908d1a7b9",
             "label": "had"
           },
           {
-            "id": "o2",
+            "id": "vfe60112498ad",
             "label": "did"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "va1b908d1a7b9"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "va1b908d1a7b9",
+      "incorrect_answer": "vfe60112498ad",
       "editorial_answer": "had",
       "explanation": "Had my screen repaired передаёт заказанную у специалиста услугу.",
       "key": "e01"
@@ -183,24 +183,24 @@
         "passage": "Before a long cycling trip, Eva took her bicycle to a repair shop. She had the brakes checked and the chain replaced. The mechanic said that the tyres were still in good condition, so replacing them was unnecessary. Eva had expected a larger bill and appreciated the explanation. She kept the receipt in case a problem appeared during the shop’s warranty period. The visit prepared the bicycle for the journey, although it could not remove every possible risk on the road.",
         "options": [
           {
-            "id": "o1",
+            "id": "vac8dafaea686",
             "label": "The shop replaced it."
           },
           {
-            "id": "o2",
+            "id": "v725cf760283f",
             "label": "Eva checked it but kept the old one."
           },
           {
-            "id": "o3",
+            "id": "v071bdc819806",
             "label": "The mechanic replaced the tyres instead."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vac8dafaea686"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vac8dafaea686",
+      "incorrect_answer": "v725cf760283f",
       "editorial_answer": "The shop replaced it.",
       "explanation": "The chain replaced в конструкции had the chain replaced сообщает о замене цепи.",
       "key": "e05"
@@ -212,24 +212,24 @@
         "passage": "Before a long cycling trip, Eva took her bicycle to a repair shop. She had the brakes checked and the chain replaced. The mechanic said that the tyres were still in good condition, so replacing them was unnecessary. Eva had expected a larger bill and appreciated the explanation. She kept the receipt in case a problem appeared during the shop’s warranty period. The visit prepared the bicycle for the journey, although it could not remove every possible risk on the road.",
         "options": [
           {
-            "id": "o2",
+            "id": "v5917fb3ef3d6",
             "label": "The shop had lost the receipt."
           },
           {
-            "id": "o3",
+            "id": "v897bd4e9a663",
             "label": "The warranty prohibited all tyre repairs."
           },
           {
-            "id": "o1",
+            "id": "vac28deeda6db",
             "label": "They were still in good condition."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vac28deeda6db"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vac28deeda6db",
+      "incorrect_answer": "v5917fb3ef3d6",
       "editorial_answer": "They were still in good condition.",
       "explanation": "Механик счёл замену ненужной из-за состояния шин.",
       "key": "e06"
@@ -246,24 +246,24 @@
         ],
         "options": [
           {
-            "id": "o1",
+            "id": "va47eb7da03f5",
             "label": "No, I had it painted by a local decorator."
           },
           {
-            "id": "o2",
+            "id": "vda6e7f1407ea",
             "label": "No, I had it paint by a local decorator."
           },
           {
-            "id": "o3",
+            "id": "v56d9dab32dfd",
             "label": "No, I was paint by a local decorator."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "va47eb7da03f5"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "va47eb7da03f5",
+      "incorrect_answer": "vda6e7f1407ea",
       "editorial_answer": "No, I had it painted by a local decorator.",
       "explanation": "Had it painted by ... обозначает заказанную работу, а не самостоятельное выполнение.",
       "key": "e07"
@@ -275,24 +275,24 @@
         "sentence": "A written promise to deal with certain faults during a set period is a ___.",
         "options": [
           {
-            "id": "o2",
+            "id": "v1459fd546b0b",
             "label": "forecast"
           },
           {
-            "id": "o3",
+            "id": "va1d97ae4d55c",
             "label": "departure"
           },
           {
-            "id": "o1",
+            "id": "vec8ada126c89",
             "label": "warranty"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vec8ada126c89"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vec8ada126c89",
+      "incorrect_answer": "v1459fd546b0b",
       "editorial_answer": "warranty",
       "explanation": "Warranty — гарантийное обязательство с установленными условиями.",
       "key": "e08"

@@ -1,0 +1,326 @@
+{
+  "key": "a1/colours-and-sizes",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 5,
+  "title": "Цвет и размер вещи",
+  "description": "Цвет и размер вещи: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Ставить прилагательное перед существительным",
+    "Описывать размер и цвет предмета"
+  ],
+  "notes": [
+    "Прилагательное перед существительным: a blue bag. По числу оно не меняется: blue bags.",
+    "A/an выбирается по первому звуку следующего слова: a red shirt, an orange shirt."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/classroom-actions"],
+  "lexicon": [
+    {
+      "en": "shirt",
+      "ru": "рубашка"
+    },
+    {
+      "en": "large",
+      "ru": "большой"
+    },
+    {
+      "en": "small",
+      "ru": "маленький"
+    },
+    {
+      "en": "green",
+      "ru": "зелёный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Выбери правильное описание одной вещи.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vd9aa553649f7",
+            "label": "a shirt green"
+          },
+          {
+            "id": "v234f732c76ee",
+            "label": "a greens shirt"
+          },
+          {
+            "id": "v5b28c9f3c046",
+            "label": "a green shirt"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5b28c9f3c046"
+      },
+      "reference_answer": "v5b28c9f3c046",
+      "incorrect_answer": "vd9aa553649f7",
+      "editorial_answer": "a green shirt",
+      "explanation": "В нейтральной группе green стоит перед shirt и не получает -s.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: a / an.",
+      "public_payload": {
+        "sentence": "I need ___ orange shirt."
+      },
+      "answer_key": {
+        "accepted": ["an"]
+      },
+      "reference_answer": "an",
+      "incorrect_answer": "a",
+      "editorial_answer": "I need an orange shirt.",
+      "explanation": "Orange начинается с гласного звука: an orange shirt.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Эти сумки маленькие.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "are"
+          },
+          {
+            "id": "t4",
+            "label": "small."
+          },
+          {
+            "id": "t1",
+            "label": "These"
+          },
+          {
+            "id": "t2",
+            "label": "bags"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4"],
+      "incorrect_answer": ["t2", "t3", "t4", "t1"],
+      "editorial_answer": "These bags are small.",
+      "explanation": "С bags используется are; прилагательное small не меняется по числу.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I have two blues bags."
+      },
+      "answer_key": {
+        "accepted": ["I have two blue bags."]
+      },
+      "reference_answer": "I have two blue bags.",
+      "incorrect_answer": "I have two blues bags.",
+      "editorial_answer": "I have two blue bags.",
+      "explanation": "Прилагательное blue не получает окончание множественного числа.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какая рубашка у Дэна?",
+      "public_payload": {
+        "passage": "Dan has a large green shirt. It is too big for his sister. She chooses a small white shirt. Both shirts are clean.",
+        "options": [
+          {
+            "id": "va0bec2a37a63",
+            "label": "A large black coat."
+          },
+          {
+            "id": "v82974283f13d",
+            "label": "A large green shirt."
+          },
+          {
+            "id": "v141aa860f6fc",
+            "label": "A small white shirt."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v82974283f13d"
+      },
+      "reference_answer": "v82974283f13d",
+      "incorrect_answer": "v141aa860f6fc",
+      "editorial_answer": "A large green shirt.",
+      "explanation": "Первое предложение описывает рубашку Дэна.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l48f2cff019ef",
+            "label": "shirt"
+          },
+          {
+            "id": "l59891193110d",
+            "label": "large"
+          },
+          {
+            "id": "ladbea85127f6",
+            "label": "small"
+          },
+          {
+            "id": "l5416307554a0",
+            "label": "green"
+          }
+        ],
+        "right": [
+          {
+            "id": "r32050b78b3a7",
+            "label": "маленький"
+          },
+          {
+            "id": "rae71e5226fdb",
+            "label": "зелёный"
+          },
+          {
+            "id": "rf80da5c710cc",
+            "label": "рубашка"
+          },
+          {
+            "id": "r3f9c39f4e2ec",
+            "label": "большой"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l48f2cff019ef": "rf80da5c710cc",
+          "l59891193110d": "r3f9c39f4e2ec",
+          "ladbea85127f6": "r32050b78b3a7",
+          "l5416307554a0": "rae71e5226fdb"
+        }
+      },
+      "reference_answer": {
+        "l48f2cff019ef": "rf80da5c710cc",
+        "l59891193110d": "r3f9c39f4e2ec",
+        "ladbea85127f6": "r32050b78b3a7",
+        "l5416307554a0": "rae71e5226fdb"
+      },
+      "incorrect_answer": {
+        "l48f2cff019ef": "r3f9c39f4e2ec",
+        "l59891193110d": "rf80da5c710cc",
+        "ladbea85127f6": "r32050b78b3a7",
+        "l5416307554a0": "rae71e5226fdb"
+      },
+      "editorial_answer": "shirt — рубашка; large — большой; small — маленький; green — зелёный",
+      "explanation": "В этих контекстах: shirt — рубашка; large — большой; small — маленький; green — зелёный.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что выбирает сестра?",
+      "public_payload": {
+        "passage": "Dan has a large green shirt. It is too big for his sister. She chooses a small white shirt. Both shirts are clean.",
+        "options": [
+          {
+            "id": "v2fa5f81a3034",
+            "label": "A small white shirt."
+          },
+          {
+            "id": "v7c9e1e6a6e6a",
+            "label": "Dan’s large green shirt."
+          },
+          {
+            "id": "vb8a5af560be5",
+            "label": "Two dirty shirts."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2fa5f81a3034"
+      },
+      "reference_answer": "v2fa5f81a3034",
+      "incorrect_answer": "v7c9e1e6a6e6a",
+      "editorial_answer": "A small white shirt.",
+      "explanation": "She chooses a small white shirt; утверждения о грязной одежде нет.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь именно о цвете.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What colour is your new bag?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v9c08cf3dc249",
+            "label": "It is a teacher."
+          },
+          {
+            "id": "v61f85251796b",
+            "label": "It is green."
+          },
+          {
+            "id": "vb555faccb135",
+            "label": "It is at school today."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v61f85251796b"
+      },
+      "reference_answer": "v61f85251796b",
+      "incorrect_answer": "vb555faccb135",
+      "editorial_answer": "It is green.",
+      "explanation": "Green — цвет; другие ответы сообщают место или профессию.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "This shirt is not big. It is ___.",
+        "options": [
+          {
+            "id": "vfee174f54bc4",
+            "label": "small"
+          },
+          {
+            "id": "v14fa239e5d18",
+            "label": "green"
+          },
+          {
+            "id": "vd62ca338f882",
+            "label": "clean"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfee174f54bc4"
+      },
+      "reference_answer": "vfee174f54bc4",
+      "incorrect_answer": "v14fa239e5d18",
+      "editorial_answer": "small",
+      "explanation": "Small обозначает размер, противоположный big; green и clean — другие признаки.",
+      "key": "e09"
+    }
+  ]
+}

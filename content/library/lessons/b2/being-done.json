@@ -1,0 +1,338 @@
+{
+  "key": "b2/being-done",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 3,
+  "title": "Когда действие направлено на нас",
+  "description": "Когда действие направлено на нас: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать being + причастие после предлога",
+    "Отличать выполнение действия от получения действия"
+  ],
+  "notes": [
+    "После предлога возможен пассивный герундий: without being informed.",
+    "Being criticised означает подвергаться критике; criticising означает критиковать самому."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/duration-before-past"],
+  "lexicon": [
+    {
+      "en": "inform",
+      "ru": "уведомлять"
+    },
+    {
+      "en": "consult",
+      "ru": "советоваться"
+    },
+    {
+      "en": "exclude",
+      "ru": "исключать"
+    },
+    {
+      "en": "notice",
+      "ru": "уведомление"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: They objected to ___ from the discussion.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v7e321d2f44af",
+            "label": "be excluded"
+          },
+          {
+            "id": "vf7755dca53de",
+            "label": "being excluded"
+          },
+          {
+            "id": "v9634136c05a9",
+            "label": "being exclude"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf7755dca53de"
+      },
+      "reference_answer": "vf7755dca53de",
+      "incorrect_answer": "v9634136c05a9",
+      "editorial_answer": "being excluded",
+      "explanation": "После to как предлога в objected to нужен пассивный герундий being excluded.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: informing / informed.",
+      "public_payload": {
+        "sentence": "The schedule changed without anyone being ___."
+      },
+      "answer_key": {
+        "accepted": ["informed"]
+      },
+      "reference_answer": "informed",
+      "incorrect_answer": "informing",
+      "editorial_answer": "The schedule changed without anyone being informed.",
+      "explanation": "Людей уведомляют, поэтому пассивное being informed.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Ей не нравилось, когда её прерывали во время объяснения.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "being"
+          },
+          {
+            "id": "t4",
+            "label": "interrupted"
+          },
+          {
+            "id": "t5",
+            "label": "during"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "explanation."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "disliked"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "She disliked being interrupted during the explanation.",
+      "explanation": "Being interrupted указывает, что прерывают её, а не она сама прерывает других.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He complained about being ignore during the meeting."
+      },
+      "answer_key": {
+        "accepted": ["He complained about being ignored during the meeting."]
+      },
+      "reference_answer": "He complained about being ignored during the meeting.",
+      "incorrect_answer": "He complained about being ignore during the meeting.",
+      "editorial_answer": "He complained about being ignored during the meeting.",
+      "explanation": "В пассивном герундии после being требуется причастие ignored.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему группа могла не узнать о встрече?",
+      "public_payload": {
+        "passage": "A neighbourhood group complained about being excluded from a planning discussion. The organiser replied that the meeting had been advertised online. However, several regular participants used a printed noticeboard rather than the website, and no notice had been placed there. The group did not demand that every decision be reversed immediately. It asked for a chance to comment before the final recommendation was submitted. The disagreement concerned meaningful participation, not merely whether a notice technically existed somewhere.",
+        "options": [
+          {
+            "id": "vb463de7babbc",
+            "label": "Some members relied on a noticeboard that had no announcement."
+          },
+          {
+            "id": "v884be61744a9",
+            "label": "The organiser had never advertised it anywhere."
+          },
+          {
+            "id": "vb868dcdb5d58",
+            "label": "Every member had already read the online notice."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb463de7babbc"
+      },
+      "reference_answer": "vb463de7babbc",
+      "incorrect_answer": "v884be61744a9",
+      "editorial_answer": "Some members relied on a noticeboard that had no announcement.",
+      "explanation": "Онлайн-объявление существовало, но привычный канал части участников не использовался.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le71780cdc51f",
+            "label": "inform"
+          },
+          {
+            "id": "lc8535167917c",
+            "label": "consult"
+          },
+          {
+            "id": "lbca0718841fc",
+            "label": "exclude"
+          },
+          {
+            "id": "lee1b86689839",
+            "label": "notice"
+          }
+        ],
+        "right": [
+          {
+            "id": "r6ac715a84754",
+            "label": "исключать"
+          },
+          {
+            "id": "rb59f599fc1cf",
+            "label": "уведомление"
+          },
+          {
+            "id": "raaeac21849ad",
+            "label": "уведомлять"
+          },
+          {
+            "id": "rd0f571651bb4",
+            "label": "советоваться"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le71780cdc51f": "raaeac21849ad",
+          "lc8535167917c": "rd0f571651bb4",
+          "lbca0718841fc": "r6ac715a84754",
+          "lee1b86689839": "rb59f599fc1cf"
+        }
+      },
+      "reference_answer": {
+        "le71780cdc51f": "raaeac21849ad",
+        "lc8535167917c": "rd0f571651bb4",
+        "lbca0718841fc": "r6ac715a84754",
+        "lee1b86689839": "rb59f599fc1cf"
+      },
+      "incorrect_answer": {
+        "le71780cdc51f": "rd0f571651bb4",
+        "lc8535167917c": "raaeac21849ad",
+        "lbca0718841fc": "r6ac715a84754",
+        "lee1b86689839": "rb59f599fc1cf"
+      },
+      "editorial_answer": "inform — уведомлять; consult — советоваться; exclude — исключать; notice — уведомление",
+      "explanation": "В этих контекстах: inform — уведомлять; consult — советоваться; exclude — исключать; notice — уведомление.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Чего группа просила?",
+      "public_payload": {
+        "passage": "A neighbourhood group complained about being excluded from a planning discussion. The organiser replied that the meeting had been advertised online. However, several regular participants used a printed noticeboard rather than the website, and no notice had been placed there. The group did not demand that every decision be reversed immediately. It asked for a chance to comment before the final recommendation was submitted. The disagreement concerned meaningful participation, not merely whether a notice technically existed somewhere.",
+        "options": [
+          {
+            "id": "v15673cdf1243",
+            "label": "Immediate reversal of every decision without discussion."
+          },
+          {
+            "id": "ve4c593827e22",
+            "label": "A permanent end to all online announcements."
+          },
+          {
+            "id": "v1108d924066b",
+            "label": "An opportunity to comment before the final recommendation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1108d924066b"
+      },
+      "reference_answer": "v1108d924066b",
+      "incorrect_answer": "v15673cdf1243",
+      "editorial_answer": "An opportunity to comment before the final recommendation.",
+      "explanation": "Просьба касается участия до окончательной рекомендации, а не немедленной отмены всего.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Вырази, что тебя не уведомили.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Did they tell you about the changed venue?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v4bd01380307b",
+            "label": "No. I arrived without being informed of the change."
+          },
+          {
+            "id": "v8b4d7bafb7e0",
+            "label": "No. I arrived without being inform of the change."
+          },
+          {
+            "id": "vb94706d23ba0",
+            "label": "No. I arrived without be informed of the change."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4bd01380307b"
+      },
+      "reference_answer": "v4bd01380307b",
+      "incorrect_answer": "v8b4d7bafb7e0",
+      "editorial_answer": "No. I arrived without being informed of the change.",
+      "explanation": "Without being informed — пассивный герундий после without.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To leave someone out of a discussion is to ___ them.",
+        "options": [
+          {
+            "id": "v927d4729eed6",
+            "label": "consult"
+          },
+          {
+            "id": "v2c466e7b9544",
+            "label": "inform"
+          },
+          {
+            "id": "v4d2bef3caf30",
+            "label": "exclude"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4d2bef3caf30"
+      },
+      "reference_answer": "v4d2bef3caf30",
+      "incorrect_answer": "v927d4729eed6",
+      "editorial_answer": "exclude",
+      "explanation": "Exclude — исключить из участия, в отличие от совета или уведомления.",
+      "key": "e09"
+    }
+  ]
+}

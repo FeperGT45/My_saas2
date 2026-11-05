@@ -1,0 +1,390 @@
+{
+  "key": "b2/whereas-evaluations",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 10,
+  "title": "Сопоставляем две стороны без подмены",
+  "description": "Сопоставляем две стороны без подмены: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать whereas для сопоставления разных признаков",
+    "Не заменять контраст причинной связью"
+  ],
+  "notes": [
+    "Whereas сопоставляет факты: The first option is cheaper, whereas the second is faster.",
+    "Контраст сам по себе не объясняет причину различий и не выбирает вариант без заданных критериев."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/provided-that-conditions"],
+  "lexicon": [
+    {
+      "en": "whereas",
+      "ru": "тогда как"
+    },
+    {
+      "en": "criterion",
+      "ru": "критерий"
+    },
+    {
+      "en": "reliability",
+      "ru": "надёжность"
+    },
+    {
+      "en": "flexibility",
+      "ru": "гибкость"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The first service is cheaper, ___ the second offers more flexible times.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v28d1fe9717dc",
+            "label": "whereas"
+          },
+          {
+            "id": "v5e924bbf750d",
+            "label": "because of"
+          },
+          {
+            "id": "v1d628b847d2e",
+            "label": "despite of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v28d1fe9717dc"
+      },
+      "reference_answer": "v28d1fe9717dc",
+      "incorrect_answer": "v5e924bbf750d",
+      "editorial_answer": "whereas",
+      "explanation": "Whereas соединяет контрастирующие полноценные части.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: is / being.",
+      "public_payload": {
+        "sentence": "Option A is fast, whereas option B ___ more reliable."
+      },
+      "answer_key": {
+        "accepted": ["is"]
+      },
+      "reference_answer": "is",
+      "incorrect_answer": "being",
+      "editorial_answer": "Option A is fast, whereas option B is more reliable.",
+      "explanation": "После whereas здесь требуется самостоятельная часть с конечной формой is.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Первый вариант дешевле, тогда как второй надёжнее.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "option"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "cheaper,"
+          },
+          {
+            "id": "t6",
+            "label": "whereas"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "second"
+          },
+          {
+            "id": "t9",
+            "label": "is"
+          },
+          {
+            "id": "t10",
+            "label": "more"
+          },
+          {
+            "id": "t11",
+            "label": "reliable."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "first"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11"
+        ]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11",
+        "t1"
+      ],
+      "editorial_answer": "The first option is cheaper, whereas the second is more reliable.",
+      "explanation": "Сопоставлены цена и надёжность без утверждения причинности.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The first route is shorter, whereas the second being safer."
+      },
+      "answer_key": {
+        "accepted": ["The first route is shorter, whereas the second is safer."]
+      },
+      "reference_answer": "The first route is shorter, whereas the second is safer.",
+      "incorrect_answer": "The first route is shorter, whereas the second being safer.",
+      "editorial_answer": "The first route is shorter, whereas the second is safer.",
+      "explanation": "После whereas нужна полная часть the second is safer.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое преимущество приписано живым занятиям?",
+      "public_payload": {
+        "passage": "A training provider compared two delivery methods. Recorded sessions were cheaper to repeat, whereas live sessions allowed participants to ask questions immediately. A summary described the recorded format as “better”, without stating which criterion it used. The course designer objected: lower repeat cost did not establish greater usefulness for learners who needed direct feedback. The team eventually offered recordings for revision and live meetings for discussion. The comparison had revealed complementary strengths rather than a universally superior method, and the final choice depended on the purpose of each activity.",
+        "options": [
+          {
+            "id": "v9b8a389d2737",
+            "label": "They are always cheaper to repeat."
+          },
+          {
+            "id": "v18720ba10aa1",
+            "label": "They remove any need for recordings."
+          },
+          {
+            "id": "v71bcb939fa57",
+            "label": "Participants can ask questions immediately."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v71bcb939fa57"
+      },
+      "reference_answer": "v71bcb939fa57",
+      "incorrect_answer": "v9b8a389d2737",
+      "editorial_answer": "Participants can ask questions immediately.",
+      "explanation": "Это конкретное преимущество сравниваемого формата, а не всеобщее превосходство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l508be24a2fd6",
+            "label": "whereas"
+          },
+          {
+            "id": "lc67eaadac07b",
+            "label": "criterion"
+          },
+          {
+            "id": "l10d3acf3fb64",
+            "label": "reliability"
+          },
+          {
+            "id": "l1cbe7c54ceed",
+            "label": "flexibility"
+          }
+        ],
+        "right": [
+          {
+            "id": "re6eea7054eeb",
+            "label": "надёжность"
+          },
+          {
+            "id": "r308137a1178e",
+            "label": "гибкость"
+          },
+          {
+            "id": "raa7824fde53b",
+            "label": "тогда как"
+          },
+          {
+            "id": "rd796d5e36dc5",
+            "label": "критерий"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l508be24a2fd6": "raa7824fde53b",
+          "lc67eaadac07b": "rd796d5e36dc5",
+          "l10d3acf3fb64": "re6eea7054eeb",
+          "l1cbe7c54ceed": "r308137a1178e"
+        }
+      },
+      "reference_answer": {
+        "l508be24a2fd6": "raa7824fde53b",
+        "lc67eaadac07b": "rd796d5e36dc5",
+        "l10d3acf3fb64": "re6eea7054eeb",
+        "l1cbe7c54ceed": "r308137a1178e"
+      },
+      "incorrect_answer": {
+        "l508be24a2fd6": "rd796d5e36dc5",
+        "lc67eaadac07b": "raa7824fde53b",
+        "l10d3acf3fb64": "re6eea7054eeb",
+        "l1cbe7c54ceed": "r308137a1178e"
+      },
+      "editorial_answer": "whereas — тогда как; criterion — критерий; reliability — надёжность; flexibility — гибкость",
+      "explanation": "В этих контекстах: whereas — тогда как; criterion — критерий; reliability — надёжность; flexibility — гибкость.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему слово better в кратком резюме было недостаточным?",
+      "public_payload": {
+        "passage": "A training provider compared two delivery methods. Recorded sessions were cheaper to repeat, whereas live sessions allowed participants to ask questions immediately. A summary described the recorded format as “better”, without stating which criterion it used. The course designer objected: lower repeat cost did not establish greater usefulness for learners who needed direct feedback. The team eventually offered recordings for revision and live meetings for discussion. The comparison had revealed complementary strengths rather than a universally superior method, and the final choice depended on the purpose of each activity.",
+        "options": [
+          {
+            "id": "v706bf29b3ddd",
+            "label": "Every learner had identical needs."
+          },
+          {
+            "id": "v4408c4322061",
+            "label": "It did not identify the criterion used to judge the formats."
+          },
+          {
+            "id": "vab69e4849946",
+            "label": "Recorded sessions had no possible use."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4408c4322061"
+      },
+      "reference_answer": "v4408c4322061",
+      "incorrect_answer": "vab69e4849946",
+      "editorial_answer": "It did not identify the criterion used to judge the formats.",
+      "explanation": "Без критерия нельзя превратить отдельное преимущество в общую оценку.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сопоставь два достоинства без лишнего универсального вывода.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which comparison avoids claiming that one option wins on every criterion?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v9c22e86e2041",
+            "label": "A is cheaper, so it must be best for every purpose."
+          },
+          {
+            "id": "v5a98f1e5e433",
+            "label": "B is flexible, so cost can never matter."
+          },
+          {
+            "id": "vd7d5337863fc",
+            "label": "A is cheaper, whereas B offers more flexibility."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd7d5337863fc"
+      },
+      "reference_answer": "vd7d5337863fc",
+      "incorrect_answer": "v9c22e86e2041",
+      "editorial_answer": "A is cheaper, whereas B offers more flexibility.",
+      "explanation": "Whereas сохраняет контраст, не устанавливая абсолютного победителя.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A standard used to judge alternatives is a ___.",
+        "options": [
+          {
+            "id": "v336c80a37eae",
+            "label": "receipt"
+          },
+          {
+            "id": "v944cb685768a",
+            "label": "criterion"
+          },
+          {
+            "id": "v228abe73ef36",
+            "label": "guarantee"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v944cb685768a"
+      },
+      "reference_answer": "v944cb685768a",
+      "incorrect_answer": "v228abe73ef36",
+      "editorial_answer": "criterion",
+      "explanation": "Criterion — критерий оценки, не обещание определённого результата.",
+      "key": "e09"
+    }
+  ]
+}

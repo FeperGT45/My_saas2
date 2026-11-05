@@ -1,0 +1,326 @@
+{
+  "key": "a1/be-short-answers",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 10,
+  "title": "Короткие ответы с be",
+  "description": "Короткие ответы с be: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Соотносить are you и I am в ответе",
+    "Отвечать на is/are без лишнего do"
+  ],
+  "notes": [
+    "Are you ready? — Yes, I am. Ответ меняет you на I, если отвечает один человек о себе.",
+    "Are they ready? — No, they are not. С be вспомогательное do не нужно."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/regular-plural-objects"],
+  "lexicon": [
+    {
+      "en": "ready",
+      "ru": "готовый"
+    },
+    {
+      "en": "busy",
+      "ru": "занятый"
+    },
+    {
+      "en": "hungry",
+      "ru": "голодный"
+    },
+    {
+      "en": "thirsty",
+      "ru": "испытывающий жажду"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Is your brother ready? — Yes, he ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vc71936e6a808",
+            "label": "is"
+          },
+          {
+            "id": "va9fd7c9d6d7c",
+            "label": "are"
+          },
+          {
+            "id": "va532b9f42dfa",
+            "label": "do"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc71936e6a808"
+      },
+      "reference_answer": "vc71936e6a808",
+      "incorrect_answer": "va9fd7c9d6d7c",
+      "editorial_answer": "is",
+      "explanation": "Вопрос с is о he получает ответ he is.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: are / is.",
+      "public_payload": {
+        "sentence": "Are they hungry? — No, they ___ not."
+      },
+      "answer_key": {
+        "accepted": ["are"]
+      },
+      "reference_answer": "are",
+      "incorrect_answer": "is",
+      "editorial_answer": "Are they hungry? — No, they are not.",
+      "explanation": "С they нужна форма are.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Да, мы готовы.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "are"
+          },
+          {
+            "id": "t4",
+            "label": "ready."
+          },
+          {
+            "id": "t1",
+            "label": "Yes,"
+          },
+          {
+            "id": "t2",
+            "label": "we"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4"],
+      "incorrect_answer": ["t2", "t3", "t4", "t1"],
+      "editorial_answer": "Yes, we are ready.",
+      "explanation": "We согласуется с are; do для такого ответа не требуется.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Is she busy? Yes, she do."
+      },
+      "answer_key": {
+        "accepted": ["Is she busy? Yes, she is."]
+      },
+      "reference_answer": "Is she busy? Yes, she is.",
+      "incorrect_answer": "Is she busy? Yes, she do.",
+      "editorial_answer": "Is she busy? Yes, she is.",
+      "explanation": "Короткий ответ повторяет be: she is, а не she do.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто ещё не готов?",
+      "public_payload": {
+        "passage": "Sam is ready for the trip. His friends are not ready. They are hungry, so they eat a sandwich. Sam is thirsty and drinks some water.",
+        "options": [
+          {
+            "id": "v701a9ada0e31",
+            "label": "Sam."
+          },
+          {
+            "id": "v4236556a52ae",
+            "label": "The bus driver."
+          },
+          {
+            "id": "vc1ba5732542f",
+            "label": "Sam’s friends."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc1ba5732542f"
+      },
+      "reference_answer": "vc1ba5732542f",
+      "incorrect_answer": "v701a9ada0e31",
+      "editorial_answer": "Sam’s friends.",
+      "explanation": "Его друзья are not ready; Сэм, наоборот, ready.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l79cd832132ed",
+            "label": "ready"
+          },
+          {
+            "id": "l1d4e912ff097",
+            "label": "busy"
+          },
+          {
+            "id": "l9dfca5654d7e",
+            "label": "hungry"
+          },
+          {
+            "id": "l6482aee5a9fd",
+            "label": "thirsty"
+          }
+        ],
+        "right": [
+          {
+            "id": "rfdd73630fb51",
+            "label": "голодный"
+          },
+          {
+            "id": "r05977662693c",
+            "label": "испытывающий жажду"
+          },
+          {
+            "id": "r56e683f1a391",
+            "label": "готовый"
+          },
+          {
+            "id": "r4bd14e38b43d",
+            "label": "занятый"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l79cd832132ed": "r56e683f1a391",
+          "l1d4e912ff097": "r4bd14e38b43d",
+          "l9dfca5654d7e": "rfdd73630fb51",
+          "l6482aee5a9fd": "r05977662693c"
+        }
+      },
+      "reference_answer": {
+        "l79cd832132ed": "r56e683f1a391",
+        "l1d4e912ff097": "r4bd14e38b43d",
+        "l9dfca5654d7e": "rfdd73630fb51",
+        "l6482aee5a9fd": "r05977662693c"
+      },
+      "incorrect_answer": {
+        "l79cd832132ed": "r4bd14e38b43d",
+        "l1d4e912ff097": "r56e683f1a391",
+        "l9dfca5654d7e": "rfdd73630fb51",
+        "l6482aee5a9fd": "r05977662693c"
+      },
+      "editorial_answer": "ready — готовый; busy — занятый; hungry — голодный; thirsty — испытывающий жажду",
+      "explanation": "В этих контекстах: ready — готовый; busy — занятый; hungry — голодный; thirsty — испытывающий жажду.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему друзья едят бутерброд?",
+      "public_payload": {
+        "passage": "Sam is ready for the trip. His friends are not ready. They are hungry, so they eat a sandwich. Sam is thirsty and drinks some water.",
+        "options": [
+          {
+            "id": "v27c9f7f5dab1",
+            "label": "They are thirsty like Sam."
+          },
+          {
+            "id": "v0fac79b5ac5f",
+            "label": "They are hungry."
+          },
+          {
+            "id": "v9d0c782c68d8",
+            "label": "They are late for a lesson."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0fac79b5ac5f"
+      },
+      "reference_answer": "v0fac79b5ac5f",
+      "incorrect_answer": "v9d0c782c68d8",
+      "editorial_answer": "They are hungry.",
+      "explanation": "Hungry относится к друзьям, thirsty — к Сэму.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о себе коротким ответом с be.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Are you busy?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vfd714ed5f1a6",
+            "label": "Yes, you am."
+          },
+          {
+            "id": "v414f3020dac7",
+            "label": "Yes, I do busy."
+          },
+          {
+            "id": "v1e0d7eb57d19",
+            "label": "Yes, I am."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1e0d7eb57d19"
+      },
+      "reference_answer": "v1e0d7eb57d19",
+      "incorrect_answer": "vfd714ed5f1a6",
+      "editorial_answer": "Yes, I am.",
+      "explanation": "В личном ответе you меняется на I; сохраняется am.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "I want a glass of water because I am ___.",
+        "options": [
+          {
+            "id": "vecbeba79262e",
+            "label": "early"
+          },
+          {
+            "id": "vc38447c3f275",
+            "label": "thirsty"
+          },
+          {
+            "id": "v85af2294a852",
+            "label": "closed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc38447c3f275"
+      },
+      "reference_answer": "vc38447c3f275",
+      "incorrect_answer": "v85af2294a852",
+      "editorial_answer": "thirsty",
+      "explanation": "Thirsty описывает желание пить.",
+      "key": "e09"
+    }
+  ]
+}

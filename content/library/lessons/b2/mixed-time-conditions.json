@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o3",
+            "id": "v3b76ed15992e",
             "label": "will having"
           },
           {
-            "id": "o1",
+            "id": "vb739acd27039",
             "label": "would have"
           },
           {
-            "id": "o2",
+            "id": "ve54abc274552",
             "label": "would have had yesterday"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vb739acd27039"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vb739acd27039",
+      "incorrect_answer": "ve54abc274552",
       "editorial_answer": "would have",
       "explanation": "Now требует нынешнего результата: would have the file.",
       "key": "e01"
@@ -207,24 +207,24 @@
         "passage": "A year ago, Lena turned down a place on an overseas training programme because she wanted to finish a local project. That project has now ended, and she is looking for a new position. She wonders whether accepting the training place would have given her useful contacts. She says, “If I had gone, I would know more people in that field now.” This is a possibility she imagines, not evidence that the programme would certainly have led to a job.",
         "options": [
           {
-            "id": "o1",
+            "id": "v7d840ae1237d",
             "label": "An imagined situation in the present."
           },
           {
-            "id": "o2",
+            "id": "vd64de0f2512e",
             "label": "A confirmed event before she rejected the place."
           },
           {
-            "id": "o3",
+            "id": "vdcf61eb45ca4",
             "label": "A promise about next year."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v7d840ae1237d"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v7d840ae1237d",
+      "incorrect_answer": "vd64de0f2512e",
       "editorial_answer": "An imagined situation in the present.",
       "explanation": "Now указывает на нынешнее знание людей как воображаемый результат прошлого выбора.",
       "key": "e05"
@@ -236,24 +236,24 @@
         "passage": "A year ago, Lena turned down a place on an overseas training programme because she wanted to finish a local project. That project has now ended, and she is looking for a new position. She wonders whether accepting the training place would have given her useful contacts. She says, “If I had gone, I would know more people in that field now.” This is a possibility she imagines, not evidence that the programme would certainly have led to a job.",
         "options": [
           {
-            "id": "o2",
+            "id": "vc5211c49c055",
             "label": "Lena rejected the training place a year ago."
           },
           {
-            "id": "o3",
+            "id": "v7230afe3f189",
             "label": "Her local project has ended."
           },
           {
-            "id": "o1",
+            "id": "vc234b66025bb",
             "label": "The programme would definitely have secured her a job."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vc234b66025bb"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vc234b66025bb",
+      "incorrect_answer": "vc5211c49c055",
       "editorial_answer": "The programme would definitely have secured her a job.",
       "explanation": "Текст прямо отличает возможные контакты от гарантированного трудоустройства.",
       "key": "e06"
@@ -270,24 +270,24 @@
         ],
         "options": [
           {
-            "id": "o1",
+            "id": "v26f2b2f47e15",
             "label": "Yes. If I had learnt earlier, I could drive us there now."
           },
           {
-            "id": "o2",
+            "id": "v7ed0adf28aef",
             "label": "Yes. If I learn yesterday, I can drove now."
           },
           {
-            "id": "o3",
+            "id": "v2c798e4ebb43",
             "label": "Yes. If I had learnt earlier, I drove us yesterday now."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v26f2b2f47e15"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v26f2b2f47e15",
+      "incorrect_answer": "v7ed0adf28aef",
       "editorial_answer": "Yes. If I had learnt earlier, I could drive us there now.",
       "explanation": "Had learnt и could drive now связывают прошлое условие и настоящее умение.",
       "key": "e07"
@@ -299,24 +299,24 @@
         "sentence": "The loss of the file was a ___ of not keeping a backup.",
         "options": [
           {
-            "id": "o2",
+            "id": "v4049863164be",
             "label": "precaution"
           },
           {
-            "id": "o3",
+            "id": "v60c16dba3638",
             "label": "rehearsal"
           },
           {
-            "id": "o1",
+            "id": "v21da2331d8e3",
             "label": "consequence"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v21da2331d8e3"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v21da2331d8e3",
+      "incorrect_answer": "v4049863164be",
       "editorial_answer": "consequence",
       "explanation": "Consequence — последствие; precaution — предупреждающая мера.",
       "key": "e08"

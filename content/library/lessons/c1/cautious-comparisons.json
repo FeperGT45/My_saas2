@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o1",
+            "id": "v7119e47df455",
             "label": "more"
           },
           {
-            "id": "o2",
+            "id": "vc9f45dcc8e9e",
             "label": "most"
           },
           {
-            "id": "o3",
+            "id": "v0af307cc0b70",
             "label": "much than"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v7119e47df455"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v7119e47df455",
+      "incorrect_answer": "vc9f45dcc8e9e",
       "editorial_answer": "more",
       "explanation": "Comparative more reliable сравнивает две версии и не утверждает абсолютную надёжность.",
       "key": "e01"
@@ -159,24 +159,24 @@
         "passage": "Two departments tested different invitation messages. Department A received forty replies from one hundred invitations, while department B received thirty replies from fifty. The second department therefore had a higher response rate but fewer replies in absolute terms. A manager described B’s message as “twice as effective”, overlooking both the different group sizes and the fact that the recipients had not been randomly assigned. The results could justify testing the messages more systematically, but they did not isolate wording as the cause of the difference. A clear comparison would report both the numbers and the proportions, together with the limits of the design.",
         "options": [
           {
-            "id": "o2",
+            "id": "v048765c2deb0",
             "label": "A: forty out of one hundred, or forty per cent."
           },
           {
-            "id": "o3",
+            "id": "v149d3bf6d906",
             "label": "The response rates are identical."
           },
           {
-            "id": "o1",
+            "id": "v0ae9b4ae48c7",
             "label": "B: thirty out of fifty, or sixty per cent."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v0ae9b4ae48c7"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v0ae9b4ae48c7",
+      "incorrect_answer": "v048765c2deb0",
       "editorial_answer": "B: thirty out of fifty, or sixty per cent.",
       "explanation": "B: 30/50 = 60%; A: 40/100 = 40%, хотя абсолютных ответов у A больше.",
       "key": "e05"
@@ -188,24 +188,24 @@
         "passage": "Two departments tested different invitation messages. Department A received forty replies from one hundred invitations, while department B received thirty replies from fifty. The second department therefore had a higher response rate but fewer replies in absolute terms. A manager described B’s message as “twice as effective”, overlooking both the different group sizes and the fact that the recipients had not been randomly assigned. The results could justify testing the messages more systematically, but they did not isolate wording as the cause of the difference. A clear comparison would report both the numbers and the proportions, together with the limits of the design.",
         "options": [
           {
-            "id": "o3",
+            "id": "vf3fb40e4cffd",
             "label": "The higher percentage proves that all recipients prefer B."
           },
           {
-            "id": "o1",
+            "id": "v8a5c451d02b5",
             "label": "Recipients were not randomly assigned, so other differences may matter."
           },
           {
-            "id": "o2",
+            "id": "v967c22e4c596",
             "label": "Both groups received exactly the same number of invitations."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v8a5c451d02b5"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v8a5c451d02b5",
+      "incorrect_answer": "v967c22e4c596",
       "editorial_answer": "Recipients were not randomly assigned, so other differences may matter.",
       "explanation": "Дизайн не изолирует влияние формулировки от различий групп. Кроме того, 60% — это в полтора, а не в два раза больше 40%.",
       "key": "e06"
@@ -222,24 +222,24 @@
         ],
         "options": [
           {
-            "id": "o2",
+            "id": "v8910492d97ed",
             "label": "Yes; any price reduction makes a product affordable."
           },
           {
-            "id": "o3",
+            "id": "vc3afc717030e",
             "label": "Yes; comparative adjectives always set an absolute standard."
           },
           {
-            "id": "o1",
+            "id": "v347d9a395698",
             "label": "No; the previous price may have been extremely high."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v347d9a395698"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v347d9a395698",
+      "incorrect_answer": "v8910492d97ed",
       "editorial_answer": "No; the previous price may have been extremely high.",
       "explanation": "Сравнительный ориентир сам может быть очень дорогим.",
       "key": "e07"
@@ -251,24 +251,24 @@
         "sentence": "An explicit standard against which performance is judged is a ___.",
         "options": [
           {
-            "id": "o3",
+            "id": "v2b823fde4361",
             "label": "distraction"
           },
           {
-            "id": "o1",
+            "id": "v8bc558eb188f",
             "label": "benchmark"
           },
           {
-            "id": "o2",
+            "id": "vbff55037a6f0",
             "label": "guarantee"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v8bc558eb188f"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v8bc558eb188f",
+      "incorrect_answer": "vbff55037a6f0",
       "editorial_answer": "benchmark",
       "explanation": "Benchmark — точка сравнения; он не является гарантией результата.",
       "key": "e08"

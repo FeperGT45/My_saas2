@@ -1,0 +1,338 @@
+{
+  "key": "a1/regular-plural-objects",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 9,
+  "title": "Одна коробка и две коробки",
+  "description": "Одна коробка и две коробки: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Образовывать множественное число обычных существительных",
+    "Использовать окончание -es после -x"
+  ],
+  "notes": [
+    "Обычно добавляется -s: book → books.",
+    "После -x в этих словах добавляется -es: box → boxes. Артикль a не используется с множественным числом."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/was-were-places"],
+  "lexicon": [
+    {
+      "en": "box",
+      "ru": "коробка"
+    },
+    {
+      "en": "book",
+      "ru": "книга"
+    },
+    {
+      "en": "desk",
+      "ru": "стол"
+    },
+    {
+      "en": "key",
+      "ru": "ключ"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: One box, two ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vc5f064c5944e",
+            "label": "box"
+          },
+          {
+            "id": "v2328c4c528bd",
+            "label": "boxes"
+          },
+          {
+            "id": "vb22c56150da6",
+            "label": "boxs"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2328c4c528bd"
+      },
+      "reference_answer": "v2328c4c528bd",
+      "incorrect_answer": "vb22c56150da6",
+      "editorial_answer": "boxes",
+      "explanation": "После -x добавляется -es: boxes.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: key / keys.",
+      "public_payload": {
+        "sentence": "I have two ___. One key is red and one is blue."
+      },
+      "answer_key": {
+        "accepted": ["keys"]
+      },
+      "reference_answer": "keys",
+      "incorrect_answer": "key",
+      "editorial_answer": "I have two keys. One key is red and one is blue.",
+      "explanation": "Two требует множественного числа keys.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «На столе три книги.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "three"
+          },
+          {
+            "id": "t4",
+            "label": "books"
+          },
+          {
+            "id": "t5",
+            "label": "on"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "desk."
+          },
+          {
+            "id": "t1",
+            "label": "There"
+          },
+          {
+            "id": "t2",
+            "label": "are"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "There are three books on the desk.",
+      "explanation": "Three books — множественное число, поэтому there are.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "There are two boxs by the door."
+      },
+      "answer_key": {
+        "accepted": ["There are two boxes by the door."]
+      },
+      "reference_answer": "There are two boxes by the door.",
+      "incorrect_answer": "There are two boxs by the door.",
+      "editorial_answer": "There are two boxes by the door.",
+      "explanation": "Множественное число box — boxes.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "В какой коробке книги?",
+      "public_payload": {
+        "passage": "There are two boxes by the door. One box has three books. The other box has five keys. The books are for our new classroom.",
+        "options": [
+          {
+            "id": "v7f11ab961a14",
+            "label": "In one of the two boxes."
+          },
+          {
+            "id": "v45d9bf44d136",
+            "label": "In both boxes."
+          },
+          {
+            "id": "v6a50fda5cbbf",
+            "label": "In no box."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7f11ab961a14"
+      },
+      "reference_answer": "v7f11ab961a14",
+      "incorrect_answer": "v45d9bf44d136",
+      "editorial_answer": "In one of the two boxes.",
+      "explanation": "Одна коробка содержит книги, другая — ключи.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lfad2c524e5b9",
+            "label": "box"
+          },
+          {
+            "id": "l271302f99f08",
+            "label": "book"
+          },
+          {
+            "id": "ldede34ae32cc",
+            "label": "desk"
+          },
+          {
+            "id": "l3a8cec32190f",
+            "label": "key"
+          }
+        ],
+        "right": [
+          {
+            "id": "rf52049cc1847",
+            "label": "стол"
+          },
+          {
+            "id": "r867a934f59b6",
+            "label": "ключ"
+          },
+          {
+            "id": "rf2dde18d0690",
+            "label": "коробка"
+          },
+          {
+            "id": "rcd4f6b8b41c4",
+            "label": "книга"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lfad2c524e5b9": "rf2dde18d0690",
+          "l271302f99f08": "rcd4f6b8b41c4",
+          "ldede34ae32cc": "rf52049cc1847",
+          "l3a8cec32190f": "r867a934f59b6"
+        }
+      },
+      "reference_answer": {
+        "lfad2c524e5b9": "rf2dde18d0690",
+        "l271302f99f08": "rcd4f6b8b41c4",
+        "ldede34ae32cc": "rf52049cc1847",
+        "l3a8cec32190f": "r867a934f59b6"
+      },
+      "incorrect_answer": {
+        "lfad2c524e5b9": "rcd4f6b8b41c4",
+        "l271302f99f08": "rf2dde18d0690",
+        "ldede34ae32cc": "rf52049cc1847",
+        "l3a8cec32190f": "r867a934f59b6"
+      },
+      "editorial_answer": "box — коробка; book — книга; desk — стол; key — ключ",
+      "explanation": "В этих контекстах: box — коробка; book — книга; desk — стол; key — ключ.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько ключей в другой коробке?",
+      "public_payload": {
+        "passage": "There are two boxes by the door. One box has three books. The other box has five keys. The books are for our new classroom.",
+        "options": [
+          {
+            "id": "vcc3bd61f7ab1",
+            "label": "Three."
+          },
+          {
+            "id": "v2ba464f9627c",
+            "label": "Two."
+          },
+          {
+            "id": "v0d1a8d4cce0f",
+            "label": "Five."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0d1a8d4cce0f"
+      },
+      "reference_answer": "v0d1a8d4cce0f",
+      "incorrect_answer": "vcc3bd61f7ab1",
+      "editorial_answer": "Five.",
+      "explanation": "Пять относится к keys, три — к books.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь двумя коробками, используя правильное множественное число.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How many boxes do we need?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v8f2aef3abf7a",
+            "label": "We need two boxes."
+          },
+          {
+            "id": "ve15021903167",
+            "label": "We need a two box."
+          },
+          {
+            "id": "vd02302bcae24",
+            "label": "We needs two boxs."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8f2aef3abf7a"
+      },
+      "reference_answer": "v8f2aef3abf7a",
+      "incorrect_answer": "ve15021903167",
+      "editorial_answer": "We need two boxes.",
+      "explanation": "После two используется boxes, а с we глагол need без -s.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "I use this small metal object to open the door. It is a ___.",
+        "options": [
+          {
+            "id": "v04943b63816e",
+            "label": "desk"
+          },
+          {
+            "id": "v2c88db740df5",
+            "label": "book"
+          },
+          {
+            "id": "v67a8a56c3d7b",
+            "label": "key"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v67a8a56c3d7b"
+      },
+      "reference_answer": "v67a8a56c3d7b",
+      "incorrect_answer": "v04943b63816e",
+      "editorial_answer": "key",
+      "explanation": "Key — ключ для открывания замка.",
+      "key": "e09"
+    }
+  ]
+}

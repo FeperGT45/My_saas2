@@ -1,0 +1,366 @@
+{
+  "key": "b1/going-to-evidence",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 6,
+  "title": "Намерение и заметные признаки будущего",
+  "description": "Намерение и заметные признаки будущего: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Строить be going to + глагол",
+    "Отличать план от гарантированного результата"
+  ],
+  "notes": [
+    "Be going to + инфинитив может передавать намерение или прогноз по заметным признакам.",
+    "Выбор между will и going to зависит от контекста; сам по себе ни один вариант не гарантирует результат."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/simultaneous-past"],
+  "lexicon": [
+    {
+      "en": "intend",
+      "ru": "намереваться"
+    },
+    {
+      "en": "sign",
+      "ru": "признак"
+    },
+    {
+      "en": "forecast",
+      "ru": "прогноз"
+    },
+    {
+      "en": "prepare",
+      "ru": "подготавливать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Look at those dark clouds. It ___ rain.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v4fedc401e3e4",
+            "label": "are going to"
+          },
+          {
+            "id": "v5203c4608cee",
+            "label": "is going rain"
+          },
+          {
+            "id": "veada2ed246c3",
+            "label": "is going to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "veada2ed246c3"
+      },
+      "reference_answer": "veada2ed246c3",
+      "incorrect_answer": "v4fedc401e3e4",
+      "editorial_answer": "is going to",
+      "explanation": "Для it нужна конструкция is going to rain.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: to / for.",
+      "public_payload": {
+        "sentence": "We are going ___ inspect the site tomorrow."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "We are going to inspect the site tomorrow.",
+      "explanation": "После going в этой будущей конструкции нужно to + inspect.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Они собираются ремонтировать крышу на следующей неделе.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "going"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "repair"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "roof"
+          },
+          {
+            "id": "t8",
+            "label": "next"
+          },
+          {
+            "id": "t9",
+            "label": "week."
+          },
+          {
+            "id": "t1",
+            "label": "They"
+          },
+          {
+            "id": "t2",
+            "label": "are"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "They are going to repair the roof next week.",
+      "explanation": "Be going to выражает план; это не подтверждение уже выполненного ремонта.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She going to apply for the course."
+      },
+      "answer_key": {
+        "accepted": ["She is going to apply for the course."]
+      },
+      "reference_answer": "She is going to apply for the course.",
+      "incorrect_answer": "She going to apply for the course.",
+      "editorial_answer": "She is going to apply for the course.",
+      "explanation": "Перед going to необходимо согласованное is.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что участники уже купили?",
+      "public_payload": {
+        "passage": "A community group is going to paint the old fence on Saturday. Members have bought brushes, but they have not ordered the paint yet. Dark clouds appear in the latest forecast, so the coordinator says the outdoor work may need to move to Sunday. The group’s intention is clear, but the final day still depends on the weather and supplies.",
+        "options": [
+          {
+            "id": "v1c381157dcf1",
+            "label": "A new fence."
+          },
+          {
+            "id": "vb43073af8ff0",
+            "label": "Brushes."
+          },
+          {
+            "id": "va57c704b989f",
+            "label": "All the paint."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb43073af8ff0"
+      },
+      "reference_answer": "vb43073af8ff0",
+      "incorrect_answer": "va57c704b989f",
+      "editorial_answer": "Brushes.",
+      "explanation": "Кисти куплены; краска ещё не заказана.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l0211dfc4fe9d",
+            "label": "intend"
+          },
+          {
+            "id": "l9b98fcca49b6",
+            "label": "sign"
+          },
+          {
+            "id": "lf46ee67821a7",
+            "label": "forecast"
+          },
+          {
+            "id": "ld27ec6db6c79",
+            "label": "prepare"
+          }
+        ],
+        "right": [
+          {
+            "id": "r8936b41f15f1",
+            "label": "прогноз"
+          },
+          {
+            "id": "rda26b5b5cd1b",
+            "label": "подготавливать"
+          },
+          {
+            "id": "rdb4d88066860",
+            "label": "намереваться"
+          },
+          {
+            "id": "r3f2b3f578fbb",
+            "label": "признак"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l0211dfc4fe9d": "rdb4d88066860",
+          "l9b98fcca49b6": "r3f2b3f578fbb",
+          "lf46ee67821a7": "r8936b41f15f1",
+          "ld27ec6db6c79": "rda26b5b5cd1b"
+        }
+      },
+      "reference_answer": {
+        "l0211dfc4fe9d": "rdb4d88066860",
+        "l9b98fcca49b6": "r3f2b3f578fbb",
+        "lf46ee67821a7": "r8936b41f15f1",
+        "ld27ec6db6c79": "rda26b5b5cd1b"
+      },
+      "incorrect_answer": {
+        "l0211dfc4fe9d": "r3f2b3f578fbb",
+        "l9b98fcca49b6": "rdb4d88066860",
+        "lf46ee67821a7": "r8936b41f15f1",
+        "ld27ec6db6c79": "rda26b5b5cd1b"
+      },
+      "editorial_answer": "intend — намереваться; sign — признак; forecast — прогноз; prepare — подготавливать",
+      "explanation": "В этих контекстах: intend — намереваться; sign — признак; forecast — прогноз; prepare — подготавливать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему субботний план нельзя считать гарантированным?",
+      "public_payload": {
+        "passage": "A community group is going to paint the old fence on Saturday. Members have bought brushes, but they have not ordered the paint yet. Dark clouds appear in the latest forecast, so the coordinator says the outdoor work may need to move to Sunday. The group’s intention is clear, but the final day still depends on the weather and supplies.",
+        "options": [
+          {
+            "id": "v4d35177e329e",
+            "label": "Weather and supplies may still affect it."
+          },
+          {
+            "id": "v860d883f780e",
+            "label": "No member has any intention of painting."
+          },
+          {
+            "id": "vba458509d828",
+            "label": "The work was completed last year."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4d35177e329e"
+      },
+      "reference_answer": "v4d35177e329e",
+      "incorrect_answer": "v860d883f780e",
+      "editorial_answer": "Weather and supplies may still affect it.",
+      "explanation": "Текст разделяет намерение и условия фактического выполнения.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь правильной конструкцией о намерении.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What are you going to do after the course?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v08c3d0f6dd9f",
+            "label": "I are going to applied for a placement."
+          },
+          {
+            "id": "vace412ac5f60",
+            "label": "I am going to apply for a placement."
+          },
+          {
+            "id": "v5fab32f4282d",
+            "label": "I going apply for a placement."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vace412ac5f60"
+      },
+      "reference_answer": "vace412ac5f60",
+      "incorrect_answer": "v5fab32f4282d",
+      "editorial_answer": "I am going to apply for a placement.",
+      "explanation": "I am going to apply использует am и инфинитив.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A dark cloud can be a ___ of approaching rain.",
+        "options": [
+          {
+            "id": "vca8d8122cae7",
+            "label": "sign"
+          },
+          {
+            "id": "vd3988c13dd04",
+            "label": "guarantee of every forecast"
+          },
+          {
+            "id": "v178d6cd3f82d",
+            "label": "receipt"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vca8d8122cae7"
+      },
+      "reference_answer": "vca8d8122cae7",
+      "incorrect_answer": "vd3988c13dd04",
+      "editorial_answer": "sign",
+      "explanation": "Sign — признак, который может поддерживать прогноз, не гарантируя его.",
+      "key": "e09"
+    }
+  ]
+}

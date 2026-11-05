@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o1",
+            "id": "vbd4131cd8bcc",
             "label": "It is clearly written, but its methods are insufficiently developed."
           },
           {
-            "id": "o2",
+            "id": "v6fc45498bba6",
             "label": "It is fully endorsed in both style and method."
           },
           {
-            "id": "o3",
+            "id": "ve1b28f0fcf33",
             "label": "It is unreadable and deliberately deceptive."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vbd4131cd8bcc"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vbd4131cd8bcc",
+      "incorrect_answer": "v6fc45498bba6",
       "editorial_answer": "It is clearly written, but its methods are insufficiently developed.",
       "explanation": "Нужно сохранить положительную оценку ясности и отрицательную оценку методов без приписывания обмана.",
       "key": "e01"
@@ -191,24 +191,24 @@
         "passage": "An editor asked an assistant to turn an academic review into a short description for a general audience. The reviewer had called the book lucid but methodologically thin, noting that its accessible examples were not matched by a convincing account of how the evidence had been selected. The assistant’s first version described it as an excellent introduction. That was readable, but it discarded the criticism rather than translating it. A second version called the book unreliable, which exceeded the reviewer’s narrower reservation. The final description praised the clarity and explained the concern about evidence selection in ordinary language. Simplifying the vocabulary had not required simplifying the judgement into either approval or rejection; the two dimensions of the assessment could remain distinct.",
         "options": [
           {
-            "id": "o2",
+            "id": "v61803b632d1f",
             "label": "It faithfully explained the selection of evidence."
           },
           {
-            "id": "o3",
+            "id": "v70bb0374adcf",
             "label": "It retained every dimension of the reviewer’s judgement."
           },
           {
-            "id": "o1",
+            "id": "v331725eb624b",
             "label": "It removed the methodological reservation."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v331725eb624b"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v331725eb624b",
+      "incorrect_answer": "v61803b632d1f",
       "editorial_answer": "It removed the methodological reservation.",
       "explanation": "Первая версия оставила похвалу и потеряла критику метода.",
       "key": "e05"
@@ -220,24 +220,24 @@
         "passage": "An editor asked an assistant to turn an academic review into a short description for a general audience. The reviewer had called the book lucid but methodologically thin, noting that its accessible examples were not matched by a convincing account of how the evidence had been selected. The assistant’s first version described it as an excellent introduction. That was readable, but it discarded the criticism rather than translating it. A second version called the book unreliable, which exceeded the reviewer’s narrower reservation. The final description praised the clarity and explained the concern about evidence selection in ordinary language. Simplifying the vocabulary had not required simplifying the judgement into either approval or rejection; the two dimensions of the assessment could remain distinct.",
         "options": [
           {
-            "id": "o3",
+            "id": "vbc9119b00654",
             "label": "It avoids giving readers any account of the criticism."
           },
           {
-            "id": "o1",
+            "id": "v0d0b5bfb2d85",
             "label": "It preserves both clarity and the specific concern in accessible language."
           },
           {
-            "id": "o2",
+            "id": "va502bb9573f9",
             "label": "It turns the reservation into a claim of deliberate deception."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v0d0b5bfb2d85"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v0d0b5bfb2d85",
+      "incorrect_answer": "va502bb9573f9",
       "editorial_answer": "It preserves both clarity and the specific concern in accessible language.",
       "explanation": "Смена регистра упрощает лексику, сохраняя разные измерения оценки.",
       "key": "e06"
@@ -254,24 +254,24 @@
         ],
         "options": [
           {
-            "id": "o2",
+            "id": "ve27e037c4607",
             "label": "Yes; readability permits reversing the conclusion."
           },
           {
-            "id": "o3",
+            "id": "v83473e503422",
             "label": "Yes; every caveat is merely decorative."
           },
           {
-            "id": "o1",
+            "id": "ve37f1b02d54c",
             "label": "No; explain the caveat more plainly while preserving its force."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "ve37f1b02d54c"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "ve37f1b02d54c",
+      "incorrect_answer": "ve27e037c4607",
       "editorial_answer": "No; explain the caveat more plainly while preserving its force.",
       "explanation": "Доступность формулировки не требует утраты существенной оговорки.",
       "key": "e07"
@@ -283,24 +283,24 @@
         "sentence": "A paraphrase that changes the scope or force of a claim may ___ it.",
         "options": [
           {
-            "id": "o3",
+            "id": "ve2df1cf40a0b",
             "label": "quote verbatim"
           },
           {
-            "id": "o1",
+            "id": "v177090bda759",
             "label": "distort"
           },
           {
-            "id": "o2",
+            "id": "vfa040106322e",
             "label": "corroborate automatically"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v177090bda759"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v177090bda759",
+      "incorrect_answer": "vfa040106322e",
       "editorial_answer": "distort",
       "explanation": "Distort — исказить содержание; это не независимое подтверждение и не дословная цитата.",
       "key": "e08"

@@ -1,0 +1,338 @@
+{
+  "key": "a2/street-directions",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 5,
+  "title": "Поворот и ориентир на улице",
+  "description": "Поворот и ориентир на улице: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Понимать turn left/right и go straight",
+    "Использовать opposite и next to для ориентира"
+  ],
+  "notes": [
+    "Turn left/right — поверните налево/направо; go straight — идите прямо.",
+    "Opposite — напротив, next to — рядом; эти отношения не взаимозаменяемы."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/picnic-some-any"],
+  "lexicon": [
+    {
+      "en": "left",
+      "ru": "левый, налево"
+    },
+    {
+      "en": "right",
+      "ru": "правый, направо"
+    },
+    {
+      "en": "opposite",
+      "ru": "напротив"
+    },
+    {
+      "en": "corner",
+      "ru": "угол"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The bank is across the street from the café. It is ___ the café.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v8a8a2310bb15",
+            "label": "under"
+          },
+          {
+            "id": "v2e79995f08d4",
+            "label": "opposite"
+          },
+          {
+            "id": "v617df6f4f631",
+            "label": "inside"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2e79995f08d4"
+      },
+      "reference_answer": "v2e79995f08d4",
+      "incorrect_answer": "v617df6f4f631",
+      "editorial_answer": "opposite",
+      "explanation": "Across the street from задаёт расположение напротив.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: right / left.",
+      "public_payload": {
+        "sentence": "At the corner, turn ___. Do not turn right."
+      },
+      "answer_key": {
+        "accepted": ["left"]
+      },
+      "reference_answer": "left",
+      "incorrect_answer": "right",
+      "editorial_answer": "At the corner, turn left. Do not turn right.",
+      "explanation": "Прямое противопоставление do not turn right оставляет left.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Библиотека находится рядом с банком.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "next"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "bank."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "library"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The library is next to the bank.",
+      "explanation": "Next to обозначает соседство, а не расположение через улицу.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Turn to left at the corner."
+      },
+      "answer_key": {
+        "accepted": ["Turn left at the corner."]
+      },
+      "reference_answer": "Turn left at the corner.",
+      "incorrect_answer": "Turn to left at the corner.",
+      "editorial_answer": "Turn left at the corner.",
+      "explanation": "В стандартной инструкции turn left предлог to не нужен.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где нужно повернуть направо?",
+      "public_payload": {
+        "passage": "To get to the sports centre, walk straight along Green Street. Turn right at the bank. The sports centre is on your left, opposite a small café. Do not cross the bridge; if you reach it, you have walked too far.",
+        "options": [
+          {
+            "id": "v56269dfffbbc",
+            "label": "At the bank."
+          },
+          {
+            "id": "v258a970d17c2",
+            "label": "On the bridge."
+          },
+          {
+            "id": "v3451ff33c00d",
+            "label": "Inside the café."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v56269dfffbbc"
+      },
+      "reference_answer": "v56269dfffbbc",
+      "incorrect_answer": "v258a970d17c2",
+      "editorial_answer": "At the bank.",
+      "explanation": "At the bank — указанный ориентир для поворота.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1ddc30f32841",
+            "label": "left"
+          },
+          {
+            "id": "l62a51660fabe",
+            "label": "right"
+          },
+          {
+            "id": "l93dcbb3d9c78",
+            "label": "opposite"
+          },
+          {
+            "id": "l0a2ead3d6841",
+            "label": "corner"
+          }
+        ],
+        "right": [
+          {
+            "id": "r36384d05f47f",
+            "label": "напротив"
+          },
+          {
+            "id": "r2288b2d63146",
+            "label": "угол"
+          },
+          {
+            "id": "r2fb3612e6a62",
+            "label": "левый, налево"
+          },
+          {
+            "id": "r0ac91491159b",
+            "label": "правый, направо"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1ddc30f32841": "r2fb3612e6a62",
+          "l62a51660fabe": "r0ac91491159b",
+          "l93dcbb3d9c78": "r36384d05f47f",
+          "l0a2ead3d6841": "r2288b2d63146"
+        }
+      },
+      "reference_answer": {
+        "l1ddc30f32841": "r2fb3612e6a62",
+        "l62a51660fabe": "r0ac91491159b",
+        "l93dcbb3d9c78": "r36384d05f47f",
+        "l0a2ead3d6841": "r2288b2d63146"
+      },
+      "incorrect_answer": {
+        "l1ddc30f32841": "r0ac91491159b",
+        "l62a51660fabe": "r2fb3612e6a62",
+        "l93dcbb3d9c78": "r36384d05f47f",
+        "l0a2ead3d6841": "r2288b2d63146"
+      },
+      "editorial_answer": "left — левый, налево; right — правый, направо; opposite — напротив; corner — угол",
+      "explanation": "В этих контекстах: left — левый, налево; right — правый, направо; opposite — напротив; corner — угол.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что означает достижение моста?",
+      "public_payload": {
+        "passage": "To get to the sports centre, walk straight along Green Street. Turn right at the bank. The sports centre is on your left, opposite a small café. Do not cross the bridge; if you reach it, you have walked too far.",
+        "options": [
+          {
+            "id": "vd770324deef6",
+            "label": "You are inside the sports centre."
+          },
+          {
+            "id": "v8d352e4c6464",
+            "label": "You should cross it to reach the café."
+          },
+          {
+            "id": "v4d094818e6ff",
+            "label": "You have gone too far."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4d094818e6ff"
+      },
+      "reference_answer": "v4d094818e6ff",
+      "incorrect_answer": "vd770324deef6",
+      "editorial_answer": "You have gone too far.",
+      "explanation": "Инструкция прямо запрещает пересекать мост и объясняет ошибку маршрута.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери полезную инструкцию о пути.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Excuse me, where is the post office?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v902c53f37512",
+            "label": "Go straight and turn left at the bank."
+          },
+          {
+            "id": "vbe4df4ffe8fb",
+            "label": "Go yesterday and turned left."
+          },
+          {
+            "id": "vd72069b9dc69",
+            "label": "It is made of paper."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v902c53f37512"
+      },
+      "reference_answer": "v902c53f37512",
+      "incorrect_answer": "vbe4df4ffe8fb",
+      "editorial_answer": "Go straight and turn left at the bank.",
+      "explanation": "Первый ответ содержит направления движения, а не нерелевантное описание.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Two streets meet at this ___.",
+        "options": [
+          {
+            "id": "v1787a8c40f34",
+            "label": "blanket"
+          },
+          {
+            "id": "va12bd3770d11",
+            "label": "receipt"
+          },
+          {
+            "id": "ve58224aa37c8",
+            "label": "corner"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve58224aa37c8"
+      },
+      "reference_answer": "ve58224aa37c8",
+      "incorrect_answer": "v1787a8c40f34",
+      "editorial_answer": "corner",
+      "explanation": "Corner — угол или место поворота улиц.",
+      "key": "e09"
+    }
+  ]
+}

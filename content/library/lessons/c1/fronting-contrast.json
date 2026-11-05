@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o3",
+            "id": "vcd3283ec0759",
             "label": "we could absorbed"
           },
           {
-            "id": "o1",
+            "id": "v9c981c6ab1fe",
             "label": "we could absorb"
           },
           {
-            "id": "o2",
+            "id": "ve85e65b6dcdd",
             "label": "could we absorb"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v9c981c6ab1fe"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v9c981c6ab1fe",
+      "incorrect_answer": "ve85e65b6dcdd",
       "editorial_answer": "we could absorb",
       "explanation": "При выносе объекта the financial cost сохраняется we could absorb.",
       "key": "e01"
@@ -191,24 +191,24 @@
         "passage": "A transport charity considered replacing its booking software midway through a busy season. The new system promised lower running costs, but migration would require a week without online bookings. In the board discussion, the treasurer said, “The additional training cost we could absorb; the interruption to service we could not.” This was not a rejection of the software’s long-term value. It distinguished a manageable expense from a short-term constraint that conflicted with the charity’s obligations. The board postponed migration until winter, when telephone demand was lower. Its minutes recorded a decision about timing and feasibility, rather than a conclusion that the proposed system was intrinsically unsuitable.",
         "options": [
           {
-            "id": "o1",
+            "id": "vd732d1ed777a",
             "label": "It separates an affordable cost from an unacceptable interruption."
           },
           {
-            "id": "o2",
+            "id": "v64b2e69b5170",
             "label": "It claims that all costs and delays are equally manageable."
           },
           {
-            "id": "o3",
+            "id": "vcd1f3ea0c55a",
             "label": "It reverses the charity’s obligation to provide a service."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vd732d1ed777a"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vd732d1ed777a",
+      "incorrect_answer": "v64b2e69b5170",
       "editorial_answer": "It separates an affordable cost from an unacceptable interruption.",
       "explanation": "Вынос training cost и interruption подчёркивает разные оценки этих факторов.",
       "key": "e05"
@@ -220,24 +220,24 @@
         "passage": "A transport charity considered replacing its booking software midway through a busy season. The new system promised lower running costs, but migration would require a week without online bookings. In the board discussion, the treasurer said, “The additional training cost we could absorb; the interruption to service we could not.” This was not a rejection of the software’s long-term value. It distinguished a manageable expense from a short-term constraint that conflicted with the charity’s obligations. The board postponed migration until winter, when telephone demand was lower. Its minutes recorded a decision about timing and feasibility, rather than a conclusion that the proposed system was intrinsically unsuitable.",
         "options": [
           {
-            "id": "o2",
+            "id": "v021ea3aad265",
             "label": "It was judged intrinsically unsuitable in every season."
           },
           {
-            "id": "o3",
+            "id": "v14302dc2940e",
             "label": "It was installed immediately without interruption."
           },
           {
-            "id": "o1",
+            "id": "v1b2c27f958e8",
             "label": "Its long-term value was not rejected; migration was postponed."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v1b2c27f958e8"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v1b2c27f958e8",
+      "incorrect_answer": "v021ea3aad265",
       "editorial_answer": "Its long-term value was not rejected; migration was postponed.",
       "explanation": "Решение касалось сроков и осуществимости перехода, а не полного отказа.",
       "key": "e06"
@@ -254,24 +254,24 @@
         ],
         "options": [
           {
-            "id": "o1",
+            "id": "vdcc24c064583",
             "label": "No; it accepts the proposal while challenging the timetable."
           },
           {
-            "id": "o2",
+            "id": "v5ea09e5c2f55",
             "label": "Yes; both parts must express rejection."
           },
           {
-            "id": "o3",
+            "id": "v7600e5dc3c27",
             "label": "No; it guarantees approval of every later revision."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vdcc24c064583"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vdcc24c064583",
+      "incorrect_answer": "v5ea09e5c2f55",
       "editorial_answer": "No; it accepts the proposal while challenging the timetable.",
       "explanation": "Welcomed и questioned имеют разные объекты; общее одобрение всех будущих изменений не следует.",
       "key": "e07"
@@ -283,24 +283,24 @@
         "sentence": "Balancing lower cost against a slower service involves a ___.",
         "options": [
           {
-            "id": "o2",
+            "id": "vfd19ab9123fd",
             "label": "guarantee"
           },
           {
-            "id": "o3",
+            "id": "v5341fa589733",
             "label": "typographical error"
           },
           {
-            "id": "o1",
+            "id": "v2fcf80652e14",
             "label": "trade-off"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v2fcf80652e14"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v2fcf80652e14",
+      "incorrect_answer": "vfd19ab9123fd",
       "editorial_answer": "trade-off",
       "explanation": "Trade-off — выбор между конкурирующими преимуществами и недостатками.",
       "key": "e08"

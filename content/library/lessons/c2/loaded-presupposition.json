@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o2",
+            "id": "v5b75344d9d9b",
             "label": "only that the office has an address"
           },
           {
-            "id": "o3",
+            "id": "v4c5b68f620ac",
             "label": "that every complaint has been independently resolved"
           },
           {
-            "id": "o1",
+            "id": "v03c219f46b22",
             "label": "that the office had been ignoring complaints"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v03c219f46b22"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v03c219f46b22",
+      "incorrect_answer": "v5b75344d9d9b",
       "editorial_answer": "that the office had been ignoring complaints",
       "explanation": "Форма stop ignoring содержит допущение о прежнем игнорировании.",
       "key": "e01"
@@ -159,24 +159,24 @@
         "passage": "At a public meeting, a resident asked when the housing office had stopped ignoring repair requests. The chair initially invited the office manager to give a date. The manager instead challenged the question’s premise: requests had been recorded, she said, though some repairs had been delayed. That reply did not establish that the service had been adequate, and it did not erase the delays. It separated a claim about ignoring requests from a claim about completing repairs slowly. The chair then asked what records showed about response times and outstanding work. This reformulation made the issue investigable without requiring either party to accept a disputed characterisation simply in order to answer. The original dissatisfaction remained a legitimate subject of scrutiny.",
         "options": [
           {
-            "id": "o3",
+            "id": "v204ba3a705d9",
             "label": "It proves that all repairs were completed promptly."
           },
           {
-            "id": "o1",
+            "id": "v53eb75c4247a",
             "label": "It accepts the disputed assumption that requests had been ignored."
           },
           {
-            "id": "o2",
+            "id": "v22e3a4321be0",
             "label": "Dates can never be relevant to public services."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v53eb75c4247a"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v53eb75c4247a",
+      "incorrect_answer": "v22e3a4321be0",
       "editorial_answer": "It accepts the disputed assumption that requests had been ignored.",
       "explanation": "Ответ датой молчаливо принимает встроенную предпосылку вопроса.",
       "key": "e05"
@@ -188,24 +188,24 @@
         "passage": "At a public meeting, a resident asked when the housing office had stopped ignoring repair requests. The chair initially invited the office manager to give a date. The manager instead challenged the question’s premise: requests had been recorded, she said, though some repairs had been delayed. That reply did not establish that the service had been adequate, and it did not erase the delays. It separated a claim about ignoring requests from a claim about completing repairs slowly. The chair then asked what records showed about response times and outstanding work. This reformulation made the issue investigable without requiring either party to accept a disputed characterisation simply in order to answer. The original dissatisfaction remained a legitimate subject of scrutiny.",
         "options": [
           {
-            "id": "o1",
+            "id": "v391788e6c5d6",
             "label": "That the overall service had been adequate."
           },
           {
-            "id": "o2",
+            "id": "v0519b1147192",
             "label": "That she distinguishes recording requests from repair delays."
           },
           {
-            "id": "o3",
+            "id": "v10d4b502b79a",
             "label": "That the delays remain open to scrutiny."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v391788e6c5d6"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v391788e6c5d6",
+      "incorrect_answer": "v0519b1147192",
       "editorial_answer": "That the overall service had been adequate.",
       "explanation": "Оспаривание слова ignoring не устанавливает высокое качество всей работы.",
       "key": "e06"
@@ -222,24 +222,24 @@
         ],
         "options": [
           {
-            "id": "o3",
+            "id": "ve933b5a40792",
             "label": "Treat the question’s wording as conclusive evidence."
           },
           {
-            "id": "o1",
+            "id": "vaaf0b231ea73",
             "label": "Identify the assumption and ask for a formulation that does not take it for granted."
           },
           {
-            "id": "o2",
+            "id": "v0f18c3dcae08",
             "label": "Invent a date so that the question appears answered."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vaaf0b231ea73"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vaaf0b231ea73",
+      "incorrect_answer": "v0f18c3dcae08",
       "editorial_answer": "Identify the assumption and ask for a formulation that does not take it for granted.",
       "explanation": "Уточнение предпосылки сохраняет возможность проверки фактов.",
       "key": "e07"
@@ -251,24 +251,24 @@
         "sentence": "To dispute an assumption explicitly is to ___ it.",
         "options": [
           {
-            "id": "o1",
+            "id": "v62b92f448b95",
             "label": "challenge"
           },
           {
-            "id": "o2",
+            "id": "v7c6e52a1f60c",
             "label": "certify"
           },
           {
-            "id": "o3",
+            "id": "v0c076e03ca60",
             "label": "quietly endorse"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v62b92f448b95"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v62b92f448b95",
+      "incorrect_answer": "v7c6e52a1f60c",
       "editorial_answer": "challenge",
       "explanation": "Challenge означает оспорить, а не подтвердить или молча принять.",
       "key": "e08"

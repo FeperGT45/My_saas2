@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o3",
+            "id": "v0e947d2d65f8",
             "label": "whether any appendix existed"
           },
           {
-            "id": "o1",
+            "id": "v418d9b5a27da",
             "label": "who received the appendix"
           },
           {
-            "id": "o2",
+            "id": "vc14ddd17f4f9",
             "label": "which document the reviewers received"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v418d9b5a27da"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v418d9b5a27da",
+      "incorrect_answer": "vc14ddd17f4f9",
       "editorial_answer": "who received the appendix",
       "explanation": "Only перед the external reviewers ограничивает получателей, не набор полученных документов.",
       "key": "e01"
@@ -157,24 +157,24 @@
         "passage": "The editor’s message stated that only the external reviewers had received the confidential appendix. In a later account, this became “The reviewers received only the appendix”, which suggested that they had seen none of the main report. The original message made no such claim. Its restriction concerned recipients, not the set of documents supplied to those recipients. A second misunderstanding arose when the editor said that disagreement did not necessarily entail rejection: one participant paraphrased this as “Disagreement never means rejection”. Both errors replaced a limited statement with a different logical commitment. Clarifying the position of only and the force of necessarily restored the intended boundaries without resolving the substantive dispute about whether the report itself was persuasive.",
         "options": [
           {
-            "id": "o1",
+            "id": "v0017c20cca5f",
             "label": "The reviewers received no part of the main report."
           },
           {
-            "id": "o2",
+            "id": "v30afbc08e2a1",
             "label": "The confidential appendix was received by external reviewers."
           },
           {
-            "id": "o3",
+            "id": "v62c17f641cab",
             "label": "The editor restricted the stated recipients of the appendix."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v0017c20cca5f"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v0017c20cca5f",
+      "incorrect_answer": "v30afbc08e2a1",
       "editorial_answer": "The reviewers received no part of the main report.",
       "explanation": "Only ограничивало круг получателей, а не все полученные ими документы.",
       "key": "e05"
@@ -186,24 +186,24 @@
         "passage": "The editor’s message stated that only the external reviewers had received the confidential appendix. In a later account, this became “The reviewers received only the appendix”, which suggested that they had seen none of the main report. The original message made no such claim. Its restriction concerned recipients, not the set of documents supplied to those recipients. A second misunderstanding arose when the editor said that disagreement did not necessarily entail rejection: one participant paraphrased this as “Disagreement never means rejection”. Both errors replaced a limited statement with a different logical commitment. Clarifying the position of only and the force of necessarily restored the intended boundaries without resolving the substantive dispute about whether the report itself was persuasive.",
         "options": [
           {
-            "id": "o2",
+            "id": "v801a1ec97d2d",
             "label": "The two expressions are exact logical equivalents."
           },
           {
-            "id": "o3",
+            "id": "vd92a4164e99a",
             "label": "It merely changes the tense without changing meaning."
           },
           {
-            "id": "o1",
+            "id": "v3420ed0826e4",
             "label": "It replaces denial of necessity with a universal exclusion."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v3420ed0826e4"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v3420ed0826e4",
+      "incorrect_answer": "v801a1ec97d2d",
       "editorial_answer": "It replaces denial of necessity with a universal exclusion.",
       "explanation": "Not necessarily допускает разные случаи, never исключает связь во всех случаях.",
       "key": "e06"
@@ -220,24 +220,24 @@
         ],
         "options": [
           {
-            "id": "o1",
+            "id": "v25876cefc7d0",
             "label": "No; it rejects a necessary falsity judgement without establishing truth."
           },
           {
-            "id": "o2",
+            "id": "v6fb186f14b1f",
             "label": "Yes; it always means conclusively true."
           },
           {
-            "id": "o3",
+            "id": "v0423af6382d9",
             "label": "Yes; uncertainty logically guarantees correctness."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v25876cefc7d0"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v25876cefc7d0",
+      "incorrect_answer": "v6fb186f14b1f",
       "editorial_answer": "No; it rejects a necessary falsity judgement without establishing truth.",
       "explanation": "Ограничение отрицательного вывода само по себе не доказывает противоположный.",
       "key": "e07"
@@ -249,24 +249,24 @@
         "sentence": "If a conclusion follows as a logical consequence, the premises ___ it.",
         "options": [
           {
-            "id": "o2",
+            "id": "v71b0a11911fe",
             "label": "merely resemble"
           },
           {
-            "id": "o3",
+            "id": "vc51dfed45a94",
             "label": "postpone"
           },
           {
-            "id": "o1",
+            "id": "vf050b98f38d3",
             "label": "entail"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vf050b98f38d3"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vf050b98f38d3",
+      "incorrect_answer": "v71b0a11911fe",
       "editorial_answer": "entail",
       "explanation": "Entail описывает логическое следование, а не внешнее сходство.",
       "key": "e08"

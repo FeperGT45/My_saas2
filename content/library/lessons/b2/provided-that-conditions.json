@@ -1,0 +1,392 @@
+{
+  "key": "b2/provided-that-conditions",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 9,
+  "title": "Согласие при определённом условии",
+  "description": "Согласие при определённом условии: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Выражать необходимое условие через provided that",
+    "Не принимать условное разрешение за безусловное"
+  ],
+  "notes": [
+    "Provided that означает «при условии, что»: You may use it provided that you return it.",
+    "Для реального будущего условия обычно нужна настоящая форма, а не will: provided that it arrives on time."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/emphatic-do"],
+  "lexicon": [
+    {
+      "en": "condition",
+      "ru": "условие"
+    },
+    {
+      "en": "permission",
+      "ru": "разрешение"
+    },
+    {
+      "en": "comply",
+      "ru": "соблюдать требования"
+    },
+    {
+      "en": "restriction",
+      "ru": "ограничение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: You may borrow the equipment provided that you ___ it by Friday.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v0e71d79bf3c1",
+            "label": "returned yesterday"
+          },
+          {
+            "id": "va57af31425f7",
+            "label": "return"
+          },
+          {
+            "id": "v7f961ca20093",
+            "label": "will returning"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va57af31425f7"
+      },
+      "reference_answer": "va57af31425f7",
+      "incorrect_answer": "v7f961ca20093",
+      "editorial_answer": "return",
+      "explanation": "В таком будущем условии используется return.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: despite / provided.",
+      "public_payload": {
+        "sentence": "The booking is valid ___ that payment arrives by noon."
+      },
+      "answer_key": {
+        "accepted": ["provided"]
+      },
+      "reference_answer": "provided",
+      "incorrect_answer": "despite",
+      "editorial_answer": "The booking is valid provided that payment arrives by noon.",
+      "explanation": "Provided that вводит условие действительности бронирования.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Комнатой можно пользоваться при условии соблюдения правил безопасности.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "available"
+          },
+          {
+            "id": "t5",
+            "label": "provided"
+          },
+          {
+            "id": "t6",
+            "label": "that"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "safety"
+          },
+          {
+            "id": "t9",
+            "label": "rules"
+          },
+          {
+            "id": "t10",
+            "label": "are"
+          },
+          {
+            "id": "t11",
+            "label": "followed."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "room"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11"
+        ]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11",
+        "t1"
+      ],
+      "editorial_answer": "The room is available provided that the safety rules are followed.",
+      "explanation": "Разрешение зависит от выполнения названного условия.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "We can proceed provided that everyone will follows the instructions."
+      },
+      "answer_key": {
+        "accepted": [
+          "We can proceed provided that everyone follows the instructions."
+        ]
+      },
+      "reference_answer": "We can proceed provided that everyone follows the instructions.",
+      "incorrect_answer": "We can proceed provided that everyone will follows the instructions.",
+      "editorial_answer": "We can proceed provided that everyone follows the instructions.",
+      "explanation": "Для реального будущего условия используется follows без will.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какие условия сопровождали разрешение?",
+      "public_payload": {
+        "passage": "A community centre allowed a film club to use its hall provided that members left the exits clear and finished by ten. The club’s first announcement simply said that the hall had been approved, omitting the conditions. A volunteer noticed the omission before tickets were offered. The revised announcement included the finishing time and explained that chairs could not be placed in front of the side doors. Permission remained available, but it depended on compliance with those requirements rather than on the club’s enthusiasm alone.",
+        "options": [
+          {
+            "id": "v3c07c15d153c",
+            "label": "Clear exits and a finish by ten."
+          },
+          {
+            "id": "vf8cb959afbb5",
+            "label": "Unlimited seating and an unrestricted finishing time."
+          },
+          {
+            "id": "v97bc7a5bb9cc",
+            "label": "A requirement to close every exit."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3c07c15d153c"
+      },
+      "reference_answer": "v3c07c15d153c",
+      "incorrect_answer": "vf8cb959afbb5",
+      "editorial_answer": "Clear exits and a finish by ten.",
+      "explanation": "Оба условия названы после provided that в первом предложении.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "la713389e6bd6",
+            "label": "condition"
+          },
+          {
+            "id": "l5f8768ff1c86",
+            "label": "permission"
+          },
+          {
+            "id": "l4951b6f08ab9",
+            "label": "comply"
+          },
+          {
+            "id": "lc82f8d4f64a3",
+            "label": "restriction"
+          }
+        ],
+        "right": [
+          {
+            "id": "r52352a0d9997",
+            "label": "соблюдать требования"
+          },
+          {
+            "id": "r88d434eb877b",
+            "label": "ограничение"
+          },
+          {
+            "id": "r1dbb7c75a508",
+            "label": "условие"
+          },
+          {
+            "id": "r0a330623642c",
+            "label": "разрешение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "la713389e6bd6": "r1dbb7c75a508",
+          "l5f8768ff1c86": "r0a330623642c",
+          "l4951b6f08ab9": "r52352a0d9997",
+          "lc82f8d4f64a3": "r88d434eb877b"
+        }
+      },
+      "reference_answer": {
+        "la713389e6bd6": "r1dbb7c75a508",
+        "l5f8768ff1c86": "r0a330623642c",
+        "l4951b6f08ab9": "r52352a0d9997",
+        "lc82f8d4f64a3": "r88d434eb877b"
+      },
+      "incorrect_answer": {
+        "la713389e6bd6": "r0a330623642c",
+        "l5f8768ff1c86": "r1dbb7c75a508",
+        "l4951b6f08ab9": "r52352a0d9997",
+        "lc82f8d4f64a3": "r88d434eb877b"
+      },
+      "editorial_answer": "condition — условие; permission — разрешение; comply — соблюдать требования; restriction — ограничение",
+      "explanation": "В этих контекстах: condition — условие; permission — разрешение; comply — соблюдать требования; restriction — ограничение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему объявление исправили?",
+      "public_payload": {
+        "passage": "A community centre allowed a film club to use its hall provided that members left the exits clear and finished by ten. The club’s first announcement simply said that the hall had been approved, omitting the conditions. A volunteer noticed the omission before tickets were offered. The revised announcement included the finishing time and explained that chairs could not be placed in front of the side doors. Permission remained available, but it depended on compliance with those requirements rather than on the club’s enthusiasm alone.",
+        "options": [
+          {
+            "id": "v7cfa0af1014c",
+            "label": "The centre had withdrawn all permission permanently."
+          },
+          {
+            "id": "v6aa8e60f7a6e",
+            "label": "Every volunteer refused to help."
+          },
+          {
+            "id": "v8154cacfd155",
+            "label": "It had omitted conditions attached to permission."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8154cacfd155"
+      },
+      "reference_answer": "v8154cacfd155",
+      "incorrect_answer": "v7cfa0af1014c",
+      "editorial_answer": "It had omitted conditions attached to permission.",
+      "explanation": "Разрешение не отменили; восстановили существенные условия его действия.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Разреши использование с понятным условием возврата.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "May we borrow the projector?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v609cdf6b497c",
+            "label": "Yes, provided that it is returned before Friday’s class."
+          },
+          {
+            "id": "v619d5676e034",
+            "label": "Yes, provided that it will returned before Friday’s class."
+          },
+          {
+            "id": "v4f51910fc5f2",
+            "label": "Yes, despite that it returning before Friday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v609cdf6b497c"
+      },
+      "reference_answer": "v609cdf6b497c",
+      "incorrect_answer": "v619d5676e034",
+      "editorial_answer": "Yes, provided that it is returned before Friday’s class.",
+      "explanation": "Provided that + настоящее пассивное is returned выражает будущее условие.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To act in accordance with stated requirements is to ___ with them.",
+        "options": [
+          {
+            "id": "vb91920c8678e",
+            "label": "compete"
+          },
+          {
+            "id": "v66726c20c711",
+            "label": "conclude"
+          },
+          {
+            "id": "v628fce356100",
+            "label": "comply"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v628fce356100"
+      },
+      "reference_answer": "v628fce356100",
+      "incorrect_answer": "vb91920c8678e",
+      "editorial_answer": "comply",
+      "explanation": "Comply with означает соблюдать требования.",
+      "key": "e09"
+    }
+  ]
+}

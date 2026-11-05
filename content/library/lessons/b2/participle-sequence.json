@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o2",
+            "id": "v01e9634e1d93",
             "label": "Have checking"
           },
           {
-            "id": "o3",
+            "id": "v9027146cd987",
             "label": "Had checks"
           },
           {
-            "id": "o1",
+            "id": "v752ca41067f4",
             "label": "Having checked"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v752ca41067f4"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v752ca41067f4",
+      "incorrect_answer": "v01e9634e1d93",
       "editorial_answer": "Having checked",
       "explanation": "Having checked обозначает проверку, завершённую до отправки.",
       "key": "e01"
@@ -183,24 +183,24 @@
         "passage": "A volunteer group prepared a grant application for a community garden. Having collected residents’ suggestions, the coordinator revised the original budget. She removed a decorative gate and added more accessible planting beds. The group then submitted the application. Receiving acknowledgement of the application did not mean that funding had been approved: the committee would assess all proposals the following month. The coordinator told residents that preparations were complete, while the decision about money remained outside the group’s control.",
         "options": [
           {
-            "id": "o3",
+            "id": "v1b39923aa1d6",
             "label": "She stopped the application before submission."
           },
           {
-            "id": "o1",
+            "id": "v2f5680df8060",
             "label": "She revised the budget."
           },
           {
-            "id": "o2",
+            "id": "v271a83ed8dc9",
             "label": "She announced that funding was guaranteed."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v2f5680df8060"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v2f5680df8060",
+      "incorrect_answer": "v271a83ed8dc9",
       "editorial_answer": "She revised the budget.",
       "explanation": "Having collected ... задаёт предшествующее действие перед пересмотром бюджета.",
       "key": "e05"
@@ -212,24 +212,24 @@
         "passage": "A volunteer group prepared a grant application for a community garden. Having collected residents’ suggestions, the coordinator revised the original budget. She removed a decorative gate and added more accessible planting beds. The group then submitted the application. Receiving acknowledgement of the application did not mean that funding had been approved: the committee would assess all proposals the following month. The coordinator told residents that preparations were complete, while the decision about money remained outside the group’s control.",
         "options": [
           {
-            "id": "o1",
+            "id": "v9a22d85efa48",
             "label": "Only that the application had been received."
           },
           {
-            "id": "o2",
+            "id": "vc9e3fb3c890b",
             "label": "That the project had won funding."
           },
           {
-            "id": "o3",
+            "id": "v1e6466cb3a39",
             "label": "That no other proposals would be considered."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v9a22d85efa48"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v9a22d85efa48",
+      "incorrect_answer": "vc9e3fb3c890b",
       "editorial_answer": "Only that the application had been received.",
       "explanation": "Acknowledgement отличается от approval; решение будет позже.",
       "key": "e06"
@@ -246,24 +246,24 @@
         ],
         "options": [
           {
-            "id": "o3",
+            "id": "v6d1ac15c8a40",
             "label": "Having read the proposal, the deadline expired."
           },
           {
-            "id": "o1",
+            "id": "vec4edbf5b1b1",
             "label": "Having read the proposal, Omar signed it."
           },
           {
-            "id": "o2",
+            "id": "v23d6cee18995",
             "label": "Having read the proposal, the signature was added."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vec4edbf5b1b1"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vec4edbf5b1b1",
+      "incorrect_answer": "v23d6cee18995",
       "editorial_answer": "Having read the proposal, Omar signed it.",
       "explanation": "В первом варианте читает и подписывает Omar; в остальных подлежащие не могут читать.",
       "key": "e07"
@@ -275,24 +275,24 @@
         "sentence": "The committee’s formal agreement to the plan would be its ___.",
         "options": [
           {
-            "id": "o1",
+            "id": "vf01750af7413",
             "label": "approval"
           },
           {
-            "id": "o2",
+            "id": "v32d47bbc0fe9",
             "label": "acknowledgement of receipt"
           },
           {
-            "id": "o3",
+            "id": "ve86f176923e8",
             "label": "revision"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vf01750af7413"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vf01750af7413",
+      "incorrect_answer": "v32d47bbc0fe9",
       "editorial_answer": "approval",
       "explanation": "Approval означает одобрение; уведомление о получении его не заменяет.",
       "key": "e08"

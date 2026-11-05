@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o2",
+            "id": "v69c4682eabe5",
             "label": "will rain"
           },
           {
-            "id": "o3",
+            "id": "vea9a63d44d22",
             "label": "would raining"
           },
           {
-            "id": "o1",
+            "id": "v2b22e0e99ac5",
             "label": "rains"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v2b22e0e99ac5"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v2b22e0e99ac5",
+      "incorrect_answer": "v69c4682eabe5",
       "editorial_answer": "rains",
       "explanation": "После unless для будущего условия используется rains.",
       "key": "e01"
@@ -183,24 +183,24 @@
         "passage": "A walking group planned a trip to a lake. The forecast mentioned strong winds, but no rain. The organiser said that they would go unless the wind became dangerous. Everyone was asked to bring warm clothes and water. On the morning of the trip, conditions were calm. The group went ahead with the walk and checked the forecast again before leaving the village.",
         "options": [
           {
-            "id": "o3",
+            "id": "v683e4e6ff4de",
             "label": "If the forecast mentioned no rain."
           },
           {
-            "id": "o1",
+            "id": "v3beb23b2fe11",
             "label": "If the wind became dangerous."
           },
           {
-            "id": "o2",
+            "id": "vf425e0fa5df6",
             "label": "If anyone brought warm clothes."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v3beb23b2fe11"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v3beb23b2fe11",
+      "incorrect_answer": "vf425e0fa5df6",
       "editorial_answer": "If the wind became dangerous.",
       "explanation": "Unless вводит опасный ветер как исключение из плана поездки.",
       "key": "e05"
@@ -212,24 +212,24 @@
         "passage": "A walking group planned a trip to a lake. The forecast mentioned strong winds, but no rain. The organiser said that they would go unless the wind became dangerous. Everyone was asked to bring warm clothes and water. On the morning of the trip, conditions were calm. The group went ahead with the walk and checked the forecast again before leaving the village.",
         "options": [
           {
-            "id": "o1",
+            "id": "vcf4f0f6e07c9",
             "label": "Conditions were calm."
           },
           {
-            "id": "o2",
+            "id": "vd557f212cf27",
             "label": "Dangerous winds had already started."
           },
           {
-            "id": "o3",
+            "id": "v7b4a7b311537",
             "label": "It was snowing heavily."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vcf4f0f6e07c9"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vcf4f0f6e07c9",
+      "incorrect_answer": "vd557f212cf27",
       "editorial_answer": "Conditions were calm.",
       "explanation": "Calm прямо описывает утренние условия; сильный ветер был лишь риском.",
       "key": "e06"
@@ -246,24 +246,24 @@
         ],
         "options": [
           {
-            "id": "o3",
+            "id": "v117544addeb3",
             "label": "Yes, unless the teacher cancelling it."
           },
           {
-            "id": "o1",
+            "id": "v46231332bf83",
             "label": "Yes, unless the teacher cancels it."
           },
           {
-            "id": "o2",
+            "id": "v8bf233908959",
             "label": "Yes, unless the teacher will cancels it."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v46231332bf83"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v46231332bf83",
+      "incorrect_answer": "v8bf233908959",
       "editorial_answer": "Yes, unless the teacher cancels it.",
       "explanation": "После unless в таком условии нужна форма cancels.",
       "key": "e07"
@@ -275,24 +275,24 @@
         "sentence": "We waited under a roof to stay dry. We found ___ from the rain.",
         "options": [
           {
-            "id": "o1",
+            "id": "vdd39bd58fb6c",
             "label": "shelter"
           },
           {
-            "id": "o2",
+            "id": "vaa87baf05a3f",
             "label": "forecast"
           },
           {
-            "id": "o3",
+            "id": "vba22190b0d57",
             "label": "equipment"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vdd39bd58fb6c"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vdd39bd58fb6c",
+      "incorrect_answer": "vaa87baf05a3f",
       "editorial_answer": "shelter",
       "explanation": "Shelter означает защиту или укрытие от непогоды.",
       "key": "e08"

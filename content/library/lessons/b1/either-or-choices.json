@@ -1,0 +1,372 @@
+{
+  "key": "b1/either-or-choices",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 8,
+  "title": "Один из двух вариантов",
+  "description": "Один из двух вариантов: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Предлагать альтернативы через either ... or",
+    "Выражать исключение двух вариантов через neither ... nor"
+  ],
+  "notes": [
+    "Either A or B предлагает одну из двух альтернатив.",
+    "Neither A nor B отрицает оба варианта; в заданиях ниже два подлежащих в единственном числе согласуются с is."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/past-passive-event"],
+  "lexicon": [
+    {
+      "en": "alternative",
+      "ru": "альтернативный вариант"
+    },
+    {
+      "en": "option",
+      "ru": "вариант"
+    },
+    {
+      "en": "available",
+      "ru": "доступный"
+    },
+    {
+      "en": "suitable",
+      "ru": "подходящий"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Both rooms are booked. ___ the blue room nor the green room is available.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v2f29ed0f69b6",
+            "label": "Neither"
+          },
+          {
+            "id": "ve1dcdcf40539",
+            "label": "Either"
+          },
+          {
+            "id": "v990a59182426",
+            "label": "Both"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2f29ed0f69b6"
+      },
+      "reference_answer": "v2f29ed0f69b6",
+      "incorrect_answer": "ve1dcdcf40539",
+      "editorial_answer": "Neither",
+      "explanation": "Nor в паре и недоступность обеих комнат требуют Neither.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: or / nor.",
+      "public_payload": {
+        "sentence": "We can meet either on Tuesday ___ on Thursday."
+      },
+      "answer_key": {
+        "accepted": ["or"]
+      },
+      "reference_answer": "or",
+      "incorrect_answer": "nor",
+      "editorial_answer": "We can meet either on Tuesday or on Thursday.",
+      "explanation": "Either образует пару с or.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Ни синяя, ни зелёная комната не доступна.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "blue"
+          },
+          {
+            "id": "t4",
+            "label": "room"
+          },
+          {
+            "id": "t5",
+            "label": "nor"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "green"
+          },
+          {
+            "id": "t8",
+            "label": "room"
+          },
+          {
+            "id": "t9",
+            "label": "is"
+          },
+          {
+            "id": "t10",
+            "label": "available."
+          },
+          {
+            "id": "t1",
+            "label": "Neither"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "Neither the blue room nor the green room is available.",
+      "explanation": "Neither ... nor отрицает обе альтернативы; комнаты названы в единственном числе.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "We can use either the library nor the meeting room."
+      },
+      "answer_key": {
+        "accepted": ["We can use either the library or the meeting room."]
+      },
+      "reference_answer": "We can use either the library or the meeting room.",
+      "incorrect_answer": "We can use either the library nor the meeting room.",
+      "editorial_answer": "We can use either the library or the meeting room.",
+      "explanation": "После either нужен or; nor используется с neither.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какие варианты предложили вместо среды?",
+      "public_payload": {
+        "passage": "The language club wanted to meet on Wednesday. Neither the library nor the meeting room was available that evening. The coordinator offered two alternatives: Tuesday in the library or Thursday in the meeting room. Members chose Thursday because more people could attend. The decision concerned this week only; the usual Wednesday time was not permanently changed.",
+        "options": [
+          {
+            "id": "vf6b71ed53668",
+            "label": "Wednesday in either room."
+          },
+          {
+            "id": "v3c6a43064a5c",
+            "label": "Every evening in both rooms."
+          },
+          {
+            "id": "v0afb431d4319",
+            "label": "Tuesday in the library or Thursday in the meeting room."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0afb431d4319"
+      },
+      "reference_answer": "v0afb431d4319",
+      "incorrect_answer": "vf6b71ed53668",
+      "editorial_answer": "Tuesday in the library or Thursday in the meeting room.",
+      "explanation": "Оба предложенных сочетания дня и места названы явно.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l0d3b3483d72a",
+            "label": "alternative"
+          },
+          {
+            "id": "l2bd743626ba4",
+            "label": "option"
+          },
+          {
+            "id": "lb7b5b3921bbd",
+            "label": "available"
+          },
+          {
+            "id": "l4a690a40f833",
+            "label": "suitable"
+          }
+        ],
+        "right": [
+          {
+            "id": "r34186dbac40c",
+            "label": "доступный"
+          },
+          {
+            "id": "r460b367bdc28",
+            "label": "подходящий"
+          },
+          {
+            "id": "rc7d42feeece7",
+            "label": "альтернативный вариант"
+          },
+          {
+            "id": "rd513f3503f47",
+            "label": "вариант"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l0d3b3483d72a": "rc7d42feeece7",
+          "l2bd743626ba4": "rd513f3503f47",
+          "lb7b5b3921bbd": "r34186dbac40c",
+          "l4a690a40f833": "r460b367bdc28"
+        }
+      },
+      "reference_answer": {
+        "l0d3b3483d72a": "rc7d42feeece7",
+        "l2bd743626ba4": "rd513f3503f47",
+        "lb7b5b3921bbd": "r34186dbac40c",
+        "l4a690a40f833": "r460b367bdc28"
+      },
+      "incorrect_answer": {
+        "l0d3b3483d72a": "rd513f3503f47",
+        "l2bd743626ba4": "rc7d42feeece7",
+        "lb7b5b3921bbd": "r34186dbac40c",
+        "l4a690a40f833": "r460b367bdc28"
+      },
+      "editorial_answer": "alternative — альтернативный вариант; option — вариант; available — доступный; suitable — подходящий",
+      "explanation": "В этих контекстах: alternative — альтернативный вариант; option — вариант; available — доступный; suitable — подходящий.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что известно об обычном расписании?",
+      "public_payload": {
+        "passage": "The language club wanted to meet on Wednesday. Neither the library nor the meeting room was available that evening. The coordinator offered two alternatives: Tuesday in the library or Thursday in the meeting room. Members chose Thursday because more people could attend. The decision concerned this week only; the usual Wednesday time was not permanently changed.",
+        "options": [
+          {
+            "id": "v8cce5938edee",
+            "label": "The club cancelled all Wednesday meetings forever."
+          },
+          {
+            "id": "v39e71f3a0f34",
+            "label": "The Wednesday time was not permanently changed."
+          },
+          {
+            "id": "vf9a7c83f3468",
+            "label": "Every future meeting will be on Thursday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v39e71f3a0f34"
+      },
+      "reference_answer": "v39e71f3a0f34",
+      "incorrect_answer": "vf9a7c83f3468",
+      "editorial_answer": "The Wednesday time was not permanently changed.",
+      "explanation": "В конце уточнено, что решение касается только текущей недели.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Скажи, что подходит любой из двух вариантов.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Would you prefer the morning or the afternoon?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v2a127a966ee9",
+            "label": "Neither time are suitable but both are suitable."
+          },
+          {
+            "id": "v73c604ed7b57",
+            "label": "Either time nor suitable."
+          },
+          {
+            "id": "v3d9449e65990",
+            "label": "Either time is suitable for me."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3d9449e65990"
+      },
+      "reference_answer": "v3d9449e65990",
+      "incorrect_answer": "v2a127a966ee9",
+      "editorial_answer": "Either time is suitable for me.",
+      "explanation": "Either time с is описывает приемлемость любой одной альтернативы.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A different possible course of action is an ___.",
+        "options": [
+          {
+            "id": "v2a094e91924a",
+            "label": "obligation in every case"
+          },
+          {
+            "id": "v170c7b6d8769",
+            "label": "alternative"
+          },
+          {
+            "id": "vb920e685ef56",
+            "label": "identical copy only"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v170c7b6d8769"
+      },
+      "reference_answer": "v170c7b6d8769",
+      "incorrect_answer": "vb920e685ef56",
+      "editorial_answer": "alternative",
+      "explanation": "Alternative — другой доступный вариант, не обязательно обязательство.",
+      "key": "e09"
+    }
+  ]
+}

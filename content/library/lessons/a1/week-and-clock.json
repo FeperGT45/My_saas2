@@ -1,0 +1,338 @@
+{
+  "key": "a1/week-and-clock",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 6,
+  "title": "Дни недели и время встречи",
+  "description": "Дни недели и время встречи: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать on с днём недели",
+    "Использовать at с точным временем"
+  ],
+  "notes": [
+    "С днём недели используется on: on Tuesday.",
+    "С точным временем используется at: at six. Не путай эти две модели."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/colours-and-sizes"],
+  "lexicon": [
+    {
+      "en": "Monday",
+      "ru": "понедельник"
+    },
+    {
+      "en": "Tuesday",
+      "ru": "вторник"
+    },
+    {
+      "en": "lesson",
+      "ru": "занятие"
+    },
+    {
+      "en": "meeting",
+      "ru": "встреча"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Our art lesson is ___ Tuesday.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v4ca5b8727ea0",
+            "label": "to"
+          },
+          {
+            "id": "v9306ccba458a",
+            "label": "on"
+          },
+          {
+            "id": "vd2b2814b9764",
+            "label": "at"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9306ccba458a"
+      },
+      "reference_answer": "v9306ccba458a",
+      "incorrect_answer": "vd2b2814b9764",
+      "editorial_answer": "on",
+      "explanation": "С названием дня нужен on Tuesday.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: at / on.",
+      "public_payload": {
+        "sentence": "The meeting starts ___ six o’clock."
+      },
+      "answer_key": {
+        "accepted": ["at"]
+      },
+      "reference_answer": "at",
+      "incorrect_answer": "on",
+      "editorial_answer": "The meeting starts at six o’clock.",
+      "explanation": "Перед точным временем используется at.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Занятие начинается в пять в понедельник.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "starts"
+          },
+          {
+            "id": "t4",
+            "label": "at"
+          },
+          {
+            "id": "t5",
+            "label": "five"
+          },
+          {
+            "id": "t6",
+            "label": "on"
+          },
+          {
+            "id": "t7",
+            "label": "Monday."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "lesson"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The lesson starts at five on Monday.",
+      "explanation": "At относится к пяти часам, on — к понедельнику.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "We meet at Friday."
+      },
+      "answer_key": {
+        "accepted": ["We meet on Friday."]
+      },
+      "reference_answer": "We meet on Friday.",
+      "incorrect_answer": "We meet at Friday.",
+      "editorial_answer": "We meet on Friday.",
+      "explanation": "С днём недели нужно on, а не at.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда встречается клуб?",
+      "public_payload": {
+        "passage": "Our club meets on Tuesday at six. We have an art lesson on Monday at five. The club is in the library, not the art room.",
+        "options": [
+          {
+            "id": "vfa84f99e14b5",
+            "label": "On Tuesday at six."
+          },
+          {
+            "id": "va1121ccd5831",
+            "label": "On Monday at five."
+          },
+          {
+            "id": "v87d4527e92ff",
+            "label": "On Friday at two."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfa84f99e14b5"
+      },
+      "reference_answer": "vfa84f99e14b5",
+      "incorrect_answer": "va1121ccd5831",
+      "editorial_answer": "On Tuesday at six.",
+      "explanation": "Время клуба отличается от времени урока рисования.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l05a8520a9a6b",
+            "label": "Monday"
+          },
+          {
+            "id": "lc06ca721bca8",
+            "label": "Tuesday"
+          },
+          {
+            "id": "l9d051e5d00c2",
+            "label": "lesson"
+          },
+          {
+            "id": "l0d77c10cc338",
+            "label": "meeting"
+          }
+        ],
+        "right": [
+          {
+            "id": "r98313dd409b5",
+            "label": "занятие"
+          },
+          {
+            "id": "rae3b79062bca",
+            "label": "встреча"
+          },
+          {
+            "id": "r1158fb28afef",
+            "label": "понедельник"
+          },
+          {
+            "id": "re36ade18e83d",
+            "label": "вторник"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l05a8520a9a6b": "r1158fb28afef",
+          "lc06ca721bca8": "re36ade18e83d",
+          "l9d051e5d00c2": "r98313dd409b5",
+          "l0d77c10cc338": "rae3b79062bca"
+        }
+      },
+      "reference_answer": {
+        "l05a8520a9a6b": "r1158fb28afef",
+        "lc06ca721bca8": "re36ade18e83d",
+        "l9d051e5d00c2": "r98313dd409b5",
+        "l0d77c10cc338": "rae3b79062bca"
+      },
+      "incorrect_answer": {
+        "l05a8520a9a6b": "re36ade18e83d",
+        "lc06ca721bca8": "r1158fb28afef",
+        "l9d051e5d00c2": "r98313dd409b5",
+        "l0d77c10cc338": "rae3b79062bca"
+      },
+      "editorial_answer": "Monday — понедельник; Tuesday — вторник; lesson — занятие; meeting — встреча",
+      "explanation": "В этих контекстах: Monday — понедельник; Tuesday — вторник; lesson — занятие; meeting — встреча.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где встречается клуб?",
+      "public_payload": {
+        "passage": "Our club meets on Tuesday at six. We have an art lesson on Monday at five. The club is in the library, not the art room.",
+        "options": [
+          {
+            "id": "v6fcdcbcafa95",
+            "label": "In the art room."
+          },
+          {
+            "id": "va4581a29602c",
+            "label": "At the station."
+          },
+          {
+            "id": "v19448cf75411",
+            "label": "In the library."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v19448cf75411"
+      },
+      "reference_answer": "v19448cf75411",
+      "incorrect_answer": "v6fcdcbcafa95",
+      "editorial_answer": "In the library.",
+      "explanation": "В тексте явно противопоставлены library и art room.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Укажи день и точное время.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "When is the next meeting?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v64c9bf282a23",
+            "label": "On Wednesday at four."
+          },
+          {
+            "id": "ve0f577bc8698",
+            "label": "At Wednesday on four."
+          },
+          {
+            "id": "vb9edbe7ef45c",
+            "label": "To Wednesday in four."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v64c9bf282a23"
+      },
+      "reference_answer": "v64c9bf282a23",
+      "incorrect_answer": "ve0f577bc8698",
+      "editorial_answer": "On Wednesday at four.",
+      "explanation": "Нужно on перед днём и at перед часом.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The day after Monday is ___.",
+        "options": [
+          {
+            "id": "v5c275e07368e",
+            "label": "Sunday"
+          },
+          {
+            "id": "v121db363ac62",
+            "label": "Friday"
+          },
+          {
+            "id": "v59d9be48edf0",
+            "label": "Tuesday"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v59d9be48edf0"
+      },
+      "reference_answer": "v59d9be48edf0",
+      "incorrect_answer": "v5c275e07368e",
+      "editorial_answer": "Tuesday",
+      "explanation": "В недельной последовательности после понедельника идёт вторник.",
+      "key": "e09"
+    }
+  ]
+}

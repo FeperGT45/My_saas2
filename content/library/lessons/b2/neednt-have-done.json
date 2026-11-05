@@ -1,0 +1,342 @@
+{
+  "key": "b2/neednt-have-done",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 6,
+  "title": "Сделали, хотя необходимости не было",
+  "description": "Сделали, хотя необходимости не было: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Выражать ненужное уже выполненное действие через need not have done",
+    "Отличать отсутствие необходимости от сообщения о выполнении"
+  ],
+  "notes": [
+    "Need not have done обычно сообщает: действие было выполнено, но не требовалось.",
+    "Did not need to do говорит об отсутствии необходимости; само по себе не всегда уточняет, было ли действие выполнено."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/rather-and-better"],
+  "lexicon": [
+    {
+      "en": "unnecessary",
+      "ru": "ненужный"
+    },
+    {
+      "en": "reimburse",
+      "ru": "возмещать расходы"
+    },
+    {
+      "en": "receipt",
+      "ru": "чек"
+    },
+    {
+      "en": "require",
+      "ru": "требовать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I printed fifty copies, but everyone had a digital version. I need not ___ them.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v808338b6f44f",
+            "label": "have printing"
+          },
+          {
+            "id": "v90baa5ab0b79",
+            "label": "have printed"
+          },
+          {
+            "id": "vbc409e609821",
+            "label": "printed have"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v90baa5ab0b79"
+      },
+      "reference_answer": "v90baa5ab0b79",
+      "incorrect_answer": "vbc409e609821",
+      "editorial_answer": "have printed",
+      "explanation": "Действие уже совершено и оказалось ненужным: need not have printed.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: bought / buy.",
+      "public_payload": {
+        "sentence": "We need not have ___ extra tickets; the organiser had reserved enough."
+      },
+      "answer_key": {
+        "accepted": ["bought"]
+      },
+      "reference_answer": "bought",
+      "incorrect_answer": "buy",
+      "editorial_answer": "We need not have bought extra tickets; the organiser had reserved enough.",
+      "explanation": "После have требуется причастие bought.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Ей не нужно было платить за ещё один экземпляр, хотя она это сделала.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "not"
+          },
+          {
+            "id": "t4",
+            "label": "have"
+          },
+          {
+            "id": "t5",
+            "label": "paid"
+          },
+          {
+            "id": "t6",
+            "label": "for"
+          },
+          {
+            "id": "t7",
+            "label": "another"
+          },
+          {
+            "id": "t8",
+            "label": "copy."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "need"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "She need not have paid for another copy.",
+      "explanation": "Need not have paid указывает на выполненное, но ненужное действие.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He need not have bring his own chair."
+      },
+      "answer_key": {
+        "accepted": ["He need not have brought his own chair."]
+      },
+      "reference_answer": "He need not have brought his own chair.",
+      "incorrect_answer": "He need not have bring his own chair.",
+      "editorial_answer": "He need not have brought his own chair.",
+      "explanation": "После have нужна форма brought.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что показывает need not have bought в истории?",
+      "public_payload": {
+        "passage": "Before a conference, Amir bought a new adapter because he assumed none would be provided. At the venue, he discovered that every desk already had one. He told a colleague that he need not have bought his own. The purchase had happened; his comment concerned its necessity. The organisers offered to reimburse the cost if he supplied a receipt, though reimbursement would not make the original assumption correct. For the next event, Amir decided to check the equipment list before spending money.",
+        "options": [
+          {
+            "id": "v61b66e5bbaf6",
+            "label": "Amir bought the adapter, but it was not necessary."
+          },
+          {
+            "id": "v7243fd1593c4",
+            "label": "Amir definitely did not buy an adapter."
+          },
+          {
+            "id": "v306f236af884",
+            "label": "Buying an adapter was prohibited by law."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v61b66e5bbaf6"
+      },
+      "reference_answer": "v61b66e5bbaf6",
+      "incorrect_answer": "v7243fd1593c4",
+      "editorial_answer": "Amir bought the adapter, but it was not necessary.",
+      "explanation": "Форма относится к уже выполненной ненужной покупке.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le7a709a07147",
+            "label": "unnecessary"
+          },
+          {
+            "id": "l609b0f6931d9",
+            "label": "reimburse"
+          },
+          {
+            "id": "l2f1960299f9b",
+            "label": "receipt"
+          },
+          {
+            "id": "l08177948eaa9",
+            "label": "require"
+          }
+        ],
+        "right": [
+          {
+            "id": "r63f25ac21e8e",
+            "label": "чек"
+          },
+          {
+            "id": "rfdb493bf65bf",
+            "label": "требовать"
+          },
+          {
+            "id": "r7c0cbfcaabfb",
+            "label": "ненужный"
+          },
+          {
+            "id": "r9d0548c568c8",
+            "label": "возмещать расходы"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le7a709a07147": "r7c0cbfcaabfb",
+          "l609b0f6931d9": "r9d0548c568c8",
+          "l2f1960299f9b": "r63f25ac21e8e",
+          "l08177948eaa9": "rfdb493bf65bf"
+        }
+      },
+      "reference_answer": {
+        "le7a709a07147": "r7c0cbfcaabfb",
+        "l609b0f6931d9": "r9d0548c568c8",
+        "l2f1960299f9b": "r63f25ac21e8e",
+        "l08177948eaa9": "rfdb493bf65bf"
+      },
+      "incorrect_answer": {
+        "le7a709a07147": "r9d0548c568c8",
+        "l609b0f6931d9": "r7c0cbfcaabfb",
+        "l2f1960299f9b": "r63f25ac21e8e",
+        "l08177948eaa9": "rfdb493bf65bf"
+      },
+      "editorial_answer": "unnecessary — ненужный; reimburse — возмещать расходы; receipt — чек; require — требовать",
+      "explanation": "В этих контекстах: unnecessary — ненужный; reimburse — возмещать расходы; receipt — чек; require — требовать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что нужно для предложенного возмещения?",
+      "public_payload": {
+        "passage": "Before a conference, Amir bought a new adapter because he assumed none would be provided. At the venue, he discovered that every desk already had one. He told a colleague that he need not have bought his own. The purchase had happened; his comment concerned its necessity. The organisers offered to reimburse the cost if he supplied a receipt, though reimbursement would not make the original assumption correct. For the next event, Amir decided to check the equipment list before spending money.",
+        "options": [
+          {
+            "id": "v565d81660874",
+            "label": "A claim that he never made the purchase."
+          },
+          {
+            "id": "v86ca5665a108",
+            "label": "A promise to buy another adapter."
+          },
+          {
+            "id": "ve0963c855b8e",
+            "label": "A receipt."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve0963c855b8e"
+      },
+      "reference_answer": "ve0963c855b8e",
+      "incorrect_answer": "v565d81660874",
+      "editorial_answer": "A receipt.",
+      "explanation": "Чек назван условием возврата расходов.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Прокомментируй ненужное уже совершённое действие.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I carried a spare chair, but there were plenty at the venue."
+          }
+        ],
+        "options": [
+          {
+            "id": "v04adb0e9f33d",
+            "label": "You need not have carried it."
+          },
+          {
+            "id": "ve523e3d28c40",
+            "label": "You need not have carry it."
+          },
+          {
+            "id": "v361580022365",
+            "label": "You need not carried have it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v04adb0e9f33d"
+      },
+      "reference_answer": "v04adb0e9f33d",
+      "incorrect_answer": "ve523e3d28c40",
+      "editorial_answer": "You need not have carried it.",
+      "explanation": "Need not have carried сохраняет и факт переноски, и отсутствие необходимости.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To pay someone back for an expense is to ___ them.",
+        "options": [
+          {
+            "id": "va8d6052b2625",
+            "label": "charge again"
+          },
+          {
+            "id": "v8c1d2c4a5354",
+            "label": "delay"
+          },
+          {
+            "id": "ved6c4af7ad1f",
+            "label": "reimburse"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ved6c4af7ad1f"
+      },
+      "reference_answer": "ved6c4af7ad1f",
+      "incorrect_answer": "va8d6052b2625",
+      "editorial_answer": "reimburse",
+      "explanation": "Reimburse — возместить понесённые расходы.",
+      "key": "e09"
+    }
+  ]
+}

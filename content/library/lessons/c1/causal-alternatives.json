@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o2",
+            "id": "v072aa2c40ae8",
             "label": "has contributed"
           },
           {
-            "id": "o3",
+            "id": "v5592c07d0577",
             "label": "having contributed"
           },
           {
-            "id": "o1",
+            "id": "v7edf9229404a",
             "label": "have contributed"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v7edf9229404a"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v7edf9229404a",
+      "incorrect_answer": "v072aa2c40ae8",
       "editorial_answer": "have contributed",
       "explanation": "После may нужен have contributed; may сохраняет неопределённость вклада.",
       "key": "e01"
@@ -161,24 +161,24 @@
         "passage": "A clinic introduced text reminders and observed fewer missed appointments over the next two months. During the same period, it also extended evening opening hours and changed its booking procedure. The manager credited the reminders with the entire improvement. An analyst agreed that reminders were a plausible contributor but pointed out that the other changes offered alternative explanations. Without a comparison that separated these influences, the records could not establish how much of the improvement was attributable to each measure. The analyst recommended retaining the useful changes while designing a more informative evaluation, rather than treating uncertainty about causation as evidence that nothing had helped.",
         "options": [
           {
-            "id": "o3",
+            "id": "vd49f3cba8b79",
             "label": "A controlled comparison isolated reminders from every other influence."
           },
           {
-            "id": "o1",
+            "id": "vd409a3bd3935",
             "label": "Evening hours and the booking procedure changed too."
           },
           {
-            "id": "o2",
+            "id": "vaebceeb3f96a",
             "label": "All appointments were abolished."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vd409a3bd3935"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vd409a3bd3935",
+      "incorrect_answer": "vaebceeb3f96a",
       "editorial_answer": "Evening hours and the booking procedure changed too.",
       "explanation": "Два дополнительных изменения могут влиять на посещаемость.",
       "key": "e05"
@@ -190,24 +190,24 @@
         "passage": "A clinic introduced text reminders and observed fewer missed appointments over the next two months. During the same period, it also extended evening opening hours and changed its booking procedure. The manager credited the reminders with the entire improvement. An analyst agreed that reminders were a plausible contributor but pointed out that the other changes offered alternative explanations. Without a comparison that separated these influences, the records could not establish how much of the improvement was attributable to each measure. The analyst recommended retaining the useful changes while designing a more informative evaluation, rather than treating uncertainty about causation as evidence that nothing had helped.",
         "options": [
           {
-            "id": "o1",
+            "id": "v2a6c89e1b64b",
             "label": "Keep useful changes while evaluating their separate contributions more carefully."
           },
           {
-            "id": "o2",
+            "id": "v3cea913110b8",
             "label": "Stop everything because causation has not been isolated."
           },
           {
-            "id": "o3",
+            "id": "v4693d4ba7918",
             "label": "Declare that the reminders certainly caused the entire improvement."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v2a6c89e1b64b"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v2a6c89e1b64b",
+      "incorrect_answer": "v3cea913110b8",
       "editorial_answer": "Keep useful changes while evaluating their separate contributions more carefully.",
       "explanation": "Неопределённость вклада не равна доказательству бесполезности всех мер.",
       "key": "e06"
@@ -224,24 +224,24 @@
         ],
         "options": [
           {
-            "id": "o3",
+            "id": "v2469eb1cc612",
             "label": "No intervention can ever be evaluated."
           },
           {
-            "id": "o1",
+            "id": "vfdda0f7442ad",
             "label": "The change coincided with improvement; its independent effect remains uncertain."
           },
           {
-            "id": "o2",
+            "id": "v71bdd2b3ff81",
             "label": "The change must be the only cause."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vfdda0f7442ad"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vfdda0f7442ad",
+      "incorrect_answer": "v71bdd2b3ff81",
       "editorial_answer": "The change coincided with improvement; its independent effect remains uncertain.",
       "explanation": "Совпадение по времени не изолирует причинный эффект, но и не делает оценку принципиально невозможной.",
       "key": "e07"
@@ -253,24 +253,24 @@
         "sentence": "A factor that may distort an apparent causal relationship is a ___.",
         "options": [
           {
-            "id": "o1",
+            "id": "ve35729b71da6",
             "label": "confounder"
           },
           {
-            "id": "o2",
+            "id": "v0b28a2925cf8",
             "label": "certificate"
           },
           {
-            "id": "o3",
+            "id": "v2cb1ff53d2b1",
             "label": "deadline"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "ve35729b71da6"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "ve35729b71da6",
+      "incorrect_answer": "v0b28a2925cf8",
       "editorial_answer": "confounder",
       "explanation": "Confounder — фактор, связанный и с воздействием, и с результатом, который может искажать оценку их причинной связи.",
       "key": "e08"

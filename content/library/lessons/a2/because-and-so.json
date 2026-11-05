@@ -1,0 +1,372 @@
+{
+  "key": "a2/because-and-so",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 10,
+  "title": "Причина и результат в рассказе",
+  "description": "Причина и результат в рассказе: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Вводить причину через because",
+    "Вводить результат через so без дублирования because ... so"
+  ],
+  "notes": [
+    "Because вводит причину: We stayed inside because it was raining.",
+    "So вводит следствие: It was raining, so we stayed inside. В данном нейтральном предложении не ставим because и so вместе."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/as-as-comparison"],
+  "lexicon": [
+    {
+      "en": "reason",
+      "ru": "причина"
+    },
+    {
+      "en": "result",
+      "ru": "результат"
+    },
+    {
+      "en": "repair",
+      "ru": "ремонтировать"
+    },
+    {
+      "en": "instead",
+      "ru": "вместо этого"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The room was cold, ___ we closed the window.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vab5d13321d5e",
+            "label": "because of"
+          },
+          {
+            "id": "v42cb3887858b",
+            "label": "although of"
+          },
+          {
+            "id": "vbe09e983faa0",
+            "label": "so"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbe09e983faa0"
+      },
+      "reference_answer": "vbe09e983faa0",
+      "incorrect_answer": "vab5d13321d5e",
+      "editorial_answer": "so",
+      "explanation": "Закрытие окна — результат холода, поэтому so.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: because / so.",
+      "public_payload": {
+        "sentence": "We changed rooms ___ the heater was broken."
+      },
+      "answer_key": {
+        "accepted": ["because"]
+      },
+      "reference_answer": "because",
+      "incorrect_answer": "so",
+      "editorial_answer": "We changed rooms because the heater was broken.",
+      "explanation": "Сломанный обогреватель — причина смены комнаты.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Автобус опаздывал, поэтому мы пошли в библиотеку пешком.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "was"
+          },
+          {
+            "id": "t4",
+            "label": "late,"
+          },
+          {
+            "id": "t5",
+            "label": "so"
+          },
+          {
+            "id": "t6",
+            "label": "we"
+          },
+          {
+            "id": "t7",
+            "label": "walked"
+          },
+          {
+            "id": "t8",
+            "label": "to"
+          },
+          {
+            "id": "t9",
+            "label": "the"
+          },
+          {
+            "id": "t10",
+            "label": "library."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "bus"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "The bus was late, so we walked to the library.",
+      "explanation": "So соединяет ситуацию и её результат.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл. Сохрани because и убери лишнюю связку.",
+      "public_payload": {
+        "sentence": "Because the room was cold, so we moved upstairs."
+      },
+      "answer_key": {
+        "accepted": ["Because the room was cold, we moved upstairs."]
+      },
+      "reference_answer": "Because the room was cold, we moved upstairs.",
+      "incorrect_answer": "Because the room was cold, so we moved upstairs.",
+      "editorial_answer": "Because the room was cold, we moved upstairs.",
+      "explanation": "В этом задании сохраняем because и удаляем лишнее so.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему был закрыт компьютерный класс?",
+      "public_payload": {
+        "passage": "The computer room was closed because someone was repairing the lights. The students needed to finish a group task, so they went to the library instead. It had enough tables, but no spare computers. The students used their own laptops and finished the task before the library closed.",
+        "options": [
+          {
+            "id": "vb80cff93cf2b",
+            "label": "The students had finished every task."
+          },
+          {
+            "id": "vfa10fd70931b",
+            "label": "The lights were being repaired."
+          },
+          {
+            "id": "v6b706a6ee77e",
+            "label": "The library had no tables."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfa10fd70931b"
+      },
+      "reference_answer": "vfa10fd70931b",
+      "incorrect_answer": "v6b706a6ee77e",
+      "editorial_answer": "The lights were being repaired.",
+      "explanation": "Причина закрытия названа после because.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l200351afae40",
+            "label": "reason"
+          },
+          {
+            "id": "ld5a47d1c102d",
+            "label": "result"
+          },
+          {
+            "id": "la5b2e8eabb5c",
+            "label": "repair"
+          },
+          {
+            "id": "l6685e0b87e13",
+            "label": "instead"
+          }
+        ],
+        "right": [
+          {
+            "id": "r027f0f5125b8",
+            "label": "ремонтировать"
+          },
+          {
+            "id": "r738a7da4cf09",
+            "label": "вместо этого"
+          },
+          {
+            "id": "rc88f7b42f443",
+            "label": "причина"
+          },
+          {
+            "id": "ra4dddf27144a",
+            "label": "результат"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l200351afae40": "rc88f7b42f443",
+          "ld5a47d1c102d": "ra4dddf27144a",
+          "la5b2e8eabb5c": "r027f0f5125b8",
+          "l6685e0b87e13": "r738a7da4cf09"
+        }
+      },
+      "reference_answer": {
+        "l200351afae40": "rc88f7b42f443",
+        "ld5a47d1c102d": "ra4dddf27144a",
+        "la5b2e8eabb5c": "r027f0f5125b8",
+        "l6685e0b87e13": "r738a7da4cf09"
+      },
+      "incorrect_answer": {
+        "l200351afae40": "ra4dddf27144a",
+        "ld5a47d1c102d": "rc88f7b42f443",
+        "la5b2e8eabb5c": "r027f0f5125b8",
+        "l6685e0b87e13": "r738a7da4cf09"
+      },
+      "editorial_answer": "reason — причина; result — результат; repair — ремонтировать; instead — вместо этого",
+      "explanation": "В этих контекстах: reason — причина; result — результат; repair — ремонтировать; instead — вместо этого.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как студенты работали без свободных компьютеров?",
+      "public_payload": {
+        "passage": "The computer room was closed because someone was repairing the lights. The students needed to finish a group task, so they went to the library instead. It had enough tables, but no spare computers. The students used their own laptops and finished the task before the library closed.",
+        "options": [
+          {
+            "id": "vc40a600c483b",
+            "label": "They used their own laptops."
+          },
+          {
+            "id": "v173a9922c43c",
+            "label": "They borrowed every light in the room."
+          },
+          {
+            "id": "v40b1552caa52",
+            "label": "They abandoned the task completely."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc40a600c483b"
+      },
+      "reference_answer": "vc40a600c483b",
+      "incorrect_answer": "v173a9922c43c",
+      "editorial_answer": "They used their own laptops.",
+      "explanation": "Текст прямо сообщает о собственных ноутбуках и завершённой работе.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь на вопрос о причине полноценной частью.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Why did you stay at home?"
+          }
+        ],
+        "options": [
+          {
+            "id": "ve7591449c3fa",
+            "label": "Because of I needed my work."
+          },
+          {
+            "id": "v601b12929206",
+            "label": "Because I needed to finish my work."
+          },
+          {
+            "id": "v1f85e389f0ac",
+            "label": "So I needed to finish my work because."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v601b12929206"
+      },
+      "reference_answer": "v601b12929206",
+      "incorrect_answer": "v1f85e389f0ac",
+      "editorial_answer": "Because I needed to finish my work.",
+      "explanation": "Because + I needed ... вводит причину; because of потребовало бы именную группу.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The room was unavailable, so we used the library ___.",
+        "options": [
+          {
+            "id": "v2ac3e5491938",
+            "label": "instead"
+          },
+          {
+            "id": "vd03a4971d4ae",
+            "label": "because of"
+          },
+          {
+            "id": "v7d45f7251792",
+            "label": "repaired"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2ac3e5491938"
+      },
+      "reference_answer": "v2ac3e5491938",
+      "incorrect_answer": "vd03a4971d4ae",
+      "editorial_answer": "instead",
+      "explanation": "Instead обозначает выбранную замену.",
+      "key": "e09"
+    }
+  ]
+}

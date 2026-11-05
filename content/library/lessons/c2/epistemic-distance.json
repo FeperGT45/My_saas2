@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o2",
+            "id": "v29af49b558e4",
             "label": "a binding promise of future support"
           },
           {
-            "id": "o3",
+            "id": "vce8fb74e9e14",
             "label": "a declaration that no alternative account is possible"
           },
           {
-            "id": "o1",
+            "id": "v5eda5c7639a7",
             "label": "a cautiously framed inference"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v5eda5c7639a7"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v5eda5c7639a7",
+      "incorrect_answer": "v29af49b558e4",
       "editorial_answer": "a cautiously framed inference",
       "explanation": "Would appear to смягчает эпистемическую уверенность, а не обещает будущее действие.",
       "key": "e01"
@@ -185,24 +185,24 @@
         "passage": "An archivist found that several letters had been copied in the same hand, although their signatures differed. One explanation was that a secretary had prepared correspondence for several authors. Another was that the letters were later copies made for the archive. The dates and paper stock were compatible with both accounts. In her catalogue note, the archivist wrote that the documents “would appear to reflect a shared copying practice”. A reviewer wanted this changed to “prove common authorship”. The archivist refused: a shared hand was an observation, while common authorship was one possible interpretation requiring additional evidence. Her caution did not deny the discovery’s significance. It prevented an attractive explanation from inheriting a degree of certainty that the surviving material could not sustain.",
         "options": [
           {
-            "id": "o3",
+            "id": "vffd2eaab410b",
             "label": "The paper stock conclusively identified every author."
           },
           {
-            "id": "o1",
+            "id": "va7577d44b8a3",
             "label": "Shared handwriting is compatible with different explanations of authorship."
           },
           {
-            "id": "o2",
+            "id": "v80a70c831e53",
             "label": "The archivist found no similarity in handwriting."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "va7577d44b8a3"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "va7577d44b8a3",
+      "incorrect_answer": "v80a70c831e53",
       "editorial_answer": "Shared handwriting is compatible with different explanations of authorship.",
       "explanation": "Одинаковая рука могла принадлежать секретарю или позднему переписчику.",
       "key": "e05"
@@ -214,24 +214,24 @@
         "passage": "An archivist found that several letters had been copied in the same hand, although their signatures differed. One explanation was that a secretary had prepared correspondence for several authors. Another was that the letters were later copies made for the archive. The dates and paper stock were compatible with both accounts. In her catalogue note, the archivist wrote that the documents “would appear to reflect a shared copying practice”. A reviewer wanted this changed to “prove common authorship”. The archivist refused: a shared hand was an observation, while common authorship was one possible interpretation requiring additional evidence. Her caution did not deny the discovery’s significance. It prevented an attractive explanation from inheriting a degree of certainty that the surviving material could not sustain.",
         "options": [
           {
-            "id": "o1",
+            "id": "vaffec0533c52",
             "label": "As a boundary on certainty, not a denial that the finding matters."
           },
           {
-            "id": "o2",
+            "id": "v1a8ac50bed3c",
             "label": "As proof that the letters are worthless."
           },
           {
-            "id": "o3",
+            "id": "v846850ccb92f",
             "label": "As a promise to reject any future evidence."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vaffec0533c52"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vaffec0533c52",
+      "incorrect_answer": "v1a8ac50bed3c",
       "editorial_answer": "As a boundary on certainty, not a denial that the finding matters.",
       "explanation": "Последние предложения прямо отделяют значимость наблюдения от силы вывода.",
       "key": "e06"
@@ -248,24 +248,24 @@
         ],
         "options": [
           {
-            "id": "o3",
+            "id": "v49d6699bae1b",
             "label": "Yes; a compatible account can never be revised."
           },
           {
-            "id": "o1",
+            "id": "v2ac86fb649b5",
             "label": "No; competing explanations may also accommodate the evidence."
           },
           {
-            "id": "o2",
+            "id": "va3fdbda7e301",
             "label": "Yes; compatibility excludes every competing explanation."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v2ac86fb649b5"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v2ac86fb649b5",
+      "incorrect_answer": "va3fdbda7e301",
       "editorial_answer": "No; competing explanations may also accommodate the evidence.",
       "explanation": "Одни и те же данные могут согласовываться с несколькими версиями.",
       "key": "e07"
@@ -277,24 +277,24 @@
         "sentence": "A proposition advanced without sufficient evidence for certainty is a ___.",
         "options": [
           {
-            "id": "o1",
+            "id": "v4a1959cd2740",
             "label": "conjecture"
           },
           {
-            "id": "o2",
+            "id": "v6d8e3ecd65cf",
             "label": "verdict"
           },
           {
-            "id": "o3",
+            "id": "v4c8dd80e54ed",
             "label": "warranty"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v4a1959cd2740"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v4a1959cd2740",
+      "incorrect_answer": "v6d8e3ecd65cf",
       "editorial_answer": "conjecture",
       "explanation": "Conjecture — предположение, а не окончательное решение или гарантия.",
       "key": "e08"

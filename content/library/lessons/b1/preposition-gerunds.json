@@ -1,0 +1,334 @@
+{
+  "key": "b1/preposition-gerunds",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 10,
+  "title": "После предлога: joining, leaving, checking",
+  "description": "После предлога: joining, leaving, checking: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать -ing после предлогов",
+    "Различать interested in doing и want to do"
+  ],
+  "notes": [
+    "После in, without и before глагол может принимать -ing: interested in joining; without checking.",
+    "To-infinitive после want — другая модель: want to join. Не переносите её автоматически после in."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/deduction-now"],
+  "lexicon": [
+    {
+      "en": "join",
+      "ru": "присоединяться"
+    },
+    {
+      "en": "interested",
+      "ru": "заинтересованный"
+    },
+    {
+      "en": "application",
+      "ru": "заявка"
+    },
+    {
+      "en": "requirement",
+      "ru": "требование"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: She is interested in ___ the photography club.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v857fc70cd741",
+            "label": "join to"
+          },
+          {
+            "id": "v31abbf9e5be5",
+            "label": "joining"
+          },
+          {
+            "id": "v9ba89fe5bf48",
+            "label": "to join"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v31abbf9e5be5"
+      },
+      "reference_answer": "v31abbf9e5be5",
+      "incorrect_answer": "v9ba89fe5bf48",
+      "editorial_answer": "joining",
+      "explanation": "После предлога in используется joining.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: applying / apply.",
+      "public_payload": {
+        "sentence": "Read the requirements before ___."
+      },
+      "answer_key": {
+        "accepted": ["applying"]
+      },
+      "reference_answer": "applying",
+      "incorrect_answer": "apply",
+      "editorial_answer": "Read the requirements before applying.",
+      "explanation": "После before в этой сокращённой конструкции нужна -ing-форма.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Он ушёл, не проверив адрес.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "without"
+          },
+          {
+            "id": "t4",
+            "label": "checking"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "address."
+          },
+          {
+            "id": "t1",
+            "label": "He"
+          },
+          {
+            "id": "t2",
+            "label": "left"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "He left without checking the address.",
+      "explanation": "После without требуется checking; речь об отсутствии проверки перед уходом.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I am interested in to learn more about design."
+      },
+      "answer_key": {
+        "accepted": ["I am interested in learning more about design."]
+      },
+      "reference_answer": "I am interested in learning more about design.",
+      "incorrect_answer": "I am interested in to learn more about design.",
+      "editorial_answer": "I am interested in learning more about design.",
+      "explanation": "После interested in нужно learning вместо to learn.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Элла проверила перед подачей заявки?",
+      "public_payload": {
+        "passage": "Ella was interested in joining a photography club. Before applying, she read the requirements and checked whether beginners were welcome. The club asked members to bring a camera, but borrowing one was allowed. Ella contacted a friend rather than buying equipment immediately. She completed the application after confirming that she could borrow a camera for the first month.",
+        "options": [
+          {
+            "id": "v10d0601820b5",
+            "label": "Whether beginners were welcome."
+          },
+          {
+            "id": "v9eb8c4577a8f",
+            "label": "Whether she could skip every requirement."
+          },
+          {
+            "id": "v3f456d1b565b",
+            "label": "Whether the club sold only expensive cameras."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v10d0601820b5"
+      },
+      "reference_answer": "v10d0601820b5",
+      "incorrect_answer": "v9eb8c4577a8f",
+      "editorial_answer": "Whether beginners were welcome.",
+      "explanation": "В первом шаге она выяснила, принимают ли начинающих.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l617887e22cd3",
+            "label": "join"
+          },
+          {
+            "id": "l63ce81d2426a",
+            "label": "interested"
+          },
+          {
+            "id": "l1153ca11a744",
+            "label": "application"
+          },
+          {
+            "id": "lb206264fbb62",
+            "label": "requirement"
+          }
+        ],
+        "right": [
+          {
+            "id": "rbee193d0a674",
+            "label": "заявка"
+          },
+          {
+            "id": "r54cd584b9a14",
+            "label": "требование"
+          },
+          {
+            "id": "r0c2e60a8e01b",
+            "label": "присоединяться"
+          },
+          {
+            "id": "r0c1f4b18bd53",
+            "label": "заинтересованный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l617887e22cd3": "r0c2e60a8e01b",
+          "l63ce81d2426a": "r0c1f4b18bd53",
+          "l1153ca11a744": "rbee193d0a674",
+          "lb206264fbb62": "r54cd584b9a14"
+        }
+      },
+      "reference_answer": {
+        "l617887e22cd3": "r0c2e60a8e01b",
+        "l63ce81d2426a": "r0c1f4b18bd53",
+        "l1153ca11a744": "rbee193d0a674",
+        "lb206264fbb62": "r54cd584b9a14"
+      },
+      "incorrect_answer": {
+        "l617887e22cd3": "r0c1f4b18bd53",
+        "l63ce81d2426a": "r0c2e60a8e01b",
+        "l1153ca11a744": "rbee193d0a674",
+        "lb206264fbb62": "r54cd584b9a14"
+      },
+      "editorial_answer": "join — присоединяться; interested — заинтересованный; application — заявка; requirement — требование",
+      "explanation": "В этих контекстах: join — присоединяться; interested — заинтересованный; application — заявка; requirement — требование.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему она не купила камеру сразу?",
+      "public_payload": {
+        "passage": "Ella was interested in joining a photography club. Before applying, she read the requirements and checked whether beginners were welcome. The club asked members to bring a camera, but borrowing one was allowed. Ella contacted a friend rather than buying equipment immediately. She completed the application after confirming that she could borrow a camera for the first month.",
+        "options": [
+          {
+            "id": "v3885939f9ebd",
+            "label": "The club prohibited cameras."
+          },
+          {
+            "id": "v8b36730bc5a4",
+            "label": "She had already decided not to join."
+          },
+          {
+            "id": "v6ea124c7d6de",
+            "label": "Borrowing one was allowed, and a friend could lend her one."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6ea124c7d6de"
+      },
+      "reference_answer": "v6ea124c7d6de",
+      "incorrect_answer": "v3885939f9ebd",
+      "editorial_answer": "Borrowing one was allowed, and a friend could lend her one.",
+      "explanation": "Разрешённый заём оборудования дал альтернативу покупке.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Используй -ing после about и before.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I want to join, but I have no equipment."
+          }
+        ],
+        "options": [
+          {
+            "id": "vef3647dcfc9b",
+            "label": "Ask about borrowing it before buying anything."
+          },
+          {
+            "id": "vd548a1a8fd56",
+            "label": "Ask about to borrow it before buy anything."
+          },
+          {
+            "id": "ve69aad867fc6",
+            "label": "Ask about borrowed it before to buying."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vef3647dcfc9b"
+      },
+      "reference_answer": "vef3647dcfc9b",
+      "incorrect_answer": "vd548a1a8fd56",
+      "editorial_answer": "Ask about borrowing it before buying anything.",
+      "explanation": "Borrowing и buying следуют за предлогами.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A condition that applicants must meet is a ___.",
+        "options": [
+          {
+            "id": "v73cf1ea9b9f1",
+            "label": "suggestion that can always be ignored"
+          },
+          {
+            "id": "vfeb76f0447b5",
+            "label": "receipt"
+          },
+          {
+            "id": "v3015c6bcbd49",
+            "label": "requirement"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3015c6bcbd49"
+      },
+      "reference_answer": "v3015c6bcbd49",
+      "incorrect_answer": "v73cf1ea9b9f1",
+      "editorial_answer": "requirement",
+      "explanation": "Requirement — обязательное условие для заявки.",
+      "key": "e09"
+    }
+  ]
+}

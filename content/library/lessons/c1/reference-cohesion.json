@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o1",
+            "id": "v986238326cef",
             "label": "which"
           },
           {
-            "id": "o2",
+            "id": "v736b64ca18d0",
             "label": "who"
           },
           {
-            "id": "o3",
+            "id": "v3571a04642c6",
             "label": "whose"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v986238326cef"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v986238326cef",
+      "incorrect_answer": "v736b64ca18d0",
       "editorial_answer": "which",
       "explanation": "Which относится к факту выбывания, а не заменяет обозначение людей who.",
       "key": "e01"
@@ -157,24 +157,24 @@
         "passage": "A report described a training trial involving volunteers from three departments. Several participants left after a change in their work schedules. This reduced the number of observations available for comparison, but the report did not attribute the departures to dissatisfaction with the training. One summary replaced “this” with “the training”, creating the impression that the programme itself had driven people away. The authors corrected that summary. Their concern was not simply grammatical elegance: an unclear reference had altered the implied explanation. They specified that schedule-related attrition limited the comparison and that the evidence did not establish how satisfied the departing volunteers had been.",
         "options": [
           {
-            "id": "o2",
+            "id": "v7bbfd49ed309",
             "label": "A proven negative effect of the training."
           },
           {
-            "id": "o3",
+            "id": "v62d10300b8e7",
             "label": "A survey establishing dissatisfaction."
           },
           {
-            "id": "o1",
+            "id": "v22d0d5730393",
             "label": "The participants’ departure after schedule changes."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v22d0d5730393"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v22d0d5730393",
+      "incorrect_answer": "v7bbfd49ed309",
       "editorial_answer": "The participants’ departure after schedule changes.",
       "explanation": "This подхватывает событие выбытия, а не утверждение о качестве программы.",
       "key": "e05"
@@ -186,24 +186,24 @@
         "passage": "A report described a training trial involving volunteers from three departments. Several participants left after a change in their work schedules. This reduced the number of observations available for comparison, but the report did not attribute the departures to dissatisfaction with the training. One summary replaced “this” with “the training”, creating the impression that the programme itself had driven people away. The authors corrected that summary. Their concern was not simply grammatical elegance: an unclear reference had altered the implied explanation. They specified that schedule-related attrition limited the comparison and that the evidence did not establish how satisfied the departing volunteers had been.",
         "options": [
           {
-            "id": "o3",
+            "id": "v314ee5ea67f0",
             "label": "Every use of this is grammatically incorrect."
           },
           {
-            "id": "o1",
+            "id": "v71424d5659c6",
             "label": "The unclear reference had implied an unsupported cause."
           },
           {
-            "id": "o2",
+            "id": "v7d22562cb5ea",
             "label": "The authors wanted to hide a completed satisfaction survey."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v71424d5659c6"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v71424d5659c6",
+      "incorrect_answer": "v7d22562cb5ea",
       "editorial_answer": "The unclear reference had implied an unsupported cause.",
       "explanation": "Проблема в искажённой причинной интерпретации, не в запрете местоимения.",
       "key": "e06"
@@ -220,24 +220,24 @@
         ],
         "options": [
           {
-            "id": "o2",
+            "id": "vff6ba6ae41e1",
             "label": "The spelling of volunteers."
           },
           {
-            "id": "o3",
+            "id": "v5f9cd1782e17",
             "label": "A new claim that volunteers cancelled it themselves."
           },
           {
-            "id": "o1",
+            "id": "v9d84e58cdf01",
             "label": "The cancellation of the session."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v9d84e58cdf01"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v9d84e58cdf01",
+      "incorrect_answer": "vff6ba6ae41e1",
       "editorial_answer": "The cancellation of the session.",
       "explanation": "Указательное местоимение подхватывает отмену; исполнитель отмены не уточняется.",
       "key": "e07"
@@ -249,24 +249,24 @@
         "sentence": "Loss of participants during a study is known as ___.",
         "options": [
           {
-            "id": "o3",
+            "id": "v33429e89214b",
             "label": "replication"
           },
           {
-            "id": "o1",
+            "id": "v8759f0674290",
             "label": "attrition"
           },
           {
-            "id": "o2",
+            "id": "vde4da53bdd8a",
             "label": "allocation"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v8759f0674290"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v8759f0674290",
+      "incorrect_answer": "vde4da53bdd8a",
       "editorial_answer": "attrition",
       "explanation": "Attrition — выбывание; allocation — распределение, replication — повторение исследования.",
       "key": "e08"

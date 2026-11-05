@@ -1,0 +1,330 @@
+{
+  "key": "a1/jobs-workplaces",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A1 · ситуации и решения",
+    "position": 20
+  },
+  "position": 1,
+  "title": "Кто где работает",
+  "description": "Кто где работает: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Называть профессию с a/an",
+    "Соотносить человека и место работы"
+  ],
+  "notes": [
+    "С профессией в единственном числе нужен a/an: She is a nurse.",
+    "He/she works — с -s; I/you/we/they work — без -s."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/prices-payment"],
+  "lexicon": [
+    {
+      "en": "nurse",
+      "ru": "медсестра или медбрат"
+    },
+    {
+      "en": "hospital",
+      "ru": "больница"
+    },
+    {
+      "en": "driver",
+      "ru": "водитель"
+    },
+    {
+      "en": "office",
+      "ru": "офис"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: My aunt works in a hospital. She is ___ nurse.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v23e2d119d84f",
+            "label": "a"
+          },
+          {
+            "id": "v43864058cfc8",
+            "label": "an"
+          },
+          {
+            "id": "v8c5194330394",
+            "label": "of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v23e2d119d84f"
+      },
+      "reference_answer": "v23e2d119d84f",
+      "incorrect_answer": "v43864058cfc8",
+      "editorial_answer": "a",
+      "explanation": "Nurse начинается с согласного звука, поэтому a nurse.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: work / works.",
+      "public_payload": {
+        "sentence": "My brother ___ in an office."
+      },
+      "answer_key": {
+        "accepted": ["works"]
+      },
+      "reference_answer": "works",
+      "incorrect_answer": "work",
+      "editorial_answer": "My brother works in an office.",
+      "explanation": "My brother заменяется he; в Present Simple нужна форма works.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Моя тётя — медсестра.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "a"
+          },
+          {
+            "id": "t5",
+            "label": "nurse."
+          },
+          {
+            "id": "t1",
+            "label": "My"
+          },
+          {
+            "id": "t2",
+            "label": "aunt"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "My aunt is a nurse.",
+      "explanation": "Для профессии в единственном числе используем a nurse.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "My father is an driver."
+      },
+      "answer_key": {
+        "accepted": ["My father is a driver."]
+      },
+      "reference_answer": "My father is a driver.",
+      "incorrect_answer": "My father is an driver.",
+      "editorial_answer": "My father is a driver.",
+      "explanation": "Driver начинается с согласного звука; an заменяется на a.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где работает тётя?",
+      "public_payload": {
+        "passage": "My aunt is a nurse. She works in a hospital. My father is a driver. He works at night.",
+        "options": [
+          {
+            "id": "v6379f8bf8a5b",
+            "label": "In a school."
+          },
+          {
+            "id": "v9e4648bdf11a",
+            "label": "In a café."
+          },
+          {
+            "id": "v92f5f1c2c504",
+            "label": "In a hospital."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v92f5f1c2c504"
+      },
+      "reference_answer": "v92f5f1c2c504",
+      "incorrect_answer": "v6379f8bf8a5b",
+      "editorial_answer": "In a hospital.",
+      "explanation": "В тексте прямо сказано works in a hospital.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lee28511ce46d",
+            "label": "nurse"
+          },
+          {
+            "id": "l38f7a202ba83",
+            "label": "hospital"
+          },
+          {
+            "id": "le44dd2b213c4",
+            "label": "driver"
+          },
+          {
+            "id": "l857753e52ff2",
+            "label": "office"
+          }
+        ],
+        "right": [
+          {
+            "id": "radf6b49f6d87",
+            "label": "водитель"
+          },
+          {
+            "id": "rddc458d21080",
+            "label": "офис"
+          },
+          {
+            "id": "r0b29e19d49e5",
+            "label": "медсестра или медбрат"
+          },
+          {
+            "id": "r219285362540",
+            "label": "больница"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lee28511ce46d": "r0b29e19d49e5",
+          "l38f7a202ba83": "r219285362540",
+          "le44dd2b213c4": "radf6b49f6d87",
+          "l857753e52ff2": "rddc458d21080"
+        }
+      },
+      "reference_answer": {
+        "lee28511ce46d": "r0b29e19d49e5",
+        "l38f7a202ba83": "r219285362540",
+        "le44dd2b213c4": "radf6b49f6d87",
+        "l857753e52ff2": "rddc458d21080"
+      },
+      "incorrect_answer": {
+        "lee28511ce46d": "r219285362540",
+        "l38f7a202ba83": "r0b29e19d49e5",
+        "le44dd2b213c4": "radf6b49f6d87",
+        "l857753e52ff2": "rddc458d21080"
+      },
+      "editorial_answer": "nurse — медсестра или медбрат; hospital — больница; driver — водитель; office — офис",
+      "explanation": "В этих контекстах: nurse — медсестра или медбрат; hospital — больница; driver — водитель; office — офис.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда работает отец?",
+      "public_payload": {
+        "passage": "My aunt is a nurse. She works in a hospital. My father is a driver. He works at night.",
+        "options": [
+          {
+            "id": "v7f584f432e5e",
+            "label": "Only in the afternoon."
+          },
+          {
+            "id": "v8008b4dcd294",
+            "label": "At night."
+          },
+          {
+            "id": "v253943c7f103",
+            "label": "Only on Sunday mornings."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8008b4dcd294"
+      },
+      "reference_answer": "v8008b4dcd294",
+      "incorrect_answer": "v253943c7f103",
+      "editorial_answer": "At night.",
+      "explanation": "He works at night относится к отцу.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о профессии сестры.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What does your sister do?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vcad8b2048b32",
+            "label": "She is at seven."
+          },
+          {
+            "id": "v41f967d1d40b",
+            "label": "She is blue."
+          },
+          {
+            "id": "vd4153d973315",
+            "label": "She is a nurse."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd4153d973315"
+      },
+      "reference_answer": "vd4153d973315",
+      "incorrect_answer": "vcad8b2048b32",
+      "editorial_answer": "She is a nurse.",
+      "explanation": "Вопрос What does she do? в этом контексте спрашивает о профессии.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A nurse works in this ___.",
+        "options": [
+          {
+            "id": "vc48c6fbaf490",
+            "label": "umbrella"
+          },
+          {
+            "id": "vc0b1a64e008e",
+            "label": "hospital"
+          },
+          {
+            "id": "vf011e17e5eee",
+            "label": "driver"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc0b1a64e008e"
+      },
+      "reference_answer": "vc0b1a64e008e",
+      "incorrect_answer": "vf011e17e5eee",
+      "editorial_answer": "hospital",
+      "explanation": "Hospital — место работы, остальные варианты обозначают человека и предмет.",
+      "key": "e09"
+    }
+  ]
+}

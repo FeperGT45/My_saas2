@@ -1,0 +1,334 @@
+{
+  "key": "a2/superlatives-nearby",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 1,
+  "title": "Самое близкое и самое тихое место",
+  "description": "Самое близкое и самое тихое место: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Сравнивать три и более места с the ...-est",
+    "Использовать most с длинными прилагательными"
+  ],
+  "notes": [
+    "Для самого признака в группе: the nearest shop, the quietest room.",
+    "С comfortable используем the most comfortable, не comfortablest."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/indefinite-people"],
+  "lexicon": [
+    {
+      "en": "nearest",
+      "ru": "ближайший"
+    },
+    {
+      "en": "quiet",
+      "ru": "тихий"
+    },
+    {
+      "en": "comfortable",
+      "ru": "удобный"
+    },
+    {
+      "en": "crowded",
+      "ru": "переполненный людьми"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Of the three hotels, this one is ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vcd370e440d2a",
+            "label": "the comfortablest"
+          },
+          {
+            "id": "v3e77b248500c",
+            "label": "more comfortable of all"
+          },
+          {
+            "id": "vaadf7200cad7",
+            "label": "the most comfortable"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vaadf7200cad7"
+      },
+      "reference_answer": "vaadf7200cad7",
+      "incorrect_answer": "vcd370e440d2a",
+      "editorial_answer": "the most comfortable",
+      "explanation": "В группе из трёх и с comfortable нужна превосходная степень the most comfortable.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: nearer / nearest.",
+      "public_payload": {
+        "sentence": "This is the ___ shop to our house; the other two are farther away."
+      },
+      "answer_key": {
+        "accepted": ["nearest"]
+      },
+      "reference_answer": "nearest",
+      "incorrect_answer": "nearer",
+      "editorial_answer": "This is the nearest shop to our house; the other two are farther away.",
+      "explanation": "Сравнение со всеми остальными и the требует nearest.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Самая маленькая комната — самая тихая.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "room"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "quietest."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "smallest"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The smallest room is the quietest.",
+      "explanation": "Обе превосходные степени обозначают максимум или минимум в группе.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "This is the most quietest café in the street."
+      },
+      "answer_key": {
+        "accepted": ["This is the quietest café in the street."]
+      },
+      "reference_answer": "This is the quietest café in the street.",
+      "incorrect_answer": "This is the most quietest café in the street.",
+      "editorial_answer": "This is the quietest café in the street.",
+      "explanation": "Нельзя одновременно использовать most и окончание -est в этой конструкции.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Роза выбрала третье кафе?",
+      "public_payload": {
+        "passage": "Rosa looked at three cafés near her college. The nearest one was very crowded. The second had the cheapest coffee, but no free tables. The third was farther away and had the quietest room. Rosa went there because she wanted to read before class.",
+        "options": [
+          {
+            "id": "v00b0a08557d7",
+            "label": "It was the nearest to college."
+          },
+          {
+            "id": "v5c4772f18586",
+            "label": "It was the quietest place to read."
+          },
+          {
+            "id": "v593c8a6301ee",
+            "label": "It had the cheapest coffee."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5c4772f18586"
+      },
+      "reference_answer": "v5c4772f18586",
+      "incorrect_answer": "v593c8a6301ee",
+      "editorial_answer": "It was the quietest place to read.",
+      "explanation": "Ей нужна была тишина для чтения, а не минимальная цена или расстояние.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "ledb363c9ebf8",
+            "label": "nearest"
+          },
+          {
+            "id": "l7dd51c319143",
+            "label": "quiet"
+          },
+          {
+            "id": "l54c4d3c0cf6d",
+            "label": "comfortable"
+          },
+          {
+            "id": "l260bac4ee2b1",
+            "label": "crowded"
+          }
+        ],
+        "right": [
+          {
+            "id": "rf7d65b42e72b",
+            "label": "удобный"
+          },
+          {
+            "id": "r29b0f813fe16",
+            "label": "переполненный людьми"
+          },
+          {
+            "id": "r83cc4800e605",
+            "label": "ближайший"
+          },
+          {
+            "id": "r817373beccf8",
+            "label": "тихий"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "ledb363c9ebf8": "r83cc4800e605",
+          "l7dd51c319143": "r817373beccf8",
+          "l54c4d3c0cf6d": "rf7d65b42e72b",
+          "l260bac4ee2b1": "r29b0f813fe16"
+        }
+      },
+      "reference_answer": {
+        "ledb363c9ebf8": "r83cc4800e605",
+        "l7dd51c319143": "r817373beccf8",
+        "l54c4d3c0cf6d": "rf7d65b42e72b",
+        "l260bac4ee2b1": "r29b0f813fe16"
+      },
+      "incorrect_answer": {
+        "ledb363c9ebf8": "r817373beccf8",
+        "l7dd51c319143": "r83cc4800e605",
+        "l54c4d3c0cf6d": "rf7d65b42e72b",
+        "l260bac4ee2b1": "r29b0f813fe16"
+      },
+      "editorial_answer": "nearest — ближайший; quiet — тихий; comfortable — удобный; crowded — переполненный людьми",
+      "explanation": "В этих контекстах: nearest — ближайший; quiet — тихий; comfortable — удобный; crowded — переполненный людьми.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что было неудобно во втором кафе?",
+      "public_payload": {
+        "passage": "Rosa looked at three cafés near her college. The nearest one was very crowded. The second had the cheapest coffee, but no free tables. The third was farther away and had the quietest room. Rosa went there because she wanted to read before class.",
+        "options": [
+          {
+            "id": "vd7d2d9533256",
+            "label": "There were no free tables."
+          },
+          {
+            "id": "v810dea37cc8b",
+            "label": "It did not sell coffee."
+          },
+          {
+            "id": "v1ca04cbdce29",
+            "label": "It was closed for the day."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd7d2d9533256"
+      },
+      "reference_answer": "vd7d2d9533256",
+      "incorrect_answer": "v810dea37cc8b",
+      "editorial_answer": "There were no free tables.",
+      "explanation": "Второе кафе было дешёвым, но свободных столиков не было.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Назови самый тихий вариант.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which room is best for a quiet night?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v11fdeaf909f6",
+            "label": "The room at the back is most quieter."
+          },
+          {
+            "id": "vc27443816ad9",
+            "label": "The room at the back is the quietest."
+          },
+          {
+            "id": "v5603009c3868",
+            "label": "The room at the back is quietest than."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc27443816ad9"
+      },
+      "reference_answer": "vc27443816ad9",
+      "incorrect_answer": "v5603009c3868",
+      "editorial_answer": "The room at the back is the quietest.",
+      "explanation": "The quietest — правильная превосходная степень quiet.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "There are people everywhere and no free seats. The café is ___.",
+        "options": [
+          {
+            "id": "v5eb691f44ee5",
+            "label": "crowded"
+          },
+          {
+            "id": "v74d1e956423c",
+            "label": "empty"
+          },
+          {
+            "id": "v03dc9d4a05bb",
+            "label": "nearest"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5eb691f44ee5"
+      },
+      "reference_answer": "v5eb691f44ee5",
+      "incorrect_answer": "v74d1e956423c",
+      "editorial_answer": "crowded",
+      "explanation": "Crowded описывает заполненность людьми; nearest — расстояние.",
+      "key": "e09"
+    }
+  ]
+}

@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o1",
+            "id": "vbc0ae562e015",
             "label": "to have discovered"
           },
           {
-            "id": "o2",
+            "id": "va39a0707395c",
             "label": "to discovering"
           },
           {
-            "id": "o3",
+            "id": "v832af2980a1c",
             "label": "have discover"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vbc0ae562e015"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vbc0ae562e015",
+      "incorrect_answer": "va39a0707395c",
       "editorial_answer": "to have discovered",
       "explanation": "Открытие предшествует нынешним сообщениям: to have discovered.",
       "key": "e01"
@@ -159,24 +159,24 @@
         "passage": "A local newspaper reported that a previously unknown footpath had been found near the coast. Several websites repeated the story, describing the path as an ancient trading route. The original article, however, quoted only one resident and included no archaeological assessment. The council confirmed that a path existed but said that its age and historical use had not been established. A careful summary would distinguish the confirmed existence of the path from the unverified claim about its role in trade.",
         "options": [
           {
-            "id": "o2",
+            "id": "vce632d621870",
             "label": "That it was an ancient trading route."
           },
           {
-            "id": "o3",
+            "id": "va78c8357e56b",
             "label": "That an archaeological study had dated it."
           },
           {
-            "id": "o1",
+            "id": "vb6f68347e200",
             "label": "That a path existed."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vb6f68347e200"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vb6f68347e200",
+      "incorrect_answer": "vce632d621870",
       "editorial_answer": "That a path existed.",
       "explanation": "Подтверждено существование пути, а не возраст и использование.",
       "key": "e05"
@@ -188,24 +188,24 @@
         "passage": "A local newspaper reported that a previously unknown footpath had been found near the coast. Several websites repeated the story, describing the path as an ancient trading route. The original article, however, quoted only one resident and included no archaeological assessment. The council confirmed that a path existed but said that its age and historical use had not been established. A careful summary would distinguish the confirmed existence of the path from the unverified claim about its role in trade.",
         "options": [
           {
-            "id": "o3",
+            "id": "vcebd81ecd592",
             "label": "As evidence that no path exists."
           },
           {
-            "id": "o1",
+            "id": "v154b261c6359",
             "label": "As an unverified claim, not an established fact."
           },
           {
-            "id": "o2",
+            "id": "v3afbb748b1f5",
             "label": "As proof accepted by archaeologists."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v154b261c6359"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v154b261c6359",
+      "incorrect_answer": "v3afbb748b1f5",
       "editorial_answer": "As an unverified claim, not an established fact.",
       "explanation": "Нужно сохранить различие между подтверждённым фактом и непроверенной интерпретацией.",
       "key": "e06"
@@ -222,24 +222,24 @@
         ],
         "options": [
           {
-            "id": "o2",
+            "id": "v772090b3c65b",
             "label": "Yes; reported means formally proved."
           },
           {
-            "id": "o3",
+            "id": "ve2e557ce9c6b",
             "label": "No; being examined means it is certainly fake."
           },
           {
-            "id": "o1",
+            "id": "v83efc3bb9628",
             "label": "Not yet; it is reported to be authentic, but experts are still examining it."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v83efc3bb9628"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v83efc3bb9628",
+      "incorrect_answer": "v772090b3c65b",
       "editorial_answer": "Not yet; it is reported to be authentic, but experts are still examining it.",
       "explanation": "Reported не равнозначно proved; продолжающаяся проверка также не доказывает подделку.",
       "key": "e07"
@@ -251,24 +251,24 @@
         "sentence": "To check whether a statement is accurate is to ___ it.",
         "options": [
           {
-            "id": "o3",
+            "id": "vfa690bdb63c7",
             "label": "improvise"
           },
           {
-            "id": "o1",
+            "id": "v0071682042e8",
             "label": "verify"
           },
           {
-            "id": "o2",
+            "id": "v611ebfb6e0b9",
             "label": "overlook"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v0071682042e8"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v0071682042e8",
+      "incorrect_answer": "v611ebfb6e0b9",
       "editorial_answer": "verify",
       "explanation": "Verify означает проверить достоверность, а не просто повторить сообщение.",
       "key": "e08"

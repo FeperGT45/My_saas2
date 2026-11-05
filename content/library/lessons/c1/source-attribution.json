@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o3",
+            "id": "v0caacb4d18cf",
             "label": "by"
           },
           {
-            "id": "o1",
+            "id": "vdd67cca6f4bd",
             "label": "to"
           },
           {
-            "id": "o2",
+            "id": "v1f60d3acf932",
             "label": "with"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vdd67cca6f4bd"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vdd67cca6f4bd",
+      "incorrect_answer": "v1f60d3acf932",
       "editorial_answer": "to",
       "explanation": "According to — стандартная конструкция указания источника.",
       "key": "e01"
@@ -183,24 +183,24 @@
         "passage": "A newspaper quoted a former contractor who claimed that maintenance records had been altered. The company denied the allegation and said that an external review was underway. The article did not include the disputed records or a completed review report. In an internal summary, a reader wrote that the newspaper had “confirmed falsification”. That description collapsed attribution into endorsement: quoting a claim is not the same as establishing it. Equally, the company’s denial did not by itself settle the matter. A proportionate summary would identify the allegation, the denial and the unresolved review, without presenting any of them as a final independent finding.",
         "options": [
           {
-            "id": "o1",
+            "id": "v2b64595b3bf8",
             "label": "A former contractor quoted by the newspaper."
           },
           {
-            "id": "o2",
+            "id": "v9ebe2e6d09ac",
             "label": "The external review’s completed report."
           },
           {
-            "id": "o3",
+            "id": "vf3d77c29e695",
             "label": "Every reader of the article."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v2b64595b3bf8"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v2b64595b3bf8",
+      "incorrect_answer": "v9ebe2e6d09ac",
       "editorial_answer": "A former contractor quoted by the newspaper.",
       "explanation": "Источник обвинения — цитируемый бывший подрядчик; завершённого отчёта ещё нет.",
       "key": "e05"
@@ -212,24 +212,24 @@
         "passage": "A newspaper quoted a former contractor who claimed that maintenance records had been altered. The company denied the allegation and said that an external review was underway. The article did not include the disputed records or a completed review report. In an internal summary, a reader wrote that the newspaper had “confirmed falsification”. That description collapsed attribution into endorsement: quoting a claim is not the same as establishing it. Equally, the company’s denial did not by itself settle the matter. A proportionate summary would identify the allegation, the denial and the unresolved review, without presenting any of them as a final independent finding.",
         "options": [
           {
-            "id": "o2",
+            "id": "v82c584ca7604",
             "label": "Independent falsification has been conclusively confirmed."
           },
           {
-            "id": "o3",
+            "id": "vcebcead946b2",
             "label": "The denial alone proves that the records are accurate."
           },
           {
-            "id": "o1",
+            "id": "v50ff0f2d91d3",
             "label": "There is an allegation, a denial and an unresolved review."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v50ff0f2d91d3"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v50ff0f2d91d3",
+      "incorrect_answer": "v82c584ca7604",
       "editorial_answer": "There is an allegation, a denial and an unresolved review.",
       "explanation": "Нужно различать утверждения сторон и ещё не завершённую проверку.",
       "key": "e06"
@@ -246,24 +246,24 @@
         ],
         "options": [
           {
-            "id": "o1",
+            "id": "v82759f2455b5",
             "label": "No; it identifies the applicant as the source."
           },
           {
-            "id": "o2",
+            "id": "va5e6de785084",
             "label": "Yes; according to always means independently verified."
           },
           {
-            "id": "o3",
+            "id": "v430c4fbd12da",
             "label": "No; it proves the applicant is lying."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v82759f2455b5"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v82759f2455b5",
+      "incorrect_answer": "va5e6de785084",
       "editorial_answer": "No; it identifies the applicant as the source.",
       "explanation": "Attribution не является ни независимой проверкой, ни доказательством лжи.",
       "key": "e07"
@@ -275,24 +275,24 @@
         "sentence": "Evidence from a separate source may ___ an account.",
         "options": [
           {
-            "id": "o2",
+            "id": "v3b8e822d3850",
             "label": "postpone"
           },
           {
-            "id": "o3",
+            "id": "v962f84eeed84",
             "label": "translate automatically"
           },
           {
-            "id": "o1",
+            "id": "v3ab64e4e1a93",
             "label": "corroborate"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v3ab64e4e1a93"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v3ab64e4e1a93",
+      "incorrect_answer": "v3b8e822d3850",
       "editorial_answer": "corroborate",
       "explanation": "Corroborate означает подкрепить сообщение дополнительными данными.",
       "key": "e08"

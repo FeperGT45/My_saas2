@@ -1,0 +1,342 @@
+{
+  "key": "b2/nondefining-which",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика B2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 7,
+  "title": "Добавочная информация между запятыми",
+  "description": "Добавочная информация между запятыми: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Различать уточняющую и добавочную относительную часть",
+    "Использовать which, а не that, в добавочной части о предмете"
+  ],
+  "notes": [
+    "Добавочная относительная часть отделяется запятыми: The hall, which opened in June, is nearby.",
+    "В таком употреблении о предмете используется which; that в этой добавочной конструкции не ставится."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/neednt-have-done"],
+  "lexicon": [
+    {
+      "en": "additional",
+      "ru": "дополнительный"
+    },
+    {
+      "en": "identify",
+      "ru": "определять, опознавать"
+    },
+    {
+      "en": "renovation",
+      "ru": "ремонт, обновление"
+    },
+    {
+      "en": "capacity",
+      "ru": "вместимость"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The lecture hall, ___ was renovated last year, now has step-free access.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "ved986746476e",
+            "label": "which"
+          },
+          {
+            "id": "vbcdb914df894",
+            "label": "that"
+          },
+          {
+            "id": "v402d11a45385",
+            "label": "what"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ved986746476e"
+      },
+      "reference_answer": "ved986746476e",
+      "incorrect_answer": "vbcdb914df894",
+      "editorial_answer": "which",
+      "explanation": "Между запятыми о предмете нужна добавочная часть с which.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: that / which.",
+      "public_payload": {
+        "sentence": "The exhibition, ___ opens on Friday, includes local work."
+      },
+      "answer_key": {
+        "accepted": ["which"]
+      },
+      "reference_answer": "which",
+      "incorrect_answer": "that",
+      "editorial_answer": "The exhibition, which opens on Friday, includes local work.",
+      "explanation": "Добавочная часть, выделенная запятыми, вводится which.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Зал, который открылся в июне, находится рядом.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "which"
+          },
+          {
+            "id": "t4",
+            "label": "opened"
+          },
+          {
+            "id": "t5",
+            "label": "in"
+          },
+          {
+            "id": "t6",
+            "label": "June,"
+          },
+          {
+            "id": "t7",
+            "label": "is"
+          },
+          {
+            "id": "t8",
+            "label": "nearby."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "hall,"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The hall, which opened in June, is nearby.",
+      "explanation": "Часть между запятыми добавляет сведения об уже определённом зале.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The library, that was renovated in May, is now open."
+      },
+      "answer_key": {
+        "accepted": ["The library, which was renovated in May, is now open."]
+      },
+      "reference_answer": "The library, which was renovated in May, is now open.",
+      "incorrect_answer": "The library, that was renovated in May, is now open.",
+      "editorial_answer": "The library, which was renovated in May, is now open.",
+      "explanation": "В добавочной части с запятыми that заменяется на which.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какова функция части про летний ремонт?",
+      "public_payload": {
+        "passage": "A notice announced that the Riverside Hall, which had been renovated over the summer, would host the next public lecture. The relative clause supplied extra information about a hall already identified by name. In another sentence, “the hall that has a hearing loop” distinguished one of several possible venues. Removing that defining clause would make the reference less precise. The organiser checked both sentences because changing punctuation could change whether readers were being given background detail or being told which venue was meant.",
+        "options": [
+          {
+            "id": "vf77025ef86c5",
+            "label": "It distinguishes an unnamed hall solely by its hearing loop."
+          },
+          {
+            "id": "vf23fa2446704",
+            "label": "It announces that every hall has been renovated."
+          },
+          {
+            "id": "vd7df0d43c219",
+            "label": "It adds background information about Riverside Hall."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd7df0d43c219"
+      },
+      "reference_answer": "vd7df0d43c219",
+      "incorrect_answer": "vf77025ef86c5",
+      "editorial_answer": "It adds background information about Riverside Hall.",
+      "explanation": "Название уже определяет зал; ремонт — дополнительный факт.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l52ceb8a30a1e",
+            "label": "additional"
+          },
+          {
+            "id": "l6aa7612207ba",
+            "label": "identify"
+          },
+          {
+            "id": "l81c0cf62f117",
+            "label": "renovation"
+          },
+          {
+            "id": "laca9f66d666f",
+            "label": "capacity"
+          }
+        ],
+        "right": [
+          {
+            "id": "rc5ac554cd321",
+            "label": "ремонт, обновление"
+          },
+          {
+            "id": "r12157ceb9dc5",
+            "label": "вместимость"
+          },
+          {
+            "id": "rb0273641abc0",
+            "label": "дополнительный"
+          },
+          {
+            "id": "r517f064d8e91",
+            "label": "определять, опознавать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l52ceb8a30a1e": "rb0273641abc0",
+          "l6aa7612207ba": "r517f064d8e91",
+          "l81c0cf62f117": "rc5ac554cd321",
+          "laca9f66d666f": "r12157ceb9dc5"
+        }
+      },
+      "reference_answer": {
+        "l52ceb8a30a1e": "rb0273641abc0",
+        "l6aa7612207ba": "r517f064d8e91",
+        "l81c0cf62f117": "rc5ac554cd321",
+        "laca9f66d666f": "r12157ceb9dc5"
+      },
+      "incorrect_answer": {
+        "l52ceb8a30a1e": "r517f064d8e91",
+        "l6aa7612207ba": "rb0273641abc0",
+        "l81c0cf62f117": "rc5ac554cd321",
+        "laca9f66d666f": "r12157ceb9dc5"
+      },
+      "editorial_answer": "additional — дополнительный; identify — определять, опознавать; renovation — ремонт, обновление; capacity — вместимость",
+      "explanation": "В этих контекстах: additional — дополнительный; identify — определять, опознавать; renovation — ремонт, обновление; capacity — вместимость.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем нужна определяющая часть в the hall that has a hearing loop?",
+      "public_payload": {
+        "passage": "A notice announced that the Riverside Hall, which had been renovated over the summer, would host the next public lecture. The relative clause supplied extra information about a hall already identified by name. In another sentence, “the hall that has a hearing loop” distinguished one of several possible venues. Removing that defining clause would make the reference less precise. The organiser checked both sentences because changing punctuation could change whether readers were being given background detail or being told which venue was meant.",
+        "options": [
+          {
+            "id": "v1f953694eeab",
+            "label": "To remove any need to identify a venue."
+          },
+          {
+            "id": "vbc5df70014a3",
+            "label": "To distinguish one venue from other possible halls."
+          },
+          {
+            "id": "va4b271f26c73",
+            "label": "To add a dispensable fact about every building."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbc5df70014a3"
+      },
+      "reference_answer": "vbc5df70014a3",
+      "incorrect_answer": "va4b271f26c73",
+      "editorial_answer": "To distinguish one venue from other possible halls.",
+      "explanation": "Второй пример использует признак как способ выбора конкретного зала.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери добавочную часть с правильным местоимением.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which sentence adds background about the named venue?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v02f20888059e",
+            "label": "Oak Hall, that seats two hundred people, is available."
+          },
+          {
+            "id": "v56fda8141da7",
+            "label": "Oak Hall, what seats two hundred people, is available."
+          },
+          {
+            "id": "vcc4ed60ef2f8",
+            "label": "Oak Hall, which seats two hundred people, is available."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vcc4ed60ef2f8"
+      },
+      "reference_answer": "vcc4ed60ef2f8",
+      "incorrect_answer": "v02f20888059e",
+      "editorial_answer": "Oak Hall, which seats two hundred people, is available.",
+      "explanation": "Which используется в добавочной относительной части о зале.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The maximum number of people a venue can hold is its ___.",
+        "options": [
+          {
+            "id": "v59776bb840d6",
+            "label": "reservation only"
+          },
+          {
+            "id": "v37c99d0b3840",
+            "label": "capacity"
+          },
+          {
+            "id": "v71782c1e0e47",
+            "label": "departure"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v37c99d0b3840"
+      },
+      "reference_answer": "v37c99d0b3840",
+      "incorrect_answer": "v71782c1e0e47",
+      "editorial_answer": "capacity",
+      "explanation": "Capacity в этом контексте — вместимость помещения.",
+      "key": "e09"
+    }
+  ]
+}

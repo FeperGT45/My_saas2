@@ -1,0 +1,338 @@
+{
+  "key": "a2/lost-item-past",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 3,
+  "title": "Что мы не нашли вчера",
+  "description": "Что мы не нашли вчера: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Строить отрицание в прошлом с did not",
+    "Не ставить прошедшую форму после did"
+  ],
+  "notes": [
+    "Did not + начальная форма: I did not find the key.",
+    "В вопросе Did you see it? прошедшее время уже выражено did; saw после did не требуется."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/first-experiences-ever"],
+  "lexicon": [
+    {
+      "en": "find",
+      "ru": "находить"
+    },
+    {
+      "en": "lose",
+      "ru": "терять"
+    },
+    {
+      "en": "pocket",
+      "ru": "карман"
+    },
+    {
+      "en": "reception",
+      "ru": "стойка регистрации"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I looked in every pocket, but I did not ___ my key.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v9dcf5fd35149",
+            "label": "find"
+          },
+          {
+            "id": "v284b11695933",
+            "label": "found"
+          },
+          {
+            "id": "v2f427781880e",
+            "label": "finding"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9dcf5fd35149"
+      },
+      "reference_answer": "v9dcf5fd35149",
+      "incorrect_answer": "v284b11695933",
+      "editorial_answer": "find",
+      "explanation": "После did not нужна начальная форма find.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: left / leave.",
+      "public_payload": {
+        "sentence": "Did you ___ your bag at reception yesterday?"
+      },
+      "answer_key": {
+        "accepted": ["leave"]
+      },
+      "reference_answer": "leave",
+      "incorrect_answer": "left",
+      "editorial_answer": "Did you leave your bag at reception yesterday?",
+      "explanation": "Did уже выражает прошлое, поэтому leave.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Вчера мы не нашли сумку.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "not"
+          },
+          {
+            "id": "t4",
+            "label": "find"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "bag"
+          },
+          {
+            "id": "t7",
+            "label": "yesterday."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "did"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "We did not find the bag yesterday.",
+      "explanation": "Did not + find — отрицание завершённого прошлого.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Did she saw the lost phone?"
+      },
+      "answer_key": {
+        "accepted": ["Did she see the lost phone?"]
+      },
+      "reference_answer": "Did she see the lost phone?",
+      "incorrect_answer": "Did she saw the lost phone?",
+      "editorial_answer": "Did she see the lost phone?",
+      "explanation": "После did нужен see, не saw.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Луис обратился на стойку регистрации?",
+      "public_payload": {
+        "passage": "After class, Luis could not find his keys. He checked his coat and bag, but they were not there. He did not go straight home. Instead, he asked at reception. Someone had left his keys there, and the receptionist gave them back after he described the blue key ring.",
+        "options": [
+          {
+            "id": "vca0a0e744470",
+            "label": "He wanted to buy a blue coat."
+          },
+          {
+            "id": "v28dd9a8a682a",
+            "label": "He had found an extra bag."
+          },
+          {
+            "id": "v9e54d448e585",
+            "label": "He could not find his keys in his things."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9e54d448e585"
+      },
+      "reference_answer": "v9e54d448e585",
+      "incorrect_answer": "vca0a0e744470",
+      "editorial_answer": "He could not find his keys in his things.",
+      "explanation": "Луис не нашёл ключи в пальто и сумке и стал искать их дальше.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l120a59ef47bb",
+            "label": "find"
+          },
+          {
+            "id": "l50531f2b55d0",
+            "label": "lose"
+          },
+          {
+            "id": "l6077a78e4a42",
+            "label": "pocket"
+          },
+          {
+            "id": "lf07a85d69849",
+            "label": "reception"
+          }
+        ],
+        "right": [
+          {
+            "id": "r693327fc6946",
+            "label": "карман"
+          },
+          {
+            "id": "r9b2b0c94a7e7",
+            "label": "стойка регистрации"
+          },
+          {
+            "id": "r2518d8ede739",
+            "label": "находить"
+          },
+          {
+            "id": "ra42f991e108e",
+            "label": "терять"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l120a59ef47bb": "r2518d8ede739",
+          "l50531f2b55d0": "ra42f991e108e",
+          "l6077a78e4a42": "r693327fc6946",
+          "lf07a85d69849": "r9b2b0c94a7e7"
+        }
+      },
+      "reference_answer": {
+        "l120a59ef47bb": "r2518d8ede739",
+        "l50531f2b55d0": "ra42f991e108e",
+        "l6077a78e4a42": "r693327fc6946",
+        "lf07a85d69849": "r9b2b0c94a7e7"
+      },
+      "incorrect_answer": {
+        "l120a59ef47bb": "ra42f991e108e",
+        "l50531f2b55d0": "r2518d8ede739",
+        "l6077a78e4a42": "r693327fc6946",
+        "lf07a85d69849": "r9b2b0c94a7e7"
+      },
+      "editorial_answer": "find — находить; lose — терять; pocket — карман; reception — стойка регистрации",
+      "explanation": "В этих контекстах: find — находить; lose — терять; pocket — карман; reception — стойка регистрации.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как Луис подтвердил, что ключи его?",
+      "public_payload": {
+        "passage": "After class, Luis could not find his keys. He checked his coat and bag, but they were not there. He did not go straight home. Instead, he asked at reception. Someone had left his keys there, and the receptionist gave them back after he described the blue key ring.",
+        "options": [
+          {
+            "id": "ve3a593093548",
+            "label": "He showed a train ticket."
+          },
+          {
+            "id": "vbed712067ce5",
+            "label": "He described the blue key ring."
+          },
+          {
+            "id": "v8dd41935ac6a",
+            "label": "He paid for a new bag."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbed712067ce5"
+      },
+      "reference_answer": "vbed712067ce5",
+      "incorrect_answer": "v8dd41935ac6a",
+      "editorial_answer": "He described the blue key ring.",
+      "explanation": "В тексте названо описание синего брелока.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь отрицательно о поиске в прошлом.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Did you find your wallet?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vb9b852007492",
+            "label": "No, I did not found it."
+          },
+          {
+            "id": "v926128951bdc",
+            "label": "No, I did not finding it."
+          },
+          {
+            "id": "v9b5400b12e4b",
+            "label": "No, I did not find it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9b5400b12e4b"
+      },
+      "reference_answer": "v9b5400b12e4b",
+      "incorrect_answer": "vb9b852007492",
+      "editorial_answer": "No, I did not find it.",
+      "explanation": "После did not сохраняется find.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "I keep a small key in the ___ of my jacket.",
+        "options": [
+          {
+            "id": "vcf9b982ea591",
+            "label": "museum"
+          },
+          {
+            "id": "va205fda3c524",
+            "label": "pocket"
+          },
+          {
+            "id": "v854797f7a857",
+            "label": "receptionist"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va205fda3c524"
+      },
+      "reference_answer": "va205fda3c524",
+      "incorrect_answer": "v854797f7a857",
+      "editorial_answer": "pocket",
+      "explanation": "Pocket — карман одежды.",
+      "key": "e09"
+    }
+  ]
+}

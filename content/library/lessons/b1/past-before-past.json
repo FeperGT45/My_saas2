@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o1",
+            "id": "v94ff22f9f0ab",
             "label": "had"
           },
           {
-            "id": "o2",
+            "id": "va1fa88f02c2b",
             "label": "has"
           },
           {
-            "id": "o3",
+            "id": "v8226176e34ed",
             "label": "would"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v94ff22f9f0ab"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v94ff22f9f0ab",
+      "incorrect_answer": "va1fa88f02c2b",
       "editorial_answer": "had",
       "explanation": "Поезд ушёл раньше, чем Лео добрался до платформы: had left.",
       "key": "e01"
@@ -155,24 +155,24 @@
         "passage": "Leo reached the station at ten past eight. His ticket said that the train would leave at eight, but he hoped it was late. On platform six he found only a cleaner. The train had left on time. Leo went to the ticket office and changed his ticket for the next service. He decided to leave home earlier next time.",
         "options": [
           {
-            "id": "o2",
+            "id": "v19ba2074f39f",
             "label": "The cleaner refused to let him board."
           },
           {
-            "id": "o3",
+            "id": "v05c90dd87a0a",
             "label": "His ticket was for a different station."
           },
           {
-            "id": "o1",
+            "id": "v498c3a69b0ea",
             "label": "It had left before he arrived."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v498c3a69b0ea"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v498c3a69b0ea",
+      "incorrect_answer": "v19ba2074f39f",
       "editorial_answer": "It had left before he arrived.",
       "explanation": "Поезд ушёл в восемь, Лео прибыл на десять минут позже.",
       "key": "e05"
@@ -184,24 +184,24 @@
         "passage": "Leo reached the station at ten past eight. His ticket said that the train would leave at eight, but he hoped it was late. On platform six he found only a cleaner. The train had left on time. Leo went to the ticket office and changed his ticket for the next service. He decided to leave home earlier next time.",
         "options": [
           {
-            "id": "o3",
+            "id": "v1a766823c280",
             "label": "He decided never to travel by train again."
           },
           {
-            "id": "o1",
+            "id": "v54692827f983",
             "label": "He changed his ticket for the next service."
           },
           {
-            "id": "o2",
+            "id": "vebf2282238f1",
             "label": "He caught the same train on another platform."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v54692827f983"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v54692827f983",
+      "incorrect_answer": "vebf2282238f1",
       "editorial_answer": "He changed his ticket for the next service.",
       "explanation": "Текст прямо сообщает об обмене билета; об отказе от поездок не говорится.",
       "key": "e06"
@@ -218,24 +218,24 @@
         ],
         "options": [
           {
-            "id": "o2",
+            "id": "v68c2022bd5a7",
             "label": "The audience will go home tomorrow."
           },
           {
-            "id": "o3",
+            "id": "v619244dfb8c7",
             "label": "The audience goes home every Friday."
           },
           {
-            "id": "o1",
+            "id": "v95aa2af29151",
             "label": "The audience had already gone home."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v95aa2af29151"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v95aa2af29151",
+      "incorrect_answer": "v68c2022bd5a7",
       "editorial_answer": "The audience had already gone home.",
       "explanation": "Had already gone объясняет состояние зала к моменту входа.",
       "key": "e07"
@@ -247,24 +247,24 @@
         "sentence": "The train was due to leave at eight. Its scheduled ___ was eight o’clock.",
         "options": [
           {
-            "id": "o3",
+            "id": "v5dfc05cf501d",
             "label": "passenger"
           },
           {
-            "id": "o1",
+            "id": "v129b3bd98031",
             "label": "departure"
           },
           {
-            "id": "o2",
+            "id": "va91792a1311b",
             "label": "platform"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v129b3bd98031"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v129b3bd98031",
+      "incorrect_answer": "va91792a1311b",
       "editorial_answer": "departure",
       "explanation": "Departure обозначает отправление; platform — место, passenger — человек.",
       "key": "e08"

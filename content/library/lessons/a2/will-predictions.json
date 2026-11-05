@@ -1,0 +1,338 @@
+{
+  "key": "a2/will-predictions",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-04",
+    "title": "Практика A2 · ситуации и решения",
+    "position": 20
+  },
+  "position": 7,
+  "title": "Мнение о будущем с will",
+  "description": "Мнение о будущем с will: применяем правило в самостоятельных ситуациях, работаем со словарём и читаем авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Выражать прогноз с I think ... will",
+    "Строить отрицательный прогноз с will not"
+  ],
+  "notes": [
+    "I think it will ... выражает прогноз или мнение о будущем.",
+    "После will/will not нужна начальная форма: will arrive, will not arrive."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/careful-carefully"],
+  "lexicon": [
+    {
+      "en": "predict",
+      "ru": "предсказывать"
+    },
+    {
+      "en": "probably",
+      "ru": "вероятно"
+    },
+    {
+      "en": "arrive",
+      "ru": "прибывать"
+    },
+    {
+      "en": "weather",
+      "ru": "погода"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I think the new library ___ popular with students.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vacb92ab35725",
+            "label": "will is"
+          },
+          {
+            "id": "v74fa13f4e525",
+            "label": "will being"
+          },
+          {
+            "id": "ve10915ec775f",
+            "label": "will be"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve10915ec775f"
+      },
+      "reference_answer": "ve10915ec775f",
+      "incorrect_answer": "vacb92ab35725",
+      "editorial_answer": "will be",
+      "explanation": "После will нужен be, а не is или being.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Дополни предложение словом из пары: arrives / arrive.",
+      "public_payload": {
+        "sentence": "I do not think the bus will ___ before ten."
+      },
+      "answer_key": {
+        "accepted": ["arrive"]
+      },
+      "reference_answer": "arrive",
+      "incorrect_answer": "arrives",
+      "editorial_answer": "I do not think the bus will arrive before ten.",
+      "explanation": "После will основной глагол не получает -s.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Думаю, завтра погода улучшится.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "weather"
+          },
+          {
+            "id": "t5",
+            "label": "will"
+          },
+          {
+            "id": "t6",
+            "label": "improve"
+          },
+          {
+            "id": "t7",
+            "label": "tomorrow."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "think"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "I think the weather will improve tomorrow.",
+      "explanation": "Will improve передаёт прогноз говорящего.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь указанную конструкцию, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I think our team will wins next week."
+      },
+      "answer_key": {
+        "accepted": ["I think our team will win next week."]
+      },
+      "reference_answer": "I think our team will win next week.",
+      "incorrect_answer": "I think our team will wins next week.",
+      "editorial_answer": "I think our team will win next week.",
+      "explanation": "После will нужна начальная форма win.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Лео ожидает популярности новой библиотеки?",
+      "public_payload": {
+        "passage": "The town is opening a new library next month. Leo thinks it will be popular because it has space for study groups. His sister is less sure. She thinks people will still use the old library near the station. They agree to visit the new building when it opens.",
+        "options": [
+          {
+            "id": "vaac2350e732b",
+            "label": "There are no students in town."
+          },
+          {
+            "id": "v5b48b7a90b2b",
+            "label": "It has space for study groups."
+          },
+          {
+            "id": "v3b5e6a3738d0",
+            "label": "The old library has already closed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5b48b7a90b2b"
+      },
+      "reference_answer": "v5b48b7a90b2b",
+      "incorrect_answer": "v3b5e6a3738d0",
+      "editorial_answer": "It has space for study groups.",
+      "explanation": "Он прямо связывает свой прогноз с местом для учебных групп.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова урока с переводом в указанном контексте.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lfdb1f29561bb",
+            "label": "predict"
+          },
+          {
+            "id": "lae4cfb66a0a7",
+            "label": "probably"
+          },
+          {
+            "id": "l68d281a0d280",
+            "label": "arrive"
+          },
+          {
+            "id": "l768cc13de10f",
+            "label": "weather"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2282b4875abe",
+            "label": "прибывать"
+          },
+          {
+            "id": "r9b080b0a7bf7",
+            "label": "погода"
+          },
+          {
+            "id": "r6410947584a8",
+            "label": "предсказывать"
+          },
+          {
+            "id": "rbd3f8f86971e",
+            "label": "вероятно"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lfdb1f29561bb": "r6410947584a8",
+          "lae4cfb66a0a7": "rbd3f8f86971e",
+          "l68d281a0d280": "r2282b4875abe",
+          "l768cc13de10f": "r9b080b0a7bf7"
+        }
+      },
+      "reference_answer": {
+        "lfdb1f29561bb": "r6410947584a8",
+        "lae4cfb66a0a7": "rbd3f8f86971e",
+        "l68d281a0d280": "r2282b4875abe",
+        "l768cc13de10f": "r9b080b0a7bf7"
+      },
+      "incorrect_answer": {
+        "lfdb1f29561bb": "rbd3f8f86971e",
+        "lae4cfb66a0a7": "r6410947584a8",
+        "l68d281a0d280": "r2282b4875abe",
+        "l768cc13de10f": "r9b080b0a7bf7"
+      },
+      "editorial_answer": "predict — предсказывать; probably — вероятно; arrive — прибывать; weather — погода",
+      "explanation": "В этих контекстах: predict — предсказывать; probably — вероятно; arrive — прибывать; weather — погода.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Согласна ли сестра с прогнозом полностью?",
+      "public_payload": {
+        "passage": "The town is opening a new library next month. Leo thinks it will be popular because it has space for study groups. His sister is less sure. She thinks people will still use the old library near the station. They agree to visit the new building when it opens.",
+        "options": [
+          {
+            "id": "v12e8c52eeab1",
+            "label": "No; she expects people to keep using the old library."
+          },
+          {
+            "id": "v24dc5d038a39",
+            "label": "Yes; she says everyone will stop using the old one."
+          },
+          {
+            "id": "v0b869fe6d480",
+            "label": "No; she refuses to visit any library."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v12e8c52eeab1"
+      },
+      "reference_answer": "v12e8c52eeab1",
+      "incorrect_answer": "v24dc5d038a39",
+      "editorial_answer": "No; she expects people to keep using the old library.",
+      "explanation": "Она менее уверена, но всё же соглашается посетить новую библиотеку.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери грамматически правильный прогноз.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Do you think the parcel will arrive tomorrow?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vb9b0e916454e",
+            "label": "I think it will arrives yesterday."
+          },
+          {
+            "id": "v77f29dc32608",
+            "label": "I think it will arrive on Friday."
+          },
+          {
+            "id": "v87bcdf75b424",
+            "label": "I think it will arrived on Friday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v77f29dc32608"
+      },
+      "reference_answer": "v77f29dc32608",
+      "incorrect_answer": "v87bcdf75b424",
+      "editorial_answer": "I think it will arrive on Friday.",
+      "explanation": "После will используется arrive.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "If something is likely but not certain, it will ___ happen.",
+        "options": [
+          {
+            "id": "vf3f86892b23f",
+            "label": "probably"
+          },
+          {
+            "id": "ve2c11ecc0e1d",
+            "label": "never with certainty"
+          },
+          {
+            "id": "vb77c3d2eb70a",
+            "label": "yesterday"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf3f86892b23f"
+      },
+      "reference_answer": "vf3f86892b23f",
+      "incorrect_answer": "ve2c11ecc0e1d",
+      "editorial_answer": "probably",
+      "explanation": "Probably обозначает вероятный, но не гарантированный результат.",
+      "key": "e09"
+    }
+  ]
+}

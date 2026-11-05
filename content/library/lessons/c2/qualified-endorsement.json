@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o1",
+            "id": "v1c5c7fb46b25",
             "label": "qualified recognition with a substantive objection"
           },
           {
-            "id": "o2",
+            "id": "v10a7e7d2bf4f",
             "label": "unreserved approval of the funding"
           },
           {
-            "id": "o3",
+            "id": "v637a91f8e8ba",
             "label": "proof that the plan has no useful feature"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v1c5c7fb46b25"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v1c5c7fb46b25",
+      "incorrect_answer": "v10a7e7d2bf4f",
       "editorial_answer": "qualified recognition with a substantive objection",
       "explanation": "Литота признаёт достоинства, а but вводит существенное возражение к финансированию.",
       "key": "e01"
@@ -216,24 +216,24 @@
         "passage": "The panel’s chair described the proposal as “not without merit”, a phrase the publicity team immediately selected for its announcement. The rest of the sentence was less accommodating: the proposed benefits depended on funding commitments that had not been secured. A panel member objected to the abbreviated quotation, arguing that it converted a qualified acknowledgement into an apparent endorsement. The publicity team replied that every quoted word was accurate. That defence addressed literal transcription, not the implication created by omission. In the final notice, the chair’s reservation appeared alongside the acknowledgement of merit. Readers could then distinguish a potentially valuable idea from a recommendation to proceed under the conditions presently described. The panel had neither dismissed the idea outright nor licensed implementation.",
         "options": [
           {
-            "id": "o2",
+            "id": "v8e6e8c645b2b",
             "label": "Every quoted word had been invented."
           },
           {
-            "id": "o3",
+            "id": "v5abed2835201",
             "label": "The panel had secretly approved unconditional implementation."
           },
           {
-            "id": "o1",
+            "id": "vea0ed5d26ac7",
             "label": "Accurate words implied a stronger endorsement once the reservation was omitted."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vea0ed5d26ac7"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vea0ed5d26ac7",
+      "incorrect_answer": "v8e6e8c645b2b",
       "editorial_answer": "Accurate words implied a stronger endorsement once the reservation was omitted.",
       "explanation": "Дословная точность слов не сохраняет смысл при удалении существенной оговорки.",
       "key": "e05"
@@ -245,24 +245,24 @@
         "passage": "The panel’s chair described the proposal as “not without merit”, a phrase the publicity team immediately selected for its announcement. The rest of the sentence was less accommodating: the proposed benefits depended on funding commitments that had not been secured. A panel member objected to the abbreviated quotation, arguing that it converted a qualified acknowledgement into an apparent endorsement. The publicity team replied that every quoted word was accurate. That defence addressed literal transcription, not the implication created by omission. In the final notice, the chair’s reservation appeared alongside the acknowledgement of merit. Readers could then distinguish a potentially valuable idea from a recommendation to proceed under the conditions presently described. The panel had neither dismissed the idea outright nor licensed implementation.",
         "options": [
           {
-            "id": "o3",
+            "id": "v46c1c8da5733",
             "label": "Implementation has been authorised without further conditions."
           },
           {
-            "id": "o1",
+            "id": "v757ba84abdea",
             "label": "The idea has potential merit, but proceeding on the stated funding assumptions is not endorsed."
           },
           {
-            "id": "o2",
+            "id": "vd49d4b16e2ed",
             "label": "The proposal has no merit under any imaginable conditions."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v757ba84abdea"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v757ba84abdea",
+      "incorrect_answer": "vd49d4b16e2ed",
       "editorial_answer": "The idea has potential merit, but proceeding on the stated funding assumptions is not endorsed.",
       "explanation": "Текст исключает и полный отказ от идеи, и разрешение реализации на нынешних условиях.",
       "key": "e06"
@@ -279,24 +279,24 @@
         ],
         "options": [
           {
-            "id": "o2",
+            "id": "vf559b0fd0a48",
             "label": "Yes; subject to means regardless of verification."
           },
           {
-            "id": "o3",
+            "id": "v8252551cf4a4",
             "label": "Yes; promising always authorises implementation."
           },
           {
-            "id": "o1",
+            "id": "v577aff3424d5",
             "label": "No; that removes a condition on the favourable assessment."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v577aff3424d5"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v577aff3424d5",
+      "incorrect_answer": "vf559b0fd0a48",
       "editorial_answer": "No; that removes a condition on the favourable assessment.",
       "explanation": "Subject to делает проверку условием; promising не равно approved.",
       "key": "e07"
@@ -308,24 +308,24 @@
         "sentence": "An argument that can withstand reasoned criticism is ___.",
         "options": [
           {
-            "id": "o3",
+            "id": "vc19c942fd820",
             "label": "unanimous"
           },
           {
-            "id": "o1",
+            "id": "vf31b4f96ef2b",
             "label": "tenable"
           },
           {
-            "id": "o2",
+            "id": "v8db4a5a3d558",
             "label": "infallible"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vf31b4f96ef2b"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vf31b4f96ef2b",
+      "incorrect_answer": "v8db4a5a3d558",
       "editorial_answer": "tenable",
       "explanation": "Tenable — защищаемый аргумент; это не обещание безошибочности и не голосование.",
       "key": "e08"

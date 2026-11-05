@@ -52,24 +52,24 @@
       "public_payload": {
         "options": [
           {
-            "id": "o1",
+            "id": "v7064aefac455",
             "label": "had submitted"
           },
           {
-            "id": "o2",
+            "id": "v970a0fe0bdd7",
             "label": "submit"
           },
           {
-            "id": "o3",
+            "id": "v6b66792f7529",
             "label": "will submit"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v7064aefac455"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v7064aefac455",
+      "incorrect_answer": "v970a0fe0bdd7",
       "editorial_answer": "had submitted",
       "explanation": "Завершённое прошлое требует had submitted после wish.",
       "key": "e01"
@@ -159,24 +159,24 @@
         "passage": "Noah booked a workshop after reading a short announcement on his phone. He noticed the venue but overlooked the date. When he arrived a week late, the building was closed. He wished he had opened the full booking confirmation instead of relying on the announcement. The organiser offered him a place at a later workshop, but the original fee could not be refunded under the terms he had accepted. Noah decided to add future bookings to his calendar immediately.",
         "options": [
           {
-            "id": "o2",
+            "id": "vd1c73a96d8b7",
             "label": "He deliberately booked a closed building."
           },
           {
-            "id": "o3",
+            "id": "v5c0d8a88f57b",
             "label": "He arrived a week before the workshop."
           },
           {
-            "id": "o1",
+            "id": "v19e82dca1ba6",
             "label": "He overlooked the workshop date."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v19e82dca1ba6"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v19e82dca1ba6",
+      "incorrect_answer": "vd1c73a96d8b7",
       "editorial_answer": "He overlooked the workshop date.",
       "explanation": "Он не заметил дату и пришёл на неделю позже.",
       "key": "e05"
@@ -188,24 +188,24 @@
         "passage": "Noah booked a workshop after reading a short announcement on his phone. He noticed the venue but overlooked the date. When he arrived a week late, the building was closed. He wished he had opened the full booking confirmation instead of relying on the announcement. The organiser offered him a place at a later workshop, but the original fee could not be refunded under the terms he had accepted. Noah decided to add future bookings to his calendar immediately.",
         "options": [
           {
-            "id": "o3",
+            "id": "v9d62178a7edb",
             "label": "A free trip to the original venue."
           },
           {
-            "id": "o1",
+            "id": "vd03795ae2ae3",
             "label": "A place at a later workshop."
           },
           {
-            "id": "o2",
+            "id": "v7d22bb172e54",
             "label": "A guaranteed cash refund."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "vd03795ae2ae3"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "vd03795ae2ae3",
+      "incorrect_answer": "v7d22bb172e54",
       "editorial_answer": "A place at a later workshop.",
       "explanation": "Предложение касалось другого занятия; возврат исходной суммы был исключён условиями.",
       "key": "e06"
@@ -222,24 +222,24 @@
         ],
         "options": [
           {
-            "id": "o2",
+            "id": "v495585c3ef95",
             "label": "I wish I check it yesterday."
           },
           {
-            "id": "o3",
+            "id": "v4c207d9f963c",
             "label": "I wish I will checked it."
           },
           {
-            "id": "o1",
+            "id": "v35718f8dfaac",
             "label": "I wish I had checked it before leaving."
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "v35718f8dfaac"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "v35718f8dfaac",
+      "incorrect_answer": "v495585c3ef95",
       "editorial_answer": "I wish I had checked it before leaving.",
       "explanation": "Wish I had checked относится к конкретному несостоявшемуся действию в прошлом.",
       "key": "e07"
@@ -251,24 +251,24 @@
         "sentence": "If you fail to notice a small but important detail, you ___ it.",
         "options": [
           {
-            "id": "o3",
+            "id": "v9030e5780b90",
             "label": "recover"
           },
           {
-            "id": "o1",
+            "id": "ve1ac1022aa5f",
             "label": "overlook"
           },
           {
-            "id": "o2",
+            "id": "v32d3556d1624",
             "label": "confirm"
           }
         ]
       },
       "answer_key": {
-        "value": "o1"
+        "value": "ve1ac1022aa5f"
       },
-      "reference_answer": "o1",
-      "incorrect_answer": "o2",
+      "reference_answer": "ve1ac1022aa5f",
+      "incorrect_answer": "v32d3556d1624",
       "editorial_answer": "overlook",
       "explanation": "Overlook в этом контексте значит упустить из виду.",
       "key": "e08"
