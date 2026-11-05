@@ -1,0 +1,303 @@
+{
+  "key": "c1/inverted-conditions",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C1 · смысл и точность",
+    "position": 10
+  },
+  "position": 1,
+  "title": "Условие без if в формальном письме",
+  "description": "Условие без if в формальном письме: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Преобразовывать if-условия с помощью had и should",
+    "Сохранять степень уверенности при формальном перефразировании"
+  ],
+  "notes": [
+    "Had + подлежащее + причастие может заменить if + Past Perfect: Had we known ... = If we had known ...",
+    "Should + подлежащее + инфинитив вводит возможное будущее условие в формальном регистре: Should you need assistance ..."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/concession"],
+  "lexicon": [
+    {
+      "en": "contingency",
+      "ru": "непредвиденная ситуация"
+    },
+    {
+      "en": "disclose",
+      "ru": "раскрывать информацию"
+    },
+    {
+      "en": "assistance",
+      "ru": "помощь"
+    },
+    {
+      "en": "prior",
+      "ru": "предшествующий"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ the defect been disclosed earlier, the purchase might have been delayed.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o2",
+            "label": "Should"
+          },
+          {
+            "id": "o3",
+            "label": "Were to"
+          },
+          {
+            "id": "o1",
+            "label": "Had"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Had",
+      "explanation": "Had the defect been disclosed = If the defect had been disclosed; речь о прошлом.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: require / required.",
+      "public_payload": {
+        "sentence": "Should you ___ further assistance, please contact the coordinator."
+      },
+      "answer_key": {
+        "accepted": ["require"]
+      },
+      "reference_answer": "require",
+      "incorrect_answer": "required",
+      "editorial_answer": "Should you require further assistance, please contact the coordinator.",
+      "explanation": "После should в такой условной инверсии нужен инфинитив require.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Если бы риски тогда были понятнее, мы, возможно, пересмотрели бы решение.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "risks"
+          },
+          {
+            "id": "t4",
+            "label": "been"
+          },
+          {
+            "id": "t5",
+            "label": "clearer,"
+          },
+          {
+            "id": "t6",
+            "label": "we"
+          },
+          {
+            "id": "t7",
+            "label": "might"
+          },
+          {
+            "id": "t8",
+            "label": "have"
+          },
+          {
+            "id": "t9",
+            "label": "reconsidered."
+          },
+          {
+            "id": "t1",
+            "label": "Had"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "Had the risks been clearer, we might have reconsidered.",
+      "explanation": "Had ... been выражает нереальное прошлое, might сохраняет неопределённость результата.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Had we knew about the restriction, we would have applied elsewhere."
+      },
+      "answer_key": {
+        "accepted": [
+          "Had we known about the restriction, we would have applied elsewhere."
+        ]
+      },
+      "reference_answer": "Had we known about the restriction, we would have applied elsewhere.",
+      "incorrect_answer": "Had we knew about the restriction, we would have applied elsewhere.",
+      "editorial_answer": "Had we known about the restriction, we would have applied elsewhere.",
+      "explanation": "После инвертированного had требуется причастие known, не knew.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем в ответе сохранено might?",
+      "public_payload": {
+        "passage": "The supplier’s letter acknowledged that an inspection had identified a fault before the equipment was shipped. It did not say when the purchasing team had been informed. “Had the defect been disclosed prior to dispatch, we might have reconsidered acceptance,” the buyer replied. The wording deliberately left two matters open: whether timely disclosure had occurred and what decision the buyer would then have made. A colleague proposed replacing might with would, but the legal adviser objected. The available records supported concern about the process, not certainty about an alternative decision. The final response therefore requested the dated inspection report rather than alleging deliberate concealment.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "To confirm deliberate concealment by the supplier."
+          },
+          {
+            "id": "o1",
+            "label": "To avoid claiming certainty about a hypothetical decision."
+          },
+          {
+            "id": "o2",
+            "label": "To state that the defect never existed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "To avoid claiming certainty about a hypothetical decision.",
+      "explanation": "Might не превращает возможный пересмотр в гарантированное альтернативное решение.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какие сведения запросили в итоге?",
+      "public_payload": {
+        "passage": "The supplier’s letter acknowledged that an inspection had identified a fault before the equipment was shipped. It did not say when the purchasing team had been informed. “Had the defect been disclosed prior to dispatch, we might have reconsidered acceptance,” the buyer replied. The wording deliberately left two matters open: whether timely disclosure had occurred and what decision the buyer would then have made. A colleague proposed replacing might with would, but the legal adviser objected. The available records supported concern about the process, not certainty about an alternative decision. The final response therefore requested the dated inspection report rather than alleging deliberate concealment.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "The dated inspection report."
+          },
+          {
+            "id": "o2",
+            "label": "A statement admitting deliberate concealment."
+          },
+          {
+            "id": "o3",
+            "label": "Proof that the buyer would certainly have refused acceptance."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The dated inspection report.",
+      "explanation": "Запрос направлен на недостающую хронологию, а не на заранее установленную вину.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери формальное условие о возможных затруднениях.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How should we offer help in a formal conditional?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o3",
+            "label": "Had any difficulties arise tomorrow, please notify the project lead."
+          },
+          {
+            "id": "o1",
+            "label": "Should any difficulties arise, please notify the project lead."
+          },
+          {
+            "id": "o2",
+            "label": "Should any difficulties arose, please notify the project lead."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Should any difficulties arise, please notify the project lead.",
+      "explanation": "Should + подлежащее + arise описывает возможную будущую ситуацию.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "Information given before dispatch constitutes ___ disclosure.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "prior"
+          },
+          {
+            "id": "o2",
+            "label": "subsequent"
+          },
+          {
+            "id": "o3",
+            "label": "simultaneous only"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "prior",
+      "explanation": "Prior означает предшествующий; subsequent — последующий.",
+      "key": "e08"
+    }
+  ]
+}

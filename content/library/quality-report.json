@@ -1,29 +1,38 @@
 {
   "package": "english-path-core",
-  "revision": 2,
+  "revision": 4,
   "summary": {
-    "lessons": 60,
-    "exercises": 480,
-    "levels": { "A1": 20, "A2": 15, "B1": 10, "B2": 5, "C1": 5, "C2": 5 }
+    "lessons": 92,
+    "exercises": 736,
+    "levels": { "A1": 20, "A2": 15, "B1": 18, "B2": 13, "C1": 13, "C2": 13 }
+  },
+  "availability": {
+    "publishedNonAudioFullLessons": 89,
+    "archivedAudioLessons": 3,
+    "introductoryLessonsIncluded": false,
+    "targetFullLessons": 300,
+    "remaining": 211,
+    "byLevel": { "A1": 19, "A2": 14, "B1": 17, "B2": 13, "C1": 13, "C2": 13 },
+    "basis": "Local modular sources after audio retirement; verify production count separately after import."
   },
   "structure": "passed",
   "crossLegacyDuplicateCheck": "passed",
   "gradingCheck": "npm run test:library verifies all positive/negative references with the production SQL grader",
   "methodology": "Author review and automated checks; CEFR labels remain provisional, without external psychometric calibration.",
   "types": {
-    "context_choice": 53,
-    "correction": 51,
-    "dialogue": 46,
+    "context_choice": 85,
+    "correction": 83,
+    "dialogue": 78,
     "dictation": 3,
     "error_identification": 4,
-    "gap": 51,
+    "gap": 83,
     "grammar": 1,
     "matching": 7,
     "multiple_choice": 15,
-    "reading": 62,
+    "reading": 126,
     "response_choice": 9,
-    "sentence": 39,
-    "single_choice": 40,
+    "sentence": 71,
+    "single_choice": 72,
     "spelling": 1,
     "synonym_antonym": 8,
     "tenses": 7,
@@ -512,6 +521,262 @@
       "types": 8,
       "readingWords": [59],
       "sha256": "b0396031b3d0e5592f49dcb70a0f30f19cd03df310acab11185aaae2f12b08c7"
+    },
+    {
+      "key": "b1/past-before-past",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [60, 60],
+      "sha256": "97d383b31bdd11bf27574f46734b876017c29dddd9c2a105d6da1c86dcfd699e"
+    },
+    {
+      "key": "b1/ongoing-effort",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [59, 59],
+      "sha256": "8121e4c2055d5a6b685d3a8734e9a63e81b9d9cc2b91312949be90c9217e90fb"
+    },
+    {
+      "key": "b1/arranged-future",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [62, 62],
+      "sha256": "2e091d8514f2f7b975bd440f875a0f6ddb8fe40972f253e2631363261a37284b"
+    },
+    {
+      "key": "b1/embedded-questions",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [60, 60],
+      "sha256": "2c33283f5b7c08e614eb53a728b1bdd72724068446dd3c909d3c3a87b5b88644"
+    },
+    {
+      "key": "b1/both-neither",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [62, 62],
+      "sha256": "0f9bd85d29fca6bea29e55b27f76415dba3cf75f5f759d56d8b3514fd0afd99c"
+    },
+    {
+      "key": "b1/reported-requests",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [59, 59],
+      "sha256": "8bc2197aa5c2b227522c4bc6d654c87d0223628fb166db65537700406516b74c"
+    },
+    {
+      "key": "b1/articles-in-context",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [60, 60],
+      "sha256": "e784d5b0f5218954242fc062b9f27987441ca628c2d5278b31b78e16cafd5cfd"
+    },
+    {
+      "key": "b1/unless-plans",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [63, 63],
+      "sha256": "b0b0cbd8380a674353df687c5fdc73a461758f4e88fdad81c78547965c47426f"
+    },
+    {
+      "key": "b2/mixed-time-conditions",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [80, 80],
+      "sha256": "c3f8a373d8c81b01c9ddb001a4feb31401252bcadf58987b5cd44b524c663958"
+    },
+    {
+      "key": "b2/wish-past-regret",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [79, 79],
+      "sha256": "4eeb7fd1e87aa8320a62e7b4fc0fe3684a1cfbfd3db1933fcdbec349f80674e7"
+    },
+    {
+      "key": "b2/future-perfect-deadline",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [79, 79],
+      "sha256": "d078f6331a08db6f55e16c1bf02112a5ea165c230a5b241d78c7a36fda99a633"
+    },
+    {
+      "key": "b2/causative-services",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [81, 81],
+      "sha256": "470dc79c7a22986d65782b6a858c8935c82549dc079445e5f0b7d86bfd1afe48"
+    },
+    {
+      "key": "b2/passive-reporting",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [80, 80],
+      "sha256": "edeab584752217306510586b2dc75e06a89bc035c768ff1d8fb706265e9786df"
+    },
+    {
+      "key": "b2/participle-sequence",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [78, 78],
+      "sha256": "81bafd097d9932e33b983de93a0e6f2f0ade5b1cda09ec0cb76a4184a259563d"
+    },
+    {
+      "key": "b2/cleft-focus",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [79, 79],
+      "sha256": "7d89646fab9ec21f7de19956c73baffd0b8fccd8c8283220bbc08bba1d8a403d"
+    },
+    {
+      "key": "b2/despite-concession",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [82, 82],
+      "sha256": "99c01df0e0807fd484b8e57241a28dbaa88e9410d3e536d54a5e7cc1c9120311"
+    },
+    {
+      "key": "c1/inverted-conditions",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [104, 104],
+      "sha256": "d0a54e5ca59d7d07f8273ea96e9bb4a6a2090e80bbd1c6844d06778289bc76c5"
+    },
+    {
+      "key": "c1/fronting-contrast",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [106, 106],
+      "sha256": "03518c86059fc2049246c71790c0d55e7c0b254e7c05abaa29c93089d6578519"
+    },
+    {
+      "key": "c1/reference-cohesion",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [103, 103],
+      "sha256": "d27388e3ceac9aa9380007307db3fe8f8763af117d880ddb75fb1549c49746c8"
+    },
+    {
+      "key": "c1/professional-disagreement",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [101, 101],
+      "sha256": "b797ac167d8cdefe8723f1bb4f330d8e4a9823b13e4c8d1f48008fa8435aa03a"
+    },
+    {
+      "key": "c1/quantifier-scope",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [98, 98],
+      "sha256": "fc92bcca4e7392cacb97ee50018c82bd4d88d7a50a4bad1c75673986034ad161"
+    },
+    {
+      "key": "c1/cautious-comparisons",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [103, 103],
+      "sha256": "0ce7caf31f6ea04fa92536c01105f0cc7817476076308dbb4cd357da7b89c20b"
+    },
+    {
+      "key": "c1/causal-alternatives",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [105, 105],
+      "sha256": "f32395d1d40bdc42b057dadd1aa54b4ebf6d5ec6dc00a885bd3d1c46ca262665"
+    },
+    {
+      "key": "c1/source-attribution",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [103, 103],
+      "sha256": "fafad0d064acaa50a2803307fd88fbe19c0e344a0ffca9e7aa92282bbad0ae4c"
+    },
+    {
+      "key": "c2/qualified-endorsement",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [122, 122],
+      "sha256": "1fc1ba437ecbd38d5ee9cbed76e479a947e10ac299f08c4f6fe0aed331f23392"
+    },
+    {
+      "key": "c2/epistemic-distance",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [123, 123],
+      "sha256": "976389bfc51ebe1af01b684af913dd2a889c4e13e79b598f5894b687e381bcfc"
+    },
+    {
+      "key": "c2/scope-of-only",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [118, 118],
+      "sha256": "8ede1ccdbd137d5aa21d3a1c398a5a7b2ac36c4b02e3e8a8b810de5fcfcaaeed"
+    },
+    {
+      "key": "c2/strategic-concession",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [119, 119],
+      "sha256": "340602efd0e970dbf708e7c7c0069454df244d2a3c7a13136ac5d6bc88f9e3bc"
+    },
+    {
+      "key": "c2/loaded-presupposition",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [120, 120],
+      "sha256": "f34b75dd67df1aa3c07557f28dfe17f3908924b2e720a5bb1ac32354e21639b4"
+    },
+    {
+      "key": "c2/metaphor-and-policy",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [117, 117],
+      "sha256": "2c23343ba922f0193cc719a8d0138c045efcc3f1bd393ad06f6015f8d5b57d16"
+    },
+    {
+      "key": "c2/mediating-a-critical-review",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [121, 121],
+      "sha256": "0a0c41d08b272298e11bfa021a1515ad6dc6257874b2264878d0bf64e0c3a6a8"
+    },
+    {
+      "key": "c2/silence-and-selective-records",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [117, 117],
+      "sha256": "b6b1d9d79d1cfa61fa5779331fddb978002e2bfc84ce8dc448e3f3e74e8fd92b"
     }
   ]
 }

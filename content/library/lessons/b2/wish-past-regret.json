@@ -1,0 +1,277 @@
+{
+  "key": "b2/wish-past-regret",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B2 · смысл и точность",
+    "position": 10
+  },
+  "position": 2,
+  "title": "Сожаление о завершённом событии",
+  "description": "Сожаление о завершённом событии: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Выражать сожаление о прошлом через wish + Past Perfect",
+    "Отличать фактическую ошибку от желаемого прошлого"
+  ],
+  "notes": [
+    "Wish + Past Perfect выражает сожаление о прошлом: I wish I had checked the date.",
+    "Wish + Past Simple обычно относится к нереальному настоящему; время выбирается по смыслу, а не по внешнему виду прошедшей формы."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/mixed-time-conditions"],
+  "lexicon": [
+    {
+      "en": "regret",
+      "ru": "сожаление"
+    },
+    {
+      "en": "deadline",
+      "ru": "крайний срок"
+    },
+    {
+      "en": "overlook",
+      "ru": "упустить из виду"
+    },
+    {
+      "en": "accurate",
+      "ru": "точный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The deadline passed yesterday. I wish I ___ the form sooner.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "had submitted"
+          },
+          {
+            "id": "o2",
+            "label": "submit"
+          },
+          {
+            "id": "o3",
+            "label": "will submit"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "had submitted",
+      "explanation": "Завершённое прошлое требует had submitted после wish.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: read / reading.",
+      "public_payload": {
+        "sentence": "She wishes she had ___ the instructions more carefully."
+      },
+      "answer_key": {
+        "accepted": ["read"]
+      },
+      "reference_answer": "read",
+      "incorrect_answer": "reading",
+      "editorial_answer": "She wishes she had read the instructions more carefully.",
+      "explanation": "После had требуется причастие read; его написание совпадает с инфинитивом.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Жаль, что я не проверил дату отправления.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "I"
+          },
+          {
+            "id": "t4",
+            "label": "had"
+          },
+          {
+            "id": "t5",
+            "label": "checked"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "departure"
+          },
+          {
+            "id": "t8",
+            "label": "date."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "wish"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "I wish I had checked the departure date.",
+      "explanation": "Had checked после wish описывает действие в прошлом, которого не было.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He wishes he has saved the receipt last week."
+      },
+      "answer_key": {
+        "accepted": ["He wishes he had saved the receipt last week."]
+      },
+      "reference_answer": "He wishes he had saved the receipt last week.",
+      "incorrect_answer": "He wishes he has saved the receipt last week.",
+      "editorial_answer": "He wishes he had saved the receipt last week.",
+      "explanation": "Last week указывает на прошлое сожаление: had saved.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую ошибку сделал Ноа?",
+      "public_payload": {
+        "passage": "Noah booked a workshop after reading a short announcement on his phone. He noticed the venue but overlooked the date. When he arrived a week late, the building was closed. He wished he had opened the full booking confirmation instead of relying on the announcement. The organiser offered him a place at a later workshop, but the original fee could not be refunded under the terms he had accepted. Noah decided to add future bookings to his calendar immediately.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "He deliberately booked a closed building."
+          },
+          {
+            "id": "o3",
+            "label": "He arrived a week before the workshop."
+          },
+          {
+            "id": "o1",
+            "label": "He overlooked the workshop date."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "He overlooked the workshop date.",
+      "explanation": "Он не заметил дату и пришёл на неделю позже.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что организатор предложил вместо возврата?",
+      "public_payload": {
+        "passage": "Noah booked a workshop after reading a short announcement on his phone. He noticed the venue but overlooked the date. When he arrived a week late, the building was closed. He wished he had opened the full booking confirmation instead of relying on the announcement. The organiser offered him a place at a later workshop, but the original fee could not be refunded under the terms he had accepted. Noah decided to add future bookings to his calendar immediately.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "A free trip to the original venue."
+          },
+          {
+            "id": "o1",
+            "label": "A place at a later workshop."
+          },
+          {
+            "id": "o2",
+            "label": "A guaranteed cash refund."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "A place at a later workshop.",
+      "explanation": "Предложение касалось другого занятия; возврат исходной суммы был исключён условиями.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Вырази сожаление о непроверенном расписании.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I missed the last bus because I did not check the timetable."
+          }
+        ],
+        "options": [
+          {
+            "id": "o2",
+            "label": "I wish I check it yesterday."
+          },
+          {
+            "id": "o3",
+            "label": "I wish I will checked it."
+          },
+          {
+            "id": "o1",
+            "label": "I wish I had checked it before leaving."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "I wish I had checked it before leaving.",
+      "explanation": "Wish I had checked относится к конкретному несостоявшемуся действию в прошлом.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "If you fail to notice a small but important detail, you ___ it.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "recover"
+          },
+          {
+            "id": "o1",
+            "label": "overlook"
+          },
+          {
+            "id": "o2",
+            "label": "confirm"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "overlook",
+      "explanation": "Overlook в этом контексте значит упустить из виду.",
+      "key": "e08"
+    }
+  ]
+}

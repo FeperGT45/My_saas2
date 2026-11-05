@@ -3,10 +3,30 @@ import { format } from 'prettier';
 import { writeFile } from 'node:fs/promises';
 import { loadLibrary, validateLibrary } from './content/library';
 const library = await loadLibrary();
+const available = library.lessons.filter(
+  (l) =>
+    !l.skills.includes('listening') &&
+    !l.exercises.some((e) => ['listening', 'dictation'].includes(e.kind)),
+);
 const report = {
   package: library.manifest.packageId,
   revision: library.manifest.revision,
   summary: validateLibrary(library),
+  availability: {
+    publishedNonAudioFullLessons: available.length,
+    archivedAudioLessons: library.lessons.length - available.length,
+    introductoryLessonsIncluded: false,
+    targetFullLessons: 300,
+    remaining: Math.max(0, 300 - available.length),
+    byLevel: Object.fromEntries(
+      ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].map((level) => [
+        level,
+        available.filter((l) => l.level === level).length,
+      ]),
+    ),
+    basis:
+      'Local modular sources after audio retirement; verify production count separately after import.',
+  },
   structure: 'passed',
   crossLegacyDuplicateCheck: 'passed',
   gradingCheck:

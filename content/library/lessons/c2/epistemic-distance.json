@@ -1,0 +1,303 @@
+{
+  "key": "c2/epistemic-distance",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C2 · смысл и точность",
+    "position": 10
+  },
+  "position": 2,
+  "title": "Дистанция между предположением и уверенностью",
+  "description": "Дистанция между предположением и уверенностью: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Распознавать эпистемическую осторожность would appear to",
+    "Различать совместимость с версией и её однозначное доказательство"
+  ],
+  "notes": [
+    "Would appear to выражает осторожный вывод с дистанцией от полной уверенности, а не обычное обещание на будущее.",
+    "Consistent with a hypothesis слабее, чем uniquely explained by it: одним наблюдениям могут соответствовать несколько гипотез."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/qualified-endorsement"],
+  "lexicon": [
+    {
+      "en": "epistemic",
+      "ru": "относящийся к обоснованию знания"
+    },
+    {
+      "en": "compatible",
+      "ru": "совместимый"
+    },
+    {
+      "en": "uniquely",
+      "ru": "единственным образом"
+    },
+    {
+      "en": "conjecture",
+      "ru": "предположение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “The pattern would appear to support the account” is best understood as ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o2",
+            "label": "a binding promise of future support"
+          },
+          {
+            "id": "o3",
+            "label": "a declaration that no alternative account is possible"
+          },
+          {
+            "id": "o1",
+            "label": "a cautiously framed inference"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "a cautiously framed inference",
+      "explanation": "Would appear to смягчает эпистемическую уверенность, а не обещает будущее действие.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: with / of.",
+      "public_payload": {
+        "sentence": "The pattern is consistent ___ the hypothesis, though not uniquely explained by it."
+      },
+      "answer_key": {
+        "accepted": ["with"]
+      },
+      "reference_answer": "with",
+      "incorrect_answer": "of",
+      "editorial_answer": "The pattern is consistent with the hypothesis, though not uniquely explained by it.",
+      "explanation": "Consistent with означает совместимость, которая не устанавливает единственную причину.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «По-видимому, документы поддерживают более узкую интерпретацию.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "would"
+          },
+          {
+            "id": "t4",
+            "label": "appear"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "support"
+          },
+          {
+            "id": "t7",
+            "label": "a"
+          },
+          {
+            "id": "t8",
+            "label": "narrower"
+          },
+          {
+            "id": "t9",
+            "label": "interpretation."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "records"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "The records would appear to support a narrower interpretation.",
+      "explanation": "Would appear to маркирует осторожный вывод, а не официальное окончательное установление.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The evidence is consistent to the account but does not establish it."
+      },
+      "answer_key": {
+        "accepted": [
+          "The evidence is consistent with the account but does not establish it."
+        ]
+      },
+      "reference_answer": "The evidence is consistent with the account but does not establish it.",
+      "incorrect_answer": "The evidence is consistent to the account but does not establish it.",
+      "editorial_answer": "The evidence is consistent with the account but does not establish it.",
+      "explanation": "В этом значении используется consistent with.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему формулировка «prove common authorship» слишком сильна?",
+      "public_payload": {
+        "passage": "An archivist found that several letters had been copied in the same hand, although their signatures differed. One explanation was that a secretary had prepared correspondence for several authors. Another was that the letters were later copies made for the archive. The dates and paper stock were compatible with both accounts. In her catalogue note, the archivist wrote that the documents “would appear to reflect a shared copying practice”. A reviewer wanted this changed to “prove common authorship”. The archivist refused: a shared hand was an observation, while common authorship was one possible interpretation requiring additional evidence. Her caution did not deny the discovery’s significance. It prevented an attractive explanation from inheriting a degree of certainty that the surviving material could not sustain.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "The paper stock conclusively identified every author."
+          },
+          {
+            "id": "o1",
+            "label": "Shared handwriting is compatible with different explanations of authorship."
+          },
+          {
+            "id": "o2",
+            "label": "The archivist found no similarity in handwriting."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Shared handwriting is compatible with different explanations of authorship.",
+      "explanation": "Одинаковая рука могла принадлежать секретарю или позднему переписчику.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как следует понимать осторожность архивиста?",
+      "public_payload": {
+        "passage": "An archivist found that several letters had been copied in the same hand, although their signatures differed. One explanation was that a secretary had prepared correspondence for several authors. Another was that the letters were later copies made for the archive. The dates and paper stock were compatible with both accounts. In her catalogue note, the archivist wrote that the documents “would appear to reflect a shared copying practice”. A reviewer wanted this changed to “prove common authorship”. The archivist refused: a shared hand was an observation, while common authorship was one possible interpretation requiring additional evidence. Her caution did not deny the discovery’s significance. It prevented an attractive explanation from inheriting a degree of certainty that the surviving material could not sustain.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "As a boundary on certainty, not a denial that the finding matters."
+          },
+          {
+            "id": "o2",
+            "label": "As proof that the letters are worthless."
+          },
+          {
+            "id": "o3",
+            "label": "As a promise to reject any future evidence."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "As a boundary on certainty, not a denial that the finding matters.",
+      "explanation": "Последние предложения прямо отделяют значимость наблюдения от силы вывода.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Различи совместимость и однозначное доказательство.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Is evidence “compatible with” an explanation necessarily decisive for it?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o3",
+            "label": "Yes; a compatible account can never be revised."
+          },
+          {
+            "id": "o1",
+            "label": "No; competing explanations may also accommodate the evidence."
+          },
+          {
+            "id": "o2",
+            "label": "Yes; compatibility excludes every competing explanation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No; competing explanations may also accommodate the evidence.",
+      "explanation": "Одни и те же данные могут согласовываться с несколькими версиями.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "A proposition advanced without sufficient evidence for certainty is a ___.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "conjecture"
+          },
+          {
+            "id": "o2",
+            "label": "verdict"
+          },
+          {
+            "id": "o3",
+            "label": "warranty"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "conjecture",
+      "explanation": "Conjecture — предположение, а не окончательное решение или гарантия.",
+      "key": "e08"
+    }
+  ]
+}

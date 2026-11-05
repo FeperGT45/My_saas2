@@ -1,0 +1,277 @@
+{
+  "key": "b2/cleft-focus",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B2 · смысл и точность",
+    "position": 10
+  },
+  "position": 7,
+  "title": "Выделяем важную часть сообщения",
+  "description": "Выделяем важную часть сообщения: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Выделять причину или объект через it was ... that",
+    "Отделять возражение к срокам от возражения к самой идее"
+  ],
+  "notes": [
+    "It was X that ... выделяет конкретный элемент: It was the timing that worried us.",
+    "What ... was ... выделяет содержание или результат: What we needed was a clear explanation."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/participle-sequence"],
+  "lexicon": [
+    {
+      "en": "emphasis",
+      "ru": "акцент"
+    },
+    {
+      "en": "timing",
+      "ru": "выбор времени"
+    },
+    {
+      "en": "objection",
+      "ru": "возражение"
+    },
+    {
+      "en": "clarification",
+      "ru": "уточнение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: It was the unexpected delay ___ caused the confusion.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o3",
+            "label": "whose"
+          },
+          {
+            "id": "o1",
+            "label": "that"
+          },
+          {
+            "id": "o2",
+            "label": "what"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "that",
+      "explanation": "В этой cleft-конструкции после выделенной причины используется that.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: What / That.",
+      "public_payload": {
+        "sentence": "___ we needed was a clearer explanation of the rules."
+      },
+      "answer_key": {
+        "accepted": ["What"]
+      },
+      "reference_answer": "What",
+      "incorrect_answer": "That",
+      "editorial_answer": "What we needed was a clearer explanation of the rules.",
+      "explanation": "What we needed образует подлежащую часть со значением «то, что нам было нужно».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Комитет беспокоил именно выбор времени.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "timing"
+          },
+          {
+            "id": "t5",
+            "label": "that"
+          },
+          {
+            "id": "t6",
+            "label": "worried"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "committee."
+          },
+          {
+            "id": "t1",
+            "label": "It"
+          },
+          {
+            "id": "t2",
+            "label": "was"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "It was the timing that worried the committee.",
+      "explanation": "Выделение the timing сужает фокус до времени, а не содержания решения.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "It was the unclear wording what caused the problem."
+      },
+      "answer_key": {
+        "accepted": ["It was the unclear wording that caused the problem."]
+      },
+      "reference_answer": "It was the unclear wording that caused the problem.",
+      "incorrect_answer": "It was the unclear wording what caused the problem.",
+      "editorial_answer": "It was the unclear wording that caused the problem.",
+      "explanation": "В конструкции It was ... that нужен that, а не what.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что было предметом возражения?",
+      "public_payload": {
+        "passage": "When the committee discussed the new booking system, several members were described as opposing the change. Their written comments told a more specific story. They supported the system itself but objected to introducing it during the busiest week of the year. One member explained, “It was the timing that worried us, not the idea.” The chair later revised the public summary to reflect that distinction. The launch date changed, while the main features of the system remained the same.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "The timing of the introduction."
+          },
+          {
+            "id": "o2",
+            "label": "Every feature of the system."
+          },
+          {
+            "id": "o3",
+            "label": "The existence of any booking system."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The timing of the introduction.",
+      "explanation": "Комментарий противопоставляет timing и idea.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как изменился план после обсуждения?",
+      "public_payload": {
+        "passage": "When the committee discussed the new booking system, several members were described as opposing the change. Their written comments told a more specific story. They supported the system itself but objected to introducing it during the busiest week of the year. One member explained, “It was the timing that worried us, not the idea.” The chair later revised the public summary to reflect that distinction. The launch date changed, while the main features of the system remained the same.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "The system was abandoned entirely."
+          },
+          {
+            "id": "o3",
+            "label": "The busiest week was removed from the calendar."
+          },
+          {
+            "id": "o1",
+            "label": "The date changed but the main features stayed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The date changed but the main features stayed.",
+      "explanation": "Перенесли запуск, сохранив основные функции.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Уточни с помощью cleft-конструкции, что беспокоили правила отмены.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Was it the price that made you hesitate?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "label": "No, it was the unclear cancellation policy that concerned me."
+          },
+          {
+            "id": "o2",
+            "label": "No, it what unclear policy concerned."
+          },
+          {
+            "id": "o3",
+            "label": "No, it was concerned me the unclear policy."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No, it was the unclear cancellation policy that concerned me.",
+      "explanation": "It was ... that выделяет конкретную причину сомнений.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "A request to explain an unclear statement is a request for ___.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "cancellation"
+          },
+          {
+            "id": "o3",
+            "label": "competition"
+          },
+          {
+            "id": "o1",
+            "label": "clarification"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "clarification",
+      "explanation": "Clarification означает прояснение смысла, а не отмену решения.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "key": "b1/arranged-future",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B1 · смысл и точность",
+    "position": 10
+  },
+  "position": 3,
+  "title": "Договорённости на завтра",
+  "description": "Договорённости на завтра: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Описывать подтверждённые договорённости через Present Continuous",
+    "Отличать исходное время встречи от согласованного переноса"
+  ],
+  "notes": [
+    "Present Continuous с будущим временем может обозначать конкретную договорённость: I am meeting the tutor tomorrow.",
+    "Will часто используется для решения в момент речи; наличие подтверждённых времени и места помогает отличить договорённость."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/ongoing-effort"],
+  "lexicon": [
+    {
+      "en": "appointment",
+      "ru": "назначенная встреча"
+    },
+    {
+      "en": "confirm",
+      "ru": "подтвердить"
+    },
+    {
+      "en": "reschedule",
+      "ru": "перенести встречу"
+    },
+    {
+      "en": "available",
+      "ru": "свободный по времени"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We booked the room and agreed on a time. We ___ the tutor at three tomorrow.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o3",
+            "label": "have met yesterday"
+          },
+          {
+            "id": "o1",
+            "label": "are meeting"
+          },
+          {
+            "id": "o2",
+            "label": "met"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "are meeting",
+      "explanation": "Согласованная будущая встреча выражается are meeting с tomorrow.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: seeing / saw.",
+      "public_payload": {
+        "sentence": "Nina is ___ the dentist at nine tomorrow."
+      },
+      "answer_key": {
+        "accepted": ["seeing"]
+      },
+      "reference_answer": "seeing",
+      "incorrect_answer": "saw",
+      "editorial_answer": "Nina is seeing the dentist at nine tomorrow.",
+      "explanation": "В Present Continuous после is нужна форма seeing.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы посещаем кампус в пятницу утром по договорённости.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "visiting"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "campus"
+          },
+          {
+            "id": "t6",
+            "label": "on"
+          },
+          {
+            "id": "t7",
+            "label": "Friday"
+          },
+          {
+            "id": "t8",
+            "label": "morning."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "are"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "We are visiting the campus on Friday morning.",
+      "explanation": "Будущее время задаёт on Friday morning, are visiting описывает запланированный визит.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I am meet the adviser tomorrow afternoon."
+      },
+      "answer_key": {
+        "accepted": ["I am meeting the adviser tomorrow afternoon."]
+      },
+      "reference_answer": "I am meeting the adviser tomorrow afternoon.",
+      "incorrect_answer": "I am meet the adviser tomorrow afternoon.",
+      "editorial_answer": "I am meeting the adviser tomorrow afternoon.",
+      "explanation": "Continuous строится с формой meeting после am.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "На какое время в итоге назначена встреча?",
+      "public_payload": {
+        "passage": "Nina emailed her tutor to arrange a meeting. They agreed on Thursday at three in the library. On Wednesday the tutor asked to move it to four because of another appointment. Nina checked her work schedule and agreed. She is meeting the tutor at four tomorrow. She has written down two questions, so she will not forget what she wants to discuss.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "Thursday at four."
+          },
+          {
+            "id": "o2",
+            "label": "Wednesday at three."
+          },
+          {
+            "id": "o3",
+            "label": "Thursday at three."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Thursday at four.",
+      "explanation": "Изначальные три часа заменили четырьмя; письмо о переносе пришло в среду.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем Нина записала вопросы?",
+      "public_payload": {
+        "passage": "Nina emailed her tutor to arrange a meeting. They agreed on Thursday at three in the library. On Wednesday the tutor asked to move it to four because of another appointment. Nina checked her work schedule and agreed. She is meeting the tutor at four tomorrow. She has written down two questions, so she will not forget what she wants to discuss.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "To cancel the meeting."
+          },
+          {
+            "id": "o3",
+            "label": "To change the tutor’s work schedule."
+          },
+          {
+            "id": "o1",
+            "label": "To remember what she wants to discuss."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "To remember what she wants to discuss.",
+      "explanation": "Цель записи прямо указана в последнем предложении.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи о назначенном на это время занятии.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Are you free at ten tomorrow?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "label": "Sorry, I am having a driving lesson then."
+          },
+          {
+            "id": "o2",
+            "label": "Sorry, I had a driving lesson tomorrow."
+          },
+          {
+            "id": "o3",
+            "label": "Sorry, I have been tomorrow."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Sorry, I am having a driving lesson then.",
+      "explanation": "Am having с then относится к конкретной будущей договорённости.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "We need a different time. Could we ___ the appointment?",
+        "options": [
+          {
+            "id": "o2",
+            "label": "confirm yesterday"
+          },
+          {
+            "id": "o3",
+            "label": "borrow"
+          },
+          {
+            "id": "o1",
+            "label": "reschedule"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "reschedule",
+      "explanation": "Reschedule означает перенести назначенную встречу на другое время.",
+      "key": "e08"
+    }
+  ]
+}

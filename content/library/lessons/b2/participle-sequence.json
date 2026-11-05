@@ -1,0 +1,301 @@
+{
+  "key": "b2/participle-sequence",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B2 · смысл и точность",
+    "position": 10
+  },
+  "position": 6,
+  "title": "Сокращаем описание последовательности",
+  "description": "Сокращаем описание последовательности: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Выражать предшествующее действие через having done",
+    "Соотносить исполнитель начального оборота с подлежащим"
+  ],
+  "notes": [
+    "Having + причастие может показать завершённое действие перед основным: Having checked the figures, she sent the report.",
+    "Подразумеваемый исполнитель начального оборота должен совпадать с подлежащим основной части."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/passive-reporting"],
+  "lexicon": [
+    {
+      "en": "revise",
+      "ru": "пересматривать"
+    },
+    {
+      "en": "submit",
+      "ru": "подавать"
+    },
+    {
+      "en": "figures",
+      "ru": "числовые данные"
+    },
+    {
+      "en": "approval",
+      "ru": "одобрение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ the figures, the analyst sent the revised report.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o2",
+            "label": "Have checking"
+          },
+          {
+            "id": "o3",
+            "label": "Had checks"
+          },
+          {
+            "id": "o1",
+            "label": "Having checked"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Having checked",
+      "explanation": "Having checked обозначает проверку, завершённую до отправки.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: received / receiving.",
+      "public_payload": {
+        "sentence": "Having ___ approval, the group began the trial."
+      },
+      "answer_key": {
+        "accepted": ["received"]
+      },
+      "reference_answer": "received",
+      "incorrect_answer": "receiving",
+      "editorial_answer": "Having received approval, the group began the trial.",
+      "explanation": "После having требуется причастие received.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Пересмотрев черновик, редактор отправил его обратно.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "draft,"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "editor"
+          },
+          {
+            "id": "t7",
+            "label": "sent"
+          },
+          {
+            "id": "t8",
+            "label": "it"
+          },
+          {
+            "id": "t9",
+            "label": "back."
+          },
+          {
+            "id": "t1",
+            "label": "Having"
+          },
+          {
+            "id": "t2",
+            "label": "revised"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "Having revised the draft, the editor sent it back.",
+      "explanation": "Исполнитель обоих действий — the editor; пересмотр предшествует отправке.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Having checked the room, the missing key was found by Anna."
+      },
+      "answer_key": {
+        "accepted": ["Having checked the room, Anna found the missing key."]
+      },
+      "reference_answer": "Having checked the room, Anna found the missing key.",
+      "incorrect_answer": "Having checked the room, the missing key was found by Anna.",
+      "editorial_answer": "Having checked the room, Anna found the missing key.",
+      "explanation": "Начальный оборот относится к Anna, поэтому она должна быть подлежащим основной части.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что координатор сделала после сбора предложений?",
+      "public_payload": {
+        "passage": "A volunteer group prepared a grant application for a community garden. Having collected residents’ suggestions, the coordinator revised the original budget. She removed a decorative gate and added more accessible planting beds. The group then submitted the application. Receiving acknowledgement of the application did not mean that funding had been approved: the committee would assess all proposals the following month. The coordinator told residents that preparations were complete, while the decision about money remained outside the group’s control.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "She stopped the application before submission."
+          },
+          {
+            "id": "o1",
+            "label": "She revised the budget."
+          },
+          {
+            "id": "o2",
+            "label": "She announced that funding was guaranteed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "She revised the budget.",
+      "explanation": "Having collected ... задаёт предшествующее действие перед пересмотром бюджета.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что подтверждало уведомление о получении?",
+      "public_payload": {
+        "passage": "A volunteer group prepared a grant application for a community garden. Having collected residents’ suggestions, the coordinator revised the original budget. She removed a decorative gate and added more accessible planting beds. The group then submitted the application. Receiving acknowledgement of the application did not mean that funding had been approved: the committee would assess all proposals the following month. The coordinator told residents that preparations were complete, while the decision about money remained outside the group’s control.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "Only that the application had been received."
+          },
+          {
+            "id": "o2",
+            "label": "That the project had won funding."
+          },
+          {
+            "id": "o3",
+            "label": "That no other proposals would be considered."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Only that the application had been received.",
+      "explanation": "Acknowledgement отличается от approval; решение будет позже.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери предложение без «повисшего» причастного оборота.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which sentence clearly makes the same person do both actions?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o3",
+            "label": "Having read the proposal, the deadline expired."
+          },
+          {
+            "id": "o1",
+            "label": "Having read the proposal, Omar signed it."
+          },
+          {
+            "id": "o2",
+            "label": "Having read the proposal, the signature was added."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Having read the proposal, Omar signed it.",
+      "explanation": "В первом варианте читает и подписывает Omar; в остальных подлежащие не могут читать.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "The committee’s formal agreement to the plan would be its ___.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "approval"
+          },
+          {
+            "id": "o2",
+            "label": "acknowledgement of receipt"
+          },
+          {
+            "id": "o3",
+            "label": "revision"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "approval",
+      "explanation": "Approval означает одобрение; уведомление о получении его не заменяет.",
+      "key": "e08"
+    }
+  ]
+}

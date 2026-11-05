@@ -1,0 +1,277 @@
+{
+  "key": "c1/cautious-comparisons",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C1 · смысл и точность",
+    "position": 10
+  },
+  "position": 6,
+  "title": "Сравниваем результаты без преувеличения",
+  "description": "Сравниваем результаты без преувеличения: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Различать абсолютное число ответов и долю",
+    "Отделять сравнительное улучшение от достаточного качества"
+  ],
+  "notes": [
+    "Лучше прежнего не означает хорошо в абсолютном смысле: нужно явно назвать ориентир сравнения.",
+    "Более высокая доля ответов не обязательно означает большее абсолютное число ответов, если размеры групп различаются."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/quantifier-scope"],
+  "lexicon": [
+    {
+      "en": "benchmark",
+      "ru": "ориентир для сравнения"
+    },
+    {
+      "en": "rate",
+      "ru": "доля, показатель"
+    },
+    {
+      "en": "absolute",
+      "ru": "абсолютный"
+    },
+    {
+      "en": "proportion",
+      "ru": "доля"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The new service is ___ reliable than its predecessor, though failures remain frequent.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "more"
+          },
+          {
+            "id": "o2",
+            "label": "most"
+          },
+          {
+            "id": "o3",
+            "label": "much than"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "more",
+      "explanation": "Comparative more reliable сравнивает две версии и не утверждает абсолютную надёжность.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: number / amount.",
+      "public_payload": {
+        "sentence": "A higher percentage does not necessarily mean a larger ___ of replies."
+      },
+      "answer_key": {
+        "accepted": ["number"]
+      },
+      "reference_answer": "number",
+      "incorrect_answer": "amount",
+      "editorial_answer": "A higher percentage does not necessarily mean a larger number of replies.",
+      "explanation": "Replies — исчисляемое существительное, a larger number of replies.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Пересмотренная модель показала лучший результат, чем исходная.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "model"
+          },
+          {
+            "id": "t4",
+            "label": "performed"
+          },
+          {
+            "id": "t5",
+            "label": "better"
+          },
+          {
+            "id": "t6",
+            "label": "than"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "original."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "revised"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The revised model performed better than the original.",
+      "explanation": "Сравнение с оригиналом не доказывает достаточное абсолютное качество.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The second group had a more higher response rate."
+      },
+      "answer_key": {
+        "accepted": ["The second group had a higher response rate."]
+      },
+      "reference_answer": "The second group had a higher response rate.",
+      "incorrect_answer": "The second group had a more higher response rate.",
+      "editorial_answer": "The second group had a higher response rate.",
+      "explanation": "Higher уже сравнительная степень; дополнительное more не нужно.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "В каком отделе выше доля ответов?",
+      "public_payload": {
+        "passage": "Two departments tested different invitation messages. Department A received forty replies from one hundred invitations, while department B received thirty replies from fifty. The second department therefore had a higher response rate but fewer replies in absolute terms. A manager described B’s message as “twice as effective”, overlooking both the different group sizes and the fact that the recipients had not been randomly assigned. The results could justify testing the messages more systematically, but they did not isolate wording as the cause of the difference. A clear comparison would report both the numbers and the proportions, together with the limits of the design.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "A: forty out of one hundred, or forty per cent."
+          },
+          {
+            "id": "o3",
+            "label": "The response rates are identical."
+          },
+          {
+            "id": "o1",
+            "label": "B: thirty out of fifty, or sixty per cent."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "B: thirty out of fifty, or sixty per cent.",
+      "explanation": "B: 30/50 = 60%; A: 40/100 = 40%, хотя абсолютных ответов у A больше.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему нельзя уверенно приписать разницу формулировке?",
+      "public_payload": {
+        "passage": "Two departments tested different invitation messages. Department A received forty replies from one hundred invitations, while department B received thirty replies from fifty. The second department therefore had a higher response rate but fewer replies in absolute terms. A manager described B’s message as “twice as effective”, overlooking both the different group sizes and the fact that the recipients had not been randomly assigned. The results could justify testing the messages more systematically, but they did not isolate wording as the cause of the difference. A clear comparison would report both the numbers and the proportions, together with the limits of the design.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "The higher percentage proves that all recipients prefer B."
+          },
+          {
+            "id": "o1",
+            "label": "Recipients were not randomly assigned, so other differences may matter."
+          },
+          {
+            "id": "o2",
+            "label": "Both groups received exactly the same number of invitations."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Recipients were not randomly assigned, so other differences may matter.",
+      "explanation": "Дизайн не изолирует влияние формулировки от различий групп. Кроме того, 60% — это в полтора, а не в два раза больше 40%.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Различи относительное удешевление и доступность по цене.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “less expensive than before” establish affordability?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o2",
+            "label": "Yes; any price reduction makes a product affordable."
+          },
+          {
+            "id": "o3",
+            "label": "Yes; comparative adjectives always set an absolute standard."
+          },
+          {
+            "id": "o1",
+            "label": "No; the previous price may have been extremely high."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No; the previous price may have been extremely high.",
+      "explanation": "Сравнительный ориентир сам может быть очень дорогим.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "An explicit standard against which performance is judged is a ___.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "distraction"
+          },
+          {
+            "id": "o1",
+            "label": "benchmark"
+          },
+          {
+            "id": "o2",
+            "label": "guarantee"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "benchmark",
+      "explanation": "Benchmark — точка сравнения; он не является гарантией результата.",
+      "key": "e08"
+    }
+  ]
+}

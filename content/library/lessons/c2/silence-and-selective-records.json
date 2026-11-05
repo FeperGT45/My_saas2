@@ -1,0 +1,275 @@
+{
+  "key": "c2/silence-and-selective-records",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C2 · смысл и точность",
+    "position": 10
+  },
+  "position": 8,
+  "title": "Молчание документа и предел вывода",
+  "description": "Молчание документа и предел вывода: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Оценивать значимость отсутствия записи с учётом полноты источника",
+    "Различать неисключённую возможность и вероятное или доказанное событие"
+  ],
+  "notes": [
+    "Отсутствие записи может иметь вес только с учётом того, насколько вероятна такая запись при предполагаемом событии.",
+    "Cannot be ruled out сохраняет возможность, но не означает probably happened или conclusively established."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/mediating-a-critical-review"],
+  "lexicon": [
+    {
+      "en": "archival silence",
+      "ru": "отсутствие упоминаний в архиве"
+    },
+    {
+      "en": "survival",
+      "ru": "сохранность"
+    },
+    {
+      "en": "selective",
+      "ru": "избирательный"
+    },
+    {
+      "en": "rule out",
+      "ru": "исключать возможность"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “An informal agreement cannot be ruled out” commits the writer to ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o2",
+            "label": "judging it the most probable explanation"
+          },
+          {
+            "id": "o3",
+            "label": "claiming documentary proof of it"
+          },
+          {
+            "id": "o1",
+            "label": "retaining it as a possibility"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "retaining it as a possibility",
+      "explanation": "Cannot be ruled out не ранжирует вероятность и не объявляет доказательство.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: rule / rules.",
+      "public_payload": {
+        "sentence": "The silence of a selective archive does not ___ out an unrecorded discussion."
+      },
+      "answer_key": {
+        "accepted": ["rule"]
+      },
+      "reference_answer": "rule",
+      "incorrect_answer": "rules",
+      "editorial_answer": "The silence of a selective archive does not rule out an unrecorded discussion.",
+      "explanation": "После does not нужен rule; rule out означает исключить возможность.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Неформальную договорённость исключить нельзя.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "agreement"
+          },
+          {
+            "id": "t4",
+            "label": "cannot"
+          },
+          {
+            "id": "t5",
+            "label": "be"
+          },
+          {
+            "id": "t6",
+            "label": "ruled"
+          },
+          {
+            "id": "t7",
+            "label": "out."
+          },
+          {
+            "id": "t1",
+            "label": "An"
+          },
+          {
+            "id": "t2",
+            "label": "informal"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "An informal agreement cannot be ruled out.",
+      "explanation": "Возможность остаётся открытой; вероятность или документальная подтверждённость не устанавливаются.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The missing entry does not proves that no meeting occurred."
+      },
+      "answer_key": {
+        "accepted": [
+          "The missing entry does not prove that no meeting occurred."
+        ]
+      },
+      "reference_answer": "The missing entry does not prove that no meeting occurred.",
+      "incorrect_answer": "The missing entry does not proves that no meeting occurred.",
+      "editorial_answer": "The missing entry does not prove that no meeting occurred.",
+      "explanation": "После does not нужен инфинитив prove; смысл ограничивает вывод по отсутствующей записи.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему отсутствие записи не решает вопрос?",
+      "public_payload": {
+        "passage": "A historian found no record of a meeting in a committee’s surviving minute books. One commentator treated the omission as proof that the meeting had never occurred. The historian was more circumspect. The books were incomplete, informal discussions were rarely minuted, and two letters referred ambiguously to a conversation around the relevant date. None of this established that a meeting had taken place. It did, however, weaken the claim that archival silence decisively established its absence. The historian distinguished an unconfirmed possibility from a positive reconstruction, and an incomplete record from a recording system known to be comprehensive. Whether silence counted strongly against an event depended on what the archive would normally have been expected to preserve.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "The historian has shown that no meeting could ever be recorded."
+          },
+          {
+            "id": "o1",
+            "label": "The archive is incomplete and informal discussions were rarely recorded."
+          },
+          {
+            "id": "o2",
+            "label": "The letters conclusively prove a formal committee meeting."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The archive is incomplete and informal discussions were rarely recorded.",
+      "explanation": "Нужно учитывать полноту архива и обычную практику записи именно таких событий.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что историк всё же не утверждает?",
+      "public_payload": {
+        "passage": "A historian found no record of a meeting in a committee’s surviving minute books. One commentator treated the omission as proof that the meeting had never occurred. The historian was more circumspect. The books were incomplete, informal discussions were rarely minuted, and two letters referred ambiguously to a conversation around the relevant date. None of this established that a meeting had taken place. It did, however, weaken the claim that archival silence decisively established its absence. The historian distinguished an unconfirmed possibility from a positive reconstruction, and an incomplete record from a recording system known to be comprehensive. Whether silence counted strongly against an event depended on what the archive would normally have been expected to preserve.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "That a meeting has been positively established."
+          },
+          {
+            "id": "o2",
+            "label": "That the surviving minute books are incomplete."
+          },
+          {
+            "id": "o3",
+            "label": "That the evidential weight of silence depends on expected recording."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "That a meeting has been positively established.",
+      "explanation": "Критика доказательства отсутствия не является позитивным доказательством события.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Не усиливай возможность до вероятности или доказанного факта.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “we cannot rule it out” justify reporting that it probably happened?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o3",
+            "label": "Yes; inability to exclude is documentary confirmation."
+          },
+          {
+            "id": "o1",
+            "label": "No; non-exclusion alone does not establish probability."
+          },
+          {
+            "id": "o2",
+            "label": "Yes; any unexcluded possibility is the most likely one."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No; non-exclusion alone does not establish probability.",
+      "explanation": "Из открытой возможности не следует её преимущество перед альтернативами.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "An archive preserving some kinds of material much better than others is ___.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "selective"
+          },
+          {
+            "id": "o2",
+            "label": "comprehensive by definition"
+          },
+          {
+            "id": "o3",
+            "label": "conclusive"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "selective",
+      "explanation": "Selective обозначает избирательность сохранения, а не полноту или окончательность вывода.",
+      "key": "e08"
+    }
+  ]
+}

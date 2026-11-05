@@ -1,0 +1,277 @@
+{
+  "key": "b2/despite-concession",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B2 · смысл и точность",
+    "position": 10
+  },
+  "position": 8,
+  "title": "Уступка с despite и although",
+  "description": "Уступка с despite и although: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Выбирать despite + имя/-ing и although + часть",
+    "Сохранять положительные и отрицательные стороны оценки"
+  ],
+  "notes": [
+    "Despite сочетается с существительным или -ing: despite the rain; although вводит часть с подлежащим и сказуемым.",
+    "Despite the fact that позволяет ввести полноценную часть; after despite не добавляется of."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/cleft-focus"],
+  "lexicon": [
+    {
+      "en": "setback",
+      "ru": "неудача, препятствие"
+    },
+    {
+      "en": "attendance",
+      "ru": "посещаемость"
+    },
+    {
+      "en": "nevertheless",
+      "ru": "тем не менее"
+    },
+    {
+      "en": "postpone",
+      "ru": "откладывать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ the heavy rain, attendance remained high.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "Despite"
+          },
+          {
+            "id": "o2",
+            "label": "Although"
+          },
+          {
+            "id": "o3",
+            "label": "Despite of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Despite",
+      "explanation": "После despite стоит именная группа the heavy rain; although потребовало бы целую часть.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: was / being.",
+      "public_payload": {
+        "sentence": "Although the venue ___ small, the organisers welcomed every registered guest."
+      },
+      "answer_key": {
+        "accepted": ["was"]
+      },
+      "reference_answer": "was",
+      "incorrect_answer": "being",
+      "editorial_answer": "Although the venue was small, the organisers welcomed every registered guest.",
+      "explanation": "После although здесь требуется конечная форма was с подлежащим the venue.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Несмотря на потерю спонсора, фестиваль состоялся.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "a"
+          },
+          {
+            "id": "t4",
+            "label": "sponsor,"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "festival"
+          },
+          {
+            "id": "t7",
+            "label": "went"
+          },
+          {
+            "id": "t8",
+            "label": "ahead."
+          },
+          {
+            "id": "t1",
+            "label": "Despite"
+          },
+          {
+            "id": "t2",
+            "label": "losing"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "Despite losing a sponsor, the festival went ahead.",
+      "explanation": "Despite принимает -ing-форму losing.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Despite of the delay, the meeting finished on time."
+      },
+      "answer_key": {
+        "accepted": ["Despite the delay, the meeting finished on time."]
+      },
+      "reference_answer": "Despite the delay, the meeting finished on time.",
+      "incorrect_answer": "Despite of the delay, the meeting finished on time.",
+      "editorial_answer": "Despite the delay, the meeting finished on time.",
+      "explanation": "Despite не требует предлога of.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как организаторы сократили расходы?",
+      "public_payload": {
+        "passage": "A neighbourhood festival lost one of its sponsors a month before opening. Despite this setback, the organisers decided not to cancel. They reduced the number of printed programmes and borrowed equipment from a nearby school. Attendance was lower than the previous year, although most scheduled activities took place. The organisers described the event as worthwhile but financially difficult. Their report did not call the festival a complete success or a failure; it recorded both the community benefit and the remaining budget problem.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "They cancelled all scheduled activities."
+          },
+          {
+            "id": "o3",
+            "label": "They secured a larger sponsor immediately."
+          },
+          {
+            "id": "o1",
+            "label": "They printed fewer programmes and borrowed equipment."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "They printed fewer programmes and borrowed equipment.",
+      "explanation": "Обе меры названы в тексте как ответ на потерю спонсора.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое резюме сохраняет баланс отчёта?",
+      "public_payload": {
+        "passage": "A neighbourhood festival lost one of its sponsors a month before opening. Despite this setback, the organisers decided not to cancel. They reduced the number of printed programmes and borrowed equipment from a nearby school. Attendance was lower than the previous year, although most scheduled activities took place. The organisers described the event as worthwhile but financially difficult. Their report did not call the festival a complete success or a failure; it recorded both the community benefit and the remaining budget problem.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "No activities took place because the sponsor left."
+          },
+          {
+            "id": "o1",
+            "label": "The event benefited the community despite financial difficulty."
+          },
+          {
+            "id": "o2",
+            "label": "High attendance solved every budget problem."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The event benefited the community despite financial difficulty.",
+      "explanation": "Нужно сохранить пользу события и финансовые сложности одновременно.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери уступку с правильной структурой.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How can we acknowledge the problem and still describe the result?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o2",
+            "label": "Despite the start was delayed, the workshop finished on time."
+          },
+          {
+            "id": "o3",
+            "label": "Although the delay, the workshop finished on time."
+          },
+          {
+            "id": "o1",
+            "label": "Although the start was delayed, the workshop finished on time."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Although the start was delayed, the workshop finished on time.",
+      "explanation": "Although + the start was delayed — полноценная часть с подлежащим и глаголом.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "We had to ___ the match until Saturday rather than cancel it.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "complete"
+          },
+          {
+            "id": "o1",
+            "label": "postpone"
+          },
+          {
+            "id": "o2",
+            "label": "abandon permanently"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "postpone",
+      "explanation": "Postpone означает перенести на более позднее время, а не отменить навсегда.",
+      "key": "e08"
+    }
+  ]
+}

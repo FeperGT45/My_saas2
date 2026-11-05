@@ -1,0 +1,277 @@
+{
+  "key": "c2/loaded-presupposition",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C2 · смысл и точность",
+    "position": 10
+  },
+  "position": 5,
+  "title": "Вопрос, который уже содержит предположение",
+  "description": "Вопрос, который уже содержит предположение: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Выделять спорную предпосылку вопроса",
+    "Переформулировать вопрос без молчаливого принятия предпосылки"
+  ],
+  "notes": [
+    "When did you stop ...? может предполагать, что действие раньше происходило; собеседник вправе оспорить саму предпосылку.",
+    "Отказ принять предпосылку не является автоматическим отрицанием всех связанных фактов; важно назвать спорный элемент."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/strategic-concession"],
+  "lexicon": [
+    {
+      "en": "presupposition",
+      "ru": "предпосылка высказывания"
+    },
+    {
+      "en": "loaded question",
+      "ru": "вопрос со спорной предпосылкой"
+    },
+    {
+      "en": "challenge",
+      "ru": "оспаривать"
+    },
+    {
+      "en": "implication",
+      "ru": "подразумеваемый вывод"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “When did the office stop ignoring complaints?” presupposes ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o2",
+            "label": "only that the office has an address"
+          },
+          {
+            "id": "o3",
+            "label": "that every complaint has been independently resolved"
+          },
+          {
+            "id": "o1",
+            "label": "that the office had been ignoring complaints"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "that the office had been ignoring complaints",
+      "explanation": "Форма stop ignoring содержит допущение о прежнем игнорировании.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: on / at.",
+      "public_payload": {
+        "sentence": "The question rests ___ a premise that has not been established."
+      },
+      "answer_key": {
+        "accepted": ["on"]
+      },
+      "reference_answer": "on",
+      "incorrect_answer": "at",
+      "editorial_answer": "The question rests on a premise that has not been established.",
+      "explanation": "Rest on a premise означает опираться на предпосылку.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Вопрос предполагает, что раньше жалобы игнорировали.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "assumes"
+          },
+          {
+            "id": "t4",
+            "label": "that"
+          },
+          {
+            "id": "t5",
+            "label": "complaints"
+          },
+          {
+            "id": "t6",
+            "label": "were"
+          },
+          {
+            "id": "t7",
+            "label": "previously"
+          },
+          {
+            "id": "t8",
+            "label": "ignored."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "question"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The question assumes that complaints were previously ignored.",
+      "explanation": "Нужно отделить встроенное допущение вопроса от отдельно подтверждённого факта.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The question presupposes of an earlier failure to respond."
+      },
+      "answer_key": {
+        "accepted": ["The question presupposes an earlier failure to respond."]
+      },
+      "reference_answer": "The question presupposes an earlier failure to respond.",
+      "incorrect_answer": "The question presupposes of an earlier failure to respond.",
+      "editorial_answer": "The question presupposes an earlier failure to respond.",
+      "explanation": "Presuppose — переходный глагол, поэтому of перед объектом не нужен.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему просьба «дать дату» проблематична?",
+      "public_payload": {
+        "passage": "At a public meeting, a resident asked when the housing office had stopped ignoring repair requests. The chair initially invited the office manager to give a date. The manager instead challenged the question’s premise: requests had been recorded, she said, though some repairs had been delayed. That reply did not establish that the service had been adequate, and it did not erase the delays. It separated a claim about ignoring requests from a claim about completing repairs slowly. The chair then asked what records showed about response times and outstanding work. This reformulation made the issue investigable without requiring either party to accept a disputed characterisation simply in order to answer. The original dissatisfaction remained a legitimate subject of scrutiny.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "It proves that all repairs were completed promptly."
+          },
+          {
+            "id": "o1",
+            "label": "It accepts the disputed assumption that requests had been ignored."
+          },
+          {
+            "id": "o2",
+            "label": "Dates can never be relevant to public services."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It accepts the disputed assumption that requests had been ignored.",
+      "explanation": "Ответ датой молчаливо принимает встроенную предпосылку вопроса.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что не доказывает ответ менеджера?",
+      "public_payload": {
+        "passage": "At a public meeting, a resident asked when the housing office had stopped ignoring repair requests. The chair initially invited the office manager to give a date. The manager instead challenged the question’s premise: requests had been recorded, she said, though some repairs had been delayed. That reply did not establish that the service had been adequate, and it did not erase the delays. It separated a claim about ignoring requests from a claim about completing repairs slowly. The chair then asked what records showed about response times and outstanding work. This reformulation made the issue investigable without requiring either party to accept a disputed characterisation simply in order to answer. The original dissatisfaction remained a legitimate subject of scrutiny.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "That the overall service had been adequate."
+          },
+          {
+            "id": "o2",
+            "label": "That she distinguishes recording requests from repair delays."
+          },
+          {
+            "id": "o3",
+            "label": "That the delays remain open to scrutiny."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "That the overall service had been adequate.",
+      "explanation": "Оспаривание слова ignoring не устанавливает высокое качество всей работы.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери ответ, который не принимает спорную предпосылку.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How can we answer a question containing an unsupported assumption?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o3",
+            "label": "Treat the question’s wording as conclusive evidence."
+          },
+          {
+            "id": "o1",
+            "label": "Identify the assumption and ask for a formulation that does not take it for granted."
+          },
+          {
+            "id": "o2",
+            "label": "Invent a date so that the question appears answered."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Identify the assumption and ask for a formulation that does not take it for granted.",
+      "explanation": "Уточнение предпосылки сохраняет возможность проверки фактов.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "To dispute an assumption explicitly is to ___ it.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "challenge"
+          },
+          {
+            "id": "o2",
+            "label": "certify"
+          },
+          {
+            "id": "o3",
+            "label": "quietly endorse"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "challenge",
+      "explanation": "Challenge означает оспорить, а не подтвердить или молча принять.",
+      "key": "e08"
+    }
+  ]
+}

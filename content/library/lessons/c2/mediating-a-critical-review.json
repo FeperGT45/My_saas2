@@ -1,0 +1,309 @@
+{
+  "key": "c2/mediating-a-critical-review",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C2 · смысл и точность",
+    "position": 10
+  },
+  "position": 7,
+  "title": "Пересказ критической рецензии без искажения",
+  "description": "Пересказ критической рецензии без искажения: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Менять регистр без усиления или утраты оговорки",
+    "Различать оценки ясности изложения и качества метода"
+  ],
+  "notes": [
+    "При смене регистра нужно сохранять силу оценки и её объект: lucid but methodologically thin — не просто positive.",
+    "Lest выражает предотвращаемый нежелательный исход; формальный регистр не оправдывает усиления исходной мысли."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/metaphor-and-policy"],
+  "lexicon": [
+    {
+      "en": "lucid",
+      "ru": "ясный, понятный"
+    },
+    {
+      "en": "methodologically",
+      "ru": "с точки зрения методологии"
+    },
+    {
+      "en": "distort",
+      "ru": "искажать"
+    },
+    {
+      "en": "proportionate",
+      "ru": "соразмерный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: A review calls the account “lucid but methodologically thin”. A faithful plain-language summary is ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "It is clearly written, but its methods are insufficiently developed."
+          },
+          {
+            "id": "o2",
+            "label": "It is fully endorsed in both style and method."
+          },
+          {
+            "id": "o3",
+            "label": "It is unreadable and deliberately deceptive."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It is clearly written, but its methods are insufficiently developed.",
+      "explanation": "Нужно сохранить положительную оценку ясности и отрицательную оценку методов без приписывания обмана.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: interpret / interprets.",
+      "public_payload": {
+        "sentence": "The caveat was retained lest readers ___ the comment as unqualified approval."
+      },
+      "answer_key": {
+        "accepted": ["interpret"]
+      },
+      "reference_answer": "interpret",
+      "incorrect_answer": "interprets",
+      "editorial_answer": "The caveat was retained lest readers interpret the comment as unqualified approval.",
+      "explanation": "После lest здесь подходит формальный базовый interpret с подлежащим readers.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Оговорку сохранили, чтобы читатели не приняли ясность за строгость.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "was"
+          },
+          {
+            "id": "t4",
+            "label": "retained"
+          },
+          {
+            "id": "t5",
+            "label": "lest"
+          },
+          {
+            "id": "t6",
+            "label": "readers"
+          },
+          {
+            "id": "t7",
+            "label": "mistake"
+          },
+          {
+            "id": "t8",
+            "label": "clarity"
+          },
+          {
+            "id": "t9",
+            "label": "for"
+          },
+          {
+            "id": "t10",
+            "label": "rigour."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "caveat"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "The caveat was retained lest readers mistake clarity for rigour.",
+      "explanation": "Lest вводит предотвращаемую ошибку; clarity и rigour оценивают разные качества.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The reviewer praised the clarity while question the method."
+      },
+      "answer_key": {
+        "accepted": [
+          "The reviewer praised the clarity while questioning the method."
+        ]
+      },
+      "reference_answer": "The reviewer praised the clarity while questioning the method.",
+      "incorrect_answer": "The reviewer praised the clarity while question the method.",
+      "editorial_answer": "The reviewer praised the clarity while questioning the method.",
+      "explanation": "После while в сокращённой параллельной конструкции требуется questioning.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему excellent introduction оказалось неточным?",
+      "public_payload": {
+        "passage": "An editor asked an assistant to turn an academic review into a short description for a general audience. The reviewer had called the book lucid but methodologically thin, noting that its accessible examples were not matched by a convincing account of how the evidence had been selected. The assistant’s first version described it as an excellent introduction. That was readable, but it discarded the criticism rather than translating it. A second version called the book unreliable, which exceeded the reviewer’s narrower reservation. The final description praised the clarity and explained the concern about evidence selection in ordinary language. Simplifying the vocabulary had not required simplifying the judgement into either approval or rejection; the two dimensions of the assessment could remain distinct.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "It faithfully explained the selection of evidence."
+          },
+          {
+            "id": "o3",
+            "label": "It retained every dimension of the reviewer’s judgement."
+          },
+          {
+            "id": "o1",
+            "label": "It removed the methodological reservation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It removed the methodological reservation.",
+      "explanation": "Первая версия оставила похвалу и потеряла критику метода.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что делает итоговую версию более верной?",
+      "public_payload": {
+        "passage": "An editor asked an assistant to turn an academic review into a short description for a general audience. The reviewer had called the book lucid but methodologically thin, noting that its accessible examples were not matched by a convincing account of how the evidence had been selected. The assistant’s first version described it as an excellent introduction. That was readable, but it discarded the criticism rather than translating it. A second version called the book unreliable, which exceeded the reviewer’s narrower reservation. The final description praised the clarity and explained the concern about evidence selection in ordinary language. Simplifying the vocabulary had not required simplifying the judgement into either approval or rejection; the two dimensions of the assessment could remain distinct.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "It avoids giving readers any account of the criticism."
+          },
+          {
+            "id": "o1",
+            "label": "It preserves both clarity and the specific concern in accessible language."
+          },
+          {
+            "id": "o2",
+            "label": "It turns the reservation into a claim of deliberate deception."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It preserves both clarity and the specific concern in accessible language.",
+      "explanation": "Смена регистра упрощает лексику, сохраняя разные измерения оценки.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери принцип точного пересказа для широкой аудитории.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Should a plain-language summary remove a caveat because it is difficult to phrase?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o2",
+            "label": "Yes; readability permits reversing the conclusion."
+          },
+          {
+            "id": "o3",
+            "label": "Yes; every caveat is merely decorative."
+          },
+          {
+            "id": "o1",
+            "label": "No; explain the caveat more plainly while preserving its force."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No; explain the caveat more plainly while preserving its force.",
+      "explanation": "Доступность формулировки не требует утраты существенной оговорки.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "A paraphrase that changes the scope or force of a claim may ___ it.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "quote verbatim"
+          },
+          {
+            "id": "o1",
+            "label": "distort"
+          },
+          {
+            "id": "o2",
+            "label": "corroborate automatically"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "distort",
+      "explanation": "Distort — исказить содержание; это не независимое подтверждение и не дословная цитата.",
+      "key": "e08"
+    }
+  ]
+}

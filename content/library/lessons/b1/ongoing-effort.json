@@ -1,0 +1,301 @@
+{
+  "key": "b1/ongoing-effort",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B1 · смысл и точность",
+    "position": 10
+  },
+  "position": 2,
+  "title": "Как долго длится работа",
+  "description": "Как долго длится работа: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Описывать продолжающийся процесс с have been + -ing",
+    "Различать начальную точку since и длительность for"
+  ],
+  "notes": [
+    "Present Perfect Continuous: have/has been + -ing связывает начавшийся раньше процесс с настоящим.",
+    "For указывает длительность, since — начальную точку; вопрос How long часто относится к процессу."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/past-before-past"],
+  "lexicon": [
+    {
+      "en": "rehearse",
+      "ru": "репетировать"
+    },
+    {
+      "en": "performance",
+      "ru": "выступление"
+    },
+    {
+      "en": "progress",
+      "ru": "прогресс"
+    },
+    {
+      "en": "regularly",
+      "ru": "регулярно"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Maya started practising in September and still practises. She ___ for three months.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o2",
+            "label": "is practising yesterday"
+          },
+          {
+            "id": "o3",
+            "label": "had practised tomorrow"
+          },
+          {
+            "id": "o1",
+            "label": "has been practising"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "has been practising",
+      "explanation": "Has been practising показывает процесс, продолжающийся до настоящего.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: since / for.",
+      "public_payload": {
+        "sentence": "We began on Monday and are still rehearsing. We have been rehearsing ___ Monday."
+      },
+      "answer_key": {
+        "accepted": ["since"]
+      },
+      "reference_answer": "since",
+      "incorrect_answer": "for",
+      "editorial_answer": "We began on Monday and are still rehearsing. We have been rehearsing since Monday.",
+      "explanation": "В первой фразе Monday прямо задан как начало продолжающейся репетиции: since Monday. Здесь не имеется в виду подготовка к понедельнику (for Monday).",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Они работают над выступлением всё утро.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "been"
+          },
+          {
+            "id": "t4",
+            "label": "working"
+          },
+          {
+            "id": "t5",
+            "label": "on"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "performance"
+          },
+          {
+            "id": "t8",
+            "label": "all"
+          },
+          {
+            "id": "t9",
+            "label": "morning."
+          },
+          {
+            "id": "t1",
+            "label": "They"
+          },
+          {
+            "id": "t2",
+            "label": "have"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "They have been working on the performance all morning.",
+      "explanation": "Have been working подчёркивает длительность процесса до настоящего.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He has been learn the lines for two weeks."
+      },
+      "answer_key": {
+        "accepted": ["He has been learning the lines for two weeks."]
+      },
+      "reference_answer": "He has been learning the lines for two weeks.",
+      "incorrect_answer": "He has been learn the lines for two weeks.",
+      "editorial_answer": "He has been learning the lines for two weeks.",
+      "explanation": "После has been в этой форме нужен learning.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что происходит уже три месяца?",
+      "public_payload": {
+        "passage": "Maya joined a small theatre group in September. For three months she has been practising after work. At first she forgot her lines, but now she can perform most scenes without help. The group has not performed for an audience yet. Their first show is next Saturday. Maya is nervous, although she feels that regular practice has helped her.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "Maya has been teaching professional actors."
+          },
+          {
+            "id": "o1",
+            "label": "Maya has been practising after work."
+          },
+          {
+            "id": "o2",
+            "label": "The group has been performing for paying audiences."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Maya has been practising after work.",
+      "explanation": "Практика продолжается; первое публичное выступление ещё впереди.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что можно утверждать о результате практики?",
+      "public_payload": {
+        "passage": "Maya joined a small theatre group in September. For three months she has been practising after work. At first she forgot her lines, but now she can perform most scenes without help. The group has not performed for an audience yet. Their first show is next Saturday. Maya is nervous, although she feels that regular practice has helped her.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "Maya can now perform most scenes without help."
+          },
+          {
+            "id": "o2",
+            "label": "Maya never feels nervous."
+          },
+          {
+            "id": "o3",
+            "label": "Every member has learnt every line perfectly."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Maya can now perform most scenes without help.",
+      "explanation": "В тексте говорится об улучшении Майи, но не об идеальном знании всех участников.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о начавшейся во вторник и продолжающейся работе.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How long have you been preparing the scenery?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o3",
+            "label": "We are paint it for Tuesday."
+          },
+          {
+            "id": "o1",
+            "label": "We have been painting it since Tuesday."
+          },
+          {
+            "id": "o2",
+            "label": "We painted it next Tuesday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "We have been painting it since Tuesday.",
+      "explanation": "Have been painting и since Tuesday согласуют процесс и начальную точку.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "The actors meet every evening, so they rehearse ___.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "regularly"
+          },
+          {
+            "id": "o2",
+            "label": "accidentally"
+          },
+          {
+            "id": "o3",
+            "label": "rarely"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "regularly",
+      "explanation": "Every evening указывает на регулярность, а не редкость или случайность.",
+      "key": "e08"
+    }
+  ]
+}

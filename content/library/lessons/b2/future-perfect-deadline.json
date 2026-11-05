@@ -1,0 +1,277 @@
+{
+  "key": "b2/future-perfect-deadline",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B2 · смысл и точность",
+    "position": 10
+  },
+  "position": 3,
+  "title": "Что будет закончено к сроку",
+  "description": "Что будет закончено к сроку: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Обозначать завершение к будущему сроку через will have done",
+    "Различать контрольную точку и достаточное условие запуска"
+  ],
+  "notes": [
+    "Future Perfect: will have + причастие обозначает завершение к будущему моменту.",
+    "By Friday означает «к пятнице», а on Friday — «в пятницу»; различие важно для сроков."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/wish-past-regret"],
+  "lexicon": [
+    {
+      "en": "milestone",
+      "ru": "контрольная точка"
+    },
+    {
+      "en": "complete",
+      "ru": "завершить"
+    },
+    {
+      "en": "remaining",
+      "ru": "оставшийся"
+    },
+    {
+      "en": "schedule",
+      "ru": "график"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: By the time the visitors arrive, we ___ the exhibition.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o2",
+            "label": "will installing"
+          },
+          {
+            "id": "o3",
+            "label": "have installed yesterday"
+          },
+          {
+            "id": "o1",
+            "label": "will have installed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "will have installed",
+      "explanation": "Will have installed показывает ожидаемое завершение до прибытия гостей.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: printed / printing.",
+      "public_payload": {
+        "sentence": "By noon tomorrow, the team will have ___ all the labels."
+      },
+      "answer_key": {
+        "accepted": ["printed"]
+      },
+      "reference_answer": "printed",
+      "incorrect_answer": "printing",
+      "editorial_answer": "By noon tomorrow, the team will have printed all the labels.",
+      "explanation": "После will have требуется причастие printed.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «К пятнице мы закончим опрос.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "have"
+          },
+          {
+            "id": "t4",
+            "label": "finished"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "survey"
+          },
+          {
+            "id": "t7",
+            "label": "by"
+          },
+          {
+            "id": "t8",
+            "label": "Friday."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "will"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "We will have finished the survey by Friday.",
+      "explanation": "Future Perfect обозначает завершение к границе by Friday.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "By next Monday, she will has completed the draft."
+      },
+      "answer_key": {
+        "accepted": ["By next Monday, she will have completed the draft."]
+      },
+      "reference_answer": "By next Monday, she will have completed the draft.",
+      "incorrect_answer": "By next Monday, she will has completed the draft.",
+      "editorial_answer": "By next Monday, she will have completed the draft.",
+      "explanation": "После will используется have, а не has.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое действие должно закончиться к полудню четверга?",
+      "public_payload": {
+        "passage": "The museum team has three days to prepare a temporary exhibition. The paintings are already in place, but the labels still need to be printed. According to the current schedule, the team will have completed the labels by noon on Thursday. A separate safety inspection is planned for Thursday afternoon. The exhibition can open on Friday only if that inspection is successful. Finishing the labels is therefore an important milestone, but it is not the only condition for opening.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "Completing every future museum exhibition."
+          },
+          {
+            "id": "o1",
+            "label": "Preparing the labels."
+          },
+          {
+            "id": "o2",
+            "label": "Welcoming the first Friday visitors."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Preparing the labels.",
+      "explanation": "По графику к этому времени будут готовы подписи.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Гарантирует ли готовность подписей открытие выставки?",
+      "public_payload": {
+        "passage": "The museum team has three days to prepare a temporary exhibition. The paintings are already in place, but the labels still need to be printed. According to the current schedule, the team will have completed the labels by noon on Thursday. A separate safety inspection is planned for Thursday afternoon. The exhibition can open on Friday only if that inspection is successful. Finishing the labels is therefore an important milestone, but it is not the only condition for opening.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "No; the safety inspection must also succeed."
+          },
+          {
+            "id": "o2",
+            "label": "Yes; no other conditions remain."
+          },
+          {
+            "id": "o3",
+            "label": "No; the paintings have not arrived."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No; the safety inspection must also succeed.",
+      "explanation": "Текст вводит отдельное условие — успешную проверку безопасности.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Подтверди завершение отправки к будущему моменту.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Will the report be ready before the meeting starts?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o3",
+            "label": "Yes, we have send it tomorrow."
+          },
+          {
+            "id": "o1",
+            "label": "Yes, we will have sent it by then."
+          },
+          {
+            "id": "o2",
+            "label": "Yes, we will have sending it by then."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Yes, we will have sent it by then.",
+      "explanation": "Will have sent согласует завершённую отправку с by then.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "A significant stage used to track progress is a ___.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "milestone"
+          },
+          {
+            "id": "o2",
+            "label": "distraction"
+          },
+          {
+            "id": "o3",
+            "label": "receipt"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "milestone",
+      "explanation": "Milestone — контрольная точка, по которой отслеживают ход работы.",
+      "key": "e08"
+    }
+  ]
+}

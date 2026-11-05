@@ -1,0 +1,273 @@
+{
+  "key": "b1/past-before-past",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B1 · смысл и точность",
+    "position": 10
+  },
+  "position": 1,
+  "title": "Что произошло до прибытия",
+  "description": "Что произошло до прибытия: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Показывать более раннее прошлое с had + причастие",
+    "Восстанавливать последовательность событий по рассказу"
+  ],
+  "notes": [
+    "Past Perfect (had + причастие) показывает действие, завершившееся раньше другого момента в прошлом.",
+    "Past Simple продвигает рассказ; Past Perfect помогает объяснить уже существовавшую ситуацию."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/verb-patterns"],
+  "lexicon": [
+    {
+      "en": "platform",
+      "ru": "платформа"
+    },
+    {
+      "en": "departure",
+      "ru": "отправление"
+    },
+    {
+      "en": "announcement",
+      "ru": "объявление"
+    },
+    {
+      "en": "miss",
+      "ru": "пропустить"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: When Leo reached platform six, the train ___ already left.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "had"
+          },
+          {
+            "id": "o2",
+            "label": "has"
+          },
+          {
+            "id": "o3",
+            "label": "would"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "had",
+      "explanation": "Поезд ушёл раньше, чем Лео добрался до платформы: had left.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: closed / close.",
+      "public_payload": {
+        "sentence": "The ticket office had ___ before we arrived."
+      },
+      "answer_key": {
+        "accepted": ["closed"]
+      },
+      "reference_answer": "closed",
+      "incorrect_answer": "close",
+      "editorial_answer": "The ticket office had closed before we arrived.",
+      "explanation": "После had требуется причастие closed, а не начальная форма.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Пассажиры ушли до объявления.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "had"
+          },
+          {
+            "id": "t4",
+            "label": "left"
+          },
+          {
+            "id": "t5",
+            "label": "before"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "announcement."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "passengers"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The passengers had left before the announcement.",
+      "explanation": "Had left обозначает более раннее действие, before связывает события.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "When we arrived, the bus has already departed."
+      },
+      "answer_key": {
+        "accepted": ["When we arrived, the bus had already departed."]
+      },
+      "reference_answer": "When we arrived, the bus had already departed.",
+      "incorrect_answer": "When we arrived, the bus has already departed.",
+      "editorial_answer": "When we arrived, the bus had already departed.",
+      "explanation": "В рассказе о прошлом более раннее отправление выражается had departed.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Лео не сел на поезд?",
+      "public_payload": {
+        "passage": "Leo reached the station at ten past eight. His ticket said that the train would leave at eight, but he hoped it was late. On platform six he found only a cleaner. The train had left on time. Leo went to the ticket office and changed his ticket for the next service. He decided to leave home earlier next time.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "The cleaner refused to let him board."
+          },
+          {
+            "id": "o3",
+            "label": "His ticket was for a different station."
+          },
+          {
+            "id": "o1",
+            "label": "It had left before he arrived."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It had left before he arrived.",
+      "explanation": "Поезд ушёл в восемь, Лео прибыл на десять минут позже.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Лео сделал после этого?",
+      "public_payload": {
+        "passage": "Leo reached the station at ten past eight. His ticket said that the train would leave at eight, but he hoped it was late. On platform six he found only a cleaner. The train had left on time. Leo went to the ticket office and changed his ticket for the next service. He decided to leave home earlier next time.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "He decided never to travel by train again."
+          },
+          {
+            "id": "o1",
+            "label": "He changed his ticket for the next service."
+          },
+          {
+            "id": "o2",
+            "label": "He caught the same train on another platform."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "He changed his ticket for the next service.",
+      "explanation": "Текст прямо сообщает об обмене билета; об отказе от поездок не говорится.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Объясни пустые места более ранним событием в прошлом.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Why were the seats empty when you entered?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o2",
+            "label": "The audience will go home tomorrow."
+          },
+          {
+            "id": "o3",
+            "label": "The audience goes home every Friday."
+          },
+          {
+            "id": "o1",
+            "label": "The audience had already gone home."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The audience had already gone home.",
+      "explanation": "Had already gone объясняет состояние зала к моменту входа.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "The train was due to leave at eight. Its scheduled ___ was eight o’clock.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "passenger"
+          },
+          {
+            "id": "o1",
+            "label": "departure"
+          },
+          {
+            "id": "o2",
+            "label": "platform"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "departure",
+      "explanation": "Departure обозначает отправление; platform — место, passenger — человек.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,275 @@
+{
+  "key": "c1/reference-cohesion",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C1 · смысл и точность",
+    "position": 10
+  },
+  "position": 3,
+  "title": "К чему относятся this и which",
+  "description": "К чему относятся this и which: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Находить отсылку this/which к предшествующему событию",
+    "Выявлять неподтверждённую причинную связь в пересказе"
+  ],
+  "notes": [
+    "This может отсылать к целому предшествующему утверждению, а не только к ближайшему существительному.",
+    "Which после запятой может комментировать целую часть: The trial ended early, which limited the evidence."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/fronting-contrast"],
+  "lexicon": [
+    {
+      "en": "referent",
+      "ru": "объект отсылки"
+    },
+    {
+      "en": "cohesion",
+      "ru": "связность"
+    },
+    {
+      "en": "attrition",
+      "ru": "выбывание участников"
+    },
+    {
+      "en": "limitation",
+      "ru": "ограничение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Several participants withdrew, ___ reduced the sample size.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "which"
+          },
+          {
+            "id": "o2",
+            "label": "who"
+          },
+          {
+            "id": "o3",
+            "label": "whose"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "which",
+      "explanation": "Which относится к факту выбывания, а не заменяет обозначение людей who.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: This / These.",
+      "public_payload": {
+        "sentence": "The trial ended early. ___ limited the conclusions researchers could draw."
+      },
+      "answer_key": {
+        "accepted": ["This"]
+      },
+      "reference_answer": "This",
+      "incorrect_answer": "These",
+      "editorial_answer": "The trial ended early. This limited the conclusions researchers could draw.",
+      "explanation": "This отсылает к целой ситуации досрочного завершения.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Выборка сократилась, что ослабило сравнение.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "shrank,"
+          },
+          {
+            "id": "t4",
+            "label": "which"
+          },
+          {
+            "id": "t5",
+            "label": "weakened"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "comparison."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "sample"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The sample shrank, which weakened the comparison.",
+      "explanation": "Which оценивает следствие всей предшествующей части.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The funding was withdrawn, who forced the team to stop."
+      },
+      "answer_key": {
+        "accepted": [
+          "The funding was withdrawn, which forced the team to stop."
+        ]
+      },
+      "reference_answer": "The funding was withdrawn, which forced the team to stop.",
+      "incorrect_answer": "The funding was withdrawn, who forced the team to stop.",
+      "editorial_answer": "The funding was withdrawn, which forced the team to stop.",
+      "explanation": "Отсылка к ситуации требует which, а не личного who.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "К чему относится This во втором смысловом звене?",
+      "public_payload": {
+        "passage": "A report described a training trial involving volunteers from three departments. Several participants left after a change in their work schedules. This reduced the number of observations available for comparison, but the report did not attribute the departures to dissatisfaction with the training. One summary replaced “this” with “the training”, creating the impression that the programme itself had driven people away. The authors corrected that summary. Their concern was not simply grammatical elegance: an unclear reference had altered the implied explanation. They specified that schedule-related attrition limited the comparison and that the evidence did not establish how satisfied the departing volunteers had been.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "A proven negative effect of the training."
+          },
+          {
+            "id": "o3",
+            "label": "A survey establishing dissatisfaction."
+          },
+          {
+            "id": "o1",
+            "label": "The participants’ departure after schedule changes."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The participants’ departure after schedule changes.",
+      "explanation": "This подхватывает событие выбытия, а не утверждение о качестве программы.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему исправление отсылки существенно?",
+      "public_payload": {
+        "passage": "A report described a training trial involving volunteers from three departments. Several participants left after a change in their work schedules. This reduced the number of observations available for comparison, but the report did not attribute the departures to dissatisfaction with the training. One summary replaced “this” with “the training”, creating the impression that the programme itself had driven people away. The authors corrected that summary. Their concern was not simply grammatical elegance: an unclear reference had altered the implied explanation. They specified that schedule-related attrition limited the comparison and that the evidence did not establish how satisfied the departing volunteers had been.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "Every use of this is grammatically incorrect."
+          },
+          {
+            "id": "o1",
+            "label": "The unclear reference had implied an unsupported cause."
+          },
+          {
+            "id": "o2",
+            "label": "The authors wanted to hide a completed satisfaction survey."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The unclear reference had implied an unsupported cause.",
+      "explanation": "Проблема в искажённой причинной интерпретации, не в запрете местоимения.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Определи отсылку к целой ситуации.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "The session was cancelled. This disappointed the volunteers. What does “this” most naturally refer to?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o2",
+            "label": "The spelling of volunteers."
+          },
+          {
+            "id": "o3",
+            "label": "A new claim that volunteers cancelled it themselves."
+          },
+          {
+            "id": "o1",
+            "label": "The cancellation of the session."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The cancellation of the session.",
+      "explanation": "Указательное местоимение подхватывает отмену; исполнитель отмены не уточняется.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "Loss of participants during a study is known as ___.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "replication"
+          },
+          {
+            "id": "o1",
+            "label": "attrition"
+          },
+          {
+            "id": "o2",
+            "label": "allocation"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "attrition",
+      "explanation": "Attrition — выбывание; allocation — распределение, replication — повторение исследования.",
+      "key": "e08"
+    }
+  ]
+}

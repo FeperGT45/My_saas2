@@ -1,0 +1,301 @@
+{
+  "key": "b1/reported-requests",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B1 · смысл и точность",
+    "position": 10
+  },
+  "position": 6,
+  "title": "Передаём просьбу другому человеку",
+  "description": "Передаём просьбу другому человеку: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Передавать просьбы через ask someone to do",
+    "Передавать отрицательные просьбы через not to"
+  ],
+  "notes": [
+    "Передать просьбу можно через ask + человек + to-infinitive: She asked me to wait.",
+    "Для отрицательной просьбы используется not to: He asked us not to touch the screen."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/both-neither"],
+  "lexicon": [
+    {
+      "en": "request",
+      "ru": "просьба"
+    },
+    {
+      "en": "remind",
+      "ru": "напомнить"
+    },
+    {
+      "en": "equipment",
+      "ru": "оборудование"
+    },
+    {
+      "en": "permission",
+      "ru": "разрешение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “Please close the door,” the technician said to us. He asked us ___ the door.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o3",
+            "label": "close to"
+          },
+          {
+            "id": "o1",
+            "label": "to close"
+          },
+          {
+            "id": "o2",
+            "label": "closing"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "to close",
+      "explanation": "В конструкции asked us to close нужен to-infinitive.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: not / no.",
+      "public_payload": {
+        "sentence": "The guide asked the visitors ___ to use flash photography."
+      },
+      "answer_key": {
+        "accepted": ["not"]
+      },
+      "reference_answer": "not",
+      "incorrect_answer": "no",
+      "editorial_answer": "The guide asked the visitors not to use flash photography.",
+      "explanation": "Отрицательная просьба строится asked someone not to do something.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Техник попросил нас не отключать компьютер от сети.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "asked"
+          },
+          {
+            "id": "t4",
+            "label": "us"
+          },
+          {
+            "id": "t5",
+            "label": "not"
+          },
+          {
+            "id": "t6",
+            "label": "to"
+          },
+          {
+            "id": "t7",
+            "label": "unplug"
+          },
+          {
+            "id": "t8",
+            "label": "the"
+          },
+          {
+            "id": "t9",
+            "label": "computer."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "technician"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "The technician asked us not to unplug the computer.",
+      "explanation": "Not стоит перед to unplug и относится к действию, которого просят избежать.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She asked me bring my student card."
+      },
+      "answer_key": {
+        "accepted": ["She asked me to bring my student card."]
+      },
+      "reference_answer": "She asked me to bring my student card.",
+      "incorrect_answer": "She asked me bring my student card.",
+      "editorial_answer": "She asked me to bring my student card.",
+      "explanation": "После asked me для передачи просьбы нужен to bring.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Чего техник попросила не делать?",
+      "public_payload": {
+        "passage": "Before the workshop, a technician checked the computers. She asked the students to keep drinks away from the desks. She also asked them not to unplug any cables. When one screen went dark, Ben remembered the request and called her instead of changing the cables himself. The technician found a loose connection and thanked him for waiting for help.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "Unplug any cables."
+          },
+          {
+            "id": "o2",
+            "label": "Call her when there was a problem."
+          },
+          {
+            "id": "o3",
+            "label": "Use the computers during the workshop."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Unplug any cables.",
+      "explanation": "Запрет в просьбе относится к отключению кабелей.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как Бен поступил с тёмным экраном?",
+      "public_payload": {
+        "passage": "Before the workshop, a technician checked the computers. She asked the students to keep drinks away from the desks. She also asked them not to unplug any cables. When one screen went dark, Ben remembered the request and called her instead of changing the cables himself. The technician found a loose connection and thanked him for waiting for help.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "He unplugged every cable."
+          },
+          {
+            "id": "o3",
+            "label": "He moved his drink onto the desk."
+          },
+          {
+            "id": "o1",
+            "label": "He called the technician and waited."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "He called the technician and waited.",
+      "explanation": "Бен сообщил о проблеме, сохранив оборудование как было.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Передай отрицательную просьбу стандартной конструкцией.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Please do not move this box, the organiser told me."
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "label": "The organiser asked me not to move the box."
+          },
+          {
+            "id": "o2",
+            "label": "The organiser asked me to not moving the box."
+          },
+          {
+            "id": "o3",
+            "label": "The organiser asked to me moved the box."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The organiser asked me not to move the box.",
+      "explanation": "Asked me not to move сохраняет адресата и отрицание.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "You should obtain ___ before using someone else’s equipment.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "prediction"
+          },
+          {
+            "id": "o3",
+            "label": "departure"
+          },
+          {
+            "id": "o1",
+            "label": "permission"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "permission",
+      "explanation": "Permission — разрешение на действие; остальные слова не выражают согласие владельца.",
+      "key": "e08"
+    }
+  ]
+}

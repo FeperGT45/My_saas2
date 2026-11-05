@@ -1,0 +1,309 @@
+{
+  "key": "c1/fronting-contrast",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C1 · смысл и точность",
+    "position": 10
+  },
+  "position": 2,
+  "title": "Контраст и порядок аргументов",
+  "description": "Контраст и порядок аргументов: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Выносить дополнение для смыслового контраста",
+    "Отличать ограничение по срокам от отказа от предложения"
+  ],
+  "notes": [
+    "Вынос дополнения в начало может создать контраст: The cost we could absorb; the delay we could not.",
+    "Такой вынос не требует автоматической инверсии; отрицательная инверсия — отдельная конструкция."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/inverted-conditions"],
+  "lexicon": [
+    {
+      "en": "absorb a cost",
+      "ru": "взять расходы на себя"
+    },
+    {
+      "en": "constraint",
+      "ru": "ограничение"
+    },
+    {
+      "en": "trade-off",
+      "ru": "компромисс между требованиями"
+    },
+    {
+      "en": "feasibility",
+      "ru": "осуществимость"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Choose neutral contrastive fronting: “The financial cost ___; the delay we could not.”",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o3",
+            "label": "we could absorbed"
+          },
+          {
+            "id": "o1",
+            "label": "we could absorb"
+          },
+          {
+            "id": "o2",
+            "label": "could we absorb"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "we could absorb",
+      "explanation": "При выносе объекта the financial cost сохраняется we could absorb.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: could / must to.",
+      "public_payload": {
+        "sentence": "The budget we could revise; the legal deadline we ___ not change."
+      },
+      "answer_key": {
+        "accepted": ["could"]
+      },
+      "reference_answer": "could",
+      "incorrect_answer": "must to",
+      "editorial_answer": "The budget we could revise; the legal deadline we could not change.",
+      "explanation": "Модальный could с not change обозначает отсутствие возможности изменить срок.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Расходы мы могли взять на себя, а задержку — нет.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "we"
+          },
+          {
+            "id": "t4",
+            "label": "could"
+          },
+          {
+            "id": "t5",
+            "label": "absorb;"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "delay"
+          },
+          {
+            "id": "t8",
+            "label": "we"
+          },
+          {
+            "id": "t9",
+            "label": "could"
+          },
+          {
+            "id": "t10",
+            "label": "not."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "cost"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "The cost we could absorb; the delay we could not.",
+      "explanation": "Два вынесенных объекта противопоставляют приемлемую и неприемлемую стороны решения.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The revised budget could we accept; the revised deadline we could not."
+      },
+      "answer_key": {
+        "accepted": [
+          "The revised budget we could accept; the revised deadline we could not."
+        ]
+      },
+      "reference_answer": "The revised budget we could accept; the revised deadline we could not.",
+      "incorrect_answer": "The revised budget could we accept; the revised deadline we could not.",
+      "editorial_answer": "The revised budget we could accept; the revised deadline we could not.",
+      "explanation": "В заданном контрастивном выносе объекта нет основания для could we.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую функцию выполняет контраст в цитате?",
+      "public_payload": {
+        "passage": "A transport charity considered replacing its booking software midway through a busy season. The new system promised lower running costs, but migration would require a week without online bookings. In the board discussion, the treasurer said, “The additional training cost we could absorb; the interruption to service we could not.” This was not a rejection of the software’s long-term value. It distinguished a manageable expense from a short-term constraint that conflicted with the charity’s obligations. The board postponed migration until winter, when telephone demand was lower. Its minutes recorded a decision about timing and feasibility, rather than a conclusion that the proposed system was intrinsically unsuitable.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "It separates an affordable cost from an unacceptable interruption."
+          },
+          {
+            "id": "o2",
+            "label": "It claims that all costs and delays are equally manageable."
+          },
+          {
+            "id": "o3",
+            "label": "It reverses the charity’s obligation to provide a service."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It separates an affordable cost from an unacceptable interruption.",
+      "explanation": "Вынос training cost и interruption подчёркивает разные оценки этих факторов.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что было решено о самом программном обеспечении?",
+      "public_payload": {
+        "passage": "A transport charity considered replacing its booking software midway through a busy season. The new system promised lower running costs, but migration would require a week without online bookings. In the board discussion, the treasurer said, “The additional training cost we could absorb; the interruption to service we could not.” This was not a rejection of the software’s long-term value. It distinguished a manageable expense from a short-term constraint that conflicted with the charity’s obligations. The board postponed migration until winter, when telephone demand was lower. Its minutes recorded a decision about timing and feasibility, rather than a conclusion that the proposed system was intrinsically unsuitable.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "It was judged intrinsically unsuitable in every season."
+          },
+          {
+            "id": "o3",
+            "label": "It was installed immediately without interruption."
+          },
+          {
+            "id": "o1",
+            "label": "Its long-term value was not rejected; migration was postponed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Its long-term value was not rejected; migration was postponed.",
+      "explanation": "Решение касалось сроков и осуществимости перехода, а не полного отказа.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани контраст между идеей и сроками.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “The proposal we welcomed; the timetable we questioned” reject everything?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "label": "No; it accepts the proposal while challenging the timetable."
+          },
+          {
+            "id": "o2",
+            "label": "Yes; both parts must express rejection."
+          },
+          {
+            "id": "o3",
+            "label": "No; it guarantees approval of every later revision."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No; it accepts the proposal while challenging the timetable.",
+      "explanation": "Welcomed и questioned имеют разные объекты; общее одобрение всех будущих изменений не следует.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "Balancing lower cost against a slower service involves a ___.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "guarantee"
+          },
+          {
+            "id": "o3",
+            "label": "typographical error"
+          },
+          {
+            "id": "o1",
+            "label": "trade-off"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "trade-off",
+      "explanation": "Trade-off — выбор между конкурирующими преимуществами и недостатками.",
+      "key": "e08"
+    }
+  ]
+}

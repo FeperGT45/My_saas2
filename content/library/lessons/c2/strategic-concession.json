@@ -1,0 +1,303 @@
+{
+  "key": "c2/strategic-concession",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C2 · смысл и точность",
+    "position": 10
+  },
+  "position": 4,
+  "title": "Признаём возражение, сохраняя позицию",
+  "description": "Признаём возражение, сохраняя позицию: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Отличать признанную посылку от принятого заключения",
+    "Сохранять возражение при уступительном even if"
+  ],
+  "notes": [
+    "Granted может признавать отдельную посылку оппонента без принятия его общего вывода.",
+    "Even if вводит уступительное условие: заключение может сохраняться даже при допущении уступаемой посылки."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/scope-of-only"],
+  "lexicon": [
+    {
+      "en": "concede",
+      "ru": "признавать часть довода"
+    },
+    {
+      "en": "premise",
+      "ru": "посылка"
+    },
+    {
+      "en": "rebuttal",
+      "ru": "опровержение довода"
+    },
+    {
+      "en": "contingent",
+      "ru": "зависящий от условий"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “Granted, the initial cost is lower; that does not settle the lifetime cost” concedes ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "one premise while resisting a broader conclusion"
+          },
+          {
+            "id": "o2",
+            "label": "the whole case without reservation"
+          },
+          {
+            "id": "o3",
+            "label": "that lifetime cost is irrelevant"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "one premise while resisting a broader conclusion",
+      "explanation": "Granted признаёт меньшую начальную цену, но не итоговую экономичность.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: if / despite.",
+      "public_payload": {
+        "sentence": "Even ___ the forecast proves accurate, the distributional concern remains."
+      },
+      "answer_key": {
+        "accepted": ["if"]
+      },
+      "reference_answer": "if",
+      "incorrect_answer": "despite",
+      "editorial_answer": "Even if the forecast proves accurate, the distributional concern remains.",
+      "explanation": "Even if вводит условную уступку; после despite полноценная часть так не присоединяется.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Даже если экономия возникнет, проблема доступа останется.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "saving"
+          },
+          {
+            "id": "t5",
+            "label": "materialises,"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "access"
+          },
+          {
+            "id": "t8",
+            "label": "problem"
+          },
+          {
+            "id": "t9",
+            "label": "remains."
+          },
+          {
+            "id": "t1",
+            "label": "Even"
+          },
+          {
+            "id": "t2",
+            "label": "if"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "Even if the saving materialises, the access problem remains.",
+      "explanation": "Уступка допускает экономию без принятия вывода о решённости всех проблем.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Even despite the estimates are correct, the policy needs revision."
+      },
+      "answer_key": {
+        "accepted": [
+          "Even if the estimates are correct, the policy needs revision."
+        ]
+      },
+      "reference_answer": "Even if the estimates are correct, the policy needs revision.",
+      "incorrect_answer": "Even despite the estimates are correct, the policy needs revision.",
+      "editorial_answer": "Even if the estimates are correct, the policy needs revision.",
+      "explanation": "Для полноценной условно-уступительной части здесь используется even if.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что выступающая признала?",
+      "public_payload": {
+        "passage": "In a debate about replacing staffed counters with kiosks, one speaker conceded that kiosks could reduce the cost of routine transactions. She then argued that the saving did not answer the question of access for people unable to use them independently. Her opponent celebrated the concession as acceptance of the replacement policy. This conflated agreement on a possible efficiency gain with agreement on what should follow from it. The speaker’s argument was instead that, even if the saving materialised, an accessible alternative would still be required. She had not demonstrated that kiosks were always unsuitable, nor had she withdrawn the accessibility objection. Her concession narrowed the dispute to the conditions under which efficiency could justify a change in service.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "All staffed alternatives should immediately close."
+          },
+          {
+            "id": "o3",
+            "label": "Everyone can independently use a kiosk."
+          },
+          {
+            "id": "o1",
+            "label": "Kiosks could reduce the cost of routine transactions."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Kiosks could reduce the cost of routine transactions.",
+      "explanation": "Уступка касается возможной экономии, а не всей политики замены.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что остаётся предметом спора после уступки?",
+      "public_payload": {
+        "passage": "In a debate about replacing staffed counters with kiosks, one speaker conceded that kiosks could reduce the cost of routine transactions. She then argued that the saving did not answer the question of access for people unable to use them independently. Her opponent celebrated the concession as acceptance of the replacement policy. This conflated agreement on a possible efficiency gain with agreement on what should follow from it. The speaker’s argument was instead that, even if the saving materialised, an accessible alternative would still be required. She had not demonstrated that kiosks were always unsuitable, nor had she withdrawn the accessibility objection. Her concession narrowed the dispute to the conditions under which efficiency could justify a change in service.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "Whether the speaker has proved that all kiosks are unsuitable."
+          },
+          {
+            "id": "o1",
+            "label": "Whether efficiency can justify the change without an accessible alternative."
+          },
+          {
+            "id": "o2",
+            "label": "Whether any transaction ever has a cost."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Whether efficiency can justify the change without an accessible alternative.",
+      "explanation": "Спор сужен до условий оправданности изменения и сохранения доступности.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Отдели признанную посылку от итогового решения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does conceding that a proposal has one advantage commit us to adopting it?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o2",
+            "label": "Yes; every conceded premise settles the conclusion."
+          },
+          {
+            "id": "o3",
+            "label": "Yes; a concession withdraws all unrelated objections."
+          },
+          {
+            "id": "o1",
+            "label": "No; other considerations may still defeat the overall recommendation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No; other considerations may still defeat the overall recommendation.",
+      "explanation": "Один плюс не устанавливает перевес над всеми существенными минусами.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "A conclusion that depends on specified circumstances is ___.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "self-evident"
+          },
+          {
+            "id": "o1",
+            "label": "contingent"
+          },
+          {
+            "id": "o2",
+            "label": "unconditional"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "contingent",
+      "explanation": "Contingent означает зависящий от условий, в отличие от unconditional.",
+      "key": "e08"
+    }
+  ]
+}

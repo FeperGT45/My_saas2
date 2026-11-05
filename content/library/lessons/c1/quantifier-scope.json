@@ -1,0 +1,269 @@
+{
+  "key": "c1/quantifier-scope",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C1 · смысл и точность",
+    "position": 10
+  },
+  "position": 5,
+  "title": "Не все — не значит никто",
+  "description": "Не все — не значит никто: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Различать not all и none",
+    "Ограничивать обобщение с учётом состава выборки"
+  ],
+  "notes": [
+    "Not all означает «не все», а не «никто»: необходимо сохранять область действия отрицания.",
+    "Only ограничивает определённый компонент высказывания; only some и some only не следует механически считать взаимозаменяемыми."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/professional-disagreement"],
+  "lexicon": [
+    {
+      "en": "scope",
+      "ru": "область действия"
+    },
+    {
+      "en": "quantifier",
+      "ru": "количественное слово"
+    },
+    {
+      "en": "exception",
+      "ru": "исключение"
+    },
+    {
+      "en": "unanimous",
+      "ru": "единогласный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Not all reviewers supported the proposal. This means the support was ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o3",
+            "label": "unanimously positive"
+          },
+          {
+            "id": "o1",
+            "label": "not unanimous"
+          },
+          {
+            "id": "o2",
+            "label": "entirely absent"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "not unanimous",
+      "explanation": "Not all исключает полное единодушие, но не утверждает отсутствие поддержки.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: all / none.",
+      "public_payload": {
+        "sentence": "Not ___ applicants met the additional requirement; several needed further training."
+      },
+      "answer_key": {
+        "accepted": ["all"]
+      },
+      "reference_answer": "all",
+      "incorrect_answer": "none",
+      "editorial_answer": "Not all applicants met the additional requirement; several needed further training.",
+      "explanation": "Several ... needed показывает исключения из множества кандидатов; конструкция not all.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Не каждый участник выполнил оба раздела.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "participant"
+          },
+          {
+            "id": "t4",
+            "label": "completed"
+          },
+          {
+            "id": "t5",
+            "label": "both"
+          },
+          {
+            "id": "t6",
+            "label": "sections."
+          },
+          {
+            "id": "t1",
+            "label": "Not"
+          },
+          {
+            "id": "t2",
+            "label": "every"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Not every participant completed both sections.",
+      "explanation": "Отрицается универсальность; из этого не следует, что никто не выполнил оба раздела.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Not all of the comments was critical."
+      },
+      "answer_key": {
+        "accepted": ["Not all of the comments were critical."]
+      },
+      "reference_answer": "Not all of the comments were critical.",
+      "incorrect_answer": "Not all of the comments was critical.",
+      "editorial_answer": "Not all of the comments were critical.",
+      "explanation": "Comments — множественное число; количественное отрицание не меняет согласование were.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что допускает исходная формулировка not all?",
+      "public_payload": {
+        "passage": "The consultation summary stated that not all respondents favoured extending the opening hours. A headline paraphrased this as “Residents reject longer hours”. The underlying responses did not support that generalisation: some welcomed later access, some preferred the existing schedule, and others supported an extension only on weekends. The summary did not provide a representative estimate of opinion across the entire town, because participation was voluntary. A careful account therefore needed to preserve both the range of views and the limits of the sample. Neither unanimous support nor universal opposition could legitimately be inferred from the phrase “not all”.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "A mixture of supportive and non-supportive responses."
+          },
+          {
+            "id": "o2",
+            "label": "Proof that nobody supported any extension."
+          },
+          {
+            "id": "o3",
+            "label": "Proof of unanimous support."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "A mixture of supportive and non-supportive responses.",
+      "explanation": "Not all отрицает универсальность, а текст затем прямо описывает разные мнения.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое дополнительное ограничение есть у опроса?",
+      "public_payload": {
+        "passage": "The consultation summary stated that not all respondents favoured extending the opening hours. A headline paraphrased this as “Residents reject longer hours”. The underlying responses did not support that generalisation: some welcomed later access, some preferred the existing schedule, and others supported an extension only on weekends. The summary did not provide a representative estimate of opinion across the entire town, because participation was voluntary. A careful account therefore needed to preserve both the range of views and the limits of the sample. Neither unanimous support nor universal opposition could legitimately be inferred from the phrase “not all”.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "The responses prove exactly what every resident thinks."
+          },
+          {
+            "id": "o3",
+            "label": "Weekend views were excluded from the responses."
+          },
+          {
+            "id": "o1",
+            "label": "Voluntary participation may not represent the whole town."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Voluntary participation may not represent the whole town.",
+      "explanation": "Самоотбор участников ограничивает обобщение на всех жителей.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани область действия отрицания без усиления.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Someone says “Not every reviewer found an error.” Which paraphrase is safest?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "label": "It is not true that every reviewer found an error."
+          },
+          {
+            "id": "o2",
+            "label": "No reviewer found an error."
+          },
+          {
+            "id": "o3",
+            "label": "Every reviewer found the same error."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It is not true that every reviewer found an error.",
+      "explanation": "Первый вариант повторяет логическое содержание; none и every создают другие утверждения.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "A decision supported by every member is ___.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "conditional"
+          },
+          {
+            "id": "o3",
+            "label": "inconclusive"
+          },
+          {
+            "id": "o1",
+            "label": "unanimous"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "unanimous",
+      "explanation": "Unanimous обозначает согласие всех, в отличие от частичного или условного согласия.",
+      "key": "e08"
+    }
+  ]
+}

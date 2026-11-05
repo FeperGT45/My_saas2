@@ -1,0 +1,301 @@
+{
+  "key": "b1/embedded-questions",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B1 · смысл и точность",
+    "position": 10
+  },
+  "position": 4,
+  "title": "Вежливые косвенные вопросы",
+  "description": "Вежливые косвенные вопросы: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Сохранять прямой порядок слов в косвенном вопросе",
+    "Вежливо уточнять сведения через whether и вопросительные слова"
+  ],
+  "notes": [
+    "Внутри косвенного вопроса используется прямой порядок слов: Could you tell me where the office is?",
+    "Do/does/did из прямого вопроса в такой части не сохраняются; для yes/no-вопроса подходят if или whether."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/arranged-future"],
+  "lexicon": [
+    {
+      "en": "reception",
+      "ru": "стойка регистрации"
+    },
+    {
+      "en": "office",
+      "ru": "кабинет"
+    },
+    {
+      "en": "entrance",
+      "ru": "вход"
+    },
+    {
+      "en": "directions",
+      "ru": "указания пути"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Could you tell me where ___?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "the reception desk is"
+          },
+          {
+            "id": "o2",
+            "label": "is the reception desk"
+          },
+          {
+            "id": "o3",
+            "label": "does the reception desk"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "the reception desk is",
+      "explanation": "После where в косвенном вопросе подлежащее идёт перед is.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: whether / what.",
+      "public_payload": {
+        "sentence": "Do you know ___ the office opens on Sundays?"
+      },
+      "answer_key": {
+        "accepted": ["whether"]
+      },
+      "reference_answer": "whether",
+      "incorrect_answer": "what",
+      "editorial_answer": "Do you know whether the office opens on Sundays?",
+      "explanation": "Whether вводит косвенный yes/no-вопрос о работе по воскресеньям.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Не могли бы вы сказать, когда начинается следующая экскурсия?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "tell"
+          },
+          {
+            "id": "t4",
+            "label": "me"
+          },
+          {
+            "id": "t5",
+            "label": "when"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "next"
+          },
+          {
+            "id": "t8",
+            "label": "tour"
+          },
+          {
+            "id": "t9",
+            "label": "starts?"
+          },
+          {
+            "id": "t1",
+            "label": "Could"
+          },
+          {
+            "id": "t2",
+            "label": "you"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "Could you tell me when the next tour starts?",
+      "explanation": "Внутри when the next tour starts сохраняется прямой порядок слов.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Do you know where is the side entrance?"
+      },
+      "answer_key": {
+        "accepted": ["Do you know where the side entrance is?"]
+      },
+      "reference_answer": "Do you know where the side entrance is?",
+      "incorrect_answer": "Do you know where is the side entrance?",
+      "editorial_answer": "Do you know where the side entrance is?",
+      "explanation": "В косвенной части нужно the side entrance is, а не вопросительная инверсия.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где расположен кабинет?",
+      "public_payload": {
+        "passage": "On his first day at college, Amir could not find the language office. He asked a receptionist, “Could you tell me where the language office is?” She explained that it was upstairs, beside the library. Amir also asked whether he needed an appointment. She said that students could come without one before noon, but appointments were required in the afternoon.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "Downstairs, inside the library."
+          },
+          {
+            "id": "o3",
+            "label": "Outside the college entrance."
+          },
+          {
+            "id": "o1",
+            "label": "Upstairs, beside the library."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Upstairs, beside the library.",
+      "explanation": "Сотрудница назвала этаж и ориентир beside the library.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда студент может прийти без записи?",
+      "public_payload": {
+        "passage": "On his first day at college, Amir could not find the language office. He asked a receptionist, “Could you tell me where the language office is?” She explained that it was upstairs, beside the library. Amir also asked whether he needed an appointment. She said that students could come without one before noon, but appointments were required in the afternoon.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "Only after the library closes."
+          },
+          {
+            "id": "o1",
+            "label": "Before noon."
+          },
+          {
+            "id": "o2",
+            "label": "At any time in the afternoon."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Before noon.",
+      "explanation": "До полудня запись не нужна; после полудня требуется.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери вопрос с правильным порядком слов после how much.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "You want to ask politely about the fee."
+          }
+        ],
+        "options": [
+          {
+            "id": "o2",
+            "label": "Could you tell me how much does the course cost?"
+          },
+          {
+            "id": "o3",
+            "label": "Could you tell me how much cost the course?"
+          },
+          {
+            "id": "o1",
+            "label": "Could you tell me how much the course costs?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Could you tell me how much the course costs?",
+      "explanation": "Косвенная часть — the course costs, без does.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "The receptionist gave me clear ___ to the language office.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "appointments"
+          },
+          {
+            "id": "o1",
+            "label": "directions"
+          },
+          {
+            "id": "o2",
+            "label": "entrances"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "directions",
+      "explanation": "Directions здесь означает объяснение пути, а не сами входы или записи.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,301 @@
+{
+  "key": "b2/causative-services",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B2 · смысл и точность",
+    "position": 10
+  },
+  "position": 4,
+  "title": "Когда работу выполняет специалист",
+  "description": "Когда работу выполняет специалист: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Описывать услуги через have something done",
+    "Отличать исполнителя работы от заказчика услуги"
+  ],
+  "notes": [
+    "Have something done означает организовать выполнение работы другим человеком: I had my laptop repaired.",
+    "Время выражается глаголом have, а после объекта стоит причастие: have / had / will have it checked."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/future-perfect-deadline"],
+  "lexicon": [
+    {
+      "en": "technician",
+      "ru": "техник"
+    },
+    {
+      "en": "repair",
+      "ru": "ремонтировать"
+    },
+    {
+      "en": "inspection",
+      "ru": "осмотр"
+    },
+    {
+      "en": "warranty",
+      "ru": "гарантия"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: A technician fixed the screen for me. I ___ my screen repaired.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o3",
+            "label": "was have"
+          },
+          {
+            "id": "o1",
+            "label": "had"
+          },
+          {
+            "id": "o2",
+            "label": "did"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "had",
+      "explanation": "Had my screen repaired передаёт заказанную у специалиста услугу.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: inspected / inspect.",
+      "public_payload": {
+        "sentence": "We are having the roof ___ by a specialist."
+      },
+      "answer_key": {
+        "accepted": ["inspected"]
+      },
+      "reference_answer": "inspected",
+      "incorrect_answer": "inspect",
+      "editorial_answer": "We are having the roof inspected by a specialist.",
+      "explanation": "После объекта the roof в causative-конструкции требуется причастие inspected.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Перед поездкой я отдам велосипед на обслуживание.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "have"
+          },
+          {
+            "id": "t4",
+            "label": "my"
+          },
+          {
+            "id": "t5",
+            "label": "bicycle"
+          },
+          {
+            "id": "t6",
+            "label": "serviced"
+          },
+          {
+            "id": "t7",
+            "label": "before"
+          },
+          {
+            "id": "t8",
+            "label": "the"
+          },
+          {
+            "id": "t9",
+            "label": "trip."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "will"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "I will have my bicycle serviced before the trip.",
+      "explanation": "Will have my bicycle serviced не означает, что говорящий сам выполнит обслуживание.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She had her watch repair at the shop."
+      },
+      "answer_key": {
+        "accepted": ["She had her watch repaired at the shop."]
+      },
+      "reference_answer": "She had her watch repaired at the shop.",
+      "incorrect_answer": "She had her watch repair at the shop.",
+      "editorial_answer": "She had her watch repaired at the shop.",
+      "explanation": "После her watch нужно repaired — причастие результата услуги.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что сделали с цепью?",
+      "public_payload": {
+        "passage": "Before a long cycling trip, Eva took her bicycle to a repair shop. She had the brakes checked and the chain replaced. The mechanic said that the tyres were still in good condition, so replacing them was unnecessary. Eva had expected a larger bill and appreciated the explanation. She kept the receipt in case a problem appeared during the shop’s warranty period. The visit prepared the bicycle for the journey, although it could not remove every possible risk on the road.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "The shop replaced it."
+          },
+          {
+            "id": "o2",
+            "label": "Eva checked it but kept the old one."
+          },
+          {
+            "id": "o3",
+            "label": "The mechanic replaced the tyres instead."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The shop replaced it.",
+      "explanation": "The chain replaced в конструкции had the chain replaced сообщает о замене цепи.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему шины не заменили?",
+      "public_payload": {
+        "passage": "Before a long cycling trip, Eva took her bicycle to a repair shop. She had the brakes checked and the chain replaced. The mechanic said that the tyres were still in good condition, so replacing them was unnecessary. Eva had expected a larger bill and appreciated the explanation. She kept the receipt in case a problem appeared during the shop’s warranty period. The visit prepared the bicycle for the journey, although it could not remove every possible risk on the road.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "The shop had lost the receipt."
+          },
+          {
+            "id": "o3",
+            "label": "The warranty prohibited all tyre repairs."
+          },
+          {
+            "id": "o1",
+            "label": "They were still in good condition."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "They were still in good condition.",
+      "explanation": "Механик счёл замену ненужной из-за состояния шин.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Уточни, что работу выполнил приглашённый специалист.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Did you paint the kitchen yourself?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "label": "No, I had it painted by a local decorator."
+          },
+          {
+            "id": "o2",
+            "label": "No, I had it paint by a local decorator."
+          },
+          {
+            "id": "o3",
+            "label": "No, I was paint by a local decorator."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No, I had it painted by a local decorator.",
+      "explanation": "Had it painted by ... обозначает заказанную работу, а не самостоятельное выполнение.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "A written promise to deal with certain faults during a set period is a ___.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "forecast"
+          },
+          {
+            "id": "o3",
+            "label": "departure"
+          },
+          {
+            "id": "o1",
+            "label": "warranty"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "warranty",
+      "explanation": "Warranty — гарантийное обязательство с установленными условиями.",
+      "key": "e08"
+    }
+  ]
+}

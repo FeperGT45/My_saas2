@@ -1,0 +1,279 @@
+{
+  "key": "c1/causal-alternatives",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C1 · смысл и точность",
+    "position": 10
+  },
+  "position": 7,
+  "title": "Причина или сопутствующее изменение",
+  "description": "Причина или сопутствующее изменение: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Формулировать возможный вклад без усиления причинного вывода",
+    "Находить альтернативные объяснения одновременных изменений"
+  ],
+  "notes": [
+    "Связь может поддерживать гипотезу, не устанавливая причинность; проверьте факторы, изменившиеся одновременно.",
+    "May have contributed допускает возможный вклад; caused the entire change приписывает ему всё изменение и является более сильным выводом."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/cautious-comparisons"],
+  "lexicon": [
+    {
+      "en": "confounder",
+      "ru": "смешивающий фактор"
+    },
+    {
+      "en": "association",
+      "ru": "связь"
+    },
+    {
+      "en": "intervention",
+      "ru": "вмешательство"
+    },
+    {
+      "en": "plausible",
+      "ru": "правдоподобный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The timetable change may ___ to better attendance, but the study cannot isolate its effect.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o2",
+            "label": "has contributed"
+          },
+          {
+            "id": "o3",
+            "label": "having contributed"
+          },
+          {
+            "id": "o1",
+            "label": "have contributed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "have contributed",
+      "explanation": "После may нужен have contributed; may сохраняет неопределённость вклада.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: establish / established.",
+      "public_payload": {
+        "sentence": "The observed association does not ___ causation."
+      },
+      "answer_key": {
+        "accepted": ["establish"]
+      },
+      "reference_answer": "establish",
+      "incorrect_answer": "established",
+      "editorial_answer": "The observed association does not establish causation.",
+      "explanation": "После does not требуется establish; смысл — не устанавливает причинную связь.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Напоминание, возможно, способствовало улучшению.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "may"
+          },
+          {
+            "id": "t4",
+            "label": "have"
+          },
+          {
+            "id": "t5",
+            "label": "contributed"
+          },
+          {
+            "id": "t6",
+            "label": "to"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "improvement."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "reminder"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The reminder may have contributed to the improvement.",
+      "explanation": "May have contributed допускает вклад, не объявляя его единственной доказанной причиной.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The findings suggests that several factors may be involved."
+      },
+      "answer_key": {
+        "accepted": [
+          "The findings suggest that several factors may be involved."
+        ]
+      },
+      "reference_answer": "The findings suggest that several factors may be involved.",
+      "incorrect_answer": "The findings suggests that several factors may be involved.",
+      "editorial_answer": "The findings suggest that several factors may be involved.",
+      "explanation": "Findings во множественном числе требует suggest; модальность вывода сохраняется.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какие изменения совпали по времени с напоминаниями?",
+      "public_payload": {
+        "passage": "A clinic introduced text reminders and observed fewer missed appointments over the next two months. During the same period, it also extended evening opening hours and changed its booking procedure. The manager credited the reminders with the entire improvement. An analyst agreed that reminders were a plausible contributor but pointed out that the other changes offered alternative explanations. Without a comparison that separated these influences, the records could not establish how much of the improvement was attributable to each measure. The analyst recommended retaining the useful changes while designing a more informative evaluation, rather than treating uncertainty about causation as evidence that nothing had helped.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "A controlled comparison isolated reminders from every other influence."
+          },
+          {
+            "id": "o1",
+            "label": "Evening hours and the booking procedure changed too."
+          },
+          {
+            "id": "o2",
+            "label": "All appointments were abolished."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Evening hours and the booking procedure changed too.",
+      "explanation": "Два дополнительных изменения могут влиять на посещаемость.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую позицию занимает аналитик?",
+      "public_payload": {
+        "passage": "A clinic introduced text reminders and observed fewer missed appointments over the next two months. During the same period, it also extended evening opening hours and changed its booking procedure. The manager credited the reminders with the entire improvement. An analyst agreed that reminders were a plausible contributor but pointed out that the other changes offered alternative explanations. Without a comparison that separated these influences, the records could not establish how much of the improvement was attributable to each measure. The analyst recommended retaining the useful changes while designing a more informative evaluation, rather than treating uncertainty about causation as evidence that nothing had helped.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "Keep useful changes while evaluating their separate contributions more carefully."
+          },
+          {
+            "id": "o2",
+            "label": "Stop everything because causation has not been isolated."
+          },
+          {
+            "id": "o3",
+            "label": "Declare that the reminders certainly caused the entire improvement."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Keep useful changes while evaluating their separate contributions more carefully.",
+      "explanation": "Неопределённость вклада не равна доказательству бесполезности всех мер.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани наблюдение и предел причинного вывода.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What is the most defensible conclusion from an uncontrolled before-and-after comparison?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o3",
+            "label": "No intervention can ever be evaluated."
+          },
+          {
+            "id": "o1",
+            "label": "The change coincided with improvement; its independent effect remains uncertain."
+          },
+          {
+            "id": "o2",
+            "label": "The change must be the only cause."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The change coincided with improvement; its independent effect remains uncertain.",
+      "explanation": "Совпадение по времени не изолирует причинный эффект, но и не делает оценку принципиально невозможной.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "A factor that may distort an apparent causal relationship is a ___.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "confounder"
+          },
+          {
+            "id": "o2",
+            "label": "certificate"
+          },
+          {
+            "id": "o3",
+            "label": "deadline"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "confounder",
+      "explanation": "Confounder — фактор, связанный и с воздействием, и с результатом, который может искажать оценку их причинной связи.",
+      "key": "e08"
+    }
+  ]
+}

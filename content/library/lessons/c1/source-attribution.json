@@ -1,0 +1,301 @@
+{
+  "key": "c1/source-attribution",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C1 · смысл и точность",
+    "position": 10
+  },
+  "position": 8,
+  "title": "Различаем автора и цитируемый источник",
+  "description": "Различаем автора и цитируемый источник: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Отделять указание источника от согласия автора",
+    "Сохранять статус обвинения, отрицания и независимой проверки"
+  ],
+  "notes": [
+    "According to указывает источник сообщения; эта конструкция сама по себе не означает согласие автора.",
+    "Alleged и confirmed обозначают разные степени подтверждённости; в пересказе сохраняйте, кому принадлежит утверждение."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/causal-alternatives"],
+  "lexicon": [
+    {
+      "en": "attribution",
+      "ru": "указание источника"
+    },
+    {
+      "en": "allegation",
+      "ru": "неподтверждённое обвинение"
+    },
+    {
+      "en": "corroborate",
+      "ru": "подтверждать независимыми данными"
+    },
+    {
+      "en": "denial",
+      "ru": "опровержение, отрицание"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: According ___ the audit team, the records were incomplete.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o3",
+            "label": "by"
+          },
+          {
+            "id": "o1",
+            "label": "to"
+          },
+          {
+            "id": "o2",
+            "label": "with"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "to",
+      "explanation": "According to — стандартная конструкция указания источника.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: corroborated / corroborating.",
+      "public_payload": {
+        "sentence": "The account has not been independently ___."
+      },
+      "answer_key": {
+        "accepted": ["corroborated"]
+      },
+      "reference_answer": "corroborated",
+      "incorrect_answer": "corroborating",
+      "editorial_answer": "The account has not been independently corroborated.",
+      "explanation": "Пассив has not been corroborated сообщает об отсутствии независимого подтверждения.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Представитель отрицал, что данные были изменены.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "denied"
+          },
+          {
+            "id": "t4",
+            "label": "that"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "figures"
+          },
+          {
+            "id": "t7",
+            "label": "had"
+          },
+          {
+            "id": "t8",
+            "label": "been"
+          },
+          {
+            "id": "t9",
+            "label": "altered."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "spokesperson"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "The spokesperson denied that the figures had been altered.",
+      "explanation": "Отрицание представителя не равно независимому доказательству отсутствия изменений.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "According with the witness, the door was already open."
+      },
+      "answer_key": {
+        "accepted": ["According to the witness, the door was already open."]
+      },
+      "reference_answer": "According to the witness, the door was already open.",
+      "incorrect_answer": "According with the witness, the door was already open.",
+      "editorial_answer": "According to the witness, the door was already open.",
+      "explanation": "Для приписывания сообщения свидетелю нужно according to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто первоначально выдвинул обвинение?",
+      "public_payload": {
+        "passage": "A newspaper quoted a former contractor who claimed that maintenance records had been altered. The company denied the allegation and said that an external review was underway. The article did not include the disputed records or a completed review report. In an internal summary, a reader wrote that the newspaper had “confirmed falsification”. That description collapsed attribution into endorsement: quoting a claim is not the same as establishing it. Equally, the company’s denial did not by itself settle the matter. A proportionate summary would identify the allegation, the denial and the unresolved review, without presenting any of them as a final independent finding.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "A former contractor quoted by the newspaper."
+          },
+          {
+            "id": "o2",
+            "label": "The external review’s completed report."
+          },
+          {
+            "id": "o3",
+            "label": "Every reader of the article."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "A former contractor quoted by the newspaper.",
+      "explanation": "Источник обвинения — цитируемый бывший подрядчик; завершённого отчёта ещё нет.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое резюме точнее?",
+      "public_payload": {
+        "passage": "A newspaper quoted a former contractor who claimed that maintenance records had been altered. The company denied the allegation and said that an external review was underway. The article did not include the disputed records or a completed review report. In an internal summary, a reader wrote that the newspaper had “confirmed falsification”. That description collapsed attribution into endorsement: quoting a claim is not the same as establishing it. Equally, the company’s denial did not by itself settle the matter. A proportionate summary would identify the allegation, the denial and the unresolved review, without presenting any of them as a final independent finding.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "Independent falsification has been conclusively confirmed."
+          },
+          {
+            "id": "o3",
+            "label": "The denial alone proves that the records are accurate."
+          },
+          {
+            "id": "o1",
+            "label": "There is an allegation, a denial and an unresolved review."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "There is an allegation, a denial and an unresolved review.",
+      "explanation": "Нужно различать утверждения сторон и ещё не завершённую проверку.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Определи функцию указания источника.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “According to the applicant, the fee was waived” mean the writer independently verified it?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "label": "No; it identifies the applicant as the source."
+          },
+          {
+            "id": "o2",
+            "label": "Yes; according to always means independently verified."
+          },
+          {
+            "id": "o3",
+            "label": "No; it proves the applicant is lying."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No; it identifies the applicant as the source.",
+      "explanation": "Attribution не является ни независимой проверкой, ни доказательством лжи.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "Evidence from a separate source may ___ an account.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "postpone"
+          },
+          {
+            "id": "o3",
+            "label": "translate automatically"
+          },
+          {
+            "id": "o1",
+            "label": "corroborate"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "corroborate",
+      "explanation": "Corroborate означает подкрепить сообщение дополнительными данными.",
+      "key": "e08"
+    }
+  ]
+}

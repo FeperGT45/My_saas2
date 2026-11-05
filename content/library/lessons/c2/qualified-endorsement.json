@@ -1,0 +1,334 @@
+{
+  "key": "c2/qualified-endorsement",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C2 · смысл и точность",
+    "position": 10
+  },
+  "position": 1,
+  "title": "Одобрение с существенной оговоркой",
+  "description": "Одобрение с существенной оговоркой: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Сохранять существенные условия одобрения при цитировании",
+    "Различать признание достоинств и разрешение реализации"
+  ],
+  "notes": [
+    "Not without merit признаёт достоинства, но не означает безоговорочного одобрения; ограничения ищутся в продолжении.",
+    "Were it not for ... вводит гипотетическое устранение существенного фактора; формулировка не сообщает, что фактор уже устранён."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/precision"],
+  "lexicon": [
+    {
+      "en": "qualified endorsement",
+      "ru": "одобрение с оговорками"
+    },
+    {
+      "en": "reservation",
+      "ru": "существенное сомнение"
+    },
+    {
+      "en": "tenable",
+      "ru": "обоснованный, защищаемый"
+    },
+    {
+      "en": "proviso",
+      "ru": "условие, оговорка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “The plan is not without merit, but its funding assumptions are untenable” expresses ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "qualified recognition with a substantive objection"
+          },
+          {
+            "id": "o2",
+            "label": "unreserved approval of the funding"
+          },
+          {
+            "id": "o3",
+            "label": "proof that the plan has no useful feature"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "qualified recognition with a substantive objection",
+      "explanation": "Литота признаёт достоинства, а but вводит существенное возражение к финансированию.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: for / from.",
+      "public_payload": {
+        "sentence": "Were it not ___ the unresolved funding gap, the recommendation would be favourable."
+      },
+      "answer_key": {
+        "accepted": ["for"]
+      },
+      "reference_answer": "for",
+      "incorrect_answer": "from",
+      "editorial_answer": "Were it not for the unresolved funding gap, the recommendation would be favourable.",
+      "explanation": "Устойчивая условная конструкция were it not for означает «если бы не».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Если бы не дефицит финансирования, рекомендация была бы благоприятной.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "not"
+          },
+          {
+            "id": "t4",
+            "label": "for"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "funding"
+          },
+          {
+            "id": "t7",
+            "label": "gap,"
+          },
+          {
+            "id": "t8",
+            "label": "the"
+          },
+          {
+            "id": "t9",
+            "label": "recommendation"
+          },
+          {
+            "id": "t10",
+            "label": "would"
+          },
+          {
+            "id": "t11",
+            "label": "be"
+          },
+          {
+            "id": "t12",
+            "label": "favourable."
+          },
+          {
+            "id": "t1",
+            "label": "Were"
+          },
+          {
+            "id": "t2",
+            "label": "it"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12"
+        ]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11",
+        "t12"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11",
+        "t12",
+        "t1"
+      ],
+      "editorial_answer": "Were it not for the funding gap, the recommendation would be favourable.",
+      "explanation": "Конструкция представляет гипотезу; дефицит остаётся реальным ограничением.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Were it not for the unresolved issue, the proposal will be acceptable."
+      },
+      "answer_key": {
+        "accepted": [
+          "Were it not for the unresolved issue, the proposal would be acceptable."
+        ]
+      },
+      "reference_answer": "Were it not for the unresolved issue, the proposal would be acceptable.",
+      "incorrect_answer": "Were it not for the unresolved issue, the proposal will be acceptable.",
+      "editorial_answer": "Were it not for the unresolved issue, the proposal would be acceptable.",
+      "explanation": "Гипотетическому условию were it not for соответствует would, а не will.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "В чём проблема сокращённой цитаты?",
+      "public_payload": {
+        "passage": "The panel’s chair described the proposal as “not without merit”, a phrase the publicity team immediately selected for its announcement. The rest of the sentence was less accommodating: the proposed benefits depended on funding commitments that had not been secured. A panel member objected to the abbreviated quotation, arguing that it converted a qualified acknowledgement into an apparent endorsement. The publicity team replied that every quoted word was accurate. That defence addressed literal transcription, not the implication created by omission. In the final notice, the chair’s reservation appeared alongside the acknowledgement of merit. Readers could then distinguish a potentially valuable idea from a recommendation to proceed under the conditions presently described. The panel had neither dismissed the idea outright nor licensed implementation.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "Every quoted word had been invented."
+          },
+          {
+            "id": "o3",
+            "label": "The panel had secretly approved unconditional implementation."
+          },
+          {
+            "id": "o1",
+            "label": "Accurate words implied a stronger endorsement once the reservation was omitted."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Accurate words implied a stronger endorsement once the reservation was omitted.",
+      "explanation": "Дословная точность слов не сохраняет смысл при удалении существенной оговорки.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какова позиция комиссии в полном контексте?",
+      "public_payload": {
+        "passage": "The panel’s chair described the proposal as “not without merit”, a phrase the publicity team immediately selected for its announcement. The rest of the sentence was less accommodating: the proposed benefits depended on funding commitments that had not been secured. A panel member objected to the abbreviated quotation, arguing that it converted a qualified acknowledgement into an apparent endorsement. The publicity team replied that every quoted word was accurate. That defence addressed literal transcription, not the implication created by omission. In the final notice, the chair’s reservation appeared alongside the acknowledgement of merit. Readers could then distinguish a potentially valuable idea from a recommendation to proceed under the conditions presently described. The panel had neither dismissed the idea outright nor licensed implementation.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "Implementation has been authorised without further conditions."
+          },
+          {
+            "id": "o1",
+            "label": "The idea has potential merit, but proceeding on the stated funding assumptions is not endorsed."
+          },
+          {
+            "id": "o2",
+            "label": "The proposal has no merit under any imaginable conditions."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The idea has potential merit, but proceeding on the stated funding assumptions is not endorsed.",
+      "explanation": "Текст исключает и полный отказ от идеи, и разрешение реализации на нынешних условиях.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани силу условного одобрения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can we describe “promising, subject to independent verification” simply as “approved”?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o2",
+            "label": "Yes; subject to means regardless of verification."
+          },
+          {
+            "id": "o3",
+            "label": "Yes; promising always authorises implementation."
+          },
+          {
+            "id": "o1",
+            "label": "No; that removes a condition on the favourable assessment."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No; that removes a condition on the favourable assessment.",
+      "explanation": "Subject to делает проверку условием; promising не равно approved.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "An argument that can withstand reasoned criticism is ___.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "unanimous"
+          },
+          {
+            "id": "o1",
+            "label": "tenable"
+          },
+          {
+            "id": "o2",
+            "label": "infallible"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "tenable",
+      "explanation": "Tenable — защищаемый аргумент; это не обещание безошибочности и не голосование.",
+      "key": "e08"
+    }
+  ]
+}

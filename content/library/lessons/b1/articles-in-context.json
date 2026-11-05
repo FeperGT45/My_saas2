@@ -1,0 +1,273 @@
+{
+  "key": "b1/articles-in-context",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B1 · смысл и точность",
+    "position": 10
+  },
+  "position": 7,
+  "title": "Первое упоминание и знакомый предмет",
+  "description": "Первое упоминание и знакомый предмет: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Выбирать артикль при первом и повторном упоминании",
+    "Различать a/an по начальному звуку, а не букве"
+  ],
+  "notes": [
+    "A/an вводит один исчисляемый предмет впервые; the часто отсылает к уже известному предмету.",
+    "Выбор a/an зависит от звука: an umbrella, a useful tool; useful начинается со звука /j/."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/reported-requests"],
+  "lexicon": [
+    {
+      "en": "umbrella",
+      "ru": "зонт"
+    },
+    {
+      "en": "drawer",
+      "ru": "ящик"
+    },
+    {
+      "en": "label",
+      "ru": "этикетка"
+    },
+    {
+      "en": "useful",
+      "ru": "полезный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I found an old key. ___ key had a red label.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "The"
+          },
+          {
+            "id": "o2",
+            "label": "An"
+          },
+          {
+            "id": "o3",
+            "label": "A of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The",
+      "explanation": "Второе упоминание того же ключа требует the.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: a / an.",
+      "public_payload": {
+        "sentence": "She bought ___ useful guide to local plants."
+      },
+      "answer_key": {
+        "accepted": ["a"]
+      },
+      "reference_answer": "a",
+      "incorrect_answer": "an",
+      "editorial_answer": "She bought a useful guide to local plants.",
+      "explanation": "Useful начинается с согласного звука /j/, поэтому a useful guide.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Возле двери лежал какой-то зонт.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "was"
+          },
+          {
+            "id": "t4",
+            "label": "lying"
+          },
+          {
+            "id": "t5",
+            "label": "beside"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "door."
+          },
+          {
+            "id": "t1",
+            "label": "An"
+          },
+          {
+            "id": "t2",
+            "label": "umbrella"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "An umbrella was lying beside the door.",
+      "explanation": "An вводит один впервые упоминаемый зонт; umbrella начинается с гласного звука.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He found a envelope in the drawer."
+      },
+      "answer_key": {
+        "accepted": ["He found an envelope in the drawer."]
+      },
+      "reference_answer": "He found an envelope in the drawer.",
+      "incorrect_answer": "He found a envelope in the drawer.",
+      "editorial_answer": "He found an envelope in the drawer.",
+      "explanation": "Envelope начинается с гласного звука, поэтому an envelope.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что находилось в конверте?",
+      "public_payload": {
+        "passage": "While cleaning a desk, Sara found an envelope in a drawer. The envelope contained a photograph and a small note. The note had no name, but the photograph showed the previous owner of the desk. Sara contacted the shop where she had bought it. The shop agreed to pass a message to the owner, without sharing the owner’s personal details.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "A key and an umbrella."
+          },
+          {
+            "id": "o3",
+            "label": "The shop owner’s private address."
+          },
+          {
+            "id": "o1",
+            "label": "A photograph and a small note."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "A photograph and a small note.",
+      "explanation": "Содержимое перечислено во втором предложении.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что магазин согласился сделать?",
+      "public_payload": {
+        "passage": "While cleaning a desk, Sara found an envelope in a drawer. The envelope contained a photograph and a small note. The note had no name, but the photograph showed the previous owner of the desk. Sara contacted the shop where she had bought it. The shop agreed to pass a message to the owner, without sharing the owner’s personal details.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "Buy the photograph immediately."
+          },
+          {
+            "id": "o1",
+            "label": "Pass a message to the previous owner."
+          },
+          {
+            "id": "o2",
+            "label": "Give Sara the owner’s personal details."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Pass a message to the previous owner.",
+      "explanation": "Магазин передаст сообщение, сохранив личные данные владельца.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Продолжи рассказ о той же уже упомянутой собаке.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I saw a dog outside. What happened next?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o2",
+            "label": "An dog followed me to the gate."
+          },
+          {
+            "id": "o3",
+            "label": "A of dog followed me to the gate."
+          },
+          {
+            "id": "o1",
+            "label": "The dog followed me to the gate."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The dog followed me to the gate.",
+      "explanation": "The dog отсылает к собаке из первой реплики.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "The sticker giving information about the parcel is its ___.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "envelope"
+          },
+          {
+            "id": "o1",
+            "label": "label"
+          },
+          {
+            "id": "o2",
+            "label": "drawer"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "label",
+      "explanation": "Label — этикетка с информацией; drawer — ящик, envelope — конверт.",
+      "key": "e08"
+    }
+  ]
+}

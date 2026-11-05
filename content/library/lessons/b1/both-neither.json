@@ -1,0 +1,269 @@
+{
+  "key": "b1/both-neither",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B1 · смысл и точность",
+    "position": 10
+  },
+  "position": 5,
+  "title": "Оба варианта или ни один",
+  "description": "Оба варианта или ни один: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Различать оба варианта и ни один из двух",
+    "Использовать both/neither of them и формальное согласование"
+  ],
+  "notes": [
+    "Both относится к двум и означает «оба»; neither означает «ни один из двух».",
+    "Neither of + местоимение: neither of them. В этом уроке используем нейтральный формальный вариант neither of them is."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/embedded-questions"],
+  "lexicon": [
+    {
+      "en": "option",
+      "ru": "вариант"
+    },
+    {
+      "en": "route",
+      "ru": "маршрут"
+    },
+    {
+      "en": "direct",
+      "ru": "прямой"
+    },
+    {
+      "en": "transfer",
+      "ru": "пересадка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: There are two routes. Each requires a transfer, so ___ route is direct.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o2",
+            "label": "both"
+          },
+          {
+            "id": "o3",
+            "label": "every of"
+          },
+          {
+            "id": "o1",
+            "label": "neither"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "neither",
+      "explanation": "Из двух вариантов ни один не прямой: neither route is direct.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: Both / Neither.",
+      "public_payload": {
+        "sentence": "I checked two timetables. ___ of them show the same departure time."
+      },
+      "answer_key": {
+        "accepted": ["Both"]
+      },
+      "reference_answer": "Both",
+      "incorrect_answer": "Neither",
+      "editorial_answer": "I checked two timetables. Both of them show the same departure time.",
+      "explanation": "Show во множественном числе и одинаковые сведения в двух расписаниях требуют Both.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Оба маршрута проходят через центральный рынок.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "pass"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "central"
+          },
+          {
+            "id": "t6",
+            "label": "market."
+          },
+          {
+            "id": "t1",
+            "label": "Both"
+          },
+          {
+            "id": "t2",
+            "label": "routes"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Both routes pass the central market.",
+      "explanation": "Both routes — подлежащее во множественном числе.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл. Используй формальное согласование из пояснения урока.",
+      "public_payload": {
+        "sentence": "Neither of the two buses are direct."
+      },
+      "answer_key": {
+        "accepted": ["Neither of the two buses is direct."]
+      },
+      "reference_answer": "Neither of the two buses is direct.",
+      "incorrect_answer": "Neither of the two buses are direct.",
+      "editorial_answer": "Neither of the two buses is direct.",
+      "explanation": "В заданном формальном варианте neither сочетается с is; разговорное are встречается, но здесь требуется формальная редакция.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что общего у маршрутов?",
+      "public_payload": {
+        "passage": "Eli compared two bus routes to the museum. Both routes passed the central market, but neither went directly to the museum. The first required a transfer near the station; the second required one outside the hospital. Eli chose the first because he knew the station well. It was not the fastest option, but he felt more confident about finding the connecting bus.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "Both require a transfer outside the hospital."
+          },
+          {
+            "id": "o1",
+            "label": "Both pass the central market."
+          },
+          {
+            "id": "o2",
+            "label": "Both go directly to the museum."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Both pass the central market.",
+      "explanation": "Оба проходят рынок; пересадки находятся в разных местах.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Эли выбрал первый маршрут?",
+      "public_payload": {
+        "passage": "Eli compared two bus routes to the museum. Both routes passed the central market, but neither went directly to the museum. The first required a transfer near the station; the second required one outside the hospital. Eli chose the first because he knew the station well. It was not the fastest option, but he felt more confident about finding the connecting bus.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "He was familiar with the station."
+          },
+          {
+            "id": "o2",
+            "label": "It was definitely the fastest."
+          },
+          {
+            "id": "o3",
+            "label": "It required no transfer."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "He was familiar with the station.",
+      "explanation": "Причина — знакомое место пересадки; текст прямо отрицает наибольшую скорость.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь, что ни один из двух поездов там не останавливается.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Do either of these trains stop at Oak Street?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o3",
+            "label": "No, every of them stops there."
+          },
+          {
+            "id": "o1",
+            "label": "No, neither of them stops there."
+          },
+          {
+            "id": "o2",
+            "label": "No, both of them stop there."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No, neither of them stops there.",
+      "explanation": "Neither of them передаёт отрицание обоих вариантов без двойного отрицания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "A journey with no change of bus is a ___ journey.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "direct"
+          },
+          {
+            "id": "o2",
+            "label": "connecting"
+          },
+          {
+            "id": "o3",
+            "label": "delayed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "direct",
+      "explanation": "Direct означает без пересадки; connecting предполагает стыковку.",
+      "key": "e08"
+    }
+  ]
+}

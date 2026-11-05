@@ -1,0 +1,277 @@
+{
+  "key": "b2/passive-reporting",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B2 · смысл и точность",
+    "position": 10
+  },
+  "position": 5,
+  "title": "Как сообщают о неподтверждённых фактах",
+  "description": "Как сообщают о неподтверждённых фактах: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Передавать сообщения через is said to have done",
+    "Сохранять различие между сообщением и подтверждённым фактом"
+  ],
+  "notes": [
+    "It is reported that ... приписывает сообщение источнику, а не делает говорящего очевидцем.",
+    "Is said to have done указывает на действие раньше нынешнего сообщения; is said to do обычно передаёт настоящее или обычное действие."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/causative-services"],
+  "lexicon": [
+    {
+      "en": "reportedly",
+      "ru": "по сообщениям"
+    },
+    {
+      "en": "source",
+      "ru": "источник"
+    },
+    {
+      "en": "verify",
+      "ru": "проверять достоверность"
+    },
+    {
+      "en": "estimate",
+      "ru": "оценка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Several outlets now report a discovery made last week. The team is said ___ a new route.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o1",
+            "label": "to have discovered"
+          },
+          {
+            "id": "o2",
+            "label": "to discovering"
+          },
+          {
+            "id": "o3",
+            "label": "have discover"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "to have discovered",
+      "explanation": "Открытие предшествует нынешним сообщениям: to have discovered.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: reported / reporting.",
+      "public_payload": {
+        "sentence": "It is ___ that the bridge will reopen in May."
+      },
+      "answer_key": {
+        "accepted": ["reported"]
+      },
+      "reference_answer": "reported",
+      "incorrect_answer": "reporting",
+      "editorial_answer": "It is reported that the bridge will reopen in May.",
+      "explanation": "В безличной пассивной конструкции требуется reported.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Считается, что архив содержит неопубликованные письма.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "believed"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "contain"
+          },
+          {
+            "id": "t7",
+            "label": "unpublished"
+          },
+          {
+            "id": "t8",
+            "label": "letters."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "archive"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The archive is believed to contain unpublished letters.",
+      "explanation": "Is believed приписывает утверждение существующему мнению и не доказывает его истинность.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The researcher is said have found the original map."
+      },
+      "answer_key": {
+        "accepted": ["The researcher is said to have found the original map."]
+      },
+      "reference_answer": "The researcher is said to have found the original map.",
+      "incorrect_answer": "The researcher is said have found the original map.",
+      "editorial_answer": "The researcher is said to have found the original map.",
+      "explanation": "После is said требуется to; to have found выражает более раннюю находку.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что подтвердил совет?",
+      "public_payload": {
+        "passage": "A local newspaper reported that a previously unknown footpath had been found near the coast. Several websites repeated the story, describing the path as an ancient trading route. The original article, however, quoted only one resident and included no archaeological assessment. The council confirmed that a path existed but said that its age and historical use had not been established. A careful summary would distinguish the confirmed existence of the path from the unverified claim about its role in trade.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "That it was an ancient trading route."
+          },
+          {
+            "id": "o3",
+            "label": "That an archaeological study had dated it."
+          },
+          {
+            "id": "o1",
+            "label": "That a path existed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "That a path existed.",
+      "explanation": "Подтверждено существование пути, а не возраст и использование.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как лучше передать историческую версию?",
+      "public_payload": {
+        "passage": "A local newspaper reported that a previously unknown footpath had been found near the coast. Several websites repeated the story, describing the path as an ancient trading route. The original article, however, quoted only one resident and included no archaeological assessment. The council confirmed that a path existed but said that its age and historical use had not been established. A careful summary would distinguish the confirmed existence of the path from the unverified claim about its role in trade.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "As evidence that no path exists."
+          },
+          {
+            "id": "o1",
+            "label": "As an unverified claim, not an established fact."
+          },
+          {
+            "id": "o2",
+            "label": "As proof accepted by archaeologists."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "As an unverified claim, not an established fact.",
+      "explanation": "Нужно сохранить различие между подтверждённым фактом и непроверенной интерпретацией.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани статус сообщения и незавершённой проверки.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can we say the painting is definitely authentic?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o2",
+            "label": "Yes; reported means formally proved."
+          },
+          {
+            "id": "o3",
+            "label": "No; being examined means it is certainly fake."
+          },
+          {
+            "id": "o1",
+            "label": "Not yet; it is reported to be authentic, but experts are still examining it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Not yet; it is reported to be authentic, but experts are still examining it.",
+      "explanation": "Reported не равнозначно proved; продолжающаяся проверка также не доказывает подделку.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "To check whether a statement is accurate is to ___ it.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "improvise"
+          },
+          {
+            "id": "o1",
+            "label": "verify"
+          },
+          {
+            "id": "o2",
+            "label": "overlook"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "verify",
+      "explanation": "Verify означает проверить достоверность, а не просто повторить сообщение.",
+      "key": "e08"
+    }
+  ]
+}

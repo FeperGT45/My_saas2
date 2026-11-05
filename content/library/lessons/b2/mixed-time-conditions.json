@@ -1,0 +1,325 @@
+{
+  "key": "b2/mixed-time-conditions",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B2 · смысл и точность",
+    "position": 10
+  },
+  "position": 1,
+  "title": "Прошлое решение и нынешний результат",
+  "description": "Прошлое решение и нынешний результат: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Соединять прошлое условие с нынешним результатом",
+    "Отличать воображаемое следствие от подтверждённого факта"
+  ],
+  "notes": [
+    "Смешанное условие может связывать несостоявшееся прошлое с нынешним результатом: If I had saved the file, I would have it now.",
+    "Had + причастие относится к прошлому условию, would + инфинитив — к гипотетическому настоящему."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/register"],
+  "lexicon": [
+    {
+      "en": "backup",
+      "ru": "резервная копия"
+    },
+    {
+      "en": "recover",
+      "ru": "восстановить"
+    },
+    {
+      "en": "consequence",
+      "ru": "последствие"
+    },
+    {
+      "en": "currently",
+      "ru": "в настоящее время"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: If I had kept a backup, I ___ the file now.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o3",
+            "label": "will having"
+          },
+          {
+            "id": "o1",
+            "label": "would have"
+          },
+          {
+            "id": "o2",
+            "label": "would have had yesterday"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "would have",
+      "explanation": "Now требует нынешнего результата: would have the file.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: would / will.",
+      "public_payload": {
+        "sentence": "If we had booked earlier, we ___ be staying near the venue now."
+      },
+      "answer_key": {
+        "accepted": ["would"]
+      },
+      "reference_answer": "would",
+      "incorrect_answer": "will",
+      "editorial_answer": "If we had booked earlier, we would be staying near the venue now.",
+      "explanation": "Прошлое условие соединено с гипотетическим настоящим через would be staying.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Если бы она тогда приняла предложение, сейчас она жила бы за границей.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "had"
+          },
+          {
+            "id": "t4",
+            "label": "accepted"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "offer,"
+          },
+          {
+            "id": "t7",
+            "label": "she"
+          },
+          {
+            "id": "t8",
+            "label": "would"
+          },
+          {
+            "id": "t9",
+            "label": "live"
+          },
+          {
+            "id": "t10",
+            "label": "abroad"
+          },
+          {
+            "id": "t11",
+            "label": "now."
+          },
+          {
+            "id": "t1",
+            "label": "If"
+          },
+          {
+            "id": "t2",
+            "label": "she"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11"
+        ]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11",
+        "t1"
+      ],
+      "editorial_answer": "If she had accepted the offer, she would live abroad now.",
+      "explanation": "Had accepted — прошлое решение; would live now — нынешняя ситуация.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "If I had charged my phone, it will work now."
+      },
+      "answer_key": {
+        "accepted": ["If I had charged my phone, it would work now."]
+      },
+      "reference_answer": "If I had charged my phone, it would work now.",
+      "incorrect_answer": "If I had charged my phone, it will work now.",
+      "editorial_answer": "If I had charged my phone, it would work now.",
+      "explanation": "Гипотетический нынешний результат требует would work.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое время имеет результат в цитате Лены?",
+      "public_payload": {
+        "passage": "A year ago, Lena turned down a place on an overseas training programme because she wanted to finish a local project. That project has now ended, and she is looking for a new position. She wonders whether accepting the training place would have given her useful contacts. She says, “If I had gone, I would know more people in that field now.” This is a possibility she imagines, not evidence that the programme would certainly have led to a job.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "An imagined situation in the present."
+          },
+          {
+            "id": "o2",
+            "label": "A confirmed event before she rejected the place."
+          },
+          {
+            "id": "o3",
+            "label": "A promise about next year."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "An imagined situation in the present.",
+      "explanation": "Now указывает на нынешнее знание людей как воображаемый результат прошлого выбора.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой вывод был бы слишком сильным?",
+      "public_payload": {
+        "passage": "A year ago, Lena turned down a place on an overseas training programme because she wanted to finish a local project. That project has now ended, and she is looking for a new position. She wonders whether accepting the training place would have given her useful contacts. She says, “If I had gone, I would know more people in that field now.” This is a possibility she imagines, not evidence that the programme would certainly have led to a job.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "Lena rejected the training place a year ago."
+          },
+          {
+            "id": "o3",
+            "label": "Her local project has ended."
+          },
+          {
+            "id": "o1",
+            "label": "The programme would definitely have secured her a job."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The programme would definitely have secured her a job.",
+      "explanation": "Текст прямо отличает возможные контакты от гарантированного трудоустройства.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Свяжи несостоявшееся прошлое обучение с нынешней возможностью.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Do you regret not learning to drive earlier?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "label": "Yes. If I had learnt earlier, I could drive us there now."
+          },
+          {
+            "id": "o2",
+            "label": "Yes. If I learn yesterday, I can drove now."
+          },
+          {
+            "id": "o3",
+            "label": "Yes. If I had learnt earlier, I drove us yesterday now."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Yes. If I had learnt earlier, I could drive us there now.",
+      "explanation": "Had learnt и could drive now связывают прошлое условие и настоящее умение.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "The loss of the file was a ___ of not keeping a backup.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "precaution"
+          },
+          {
+            "id": "o3",
+            "label": "rehearsal"
+          },
+          {
+            "id": "o1",
+            "label": "consequence"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "consequence",
+      "explanation": "Consequence — последствие; precaution — предупреждающая мера.",
+      "key": "e08"
+    }
+  ]
+}

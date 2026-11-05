@@ -55,16 +55,41 @@ afterAll(async () => {
   await db.close();
 });
 describe('modular learning content quality', () => {
-  it('contains sixty modular lessons and 480 varied exercises covering all CEFR levels', () => {
+  it('contains 92 modular lessons and 736 varied exercises, including 32 new non-audio B1–C2 lessons', () => {
     expect(validateLibrary(library)).toEqual({
-      lessons: 60,
-      exercises: 480,
-      levels: { A1: 20, A2: 15, B1: 10, B2: 5, C1: 5, C2: 5 },
+      lessons: 92,
+      exercises: 736,
+      levels: { A1: 20, A2: 15, B1: 18, B2: 13, C1: 13, C2: 13 },
     });
     expect(
       new Set(payload.exercises.map((e) => e.kind)).size,
     ).toBeGreaterThanOrEqual(17);
-    expect(new Set(payload.exercises.map((e) => e.id)).size).toBe(480);
+    expect(new Set(payload.exercises.map((e) => e.id)).size).toBe(736);
+    const batch = library.lessons.slice(60);
+    expect(batch).toHaveLength(32);
+    for (const level of ['B1', 'B2', 'C1', 'C2'])
+      expect(batch.filter((l) => l.level === level)).toHaveLength(8);
+    expect(
+      batch.some(
+        (l) =>
+          l.skills.includes('listening') ||
+          l.exercises.some((e) => ['listening', 'dictation'].includes(e.kind)),
+      ),
+    ).toBe(false);
+    const passages = batch.map(
+      (l) =>
+        l.exercises.find((e) => e.kind === 'reading')!.public_payload.passage,
+    );
+    expect(new Set(passages).size).toBe(32);
+    for (const lesson of batch) {
+      expect(lesson.notes.every((n) => /[а-яё]/i.test(n))).toBe(true);
+      expect(lesson.exercises.filter((e) => e.kind === 'reading')).toHaveLength(
+        2,
+      );
+      expect(
+        new Set(lesson.exercises.map((e) => e.kind)).size,
+      ).toBeGreaterThanOrEqual(7);
+    }
   });
   it('preserves IDs across revisions, file ordering and wording changes', () => {
     const changed = structuredClone(library);
@@ -158,10 +183,10 @@ describe('modular learning content quality', () => {
   });
 });
 describe('transactional curriculum import', () => {
-  it('expands revision one atomically without changing its existing lesson and exercise IDs', async () => {
+  it('expands revision two atomically without changing any of its sixty lesson and exercise IDs', async () => {
     const old = structuredClone(payload);
-    const originalIds = new Set(old.lessons.slice(0, 30).map((l) => l.id));
-    old.revision = 1;
+    const originalIds = new Set(old.lessons.slice(0, 60).map((l) => l.id));
+    old.revision = 2;
     old.lessons = old.lessons.filter((l) => originalIds.has(l.id));
     old.exercises = old.exercises.filter((e) => originalIds.has(e.lesson_id));
     old.units = old.units.filter((u) =>
@@ -178,7 +203,7 @@ describe('transactional curriculum import', () => {
       ).rows;
       expect(
         await rpc('import_curriculum_package', [JSON.stringify(payload)]),
-      ).toMatchObject({ lessons: 60, exercises: 480, unchanged: false });
+      ).toMatchObject({ lessons: 92, exercises: 736, unchanged: false });
       const expandedRows = (
         await db.query<{ id: string; lesson_id: string; answer_key: unknown }>(
           'SELECT id,lesson_id,answer_key FROM public.exercises WHERE content_package_id=$1 ORDER BY id',
@@ -217,7 +242,7 @@ describe('transactional curriculum import', () => {
     await db.exec('SET ROLE service_role');
     expect(
       await rpc('import_curriculum_package', [JSON.stringify(payload)]),
-    ).toMatchObject({ lessons: 60, exercises: 480, unchanged: false });
+    ).toMatchObject({ lessons: 92, exercises: 736, unchanged: false });
     const versions = (
       await db.query(
         'SELECT id,admin_version FROM public.exercises WHERE content_package_id=$1 ORDER BY id',
@@ -313,7 +338,7 @@ describe('transactional curriculum import', () => {
       await rpc<{ level: string; lessons: { id: string }[] }[]>(
         'curriculum_library',
       );
-    expect(catalog.flatMap((c) => c.lessons)).toHaveLength(58);
+    expect(catalog.flatMap((c) => c.lessons)).toHaveLength(90);
     expect(JSON.stringify(catalog)).not.toMatch(
       /answer_key|reference_answer|incorrect_answer|accepted/,
     );

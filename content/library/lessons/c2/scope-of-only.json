@@ -1,0 +1,275 @@
+{
+  "key": "c2/scope-of-only",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C2 · смысл и точность",
+    "position": 10
+  },
+  "position": 3,
+  "title": "Область действия only в сложном сообщении",
+  "description": "Область действия only в сложном сообщении: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Определять область ограничения only",
+    "Не заменять not necessarily универсальным отрицанием"
+  ],
+  "notes": [
+    "Only ограничивает компонент, к которому относится: only the reviewers received it и the reviewers received only it имеют разный смысл.",
+    "Not necessarily не означает necessarily not: ограничение обязательности вывода не доказывает противоположное."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/epistemic-distance"],
+  "lexicon": [
+    {
+      "en": "restriction",
+      "ru": "ограничение"
+    },
+    {
+      "en": "entail",
+      "ru": "логически влечь"
+    },
+    {
+      "en": "exclusive",
+      "ru": "исключительный"
+    },
+    {
+      "en": "necessarily",
+      "ru": "непременно, по необходимости"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “Only the external reviewers received the appendix” restricts ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o3",
+            "label": "whether any appendix existed"
+          },
+          {
+            "id": "o1",
+            "label": "who received the appendix"
+          },
+          {
+            "id": "o2",
+            "label": "which document the reviewers received"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "who received the appendix",
+      "explanation": "Only перед the external reviewers ограничивает получателей, не набор полученных документов.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: necessarily / necessary.",
+      "public_payload": {
+        "sentence": "A lack of agreement does not ___ entail opposition to every clause."
+      },
+      "answer_key": {
+        "accepted": ["necessarily"]
+      },
+      "reference_answer": "necessarily",
+      "incorrect_answer": "necessary",
+      "editorial_answer": "A lack of agreement does not necessarily entail opposition to every clause.",
+      "explanation": "Not necessarily сохраняет возможность разных причин несогласия, а не утверждает их отсутствие.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Конфиденциальное приложение получили только рецензенты.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "reviewers"
+          },
+          {
+            "id": "t4",
+            "label": "received"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "confidential"
+          },
+          {
+            "id": "t7",
+            "label": "appendix."
+          },
+          {
+            "id": "t1",
+            "label": "Only"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "Only the reviewers received the confidential appendix.",
+      "explanation": "Only ограничивает получателей; фраза не перечисляет все документы, полученные рецензентами.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The restriction does not necessary apply to every draft."
+      },
+      "answer_key": {
+        "accepted": [
+          "The restriction does not necessarily apply to every draft."
+        ]
+      },
+      "reference_answer": "The restriction does not necessarily apply to every draft.",
+      "incorrect_answer": "The restriction does not necessary apply to every draft.",
+      "editorial_answer": "The restriction does not necessarily apply to every draft.",
+      "explanation": "Нужна наречная форма necessarily, относящаяся к apply.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое утверждение не следует из исходного сообщения?",
+      "public_payload": {
+        "passage": "The editor’s message stated that only the external reviewers had received the confidential appendix. In a later account, this became “The reviewers received only the appendix”, which suggested that they had seen none of the main report. The original message made no such claim. Its restriction concerned recipients, not the set of documents supplied to those recipients. A second misunderstanding arose when the editor said that disagreement did not necessarily entail rejection: one participant paraphrased this as “Disagreement never means rejection”. Both errors replaced a limited statement with a different logical commitment. Clarifying the position of only and the force of necessarily restored the intended boundaries without resolving the substantive dispute about whether the report itself was persuasive.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "The reviewers received no part of the main report."
+          },
+          {
+            "id": "o2",
+            "label": "The confidential appendix was received by external reviewers."
+          },
+          {
+            "id": "o3",
+            "label": "The editor restricted the stated recipients of the appendix."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "The reviewers received no part of the main report.",
+      "explanation": "Only ограничивало круг получателей, а не все полученные ими документы.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему never means rejection искажает not necessarily entail rejection?",
+      "public_payload": {
+        "passage": "The editor’s message stated that only the external reviewers had received the confidential appendix. In a later account, this became “The reviewers received only the appendix”, which suggested that they had seen none of the main report. The original message made no such claim. Its restriction concerned recipients, not the set of documents supplied to those recipients. A second misunderstanding arose when the editor said that disagreement did not necessarily entail rejection: one participant paraphrased this as “Disagreement never means rejection”. Both errors replaced a limited statement with a different logical commitment. Clarifying the position of only and the force of necessarily restored the intended boundaries without resolving the substantive dispute about whether the report itself was persuasive.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "The two expressions are exact logical equivalents."
+          },
+          {
+            "id": "o3",
+            "label": "It merely changes the tense without changing meaning."
+          },
+          {
+            "id": "o1",
+            "label": "It replaces denial of necessity with a universal exclusion."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It replaces denial of necessity with a universal exclusion.",
+      "explanation": "Not necessarily допускает разные случаи, never исключает связь во всех случаях.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани различие между отсутствием обязательного отрицания и доказанной истинностью.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “not necessarily false” establish truth?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "label": "No; it rejects a necessary falsity judgement without establishing truth."
+          },
+          {
+            "id": "o2",
+            "label": "Yes; it always means conclusively true."
+          },
+          {
+            "id": "o3",
+            "label": "Yes; uncertainty logically guarantees correctness."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No; it rejects a necessary falsity judgement without establishing truth.",
+      "explanation": "Ограничение отрицательного вывода само по себе не доказывает противоположный.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "If a conclusion follows as a logical consequence, the premises ___ it.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "merely resemble"
+          },
+          {
+            "id": "o3",
+            "label": "postpone"
+          },
+          {
+            "id": "o1",
+            "label": "entail"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "entail",
+      "explanation": "Entail описывает логическое следование, а не внешнее сходство.",
+      "key": "e08"
+    }
+  ]
+}

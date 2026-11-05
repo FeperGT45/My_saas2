@@ -1,0 +1,334 @@
+{
+  "key": "c2/metaphor-and-policy",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C2 · смысл и точность",
+    "position": 10
+  },
+  "position": 6,
+  "title": "Метафора как рамка обсуждения",
+  "description": "Метафора как рамка обсуждения: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Выявлять выделенные и скрытые метафорой аспекты",
+    "Различать убедительность аналогии и доказательность данных"
+  ],
+  "notes": [
+    "Метафора выделяет одни аспекты ситуации и может скрывать другие; буквальные свойства образа не являются доказательствами о предмете.",
+    "To the extent that ограничивает основание или степень вывода: он действует лишь в указанной мере."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/loaded-presupposition"],
+  "lexicon": [
+    {
+      "en": "framing",
+      "ru": "способ постановки вопроса"
+    },
+    {
+      "en": "metaphor",
+      "ru": "метафора"
+    },
+    {
+      "en": "salient",
+      "ru": "заметный, значимый"
+    },
+    {
+      "en": "analogy",
+      "ru": "аналогия"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Calling a budget “a leaking bucket” primarily supplies ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o3",
+            "label": "a literal description of a container in the accounts"
+          },
+          {
+            "id": "o1",
+            "label": "a frame that highlights loss"
+          },
+          {
+            "id": "o2",
+            "label": "measurement proving every expense is waste"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "a frame that highlights loss",
+      "explanation": "Образ акцентирует утечки, но не заменяет анализ конкретных расходов.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: extent / extension.",
+      "public_payload": {
+        "sentence": "The analogy is useful to the ___ that it reveals neglected costs."
+      },
+      "answer_key": {
+        "accepted": ["extent"]
+      },
+      "reference_answer": "extent",
+      "incorrect_answer": "extension",
+      "editorial_answer": "The analogy is useful to the extent that it reveals neglected costs.",
+      "explanation": "To the extent that — устойчивая конструкция ограничения по степени.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Аналогия полезна в той мере, в какой она проясняет компромисс.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "useful"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "extent"
+          },
+          {
+            "id": "t8",
+            "label": "that"
+          },
+          {
+            "id": "t9",
+            "label": "it"
+          },
+          {
+            "id": "t10",
+            "label": "clarifies"
+          },
+          {
+            "id": "t11",
+            "label": "the"
+          },
+          {
+            "id": "t12",
+            "label": "trade-off."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "analogy"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11",
+          "t12"
+        ]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11",
+        "t12"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11",
+        "t12",
+        "t1"
+      ],
+      "editorial_answer": "The analogy is useful to the extent that it clarifies the trade-off.",
+      "explanation": "Полезность ограничена конкретной функцией аналогии, а не объявлена абсолютной.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The analogy is persuasive to the extend that it fits the evidence."
+      },
+      "answer_key": {
+        "accepted": [
+          "The analogy is persuasive to the extent that it fits the evidence."
+        ]
+      },
+      "reference_answer": "The analogy is persuasive to the extent that it fits the evidence.",
+      "incorrect_answer": "The analogy is persuasive to the extend that it fits the evidence.",
+      "editorial_answer": "The analogy is persuasive to the extent that it fits the evidence.",
+      "explanation": "В выражении to the extent that используется существительное extent.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое ограничение «дырявого ведра» отмечает библиотекарь?",
+      "public_payload": {
+        "passage": "A councillor described the library budget as a leaking bucket, arguing that additional funding would merely disappear into an inefficient system. A librarian replied that the bucket image made waste salient while leaving the value of the service out of view. She did not deny that particular costs deserved scrutiny. Rather, she questioned whether an image of leakage could establish which expenditure was avoidable and which supported public access. Another councillor proposed a different metaphor, calling the library shared infrastructure. That image highlighted long-term benefit but could also obscure operational failings. The committee eventually requested itemised costs and usage evidence. Neither metaphor was prohibited; neither was allowed to substitute for the evidence needed to judge the budget.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "It highlights waste without establishing which spending is avoidable."
+          },
+          {
+            "id": "o2",
+            "label": "It proves that every item of expenditure has equal value."
+          },
+          {
+            "id": "o3",
+            "label": "It prevents anyone from asking about operational costs."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It highlights waste without establishing which spending is avoidable.",
+      "explanation": "Рамка делает потери заметными, но не различает конкретные виды расходов.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему второй образ тоже недостаточен?",
+      "public_payload": {
+        "passage": "A councillor described the library budget as a leaking bucket, arguing that additional funding would merely disappear into an inefficient system. A librarian replied that the bucket image made waste salient while leaving the value of the service out of view. She did not deny that particular costs deserved scrutiny. Rather, she questioned whether an image of leakage could establish which expenditure was avoidable and which supported public access. Another councillor proposed a different metaphor, calling the library shared infrastructure. That image highlighted long-term benefit but could also obscure operational failings. The committee eventually requested itemised costs and usage evidence. Neither metaphor was prohibited; neither was allowed to substitute for the evidence needed to judge the budget.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "Shared infrastructure can never have public value."
+          },
+          {
+            "id": "o3",
+            "label": "Replacing one metaphor with another produces itemised evidence."
+          },
+          {
+            "id": "o1",
+            "label": "It may highlight benefit while obscuring operational failings."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It may highlight benefit while obscuring operational failings.",
+      "explanation": "Текст применяет симметричную критику: обе рамки выделяют часть ситуации.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Различи убедительность образа и фактическое обоснование.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can an analogy settle the factual question merely by sounding apt?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o1",
+            "label": "No; its explanatory appeal must be checked against relevant evidence."
+          },
+          {
+            "id": "o2",
+            "label": "Yes; vividness guarantees factual correspondence."
+          },
+          {
+            "id": "o3",
+            "label": "Yes; an analogy contains all the measurements it evokes."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "No; its explanatory appeal must be checked against relevant evidence.",
+      "explanation": "Уместность сравнения не делает перенос всех свойств автоматически истинным.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "A detail made especially noticeable by a particular description becomes ___.",
+        "options": [
+          {
+            "id": "o2",
+            "label": "irrelevant by definition"
+          },
+          {
+            "id": "o3",
+            "label": "unrecorded"
+          },
+          {
+            "id": "o1",
+            "label": "salient"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "salient",
+      "explanation": "Salient — выделяющийся и заметный; это характеристика внимания, а не гарантия истинности.",
+      "key": "e08"
+    }
+  ]
+}

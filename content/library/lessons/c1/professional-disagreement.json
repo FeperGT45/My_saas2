@@ -1,0 +1,265 @@
+{
+  "key": "c1/professional-disagreement",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика C1 · смысл и точность",
+    "position": 10
+  },
+  "position": 4,
+  "title": "Точная профессиональная критика",
+  "description": "Точная профессиональная критика: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Направлять критику на проверяемое утверждение",
+    "Отличать поддержку пилота от одобрения полного внедрения"
+  ],
+  "notes": [
+    "Критика может относиться к утверждению, а не к личности: The estimate requires justification вместо You are careless.",
+    "Would benefit from предлагает улучшение, не объявляя полную непригодность; существенное требование безопасности нельзя скрывать вежливым смягчением."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/reference-cohesion"],
+  "lexicon": [
+    {
+      "en": "substantiated",
+      "ru": "подкреплённый доказательствами"
+    },
+    {
+      "en": "feasible",
+      "ru": "осуществимый"
+    },
+    {
+      "en": "constructive",
+      "ru": "конструктивный"
+    },
+    {
+      "en": "reservation",
+      "ru": "оговорка, сомнение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The proposal would benefit ___ a clearer explanation of maintenance costs.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o2",
+            "label": "of"
+          },
+          {
+            "id": "o3",
+            "label": "to"
+          },
+          {
+            "id": "o1",
+            "label": "from"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "from",
+      "explanation": "Устойчивое выражение benefit from указывает, какое улучшение было бы полезно.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: substantiated / substantiating.",
+      "public_payload": {
+        "sentence": "The projected saving remains insufficiently ___."
+      },
+      "answer_key": {
+        "accepted": ["substantiated"]
+      },
+      "reference_answer": "substantiated",
+      "incorrect_answer": "substantiating",
+      "editorial_answer": "The projected saving remains insufficiently substantiated.",
+      "explanation": "После remains нужна характеристика утверждения: insufficiently substantiated.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Оценка требует дополнительного обоснования.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "requires"
+          },
+          {
+            "id": "t4",
+            "label": "further"
+          },
+          {
+            "id": "t5",
+            "label": "justification."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "estimate"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "The estimate requires further justification.",
+      "explanation": "Критика относится к оценке, не приписывая автору личных недостатков.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The plan would benefit of a clearer risk assessment."
+      },
+      "answer_key": {
+        "accepted": ["The plan would benefit from a clearer risk assessment."]
+      },
+      "reference_answer": "The plan would benefit from a clearer risk assessment.",
+      "incorrect_answer": "The plan would benefit of a clearer risk assessment.",
+      "editorial_answer": "The plan would benefit from a clearer risk assessment.",
+      "explanation": "В этом значении нужно benefit from, а не benefit of.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что инженер поддерживала?",
+      "public_payload": {
+        "passage": "During a design review, an engineer wrote that a proposal was “optimistic”. The project manager initially read this as a dismissive judgement of the whole team. In a follow-up note, the engineer specified that the projected savings excluded maintenance costs and depended on an untested assumption about demand. She supported a small pilot but did not recommend full implementation on the evidence available. The clarification made the disagreement actionable: the team could revise the calculation and test the assumption. It also preserved the distinction between questioning a forecast and questioning the competence or intentions of the people who had prepared it.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "Abandoning any attempt to revise the calculation."
+          },
+          {
+            "id": "o1",
+            "label": "A small pilot, rather than full implementation."
+          },
+          {
+            "id": "o2",
+            "label": "Immediate full implementation without further evidence."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "A small pilot, rather than full implementation.",
+      "explanation": "Поддержка пилота не равна поддержке немедленного полномасштабного внедрения.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему уточнение сделало критику практичной?",
+      "public_payload": {
+        "passage": "During a design review, an engineer wrote that a proposal was “optimistic”. The project manager initially read this as a dismissive judgement of the whole team. In a follow-up note, the engineer specified that the projected savings excluded maintenance costs and depended on an untested assumption about demand. She supported a small pilot but did not recommend full implementation on the evidence available. The clarification made the disagreement actionable: the team could revise the calculation and test the assumption. It also preserved the distinction between questioning a forecast and questioning the competence or intentions of the people who had prepared it.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "It identified omissions and an assumption that could be checked."
+          },
+          {
+            "id": "o2",
+            "label": "It proved that the team had dishonest intentions."
+          },
+          {
+            "id": "o3",
+            "label": "It removed every disagreement about future demand."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "It identified omissions and an assumption that could be checked.",
+      "explanation": "Указаны проверяемые элементы расчёта; личная нечестность не устанавливается.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери конструктивный запрос к основанию оценки.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which reply challenges the claim without attacking its author?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o3",
+            "label": "Your intention must have been to mislead us."
+          },
+          {
+            "id": "o1",
+            "label": "Could you explain how the estimate accounts for maintenance?"
+          },
+          {
+            "id": "o2",
+            "label": "Only an incompetent person would produce that estimate."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Could you explain how the estimate accounts for maintenance?",
+      "explanation": "Вопрос о методе расчёта проверяем; два других варианта приписывают личные качества и намерения.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "A proposal that can realistically be carried out is ___.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "feasible"
+          },
+          {
+            "id": "o2",
+            "label": "infallible"
+          },
+          {
+            "id": "o3",
+            "label": "retrospective"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "feasible",
+      "explanation": "Feasible означает осуществимый, а не безошибочный или относящийся к прошлому.",
+      "key": "e08"
+    }
+  ]
+}

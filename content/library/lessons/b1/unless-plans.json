@@ -1,0 +1,301 @@
+{
+  "key": "b1/unless-plans",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-03",
+    "title": "Практика B1 · смысл и точность",
+    "position": 10
+  },
+  "position": 8,
+  "title": "Условие с unless",
+  "description": "Условие с unless: разбираем конструкцию и её смысл на примерах, в диалоге и авторском тексте без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Выражать исключение из будущего плана через unless",
+    "Согласовывать настоящее условие и будущее следствие"
+  ],
+  "notes": [
+    "Unless обычно означает if ... not: We will leave unless it rains — уйдём, если не пойдёт дождь.",
+    "В реальном будущем после unless обычно используется настоящее время, а не will."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/articles-in-context"],
+  "lexicon": [
+    {
+      "en": "forecast",
+      "ru": "прогноз"
+    },
+    {
+      "en": "cancel",
+      "ru": "отменять"
+    },
+    {
+      "en": "shelter",
+      "ru": "укрытие"
+    },
+    {
+      "en": "equipment",
+      "ru": "снаряжение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We will have the picnic unless it ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "o2",
+            "label": "will rain"
+          },
+          {
+            "id": "o3",
+            "label": "would raining"
+          },
+          {
+            "id": "o1",
+            "label": "rains"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "rains",
+      "explanation": "После unless для будущего условия используется rains.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь подходящее слово из пары: will / would.",
+      "public_payload": {
+        "sentence": "Unless the weather improves, we ___ stay indoors."
+      },
+      "answer_key": {
+        "accepted": ["will"]
+      },
+      "reference_answer": "will",
+      "incorrect_answer": "would",
+      "editorial_answer": "Unless the weather improves, we will stay indoors.",
+      "explanation": "Реальное будущее следствие выражается will stay.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы пойдём к озеру пешком, если не пойдёт снег.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "walk"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "lake"
+          },
+          {
+            "id": "t7",
+            "label": "unless"
+          },
+          {
+            "id": "t8",
+            "label": "it"
+          },
+          {
+            "id": "t9",
+            "label": "snows."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "will"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "We will walk to the lake unless it snows.",
+      "explanation": "Unless it snows задаёт исключение из плана прогулки.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только ошибку в конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "We will play outside unless it will be too windy."
+      },
+      "answer_key": {
+        "accepted": ["We will play outside unless it is too windy."]
+      },
+      "reference_answer": "We will play outside unless it is too windy.",
+      "incorrect_answer": "We will play outside unless it will be too windy.",
+      "editorial_answer": "We will play outside unless it is too windy.",
+      "explanation": "В условной части нужно настоящее is, а не will be.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "При каком условии организатор собирался отменить прогулку?",
+      "public_payload": {
+        "passage": "A walking group planned a trip to a lake. The forecast mentioned strong winds, but no rain. The organiser said that they would go unless the wind became dangerous. Everyone was asked to bring warm clothes and water. On the morning of the trip, conditions were calm. The group went ahead with the walk and checked the forecast again before leaving the village.",
+        "options": [
+          {
+            "id": "o3",
+            "label": "If the forecast mentioned no rain."
+          },
+          {
+            "id": "o1",
+            "label": "If the wind became dangerous."
+          },
+          {
+            "id": "o2",
+            "label": "If anyone brought warm clothes."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "If the wind became dangerous.",
+      "explanation": "Unless вводит опасный ветер как исключение из плана поездки.",
+      "key": "e05"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что говорится о погоде утром?",
+      "public_payload": {
+        "passage": "A walking group planned a trip to a lake. The forecast mentioned strong winds, but no rain. The organiser said that they would go unless the wind became dangerous. Everyone was asked to bring warm clothes and water. On the morning of the trip, conditions were calm. The group went ahead with the walk and checked the forecast again before leaving the village.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "Conditions were calm."
+          },
+          {
+            "id": "o2",
+            "label": "Dangerous winds had already started."
+          },
+          {
+            "id": "o3",
+            "label": "It was snowing heavily."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Conditions were calm.",
+      "explanation": "Calm прямо описывает утренние условия; сильный ветер был лишь риском.",
+      "key": "e06"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери грамматически правильное условие отмены.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Will the outdoor class take place?"
+          }
+        ],
+        "options": [
+          {
+            "id": "o3",
+            "label": "Yes, unless the teacher cancelling it."
+          },
+          {
+            "id": "o1",
+            "label": "Yes, unless the teacher cancels it."
+          },
+          {
+            "id": "o2",
+            "label": "Yes, unless the teacher will cancels it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "Yes, unless the teacher cancels it.",
+      "explanation": "После unless в таком условии нужна форма cancels.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово, точно соответствующее контексту.",
+      "public_payload": {
+        "sentence": "We waited under a roof to stay dry. We found ___ from the rain.",
+        "options": [
+          {
+            "id": "o1",
+            "label": "shelter"
+          },
+          {
+            "id": "o2",
+            "label": "forecast"
+          },
+          {
+            "id": "o3",
+            "label": "equipment"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "o1"
+      },
+      "reference_answer": "o1",
+      "incorrect_answer": "o2",
+      "editorial_answer": "shelter",
+      "explanation": "Shelter означает защиту или укрытие от непогоды.",
+      "key": "e08"
+    }
+  ]
+}
