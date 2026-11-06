@@ -1,0 +1,334 @@
+{
+  "key": "a1/this-these-items",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 4,
+  "title": "Этот предмет и эти предметы",
+  "description": "Этот предмет и эти предметы: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Различать this и these по числу",
+    "Согласовывать this/these с is/are"
+  ],
+  "notes": [
+    "This book is ... относится к одному близкому предмету.",
+    "These books are ... относится к нескольким близким предметам."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/want-to-actions"],
+  "lexicon": [
+    {
+      "en": "this",
+      "ru": "этот, эта, это"
+    },
+    {
+      "en": "these",
+      "ru": "эти"
+    },
+    {
+      "en": "poster",
+      "ru": "плакат"
+    },
+    {
+      "en": "ticket",
+      "ru": "билет"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ tickets are for today’s show.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v6af4d30afd79",
+            "label": "These"
+          },
+          {
+            "id": "vcb7704766f3f",
+            "label": "This"
+          },
+          {
+            "id": "vd1d5587b9cd7",
+            "label": "That one"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6af4d30afd79"
+      },
+      "reference_answer": "v6af4d30afd79",
+      "incorrect_answer": "vcb7704766f3f",
+      "editorial_answer": "These",
+      "explanation": "Tickets во множественном числе требует These.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: is / are.",
+      "public_payload": {
+        "sentence": "This poster ___ new."
+      },
+      "answer_key": {
+        "accepted": ["is"]
+      },
+      "reference_answer": "is",
+      "incorrect_answer": "are",
+      "editorial_answer": "This poster is new.",
+      "explanation": "Один poster согласуется с is.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Эти книги предназначены для нашего класса.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "are"
+          },
+          {
+            "id": "t4",
+            "label": "for"
+          },
+          {
+            "id": "t5",
+            "label": "our"
+          },
+          {
+            "id": "t6",
+            "label": "class."
+          },
+          {
+            "id": "t1",
+            "label": "These"
+          },
+          {
+            "id": "t2",
+            "label": "books"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "These books are for our class.",
+      "explanation": "These и are согласованы с books во множественном числе.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "This tickets are for Friday."
+      },
+      "answer_key": {
+        "accepted": ["These tickets are for Friday."]
+      },
+      "reference_answer": "These tickets are for Friday.",
+      "incorrect_answer": "This tickets are for Friday.",
+      "editorial_answer": "These tickets are for Friday.",
+      "explanation": "При tickets и are нужна форма These.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Для какого дня нужны билеты Лео?",
+      "public_payload": {
+        "passage": "This poster is for the school play. These tickets are for Friday. The tickets on the other table are for Saturday. Leo needs two Friday tickets.",
+        "options": [
+          {
+            "id": "v4e9ee8bf2bad",
+            "label": "Saturday."
+          },
+          {
+            "id": "v392d62b972ec",
+            "label": "Monday."
+          },
+          {
+            "id": "v4abad1b96d99",
+            "label": "Friday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4abad1b96d99"
+      },
+      "reference_answer": "v4abad1b96d99",
+      "incorrect_answer": "v4e9ee8bf2bad",
+      "editorial_answer": "Friday.",
+      "explanation": "Последняя фраза называет Friday.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lbbd72fbe851b",
+            "label": "this"
+          },
+          {
+            "id": "l47c77091afea",
+            "label": "these"
+          },
+          {
+            "id": "l033921ef19d0",
+            "label": "poster"
+          },
+          {
+            "id": "l7bc81e648409",
+            "label": "ticket"
+          }
+        ],
+        "right": [
+          {
+            "id": "r7b69053cd592",
+            "label": "плакат"
+          },
+          {
+            "id": "rcb727577b979",
+            "label": "билет"
+          },
+          {
+            "id": "rccc84dd6f72b",
+            "label": "этот, эта, это"
+          },
+          {
+            "id": "r54e744bd45ec",
+            "label": "эти"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lbbd72fbe851b": "rccc84dd6f72b",
+          "l47c77091afea": "r54e744bd45ec",
+          "l033921ef19d0": "r7b69053cd592",
+          "l7bc81e648409": "rcb727577b979"
+        }
+      },
+      "reference_answer": {
+        "lbbd72fbe851b": "rccc84dd6f72b",
+        "l47c77091afea": "r54e744bd45ec",
+        "l033921ef19d0": "r7b69053cd592",
+        "l7bc81e648409": "rcb727577b979"
+      },
+      "incorrect_answer": {
+        "lbbd72fbe851b": "r54e744bd45ec",
+        "l47c77091afea": "rccc84dd6f72b",
+        "l033921ef19d0": "r7b69053cd592",
+        "l7bc81e648409": "rcb727577b979"
+      },
+      "editorial_answer": "this — этот, эта, это; these — эти; poster — плакат; ticket — билет",
+      "explanation": "В этих контекстах: this — этот, эта, это; these — эти; poster — плакат; ticket — билет.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какие билеты лежат на другом столе?",
+      "public_payload": {
+        "passage": "This poster is for the school play. These tickets are for Friday. The tickets on the other table are for Saturday. Leo needs two Friday tickets.",
+        "options": [
+          {
+            "id": "vae21756365bc",
+            "label": "No tickets."
+          },
+          {
+            "id": "v1bf57de5ae56",
+            "label": "Saturday tickets."
+          },
+          {
+            "id": "v3debdff5c80c",
+            "label": "Only Friday tickets."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1bf57de5ae56"
+      },
+      "reference_answer": "v1bf57de5ae56",
+      "incorrect_answer": "v3debdff5c80c",
+      "editorial_answer": "Saturday tickets.",
+      "explanation": "The other table связан с субботой.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о нескольких ручках.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Are these pens yours?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v18217177dead",
+            "label": "Yes, this pens is mine."
+          },
+          {
+            "id": "v19bfafb0d38e",
+            "label": "Yes, these pen are my."
+          },
+          {
+            "id": "v0afed2e21855",
+            "label": "Yes, these pens are mine."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0afed2e21855"
+      },
+      "reference_answer": "v0afed2e21855",
+      "incorrect_answer": "v18217177dead",
+      "editorial_answer": "Yes, these pens are mine.",
+      "explanation": "These pens are согласовано по числу; mine употребляется самостоятельно.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "We buy a ___ to enter the show.",
+        "options": [
+          {
+            "id": "vd57a9df82a8e",
+            "label": "window"
+          },
+          {
+            "id": "ved9eb8b4bf77",
+            "label": "ticket"
+          },
+          {
+            "id": "va26077f162f0",
+            "label": "pencil"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ved9eb8b4bf77"
+      },
+      "reference_answer": "ved9eb8b4bf77",
+      "incorrect_answer": "va26077f162f0",
+      "editorial_answer": "ticket",
+      "explanation": "Ticket — билет на мероприятие.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "key": "a1/daily-negatives",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 1,
+  "title": "Чего мы обычно не делаем",
+  "description": "Чего мы обычно не делаем: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Строить отрицание с do not и does not",
+    "Использовать начальную форму после does not"
+  ],
+  "notes": [
+    "I/we/they do not work; he/she does not work.",
+    "После does not окончание -s у смыслового глагола не ставится."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/be-short-answers"],
+  "lexicon": [
+    {
+      "en": "work",
+      "ru": "работать"
+    },
+    {
+      "en": "Sunday",
+      "ru": "воскресенье"
+    },
+    {
+      "en": "shop",
+      "ru": "магазин"
+    },
+    {
+      "en": "rest",
+      "ru": "отдыхать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: My sister does not ___ on Sundays.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vd2d4dc6fdd3e",
+            "label": "work"
+          },
+          {
+            "id": "v52e6f2022065",
+            "label": "works"
+          },
+          {
+            "id": "v593d06006ad5",
+            "label": "working"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd2d4dc6fdd3e"
+      },
+      "reference_answer": "vd2d4dc6fdd3e",
+      "incorrect_answer": "v52e6f2022065",
+      "editorial_answer": "work",
+      "explanation": "После does not требуется work без -s.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: does / do.",
+      "public_payload": {
+        "sentence": "We ___ not open the shop on Sunday."
+      },
+      "answer_key": {
+        "accepted": ["do"]
+      },
+      "reference_answer": "do",
+      "incorrect_answer": "does",
+      "editorial_answer": "We do not open the shop on Sunday.",
+      "explanation": "С we используется do not.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Он не работает по воскресеньям.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "not"
+          },
+          {
+            "id": "t4",
+            "label": "work"
+          },
+          {
+            "id": "t5",
+            "label": "on"
+          },
+          {
+            "id": "t6",
+            "label": "Sundays."
+          },
+          {
+            "id": "t1",
+            "label": "He"
+          },
+          {
+            "id": "t2",
+            "label": "does"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "He does not work on Sundays.",
+      "explanation": "He согласуется с does, а work остаётся в начальной форме.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She does not works in this shop."
+      },
+      "answer_key": {
+        "accepted": ["She does not work in this shop."]
+      },
+      "reference_answer": "She does not work in this shop.",
+      "incorrect_answer": "She does not works in this shop.",
+      "editorial_answer": "She does not work in this shop.",
+      "explanation": "После does not убирается окончание -s у work.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда Элла не работает?",
+      "public_payload": {
+        "passage": "Ella works in a shop from Monday to Saturday. She does not work on Sundays. On Sunday she rests at home with her brother.",
+        "options": [
+          {
+            "id": "v063e1ac884ae",
+            "label": "On Mondays."
+          },
+          {
+            "id": "v675433654c76",
+            "label": "On Saturdays."
+          },
+          {
+            "id": "v301f54bcaedb",
+            "label": "On Sundays."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v301f54bcaedb"
+      },
+      "reference_answer": "v301f54bcaedb",
+      "incorrect_answer": "v063e1ac884ae",
+      "editorial_answer": "On Sundays.",
+      "explanation": "Воскресенье прямо исключено из её рабочих дней.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l4c10896cae8c",
+            "label": "work"
+          },
+          {
+            "id": "ld63b199cc5e0",
+            "label": "Sunday"
+          },
+          {
+            "id": "l3ef539584a09",
+            "label": "shop"
+          },
+          {
+            "id": "lf07ea921f484",
+            "label": "rest"
+          }
+        ],
+        "right": [
+          {
+            "id": "rfea6552f6783",
+            "label": "магазин"
+          },
+          {
+            "id": "r4ccbf0425a79",
+            "label": "отдыхать"
+          },
+          {
+            "id": "r8aacf9c51f94",
+            "label": "работать"
+          },
+          {
+            "id": "r139d1505d71b",
+            "label": "воскресенье"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l4c10896cae8c": "r8aacf9c51f94",
+          "ld63b199cc5e0": "r139d1505d71b",
+          "l3ef539584a09": "rfea6552f6783",
+          "lf07ea921f484": "r4ccbf0425a79"
+        }
+      },
+      "reference_answer": {
+        "l4c10896cae8c": "r8aacf9c51f94",
+        "ld63b199cc5e0": "r139d1505d71b",
+        "l3ef539584a09": "rfea6552f6783",
+        "lf07ea921f484": "r4ccbf0425a79"
+      },
+      "incorrect_answer": {
+        "l4c10896cae8c": "r139d1505d71b",
+        "ld63b199cc5e0": "r8aacf9c51f94",
+        "l3ef539584a09": "rfea6552f6783",
+        "lf07ea921f484": "r4ccbf0425a79"
+      },
+      "editorial_answer": "work — работать; Sunday — воскресенье; shop — магазин; rest — отдыхать",
+      "explanation": "В этих контекстах: work — работать; Sunday — воскресенье; shop — магазин; rest — отдыхать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где Элла отдыхает в воскресенье?",
+      "public_payload": {
+        "passage": "Ella works in a shop from Monday to Saturday. She does not work on Sundays. On Sunday she rests at home with her brother.",
+        "options": [
+          {
+            "id": "v48638ce8e152",
+            "label": "At the station."
+          },
+          {
+            "id": "v5681ac5fa923",
+            "label": "At home."
+          },
+          {
+            "id": "vac0ae1057504",
+            "label": "In the shop."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5681ac5fa923"
+      },
+      "reference_answer": "v5681ac5fa923",
+      "incorrect_answer": "vac0ae1057504",
+      "editorial_answer": "At home.",
+      "explanation": "Во второй части текста назван отдых дома с братом.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь отрицательно о брате.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does your brother work here?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vfd72824872fa",
+            "label": "No, he does not works here."
+          },
+          {
+            "id": "vb35f3bf02f1f",
+            "label": "No, he do not work here."
+          },
+          {
+            "id": "v36635d81934c",
+            "label": "No, he does not work here."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v36635d81934c"
+      },
+      "reference_answer": "v36635d81934c",
+      "incorrect_answer": "vfd72824872fa",
+      "editorial_answer": "No, he does not work here.",
+      "explanation": "С he нужен does not и начальная форма work.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "After a long day, I sit down and ___.",
+        "options": [
+          {
+            "id": "v493e38916221",
+            "label": "shopkeeper"
+          },
+          {
+            "id": "v490db52aec65",
+            "label": "rest"
+          },
+          {
+            "id": "v2e1505e565d8",
+            "label": "Sunday"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v490db52aec65"
+      },
+      "reference_answer": "v490db52aec65",
+      "incorrect_answer": "v2e1505e565d8",
+      "editorial_answer": "rest",
+      "explanation": "Rest — отдыхать после работы.",
+      "key": "e09"
+    }
+  ]
+}

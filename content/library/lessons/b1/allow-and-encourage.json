@@ -1,0 +1,342 @@
+{
+  "key": "b1/allow-and-encourage",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B1 · точность в общении",
+    "position": 30
+  },
+  "position": 4,
+  "title": "Разрешаем и помогаем решиться",
+  "description": "Разрешаем и помогаем решиться: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Строить allow someone to do",
+    "Использовать encourage someone to do без потери адресата"
+  ],
+  "notes": [
+    "Allow + человек + to-infinitive: They allowed us to leave.",
+    "Encourage someone to try означает поддержать человека в попытке, а не гарантировать результат."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/somewhere-anywhere"],
+  "lexicon": [
+    {
+      "en": "allow",
+      "ru": "разрешать"
+    },
+    {
+      "en": "encourage",
+      "ru": "поощрять, поддерживать"
+    },
+    {
+      "en": "attempt",
+      "ru": "попытка"
+    },
+    {
+      "en": "permission",
+      "ru": "разрешение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The tutor encouraged the beginners ___ questions.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v9ac62c42f238",
+            "label": "to ask"
+          },
+          {
+            "id": "va4be53457068",
+            "label": "asking to"
+          },
+          {
+            "id": "va708f66511eb",
+            "label": "ask to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9ac62c42f238"
+      },
+      "reference_answer": "v9ac62c42f238",
+      "incorrect_answer": "va4be53457068",
+      "editorial_answer": "to ask",
+      "explanation": "Encouraged + адресат + to ask — правильная модель.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: to / for.",
+      "public_payload": {
+        "sentence": "The library allows students ___ borrow laptops."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "The library allows students to borrow laptops.",
+      "explanation": "После allows students требуется to borrow.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Нам разрешили пользоваться меньшей комнатой.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "us"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "use"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "smaller"
+          },
+          {
+            "id": "t8",
+            "label": "room."
+          },
+          {
+            "id": "t1",
+            "label": "They"
+          },
+          {
+            "id": "t2",
+            "label": "allowed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "They allowed us to use the smaller room.",
+      "explanation": "Us обозначает получателей разрешения, to use — разрешённое действие.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The coach encouraged me try again."
+      },
+      "answer_key": {
+        "accepted": ["The coach encouraged me to try again."]
+      },
+      "reference_answer": "The coach encouraged me to try again.",
+      "incorrect_answer": "The coach encouraged me try again.",
+      "editorial_answer": "The coach encouraged me to try again.",
+      "explanation": "После encouraged me нужен инфинитив с to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем начинающим разрешили одолжить оборудование?",
+      "public_payload": {
+        "passage": "The club allowed beginners to borrow equipment for their first session. The tutor encouraged everyone to try a simple task before buying anything. One student found the activity harder than expected and decided to attend another introductory session. The tutor supported that choice rather than promising immediate success. Permission to borrow equipment reduced the cost of trying, but it did not remove the need to practise.",
+        "options": [
+          {
+            "id": "v7070ac7789a8",
+            "label": "So practice would become unnecessary."
+          },
+          {
+            "id": "v653959c1193e",
+            "label": "So every student would have to buy immediately."
+          },
+          {
+            "id": "v2afeb9d1bb24",
+            "label": "So they could try the activity before buying equipment."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2afeb9d1bb24"
+      },
+      "reference_answer": "v2afeb9d1bb24",
+      "incorrect_answer": "v7070ac7789a8",
+      "editorial_answer": "So they could try the activity before buying equipment.",
+      "explanation": "Разрешение снижает стоимость первой попытки, не гарантируя результат.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l01dba9111145",
+            "label": "allow"
+          },
+          {
+            "id": "lfbb677fca579",
+            "label": "encourage"
+          },
+          {
+            "id": "l7ed309bb4317",
+            "label": "attempt"
+          },
+          {
+            "id": "l15055a2641d4",
+            "label": "permission"
+          }
+        ],
+        "right": [
+          {
+            "id": "rc2551bf6eb88",
+            "label": "попытка"
+          },
+          {
+            "id": "r397334461b65",
+            "label": "разрешение"
+          },
+          {
+            "id": "ra7c7be55a907",
+            "label": "разрешать"
+          },
+          {
+            "id": "r72829f14637b",
+            "label": "поощрять, поддерживать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l01dba9111145": "ra7c7be55a907",
+          "lfbb677fca579": "r72829f14637b",
+          "l7ed309bb4317": "rc2551bf6eb88",
+          "l15055a2641d4": "r397334461b65"
+        }
+      },
+      "reference_answer": {
+        "l01dba9111145": "ra7c7be55a907",
+        "lfbb677fca579": "r72829f14637b",
+        "l7ed309bb4317": "rc2551bf6eb88",
+        "l15055a2641d4": "r397334461b65"
+      },
+      "incorrect_answer": {
+        "l01dba9111145": "r72829f14637b",
+        "lfbb677fca579": "ra7c7be55a907",
+        "l7ed309bb4317": "rc2551bf6eb88",
+        "l15055a2641d4": "r397334461b65"
+      },
+      "editorial_answer": "allow — разрешать; encourage — поощрять, поддерживать; attempt — попытка; permission — разрешение",
+      "explanation": "В этих контекстах: allow — разрешать; encourage — поощрять, поддерживать; attempt — попытка; permission — разрешение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как преподаватель отнёсся к повторному вводному занятию?",
+      "public_payload": {
+        "passage": "The club allowed beginners to borrow equipment for their first session. The tutor encouraged everyone to try a simple task before buying anything. One student found the activity harder than expected and decided to attend another introductory session. The tutor supported that choice rather than promising immediate success. Permission to borrow equipment reduced the cost of trying, but it did not remove the need to practise.",
+        "options": [
+          {
+            "id": "vf46bd35394e2",
+            "label": "Forbade the student to practise."
+          },
+          {
+            "id": "v279ad6fb0e1b",
+            "label": "Supported the student’s choice."
+          },
+          {
+            "id": "vd47a77bf62bd",
+            "label": "Promised that all tasks were already mastered."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v279ad6fb0e1b"
+      },
+      "reference_answer": "v279ad6fb0e1b",
+      "incorrect_answer": "vd47a77bf62bd",
+      "editorial_answer": "Supported the student’s choice.",
+      "explanation": "Поддержка выбора не превращается в обещание мгновенного успеха.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи о разрешении с адресатом us.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can we use the studio after class?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v9072ca1ab17b",
+            "label": "The organiser has allowed us staying until six."
+          },
+          {
+            "id": "v5a74b01c0e58",
+            "label": "The organiser has allowed to us stay until six."
+          },
+          {
+            "id": "v5028e5f6fe33",
+            "label": "The organiser has allowed us to stay until six."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5028e5f6fe33"
+      },
+      "reference_answer": "v5028e5f6fe33",
+      "incorrect_answer": "v9072ca1ab17b",
+      "editorial_answer": "The organiser has allowed us to stay until six.",
+      "explanation": "Allowed us to stay сохраняет объект и правильный инфинитив.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To support someone in making an effort is to ___ them.",
+        "options": [
+          {
+            "id": "vce41975ef99f",
+            "label": "exclude"
+          },
+          {
+            "id": "v097e458b49e1",
+            "label": "encourage"
+          },
+          {
+            "id": "v362f9cf11aa6",
+            "label": "guarantee success to every"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v097e458b49e1"
+      },
+      "reference_answer": "v097e458b49e1",
+      "incorrect_answer": "v362f9cf11aa6",
+      "editorial_answer": "encourage",
+      "explanation": "Encourage — поддерживать или поощрять, без обязательной гарантии результата.",
+      "key": "e09"
+    }
+  ]
+}

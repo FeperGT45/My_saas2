@@ -1,0 +1,338 @@
+{
+  "key": "b1/enough-to-result",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B1 · точность в общении",
+    "position": 30
+  },
+  "position": 5,
+  "title": "Достаточно, чтобы выполнить действие",
+  "description": "Достаточно, чтобы выполнить действие: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать adjective + enough to",
+    "Отличать достаточность от чрезмерного признака too ... to"
+  ],
+  "notes": [
+    "Enough следует за прилагательным: light enough to carry.",
+    "Too heavy to carry — настолько тяжёлый, что не удаётся нести в заданном контексте."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/allow-and-encourage"],
+  "lexicon": [
+    {
+      "en": "sufficient",
+      "ru": "достаточный"
+    },
+    {
+      "en": "light",
+      "ru": "лёгкий по весу"
+    },
+    {
+      "en": "reach",
+      "ru": "дотягиваться"
+    },
+    {
+      "en": "stable",
+      "ru": "устойчивый"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The shelf is strong ___ to hold the books.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v84360f835c9e",
+            "label": "too"
+          },
+          {
+            "id": "va9b55b52efae",
+            "label": "much of"
+          },
+          {
+            "id": "v2f5d496addc2",
+            "label": "enough"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2f5d496addc2"
+      },
+      "reference_answer": "v2f5d496addc2",
+      "incorrect_answer": "v84360f835c9e",
+      "editorial_answer": "enough",
+      "explanation": "Strong enough to указывает на достаточную прочность.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: for / to.",
+      "public_payload": {
+        "sentence": "The text is large enough ___ read from the back."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "The text is large enough to read from the back.",
+      "explanation": "Достаточность для действия оформляется enough to read.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Коробка достаточно лёгкая, чтобы её нести.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "light"
+          },
+          {
+            "id": "t5",
+            "label": "enough"
+          },
+          {
+            "id": "t6",
+            "label": "to"
+          },
+          {
+            "id": "t7",
+            "label": "carry."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "box"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The box is light enough to carry.",
+      "explanation": "Enough после light связывает признак с возможным действием.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The ladder is enough long to reach the shelf."
+      },
+      "answer_key": {
+        "accepted": ["The ladder is long enough to reach the shelf."]
+      },
+      "reference_answer": "The ladder is long enough to reach the shelf.",
+      "incorrect_answer": "The ladder is enough long to reach the shelf.",
+      "editorial_answer": "The ladder is long enough to reach the shelf.",
+      "explanation": "Enough ставится после long, а не перед ним.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что было не так с первым указателем?",
+      "public_payload": {
+        "passage": "The volunteers tested two signs for the entrance. The first was neat, but its letters were too small to read from the gate. The second had larger letters and enough space between the words. They chose the second sign after checking it from the position where visitors would first see it. Appearance mattered, but readability at the required distance mattered more.",
+        "options": [
+          {
+            "id": "v2805c15f5622",
+            "label": "It was larger than the entrance."
+          },
+          {
+            "id": "v8a82cd62a252",
+            "label": "Its letters could not be read from the gate."
+          },
+          {
+            "id": "v1a32d55787b3",
+            "label": "It had no words at all."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8a82cd62a252"
+      },
+      "reference_answer": "v8a82cd62a252",
+      "incorrect_answer": "v1a32d55787b3",
+      "editorial_answer": "Its letters could not be read from the gate.",
+      "explanation": "Too small to read связывает размер букв с конкретным расстоянием.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lf5ca2bf8fcea",
+            "label": "sufficient"
+          },
+          {
+            "id": "ld5d50f3d4994",
+            "label": "light"
+          },
+          {
+            "id": "l474d1fa89e26",
+            "label": "reach"
+          },
+          {
+            "id": "l5f1231fe360a",
+            "label": "stable"
+          }
+        ],
+        "right": [
+          {
+            "id": "rff707f1d1eba",
+            "label": "дотягиваться"
+          },
+          {
+            "id": "rbf37f30acddd",
+            "label": "устойчивый"
+          },
+          {
+            "id": "r4dc708fa9c42",
+            "label": "достаточный"
+          },
+          {
+            "id": "r482b839b2c6d",
+            "label": "лёгкий по весу"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lf5ca2bf8fcea": "r4dc708fa9c42",
+          "ld5d50f3d4994": "r482b839b2c6d",
+          "l474d1fa89e26": "rff707f1d1eba",
+          "l5f1231fe360a": "rbf37f30acddd"
+        }
+      },
+      "reference_answer": {
+        "lf5ca2bf8fcea": "r4dc708fa9c42",
+        "ld5d50f3d4994": "r482b839b2c6d",
+        "l474d1fa89e26": "rff707f1d1eba",
+        "l5f1231fe360a": "rbf37f30acddd"
+      },
+      "incorrect_answer": {
+        "lf5ca2bf8fcea": "r482b839b2c6d",
+        "ld5d50f3d4994": "r4dc708fa9c42",
+        "l474d1fa89e26": "rff707f1d1eba",
+        "l5f1231fe360a": "rbf37f30acddd"
+      },
+      "editorial_answer": "sufficient — достаточный; light — лёгкий по весу; reach — дотягиваться; stable — устойчивый",
+      "explanation": "В этих контекстах: sufficient — достаточный; light — лёгкий по весу; reach — дотягиваться; stable — устойчивый.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему проверяли указатель от калитки?",
+      "public_payload": {
+        "passage": "The volunteers tested two signs for the entrance. The first was neat, but its letters were too small to read from the gate. The second had larger letters and enough space between the words. They chose the second sign after checking it from the position where visitors would first see it. Appearance mattered, but readability at the required distance mattered more.",
+        "options": [
+          {
+            "id": "v40d0cd4c788d",
+            "label": "That was where visitors would first see it."
+          },
+          {
+            "id": "vef22a67b2fbf",
+            "label": "The volunteers wanted to hide it permanently."
+          },
+          {
+            "id": "v2da2460476b0",
+            "label": "The sign could only be read indoors."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v40d0cd4c788d"
+      },
+      "reference_answer": "v40d0cd4c788d",
+      "incorrect_answer": "vef22a67b2fbf",
+      "editorial_answer": "That was where visitors would first see it.",
+      "explanation": "Выбран реалистичный ракурс использования, а не только вид вблизи.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи о достаточной лёгкости для действия.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can you lift this bag?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vb0f23a5d62f4",
+            "label": "Yes, it is light enough for carry."
+          },
+          {
+            "id": "v467dc4fe5835",
+            "label": "Yes, it is light enough to carry."
+          },
+          {
+            "id": "v928782c8647b",
+            "label": "Yes, it is enough light carry."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v467dc4fe5835"
+      },
+      "reference_answer": "v467dc4fe5835",
+      "incorrect_answer": "v928782c8647b",
+      "editorial_answer": "Yes, it is light enough to carry.",
+      "explanation": "Light enough to carry — правильный порядок и инфинитив.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An amount that meets the need is ___.",
+        "options": [
+          {
+            "id": "v80b99d0e13b9",
+            "label": "sufficient"
+          },
+          {
+            "id": "v8d32d02a0ce6",
+            "label": "excessive by definition"
+          },
+          {
+            "id": "v0d3375ce48ac",
+            "label": "absent"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v80b99d0e13b9"
+      },
+      "reference_answer": "v80b99d0e13b9",
+      "incorrect_answer": "v8d32d02a0ce6",
+      "editorial_answer": "sufficient",
+      "explanation": "Sufficient — достаточный, не обязательно избыточный.",
+      "key": "e09"
+    }
+  ]
+}

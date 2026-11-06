@@ -1,0 +1,330 @@
+{
+  "key": "a1/need-things",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 12,
+  "title": "Что нужно для занятия",
+  "description": "Что нужно для занятия: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать need перед названием предмета",
+    "Согласовывать needs с he/she"
+  ],
+  "notes": [
+    "Перед предметом: I need a pencil; we need paper.",
+    "He/she needs, но I/you/we/they need."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/workdays-and-weekend"],
+  "lexicon": [
+    {
+      "en": "need",
+      "ru": "нуждаться, требоваться"
+    },
+    {
+      "en": "paper",
+      "ru": "бумага"
+    },
+    {
+      "en": "pencil",
+      "ru": "карандаш"
+    },
+    {
+      "en": "scissors",
+      "ru": "ножницы"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: She ___ a pencil for the lesson.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v770bcce53b3f",
+            "label": "needing"
+          },
+          {
+            "id": "vb8d35971b5c8",
+            "label": "needs"
+          },
+          {
+            "id": "va00608a19f85",
+            "label": "need"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb8d35971b5c8"
+      },
+      "reference_answer": "vb8d35971b5c8",
+      "incorrect_answer": "va00608a19f85",
+      "editorial_answer": "needs",
+      "explanation": "С she в простом утверждении используется needs.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: need / needs.",
+      "public_payload": {
+        "sentence": "We ___ paper for the poster."
+      },
+      "answer_key": {
+        "accepted": ["need"]
+      },
+      "reference_answer": "need",
+      "incorrect_answer": "needs",
+      "editorial_answer": "We need paper for the poster.",
+      "explanation": "С we используется need без -s.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Нам нужны бумага и ножницы.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "paper"
+          },
+          {
+            "id": "t4",
+            "label": "and"
+          },
+          {
+            "id": "t5",
+            "label": "scissors."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "need"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "We need paper and scissors.",
+      "explanation": "Need принимает названия необходимых предметов.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He need a notebook today."
+      },
+      "answer_key": {
+        "accepted": ["He needs a notebook today."]
+      },
+      "reference_answer": "He needs a notebook today.",
+      "incorrect_answer": "He need a notebook today.",
+      "editorial_answer": "He needs a notebook today.",
+      "explanation": "С he требуется needs.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Чего у Эвы нет из списка, но есть у учителя?",
+      "public_payload": {
+        "passage": "For today’s art lesson, we need paper, pencils and scissors. Eva has paper and pencils. The teacher has scissors for everyone. Eva does not need to buy any.",
+        "options": [
+          {
+            "id": "vdef2620f79f8",
+            "label": "Scissors."
+          },
+          {
+            "id": "v33f4f4311495",
+            "label": "Paper."
+          },
+          {
+            "id": "vef106b5f5f5d",
+            "label": "Pencils."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdef2620f79f8"
+      },
+      "reference_answer": "vdef2620f79f8",
+      "incorrect_answer": "v33f4f4311495",
+      "editorial_answer": "Scissors.",
+      "explanation": "Эва принесла бумагу и карандаши; ножницы предоставляет учитель.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l984c1f9a16ee",
+            "label": "need"
+          },
+          {
+            "id": "l73d3c93ae58d",
+            "label": "paper"
+          },
+          {
+            "id": "l11bee1643df0",
+            "label": "pencil"
+          },
+          {
+            "id": "l90cb45084148",
+            "label": "scissors"
+          }
+        ],
+        "right": [
+          {
+            "id": "r329c91ad7a4b",
+            "label": "карандаш"
+          },
+          {
+            "id": "rf0276d0d8e08",
+            "label": "ножницы"
+          },
+          {
+            "id": "raa0690bec7ea",
+            "label": "нуждаться, требоваться"
+          },
+          {
+            "id": "r680945ee67c3",
+            "label": "бумага"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l984c1f9a16ee": "raa0690bec7ea",
+          "l73d3c93ae58d": "r680945ee67c3",
+          "l11bee1643df0": "r329c91ad7a4b",
+          "l90cb45084148": "rf0276d0d8e08"
+        }
+      },
+      "reference_answer": {
+        "l984c1f9a16ee": "raa0690bec7ea",
+        "l73d3c93ae58d": "r680945ee67c3",
+        "l11bee1643df0": "r329c91ad7a4b",
+        "l90cb45084148": "rf0276d0d8e08"
+      },
+      "incorrect_answer": {
+        "l984c1f9a16ee": "r680945ee67c3",
+        "l73d3c93ae58d": "raa0690bec7ea",
+        "l11bee1643df0": "r329c91ad7a4b",
+        "l90cb45084148": "rf0276d0d8e08"
+      },
+      "editorial_answer": "need — нуждаться, требоваться; paper — бумага; pencil — карандаш; scissors — ножницы",
+      "explanation": "В этих контекстах: need — нуждаться, требоваться; paper — бумага; pencil — карандаш; scissors — ножницы.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Нужно ли Эве покупать ножницы?",
+      "public_payload": {
+        "passage": "For today’s art lesson, we need paper, pencils and scissors. Eva has paper and pencils. The teacher has scissors for everyone. Eva does not need to buy any.",
+        "options": [
+          {
+            "id": "vc6322b46e4cb",
+            "label": "Yes, the teacher has none."
+          },
+          {
+            "id": "v40ed6aee254d",
+            "label": "Yes, she has no paper."
+          },
+          {
+            "id": "vb6d921e13c76",
+            "label": "No, the teacher has them."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb6d921e13c76"
+      },
+      "reference_answer": "vb6d921e13c76",
+      "incorrect_answer": "vc6322b46e4cb",
+      "editorial_answer": "No, the teacher has them.",
+      "explanation": "Последняя фраза прямо отрицает необходимость покупки.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о необходимом предмете.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What do you need for the drawing?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v2805ebe8ca22",
+            "label": "I need a pencil."
+          },
+          {
+            "id": "v63abd98f0028",
+            "label": "I needs a pencil."
+          },
+          {
+            "id": "v8fc0eae8bf03",
+            "label": "I am need a pencil."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2805ebe8ca22"
+      },
+      "reference_answer": "v2805ebe8ca22",
+      "incorrect_answer": "v63abd98f0028",
+      "editorial_answer": "I need a pencil.",
+      "explanation": "С I нужен need без -s и без am.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "We use ___ to cut paper.",
+        "options": [
+          {
+            "id": "v44d0af69f047",
+            "label": "a clock"
+          },
+          {
+            "id": "v3528922e378c",
+            "label": "a gate"
+          },
+          {
+            "id": "vfa3b4653c5be",
+            "label": "scissors"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfa3b4653c5be"
+      },
+      "reference_answer": "vfa3b4653c5be",
+      "incorrect_answer": "v44d0af69f047",
+      "editorial_answer": "scissors",
+      "explanation": "Scissors — инструмент для разрезания бумаги.",
+      "key": "e09"
+    }
+  ]
+}

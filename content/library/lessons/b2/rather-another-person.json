@@ -1,0 +1,338 @@
+{
+  "key": "b2/rather-another-person",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B2 · точность в общении",
+    "position": 30
+  },
+  "position": 5,
+  "title": "Я бы предпочёл, чтобы ты сделал иначе",
+  "description": "Я бы предпочёл, чтобы ты сделал иначе: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать would rather + другой субъект + Past Simple",
+    "Отличать форму предпочтения от сообщения о прошлом"
+  ],
+  "notes": [
+    "I would rather you waited выражает нынешнее или будущее предпочтение, хотя waited имеет прошедшую форму.",
+    "Если субъект тот же: I would rather wait. Не смешивайте две модели."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/whatever-is-needed"],
+  "lexicon": [
+    {
+      "en": "preference",
+      "ru": "предпочтение"
+    },
+    {
+      "en": "deadline",
+      "ru": "срок"
+    },
+    {
+      "en": "consult",
+      "ru": "советоваться"
+    },
+    {
+      "en": "provisional",
+      "ru": "предварительный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The figures are not checked yet. I would rather you ___ before publishing them.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v8a7acc42cc67",
+            "label": "waited"
+          },
+          {
+            "id": "v234b64eb873f",
+            "label": "to wait"
+          },
+          {
+            "id": "vb1758d15d23a",
+            "label": "waiting"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8a7acc42cc67"
+      },
+      "reference_answer": "v8a7acc42cc67",
+      "incorrect_answer": "v234b64eb873f",
+      "editorial_answer": "waited",
+      "explanation": "С отдельным you после would rather нужна форма waited для текущего предпочтения.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: to consult / consulted.",
+      "public_payload": {
+        "sentence": "I would rather you ___ me before changing the schedule."
+      },
+      "answer_key": {
+        "accepted": ["consulted"]
+      },
+      "reference_answer": "consulted",
+      "incorrect_answer": "to consult",
+      "editorial_answer": "I would rather you consulted me before changing the schedule.",
+      "explanation": "Другой субъект you требует Past Simple в этой модели предпочтения.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я бы предпочёл, чтобы ты дождался подтверждения.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "rather"
+          },
+          {
+            "id": "t4",
+            "label": "you"
+          },
+          {
+            "id": "t5",
+            "label": "waited"
+          },
+          {
+            "id": "t6",
+            "label": "for"
+          },
+          {
+            "id": "t7",
+            "label": "confirmation."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "would"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "I would rather you waited for confirmation.",
+      "explanation": "Waited здесь не доказывает уже совершённое ожидание в прошлом.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I would rather you to ask before booking."
+      },
+      "answer_key": {
+        "accepted": ["I would rather you asked before booking."]
+      },
+      "reference_answer": "I would rather you asked before booking.",
+      "incorrect_answer": "I would rather you to ask before booking.",
+      "editorial_answer": "I would rather you asked before booking.",
+      "explanation": "После would rather + you в данном предпочтении используется asked, не to ask.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "К какому времени относится предпочтение координатора?",
+      "public_payload": {
+        "passage": "A coordinator received a draft announcement containing a provisional opening date. She told the assistant, “I would rather you waited for confirmation before posting it.” The assistant initially thought she was referring to something he had failed to do yesterday. She clarified that the past form expressed a current preference about a future action. The date remained provisional because the final inspection had not taken place. They agreed to prepare the announcement now but publish it only after confirmation, keeping preparation separate from public commitment.",
+        "options": [
+          {
+            "id": "v0d2688ee0243",
+            "label": "Only a completed action yesterday."
+          },
+          {
+            "id": "v57ca64b2d353",
+            "label": "A statement that confirmation is unnecessary."
+          },
+          {
+            "id": "v7347ecf30519",
+            "label": "A current preference about whether to publish next."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7347ecf30519"
+      },
+      "reference_answer": "v7347ecf30519",
+      "incorrect_answer": "v0d2688ee0243",
+      "editorial_answer": "A current preference about whether to publish next.",
+      "explanation": "В тексте прямо объяснена разница грамматической формы и временного смысла.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l81c6dfdcda7d",
+            "label": "preference"
+          },
+          {
+            "id": "lc4e8718a644b",
+            "label": "deadline"
+          },
+          {
+            "id": "l9b2f67cf3aeb",
+            "label": "consult"
+          },
+          {
+            "id": "lb3c77e8b8fb9",
+            "label": "provisional"
+          }
+        ],
+        "right": [
+          {
+            "id": "r9ccf4a9789ca",
+            "label": "советоваться"
+          },
+          {
+            "id": "rb8756f9e6ae2",
+            "label": "предварительный"
+          },
+          {
+            "id": "r18dcdbbb3851",
+            "label": "предпочтение"
+          },
+          {
+            "id": "r66d97d437a9e",
+            "label": "срок"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l81c6dfdcda7d": "r18dcdbbb3851",
+          "lc4e8718a644b": "r66d97d437a9e",
+          "l9b2f67cf3aeb": "r9ccf4a9789ca",
+          "lb3c77e8b8fb9": "rb8756f9e6ae2"
+        }
+      },
+      "reference_answer": {
+        "l81c6dfdcda7d": "r18dcdbbb3851",
+        "lc4e8718a644b": "r66d97d437a9e",
+        "l9b2f67cf3aeb": "r9ccf4a9789ca",
+        "lb3c77e8b8fb9": "rb8756f9e6ae2"
+      },
+      "incorrect_answer": {
+        "l81c6dfdcda7d": "r66d97d437a9e",
+        "lc4e8718a644b": "r18dcdbbb3851",
+        "l9b2f67cf3aeb": "r9ccf4a9789ca",
+        "lb3c77e8b8fb9": "rb8756f9e6ae2"
+      },
+      "editorial_answer": "preference — предпочтение; deadline — срок; consult — советоваться; provisional — предварительный",
+      "explanation": "В этих контекстах: preference — предпочтение; deadline — срок; consult — советоваться; provisional — предварительный.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "О чём договорились?",
+      "public_payload": {
+        "passage": "A coordinator received a draft announcement containing a provisional opening date. She told the assistant, “I would rather you waited for confirmation before posting it.” The assistant initially thought she was referring to something he had failed to do yesterday. She clarified that the past form expressed a current preference about a future action. The date remained provisional because the final inspection had not taken place. They agreed to prepare the announcement now but publish it only after confirmation, keeping preparation separate from public commitment.",
+        "options": [
+          {
+            "id": "v78d56271f964",
+            "label": "Delete every draft before preparing it."
+          },
+          {
+            "id": "v0eb3d61540e5",
+            "label": "Prepare the notice now and publish after confirmation."
+          },
+          {
+            "id": "vd4641f1e8305",
+            "label": "Publish immediately as a guaranteed date."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0eb3d61540e5"
+      },
+      "reference_answer": "v0eb3d61540e5",
+      "incorrect_answer": "vd4641f1e8305",
+      "editorial_answer": "Prepare the notice now and publish after confirmation.",
+      "explanation": "Подготовку отделили от обязательства перед публикой.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Вырази предпочтение относительно действия другого человека.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can I share this unfinished estimate?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v7a5ff3d18163",
+            "label": "I would rather you to check it first."
+          },
+          {
+            "id": "vb5fa4919aef2",
+            "label": "I would rather you checking it first."
+          },
+          {
+            "id": "vfb337ce2f631",
+            "label": "I would rather you checked it first."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfb337ce2f631"
+      },
+      "reference_answer": "vfb337ce2f631",
+      "incorrect_answer": "v7a5ff3d18163",
+      "editorial_answer": "I would rather you checked it first.",
+      "explanation": "Would rather you checked — правильная модель с отдельным субъектом.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A date that may still change is ___.",
+        "options": [
+          {
+            "id": "v16b19a8151e6",
+            "label": "expired necessarily"
+          },
+          {
+            "id": "vaeea578d65e4",
+            "label": "provisional"
+          },
+          {
+            "id": "v7f30cd01aebf",
+            "label": "irrevocably confirmed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vaeea578d65e4"
+      },
+      "reference_answer": "vaeea578d65e4",
+      "incorrect_answer": "v7f30cd01aebf",
+      "editorial_answer": "provisional",
+      "explanation": "Provisional означает предварительный, а не окончательно подтверждённый.",
+      "key": "e09"
+    }
+  ]
+}

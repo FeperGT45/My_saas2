@@ -1,0 +1,338 @@
+{
+  "key": "b2/future-from-past",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B2 · точность в общении",
+    "position": 30
+  },
+  "position": 2,
+  "title": "Будущее с точки зрения прошлого",
+  "description": "Будущее с точки зрения прошлого: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Передавать прошлое намерение через was going to",
+    "Не считать намерение доказательством выполнения"
+  ],
+  "notes": [
+    "Was going to описывает намерение, существовавшее в прошлом; само по себе не сообщает о выполнении.",
+    "Said ... would может передавать тогдашнее сообщение о будущем: She said she would call."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/used-to-being-used"],
+  "lexicon": [
+    {
+      "en": "intention",
+      "ru": "намерение"
+    },
+    {
+      "en": "subsequent",
+      "ru": "последующий"
+    },
+    {
+      "en": "revise",
+      "ru": "пересматривать"
+    },
+    {
+      "en": "postpone",
+      "ru": "откладывать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: They ___ launch the service in May, but the inspection delayed it.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v24d1566bd051",
+            "label": "were going to"
+          },
+          {
+            "id": "v5a05769694e6",
+            "label": "was going to"
+          },
+          {
+            "id": "v8446959f4fdc",
+            "label": "were going launch"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v24d1566bd051"
+      },
+      "reference_answer": "v24d1566bd051",
+      "incorrect_answer": "v5a05769694e6",
+      "editorial_answer": "were going to",
+      "explanation": "They согласуется с were going to; последующая часть сообщает о препятствии.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: would / will to.",
+      "public_payload": {
+        "sentence": "She said she ___ contact us the next day."
+      },
+      "answer_key": {
+        "accepted": ["would"]
+      },
+      "reference_answer": "would",
+      "incorrect_answer": "will to",
+      "editorial_answer": "She said she would contact us the next day.",
+      "explanation": "Would передаёт будущее с точки зрения прошлого сообщения.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы собирались открыться в мае.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "going"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "open"
+          },
+          {
+            "id": "t6",
+            "label": "in"
+          },
+          {
+            "id": "t7",
+            "label": "May."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "were"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "We were going to open in May.",
+      "explanation": "Фраза сообщает о прошлом намерении; фактическая дата требует дополнительных сведений.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The organiser was going open the hall in June."
+      },
+      "answer_key": {
+        "accepted": ["The organiser was going to open the hall in June."]
+      },
+      "reference_answer": "The organiser was going to open the hall in June.",
+      "incorrect_answer": "The organiser was going open the hall in June.",
+      "editorial_answer": "The organiser was going to open the hall in June.",
+      "explanation": "В конструкции going to необходимо to перед open.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую ошибку сделал поздний бюллетень?",
+      "public_payload": {
+        "passage": "In March, the organisers announced that they were going to open the community workshop in May. They expected the electrical inspection to finish in April. When the inspection identified a fault, the opening was postponed. A later newsletter accidentally repeated the original plan as though the workshop had already opened. The coordinator corrected it, explaining that the March announcement recorded an intention at that time, not the outcome after subsequent events. A revised date would be published only after the fault had been addressed.",
+        "options": [
+          {
+            "id": "v56dad57b9158",
+            "label": "It reported a revised date that had definitely been confirmed."
+          },
+          {
+            "id": "v402e4f5eda35",
+            "label": "It denied that any plan had ever existed."
+          },
+          {
+            "id": "v8dbfddbaf0a6",
+            "label": "It presented an earlier intention as a completed opening."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8dbfddbaf0a6"
+      },
+      "reference_answer": "v8dbfddbaf0a6",
+      "incorrect_answer": "v56dad57b9158",
+      "editorial_answer": "It presented an earlier intention as a completed opening.",
+      "explanation": "Старый план был неверно превращён в сообщение о результате.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l7f209b5a7676",
+            "label": "intention"
+          },
+          {
+            "id": "lbb469bdadc2a",
+            "label": "subsequent"
+          },
+          {
+            "id": "l688c0952048c",
+            "label": "revise"
+          },
+          {
+            "id": "l39b97de92fa0",
+            "label": "postpone"
+          }
+        ],
+        "right": [
+          {
+            "id": "r7f8475c6efdb",
+            "label": "пересматривать"
+          },
+          {
+            "id": "rb212d1738900",
+            "label": "откладывать"
+          },
+          {
+            "id": "r095101f8ab0a",
+            "label": "намерение"
+          },
+          {
+            "id": "r9f62fd2c6dba",
+            "label": "последующий"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l7f209b5a7676": "r095101f8ab0a",
+          "lbb469bdadc2a": "r9f62fd2c6dba",
+          "l688c0952048c": "r7f8475c6efdb",
+          "l39b97de92fa0": "rb212d1738900"
+        }
+      },
+      "reference_answer": {
+        "l7f209b5a7676": "r095101f8ab0a",
+        "lbb469bdadc2a": "r9f62fd2c6dba",
+        "l688c0952048c": "r7f8475c6efdb",
+        "l39b97de92fa0": "rb212d1738900"
+      },
+      "incorrect_answer": {
+        "l7f209b5a7676": "r9f62fd2c6dba",
+        "lbb469bdadc2a": "r095101f8ab0a",
+        "l688c0952048c": "r7f8475c6efdb",
+        "l39b97de92fa0": "rb212d1738900"
+      },
+      "editorial_answer": "intention — намерение; subsequent — последующий; revise — пересматривать; postpone — откладывать",
+      "explanation": "В этих контекстах: intention — намерение; subsequent — последующий; revise — пересматривать; postpone — откладывать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда обещали назвать новую дату?",
+      "public_payload": {
+        "passage": "In March, the organisers announced that they were going to open the community workshop in May. They expected the electrical inspection to finish in April. When the inspection identified a fault, the opening was postponed. A later newsletter accidentally repeated the original plan as though the workshop had already opened. The coordinator corrected it, explaining that the March announcement recorded an intention at that time, not the outcome after subsequent events. A revised date would be published only after the fault had been addressed.",
+        "options": [
+          {
+            "id": "v0e2648795ac1",
+            "label": "Automatically on the original May date."
+          },
+          {
+            "id": "vf3248bde3741",
+            "label": "After the fault had been addressed."
+          },
+          {
+            "id": "vb83153119618",
+            "label": "Before any inspection took place."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf3248bde3741"
+      },
+      "reference_answer": "vf3248bde3741",
+      "incorrect_answer": "vb83153119618",
+      "editorial_answer": "After the fault had been addressed.",
+      "explanation": "Указано условие новой публикации, а не безусловное сохранение старой даты.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Отдели намерение от выполнения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “I was going to call” prove that the call happened?"
+          }
+        ],
+        "options": [
+          {
+            "id": "ve1c544e7f92a",
+            "label": "Yes; the intention guarantees the event."
+          },
+          {
+            "id": "v640a02c7e662",
+            "label": "No; it proves the speaker never wanted to call."
+          },
+          {
+            "id": "vec00efccd995",
+            "label": "No; it reports a past intention without confirming completion."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vec00efccd995"
+      },
+      "reference_answer": "vec00efccd995",
+      "incorrect_answer": "ve1c544e7f92a",
+      "editorial_answer": "No; it reports a past intention without confirming completion.",
+      "explanation": "Was going to не устанавливает ни факт звонка, ни отсутствие желания.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Events happening later than the original announcement are ___ events.",
+        "options": [
+          {
+            "id": "vc44946599fdc",
+            "label": "simultaneously earlier"
+          },
+          {
+            "id": "v078ec3f6f42c",
+            "label": "subsequent"
+          },
+          {
+            "id": "v380a699520b3",
+            "label": "prior"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v078ec3f6f42c"
+      },
+      "reference_answer": "v078ec3f6f42c",
+      "incorrect_answer": "v380a699520b3",
+      "editorial_answer": "subsequent",
+      "explanation": "Subsequent — последующий, а prior — предшествующий.",
+      "key": "e09"
+    }
+  ]
+}

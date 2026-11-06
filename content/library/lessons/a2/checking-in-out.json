@@ -1,0 +1,339 @@
+{
+  "key": "a2/checking-in-out",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 11,
+  "title": "Заселение и выезд из гостиницы",
+  "description": "Заселение и выезд из гостиницы: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": ["Различать check in и check out", "Спрашивать о сроке выезда"],
+  "notes": [
+    "Check in — зарегистрироваться при прибытии; check out — оформить выезд.",
+    "What time do we have to check out? спрашивает о крайнем времени выезда, а не о заселении."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/immediate-decisions"],
+  "lexicon": [
+    {
+      "en": "check in",
+      "ru": "зарегистрироваться при заселении"
+    },
+    {
+      "en": "check out",
+      "ru": "оформить выезд"
+    },
+    {
+      "en": "reception",
+      "ru": "стойка регистрации"
+    },
+    {
+      "en": "luggage",
+      "ru": "багаж"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We arrive at the hotel and go to reception to ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v624b83ee9cf1",
+            "label": "check out after leaving"
+          },
+          {
+            "id": "vf1fdb9e89584",
+            "label": "cancel every room"
+          },
+          {
+            "id": "v6b987da3a67f",
+            "label": "check in"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6b987da3a67f"
+      },
+      "reference_answer": "v6b987da3a67f",
+      "incorrect_answer": "v624b83ee9cf1",
+      "editorial_answer": "check in",
+      "explanation": "При прибытии оформляют check in.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: in / out.",
+      "public_payload": {
+        "sentence": "We must check ___ by eleven on our last day."
+      },
+      "answer_key": {
+        "accepted": ["out"]
+      },
+      "reference_answer": "out",
+      "incorrect_answer": "in",
+      "editorial_answer": "We must check out by eleven on our last day.",
+      "explanation": "Последний день и крайнее время относятся к выезду.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «В котором часу нам нужно выехать?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "do"
+          },
+          {
+            "id": "t4",
+            "label": "we"
+          },
+          {
+            "id": "t5",
+            "label": "have"
+          },
+          {
+            "id": "t6",
+            "label": "to"
+          },
+          {
+            "id": "t7",
+            "label": "check"
+          },
+          {
+            "id": "t8",
+            "label": "out?"
+          },
+          {
+            "id": "t1",
+            "label": "What"
+          },
+          {
+            "id": "t2",
+            "label": "time"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "What time do we have to check out?",
+      "explanation": "Check out относится к завершению проживания.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "We have to checking out before noon."
+      },
+      "answer_key": {
+        "accepted": ["We have to check out before noon."]
+      },
+      "reference_answer": "We have to check out before noon.",
+      "incorrect_answer": "We have to checking out before noon.",
+      "editorial_answer": "We have to check out before noon.",
+      "explanation": "После have to используется check, не checking.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда Миле нужно оформить выезд?",
+      "public_payload": {
+        "passage": "Mila checked in at the hotel at three in the afternoon. The receptionist said that check-out was at eleven the next morning. Mila’s train did not leave until two, so she asked about luggage storage. The hotel could keep her bag after check-out, allowing her to walk around town before the train.",
+        "options": [
+          {
+            "id": "ve34de77ff709",
+            "label": "Only after her train leaves."
+          },
+          {
+            "id": "vc82a47f91f37",
+            "label": "By eleven the next morning."
+          },
+          {
+            "id": "vc955ef6eea51",
+            "label": "At three the following afternoon."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc82a47f91f37"
+      },
+      "reference_answer": "vc82a47f91f37",
+      "incorrect_answer": "vc955ef6eea51",
+      "editorial_answer": "By eleven the next morning.",
+      "explanation": "Three — время прибытия, eleven — срок выезда.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lb6351cb72c16",
+            "label": "check in"
+          },
+          {
+            "id": "lb29586587d9f",
+            "label": "check out"
+          },
+          {
+            "id": "lbc5dbea0ef28",
+            "label": "reception"
+          },
+          {
+            "id": "lb6762b9b1584",
+            "label": "luggage"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2b4ff4f7ec76",
+            "label": "стойка регистрации"
+          },
+          {
+            "id": "re36ba95b27c3",
+            "label": "багаж"
+          },
+          {
+            "id": "r47f54bb93476",
+            "label": "зарегистрироваться при заселении"
+          },
+          {
+            "id": "r18d515b201d0",
+            "label": "оформить выезд"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lb6351cb72c16": "r47f54bb93476",
+          "lb29586587d9f": "r18d515b201d0",
+          "lbc5dbea0ef28": "r2b4ff4f7ec76",
+          "lb6762b9b1584": "re36ba95b27c3"
+        }
+      },
+      "reference_answer": {
+        "lb6351cb72c16": "r47f54bb93476",
+        "lb29586587d9f": "r18d515b201d0",
+        "lbc5dbea0ef28": "r2b4ff4f7ec76",
+        "lb6762b9b1584": "re36ba95b27c3"
+      },
+      "incorrect_answer": {
+        "lb6351cb72c16": "r18d515b201d0",
+        "lb29586587d9f": "r47f54bb93476",
+        "lbc5dbea0ef28": "r2b4ff4f7ec76",
+        "lb6762b9b1584": "re36ba95b27c3"
+      },
+      "editorial_answer": "check in — зарегистрироваться при заселении; check out — оформить выезд; reception — стойка регистрации; luggage — багаж",
+      "explanation": "В этих контекстах: check in — зарегистрироваться при заселении; check out — оформить выезд; reception — стойка регистрации; luggage — багаж.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что гостиница разрешила сделать после выезда?",
+      "public_payload": {
+        "passage": "Mila checked in at the hotel at three in the afternoon. The receptionist said that check-out was at eleven the next morning. Mila’s train did not leave until two, so she asked about luggage storage. The hotel could keep her bag after check-out, allowing her to walk around town before the train.",
+        "options": [
+          {
+            "id": "v2d73d83b47a9",
+            "label": "Leave her bag in storage."
+          },
+          {
+            "id": "vb3b6295f5546",
+            "label": "Stay in the room until the train left without asking."
+          },
+          {
+            "id": "vccdf88aa4faf",
+            "label": "Cancel the train automatically."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2d73d83b47a9"
+      },
+      "reference_answer": "v2d73d83b47a9",
+      "incorrect_answer": "vb3b6295f5546",
+      "editorial_answer": "Leave her bag in storage.",
+      "explanation": "Разрешено хранение багажа, не продолжение проживания в номере.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Спроси о времени выезда.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "You want to ask about the departure rule."
+          }
+        ],
+        "options": [
+          {
+            "id": "vc88655111ee7",
+            "label": "What time we needed check in yesterday?"
+          },
+          {
+            "id": "v96c65edc54db",
+            "label": "What time do we need to check out?"
+          },
+          {
+            "id": "va6b978fdbe69",
+            "label": "What time do we need to checking out?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v96c65edc54db"
+      },
+      "reference_answer": "v96c65edc54db",
+      "incorrect_answer": "va6b978fdbe69",
+      "editorial_answer": "What time do we need to check out?",
+      "explanation": "Need to check out использует начальную форму.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Suitcases and travel bags are collectively called ___.",
+        "options": [
+          {
+            "id": "vb666388a58dc",
+            "label": "luggage"
+          },
+          {
+            "id": "v2358648e073c",
+            "label": "luggages in this meaning"
+          },
+          {
+            "id": "vf8985eef08f6",
+            "label": "receptions"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb666388a58dc"
+      },
+      "reference_answer": "vb666388a58dc",
+      "incorrect_answer": "v2358648e073c",
+      "editorial_answer": "luggage",
+      "explanation": "В обычном значении luggage — неисчисляемое обозначение багажа.",
+      "key": "e09"
+    }
+  ]
+}

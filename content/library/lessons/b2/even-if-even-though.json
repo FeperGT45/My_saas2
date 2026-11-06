@@ -1,0 +1,392 @@
+{
+  "key": "b2/even-if-even-though",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B2 · точность в общении",
+    "position": 30
+  },
+  "position": 7,
+  "title": "Допущение и установленный факт",
+  "description": "Допущение и установленный факт: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Различать even if и even though",
+    "Не превращать условие в подтверждённое событие"
+  ],
+  "notes": [
+    "Even if может вводить допущение: Even if it rains, we will go.",
+    "Even though в обычном употреблении признаёт ситуацию как факт: Even though it was raining, we went."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/future-passive-process"],
+  "lexicon": [
+    {
+      "en": "hypothesis",
+      "ru": "гипотеза"
+    },
+    {
+      "en": "concession",
+      "ru": "уступка"
+    },
+    {
+      "en": "confirmed",
+      "ru": "подтверждённый"
+    },
+    {
+      "en": "contingency",
+      "ru": "непредвиденная ситуация"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We do not know whether the grant will arrive. ___ it does, costs will still need checking.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v68e7ea4ec896",
+            "label": "Despite of"
+          },
+          {
+            "id": "vee35fc4ff5f8",
+            "label": "Even if"
+          },
+          {
+            "id": "v83055b5a3935",
+            "label": "Because of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vee35fc4ff5f8"
+      },
+      "reference_answer": "vee35fc4ff5f8",
+      "incorrect_answer": "v83055b5a3935",
+      "editorial_answer": "Even if",
+      "explanation": "Неподтверждённое получение вводится как допущение even if.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: of / though.",
+      "public_payload": {
+        "sentence": "It was definitely raining. We went ahead even ___ it was raining."
+      },
+      "answer_key": {
+        "accepted": ["though"]
+      },
+      "reference_answer": "though",
+      "incorrect_answer": "of",
+      "editorial_answer": "It was definitely raining. We went ahead even though it was raining.",
+      "explanation": "Even though вводит признанный факт с полной придаточной частью.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Даже если грант поступит, нам потребуется аккуратный бюджет.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "grant"
+          },
+          {
+            "id": "t5",
+            "label": "arrives,"
+          },
+          {
+            "id": "t6",
+            "label": "we"
+          },
+          {
+            "id": "t7",
+            "label": "will"
+          },
+          {
+            "id": "t8",
+            "label": "need"
+          },
+          {
+            "id": "t9",
+            "label": "a"
+          },
+          {
+            "id": "t10",
+            "label": "careful"
+          },
+          {
+            "id": "t11",
+            "label": "budget."
+          },
+          {
+            "id": "t1",
+            "label": "Even"
+          },
+          {
+            "id": "t2",
+            "label": "if"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11"
+        ]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11",
+        "t1"
+      ],
+      "editorial_answer": "Even if the grant arrives, we will need a careful budget.",
+      "explanation": "Even if не подтверждает, что грант уже получен.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Even despite the grant was approved, the timetable remained difficult."
+      },
+      "answer_key": {
+        "accepted": [
+          "Even though the grant was approved, the timetable remained difficult."
+        ]
+      },
+      "reference_answer": "Even though the grant was approved, the timetable remained difficult.",
+      "incorrect_answer": "Even despite the grant was approved, the timetable remained difficult.",
+      "editorial_answer": "Even though the grant was approved, the timetable remained difficult.",
+      "explanation": "Перед полной уступительной частью здесь нужно even though.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую ошибку внёс пересказ?",
+      "public_payload": {
+        "passage": "The organisers wrote, “Even if the grant is approved, we will need to reduce some costs.” A supporter repeated the message as “Even though the grant has been approved”, unintentionally presenting a possibility as a confirmed fact. The organiser corrected the wording. The funding decision was still pending, and the cost issue would remain relevant in either case. Accurate reporting required preserving the distinction between the hypothetical concession and an acknowledged event, rather than merely retaining the general idea that money alone would not solve every problem.",
+        "options": [
+          {
+            "id": "v613b960a9e25",
+            "label": "It treated possible approval as confirmed approval."
+          },
+          {
+            "id": "vef9a14dab121",
+            "label": "It preserved the grant’s pending status exactly."
+          },
+          {
+            "id": "v41797c3e58af",
+            "label": "It proved that the grant had been refused."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v613b960a9e25"
+      },
+      "reference_answer": "v613b960a9e25",
+      "incorrect_answer": "vef9a14dab121",
+      "editorial_answer": "It treated possible approval as confirmed approval.",
+      "explanation": "Смена even if на even though вместе со временем утверждает несуществующее подтверждение.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l196005f3c2d3",
+            "label": "hypothesis"
+          },
+          {
+            "id": "l722806ef257c",
+            "label": "concession"
+          },
+          {
+            "id": "l1d93dcc1a523",
+            "label": "confirmed"
+          },
+          {
+            "id": "l031d8c4ed42e",
+            "label": "contingency"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3e492122ff83",
+            "label": "подтверждённый"
+          },
+          {
+            "id": "rb6a678f8d88a",
+            "label": "непредвиденная ситуация"
+          },
+          {
+            "id": "r493bbc6b53bb",
+            "label": "гипотеза"
+          },
+          {
+            "id": "r10b7fa696652",
+            "label": "уступка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l196005f3c2d3": "r493bbc6b53bb",
+          "l722806ef257c": "r10b7fa696652",
+          "l1d93dcc1a523": "r3e492122ff83",
+          "l031d8c4ed42e": "rb6a678f8d88a"
+        }
+      },
+      "reference_answer": {
+        "l196005f3c2d3": "r493bbc6b53bb",
+        "l722806ef257c": "r10b7fa696652",
+        "l1d93dcc1a523": "r3e492122ff83",
+        "l031d8c4ed42e": "rb6a678f8d88a"
+      },
+      "incorrect_answer": {
+        "l196005f3c2d3": "r10b7fa696652",
+        "l722806ef257c": "r493bbc6b53bb",
+        "l1d93dcc1a523": "r3e492122ff83",
+        "l031d8c4ed42e": "rb6a678f8d88a"
+      },
+      "editorial_answer": "hypothesis — гипотеза; concession — уступка; confirmed — подтверждённый; contingency — непредвиденная ситуация",
+      "explanation": "В этих контекстах: hypothesis — гипотеза; concession — уступка; confirmed — подтверждённый; contingency — непредвиденная ситуация.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что остаётся общим при обоих вариантах решения?",
+      "public_payload": {
+        "passage": "The organisers wrote, “Even if the grant is approved, we will need to reduce some costs.” A supporter repeated the message as “Even though the grant has been approved”, unintentionally presenting a possibility as a confirmed fact. The organiser corrected the wording. The funding decision was still pending, and the cost issue would remain relevant in either case. Accurate reporting required preserving the distinction between the hypothetical concession and an acknowledged event, rather than merely retaining the general idea that money alone would not solve every problem.",
+        "options": [
+          {
+            "id": "v13590e040aa7",
+            "label": "Funding is already guaranteed."
+          },
+          {
+            "id": "v9ad82830e6e5",
+            "label": "The organisers no longer need a budget."
+          },
+          {
+            "id": "v01989001d2bb",
+            "label": "Some costs still need attention."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v01989001d2bb"
+      },
+      "reference_answer": "v01989001d2bb",
+      "incorrect_answer": "v13590e040aa7",
+      "editorial_answer": "Some costs still need attention.",
+      "explanation": "Проблема расходов остаётся, но это не снимает неопределённость самого финансирования.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани статус допущения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can I report “Even if the plan works” as proof that it works?"
+          }
+        ],
+        "options": [
+          {
+            "id": "va65af1ea9b4a",
+            "label": "No; the clause introduces a hypothetical concession."
+          },
+          {
+            "id": "v8a4619415eaa",
+            "label": "Yes; every if-clause establishes its content as fact."
+          },
+          {
+            "id": "v0941a926cf6a",
+            "label": "Yes; even cancels all uncertainty."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va65af1ea9b4a"
+      },
+      "reference_answer": "va65af1ea9b4a",
+      "incorrect_answer": "v8a4619415eaa",
+      "editorial_answer": "No; the clause introduces a hypothetical concession.",
+      "explanation": "Even if не подтверждает истинность введённого условия.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A possibility considered for planning is a ___.",
+        "options": [
+          {
+            "id": "vb23506c7a5e7",
+            "label": "completed guarantee"
+          },
+          {
+            "id": "v28f93c9a0151",
+            "label": "verdict necessarily"
+          },
+          {
+            "id": "v3cd8a37babc6",
+            "label": "contingency"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3cd8a37babc6"
+      },
+      "reference_answer": "v3cd8a37babc6",
+      "incorrect_answer": "vb23506c7a5e7",
+      "editorial_answer": "contingency",
+      "explanation": "Contingency — возможная ситуация, которую учитывают при планировании.",
+      "key": "e09"
+    }
+  ]
+}

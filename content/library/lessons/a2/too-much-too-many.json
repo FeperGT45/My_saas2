@@ -1,0 +1,342 @@
+{
+  "key": "a2/too-much-too-many",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 5,
+  "title": "Слишком много вещей или шума",
+  "description": "Слишком много вещей или шума: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Выбирать too many с исчисляемыми существительными",
+    "Выбирать too much с неисчисляемыми"
+  ],
+  "notes": [
+    "Too many + множественное исчисляемое: too many chairs.",
+    "Too much + неисчисляемое: too much noise. Too добавляет оценку чрезмерности, а не просто большое количество."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/easy-to-find"],
+  "lexicon": [
+    {
+      "en": "noise",
+      "ru": "шум"
+    },
+    {
+      "en": "space",
+      "ru": "место, пространство"
+    },
+    {
+      "en": "crowd",
+      "ru": "толпа"
+    },
+    {
+      "en": "equipment",
+      "ru": "оборудование"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: There are ___ chairs for this small room.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v874c20b9e50d",
+            "label": "too much"
+          },
+          {
+            "id": "v3570352e832c",
+            "label": "too any"
+          },
+          {
+            "id": "vaa9fea876208",
+            "label": "too many"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vaa9fea876208"
+      },
+      "reference_answer": "vaa9fea876208",
+      "incorrect_answer": "v874c20b9e50d",
+      "editorial_answer": "too many",
+      "explanation": "Chairs — исчисляемое множественное число: too many.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: many / much.",
+      "public_payload": {
+        "sentence": "There is too ___ noise to hear the instructions."
+      },
+      "answer_key": {
+        "accepted": ["much"]
+      },
+      "reference_answer": "much",
+      "incorrect_answer": "many",
+      "editorial_answer": "There is too much noise to hear the instructions.",
+      "explanation": "Noise в данном значении неисчисляемое.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «В коридоре слишком много оборудования.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "too"
+          },
+          {
+            "id": "t4",
+            "label": "much"
+          },
+          {
+            "id": "t5",
+            "label": "equipment"
+          },
+          {
+            "id": "t6",
+            "label": "in"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "corridor."
+          },
+          {
+            "id": "t1",
+            "label": "There"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "There is too much equipment in the corridor.",
+      "explanation": "Equipment неисчисляемое; too much подчёркивает избыток.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "There are too much people near the door."
+      },
+      "answer_key": {
+        "accepted": ["There are too many people near the door."]
+      },
+      "reference_answer": "There are too many people near the door.",
+      "incorrect_answer": "There are too much people near the door.",
+      "editorial_answer": "There are too many people near the door.",
+      "explanation": "People — исчисляемое множественное число, поэтому too many.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему в комнате было неудобно сидеть?",
+      "public_payload": {
+        "passage": "The club planned to use a small room for twenty visitors. When thirty-five arrived, there were too many people to sit comfortably. There was also too much noise to hear the welcome talk. The organiser moved the group to the hall and asked everyone to leave the corridor clear.",
+        "options": [
+          {
+            "id": "va6946f229cb9",
+            "label": "All the chairs were outside town."
+          },
+          {
+            "id": "vf49376473d64",
+            "label": "More people arrived than the small room could comfortably hold."
+          },
+          {
+            "id": "v6d8d1790e616",
+            "label": "Only two people came."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf49376473d64"
+      },
+      "reference_answer": "vf49376473d64",
+      "incorrect_answer": "v6d8d1790e616",
+      "editorial_answer": "More people arrived than the small room could comfortably hold.",
+      "explanation": "Пришло тридцать пять вместо ожидаемых двадцати.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1ee93cd02418",
+            "label": "noise"
+          },
+          {
+            "id": "l4d744dc66b06",
+            "label": "space"
+          },
+          {
+            "id": "lc500613f728f",
+            "label": "crowd"
+          },
+          {
+            "id": "l6ad2ac639944",
+            "label": "equipment"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1c547d355a59",
+            "label": "толпа"
+          },
+          {
+            "id": "rea1023bf8791",
+            "label": "оборудование"
+          },
+          {
+            "id": "r00aa77680ebe",
+            "label": "шум"
+          },
+          {
+            "id": "r17c32f6bb3b3",
+            "label": "место, пространство"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1ee93cd02418": "r00aa77680ebe",
+          "l4d744dc66b06": "r17c32f6bb3b3",
+          "lc500613f728f": "r1c547d355a59",
+          "l6ad2ac639944": "rea1023bf8791"
+        }
+      },
+      "reference_answer": {
+        "l1ee93cd02418": "r00aa77680ebe",
+        "l4d744dc66b06": "r17c32f6bb3b3",
+        "lc500613f728f": "r1c547d355a59",
+        "l6ad2ac639944": "rea1023bf8791"
+      },
+      "incorrect_answer": {
+        "l1ee93cd02418": "r17c32f6bb3b3",
+        "l4d744dc66b06": "r00aa77680ebe",
+        "lc500613f728f": "r1c547d355a59",
+        "l6ad2ac639944": "rea1023bf8791"
+      },
+      "editorial_answer": "noise — шум; space — место, пространство; crowd — толпа; equipment — оборудование",
+      "explanation": "В этих контекстах: noise — шум; space — место, пространство; crowd — толпа; equipment — оборудование.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что организатор сделал после этого?",
+      "public_payload": {
+        "passage": "The club planned to use a small room for twenty visitors. When thirty-five arrived, there were too many people to sit comfortably. There was also too much noise to hear the welcome talk. The organiser moved the group to the hall and asked everyone to leave the corridor clear.",
+        "options": [
+          {
+            "id": "v25a0ca538cfa",
+            "label": "Moved the group to the hall."
+          },
+          {
+            "id": "v823b6fa01914",
+            "label": "Asked everyone to block the corridor."
+          },
+          {
+            "id": "vbccd3b4cfee0",
+            "label": "Continued without changing anything."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v25a0ca538cfa"
+      },
+      "reference_answer": "v25a0ca538cfa",
+      "incorrect_answer": "v823b6fa01914",
+      "editorial_answer": "Moved the group to the hall.",
+      "explanation": "Текст описывает перенос и просьбу оставить коридор свободным.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Объясни проблему неисчисляемым noise.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Why can we not work here?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vede7721172c8",
+            "label": "There are too much noises in this meaning."
+          },
+          {
+            "id": "vec6063828cca",
+            "label": "There is too much noise."
+          },
+          {
+            "id": "v6b98692ec08f",
+            "label": "There is too many noise."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vec6063828cca"
+      },
+      "reference_answer": "vec6063828cca",
+      "incorrect_answer": "v6b98692ec08f",
+      "editorial_answer": "There is too much noise.",
+      "explanation": "В данном общем значении нужно too much noise.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Chairs and bags leave very little ___ to move.",
+        "options": [
+          {
+            "id": "v8b3a3a426f0e",
+            "label": "space"
+          },
+          {
+            "id": "v37d81baee245",
+            "label": "crowd"
+          },
+          {
+            "id": "v7150ab57d8b1",
+            "label": "noise"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8b3a3a426f0e"
+      },
+      "reference_answer": "v8b3a3a426f0e",
+      "incorrect_answer": "v37d81baee245",
+      "editorial_answer": "space",
+      "explanation": "Space — свободное место для движения.",
+      "key": "e09"
+    }
+  ]
+}

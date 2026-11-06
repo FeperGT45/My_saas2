@@ -1,0 +1,330 @@
+{
+  "key": "a2/had-to-yesterday",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 2,
+  "title": "Пришлось сделать вчера",
+  "description": "Пришлось сделать вчера: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Выражать прошлую необходимость с had to",
+    "Использовать did not have to для её отсутствия"
+  ],
+  "notes": [
+    "Прошлая необходимость: We had to wait. Had to одинаково для I/he/we/they.",
+    "Отсутствие необходимости: We did not have to pay. После did not используется have, не had."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/when-future-arrives"],
+  "lexicon": [
+    {
+      "en": "necessary",
+      "ru": "необходимый"
+    },
+    {
+      "en": "entrance",
+      "ru": "вход"
+    },
+    {
+      "en": "fee",
+      "ru": "плата"
+    },
+    {
+      "en": "free",
+      "ru": "бесплатный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The lift was broken yesterday, so we ___ use the stairs.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v7f879e7b2631",
+            "label": "have yesterday"
+          },
+          {
+            "id": "vb82b1c58a291",
+            "label": "has to yesterday"
+          },
+          {
+            "id": "vd25b858c8113",
+            "label": "had to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd25b858c8113"
+      },
+      "reference_answer": "vd25b858c8113",
+      "incorrect_answer": "v7f879e7b2631",
+      "editorial_answer": "had to",
+      "explanation": "Завершённая прошлая необходимость выражается had to.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: have / had.",
+      "public_payload": {
+        "sentence": "We did not ___ to buy tickets; entry was free."
+      },
+      "answer_key": {
+        "accepted": ["have"]
+      },
+      "reference_answer": "have",
+      "incorrect_answer": "had",
+      "editorial_answer": "We did not have to buy tickets; entry was free.",
+      "explanation": "После did not нужна форма have.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Нам пришлось ждать снаружи.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "to"
+          },
+          {
+            "id": "t4",
+            "label": "wait"
+          },
+          {
+            "id": "t5",
+            "label": "outside."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "had"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "We had to wait outside.",
+      "explanation": "Had to описывает необходимость в прошлом.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She did not had to pay the entrance fee."
+      },
+      "answer_key": {
+        "accepted": ["She did not have to pay the entrance fee."]
+      },
+      "reference_answer": "She did not have to pay the entrance fee.",
+      "incorrect_answer": "She did not had to pay the entrance fee.",
+      "editorial_answer": "She did not have to pay the entrance fee.",
+      "explanation": "После did not требуется have.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "За что группе не нужно было платить?",
+      "public_payload": {
+        "passage": "At the museum yesterday, our group had to leave large bags at the entrance. We did not have to pay for tickets because the visit was part of a school project. We did have to arrive before ten to meet our guide. Two students arrived later and joined another group.",
+        "options": [
+          {
+            "id": "vd1396d8921fd",
+            "label": "The bus journey, according to the text."
+          },
+          {
+            "id": "v746215e97a67",
+            "label": "Tickets."
+          },
+          {
+            "id": "v08fe641b3eec",
+            "label": "Every item in the museum shop."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v746215e97a67"
+      },
+      "reference_answer": "v746215e97a67",
+      "incorrect_answer": "v08fe641b3eec",
+      "editorial_answer": "Tickets.",
+      "explanation": "Бесплатными названы билеты; о транспорте и магазине сведений нет.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l3d695370c3d2",
+            "label": "necessary"
+          },
+          {
+            "id": "l75e19ae41742",
+            "label": "entrance"
+          },
+          {
+            "id": "l74e5afb54dfc",
+            "label": "fee"
+          },
+          {
+            "id": "l6d502d9f2725",
+            "label": "free"
+          }
+        ],
+        "right": [
+          {
+            "id": "r696e76e574ec",
+            "label": "плата"
+          },
+          {
+            "id": "re89b8bb81a98",
+            "label": "бесплатный"
+          },
+          {
+            "id": "r33e344cb6e42",
+            "label": "необходимый"
+          },
+          {
+            "id": "r1d1b7245725e",
+            "label": "вход"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l3d695370c3d2": "r33e344cb6e42",
+          "l75e19ae41742": "r1d1b7245725e",
+          "l74e5afb54dfc": "r696e76e574ec",
+          "l6d502d9f2725": "re89b8bb81a98"
+        }
+      },
+      "reference_answer": {
+        "l3d695370c3d2": "r33e344cb6e42",
+        "l75e19ae41742": "r1d1b7245725e",
+        "l74e5afb54dfc": "r696e76e574ec",
+        "l6d502d9f2725": "re89b8bb81a98"
+      },
+      "incorrect_answer": {
+        "l3d695370c3d2": "r1d1b7245725e",
+        "l75e19ae41742": "r33e344cb6e42",
+        "l74e5afb54dfc": "r696e76e574ec",
+        "l6d502d9f2725": "re89b8bb81a98"
+      },
+      "editorial_answer": "necessary — необходимый; entrance — вход; fee — плата; free — бесплатный",
+      "explanation": "В этих контекстах: necessary — необходимый; entrance — вход; fee — плата; free — бесплатный.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что произошло с двумя опоздавшими?",
+      "public_payload": {
+        "passage": "At the museum yesterday, our group had to leave large bags at the entrance. We did not have to pay for tickets because the visit was part of a school project. We did have to arrive before ten to meet our guide. Two students arrived later and joined another group.",
+        "options": [
+          {
+            "id": "v98c937f1e107",
+            "label": "They joined another group."
+          },
+          {
+            "id": "v600e9a3015a0",
+            "label": "They became guides."
+          },
+          {
+            "id": "vacf86eb0026c",
+            "label": "They received every ticket refund."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v98c937f1e107"
+      },
+      "reference_answer": "v98c937f1e107",
+      "incorrect_answer": "v600e9a3015a0",
+      "editorial_answer": "They joined another group.",
+      "explanation": "Последняя фраза сообщает об их присоединении к другой группе.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи о прошлой необходимости подняться пешком.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Was the room on the top floor?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v78ac5ff41913",
+            "label": "Yes, and we had walk to upstairs."
+          },
+          {
+            "id": "v9e8562decdc8",
+            "label": "Yes, and we had to walk up the stairs."
+          },
+          {
+            "id": "v081b6fdc367e",
+            "label": "Yes, and we has to walked upstairs."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9e8562decdc8"
+      },
+      "reference_answer": "v9e8562decdc8",
+      "incorrect_answer": "v081b6fdc367e",
+      "editorial_answer": "Yes, and we had to walk up the stairs.",
+      "explanation": "Had to walk — стандартная конструкция.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Money paid to enter a venue is an entrance ___.",
+        "options": [
+          {
+            "id": "v6f5c281fe23d",
+            "label": "fee"
+          },
+          {
+            "id": "v352d1f7522ef",
+            "label": "gate"
+          },
+          {
+            "id": "v3b2ec683a888",
+            "label": "reply"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6f5c281fe23d"
+      },
+      "reference_answer": "v6f5c281fe23d",
+      "incorrect_answer": "v352d1f7522ef",
+      "editorial_answer": "fee",
+      "explanation": "Fee — плата за услугу или вход.",
+      "key": "e09"
+    }
+  ]
+}

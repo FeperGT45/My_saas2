@@ -1,0 +1,342 @@
+{
+  "key": "b1/states-since-for",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B1 · точность в общении",
+    "position": 30
+  },
+  "position": 1,
+  "title": "Как давно мы знакомы",
+  "description": "Как давно мы знакомы: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать have known для состояния, продолжающегося сейчас",
+    "Выбирать since с точкой начала и for с длительностью"
+  ],
+  "notes": [
+    "Для знакомства обычно говорят have known, не have been knowing: I have known her for years.",
+    "Since 2020 указывает начало, for six years — длительность."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/preposition-gerunds"],
+  "lexicon": [
+    {
+      "en": "know",
+      "ru": "знать, быть знакомым"
+    },
+    {
+      "en": "since",
+      "ru": "с указанного момента"
+    },
+    {
+      "en": "for",
+      "ru": "в течение"
+    },
+    {
+      "en": "neighbour",
+      "ru": "сосед"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I ___ my neighbour since we started school together.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vc6bdb119cefa",
+            "label": "have known"
+          },
+          {
+            "id": "v0b42bb2b6912",
+            "label": "have been knowing"
+          },
+          {
+            "id": "vdc798e8b04ff",
+            "label": "am knowing"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc6bdb119cefa"
+      },
+      "reference_answer": "vc6bdb119cefa",
+      "incorrect_answer": "v0b42bb2b6912",
+      "editorial_answer": "have known",
+      "explanation": "Know в значении знакомства обычно используется как состояние: have known.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: since / for.",
+      "public_payload": {
+        "sentence": "We have known each other ___ ten years."
+      },
+      "answer_key": {
+        "accepted": ["for"]
+      },
+      "reference_answer": "for",
+      "incorrect_answer": "since",
+      "editorial_answer": "We have known each other for ten years.",
+      "explanation": "Ten years — длительность, поэтому for.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я знаю её с тех пор, как мы были детьми.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "known"
+          },
+          {
+            "id": "t4",
+            "label": "her"
+          },
+          {
+            "id": "t5",
+            "label": "since"
+          },
+          {
+            "id": "t6",
+            "label": "we"
+          },
+          {
+            "id": "t7",
+            "label": "were"
+          },
+          {
+            "id": "t8",
+            "label": "children."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "have"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "I have known her since we were children.",
+      "explanation": "Have known связывает состояние знакомства с настоящим.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I have been knowing him for six years."
+      },
+      "answer_key": {
+        "accepted": ["I have known him for six years."]
+      },
+      "reference_answer": "I have known him for six years.",
+      "incorrect_answer": "I have been knowing him for six years.",
+      "editorial_answer": "I have known him for six years.",
+      "explanation": "Для состояния знакомства требуется have known, а не Continuous.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда началось знакомство?",
+      "public_payload": {
+        "passage": "I have known Omar since our first week at secondary school. We have lived in different towns for several years, but we still talk regularly. Last month, he moved to my neighbourhood. We now meet for a walk on Sundays. His move has changed how often we meet, not when our friendship began.",
+        "options": [
+          {
+            "id": "v6a3b3830d1d7",
+            "label": "When Omar moved last month."
+          },
+          {
+            "id": "v5ada4331b6b1",
+            "label": "On their first Sunday walk this year."
+          },
+          {
+            "id": "vda291dd5961a",
+            "label": "During their first week at secondary school."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vda291dd5961a"
+      },
+      "reference_answer": "vda291dd5961a",
+      "incorrect_answer": "v6a3b3830d1d7",
+      "editorial_answer": "During their first week at secondary school.",
+      "explanation": "Since связывает начало знакомства со школой, а не с недавним переездом.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l0e538748cf8c",
+            "label": "know"
+          },
+          {
+            "id": "le0153dbca5b9",
+            "label": "since"
+          },
+          {
+            "id": "lf5f3aac5a9bd",
+            "label": "for"
+          },
+          {
+            "id": "l4379a777f2b7",
+            "label": "neighbour"
+          }
+        ],
+        "right": [
+          {
+            "id": "r61ccf855f919",
+            "label": "в течение"
+          },
+          {
+            "id": "r1fef27f63c27",
+            "label": "сосед"
+          },
+          {
+            "id": "r868c100fced9",
+            "label": "знать, быть знакомым"
+          },
+          {
+            "id": "r2fc3245b05f9",
+            "label": "с указанного момента"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l0e538748cf8c": "r868c100fced9",
+          "le0153dbca5b9": "r2fc3245b05f9",
+          "lf5f3aac5a9bd": "r61ccf855f919",
+          "l4379a777f2b7": "r1fef27f63c27"
+        }
+      },
+      "reference_answer": {
+        "l0e538748cf8c": "r868c100fced9",
+        "le0153dbca5b9": "r2fc3245b05f9",
+        "lf5f3aac5a9bd": "r61ccf855f919",
+        "l4379a777f2b7": "r1fef27f63c27"
+      },
+      "incorrect_answer": {
+        "l0e538748cf8c": "r2fc3245b05f9",
+        "le0153dbca5b9": "r868c100fced9",
+        "lf5f3aac5a9bd": "r61ccf855f919",
+        "l4379a777f2b7": "r1fef27f63c27"
+      },
+      "editorial_answer": "know — знать, быть знакомым; since — с указанного момента; for — в течение; neighbour — сосед",
+      "explanation": "В этих контекстах: know — знать, быть знакомым; since — с указанного момента; for — в течение; neighbour — сосед.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что изменил переезд?",
+      "public_payload": {
+        "passage": "I have known Omar since our first week at secondary school. We have lived in different towns for several years, but we still talk regularly. Last month, he moved to my neighbourhood. We now meet for a walk on Sundays. His move has changed how often we meet, not when our friendship began.",
+        "options": [
+          {
+            "id": "vd695e57a41e4",
+            "label": "The fact that they had never spoken before."
+          },
+          {
+            "id": "v7bf0c30ff55d",
+            "label": "How often they can meet."
+          },
+          {
+            "id": "v7f8bfa634ea5",
+            "label": "The original beginning of their friendship."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7bf0c30ff55d"
+      },
+      "reference_answer": "v7bf0c30ff55d",
+      "incorrect_answer": "v7f8bfa634ea5",
+      "editorial_answer": "How often they can meet.",
+      "explanation": "Последняя фраза отделяет частоту встреч от давнего начала дружбы.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о продолжающемся знакомстве.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How long have you known your colleague?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v33b3ef7e0286",
+            "label": "I have been knowing her for three years."
+          },
+          {
+            "id": "v4db13d5c455c",
+            "label": "I know her since three years."
+          },
+          {
+            "id": "vbf69efb29e32",
+            "label": "I have known her for three years."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbf69efb29e32"
+      },
+      "reference_answer": "vbf69efb29e32",
+      "incorrect_answer": "v33b3ef7e0286",
+      "editorial_answer": "I have known her for three years.",
+      "explanation": "Have known + for three years выражает состояние и длительность.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Someone living next door is your ___.",
+        "options": [
+          {
+            "id": "v6085a09bdab7",
+            "label": "passenger"
+          },
+          {
+            "id": "v149b74ecf784",
+            "label": "neighbour"
+          },
+          {
+            "id": "v0f236ecd5912",
+            "label": "stranger by definition"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v149b74ecf784"
+      },
+      "reference_answer": "v149b74ecf784",
+      "incorrect_answer": "v0f236ecd5912",
+      "editorial_answer": "neighbour",
+      "explanation": "Neighbour — человек, живущий рядом.",
+      "key": "e09"
+    }
+  ]
+}

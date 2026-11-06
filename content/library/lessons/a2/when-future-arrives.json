@@ -1,0 +1,338 @@
+{
+  "key": "a2/when-future-arrives",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 1,
+  "title": "Когда это случится: when и будущее",
+  "description": "Когда это случится: when и будущее: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать настоящее после when о будущем",
+    "Соединять будущее действие и условие времени"
+  ],
+  "notes": [
+    "В придаточной части времени: I will call when I arrive. После when здесь настоящее, хотя событие будущее.",
+    "When will you arrive? — прямой вопрос, другая конструкция; в нём will допустимо."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/because-and-so"],
+  "lexicon": [
+    {
+      "en": "arrive",
+      "ru": "прибывать"
+    },
+    {
+      "en": "collect",
+      "ru": "забирать"
+    },
+    {
+      "en": "message",
+      "ru": "сообщение"
+    },
+    {
+      "en": "platform",
+      "ru": "железнодорожная платформа"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I will send a message when the train ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v8fc1835706f1",
+            "label": "arrives"
+          },
+          {
+            "id": "v0e2dc3bbba2b",
+            "label": "will arrives"
+          },
+          {
+            "id": "vbc167b804726",
+            "label": "arriving"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8fc1835706f1"
+      },
+      "reference_answer": "v8fc1835706f1",
+      "incorrect_answer": "v0e2dc3bbba2b",
+      "editorial_answer": "arrives",
+      "explanation": "После when в этой будущей временной части используется arrives.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: will / is.",
+      "public_payload": {
+        "sentence": "We will leave when everyone ___ ready."
+      },
+      "answer_key": {
+        "accepted": ["is"]
+      },
+      "reference_answer": "is",
+      "incorrect_answer": "will",
+      "editorial_answer": "We will leave when everyone is ready.",
+      "explanation": "Everyone is ready — полная временная часть в настоящем.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я позвоню тебе, когда приеду.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "call"
+          },
+          {
+            "id": "t4",
+            "label": "you"
+          },
+          {
+            "id": "t5",
+            "label": "when"
+          },
+          {
+            "id": "t6",
+            "label": "I"
+          },
+          {
+            "id": "t7",
+            "label": "arrive."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "will"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "I will call you when I arrive.",
+      "explanation": "Will стоит в главной части, arrive — в придаточной времени.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I will wait here until the bus will arrives."
+      },
+      "answer_key": {
+        "accepted": ["I will wait here until the bus arrives."]
+      },
+      "reference_answer": "I will wait here until the bus arrives.",
+      "incorrect_answer": "I will wait here until the bus will arrives.",
+      "editorial_answer": "I will wait here until the bus arrives.",
+      "explanation": "После until о будущем нужен arrives без will.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда Сара отправит сообщение?",
+      "public_payload": {
+        "passage": "Sara is travelling to a new town tomorrow. Her cousin will collect her at the station. Sara will send a message when the train arrives, not before it leaves. If the train is late, her cousin will wait at a café opposite the station.",
+        "options": [
+          {
+            "id": "ve26a3bd0a616",
+            "label": "Before the train leaves."
+          },
+          {
+            "id": "v73ed7d9ae35e",
+            "label": "Only after the café closes."
+          },
+          {
+            "id": "v42e41c6ba644",
+            "label": "When the train arrives."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v42e41c6ba644"
+      },
+      "reference_answer": "v42e41c6ba644",
+      "incorrect_answer": "ve26a3bd0a616",
+      "editorial_answer": "When the train arrives.",
+      "explanation": "Текст противопоставляет прибытие и отправление.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l8937ba145b19",
+            "label": "arrive"
+          },
+          {
+            "id": "lacbbd781de91",
+            "label": "collect"
+          },
+          {
+            "id": "lfa2f5c6257c9",
+            "label": "message"
+          },
+          {
+            "id": "la9439dfad0ca",
+            "label": "platform"
+          }
+        ],
+        "right": [
+          {
+            "id": "r472e8d928e4e",
+            "label": "сообщение"
+          },
+          {
+            "id": "r6726205d16eb",
+            "label": "железнодорожная платформа"
+          },
+          {
+            "id": "r987ee63836c2",
+            "label": "прибывать"
+          },
+          {
+            "id": "r31a0e7fb733b",
+            "label": "забирать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l8937ba145b19": "r987ee63836c2",
+          "lacbbd781de91": "r31a0e7fb733b",
+          "lfa2f5c6257c9": "r472e8d928e4e",
+          "la9439dfad0ca": "r6726205d16eb"
+        }
+      },
+      "reference_answer": {
+        "l8937ba145b19": "r987ee63836c2",
+        "lacbbd781de91": "r31a0e7fb733b",
+        "lfa2f5c6257c9": "r472e8d928e4e",
+        "la9439dfad0ca": "r6726205d16eb"
+      },
+      "incorrect_answer": {
+        "l8937ba145b19": "r31a0e7fb733b",
+        "lacbbd781de91": "r987ee63836c2",
+        "lfa2f5c6257c9": "r472e8d928e4e",
+        "la9439dfad0ca": "r6726205d16eb"
+      },
+      "editorial_answer": "arrive — прибывать; collect — забирать; message — сообщение; platform — железнодорожная платформа",
+      "explanation": "В этих контекстах: arrive — прибывать; collect — забирать; message — сообщение; platform — железнодорожная платформа.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где кузен подождёт при опоздании поезда?",
+      "public_payload": {
+        "passage": "Sara is travelling to a new town tomorrow. Her cousin will collect her at the station. Sara will send a message when the train arrives, not before it leaves. If the train is late, her cousin will wait at a café opposite the station.",
+        "options": [
+          {
+            "id": "va2a0bcf0e578",
+            "label": "At the airport."
+          },
+          {
+            "id": "ve90baab5cf9e",
+            "label": "At a café opposite the station."
+          },
+          {
+            "id": "vcd5ff83572a0",
+            "label": "Inside Sara’s train."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve90baab5cf9e"
+      },
+      "reference_answer": "ve90baab5cf9e",
+      "incorrect_answer": "vcd5ff83572a0",
+      "editorial_answer": "At a café opposite the station.",
+      "explanation": "В случае задержки указан конкретный ориентир для ожидания.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Пообещай сообщение после будущего прибытия.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Please tell me when you get home."
+          }
+        ],
+        "options": [
+          {
+            "id": "v49406d1f6efb",
+            "label": "I will text you when I will gets there."
+          },
+          {
+            "id": "vccb0a9c4570a",
+            "label": "I texted you tomorrow when got."
+          },
+          {
+            "id": "vd5dc1bdf58e1",
+            "label": "I will text you when I get there."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd5dc1bdf58e1"
+      },
+      "reference_answer": "vd5dc1bdf58e1",
+      "incorrect_answer": "v49406d1f6efb",
+      "editorial_answer": "I will text you when I get there.",
+      "explanation": "В главной части will text, во временной — get.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Someone who comes to meet you and take you home can ___ you from the station.",
+        "options": [
+          {
+            "id": "v427417f8c2be",
+            "label": "publish"
+          },
+          {
+            "id": "v042a87a358c7",
+            "label": "collect"
+          },
+          {
+            "id": "v074313f4ade9",
+            "label": "postpone"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v042a87a358c7"
+      },
+      "reference_answer": "v042a87a358c7",
+      "incorrect_answer": "v074313f4ade9",
+      "editorial_answer": "collect",
+      "explanation": "Collect someone from a place — приехать за человеком и забрать его.",
+      "key": "e09"
+    }
+  ]
+}

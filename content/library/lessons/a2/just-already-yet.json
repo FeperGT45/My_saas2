@@ -1,0 +1,334 @@
+{
+  "key": "a2/just-already-yet",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 9,
+  "title": "Уже, только что и ещё не",
+  "description": "Уже, только что и ещё не: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать just и already с Present Perfect",
+    "Ставить yet в конце обычного отрицания"
+  ],
+  "notes": [
+    "Just может означать «только что»: I have just arrived. Already — «уже».",
+    "Yet обычно стоит в конце вопроса или отрицания: We have not finished yet."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/whose-direct-question"],
+  "lexicon": [
+    {
+      "en": "just",
+      "ru": "только что"
+    },
+    {
+      "en": "already",
+      "ru": "уже"
+    },
+    {
+      "en": "yet",
+      "ru": "ещё (в отрицании)"
+    },
+    {
+      "en": "finish",
+      "ru": "заканчивать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The parcel arrived a moment ago. It has ___ arrived.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "va0372d24601b",
+            "label": "yesterday"
+          },
+          {
+            "id": "vf7aa50c8360e",
+            "label": "just"
+          },
+          {
+            "id": "v1985e7a52c4b",
+            "label": "yet at end"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf7aa50c8360e"
+      },
+      "reference_answer": "vf7aa50c8360e",
+      "incorrect_answer": "v1985e7a52c4b",
+      "editorial_answer": "just",
+      "explanation": "A moment ago в пояснении соответствует значению just в выбранной модели.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: already / yet.",
+      "public_payload": {
+        "sentence": "We have not finished the report ___."
+      },
+      "answer_key": {
+        "accepted": ["yet"]
+      },
+      "reference_answer": "yet",
+      "incorrect_answer": "already",
+      "editorial_answer": "We have not finished the report yet.",
+      "explanation": "В обычном отрицании «ещё не закончили» используется yet в конце.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Она уже купила билеты.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "already"
+          },
+          {
+            "id": "t4",
+            "label": "bought"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "tickets."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "has"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "She has already bought the tickets.",
+      "explanation": "Already сообщает о выполненном к настоящему действии.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "They have not arrived already yet."
+      },
+      "answer_key": {
+        "accepted": ["They have not arrived yet."]
+      },
+      "reference_answer": "They have not arrived yet.",
+      "incorrect_answer": "They have not arrived already yet.",
+      "editorial_answer": "They have not arrived yet.",
+      "explanation": "В данном отрицании достаточно yet; лишнее already убирается.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что ещё не сделано?",
+      "public_payload": {
+        "passage": "The team is preparing for a school exhibition. I have already printed the labels, and Ben has just brought the display boards. We have not arranged the photographs yet. The room opens to visitors in an hour, so arranging the photographs is our next task.",
+        "options": [
+          {
+            "id": "v56b7914ae176",
+            "label": "The photographs have not been arranged."
+          },
+          {
+            "id": "v90c3b2639e72",
+            "label": "The labels have not been printed."
+          },
+          {
+            "id": "v34acb137d410",
+            "label": "The display boards have not arrived."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v56b7914ae176"
+      },
+      "reference_answer": "v56b7914ae176",
+      "incorrect_answer": "v90c3b2639e72",
+      "editorial_answer": "The photographs have not been arranged.",
+      "explanation": "Yet относится к размещению фотографий; остальные два действия выполнены.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "laf50cdd75459",
+            "label": "just"
+          },
+          {
+            "id": "lc7de88c40e31",
+            "label": "already"
+          },
+          {
+            "id": "lcd883c2d4a32",
+            "label": "yet"
+          },
+          {
+            "id": "lfb14ff3b9675",
+            "label": "finish"
+          }
+        ],
+        "right": [
+          {
+            "id": "r17841169c3f3",
+            "label": "ещё (в отрицании)"
+          },
+          {
+            "id": "r192f15e61038",
+            "label": "заканчивать"
+          },
+          {
+            "id": "ra8e43c8094c7",
+            "label": "только что"
+          },
+          {
+            "id": "r9bca86ffd9ea",
+            "label": "уже"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "laf50cdd75459": "ra8e43c8094c7",
+          "lc7de88c40e31": "r9bca86ffd9ea",
+          "lcd883c2d4a32": "r17841169c3f3",
+          "lfb14ff3b9675": "r192f15e61038"
+        }
+      },
+      "reference_answer": {
+        "laf50cdd75459": "ra8e43c8094c7",
+        "lc7de88c40e31": "r9bca86ffd9ea",
+        "lcd883c2d4a32": "r17841169c3f3",
+        "lfb14ff3b9675": "r192f15e61038"
+      },
+      "incorrect_answer": {
+        "laf50cdd75459": "r9bca86ffd9ea",
+        "lc7de88c40e31": "ra8e43c8094c7",
+        "lcd883c2d4a32": "r17841169c3f3",
+        "lfb14ff3b9675": "r192f15e61038"
+      },
+      "editorial_answer": "just — только что; already — уже; yet — ещё (в отрицании); finish — заканчивать",
+      "explanation": "В этих контекстах: just — только что; already — уже; yet — ещё (в отрицании); finish — заканчивать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Каков следующий шаг?",
+      "public_payload": {
+        "passage": "The team is preparing for a school exhibition. I have already printed the labels, and Ben has just brought the display boards. We have not arranged the photographs yet. The room opens to visitors in an hour, so arranging the photographs is our next task.",
+        "options": [
+          {
+            "id": "v336aa3282dee",
+            "label": "Print every label for the first time."
+          },
+          {
+            "id": "ve028d9b9938c",
+            "label": "Wait for visitors to bring the boards."
+          },
+          {
+            "id": "vcd0cdd963687",
+            "label": "Arrange the photographs."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vcd0cdd963687"
+      },
+      "reference_answer": "vcd0cdd963687",
+      "incorrect_answer": "v336aa3282dee",
+      "editorial_answer": "Arrange the photographs.",
+      "explanation": "Последняя фраза прямо называет следующую работу.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о завершённой отправке.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Have you sent the invitation?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v3494de59adf0",
+            "label": "Yes, I have already sent it."
+          },
+          {
+            "id": "vd72952159f22",
+            "label": "Yes, I have already send it."
+          },
+          {
+            "id": "vf05657113ead",
+            "label": "Yes, I already has sent it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3494de59adf0"
+      },
+      "reference_answer": "v3494de59adf0",
+      "incorrect_answer": "vd72952159f22",
+      "editorial_answer": "Yes, I have already sent it.",
+      "explanation": "Have already sent использует причастие sent.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "If something happened a very short time before now, it has ___ happened.",
+        "options": [
+          {
+            "id": "vf08b5a380bb9",
+            "label": "yet only at the end"
+          },
+          {
+            "id": "v66a039e7cb87",
+            "label": "tomorrow"
+          },
+          {
+            "id": "v93f7c93bc116",
+            "label": "just"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v93f7c93bc116"
+      },
+      "reference_answer": "v93f7c93bc116",
+      "incorrect_answer": "vf08b5a380bb9",
+      "editorial_answer": "just",
+      "explanation": "Just в этой модели означает «только что».",
+      "key": "e09"
+    }
+  ]
+}

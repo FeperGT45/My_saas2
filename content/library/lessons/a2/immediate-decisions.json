@@ -1,0 +1,334 @@
+{
+  "key": "a2/immediate-decisions",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 10,
+  "title": "Решение прямо во время разговора",
+  "description": "Решение прямо во время разговора: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать I will для нового решения",
+    "Сохранять начальную форму после will"
+  ],
+  "notes": [
+    "I will answer the door может выражать решение, принятое прямо сейчас.",
+    "Will not может выражать отказ или отрицательный прогноз; смысл определяется контекстом."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/just-already-yet"],
+  "lexicon": [
+    {
+      "en": "decide",
+      "ru": "решать"
+    },
+    {
+      "en": "answer",
+      "ru": "отвечать, открывать в сочетании answer the door"
+    },
+    {
+      "en": "notice",
+      "ru": "замечать"
+    },
+    {
+      "en": "choice",
+      "ru": "выбор"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The phone is ringing. I ___ it.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v88730ce445a7",
+            "label": "will answer"
+          },
+          {
+            "id": "ve6ff9eb0714b",
+            "label": "will answered"
+          },
+          {
+            "id": "v16532a7ac1bc",
+            "label": "will answering"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v88730ce445a7"
+      },
+      "reference_answer": "v88730ce445a7",
+      "incorrect_answer": "ve6ff9eb0714b",
+      "editorial_answer": "will answer",
+      "explanation": "Новое решение можно выразить will answer.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: buy / bought.",
+      "public_payload": {
+        "sentence": "We have no bread. I will ___ some on my way home."
+      },
+      "answer_key": {
+        "accepted": ["buy"]
+      },
+      "reference_answer": "buy",
+      "incorrect_answer": "bought",
+      "editorial_answer": "We have no bread. I will buy some on my way home.",
+      "explanation": "После will требуется buy.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я сейчас проверю адрес.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "check"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "address"
+          },
+          {
+            "id": "t6",
+            "label": "now."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "will"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "I will check the address now.",
+      "explanation": "Will check может объявлять решение, принятое в текущем разговоре.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I will takes the next bus."
+      },
+      "answer_key": {
+        "accepted": ["I will take the next bus."]
+      },
+      "reference_answer": "I will take the next bus.",
+      "incorrect_answer": "I will takes the next bus.",
+      "editorial_answer": "I will take the next bus.",
+      "explanation": "После will форма take не получает -s.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое решение приняла Ана?",
+      "public_payload": {
+        "passage": "Jules and Ana are leaving the house when they notice that the kitchen window is open. Ana says, “I will close it.” Jules offers to wait by the gate. After Ana returns, they walk to the bus stop together. Closing the window was not a task they had planned earlier.",
+        "options": [
+          {
+            "id": "v776553935235",
+            "label": "To stay at home all day."
+          },
+          {
+            "id": "va30d0e6da99a",
+            "label": "To buy a new gate."
+          },
+          {
+            "id": "v846118212a3a",
+            "label": "To close the kitchen window."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v846118212a3a"
+      },
+      "reference_answer": "v846118212a3a",
+      "incorrect_answer": "v776553935235",
+      "editorial_answer": "To close the kitchen window.",
+      "explanation": "Решение выражено в её реплике I will close it.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "ld9d47fa4c26c",
+            "label": "decide"
+          },
+          {
+            "id": "l222be74da1b8",
+            "label": "answer"
+          },
+          {
+            "id": "l79be3b5d050b",
+            "label": "notice"
+          },
+          {
+            "id": "l4464668d5b35",
+            "label": "choice"
+          }
+        ],
+        "right": [
+          {
+            "id": "r88e3a37b2dd5",
+            "label": "замечать"
+          },
+          {
+            "id": "r00fcdababac4",
+            "label": "выбор"
+          },
+          {
+            "id": "rba8a64819fcf",
+            "label": "решать"
+          },
+          {
+            "id": "rf7f6bc90fd7a",
+            "label": "отвечать, открывать в сочетании answer the door"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "ld9d47fa4c26c": "rba8a64819fcf",
+          "l222be74da1b8": "rf7f6bc90fd7a",
+          "l79be3b5d050b": "r88e3a37b2dd5",
+          "l4464668d5b35": "r00fcdababac4"
+        }
+      },
+      "reference_answer": {
+        "ld9d47fa4c26c": "rba8a64819fcf",
+        "l222be74da1b8": "rf7f6bc90fd7a",
+        "l79be3b5d050b": "r88e3a37b2dd5",
+        "l4464668d5b35": "r00fcdababac4"
+      },
+      "incorrect_answer": {
+        "ld9d47fa4c26c": "rf7f6bc90fd7a",
+        "l222be74da1b8": "rba8a64819fcf",
+        "l79be3b5d050b": "r88e3a37b2dd5",
+        "l4464668d5b35": "r00fcdababac4"
+      },
+      "editorial_answer": "decide — решать; answer — отвечать, открывать в сочетании answer the door; notice — замечать; choice — выбор",
+      "explanation": "В этих контекстах: decide — решать; answer — отвечать, открывать в сочетании answer the door; notice — замечать; choice — выбор.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где Жюль предложил подождать?",
+      "public_payload": {
+        "passage": "Jules and Ana are leaving the house when they notice that the kitchen window is open. Ana says, “I will close it.” Jules offers to wait by the gate. After Ana returns, they walk to the bus stop together. Closing the window was not a task they had planned earlier.",
+        "options": [
+          {
+            "id": "v1a7c19f40846",
+            "label": "At a shop in another town."
+          },
+          {
+            "id": "v8eefdd5f6839",
+            "label": "By the gate."
+          },
+          {
+            "id": "v94db2ca1a32c",
+            "label": "Inside the bus."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8eefdd5f6839"
+      },
+      "reference_answer": "v8eefdd5f6839",
+      "incorrect_answer": "v94db2ca1a32c",
+      "editorial_answer": "By the gate.",
+      "explanation": "Место ожидания названо до возвращения Аны.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Объяви решение открыть дверь сейчас.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Someone is knocking at the door."
+          }
+        ],
+        "options": [
+          {
+            "id": "v270d229e9dba",
+            "label": "I will answered it."
+          },
+          {
+            "id": "v8ac121787d2c",
+            "label": "I am will answers it."
+          },
+          {
+            "id": "v67c04dec5162",
+            "label": "I will answer it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v67c04dec5162"
+      },
+      "reference_answer": "v67c04dec5162",
+      "incorrect_answer": "v270d229e9dba",
+      "editorial_answer": "I will answer it.",
+      "explanation": "Will answer — правильная форма после will.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "When someone rings the bell, you may ___ the door.",
+        "options": [
+          {
+            "id": "v1674efc5d07f",
+            "label": "arrive"
+          },
+          {
+            "id": "va9807a4d0515",
+            "label": "answer"
+          },
+          {
+            "id": "v9c31548b08cf",
+            "label": "reply a letter through"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va9807a4d0515"
+      },
+      "reference_answer": "va9807a4d0515",
+      "incorrect_answer": "v9c31548b08cf",
+      "editorial_answer": "answer",
+      "explanation": "Answer the door означает подойти и открыть дверь пришедшему.",
+      "key": "e09"
+    }
+  ]
+}

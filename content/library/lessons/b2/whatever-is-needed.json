@@ -1,0 +1,342 @@
+{
+  "key": "b2/whatever-is-needed",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B2 · точность в общении",
+    "position": 30
+  },
+  "position": 4,
+  "title": "Whatever и whoever без точного выбора",
+  "description": "Whatever и whoever без точного выбора: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать whatever для любого подходящего предмета",
+    "Использовать whoever для любого подходящего человека"
+  ],
+  "notes": [
+    "Take whatever you need — возьми всё, что тебе нужно, без точного перечисления.",
+    "Whoever относится к человеку: Whoever arrives first can collect the key. Это не вопросительное предложение."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/prepositions-relative"],
+  "lexicon": [
+    {
+      "en": "whatever",
+      "ru": "всё, что"
+    },
+    {
+      "en": "whoever",
+      "ru": "любой, кто"
+    },
+    {
+      "en": "whichever",
+      "ru": "любой из ограниченного выбора"
+    },
+    {
+      "en": "requirement",
+      "ru": "требование"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ arrives first can collect the key from reception.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v5b85fc6588fd",
+            "label": "Which thing"
+          },
+          {
+            "id": "v16c366febc54",
+            "label": "Whoever"
+          },
+          {
+            "id": "ve6cc35725053",
+            "label": "Whatever"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v16c366febc54"
+      },
+      "reference_answer": "v16c366febc54",
+      "incorrect_answer": "ve6cc35725053",
+      "editorial_answer": "Whoever",
+      "explanation": "Речь о человеке, поэтому Whoever.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: whatever / whoever.",
+      "public_payload": {
+        "sentence": "Take ___ materials you need from this table."
+      },
+      "answer_key": {
+        "accepted": ["whatever"]
+      },
+      "reference_answer": "whatever",
+      "incorrect_answer": "whoever",
+      "editorial_answer": "Take whatever materials you need from this table.",
+      "explanation": "Materials — предметы, не люди.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Тот, кто закончит первым, может помочь следующей группе.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "first"
+          },
+          {
+            "id": "t4",
+            "label": "can"
+          },
+          {
+            "id": "t5",
+            "label": "help"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "next"
+          },
+          {
+            "id": "t8",
+            "label": "group."
+          },
+          {
+            "id": "t1",
+            "label": "Whoever"
+          },
+          {
+            "id": "t2",
+            "label": "finishes"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "Whoever finishes first can help the next group.",
+      "explanation": "Whoever вводит неопределённого по личности участника.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Whatever person arrives first can collects the key."
+      },
+      "answer_key": {
+        "accepted": ["Whatever person arrives first can collect the key."]
+      },
+      "reference_answer": "Whatever person arrives first can collect the key.",
+      "incorrect_answer": "Whatever person arrives first can collects the key.",
+      "editorial_answer": "Whatever person arrives first can collect the key.",
+      "explanation": "После can убирается -s у collect; whatever person здесь допустимо как «любой человек».",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что означало take whatever they needed?",
+      "public_payload": {
+        "passage": "The workshop leader placed spare materials on a table and told groups to take whatever they needed for their own designs. This was permission to choose relevant materials, not an instruction to take the whole supply. Whoever finished the first stage could help another group, provided that their own tools had been put away safely. Several participants welcomed the flexibility, while the leader reminded them that an open choice still operated within the stated purpose and safety rules.",
+        "options": [
+          {
+            "id": "vab3ee3e209d7",
+            "label": "Choose materials relevant to their designs."
+          },
+          {
+            "id": "vd5964ea650e7",
+            "label": "Take the entire supply regardless of need."
+          },
+          {
+            "id": "vbcabcc16825a",
+            "label": "Ignore all safety rules."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vab3ee3e209d7"
+      },
+      "reference_answer": "vab3ee3e209d7",
+      "incorrect_answer": "vd5964ea650e7",
+      "editorial_answer": "Choose materials relevant to their designs.",
+      "explanation": "Need и контекст собственных проектов ограничивают цель выбора.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1253f743a3a5",
+            "label": "whatever"
+          },
+          {
+            "id": "l3a00fe208afc",
+            "label": "whoever"
+          },
+          {
+            "id": "l9c26f47a6307",
+            "label": "whichever"
+          },
+          {
+            "id": "la30dc96f9513",
+            "label": "requirement"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2d581c40a53a",
+            "label": "любой из ограниченного выбора"
+          },
+          {
+            "id": "r6cb07fe32bd0",
+            "label": "требование"
+          },
+          {
+            "id": "r98caf275593b",
+            "label": "всё, что"
+          },
+          {
+            "id": "r743a56f9d44a",
+            "label": "любой, кто"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1253f743a3a5": "r98caf275593b",
+          "l3a00fe208afc": "r743a56f9d44a",
+          "l9c26f47a6307": "r2d581c40a53a",
+          "la30dc96f9513": "r6cb07fe32bd0"
+        }
+      },
+      "reference_answer": {
+        "l1253f743a3a5": "r98caf275593b",
+        "l3a00fe208afc": "r743a56f9d44a",
+        "l9c26f47a6307": "r2d581c40a53a",
+        "la30dc96f9513": "r6cb07fe32bd0"
+      },
+      "incorrect_answer": {
+        "l1253f743a3a5": "r743a56f9d44a",
+        "l3a00fe208afc": "r98caf275593b",
+        "l9c26f47a6307": "r2d581c40a53a",
+        "la30dc96f9513": "r6cb07fe32bd0"
+      },
+      "editorial_answer": "whatever — всё, что; whoever — любой, кто; whichever — любой из ограниченного выбора; requirement — требование",
+      "explanation": "В этих контекстах: whatever — всё, что; whoever — любой, кто; whichever — любой из ограниченного выбора; requirement — требование.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "При каком условии можно помочь другой группе?",
+      "public_payload": {
+        "passage": "The workshop leader placed spare materials on a table and told groups to take whatever they needed for their own designs. This was permission to choose relevant materials, not an instruction to take the whole supply. Whoever finished the first stage could help another group, provided that their own tools had been put away safely. Several participants welcomed the flexibility, while the leader reminded them that an open choice still operated within the stated purpose and safety rules.",
+        "options": [
+          {
+            "id": "v39cb75d8b484",
+            "label": "Before dealing with any of their own tools."
+          },
+          {
+            "id": "v96b7d8e0ff6e",
+            "label": "Only after taking every material from the table."
+          },
+          {
+            "id": "v9a3f3a109aac",
+            "label": "After putting away their own tools safely."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9a3f3a109aac"
+      },
+      "reference_answer": "v9a3f3a109aac",
+      "incorrect_answer": "v39cb75d8b484",
+      "editorial_answer": "After putting away their own tools safely.",
+      "explanation": "Требование безопасно убрать инструменты дано явно.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сформулируй правило для любого первого добровольца.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "We do not know which volunteer will arrive first."
+          }
+        ],
+        "options": [
+          {
+            "id": "veed361066936",
+            "label": "Whoever arrives first can open the room."
+          },
+          {
+            "id": "v4073d570f544",
+            "label": "Whatever arrives first can open the room, referring to a volunteer."
+          },
+          {
+            "id": "vc880743c77b6",
+            "label": "Whoever arrive first can opens the room."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "veed361066936"
+      },
+      "reference_answer": "veed361066936",
+      "incorrect_answer": "v4073d570f544",
+      "editorial_answer": "Whoever arrives first can open the room.",
+      "explanation": "Whoever относится к человеку; arrives и can open оформлены правильно.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "For an unspecified person satisfying a condition, use ___.",
+        "options": [
+          {
+            "id": "va6ca59e91ab9",
+            "label": "whatever"
+          },
+          {
+            "id": "v1cae9ecec76b",
+            "label": "wherever"
+          },
+          {
+            "id": "v714459bfbf29",
+            "label": "whoever"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v714459bfbf29"
+      },
+      "reference_answer": "v714459bfbf29",
+      "incorrect_answer": "va6ca59e91ab9",
+      "editorial_answer": "whoever",
+      "explanation": "Whoever — любой человек, который соответствует условию.",
+      "key": "e09"
+    }
+  ]
+}

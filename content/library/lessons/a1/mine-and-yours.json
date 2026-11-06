@@ -1,0 +1,330 @@
+{
+  "key": "a1/mine-and-yours",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 6,
+  "title": "Чья вещь без повторения названия",
+  "description": "Чья вещь без повторения названия: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать mine/yours самостоятельно",
+    "Отличать my book от the book is mine"
+  ],
+  "notes": [
+    "My и your стоят перед существительным: my bag, your bag.",
+    "Mine и yours заменяют всю группу: This bag is mine. После них bag не повторяется."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/people-and-children"],
+  "lexicon": [
+    {
+      "en": "mine",
+      "ru": "мой, моя, моё (самостоятельно)"
+    },
+    {
+      "en": "yours",
+      "ru": "твой, твоя, ваше (самостоятельно)"
+    },
+    {
+      "en": "borrow",
+      "ru": "брать взаймы"
+    },
+    {
+      "en": "return",
+      "ru": "возвращать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: This is my notebook. The notebook is ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v37b0d2bddf11",
+            "label": "me"
+          },
+          {
+            "id": "ve57bada1d9ce",
+            "label": "mine"
+          },
+          {
+            "id": "va8b10815dd3a",
+            "label": "my"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve57bada1d9ce"
+      },
+      "reference_answer": "ve57bada1d9ce",
+      "incorrect_answer": "va8b10815dd3a",
+      "editorial_answer": "mine",
+      "explanation": "Без последующего существительного нужна самостоятельная форма mine.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: your / yours.",
+      "public_payload": {
+        "sentence": "Is this ___ umbrella?"
+      },
+      "answer_key": {
+        "accepted": ["your"]
+      },
+      "reference_answer": "your",
+      "incorrect_answer": "yours",
+      "editorial_answer": "Is this your umbrella?",
+      "explanation": "Перед umbrella используется your.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Синяя сумка — моя.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "bag"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "mine."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "blue"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "The blue bag is mine.",
+      "explanation": "Mine употребляется без повторения слова bag.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "This pen is my."
+      },
+      "answer_key": {
+        "accepted": ["This pen is mine."]
+      },
+      "reference_answer": "This pen is mine.",
+      "incorrect_answer": "This pen is my.",
+      "editorial_answer": "This pen is mine.",
+      "explanation": "После is без существительного нужно mine.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой зонт принадлежит говорящему?",
+      "public_payload": {
+        "passage": "There are two umbrellas by the door. The red one is mine. The black one is yours. You can borrow mine today, but please return it tomorrow.",
+        "options": [
+          {
+            "id": "v9d3f17908d50",
+            "label": "The red one."
+          },
+          {
+            "id": "v88ee97d6f004",
+            "label": "The black one."
+          },
+          {
+            "id": "v0469acb04ab9",
+            "label": "Both umbrellas."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9d3f17908d50"
+      },
+      "reference_answer": "v9d3f17908d50",
+      "incorrect_answer": "v88ee97d6f004",
+      "editorial_answer": "The red one.",
+      "explanation": "Mine относится к красному зонту.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lf89ae255e564",
+            "label": "mine"
+          },
+          {
+            "id": "l696c0d81a21b",
+            "label": "yours"
+          },
+          {
+            "id": "l394f03df989b",
+            "label": "borrow"
+          },
+          {
+            "id": "l2e8c44f2cb34",
+            "label": "return"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1fa69c03368f",
+            "label": "брать взаймы"
+          },
+          {
+            "id": "rb090a2cb8229",
+            "label": "возвращать"
+          },
+          {
+            "id": "rdd6974dbf6a4",
+            "label": "мой, моя, моё (самостоятельно)"
+          },
+          {
+            "id": "rf77d771ea078",
+            "label": "твой, твоя, ваше (самостоятельно)"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lf89ae255e564": "rdd6974dbf6a4",
+          "l696c0d81a21b": "rf77d771ea078",
+          "l394f03df989b": "r1fa69c03368f",
+          "l2e8c44f2cb34": "rb090a2cb8229"
+        }
+      },
+      "reference_answer": {
+        "lf89ae255e564": "rdd6974dbf6a4",
+        "l696c0d81a21b": "rf77d771ea078",
+        "l394f03df989b": "r1fa69c03368f",
+        "l2e8c44f2cb34": "rb090a2cb8229"
+      },
+      "incorrect_answer": {
+        "lf89ae255e564": "rf77d771ea078",
+        "l696c0d81a21b": "rdd6974dbf6a4",
+        "l394f03df989b": "r1fa69c03368f",
+        "l2e8c44f2cb34": "rb090a2cb8229"
+      },
+      "editorial_answer": "mine — мой, моя, моё (самостоятельно); yours — твой, твоя, ваше (самостоятельно); borrow — брать взаймы; return — возвращать",
+      "explanation": "В этих контекстах: mine — мой, моя, моё (самостоятельно); yours — твой, твоя, ваше (самостоятельно); borrow — брать взаймы; return — возвращать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда нужно вернуть одолженный зонт?",
+      "public_payload": {
+        "passage": "There are two umbrellas by the door. The red one is mine. The black one is yours. You can borrow mine today, but please return it tomorrow.",
+        "options": [
+          {
+            "id": "vc00e871b60b8",
+            "label": "Next month."
+          },
+          {
+            "id": "v74ea5ba4e499",
+            "label": "Before borrowing it."
+          },
+          {
+            "id": "v79ece75e85c7",
+            "label": "Tomorrow."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v79ece75e85c7"
+      },
+      "reference_answer": "v79ece75e85c7",
+      "incorrect_answer": "vc00e871b60b8",
+      "editorial_answer": "Tomorrow.",
+      "explanation": "Просьба о возврате задаёт tomorrow.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь без повторения phone.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Is this your phone?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v9811c70054ac",
+            "label": "Yes, it is mine."
+          },
+          {
+            "id": "va7b7559dfbda",
+            "label": "Yes, it is my."
+          },
+          {
+            "id": "v01a41f1712fc",
+            "label": "Yes, it is me."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9811c70054ac"
+      },
+      "reference_answer": "v9811c70054ac",
+      "incorrect_answer": "va7b7559dfbda",
+      "editorial_answer": "Yes, it is mine.",
+      "explanation": "Самостоятельное mine заменяет my phone.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Please ___ the book after you read it.",
+        "options": [
+          {
+            "id": "v231042a683a5",
+            "label": "borrow again forever"
+          },
+          {
+            "id": "vc2c2c6dc2fa2",
+            "label": "colour"
+          },
+          {
+            "id": "vea89a1d7012b",
+            "label": "return"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vea89a1d7012b"
+      },
+      "reference_answer": "vea89a1d7012b",
+      "incorrect_answer": "v231042a683a5",
+      "editorial_answer": "return",
+      "explanation": "Return — вернуть уже взятую вещь.",
+      "key": "e09"
+    }
+  ]
+}

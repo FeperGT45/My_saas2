@@ -1,0 +1,334 @@
+{
+  "key": "a1/workdays-and-weekend",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 11,
+  "title": "Будни и выходные в расписании",
+  "description": "Будни и выходные в расписании: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Понимать from ... to ... в диапазоне дней",
+    "Отличать расписание от отдельного события"
+  ],
+  "notes": [
+    "From Monday to Friday задаёт диапазон от понедельника до пятницы.",
+    "On Saturdays может обозначать повторяющееся действие по субботам."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/countries-and-languages"],
+  "lexicon": [
+    {
+      "en": "weekday",
+      "ru": "будний день"
+    },
+    {
+      "en": "weekend",
+      "ru": "выходные"
+    },
+    {
+      "en": "Saturday",
+      "ru": "суббота"
+    },
+    {
+      "en": "closed",
+      "ru": "закрытый"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The office is open ___ Monday to Friday.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v17dec2febf63",
+            "label": "at"
+          },
+          {
+            "id": "v526753d3c589",
+            "label": "between of"
+          },
+          {
+            "id": "v12ce5c81395d",
+            "label": "from"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v12ce5c81395d"
+      },
+      "reference_answer": "v12ce5c81395d",
+      "incorrect_answer": "v17dec2febf63",
+      "editorial_answer": "from",
+      "explanation": "Диапазон оформляется from ... to ...",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: at / on.",
+      "public_payload": {
+        "sentence": "The shop is closed ___ Sundays."
+      },
+      "answer_key": {
+        "accepted": ["on"]
+      },
+      "reference_answer": "on",
+      "incorrect_answer": "at",
+      "editorial_answer": "The shop is closed on Sundays.",
+      "explanation": "С названием дня недели используется on.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы работаем с понедельника по пятницу.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "from"
+          },
+          {
+            "id": "t4",
+            "label": "Monday"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "Friday."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "work"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "We work from Monday to Friday.",
+      "explanation": "From ... to ... задаёт диапазон рабочих дней.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The office is open from Monday at Friday."
+      },
+      "answer_key": {
+        "accepted": ["The office is open from Monday to Friday."]
+      },
+      "reference_answer": "The office is open from Monday to Friday.",
+      "incorrect_answer": "The office is open from Monday at Friday.",
+      "editorial_answer": "The office is open from Monday to Friday.",
+      "explanation": "В заданном диапазоне from соответствует to, а не at.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "В какой день библиотека закрыта?",
+      "public_payload": {
+        "passage": "The library is open from Monday to Saturday. It is closed on Sundays. On Saturdays, Dan goes there with his daughter. On weekdays, he reads at home after work.",
+        "options": [
+          {
+            "id": "ve84c76a87689",
+            "label": "Monday."
+          },
+          {
+            "id": "v7c22725729a3",
+            "label": "Sunday."
+          },
+          {
+            "id": "v2c95c74106a5",
+            "label": "Saturday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7c22725729a3"
+      },
+      "reference_answer": "v7c22725729a3",
+      "incorrect_answer": "v2c95c74106a5",
+      "editorial_answer": "Sunday.",
+      "explanation": "On Sundays обозначает день закрытия.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lb29a11928276",
+            "label": "weekday"
+          },
+          {
+            "id": "lfad4b7b2f07f",
+            "label": "weekend"
+          },
+          {
+            "id": "la7d92abbada8",
+            "label": "Saturday"
+          },
+          {
+            "id": "lf1d2afde6612",
+            "label": "closed"
+          }
+        ],
+        "right": [
+          {
+            "id": "re905be71b0dc",
+            "label": "суббота"
+          },
+          {
+            "id": "r11e6d8d669c0",
+            "label": "закрытый"
+          },
+          {
+            "id": "r838dc6cf241a",
+            "label": "будний день"
+          },
+          {
+            "id": "rba81a669d749",
+            "label": "выходные"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lb29a11928276": "r838dc6cf241a",
+          "lfad4b7b2f07f": "rba81a669d749",
+          "la7d92abbada8": "re905be71b0dc",
+          "lf1d2afde6612": "r11e6d8d669c0"
+        }
+      },
+      "reference_answer": {
+        "lb29a11928276": "r838dc6cf241a",
+        "lfad4b7b2f07f": "rba81a669d749",
+        "la7d92abbada8": "re905be71b0dc",
+        "lf1d2afde6612": "r11e6d8d669c0"
+      },
+      "incorrect_answer": {
+        "lb29a11928276": "rba81a669d749",
+        "lfad4b7b2f07f": "r838dc6cf241a",
+        "la7d92abbada8": "re905be71b0dc",
+        "lf1d2afde6612": "r11e6d8d669c0"
+      },
+      "editorial_answer": "weekday — будний день; weekend — выходные; Saturday — суббота; closed — закрытый",
+      "explanation": "В этих контекстах: weekday — будний день; weekend — выходные; Saturday — суббота; closed — закрытый.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда Дэн обычно ходит в библиотеку с дочерью?",
+      "public_payload": {
+        "passage": "The library is open from Monday to Saturday. It is closed on Sundays. On Saturdays, Dan goes there with his daughter. On weekdays, he reads at home after work.",
+        "options": [
+          {
+            "id": "v9c6230f7c019",
+            "label": "On Saturdays."
+          },
+          {
+            "id": "v8e13964b4273",
+            "label": "Every weekday morning."
+          },
+          {
+            "id": "vc4de1b973c71",
+            "label": "On Sundays."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9c6230f7c019"
+      },
+      "reference_answer": "v9c6230f7c019",
+      "incorrect_answer": "v8e13964b4273",
+      "editorial_answer": "On Saturdays.",
+      "explanation": "Посещение с дочерью отнесено к субботам.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи о повторяющемся дне закрытия.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Is the café open on Sunday?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v6678825bca9a",
+            "label": "No, it are close on Sundays."
+          },
+          {
+            "id": "v8e4653b84dda",
+            "label": "No, it is closed on Sundays."
+          },
+          {
+            "id": "v078d99275233",
+            "label": "No, it is closed at Sundays."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8e4653b84dda"
+      },
+      "reference_answer": "v8e4653b84dda",
+      "incorrect_answer": "v078d99275233",
+      "editorial_answer": "No, it is closed on Sundays.",
+      "explanation": "Is closed согласуется с it; on используется с Sundays.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Monday is usually a ___.",
+        "options": [
+          {
+            "id": "v5b38564d00d3",
+            "label": "weekday"
+          },
+          {
+            "id": "vb54c3470b61b",
+            "label": "weekend by definition"
+          },
+          {
+            "id": "va599a3fc3685",
+            "label": "month"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5b38564d00d3"
+      },
+      "reference_answer": "v5b38564d00d3",
+      "incorrect_answer": "vb54c3470b61b",
+      "editorial_answer": "weekday",
+      "explanation": "Monday — будний день в обычном недельном календаре.",
+      "key": "e09"
+    }
+  ]
+}

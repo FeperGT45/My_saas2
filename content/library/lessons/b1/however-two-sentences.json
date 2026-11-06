@@ -1,0 +1,342 @@
+{
+  "key": "b1/however-two-sentences",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B1 · точность в общении",
+    "position": 30
+  },
+  "position": 7,
+  "title": "Но и однако между предложениями",
+  "description": "Но и однако между предложениями: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать however для перехода между сообщениями",
+    "Отличать however от although в структуре предложения"
+  ],
+  "notes": [
+    "However может соединять смысл двух отдельных предложений: It was late. However, we continued.",
+    "Although вводит придаточную часть; however не подставляется на его место механически."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/zero-conditional-rules"],
+  "lexicon": [
+    {
+      "en": "however",
+      "ru": "однако"
+    },
+    {
+      "en": "contrast",
+      "ru": "контраст"
+    },
+    {
+      "en": "continue",
+      "ru": "продолжать"
+    },
+    {
+      "en": "reservation",
+      "ru": "оговорка, сомнение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The room was small. ___, it was suitable for six people.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v82f994c32b52",
+            "label": "However"
+          },
+          {
+            "id": "v9c684072f658",
+            "label": "Although of"
+          },
+          {
+            "id": "v96b74514894f",
+            "label": "Despite of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v82f994c32b52"
+      },
+      "reference_answer": "v82f994c32b52",
+      "incorrect_answer": "v9c684072f658",
+      "editorial_answer": "However",
+      "explanation": "However вводит контраст ко всему следующему предложению.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: Because of / However.",
+      "public_payload": {
+        "sentence": "The first plan was expensive. ___, the group preferred it for its reliability."
+      },
+      "answer_key": {
+        "accepted": ["However"]
+      },
+      "reference_answer": "However",
+      "incorrect_answer": "Because of",
+      "editorial_answer": "The first plan was expensive. However, the group preferred it for its reliability.",
+      "explanation": "Контраст цены и выбора выражается However; because of не вводит такую полную часть.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Было поздно. Однако мы продолжили обсуждение.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "late."
+          },
+          {
+            "id": "t4",
+            "label": "However,"
+          },
+          {
+            "id": "t5",
+            "label": "we"
+          },
+          {
+            "id": "t6",
+            "label": "continued"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "discussion."
+          },
+          {
+            "id": "t1",
+            "label": "It"
+          },
+          {
+            "id": "t2",
+            "label": "was"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "It was late. However, we continued the discussion.",
+      "explanation": "However оформляет противопоставление двух самостоятельных сообщений.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Although, the room was small, it had enough seats."
+      },
+      "answer_key": {
+        "accepted": ["Although the room was small, it had enough seats."]
+      },
+      "reference_answer": "Although the room was small, it had enough seats.",
+      "incorrect_answer": "Although, the room was small, it had enough seats.",
+      "editorial_answer": "Although the room was small, it had enough seats.",
+      "explanation": "После although перед подлежащим в этой конструкции лишняя запятая.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой недостаток выявляет However?",
+      "public_payload": {
+        "passage": "A local group considered two rooms for a workshop. The smaller room was cheaper and easy to reach. However, its narrow doorway made moving large display boards difficult. The larger room cost more but had a wide entrance. The group chose it because the boards were essential to the activity, while still recording cost as a disadvantage.",
+        "options": [
+          {
+            "id": "v5620e064d59b",
+            "label": "The larger room was impossible to reach."
+          },
+          {
+            "id": "v14cc764426a3",
+            "label": "The display boards were not needed."
+          },
+          {
+            "id": "v2f3ef20c9ab7",
+            "label": "The smaller room’s doorway was narrow."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2f3ef20c9ab7"
+      },
+      "reference_answer": "v2f3ef20c9ab7",
+      "incorrect_answer": "v5620e064d59b",
+      "editorial_answer": "The smaller room’s doorway was narrow.",
+      "explanation": "However вводит ограничение при наличии достоинств меньшей комнаты.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l368fe1ff965f",
+            "label": "however"
+          },
+          {
+            "id": "l8e6d59f433bb",
+            "label": "contrast"
+          },
+          {
+            "id": "l2b1eff0cfc73",
+            "label": "continue"
+          },
+          {
+            "id": "l1fb4f89ce79f",
+            "label": "reservation"
+          }
+        ],
+        "right": [
+          {
+            "id": "re067932419f3",
+            "label": "продолжать"
+          },
+          {
+            "id": "rb4bef403b9e9",
+            "label": "оговорка, сомнение"
+          },
+          {
+            "id": "rc33360684deb",
+            "label": "однако"
+          },
+          {
+            "id": "r67132e38756c",
+            "label": "контраст"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l368fe1ff965f": "rc33360684deb",
+          "l8e6d59f433bb": "r67132e38756c",
+          "l2b1eff0cfc73": "re067932419f3",
+          "l1fb4f89ce79f": "rb4bef403b9e9"
+        }
+      },
+      "reference_answer": {
+        "l368fe1ff965f": "rc33360684deb",
+        "l8e6d59f433bb": "r67132e38756c",
+        "l2b1eff0cfc73": "re067932419f3",
+        "l1fb4f89ce79f": "rb4bef403b9e9"
+      },
+      "incorrect_answer": {
+        "l368fe1ff965f": "r67132e38756c",
+        "l8e6d59f433bb": "rc33360684deb",
+        "l2b1eff0cfc73": "re067932419f3",
+        "l1fb4f89ce79f": "rb4bef403b9e9"
+      },
+      "editorial_answer": "however — однако; contrast — контраст; continue — продолжать; reservation — оговорка, сомнение",
+      "explanation": "В этих контекстах: however — однако; contrast — контраст; continue — продолжать; reservation — оговорка, сомнение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как группа отнеслась к более высокой цене?",
+      "public_payload": {
+        "passage": "A local group considered two rooms for a workshop. The smaller room was cheaper and easy to reach. However, its narrow doorway made moving large display boards difficult. The larger room cost more but had a wide entrance. The group chose it because the boards were essential to the activity, while still recording cost as a disadvantage.",
+        "options": [
+          {
+            "id": "v9610edba5162",
+            "label": "It ignored every cost completely."
+          },
+          {
+            "id": "v97f455de2c3f",
+            "label": "It still recognised it as a disadvantage."
+          },
+          {
+            "id": "va24f71b97934",
+            "label": "It proved that the higher price had vanished."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v97f455de2c3f"
+      },
+      "reference_answer": "v97f455de2c3f",
+      "incorrect_answer": "va24f71b97934",
+      "editorial_answer": "It still recognised it as a disadvantage.",
+      "explanation": "Выбор по другому критерию не отменяет признанного недостатка цены.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери правильно оформленный переход.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can I start a contrasting second sentence with however?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vfd048fa005fd",
+            "label": "Yes: “However the route longer is.”"
+          },
+          {
+            "id": "vbd92c5b471f2",
+            "label": "Yes: “However of the route is safer.”"
+          },
+          {
+            "id": "v75bef77fd040",
+            "label": "Yes: “The route is longer. However, it is safer.”"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v75bef77fd040"
+      },
+      "reference_answer": "v75bef77fd040",
+      "incorrect_answer": "vfd048fa005fd",
+      "editorial_answer": "Yes: “The route is longer. However, it is safer.”",
+      "explanation": "В первом варианте две самостоятельные части и вводное However.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A difference presented between two ideas is a ___.",
+        "options": [
+          {
+            "id": "vb74acc06bd90",
+            "label": "deadline"
+          },
+          {
+            "id": "ve4a4c8686710",
+            "label": "contrast"
+          },
+          {
+            "id": "v798584b548dd",
+            "label": "receipt"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve4a4c8686710"
+      },
+      "reference_answer": "ve4a4c8686710",
+      "incorrect_answer": "v798584b548dd",
+      "editorial_answer": "contrast",
+      "explanation": "Contrast — сопоставленное различие.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,366 @@
+{
+  "key": "b1/zero-conditional-rules",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B1 · точность в общении",
+    "position": 30
+  },
+  "position": 6,
+  "title": "Общее правило с if",
+  "description": "Общее правило с if: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Выражать повторяющееся правило через if + Present Simple",
+    "Отличать правило от отдельного будущего обещания"
+  ],
+  "notes": [
+    "Для общего правила часто используются две настоящие формы: If a visitor arrives late, the receptionist records the time.",
+    "Такое предложение описывает принятую процедуру, а не гарантирует каждое действие любого человека."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/enough-to-result"],
+  "lexicon": [
+    {
+      "en": "procedure",
+      "ru": "процедура"
+    },
+    {
+      "en": "record",
+      "ru": "записывать"
+    },
+    {
+      "en": "valid",
+      "ru": "действительный"
+    },
+    {
+      "en": "notify",
+      "ru": "уведомлять"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: In our procedure, if a card expires, the system ___ access.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vb117467db75d",
+            "label": "blocking"
+          },
+          {
+            "id": "v8a39df409d98",
+            "label": "blocks"
+          },
+          {
+            "id": "vf902c70c6d9f",
+            "label": "block"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8a39df409d98"
+      },
+      "reference_answer": "v8a39df409d98",
+      "incorrect_answer": "vf902c70c6d9f",
+      "editorial_answer": "blocks",
+      "explanation": "The system требует blocks в Present Simple.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: needs / need.",
+      "public_payload": {
+        "sentence": "If a visitor ___ help, the desk calls a volunteer."
+      },
+      "answer_key": {
+        "accepted": ["needs"]
+      },
+      "reference_answer": "needs",
+      "incorrect_answer": "need",
+      "editorial_answer": "If a visitor needs help, the desk calls a volunteer.",
+      "explanation": "A visitor — единственное число, поэтому needs.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Если посетитель опаздывает, мы записываем время.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "visitor"
+          },
+          {
+            "id": "t4",
+            "label": "arrives"
+          },
+          {
+            "id": "t5",
+            "label": "late,"
+          },
+          {
+            "id": "t6",
+            "label": "we"
+          },
+          {
+            "id": "t7",
+            "label": "record"
+          },
+          {
+            "id": "t8",
+            "label": "the"
+          },
+          {
+            "id": "t9",
+            "label": "time."
+          },
+          {
+            "id": "t1",
+            "label": "If"
+          },
+          {
+            "id": "t2",
+            "label": "a"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "If a visitor arrives late, we record the time.",
+      "explanation": "Обе настоящие формы описывают установленную процедуру.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "If the card expire, the system blocks it."
+      },
+      "answer_key": {
+        "accepted": ["If the card expires, the system blocks it."]
+      },
+      "reference_answer": "If the card expires, the system blocks it.",
+      "incorrect_answer": "If the card expire, the system blocks it.",
+      "editorial_answer": "If the card expires, the system blocks it.",
+      "explanation": "С the card в настоящем нужно expires.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что проверяют после сообщения о потере карты?",
+      "public_payload": {
+        "passage": "The visitor centre has a written procedure for lost cards. If a visitor loses a card, the desk checks the person’s booking details. If the details match, a replacement is issued and the old card is blocked. The procedure aims to prevent the old card from being used again. Staff still have to follow the steps; the written rule alone cannot show that every past case was handled correctly.",
+        "options": [
+          {
+            "id": "v399ee93f6ac6",
+            "label": "The visitor’s booking details."
+          },
+          {
+            "id": "va1aecfe411c7",
+            "label": "The weather forecast."
+          },
+          {
+            "id": "v6ca62aa979ca",
+            "label": "Every unrelated visitor’s bag."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v399ee93f6ac6"
+      },
+      "reference_answer": "v399ee93f6ac6",
+      "incorrect_answer": "va1aecfe411c7",
+      "editorial_answer": "The visitor’s booking details.",
+      "explanation": "Первый шаг — проверка сведений о бронировании.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l0e45fbc84783",
+            "label": "procedure"
+          },
+          {
+            "id": "l31f76a0e5758",
+            "label": "record"
+          },
+          {
+            "id": "lbb72172de804",
+            "label": "valid"
+          },
+          {
+            "id": "l3bcafbddce25",
+            "label": "notify"
+          }
+        ],
+        "right": [
+          {
+            "id": "ref16f912369d",
+            "label": "действительный"
+          },
+          {
+            "id": "rc63dd11b0949",
+            "label": "уведомлять"
+          },
+          {
+            "id": "r3d75b2aabf17",
+            "label": "процедура"
+          },
+          {
+            "id": "rb5f70f7256d4",
+            "label": "записывать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l0e45fbc84783": "r3d75b2aabf17",
+          "l31f76a0e5758": "rb5f70f7256d4",
+          "lbb72172de804": "ref16f912369d",
+          "l3bcafbddce25": "rc63dd11b0949"
+        }
+      },
+      "reference_answer": {
+        "l0e45fbc84783": "r3d75b2aabf17",
+        "l31f76a0e5758": "rb5f70f7256d4",
+        "lbb72172de804": "ref16f912369d",
+        "l3bcafbddce25": "rc63dd11b0949"
+      },
+      "incorrect_answer": {
+        "l0e45fbc84783": "rb5f70f7256d4",
+        "l31f76a0e5758": "r3d75b2aabf17",
+        "lbb72172de804": "ref16f912369d",
+        "l3bcafbddce25": "rc63dd11b0949"
+      },
+      "editorial_answer": "procedure — процедура; record — записывать; valid — действительный; notify — уведомлять",
+      "explanation": "В этих контекстах: procedure — процедура; record — записывать; valid — действительный; notify — уведомлять.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Доказывает ли наличие процедуры её выполнение во всех прошлых случаях?",
+      "public_payload": {
+        "passage": "The visitor centre has a written procedure for lost cards. If a visitor loses a card, the desk checks the person’s booking details. If the details match, a replacement is issued and the old card is blocked. The procedure aims to prevent the old card from being used again. Staff still have to follow the steps; the written rule alone cannot show that every past case was handled correctly.",
+        "options": [
+          {
+            "id": "ve906342567de",
+            "label": "Yes; a written rule proves every past action."
+          },
+          {
+            "id": "vf1965cd1f765",
+            "label": "Yes; replacement cards cannot ever be misused."
+          },
+          {
+            "id": "vd2a0c5c1ce02",
+            "label": "No; staff still have to follow it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd2a0c5c1ce02"
+      },
+      "reference_answer": "vd2a0c5c1ce02",
+      "incorrect_answer": "ve906342567de",
+      "editorial_answer": "No; staff still have to follow it.",
+      "explanation": "Последняя фраза различает правило и доказательство его соблюдения.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь общей процедурой в настоящем времени.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What usually happens if a booking is incomplete?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vb6af03c8af75",
+            "label": "The desk contacts the applicant."
+          },
+          {
+            "id": "v6279a26a9ebc",
+            "label": "The desk contacting the applicant."
+          },
+          {
+            "id": "vc78a7f647f2c",
+            "label": "The desk contact the applicant yesterday usually."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb6af03c8af75"
+      },
+      "reference_answer": "vb6af03c8af75",
+      "incorrect_answer": "v6279a26a9ebc",
+      "editorial_answer": "The desk contacts the applicant.",
+      "explanation": "The desk contacts — согласованное правило.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To tell someone about an event officially is to ___ them.",
+        "options": [
+          {
+            "id": "v6197dccdcd1f",
+            "label": "exclude"
+          },
+          {
+            "id": "v0b04b0f804fd",
+            "label": "expire"
+          },
+          {
+            "id": "ve447e5121199",
+            "label": "notify"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve447e5121199"
+      },
+      "reference_answer": "ve447e5121199",
+      "incorrect_answer": "v6197dccdcd1f",
+      "editorial_answer": "notify",
+      "explanation": "Notify — уведомлять.",
+      "key": "e09"
+    }
+  ]
+}

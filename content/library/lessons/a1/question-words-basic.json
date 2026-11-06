@@ -1,0 +1,334 @@
+{
+  "key": "a1/question-words-basic",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 2,
+  "title": "Что, где и когда",
+  "description": "Что, где и когда: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Различать What, Where и When",
+    "Выбирать вопрос по нужной информации"
+  ],
+  "notes": [
+    "What спрашивает о предмете или занятии; Where — о месте.",
+    "When спрашивает о времени: When is the lesson?"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/daily-negatives"],
+  "lexicon": [
+    {
+      "en": "where",
+      "ru": "где"
+    },
+    {
+      "en": "when",
+      "ru": "когда"
+    },
+    {
+      "en": "what",
+      "ru": "что"
+    },
+    {
+      "en": "answer",
+      "ru": "ответ"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ is your class? — At three o’clock.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vd0341c15d6bd",
+            "label": "Where"
+          },
+          {
+            "id": "v38959f8e52ef",
+            "label": "Who"
+          },
+          {
+            "id": "v2b1c05ff4dc5",
+            "label": "When"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2b1c05ff4dc5"
+      },
+      "reference_answer": "v2b1c05ff4dc5",
+      "incorrect_answer": "vd0341c15d6bd",
+      "editorial_answer": "When",
+      "explanation": "Ответ сообщает время, поэтому When.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: Where / When.",
+      "public_payload": {
+        "sentence": "___ is the library? — Next to the school."
+      },
+      "answer_key": {
+        "accepted": ["Where"]
+      },
+      "reference_answer": "Where",
+      "incorrect_answer": "When",
+      "editorial_answer": "Where is the library? — Next to the school.",
+      "explanation": "Ответ даёт местоположение библиотеки.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Что находится в синей сумке?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "in"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "blue"
+          },
+          {
+            "id": "t6",
+            "label": "bag?"
+          },
+          {
+            "id": "t1",
+            "label": "What"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "What is in the blue bag?",
+      "explanation": "What запрашивает предметы внутри сумки.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Where is the meeting? At six o’clock."
+      },
+      "answer_key": {
+        "accepted": ["When is the meeting? At six o’clock."]
+      },
+      "reference_answer": "When is the meeting? At six o’clock.",
+      "incorrect_answer": "Where is the meeting? At six o’clock.",
+      "editorial_answer": "When is the meeting? At six o’clock.",
+      "explanation": "Сохраняем ответ о времени и меняем вопросительное слово на When.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где проходит занятие?",
+      "public_payload": {
+        "passage": "The music class is in room four. It starts at two. We need a notebook and a pencil. The teacher is Ms Green.",
+        "options": [
+          {
+            "id": "vd91504c3c008",
+            "label": "In a notebook."
+          },
+          {
+            "id": "v6feb2fd8d1a5",
+            "label": "In room four."
+          },
+          {
+            "id": "v1d14b34b359b",
+            "label": "At two o’clock."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6feb2fd8d1a5"
+      },
+      "reference_answer": "v6feb2fd8d1a5",
+      "incorrect_answer": "v1d14b34b359b",
+      "editorial_answer": "In room four.",
+      "explanation": "Номер комнаты отвечает на Where.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l55c236879b33",
+            "label": "where"
+          },
+          {
+            "id": "l25b20d98db99",
+            "label": "when"
+          },
+          {
+            "id": "l874eb87f5c73",
+            "label": "what"
+          },
+          {
+            "id": "lc694f98609d2",
+            "label": "answer"
+          }
+        ],
+        "right": [
+          {
+            "id": "rd04acbaafcf2",
+            "label": "что"
+          },
+          {
+            "id": "ra7617f776ac0",
+            "label": "ответ"
+          },
+          {
+            "id": "r7f7846156c39",
+            "label": "где"
+          },
+          {
+            "id": "rae84da1f0c20",
+            "label": "когда"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l55c236879b33": "r7f7846156c39",
+          "l25b20d98db99": "rae84da1f0c20",
+          "l874eb87f5c73": "rd04acbaafcf2",
+          "lc694f98609d2": "ra7617f776ac0"
+        }
+      },
+      "reference_answer": {
+        "l55c236879b33": "r7f7846156c39",
+        "l25b20d98db99": "rae84da1f0c20",
+        "l874eb87f5c73": "rd04acbaafcf2",
+        "lc694f98609d2": "ra7617f776ac0"
+      },
+      "incorrect_answer": {
+        "l55c236879b33": "rae84da1f0c20",
+        "l25b20d98db99": "r7f7846156c39",
+        "l874eb87f5c73": "rd04acbaafcf2",
+        "lc694f98609d2": "ra7617f776ac0"
+      },
+      "editorial_answer": "where — где; when — когда; what — что; answer — ответ",
+      "explanation": "В этих контекстах: where — где; when — когда; what — что; answer — ответ.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что нужно принести?",
+      "public_payload": {
+        "passage": "The music class is in room four. It starts at two. We need a notebook and a pencil. The teacher is Ms Green.",
+        "options": [
+          {
+            "id": "vaacce69a7e4f",
+            "label": "A notebook and a pencil."
+          },
+          {
+            "id": "v29f64d0a0c2a",
+            "label": "Only a red bag."
+          },
+          {
+            "id": "v9b6ff7290eb5",
+            "label": "A clock and a radio."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vaacce69a7e4f"
+      },
+      "reference_answer": "vaacce69a7e4f",
+      "incorrect_answer": "v29f64d0a0c2a",
+      "editorial_answer": "A notebook and a pencil.",
+      "explanation": "Список предметов дан в третьем предложении.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери вопрос именно о месте.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I want to ask about a place. Which question fits?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v570a2b3cab59",
+            "label": "What time is the lesson?"
+          },
+          {
+            "id": "ve187a0767eef",
+            "label": "Where is the lesson?"
+          },
+          {
+            "id": "v97810903b89f",
+            "label": "When is the lesson?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve187a0767eef"
+      },
+      "reference_answer": "ve187a0767eef",
+      "incorrect_answer": "v97810903b89f",
+      "editorial_answer": "Where is the lesson?",
+      "explanation": "Where запрашивает местоположение, остальные варианты — время.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A reply to a question is an ___.",
+        "options": [
+          {
+            "id": "v238d356668c6",
+            "label": "answer"
+          },
+          {
+            "id": "ve3de6360ef8a",
+            "label": "entrance"
+          },
+          {
+            "id": "v9ad5198e8a0a",
+            "label": "lesson"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v238d356668c6"
+      },
+      "reference_answer": "v238d356668c6",
+      "incorrect_answer": "ve3de6360ef8a",
+      "editorial_answer": "answer",
+      "explanation": "Answer — ответ на вопрос.",
+      "key": "e09"
+    }
+  ]
+}

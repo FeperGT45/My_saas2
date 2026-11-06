@@ -1,0 +1,330 @@
+{
+  "key": "b1/reflexive-pronouns",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B1 · точность в общении",
+    "position": 30
+  },
+  "position": 2,
+  "title": "Сам себя и самостоятельно",
+  "description": "Сам себя и самостоятельно: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать myself/herself/themselves при совпадении участников",
+    "Отличать by myself от with myself"
+  ],
+  "notes": [
+    "She introduced herself: подлежащее и объект относятся к одному человеку.",
+    "By myself может означать «самостоятельно, без помощи»: I repaired it by myself."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/states-since-for"],
+  "lexicon": [
+    {
+      "en": "myself",
+      "ru": "себя, сам (об I)"
+    },
+    {
+      "en": "herself",
+      "ru": "себя, сама (об she)"
+    },
+    {
+      "en": "themselves",
+      "ru": "себя, сами (об they)"
+    },
+    {
+      "en": "independently",
+      "ru": "самостоятельно"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The new volunteer introduced ___ to the group.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v3caadeef58f3",
+            "label": "her ownselves"
+          },
+          {
+            "id": "vff4931b6672f",
+            "label": "she"
+          },
+          {
+            "id": "v12aa99e9cc3d",
+            "label": "herself"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v12aa99e9cc3d"
+      },
+      "reference_answer": "v12aa99e9cc3d",
+      "incorrect_answer": "v3caadeef58f3",
+      "editorial_answer": "herself",
+      "explanation": "Возвратное herself указывает, что она представила саму себя.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: myself / me.",
+      "public_payload": {
+        "sentence": "I completed the form by ___."
+      },
+      "answer_key": {
+        "accepted": ["myself"]
+      },
+      "reference_answer": "myself",
+      "incorrect_answer": "me",
+      "editorial_answer": "I completed the form by myself.",
+      "explanation": "By myself означает без посторонней помощи.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Они сами организовали мероприятие.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "event"
+          },
+          {
+            "id": "t5",
+            "label": "themselves."
+          },
+          {
+            "id": "t1",
+            "label": "They"
+          },
+          {
+            "id": "t2",
+            "label": "organised"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "They organised the event themselves.",
+      "explanation": "Themselves подчёркивает участие самих организаторов.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She looked at himself in the mirror."
+      },
+      "answer_key": {
+        "accepted": ["She looked at herself in the mirror."]
+      },
+      "reference_answer": "She looked at herself in the mirror.",
+      "incorrect_answer": "She looked at himself in the mirror.",
+      "editorial_answer": "She looked at herself in the mirror.",
+      "explanation": "She требует согласованного возвратного herself.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую задачу Майя выполнила самостоятельно?",
+      "public_payload": {
+        "passage": "At the first meeting, Maya introduced herself and explained that she was new to the area. Two volunteers showed her the booking system. A week later, she completed a booking by herself. She was pleased to work independently, but she still asked for help when a form contained an unfamiliar question. Working alone did not mean refusing all support.",
+        "options": [
+          {
+            "id": "v67d316d0fa50",
+            "label": "The whole first meeting without volunteers."
+          },
+          {
+            "id": "ve804a58b4cc4",
+            "label": "A booking."
+          },
+          {
+            "id": "v3d53eaf039b8",
+            "label": "Every repair in the building."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve804a58b4cc4"
+      },
+      "reference_answer": "ve804a58b4cc4",
+      "incorrect_answer": "v3d53eaf039b8",
+      "editorial_answer": "A booking.",
+      "explanation": "A week later относится к самостоятельному оформлению брони.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le441b24f5663",
+            "label": "myself"
+          },
+          {
+            "id": "l7de558da884f",
+            "label": "herself"
+          },
+          {
+            "id": "l33d5a07eb1f0",
+            "label": "themselves"
+          },
+          {
+            "id": "lf2ea3a29044b",
+            "label": "independently"
+          }
+        ],
+        "right": [
+          {
+            "id": "r33c1c55e9238",
+            "label": "себя, сами (об they)"
+          },
+          {
+            "id": "rbdc1a431e737",
+            "label": "самостоятельно"
+          },
+          {
+            "id": "r5e0a0336cae5",
+            "label": "себя, сам (об I)"
+          },
+          {
+            "id": "ra444e3171c44",
+            "label": "себя, сама (об she)"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le441b24f5663": "r5e0a0336cae5",
+          "l7de558da884f": "ra444e3171c44",
+          "l33d5a07eb1f0": "r33c1c55e9238",
+          "lf2ea3a29044b": "rbdc1a431e737"
+        }
+      },
+      "reference_answer": {
+        "le441b24f5663": "r5e0a0336cae5",
+        "l7de558da884f": "ra444e3171c44",
+        "l33d5a07eb1f0": "r33c1c55e9238",
+        "lf2ea3a29044b": "rbdc1a431e737"
+      },
+      "incorrect_answer": {
+        "le441b24f5663": "ra444e3171c44",
+        "l7de558da884f": "r5e0a0336cae5",
+        "l33d5a07eb1f0": "r33c1c55e9238",
+        "lf2ea3a29044b": "rbdc1a431e737"
+      },
+      "editorial_answer": "myself — себя, сам (об I); herself — себя, сама (об she); themselves — себя, сами (об they); independently — самостоятельно",
+      "explanation": "В этих контекстах: myself — себя, сам (об I); herself — себя, сама (об she); themselves — себя, сами (об they); independently — самостоятельно.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Отказалась ли она от любой помощи?",
+      "public_payload": {
+        "passage": "At the first meeting, Maya introduced herself and explained that she was new to the area. Two volunteers showed her the booking system. A week later, she completed a booking by herself. She was pleased to work independently, but she still asked for help when a form contained an unfamiliar question. Working alone did not mean refusing all support.",
+        "options": [
+          {
+            "id": "v482663915717",
+            "label": "No; she still asked about unfamiliar questions."
+          },
+          {
+            "id": "v593c32ad9637",
+            "label": "Yes; she would never ask anything again."
+          },
+          {
+            "id": "v41a85b07521e",
+            "label": "Yes; independently always means without any communication."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v482663915717"
+      },
+      "reference_answer": "v482663915717",
+      "incorrect_answer": "v593c32ad9637",
+      "editorial_answer": "No; she still asked about unfamiliar questions.",
+      "explanation": "Последняя часть специально ограничивает смысл самостоятельности.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о собственном самостоятельном действии.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Did anyone help you fill in the form?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v8af5cdeecd58",
+            "label": "No, I filled it in by herself."
+          },
+          {
+            "id": "vb2049d4e1bc1",
+            "label": "No, I filled it in by myself."
+          },
+          {
+            "id": "v5059101d6b97",
+            "label": "No, I filled it in by me."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb2049d4e1bc1"
+      },
+      "reference_answer": "vb2049d4e1bc1",
+      "incorrect_answer": "v5059101d6b97",
+      "editorial_answer": "No, I filled it in by myself.",
+      "explanation": "By myself согласовано с I.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Doing a task without needing someone to direct every step means working ___.",
+        "options": [
+          {
+            "id": "v190fba6ed663",
+            "label": "independently"
+          },
+          {
+            "id": "vb2e2918dea9f",
+            "label": "identically"
+          },
+          {
+            "id": "ve1ec5feff629",
+            "label": "accidentally"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v190fba6ed663"
+      },
+      "reference_answer": "v190fba6ed663",
+      "incorrect_answer": "vb2e2918dea9f",
+      "editorial_answer": "independently",
+      "explanation": "Independently описывает самостоятельность, не одинаковость или случайность.",
+      "key": "e09"
+    }
+  ]
+}

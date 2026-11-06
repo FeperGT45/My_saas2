@@ -1,0 +1,338 @@
+{
+  "key": "b2/future-passive-process",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B2 · точность в общении",
+    "position": 30
+  },
+  "position": 6,
+  "title": "Что будет проверено перед выпуском",
+  "description": "Что будет проверено перед выпуском: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Строить will be + причастие",
+    "Отличать обещанное действие от уже выполненного"
+  ],
+  "notes": [
+    "Future Passive: The report will be checked. Фокус на объекте будущей проверки.",
+    "Will be checked не означает has been checked; вторая форма сообщала бы о завершении к настоящему."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/rather-another-person"],
+  "lexicon": [
+    {
+      "en": "inspection",
+      "ru": "проверка"
+    },
+    {
+      "en": "release",
+      "ru": "выпуск"
+    },
+    {
+      "en": "verify",
+      "ru": "проверять"
+    },
+    {
+      "en": "completion",
+      "ru": "завершение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The final figures ___ before publication.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v8a681fdbe000",
+            "label": "will checked"
+          },
+          {
+            "id": "v76a59cba9112",
+            "label": "will be checking by"
+          },
+          {
+            "id": "vfb0b9076afc7",
+            "label": "will be checked"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfb0b9076afc7"
+      },
+      "reference_answer": "vfb0b9076afc7",
+      "incorrect_answer": "v8a681fdbe000",
+      "editorial_answer": "will be checked",
+      "explanation": "Будущий пассив строится will be + причастие checked.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: inspected / inspecting.",
+      "public_payload": {
+        "sentence": "The equipment will be ___ next week."
+      },
+      "answer_key": {
+        "accepted": ["inspected"]
+      },
+      "reference_answer": "inspected",
+      "incorrect_answer": "inspecting",
+      "editorial_answer": "The equipment will be inspected next week.",
+      "explanation": "Объект проверяют, поэтому inspected в пассиве.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Черновик проверят перед выпуском.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "will"
+          },
+          {
+            "id": "t4",
+            "label": "be"
+          },
+          {
+            "id": "t5",
+            "label": "reviewed"
+          },
+          {
+            "id": "t6",
+            "label": "before"
+          },
+          {
+            "id": "t7",
+            "label": "release."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "draft"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The draft will be reviewed before release.",
+      "explanation": "Will be reviewed сообщает о будущей проверке, не о её завершении.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The results will checked by an independent reviewer."
+      },
+      "answer_key": {
+        "accepted": ["The results will be checked by an independent reviewer."]
+      },
+      "reference_answer": "The results will be checked by an independent reviewer.",
+      "incorrect_answer": "The results will checked by an independent reviewer.",
+      "editorial_answer": "The results will be checked by an independent reviewer.",
+      "explanation": "Между will и причастием checked требуется be.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему сокращённая формулировка была неверна?",
+      "public_payload": {
+        "passage": "A project update said that the final figures would be checked by an independent reviewer before release. A colleague shortened this to “independently checked figures” in a presentation prepared the same day. The review had not yet happened. The project lead asked for the slide to be corrected, because a future commitment had been turned into a completed assurance. The team could describe the planned safeguard, but it needed separate evidence of completion before presenting the figures as reviewed. The release date remained conditional on that work.",
+        "options": [
+          {
+            "id": "v29910a50721f",
+            "label": "It said that no reviewer had been planned."
+          },
+          {
+            "id": "vefeb344c2207",
+            "label": "It presented a planned review as already completed."
+          },
+          {
+            "id": "vd5df434ba064",
+            "label": "It accurately reported a finished independent review."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vefeb344c2207"
+      },
+      "reference_answer": "vefeb344c2207",
+      "incorrect_answer": "vd5df434ba064",
+      "editorial_answer": "It presented a planned review as already completed.",
+      "explanation": "Проверка ещё не состоялась; время и статус действия были изменены.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lf3e8c541ba0c",
+            "label": "inspection"
+          },
+          {
+            "id": "la8763cfe7b2a",
+            "label": "release"
+          },
+          {
+            "id": "l693363c45119",
+            "label": "verify"
+          },
+          {
+            "id": "l16cdaaee6f68",
+            "label": "completion"
+          }
+        ],
+        "right": [
+          {
+            "id": "rf9af60bc72de",
+            "label": "проверять"
+          },
+          {
+            "id": "r4eddd2c1c561",
+            "label": "завершение"
+          },
+          {
+            "id": "r9d0ffa6d3ab0",
+            "label": "проверка"
+          },
+          {
+            "id": "r238c1d608ec3",
+            "label": "выпуск"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lf3e8c541ba0c": "r9d0ffa6d3ab0",
+          "la8763cfe7b2a": "r238c1d608ec3",
+          "l693363c45119": "rf9af60bc72de",
+          "l16cdaaee6f68": "r4eddd2c1c561"
+        }
+      },
+      "reference_answer": {
+        "lf3e8c541ba0c": "r9d0ffa6d3ab0",
+        "la8763cfe7b2a": "r238c1d608ec3",
+        "l693363c45119": "rf9af60bc72de",
+        "l16cdaaee6f68": "r4eddd2c1c561"
+      },
+      "incorrect_answer": {
+        "lf3e8c541ba0c": "r238c1d608ec3",
+        "la8763cfe7b2a": "r9d0ffa6d3ab0",
+        "l693363c45119": "rf9af60bc72de",
+        "l16cdaaee6f68": "r4eddd2c1c561"
+      },
+      "editorial_answer": "inspection — проверка; release — выпуск; verify — проверять; completion — завершение",
+      "explanation": "В этих контекстах: inspection — проверка; release — выпуск; verify — проверять; completion — завершение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что нужно для заявления о проверенных данных?",
+      "public_payload": {
+        "passage": "A project update said that the final figures would be checked by an independent reviewer before release. A colleague shortened this to “independently checked figures” in a presentation prepared the same day. The review had not yet happened. The project lead asked for the slide to be corrected, because a future commitment had been turned into a completed assurance. The team could describe the planned safeguard, but it needed separate evidence of completion before presenting the figures as reviewed. The release date remained conditional on that work.",
+        "options": [
+          {
+            "id": "ve6a4b4ccdd38",
+            "label": "Evidence that the review has actually been completed."
+          },
+          {
+            "id": "v300b897c1ebd",
+            "label": "Only the intention to arrange a review."
+          },
+          {
+            "id": "v68cee62d25ef",
+            "label": "A shorter slide title regardless of timing."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve6a4b4ccdd38"
+      },
+      "reference_answer": "ve6a4b4ccdd38",
+      "incorrect_answer": "v300b897c1ebd",
+      "editorial_answer": "Evidence that the review has actually been completed.",
+      "explanation": "Планируемая мера и доказательство её исполнения различаются.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Отдели нынешнее состояние от запланированного действия.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Have these documents already been reviewed?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v703570c59ede",
+            "label": "Not yet. They will reviewed tomorrow."
+          },
+          {
+            "id": "v37302ede9cc4",
+            "label": "Not yet. They will be reviewed tomorrow."
+          },
+          {
+            "id": "v782e26f0f451",
+            "label": "Yes. Will be reviewed always means completed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v37302ede9cc4"
+      },
+      "reference_answer": "v37302ede9cc4",
+      "incorrect_answer": "v782e26f0f451",
+      "editorial_answer": "Not yet. They will be reviewed tomorrow.",
+      "explanation": "Not yet и will be reviewed сохраняют реальную последовательность.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Finishing a task is its ___.",
+        "options": [
+          {
+            "id": "v641f0187ca5c",
+            "label": "completion"
+          },
+          {
+            "id": "vc74a3e9eb4a6",
+            "label": "proposal"
+          },
+          {
+            "id": "v3e53ed4c3e7a",
+            "label": "reservation"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v641f0187ca5c"
+      },
+      "reference_answer": "v641f0187ca5c",
+      "incorrect_answer": "vc74a3e9eb4a6",
+      "editorial_answer": "completion",
+      "explanation": "Completion — завершение, в отличие от предложения или оговорки.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "key": "a2/lets-how-about",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 12,
+  "title": "Предлагаем совместное действие",
+  "description": "Предлагаем совместное действие: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать Let’s + начальная форма",
+    "Использовать How about + -ing"
+  ],
+  "notes": [
+    "Let’s meet at six — предложение совместного действия с начальной формой.",
+    "How about meeting at six? — другая модель, после about используется -ing."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/checking-in-out"],
+  "lexicon": [
+    {
+      "en": "suggest",
+      "ru": "предлагать идею"
+    },
+    {
+      "en": "agree",
+      "ru": "соглашаться"
+    },
+    {
+      "en": "alternative",
+      "ru": "другой вариант"
+    },
+    {
+      "en": "indoors",
+      "ru": "в помещении"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: How about ___ indoors if it rains?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v4d4108bcaa45",
+            "label": "meet to"
+          },
+          {
+            "id": "v6a4a46409676",
+            "label": "meeting"
+          },
+          {
+            "id": "ve7dff73356a6",
+            "label": "to meet"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6a4a46409676"
+      },
+      "reference_answer": "v6a4a46409676",
+      "incorrect_answer": "ve7dff73356a6",
+      "editorial_answer": "meeting",
+      "explanation": "После about для действия используется meeting.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: try / trying.",
+      "public_payload": {
+        "sentence": "Let’s ___ the library first."
+      },
+      "answer_key": {
+        "accepted": ["try"]
+      },
+      "reference_answer": "try",
+      "incorrect_answer": "trying",
+      "editorial_answer": "Let’s try the library first.",
+      "explanation": "После Let’s нужен инфинитив без to.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Давай встретимся у библиотеки снаружи.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "outside"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "library."
+          },
+          {
+            "id": "t1",
+            "label": "Let’s"
+          },
+          {
+            "id": "t2",
+            "label": "meet"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Let’s meet outside the library.",
+      "explanation": "Let’s предлагает действие для говорящего и собеседника.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "How about to visit the exhibition?"
+      },
+      "answer_key": {
+        "accepted": ["How about visiting the exhibition?"]
+      },
+      "reference_answer": "How about visiting the exhibition?",
+      "incorrect_answer": "How about to visit the exhibition?",
+      "editorial_answer": "How about visiting the exhibition?",
+      "explanation": "После about здесь нужна -ing-форма visiting.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую замену парку предложила Нур?",
+      "public_payload": {
+        "passage": "Two friends planned to meet in the park, but the forecast showed rain. “How about meeting in the library instead?” asked Noor. Alex agreed, but suggested four rather than three because of a class. They finally chose four at the library entrance, with a café nearby as another option if the library was closed.",
+        "options": [
+          {
+            "id": "v5d6b1a5c756c",
+            "label": "The library."
+          },
+          {
+            "id": "v49e627522125",
+            "label": "Another outdoor park."
+          },
+          {
+            "id": "vc9016c818be2",
+            "label": "An exhibition in a different city."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5d6b1a5c756c"
+      },
+      "reference_answer": "v5d6b1a5c756c",
+      "incorrect_answer": "v49e627522125",
+      "editorial_answer": "The library.",
+      "explanation": "Она предлагает помещение как альтернативу дождливому парку.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l075b479ec389",
+            "label": "suggest"
+          },
+          {
+            "id": "l907bb2390d8d",
+            "label": "agree"
+          },
+          {
+            "id": "lef811cfdea65",
+            "label": "alternative"
+          },
+          {
+            "id": "l541b5fb3350c",
+            "label": "indoors"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3faf5d00d133",
+            "label": "другой вариант"
+          },
+          {
+            "id": "r512b70df74d5",
+            "label": "в помещении"
+          },
+          {
+            "id": "r0b347398cf69",
+            "label": "предлагать идею"
+          },
+          {
+            "id": "r35e62152d90c",
+            "label": "соглашаться"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l075b479ec389": "r0b347398cf69",
+          "l907bb2390d8d": "r35e62152d90c",
+          "lef811cfdea65": "r3faf5d00d133",
+          "l541b5fb3350c": "r512b70df74d5"
+        }
+      },
+      "reference_answer": {
+        "l075b479ec389": "r0b347398cf69",
+        "l907bb2390d8d": "r35e62152d90c",
+        "lef811cfdea65": "r3faf5d00d133",
+        "l541b5fb3350c": "r512b70df74d5"
+      },
+      "incorrect_answer": {
+        "l075b479ec389": "r35e62152d90c",
+        "l907bb2390d8d": "r0b347398cf69",
+        "lef811cfdea65": "r3faf5d00d133",
+        "l541b5fb3350c": "r512b70df74d5"
+      },
+      "editorial_answer": "suggest — предлагать идею; agree — соглашаться; alternative — другой вариант; indoors — в помещении",
+      "explanation": "В этих контекстах: suggest — предлагать идею; agree — соглашаться; alternative — другой вариант; indoors — в помещении.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "На какое время в итоге договорились?",
+      "public_payload": {
+        "passage": "Two friends planned to meet in the park, but the forecast showed rain. “How about meeting in the library instead?” asked Noor. Alex agreed, but suggested four rather than three because of a class. They finally chose four at the library entrance, with a café nearby as another option if the library was closed.",
+        "options": [
+          {
+            "id": "vb6d607d7561c",
+            "label": "Three."
+          },
+          {
+            "id": "ve759d8f090cd",
+            "label": "No time was agreed."
+          },
+          {
+            "id": "vc7c2f43a5a04",
+            "label": "Four."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc7c2f43a5a04"
+      },
+      "reference_answer": "vc7c2f43a5a04",
+      "incorrect_answer": "vb6d607d7561c",
+      "editorial_answer": "Four.",
+      "explanation": "Первоначальные три часа заменили четырьмя из-за занятия Алекса.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Предложи совместный визит правильной конструкцией.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "We need an idea for Saturday."
+          }
+        ],
+        "options": [
+          {
+            "id": "v4eaafa065f15",
+            "label": "How about visiting the new gallery?"
+          },
+          {
+            "id": "v939e44d11484",
+            "label": "How about to visiting the new gallery?"
+          },
+          {
+            "id": "v06c60425987a",
+            "label": "Let’s to visited the gallery."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4eaafa065f15"
+      },
+      "reference_answer": "v4eaafa065f15",
+      "incorrect_answer": "v939e44d11484",
+      "editorial_answer": "How about visiting the new gallery?",
+      "explanation": "How about + visiting — подходящая модель.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "If the weather is bad, we can stay ___ rather than outside.",
+        "options": [
+          {
+            "id": "v5dc2ad345782",
+            "label": "upstairs in every case"
+          },
+          {
+            "id": "v0bfdbc9f0a5a",
+            "label": "yesterday"
+          },
+          {
+            "id": "vecb5eeaa4b43",
+            "label": "indoors"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vecb5eeaa4b43"
+      },
+      "reference_answer": "vecb5eeaa4b43",
+      "incorrect_answer": "v5dc2ad345782",
+      "editorial_answer": "indoors",
+      "explanation": "Indoors означает внутри помещения; upstairs — только наверху.",
+      "key": "e09"
+    }
+  ]
+}

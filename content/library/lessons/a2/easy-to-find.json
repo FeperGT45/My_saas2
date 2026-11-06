@@ -1,0 +1,334 @@
+{
+  "key": "a2/easy-to-find",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 4,
+  "title": "Легко сделать и трудно понять",
+  "description": "Легко сделать и трудно понять: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать adjective + to-infinitive",
+    "Описывать сложность действия без лишнего предлога"
+  ],
+  "notes": [
+    "После easy/difficult возможно to + глагол: The office is easy to find.",
+    "В этой модели не нужно for перед инфинитивом: difficult to read, не difficult for to read."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/could-childhood"],
+  "lexicon": [
+    {
+      "en": "easy",
+      "ru": "лёгкий"
+    },
+    {
+      "en": "difficult",
+      "ru": "трудный"
+    },
+    {
+      "en": "clear",
+      "ru": "ясный"
+    },
+    {
+      "en": "instructions",
+      "ru": "инструкции"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The map is easy ___ because the labels are large.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vd28514a61d18",
+            "label": "to read"
+          },
+          {
+            "id": "v946f88223606",
+            "label": "for read"
+          },
+          {
+            "id": "v7e6cb28fbfda",
+            "label": "reading to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd28514a61d18"
+      },
+      "reference_answer": "vd28514a61d18",
+      "incorrect_answer": "v946f88223606",
+      "editorial_answer": "to read",
+      "explanation": "Easy to read описывает лёгкость чтения.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: to / for.",
+      "public_payload": {
+        "sentence": "The entrance was difficult ___ find at night."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "The entrance was difficult to find at night.",
+      "explanation": "В этой модели после difficult нужен to-infinitive.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Инструкциям легко следовать.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "are"
+          },
+          {
+            "id": "t4",
+            "label": "easy"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "follow."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "instructions"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The instructions are easy to follow.",
+      "explanation": "Easy to follow связывает качество инструкций с действием читателя.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The address is difficult for to find."
+      },
+      "answer_key": {
+        "accepted": ["The address is difficult to find."]
+      },
+      "reference_answer": "The address is difficult to find.",
+      "incorrect_answer": "The address is difficult for to find.",
+      "editorial_answer": "The address is difficult to find.",
+      "explanation": "Лишнее for перед to убирается.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему основные здания было легко найти?",
+      "public_payload": {
+        "passage": "The visitors received a new map of the campus. The main buildings were easy to find because each had a large number. The sports entrance was more difficult to see: it was behind a low wall. The receptionist added a note to help visitors find it after dark.",
+        "options": [
+          {
+            "id": "vb41c1799aead",
+            "label": "Every entrance was behind a wall."
+          },
+          {
+            "id": "v5b96bb03af55",
+            "label": "The campus had only one room."
+          },
+          {
+            "id": "vd15f2efd94d5",
+            "label": "Each had a large number."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd15f2efd94d5"
+      },
+      "reference_answer": "vd15f2efd94d5",
+      "incorrect_answer": "vb41c1799aead",
+      "editorial_answer": "Each had a large number.",
+      "explanation": "Причина дана после because.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "la213d971bc92",
+            "label": "easy"
+          },
+          {
+            "id": "l85da7696af8d",
+            "label": "difficult"
+          },
+          {
+            "id": "l3931858c59c6",
+            "label": "clear"
+          },
+          {
+            "id": "l8fe2e3af5379",
+            "label": "instructions"
+          }
+        ],
+        "right": [
+          {
+            "id": "rc13ec7927e5e",
+            "label": "ясный"
+          },
+          {
+            "id": "r9768fc48b8d4",
+            "label": "инструкции"
+          },
+          {
+            "id": "r9cdb70274548",
+            "label": "лёгкий"
+          },
+          {
+            "id": "rf0d47555aac9",
+            "label": "трудный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "la213d971bc92": "r9cdb70274548",
+          "l85da7696af8d": "rf0d47555aac9",
+          "l3931858c59c6": "rc13ec7927e5e",
+          "l8fe2e3af5379": "r9768fc48b8d4"
+        }
+      },
+      "reference_answer": {
+        "la213d971bc92": "r9cdb70274548",
+        "l85da7696af8d": "rf0d47555aac9",
+        "l3931858c59c6": "rc13ec7927e5e",
+        "l8fe2e3af5379": "r9768fc48b8d4"
+      },
+      "incorrect_answer": {
+        "la213d971bc92": "rf0d47555aac9",
+        "l85da7696af8d": "r9cdb70274548",
+        "l3931858c59c6": "rc13ec7927e5e",
+        "l8fe2e3af5379": "r9768fc48b8d4"
+      },
+      "editorial_answer": "easy — лёгкий; difficult — трудный; clear — ясный; instructions — инструкции",
+      "explanation": "В этих контекстах: easy — лёгкий; difficult — трудный; clear — ясный; instructions — инструкции.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Для чего добавили примечание?",
+      "public_payload": {
+        "passage": "The visitors received a new map of the campus. The main buildings were easy to find because each had a large number. The sports entrance was more difficult to see: it was behind a low wall. The receptionist added a note to help visitors find it after dark.",
+        "options": [
+          {
+            "id": "v1132c1f7be03",
+            "label": "To close the sports centre permanently."
+          },
+          {
+            "id": "v8a7237975936",
+            "label": "To help people find the sports entrance after dark."
+          },
+          {
+            "id": "vbe72e4d4bfe2",
+            "label": "To remove the building numbers."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8a7237975936"
+      },
+      "reference_answer": "v8a7237975936",
+      "incorrect_answer": "vbe72e4d4bfe2",
+      "editorial_answer": "To help people find the sports entrance after dark.",
+      "explanation": "Примечание адресовано конкретной сложности поиска входа.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Оцени доступность инструкции правильной конструкцией.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can beginners understand this guide?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vabe862914c22",
+            "label": "Yes, it is easy for follow."
+          },
+          {
+            "id": "v1c71ba99d5d7",
+            "label": "Yes, it is easy followed to."
+          },
+          {
+            "id": "v422c038bf64a",
+            "label": "Yes, it is easy to follow."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v422c038bf64a"
+      },
+      "reference_answer": "v422c038bf64a",
+      "incorrect_answer": "vabe862914c22",
+      "editorial_answer": "Yes, it is easy to follow.",
+      "explanation": "Easy to follow — естественное описание понятного руководства.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A message that is simple to understand is ___.",
+        "options": [
+          {
+            "id": "v81e51237b66a",
+            "label": "late"
+          },
+          {
+            "id": "v303eb535adf9",
+            "label": "clear"
+          },
+          {
+            "id": "v2027cb48dfc1",
+            "label": "closed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v303eb535adf9"
+      },
+      "reference_answer": "v303eb535adf9",
+      "incorrect_answer": "v2027cb48dfc1",
+      "editorial_answer": "clear",
+      "explanation": "Clear в таком контексте означает ясный и понятный.",
+      "key": "e09"
+    }
+  ]
+}

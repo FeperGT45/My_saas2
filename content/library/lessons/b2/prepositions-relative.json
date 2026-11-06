@@ -1,0 +1,342 @@
+{
+  "key": "b2/prepositions-relative",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B2 · точность в общении",
+    "position": 30
+  },
+  "position": 3,
+  "title": "To whom и in which в формальном тексте",
+  "description": "To whom и in which в формальном тексте: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать предлог перед whom о человеке",
+    "Использовать предлог перед which о предмете или месте"
+  ],
+  "notes": [
+    "Формально: the person to whom I wrote. После предлога о человеке используется whom.",
+    "О предмете: the folder in which the files are stored. Возможны и менее формальные конструкции с предлогом в конце, но здесь тренируется формальная модель."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/future-from-past"],
+  "lexicon": [
+    {
+      "en": "recipient",
+      "ru": "получатель"
+    },
+    {
+      "en": "correspondence",
+      "ru": "переписка"
+    },
+    {
+      "en": "archive",
+      "ru": "архив"
+    },
+    {
+      "en": "enquiry",
+      "ru": "запрос сведений"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The person to ___ the enquiry was sent has replied.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vb6070760ed84",
+            "label": "which"
+          },
+          {
+            "id": "ve2769739e34c",
+            "label": "whose of"
+          },
+          {
+            "id": "v3ef19c011859",
+            "label": "whom"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3ef19c011859"
+      },
+      "reference_answer": "v3ef19c011859",
+      "incorrect_answer": "vb6070760ed84",
+      "editorial_answer": "whom",
+      "explanation": "После to о человеке в формальной модели нужно whom.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: who / which.",
+      "public_payload": {
+        "sentence": "This is the folder in ___ the copies are stored."
+      },
+      "answer_key": {
+        "accepted": ["which"]
+      },
+      "reference_answer": "which",
+      "incorrect_answer": "who",
+      "editorial_answer": "This is the folder in which the copies are stored.",
+      "explanation": "Для папки после in используется which.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Человек, которому я написал, ответил.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "to"
+          },
+          {
+            "id": "t4",
+            "label": "whom"
+          },
+          {
+            "id": "t5",
+            "label": "I"
+          },
+          {
+            "id": "t6",
+            "label": "wrote"
+          },
+          {
+            "id": "t7",
+            "label": "has"
+          },
+          {
+            "id": "t8",
+            "label": "replied."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "person"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The person to whom I wrote has replied.",
+      "explanation": "To whom — формальная отсылка к получателю письма.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The office to which I sent the form has reply."
+      },
+      "answer_key": {
+        "accepted": ["The office to which I sent the form has replied."]
+      },
+      "reference_answer": "The office to which I sent the form has replied.",
+      "incorrect_answer": "The office to which I sent the form has reply.",
+      "editorial_answer": "The office to which I sent the form has replied.",
+      "explanation": "После has в Present Perfect требуется причастие replied; to which уже оформлено правильно.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какие роли различает архивист?",
+      "public_payload": {
+        "passage": "An archivist traced a set of letters to the office to which they had originally been addressed. The recipient named on the envelopes was no longer employed there, but a register recorded the department responsible for answering enquiries. The archivist distinguished the person to whom a letter was addressed from the person who actually drafted the reply. That distinction mattered because an official signature did not necessarily identify the writer of every sentence. The catalogue note therefore described the correspondence precisely without assuming that recipient, signatory and author were always the same person.",
+        "options": [
+          {
+            "id": "v731ea378e055",
+            "label": "The author and all readers as necessarily identical."
+          },
+          {
+            "id": "v86f55349311c",
+            "label": "The intended recipient and the person drafting the reply."
+          },
+          {
+            "id": "vacfda3a0747b",
+            "label": "Only the colour and size of every envelope."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v86f55349311c"
+      },
+      "reference_answer": "v86f55349311c",
+      "incorrect_answer": "vacfda3a0747b",
+      "editorial_answer": "The intended recipient and the person drafting the reply.",
+      "explanation": "Текст специально отделяет адресата, подписанта и составителя ответа.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc52268912f13",
+            "label": "recipient"
+          },
+          {
+            "id": "l9833f24c31fb",
+            "label": "correspondence"
+          },
+          {
+            "id": "l7ba62b357349",
+            "label": "archive"
+          },
+          {
+            "id": "l2265640817b4",
+            "label": "enquiry"
+          }
+        ],
+        "right": [
+          {
+            "id": "r096f5267211f",
+            "label": "архив"
+          },
+          {
+            "id": "r5d5dc83c3e8e",
+            "label": "запрос сведений"
+          },
+          {
+            "id": "r65e515794c7e",
+            "label": "получатель"
+          },
+          {
+            "id": "rfe5057cca401",
+            "label": "переписка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc52268912f13": "r65e515794c7e",
+          "l9833f24c31fb": "rfe5057cca401",
+          "l7ba62b357349": "r096f5267211f",
+          "l2265640817b4": "r5d5dc83c3e8e"
+        }
+      },
+      "reference_answer": {
+        "lc52268912f13": "r65e515794c7e",
+        "l9833f24c31fb": "rfe5057cca401",
+        "l7ba62b357349": "r096f5267211f",
+        "l2265640817b4": "r5d5dc83c3e8e"
+      },
+      "incorrect_answer": {
+        "lc52268912f13": "rfe5057cca401",
+        "l9833f24c31fb": "r65e515794c7e",
+        "l7ba62b357349": "r096f5267211f",
+        "l2265640817b4": "r5d5dc83c3e8e"
+      },
+      "editorial_answer": "recipient — получатель; correspondence — переписка; archive — архив; enquiry — запрос сведений",
+      "explanation": "В этих контекстах: recipient — получатель; correspondence — переписка; archive — архив; enquiry — запрос сведений.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему подписи недостаточно для определения автора всех предложений?",
+      "public_payload": {
+        "passage": "An archivist traced a set of letters to the office to which they had originally been addressed. The recipient named on the envelopes was no longer employed there, but a register recorded the department responsible for answering enquiries. The archivist distinguished the person to whom a letter was addressed from the person who actually drafted the reply. That distinction mattered because an official signature did not necessarily identify the writer of every sentence. The catalogue note therefore described the correspondence precisely without assuming that recipient, signatory and author were always the same person.",
+        "options": [
+          {
+            "id": "v57a2ffd6c1a3",
+            "label": "An official signatory may not have drafted the entire reply."
+          },
+          {
+            "id": "ve21d8b189366",
+            "label": "A signature always proves that no reply exists."
+          },
+          {
+            "id": "veee9ebcd7087",
+            "label": "Registers never contain department names."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v57a2ffd6c1a3"
+      },
+      "reference_answer": "v57a2ffd6c1a3",
+      "incorrect_answer": "ve21d8b189366",
+      "editorial_answer": "An official signatory may not have drafted the entire reply.",
+      "explanation": "Официальная подпись не гарантирует личное написание каждого предложения.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Отнеси with к человеку в формальной конструкции.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Choose the formal version with the preposition first."
+          }
+        ],
+        "options": [
+          {
+            "id": "ve3d5201585e6",
+            "label": "The colleague with whose I worked has retired."
+          },
+          {
+            "id": "va4ddbd35cd6a",
+            "label": "The colleague with whom I worked has retired."
+          },
+          {
+            "id": "v464b5e37c26c",
+            "label": "The colleague with which I worked has retired."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va4ddbd35cd6a"
+      },
+      "reference_answer": "va4ddbd35cd6a",
+      "incorrect_answer": "v464b5e37c26c",
+      "editorial_answer": "The colleague with whom I worked has retired.",
+      "explanation": "После with о человеке здесь используется whom.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The person for whom a letter is intended is its ___.",
+        "options": [
+          {
+            "id": "v73a28710f7d9",
+            "label": "recipient"
+          },
+          {
+            "id": "v11f6c9e0c3f3",
+            "label": "author necessarily"
+          },
+          {
+            "id": "ve39f1083b728",
+            "label": "publisher necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v73a28710f7d9"
+      },
+      "reference_answer": "v73a28710f7d9",
+      "incorrect_answer": "v11f6c9e0c3f3",
+      "editorial_answer": "recipient",
+      "explanation": "Recipient — адресат или получатель, не обязательно автор или издатель.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "key": "b2/remember-and-stop",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B2 · точность в общении",
+    "position": 30
+  },
+  "position": 8,
+  "title": "Как форма глагола меняет смысл",
+  "description": "Как форма глагола меняет смысл: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Различать remember doing и remember to do",
+    "Различать stop doing и stop to do"
+  ],
+  "notes": [
+    "Remember doing — помнить совершённое; remember to do — не забыть выполнить действие.",
+    "Stop talking — прекратить разговор; stop to talk — остановить другое занятие, чтобы поговорить."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/even-if-even-though"],
+  "lexicon": [
+    {
+      "en": "recall",
+      "ru": "вспоминать"
+    },
+    {
+      "en": "reminder",
+      "ru": "напоминание"
+    },
+    {
+      "en": "pause",
+      "ru": "пауза"
+    },
+    {
+      "en": "cease",
+      "ru": "прекращать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I remember ___ the door: I can clearly recall turning the key.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v8badc71cefe3",
+            "label": "locking"
+          },
+          {
+            "id": "v390d24ebf3b5",
+            "label": "to locking"
+          },
+          {
+            "id": "v926fecfb94b0",
+            "label": "lock to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8badc71cefe3"
+      },
+      "reference_answer": "v8badc71cefe3",
+      "incorrect_answer": "v390d24ebf3b5",
+      "editorial_answer": "locking",
+      "explanation": "Воспоминание о выполненном действии выражается remember locking.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: to / for.",
+      "public_payload": {
+        "sentence": "Please remember ___ lock the door before leaving."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "Please remember to lock the door before leaving.",
+      "explanation": "Просьба не забыть выполнить действие использует remember to lock.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы остановились, чтобы проверить карту.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "to"
+          },
+          {
+            "id": "t4",
+            "label": "check"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "map."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "stopped"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "We stopped to check the map.",
+      "explanation": "Stop to check обозначает цель остановки другого действия, не прекращение проверки.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Remember to turning off the lights."
+      },
+      "answer_key": {
+        "accepted": ["Remember to turn off the lights."]
+      },
+      "reference_answer": "Remember to turn off the lights.",
+      "incorrect_answer": "Remember to turning off the lights.",
+      "editorial_answer": "Remember to turn off the lights.",
+      "explanation": "В просьбе не забыть нужен инфинитив to turn.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что означает stopped to check the map?",
+      "public_payload": {
+        "passage": "During a long walk, the group stopped to check the map at a junction. Later, the leader asked everyone to stop checking their phones while crossing a busy road. The two uses of stop described different relationships between actions. At the end, she reminded a volunteer to lock the equipment cupboard. He replied that he remembered locking it before departure and described where he had put the key. His reply referred to a memory of a completed action, while her reminder concerned ensuring that the task was done.",
+        "options": [
+          {
+            "id": "v82762817f4ad",
+            "label": "They gave up checking maps forever."
+          },
+          {
+            "id": "vd2a7f4bd9ac7",
+            "label": "They crossed without looking at anything."
+          },
+          {
+            "id": "v24641c7307ef",
+            "label": "They paused the walk in order to check the map."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v24641c7307ef"
+      },
+      "reference_answer": "v24641c7307ef",
+      "incorrect_answer": "v82762817f4ad",
+      "editorial_answer": "They paused the walk in order to check the map.",
+      "explanation": "To check задаёт цель остановки прогулки.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l78aadf3a1876",
+            "label": "recall"
+          },
+          {
+            "id": "l9ea95edb6c30",
+            "label": "reminder"
+          },
+          {
+            "id": "ldbf51fdc9a07",
+            "label": "pause"
+          },
+          {
+            "id": "l75dbe050bfff",
+            "label": "cease"
+          }
+        ],
+        "right": [
+          {
+            "id": "r9d108be7e231",
+            "label": "пауза"
+          },
+          {
+            "id": "ra1b1c207bf09",
+            "label": "прекращать"
+          },
+          {
+            "id": "r537829ea3ed4",
+            "label": "вспоминать"
+          },
+          {
+            "id": "re50bfc2a3fcf",
+            "label": "напоминание"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l78aadf3a1876": "r537829ea3ed4",
+          "l9ea95edb6c30": "re50bfc2a3fcf",
+          "ldbf51fdc9a07": "r9d108be7e231",
+          "l75dbe050bfff": "ra1b1c207bf09"
+        }
+      },
+      "reference_answer": {
+        "l78aadf3a1876": "r537829ea3ed4",
+        "l9ea95edb6c30": "re50bfc2a3fcf",
+        "ldbf51fdc9a07": "r9d108be7e231",
+        "l75dbe050bfff": "ra1b1c207bf09"
+      },
+      "incorrect_answer": {
+        "l78aadf3a1876": "re50bfc2a3fcf",
+        "l9ea95edb6c30": "r537829ea3ed4",
+        "ldbf51fdc9a07": "r9d108be7e231",
+        "l75dbe050bfff": "ra1b1c207bf09"
+      },
+      "editorial_answer": "recall — вспоминать; reminder — напоминание; pause — пауза; cease — прекращать",
+      "explanation": "В этих контекстах: recall — вспоминать; reminder — напоминание; pause — пауза; cease — прекращать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "На что ссылался волонтёр с remembered locking?",
+      "public_payload": {
+        "passage": "During a long walk, the group stopped to check the map at a junction. Later, the leader asked everyone to stop checking their phones while crossing a busy road. The two uses of stop described different relationships between actions. At the end, she reminded a volunteer to lock the equipment cupboard. He replied that he remembered locking it before departure and described where he had put the key. His reply referred to a memory of a completed action, while her reminder concerned ensuring that the task was done.",
+        "options": [
+          {
+            "id": "v8032e38812da",
+            "label": "An admission that he had never locked anything."
+          },
+          {
+            "id": "v55bfe8323189",
+            "label": "A memory of having performed the action."
+          },
+          {
+            "id": "v21551bf38b1c",
+            "label": "A promise that he might lock it next week."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v55bfe8323189"
+      },
+      "reference_answer": "v55bfe8323189",
+      "incorrect_answer": "v21551bf38b1c",
+      "editorial_answer": "A memory of having performed the action.",
+      "explanation": "Locking представляет действие как уже совершённое и вспоминаемое.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани различие двух моделей.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What is the difference between “stop talking” and “stop to talk”?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vaf8253ed949d",
+            "label": "Both always mean ending every conversation permanently."
+          },
+          {
+            "id": "ve11faffc0dfb",
+            "label": "The first always means start talking; the second means remain silent."
+          },
+          {
+            "id": "v897085628e41",
+            "label": "The first ends talking; the second pauses another activity in order to talk."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v897085628e41"
+      },
+      "reference_answer": "v897085628e41",
+      "incorrect_answer": "vaf8253ed949d",
+      "editorial_answer": "The first ends talking; the second pauses another activity in order to talk.",
+      "explanation": "-ing обозначает прекращаемое действие, to-infinitive — цель остановки.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To bring a past event back to mind is to ___ it.",
+        "options": [
+          {
+            "id": "vb8d7d89ee715",
+            "label": "postpone"
+          },
+          {
+            "id": "v206be824acbc",
+            "label": "recall"
+          },
+          {
+            "id": "v344a4b96d86a",
+            "label": "guarantee in advance"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v206be824acbc"
+      },
+      "reference_answer": "v206be824acbc",
+      "incorrect_answer": "v344a4b96d86a",
+      "editorial_answer": "recall",
+      "explanation": "Recall означает вспомнить уже произошедшее.",
+      "key": "e09"
+    }
+  ]
+}

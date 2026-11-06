@@ -1,0 +1,338 @@
+{
+  "key": "b1/somewhere-anywhere",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B1 · точность в общении",
+    "position": 30
+  },
+  "position": 3,
+  "title": "Где-нибудь, нигде и везде",
+  "description": "Где-нибудь, нигде и везде: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать somewhere для неопределённого места",
+    "Избегать двойного отрицания с nowhere"
+  ],
+  "notes": [
+    "Somewhere обозначает какое-то место: I left it somewhere safe.",
+    "Nowhere уже отрицательно: There is nowhere to sit. В обычной модели не добавляйте not к nowhere."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/reflexive-pronouns"],
+  "lexicon": [
+    {
+      "en": "somewhere",
+      "ru": "где-то, куда-то"
+    },
+    {
+      "en": "anywhere",
+      "ru": "где-либо"
+    },
+    {
+      "en": "nowhere",
+      "ru": "нигде"
+    },
+    {
+      "en": "everywhere",
+      "ru": "везде"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: All the seats are taken. There is ___ to sit.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v2e984d625a6e",
+            "label": "every person"
+          },
+          {
+            "id": "vfb7c85e90510",
+            "label": "nowhere"
+          },
+          {
+            "id": "vc19bf81478d8",
+            "label": "somebody"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfb7c85e90510"
+      },
+      "reference_answer": "vfb7c85e90510",
+      "incorrect_answer": "vc19bf81478d8",
+      "editorial_answer": "nowhere",
+      "explanation": "Nowhere обозначает отсутствие места для сидения.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: nowhere / somewhere.",
+      "public_payload": {
+        "sentence": "I put the folder ___ safe, but I cannot remember where."
+      },
+      "answer_key": {
+        "accepted": ["somewhere"]
+      },
+      "reference_answer": "somewhere",
+      "incorrect_answer": "nowhere",
+      "editorial_answer": "I put the folder somewhere safe, but I cannot remember where.",
+      "explanation": "Папка помещена в какое-то безопасное место, хотя место забыто.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Велосипеды негде оставить.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "nowhere"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "leave"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "bicycles."
+          },
+          {
+            "id": "t1",
+            "label": "There"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "There is nowhere to leave the bicycles.",
+      "explanation": "Nowhere уже несёт отрицание.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "We could not find nowhere quiet."
+      },
+      "answer_key": {
+        "accepted": ["We could not find anywhere quiet."]
+      },
+      "reference_answer": "We could not find anywhere quiet.",
+      "incorrect_answer": "We could not find nowhere quiet.",
+      "editorial_answer": "We could not find anywhere quiet.",
+      "explanation": "После could not используется anywhere, чтобы избежать двойного отрицания.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что они искали?",
+      "public_payload": {
+        "passage": "The students wanted somewhere quiet to discuss their project. The café was crowded, and the library’s small rooms were booked. They looked for an empty classroom but could not find anywhere suitable. Finally, a tutor offered them her office for half an hour. They used the short time to divide the work and arranged to continue online later.",
+        "options": [
+          {
+            "id": "vecee7fe9bcad",
+            "label": "A quiet place for a project discussion."
+          },
+          {
+            "id": "v99e346aa7b73",
+            "label": "A larger café to open."
+          },
+          {
+            "id": "v85c2cbd66ffe",
+            "label": "A permanent office to rent."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vecee7fe9bcad"
+      },
+      "reference_answer": "vecee7fe9bcad",
+      "incorrect_answer": "v99e346aa7b73",
+      "editorial_answer": "A quiet place for a project discussion.",
+      "explanation": "Somewhere quiet означает неопределённое тихое место; речь идёт об обсуждении проекта.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le9d0fb0b2f8d",
+            "label": "somewhere"
+          },
+          {
+            "id": "lbf1328324121",
+            "label": "anywhere"
+          },
+          {
+            "id": "l467df28f0e9b",
+            "label": "nowhere"
+          },
+          {
+            "id": "l28eaf2da928f",
+            "label": "everywhere"
+          }
+        ],
+        "right": [
+          {
+            "id": "r878a971b09ed",
+            "label": "нигде"
+          },
+          {
+            "id": "r72cd6e8427b5",
+            "label": "везде"
+          },
+          {
+            "id": "r114f7b215df4",
+            "label": "где-то, куда-то"
+          },
+          {
+            "id": "ref6ae8e3c65b",
+            "label": "где-либо"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le9d0fb0b2f8d": "r114f7b215df4",
+          "lbf1328324121": "ref6ae8e3c65b",
+          "l467df28f0e9b": "r878a971b09ed",
+          "l28eaf2da928f": "r72cd6e8427b5"
+        }
+      },
+      "reference_answer": {
+        "le9d0fb0b2f8d": "r114f7b215df4",
+        "lbf1328324121": "ref6ae8e3c65b",
+        "l467df28f0e9b": "r878a971b09ed",
+        "l28eaf2da928f": "r72cd6e8427b5"
+      },
+      "incorrect_answer": {
+        "le9d0fb0b2f8d": "ref6ae8e3c65b",
+        "lbf1328324121": "r114f7b215df4",
+        "l467df28f0e9b": "r878a971b09ed",
+        "l28eaf2da928f": "r72cd6e8427b5"
+      },
+      "editorial_answer": "somewhere — где-то, куда-то; anywhere — где-либо; nowhere — нигде; everywhere — везде",
+      "explanation": "В этих контекстах: somewhere — где-то, куда-то; anywhere — где-либо; nowhere — нигде; everywhere — везде.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему после встречи планировали продолжить онлайн?",
+      "public_payload": {
+        "passage": "The students wanted somewhere quiet to discuss their project. The café was crowded, and the library’s small rooms were booked. They looked for an empty classroom but could not find anywhere suitable. Finally, a tutor offered them her office for half an hour. They used the short time to divide the work and arranged to continue online later.",
+        "options": [
+          {
+            "id": "v83d983b30a04",
+            "label": "They had already lost every project file."
+          },
+          {
+            "id": "v780a9d743511",
+            "label": "The tutor prohibited all discussion."
+          },
+          {
+            "id": "v09c435797dc6",
+            "label": "They had the tutor’s office for only half an hour."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v09c435797dc6"
+      },
+      "reference_answer": "v09c435797dc6",
+      "incorrect_answer": "v83d983b30a04",
+      "editorial_answer": "They had the tutor’s office for only half an hour.",
+      "explanation": "Ограничение времени объясняет разделение работы и последующее продолжение.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь отрицательно без двойного отрицания.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Did you find a place to leave the bags?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vbc973ab3b217",
+            "label": "No, we could not find anywhere secure."
+          },
+          {
+            "id": "vad5e8d8eb2f8",
+            "label": "No, we could not find nowhere secure."
+          },
+          {
+            "id": "v141e1b5b917a",
+            "label": "No, we could find anywhere not."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbc973ab3b217"
+      },
+      "reference_answer": "vbc973ab3b217",
+      "incorrect_answer": "vad5e8d8eb2f8",
+      "editorial_answer": "No, we could not find anywhere secure.",
+      "explanation": "Could not ... anywhere — стандартная отрицательная конструкция.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A place that is not specified can be described as ___.",
+        "options": [
+          {
+            "id": "v44c1e9d8636f",
+            "label": "someone"
+          },
+          {
+            "id": "v1d4c5cedc86b",
+            "label": "something"
+          },
+          {
+            "id": "vf27a769e8839",
+            "label": "somewhere"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf27a769e8839"
+      },
+      "reference_answer": "vf27a769e8839",
+      "incorrect_answer": "v44c1e9d8636f",
+      "editorial_answer": "somewhere",
+      "explanation": "Somewhere относится к месту; someone — к человеку, something — к вещи.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "key": "a2/could-childhood",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 3,
+  "title": "Умения в детстве",
+  "description": "Умения в детстве: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Описывать общее прошлое умение с could",
+    "Не добавлять -ed после could"
+  ],
+  "notes": [
+    "Could может описывать общее умение в прошлом: At six, I could swim.",
+    "После could используется начальная форма; could not/couldn’t обозначает отсутствие такого умения."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/had-to-yesterday"],
+  "lexicon": [
+    {
+      "en": "childhood",
+      "ru": "детство"
+    },
+    {
+      "en": "ride",
+      "ru": "ездить верхом или на велосипеде"
+    },
+    {
+      "en": "skill",
+      "ru": "умение"
+    },
+    {
+      "en": "practise",
+      "ru": "практиковаться"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: When I was eight, I could ___ a bicycle.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v52c3112c8768",
+            "label": "riding"
+          },
+          {
+            "id": "v963b73e9f17b",
+            "label": "ride"
+          },
+          {
+            "id": "v82f01820f55f",
+            "label": "rode"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v963b73e9f17b"
+      },
+      "reference_answer": "v963b73e9f17b",
+      "incorrect_answer": "v82f01820f55f",
+      "editorial_answer": "ride",
+      "explanation": "После could требуется ride.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: can / could.",
+      "public_payload": {
+        "sentence": "As a child, she ___ not swim."
+      },
+      "answer_key": {
+        "accepted": ["could"]
+      },
+      "reference_answer": "could",
+      "incorrect_answer": "can",
+      "editorial_answer": "As a child, she could not swim.",
+      "explanation": "As a child задаёт прошлое умение или его отсутствие.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Он умел читать ещё до начала школы.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "read"
+          },
+          {
+            "id": "t4",
+            "label": "before"
+          },
+          {
+            "id": "t5",
+            "label": "he"
+          },
+          {
+            "id": "t6",
+            "label": "started"
+          },
+          {
+            "id": "t7",
+            "label": "school."
+          },
+          {
+            "id": "t1",
+            "label": "He"
+          },
+          {
+            "id": "t2",
+            "label": "could"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "He could read before he started school.",
+      "explanation": "Could read описывает общее прошлое умение.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "When she was seven, she could played chess."
+      },
+      "answer_key": {
+        "accepted": ["When she was seven, she could play chess."]
+      },
+      "reference_answer": "When she was seven, she could play chess.",
+      "incorrect_answer": "When she was seven, she could played chess.",
+      "editorial_answer": "When she was seven, she could play chess.",
+      "explanation": "После could нужна начальная форма play.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Чего Амир не умел в семь лет?",
+      "public_payload": {
+        "passage": "When Amir was seven, he could read simple stories, but he could not swim. His sister could swim well and helped him practise at weekends. After several months, Amir could swim a short distance. He still preferred reading, but he was pleased to have a new skill.",
+        "options": [
+          {
+            "id": "v1523989e2269",
+            "label": "Swim."
+          },
+          {
+            "id": "vdef90887c494",
+            "label": "Read simple stories."
+          },
+          {
+            "id": "v2a0278aef42b",
+            "label": "Speak to his sister."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1523989e2269"
+      },
+      "reference_answer": "v1523989e2269",
+      "incorrect_answer": "vdef90887c494",
+      "editorial_answer": "Swim.",
+      "explanation": "Начальный контраст касается чтения и плавания.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l40d230be5e6f",
+            "label": "childhood"
+          },
+          {
+            "id": "l15abf98449ec",
+            "label": "ride"
+          },
+          {
+            "id": "la57b68a93235",
+            "label": "skill"
+          },
+          {
+            "id": "l519a9776cef5",
+            "label": "practise"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb0a86e44a50c",
+            "label": "умение"
+          },
+          {
+            "id": "rd7801e6a1d02",
+            "label": "практиковаться"
+          },
+          {
+            "id": "r391b968aa17b",
+            "label": "детство"
+          },
+          {
+            "id": "r02daee8c434c",
+            "label": "ездить верхом или на велосипеде"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l40d230be5e6f": "r391b968aa17b",
+          "l15abf98449ec": "r02daee8c434c",
+          "la57b68a93235": "rb0a86e44a50c",
+          "l519a9776cef5": "rd7801e6a1d02"
+        }
+      },
+      "reference_answer": {
+        "l40d230be5e6f": "r391b968aa17b",
+        "l15abf98449ec": "r02daee8c434c",
+        "la57b68a93235": "rb0a86e44a50c",
+        "l519a9776cef5": "rd7801e6a1d02"
+      },
+      "incorrect_answer": {
+        "l40d230be5e6f": "r02daee8c434c",
+        "l15abf98449ec": "r391b968aa17b",
+        "la57b68a93235": "rb0a86e44a50c",
+        "l519a9776cef5": "rd7801e6a1d02"
+      },
+      "editorial_answer": "childhood — детство; ride — ездить верхом или на велосипеде; skill — умение; practise — практиковаться",
+      "explanation": "В этих контекстах: childhood — детство; ride — ездить верхом или на велосипеде; skill — умение; practise — практиковаться.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что изменилось после практики?",
+      "public_payload": {
+        "passage": "When Amir was seven, he could read simple stories, but he could not swim. His sister could swim well and helped him practise at weekends. After several months, Amir could swim a short distance. He still preferred reading, but he was pleased to have a new skill.",
+        "options": [
+          {
+            "id": "v33b4a868bed9",
+            "label": "He stopped enjoying reading."
+          },
+          {
+            "id": "v440cc11ef9cd",
+            "label": "His sister could no longer swim."
+          },
+          {
+            "id": "vf55c6b6550f6",
+            "label": "He could swim a short distance."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf55c6b6550f6"
+      },
+      "reference_answer": "vf55c6b6550f6",
+      "incorrect_answer": "v33b4a868bed9",
+      "editorial_answer": "He could swim a short distance.",
+      "explanation": "Новое умение не отменило его предпочтения чтению.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь об общем умении в детстве.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Could you ride a bike when you were young?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vec709cd85999",
+            "label": "Yes, I could ride one when I was six."
+          },
+          {
+            "id": "v3bcdd97c920c",
+            "label": "Yes, I could rode one when I was six."
+          },
+          {
+            "id": "vb951adfe51af",
+            "label": "Yes, I can rode yesterday young."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vec709cd85999"
+      },
+      "reference_answer": "vec709cd85999",
+      "incorrect_answer": "v3bcdd97c920c",
+      "editorial_answer": "Yes, I could ride one when I was six.",
+      "explanation": "Could ride сохраняет начальную форму глагола.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An ability learned through practice is a ___.",
+        "options": [
+          {
+            "id": "v4d6818af6b6c",
+            "label": "fee"
+          },
+          {
+            "id": "vfd167e2b3b11",
+            "label": "deadline"
+          },
+          {
+            "id": "v62d1f195248f",
+            "label": "skill"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v62d1f195248f"
+      },
+      "reference_answer": "v62d1f195248f",
+      "incorrect_answer": "v4d6818af6b6c",
+      "editorial_answer": "skill",
+      "explanation": "Skill — приобретённое умение.",
+      "key": "e09"
+    }
+  ]
+}

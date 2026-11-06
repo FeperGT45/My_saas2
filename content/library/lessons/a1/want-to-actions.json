@@ -1,0 +1,334 @@
+{
+  "key": "a1/want-to-actions",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 3,
+  "title": "Что хочется сделать",
+  "description": "Что хочется сделать: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать want to перед действием",
+    "Отличать want + предмет от want to + глагол"
+  ],
+  "notes": [
+    "Перед действием: I want to read. Перед предметом: I want a book.",
+    "С he/she используется wants, но после to глагол не меняется: She wants to read."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/question-words-basic"],
+  "lexicon": [
+    {
+      "en": "want",
+      "ru": "хотеть"
+    },
+    {
+      "en": "read",
+      "ru": "читать"
+    },
+    {
+      "en": "learn",
+      "ru": "учиться, узнавать"
+    },
+    {
+      "en": "visit",
+      "ru": "посещать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: She wants ___ the new book.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v8b6e4376b32a",
+            "label": "reads to"
+          },
+          {
+            "id": "v20810cfca767",
+            "label": "to read"
+          },
+          {
+            "id": "v17acdd95a957",
+            "label": "reading to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v20810cfca767"
+      },
+      "reference_answer": "v20810cfca767",
+      "incorrect_answer": "v17acdd95a957",
+      "editorial_answer": "to read",
+      "explanation": "Wants to read — стандартная модель желания сделать что-то.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: a / to.",
+      "public_payload": {
+        "sentence": "I want ___ learn English."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "a",
+      "editorial_answer": "I want to learn English.",
+      "explanation": "Learn — действие, перед ним используется to.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы хотим посетить музей.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "to"
+          },
+          {
+            "id": "t4",
+            "label": "visit"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "museum."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "want"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "We want to visit the museum.",
+      "explanation": "После want to стоит начальная форма visit.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He want to learn French."
+      },
+      "answer_key": {
+        "accepted": ["He wants to learn French."]
+      },
+      "reference_answer": "He wants to learn French.",
+      "incorrect_answer": "He want to learn French.",
+      "editorial_answer": "He wants to learn French.",
+      "explanation": "С he в утверждении требуется wants.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что хочет Пиа?",
+      "public_payload": {
+        "passage": "Pia wants a book about birds. She wants to read it at home. Her friend wants to visit the park and look at real birds.",
+        "options": [
+          {
+            "id": "v5915ad061298",
+            "label": "A book about birds."
+          },
+          {
+            "id": "v1b15655010e5",
+            "label": "A new bicycle."
+          },
+          {
+            "id": "v87e87ff5b320",
+            "label": "A ticket to France."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5915ad061298"
+      },
+      "reference_answer": "v5915ad061298",
+      "incorrect_answer": "v1b15655010e5",
+      "editorial_answer": "A book about birds.",
+      "explanation": "Первое предложение называет желаемую книгу.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l21f81bb5abc8",
+            "label": "want"
+          },
+          {
+            "id": "la5370dca5cf2",
+            "label": "read"
+          },
+          {
+            "id": "lff25059b0aad",
+            "label": "learn"
+          },
+          {
+            "id": "l5e7ead4513e2",
+            "label": "visit"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb24092de2f56",
+            "label": "учиться, узнавать"
+          },
+          {
+            "id": "rabe7b3bc3774",
+            "label": "посещать"
+          },
+          {
+            "id": "rfd9f97bf5622",
+            "label": "хотеть"
+          },
+          {
+            "id": "r2d0c055bbfa1",
+            "label": "читать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l21f81bb5abc8": "rfd9f97bf5622",
+          "la5370dca5cf2": "r2d0c055bbfa1",
+          "lff25059b0aad": "rb24092de2f56",
+          "l5e7ead4513e2": "rabe7b3bc3774"
+        }
+      },
+      "reference_answer": {
+        "l21f81bb5abc8": "rfd9f97bf5622",
+        "la5370dca5cf2": "r2d0c055bbfa1",
+        "lff25059b0aad": "rb24092de2f56",
+        "l5e7ead4513e2": "rabe7b3bc3774"
+      },
+      "incorrect_answer": {
+        "l21f81bb5abc8": "r2d0c055bbfa1",
+        "la5370dca5cf2": "rfd9f97bf5622",
+        "lff25059b0aad": "rb24092de2f56",
+        "l5e7ead4513e2": "rabe7b3bc3774"
+      },
+      "editorial_answer": "want — хотеть; read — читать; learn — учиться, узнавать; visit — посещать",
+      "explanation": "В этих контекстах: want — хотеть; read — читать; learn — учиться, узнавать; visit — посещать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что хочет сделать друг?",
+      "public_payload": {
+        "passage": "Pia wants a book about birds. She wants to read it at home. Her friend wants to visit the park and look at real birds.",
+        "options": [
+          {
+            "id": "v568263986dca",
+            "label": "Stay in the bookshop all day."
+          },
+          {
+            "id": "v14d7dd426d2c",
+            "label": "Learn to drive."
+          },
+          {
+            "id": "v980a45284e60",
+            "label": "Visit the park."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v980a45284e60"
+      },
+      "reference_answer": "v980a45284e60",
+      "incorrect_answer": "v568263986dca",
+      "editorial_answer": "Visit the park.",
+      "explanation": "Друг хочет посмотреть на настоящих птиц в парке.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о желаемом действии.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What do you want to do today?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vc9f5f4779e47",
+            "label": "I want to visit my friend."
+          },
+          {
+            "id": "va63585222f0d",
+            "label": "I want visit my friend."
+          },
+          {
+            "id": "vcd8e079a6ae3",
+            "label": "I wants to visiting my friend."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc9f5f4779e47"
+      },
+      "reference_answer": "vc9f5f4779e47",
+      "incorrect_answer": "va63585222f0d",
+      "editorial_answer": "I want to visit my friend.",
+      "explanation": "С I нужен want, затем to visit.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "We go to the museum to ___ the new exhibition.",
+        "options": [
+          {
+            "id": "v134f198bfa84",
+            "label": "answer"
+          },
+          {
+            "id": "vb37cdde48113",
+            "label": "hungry"
+          },
+          {
+            "id": "vcc145c551dee",
+            "label": "visit"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vcc145c551dee"
+      },
+      "reference_answer": "vcc145c551dee",
+      "incorrect_answer": "v134f198bfa84",
+      "editorial_answer": "visit",
+      "explanation": "Visit означает посетить место или выставку.",
+      "key": "e09"
+    }
+  ]
+}

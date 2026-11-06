@@ -1,0 +1,330 @@
+{
+  "key": "a1/countries-and-languages",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 10,
+  "title": "Откуда человек и на каком языке говорит",
+  "description": "Откуда человек и на каком языке говорит: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать be from для страны",
+    "Использовать speak для языка"
+  ],
+  "notes": [
+    "Страна происхождения: She is from Spain.",
+    "Язык: She speaks Spanish. Название страны и языка не всегда совпадает."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/half-past-and-quarter"],
+  "lexicon": [
+    {
+      "en": "Spain",
+      "ru": "Испания"
+    },
+    {
+      "en": "Spanish",
+      "ru": "испанский язык"
+    },
+    {
+      "en": "France",
+      "ru": "Франция"
+    },
+    {
+      "en": "French",
+      "ru": "французский язык"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Léa is from France. She speaks ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vb2ae34533275",
+            "label": "French"
+          },
+          {
+            "id": "v24064c786dc7",
+            "label": "France"
+          },
+          {
+            "id": "v33e89882ace2",
+            "label": "a France"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb2ae34533275"
+      },
+      "reference_answer": "vb2ae34533275",
+      "incorrect_answer": "v24064c786dc7",
+      "editorial_answer": "French",
+      "explanation": "French — язык, France — страна.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: is / speaks.",
+      "public_payload": {
+        "sentence": "Carlos ___ from Spain."
+      },
+      "answer_key": {
+        "accepted": ["is"]
+      },
+      "reference_answer": "is",
+      "incorrect_answer": "speaks",
+      "editorial_answer": "Carlos is from Spain.",
+      "explanation": "Для происхождения используется is from.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Она говорит по-испански дома.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "Spanish"
+          },
+          {
+            "id": "t4",
+            "label": "at"
+          },
+          {
+            "id": "t5",
+            "label": "home."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "speaks"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "She speaks Spanish at home.",
+      "explanation": "После speaks здесь стоит название языка Spanish.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He is from French."
+      },
+      "answer_key": {
+        "accepted": ["He is from France."]
+      },
+      "reference_answer": "He is from France.",
+      "incorrect_answer": "He is from French.",
+      "editorial_answer": "He is from France.",
+      "explanation": "После from нужна страна France, а не название языка French.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Откуда Карлос?",
+      "public_payload": {
+        "passage": "Léa is from France. She speaks French and English. Her friend Carlos is from Spain. He speaks Spanish and is learning English with Léa.",
+        "options": [
+          {
+            "id": "v9be1aaaa382e",
+            "label": "France."
+          },
+          {
+            "id": "v553a5d76337f",
+            "label": "England, according to the text."
+          },
+          {
+            "id": "vbecb1d8522bf",
+            "label": "Spain."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbecb1d8522bf"
+      },
+      "reference_answer": "vbecb1d8522bf",
+      "incorrect_answer": "v9be1aaaa382e",
+      "editorial_answer": "Spain.",
+      "explanation": "Карлос из Испании; сведения об Англии не даны.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l30c6e4753cc2",
+            "label": "Spain"
+          },
+          {
+            "id": "l9b9bff5eb4c7",
+            "label": "Spanish"
+          },
+          {
+            "id": "l19f0c3a67dff",
+            "label": "France"
+          },
+          {
+            "id": "l2181d4d4c9b2",
+            "label": "French"
+          }
+        ],
+        "right": [
+          {
+            "id": "r9407b6c02ee9",
+            "label": "Франция"
+          },
+          {
+            "id": "r0eef35792ce5",
+            "label": "французский язык"
+          },
+          {
+            "id": "r673d23e15b9a",
+            "label": "Испания"
+          },
+          {
+            "id": "r0c2701422fa8",
+            "label": "испанский язык"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l30c6e4753cc2": "r673d23e15b9a",
+          "l9b9bff5eb4c7": "r0c2701422fa8",
+          "l19f0c3a67dff": "r9407b6c02ee9",
+          "l2181d4d4c9b2": "r0eef35792ce5"
+        }
+      },
+      "reference_answer": {
+        "l30c6e4753cc2": "r673d23e15b9a",
+        "l9b9bff5eb4c7": "r0c2701422fa8",
+        "l19f0c3a67dff": "r9407b6c02ee9",
+        "l2181d4d4c9b2": "r0eef35792ce5"
+      },
+      "incorrect_answer": {
+        "l30c6e4753cc2": "r0c2701422fa8",
+        "l9b9bff5eb4c7": "r673d23e15b9a",
+        "l19f0c3a67dff": "r9407b6c02ee9",
+        "l2181d4d4c9b2": "r0eef35792ce5"
+      },
+      "editorial_answer": "Spain — Испания; Spanish — испанский язык; France — Франция; French — французский язык",
+      "explanation": "В этих контекстах: Spain — Испания; Spanish — испанский язык; France — Франция; French — французский язык.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой язык Карлос изучает?",
+      "public_payload": {
+        "passage": "Léa is from France. She speaks French and English. Her friend Carlos is from Spain. He speaks Spanish and is learning English with Léa.",
+        "options": [
+          {
+            "id": "vca11c44ac11e",
+            "label": "No language."
+          },
+          {
+            "id": "v113e22283241",
+            "label": "English."
+          },
+          {
+            "id": "vb2d604ffbc56",
+            "label": "Only French."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v113e22283241"
+      },
+      "reference_answer": "v113e22283241",
+      "incorrect_answer": "vb2d604ffbc56",
+      "editorial_answer": "English.",
+      "explanation": "Последняя фраза сообщает об изучении английского.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о стране происхождения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Where are you from?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v2acba9cedbec",
+            "label": "I speak from Spanish."
+          },
+          {
+            "id": "v04d71bba6413",
+            "label": "I am speak Spain."
+          },
+          {
+            "id": "v650d31739923",
+            "label": "I am from Spain."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v650d31739923"
+      },
+      "reference_answer": "v650d31739923",
+      "incorrect_answer": "v2acba9cedbec",
+      "editorial_answer": "I am from Spain.",
+      "explanation": "Be from + страна — нужная модель ответа.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The language named in “She speaks French” is ___.",
+        "options": [
+          {
+            "id": "v36efa0021b35",
+            "label": "from"
+          },
+          {
+            "id": "v99df7249dcdb",
+            "label": "French"
+          },
+          {
+            "id": "v63c4b86608f4",
+            "label": "France"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v99df7249dcdb"
+      },
+      "reference_answer": "v99df7249dcdb",
+      "incorrect_answer": "v63c4b86608f4",
+      "editorial_answer": "French",
+      "explanation": "French — название языка.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "key": "a2/one-and-ones",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 7,
+  "title": "Не повторяем название предмета",
+  "description": "Не повторяем название предмета: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Заменять исчисляемое существительное через one",
+    "Использовать ones для нескольких предметов"
+  ],
+  "notes": [
+    "Which bag? — The red one. One заменяет одно исчисляемое существительное.",
+    "Which shoes? — The black ones. Для множественного числа используется ones."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/a-few-a-little"],
+  "lexicon": [
+    {
+      "en": "one",
+      "ru": "один предмет вместо повторения названия"
+    },
+    {
+      "en": "ones",
+      "ru": "предметы вместо повторения названия"
+    },
+    {
+      "en": "striped",
+      "ru": "полосатый"
+    },
+    {
+      "en": "plain",
+      "ru": "однотонный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: These shoes are too small. Do you have larger ___?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v154d2acecf30",
+            "label": "ones"
+          },
+          {
+            "id": "vf3c34fbc5d8e",
+            "label": "one"
+          },
+          {
+            "id": "v949a9979753d",
+            "label": "it"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v154d2acecf30"
+      },
+      "reference_answer": "v154d2acecf30",
+      "incorrect_answer": "vf3c34fbc5d8e",
+      "editorial_answer": "ones",
+      "explanation": "Shoes во множественном числе заменяется на ones.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: ones / one.",
+      "public_payload": {
+        "sentence": "I prefer the blue bag, not the red ___."
+      },
+      "answer_key": {
+        "accepted": ["one"]
+      },
+      "reference_answer": "one",
+      "incorrect_answer": "ones",
+      "editorial_answer": "I prefer the blue bag, not the red one.",
+      "explanation": "Один bag заменяется словом one.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я хотел бы однотонные (из этих предметов).»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "like"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "plain"
+          },
+          {
+            "id": "t6",
+            "label": "ones."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "would"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "I would like the plain ones.",
+      "explanation": "Ones относится к уже понятным исчисляемым предметам во множественном числе.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The green shoes fit better than the black one."
+      },
+      "answer_key": {
+        "accepted": ["The green shoes fit better than the black ones."]
+      },
+      "reference_answer": "The green shoes fit better than the black ones.",
+      "incorrect_answer": "The green shoes fit better than the black one.",
+      "editorial_answer": "The green shoes fit better than the black ones.",
+      "explanation": "Речь о shoes во множественном числе, поэтому ones.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Нора не выбрала полосатую сумку?",
+      "public_payload": {
+        "passage": "Two bags were on display: a striped bag and a plain blue bag. Nora liked the striped one, but it was too small for her books. She chose the blue one instead. At the next shelf, she compared two pairs of gloves and picked the warmer ones.",
+        "options": [
+          {
+            "id": "v543886e6aa4d",
+            "label": "It had no blue stripes."
+          },
+          {
+            "id": "v08ea52b889ca",
+            "label": "It was larger than every shelf."
+          },
+          {
+            "id": "ve98a070a957d",
+            "label": "It was too small for her books."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve98a070a957d"
+      },
+      "reference_answer": "ve98a070a957d",
+      "incorrect_answer": "v543886e6aa4d",
+      "editorial_answer": "It was too small for her books.",
+      "explanation": "Проблема была в вместимости, а не в отсутствии определённого цвета.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le87a9a14376f",
+            "label": "one"
+          },
+          {
+            "id": "l8819f4aab7d8",
+            "label": "ones"
+          },
+          {
+            "id": "l3a35444442b5",
+            "label": "striped"
+          },
+          {
+            "id": "l3dd79e200774",
+            "label": "plain"
+          }
+        ],
+        "right": [
+          {
+            "id": "r62e28488763d",
+            "label": "полосатый"
+          },
+          {
+            "id": "rb31d239e3d76",
+            "label": "однотонный"
+          },
+          {
+            "id": "rb127b8e0b318",
+            "label": "один предмет вместо повторения названия"
+          },
+          {
+            "id": "re031acc7aa95",
+            "label": "предметы вместо повторения названия"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le87a9a14376f": "rb127b8e0b318",
+          "l8819f4aab7d8": "re031acc7aa95",
+          "l3a35444442b5": "r62e28488763d",
+          "l3dd79e200774": "rb31d239e3d76"
+        }
+      },
+      "reference_answer": {
+        "le87a9a14376f": "rb127b8e0b318",
+        "l8819f4aab7d8": "re031acc7aa95",
+        "l3a35444442b5": "r62e28488763d",
+        "l3dd79e200774": "rb31d239e3d76"
+      },
+      "incorrect_answer": {
+        "le87a9a14376f": "re031acc7aa95",
+        "l8819f4aab7d8": "rb127b8e0b318",
+        "l3a35444442b5": "r62e28488763d",
+        "l3dd79e200774": "rb31d239e3d76"
+      },
+      "editorial_answer": "one — один предмет вместо повторения названия; ones — предметы вместо повторения названия; striped — полосатый; plain — однотонный",
+      "explanation": "В этих контекстах: one — один предмет вместо повторения названия; ones — предметы вместо повторения названия; striped — полосатый; plain — однотонный.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "К чему относятся warmer ones?",
+      "public_payload": {
+        "passage": "Two bags were on display: a striped bag and a plain blue bag. Nora liked the striped one, but it was too small for her books. She chose the blue one instead. At the next shelf, she compared two pairs of gloves and picked the warmer ones.",
+        "options": [
+          {
+            "id": "v8511b7d05348",
+            "label": "The two bags."
+          },
+          {
+            "id": "v0ed035b7b969",
+            "label": "The gloves."
+          },
+          {
+            "id": "v8395ad467947",
+            "label": "The books."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0ed035b7b969"
+      },
+      "reference_answer": "v0ed035b7b969",
+      "incorrect_answer": "v8395ad467947",
+      "editorial_answer": "The gloves.",
+      "explanation": "Последнее сравнение касается перчаток.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь об одной куртке, не повторяя jacket.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which jacket would you like?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vb14c9ea6a975",
+            "label": "The blue ones, please, for one jacket."
+          },
+          {
+            "id": "v207bcb95ebad",
+            "label": "The blue it, please."
+          },
+          {
+            "id": "v9de2ee28feb1",
+            "label": "The blue one, please."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9de2ee28feb1"
+      },
+      "reference_answer": "v9de2ee28feb1",
+      "incorrect_answer": "vb14c9ea6a975",
+      "editorial_answer": "The blue one, please.",
+      "explanation": "One заменяет единственное исчисляемое jacket.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A shirt with repeated lines of colour is ___.",
+        "options": [
+          {
+            "id": "v8be4979e79c2",
+            "label": "empty"
+          },
+          {
+            "id": "vaec3edd18595",
+            "label": "striped"
+          },
+          {
+            "id": "vd7a2eeb1f155",
+            "label": "plain"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vaec3edd18595"
+      },
+      "reference_answer": "vaec3edd18595",
+      "incorrect_answer": "vd7a2eeb1f155",
+      "editorial_answer": "striped",
+      "explanation": "Striped означает полосатый; plain — без такого рисунка.",
+      "key": "e09"
+    }
+  ]
+}

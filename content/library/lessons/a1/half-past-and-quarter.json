@@ -1,0 +1,338 @@
+{
+  "key": "a1/half-past-and-quarter",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 9,
+  "title": "Половина и четверть часа",
+  "description": "Половина и четверть часа: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Понимать half past и quarter past",
+    "Отличать quarter past от quarter to"
+  ],
+  "notes": [
+    "Half past three — 3:30; quarter past three — 3:15.",
+    "Quarter to four — 3:45, то есть без четверти четыре."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/between-and-behind"],
+  "lexicon": [
+    {
+      "en": "half past",
+      "ru": "половина следующего часа"
+    },
+    {
+      "en": "quarter past",
+      "ru": "четверть после часа"
+    },
+    {
+      "en": "quarter to",
+      "ru": "без четверти"
+    },
+    {
+      "en": "clock",
+      "ru": "часы"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Quarter past two means ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v294b29893269",
+            "label": "1:45"
+          },
+          {
+            "id": "v20612f9e2546",
+            "label": "2:15"
+          },
+          {
+            "id": "v25cd241bbfb6",
+            "label": "2:45"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v20612f9e2546"
+      },
+      "reference_answer": "v20612f9e2546",
+      "incorrect_answer": "v25cd241bbfb6",
+      "editorial_answer": "2:15",
+      "explanation": "Quarter past добавляет пятнадцать минут к названному часу.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: fifteen / thirty.",
+      "public_payload": {
+        "sentence": "Half past six is six ___."
+      },
+      "answer_key": {
+        "accepted": ["thirty"]
+      },
+      "reference_answer": "thirty",
+      "incorrect_answer": "fifteen",
+      "editorial_answer": "Half past six is six thirty.",
+      "explanation": "Half past — тридцать минут после часа.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Занятие начинается в половине четвёртого.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "starts"
+          },
+          {
+            "id": "t4",
+            "label": "at"
+          },
+          {
+            "id": "t5",
+            "label": "half"
+          },
+          {
+            "id": "t6",
+            "label": "past"
+          },
+          {
+            "id": "t7",
+            "label": "three."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "lesson"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The lesson starts at half past three.",
+      "explanation": "Half past three соответствует 3:30, а не русскому буквальному «полтретего».",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The meeting is in half past four."
+      },
+      "answer_key": {
+        "accepted": ["The meeting is at half past four."]
+      },
+      "reference_answer": "The meeting is at half past four.",
+      "incorrect_answer": "The meeting is in half past four.",
+      "editorial_answer": "The meeting is at half past four.",
+      "explanation": "Перед точным временем нужен at.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда начинается занятие?",
+      "public_payload": {
+        "passage": "The club opens at quarter past four. Our lesson starts at half past four. I arrive at four twenty, so I have ten minutes before the lesson.",
+        "options": [
+          {
+            "id": "ve9ee21204b97",
+            "label": "4:30."
+          },
+          {
+            "id": "v8313d7f95f98",
+            "label": "4:15."
+          },
+          {
+            "id": "v527a97404fee",
+            "label": "4:20."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve9ee21204b97"
+      },
+      "reference_answer": "ve9ee21204b97",
+      "incorrect_answer": "v8313d7f95f98",
+      "editorial_answer": "4:30.",
+      "explanation": "Half past four — 4:30; 4:15 относится к открытию клуба.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l3f9cdc80259c",
+            "label": "half past"
+          },
+          {
+            "id": "lc15ff1b23bd7",
+            "label": "quarter past"
+          },
+          {
+            "id": "l21773d7ec50e",
+            "label": "quarter to"
+          },
+          {
+            "id": "l7abe5b78305e",
+            "label": "clock"
+          }
+        ],
+        "right": [
+          {
+            "id": "r39047fc7d109",
+            "label": "без четверти"
+          },
+          {
+            "id": "r06d4a7093d15",
+            "label": "часы"
+          },
+          {
+            "id": "r5813f1cd5c3f",
+            "label": "половина следующего часа"
+          },
+          {
+            "id": "ra66948e92535",
+            "label": "четверть после часа"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l3f9cdc80259c": "r5813f1cd5c3f",
+          "lc15ff1b23bd7": "ra66948e92535",
+          "l21773d7ec50e": "r39047fc7d109",
+          "l7abe5b78305e": "r06d4a7093d15"
+        }
+      },
+      "reference_answer": {
+        "l3f9cdc80259c": "r5813f1cd5c3f",
+        "lc15ff1b23bd7": "ra66948e92535",
+        "l21773d7ec50e": "r39047fc7d109",
+        "l7abe5b78305e": "r06d4a7093d15"
+      },
+      "incorrect_answer": {
+        "l3f9cdc80259c": "ra66948e92535",
+        "lc15ff1b23bd7": "r5813f1cd5c3f",
+        "l21773d7ec50e": "r39047fc7d109",
+        "l7abe5b78305e": "r06d4a7093d15"
+      },
+      "editorial_answer": "half past — половина следующего часа; quarter past — четверть после часа; quarter to — без четверти; clock — часы",
+      "explanation": "В этих контекстах: half past — половина следующего часа; quarter past — четверть после часа; quarter to — без четверти; clock — часы.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько минут до занятия у рассказчика после прихода?",
+      "public_payload": {
+        "passage": "The club opens at quarter past four. Our lesson starts at half past four. I arrive at four twenty, so I have ten minutes before the lesson.",
+        "options": [
+          {
+            "id": "v1401887ff8f2",
+            "label": "Five."
+          },
+          {
+            "id": "v474394eb8391",
+            "label": "Thirty."
+          },
+          {
+            "id": "v068c47cc0257",
+            "label": "Ten."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v068c47cc0257"
+      },
+      "reference_answer": "v068c47cc0257",
+      "incorrect_answer": "v1401887ff8f2",
+      "editorial_answer": "Ten.",
+      "explanation": "От 4:20 до 4:30 — десять минут.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Переведи выражение в цифровое время.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What time is quarter to five?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v5e9730e3dae7",
+            "label": "It is 4:45."
+          },
+          {
+            "id": "vdb407b99379a",
+            "label": "It is 5:15."
+          },
+          {
+            "id": "v7b7151389190",
+            "label": "It is 5:45."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5e9730e3dae7"
+      },
+      "reference_answer": "v5e9730e3dae7",
+      "incorrect_answer": "vdb407b99379a",
+      "editorial_answer": "It is 4:45.",
+      "explanation": "Quarter to five — пятнадцать минут до пяти.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "We look at the ___ to check the time.",
+        "options": [
+          {
+            "id": "v7fd6e190fc48",
+            "label": "gate"
+          },
+          {
+            "id": "ve0d36e43550e",
+            "label": "receipt"
+          },
+          {
+            "id": "ve6c2c8395d56",
+            "label": "clock"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve6c2c8395d56"
+      },
+      "reference_answer": "ve6c2c8395d56",
+      "incorrect_answer": "v7fd6e190fc48",
+      "editorial_answer": "clock",
+      "explanation": "Clock — часы, показывающие время.",
+      "key": "e09"
+    }
+  ]
+}

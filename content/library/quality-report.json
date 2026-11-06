@@ -1,18 +1,18 @@
 {
   "package": "english-path-core",
-  "revision": 5,
+  "revision": 6,
   "summary": {
-    "lessons": 132,
-    "exercises": 1096,
-    "levels": { "A1": 30, "A2": 25, "B1": 28, "B2": 23, "C1": 13, "C2": 13 }
+    "lessons": 172,
+    "exercises": 1456,
+    "levels": { "A1": 42, "A2": 37, "B1": 36, "B2": 31, "C1": 13, "C2": 13 }
   },
   "availability": {
-    "publishedNonAudioFullLessons": 129,
+    "publishedNonAudioFullLessons": 169,
     "archivedAudioLessons": 3,
     "introductoryLessonsIncluded": false,
     "targetFullLessons": 300,
-    "remaining": 171,
-    "byLevel": { "A1": 29, "A2": 24, "B1": 27, "B2": 23, "C1": 13, "C2": 13 },
+    "remaining": 131,
+    "byLevel": { "A1": 41, "A2": 36, "B1": 35, "B2": 31, "C1": 13, "C2": 13 },
     "basis": "Local modular sources after audio retirement; verify production count separately after import."
   },
   "structure": "passed",
@@ -20,19 +20,19 @@
   "gradingCheck": "npm run test:library verifies all positive/negative references with the production SQL grader",
   "methodology": "Author review and automated checks; CEFR labels remain provisional, without external psychometric calibration.",
   "types": {
-    "context_choice": 125,
-    "correction": 123,
-    "dialogue": 118,
+    "context_choice": 165,
+    "correction": 163,
+    "dialogue": 158,
     "dictation": 3,
     "error_identification": 4,
-    "gap": 123,
+    "gap": 163,
     "grammar": 1,
-    "matching": 47,
+    "matching": 87,
     "multiple_choice": 15,
-    "reading": 206,
+    "reading": 286,
     "response_choice": 9,
-    "sentence": 111,
-    "single_choice": 112,
+    "sentence": 151,
+    "single_choice": 152,
     "spelling": 1,
     "synonym_antonym": 8,
     "tenses": 7,
@@ -1097,6 +1097,326 @@
       "types": 8,
       "readingWords": [89, 89],
       "sha256": "fd6be9bea58316219d4a5565040a9734195968b74b8145c19aad45517f97a2b2"
+    },
+    {
+      "key": "a1/daily-negatives",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [24, 24],
+      "sha256": "fbec7baebbca216961a6025e890faf964b0b75f8218613b8225c9211c9521b3f"
+    },
+    {
+      "key": "a1/question-words-basic",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [23, 23],
+      "sha256": "ca02340c22dbf5dd353dedcb9c09d339fd0fb39974e3dc9d5c052eaac229d25e"
+    },
+    {
+      "key": "a1/want-to-actions",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [25, 25],
+      "sha256": "5b98182cd961432c7687dd179438d7fe5047f225a2a78b9e1c056bb849783057"
+    },
+    {
+      "key": "a1/this-these-items",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [26, 26],
+      "sha256": "ddacd6229ec4418a24b99fe0a1eb88c2e3f8696b5443ae82841358cbaf2ca560"
+    },
+    {
+      "key": "a1/people-and-children",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [25, 25],
+      "sha256": "4dea68647eca75f9c4acac7a1c92581c33be2727a516863d132615b564e468c9"
+    },
+    {
+      "key": "a1/mine-and-yours",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [27, 27],
+      "sha256": "03c856f21900c146832484632e76b8f4867b6d137e3c3f0bbb0289276c3debf1"
+    },
+    {
+      "key": "a1/any-in-there-questions",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [26, 26],
+      "sha256": "f4bc19305a83c0cbb43e15613b7c1b76461d8c22cb51a805b059feb15f9412f0"
+    },
+    {
+      "key": "a1/between-and-behind",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [25, 25],
+      "sha256": "710d9c9ec188c8242ae083468a43ea315a8d6b1ff4100f957fac509c5dbc373c"
+    },
+    {
+      "key": "a1/half-past-and-quarter",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [27, 27],
+      "sha256": "756fcc98cf48dd3571afcff6a774eea1366839ac672fd426dfa6ca71e8e29ef7"
+    },
+    {
+      "key": "a1/countries-and-languages",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [24, 24],
+      "sha256": "521bb6cf374f82c1f1ff334be0a94fc9eac6cedca64e8b9831f1cc99abe36da8"
+    },
+    {
+      "key": "a1/workdays-and-weekend",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [29, 29],
+      "sha256": "56d719e64e018a2079c216ea5b5c4066abef888411de27890fbb75305d838028"
+    },
+    {
+      "key": "a1/need-things",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [28, 28],
+      "sha256": "ad12b099ed85711178c65ad5cea992ca87193e779262c78ea14f993d67f45c07"
+    },
+    {
+      "key": "a2/when-future-arrives",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [44, 44],
+      "sha256": "0efbf08830ce2a6182c62f5969a3ef753c8e3c7013cda6e33e7b764b844acfb8"
+    },
+    {
+      "key": "a2/had-to-yesterday",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [50, 50],
+      "sha256": "54990a3bd38962e91a34106b733d424a839fad1f7739e820896409cfe2044f95"
+    },
+    {
+      "key": "a2/could-childhood",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [47, 47],
+      "sha256": "db2fa3e1d84d47cdca12c9f36d959a47f8faebb4b5e3ae390057b719aec3b6f5"
+    },
+    {
+      "key": "a2/easy-to-find",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [48, 48],
+      "sha256": "35fa335045188e929dce9776b04c8d2adbec06b918b59a2636e521096a0d5652"
+    },
+    {
+      "key": "a2/too-much-too-many",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [49, 49],
+      "sha256": "80f7897b193d3b7d5a41388cce08a59f904894b41e69da8da1e24a9b80fc0fa9"
+    },
+    {
+      "key": "a2/a-few-a-little",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [44, 44],
+      "sha256": "6ea11abf8e20aaf24f89e49f46e513bcde8fd51a10de68182b8633450767759f"
+    },
+    {
+      "key": "a2/one-and-ones",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [47, 47],
+      "sha256": "69ce57a5dfa38f67919aad482c2acdb6b57cae5886912216804c1ec2cc848c15"
+    },
+    {
+      "key": "a2/whose-direct-question",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [50, 50],
+      "sha256": "211bcf482c6c3bfb8940c38b8600be28071c6d72bb6c83f488db619700e043c7"
+    },
+    {
+      "key": "a2/just-already-yet",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [45, 45],
+      "sha256": "f48f1208c40fc6b331afb8bdd4b2774c43f0a2338964a68b95c392403d13b2d4"
+    },
+    {
+      "key": "a2/immediate-decisions",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [50, 50],
+      "sha256": "a5ab79e66d074e91ccf059b6b3d3dc5f3207c86176c72d3e38bff4212e3d1108"
+    },
+    {
+      "key": "a2/checking-in-out",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [52, 52],
+      "sha256": "c474b765cc9427185bc3538b9799376b25976b410fc50e89f8d96564a586abb2"
+    },
+    {
+      "key": "a2/lets-how-about",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [54, 54],
+      "sha256": "358cfd18d64ce892b94e28b8e7a8079a08f5272f75d865b05dcd7ec7b0108b73"
+    },
+    {
+      "key": "b1/states-since-for",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [53, 53],
+      "sha256": "3a7a4123301e9d620d3bdeed6a16ee3fc0c4553c4c8cc436833e5ce1f967fe3a"
+    },
+    {
+      "key": "b1/reflexive-pronouns",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [59, 59],
+      "sha256": "77dbca4c0162a3811cbe3f1be99af6c7bdff3204f0f9eef509972e3d195e6072"
+    },
+    {
+      "key": "b1/somewhere-anywhere",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [58, 58],
+      "sha256": "eae993722d666ca2ed77ab782f43e19222394b0145a4d32a7ff4cf90f3ecd3db"
+    },
+    {
+      "key": "b1/allow-and-encourage",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [66, 66],
+      "sha256": "76e0f47371afd012302c2afdb50974a606303669192ada8f756bad747146cf5a"
+    },
+    {
+      "key": "b1/enough-to-result",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [61, 61],
+      "sha256": "d9a9752d8dbaaeaf25bc5cbb6d26f8d66e9613a3343081dc9ff1cea43c13254a"
+    },
+    {
+      "key": "b1/zero-conditional-rules",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [69, 69],
+      "sha256": "f0cb3126245927f4e2c3b81956af267f03c90dce82413912250e1c2bdb6fd217"
+    },
+    {
+      "key": "b1/however-two-sentences",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [57, 57],
+      "sha256": "bb35468f3d5231ae3405cf4b7f59d9d7247157cfc201bd907f9610e4545e8c18"
+    },
+    {
+      "key": "b1/reported-yes-no",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [57, 57],
+      "sha256": "6509112728ece56edacbb767b77cfe81bf95c6371275e0ae5dcef303fd02b548"
+    },
+    {
+      "key": "b2/used-to-being-used",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [81, 81],
+      "sha256": "9b885718b6cf35ca8641887d0abfc86304193b954a6b234cefda109e2b39547b"
+    },
+    {
+      "key": "b2/future-from-past",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [84, 84],
+      "sha256": "acb92928f224fe5bb5ea0f83ea5e012fd7e782a5dfbe452d258badcc2aaf089a"
+    },
+    {
+      "key": "b2/prepositions-relative",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [93, 93],
+      "sha256": "fd8d8b49c6e6b27a9649e6eb7c30bbd89ea25e3852e0165ed9d33880992123c4"
+    },
+    {
+      "key": "b2/whatever-is-needed",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [78, 78],
+      "sha256": "a87d7327eca5d7d2fa6669144eb9c6229010627d0c1e57df302a394de578ad39"
+    },
+    {
+      "key": "b2/rather-another-person",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [85, 85],
+      "sha256": "5ca6f39183b16dfbf0455f8b53ec1e6a0170d7563e32300ea741b48ab141eb84"
+    },
+    {
+      "key": "b2/future-passive-process",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [87, 87],
+      "sha256": "4f7e9a206533f722eb4d62dec318c3f3ffa1e281e3310eaad8d47cbfaaa8c357"
+    },
+    {
+      "key": "b2/even-if-even-though",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [87, 87],
+      "sha256": "b9cfa10eda9c4280fe98d684a621943378411dd4243e572005d8b1f2424961b7"
+    },
+    {
+      "key": "b2/remember-and-stop",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [88, 88],
+      "sha256": "72ee729f20e8cdfc881a4912db4df0b6f87766560e225a8b3264c6dfd665b22a"
     }
   ]
 }

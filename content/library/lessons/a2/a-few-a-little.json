@@ -1,0 +1,342 @@
+{
+  "key": "a2/a-few-a-little",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 6,
+  "title": "Немного, но всё-таки есть",
+  "description": "Немного, но всё-таки есть: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Выбирать a few с отдельными предметами",
+    "Выбирать a little с неисчисляемым количеством"
+  ],
+  "notes": [
+    "A few + исчисляемое множественное: a few biscuits.",
+    "A little + неисчисляемое: a little water. Формы с a здесь означают некоторое небольшое количество."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/too-much-too-many"],
+  "lexicon": [
+    {
+      "en": "a few",
+      "ru": "несколько"
+    },
+    {
+      "en": "a little",
+      "ru": "немного (неисчисляемого)"
+    },
+    {
+      "en": "biscuit",
+      "ru": "печенье"
+    },
+    {
+      "en": "water",
+      "ru": "вода"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We have ___ biscuits left: three or four.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vc0afb6d25db1",
+            "label": "much of a"
+          },
+          {
+            "id": "v9187826e9998",
+            "label": "a few"
+          },
+          {
+            "id": "v67adb1d0fd5a",
+            "label": "a little"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9187826e9998"
+      },
+      "reference_answer": "v9187826e9998",
+      "incorrect_answer": "v67adb1d0fd5a",
+      "editorial_answer": "a few",
+      "explanation": "Biscuits исчисляются, поэтому a few.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: a little / a few.",
+      "public_payload": {
+        "sentence": "There is ___ water in the bottle, about half a glass."
+      },
+      "answer_key": {
+        "accepted": ["a little"]
+      },
+      "reference_answer": "a little",
+      "incorrect_answer": "a few",
+      "editorial_answer": "There is a little water in the bottle, about half a glass.",
+      "explanation": "Для количества воды используется a little.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «У нас есть несколько минут до занятия.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "a"
+          },
+          {
+            "id": "t4",
+            "label": "few"
+          },
+          {
+            "id": "t5",
+            "label": "minutes"
+          },
+          {
+            "id": "t6",
+            "label": "before"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "lesson."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "have"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "We have a few minutes before the lesson.",
+      "explanation": "Minutes исчисляются, поэтому a few.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "There is a few milk in the jug."
+      },
+      "answer_key": {
+        "accepted": ["There is a little milk in the jug."]
+      },
+      "reference_answer": "There is a little milk in the jug.",
+      "incorrect_answer": "There is a few milk in the jug.",
+      "editorial_answer": "There is a little milk in the jug.",
+      "explanation": "Milk в этом значении неисчисляемое: a little.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что оставалось в бутылке?",
+      "public_payload": {
+        "passage": "We reached the picnic place with a little water left in one bottle. There were also a few biscuits in my bag. We shared them while waiting for the others. Nobody wanted a full meal yet, but everyone was glad to have something small.",
+        "options": [
+          {
+            "id": "v3b4b1a18f8ac",
+            "label": "A small amount of water."
+          },
+          {
+            "id": "v1a38496cbbc5",
+            "label": "A few biscuits."
+          },
+          {
+            "id": "ve17660e45097",
+            "label": "A complete hot meal."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3b4b1a18f8ac"
+      },
+      "reference_answer": "v3b4b1a18f8ac",
+      "incorrect_answer": "v1a38496cbbc5",
+      "editorial_answer": "A small amount of water.",
+      "explanation": "A little water описывает небольшой остаток воды.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l89d22025f084",
+            "label": "a few"
+          },
+          {
+            "id": "l1ace9356133f",
+            "label": "a little"
+          },
+          {
+            "id": "l938a3639dd69",
+            "label": "biscuit"
+          },
+          {
+            "id": "l553148c1a317",
+            "label": "water"
+          }
+        ],
+        "right": [
+          {
+            "id": "ra0442baf5078",
+            "label": "печенье"
+          },
+          {
+            "id": "r3bf4038e2f0f",
+            "label": "вода"
+          },
+          {
+            "id": "re6e81a2ccc67",
+            "label": "несколько"
+          },
+          {
+            "id": "rb80b2c41402e",
+            "label": "немного (неисчисляемого)"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l89d22025f084": "re6e81a2ccc67",
+          "l1ace9356133f": "rb80b2c41402e",
+          "l938a3639dd69": "ra0442baf5078",
+          "l553148c1a317": "r3bf4038e2f0f"
+        }
+      },
+      "reference_answer": {
+        "l89d22025f084": "re6e81a2ccc67",
+        "l1ace9356133f": "rb80b2c41402e",
+        "l938a3639dd69": "ra0442baf5078",
+        "l553148c1a317": "r3bf4038e2f0f"
+      },
+      "incorrect_answer": {
+        "l89d22025f084": "rb80b2c41402e",
+        "l1ace9356133f": "re6e81a2ccc67",
+        "l938a3639dd69": "ra0442baf5078",
+        "l553148c1a317": "r3bf4038e2f0f"
+      },
+      "editorial_answer": "a few — несколько; a little — немного (неисчисляемого); biscuit — печенье; water — вода",
+      "explanation": "В этих контекстах: a few — несколько; a little — немного (неисчисляемого); biscuit — печенье; water — вода.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что сделали с печеньем?",
+      "public_payload": {
+        "passage": "We reached the picnic place with a little water left in one bottle. There were also a few biscuits in my bag. We shared them while waiting for the others. Nobody wanted a full meal yet, but everyone was glad to have something small.",
+        "options": [
+          {
+            "id": "vccd9ebd1b3f9",
+            "label": "They threw all of it away."
+          },
+          {
+            "id": "v7a1b3e162da5",
+            "label": "They bought it after everyone arrived."
+          },
+          {
+            "id": "v991f47d6f705",
+            "label": "They shared it while waiting."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v991f47d6f705"
+      },
+      "reference_answer": "v991f47d6f705",
+      "incorrect_answer": "vccd9ebd1b3f9",
+      "editorial_answer": "They shared it while waiting.",
+      "explanation": "В тексте говорится о совместном перекусе во время ожидания.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о нескольких минутах.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Have we got time before the bus?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vef4f9f02a672",
+            "label": "Yes, we have a few minutes."
+          },
+          {
+            "id": "v397b6aab3275",
+            "label": "Yes, we have a little minutes."
+          },
+          {
+            "id": "vcedd56ea8fb9",
+            "label": "Yes, we has a few minute."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vef4f9f02a672"
+      },
+      "reference_answer": "vef4f9f02a672",
+      "incorrect_answer": "v397b6aab3275",
+      "editorial_answer": "Yes, we have a few minutes.",
+      "explanation": "Minutes — исчисляемое множественное число.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "For a small amount of uncountable water, use ___.",
+        "options": [
+          {
+            "id": "vc60e947ac3f1",
+            "label": "a few"
+          },
+          {
+            "id": "v21f123dc4243",
+            "label": "many"
+          },
+          {
+            "id": "v7591caea992b",
+            "label": "a little"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7591caea992b"
+      },
+      "reference_answer": "v7591caea992b",
+      "incorrect_answer": "vc60e947ac3f1",
+      "editorial_answer": "a little",
+      "explanation": "С неисчисляемым количеством используется a little.",
+      "key": "e09"
+    }
+  ]
+}

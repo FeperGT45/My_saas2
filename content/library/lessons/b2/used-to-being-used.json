@@ -1,0 +1,366 @@
+{
+  "key": "b2/used-to-being-used",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B2 · точность в общении",
+    "position": 30
+  },
+  "position": 1,
+  "title": "Привычка и привыкание",
+  "description": "Привычка и привыкание: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Различать used to do и be used to doing",
+    "Использовать get used to для процесса привыкания"
+  ],
+  "notes": [
+    "Used to work описывает прежнюю привычку; be used to working — привычность нынешнего условия.",
+    "В be/get used to слово to является предлогом, поэтому далее возможна -ing-форма."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/whereas-evaluations"],
+  "lexicon": [
+    {
+      "en": "accustomed",
+      "ru": "привыкший"
+    },
+    {
+      "en": "adjust",
+      "ru": "приспосабливаться"
+    },
+    {
+      "en": "routine",
+      "ru": "привычный порядок"
+    },
+    {
+      "en": "unfamiliar",
+      "ru": "незнакомый"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: She works nights and is used to ___ during the day.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v4d49e9f6aa50",
+            "label": "slept to"
+          },
+          {
+            "id": "v023d200edea0",
+            "label": "sleeping"
+          },
+          {
+            "id": "vcc243ee3f263",
+            "label": "sleep"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v023d200edea0"
+      },
+      "reference_answer": "v023d200edea0",
+      "incorrect_answer": "vcc243ee3f263",
+      "editorial_answer": "sleeping",
+      "explanation": "После is used to нужен герундий sleeping.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: work / working.",
+      "public_payload": {
+        "sentence": "It took several weeks to get used to ___ in a shared office."
+      },
+      "answer_key": {
+        "accepted": ["working"]
+      },
+      "reference_answer": "working",
+      "incorrect_answer": "work",
+      "editorial_answer": "It took several weeks to get used to working in a shared office.",
+      "explanation": "Get used to описывает привыкание; to здесь предлог.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я привык работать в небольшой команде.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "used"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "working"
+          },
+          {
+            "id": "t6",
+            "label": "with"
+          },
+          {
+            "id": "t7",
+            "label": "a"
+          },
+          {
+            "id": "t8",
+            "label": "small"
+          },
+          {
+            "id": "t9",
+            "label": "team."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "am"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "I am used to working with a small team.",
+      "explanation": "Am used to working описывает привычность, не прежнюю отменённую привычку.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He is used to work with background noise."
+      },
+      "answer_key": {
+        "accepted": ["He is used to working with background noise."]
+      },
+      "reference_answer": "He is used to working with background noise.",
+      "incorrect_answer": "He is used to work with background noise.",
+      "editorial_answer": "He is used to working with background noise.",
+      "explanation": "После is used to нужна -ing-форма working.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что описывает used to work в начале?",
+      "public_payload": {
+        "passage": "Mina used to work alone in a quiet room. Her new job involved a shared office and regular interruptions. At first, she found it hard to concentrate, but gradually she got used to working with other people nearby. This did not mean that every interruption became helpful. She and her colleagues agreed on quiet periods for complex tasks. Becoming accustomed to the office involved both personal adjustment and a change in shared routines, rather than simply accepting every condition without discussion.",
+        "options": [
+          {
+            "id": "vc1a0da5f3e8b",
+            "label": "A previous working arrangement."
+          },
+          {
+            "id": "v308f1fee5a3e",
+            "label": "A future promise to work alone forever."
+          },
+          {
+            "id": "va3d3057874fb",
+            "label": "Proof that Mina enjoys every interruption."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc1a0da5f3e8b"
+      },
+      "reference_answer": "vc1a0da5f3e8b",
+      "incorrect_answer": "v308f1fee5a3e",
+      "editorial_answer": "A previous working arrangement.",
+      "explanation": "Used to work относится к прошлому рабочему порядку.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lbe2e6b7678d6",
+            "label": "accustomed"
+          },
+          {
+            "id": "l9cf50aeb49d1",
+            "label": "adjust"
+          },
+          {
+            "id": "l39adbf476981",
+            "label": "routine"
+          },
+          {
+            "id": "l51a377d4410f",
+            "label": "unfamiliar"
+          }
+        ],
+        "right": [
+          {
+            "id": "ra13588384064",
+            "label": "привычный порядок"
+          },
+          {
+            "id": "r8791841292e8",
+            "label": "незнакомый"
+          },
+          {
+            "id": "r96fbd1b82619",
+            "label": "привыкший"
+          },
+          {
+            "id": "r393a416e5ddd",
+            "label": "приспосабливаться"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lbe2e6b7678d6": "r96fbd1b82619",
+          "l9cf50aeb49d1": "r393a416e5ddd",
+          "l39adbf476981": "ra13588384064",
+          "l51a377d4410f": "r8791841292e8"
+        }
+      },
+      "reference_answer": {
+        "lbe2e6b7678d6": "r96fbd1b82619",
+        "l9cf50aeb49d1": "r393a416e5ddd",
+        "l39adbf476981": "ra13588384064",
+        "l51a377d4410f": "r8791841292e8"
+      },
+      "incorrect_answer": {
+        "lbe2e6b7678d6": "r393a416e5ddd",
+        "l9cf50aeb49d1": "r96fbd1b82619",
+        "l39adbf476981": "ra13588384064",
+        "l51a377d4410f": "r8791841292e8"
+      },
+      "editorial_answer": "accustomed — привыкший; adjust — приспосабливаться; routine — привычный порядок; unfamiliar — незнакомый",
+      "explanation": "В этих контекстах: accustomed — привыкший; adjust — приспосабливаться; routine — привычный порядок; unfamiliar — незнакомый.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Означало ли привыкание согласие с любыми помехами?",
+      "public_payload": {
+        "passage": "Mina used to work alone in a quiet room. Her new job involved a shared office and regular interruptions. At first, she found it hard to concentrate, but gradually she got used to working with other people nearby. This did not mean that every interruption became helpful. She and her colleagues agreed on quiet periods for complex tasks. Becoming accustomed to the office involved both personal adjustment and a change in shared routines, rather than simply accepting every condition without discussion.",
+        "options": [
+          {
+            "id": "v8481519dc1a9",
+            "label": "Yes; no shared routine changed."
+          },
+          {
+            "id": "v591d39fb2ff6",
+            "label": "Yes; every interruption became useful."
+          },
+          {
+            "id": "vf45260195a36",
+            "label": "No; the team also introduced quiet periods."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf45260195a36"
+      },
+      "reference_answer": "vf45260195a36",
+      "incorrect_answer": "v8481519dc1a9",
+      "editorial_answer": "No; the team also introduced quiet periods.",
+      "explanation": "Текст различает личную адаптацию и согласованные изменения условий.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Опиши продолжающееся привыкание.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Do you still find the early start difficult?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v606a5158f9f0",
+            "label": "Less so; I am getting used to waking up early."
+          },
+          {
+            "id": "ve41815e85cdd",
+            "label": "Less so; I am getting used to wake up early."
+          },
+          {
+            "id": "vd5fe601bf89a",
+            "label": "Less so; I used getting wake up early."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v606a5158f9f0"
+      },
+      "reference_answer": "v606a5158f9f0",
+      "incorrect_answer": "ve41815e85cdd",
+      "editorial_answer": "Less so; I am getting used to waking up early.",
+      "explanation": "Getting used to + waking выражает процесс адаптации.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A person who is familiar with a repeated situation is ___ to it.",
+        "options": [
+          {
+            "id": "v100c6b7ce009",
+            "label": "opposed by definition"
+          },
+          {
+            "id": "vc0dd96473479",
+            "label": "entitled regardless"
+          },
+          {
+            "id": "vb15a19a5f0d2",
+            "label": "accustomed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb15a19a5f0d2"
+      },
+      "reference_answer": "vb15a19a5f0d2",
+      "incorrect_answer": "v100c6b7ce009",
+      "editorial_answer": "accustomed",
+      "explanation": "Accustomed to означает привыкший к условиям.",
+      "key": "e09"
+    }
+  ]
+}

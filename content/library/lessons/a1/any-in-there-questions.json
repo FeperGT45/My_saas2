@@ -1,0 +1,330 @@
+{
+  "key": "a1/any-in-there-questions",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 7,
+  "title": "Есть ли здесь свободные места",
+  "description": "Есть ли здесь свободные места: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Задавать вопрос Are there any ...?",
+    "Использовать Is there a ...? для одного предмета"
+  ],
+  "notes": [
+    "Для нескольких предметов: Are there any chairs?",
+    "Для одного исчисляемого предмета: Is there a chair? Is/are выбираются по числу предметов."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/mine-and-yours"],
+  "lexicon": [
+    {
+      "en": "seat",
+      "ru": "место для сидения"
+    },
+    {
+      "en": "free",
+      "ru": "свободный"
+    },
+    {
+      "en": "table",
+      "ru": "стол"
+    },
+    {
+      "en": "queue",
+      "ru": "очередь"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ there any free seats?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "ve3406e116847",
+            "label": "Are"
+          },
+          {
+            "id": "vdc39148ca0f4",
+            "label": "Is"
+          },
+          {
+            "id": "v4550dd34be39",
+            "label": "Does"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve3406e116847"
+      },
+      "reference_answer": "ve3406e116847",
+      "incorrect_answer": "vdc39148ca0f4",
+      "editorial_answer": "Are",
+      "explanation": "Seats во множественном числе требует Are there.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: any of / a.",
+      "public_payload": {
+        "sentence": "Is there ___ table near the window?"
+      },
+      "answer_key": {
+        "accepted": ["a"]
+      },
+      "reference_answer": "a",
+      "incorrect_answer": "any of",
+      "editorial_answer": "Is there a table near the window?",
+      "explanation": "Для одного впервые упоминаемого table используется a.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Есть ли свободные места?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "any"
+          },
+          {
+            "id": "t4",
+            "label": "free"
+          },
+          {
+            "id": "t5",
+            "label": "seats?"
+          },
+          {
+            "id": "t1",
+            "label": "Are"
+          },
+          {
+            "id": "t2",
+            "label": "there"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Are there any free seats?",
+      "explanation": "Are there согласуется с seats; any естественно в таком вопросе о наличии.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Is there any free chairs?"
+      },
+      "answer_key": {
+        "accepted": ["Are there any free chairs?"]
+      },
+      "reference_answer": "Are there any free chairs?",
+      "incorrect_answer": "Is there any free chairs?",
+      "editorial_answer": "Are there any free chairs?",
+      "explanation": "С множественным chairs нужно Are there.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где есть два свободных места?",
+      "public_payload": {
+        "passage": "The café is busy. There are no free tables inside. Two seats are free outside, but it is raining. Jo decides to wait in the queue.",
+        "options": [
+          {
+            "id": "v69c79c962e4e",
+            "label": "Inside by the window."
+          },
+          {
+            "id": "v78bc2799ee93",
+            "label": "In the queue itself."
+          },
+          {
+            "id": "v17174664787f",
+            "label": "Outside."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v17174664787f"
+      },
+      "reference_answer": "v17174664787f",
+      "incorrect_answer": "v69c79c962e4e",
+      "editorial_answer": "Outside.",
+      "explanation": "Текст называет места снаружи.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lb60b08ad406d",
+            "label": "seat"
+          },
+          {
+            "id": "lcc36b1a3337d",
+            "label": "free"
+          },
+          {
+            "id": "l83676f910701",
+            "label": "table"
+          },
+          {
+            "id": "l1e007e9f83a2",
+            "label": "queue"
+          }
+        ],
+        "right": [
+          {
+            "id": "r92cd0381683a",
+            "label": "стол"
+          },
+          {
+            "id": "r6ff7826a1705",
+            "label": "очередь"
+          },
+          {
+            "id": "r5b4f0b9c8cdf",
+            "label": "место для сидения"
+          },
+          {
+            "id": "rad34de54c605",
+            "label": "свободный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lb60b08ad406d": "r5b4f0b9c8cdf",
+          "lcc36b1a3337d": "rad34de54c605",
+          "l83676f910701": "r92cd0381683a",
+          "l1e007e9f83a2": "r6ff7826a1705"
+        }
+      },
+      "reference_answer": {
+        "lb60b08ad406d": "r5b4f0b9c8cdf",
+        "lcc36b1a3337d": "rad34de54c605",
+        "l83676f910701": "r92cd0381683a",
+        "l1e007e9f83a2": "r6ff7826a1705"
+      },
+      "incorrect_answer": {
+        "lb60b08ad406d": "rad34de54c605",
+        "lcc36b1a3337d": "r5b4f0b9c8cdf",
+        "l83676f910701": "r92cd0381683a",
+        "l1e007e9f83a2": "r6ff7826a1705"
+      },
+      "editorial_answer": "seat — место для сидения; free — свободный; table — стол; queue — очередь",
+      "explanation": "В этих контекстах: seat — место для сидения; free — свободный; table — стол; queue — очередь.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Джо не выбирает эти места?",
+      "public_payload": {
+        "passage": "The café is busy. There are no free tables inside. Two seats are free outside, but it is raining. Jo decides to wait in the queue.",
+        "options": [
+          {
+            "id": "ved1b9c6ebbfe",
+            "label": "The café is closed."
+          },
+          {
+            "id": "v0b57116b4d5e",
+            "label": "It is raining outside."
+          },
+          {
+            "id": "va0bbee8990c6",
+            "label": "Every seat is broken."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0b57116b4d5e"
+      },
+      "reference_answer": "v0b57116b4d5e",
+      "incorrect_answer": "va0bbee8990c6",
+      "editorial_answer": "It is raining outside.",
+      "explanation": "Дождь объясняет решение ждать, других причин текст не даёт.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Спроси об одном свободном столе.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "You need one table. What can you ask?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vb33ec2e4fa46",
+            "label": "Are there a free table?"
+          },
+          {
+            "id": "vcfefac4ad79e",
+            "label": "Does there free table?"
+          },
+          {
+            "id": "v8965e69b083d",
+            "label": "Is there a free table?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8965e69b083d"
+      },
+      "reference_answer": "v8965e69b083d",
+      "incorrect_answer": "vb33ec2e4fa46",
+      "editorial_answer": "Is there a free table?",
+      "explanation": "Один table требует вопроса Is there a ...?",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "People wait one behind another in a ___.",
+        "options": [
+          {
+            "id": "v27915ccd2325",
+            "label": "window"
+          },
+          {
+            "id": "v8062684e8e47",
+            "label": "queue"
+          },
+          {
+            "id": "vdd4d43789148",
+            "label": "seat"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8062684e8e47"
+      },
+      "reference_answer": "v8062684e8e47",
+      "incorrect_answer": "vdd4d43789148",
+      "editorial_answer": "queue",
+      "explanation": "Queue — очередь из ожидающих людей.",
+      "key": "e09"
+    }
+  ]
+}

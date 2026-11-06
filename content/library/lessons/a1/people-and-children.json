@@ -1,0 +1,334 @@
+{
+  "key": "a1/people-and-children",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 5,
+  "title": "Неправильное множественное число",
+  "description": "Неправильное множественное число: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать children вместо childs",
+    "Использовать people в обычном значении нескольких людей"
+  ],
+  "notes": [
+    "Child → children: one child, three children.",
+    "В обычной речи one person, two people. Peoples имеет другое употребление и здесь не используется."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/this-these-items"],
+  "lexicon": [
+    {
+      "en": "child",
+      "ru": "ребёнок"
+    },
+    {
+      "en": "children",
+      "ru": "дети"
+    },
+    {
+      "en": "person",
+      "ru": "человек"
+    },
+    {
+      "en": "people",
+      "ru": "люди"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: One child, four ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vd2dc1f72bc83",
+            "label": "childs"
+          },
+          {
+            "id": "v8a4b269d76db",
+            "label": "childes"
+          },
+          {
+            "id": "vcd6cb045cd57",
+            "label": "children"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vcd6cb045cd57"
+      },
+      "reference_answer": "vcd6cb045cd57",
+      "incorrect_answer": "vd2dc1f72bc83",
+      "editorial_answer": "children",
+      "explanation": "У child неправильное множественное число children.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: person / people.",
+      "public_payload": {
+        "sentence": "There are six ___ in the room."
+      },
+      "answer_key": {
+        "accepted": ["people"]
+      },
+      "reference_answer": "people",
+      "incorrect_answer": "person",
+      "editorial_answer": "There are six people in the room.",
+      "explanation": "Six требует множественного числа people.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Дети находятся в саду.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "are"
+          },
+          {
+            "id": "t4",
+            "label": "in"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "garden."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "children"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The children are in the garden.",
+      "explanation": "Children — множественное число, поэтому are.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Three childs are waiting outside."
+      },
+      "answer_key": {
+        "accepted": ["Three children are waiting outside."]
+      },
+      "reference_answer": "Three children are waiting outside.",
+      "incorrect_answer": "Three childs are waiting outside.",
+      "editorial_answer": "Three children are waiting outside.",
+      "explanation": "Childs заменяется на неправильное children.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько в саду детей?",
+      "public_payload": {
+        "passage": "There are five people in the garden: two adults and three children. One child has a ball. The other children are drawing near a tree.",
+        "options": [
+          {
+            "id": "v41c04ffde8cf",
+            "label": "Two."
+          },
+          {
+            "id": "v7f2efcb4d24f",
+            "label": "Three."
+          },
+          {
+            "id": "vd794a7fad2d7",
+            "label": "Five."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7f2efcb4d24f"
+      },
+      "reference_answer": "v7f2efcb4d24f",
+      "incorrect_answer": "vd794a7fad2d7",
+      "editorial_answer": "Three.",
+      "explanation": "Пять — общее число людей, детей трое.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l3be41a6b2322",
+            "label": "child"
+          },
+          {
+            "id": "l7a6b71675ea0",
+            "label": "children"
+          },
+          {
+            "id": "lf7f5e218f8cc",
+            "label": "person"
+          },
+          {
+            "id": "ld87ed5f73297",
+            "label": "people"
+          }
+        ],
+        "right": [
+          {
+            "id": "rd4861584ef26",
+            "label": "человек"
+          },
+          {
+            "id": "r3b3a6e2b15b7",
+            "label": "люди"
+          },
+          {
+            "id": "rf06346e70282",
+            "label": "ребёнок"
+          },
+          {
+            "id": "racaee33d7fe1",
+            "label": "дети"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l3be41a6b2322": "rf06346e70282",
+          "l7a6b71675ea0": "racaee33d7fe1",
+          "lf7f5e218f8cc": "rd4861584ef26",
+          "ld87ed5f73297": "r3b3a6e2b15b7"
+        }
+      },
+      "reference_answer": {
+        "l3be41a6b2322": "rf06346e70282",
+        "l7a6b71675ea0": "racaee33d7fe1",
+        "lf7f5e218f8cc": "rd4861584ef26",
+        "ld87ed5f73297": "r3b3a6e2b15b7"
+      },
+      "incorrect_answer": {
+        "l3be41a6b2322": "racaee33d7fe1",
+        "l7a6b71675ea0": "rf06346e70282",
+        "lf7f5e218f8cc": "rd4861584ef26",
+        "ld87ed5f73297": "r3b3a6e2b15b7"
+      },
+      "editorial_answer": "child — ребёнок; children — дети; person — человек; people — люди",
+      "explanation": "В этих контекстах: child — ребёнок; children — дети; person — человек; people — люди.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что делают остальные дети?",
+      "public_payload": {
+        "passage": "There are five people in the garden: two adults and three children. One child has a ball. The other children are drawing near a tree.",
+        "options": [
+          {
+            "id": "va58c5aec3cbc",
+            "label": "They are drawing."
+          },
+          {
+            "id": "vbac2a54c1d1c",
+            "label": "They are all holding the ball."
+          },
+          {
+            "id": "v0ce5e7956375",
+            "label": "They are inside the house."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va58c5aec3cbc"
+      },
+      "reference_answer": "va58c5aec3cbc",
+      "incorrect_answer": "vbac2a54c1d1c",
+      "editorial_answer": "They are drawing.",
+      "explanation": "Текст отделяет одного ребёнка с мячом от рисующих детей.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о четырёх людях в обычном контексте.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How many people are coming?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v510b05de7788",
+            "label": "Four peoples is coming."
+          },
+          {
+            "id": "v82d15c9a7544",
+            "label": "Four people are coming."
+          },
+          {
+            "id": "v3072f85a7038",
+            "label": "Four person is coming."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v82d15c9a7544"
+      },
+      "reference_answer": "v82d15c9a7544",
+      "incorrect_answer": "v3072f85a7038",
+      "editorial_answer": "Four people are coming.",
+      "explanation": "People — нужная форма множественного числа, с ней are.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A young person is a ___.",
+        "options": [
+          {
+            "id": "vfbde72d3d2fc",
+            "label": "child"
+          },
+          {
+            "id": "v72948cc7a143",
+            "label": "people"
+          },
+          {
+            "id": "v8e94588e19c1",
+            "label": "children"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfbde72d3d2fc"
+      },
+      "reference_answer": "vfbde72d3d2fc",
+      "incorrect_answer": "v72948cc7a143",
+      "editorial_answer": "child",
+      "explanation": "После a нужен child в единственном числе.",
+      "key": "e09"
+    }
+  ]
+}

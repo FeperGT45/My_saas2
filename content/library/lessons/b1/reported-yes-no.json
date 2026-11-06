@@ -1,0 +1,342 @@
+{
+  "key": "b1/reported-yes-no",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика B1 · точность в общении",
+    "position": 30
+  },
+  "position": 8,
+  "title": "Пересказ вопроса с if или whether",
+  "description": "Пересказ вопроса с if или whether: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Передавать yes/no-вопрос через asked if/whether",
+    "Сохранять прямой порядок слов после if"
+  ],
+  "notes": [
+    "“Are you free?” → She asked if I was free.",
+    "В косвенной части нет вопросительной инверсии: if I was, а не if was I. В этом уроке используем сдвиг в прошлое."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/however-two-sentences"],
+  "lexicon": [
+    {
+      "en": "enquire",
+      "ru": "спрашивать, узнавать"
+    },
+    {
+      "en": "available",
+      "ru": "свободный по времени"
+    },
+    {
+      "en": "reply",
+      "ru": "отвечать"
+    },
+    {
+      "en": "schedule",
+      "ru": "расписание"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: She asked if ___ available on Friday.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v0cb7aa4f7862",
+            "label": "was I"
+          },
+          {
+            "id": "v38b67439eb2f",
+            "label": "did I was"
+          },
+          {
+            "id": "vd2adf839b5f5",
+            "label": "I was"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd2adf839b5f5"
+      },
+      "reference_answer": "vd2adf839b5f5",
+      "incorrect_answer": "v0cb7aa4f7862",
+      "editorial_answer": "I was",
+      "explanation": "После if в пересказе вопроса нужен прямой порядок I was.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: was / did.",
+      "public_payload": {
+        "sentence": "He asked whether I ___ a student."
+      },
+      "answer_key": {
+        "accepted": ["was"]
+      },
+      "reference_answer": "was",
+      "incorrect_answer": "did",
+      "editorial_answer": "He asked whether I was a student.",
+      "explanation": "Для исходного Are you a student? в заданном прошлом пересказе нужен was.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Она спросила, свободен ли я в пятницу.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "if"
+          },
+          {
+            "id": "t4",
+            "label": "I"
+          },
+          {
+            "id": "t5",
+            "label": "was"
+          },
+          {
+            "id": "t6",
+            "label": "free"
+          },
+          {
+            "id": "t7",
+            "label": "on"
+          },
+          {
+            "id": "t8",
+            "label": "Friday."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "asked"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "She asked if I was free on Friday.",
+      "explanation": "Asked if вводит косвенный yes/no-вопрос с прямым порядком слов.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He asked if was I ready."
+      },
+      "answer_key": {
+        "accepted": ["He asked if I was ready."]
+      },
+      "reference_answer": "He asked if I was ready.",
+      "incorrect_answer": "He asked if was I ready.",
+      "editorial_answer": "He asked if I was ready.",
+      "explanation": "В косвенной части восстанавливается I was.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Был ли первый ответ Лины окончательным согласием?",
+      "public_payload": {
+        "passage": "On Tuesday, the organiser asked Lina if she was available to help on Friday. Lina said she needed to check her work schedule. The organiser recorded this as a request awaiting a reply, not as confirmed help. Lina called back the next day and agreed to the afternoon only. The morning shift therefore still needed another volunteer.",
+        "options": [
+          {
+            "id": "v65869a60fbaa",
+            "label": "Yes; asking a question automatically creates agreement."
+          },
+          {
+            "id": "vd5423ef63b98",
+            "label": "No; she needed to check her schedule."
+          },
+          {
+            "id": "vde31f7040561",
+            "label": "Yes; she agreed to every shift immediately."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd5423ef63b98"
+      },
+      "reference_answer": "vd5423ef63b98",
+      "incorrect_answer": "vde31f7040561",
+      "editorial_answer": "No; she needed to check her schedule.",
+      "explanation": "Сначала требовалась проверка расписания.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l49ed37fac657",
+            "label": "enquire"
+          },
+          {
+            "id": "lcd94e5d3d63b",
+            "label": "available"
+          },
+          {
+            "id": "l83dc5d391a3a",
+            "label": "reply"
+          },
+          {
+            "id": "l29fe44f47130",
+            "label": "schedule"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb24a558f7f89",
+            "label": "отвечать"
+          },
+          {
+            "id": "rc4f0d97bbc82",
+            "label": "расписание"
+          },
+          {
+            "id": "rc294822ad79c",
+            "label": "спрашивать, узнавать"
+          },
+          {
+            "id": "rcb1085113246",
+            "label": "свободный по времени"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l49ed37fac657": "rc294822ad79c",
+          "lcd94e5d3d63b": "rcb1085113246",
+          "l83dc5d391a3a": "rb24a558f7f89",
+          "l29fe44f47130": "rc4f0d97bbc82"
+        }
+      },
+      "reference_answer": {
+        "l49ed37fac657": "rc294822ad79c",
+        "lcd94e5d3d63b": "rcb1085113246",
+        "l83dc5d391a3a": "rb24a558f7f89",
+        "l29fe44f47130": "rc4f0d97bbc82"
+      },
+      "incorrect_answer": {
+        "l49ed37fac657": "rcb1085113246",
+        "lcd94e5d3d63b": "rc294822ad79c",
+        "l83dc5d391a3a": "rb24a558f7f89",
+        "l29fe44f47130": "rc4f0d97bbc82"
+      },
+      "editorial_answer": "enquire — спрашивать, узнавать; available — свободный по времени; reply — отвечать; schedule — расписание",
+      "explanation": "В этих контекстах: enquire — спрашивать, узнавать; available — свободный по времени; reply — отвечать; schedule — расписание.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "На какую смену ещё нужен человек?",
+      "public_payload": {
+        "passage": "On Tuesday, the organiser asked Lina if she was available to help on Friday. Lina said she needed to check her work schedule. The organiser recorded this as a request awaiting a reply, not as confirmed help. Lina called back the next day and agreed to the afternoon only. The morning shift therefore still needed another volunteer.",
+        "options": [
+          {
+            "id": "v4c4ff4bc1457",
+            "label": "The morning shift."
+          },
+          {
+            "id": "v91d9c10c209b",
+            "label": "The afternoon shift only."
+          },
+          {
+            "id": "v1e637db6ea7c",
+            "label": "No shift, because all were filled."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4c4ff4bc1457"
+      },
+      "reference_answer": "v4c4ff4bc1457",
+      "incorrect_answer": "v91d9c10c209b",
+      "editorial_answer": "The morning shift.",
+      "explanation": "Лина согласилась только на вторую половину дня.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Передай вопрос с whether и прямым порядком слов.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How can I report “Are you ready?” in the past?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v19964f6522e1",
+            "label": "She asked whether did I ready."
+          },
+          {
+            "id": "vbe3865ba03b5",
+            "label": "She asked whether I was ready."
+          },
+          {
+            "id": "v0c058418b213",
+            "label": "She asked whether was I ready."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbe3865ba03b5"
+      },
+      "reference_answer": "vbe3865ba03b5",
+      "incorrect_answer": "v0c058418b213",
+      "editorial_answer": "She asked whether I was ready.",
+      "explanation": "Whether I was ready сохраняет правильную структуру.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To ask formally for information is to ___.",
+        "options": [
+          {
+            "id": "vaf5d82119fac",
+            "label": "enquire"
+          },
+          {
+            "id": "v1423b971dc2b",
+            "label": "guarantee"
+          },
+          {
+            "id": "v1cb325be67fb",
+            "label": "approve automatically"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vaf5d82119fac"
+      },
+      "reference_answer": "vaf5d82119fac",
+      "incorrect_answer": "v1423b971dc2b",
+      "editorial_answer": "enquire",
+      "explanation": "Enquire — запрашивать сведения, а не автоматически одобрять.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,334 @@
+{
+  "key": "a1/between-and-behind",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A1 · точность в общении",
+    "position": 30
+  },
+  "position": 8,
+  "title": "Между двумя ориентирами и позади",
+  "description": "Между двумя ориентирами и позади: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать between ... and ...",
+    "Различать behind и in front of"
+  ],
+  "notes": [
+    "Between A and B означает «между A и B».",
+    "Behind — позади; in front of — перед. Эти положения зависят от названного ориентира."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/any-in-there-questions"],
+  "lexicon": [
+    {
+      "en": "between",
+      "ru": "между"
+    },
+    {
+      "en": "behind",
+      "ru": "позади"
+    },
+    {
+      "en": "in front of",
+      "ru": "перед"
+    },
+    {
+      "en": "gate",
+      "ru": "ворота, калитка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The small house is ___ the bank and the café.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v81a86fea06bb",
+            "label": "behind of"
+          },
+          {
+            "id": "v319a8ca2652c",
+            "label": "under to"
+          },
+          {
+            "id": "v1854f71da015",
+            "label": "between"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1854f71da015"
+      },
+      "reference_answer": "v1854f71da015",
+      "incorrect_answer": "v81a86fea06bb",
+      "editorial_answer": "between",
+      "explanation": "Два ориентира соединены and в конструкции between ... and ...",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: behind / between.",
+      "public_payload": {
+        "sentence": "The bike is ___ the gate, not in front of it."
+      },
+      "answer_key": {
+        "accepted": ["behind"]
+      },
+      "reference_answer": "behind",
+      "incorrect_answer": "between",
+      "editorial_answer": "The bike is behind the gate, not in front of it.",
+      "explanation": "Один ориентир и противопоставление in front of задают behind.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Сад находится позади дома.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "behind"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "house."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "garden"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The garden is behind the house.",
+      "explanation": "Behind обозначает положение позади ориентира the house.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The shop is between the bank to the café."
+      },
+      "answer_key": {
+        "accepted": ["The shop is between the bank and the café."]
+      },
+      "reference_answer": "The shop is between the bank and the café.",
+      "incorrect_answer": "The shop is between the bank to the café.",
+      "editorial_answer": "The shop is between the bank and the café.",
+      "explanation": "В этой паре ориентиров требуется between ... and ...",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Между какими зданиями находится дом?",
+      "public_payload": {
+        "passage": "Our house is between the school and the bank. There is a small garden behind it. My bicycle is in front of the garden gate.",
+        "options": [
+          {
+            "id": "vcbe4de5f70ea",
+            "label": "Two libraries."
+          },
+          {
+            "id": "vb615633363dd",
+            "label": "The school and the bank."
+          },
+          {
+            "id": "v82689ac18643",
+            "label": "The bank and the café."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb615633363dd"
+      },
+      "reference_answer": "vb615633363dd",
+      "incorrect_answer": "v82689ac18643",
+      "editorial_answer": "The school and the bank.",
+      "explanation": "Первые два ориентира названы в первом предложении.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l7f532ff1580b",
+            "label": "between"
+          },
+          {
+            "id": "l6bdcea487b74",
+            "label": "behind"
+          },
+          {
+            "id": "lf0adee08e052",
+            "label": "in front of"
+          },
+          {
+            "id": "l4a763644fb72",
+            "label": "gate"
+          }
+        ],
+        "right": [
+          {
+            "id": "r8f74b9878ab8",
+            "label": "перед"
+          },
+          {
+            "id": "rd56680463aa1",
+            "label": "ворота, калитка"
+          },
+          {
+            "id": "rda45d81cfb4f",
+            "label": "между"
+          },
+          {
+            "id": "r740e96e05171",
+            "label": "позади"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l7f532ff1580b": "rda45d81cfb4f",
+          "l6bdcea487b74": "r740e96e05171",
+          "lf0adee08e052": "r8f74b9878ab8",
+          "l4a763644fb72": "rd56680463aa1"
+        }
+      },
+      "reference_answer": {
+        "l7f532ff1580b": "rda45d81cfb4f",
+        "l6bdcea487b74": "r740e96e05171",
+        "lf0adee08e052": "r8f74b9878ab8",
+        "l4a763644fb72": "rd56680463aa1"
+      },
+      "incorrect_answer": {
+        "l7f532ff1580b": "r740e96e05171",
+        "l6bdcea487b74": "rda45d81cfb4f",
+        "lf0adee08e052": "r8f74b9878ab8",
+        "l4a763644fb72": "rd56680463aa1"
+      },
+      "editorial_answer": "between — между; behind — позади; in front of — перед; gate — ворота, калитка",
+      "explanation": "В этих контекстах: between — между; behind — позади; in front of — перед; gate — ворота, калитка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где велосипед?",
+      "public_payload": {
+        "passage": "Our house is between the school and the bank. There is a small garden behind it. My bicycle is in front of the garden gate.",
+        "options": [
+          {
+            "id": "vff697de629ab",
+            "label": "In front of the garden gate."
+          },
+          {
+            "id": "v8deb772906a5",
+            "label": "Behind the school."
+          },
+          {
+            "id": "v37b1d6bb3be9",
+            "label": "Inside the bank."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vff697de629ab"
+      },
+      "reference_answer": "vff697de629ab",
+      "incorrect_answer": "v8deb772906a5",
+      "editorial_answer": "In front of the garden gate.",
+      "explanation": "Последняя фраза помещает велосипед перед калиткой.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Опиши положение позади одного ориентира.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Where is the bicycle?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v0c92a9a0afa1",
+            "label": "It is between the gate."
+          },
+          {
+            "id": "v91b1aaa80005",
+            "label": "It is behind the gate."
+          },
+          {
+            "id": "v3c961d0fea87",
+            "label": "It is behind of the gate."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v91b1aaa80005"
+      },
+      "reference_answer": "v91b1aaa80005",
+      "incorrect_answer": "v3c961d0fea87",
+      "editorial_answer": "It is behind the gate.",
+      "explanation": "Behind употребляется непосредственно с the gate, без of.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A barrier that opens at the entrance to a garden is a ___.",
+        "options": [
+          {
+            "id": "v49105a01415d",
+            "label": "gate"
+          },
+          {
+            "id": "vf3728638bb06",
+            "label": "pencil"
+          },
+          {
+            "id": "v9913d426ad24",
+            "label": "queue"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v49105a01415d"
+      },
+      "reference_answer": "v49105a01415d",
+      "incorrect_answer": "vf3728638bb06",
+      "editorial_answer": "gate",
+      "explanation": "Gate — калитка или ворота у входа.",
+      "key": "e09"
+    }
+  ]
+}

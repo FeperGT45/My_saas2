@@ -1,0 +1,331 @@
+{
+  "key": "a2/whose-direct-question",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-05",
+    "title": "Практика A2 · точность в общении",
+    "position": 30
+  },
+  "position": 8,
+  "title": "Чья это вещь",
+  "description": "Чья это вещь: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": ["Задавать прямой вопрос с Whose", "Отличать whose от who’s"],
+  "notes": [
+    "Whose bag is this? спрашивает о принадлежности.",
+    "Who’s обычно означает who is или who has; Whose — отдельное слово без апострофа."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/one-and-ones"],
+  "lexicon": [
+    {
+      "en": "whose",
+      "ru": "чей"
+    },
+    {
+      "en": "belong to",
+      "ru": "принадлежать"
+    },
+    {
+      "en": "owner",
+      "ru": "владелец"
+    },
+    {
+      "en": "lost property",
+      "ru": "бюро находок, найденные вещи"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ jacket is this?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vd8b161104be6",
+            "label": "Who’s"
+          },
+          {
+            "id": "vfa7db114eee4",
+            "label": "Who to"
+          },
+          {
+            "id": "v3c199abd75bf",
+            "label": "Whose"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3c199abd75bf"
+      },
+      "reference_answer": "v3c199abd75bf",
+      "incorrect_answer": "vd8b161104be6",
+      "editorial_answer": "Whose",
+      "explanation": "Вопрос о принадлежности задаётся Whose.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: belong / belongs.",
+      "public_payload": {
+        "sentence": "Who does this umbrella ___ to?"
+      },
+      "answer_key": {
+        "accepted": ["belong"]
+      },
+      "reference_answer": "belong",
+      "incorrect_answer": "belongs",
+      "editorial_answer": "Who does this umbrella belong to?",
+      "explanation": "После does используется belong.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Чья тетрадь лежит на столе?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "on"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "desk?"
+          },
+          {
+            "id": "t1",
+            "label": "Whose"
+          },
+          {
+            "id": "t2",
+            "label": "notebook"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Whose notebook is on the desk?",
+      "explanation": "Whose notebook запрашивает владельца тетради.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Who’s phone is ringing?"
+      },
+      "answer_key": {
+        "accepted": ["Whose phone is ringing?"]
+      },
+      "reference_answer": "Whose phone is ringing?",
+      "incorrect_answer": "Who’s phone is ringing?",
+      "editorial_answer": "Whose phone is ringing?",
+      "explanation": "Перед phone нужен вопрос о принадлежности Whose, а не Who is.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Куда организатор поместила куртку?",
+      "public_payload": {
+        "passage": "After the workshop, a blue jacket remained on a chair. The organiser asked whose jacket it was, but nobody in the room recognised it. She put it in lost property and sent a message to the group. Later, Sam described the small red badge on the pocket and collected it.",
+        "options": [
+          {
+            "id": "v57d57402f206",
+            "label": "In the rubbish immediately."
+          },
+          {
+            "id": "v14457ba07944",
+            "label": "In lost property."
+          },
+          {
+            "id": "vf98653283249",
+            "label": "In Sam’s pocket."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v14457ba07944"
+      },
+      "reference_answer": "v14457ba07944",
+      "incorrect_answer": "vf98653283249",
+      "editorial_answer": "In lost property.",
+      "explanation": "Оставленную куртку передали в найденные вещи.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l0ef4bce2fecb",
+            "label": "whose"
+          },
+          {
+            "id": "lc37656c1e4c6",
+            "label": "belong to"
+          },
+          {
+            "id": "l9a1227bd1255",
+            "label": "owner"
+          },
+          {
+            "id": "l88af28e1f9ff",
+            "label": "lost property"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3bfda93b7441",
+            "label": "владелец"
+          },
+          {
+            "id": "r2d7c5879c782",
+            "label": "бюро находок, найденные вещи"
+          },
+          {
+            "id": "rec3d00d5c3ab",
+            "label": "чей"
+          },
+          {
+            "id": "ra746823a0f13",
+            "label": "принадлежать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l0ef4bce2fecb": "rec3d00d5c3ab",
+          "lc37656c1e4c6": "ra746823a0f13",
+          "l9a1227bd1255": "r3bfda93b7441",
+          "l88af28e1f9ff": "r2d7c5879c782"
+        }
+      },
+      "reference_answer": {
+        "l0ef4bce2fecb": "rec3d00d5c3ab",
+        "lc37656c1e4c6": "ra746823a0f13",
+        "l9a1227bd1255": "r3bfda93b7441",
+        "l88af28e1f9ff": "r2d7c5879c782"
+      },
+      "incorrect_answer": {
+        "l0ef4bce2fecb": "ra746823a0f13",
+        "lc37656c1e4c6": "rec3d00d5c3ab",
+        "l9a1227bd1255": "r3bfda93b7441",
+        "l88af28e1f9ff": "r2d7c5879c782"
+      },
+      "editorial_answer": "whose — чей; belong to — принадлежать; owner — владелец; lost property — бюро находок, найденные вещи",
+      "explanation": "В этих контекстах: whose — чей; belong to — принадлежать; owner — владелец; lost property — бюро находок, найденные вещи.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую деталь описал Сэм?",
+      "public_payload": {
+        "passage": "After the workshop, a blue jacket remained on a chair. The organiser asked whose jacket it was, but nobody in the room recognised it. She put it in lost property and sent a message to the group. Later, Sam described the small red badge on the pocket and collected it.",
+        "options": [
+          {
+            "id": "vd432442bb28c",
+            "label": "A small red badge on the pocket."
+          },
+          {
+            "id": "vf05a608d57cb",
+            "label": "A blue bicycle by the window."
+          },
+          {
+            "id": "v71610ea28b6e",
+            "label": "A name written on every chair."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd432442bb28c"
+      },
+      "reference_answer": "vd432442bb28c",
+      "incorrect_answer": "vf05a608d57cb",
+      "editorial_answer": "A small red badge on the pocket.",
+      "explanation": "Описание значка помогло установить принадлежность.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Задай вопрос о принадлежности.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "You want to know who owns a bag."
+          }
+        ],
+        "options": [
+          {
+            "id": "v74c501811c3b",
+            "label": "Who bag this owns is?"
+          },
+          {
+            "id": "v718c2c163dbd",
+            "label": "Whose bag is this?"
+          },
+          {
+            "id": "v26a7e194b55b",
+            "label": "Who’s bag is this?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v718c2c163dbd"
+      },
+      "reference_answer": "v718c2c163dbd",
+      "incorrect_answer": "v26a7e194b55b",
+      "editorial_answer": "Whose bag is this?",
+      "explanation": "Whose прямо выражает значение «чей».",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The umbrella belongs ___ my neighbour.",
+        "options": [
+          {
+            "id": "v9afb2cd5e166",
+            "label": "to"
+          },
+          {
+            "id": "v0db5723fd63f",
+            "label": "at"
+          },
+          {
+            "id": "v90207f945db3",
+            "label": "on"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9afb2cd5e166"
+      },
+      "reference_answer": "v9afb2cd5e166",
+      "incorrect_answer": "v0db5723fd63f",
+      "editorial_answer": "to",
+      "explanation": "Belong to — нужное сочетание для принадлежности.",
+      "key": "e09"
+    }
+  ]
+}
