@@ -1,0 +1,326 @@
+{
+  "key": "a1/its-or-it-is",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика A1 · точность в контексте",
+    "position": 50
+  },
+  "position": 4,
+  "title": "Its и it’s в коротких описаниях",
+  "description": "Its и it’s в коротких описаниях: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Различать принадлежность its и сокращение it’s",
+    "Раскрывать it’s как it is в данном контексте"
+  ],
+  "notes": [
+    "Its colour — его цвет: its перед существительным не имеет апострофа.",
+    "It’s blue здесь означает It is blue."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/before-after-times"],
+  "lexicon": [
+    {
+      "en": "colour",
+      "ru": "цвет"
+    },
+    {
+      "en": "name",
+      "ru": "имя"
+    },
+    {
+      "en": "tail",
+      "ru": "хвост"
+    },
+    {
+      "en": "apostrophe",
+      "ru": "апостроф"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The cat is small. ___ tail is long.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vdedb2b4315c4",
+            "label": "Its"
+          },
+          {
+            "id": "vaaa81a42f657",
+            "label": "It’s"
+          },
+          {
+            "id": "vb2540173f324",
+            "label": "It is a"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdedb2b4315c4"
+      },
+      "reference_answer": "vdedb2b4315c4",
+      "incorrect_answer": "vaaa81a42f657",
+      "editorial_answer": "Its",
+      "explanation": "Перед tail нужна притяжательная форма Its.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: Its / It’s.",
+      "public_payload": {
+        "sentence": "___ a blue bag."
+      },
+      "answer_key": {
+        "accepted": ["It’s"]
+      },
+      "reference_answer": "It’s",
+      "incorrect_answer": "Its",
+      "editorial_answer": "It’s a blue bag.",
+      "explanation": "Для It is используется сокращение It’s.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Его зовут Пип.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "Pip."
+          },
+          {
+            "id": "t1",
+            "label": "Its"
+          },
+          {
+            "id": "t2",
+            "label": "name"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4"],
+      "incorrect_answer": ["t2", "t3", "t4", "t1"],
+      "editorial_answer": "Its name is Pip.",
+      "explanation": "Its перед name выражает принадлежность имени.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Its is a small dog."
+      },
+      "answer_key": {
+        "accepted": ["It is a small dog."]
+      },
+      "reference_answer": "It is a small dog.",
+      "incorrect_answer": "Its is a small dog.",
+      "editorial_answer": "It is a small dog.",
+      "explanation": "Для It is не используется притяжательное Its.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как зовут собаку?",
+      "public_payload": {
+        "passage": "This is our dog. Its name is Pip. It is small, but its tail is long. Pip has a red ball and likes the garden.",
+        "options": [
+          {
+            "id": "v6c1b86444b9c",
+            "label": "Red."
+          },
+          {
+            "id": "vd19666b22775",
+            "label": "Garden."
+          },
+          {
+            "id": "vfc1666c3dba8",
+            "label": "Pip."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfc1666c3dba8"
+      },
+      "reference_answer": "vfc1666c3dba8",
+      "incorrect_answer": "v6c1b86444b9c",
+      "editorial_answer": "Pip.",
+      "explanation": "Имя дано после Its name.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l5f058be3ccae",
+            "label": "colour"
+          },
+          {
+            "id": "le4b3d005ef4f",
+            "label": "name"
+          },
+          {
+            "id": "lfdc72d27cabe",
+            "label": "tail"
+          },
+          {
+            "id": "l4642133b5a7a",
+            "label": "apostrophe"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4fd1525d326e",
+            "label": "хвост"
+          },
+          {
+            "id": "r44d550848c8e",
+            "label": "апостроф"
+          },
+          {
+            "id": "re027c8441743",
+            "label": "цвет"
+          },
+          {
+            "id": "r72d9b77c2440",
+            "label": "имя"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l5f058be3ccae": "re027c8441743",
+          "le4b3d005ef4f": "r72d9b77c2440",
+          "lfdc72d27cabe": "r4fd1525d326e",
+          "l4642133b5a7a": "r44d550848c8e"
+        }
+      },
+      "reference_answer": {
+        "l5f058be3ccae": "re027c8441743",
+        "le4b3d005ef4f": "r72d9b77c2440",
+        "lfdc72d27cabe": "r4fd1525d326e",
+        "l4642133b5a7a": "r44d550848c8e"
+      },
+      "incorrect_answer": {
+        "l5f058be3ccae": "r72d9b77c2440",
+        "le4b3d005ef4f": "re027c8441743",
+        "lfdc72d27cabe": "r4fd1525d326e",
+        "l4642133b5a7a": "r44d550848c8e"
+      },
+      "editorial_answer": "colour — цвет; name — имя; tail — хвост; apostrophe — апостроф",
+      "explanation": "В этих контекстах: colour — цвет; name — имя; tail — хвост; apostrophe — апостроф.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что у Пипа длинное?",
+      "public_payload": {
+        "passage": "This is our dog. Its name is Pip. It is small, but its tail is long. Pip has a red ball and likes the garden.",
+        "options": [
+          {
+            "id": "v2256abe820d0",
+            "label": "Its tail."
+          },
+          {
+            "id": "va91064197e9e",
+            "label": "Its red ball."
+          },
+          {
+            "id": "v57ca14177fd9",
+            "label": "Its name."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2256abe820d0"
+      },
+      "reference_answer": "v2256abe820d0",
+      "incorrect_answer": "va91064197e9e",
+      "editorial_answer": "Its tail.",
+      "explanation": "Прилагательное long относится к хвосту.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Раскрой сокращение из описания.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What does “it’s small” mean here?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v993fe694ddec",
+            "label": "Its small object."
+          },
+          {
+            "id": "v1ba9926c99c2",
+            "label": "It owns small."
+          },
+          {
+            "id": "v5d8fb469359b",
+            "label": "It is small."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5d8fb469359b"
+      },
+      "reference_answer": "v5d8fb469359b",
+      "incorrect_answer": "v993fe694ddec",
+      "editorial_answer": "It is small.",
+      "explanation": "В данном предложении it’s = it is.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The mark in “it’s” is an ___.",
+        "options": [
+          {
+            "id": "vc5920695f88d",
+            "label": "answer"
+          },
+          {
+            "id": "vadc565310c37",
+            "label": "apostrophe"
+          },
+          {
+            "id": "vadb495d0d506",
+            "label": "address"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vadc565310c37"
+      },
+      "reference_answer": "vadc565310c37",
+      "incorrect_answer": "vadb495d0d506",
+      "editorial_answer": "apostrophe",
+      "explanation": "Apostrophe — апостроф.",
+      "key": "e09"
+    }
+  ]
+}

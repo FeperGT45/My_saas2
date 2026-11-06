@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "packageId": "english-path-core",
-  "revision": 7,
+  "revision": 8,
   "language": "en",
   "interfaceLocale": "ru",
   "courses": [
@@ -260,6 +260,30 @@
     "lessons/c2/rejecting-a-description.json",
     "lessons/c2/consideration-not-commitment.json",
     "lessons/c2/voices-in-a-narrative.json",
-    "lessons/c2/necessary-not-sufficient.json"
+    "lessons/c2/necessary-not-sufficient.json",
+    "lessons/a1/how-often-visits.json",
+    "lessons/a1/first-and-last.json",
+    "lessons/a1/before-after-times.json",
+    "lessons/a1/its-or-it-is.json",
+    "lessons/a2/there-was-were.json",
+    "lessons/a2/polite-would-like.json",
+    "lessons/a2/how-long-take.json",
+    "lessons/a2/prefer-a-to-b.json",
+    "lessons/b1/best-ever-personal.json",
+    "lessons/b1/couldnt-not-allowed.json",
+    "lessons/b1/another-the-other.json",
+    "lessons/b1/because-of-reason.json",
+    "lessons/b2/worth-doing.json",
+    "lessons/b2/would-have-liked.json",
+    "lessons/b2/supposed-to-rule.json",
+    "lessons/b2/negative-purpose.json",
+    "lessons/c1/notwithstanding-evidence.json",
+    "lessons/c1/hope-so-reference.json",
+    "lessons/c1/hardly-versus-hard.json",
+    "lessons/c1/parallel-reporting.json",
+    "lessons/c2/up-to-ceiling.json",
+    "lessons/c2/changed-operational-definition.json",
+    "lessons/c2/some-and-all-context.json",
+    "lessons/c2/unconvinced-versus-refuted.json"
   ]
 }

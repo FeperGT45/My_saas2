@@ -1,0 +1,334 @@
+{
+  "key": "b2/worth-doing",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика B2 · точность в контексте",
+    "position": 50
+  },
+  "position": 1,
+  "title": "Стоит потраченного усилия",
+  "description": "Стоит потраченного усилия: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать worth + -ing",
+    "Не принимать положительную оценку за отсутствие издержек"
+  ],
+  "notes": [
+    "Worth checking означает «стоит проверить», без to перед действием.",
+    "Worth the effort допускает наличие усилий и затрат; фраза оценивает их оправданность."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/needs-checking"],
+  "lexicon": [
+    {
+      "en": "worthwhile",
+      "ru": "стоящий усилий"
+    },
+    {
+      "en": "effort",
+      "ru": "усилие"
+    },
+    {
+      "en": "benefit",
+      "ru": "польза"
+    },
+    {
+      "en": "cost",
+      "ru": "затраты"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The archive is worth ___ even if the search takes time.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v84dcf3418d46",
+            "label": "visiting"
+          },
+          {
+            "id": "v4c04d683ab9c",
+            "label": "to visit"
+          },
+          {
+            "id": "va43e3b3268b3",
+            "label": "visit to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v84dcf3418d46"
+      },
+      "reference_answer": "v84dcf3418d46",
+      "incorrect_answer": "v4c04d683ab9c",
+      "editorial_answer": "visiting",
+      "explanation": "После worth используется -ing-форма visiting.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: checking / check.",
+      "public_payload": {
+        "sentence": "It is worth ___ the original record."
+      },
+      "answer_key": {
+        "accepted": ["checking"]
+      },
+      "reference_answer": "checking",
+      "incorrect_answer": "check",
+      "editorial_answer": "It is worth checking the original record.",
+      "explanation": "Worth checking — стандартная модель.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Оригинальные документы стоит проверить.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "documents"
+          },
+          {
+            "id": "t4",
+            "label": "are"
+          },
+          {
+            "id": "t5",
+            "label": "worth"
+          },
+          {
+            "id": "t6",
+            "label": "checking."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "original"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The original documents are worth checking.",
+      "explanation": "Worth checking выражает оценку полезности действия, не его завершение.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The proposal is worth to discuss."
+      },
+      "answer_key": {
+        "accepted": ["The proposal is worth discussing."]
+      },
+      "reference_answer": "The proposal is worth discussing.",
+      "incorrect_answer": "The proposal is worth to discuss.",
+      "editorial_answer": "The proposal is worth discussing.",
+      "explanation": "После worth нужна -ing-форма discussing.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что означает worthwhile в данном случае?",
+      "public_payload": {
+        "passage": "The researcher described a visit to the regional archive as worthwhile. A colleague assumed that the visit must therefore have been quick and inexpensive. In fact, the journey took most of a day, and several files were irrelevant. One document nevertheless resolved an important uncertainty. The researcher’s judgement weighed that benefit against the time and cost; it did not deny that the cost existed. The report also distinguished finding a useful lead from having completed every part of the wider research.",
+        "options": [
+          {
+            "id": "v3355d8ede3c7",
+            "label": "The visit required no time or money."
+          },
+          {
+            "id": "v1514220c6824",
+            "label": "Every file was relevant."
+          },
+          {
+            "id": "v4d1a44dd041f",
+            "label": "The benefit justified the effort despite real costs."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4d1a44dd041f"
+      },
+      "reference_answer": "v4d1a44dd041f",
+      "incorrect_answer": "v3355d8ede3c7",
+      "editorial_answer": "The benefit justified the effort despite real costs.",
+      "explanation": "Оценка сопоставляет пользу с затратами.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc02dffaa86c7",
+            "label": "worthwhile"
+          },
+          {
+            "id": "l32d5c0b2d8e0",
+            "label": "effort"
+          },
+          {
+            "id": "l7c8fad49bb1c",
+            "label": "benefit"
+          },
+          {
+            "id": "l64bab1229719",
+            "label": "cost"
+          }
+        ],
+        "right": [
+          {
+            "id": "r6c9164c8bc3a",
+            "label": "польза"
+          },
+          {
+            "id": "rd98d6c2f4324",
+            "label": "затраты"
+          },
+          {
+            "id": "rfafffce14a86",
+            "label": "стоящий усилий"
+          },
+          {
+            "id": "r2b6735a17ba2",
+            "label": "усилие"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc02dffaa86c7": "rfafffce14a86",
+          "l32d5c0b2d8e0": "r2b6735a17ba2",
+          "l7c8fad49bb1c": "r6c9164c8bc3a",
+          "l64bab1229719": "rd98d6c2f4324"
+        }
+      },
+      "reference_answer": {
+        "lc02dffaa86c7": "rfafffce14a86",
+        "l32d5c0b2d8e0": "r2b6735a17ba2",
+        "l7c8fad49bb1c": "r6c9164c8bc3a",
+        "l64bab1229719": "rd98d6c2f4324"
+      },
+      "incorrect_answer": {
+        "lc02dffaa86c7": "r2b6735a17ba2",
+        "l32d5c0b2d8e0": "rfafffce14a86",
+        "l7c8fad49bb1c": "r6c9164c8bc3a",
+        "l64bab1229719": "rd98d6c2f4324"
+      },
+      "editorial_answer": "worthwhile — стоящий усилий; effort — усилие; benefit — польза; cost — затраты",
+      "explanation": "В этих контекстах: worthwhile — стоящий усилий; effort — усилие; benefit — польза; cost — затраты.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое ограничение остаётся?",
+      "public_payload": {
+        "passage": "The researcher described a visit to the regional archive as worthwhile. A colleague assumed that the visit must therefore have been quick and inexpensive. In fact, the journey took most of a day, and several files were irrelevant. One document nevertheless resolved an important uncertainty. The researcher’s judgement weighed that benefit against the time and cost; it did not deny that the cost existed. The report also distinguished finding a useful lead from having completed every part of the wider research.",
+        "options": [
+          {
+            "id": "v2a9fa1799b7f",
+            "label": "A useful finding did not complete the whole research."
+          },
+          {
+            "id": "v9f504a8f03d5",
+            "label": "The uncertainty could never be reduced."
+          },
+          {
+            "id": "vc6c2a2ec8a9d",
+            "label": "No original document was examined."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2a9fa1799b7f"
+      },
+      "reference_answer": "v2a9fa1799b7f",
+      "incorrect_answer": "v9f504a8f03d5",
+      "editorial_answer": "A useful finding did not complete the whole research.",
+      "explanation": "Последняя фраза ограничивает объём достигнутого результата.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Вырази полезность сравнения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Should we check the earlier version?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vafb4bc3670da",
+            "label": "Yes, it is worth to compare the wording."
+          },
+          {
+            "id": "v89c3edd27c41",
+            "label": "Yes, it is worth compare to wording."
+          },
+          {
+            "id": "ve1d2c35186f1",
+            "label": "Yes, it is worth comparing the wording."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve1d2c35186f1"
+      },
+      "reference_answer": "ve1d2c35186f1",
+      "incorrect_answer": "vafb4bc3670da",
+      "editorial_answer": "Yes, it is worth comparing the wording.",
+      "explanation": "Worth comparing использует герундий.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An activity whose benefit justifies the effort is ___.",
+        "options": [
+          {
+            "id": "v6ce7ae6e1ea2",
+            "label": "irrelevant necessarily"
+          },
+          {
+            "id": "v75e95e6b1e98",
+            "label": "worthwhile"
+          },
+          {
+            "id": "v3bdf0f5e0873",
+            "label": "effortless necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v75e95e6b1e98"
+      },
+      "reference_answer": "v75e95e6b1e98",
+      "incorrect_answer": "v3bdf0f5e0873",
+      "editorial_answer": "worthwhile",
+      "explanation": "Worthwhile не означает отсутствие усилий.",
+      "key": "e09"
+    }
+  ]
+}

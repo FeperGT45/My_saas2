@@ -1,0 +1,326 @@
+{
+  "key": "a1/before-after-times",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика A1 · точность в контексте",
+    "position": 50
+  },
+  "position": 3,
+  "title": "До обеда и после занятия",
+  "description": "До обеда и после занятия: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать before перед событием",
+    "Использовать after для следующего действия"
+  ],
+  "notes": [
+    "Before lunch — до обеда.",
+    "After class — после занятия; before и after задают порядок."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/first-and-last"],
+  "lexicon": [
+    {
+      "en": "before",
+      "ru": "до"
+    },
+    {
+      "en": "after",
+      "ru": "после"
+    },
+    {
+      "en": "lunch",
+      "ru": "обед"
+    },
+    {
+      "en": "class",
+      "ru": "занятие"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I eat first and then read. I read ___ lunch.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vf84e86ea3694",
+            "label": "after"
+          },
+          {
+            "id": "v8790660ffd8d",
+            "label": "before"
+          },
+          {
+            "id": "vb110467d843f",
+            "label": "during before"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf84e86ea3694"
+      },
+      "reference_answer": "vf84e86ea3694",
+      "incorrect_answer": "v8790660ffd8d",
+      "editorial_answer": "after",
+      "explanation": "Чтение следует за едой, поэтому after.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: before / after.",
+      "public_payload": {
+        "sentence": "The lesson starts at two. We meet at one, ___ the lesson."
+      },
+      "answer_key": {
+        "accepted": ["before"]
+      },
+      "reference_answer": "before",
+      "incorrect_answer": "after",
+      "editorial_answer": "The lesson starts at two. We meet at one, before the lesson.",
+      "explanation": "Час раньше двух, встреча до урока.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы встречаемся после занятия.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "after"
+          },
+          {
+            "id": "t4",
+            "label": "class."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "meet"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4"],
+      "incorrect_answer": ["t2", "t3", "t4", "t1"],
+      "editorial_answer": "We meet after class.",
+      "explanation": "After обозначает более позднее время.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I read after of lunch."
+      },
+      "answer_key": {
+        "accepted": ["I read after lunch."]
+      },
+      "reference_answer": "I read after lunch.",
+      "incorrect_answer": "I read after of lunch.",
+      "editorial_answer": "I read after lunch.",
+      "explanation": "После after перед lunch не нужен of.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда они пьют чай?",
+      "public_payload": {
+        "passage": "Our class starts at ten. We have tea before class, at nine thirty. After class, we walk to the park. Lunch is at one.",
+        "options": [
+          {
+            "id": "vcae3cbce1d45",
+            "label": "After lunch."
+          },
+          {
+            "id": "vecaee10cf211",
+            "label": "At one."
+          },
+          {
+            "id": "v3807414fb614",
+            "label": "Before class."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3807414fb614"
+      },
+      "reference_answer": "v3807414fb614",
+      "incorrect_answer": "vcae3cbce1d45",
+      "editorial_answer": "Before class.",
+      "explanation": "Чай в 9:30 предшествует уроку в 10.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l8208e9b313a7",
+            "label": "before"
+          },
+          {
+            "id": "ld8ea12338e57",
+            "label": "after"
+          },
+          {
+            "id": "le350f39467e2",
+            "label": "lunch"
+          },
+          {
+            "id": "l080be50d08a3",
+            "label": "class"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0ef5a1a6ab33",
+            "label": "обед"
+          },
+          {
+            "id": "r7fa8899e09d9",
+            "label": "занятие"
+          },
+          {
+            "id": "rb34eadd11d15",
+            "label": "до"
+          },
+          {
+            "id": "rc9cab0747324",
+            "label": "после"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l8208e9b313a7": "rb34eadd11d15",
+          "ld8ea12338e57": "rc9cab0747324",
+          "le350f39467e2": "r0ef5a1a6ab33",
+          "l080be50d08a3": "r7fa8899e09d9"
+        }
+      },
+      "reference_answer": {
+        "l8208e9b313a7": "rb34eadd11d15",
+        "ld8ea12338e57": "rc9cab0747324",
+        "le350f39467e2": "r0ef5a1a6ab33",
+        "l080be50d08a3": "r7fa8899e09d9"
+      },
+      "incorrect_answer": {
+        "l8208e9b313a7": "rc9cab0747324",
+        "ld8ea12338e57": "rb34eadd11d15",
+        "le350f39467e2": "r0ef5a1a6ab33",
+        "l080be50d08a3": "r7fa8899e09d9"
+      },
+      "editorial_answer": "before — до; after — после; lunch — обед; class — занятие",
+      "explanation": "В этих контекстах: before — до; after — после; lunch — обед; class — занятие.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Куда идут после занятия?",
+      "public_payload": {
+        "passage": "Our class starts at ten. We have tea before class, at nine thirty. After class, we walk to the park. Lunch is at one.",
+        "options": [
+          {
+            "id": "v857d17c1b0e2",
+            "label": "To the park."
+          },
+          {
+            "id": "v117caea68d89",
+            "label": "To the station."
+          },
+          {
+            "id": "vf1c8a0cf5255",
+            "label": "To the office."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v857d17c1b0e2"
+      },
+      "reference_answer": "v857d17c1b0e2",
+      "incorrect_answer": "v117caea68d89",
+      "editorial_answer": "To the park.",
+      "explanation": "Место прогулки названо после after class.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Укажи время после урока.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "When can we talk?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vf8a45373e980",
+            "label": "After of the lesson."
+          },
+          {
+            "id": "v7003347dc1fb",
+            "label": "Before of after lesson."
+          },
+          {
+            "id": "ve95f93be573f",
+            "label": "After the lesson."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve95f93be573f"
+      },
+      "reference_answer": "ve95f93be573f",
+      "incorrect_answer": "vf8a45373e980",
+      "editorial_answer": "After the lesson.",
+      "explanation": "After соединяется непосредственно с the lesson.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The meal named in “before lunch” is ___.",
+        "options": [
+          {
+            "id": "ve1f225fe673f",
+            "label": "before"
+          },
+          {
+            "id": "v2cd2902b91b0",
+            "label": "lunch"
+          },
+          {
+            "id": "v7060cef22983",
+            "label": "class"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2cd2902b91b0"
+      },
+      "reference_answer": "v2cd2902b91b0",
+      "incorrect_answer": "v7060cef22983",
+      "editorial_answer": "lunch",
+      "explanation": "Lunch — обед.",
+      "key": "e09"
+    }
+  ]
+}

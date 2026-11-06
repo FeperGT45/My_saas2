@@ -1,0 +1,334 @@
+{
+  "key": "c1/hardly-versus-hard",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика C1 · точность в контексте",
+    "position": 50
+  },
+  "position": 3,
+  "title": "Hardly: почти не, а не усердно",
+  "description": "Hardly: почти не, а не усердно: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Различать hard и hardly",
+    "Точно описывать малую степень действия"
+  ],
+  "notes": [
+    "Work hard — усердно работать; hardly work — почти не работать.",
+    "Hardly обычно уже несёт отрицательный смысл: I can hardly hear, без дополнительного not."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/hope-so-reference"],
+  "lexicon": [
+    {
+      "en": "hardly",
+      "ru": "почти не"
+    },
+    {
+      "en": "diligently",
+      "ru": "усердно"
+    },
+    {
+      "en": "audible",
+      "ru": "слышимый"
+    },
+    {
+      "en": "faint",
+      "ru": "слабый по интенсивности"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The recording was so faint that I could ___ hear the speaker.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v01acd730400a",
+            "label": "hardly"
+          },
+          {
+            "id": "v77c11c61c345",
+            "label": "hard"
+          },
+          {
+            "id": "v0cd2284130ac",
+            "label": "hardness"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v01acd730400a"
+      },
+      "reference_answer": "v01acd730400a",
+      "incorrect_answer": "v77c11c61c345",
+      "editorial_answer": "hardly",
+      "explanation": "Hardly выражает почти полное отсутствие слышимости.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: hard / hardly.",
+      "public_payload": {
+        "sentence": "She works ___ and checks every entry carefully."
+      },
+      "answer_key": {
+        "accepted": ["hard"]
+      },
+      "reference_answer": "hard",
+      "incorrect_answer": "hardly",
+      "editorial_answer": "She works hard and checks every entry carefully.",
+      "explanation": "Усердную работу описывает hard, а hardly означало бы почти не работает.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я едва мог расслышать объявление.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "hardly"
+          },
+          {
+            "id": "t4",
+            "label": "hear"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "announcement."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "could"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "I could hardly hear the announcement.",
+      "explanation": "Hardly характеризует слышимость, не силу старания слушателя.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She hardly never misses a deadline."
+      },
+      "answer_key": {
+        "accepted": ["She hardly ever misses a deadline."]
+      },
+      "reference_answer": "She hardly ever misses a deadline.",
+      "incorrect_answer": "She hardly never misses a deadline.",
+      "editorial_answer": "She hardly ever misses a deadline.",
+      "explanation": "Для значения «почти никогда» используется hardly ever, без второго отрицания never.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "На какую проблему указала рецензентка?",
+      "public_payload": {
+        "passage": "A reviewer wrote that she could hardly hear the spoken introduction in a demonstration recording. The producer initially read this as praise for how hard she had listened. In fact, she was reporting a problem with audibility, not describing effort. She had listened carefully, but several words remained indistinct even in a quiet room. The producer raised the recording level and sent a new version. In her second response, the reviewer distinguished the clearer sound from the quality of the script, which she had not yet assessed. The exchange illustrates why a small difference between hard and hardly can substantially alter the practical action a message calls for.",
+        "options": [
+          {
+            "id": "v999c7db8d93d",
+            "label": "She had refused to listen carefully."
+          },
+          {
+            "id": "vb5c89e4ce73e",
+            "label": "The script had already been judged excellent."
+          },
+          {
+            "id": "v2dbacae881d2",
+            "label": "The introduction was barely audible."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2dbacae881d2"
+      },
+      "reference_answer": "v2dbacae881d2",
+      "incorrect_answer": "v999c7db8d93d",
+      "editorial_answer": "The introduction was barely audible.",
+      "explanation": "Сообщение касалось слышимости; оценка сценария ещё не проводилась.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le02299c50e02",
+            "label": "hardly"
+          },
+          {
+            "id": "l7111e61dd765",
+            "label": "diligently"
+          },
+          {
+            "id": "lc8f826ab6de7",
+            "label": "audible"
+          },
+          {
+            "id": "l1815d9b709e1",
+            "label": "faint"
+          }
+        ],
+        "right": [
+          {
+            "id": "rd04541378aef",
+            "label": "слышимый"
+          },
+          {
+            "id": "r36a08706c842",
+            "label": "слабый по интенсивности"
+          },
+          {
+            "id": "r214a9a733661",
+            "label": "почти не"
+          },
+          {
+            "id": "r115d6d49a322",
+            "label": "усердно"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le02299c50e02": "r214a9a733661",
+          "l7111e61dd765": "r115d6d49a322",
+          "lc8f826ab6de7": "rd04541378aef",
+          "l1815d9b709e1": "r36a08706c842"
+        }
+      },
+      "reference_answer": {
+        "le02299c50e02": "r214a9a733661",
+        "l7111e61dd765": "r115d6d49a322",
+        "lc8f826ab6de7": "rd04541378aef",
+        "l1815d9b709e1": "r36a08706c842"
+      },
+      "incorrect_answer": {
+        "le02299c50e02": "r115d6d49a322",
+        "l7111e61dd765": "r214a9a733661",
+        "lc8f826ab6de7": "rd04541378aef",
+        "l1815d9b709e1": "r36a08706c842"
+      },
+      "editorial_answer": "hardly — почти не; diligently — усердно; audible — слышимый; faint — слабый по интенсивности",
+      "explanation": "В этих контекстах: hardly — почти не; diligently — усердно; audible — слышимый; faint — слабый по интенсивности.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что продюсер изменил?",
+      "public_payload": {
+        "passage": "A reviewer wrote that she could hardly hear the spoken introduction in a demonstration recording. The producer initially read this as praise for how hard she had listened. In fact, she was reporting a problem with audibility, not describing effort. She had listened carefully, but several words remained indistinct even in a quiet room. The producer raised the recording level and sent a new version. In her second response, the reviewer distinguished the clearer sound from the quality of the script, which she had not yet assessed. The exchange illustrates why a small difference between hard and hardly can substantially alter the practical action a message calls for.",
+        "options": [
+          {
+            "id": "v6a38e078c8c7",
+            "label": "The recording level."
+          },
+          {
+            "id": "vc98e206a80d8",
+            "label": "The reviewer’s deadlines."
+          },
+          {
+            "id": "v8bf07d68856d",
+            "label": "The script’s conclusion after a full assessment."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6a38e078c8c7"
+      },
+      "reference_answer": "v6a38e078c8c7",
+      "incorrect_answer": "vc98e206a80d8",
+      "editorial_answer": "The recording level.",
+      "explanation": "В ответ на конкретную проблему изменён уровень записи.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Различи степень восприятия и усилие.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Did “I could hardly hear” describe diligent listening?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vde37870b2a79",
+            "label": "Yes; hardly always means diligently."
+          },
+          {
+            "id": "v916ed4b0ffa6",
+            "label": "It proved that every word was clear."
+          },
+          {
+            "id": "v2ff145845195",
+            "label": "It described limited audibility; effort needs separate evidence."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2ff145845195"
+      },
+      "reference_answer": "v2ff145845195",
+      "incorrect_answer": "vde37870b2a79",
+      "editorial_answer": "It described limited audibility; effort needs separate evidence.",
+      "explanation": "Hardly не является усиленной формой hard.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A sound that can be heard is ___.",
+        "options": [
+          {
+            "id": "vcb6adf8d1996",
+            "label": "silent necessarily"
+          },
+          {
+            "id": "v55f31e6a3405",
+            "label": "audible"
+          },
+          {
+            "id": "vb094c6725e11",
+            "label": "diligent"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v55f31e6a3405"
+      },
+      "reference_answer": "v55f31e6a3405",
+      "incorrect_answer": "vb094c6725e11",
+      "editorial_answer": "audible",
+      "explanation": "Audible — доступный слуховому восприятию.",
+      "key": "e09"
+    }
+  ]
+}

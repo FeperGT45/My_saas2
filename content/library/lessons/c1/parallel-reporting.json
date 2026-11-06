@@ -1,0 +1,338 @@
+{
+  "key": "c1/parallel-reporting",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика C1 · точность в контексте",
+    "position": 50
+  },
+  "position": 4,
+  "title": "Параллельные формы в точном отчёте",
+  "description": "Параллельные формы в точном отчёте: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Согласовывать формы в перечне действий",
+    "Не расширять содержание при грамматической правке"
+  ],
+  "notes": [
+    "The role involves checking, recording and reporting: однородные элементы имеют одинаковую форму.",
+    "Исправляя форму, сохраняй исходные действия; редактура не добавляет новых обязанностей."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/hardly-versus-hard"],
+  "lexicon": [
+    {
+      "en": "parallel",
+      "ru": "параллельный по структуре"
+    },
+    {
+      "en": "enumerate",
+      "ru": "перечислять"
+    },
+    {
+      "en": "scope",
+      "ru": "объём охвата"
+    },
+    {
+      "en": "duty",
+      "ru": "обязанность"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The role involves checking entries, recording changes and ___ discrepancies.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vb03a4493122e",
+            "label": "reporting"
+          },
+          {
+            "id": "v765d2104a74e",
+            "label": "to reported"
+          },
+          {
+            "id": "v70bf52602b11",
+            "label": "reports to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb03a4493122e"
+      },
+      "reference_answer": "vb03a4493122e",
+      "incorrect_answer": "v765d2104a74e",
+      "editorial_answer": "reporting",
+      "explanation": "После involves перечислены однородные формы на -ing.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: updates / updating.",
+      "public_payload": {
+        "sentence": "The task includes reviewing and ___ records."
+      },
+      "answer_key": {
+        "accepted": ["updating"]
+      },
+      "reference_answer": "updating",
+      "incorrect_answer": "updates",
+      "editorial_answer": "The task includes reviewing and updating records.",
+      "explanation": "Reviewing и updating имеют параллельную форму.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Работа включает проверку, фиксацию и составление отчётов.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "involves"
+          },
+          {
+            "id": "t4",
+            "label": "checking,"
+          },
+          {
+            "id": "t5",
+            "label": "recording"
+          },
+          {
+            "id": "t6",
+            "label": "and"
+          },
+          {
+            "id": "t7",
+            "label": "reporting."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "role"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The role involves checking, recording and reporting.",
+      "explanation": "Три однородных действия сохраняют одинаковую форму.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The task involves checking dates and to record changes."
+      },
+      "answer_key": {
+        "accepted": ["The task involves checking dates and recording changes."]
+      },
+      "reference_answer": "The task involves checking dates and recording changes.",
+      "incorrect_answer": "The task involves checking dates and to record changes.",
+      "editorial_answer": "The task involves checking dates and recording changes.",
+      "explanation": "После involves второе действие согласуется с checking: recording.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как редактор улучшила исходный перечень?",
+      "public_payload": {
+        "passage": "An editor revised a volunteer role description that listed checking dates, to record changes, and reporting discrepancies. She made the three forms parallel, using checking, recording, and reporting. During review, another colleague suggested adding approval of expenditure because it sounded like a natural final responsibility. The editor declined: grammatical consistency did not authorise a wider role. Approval belonged to a different team and had never appeared in the source description. The final version was easier to read while preserving the original scope. Its improvement lay in the relationship between the listed forms, not in a new claim about the volunteer’s authority or the range of decisions they could make.",
+        "options": [
+          {
+            "id": "v656985411a41",
+            "label": "She added authority to approve expenditure."
+          },
+          {
+            "id": "v6cc9102e94c8",
+            "label": "She removed every responsibility."
+          },
+          {
+            "id": "v5c4322de4e28",
+            "label": "She made the existing actions grammatically parallel."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5c4322de4e28"
+      },
+      "reference_answer": "v5c4322de4e28",
+      "incorrect_answer": "v656985411a41",
+      "editorial_answer": "She made the existing actions grammatically parallel.",
+      "explanation": "Редактор согласовала формы, сохранив исходные действия.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lb105f1b0f6df",
+            "label": "parallel"
+          },
+          {
+            "id": "l62f18ef6c9aa",
+            "label": "enumerate"
+          },
+          {
+            "id": "l6453d9a4e8dc",
+            "label": "scope"
+          },
+          {
+            "id": "lbcd3676210c3",
+            "label": "duty"
+          }
+        ],
+        "right": [
+          {
+            "id": "r68625331d8b6",
+            "label": "объём охвата"
+          },
+          {
+            "id": "re6bdb77c5c6a",
+            "label": "обязанность"
+          },
+          {
+            "id": "r475a81d045d5",
+            "label": "параллельный по структуре"
+          },
+          {
+            "id": "ra0c980b52793",
+            "label": "перечислять"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lb105f1b0f6df": "r475a81d045d5",
+          "l62f18ef6c9aa": "ra0c980b52793",
+          "l6453d9a4e8dc": "r68625331d8b6",
+          "lbcd3676210c3": "re6bdb77c5c6a"
+        }
+      },
+      "reference_answer": {
+        "lb105f1b0f6df": "r475a81d045d5",
+        "l62f18ef6c9aa": "ra0c980b52793",
+        "l6453d9a4e8dc": "r68625331d8b6",
+        "lbcd3676210c3": "re6bdb77c5c6a"
+      },
+      "incorrect_answer": {
+        "lb105f1b0f6df": "ra0c980b52793",
+        "l62f18ef6c9aa": "r475a81d045d5",
+        "l6453d9a4e8dc": "r68625331d8b6",
+        "lbcd3676210c3": "re6bdb77c5c6a"
+      },
+      "editorial_answer": "parallel — параллельный по структуре; enumerate — перечислять; scope — объём охвата; duty — обязанность",
+      "explanation": "В этих контекстах: parallel — параллельный по структуре; enumerate — перечислять; scope — объём охвата; duty — обязанность.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему отклонили дополнительную обязанность?",
+      "public_payload": {
+        "passage": "An editor revised a volunteer role description that listed checking dates, to record changes, and reporting discrepancies. She made the three forms parallel, using checking, recording, and reporting. During review, another colleague suggested adding approval of expenditure because it sounded like a natural final responsibility. The editor declined: grammatical consistency did not authorise a wider role. Approval belonged to a different team and had never appeared in the source description. The final version was easier to read while preserving the original scope. Its improvement lay in the relationship between the listed forms, not in a new claim about the volunteer’s authority or the range of decisions they could make.",
+        "options": [
+          {
+            "id": "v3a106919aa6c",
+            "label": "It would expand the role beyond the source description."
+          },
+          {
+            "id": "v99310c1f8055",
+            "label": "Parallel grammar always prohibits reporting."
+          },
+          {
+            "id": "v4dfb8b66f8a3",
+            "label": "The source had already assigned that approval duty."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3a106919aa6c"
+      },
+      "reference_answer": "v3a106919aa6c",
+      "incorrect_answer": "v99310c1f8055",
+      "editorial_answer": "It would expand the role beyond the source description.",
+      "explanation": "Грамматическая правка не даёт основания расширять полномочия.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Раздели форму перечня и объём содержания.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can polishing a list justify adding a new responsibility?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v6bee0eccda7f",
+            "label": "Yes; any parallel list grants extra authority."
+          },
+          {
+            "id": "va0efc9a21798",
+            "label": "Yes; editing transfers all approval rights."
+          },
+          {
+            "id": "v084b974c54c4",
+            "label": "No; a change in scope requires its own basis."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v084b974c54c4"
+      },
+      "reference_answer": "v084b974c54c4",
+      "incorrect_answer": "v6bee0eccda7f",
+      "editorial_answer": "No; a change in scope requires its own basis.",
+      "explanation": "Параллельность относится к форме, не к новым полномочиям.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The extent of responsibilities covered by a description is its ___.",
+        "options": [
+          {
+            "id": "v6e6905777f40",
+            "label": "rhythm alone"
+          },
+          {
+            "id": "v61a9f3e009ef",
+            "label": "scope"
+          },
+          {
+            "id": "v93da4d818194",
+            "label": "spelling alone"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v61a9f3e009ef"
+      },
+      "reference_answer": "v61a9f3e009ef",
+      "incorrect_answer": "v93da4d818194",
+      "editorial_answer": "scope",
+      "explanation": "Scope — объём охвата описания.",
+      "key": "e09"
+    }
+  ]
+}

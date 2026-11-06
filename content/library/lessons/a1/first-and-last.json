@@ -1,0 +1,338 @@
+{
+  "key": "a1/first-and-last",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика A1 · точность в контексте",
+    "position": 50
+  },
+  "position": 2,
+  "title": "Порядок в очереди",
+  "description": "Порядок в очереди: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Называть первую и последнюю позицию",
+    "Различать next и last по контексту"
+  ],
+  "notes": [
+    "First — первый, last — последний.",
+    "Next обозначает следующего относительно текущей позиции."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/how-often-visits"],
+  "lexicon": [
+    {
+      "en": "first",
+      "ru": "первый"
+    },
+    {
+      "en": "last",
+      "ru": "последний"
+    },
+    {
+      "en": "next",
+      "ru": "следующий"
+    },
+    {
+      "en": "line",
+      "ru": "очередь, ряд"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: There are three people. The person at the end is ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vb6776aba0b15",
+            "label": "last"
+          },
+          {
+            "id": "v000a1952e539",
+            "label": "first at the front"
+          },
+          {
+            "id": "vf1aa0462adb8",
+            "label": "every"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb6776aba0b15"
+      },
+      "reference_answer": "vb6776aba0b15",
+      "incorrect_answer": "v000a1952e539",
+      "editorial_answer": "last",
+      "explanation": "В конце очереди находится last.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: before / next.",
+      "public_payload": {
+        "sentence": "I am first. Kim is ___ after me."
+      },
+      "answer_key": {
+        "accepted": ["next"]
+      },
+      "reference_answer": "next",
+      "incorrect_answer": "before",
+      "editorial_answer": "I am first. Kim is next after me.",
+      "explanation": "Next обозначает следующую позицию.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Последний человек стоит у двери.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "person"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "by"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "door."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "last"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The last person is by the door.",
+      "explanation": "Last задаёт конечную позицию в очереди.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She is the firsts person in the line."
+      },
+      "answer_key": {
+        "accepted": ["She is the first person in the line."]
+      },
+      "reference_answer": "She is the first person in the line.",
+      "incorrect_answer": "She is the firsts person in the line.",
+      "editorial_answer": "She is the first person in the line.",
+      "explanation": "Порядковое first перед person не получает окончание s.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто первый?",
+      "public_payload": {
+        "passage": "Three people wait for tickets. Ana is first. Ben is next, and Kim is last. Kim stands by the door with a green bag.",
+        "options": [
+          {
+            "id": "v3fe5320f8d27",
+            "label": "Ben."
+          },
+          {
+            "id": "v029855fa1a9c",
+            "label": "Kim."
+          },
+          {
+            "id": "v10b558ec4c29",
+            "label": "Ana."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v10b558ec4c29"
+      },
+      "reference_answer": "v10b558ec4c29",
+      "incorrect_answer": "v3fe5320f8d27",
+      "editorial_answer": "Ana.",
+      "explanation": "Порядок назван прямо.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1bc7ff852fa3",
+            "label": "first"
+          },
+          {
+            "id": "l1fcc3c7e1fa3",
+            "label": "last"
+          },
+          {
+            "id": "lc69393abba9f",
+            "label": "next"
+          },
+          {
+            "id": "lfc1ea6a6b082",
+            "label": "line"
+          }
+        ],
+        "right": [
+          {
+            "id": "rf0079fb62e88",
+            "label": "следующий"
+          },
+          {
+            "id": "r187a25113416",
+            "label": "очередь, ряд"
+          },
+          {
+            "id": "r6554678acc10",
+            "label": "первый"
+          },
+          {
+            "id": "rbb5b8f0ce322",
+            "label": "последний"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1bc7ff852fa3": "r6554678acc10",
+          "l1fcc3c7e1fa3": "rbb5b8f0ce322",
+          "lc69393abba9f": "rf0079fb62e88",
+          "lfc1ea6a6b082": "r187a25113416"
+        }
+      },
+      "reference_answer": {
+        "l1bc7ff852fa3": "r6554678acc10",
+        "l1fcc3c7e1fa3": "rbb5b8f0ce322",
+        "lc69393abba9f": "rf0079fb62e88",
+        "lfc1ea6a6b082": "r187a25113416"
+      },
+      "incorrect_answer": {
+        "l1bc7ff852fa3": "rbb5b8f0ce322",
+        "l1fcc3c7e1fa3": "r6554678acc10",
+        "lc69393abba9f": "rf0079fb62e88",
+        "lfc1ea6a6b082": "r187a25113416"
+      },
+      "editorial_answer": "first — первый; last — последний; next — следующий; line — очередь, ряд",
+      "explanation": "В этих контекстах: first — первый; last — последний; next — следующий; line — очередь, ряд.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто стоит с зелёной сумкой?",
+      "public_payload": {
+        "passage": "Three people wait for tickets. Ana is first. Ben is next, and Kim is last. Kim stands by the door with a green bag.",
+        "options": [
+          {
+            "id": "vf531453a72b8",
+            "label": "Kim."
+          },
+          {
+            "id": "v3016055ea899",
+            "label": "Ana."
+          },
+          {
+            "id": "v9fc557097ff3",
+            "label": "Every person."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf531453a72b8"
+      },
+      "reference_answer": "vf531453a72b8",
+      "incorrect_answer": "v3016055ea899",
+      "editorial_answer": "Kim.",
+      "explanation": "Зелёная сумка описывает Ким.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь по очереди из текста.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Who is next after Ana?"
+          }
+        ],
+        "options": [
+          {
+            "id": "ve9d6c96fc61b",
+            "label": "Kim is first."
+          },
+          {
+            "id": "vdef5e2bac774",
+            "label": "Everyone is last."
+          },
+          {
+            "id": "ve8befc593123",
+            "label": "Ben is next."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve8befc593123"
+      },
+      "reference_answer": "ve8befc593123",
+      "incorrect_answer": "ve9d6c96fc61b",
+      "editorial_answer": "Ben is next.",
+      "explanation": "После Аны следует Бен.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "People waiting one behind another form a ___.",
+        "options": [
+          {
+            "id": "vb414e02e9ade",
+            "label": "lesson"
+          },
+          {
+            "id": "v8dd47589176f",
+            "label": "line"
+          },
+          {
+            "id": "v1380cf254742",
+            "label": "window"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8dd47589176f"
+      },
+      "reference_answer": "v8dd47589176f",
+      "incorrect_answer": "v1380cf254742",
+      "editorial_answer": "line",
+      "explanation": "Line здесь означает очередь.",
+      "key": "e09"
+    }
+  ]
+}

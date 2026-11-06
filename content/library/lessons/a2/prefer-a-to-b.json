@@ -1,0 +1,330 @@
+{
+  "key": "a2/prefer-a-to-b",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика A2 · точность в контексте",
+    "position": 50
+  },
+  "position": 4,
+  "title": "Какой вариант предпочтительнее",
+  "description": "Какой вариант предпочтительнее: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать prefer A to B",
+    "Сохранять различие личного выбора и общего качества"
+  ],
+  "notes": [
+    "I prefer tea to coffee выражает предпочтение одного другому.",
+    "Это не означает, что выбранный вариант лучше для каждого человека."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/how-long-take"],
+  "lexicon": [
+    {
+      "en": "prefer",
+      "ru": "предпочитать"
+    },
+    {
+      "en": "option",
+      "ru": "вариант"
+    },
+    {
+      "en": "personal",
+      "ru": "личный"
+    },
+    {
+      "en": "choice",
+      "ru": "выбор"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I prefer the morning class ___ the evening one.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v853f42b25030",
+            "label": "to"
+          },
+          {
+            "id": "v132aa23a9478",
+            "label": "than of"
+          },
+          {
+            "id": "vee7d3a9f537d",
+            "label": "from than"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v853f42b25030"
+      },
+      "reference_answer": "v853f42b25030",
+      "incorrect_answer": "v132aa23a9478",
+      "editorial_answer": "to",
+      "explanation": "Prefer A to B — нужная модель сравнения предпочтений.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: prefer / prefers.",
+      "public_payload": {
+        "sentence": "She ___ the quieter room to the larger one."
+      },
+      "answer_key": {
+        "accepted": ["prefers"]
+      },
+      "reference_answer": "prefers",
+      "incorrect_answer": "prefer",
+      "editorial_answer": "She prefers the quieter room to the larger one.",
+      "explanation": "С she используется prefers.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я предпочитаю чай кофе.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "tea"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "coffee."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "prefer"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "I prefer tea to coffee.",
+      "explanation": "To вводит второй вариант после prefer.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He prefers this route than the other one."
+      },
+      "answer_key": {
+        "accepted": ["He prefers this route to the other one."]
+      },
+      "reference_answer": "He prefers this route to the other one.",
+      "incorrect_answer": "He prefers this route than the other one.",
+      "editorial_answer": "He prefers this route to the other one.",
+      "explanation": "В этой модели после prefer используется to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Лее подходит утро?",
+      "public_payload": {
+        "passage": "Lea prefers the morning class to the evening one because she can study before work. Her colleague prefers evenings because of a different schedule. Both classes use the same materials. Their choices reflect the times that suit them, not a claim that one class is better for every student.",
+        "options": [
+          {
+            "id": "v8f54f96b2d22",
+            "label": "The evening materials are incorrect."
+          },
+          {
+            "id": "v903a7b03a138",
+            "label": "Every student dislikes evenings."
+          },
+          {
+            "id": "v50f79afae2c7",
+            "label": "She can study before work."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v50f79afae2c7"
+      },
+      "reference_answer": "v50f79afae2c7",
+      "incorrect_answer": "v8f54f96b2d22",
+      "editorial_answer": "She can study before work.",
+      "explanation": "Причина — личное расписание.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l56e470d60947",
+            "label": "prefer"
+          },
+          {
+            "id": "lbd85044a547e",
+            "label": "option"
+          },
+          {
+            "id": "l596f48f53f1c",
+            "label": "personal"
+          },
+          {
+            "id": "l7cb224632e95",
+            "label": "choice"
+          }
+        ],
+        "right": [
+          {
+            "id": "r180c4904fd49",
+            "label": "личный"
+          },
+          {
+            "id": "r9d0266bb0131",
+            "label": "выбор"
+          },
+          {
+            "id": "rb23da3ee1cfc",
+            "label": "предпочитать"
+          },
+          {
+            "id": "re08b933abcdf",
+            "label": "вариант"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l56e470d60947": "rb23da3ee1cfc",
+          "lbd85044a547e": "re08b933abcdf",
+          "l596f48f53f1c": "r180c4904fd49",
+          "l7cb224632e95": "r9d0266bb0131"
+        }
+      },
+      "reference_answer": {
+        "l56e470d60947": "rb23da3ee1cfc",
+        "lbd85044a547e": "re08b933abcdf",
+        "l596f48f53f1c": "r180c4904fd49",
+        "l7cb224632e95": "r9d0266bb0131"
+      },
+      "incorrect_answer": {
+        "l56e470d60947": "re08b933abcdf",
+        "lbd85044a547e": "rb23da3ee1cfc",
+        "l596f48f53f1c": "r180c4904fd49",
+        "l7cb224632e95": "r9d0266bb0131"
+      },
+      "editorial_answer": "prefer — предпочитать; option — вариант; personal — личный; choice — выбор",
+      "explanation": "В этих контекстах: prefer — предпочитать; option — вариант; personal — личный; choice — выбор.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Одинаковы ли учебные материалы?",
+      "public_payload": {
+        "passage": "Lea prefers the morning class to the evening one because she can study before work. Her colleague prefers evenings because of a different schedule. Both classes use the same materials. Their choices reflect the times that suit them, not a claim that one class is better for every student.",
+        "options": [
+          {
+            "id": "v108730a43ee8",
+            "label": "Yes, both classes use the same materials."
+          },
+          {
+            "id": "v07db757326c0",
+            "label": "No, the morning class has no books."
+          },
+          {
+            "id": "v768bd1815118",
+            "label": "The text says every book is different."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v108730a43ee8"
+      },
+      "reference_answer": "v108730a43ee8",
+      "incorrect_answer": "v07db757326c0",
+      "editorial_answer": "Yes, both classes use the same materials.",
+      "explanation": "Сравнение касается времени, не разных материалов.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Вырази предпочтение моделью prefer A to B.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which drink would you choose?"
+          }
+        ],
+        "options": [
+          {
+            "id": "va572dcf66a1d",
+            "label": "I prefer water than juice."
+          },
+          {
+            "id": "v5921b0f9319c",
+            "label": "I prefers water to juice."
+          },
+          {
+            "id": "v9a6d6e972229",
+            "label": "I prefer water to juice."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9a6d6e972229"
+      },
+      "reference_answer": "v9a6d6e972229",
+      "incorrect_answer": "va572dcf66a1d",
+      "editorial_answer": "I prefer water to juice.",
+      "explanation": "С I нужен prefer, второй вариант вводится to.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A choice based on one person’s circumstances is ___.",
+        "options": [
+          {
+            "id": "vac9102bcce9e",
+            "label": "compulsory for everyone"
+          },
+          {
+            "id": "v74e6f78043cb",
+            "label": "personal"
+          },
+          {
+            "id": "v47575661019f",
+            "label": "universal necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v74e6f78043cb"
+      },
+      "reference_answer": "v74e6f78043cb",
+      "incorrect_answer": "v47575661019f",
+      "editorial_answer": "personal",
+      "explanation": "Personal — личный, не универсально обязательный.",
+      "key": "e09"
+    }
+  ]
+}

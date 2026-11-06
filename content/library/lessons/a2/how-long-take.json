@@ -1,0 +1,338 @@
+{
+  "key": "a2/how-long-take",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика A2 · точность в контексте",
+    "position": 50
+  },
+  "position": 3,
+  "title": "Сколько времени занимает дорога",
+  "description": "Сколько времени занимает дорога: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Спрашивать How long does it take?",
+    "Использовать takes с длительностью"
+  ],
+  "notes": [
+    "How long does it take to walk there? спрашивает о длительности.",
+    "It takes twenty minutes — требуется двадцать минут. После does глагол take без -s."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/polite-would-like"],
+  "lexicon": [
+    {
+      "en": "duration",
+      "ru": "длительность"
+    },
+    {
+      "en": "journey",
+      "ru": "поездка"
+    },
+    {
+      "en": "walk",
+      "ru": "прогулка, ходьба"
+    },
+    {
+      "en": "minute",
+      "ru": "минута"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: How long does it ___ to reach the station?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v27403a0d3404",
+            "label": "take"
+          },
+          {
+            "id": "v6bfe3861c5ae",
+            "label": "takes"
+          },
+          {
+            "id": "vfa63c9999a29",
+            "label": "taking"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v27403a0d3404"
+      },
+      "reference_answer": "v27403a0d3404",
+      "incorrect_answer": "v6bfe3861c5ae",
+      "editorial_answer": "take",
+      "explanation": "После does требуется take.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: takes / take.",
+      "public_payload": {
+        "sentence": "It ___ ten minutes to walk home."
+      },
+      "answer_key": {
+        "accepted": ["takes"]
+      },
+      "reference_answer": "takes",
+      "incorrect_answer": "take",
+      "editorial_answer": "It takes ten minutes to walk home.",
+      "explanation": "С it в утверждении используется takes.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Дойти туда пешком занимает пятнадцать минут.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "fifteen"
+          },
+          {
+            "id": "t4",
+            "label": "minutes"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "walk"
+          },
+          {
+            "id": "t7",
+            "label": "there."
+          },
+          {
+            "id": "t1",
+            "label": "It"
+          },
+          {
+            "id": "t2",
+            "label": "takes"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "It takes fifteen minutes to walk there.",
+      "explanation": "Takes + длительность сообщает требуемое время.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "How long does it takes to get there?"
+      },
+      "answer_key": {
+        "accepted": ["How long does it take to get there?"]
+      },
+      "reference_answer": "How long does it take to get there?",
+      "incorrect_answer": "How long does it takes to get there?",
+      "editorial_answer": "How long does it take to get there?",
+      "explanation": "После does убирается -s у take.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Сэм идёт пешком?",
+      "public_payload": {
+        "passage": "The library is fifteen minutes away on foot. The bus journey takes five minutes, but buses come only every twenty minutes. Sam decides to walk because the next bus is not due for another eighteen minutes. For this journey, waiting for the bus would take longer than walking.",
+        "options": [
+          {
+            "id": "v110da038a01f",
+            "label": "The bus journey itself lasts an hour."
+          },
+          {
+            "id": "v1eebf9acf63b",
+            "label": "The library is only one minute away."
+          },
+          {
+            "id": "v30679f43abf1",
+            "label": "The wait for the next bus is longer than the walk."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v30679f43abf1"
+      },
+      "reference_answer": "v30679f43abf1",
+      "incorrect_answer": "v110da038a01f",
+      "editorial_answer": "The wait for the next bus is longer than the walk.",
+      "explanation": "Сравниваются 18 минут ожидания и 15 минут ходьбы.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l6d653ef4c306",
+            "label": "duration"
+          },
+          {
+            "id": "lef1d8e96852c",
+            "label": "journey"
+          },
+          {
+            "id": "l72ee12d530fc",
+            "label": "walk"
+          },
+          {
+            "id": "lfd252039e56e",
+            "label": "minute"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2e98545580ad",
+            "label": "прогулка, ходьба"
+          },
+          {
+            "id": "r52dd855877bf",
+            "label": "минута"
+          },
+          {
+            "id": "r107e023f247b",
+            "label": "длительность"
+          },
+          {
+            "id": "r0ec50ef03d8a",
+            "label": "поездка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l6d653ef4c306": "r107e023f247b",
+          "lef1d8e96852c": "r0ec50ef03d8a",
+          "l72ee12d530fc": "r2e98545580ad",
+          "lfd252039e56e": "r52dd855877bf"
+        }
+      },
+      "reference_answer": {
+        "l6d653ef4c306": "r107e023f247b",
+        "lef1d8e96852c": "r0ec50ef03d8a",
+        "l72ee12d530fc": "r2e98545580ad",
+        "lfd252039e56e": "r52dd855877bf"
+      },
+      "incorrect_answer": {
+        "l6d653ef4c306": "r0ec50ef03d8a",
+        "lef1d8e96852c": "r107e023f247b",
+        "l72ee12d530fc": "r2e98545580ad",
+        "lfd252039e56e": "r52dd855877bf"
+      },
+      "editorial_answer": "duration — длительность; journey — поездка; walk — прогулка, ходьба; minute — минута",
+      "explanation": "В этих контекстах: duration — длительность; journey — поездка; walk — прогулка, ходьба; minute — минута.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько длится сама поездка на автобусе?",
+      "public_payload": {
+        "passage": "The library is fifteen minutes away on foot. The bus journey takes five minutes, but buses come only every twenty minutes. Sam decides to walk because the next bus is not due for another eighteen minutes. For this journey, waiting for the bus would take longer than walking.",
+        "options": [
+          {
+            "id": "v0cabc9581d97",
+            "label": "Five minutes."
+          },
+          {
+            "id": "vb60c2e5db230",
+            "label": "Twenty minutes."
+          },
+          {
+            "id": "vfc94d00ef480",
+            "label": "Eighteen minutes."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0cabc9581d97"
+      },
+      "reference_answer": "v0cabc9581d97",
+      "incorrect_answer": "vb60c2e5db230",
+      "editorial_answer": "Five minutes.",
+      "explanation": "Пять — длительность поездки; другие числа относятся к интервалу и ожиданию.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о длительности ходьбы.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How long does the walk take?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v43ddaaf27556",
+            "label": "It take about ten minutes."
+          },
+          {
+            "id": "vd9839e1cfde6",
+            "label": "It does takes ten minutes in a statement."
+          },
+          {
+            "id": "v64bfcb90329b",
+            "label": "It takes about ten minutes."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v64bfcb90329b"
+      },
+      "reference_answer": "v64bfcb90329b",
+      "incorrect_answer": "v43ddaaf27556",
+      "editorial_answer": "It takes about ten minutes.",
+      "explanation": "It takes — правильное утверждение.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A unit equal to sixty seconds is a ___.",
+        "options": [
+          {
+            "id": "vba3440d9dc6e",
+            "label": "month"
+          },
+          {
+            "id": "vb6368393384b",
+            "label": "minute"
+          },
+          {
+            "id": "v41a1074f82ad",
+            "label": "journey"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb6368393384b"
+      },
+      "reference_answer": "vb6368393384b",
+      "incorrect_answer": "v41a1074f82ad",
+      "editorial_answer": "minute",
+      "explanation": "Minute — минута.",
+      "key": "e09"
+    }
+  ]
+}

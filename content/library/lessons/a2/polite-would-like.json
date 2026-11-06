@@ -1,0 +1,342 @@
+{
+  "key": "a2/polite-would-like",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика A2 · точность в контексте",
+    "position": 50
+  },
+  "position": 2,
+  "title": "Желаемое действие в вежливом разговоре",
+  "description": "Желаемое действие в вежливом разговоре: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать would like to",
+    "Отличать просьбу сейчас от обычного предпочтения"
+  ],
+  "notes": [
+    "I would like to speak to the organiser — вежливо называем желаемое действие.",
+    "I like speaking ... описывает обычное предпочтение; это другой смысл."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/there-was-were"],
+  "lexicon": [
+    {
+      "en": "request",
+      "ru": "просьба"
+    },
+    {
+      "en": "appointment",
+      "ru": "назначенная встреча"
+    },
+    {
+      "en": "organiser",
+      "ru": "организатор"
+    },
+    {
+      "en": "prefer",
+      "ru": "предпочитать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I would like ___ the booking details.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v31946abb55ef",
+            "label": "to check"
+          },
+          {
+            "id": "v53984e4170b5",
+            "label": "checking to"
+          },
+          {
+            "id": "v016716dfd025",
+            "label": "check to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v31946abb55ef"
+      },
+      "reference_answer": "v31946abb55ef",
+      "incorrect_answer": "v53984e4170b5",
+      "editorial_answer": "to check",
+      "explanation": "Would like сочетается с to check.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: likes / like.",
+      "public_payload": {
+        "sentence": "She would ___ to change the appointment."
+      },
+      "answer_key": {
+        "accepted": ["like"]
+      },
+      "reference_answer": "like",
+      "incorrect_answer": "likes",
+      "editorial_answer": "She would like to change the appointment.",
+      "explanation": "После would используется like без -s.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я хотел бы поговорить с организатором.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "like"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "speak"
+          },
+          {
+            "id": "t6",
+            "label": "to"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "organiser."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "would"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "I would like to speak to the organiser.",
+      "explanation": "Would like to выражает вежливое желание.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I would like speak to the manager."
+      },
+      "answer_key": {
+        "accepted": ["I would like to speak to the manager."]
+      },
+      "reference_answer": "I would like to speak to the manager.",
+      "incorrect_answer": "I would like speak to the manager.",
+      "editorial_answer": "I would like to speak to the manager.",
+      "explanation": "Между like и speak требуется to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Хана не выбрала вторник?",
+      "public_payload": {
+        "passage": "At reception, Hana said she would like to change her appointment. The receptionist offered Tuesday morning or Thursday afternoon. Hana chose Thursday because she worked on Tuesday. Before leaving, she checked the new time and asked for a written confirmation, so she would not confuse it with the original booking.",
+        "options": [
+          {
+            "id": "v2ac8ffd83d17",
+            "label": "Reception was closed every Tuesday."
+          },
+          {
+            "id": "v14daa7bdc879",
+            "label": "Thursday was never available."
+          },
+          {
+            "id": "v7a5369450f05",
+            "label": "She worked that day."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7a5369450f05"
+      },
+      "reference_answer": "v7a5369450f05",
+      "incorrect_answer": "v2ac8ffd83d17",
+      "editorial_answer": "She worked that day.",
+      "explanation": "Причина относится к её рабочему расписанию.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l2c41853b2bb4",
+            "label": "request"
+          },
+          {
+            "id": "ldf8e8e506584",
+            "label": "appointment"
+          },
+          {
+            "id": "l1532b7af45e0",
+            "label": "organiser"
+          },
+          {
+            "id": "ldd90324142a7",
+            "label": "prefer"
+          }
+        ],
+        "right": [
+          {
+            "id": "rce22dc28b200",
+            "label": "организатор"
+          },
+          {
+            "id": "r863033adb6c0",
+            "label": "предпочитать"
+          },
+          {
+            "id": "r06e67fd6c7b8",
+            "label": "просьба"
+          },
+          {
+            "id": "r262e03580e6d",
+            "label": "назначенная встреча"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l2c41853b2bb4": "r06e67fd6c7b8",
+          "ldf8e8e506584": "r262e03580e6d",
+          "l1532b7af45e0": "rce22dc28b200",
+          "ldd90324142a7": "r863033adb6c0"
+        }
+      },
+      "reference_answer": {
+        "l2c41853b2bb4": "r06e67fd6c7b8",
+        "ldf8e8e506584": "r262e03580e6d",
+        "l1532b7af45e0": "rce22dc28b200",
+        "ldd90324142a7": "r863033adb6c0"
+      },
+      "incorrect_answer": {
+        "l2c41853b2bb4": "r262e03580e6d",
+        "ldf8e8e506584": "r06e67fd6c7b8",
+        "l1532b7af45e0": "rce22dc28b200",
+        "ldd90324142a7": "r863033adb6c0"
+      },
+      "editorial_answer": "request — просьба; appointment — назначенная встреча; organiser — организатор; prefer — предпочитать",
+      "explanation": "В этих контекстах: request — просьба; appointment — назначенная встреча; organiser — организатор; prefer — предпочитать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем она попросила подтверждение?",
+      "public_payload": {
+        "passage": "At reception, Hana said she would like to change her appointment. The receptionist offered Tuesday morning or Thursday afternoon. Hana chose Thursday because she worked on Tuesday. Before leaving, she checked the new time and asked for a written confirmation, so she would not confuse it with the original booking.",
+        "options": [
+          {
+            "id": "v77cfae43e0f3",
+            "label": "To avoid confusing the new time with the original booking."
+          },
+          {
+            "id": "ve69410b496a4",
+            "label": "To cancel both offered appointments."
+          },
+          {
+            "id": "v24f28631a77d",
+            "label": "To prove she had already attended."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v77cfae43e0f3"
+      },
+      "reference_answer": "v77cfae43e0f3",
+      "incorrect_answer": "ve69410b496a4",
+      "editorial_answer": "To avoid confusing the new time with the original booking.",
+      "explanation": "Подтверждение помогает сохранить новую договорённость.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сформулируй вежливое желание.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What can I help you with?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v55756b6121d0",
+            "label": "I would likes to check my reservation."
+          },
+          {
+            "id": "v06d4a2437365",
+            "label": "I would like checking to reservation."
+          },
+          {
+            "id": "veea1cbeb4e4b",
+            "label": "I would like to check my reservation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "veea1cbeb4e4b"
+      },
+      "reference_answer": "veea1cbeb4e4b",
+      "incorrect_answer": "v55756b6121d0",
+      "editorial_answer": "I would like to check my reservation.",
+      "explanation": "Would like to check — стандартная модель.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A planned meeting at a set time is an ___.",
+        "options": [
+          {
+            "id": "v0b9b32ea6954",
+            "label": "interval only"
+          },
+          {
+            "id": "v0276519aab93",
+            "label": "appointment"
+          },
+          {
+            "id": "v9b29e169607c",
+            "label": "equipment"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0276519aab93"
+      },
+      "reference_answer": "v0276519aab93",
+      "incorrect_answer": "v9b29e169607c",
+      "editorial_answer": "appointment",
+      "explanation": "Appointment — назначенная встреча.",
+      "key": "e09"
+    }
+  ]
+}

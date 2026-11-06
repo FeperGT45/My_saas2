@@ -1,0 +1,338 @@
+{
+  "key": "c1/notwithstanding-evidence",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика C1 · точность в контексте",
+    "position": 50
+  },
+  "position": 1,
+  "title": "Несмотря на: формальная оговорка",
+  "description": "Несмотря на: формальная оговорка: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Строить notwithstanding с именной группой",
+    "Сохранять факт препятствия и ограниченный вывод"
+  ],
+  "notes": [
+    "Notwithstanding the delay означает despite the delay; это формальный регистр.",
+    "Оговорка допускает основной вывод вопреки обстоятельству, но не отрицает само обстоятельство."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/far-from-complete"],
+  "lexicon": [
+    {
+      "en": "notwithstanding",
+      "ru": "несмотря на"
+    },
+    {
+      "en": "obstacle",
+      "ru": "препятствие"
+    },
+    {
+      "en": "revision",
+      "ru": "пересмотр"
+    },
+    {
+      "en": "reservation",
+      "ru": "оговорка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Choose the formal equivalent of “despite the delay”: ___ the delay.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v78b5fb7d9b9d",
+            "label": "notwithstanding"
+          },
+          {
+            "id": "v07d2321a1d9b",
+            "label": "although of"
+          },
+          {
+            "id": "vafcab4ce90c5",
+            "label": "even though of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v78b5fb7d9b9d"
+      },
+      "reference_answer": "v78b5fb7d9b9d",
+      "incorrect_answer": "v07d2321a1d9b",
+      "editorial_answer": "notwithstanding",
+      "explanation": "Notwithstanding может предшествовать именной группе the delay.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: delay / delayed.",
+      "public_payload": {
+        "sentence": "Notwithstanding the ___, the report was submitted."
+      },
+      "answer_key": {
+        "accepted": ["delay"]
+      },
+      "reference_answer": "delay",
+      "incorrect_answer": "delayed",
+      "editorial_answer": "Notwithstanding the delay, the report was submitted.",
+      "explanation": "После notwithstanding здесь нужна именная группа, не отдельная глагольная форма.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Несмотря на задержку, отчёт оставался полезным.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "delay,"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "report"
+          },
+          {
+            "id": "t6",
+            "label": "remained"
+          },
+          {
+            "id": "t7",
+            "label": "useful."
+          },
+          {
+            "id": "t1",
+            "label": "Notwithstanding"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "Notwithstanding the delay, the report remained useful.",
+      "explanation": "Оговорка не отменяет ни задержку, ни ограниченную оценку полезности.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Notwithstanding of the delay, the report remained useful."
+      },
+      "answer_key": {
+        "accepted": ["Notwithstanding the delay, the report remained useful."]
+      },
+      "reference_answer": "Notwithstanding the delay, the report remained useful.",
+      "incorrect_answer": "Notwithstanding of the delay, the report remained useful.",
+      "editorial_answer": "Notwithstanding the delay, the report remained useful.",
+      "explanation": "В этой конструкции notwithstanding не требует of.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую оценку вынес комитет?",
+      "public_payload": {
+        "passage": "The committee described the archive report as useful, notwithstanding the delay in its submission. A shortened account later claimed that the committee had found no delay worth mentioning. That was not what the sentence said. The timing problem remained part of the record; the committee simply judged that it did not erase the report’s value. Members still requested a revised timetable for future submissions. Their assessment therefore combined recognition of an obstacle with a limited positive conclusion. Removing the qualification would make the record less accurate, while treating it as a rejection of the whole report would distort the assessment in the opposite direction.",
+        "options": [
+          {
+            "id": "v8474b142e16e",
+            "label": "No delay occurred."
+          },
+          {
+            "id": "v525df78e07f3",
+            "label": "The report was rejected as wholly useless."
+          },
+          {
+            "id": "v04c87be54575",
+            "label": "The delay occurred, but the report still had value."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v04c87be54575"
+      },
+      "reference_answer": "v04c87be54575",
+      "incorrect_answer": "v8474b142e16e",
+      "editorial_answer": "The delay occurred, but the report still had value.",
+      "explanation": "Оговорка сохраняет задержку, а основная часть — полезность.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc064c5834266",
+            "label": "notwithstanding"
+          },
+          {
+            "id": "l97a9be0459e2",
+            "label": "obstacle"
+          },
+          {
+            "id": "l4852864efa9b",
+            "label": "revision"
+          },
+          {
+            "id": "l1ea9d2095599",
+            "label": "reservation"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0193b86da5cc",
+            "label": "пересмотр"
+          },
+          {
+            "id": "r563b9b375c0e",
+            "label": "оговорка"
+          },
+          {
+            "id": "rbdc4b411f96c",
+            "label": "несмотря на"
+          },
+          {
+            "id": "raa11017566e2",
+            "label": "препятствие"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc064c5834266": "rbdc4b411f96c",
+          "l97a9be0459e2": "raa11017566e2",
+          "l4852864efa9b": "r0193b86da5cc",
+          "l1ea9d2095599": "r563b9b375c0e"
+        }
+      },
+      "reference_answer": {
+        "lc064c5834266": "rbdc4b411f96c",
+        "l97a9be0459e2": "raa11017566e2",
+        "l4852864efa9b": "r0193b86da5cc",
+        "l1ea9d2095599": "r563b9b375c0e"
+      },
+      "incorrect_answer": {
+        "lc064c5834266": "raa11017566e2",
+        "l97a9be0459e2": "rbdc4b411f96c",
+        "l4852864efa9b": "r0193b86da5cc",
+        "l1ea9d2095599": "r563b9b375c0e"
+      },
+      "editorial_answer": "notwithstanding — несмотря на; obstacle — препятствие; revision — пересмотр; reservation — оговорка",
+      "explanation": "В этих контекстах: notwithstanding — несмотря на; obstacle — препятствие; revision — пересмотр; reservation — оговорка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем нужен пересмотр будущего графика?",
+      "public_payload": {
+        "passage": "The committee described the archive report as useful, notwithstanding the delay in its submission. A shortened account later claimed that the committee had found no delay worth mentioning. That was not what the sentence said. The timing problem remained part of the record; the committee simply judged that it did not erase the report’s value. Members still requested a revised timetable for future submissions. Their assessment therefore combined recognition of an obstacle with a limited positive conclusion. Removing the qualification would make the record less accurate, while treating it as a rejection of the whole report would distort the assessment in the opposite direction.",
+        "options": [
+          {
+            "id": "v2c4d9f50d1a8",
+            "label": "The positive assessment did not remove the timing problem."
+          },
+          {
+            "id": "ve89c57836e08",
+            "label": "The report contained no useful information."
+          },
+          {
+            "id": "v035ad6601b61",
+            "label": "Notwithstanding means that deadlines are prohibited."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2c4d9f50d1a8"
+      },
+      "reference_answer": "v2c4d9f50d1a8",
+      "incorrect_answer": "ve89c57836e08",
+      "editorial_answer": "The positive assessment did not remove the timing problem.",
+      "explanation": "Практическое исправление графика совместимо с ограниченной положительной оценкой.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани значение формальной оговорки.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “notwithstanding the objection” erase the objection?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v4f22775d85d1",
+            "label": "Yes; it means nobody objected."
+          },
+          {
+            "id": "vccb49e6e93a4",
+            "label": "Yes; every objection was withdrawn."
+          },
+          {
+            "id": "v614acc00d7b0",
+            "label": "No; it retains the obstacle while presenting the main conclusion."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v614acc00d7b0"
+      },
+      "reference_answer": "v614acc00d7b0",
+      "incorrect_answer": "v4f22775d85d1",
+      "editorial_answer": "No; it retains the obstacle while presenting the main conclusion.",
+      "explanation": "Notwithstanding не утверждает исчезновение возражения.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A qualification attached to a favourable judgement is a ___.",
+        "options": [
+          {
+            "id": "v9017f4923f63",
+            "label": "withdrawal of every objection"
+          },
+          {
+            "id": "v11368f267d5b",
+            "label": "reservation"
+          },
+          {
+            "id": "va361bd52fc34",
+            "label": "guarantee of perfection"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v11368f267d5b"
+      },
+      "reference_answer": "v11368f267d5b",
+      "incorrect_answer": "va361bd52fc34",
+      "editorial_answer": "reservation",
+      "explanation": "Reservation — оговорка при оценке.",
+      "key": "e09"
+    }
+  ]
+}

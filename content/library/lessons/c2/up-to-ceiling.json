@@ -1,0 +1,372 @@
+{
+  "key": "c2/up-to-ceiling",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика C2 · точность в контексте",
+    "position": 50
+  },
+  "position": 1,
+  "title": "Up to: предел без обещания",
+  "description": "Up to: предел без обещания: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Отличать верхнюю границу от гарантированного результата",
+    "Сохранять ограничения диапазона в пересказе"
+  ],
+  "notes": [
+    "Up to forty обозначает верхнюю границу forty; само выражение не обещает именно сорок.",
+    "Реальная вместимость или доступность может зависеть от дополнительных условий, прямо названных в тексте."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/necessary-not-sufficient"],
+  "lexicon": [
+    {
+      "en": "ceiling",
+      "ru": "верхний предел"
+    },
+    {
+      "en": "capacity",
+      "ru": "вместимость"
+    },
+    {
+      "en": "guarantee",
+      "ru": "гарантия"
+    },
+    {
+      "en": "layout",
+      "ru": "схема размещения"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: A notice says “up to forty seats, depending on layout”. Which paraphrase preserves that limit?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vfa3bf055975a",
+            "label": "Forty is the maximum, subject to the layout."
+          },
+          {
+            "id": "vebd52007e68f",
+            "label": "At least forty seats are guaranteed."
+          },
+          {
+            "id": "v39bdd7dff0ec",
+            "label": "Forty is the average across all layouts."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfa3bf055975a"
+      },
+      "reference_answer": "vfa3bf055975a",
+      "incorrect_answer": "vebd52007e68f",
+      "editorial_answer": "Forty is the maximum, subject to the layout.",
+      "explanation": "Up to задаёт верхний предел, а depending on сохраняет условие.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: to / than.",
+      "public_payload": {
+        "sentence": "The room accommodates up ___ forty people."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "than",
+      "editorial_answer": "The room accommodates up to forty people.",
+      "explanation": "Конструкция верхнего предела — up to.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «В зависимости от размещения может быть доступно до сорока мест.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "forty"
+          },
+          {
+            "id": "t4",
+            "label": "seats"
+          },
+          {
+            "id": "t5",
+            "label": "may"
+          },
+          {
+            "id": "t6",
+            "label": "be"
+          },
+          {
+            "id": "t7",
+            "label": "available,"
+          },
+          {
+            "id": "t8",
+            "label": "depending"
+          },
+          {
+            "id": "t9",
+            "label": "on"
+          },
+          {
+            "id": "t10",
+            "label": "layout."
+          },
+          {
+            "id": "t1",
+            "label": "Up"
+          },
+          {
+            "id": "t2",
+            "label": "to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "Up to forty seats may be available, depending on layout.",
+      "explanation": "Сохраняются и максимум, и условность доступности.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The room holds up than forty people."
+      },
+      "answer_key": {
+        "accepted": ["The room holds up to forty people."]
+      },
+      "reference_answer": "The room holds up to forty people.",
+      "incorrect_answer": "The room holds up than forty people.",
+      "editorial_answer": "The room holds up to forty people.",
+      "explanation": "В выражении предельного количества требуется to, а не than.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему двадцать восемь мест не противоречили объявлению?",
+      "public_payload": {
+        "passage": "The exhibition room was advertised as offering up to forty seats, depending on the layout. A visitor interpreted the phrase as a promise that every event would have forty places. The organiser pointed to the qualification: an arrangement with large display tables left room for only twenty-eight chairs, whereas a presentation without those tables could use the full forty. Neither number contradicted the advertised ceiling. The wording did not establish an average, a minimum, or a guarantee that a particular visitor would obtain a place. The organiser nevertheless improved the booking page by listing the capacity for each scheduled layout. This made the practical information clearer without changing the meaning of the original upper limit. Visitors could then distinguish the room’s maximum capacity from the places offered at their chosen event.",
+        "options": [
+          {
+            "id": "v6dfa5f867fba",
+            "label": "Up to means a guaranteed minimum."
+          },
+          {
+            "id": "v870dbab74325",
+            "label": "Every arrangement had exactly forty chairs."
+          },
+          {
+            "id": "vc88f6f32afdd",
+            "label": "The advertised figure was a conditional maximum."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc88f6f32afdd"
+      },
+      "reference_answer": "vc88f6f32afdd",
+      "incorrect_answer": "v6dfa5f867fba",
+      "editorial_answer": "The advertised figure was a conditional maximum.",
+      "explanation": "Число ниже максимума совместимо с верхним пределом.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lbb1734baefdd",
+            "label": "ceiling"
+          },
+          {
+            "id": "lcb8a0ea68328",
+            "label": "capacity"
+          },
+          {
+            "id": "l2bdcffc3c365",
+            "label": "guarantee"
+          },
+          {
+            "id": "lee0c576dcee4",
+            "label": "layout"
+          }
+        ],
+        "right": [
+          {
+            "id": "rfd51ba4b2748",
+            "label": "гарантия"
+          },
+          {
+            "id": "r977d0b9e04c4",
+            "label": "схема размещения"
+          },
+          {
+            "id": "re573fed8f9f4",
+            "label": "верхний предел"
+          },
+          {
+            "id": "r5c88e92f2d41",
+            "label": "вместимость"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lbb1734baefdd": "re573fed8f9f4",
+          "lcb8a0ea68328": "r5c88e92f2d41",
+          "l2bdcffc3c365": "rfd51ba4b2748",
+          "lee0c576dcee4": "r977d0b9e04c4"
+        }
+      },
+      "reference_answer": {
+        "lbb1734baefdd": "re573fed8f9f4",
+        "lcb8a0ea68328": "r5c88e92f2d41",
+        "l2bdcffc3c365": "rfd51ba4b2748",
+        "lee0c576dcee4": "r977d0b9e04c4"
+      },
+      "incorrect_answer": {
+        "lbb1734baefdd": "r5c88e92f2d41",
+        "lcb8a0ea68328": "re573fed8f9f4",
+        "l2bdcffc3c365": "rfd51ba4b2748",
+        "lee0c576dcee4": "r977d0b9e04c4"
+      },
+      "editorial_answer": "ceiling — верхний предел; capacity — вместимость; guarantee — гарантия; layout — схема размещения",
+      "explanation": "В этих контекстах: ceiling — верхний предел; capacity — вместимость; guarantee — гарантия; layout — схема размещения.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что уточнили на странице бронирования?",
+      "public_payload": {
+        "passage": "The exhibition room was advertised as offering up to forty seats, depending on the layout. A visitor interpreted the phrase as a promise that every event would have forty places. The organiser pointed to the qualification: an arrangement with large display tables left room for only twenty-eight chairs, whereas a presentation without those tables could use the full forty. Neither number contradicted the advertised ceiling. The wording did not establish an average, a minimum, or a guarantee that a particular visitor would obtain a place. The organiser nevertheless improved the booking page by listing the capacity for each scheduled layout. This made the practical information clearer without changing the meaning of the original upper limit. Visitors could then distinguish the room’s maximum capacity from the places offered at their chosen event.",
+        "options": [
+          {
+            "id": "vfe6fbcc0ef6c",
+            "label": "The capacity for each scheduled layout."
+          },
+          {
+            "id": "v17dc6ace98c6",
+            "label": "A claim that forty was the historical average."
+          },
+          {
+            "id": "ve3c8db4ac376",
+            "label": "A promise that every visitor would receive a seat."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfe6fbcc0ef6c"
+      },
+      "reference_answer": "vfe6fbcc0ef6c",
+      "incorrect_answer": "v17dc6ace98c6",
+      "editorial_answer": "The capacity for each scheduled layout.",
+      "explanation": "Уточнение сделало условия конкретными, не превратило предел в гарантию места.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани тип количественного утверждения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “up to forty” by itself establish an average of forty?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v6f10a1e7ee16",
+            "label": "Yes; every maximum is also the average."
+          },
+          {
+            "id": "v906b340c63a2",
+            "label": "Yes; depending on always removes variation."
+          },
+          {
+            "id": "vdadf56e28056",
+            "label": "No; an upper limit supplies no such average."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdadf56e28056"
+      },
+      "reference_answer": "vdadf56e28056",
+      "incorrect_answer": "v6f10a1e7ee16",
+      "editorial_answer": "No; an upper limit supplies no such average.",
+      "explanation": "Максимум и среднее — разные характеристики.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An upper numerical limit is a ___.",
+        "options": [
+          {
+            "id": "v9d68dd9ea49b",
+            "label": "mean value necessarily"
+          },
+          {
+            "id": "vff1b9fe0bc97",
+            "label": "ceiling"
+          },
+          {
+            "id": "v593b5eded4ff",
+            "label": "minimum entitlement"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vff1b9fe0bc97"
+      },
+      "reference_answer": "vff1b9fe0bc97",
+      "incorrect_answer": "v593b5eded4ff",
+      "editorial_answer": "ceiling",
+      "explanation": "Ceiling — верхний предел.",
+      "key": "e09"
+    }
+  ]
+}

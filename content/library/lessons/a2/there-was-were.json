@@ -1,0 +1,342 @@
+{
+  "key": "a2/there-was-were",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика A2 · точность в контексте",
+    "position": 50
+  },
+  "position": 1,
+  "title": "Что было в комнате раньше",
+  "description": "Что было в комнате раньше: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать there was/there were",
+    "Соотносить наличие в прошлом с числом предметов"
+  ],
+  "notes": [
+    "There was a desk — был один стол.",
+    "There were two desks — было два стола; past was/were отличается от нынешнего is/are."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/who-called-whom"],
+  "lexicon": [
+    {
+      "en": "previously",
+      "ru": "раньше"
+    },
+    {
+      "en": "furniture",
+      "ru": "мебель"
+    },
+    {
+      "en": "empty",
+      "ru": "пустой"
+    },
+    {
+      "en": "renovation",
+      "ru": "ремонт"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Before the renovation, there ___ three desks here.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v282594080ffc",
+            "label": "were"
+          },
+          {
+            "id": "vd0e928b6e4d6",
+            "label": "was"
+          },
+          {
+            "id": "vdaedead447e9",
+            "label": "is been"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v282594080ffc"
+      },
+      "reference_answer": "v282594080ffc",
+      "incorrect_answer": "vd0e928b6e4d6",
+      "editorial_answer": "were",
+      "explanation": "Three desks требует were.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: was / were.",
+      "public_payload": {
+        "sentence": "There ___ a small cupboard by the door."
+      },
+      "answer_key": {
+        "accepted": ["was"]
+      },
+      "reference_answer": "was",
+      "incorrect_answer": "were",
+      "editorial_answer": "There was a small cupboard by the door.",
+      "explanation": "Один cupboard согласуется с was.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «В старой комнате было два окна.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "two"
+          },
+          {
+            "id": "t4",
+            "label": "windows"
+          },
+          {
+            "id": "t5",
+            "label": "in"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "old"
+          },
+          {
+            "id": "t8",
+            "label": "room."
+          },
+          {
+            "id": "t1",
+            "label": "There"
+          },
+          {
+            "id": "t2",
+            "label": "were"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "There were two windows in the old room.",
+      "explanation": "There were описывает наличие нескольких предметов в прошлом.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "There was four chairs in the room."
+      },
+      "answer_key": {
+        "accepted": ["There were four chairs in the room."]
+      },
+      "reference_answer": "There were four chairs in the room.",
+      "incorrect_answer": "There was four chairs in the room.",
+      "editorial_answer": "There were four chairs in the room.",
+      "explanation": "С четырьмя chairs нужно were.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что мешало разместить длинный стол?",
+      "public_payload": {
+        "passage": "Before the renovation, there were four chairs and a large cupboard in the club room. There was no space for a long table. The cupboard was moved to another room, and the club bought a folding table. There is now enough space for small group work.",
+        "options": [
+          {
+            "id": "vfc9abb44beb4",
+            "label": "Four windows that were removed."
+          },
+          {
+            "id": "v9da84fd7a0cc",
+            "label": "The absence of all furniture."
+          },
+          {
+            "id": "v29c0b173e629",
+            "label": "The large cupboard and limited space."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v29c0b173e629"
+      },
+      "reference_answer": "v29c0b173e629",
+      "incorrect_answer": "vfc9abb44beb4",
+      "editorial_answer": "The large cupboard and limited space.",
+      "explanation": "Перемещение шкафа связано с появлением нужного места.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1389d7ba7eff",
+            "label": "previously"
+          },
+          {
+            "id": "le82534dae925",
+            "label": "furniture"
+          },
+          {
+            "id": "l363de42f430a",
+            "label": "empty"
+          },
+          {
+            "id": "lc6a3573437ec",
+            "label": "renovation"
+          }
+        ],
+        "right": [
+          {
+            "id": "r7b17aa1e8b8c",
+            "label": "пустой"
+          },
+          {
+            "id": "r04637ea14011",
+            "label": "ремонт"
+          },
+          {
+            "id": "rc093bdc9ddbf",
+            "label": "раньше"
+          },
+          {
+            "id": "rf7682a26b1e2",
+            "label": "мебель"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1389d7ba7eff": "rc093bdc9ddbf",
+          "le82534dae925": "rf7682a26b1e2",
+          "l363de42f430a": "r7b17aa1e8b8c",
+          "lc6a3573437ec": "r04637ea14011"
+        }
+      },
+      "reference_answer": {
+        "l1389d7ba7eff": "rc093bdc9ddbf",
+        "le82534dae925": "rf7682a26b1e2",
+        "l363de42f430a": "r7b17aa1e8b8c",
+        "lc6a3573437ec": "r04637ea14011"
+      },
+      "incorrect_answer": {
+        "l1389d7ba7eff": "rf7682a26b1e2",
+        "le82534dae925": "rc093bdc9ddbf",
+        "l363de42f430a": "r7b17aa1e8b8c",
+        "lc6a3573437ec": "r04637ea14011"
+      },
+      "editorial_answer": "previously — раньше; furniture — мебель; empty — пустой; renovation — ремонт",
+      "explanation": "В этих контекстах: previously — раньше; furniture — мебель; empty — пустой; renovation — ремонт.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой стол купили?",
+      "public_payload": {
+        "passage": "Before the renovation, there were four chairs and a large cupboard in the club room. There was no space for a long table. The cupboard was moved to another room, and the club bought a folding table. There is now enough space for small group work.",
+        "options": [
+          {
+            "id": "va4a24e886d47",
+            "label": "A folding table."
+          },
+          {
+            "id": "v0cec95daa9c9",
+            "label": "A stone desk."
+          },
+          {
+            "id": "v9fad05ebfbd2",
+            "label": "No table."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va4a24e886d47"
+      },
+      "reference_answer": "va4a24e886d47",
+      "incorrect_answer": "v0cec95daa9c9",
+      "editorial_answer": "A folding table.",
+      "explanation": "Новый предмет прямо назван folding table.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о нескольких предметах в прошлом.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Was the room empty before?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v5e1c11821cc3",
+            "label": "No, there was several chairs."
+          },
+          {
+            "id": "v48712e51e723",
+            "label": "No, there is yesterday chairs."
+          },
+          {
+            "id": "vf9b1573de00f",
+            "label": "No, there were several chairs."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf9b1573de00f"
+      },
+      "reference_answer": "vf9b1573de00f",
+      "incorrect_answer": "v5e1c11821cc3",
+      "editorial_answer": "No, there were several chairs.",
+      "explanation": "There were согласуется с chairs.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A room with nothing inside is ___.",
+        "options": [
+          {
+            "id": "v9cc1cd48a836",
+            "label": "folding"
+          },
+          {
+            "id": "v9eb1d1d97ce7",
+            "label": "empty"
+          },
+          {
+            "id": "veef669594e26",
+            "label": "crowded"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9eb1d1d97ce7"
+      },
+      "reference_answer": "v9eb1d1d97ce7",
+      "incorrect_answer": "veef669594e26",
+      "editorial_answer": "empty",
+      "explanation": "Empty означает пустой.",
+      "key": "e09"
+    }
+  ]
+}

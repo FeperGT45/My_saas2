@@ -1,0 +1,342 @@
+{
+  "key": "b2/would-have-liked",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика B2 · точность в контексте",
+    "position": 50
+  },
+  "position": 2,
+  "title": "Несостоявшееся желание",
+  "description": "Несостоявшееся желание: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать would have liked to",
+    "Отличать желание от фактического участия"
+  ],
+  "notes": [
+    "I would have liked to attend может выражать несостоявшееся желание о прошлом.",
+    "I would like to attend относится к нынешнему желанию; формы не следует смешивать при пересказе."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/worth-doing"],
+  "lexicon": [
+    {
+      "en": "intention",
+      "ru": "намерение"
+    },
+    {
+      "en": "regret",
+      "ru": "сожаление"
+    },
+    {
+      "en": "attendance",
+      "ru": "присутствие"
+    },
+    {
+      "en": "opportunity",
+      "ru": "возможность"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I could not travel last week, though I ___ to attend.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v20a937125a5a",
+            "label": "would have liked"
+          },
+          {
+            "id": "vc6913e9fbebc",
+            "label": "would has liked"
+          },
+          {
+            "id": "v2112227fc88e",
+            "label": "would having liked"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v20a937125a5a"
+      },
+      "reference_answer": "v20a937125a5a",
+      "incorrect_answer": "vc6913e9fbebc",
+      "editorial_answer": "would have liked",
+      "explanation": "Несостоявшееся прошлое желание оформляется would have liked.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: for / to.",
+      "public_payload": {
+        "sentence": "She would have liked ___ join the visit."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "She would have liked to join the visit.",
+      "explanation": "После liked здесь нужен инфинитив to join.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мне хотелось бы тогда побывать на встрече.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "have"
+          },
+          {
+            "id": "t4",
+            "label": "liked"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "attend"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "meeting."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "would"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "I would have liked to attend the meeting.",
+      "explanation": "В контексте прошлого фраза выражает желание, не подтверждение участия.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He would has liked to see the exhibition."
+      },
+      "answer_key": {
+        "accepted": ["He would have liked to see the exhibition."]
+      },
+      "reference_answer": "He would have liked to see the exhibition.",
+      "incorrect_answer": "He would has liked to see the exhibition.",
+      "editorial_answer": "He would have liked to see the exhibition.",
+      "explanation": "После would используется have, не has.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Прию ошибочно включили в список?",
+      "public_payload": {
+        "passage": "In a letter written after the conference, Priya said that she would have liked to attend but had been unable to travel. A later summary listed her among participants, treating the favourable response as evidence of attendance. The organiser corrected the list. Priya’s interest in the event was genuine, yet the sentence explicitly explained her absence. The difference mattered when the team reported whose views had actually been heard during the sessions rather than merely expressed afterwards.",
+        "options": [
+          {
+            "id": "vb75831a85b86",
+            "label": "She had said she spoke at every session."
+          },
+          {
+            "id": "v35adbbc051db",
+            "label": "Her inability to travel proved she had attended online."
+          },
+          {
+            "id": "ve43902ffe2ec",
+            "label": "Interest was mistaken for actual attendance."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve43902ffe2ec"
+      },
+      "reference_answer": "ve43902ffe2ec",
+      "incorrect_answer": "vb75831a85b86",
+      "editorial_answer": "Interest was mistaken for actual attendance.",
+      "explanation": "Желание не равно фактическому участию.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l3256a3124d8f",
+            "label": "intention"
+          },
+          {
+            "id": "laf3269c26477",
+            "label": "regret"
+          },
+          {
+            "id": "l42ebe082e4cb",
+            "label": "attendance"
+          },
+          {
+            "id": "lfc221ea2b6cd",
+            "label": "opportunity"
+          }
+        ],
+        "right": [
+          {
+            "id": "r9b1709ea5206",
+            "label": "присутствие"
+          },
+          {
+            "id": "re3016bce6bb9",
+            "label": "возможность"
+          },
+          {
+            "id": "re9e630101585",
+            "label": "намерение"
+          },
+          {
+            "id": "rf9a8f2045ff4",
+            "label": "сожаление"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l3256a3124d8f": "re9e630101585",
+          "laf3269c26477": "rf9a8f2045ff4",
+          "l42ebe082e4cb": "r9b1709ea5206",
+          "lfc221ea2b6cd": "re3016bce6bb9"
+        }
+      },
+      "reference_answer": {
+        "l3256a3124d8f": "re9e630101585",
+        "laf3269c26477": "rf9a8f2045ff4",
+        "l42ebe082e4cb": "r9b1709ea5206",
+        "lfc221ea2b6cd": "re3016bce6bb9"
+      },
+      "incorrect_answer": {
+        "l3256a3124d8f": "rf9a8f2045ff4",
+        "laf3269c26477": "re9e630101585",
+        "l42ebe082e4cb": "r9b1709ea5206",
+        "lfc221ea2b6cd": "re3016bce6bb9"
+      },
+      "editorial_answer": "intention — намерение; regret — сожаление; attendance — присутствие; opportunity — возможность",
+      "explanation": "В этих контекстах: intention — намерение; regret — сожаление; attendance — присутствие; opportunity — возможность.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что исходное письмо прямо объясняло?",
+      "public_payload": {
+        "passage": "In a letter written after the conference, Priya said that she would have liked to attend but had been unable to travel. A later summary listed her among participants, treating the favourable response as evidence of attendance. The organiser corrected the list. Priya’s interest in the event was genuine, yet the sentence explicitly explained her absence. The difference mattered when the team reported whose views had actually been heard during the sessions rather than merely expressed afterwards.",
+        "options": [
+          {
+            "id": "vb1ac667773ed",
+            "label": "Her absence because she could not travel."
+          },
+          {
+            "id": "v79262a3f3f88",
+            "label": "The completion of her keynote speech."
+          },
+          {
+            "id": "v15f0e5faf683",
+            "label": "Her lack of any interest."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb1ac667773ed"
+      },
+      "reference_answer": "vb1ac667773ed",
+      "incorrect_answer": "v79262a3f3f88",
+      "editorial_answer": "Her absence because she could not travel.",
+      "explanation": "Письмо сохраняет одновременно интерес и отсутствие.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани различие желания и исполнения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “I would have liked to join” prove participation?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v660a0f78a49e",
+            "label": "Yes; every wish establishes a completed event."
+          },
+          {
+            "id": "v1cd7f1f60544",
+            "label": "Yes; have liked always means attended."
+          },
+          {
+            "id": "v779e82fa2118",
+            "label": "No; context may make clear that the wish was not fulfilled."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v779e82fa2118"
+      },
+      "reference_answer": "v779e82fa2118",
+      "incorrect_answer": "v660a0f78a49e",
+      "editorial_answer": "No; context may make clear that the wish was not fulfilled.",
+      "explanation": "Форма желания не является записью о присутствии.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Being present at an event is ___.",
+        "options": [
+          {
+            "id": "vb4f32efbc826",
+            "label": "regret only"
+          },
+          {
+            "id": "v333aa3960591",
+            "label": "attendance"
+          },
+          {
+            "id": "v2865312900cb",
+            "label": "intention only"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v333aa3960591"
+      },
+      "reference_answer": "v333aa3960591",
+      "incorrect_answer": "v2865312900cb",
+      "editorial_answer": "attendance",
+      "explanation": "Attendance — присутствие.",
+      "key": "e09"
+    }
+  ]
+}

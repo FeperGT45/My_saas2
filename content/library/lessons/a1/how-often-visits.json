@@ -1,0 +1,338 @@
+{
+  "key": "a1/how-often-visits",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика A1 · точность в контексте",
+    "position": 50
+  },
+  "position": 1,
+  "title": "Как часто: раз и два раза",
+  "description": "Как часто: раз и два раза: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Спрашивать How often",
+    "Использовать once и twice с периодом"
+  ],
+  "notes": [
+    "How often спрашивает о частоте, а не о месте.",
+    "Once a week — раз в неделю; twice a week — два раза в неделю."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/and-but-profile"],
+  "lexicon": [
+    {
+      "en": "once",
+      "ru": "один раз"
+    },
+    {
+      "en": "twice",
+      "ru": "два раза"
+    },
+    {
+      "en": "weekly",
+      "ru": "еженедельный"
+    },
+    {
+      "en": "often",
+      "ru": "часто"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ do you visit the library? — Twice a week.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v7c69dd35602e",
+            "label": "How often"
+          },
+          {
+            "id": "v255a66cba55f",
+            "label": "Where"
+          },
+          {
+            "id": "v87fd1095ca44",
+            "label": "Who"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7c69dd35602e"
+      },
+      "reference_answer": "v7c69dd35602e",
+      "incorrect_answer": "v255a66cba55f",
+      "editorial_answer": "How often",
+      "explanation": "Twice a week — ответ о частоте.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: twice / once.",
+      "public_payload": {
+        "sentence": "I visit on Monday and Friday: ___ a week."
+      },
+      "answer_key": {
+        "accepted": ["twice"]
+      },
+      "reference_answer": "twice",
+      "incorrect_answer": "once",
+      "editorial_answer": "I visit on Monday and Friday: twice a week.",
+      "explanation": "Два посещения за неделю — twice.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я хожу в библиотеку раз в неделю.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "library"
+          },
+          {
+            "id": "t5",
+            "label": "once"
+          },
+          {
+            "id": "t6",
+            "label": "a"
+          },
+          {
+            "id": "t7",
+            "label": "week."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "visit"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "I visit the library once a week.",
+      "explanation": "Once a week задаёт частоту посещения.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "How often does she visits the club?"
+      },
+      "answer_key": {
+        "accepted": ["How often does she visit the club?"]
+      },
+      "reference_answer": "How often does she visit the club?",
+      "incorrect_answer": "How often does she visits the club?",
+      "editorial_answer": "How often does she visit the club?",
+      "explanation": "После does нужна начальная форма visit.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда ходит рассказчик?",
+      "public_payload": {
+        "passage": "I visit the library once a week, on Tuesday. My sister goes twice a week, on Monday and Thursday. We both like the reading room.",
+        "options": [
+          {
+            "id": "vbbd77c9cd965",
+            "label": "On Monday and Thursday."
+          },
+          {
+            "id": "v6e607cdc676f",
+            "label": "Every day."
+          },
+          {
+            "id": "veaaaeb9154ba",
+            "label": "On Tuesday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "veaaaeb9154ba"
+      },
+      "reference_answer": "veaaaeb9154ba",
+      "incorrect_answer": "vbbd77c9cd965",
+      "editorial_answer": "On Tuesday.",
+      "explanation": "Его единственный день — вторник.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "la2f61c9c1e07",
+            "label": "once"
+          },
+          {
+            "id": "lb38a802973fa",
+            "label": "twice"
+          },
+          {
+            "id": "la26997287b09",
+            "label": "weekly"
+          },
+          {
+            "id": "lf126573b7266",
+            "label": "often"
+          }
+        ],
+        "right": [
+          {
+            "id": "r6bfd62db4e9a",
+            "label": "еженедельный"
+          },
+          {
+            "id": "r42a244d71582",
+            "label": "часто"
+          },
+          {
+            "id": "rac7859337347",
+            "label": "один раз"
+          },
+          {
+            "id": "r2a8b961ccc4c",
+            "label": "два раза"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "la2f61c9c1e07": "rac7859337347",
+          "lb38a802973fa": "r2a8b961ccc4c",
+          "la26997287b09": "r6bfd62db4e9a",
+          "lf126573b7266": "r42a244d71582"
+        }
+      },
+      "reference_answer": {
+        "la2f61c9c1e07": "rac7859337347",
+        "lb38a802973fa": "r2a8b961ccc4c",
+        "la26997287b09": "r6bfd62db4e9a",
+        "lf126573b7266": "r42a244d71582"
+      },
+      "incorrect_answer": {
+        "la2f61c9c1e07": "r2a8b961ccc4c",
+        "lb38a802973fa": "rac7859337347",
+        "la26997287b09": "r6bfd62db4e9a",
+        "lf126573b7266": "r42a244d71582"
+      },
+      "editorial_answer": "once — один раз; twice — два раза; weekly — еженедельный; often — часто",
+      "explanation": "В этих контекстах: once — один раз; twice — два раза; weekly — еженедельный; often — часто.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько раз в неделю ходит сестра?",
+      "public_payload": {
+        "passage": "I visit the library once a week, on Tuesday. My sister goes twice a week, on Monday and Thursday. We both like the reading room.",
+        "options": [
+          {
+            "id": "vbfe4f840eff5",
+            "label": "Two."
+          },
+          {
+            "id": "vec8663a290b5",
+            "label": "One."
+          },
+          {
+            "id": "v824ae3236851",
+            "label": "Seven."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbfe4f840eff5"
+      },
+      "reference_answer": "vbfe4f840eff5",
+      "incorrect_answer": "vec8663a290b5",
+      "editorial_answer": "Two.",
+      "explanation": "Twice a week означает дважды.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о частоте.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How often do you practise?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vb02e01f47789",
+            "label": "In the classroom."
+          },
+          {
+            "id": "v5debdcd813bd",
+            "label": "With my teacher only, with no frequency."
+          },
+          {
+            "id": "vbb062280a594",
+            "label": "Twice a week."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbb062280a594"
+      },
+      "reference_answer": "vbb062280a594",
+      "incorrect_answer": "vb02e01f47789",
+      "editorial_answer": "Twice a week.",
+      "explanation": "Twice a week сообщает число повторений за период.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A meeting that happens every week is a ___ meeting.",
+        "options": [
+          {
+            "id": "v41087c7e2215",
+            "label": "yearly"
+          },
+          {
+            "id": "vd44f02e2b8ae",
+            "label": "weekly"
+          },
+          {
+            "id": "v188eeb783099",
+            "label": "daily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd44f02e2b8ae"
+      },
+      "reference_answer": "vd44f02e2b8ae",
+      "incorrect_answer": "v188eeb783099",
+      "editorial_answer": "weekly",
+      "explanation": "Weekly — еженедельный.",
+      "key": "e09"
+    }
+  ]
+}

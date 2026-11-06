@@ -1,0 +1,340 @@
+{
+  "key": "c2/some-and-all-context",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика C2 · точность в контексте",
+    "position": 50
+  },
+  "position": 3,
+  "title": "Some: что сказано и что подразумевают",
+  "description": "Some: что сказано и что подразумевают: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Различать явное количество и контекстный вывод",
+    "Учитывать прямое уточнение some — indeed all"
+  ],
+  "notes": [
+    "Some часто подсказывает «не все» в разговоре, но это не обязательная часть каждого употребления.",
+    "Уточнение some — indeed all прямо отменяет частичное прочтение: ориентируйся на полный контекст."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/changed-operational-definition"],
+  "lexicon": [
+    {
+      "en": "implication",
+      "ru": "подразумеваемый вывод"
+    },
+    {
+      "en": "explicit",
+      "ru": "явно выраженный"
+    },
+    {
+      "en": "qualification",
+      "ru": "уточнение"
+    },
+    {
+      "en": "inference",
+      "ru": "умозаключение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The speaker says “Some members agreed — indeed, all six did.” What does the complete statement report?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vc8f63803d380",
+            "label": "All six agreed."
+          },
+          {
+            "id": "v8f334eb36587",
+            "label": "Exactly one agreed."
+          },
+          {
+            "id": "vdab11766df08",
+            "label": "At least one member disagreed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc8f63803d380"
+      },
+      "reference_answer": "vc8f63803d380",
+      "incorrect_answer": "v8f334eb36587",
+      "editorial_answer": "All six agreed.",
+      "explanation": "Прямое уточнение all six исключает частичное прочтение в этом контексте.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: indeed / neither.",
+      "public_payload": {
+        "sentence": "Some members agreed; ___, all six did."
+      },
+      "answer_key": {
+        "accepted": ["indeed"]
+      },
+      "reference_answer": "indeed",
+      "incorrect_answer": "neither",
+      "editorial_answer": "Some members agreed; indeed, all six did.",
+      "explanation": "Indeed вводит усиливающее уточнение, не отрицание.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Некоторые участники согласились; более того, все шестеро.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "agreed;"
+          },
+          {
+            "id": "t4",
+            "label": "indeed,"
+          },
+          {
+            "id": "t5",
+            "label": "all"
+          },
+          {
+            "id": "t6",
+            "label": "six"
+          },
+          {
+            "id": "t7",
+            "label": "did."
+          },
+          {
+            "id": "t1",
+            "label": "Some"
+          },
+          {
+            "id": "t2",
+            "label": "members"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "Some members agreed; indeed, all six did.",
+      "explanation": "Полное высказывание явно уточняет охват.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "All six members agrees, although the speaker first said some."
+      },
+      "answer_key": {
+        "accepted": [
+          "All six members agree, although the speaker first said some."
+        ]
+      },
+      "reference_answer": "All six members agree, although the speaker first said some.",
+      "incorrect_answer": "All six members agrees, although the speaker first said some.",
+      "editorial_answer": "All six members agree, although the speaker first said some.",
+      "explanation": "С подлежащим all six members согласуется agree.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему сообщение о расколе было неточным?",
+      "public_payload": {
+        "passage": "At a small editorial meeting, the chair began, “Some members supported the revised title,” then added, “indeed, all six did.” A draft summary quoted only the first clause and reported a divided committee. The secretary objected. In many ordinary exchanges, some can encourage a listener to infer that not all are included. Here, however, the speaker had explicitly strengthened the statement to cover every member present. The partial quotation suppressed precisely the words that resolved the scope. Correcting it did not require a rule that some always means all, nor a rule that it can never suggest a smaller group. It required attention to this complete utterance. The final minutes recorded unanimous support for the title, while leaving other proposals to their separate votes.",
+        "options": [
+          {
+            "id": "vbaa26937c218",
+            "label": "Every use of some guarantees disagreement."
+          },
+          {
+            "id": "ve0f377efeb8e",
+            "label": "The chair had recorded a separate vote against the title."
+          },
+          {
+            "id": "vf1b5969efbd2",
+            "label": "It omitted the explicit statement that all six supported the title."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf1b5969efbd2"
+      },
+      "reference_answer": "vf1b5969efbd2",
+      "incorrect_answer": "vbaa26937c218",
+      "editorial_answer": "It omitted the explicit statement that all six supported the title.",
+      "explanation": "Полная реплика прямо сообщала о согласии всех шестерых.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l13c6891eb238",
+            "label": "implication"
+          },
+          {
+            "id": "l4a03344f5259",
+            "label": "explicit"
+          },
+          {
+            "id": "l0d1b9b95c69d",
+            "label": "qualification"
+          },
+          {
+            "id": "l04e6d3b0a2f7",
+            "label": "inference"
+          }
+        ],
+        "right": [
+          {
+            "id": "r6199f436c254",
+            "label": "уточнение"
+          },
+          {
+            "id": "r0a4782f3d57d",
+            "label": "умозаключение"
+          },
+          {
+            "id": "r8b12d6e8963b",
+            "label": "подразумеваемый вывод"
+          },
+          {
+            "id": "rabf880091f94",
+            "label": "явно выраженный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l13c6891eb238": "r8b12d6e8963b",
+          "l4a03344f5259": "rabf880091f94",
+          "l0d1b9b95c69d": "r6199f436c254",
+          "l04e6d3b0a2f7": "r0a4782f3d57d"
+        }
+      },
+      "reference_answer": {
+        "l13c6891eb238": "r8b12d6e8963b",
+        "l4a03344f5259": "rabf880091f94",
+        "l0d1b9b95c69d": "r6199f436c254",
+        "l04e6d3b0a2f7": "r0a4782f3d57d"
+      },
+      "incorrect_answer": {
+        "l13c6891eb238": "rabf880091f94",
+        "l4a03344f5259": "r8b12d6e8963b",
+        "l0d1b9b95c69d": "r6199f436c254",
+        "l04e6d3b0a2f7": "r0a4782f3d57d"
+      },
+      "editorial_answer": "implication — подразумеваемый вывод; explicit — явно выраженный; qualification — уточнение; inference — умозаключение",
+      "explanation": "В этих контекстах: implication — подразумеваемый вывод; explicit — явно выраженный; qualification — уточнение; inference — умозаключение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое обобщение текст поддерживает?",
+      "public_payload": {
+        "passage": "At a small editorial meeting, the chair began, “Some members supported the revised title,” then added, “indeed, all six did.” A draft summary quoted only the first clause and reported a divided committee. The secretary objected. In many ordinary exchanges, some can encourage a listener to infer that not all are included. Here, however, the speaker had explicitly strengthened the statement to cover every member present. The partial quotation suppressed precisely the words that resolved the scope. Correcting it did not require a rule that some always means all, nor a rule that it can never suggest a smaller group. It required attention to this complete utterance. The final minutes recorded unanimous support for the title, while leaving other proposals to their separate votes.",
+        "options": [
+          {
+            "id": "v4e8ef45c2896",
+            "label": "The full context can override a usual partial inference."
+          },
+          {
+            "id": "v93a0ac12f8cf",
+            "label": "Some always means all in every conversation."
+          },
+          {
+            "id": "vb62d20c80857",
+            "label": "Some can never suggest a partial group."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4e8ef45c2896"
+      },
+      "reference_answer": "v4e8ef45c2896",
+      "incorrect_answer": "v93a0ac12f8cf",
+      "editorial_answer": "The full context can override a usual partial inference.",
+      "explanation": "Вывод контекстный, а не безусловное правило о каждом употреблении.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани уточнение объёма утверждения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "May a summary ignore “indeed, all six” after “some”?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v37e0581e88cc",
+            "label": "Yes; first words cancel every later clarification."
+          },
+          {
+            "id": "v54192fcab2d1",
+            "label": "Yes; some proves a split regardless of context."
+          },
+          {
+            "id": "v9c7c9cd7c884",
+            "label": "No; the explicit clarification changes the reported scope."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9c7c9cd7c884"
+      },
+      "reference_answer": "v9c7c9cd7c884",
+      "incorrect_answer": "v37e0581e88cc",
+      "editorial_answer": "No; the explicit clarification changes the reported scope.",
+      "explanation": "Обрезание реплики удаляет существенную информацию.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A conclusion a listener draws beyond the words explicitly stated is an ___.",
+        "options": [
+          {
+            "id": "vc2c75055d7ea",
+            "label": "unchangeable definition"
+          },
+          {
+            "id": "vf82500f7c420",
+            "label": "inference"
+          },
+          {
+            "id": "v5a0f2cd99337",
+            "label": "exact quotation necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf82500f7c420"
+      },
+      "reference_answer": "vf82500f7c420",
+      "incorrect_answer": "v5a0f2cd99337",
+      "editorial_answer": "inference",
+      "explanation": "Inference — вывод слушателя, который может уточняться контекстом.",
+      "key": "e09"
+    }
+  ]
+}

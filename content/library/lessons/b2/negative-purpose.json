@@ -1,0 +1,372 @@
+{
+  "key": "b2/negative-purpose",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика B2 · точность в контексте",
+    "position": 50
+  },
+  "position": 4,
+  "title": "Чтобы не допустить результат",
+  "description": "Чтобы не допустить результат: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать in order not to",
+    "Сохранять отрицательную цель при пересказе"
+  ],
+  "notes": [
+    "In order not to miss the train — чтобы не опоздать на поезд.",
+    "Not относится к цели действия; его удаление меняет намерение."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/supposed-to-rule"],
+  "lexicon": [
+    {
+      "en": "avoid",
+      "ru": "избегать"
+    },
+    {
+      "en": "prevent",
+      "ru": "предотвращать"
+    },
+    {
+      "en": "purpose",
+      "ru": "цель"
+    },
+    {
+      "en": "misunderstanding",
+      "ru": "недоразумение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We left early in order ___ the introduction.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v9465953bcfe5",
+            "label": "not to miss"
+          },
+          {
+            "id": "v59516f3e6d67",
+            "label": "to not missed"
+          },
+          {
+            "id": "v168b6c329b26",
+            "label": "not miss to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9465953bcfe5"
+      },
+      "reference_answer": "v9465953bcfe5",
+      "incorrect_answer": "v59516f3e6d67",
+      "editorial_answer": "not to miss",
+      "explanation": "In order not to miss — стандартная отрицательная цель.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: for / to.",
+      "public_payload": {
+        "sentence": "She checked the date in order not ___ confuse the meetings."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "She checked the date in order not to confuse the meetings.",
+      "explanation": "После not в этой конструкции нужен to-infinitive.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы проверили адрес, чтобы не заблудиться.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "address"
+          },
+          {
+            "id": "t5",
+            "label": "in"
+          },
+          {
+            "id": "t6",
+            "label": "order"
+          },
+          {
+            "id": "t7",
+            "label": "not"
+          },
+          {
+            "id": "t8",
+            "label": "to"
+          },
+          {
+            "id": "t9",
+            "label": "get"
+          },
+          {
+            "id": "t10",
+            "label": "lost."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "checked"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "We checked the address in order not to get lost.",
+      "explanation": "Отрицательная цель — избежать нежелательного результата.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I wrote it down in order not forget."
+      },
+      "answer_key": {
+        "accepted": ["I wrote it down in order not to forget."]
+      },
+      "reference_answer": "I wrote it down in order not to forget.",
+      "incorrect_answer": "I wrote it down in order not forget.",
+      "editorial_answer": "I wrote it down in order not to forget.",
+      "explanation": "Перед forget требуется to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем выделили дату?",
+      "public_payload": {
+        "passage": "The organiser added a prominent date to the notice in order not to confuse readers with an earlier version. The first draft had looked almost identical to the old announcement. A volunteer suggested removing the date to make the design cleaner. The organiser kept it, explaining that the detail served a specific preventive purpose. A cleaner appearance would not necessarily help if readers then assumed that an obsolete schedule was current.",
+        "options": [
+          {
+            "id": "vf454bce90ecc",
+            "label": "To hide the new schedule."
+          },
+          {
+            "id": "v5dca9462fe1a",
+            "label": "To prove that every reader had already understood."
+          },
+          {
+            "id": "v768a962b604c",
+            "label": "To prevent confusion with an earlier version."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v768a962b604c"
+      },
+      "reference_answer": "v768a962b604c",
+      "incorrect_answer": "vf454bce90ecc",
+      "editorial_answer": "To prevent confusion with an earlier version.",
+      "explanation": "Цель — предотвращение путаницы, не подтверждение понимания всеми.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l7614bfc07eb6",
+            "label": "avoid"
+          },
+          {
+            "id": "l86f09106789d",
+            "label": "prevent"
+          },
+          {
+            "id": "la7253c1e563b",
+            "label": "purpose"
+          },
+          {
+            "id": "lfdf3c50cf0a3",
+            "label": "misunderstanding"
+          }
+        ],
+        "right": [
+          {
+            "id": "r24001a6806f7",
+            "label": "цель"
+          },
+          {
+            "id": "r4d256981a740",
+            "label": "недоразумение"
+          },
+          {
+            "id": "r58e502fe85c3",
+            "label": "избегать"
+          },
+          {
+            "id": "rd9feb20d69a2",
+            "label": "предотвращать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l7614bfc07eb6": "r58e502fe85c3",
+          "l86f09106789d": "rd9feb20d69a2",
+          "la7253c1e563b": "r24001a6806f7",
+          "lfdf3c50cf0a3": "r4d256981a740"
+        }
+      },
+      "reference_answer": {
+        "l7614bfc07eb6": "r58e502fe85c3",
+        "l86f09106789d": "rd9feb20d69a2",
+        "la7253c1e563b": "r24001a6806f7",
+        "lfdf3c50cf0a3": "r4d256981a740"
+      },
+      "incorrect_answer": {
+        "l7614bfc07eb6": "rd9feb20d69a2",
+        "l86f09106789d": "r58e502fe85c3",
+        "la7253c1e563b": "r24001a6806f7",
+        "lfdf3c50cf0a3": "r4d256981a740"
+      },
+      "editorial_answer": "avoid — избегать; prevent — предотвращать; purpose — цель; misunderstanding — недоразумение",
+      "explanation": "В этих контекстах: avoid — избегать; prevent — предотвращать; purpose — цель; misunderstanding — недоразумение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему дату оставили?",
+      "public_payload": {
+        "passage": "The organiser added a prominent date to the notice in order not to confuse readers with an earlier version. The first draft had looked almost identical to the old announcement. A volunteer suggested removing the date to make the design cleaner. The organiser kept it, explaining that the detail served a specific preventive purpose. A cleaner appearance would not necessarily help if readers then assumed that an obsolete schedule was current.",
+        "options": [
+          {
+            "id": "v7b0f570b0447",
+            "label": "It served a purpose that appearance alone might not meet."
+          },
+          {
+            "id": "vb8e0ec3cf1a1",
+            "label": "All old notices had vanished automatically."
+          },
+          {
+            "id": "v69ee3e072598",
+            "label": "Readers never need dates."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7b0f570b0447"
+      },
+      "reference_answer": "v7b0f570b0447",
+      "incorrect_answer": "vb8e0ec3cf1a1",
+      "editorial_answer": "It served a purpose that appearance alone might not meet.",
+      "explanation": "Внешняя чистота не заменила функциональную ясность.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Назови отрицательную цель.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Why did you keep a copy?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v411f9d7eefde",
+            "label": "In order not lose to the original wording."
+          },
+          {
+            "id": "vcc2f2d43ece1",
+            "label": "In order not to lost the wording."
+          },
+          {
+            "id": "v637e9dc9a9c6",
+            "label": "In order not to lose the original wording."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v637e9dc9a9c6"
+      },
+      "reference_answer": "v637e9dc9a9c6",
+      "incorrect_answer": "v411f9d7eefde",
+      "editorial_answer": "In order not to lose the original wording.",
+      "explanation": "Not to lose правильно сохраняет инфинитив и отрицание.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A failure to understand a message correctly is a ___.",
+        "options": [
+          {
+            "id": "vf2dbe5a3dfa6",
+            "label": "completion"
+          },
+          {
+            "id": "v8c94fa66dae1",
+            "label": "misunderstanding"
+          },
+          {
+            "id": "v23c3ea6d2332",
+            "label": "confirmation"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8c94fa66dae1"
+      },
+      "reference_answer": "v8c94fa66dae1",
+      "incorrect_answer": "v23c3ea6d2332",
+      "editorial_answer": "misunderstanding",
+      "explanation": "Misunderstanding — неверное понимание.",
+      "key": "e09"
+    }
+  ]
+}

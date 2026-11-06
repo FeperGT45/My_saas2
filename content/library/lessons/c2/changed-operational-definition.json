@@ -1,0 +1,338 @@
+{
+  "key": "c2/changed-operational-definition",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика C2 · точность в контексте",
+    "position": 50
+  },
+  "position": 2,
+  "title": "Сравнение при смене определения",
+  "description": "Сравнение при смене определения: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Замечать изменение определения показателя",
+    "Отделять различие подсчётов от доказанного изменения результата"
+  ],
+  "notes": [
+    "Одно и то же название completed может обозначать разные критерии в разных отчётах.",
+    "Для сравнения нужны совместимые определения; рост числа сам по себе не устанавливает улучшение при смене критерия."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/up-to-ceiling"],
+  "lexicon": [
+    {
+      "en": "criterion",
+      "ru": "критерий"
+    },
+    {
+      "en": "comparable",
+      "ru": "сопоставимый"
+    },
+    {
+      "en": "reclassify",
+      "ru": "переклассифицировать"
+    },
+    {
+      "en": "definition",
+      "ru": "определение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Two reports use different criteria for “completed”. What is the sound first step?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v1730402a5790",
+            "label": "Check whether the counts can be made comparable."
+          },
+          {
+            "id": "v49ba858bb2ba",
+            "label": "Treat the larger count as proof of improved performance."
+          },
+          {
+            "id": "v75b388f15815",
+            "label": "Assume identical labels guarantee identical definitions."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1730402a5790"
+      },
+      "reference_answer": "v1730402a5790",
+      "incorrect_answer": "v49ba858bb2ba",
+      "editorial_answer": "Check whether the counts can be made comparable.",
+      "explanation": "Сначала проверяют сопоставимость критериев, не только названий.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: define / definition.",
+      "public_payload": {
+        "sentence": "A comparison requires the same operational ___."
+      },
+      "answer_key": {
+        "accepted": ["definition"]
+      },
+      "reference_answer": "definition",
+      "incorrect_answer": "define",
+      "editorial_answer": "A comparison requires the same operational definition.",
+      "explanation": "После same operational нужна именная форма definition.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Одинаковые названия не гарантируют сопоставимость подсчётов.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "do"
+          },
+          {
+            "id": "t4",
+            "label": "not"
+          },
+          {
+            "id": "t5",
+            "label": "guarantee"
+          },
+          {
+            "id": "t6",
+            "label": "comparable"
+          },
+          {
+            "id": "t7",
+            "label": "counts."
+          },
+          {
+            "id": "t1",
+            "label": "Identical"
+          },
+          {
+            "id": "t2",
+            "label": "labels"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "Identical labels do not guarantee comparable counts.",
+      "explanation": "Название показателя и критерий его расчёта следует различать.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The two definitions differs, so the totals need checking."
+      },
+      "answer_key": {
+        "accepted": ["The two definitions differ, so the totals need checking."]
+      },
+      "reference_answer": "The two definitions differ, so the totals need checking.",
+      "incorrect_answer": "The two definitions differs, so the totals need checking.",
+      "editorial_answer": "The two definitions differ, so the totals need checking.",
+      "explanation": "С множественным definitions согласуется differ; различие критериев требует проверки сопоставимости.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как изменился критерий completed?",
+      "public_payload": {
+        "passage": "In the first annual report, a completed workshop meant one for which both the session and the participant feedback review had finished. In the second, the same label was used once the session had taken place, even if the review remained outstanding. The second report listed more completed workshops. A manager described this as unambiguous evidence of faster delivery, but an analyst queried the comparison. Some of the increase could arise from the broader definition rather than a change in delivery. She did not claim that performance had necessarily worsened or that no additional sessions had occurred. Instead, she requested both years’ records under a common criterion. A consistently defined series could support a more informative comparison; the matching labels alone could not do that work.",
+        "options": [
+          {
+            "id": "v07ce59d497a8",
+            "label": "Both years required every review to be finished."
+          },
+          {
+            "id": "vf24137217358",
+            "label": "The second year counted no sessions at all."
+          },
+          {
+            "id": "va5ffd3191072",
+            "label": "The feedback review no longer had to be finished."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va5ffd3191072"
+      },
+      "reference_answer": "va5ffd3191072",
+      "incorrect_answer": "v07ce59d497a8",
+      "editorial_answer": "The feedback review no longer had to be finished.",
+      "explanation": "Второе определение шире: достаточно проведённого занятия.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l949421082488",
+            "label": "criterion"
+          },
+          {
+            "id": "l79e37f89582d",
+            "label": "comparable"
+          },
+          {
+            "id": "lc592eb9ac284",
+            "label": "reclassify"
+          },
+          {
+            "id": "la7857d47eb0b",
+            "label": "definition"
+          }
+        ],
+        "right": [
+          {
+            "id": "r7941b59018cd",
+            "label": "переклассифицировать"
+          },
+          {
+            "id": "ra44a6be875a0",
+            "label": "определение"
+          },
+          {
+            "id": "rd8b6263c8fb1",
+            "label": "критерий"
+          },
+          {
+            "id": "r087282093ce6",
+            "label": "сопоставимый"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l949421082488": "rd8b6263c8fb1",
+          "l79e37f89582d": "r087282093ce6",
+          "lc592eb9ac284": "r7941b59018cd",
+          "la7857d47eb0b": "ra44a6be875a0"
+        }
+      },
+      "reference_answer": {
+        "l949421082488": "rd8b6263c8fb1",
+        "l79e37f89582d": "r087282093ce6",
+        "lc592eb9ac284": "r7941b59018cd",
+        "la7857d47eb0b": "ra44a6be875a0"
+      },
+      "incorrect_answer": {
+        "l949421082488": "r087282093ce6",
+        "l79e37f89582d": "rd8b6263c8fb1",
+        "lc592eb9ac284": "r7941b59018cd",
+        "la7857d47eb0b": "ra44a6be875a0"
+      },
+      "editorial_answer": "criterion — критерий; comparable — сопоставимый; reclassify — переклассифицировать; definition — определение",
+      "explanation": "В этих контекстах: criterion — критерий; comparable — сопоставимый; reclassify — переклассифицировать; definition — определение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что аналитик утверждала о результативности?",
+      "public_payload": {
+        "passage": "In the first annual report, a completed workshop meant one for which both the session and the participant feedback review had finished. In the second, the same label was used once the session had taken place, even if the review remained outstanding. The second report listed more completed workshops. A manager described this as unambiguous evidence of faster delivery, but an analyst queried the comparison. Some of the increase could arise from the broader definition rather than a change in delivery. She did not claim that performance had necessarily worsened or that no additional sessions had occurred. Instead, she requested both years’ records under a common criterion. A consistently defined series could support a more informative comparison; the matching labels alone could not do that work.",
+        "options": [
+          {
+            "id": "v4a157e7a8e4e",
+            "label": "The current counts did not establish the claimed improvement."
+          },
+          {
+            "id": "v509bc26f835e",
+            "label": "Performance had certainly worsened."
+          },
+          {
+            "id": "v5423b7882a58",
+            "label": "No additional session could possibly have occurred."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4a157e7a8e4e"
+      },
+      "reference_answer": "v4a157e7a8e4e",
+      "incorrect_answer": "v509bc26f835e",
+      "editorial_answer": "The current counts did not establish the claimed improvement.",
+      "explanation": "Критика доказательства не равна доказательству ухудшения или отсутствия новых занятий.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Уточни основу сопоставления.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can matching metric names settle comparability?"
+          }
+        ],
+        "options": [
+          {
+            "id": "va32d6d252539",
+            "label": "Yes; names override every counting rule."
+          },
+          {
+            "id": "v351018f9e225",
+            "label": "Yes; more always means faster."
+          },
+          {
+            "id": "v73d7d88e6366",
+            "label": "No; the underlying inclusion criteria must also be checked."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v73d7d88e6366"
+      },
+      "reference_answer": "v73d7d88e6366",
+      "incorrect_answer": "va32d6d252539",
+      "editorial_answer": "No; the underlying inclusion criteria must also be checked.",
+      "explanation": "Одинаковое название не устраняет изменение определения.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To put records into new categories is to ___.",
+        "options": [
+          {
+            "id": "v772d9c25e7e2",
+            "label": "erase all observations"
+          },
+          {
+            "id": "v5c50504d59d3",
+            "label": "reclassify"
+          },
+          {
+            "id": "vdc255e7cce58",
+            "label": "certify an improvement automatically"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5c50504d59d3"
+      },
+      "reference_answer": "v5c50504d59d3",
+      "incorrect_answer": "vdc255e7cce58",
+      "editorial_answer": "reclassify",
+      "explanation": "Reclassify — изменить классификацию записей.",
+      "key": "e09"
+    }
+  ]
+}

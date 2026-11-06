@@ -1,0 +1,334 @@
+{
+  "key": "b2/supposed-to-rule",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика B2 · точность в контексте",
+    "position": 50
+  },
+  "position": 3,
+  "title": "По плану должны — но сделали ли",
+  "description": "По плану должны — но сделали ли: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать be supposed to",
+    "Отличать правило или ожидание от записи о выполнении"
+  ],
+  "notes": [
+    "Visitors are supposed to sign in описывает правило или ожидание.",
+    "Без дополнительных данных форма не показывает, выполнил ли каждый посетитель правило."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/would-have-liked"],
+  "lexicon": [
+    {
+      "en": "expectation",
+      "ru": "ожидание"
+    },
+    {
+      "en": "procedure",
+      "ru": "процедура"
+    },
+    {
+      "en": "record",
+      "ru": "запись"
+    },
+    {
+      "en": "compliance",
+      "ru": "соблюдение правила"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Visitors are supposed ___ at reception.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v3e4665458aa4",
+            "label": "to register"
+          },
+          {
+            "id": "vf70c89c75a16",
+            "label": "registering to"
+          },
+          {
+            "id": "v19d0b97a89f7",
+            "label": "registered to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3e4665458aa4"
+      },
+      "reference_answer": "v3e4665458aa4",
+      "incorrect_answer": "vf70c89c75a16",
+      "editorial_answer": "to register",
+      "explanation": "Be supposed to требует инфинитив.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: supposed / supposing.",
+      "public_payload": {
+        "sentence": "She is ___ to return the key before leaving."
+      },
+      "answer_key": {
+        "accepted": ["supposed"]
+      },
+      "reference_answer": "supposed",
+      "incorrect_answer": "supposing",
+      "editorial_answer": "She is supposed to return the key before leaving.",
+      "explanation": "Is supposed to — форма ожидания или правила.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Посетителям положено регистрироваться при входе.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "supposed"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "sign"
+          },
+          {
+            "id": "t6",
+            "label": "in."
+          },
+          {
+            "id": "t1",
+            "label": "Visitors"
+          },
+          {
+            "id": "t2",
+            "label": "are"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Visitors are supposed to sign in.",
+      "explanation": "Это описание правила, не доказательство исполнения.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "We are supposed return the keys today."
+      },
+      "answer_key": {
+        "accepted": ["We are supposed to return the keys today."]
+      },
+      "reference_answer": "We are supposed to return the keys today.",
+      "incorrect_answer": "We are supposed return the keys today.",
+      "editorial_answer": "We are supposed to return the keys today.",
+      "explanation": "После supposed требуется to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что устанавливает справочник?",
+      "public_payload": {
+        "passage": "The centre’s handbook said that visitors were supposed to sign in at reception. When a register was incomplete, one supervisor argued that the handbook proved the missing names must have been recorded elsewhere. A colleague disagreed. The handbook established what should happen, while the register concerned what had actually been documented. The team checked the alternative records rather than filling the gap by assumption. It also improved the arrival procedure so future compliance would be easier to observe.",
+        "options": [
+          {
+            "id": "v7814f2c1ae4b",
+            "label": "That every missing name was recorded elsewhere."
+          },
+          {
+            "id": "v8e015b32e5c9",
+            "label": "That no visitor entered."
+          },
+          {
+            "id": "vb5548a187265",
+            "label": "The expected procedure."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb5548a187265"
+      },
+      "reference_answer": "vb5548a187265",
+      "incorrect_answer": "v7814f2c1ae4b",
+      "editorial_answer": "The expected procedure.",
+      "explanation": "Правило и фактическая документация — разные источники.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l552b2b1a0f52",
+            "label": "expectation"
+          },
+          {
+            "id": "l28878df2f51a",
+            "label": "procedure"
+          },
+          {
+            "id": "l89231e5e9082",
+            "label": "record"
+          },
+          {
+            "id": "l8c778080bcb3",
+            "label": "compliance"
+          }
+        ],
+        "right": [
+          {
+            "id": "r5dd889ba39fc",
+            "label": "запись"
+          },
+          {
+            "id": "re1e17c387fae",
+            "label": "соблюдение правила"
+          },
+          {
+            "id": "r4c6d370e01ad",
+            "label": "ожидание"
+          },
+          {
+            "id": "r068a31831a97",
+            "label": "процедура"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l552b2b1a0f52": "r4c6d370e01ad",
+          "l28878df2f51a": "r068a31831a97",
+          "l89231e5e9082": "r5dd889ba39fc",
+          "l8c778080bcb3": "re1e17c387fae"
+        }
+      },
+      "reference_answer": {
+        "l552b2b1a0f52": "r4c6d370e01ad",
+        "l28878df2f51a": "r068a31831a97",
+        "l89231e5e9082": "r5dd889ba39fc",
+        "l8c778080bcb3": "re1e17c387fae"
+      },
+      "incorrect_answer": {
+        "l552b2b1a0f52": "r068a31831a97",
+        "l28878df2f51a": "r4c6d370e01ad",
+        "l89231e5e9082": "r5dd889ba39fc",
+        "l8c778080bcb3": "re1e17c387fae"
+      },
+      "editorial_answer": "expectation — ожидание; procedure — процедура; record — запись; compliance — соблюдение правила",
+      "explanation": "В этих контекстах: expectation — ожидание; procedure — процедура; record — запись; compliance — соблюдение правила.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что команда сделала вместо предположения?",
+      "public_payload": {
+        "passage": "The centre’s handbook said that visitors were supposed to sign in at reception. When a register was incomplete, one supervisor argued that the handbook proved the missing names must have been recorded elsewhere. A colleague disagreed. The handbook established what should happen, while the register concerned what had actually been documented. The team checked the alternative records rather than filling the gap by assumption. It also improved the arrival procedure so future compliance would be easier to observe.",
+        "options": [
+          {
+            "id": "v8129e5cf1988",
+            "label": "Checked alternative records."
+          },
+          {
+            "id": "vb0486efae20e",
+            "label": "Invented missing signatures."
+          },
+          {
+            "id": "v4b0d675cb341",
+            "label": "Declared every visitor dishonest."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8129e5cf1988"
+      },
+      "reference_answer": "v8129e5cf1988",
+      "incorrect_answer": "vb0486efae20e",
+      "editorial_answer": "Checked alternative records.",
+      "explanation": "Текст описывает проверку, не выдумывание записей или мотивов.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Отдели правило от подтверждённого исполнения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can “staff are supposed to check” replace a completed check record?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v75665c7ce3ea",
+            "label": "Yes; supposed means verified."
+          },
+          {
+            "id": "v320eaae84c8d",
+            "label": "Yes; every procedure automatically records itself."
+          },
+          {
+            "id": "v4503f54d52c6",
+            "label": "No; the expected action still needs evidence of completion."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4503f54d52c6"
+      },
+      "reference_answer": "v4503f54d52c6",
+      "incorrect_answer": "v75665c7ce3ea",
+      "editorial_answer": "No; the expected action still needs evidence of completion.",
+      "explanation": "Ожидание само по себе не доказывает результат.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Following a stated rule is ___.",
+        "options": [
+          {
+            "id": "vfada9d5c2f2b",
+            "label": "absence"
+          },
+          {
+            "id": "v5476bcf3697b",
+            "label": "compliance"
+          },
+          {
+            "id": "v579159d686fd",
+            "label": "coincidence necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5476bcf3697b"
+      },
+      "reference_answer": "v5476bcf3697b",
+      "incorrect_answer": "v579159d686fd",
+      "editorial_answer": "compliance",
+      "explanation": "Compliance — соблюдение правила.",
+      "key": "e09"
+    }
+  ]
+}

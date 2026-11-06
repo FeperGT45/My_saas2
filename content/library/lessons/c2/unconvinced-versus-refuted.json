@@ -1,0 +1,372 @@
+{
+  "key": "c2/unconvinced-versus-refuted",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика C2 · точность в контексте",
+    "position": 50
+  },
+  "position": 4,
+  "title": "Не убеждает — ещё не опровергнуто",
+  "description": "Не убеждает — ещё не опровергнуто: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Точно передавать позицию I remain unconvinced",
+    "Отделять недостаточную поддержку от доказанной противоположности"
+  ],
+  "notes": [
+    "I remain unconvinced сообщает, что приведённые доводы не убедили говорящего.",
+    "Фраза сама по себе не утверждает доказанного опровержения; основания и позицию нужно читать дальше."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/some-and-all-context"],
+  "lexicon": [
+    {
+      "en": "unconvinced",
+      "ru": "неубеждённый"
+    },
+    {
+      "en": "refute",
+      "ru": "опровергать"
+    },
+    {
+      "en": "threshold",
+      "ru": "порог"
+    },
+    {
+      "en": "assent",
+      "ru": "согласие с утверждением"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “I remain unconvinced by this explanation” alone establishes which position?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "va891716a6c52",
+            "label": "The explanation has not persuaded the speaker."
+          },
+          {
+            "id": "v27c899d561eb",
+            "label": "The opposite explanation has been conclusively proved."
+          },
+          {
+            "id": "v90382fef2a9d",
+            "label": "The speaker has not read anything."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va891716a6c52"
+      },
+      "reference_answer": "va891716a6c52",
+      "incorrect_answer": "v27c899d561eb",
+      "editorial_answer": "The explanation has not persuaded the speaker.",
+      "explanation": "Фраза сообщает о неубеждённости, а не о доказанном противоположном выводе.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: refute / refutation.",
+      "public_payload": {
+        "sentence": "A challenge to the support is not automatically a ___ of the claim."
+      },
+      "answer_key": {
+        "accepted": ["refutation"]
+      },
+      "reference_answer": "refutation",
+      "incorrect_answer": "refute",
+      "editorial_answer": "A challenge to the support is not automatically a refutation of the claim.",
+      "explanation": "После a требуется существительное refutation.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Отказ согласиться сам по себе не устанавливает противоположное утверждение.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "does"
+          },
+          {
+            "id": "t4",
+            "label": "not"
+          },
+          {
+            "id": "t5",
+            "label": "by"
+          },
+          {
+            "id": "t6",
+            "label": "itself"
+          },
+          {
+            "id": "t7",
+            "label": "establish"
+          },
+          {
+            "id": "t8",
+            "label": "the"
+          },
+          {
+            "id": "t9",
+            "label": "opposite"
+          },
+          {
+            "id": "t10",
+            "label": "claim."
+          },
+          {
+            "id": "t1",
+            "label": "Withholding"
+          },
+          {
+            "id": "t2",
+            "label": "assent"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "Withholding assent does not by itself establish the opposite claim.",
+      "explanation": "Позиция относительно доводов и доказательство альтернативы различаются.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The reviewer remain unconvinced by the explanation."
+      },
+      "answer_key": {
+        "accepted": ["The reviewer remains unconvinced by the explanation."]
+      },
+      "reference_answer": "The reviewer remains unconvinced by the explanation.",
+      "incorrect_answer": "The reviewer remain unconvinced by the explanation.",
+      "editorial_answer": "The reviewer remains unconvinced by the explanation.",
+      "explanation": "С единственным the reviewer в настоящем времени согласуется remains.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что именно рецензентка поставила под сомнение?",
+      "public_payload": {
+        "passage": "After reading an account of why the community display had attracted fewer visitors, a reviewer wrote that she remained unconvinced by its explanation. The account blamed the revised opening time, but offered no comparison with other events and did not discuss the road closure outside the building. A headline described her response as proof that opening times had no effect. She rejected that description too. Her objection concerned the adequacy of the account’s support; she had not established that the proposed factor was irrelevant. She requested a clearer comparison and consideration of the alternative explanation. Those requests left open the possibility that timing mattered, that the road closure mattered, or that both contributed. Reporting her stance accurately required preserving the difference between declining assent and demonstrating a contrary conclusion.",
+        "options": [
+          {
+            "id": "ve9d9cfca4f50",
+            "label": "The existence of the community display."
+          },
+          {
+            "id": "v5a125164d5ca",
+            "label": "The possibility of any future comparison."
+          },
+          {
+            "id": "v2df63e21f128",
+            "label": "The adequacy of the support for the explanation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2df63e21f128"
+      },
+      "reference_answer": "v2df63e21f128",
+      "incorrect_answer": "ve9d9cfca4f50",
+      "editorial_answer": "The adequacy of the support for the explanation.",
+      "explanation": "Она оценила достаточность доводов, не отрицала событие или возможность проверки.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l345dc3d16e64",
+            "label": "unconvinced"
+          },
+          {
+            "id": "lb34908d587f4",
+            "label": "refute"
+          },
+          {
+            "id": "l2faa94e769fb",
+            "label": "threshold"
+          },
+          {
+            "id": "ldfce451fd060",
+            "label": "assent"
+          }
+        ],
+        "right": [
+          {
+            "id": "rc2c9ab163440",
+            "label": "порог"
+          },
+          {
+            "id": "r8217f4139dfc",
+            "label": "согласие с утверждением"
+          },
+          {
+            "id": "rf98f19bda216",
+            "label": "неубеждённый"
+          },
+          {
+            "id": "rb0ed0dab99af",
+            "label": "опровергать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l345dc3d16e64": "rf98f19bda216",
+          "lb34908d587f4": "rb0ed0dab99af",
+          "l2faa94e769fb": "rc2c9ab163440",
+          "ldfce451fd060": "r8217f4139dfc"
+        }
+      },
+      "reference_answer": {
+        "l345dc3d16e64": "rf98f19bda216",
+        "lb34908d587f4": "rb0ed0dab99af",
+        "l2faa94e769fb": "rc2c9ab163440",
+        "ldfce451fd060": "r8217f4139dfc"
+      },
+      "incorrect_answer": {
+        "l345dc3d16e64": "rb0ed0dab99af",
+        "lb34908d587f4": "rf98f19bda216",
+        "l2faa94e769fb": "rc2c9ab163440",
+        "ldfce451fd060": "r8217f4139dfc"
+      },
+      "editorial_answer": "unconvinced — неубеждённый; refute — опровергать; threshold — порог; assent — согласие с утверждением",
+      "explanation": "В этих контекстах: unconvinced — неубеждённый; refute — опровергать; threshold — порог; assent — согласие с утверждением.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему заголовок был некорректен?",
+      "public_payload": {
+        "passage": "After reading an account of why the community display had attracted fewer visitors, a reviewer wrote that she remained unconvinced by its explanation. The account blamed the revised opening time, but offered no comparison with other events and did not discuss the road closure outside the building. A headline described her response as proof that opening times had no effect. She rejected that description too. Her objection concerned the adequacy of the account’s support; she had not established that the proposed factor was irrelevant. She requested a clearer comparison and consideration of the alternative explanation. Those requests left open the possibility that timing mattered, that the road closure mattered, or that both contributed. Reporting her stance accurately required preserving the difference between declining assent and demonstrating a contrary conclusion.",
+        "options": [
+          {
+            "id": "v7000191bd17c",
+            "label": "It turned lack of persuasion into proof that timing had no effect."
+          },
+          {
+            "id": "va59991cb3a4e",
+            "label": "It preserved all the alternatives she had left open."
+          },
+          {
+            "id": "v9aa1efff7a2a",
+            "label": "It correctly reported a conclusive experiment."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7000191bd17c"
+      },
+      "reference_answer": "v7000191bd17c",
+      "incorrect_answer": "va59991cb3a4e",
+      "editorial_answer": "It turned lack of persuasion into proof that timing had no effect.",
+      "explanation": "Заголовок приписал более сильный противоположный вывод.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Передай силу позиции без усиления.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “unconvinced” necessarily mean that an alternative is proved?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v799ad7f767d8",
+            "label": "Yes; every reservation proves the opposite."
+          },
+          {
+            "id": "v2b131ea58b5b",
+            "label": "Yes; asking for comparison settles causation."
+          },
+          {
+            "id": "vb96fc75bf378",
+            "label": "No; it states that the offered case has not persuaded the speaker."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb96fc75bf378"
+      },
+      "reference_answer": "vb96fc75bf378",
+      "incorrect_answer": "v799ad7f767d8",
+      "editorial_answer": "No; it states that the offered case has not persuaded the speaker.",
+      "explanation": "Недостаточная убедительность и доказанное опровержение не тождественны.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To disprove a claim by argument or evidence is to ___.",
+        "options": [
+          {
+            "id": "vf0bebdc3e130",
+            "label": "request information only"
+          },
+          {
+            "id": "v3edf72efd9fa",
+            "label": "refute"
+          },
+          {
+            "id": "vfb717aaf6fcd",
+            "label": "merely withhold assent"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3edf72efd9fa"
+      },
+      "reference_answer": "v3edf72efd9fa",
+      "incorrect_answer": "vfb717aaf6fcd",
+      "editorial_answer": "refute",
+      "explanation": "Refute — опровергнуть, а не только воздержаться от согласия.",
+      "key": "e09"
+    }
+  ]
+}

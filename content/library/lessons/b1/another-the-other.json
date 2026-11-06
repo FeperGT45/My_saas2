@@ -1,0 +1,366 @@
+{
+  "key": "b1/another-the-other",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика B1 · точность в контексте",
+    "position": 50
+  },
+  "position": 3,
+  "title": "Ещё один и другой из двух",
+  "description": "Ещё один и другой из двух: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать another для дополнительного предмета",
+    "Использовать the other при оставшемся из двух"
+  ],
+  "notes": [
+    "Another chair — ещё один или другой неопределённый стул.",
+    "The other chair может обозначать оставшийся из двух уже известных стульев."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/couldnt-not-allowed"],
+  "lexicon": [
+    {
+      "en": "another",
+      "ru": "ещё один, другой"
+    },
+    {
+      "en": "the other",
+      "ru": "другой из известных"
+    },
+    {
+      "en": "additional",
+      "ru": "дополнительный"
+    },
+    {
+      "en": "remaining",
+      "ru": "оставшийся"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: There are two keys. One is mine; ___ is yours.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v5bd04012768b",
+            "label": "the other"
+          },
+          {
+            "id": "vc04e9f2e0db8",
+            "label": "another of"
+          },
+          {
+            "id": "ve73e3a9ed2a1",
+            "label": "other a"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5bd04012768b"
+      },
+      "reference_answer": "v5bd04012768b",
+      "incorrect_answer": "vc04e9f2e0db8",
+      "editorial_answer": "the other",
+      "explanation": "Из двух известных ключей остаётся the other.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: another / others.",
+      "public_payload": {
+        "sentence": "We need ___ chair for an extra guest."
+      },
+      "answer_key": {
+        "accepted": ["another"]
+      },
+      "reference_answer": "another",
+      "incorrect_answer": "others",
+      "editorial_answer": "We need another chair for an extra guest.",
+      "explanation": "Перед одним дополнительным chair используется another.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Одна комната полна, а другая из двух пуста.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "full,"
+          },
+          {
+            "id": "t5",
+            "label": "but"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "other"
+          },
+          {
+            "id": "t8",
+            "label": "is"
+          },
+          {
+            "id": "t9",
+            "label": "empty."
+          },
+          {
+            "id": "t1",
+            "label": "One"
+          },
+          {
+            "id": "t2",
+            "label": "room"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "One room is full, but the other is empty.",
+      "explanation": "The other относится к оставшемуся определённому варианту.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "We need another chairs."
+      },
+      "answer_key": {
+        "accepted": ["We need another chair."]
+      },
+      "reference_answer": "We need another chair.",
+      "incorrect_answer": "We need another chairs.",
+      "editorial_answer": "We need another chair.",
+      "explanation": "В этой модели another сочетается с единственным chair.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какая комната была тихой?",
+      "public_payload": {
+        "passage": "Two rooms were available for the club. One was large but noisy; the other was small and quiet. The group chose the quiet room and borrowed another table for the activity. Choosing the other room would have changed the noise problem, while borrowing another table simply added a useful item to their chosen space.",
+        "options": [
+          {
+            "id": "v3ffd5592c620",
+            "label": "The larger one."
+          },
+          {
+            "id": "vac49781d1cf7",
+            "label": "Neither room."
+          },
+          {
+            "id": "va725724b3a07",
+            "label": "The smaller one."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va725724b3a07"
+      },
+      "reference_answer": "va725724b3a07",
+      "incorrect_answer": "v3ffd5592c620",
+      "editorial_answer": "The smaller one.",
+      "explanation": "Описания противопоставлены в первом сравнении.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l01c94c13a4ef",
+            "label": "another"
+          },
+          {
+            "id": "l27e6ada56c7e",
+            "label": "the other"
+          },
+          {
+            "id": "le678a2c37de1",
+            "label": "additional"
+          },
+          {
+            "id": "lf382125687a7",
+            "label": "remaining"
+          }
+        ],
+        "right": [
+          {
+            "id": "refd33c59db97",
+            "label": "дополнительный"
+          },
+          {
+            "id": "rb779febcf8f1",
+            "label": "оставшийся"
+          },
+          {
+            "id": "r7649333f1258",
+            "label": "ещё один, другой"
+          },
+          {
+            "id": "rc69b11fa0d04",
+            "label": "другой из известных"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l01c94c13a4ef": "r7649333f1258",
+          "l27e6ada56c7e": "rc69b11fa0d04",
+          "le678a2c37de1": "refd33c59db97",
+          "lf382125687a7": "rb779febcf8f1"
+        }
+      },
+      "reference_answer": {
+        "l01c94c13a4ef": "r7649333f1258",
+        "l27e6ada56c7e": "rc69b11fa0d04",
+        "le678a2c37de1": "refd33c59db97",
+        "lf382125687a7": "rb779febcf8f1"
+      },
+      "incorrect_answer": {
+        "l01c94c13a4ef": "rc69b11fa0d04",
+        "l27e6ada56c7e": "r7649333f1258",
+        "le678a2c37de1": "refd33c59db97",
+        "lf382125687a7": "rb779febcf8f1"
+      },
+      "editorial_answer": "another — ещё один, другой; the other — другой из известных; additional — дополнительный; remaining — оставшийся",
+      "explanation": "В этих контекстах: another — ещё один, другой; the other — другой из известных; additional — дополнительный; remaining — оставшийся.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что означает another table?",
+      "public_payload": {
+        "passage": "Two rooms were available for the club. One was large but noisy; the other was small and quiet. The group chose the quiet room and borrowed another table for the activity. Choosing the other room would have changed the noise problem, while borrowing another table simply added a useful item to their chosen space.",
+        "options": [
+          {
+            "id": "vcc675d788fbd",
+            "label": "An additional table for the chosen room."
+          },
+          {
+            "id": "v54f37d1ede11",
+            "label": "The only other room itself."
+          },
+          {
+            "id": "v60da99fc18c9",
+            "label": "All the tables in the building."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vcc675d788fbd"
+      },
+      "reference_answer": "vcc675d788fbd",
+      "incorrect_answer": "v54f37d1ede11",
+      "editorial_answer": "An additional table for the chosen room.",
+      "explanation": "Another добавляет один предмет, не меняет выбор комнаты.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Укажи оставшийся из двух предметов.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "There are two folders. I have one. Where is the remaining folder?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vfa4135f16873",
+            "label": "Where is another of folder?"
+          },
+          {
+            "id": "vde77bb695d2d",
+            "label": "Where is other a folder?"
+          },
+          {
+            "id": "vc70504022d9c",
+            "label": "Where is the other folder?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc70504022d9c"
+      },
+      "reference_answer": "vc70504022d9c",
+      "incorrect_answer": "vfa4135f16873",
+      "editorial_answer": "Where is the other folder?",
+      "explanation": "The other обозначает известный оставшийся вариант.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Something added to what already exists is ___.",
+        "options": [
+          {
+            "id": "va767daf761be",
+            "label": "identical necessarily"
+          },
+          {
+            "id": "vd07a1e8d2340",
+            "label": "additional"
+          },
+          {
+            "id": "vf06e88a1ff6e",
+            "label": "absent necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd07a1e8d2340"
+      },
+      "reference_answer": "vd07a1e8d2340",
+      "incorrect_answer": "vf06e88a1ff6e",
+      "editorial_answer": "additional",
+      "explanation": "Additional — дополнительный.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,342 @@
+{
+  "key": "b1/because-of-reason",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика B1 · точность в контексте",
+    "position": 50
+  },
+  "position": 4,
+  "title": "Причина: предложение или существительное",
+  "description": "Причина: предложение или существительное: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Различать because и because of",
+    "Сохранять причинное отношение при изменении структуры"
+  ],
+  "notes": [
+    "Because + подлежащее и глагол: because it rained.",
+    "Because of + именная группа: because of the rain."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/another-the-other"],
+  "lexicon": [
+    {
+      "en": "cause",
+      "ru": "причина"
+    },
+    {
+      "en": "disruption",
+      "ru": "нарушение обычной работы"
+    },
+    {
+      "en": "weather",
+      "ru": "погода"
+    },
+    {
+      "en": "delay",
+      "ru": "задержка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The match was postponed ___ the heavy rain.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vd3ce43be18a0",
+            "label": "because of"
+          },
+          {
+            "id": "vf623d2a80594",
+            "label": "because that of"
+          },
+          {
+            "id": "vad0f3eacce21",
+            "label": "although of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd3ce43be18a0"
+      },
+      "reference_answer": "vd3ce43be18a0",
+      "incorrect_answer": "vf623d2a80594",
+      "editorial_answer": "because of",
+      "explanation": "Перед именной группой the heavy rain используется because of.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: because of / because.",
+      "public_payload": {
+        "sentence": "We stayed inside ___ it was raining."
+      },
+      "answer_key": {
+        "accepted": ["because"]
+      },
+      "reference_answer": "because",
+      "incorrect_answer": "because of",
+      "editorial_answer": "We stayed inside because it was raining.",
+      "explanation": "It was raining — полная часть, требующая because.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Поездка заняла больше времени из-за снега.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "took"
+          },
+          {
+            "id": "t4",
+            "label": "longer"
+          },
+          {
+            "id": "t5",
+            "label": "because"
+          },
+          {
+            "id": "t6",
+            "label": "of"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "snow."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "journey"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The journey took longer because of the snow.",
+      "explanation": "Because of вводит именную причину.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The event was delayed because of the room was locked."
+      },
+      "answer_key": {
+        "accepted": ["The event was delayed because the room was locked."]
+      },
+      "reference_answer": "The event was delayed because the room was locked.",
+      "incorrect_answer": "The event was delayed because of the room was locked.",
+      "editorial_answer": "The event was delayed because the room was locked.",
+      "explanation": "Перед полной частью с was нужен because без of.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что непосредственно задержало начало?",
+      "public_payload": {
+        "passage": "The class started late because the main entrance was locked. A sign later described the delay as being because of bad weather. It had been raining, but the tutor explained that rain had not prevented entry: a missing key had. The corrected notice named the actual practical problem rather than using a cause that merely happened at the same time.",
+        "options": [
+          {
+            "id": "vf6e31de68a10",
+            "label": "Rain making entry impossible."
+          },
+          {
+            "id": "vd3982db2a137",
+            "label": "A decision to cancel every class."
+          },
+          {
+            "id": "v0056067facdb",
+            "label": "A locked entrance and a missing key."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0056067facdb"
+      },
+      "reference_answer": "v0056067facdb",
+      "incorrect_answer": "vf6e31de68a10",
+      "editorial_answer": "A locked entrance and a missing key.",
+      "explanation": "Преподаватель прямо отделил дождь от проблемы доступа.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l188e3cb91f63",
+            "label": "cause"
+          },
+          {
+            "id": "lb3cb2b3558aa",
+            "label": "disruption"
+          },
+          {
+            "id": "l523ffa27af77",
+            "label": "weather"
+          },
+          {
+            "id": "lb7ef9fec565d",
+            "label": "delay"
+          }
+        ],
+        "right": [
+          {
+            "id": "rd84d94f5887e",
+            "label": "погода"
+          },
+          {
+            "id": "re1925fa1c7c1",
+            "label": "задержка"
+          },
+          {
+            "id": "r4c9c9a55e5bd",
+            "label": "причина"
+          },
+          {
+            "id": "rdfe02882a827",
+            "label": "нарушение обычной работы"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l188e3cb91f63": "r4c9c9a55e5bd",
+          "lb3cb2b3558aa": "rdfe02882a827",
+          "l523ffa27af77": "rd84d94f5887e",
+          "lb7ef9fec565d": "re1925fa1c7c1"
+        }
+      },
+      "reference_answer": {
+        "l188e3cb91f63": "r4c9c9a55e5bd",
+        "lb3cb2b3558aa": "rdfe02882a827",
+        "l523ffa27af77": "rd84d94f5887e",
+        "lb7ef9fec565d": "re1925fa1c7c1"
+      },
+      "incorrect_answer": {
+        "l188e3cb91f63": "rdfe02882a827",
+        "lb3cb2b3558aa": "r4c9c9a55e5bd",
+        "l523ffa27af77": "rd84d94f5887e",
+        "lb7ef9fec565d": "re1925fa1c7c1"
+      },
+      "editorial_answer": "cause — причина; disruption — нарушение обычной работы; weather — погода; delay — задержка",
+      "explanation": "В этих контекстах: cause — причина; disruption — нарушение обычной работы; weather — погода; delay — задержка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему знак исправили?",
+      "public_payload": {
+        "passage": "The class started late because the main entrance was locked. A sign later described the delay as being because of bad weather. It had been raining, but the tutor explained that rain had not prevented entry: a missing key had. The corrected notice named the actual practical problem rather than using a cause that merely happened at the same time.",
+        "options": [
+          {
+            "id": "vf4bcbd8eb4a9",
+            "label": "It named a coinciding event instead of the stated cause."
+          },
+          {
+            "id": "vaa52979e95f5",
+            "label": "Because of can never be grammatical."
+          },
+          {
+            "id": "v4e78baeea4bf",
+            "label": "The class had actually started early."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf4bcbd8eb4a9"
+      },
+      "reference_answer": "vf4bcbd8eb4a9",
+      "incorrect_answer": "vaa52979e95f5",
+      "editorial_answer": "It named a coinciding event instead of the stated cause.",
+      "explanation": "Грамматическая связка не исправляет неверно названную причину.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери конструкцию с именной группой.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which sentence uses because of correctly?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v9390c720945b",
+            "label": "We waited because of the bus was late."
+          },
+          {
+            "id": "va7313e4c9804",
+            "label": "We waited because of it arrived late."
+          },
+          {
+            "id": "vb6f858c7e134",
+            "label": "We waited because of the delay."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb6f858c7e134"
+      },
+      "reference_answer": "vb6f858c7e134",
+      "incorrect_answer": "v9390c720945b",
+      "editorial_answer": "We waited because of the delay.",
+      "explanation": "The delay — именная группа после because of.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A disturbance to the normal running of a service is a ___.",
+        "options": [
+          {
+            "id": "v40c45176a2b5",
+            "label": "preference"
+          },
+          {
+            "id": "vd3ee7437d5f7",
+            "label": "disruption"
+          },
+          {
+            "id": "v5154befd34ab",
+            "label": "guarantee"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd3ee7437d5f7"
+      },
+      "reference_answer": "vd3ee7437d5f7",
+      "incorrect_answer": "v5154befd34ab",
+      "editorial_answer": "disruption",
+      "explanation": "Disruption — нарушение нормальной работы.",
+      "key": "e09"
+    }
+  ]
+}

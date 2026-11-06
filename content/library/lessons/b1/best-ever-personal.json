@@ -1,0 +1,366 @@
+{
+  "key": "b1/best-ever-personal",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика B1 · точность в контексте",
+    "position": 50
+  },
+  "position": 1,
+  "title": "Лучший из моего опыта",
+  "description": "Лучший из моего опыта: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать превосходную степень с have ever",
+    "Сохранять личную область сравнения"
+  ],
+  "notes": [
+    "The best course I have ever taken сравнивает курс с собственным опытом говорящего.",
+    "Это не утверждает, что курс лучший во всём мире или для всех учащихся."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/remind-warn-not"],
+  "lexicon": [
+    {
+      "en": "experience",
+      "ru": "опыт"
+    },
+    {
+      "en": "comparison",
+      "ru": "сравнение"
+    },
+    {
+      "en": "memorable",
+      "ru": "запоминающийся"
+    },
+    {
+      "en": "personal",
+      "ru": "личный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: This is the most useful guide I have ever ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vb6d5983145fd",
+            "label": "read"
+          },
+          {
+            "id": "vba00c9bc4471",
+            "label": "reading"
+          },
+          {
+            "id": "vb3abadb0efcc",
+            "label": "reads"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb6d5983145fd"
+      },
+      "reference_answer": "vb6d5983145fd",
+      "incorrect_answer": "vba00c9bc4471",
+      "editorial_answer": "read",
+      "explanation": "После have требуется причастие read.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: have / am.",
+      "public_payload": {
+        "sentence": "It is the best workshop I ___ ever attended."
+      },
+      "answer_key": {
+        "accepted": ["have"]
+      },
+      "reference_answer": "have",
+      "incorrect_answer": "am",
+      "editorial_answer": "It is the best workshop I have ever attended.",
+      "explanation": "Опыт до настоящего выражается have attended.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Это лучший курс из всех, которые я когда-либо проходил.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "best"
+          },
+          {
+            "id": "t5",
+            "label": "course"
+          },
+          {
+            "id": "t6",
+            "label": "I"
+          },
+          {
+            "id": "t7",
+            "label": "have"
+          },
+          {
+            "id": "t8",
+            "label": "ever"
+          },
+          {
+            "id": "t9",
+            "label": "taken."
+          },
+          {
+            "id": "t1",
+            "label": "It"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "It is the best course I have ever taken.",
+      "explanation": "Область сравнения ограничена опытом говорящего.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "This is the best talk I have ever hear."
+      },
+      "answer_key": {
+        "accepted": ["This is the best talk I have ever heard."]
+      },
+      "reference_answer": "This is the best talk I have ever heard.",
+      "incorrect_answer": "This is the best talk I have ever hear.",
+      "editorial_answer": "This is the best talk I have ever heard.",
+      "explanation": "После have требуется heard.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что ограничивает оценку Аны?",
+      "public_payload": {
+        "passage": "After the workshop, Ana called it the best course she had ever taken. She had attended only three similar courses, all at local clubs. Her friend enjoyed the workshop too, but preferred another teacher’s approach. Ana clarified that she was describing her own experience, not ranking every course available or deciding what would suit every learner.",
+        "options": [
+          {
+            "id": "v7a33488a22d4",
+            "label": "A study of every course in the country."
+          },
+          {
+            "id": "vef1552b22f24",
+            "label": "A guarantee that everyone shares her preference."
+          },
+          {
+            "id": "vc54c25ee3dff",
+            "label": "Her own experience of a few courses."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc54c25ee3dff"
+      },
+      "reference_answer": "vc54c25ee3dff",
+      "incorrect_answer": "v7a33488a22d4",
+      "editorial_answer": "Her own experience of a few courses.",
+      "explanation": "Сравнение лично и основано на ограниченном опыте.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lf5769634e7e3",
+            "label": "experience"
+          },
+          {
+            "id": "l14f55b0de146",
+            "label": "comparison"
+          },
+          {
+            "id": "l0501c167bc1a",
+            "label": "memorable"
+          },
+          {
+            "id": "l5b178cdd491d",
+            "label": "personal"
+          }
+        ],
+        "right": [
+          {
+            "id": "rec2845edf5b1",
+            "label": "запоминающийся"
+          },
+          {
+            "id": "r12ad92f9bb05",
+            "label": "личный"
+          },
+          {
+            "id": "r091bcc3e0e8b",
+            "label": "опыт"
+          },
+          {
+            "id": "r2017bcc5a582",
+            "label": "сравнение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lf5769634e7e3": "r091bcc3e0e8b",
+          "l14f55b0de146": "r2017bcc5a582",
+          "l0501c167bc1a": "rec2845edf5b1",
+          "l5b178cdd491d": "r12ad92f9bb05"
+        }
+      },
+      "reference_answer": {
+        "lf5769634e7e3": "r091bcc3e0e8b",
+        "l14f55b0de146": "r2017bcc5a582",
+        "l0501c167bc1a": "rec2845edf5b1",
+        "l5b178cdd491d": "r12ad92f9bb05"
+      },
+      "incorrect_answer": {
+        "lf5769634e7e3": "r2017bcc5a582",
+        "l14f55b0de146": "r091bcc3e0e8b",
+        "l0501c167bc1a": "rec2845edf5b1",
+        "l5b178cdd491d": "r12ad92f9bb05"
+      },
+      "editorial_answer": "experience — опыт; comparison — сравнение; memorable — запоминающийся; personal — личный",
+      "explanation": "В этих контекстах: experience — опыт; comparison — сравнение; memorable — запоминающийся; personal — личный.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Была ли реакция друга полностью такой же?",
+      "public_payload": {
+        "passage": "After the workshop, Ana called it the best course she had ever taken. She had attended only three similar courses, all at local clubs. Her friend enjoyed the workshop too, but preferred another teacher’s approach. Ana clarified that she was describing her own experience, not ranking every course available or deciding what would suit every learner.",
+        "options": [
+          {
+            "id": "v2a2878a45782",
+            "label": "No; the friend preferred another teacher’s approach."
+          },
+          {
+            "id": "v6e5a81ed4719",
+            "label": "Yes; every preference was identical."
+          },
+          {
+            "id": "v141ff8e53b94",
+            "label": "The friend had not attended the workshop."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2a2878a45782"
+      },
+      "reference_answer": "v2a2878a45782",
+      "incorrect_answer": "v6e5a81ed4719",
+      "editorial_answer": "No; the friend preferred another teacher’s approach.",
+      "explanation": "Друг тоже получил удовольствие, но имел другое предпочтение.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани область личного сравнения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can “the best book I have read” mean best for every reader?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v58d2e81a6cbf",
+            "label": "Yes; ever automatically includes everyone."
+          },
+          {
+            "id": "v4268b293d10d",
+            "label": "Yes; personal experience proves a global ranking."
+          },
+          {
+            "id": "v7033f1a879c5",
+            "label": "Not by itself; it describes the speaker’s reading experience."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7033f1a879c5"
+      },
+      "reference_answer": "v7033f1a879c5",
+      "incorrect_answer": "v58d2e81a6cbf",
+      "editorial_answer": "Not by itself; it describes the speaker’s reading experience.",
+      "explanation": "Указание I have read не заменяет сравнение всех читателей.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An event easy to remember can be ___.",
+        "options": [
+          {
+            "id": "v89bc51c0bebc",
+            "label": "universal necessarily"
+          },
+          {
+            "id": "vf0e43f5ffa73",
+            "label": "memorable"
+          },
+          {
+            "id": "v2eaadd0d736d",
+            "label": "unnoticed necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf0e43f5ffa73"
+      },
+      "reference_answer": "vf0e43f5ffa73",
+      "incorrect_answer": "v2eaadd0d736d",
+      "editorial_answer": "memorable",
+      "explanation": "Memorable — запоминающийся.",
+      "key": "e09"
+    }
+  ]
+}

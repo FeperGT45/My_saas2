@@ -1,0 +1,342 @@
+{
+  "key": "b1/couldnt-not-allowed",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика B1 · точность в контексте",
+    "position": 50
+  },
+  "position": 2,
+  "title": "Не мог или не разрешали",
+  "description": "Не мог или не разрешали: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Отличать отсутствие возможности от запрета",
+    "Использовать was not allowed to для разрешения"
+  ],
+  "notes": [
+    "Could not может выражать отсутствие способности или возможности по контексту.",
+    "Was not allowed to явно сообщает об отсутствии разрешения, не обязательно об отсутствии умения."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/best-ever-personal"],
+  "lexicon": [
+    {
+      "en": "ability",
+      "ru": "способность"
+    },
+    {
+      "en": "permission",
+      "ru": "разрешение"
+    },
+    {
+      "en": "restriction",
+      "ru": "ограничение"
+    },
+    {
+      "en": "access",
+      "ru": "доступ"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The rule prohibited visitors from entering. They were not allowed ___ inside.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v1ac22dbd93fa",
+            "label": "to go"
+          },
+          {
+            "id": "v031b3b4adc2b",
+            "label": "going to"
+          },
+          {
+            "id": "vb6d51e8bff36",
+            "label": "went to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1ac22dbd93fa"
+      },
+      "reference_answer": "v1ac22dbd93fa",
+      "incorrect_answer": "v031b3b4adc2b",
+      "editorial_answer": "to go",
+      "explanation": "Allowed to go передаёт разрешение или его отсутствие.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: allowing / allowed.",
+      "public_payload": {
+        "sentence": "She was not ___ to use the equipment without training."
+      },
+      "answer_key": {
+        "accepted": ["allowed"]
+      },
+      "reference_answer": "allowed",
+      "incorrect_answer": "allowing",
+      "editorial_answer": "She was not allowed to use the equipment without training.",
+      "explanation": "В пассивной модели разрешения используется allowed.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Нам не разрешили входить в комнату.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "not"
+          },
+          {
+            "id": "t4",
+            "label": "allowed"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "enter"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "room."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "were"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "We were not allowed to enter the room.",
+      "explanation": "Речь о разрешении, не обязательно о физической возможности.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He was not allowed use the computer."
+      },
+      "answer_key": {
+        "accepted": ["He was not allowed to use the computer."]
+      },
+      "reference_answer": "He was not allowed to use the computer.",
+      "incorrect_answer": "He was not allowed use the computer.",
+      "editorial_answer": "He was not allowed to use the computer.",
+      "explanation": "После allowed требуется to use.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему в архив нельзя было взять камеру?",
+      "public_payload": {
+        "passage": "The visitor knew how to use the camera, but she was not allowed to take it into the archive room. The restriction protected fragile materials and did not question her photography skills. At another building, a broken lift meant she could not reach the upper floor with her heavy equipment. These were different barriers: one concerned permission, the other practical access.",
+        "options": [
+          {
+            "id": "v5063207e02f5",
+            "label": "The visitor did not know how to use a camera."
+          },
+          {
+            "id": "v0b8507c2ce85",
+            "label": "Every camera was broken."
+          },
+          {
+            "id": "v15ffdaa7c1c4",
+            "label": "A rule restricted its use there."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v15ffdaa7c1c4"
+      },
+      "reference_answer": "v15ffdaa7c1c4",
+      "incorrect_answer": "v5063207e02f5",
+      "editorial_answer": "A rule restricted its use there.",
+      "explanation": "Запрет отличён от умения пользоваться камерой.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lbf529bc3065f",
+            "label": "ability"
+          },
+          {
+            "id": "l59084146fade",
+            "label": "permission"
+          },
+          {
+            "id": "l491ecb77f860",
+            "label": "restriction"
+          },
+          {
+            "id": "l164deb0adf37",
+            "label": "access"
+          }
+        ],
+        "right": [
+          {
+            "id": "rd1de6600688a",
+            "label": "ограничение"
+          },
+          {
+            "id": "r626188e6f71b",
+            "label": "доступ"
+          },
+          {
+            "id": "r9e4ba3e3679b",
+            "label": "способность"
+          },
+          {
+            "id": "r9c65c9e1af9c",
+            "label": "разрешение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lbf529bc3065f": "r9e4ba3e3679b",
+          "l59084146fade": "r9c65c9e1af9c",
+          "l491ecb77f860": "rd1de6600688a",
+          "l164deb0adf37": "r626188e6f71b"
+        }
+      },
+      "reference_answer": {
+        "lbf529bc3065f": "r9e4ba3e3679b",
+        "l59084146fade": "r9c65c9e1af9c",
+        "l491ecb77f860": "rd1de6600688a",
+        "l164deb0adf37": "r626188e6f71b"
+      },
+      "incorrect_answer": {
+        "lbf529bc3065f": "r9c65c9e1af9c",
+        "l59084146fade": "r9e4ba3e3679b",
+        "l491ecb77f860": "rd1de6600688a",
+        "l164deb0adf37": "r626188e6f71b"
+      },
+      "editorial_answer": "ability — способность; permission — разрешение; restriction — ограничение; access — доступ",
+      "explanation": "В этих контекстах: ability — способность; permission — разрешение; restriction — ограничение; access — доступ.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что препятствовало доступу на верхний этаж другого здания?",
+      "public_payload": {
+        "passage": "The visitor knew how to use the camera, but she was not allowed to take it into the archive room. The restriction protected fragile materials and did not question her photography skills. At another building, a broken lift meant she could not reach the upper floor with her heavy equipment. These were different barriers: one concerned permission, the other practical access.",
+        "options": [
+          {
+            "id": "va245580da0ea",
+            "label": "A broken lift and heavy equipment."
+          },
+          {
+            "id": "v8df2898889a6",
+            "label": "The same archive photography rule."
+          },
+          {
+            "id": "v9579ef94a146",
+            "label": "A lack of any interest in visiting."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va245580da0ea"
+      },
+      "reference_answer": "va245580da0ea",
+      "incorrect_answer": "v8df2898889a6",
+      "editorial_answer": "A broken lift and heavy equipment.",
+      "explanation": "Второй случай касается практического доступа.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Различи умение и разрешение.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Could she operate the machine?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v53c9f4f36418",
+            "label": "No, every prohibition proves lack of skill."
+          },
+          {
+            "id": "v148a8eb99760",
+            "label": "Yes, she was not allowed use there."
+          },
+          {
+            "id": "v5e539455a877",
+            "label": "Yes, but she was not allowed to use it there."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5e539455a877"
+      },
+      "reference_answer": "v5e539455a877",
+      "incorrect_answer": "v53c9f4f36418",
+      "editorial_answer": "Yes, but she was not allowed to use it there.",
+      "explanation": "Allowed to use относится к разрешению независимо от способности.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Official agreement that an action may be taken is ___.",
+        "options": [
+          {
+            "id": "v9661e53f04b5",
+            "label": "damage"
+          },
+          {
+            "id": "vc4acd8a48845",
+            "label": "permission"
+          },
+          {
+            "id": "vb3eb3a178bc3",
+            "label": "inability"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc4acd8a48845"
+      },
+      "reference_answer": "vc4acd8a48845",
+      "incorrect_answer": "vb3eb3a178bc3",
+      "editorial_answer": "permission",
+      "explanation": "Permission — разрешение.",
+      "key": "e09"
+    }
+  ]
+}

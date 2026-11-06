@@ -1,0 +1,342 @@
+{
+  "key": "c1/hope-so-reference",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-07",
+    "title": "Практика C1 · точность в контексте",
+    "position": 50
+  },
+  "position": 2,
+  "title": "Hope so: что заменяет so",
+  "description": "Hope so: что заменяет so: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Восстанавливать содержание so после hope",
+    "Использовать I hope not для отрицательного ожидания"
+  ],
+  "notes": [
+    "В ответе I hope so слово so заменяет ранее названное утверждение.",
+    "Обычный отрицательный ответ с hope — I hope not; это надежда, не сообщение о подтверждении."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/notwithstanding-evidence"],
+  "lexicon": [
+    {
+      "en": "hope",
+      "ru": "надежда"
+    },
+    {
+      "en": "confirmation",
+      "ru": "подтверждение"
+    },
+    {
+      "en": "reference",
+      "ru": "отсылка"
+    },
+    {
+      "en": "certainty",
+      "ru": "уверенность"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “Will the room be ready?” — “I hope ___.”",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v82dd4b2f0ed0",
+            "label": "so"
+          },
+          {
+            "id": "v211b737f7917",
+            "label": "that ready"
+          },
+          {
+            "id": "v57f7cc93f290",
+            "label": "to so"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v82dd4b2f0ed0"
+      },
+      "reference_answer": "v82dd4b2f0ed0",
+      "incorrect_answer": "v211b737f7917",
+      "editorial_answer": "so",
+      "explanation": "So заменяет утверждение the room will be ready.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: no / not.",
+      "public_payload": {
+        "sentence": "“Will the session be cancelled?” — “I hope ___.”"
+      },
+      "answer_key": {
+        "accepted": ["not"]
+      },
+      "reference_answer": "not",
+      "incorrect_answer": "no",
+      "editorial_answer": "“Will the session be cancelled?” — “I hope not.”",
+      "explanation": "I hope not — стандартный краткий ответ с отрицательной надеждой.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я на это надеюсь, но нам ещё нужно подтверждение.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "so,"
+          },
+          {
+            "id": "t4",
+            "label": "but"
+          },
+          {
+            "id": "t5",
+            "label": "we"
+          },
+          {
+            "id": "t6",
+            "label": "still"
+          },
+          {
+            "id": "t7",
+            "label": "need"
+          },
+          {
+            "id": "t8",
+            "label": "confirmation."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "hope"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "I hope so, but we still need confirmation.",
+      "explanation": "Надежда не равна полученному подтверждению.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Will the delivery be late? I hope no."
+      },
+      "answer_key": {
+        "accepted": ["Will the delivery be late? I hope not."]
+      },
+      "reference_answer": "Will the delivery be late? I hope not.",
+      "incorrect_answer": "Will the delivery be late? I hope no.",
+      "editorial_answer": "Will the delivery be late? I hope not.",
+      "explanation": "В кратком ответе после hope используется not, а не no.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "К чему отсылает so в ответе Лены?",
+      "public_payload": {
+        "passage": "When the coordinator asked whether the room would be ready by Friday, Lena replied, “I hope so, but the inspection has not happened yet.” In the meeting notes, a hurried writer replaced this with a statement that Lena had confirmed the room’s availability. Lena requested a correction. The word so referred back to the room being ready, while hope marked her attitude towards that possibility. Neither expression reported a completed inspection. The revised notes preserved the hopeful answer and the outstanding check. This allowed the team to prepare an alternative venue without presenting Lena as either certain of success or convinced that the room would be unavailable.",
+        "options": [
+          {
+            "id": "v6272032b3755",
+            "label": "The inspection already being completed."
+          },
+          {
+            "id": "vd3bf69cf76e8",
+            "label": "The alternative venue being cancelled."
+          },
+          {
+            "id": "v427456189e17",
+            "label": "The room being ready by Friday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v427456189e17"
+      },
+      "reference_answer": "v427456189e17",
+      "incorrect_answer": "v6272032b3755",
+      "editorial_answer": "The room being ready by Friday.",
+      "explanation": "So возвращает содержание предыдущего вопроса, не добавляет факт осмотра.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l2dad4451ea5d",
+            "label": "hope"
+          },
+          {
+            "id": "ldec52127d577",
+            "label": "confirmation"
+          },
+          {
+            "id": "l8659848d785f",
+            "label": "reference"
+          },
+          {
+            "id": "la4494cdabf21",
+            "label": "certainty"
+          }
+        ],
+        "right": [
+          {
+            "id": "r789c0a3ae9d9",
+            "label": "отсылка"
+          },
+          {
+            "id": "r48ae4cb88518",
+            "label": "уверенность"
+          },
+          {
+            "id": "re4ff19cede4e",
+            "label": "надежда"
+          },
+          {
+            "id": "r9ccc6cb727e2",
+            "label": "подтверждение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l2dad4451ea5d": "re4ff19cede4e",
+          "ldec52127d577": "r9ccc6cb727e2",
+          "l8659848d785f": "r789c0a3ae9d9",
+          "la4494cdabf21": "r48ae4cb88518"
+        }
+      },
+      "reference_answer": {
+        "l2dad4451ea5d": "re4ff19cede4e",
+        "ldec52127d577": "r9ccc6cb727e2",
+        "l8659848d785f": "r789c0a3ae9d9",
+        "la4494cdabf21": "r48ae4cb88518"
+      },
+      "incorrect_answer": {
+        "l2dad4451ea5d": "r9ccc6cb727e2",
+        "ldec52127d577": "re4ff19cede4e",
+        "l8659848d785f": "r789c0a3ae9d9",
+        "la4494cdabf21": "r48ae4cb88518"
+      },
+      "editorial_answer": "hope — надежда; confirmation — подтверждение; reference — отсылка; certainty — уверенность",
+      "explanation": "В этих контекстах: hope — надежда; confirmation — подтверждение; reference — отсылка; certainty — уверенность.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему исправили протокол?",
+      "public_payload": {
+        "passage": "When the coordinator asked whether the room would be ready by Friday, Lena replied, “I hope so, but the inspection has not happened yet.” In the meeting notes, a hurried writer replaced this with a statement that Lena had confirmed the room’s availability. Lena requested a correction. The word so referred back to the room being ready, while hope marked her attitude towards that possibility. Neither expression reported a completed inspection. The revised notes preserved the hopeful answer and the outstanding check. This allowed the team to prepare an alternative venue without presenting Lena as either certain of success or convinced that the room would be unavailable.",
+        "options": [
+          {
+            "id": "v6d8c73123200",
+            "label": "It had turned a hope into a confirmation."
+          },
+          {
+            "id": "vbaa8e5c9687c",
+            "label": "It correctly reported a completed inspection."
+          },
+          {
+            "id": "v837bffb4d792",
+            "label": "Lena had guaranteed that no room existed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6d8c73123200"
+      },
+      "reference_answer": "v6d8c73123200",
+      "incorrect_answer": "vbaa8e5c9687c",
+      "editorial_answer": "It had turned a hope into a confirmation.",
+      "explanation": "Протокол завысил степень подтверждённости.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери естественный краткий ответ.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "“Will we lose the booking?” Give a brief negative hope."
+          }
+        ],
+        "options": [
+          {
+            "id": "vca6389b909f9",
+            "label": "I hope no."
+          },
+          {
+            "id": "va5badf0844ac",
+            "label": "I do hope to not so."
+          },
+          {
+            "id": "vfd4a3c9b41d6",
+            "label": "I hope not."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfd4a3c9b41d6"
+      },
+      "reference_answer": "vfd4a3c9b41d6",
+      "incorrect_answer": "vca6389b909f9",
+      "editorial_answer": "I hope not.",
+      "explanation": "Отрицательное ожидание после hope выражается I hope not.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Evidence that an arrangement is settled is ___.",
+        "options": [
+          {
+            "id": "v15426ea8c7f1",
+            "label": "an unresolved possibility"
+          },
+          {
+            "id": "v665da4f65457",
+            "label": "confirmation"
+          },
+          {
+            "id": "vbd219c39823f",
+            "label": "hope alone"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v665da4f65457"
+      },
+      "reference_answer": "v665da4f65457",
+      "incorrect_answer": "vbd219c39823f",
+      "editorial_answer": "confirmation",
+      "explanation": "Confirmation — подтверждение договорённости.",
+      "key": "e09"
+    }
+  ]
+}
