@@ -1,0 +1,368 @@
+{
+  "key": "c1/with-background-clause",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика C1 · формы и значения",
+    "position": 40
+  },
+  "position": 1,
+  "title": "Обстоятельства с отдельным участником",
+  "description": "Обстоятельства с отдельным участником: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Строить with + существительное + причастие",
+    "Различать активный фон и завершённое действие над объектом"
+  ],
+  "notes": [
+    "With the volunteers waiting outside описывает активное ожидание отдельной группы.",
+    "With the documents checked описывает состояние документов после проверки; основной субъект может быть другим."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/source-attribution"],
+  "lexicon": [
+    {
+      "en": "background",
+      "ru": "фоновые обстоятельства"
+    },
+    {
+      "en": "pending",
+      "ru": "ожидающий решения"
+    },
+    {
+      "en": "verify",
+      "ru": "проверять"
+    },
+    {
+      "en": "precondition",
+      "ru": "предварительное условие"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: With all the documents ___, the coordinator authorised submission.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v6df0f00acf5f",
+            "label": "checked"
+          },
+          {
+            "id": "v2ec65c66760b",
+            "label": "checking themselves"
+          },
+          {
+            "id": "v183f6dc83f1b",
+            "label": "to checking"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6df0f00acf5f"
+      },
+      "reference_answer": "v6df0f00acf5f",
+      "incorrect_answer": "v2ec65c66760b",
+      "editorial_answer": "checked",
+      "explanation": "Документы были проверены: checked выражает действие над ними.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: waited / waiting.",
+      "public_payload": {
+        "sentence": "With the visitors ___ outside, the staff opened the side door."
+      },
+      "answer_key": {
+        "accepted": ["waiting"]
+      },
+      "reference_answer": "waiting",
+      "incorrect_answer": "waited",
+      "editorial_answer": "With the visitors waiting outside, the staff opened the side door.",
+      "explanation": "Посетители сами выполняют ожидание, поэтому waiting.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «После проверки документов координатор подписал форму.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "documents"
+          },
+          {
+            "id": "t4",
+            "label": "checked,"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "coordinator"
+          },
+          {
+            "id": "t7",
+            "label": "signed"
+          },
+          {
+            "id": "t8",
+            "label": "the"
+          },
+          {
+            "id": "t9",
+            "label": "form."
+          },
+          {
+            "id": "t1",
+            "label": "With"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "With the documents checked, the coordinator signed the form.",
+      "explanation": "Вводный оборот имеет свой участник documents, отличный от coordinator.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "With the guests wait outside, the guide unlocked the hall."
+      },
+      "answer_key": {
+        "accepted": [
+          "With the guests waiting outside, the guide unlocked the hall."
+        ]
+      },
+      "reference_answer": "With the guests waiting outside, the guide unlocked the hall.",
+      "incorrect_answer": "With the guests wait outside, the guide unlocked the hall.",
+      "editorial_answer": "With the guests waiting outside, the guide unlocked the hall.",
+      "explanation": "После with the guests для активного фонового процесса нужна форма waiting.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как проверка соотносится с подачей в первой цитате?",
+      "public_payload": {
+        "passage": "The coordinator’s note began, “With the documents checked, the application was submitted.” A later summary suggested that submission itself had verified the documents. The note described a different relationship: checking was presented as background already completed when submission occurred. Another sentence, “With several responses still pending, the committee postponed its decision,” described an unresolved situation instead. Neither construction named every person responsible for the background action. The reviewer therefore asked for the verification record as well as the submission date. A compact grammatical construction could organise the sequence clearly, but it could not by itself provide the independent evidence that the stated checking had actually taken place.",
+        "options": [
+          {
+            "id": "v090e03adeaa6",
+            "label": "It is caused automatically by the act of submission."
+          },
+          {
+            "id": "vf4e5a93c819e",
+            "label": "It is stated to be impossible after any response."
+          },
+          {
+            "id": "v116599f8b3df",
+            "label": "It is presented as completed background before submission."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v116599f8b3df"
+      },
+      "reference_answer": "v116599f8b3df",
+      "incorrect_answer": "v090e03adeaa6",
+      "editorial_answer": "It is presented as completed background before submission.",
+      "explanation": "Оборот представляет проверку как предшествующее состояние, не как автоматический эффект подачи.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le18b1f026c9d",
+            "label": "background"
+          },
+          {
+            "id": "lad7ec3a43463",
+            "label": "pending"
+          },
+          {
+            "id": "l4d3809360ae3",
+            "label": "verify"
+          },
+          {
+            "id": "ld66e522dda7f",
+            "label": "precondition"
+          }
+        ],
+        "right": [
+          {
+            "id": "r07baa42c66e3",
+            "label": "проверять"
+          },
+          {
+            "id": "r7de538b20354",
+            "label": "предварительное условие"
+          },
+          {
+            "id": "ra5089f53e06c",
+            "label": "фоновые обстоятельства"
+          },
+          {
+            "id": "r50f5b0625ce7",
+            "label": "ожидающий решения"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le18b1f026c9d": "ra5089f53e06c",
+          "lad7ec3a43463": "r50f5b0625ce7",
+          "l4d3809360ae3": "r07baa42c66e3",
+          "ld66e522dda7f": "r7de538b20354"
+        }
+      },
+      "reference_answer": {
+        "le18b1f026c9d": "ra5089f53e06c",
+        "lad7ec3a43463": "r50f5b0625ce7",
+        "l4d3809360ae3": "r07baa42c66e3",
+        "ld66e522dda7f": "r7de538b20354"
+      },
+      "incorrect_answer": {
+        "le18b1f026c9d": "r50f5b0625ce7",
+        "lad7ec3a43463": "ra5089f53e06c",
+        "l4d3809360ae3": "r07baa42c66e3",
+        "ld66e522dda7f": "r7de538b20354"
+      },
+      "editorial_answer": "background — фоновые обстоятельства; pending — ожидающий решения; verify — проверять; precondition — предварительное условие",
+      "explanation": "В этих контекстах: background — фоновые обстоятельства; pending — ожидающий решения; verify — проверять; precondition — предварительное условие.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем запросили отдельную запись о проверке?",
+      "public_payload": {
+        "passage": "The coordinator’s note began, “With the documents checked, the application was submitted.” A later summary suggested that submission itself had verified the documents. The note described a different relationship: checking was presented as background already completed when submission occurred. Another sentence, “With several responses still pending, the committee postponed its decision,” described an unresolved situation instead. Neither construction named every person responsible for the background action. The reviewer therefore asked for the verification record as well as the submission date. A compact grammatical construction could organise the sequence clearly, but it could not by itself provide the independent evidence that the stated checking had actually taken place.",
+        "options": [
+          {
+            "id": "vd87a7d165e2c",
+            "label": "A submission date always names every verifier."
+          },
+          {
+            "id": "v2f1e39a72d71",
+            "label": "The sentence states completion but is not itself independent proof of it."
+          },
+          {
+            "id": "vcc89c65c0b49",
+            "label": "The grammar proves the documents were never checked."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2f1e39a72d71"
+      },
+      "reference_answer": "v2f1e39a72d71",
+      "incorrect_answer": "vcc89c65c0b49",
+      "editorial_answer": "The sentence states completion but is not itself independent proof of it.",
+      "explanation": "Сообщение о факте и независимое подтверждение факта — разные вещи.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери активный фон с отдельным участником.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which form describes visitors actively waiting?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vfba19fa86e31",
+            "label": "With the visitors waited outside, we prepared the room."
+          },
+          {
+            "id": "v465ca4c81f12",
+            "label": "With the visitors to waiting outside, we prepared the room."
+          },
+          {
+            "id": "vaabcf970b1d2",
+            "label": "With the visitors waiting outside, we prepared the room."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vaabcf970b1d2"
+      },
+      "reference_answer": "vaabcf970b1d2",
+      "incorrect_answer": "vfba19fa86e31",
+      "editorial_answer": "With the visitors waiting outside, we prepared the room.",
+      "explanation": "Waiting согласуется со смыслом активного действия visitors.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A condition that must be met before another step is a ___.",
+        "options": [
+          {
+            "id": "v3e53e5452775",
+            "label": "decoration"
+          },
+          {
+            "id": "vd0eb3310dd9f",
+            "label": "precondition"
+          },
+          {
+            "id": "vb525bc555268",
+            "label": "consequence necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd0eb3310dd9f"
+      },
+      "reference_answer": "vd0eb3310dd9f",
+      "incorrect_answer": "vb525bc555268",
+      "editorial_answer": "precondition",
+      "explanation": "Precondition — предварительное условие.",
+      "key": "e09"
+    }
+  ]
+}

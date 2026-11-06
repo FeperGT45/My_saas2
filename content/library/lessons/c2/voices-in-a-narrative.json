@@ -1,0 +1,342 @@
+{
+  "key": "c2/voices-in-a-narrative",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика C2 · формы и значения",
+    "position": 40
+  },
+  "position": 3,
+  "title": "Голос рассказчика и чужие реплики",
+  "description": "Голос рассказчика и чужие реплики: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Сопоставлять обобщение рассказчика с прямыми репликами",
+    "Не выводить умышленный обман из одного несоответствия"
+  ],
+  "notes": [
+    "Рассказчик может обобщать события так, что приведённые им же реплики ограничивают его оценку.",
+    "Несоответствие может показать ненадёжность отдельного обобщения, но не доказывает мотив или умышленную ложь без других сведений."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/consideration-not-commitment"],
+  "lexicon": [
+    {
+      "en": "narrator",
+      "ru": "рассказчик"
+    },
+    {
+      "en": "perspective",
+      "ru": "точка зрения"
+    },
+    {
+      "en": "dissent",
+      "ru": "несогласие"
+    },
+    {
+      "en": "recollection",
+      "ru": "воспоминание"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: If a narrator says “everyone agreed” but quotes an objection, the text supports ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v8f462b0bd8aa",
+            "label": "proving a deliberate lie regardless of context"
+          },
+          {
+            "id": "vc512ed43b124",
+            "label": "questioning the universal claim of agreement"
+          },
+          {
+            "id": "vd8994ab24081",
+            "label": "proving that every person secretly agreed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc512ed43b124"
+      },
+      "reference_answer": "vc512ed43b124",
+      "incorrect_answer": "vd8994ab24081",
+      "editorial_answer": "questioning the universal claim of agreement",
+      "explanation": "Одно явное возражение ограничивает everyone, но не устанавливает мотив искажения.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: established / establish.",
+      "public_payload": {
+        "sentence": "The quoted objection does not by itself ___ deliberate deception."
+      },
+      "answer_key": {
+        "accepted": ["establish"]
+      },
+      "reference_answer": "establish",
+      "incorrect_answer": "established",
+      "editorial_answer": "The quoted objection does not by itself establish deliberate deception.",
+      "explanation": "После does not требуется establish.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Обобщение рассказчика расходится с приведённой репликой.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "summary"
+          },
+          {
+            "id": "t4",
+            "label": "conflicts"
+          },
+          {
+            "id": "t5",
+            "label": "with"
+          },
+          {
+            "id": "t6",
+            "label": "a"
+          },
+          {
+            "id": "t7",
+            "label": "quoted"
+          },
+          {
+            "id": "t8",
+            "label": "reply."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "narrator’s"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The narrator’s summary conflicts with a quoted reply.",
+      "explanation": "Конфликт относится к конкретному изложению, а не автоматически ко всем словам рассказчика.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The narrator claim that everyone agreed."
+      },
+      "answer_key": {
+        "accepted": ["The narrator claims that everyone agreed."]
+      },
+      "reference_answer": "The narrator claims that everyone agreed.",
+      "incorrect_answer": "The narrator claim that everyone agreed.",
+      "editorial_answer": "The narrator claims that everyone agreed.",
+      "explanation": "Единственное narrator требует claims.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как прямая реплика Мары ограничивает вступительное everyone?",
+      "public_payload": {
+        "passage": "“Everyone welcomed my plan,” the narrator recalls. He describes the warm room, the tea and the pleasing sound of chairs moving closer. Then he quotes Mara: “I can see why you want it, but I cannot support that timetable.” He remembers this as encouragement, dwelling on her first clause and passing quickly over the second. The passage gives readers grounds to question his universal account of agreement. It does not reveal whether he is consciously misleading them, protecting a cherished memory or simply misunderstanding a qualified response. The difference between his recollection and the quoted words is meaningful precisely because both are present. Readers can identify the tension without inventing a private motive that the passage never establishes.",
+        "options": [
+          {
+            "id": "vf7291dc69f03",
+            "label": "It includes an explicit refusal to support the timetable."
+          },
+          {
+            "id": "v1ded5b38fc2f",
+            "label": "It proves unconditional agreement with every detail."
+          },
+          {
+            "id": "ve2f2af3070cc",
+            "label": "It contains no evaluation of the plan."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf7291dc69f03"
+      },
+      "reference_answer": "vf7291dc69f03",
+      "incorrect_answer": "v1ded5b38fc2f",
+      "editorial_answer": "It includes an explicit refusal to support the timetable.",
+      "explanation": "Понимание мотива в первой части не отменяет отказ во второй.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "la46396960b83",
+            "label": "narrator"
+          },
+          {
+            "id": "l78b15764953e",
+            "label": "perspective"
+          },
+          {
+            "id": "l5316cb1b3554",
+            "label": "dissent"
+          },
+          {
+            "id": "l047089524a8c",
+            "label": "recollection"
+          }
+        ],
+        "right": [
+          {
+            "id": "r988fcb44a2d8",
+            "label": "несогласие"
+          },
+          {
+            "id": "rd0de5008734c",
+            "label": "воспоминание"
+          },
+          {
+            "id": "r0da87cdf8ebe",
+            "label": "рассказчик"
+          },
+          {
+            "id": "r3a9a5cdc66cf",
+            "label": "точка зрения"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "la46396960b83": "r0da87cdf8ebe",
+          "l78b15764953e": "r3a9a5cdc66cf",
+          "l5316cb1b3554": "r988fcb44a2d8",
+          "l047089524a8c": "rd0de5008734c"
+        }
+      },
+      "reference_answer": {
+        "la46396960b83": "r0da87cdf8ebe",
+        "l78b15764953e": "r3a9a5cdc66cf",
+        "l5316cb1b3554": "r988fcb44a2d8",
+        "l047089524a8c": "rd0de5008734c"
+      },
+      "incorrect_answer": {
+        "la46396960b83": "r3a9a5cdc66cf",
+        "l78b15764953e": "r0da87cdf8ebe",
+        "l5316cb1b3554": "r988fcb44a2d8",
+        "l047089524a8c": "rd0de5008734c"
+      },
+      "editorial_answer": "narrator — рассказчик; perspective — точка зрения; dissent — несогласие; recollection — воспоминание",
+      "explanation": "В этих контекстах: narrator — рассказчик; perspective — точка зрения; dissent — несогласие; recollection — воспоминание.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какого вывода текст не позволяет уверенно сделать?",
+      "public_payload": {
+        "passage": "“Everyone welcomed my plan,” the narrator recalls. He describes the warm room, the tea and the pleasing sound of chairs moving closer. Then he quotes Mara: “I can see why you want it, but I cannot support that timetable.” He remembers this as encouragement, dwelling on her first clause and passing quickly over the second. The passage gives readers grounds to question his universal account of agreement. It does not reveal whether he is consciously misleading them, protecting a cherished memory or simply misunderstanding a qualified response. The difference between his recollection and the quoted words is meaningful precisely because both are present. Readers can identify the tension without inventing a private motive that the passage never establishes.",
+        "options": [
+          {
+            "id": "ve00226b89e5c",
+            "label": "That his universal summary is questionable."
+          },
+          {
+            "id": "v2c653075ee4c",
+            "label": "That Mara distinguishes understanding from support."
+          },
+          {
+            "id": "v2efefdce0709",
+            "label": "That the narrator is deliberately deceiving readers."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2efefdce0709"
+      },
+      "reference_answer": "v2efefdce0709",
+      "incorrect_answer": "ve00226b89e5c",
+      "editorial_answer": "That the narrator is deliberately deceiving readers.",
+      "explanation": "Мотив рассказчика оставлен открытым, хотя несоответствие доступно анализу.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани границу между наблюдением и догадкой о намерении.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can we describe a narrator’s account as questionable without claiming access to their intentions?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v4c6239c5d2fa",
+            "label": "Yes; identify the contradiction and keep the motive unresolved."
+          },
+          {
+            "id": "vad6020eb0f00",
+            "label": "No; every contradiction proves intentional deception."
+          },
+          {
+            "id": "vcca96be25fb6",
+            "label": "Yes; inventing a motive is required for reading."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4c6239c5d2fa"
+      },
+      "reference_answer": "v4c6239c5d2fa",
+      "incorrect_answer": "vad6020eb0f00",
+      "editorial_answer": "Yes; identify the contradiction and keep the motive unresolved.",
+      "explanation": "Текстовый конфликт можно обосновать отдельно от недоказанного мотива.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An explicit expression of disagreement is ___.",
+        "options": [
+          {
+            "id": "v5e306efd0408",
+            "label": "unanimity"
+          },
+          {
+            "id": "v9659c7c828a5",
+            "label": "endorsement"
+          },
+          {
+            "id": "v9966b6029674",
+            "label": "dissent"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9966b6029674"
+      },
+      "reference_answer": "v9966b6029674",
+      "incorrect_answer": "v5e306efd0408",
+      "editorial_answer": "dissent",
+      "explanation": "Dissent — несогласие, а unanimity — единогласие.",
+      "key": "e09"
+    }
+  ]
+}

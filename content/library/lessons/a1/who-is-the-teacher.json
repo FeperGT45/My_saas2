@@ -1,0 +1,330 @@
+{
+  "key": "a1/who-is-the-teacher",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A1 · формы и значения",
+    "position": 40
+  },
+  "position": 5,
+  "title": "Кто ведёт занятие",
+  "description": "Кто ведёт занятие: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Задавать Who is ...? о человеке",
+    "Различать вопросы о человеке и о месте"
+  ],
+  "notes": [
+    "Who is your teacher? спрашивает о личности преподавателя.",
+    "Where is your teacher? спрашивает о местонахождении; ответы на эти вопросы различаются."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/every-room"],
+  "lexicon": [
+    {
+      "en": "who",
+      "ru": "кто"
+    },
+    {
+      "en": "teacher",
+      "ru": "преподаватель"
+    },
+    {
+      "en": "student",
+      "ru": "учащийся"
+    },
+    {
+      "en": "group",
+      "ru": "группа"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ is your teacher? — Ms Hill.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vdbbed6273a6a",
+            "label": "Where"
+          },
+          {
+            "id": "veb1e876501a6",
+            "label": "When"
+          },
+          {
+            "id": "vfdb0641c50a3",
+            "label": "Who"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfdb0641c50a3"
+      },
+      "reference_answer": "vfdb0641c50a3",
+      "incorrect_answer": "vdbbed6273a6a",
+      "editorial_answer": "Who",
+      "explanation": "Имя человека отвечает на Who.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: is / are.",
+      "public_payload": {
+        "sentence": "Who ___ your classmates?"
+      },
+      "answer_key": {
+        "accepted": ["are"]
+      },
+      "reference_answer": "are",
+      "incorrect_answer": "is",
+      "editorial_answer": "Who are your classmates?",
+      "explanation": "Classmates во множественном числе требует are.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Кто новый преподаватель?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "new"
+          },
+          {
+            "id": "t5",
+            "label": "teacher?"
+          },
+          {
+            "id": "t1",
+            "label": "Who"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Who is the new teacher?",
+      "explanation": "Who запрашивает личность, не место.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Who are your teacher?"
+      },
+      "answer_key": {
+        "accepted": ["Who is your teacher?"]
+      },
+      "reference_answer": "Who is your teacher?",
+      "incorrect_answer": "Who are your teacher?",
+      "editorial_answer": "Who is your teacher?",
+      "explanation": "Teacher в единственном числе согласуется с is.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто новая преподавательница?",
+      "public_payload": {
+        "passage": "Ms Hill is our new teacher. She is in room three. Our group has six students. A student called Ali helps her carry the books.",
+        "options": [
+          {
+            "id": "v344f74c1083b",
+            "label": "Six students."
+          },
+          {
+            "id": "v9c135c25abb4",
+            "label": "Ms Hill."
+          },
+          {
+            "id": "v30a64b61acfd",
+            "label": "Ali."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9c135c25abb4"
+      },
+      "reference_answer": "v9c135c25abb4",
+      "incorrect_answer": "v30a64b61acfd",
+      "editorial_answer": "Ms Hill.",
+      "explanation": "Имя преподавательницы дано в первой фразе.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l9c9ff20f8ec2",
+            "label": "who"
+          },
+          {
+            "id": "l9dce611dd4fe",
+            "label": "teacher"
+          },
+          {
+            "id": "lb5381ffa8581",
+            "label": "student"
+          },
+          {
+            "id": "lc4c7d8eff3a6",
+            "label": "group"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1adf41a672d0",
+            "label": "учащийся"
+          },
+          {
+            "id": "rc83db98ee0ba",
+            "label": "группа"
+          },
+          {
+            "id": "r822525a18146",
+            "label": "кто"
+          },
+          {
+            "id": "r37c7d01a5e76",
+            "label": "преподаватель"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l9c9ff20f8ec2": "r822525a18146",
+          "l9dce611dd4fe": "r37c7d01a5e76",
+          "lb5381ffa8581": "r1adf41a672d0",
+          "lc4c7d8eff3a6": "rc83db98ee0ba"
+        }
+      },
+      "reference_answer": {
+        "l9c9ff20f8ec2": "r822525a18146",
+        "l9dce611dd4fe": "r37c7d01a5e76",
+        "lb5381ffa8581": "r1adf41a672d0",
+        "lc4c7d8eff3a6": "rc83db98ee0ba"
+      },
+      "incorrect_answer": {
+        "l9c9ff20f8ec2": "r37c7d01a5e76",
+        "l9dce611dd4fe": "r822525a18146",
+        "lb5381ffa8581": "r1adf41a672d0",
+        "lc4c7d8eff3a6": "rc83db98ee0ba"
+      },
+      "editorial_answer": "who — кто; teacher — преподаватель; student — учащийся; group — группа",
+      "explanation": "В этих контекстах: who — кто; teacher — преподаватель; student — учащийся; group — группа.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто помогает нести книги?",
+      "public_payload": {
+        "passage": "Ms Hill is our new teacher. She is in room three. Our group has six students. A student called Ali helps her carry the books.",
+        "options": [
+          {
+            "id": "vab6dc1e1d79b",
+            "label": "Ali."
+          },
+          {
+            "id": "v4f65da5aedf6",
+            "label": "Every teacher in the school."
+          },
+          {
+            "id": "vb84432ff43e3",
+            "label": "A person named Room Three."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vab6dc1e1d79b"
+      },
+      "reference_answer": "vab6dc1e1d79b",
+      "incorrect_answer": "v4f65da5aedf6",
+      "editorial_answer": "Ali.",
+      "explanation": "Ali назван как student, который помогает.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Спроси о личности преподавателя.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "You need the teacher’s name. What do you ask?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vedb357746e67",
+            "label": "When is our teacher?"
+          },
+          {
+            "id": "va8df009bfd13",
+            "label": "Who is our teacher?"
+          },
+          {
+            "id": "vd53c0e8f9640",
+            "label": "Where is our teacher?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va8df009bfd13"
+      },
+      "reference_answer": "va8df009bfd13",
+      "incorrect_answer": "vd53c0e8f9640",
+      "editorial_answer": "Who is our teacher?",
+      "explanation": "Who подходит для имени или личности.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A person learning in a class is a ___.",
+        "options": [
+          {
+            "id": "v8f94b38021a5",
+            "label": "student"
+          },
+          {
+            "id": "v7cda2bc3b767",
+            "label": "window"
+          },
+          {
+            "id": "v90bd9aa735d8",
+            "label": "calendar"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8f94b38021a5"
+      },
+      "reference_answer": "v8f94b38021a5",
+      "incorrect_answer": "v7cda2bc3b767",
+      "editorial_answer": "student",
+      "explanation": "Student — учащийся, а не предмет обстановки.",
+      "key": "e09"
+    }
+  ]
+}

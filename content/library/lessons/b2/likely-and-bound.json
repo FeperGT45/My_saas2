@@ -1,0 +1,342 @@
+{
+  "key": "b2/likely-and-bound",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B2 · формы и значения",
+    "position": 40
+  },
+  "position": 4,
+  "title": "Вероятность и сильное ожидание",
+  "description": "Вероятность и сильное ожидание: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать be likely to и be bound to",
+    "Различать вероятностную формулировку и обещание"
+  ],
+  "notes": [
+    "Be likely to выражает вероятность: The change is likely to help.",
+    "Be bound to часто выражает сильное ожидание говорящего; оно не заменяет независимую проверку результата."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/no-matter-how"],
+  "lexicon": [
+    {
+      "en": "likely",
+      "ru": "вероятный"
+    },
+    {
+      "en": "expectation",
+      "ru": "ожидание"
+    },
+    {
+      "en": "certainty",
+      "ru": "уверенность"
+    },
+    {
+      "en": "assurance",
+      "ru": "заверение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The clearer labels are likely ___ confusion.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v3539a87294e8",
+            "label": "to reduce"
+          },
+          {
+            "id": "v0b4d59228e2f",
+            "label": "reducing to"
+          },
+          {
+            "id": "v881b63c34d1d",
+            "label": "reduce to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3539a87294e8"
+      },
+      "reference_answer": "v3539a87294e8",
+      "incorrect_answer": "v0b4d59228e2f",
+      "editorial_answer": "to reduce",
+      "explanation": "Likely to reduce — правильная модель вероятности.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: to / for.",
+      "public_payload": {
+        "sentence": "The change is bound ___ attract questions."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "The change is bound to attract questions.",
+      "explanation": "Be bound to требует инфинитив с to.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Пересмотренные инструкции, вероятно, помогут начинающим.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "instructions"
+          },
+          {
+            "id": "t4",
+            "label": "are"
+          },
+          {
+            "id": "t5",
+            "label": "likely"
+          },
+          {
+            "id": "t6",
+            "label": "to"
+          },
+          {
+            "id": "t7",
+            "label": "help"
+          },
+          {
+            "id": "t8",
+            "label": "beginners."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "revised"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The revised instructions are likely to help beginners.",
+      "explanation": "Likely не означает проверенное улучшение для каждого человека.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The proposal is likely improve access."
+      },
+      "answer_key": {
+        "accepted": ["The proposal is likely to improve access."]
+      },
+      "reference_answer": "The proposal is likely to improve access.",
+      "incorrect_answer": "The proposal is likely improve access.",
+      "editorial_answer": "The proposal is likely to improve access.",
+      "explanation": "Между likely и improve требуется to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как рекламный черновик усилил исходный вывод?",
+      "public_payload": {
+        "passage": "A designer said that larger labels were likely to help visitors find the correct entrance. In a publicity draft, this became a promise that nobody would be confused again. The designer objected to the change. Her expectation was reasonable enough to test, but it had not established the experience of every future visitor. The team retained the new labels and observed a trial group before making a stronger claim. They treated an expected benefit as a reason for evaluation, not as a substitute for it.",
+        "options": [
+          {
+            "id": "v392074660e12",
+            "label": "It simply repeated the same degree of probability."
+          },
+          {
+            "id": "vaeaf41227f7f",
+            "label": "It said that larger labels were already proved useless."
+          },
+          {
+            "id": "va06e0304bf3b",
+            "label": "It changed a likely benefit into a guarantee for every visitor."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va06e0304bf3b"
+      },
+      "reference_answer": "va06e0304bf3b",
+      "incorrect_answer": "v392074660e12",
+      "editorial_answer": "It changed a likely benefit into a guarantee for every visitor.",
+      "explanation": "Likely to help слабее универсальной гарантии nobody would be confused.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc064acc9fbad",
+            "label": "likely"
+          },
+          {
+            "id": "l9194d839c8e0",
+            "label": "expectation"
+          },
+          {
+            "id": "l3060c6f9306c",
+            "label": "certainty"
+          },
+          {
+            "id": "ledd2c6cc0df8",
+            "label": "assurance"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0d110e954160",
+            "label": "уверенность"
+          },
+          {
+            "id": "r48e5eeae37a1",
+            "label": "заверение"
+          },
+          {
+            "id": "rb8d5fabdbc41",
+            "label": "вероятный"
+          },
+          {
+            "id": "r9e5e890f6f7a",
+            "label": "ожидание"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc064acc9fbad": "rb8d5fabdbc41",
+          "l9194d839c8e0": "r9e5e890f6f7a",
+          "l3060c6f9306c": "r0d110e954160",
+          "ledd2c6cc0df8": "r48e5eeae37a1"
+        }
+      },
+      "reference_answer": {
+        "lc064acc9fbad": "rb8d5fabdbc41",
+        "l9194d839c8e0": "r9e5e890f6f7a",
+        "l3060c6f9306c": "r0d110e954160",
+        "ledd2c6cc0df8": "r48e5eeae37a1"
+      },
+      "incorrect_answer": {
+        "lc064acc9fbad": "r9e5e890f6f7a",
+        "l9194d839c8e0": "rb8d5fabdbc41",
+        "l3060c6f9306c": "r0d110e954160",
+        "ledd2c6cc0df8": "r48e5eeae37a1"
+      },
+      "editorial_answer": "likely — вероятный; expectation — ожидание; certainty — уверенность; assurance — заверение",
+      "explanation": "В этих контекстах: likely — вероятный; expectation — ожидание; certainty — уверенность; assurance — заверение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что команда сделала перед более сильным заявлением?",
+      "public_payload": {
+        "passage": "A designer said that larger labels were likely to help visitors find the correct entrance. In a publicity draft, this became a promise that nobody would be confused again. The designer objected to the change. Her expectation was reasonable enough to test, but it had not established the experience of every future visitor. The team retained the new labels and observed a trial group before making a stronger claim. They treated an expected benefit as a reason for evaluation, not as a substitute for it.",
+        "options": [
+          {
+            "id": "vb74eeb0b0280",
+            "label": "Removed every entrance sign."
+          },
+          {
+            "id": "v2e12b78a1f85",
+            "label": "Observed a trial group."
+          },
+          {
+            "id": "v58155016ef17",
+            "label": "Assumed all possible results were already known."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2e12b78a1f85"
+      },
+      "reference_answer": "v2e12b78a1f85",
+      "incorrect_answer": "v58155016ef17",
+      "editorial_answer": "Observed a trial group.",
+      "explanation": "Было проведено наблюдение за пробной группой.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани степень уверенности и время результата.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can I describe “likely to improve” as “has improved for everyone”?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v70668e9b25a3",
+            "label": "Yes; likely always means tested on everyone."
+          },
+          {
+            "id": "v02f9b0fdf9ed",
+            "label": "Yes; future expectation is identical to past measurement."
+          },
+          {
+            "id": "v14e1ee75f016",
+            "label": "No; that changes probability into a completed universal result."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v14e1ee75f016"
+      },
+      "reference_answer": "v14e1ee75f016",
+      "incorrect_answer": "v70668e9b25a3",
+      "editorial_answer": "No; that changes probability into a completed universal result.",
+      "explanation": "Вероятность не равна завершённому измерению для всех.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Something expected to happen with substantial probability is ___.",
+        "options": [
+          {
+            "id": "vdd7b72741c88",
+            "label": "completed necessarily"
+          },
+          {
+            "id": "v97de47662a5c",
+            "label": "likely"
+          },
+          {
+            "id": "v280de4fe13f5",
+            "label": "impossible by definition"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v97de47662a5c"
+      },
+      "reference_answer": "v97de47662a5c",
+      "incorrect_answer": "v280de4fe13f5",
+      "editorial_answer": "likely",
+      "explanation": "Likely обозначает вероятность, не обязательное завершение.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,338 @@
+{
+  "key": "b1/make-let-actions",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B1 · формы и значения",
+    "position": 40
+  },
+  "position": 4,
+  "title": "Заставить и разрешить без to",
+  "description": "Заставить и разрешить без to: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать let someone do",
+    "Использовать make someone do в активной конструкции"
+  ],
+  "notes": [
+    "Let + человек + инфинитив без to: They let us leave.",
+    "В активной модели make someone do также нет to: The rule made us wait. Пассивная модель имеет другие особенности и здесь не проверяется."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/imagined-present"],
+  "lexicon": [
+    {
+      "en": "let",
+      "ru": "разрешать"
+    },
+    {
+      "en": "make",
+      "ru": "заставлять в этой конструкции"
+    },
+    {
+      "en": "permission",
+      "ru": "разрешение"
+    },
+    {
+      "en": "requirement",
+      "ru": "требование"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The organiser let us ___ the room early.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v19bce3a1fbc4",
+            "label": "to enter"
+          },
+          {
+            "id": "v5607b1740708",
+            "label": "entered"
+          },
+          {
+            "id": "v3e490137ac96",
+            "label": "enter"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3e490137ac96"
+      },
+      "reference_answer": "v3e490137ac96",
+      "incorrect_answer": "v19bce3a1fbc4",
+      "editorial_answer": "enter",
+      "explanation": "После let us нужна начальная форма без to.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: return / to return.",
+      "public_payload": {
+        "sentence": "The missing form made me ___ to the office."
+      },
+      "answer_key": {
+        "accepted": ["return"]
+      },
+      "reference_answer": "return",
+      "incorrect_answer": "to return",
+      "editorial_answer": "The missing form made me return to the office.",
+      "explanation": "В активном make me return предлог to не ставится.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Нам разрешили воспользоваться боковым входом.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "us"
+          },
+          {
+            "id": "t4",
+            "label": "use"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "side"
+          },
+          {
+            "id": "t7",
+            "label": "entrance."
+          },
+          {
+            "id": "t1",
+            "label": "They"
+          },
+          {
+            "id": "t2",
+            "label": "let"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "They let us use the side entrance.",
+      "explanation": "Let us use — активная модель разрешения без to.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The coach made us to repeat the exercise."
+      },
+      "answer_key": {
+        "accepted": ["The coach made us repeat the exercise."]
+      },
+      "reference_answer": "The coach made us repeat the exercise.",
+      "incorrect_answer": "The coach made us to repeat the exercise.",
+      "editorial_answer": "The coach made us repeat the exercise.",
+      "explanation": "В активной конструкции make someone do убирается to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему волонтёры могли войти в восемь?",
+      "public_payload": {
+        "passage": "The venue normally opened at nine, but the organiser let the volunteers enter at eight to prepare. A missing delivery made them change the layout of the room. They used smaller tables near the wall and left a wider path through the middle. The change was inconvenient, but it did not prevent the event from starting on time.",
+        "options": [
+          {
+            "id": "v84fdb676d805",
+            "label": "The delivery driver forced every door open."
+          },
+          {
+            "id": "vd8d737e2f51b",
+            "label": "The organiser gave them permission to prepare early."
+          },
+          {
+            "id": "vda65f288bd22",
+            "label": "The public opening time had always been eight."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd8d737e2f51b"
+      },
+      "reference_answer": "vd8d737e2f51b",
+      "incorrect_answer": "vda65f288bd22",
+      "editorial_answer": "The organiser gave them permission to prepare early.",
+      "explanation": "Let выражает специальное разрешение, отличное от обычного открытия в девять.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l77d68e901c8b",
+            "label": "let"
+          },
+          {
+            "id": "l90397126a4ac",
+            "label": "make"
+          },
+          {
+            "id": "laddd384d7592",
+            "label": "permission"
+          },
+          {
+            "id": "l32b1693d158c",
+            "label": "requirement"
+          }
+        ],
+        "right": [
+          {
+            "id": "rc5cf36c3895e",
+            "label": "разрешение"
+          },
+          {
+            "id": "r46da9c10bff9",
+            "label": "требование"
+          },
+          {
+            "id": "r9f89cdf1fe55",
+            "label": "разрешать"
+          },
+          {
+            "id": "r1363f7345dd4",
+            "label": "заставлять в этой конструкции"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l77d68e901c8b": "r9f89cdf1fe55",
+          "l90397126a4ac": "r1363f7345dd4",
+          "laddd384d7592": "rc5cf36c3895e",
+          "l32b1693d158c": "r46da9c10bff9"
+        }
+      },
+      "reference_answer": {
+        "l77d68e901c8b": "r9f89cdf1fe55",
+        "l90397126a4ac": "r1363f7345dd4",
+        "laddd384d7592": "rc5cf36c3895e",
+        "l32b1693d158c": "r46da9c10bff9"
+      },
+      "incorrect_answer": {
+        "l77d68e901c8b": "r1363f7345dd4",
+        "l90397126a4ac": "r9f89cdf1fe55",
+        "laddd384d7592": "rc5cf36c3895e",
+        "l32b1693d158c": "r46da9c10bff9"
+      },
+      "editorial_answer": "let — разрешать; make — заставлять в этой конструкции; permission — разрешение; requirement — требование",
+      "explanation": "В этих контекстах: let — разрешать; make — заставлять в этой конструкции; permission — разрешение; requirement — требование.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что вынудило изменить расстановку?",
+      "public_payload": {
+        "passage": "The venue normally opened at nine, but the organiser let the volunteers enter at eight to prepare. A missing delivery made them change the layout of the room. They used smaller tables near the wall and left a wider path through the middle. The change was inconvenient, but it did not prevent the event from starting on time.",
+        "options": [
+          {
+            "id": "v4f015aa559ad",
+            "label": "A missing delivery."
+          },
+          {
+            "id": "v4d2c181c6ff9",
+            "label": "A decision to cancel the event."
+          },
+          {
+            "id": "v55edf9e1adca",
+            "label": "A rule requiring a late start."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4f015aa559ad"
+      },
+      "reference_answer": "v4f015aa559ad",
+      "incorrect_answer": "v4d2c181c6ff9",
+      "editorial_answer": "A missing delivery.",
+      "explanation": "Недоставленные предметы вызвали практическую адаптацию.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи о разрешении с let.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can we begin before the public arrives?"
+          }
+        ],
+        "options": [
+          {
+            "id": "va8e9d3c2dd4b",
+            "label": "The manager has let us starting early."
+          },
+          {
+            "id": "v9bd0717ae4e6",
+            "label": "The manager has let us start early."
+          },
+          {
+            "id": "vfc1447833f6e",
+            "label": "The manager has let us to start early."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9bd0717ae4e6"
+      },
+      "reference_answer": "v9bd0717ae4e6",
+      "incorrect_answer": "vfc1447833f6e",
+      "editorial_answer": "The manager has let us start early.",
+      "explanation": "Let us start использует инфинитив без to.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To allow an action is to ___ it.",
+        "options": [
+          {
+            "id": "v2adaf1ab071f",
+            "label": "permit"
+          },
+          {
+            "id": "v3c3a0fec7f46",
+            "label": "prohibit"
+          },
+          {
+            "id": "v9287b70413da",
+            "label": "prevent always"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2adaf1ab071f"
+      },
+      "reference_answer": "v2adaf1ab071f",
+      "incorrect_answer": "v3c3a0fec7f46",
+      "editorial_answer": "permit",
+      "explanation": "Permit означает разрешать, в отличие от prohibit.",
+      "key": "e09"
+    }
+  ]
+}

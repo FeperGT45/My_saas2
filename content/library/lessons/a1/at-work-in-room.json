@@ -1,0 +1,330 @@
+{
+  "key": "a1/at-work-in-room",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A1 · формы и значения",
+    "position": 40
+  },
+  "position": 3,
+  "title": "В комнате и на работе",
+  "description": "В комнате и на работе: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать in с нахождением внутри комнаты",
+    "Понимать at work как занятие или место работы"
+  ],
+  "notes": [
+    "In the room означает внутри комнаты.",
+    "At work — на работе; в этом сочетании перед work не ставится the."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/calendar-dates"],
+  "lexicon": [
+    {
+      "en": "inside",
+      "ru": "внутри"
+    },
+    {
+      "en": "outside",
+      "ru": "снаружи"
+    },
+    {
+      "en": "office",
+      "ru": "офис"
+    },
+    {
+      "en": "work",
+      "ru": "работа"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: My mother is ___ work now.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v56cb5eceae10",
+            "label": "in a"
+          },
+          {
+            "id": "v4bcb1a01725a",
+            "label": "at"
+          },
+          {
+            "id": "vd2d72eab0f4c",
+            "label": "on the"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4bcb1a01725a"
+      },
+      "reference_answer": "v4bcb1a01725a",
+      "incorrect_answer": "vd2d72eab0f4c",
+      "editorial_answer": "at",
+      "explanation": "At work — устойчивое сочетание.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: at the inside of / in.",
+      "public_payload": {
+        "sentence": "The bags are ___ the small room."
+      },
+      "answer_key": {
+        "accepted": ["in"]
+      },
+      "reference_answer": "in",
+      "incorrect_answer": "at the inside of",
+      "editorial_answer": "The bags are in the small room.",
+      "explanation": "In указывает на расположение внутри комнаты.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Она находится в офисе.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "in"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "office."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "She is in the office.",
+      "explanation": "In the office сообщает о месте внутри помещения.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He is at the work today."
+      },
+      "answer_key": {
+        "accepted": ["He is at work today."]
+      },
+      "reference_answer": "He is at work today.",
+      "incorrect_answer": "He is at the work today.",
+      "editorial_answer": "He is at work today.",
+      "explanation": "В устойчивом at work лишний the убирается.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто находится снаружи?",
+      "public_payload": {
+        "passage": "My father is at work. My sister is in her room. I am outside with the dog. We meet in the kitchen at six.",
+        "options": [
+          {
+            "id": "v20beabaed3b3",
+            "label": "The narrator and the dog."
+          },
+          {
+            "id": "ve2879b770bbc",
+            "label": "The father at his desk."
+          },
+          {
+            "id": "vf8ff9342730e",
+            "label": "The sister in the kitchen."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v20beabaed3b3"
+      },
+      "reference_answer": "v20beabaed3b3",
+      "incorrect_answer": "ve2879b770bbc",
+      "editorial_answer": "The narrator and the dog.",
+      "explanation": "I am outside with the dog — прямое указание.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lcf149b65bdef",
+            "label": "inside"
+          },
+          {
+            "id": "la81366c3c1b0",
+            "label": "outside"
+          },
+          {
+            "id": "l96ac2cc92669",
+            "label": "office"
+          },
+          {
+            "id": "l455a7f60ce50",
+            "label": "work"
+          }
+        ],
+        "right": [
+          {
+            "id": "r8b7ad34f8613",
+            "label": "офис"
+          },
+          {
+            "id": "rfcff45f7aed0",
+            "label": "работа"
+          },
+          {
+            "id": "ra20b7622f14f",
+            "label": "внутри"
+          },
+          {
+            "id": "rf65ec51ebfb1",
+            "label": "снаружи"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lcf149b65bdef": "ra20b7622f14f",
+          "la81366c3c1b0": "rf65ec51ebfb1",
+          "l96ac2cc92669": "r8b7ad34f8613",
+          "l455a7f60ce50": "rfcff45f7aed0"
+        }
+      },
+      "reference_answer": {
+        "lcf149b65bdef": "ra20b7622f14f",
+        "la81366c3c1b0": "rf65ec51ebfb1",
+        "l96ac2cc92669": "r8b7ad34f8613",
+        "l455a7f60ce50": "rfcff45f7aed0"
+      },
+      "incorrect_answer": {
+        "lcf149b65bdef": "rf65ec51ebfb1",
+        "la81366c3c1b0": "ra20b7622f14f",
+        "l96ac2cc92669": "r8b7ad34f8613",
+        "l455a7f60ce50": "rfcff45f7aed0"
+      },
+      "editorial_answer": "inside — внутри; outside — снаружи; office — офис; work — работа",
+      "explanation": "В этих контекстах: inside — внутри; outside — снаружи; office — офис; work — работа.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где они встречаются в шесть?",
+      "public_payload": {
+        "passage": "My father is at work. My sister is in her room. I am outside with the dog. We meet in the kitchen at six.",
+        "options": [
+          {
+            "id": "v5a35a7a38a22",
+            "label": "Outside the office."
+          },
+          {
+            "id": "v8cf98fcdb989",
+            "label": "In the dog’s room."
+          },
+          {
+            "id": "vea729812be99",
+            "label": "In the kitchen."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vea729812be99"
+      },
+      "reference_answer": "vea729812be99",
+      "incorrect_answer": "v5a35a7a38a22",
+      "editorial_answer": "In the kitchen.",
+      "explanation": "Последняя фраза называет кухню.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь стандартным сочетанием о работе.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Where is Sara?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v6bd007a0f9bb",
+            "label": "She is at work."
+          },
+          {
+            "id": "v510b3d3bb24a",
+            "label": "She is on work the."
+          },
+          {
+            "id": "vb5792a4d3032",
+            "label": "She is at the work."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6bd007a0f9bb"
+      },
+      "reference_answer": "v6bd007a0f9bb",
+      "incorrect_answer": "v510b3d3bb24a",
+      "editorial_answer": "She is at work.",
+      "explanation": "At work не требует артикля.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The opposite of inside is ___.",
+        "options": [
+          {
+            "id": "vfdff3f78cde0",
+            "label": "office"
+          },
+          {
+            "id": "vccdc0a845636",
+            "label": "work"
+          },
+          {
+            "id": "vbbf814e087e5",
+            "label": "outside"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbbf814e087e5"
+      },
+      "reference_answer": "vbbf814e087e5",
+      "incorrect_answer": "vfdff3f78cde0",
+      "editorial_answer": "outside",
+      "explanation": "Outside означает снаружи.",
+      "key": "e09"
+    }
+  ]
+}

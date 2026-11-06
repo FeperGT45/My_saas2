@@ -1,0 +1,334 @@
+{
+  "key": "b2/needs-checking",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B2 · формы и значения",
+    "position": 40
+  },
+  "position": 6,
+  "title": "Нужно проверить: два способа сказать",
+  "description": "Нужно проверить: два способа сказать: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать need to be + причастие",
+    "Понимать need + -ing с пассивным смыслом"
+  ],
+  "notes": [
+    "The figures need to be checked — требуется проверка данных.",
+    "The figures need checking может иметь тот же пассивный смысл; форма не говорит, что данные проверяют сами себя."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/future-perfect-duration"],
+  "lexicon": [
+    {
+      "en": "verify",
+      "ru": "проверять"
+    },
+    {
+      "en": "repair",
+      "ru": "ремонтировать"
+    },
+    {
+      "en": "require",
+      "ru": "требовать"
+    },
+    {
+      "en": "outstanding",
+      "ru": "ещё не выполненный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The damaged lock needs ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v9ca25df27fa6",
+            "label": "be repair to"
+          },
+          {
+            "id": "vaa09541e2a84",
+            "label": "to be repaired"
+          },
+          {
+            "id": "v82a97a5c97b4",
+            "label": "to repairing"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vaa09541e2a84"
+      },
+      "reference_answer": "vaa09541e2a84",
+      "incorrect_answer": "v82a97a5c97b4",
+      "editorial_answer": "to be repaired",
+      "explanation": "Нужное действие направлено на замок: to be repaired.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: checked / checking.",
+      "public_payload": {
+        "sentence": "The figures need to be ___."
+      },
+      "answer_key": {
+        "accepted": ["checked"]
+      },
+      "reference_answer": "checked",
+      "incorrect_answer": "checking",
+      "editorial_answer": "The figures need to be checked.",
+      "explanation": "После be в пассивном инфинитиве требуется checked.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Перед использованием оборудование нужно проверить.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "needs"
+          },
+          {
+            "id": "t4",
+            "label": "checking"
+          },
+          {
+            "id": "t5",
+            "label": "before"
+          },
+          {
+            "id": "t6",
+            "label": "use."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "equipment"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The equipment needs checking before use.",
+      "explanation": "Needs checking здесь имеет пассивный смысл.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The form needs to checked before submission."
+      },
+      "answer_key": {
+        "accepted": ["The form needs to be checked before submission."]
+      },
+      "reference_answer": "The form needs to be checked before submission.",
+      "incorrect_answer": "The form needs to checked before submission.",
+      "editorial_answer": "The form needs to be checked before submission.",
+      "explanation": "В пассивном инфинитиве недостаёт be.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что означала запись estimates needed checking?",
+      "public_payload": {
+        "passage": "Before submitting an application, the coordinator listed several outstanding tasks. The cost estimates needed checking, and one attachment needed to be replaced. A colleague read the list as a record of work already done. The coordinator clarified that need described requirements still to be met. The two grammatical forms focused on the materials requiring action, not on who would carry it out. The team assigned each task to a named person and recorded completion separately once the checks and replacement had actually occurred.",
+        "options": [
+          {
+            "id": "vb86589fab41b",
+            "label": "The estimates still required a check."
+          },
+          {
+            "id": "vbea793a920ea",
+            "label": "The estimates had already been confirmed correct."
+          },
+          {
+            "id": "v63b10f06ed87",
+            "label": "The estimates would perform the check themselves."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb86589fab41b"
+      },
+      "reference_answer": "vb86589fab41b",
+      "incorrect_answer": "vbea793a920ea",
+      "editorial_answer": "The estimates still required a check.",
+      "explanation": "Need обозначает необходимость, а не завершённое исполнение.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l78b8765a02c4",
+            "label": "verify"
+          },
+          {
+            "id": "ld7a4d0e5d49c",
+            "label": "repair"
+          },
+          {
+            "id": "la321f8584a6b",
+            "label": "require"
+          },
+          {
+            "id": "l0fdf90cecf58",
+            "label": "outstanding"
+          }
+        ],
+        "right": [
+          {
+            "id": "r35a27e4a4bca",
+            "label": "требовать"
+          },
+          {
+            "id": "re6362a761dec",
+            "label": "ещё не выполненный"
+          },
+          {
+            "id": "r00d928efa1c6",
+            "label": "проверять"
+          },
+          {
+            "id": "rfb4949b140cd",
+            "label": "ремонтировать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l78b8765a02c4": "r00d928efa1c6",
+          "ld7a4d0e5d49c": "rfb4949b140cd",
+          "la321f8584a6b": "r35a27e4a4bca",
+          "l0fdf90cecf58": "re6362a761dec"
+        }
+      },
+      "reference_answer": {
+        "l78b8765a02c4": "r00d928efa1c6",
+        "ld7a4d0e5d49c": "rfb4949b140cd",
+        "la321f8584a6b": "r35a27e4a4bca",
+        "l0fdf90cecf58": "re6362a761dec"
+      },
+      "incorrect_answer": {
+        "l78b8765a02c4": "rfb4949b140cd",
+        "ld7a4d0e5d49c": "r00d928efa1c6",
+        "la321f8584a6b": "r35a27e4a4bca",
+        "l0fdf90cecf58": "re6362a761dec"
+      },
+      "editorial_answer": "verify — проверять; repair — ремонтировать; require — требовать; outstanding — ещё не выполненный",
+      "explanation": "В этих контекстах: verify — проверять; repair — ремонтировать; require — требовать; outstanding — ещё не выполненный.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как команда устранила неопределённость об исполнителях?",
+      "public_payload": {
+        "passage": "Before submitting an application, the coordinator listed several outstanding tasks. The cost estimates needed checking, and one attachment needed to be replaced. A colleague read the list as a record of work already done. The coordinator clarified that need described requirements still to be met. The two grammatical forms focused on the materials requiring action, not on who would carry it out. The team assigned each task to a named person and recorded completion separately once the checks and replacement had actually occurred.",
+        "options": [
+          {
+            "id": "v0fe6db066db8",
+            "label": "Assumed the passive meaning named everyone automatically."
+          },
+          {
+            "id": "vd395bb9a88d2",
+            "label": "Removed the requirement to replace the attachment."
+          },
+          {
+            "id": "v47b85fde0ccc",
+            "label": "Assigned tasks to named people."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v47b85fde0ccc"
+      },
+      "reference_answer": "v47b85fde0ccc",
+      "incorrect_answer": "v0fe6db066db8",
+      "editorial_answer": "Assigned tasks to named people.",
+      "explanation": "Грамматика фокусировала материалы; исполнителей назначили отдельно.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сопоставь две допустимые модели.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which two forms can express the need for a room to be cleaned?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v4586f24c3c34",
+            "label": "It needs cleaning; it needs to be cleaned."
+          },
+          {
+            "id": "vddf791959867",
+            "label": "It needs clean; it needs to cleaned."
+          },
+          {
+            "id": "v84e99febff4b",
+            "label": "It need cleaning; it needs to be clean yesterday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4586f24c3c34"
+      },
+      "reference_answer": "v4586f24c3c34",
+      "incorrect_answer": "vddf791959867",
+      "editorial_answer": "It needs cleaning; it needs to be cleaned.",
+      "explanation": "Need + -ing и need to be + причастие могут выражать пассивную необходимость.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A task not yet completed is ___.",
+        "options": [
+          {
+            "id": "vf2422c957780",
+            "label": "completed by definition"
+          },
+          {
+            "id": "vca9ca560bc74",
+            "label": "irrelevant necessarily"
+          },
+          {
+            "id": "ve7d6ba73da4d",
+            "label": "outstanding"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve7d6ba73da4d"
+      },
+      "reference_answer": "ve7d6ba73da4d",
+      "incorrect_answer": "vf2422c957780",
+      "editorial_answer": "outstanding",
+      "explanation": "Outstanding в данном рабочем контексте означает остающийся невыполненным.",
+      "key": "e09"
+    }
+  ]
+}

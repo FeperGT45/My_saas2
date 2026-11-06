@@ -1,0 +1,330 @@
+{
+  "key": "a1/every-room",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A1 · формы и значения",
+    "position": 40
+  },
+  "position": 4,
+  "title": "Каждая комната и общий признак",
+  "description": "Каждая комната и общий признак: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать every с единственным числом",
+    "Согласовывать every room с has/is"
+  ],
+  "notes": [
+    "После every обычно используется единственное исчисляемое: every room.",
+    "Every room has a window, хотя речь идёт о нескольких комнатах в группе."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/at-work-in-room"],
+  "lexicon": [
+    {
+      "en": "every",
+      "ru": "каждый"
+    },
+    {
+      "en": "window",
+      "ru": "окно"
+    },
+    {
+      "en": "lamp",
+      "ru": "лампа"
+    },
+    {
+      "en": "desk",
+      "ru": "письменный стол"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Every room ___ a desk.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vfb89b474d9de",
+            "label": "has"
+          },
+          {
+            "id": "v64390d9ea598",
+            "label": "have"
+          },
+          {
+            "id": "v2aea134e46d2",
+            "label": "having"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfb89b474d9de"
+      },
+      "reference_answer": "vfb89b474d9de",
+      "incorrect_answer": "v64390d9ea598",
+      "editorial_answer": "has",
+      "explanation": "Every room грамматически единственное число, поэтому has.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: desk / desks.",
+      "public_payload": {
+        "sentence": "Every ___ has a lamp."
+      },
+      "answer_key": {
+        "accepted": ["desk"]
+      },
+      "reference_answer": "desk",
+      "incorrect_answer": "desks",
+      "editorial_answer": "Every desk has a lamp.",
+      "explanation": "После every в этой модели нужен desk в единственном числе.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «В каждом классе есть окно.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "has"
+          },
+          {
+            "id": "t4",
+            "label": "a"
+          },
+          {
+            "id": "t5",
+            "label": "window."
+          },
+          {
+            "id": "t1",
+            "label": "Every"
+          },
+          {
+            "id": "t2",
+            "label": "classroom"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Every classroom has a window.",
+      "explanation": "Every classroom требует has.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Every rooms is clean."
+      },
+      "answer_key": {
+        "accepted": ["Every room is clean."]
+      },
+      "reference_answer": "Every room is clean.",
+      "incorrect_answer": "Every rooms is clean.",
+      "editorial_answer": "Every room is clean.",
+      "explanation": "После every нужна форма room в единственном числе.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что есть в каждом классе?",
+      "public_payload": {
+        "passage": "Our school has four small classrooms. Every classroom has a window and a clock. Room two has two doors. The other rooms have one door each.",
+        "options": [
+          {
+            "id": "v86f1d8f13fc9",
+            "label": "Two doors."
+          },
+          {
+            "id": "ve7688bcc2e22",
+            "label": "Four desks, according to the text."
+          },
+          {
+            "id": "v266ff5628fc0",
+            "label": "A window and a clock."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v266ff5628fc0"
+      },
+      "reference_answer": "v266ff5628fc0",
+      "incorrect_answer": "v86f1d8f13fc9",
+      "editorial_answer": "A window and a clock.",
+      "explanation": "Общий признак дан после every classroom.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lcd6ccf686ac5",
+            "label": "every"
+          },
+          {
+            "id": "lbf37d8bc8528",
+            "label": "window"
+          },
+          {
+            "id": "l3d98e72e1b26",
+            "label": "lamp"
+          },
+          {
+            "id": "l98e98a8ec3bf",
+            "label": "desk"
+          }
+        ],
+        "right": [
+          {
+            "id": "r6faa651873c8",
+            "label": "лампа"
+          },
+          {
+            "id": "r02af2e4bf103",
+            "label": "письменный стол"
+          },
+          {
+            "id": "r818b34e474ad",
+            "label": "каждый"
+          },
+          {
+            "id": "rd147b6df27b6",
+            "label": "окно"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lcd6ccf686ac5": "r818b34e474ad",
+          "lbf37d8bc8528": "rd147b6df27b6",
+          "l3d98e72e1b26": "r6faa651873c8",
+          "l98e98a8ec3bf": "r02af2e4bf103"
+        }
+      },
+      "reference_answer": {
+        "lcd6ccf686ac5": "r818b34e474ad",
+        "lbf37d8bc8528": "rd147b6df27b6",
+        "l3d98e72e1b26": "r6faa651873c8",
+        "l98e98a8ec3bf": "r02af2e4bf103"
+      },
+      "incorrect_answer": {
+        "lcd6ccf686ac5": "rd147b6df27b6",
+        "lbf37d8bc8528": "r818b34e474ad",
+        "l3d98e72e1b26": "r6faa651873c8",
+        "l98e98a8ec3bf": "r02af2e4bf103"
+      },
+      "editorial_answer": "every — каждый; window — окно; lamp — лампа; desk — письменный стол",
+      "explanation": "В этих контекстах: every — каждый; window — окно; lamp — лампа; desk — письменный стол.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какая комната отличается количеством дверей?",
+      "public_payload": {
+        "passage": "Our school has four small classrooms. Every classroom has a window and a clock. Room two has two doors. The other rooms have one door each.",
+        "options": [
+          {
+            "id": "ve736cac73e69",
+            "label": "No room."
+          },
+          {
+            "id": "v5e528af4aee3",
+            "label": "Room two."
+          },
+          {
+            "id": "v1e41dee767ef",
+            "label": "Every room."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5e528af4aee3"
+      },
+      "reference_answer": "v5e528af4aee3",
+      "incorrect_answer": "v1e41dee767ef",
+      "editorial_answer": "Room two.",
+      "explanation": "В комнате два две двери, в остальных по одной.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь с every и правильным согласованием.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does every room have a desk?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vcc44289d24e4",
+            "label": "Yes, every rooms have one."
+          },
+          {
+            "id": "v46eecbcadcd4",
+            "label": "Yes, every room have one."
+          },
+          {
+            "id": "v4c12b3984596",
+            "label": "Yes, every room has one."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4c12b3984596"
+      },
+      "reference_answer": "v4c12b3984596",
+      "incorrect_answer": "vcc44289d24e4",
+      "editorial_answer": "Yes, every room has one.",
+      "explanation": "В утверждении every room has используется единственное число.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A light that you can put on a desk is a ___.",
+        "options": [
+          {
+            "id": "v4b6320babdc9",
+            "label": "door"
+          },
+          {
+            "id": "vd7fe22b0ed7c",
+            "label": "lamp"
+          },
+          {
+            "id": "vf8c716e2b8be",
+            "label": "window"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd7fe22b0ed7c"
+      },
+      "reference_answer": "vd7fe22b0ed7c",
+      "incorrect_answer": "vf8c716e2b8be",
+      "editorial_answer": "lamp",
+      "explanation": "Lamp — настольная или другая переносная лампа.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "key": "a1/not-doing-now",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A1 · формы и значения",
+    "position": 40
+  },
+  "position": 7,
+  "title": "Что сейчас не происходит",
+  "description": "Что сейчас не происходит: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Строить am/is/are not + -ing",
+    "Отличать действие сейчас от обычной привычки"
+  ],
+  "notes": [
+    "Отрицание процесса: She is not working now.",
+    "Для действия сейчас нужен be + -ing; do not используется в другой модели обычных действий."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/does-he-work"],
+  "lexicon": [
+    {
+      "en": "now",
+      "ru": "сейчас"
+    },
+    {
+      "en": "wait",
+      "ru": "ждать"
+    },
+    {
+      "en": "sleep",
+      "ru": "спать"
+    },
+    {
+      "en": "write",
+      "ru": "писать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Look at Ben. He ___ sleeping; he is reading.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v833d4c9e2ed5",
+            "label": "is not"
+          },
+          {
+            "id": "v85bb824dc45d",
+            "label": "does not"
+          },
+          {
+            "id": "v6b9eaf263bf9",
+            "label": "not is to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v833d4c9e2ed5"
+      },
+      "reference_answer": "v833d4c9e2ed5",
+      "incorrect_answer": "v85bb824dc45d",
+      "editorial_answer": "is not",
+      "explanation": "В отрицании текущего процесса требуется is not sleeping.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: write / writing.",
+      "public_payload": {
+        "sentence": "They are not ___ the report now."
+      },
+      "answer_key": {
+        "accepted": ["writing"]
+      },
+      "reference_answer": "writing",
+      "incorrect_answer": "write",
+      "editorial_answer": "They are not writing the report now.",
+      "explanation": "После are not нужна -ing-форма writing.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы сейчас не ждём снаружи.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "not"
+          },
+          {
+            "id": "t4",
+            "label": "waiting"
+          },
+          {
+            "id": "t5",
+            "label": "outside."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "are"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "We are not waiting outside.",
+      "explanation": "Are not waiting описывает текущую ситуацию.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She not is working now."
+      },
+      "answer_key": {
+        "accepted": ["She is not working now."]
+      },
+      "reference_answer": "She is not working now.",
+      "incorrect_answer": "She not is working now.",
+      "editorial_answer": "She is not working now.",
+      "explanation": "Not ставится после is.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что сейчас делает Бен?",
+      "public_payload": {
+        "passage": "It is ten o’clock. Ben is reading in the kitchen. He is not sleeping. His parents are working, but his sister is not working today. She is at school.",
+        "options": [
+          {
+            "id": "veed3f87eebca",
+            "label": "Sleeping."
+          },
+          {
+            "id": "vdee8a69a2de9",
+            "label": "Working at school."
+          },
+          {
+            "id": "v0527270b5442",
+            "label": "Reading."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0527270b5442"
+      },
+      "reference_answer": "v0527270b5442",
+      "incorrect_answer": "veed3f87eebca",
+      "editorial_answer": "Reading.",
+      "explanation": "Противопоставлены reading и not sleeping.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l78040e83c27c",
+            "label": "now"
+          },
+          {
+            "id": "l5f261ea738be",
+            "label": "wait"
+          },
+          {
+            "id": "l346f3a299b70",
+            "label": "sleep"
+          },
+          {
+            "id": "lf9e6133b3545",
+            "label": "write"
+          }
+        ],
+        "right": [
+          {
+            "id": "rc536d42a9088",
+            "label": "спать"
+          },
+          {
+            "id": "r8554f5fe2ec0",
+            "label": "писать"
+          },
+          {
+            "id": "rf0cce23e6de0",
+            "label": "сейчас"
+          },
+          {
+            "id": "r00b176663aec",
+            "label": "ждать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l78040e83c27c": "rf0cce23e6de0",
+          "l5f261ea738be": "r00b176663aec",
+          "l346f3a299b70": "rc536d42a9088",
+          "lf9e6133b3545": "r8554f5fe2ec0"
+        }
+      },
+      "reference_answer": {
+        "l78040e83c27c": "rf0cce23e6de0",
+        "l5f261ea738be": "r00b176663aec",
+        "l346f3a299b70": "rc536d42a9088",
+        "lf9e6133b3545": "r8554f5fe2ec0"
+      },
+      "incorrect_answer": {
+        "l78040e83c27c": "r00b176663aec",
+        "l5f261ea738be": "rf0cce23e6de0",
+        "l346f3a299b70": "rc536d42a9088",
+        "lf9e6133b3545": "r8554f5fe2ec0"
+      },
+      "editorial_answer": "now — сейчас; wait — ждать; sleep — спать; write — писать",
+      "explanation": "В этих контекстах: now — сейчас; wait — ждать; sleep — спать; write — писать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где его сестра?",
+      "public_payload": {
+        "passage": "It is ten o’clock. Ben is reading in the kitchen. He is not sleeping. His parents are working, but his sister is not working today. She is at school.",
+        "options": [
+          {
+            "id": "v68140f21e6f3",
+            "label": "At her workplace today."
+          },
+          {
+            "id": "vad55117b014b",
+            "label": "At school."
+          },
+          {
+            "id": "v064e864742de",
+            "label": "In the kitchen with Ben."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vad55117b014b"
+      },
+      "reference_answer": "vad55117b014b",
+      "incorrect_answer": "v064e864742de",
+      "editorial_answer": "At school.",
+      "explanation": "Её место названо в последней фразе.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о текущем процессе.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Are you waiting for the bus now?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v13e2c28f6699",
+            "label": "No, I do not waiting for it."
+          },
+          {
+            "id": "vad6e9c865312",
+            "label": "No, I not am waiting for it."
+          },
+          {
+            "id": "v66dea76af98d",
+            "label": "No, I am not waiting for it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v66dea76af98d"
+      },
+      "reference_answer": "v66dea76af98d",
+      "incorrect_answer": "v13e2c28f6699",
+      "editorial_answer": "No, I am not waiting for it.",
+      "explanation": "Am not waiting сохраняет нужную форму процесса.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The word meaning at this moment is ___.",
+        "options": [
+          {
+            "id": "v6eef5375e7b4",
+            "label": "usually"
+          },
+          {
+            "id": "ve49c6cf58368",
+            "label": "now"
+          },
+          {
+            "id": "v751a17d61f84",
+            "label": "yesterday"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve49c6cf58368"
+      },
+      "reference_answer": "ve49c6cf58368",
+      "incorrect_answer": "v751a17d61f84",
+      "editorial_answer": "now",
+      "explanation": "Now относится к текущему моменту, а не к прошлому или частоте.",
+      "key": "e09"
+    }
+  ]
+}

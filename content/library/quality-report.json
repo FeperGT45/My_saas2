@@ -1,18 +1,18 @@
 {
   "package": "english-path-core",
-  "revision": 6,
+  "revision": 7,
   "summary": {
-    "lessons": 172,
-    "exercises": 1456,
-    "levels": { "A1": 42, "A2": 37, "B1": 36, "B2": 31, "C1": 13, "C2": 13 }
+    "lessons": 212,
+    "exercises": 1816,
+    "levels": { "A1": 50, "A2": 45, "B1": 44, "B2": 37, "C1": 19, "C2": 17 }
   },
   "availability": {
-    "publishedNonAudioFullLessons": 169,
+    "publishedNonAudioFullLessons": 209,
     "archivedAudioLessons": 3,
     "introductoryLessonsIncluded": false,
     "targetFullLessons": 300,
-    "remaining": 131,
-    "byLevel": { "A1": 41, "A2": 36, "B1": 35, "B2": 31, "C1": 13, "C2": 13 },
+    "remaining": 91,
+    "byLevel": { "A1": 49, "A2": 44, "B1": 43, "B2": 37, "C1": 19, "C2": 17 },
     "basis": "Local modular sources after audio retirement; verify production count separately after import."
   },
   "structure": "passed",
@@ -20,19 +20,19 @@
   "gradingCheck": "npm run test:library verifies all positive/negative references with the production SQL grader",
   "methodology": "Author review and automated checks; CEFR labels remain provisional, without external psychometric calibration.",
   "types": {
-    "context_choice": 165,
-    "correction": 163,
-    "dialogue": 158,
+    "context_choice": 205,
+    "correction": 203,
+    "dialogue": 198,
     "dictation": 3,
     "error_identification": 4,
-    "gap": 163,
+    "gap": 203,
     "grammar": 1,
-    "matching": 87,
+    "matching": 127,
     "multiple_choice": 15,
-    "reading": 286,
+    "reading": 366,
     "response_choice": 9,
-    "sentence": 151,
-    "single_choice": 152,
+    "sentence": 191,
+    "single_choice": 192,
     "spelling": 1,
     "synonym_antonym": 8,
     "tenses": 7,
@@ -1417,6 +1417,326 @@
       "types": 8,
       "readingWords": [88, 88],
       "sha256": "72ee729f20e8cdfc881a4912db4df0b6f87766560e225a8b3264c6dfd665b22a"
+    },
+    {
+      "key": "a1/floor-numbers",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [24, 24],
+      "sha256": "8883843c2b84d1088298644571efb2bf7deba6129e7d7fa7cd083c34a693ac28"
+    },
+    {
+      "key": "a1/calendar-dates",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [27, 27],
+      "sha256": "2961f155b4a001a2fbe31a475bef015cc31fea638b5bb792528ddfdd2072b17c"
+    },
+    {
+      "key": "a1/at-work-in-room",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [24, 24],
+      "sha256": "c6ea0ede1a2e47a042668ca75a810d6fe1b3230f108d308af1811f6af8c9c0f7"
+    },
+    {
+      "key": "a1/every-room",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [26, 26],
+      "sha256": "f0707663c6701cc90099470a68409d7789c87c2a85017f10f6d00088062d1b44"
+    },
+    {
+      "key": "a1/who-is-the-teacher",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [25, 25],
+      "sha256": "357352bac5686b35617ba257f6f24a0f0025efd8004b9fb8cb40b966d7cca0f5"
+    },
+    {
+      "key": "a1/does-he-work",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [28, 28],
+      "sha256": "59d03a6caba132d1ac3f62d8b18332666c0b1a55e16c392b2860abdec68be3aa"
+    },
+    {
+      "key": "a1/not-doing-now",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [29, 29],
+      "sha256": "50fa5ee8becec0b85b7c52e9e78b7abf11422a772e3b2d09ca82481f75a30c1c"
+    },
+    {
+      "key": "a1/and-but-profile",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [26, 26],
+      "sha256": "c424ae7f6fdc8dc8f085841b183d07952f0b2ddfbe05307ae0c4559ef4aa2899"
+    },
+    {
+      "key": "a2/irregular-story-verbs",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [45, 45],
+      "sha256": "e856d0536c0c4598bbfcdb4e8f8b2a49dbd2e41744dc06edb81274895fc54b0d"
+    },
+    {
+      "key": "a2/during-or-for",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [54, 54],
+      "sha256": "1bee758f91c7a03c33088fbfa7a90139739782242117d4a70b971daa0cb5b446"
+    },
+    {
+      "key": "a2/enough-before-noun",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [46, 46],
+      "sha256": "9edb9ce277bba913c364deedee04c83e7c8307924b285d9761a6ff0d62f74ec5"
+    },
+    {
+      "key": "a2/better-worse-choices",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [52, 52],
+      "sha256": "56db72ff0d97d15a5986fe8aa858cf794f7cc0d7f9370a6071eddab7a8182c74"
+    },
+    {
+      "key": "a2/also-and-too",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [42, 42],
+      "sha256": "cf99575671564eebcfa42ef9678b5267098de46232e62264f75c82d6bc1199b9"
+    },
+    {
+      "key": "a2/enjoy-and-finish",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [43, 43],
+      "sha256": "98de6d75daf3a34cb070ee37d4a51a043f00996cba4b0ed1ac7c8ec447b560e7"
+    },
+    {
+      "key": "a2/might-next-week",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [41, 41],
+      "sha256": "cfea6cf9df36455ca098c0d2bf154472bc383809e069b98e5e065a5ae69dd4c7"
+    },
+    {
+      "key": "a2/who-called-whom",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [45, 45],
+      "sha256": "79b11e4bc23c75fb6ef38d8a0e65ded091f54fc024bbfbdc8f58241c9137097b"
+    },
+    {
+      "key": "b1/been-or-gone",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [61, 61],
+      "sha256": "a43e35705e4f1b22194055924506f0e3fdd3d0108e48fafea61a3bbabfbd9c15"
+    },
+    {
+      "key": "b1/still-anymore",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [57, 57],
+      "sha256": "92226b1832761a91c759b30fadb35dbcc0977206be5d0d89be7d56da3a3184c3"
+    },
+    {
+      "key": "b1/imagined-present",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [67, 67],
+      "sha256": "0280e54150ff8cb8b39e1d50c346167b29c213510e5d48f05d8fc5213baed18f"
+    },
+    {
+      "key": "b1/make-let-actions",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [58, 58],
+      "sha256": "3cc4d81258d9e9f335afa2fc7bbbb829aa0db8f05829bfaf6a0f4e15a8250dd9"
+    },
+    {
+      "key": "b1/relative-object-omission",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [71, 71],
+      "sha256": "babfb29495b40d91214f88e65158de32ce5acefd46a0a24816e94b939b309fd9"
+    },
+    {
+      "key": "b1/more-and-more",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [65, 65],
+      "sha256": "d846bf978de063999cebd47c08eac9b5cac15a12c4c71b7d74f15dd354f51c0d"
+    },
+    {
+      "key": "b1/so-neither-agreement",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [58, 58],
+      "sha256": "2085b52eb05fce192539cc53be69fc265e81d7432c159f0a6d9ee16bd004648b"
+    },
+    {
+      "key": "b1/remind-warn-not",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [62, 62],
+      "sha256": "a7d6351e7761d773acdeb9d836588f2a4f6e0889b805b4bde22e1bd17ff64206"
+    },
+    {
+      "key": "b2/by-time-sequence",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [87, 87],
+      "sha256": "80542cc2fcf67c9af29c338b6c6213fedc6c88a7d8e8476b4fcfdddcad07bf6b"
+    },
+    {
+      "key": "b2/ed-ing-reactions",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [77, 77],
+      "sha256": "8918e45ad84b96e8c6e0ecda8121e1c1de3dc2a2589a48022b8a5d8ff793797d"
+    },
+    {
+      "key": "b2/no-matter-how",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [82, 82],
+      "sha256": "5a20cd8d9dfa8155c139e28cd944d49f8a3568acfabc0f52325bb28f28b98da3"
+    },
+    {
+      "key": "b2/likely-and-bound",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [85, 85],
+      "sha256": "9095819d593280e647ecf945e1fd8b35f5703b3495f50d0b5c4fc78ab864d1c6"
+    },
+    {
+      "key": "b2/future-perfect-duration",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [89, 89],
+      "sha256": "56df3a7e5a1a281599959e5d14a925177937e8fa81988a8b39216b16cd7fb0fb"
+    },
+    {
+      "key": "b2/needs-checking",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [83, 83],
+      "sha256": "e857eba363aba0897fc7b3857ed68d28f2352649293769a751f3220ff51d575b"
+    },
+    {
+      "key": "c1/with-background-clause",
+      "level": "C1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [107, 107],
+      "sha256": "5553356bdc0cbb7f2fd6c3936a9bed73784f4098fe614bb10bf41e8831594134"
+    },
+    {
+      "key": "c1/essential-that-subjunctive",
+      "level": "C1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [104, 104],
+      "sha256": "5b0e2e4c734dc17b457547feaf8ad838e4a6a165f5b898d379219754f9d8b8df"
+    },
+    {
+      "key": "c1/the-more-the-less",
+      "level": "C1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [108, 108],
+      "sha256": "a47df01e4e7d885a015f14c6d87c4ba7f36d2d47d5383ca4ed57581a444b5ecf"
+    },
+    {
+      "key": "c1/should-have-interpretation",
+      "level": "C1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [99, 99],
+      "sha256": "c48130722f964d35fb58c56186c0509f6826b0b6d76ab5a62996e32f895d239d"
+    },
+    {
+      "key": "c1/do-so-reference",
+      "level": "C1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [107, 107],
+      "sha256": "4128fc01cdd8e82e53ab83f424558773f9f7fd1a88b07e6932b6522730b8f3dc"
+    },
+    {
+      "key": "c1/far-from-complete",
+      "level": "C1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [103, 103],
+      "sha256": "5e8a1ba7eb0f4c7bd379053f787ba022898826659538f5f8a8a461944c7e7eab"
+    },
+    {
+      "key": "c2/rejecting-a-description",
+      "level": "C2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [120, 120],
+      "sha256": "18c7aab61fd401348103daf59e5aac3b64780462201d3fc3c6e1df6ed42a347e"
+    },
+    {
+      "key": "c2/consideration-not-commitment",
+      "level": "C2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [120, 120],
+      "sha256": "ef420e7ce4f35bbde8d47b3c8b3fb5c1258eca1924c190ac5d5a5a4ea2033c4a"
+    },
+    {
+      "key": "c2/voices-in-a-narrative",
+      "level": "C2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [118, 118],
+      "sha256": "7a5db1dfc12af74b32a105bf47c9976e2f766bc871c86ec6ebe0b1597fab225c"
+    },
+    {
+      "key": "c2/necessary-not-sufficient",
+      "level": "C2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [119, 119],
+      "sha256": "b4282acf8a2ad7bb4768dfbd6e31430e031a41050d8d7a381b12647adadf8545"
     }
   ]
 }

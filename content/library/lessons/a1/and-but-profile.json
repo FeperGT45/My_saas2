@@ -1,0 +1,366 @@
+{
+  "key": "a1/and-but-profile",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A1 · формы и значения",
+    "position": 40
+  },
+  "position": 8,
+  "title": "Соединяем простые сведения",
+  "description": "Соединяем простые сведения: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать and для добавления",
+    "Использовать but для простого контраста"
+  ],
+  "notes": [
+    "And добавляет сведения: I have a pen and a notebook.",
+    "But вводит контраст: I like tea, but I do not like coffee."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/not-doing-now"],
+  "lexicon": [
+    {
+      "en": "and",
+      "ru": "и"
+    },
+    {
+      "en": "but",
+      "ru": "но"
+    },
+    {
+      "en": "tea",
+      "ru": "чай"
+    },
+    {
+      "en": "coffee",
+      "ru": "кофе"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I like tea, ___ I do not like coffee.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vdeba55b6410a",
+            "label": "because of"
+          },
+          {
+            "id": "v6f6f75c7030c",
+            "label": "at"
+          },
+          {
+            "id": "v65e88828e720",
+            "label": "but"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v65e88828e720"
+      },
+      "reference_answer": "v65e88828e720",
+      "incorrect_answer": "vdeba55b6410a",
+      "editorial_answer": "but",
+      "explanation": "But вводит контраст двух предпочтений.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: and / but not.",
+      "public_payload": {
+        "sentence": "I have a pencil ___ a notebook."
+      },
+      "answer_key": {
+        "accepted": ["and"]
+      },
+      "reference_answer": "and",
+      "incorrect_answer": "but not",
+      "editorial_answer": "I have a pencil and a notebook.",
+      "explanation": "Утвердительное перечисление двух предметов соединяется and.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Он любит плавать, но не любит бегать.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "swimming,"
+          },
+          {
+            "id": "t4",
+            "label": "but"
+          },
+          {
+            "id": "t5",
+            "label": "he"
+          },
+          {
+            "id": "t6",
+            "label": "does"
+          },
+          {
+            "id": "t7",
+            "label": "not"
+          },
+          {
+            "id": "t8",
+            "label": "like"
+          },
+          {
+            "id": "t9",
+            "label": "running."
+          },
+          {
+            "id": "t1",
+            "label": "He"
+          },
+          {
+            "id": "t2",
+            "label": "likes"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "He likes swimming, but he does not like running.",
+      "explanation": "But связывает противопоставленные предпочтения.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She is tired but and happy."
+      },
+      "answer_key": {
+        "accepted": ["She is tired but happy."]
+      },
+      "reference_answer": "She is tired but happy.",
+      "incorrect_answer": "She is tired but and happy.",
+      "editorial_answer": "She is tired but happy.",
+      "explanation": "Для данного контраста достаточно but; лишнее and убирается.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой напиток Лена не любит?",
+      "public_payload": {
+        "passage": "Lena likes tea and apple juice, but she does not like coffee. Her brother likes coffee. They both like reading and often visit the library together.",
+        "options": [
+          {
+            "id": "veee6ad5356e0",
+            "label": "Apple juice."
+          },
+          {
+            "id": "v8d363452b064",
+            "label": "Coffee."
+          },
+          {
+            "id": "v88b9d903b29b",
+            "label": "Tea."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8d363452b064"
+      },
+      "reference_answer": "v8d363452b064",
+      "incorrect_answer": "v88b9d903b29b",
+      "editorial_answer": "Coffee.",
+      "explanation": "Отрицание после but относится к кофе.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lb4501d2c12d0",
+            "label": "and"
+          },
+          {
+            "id": "lac98418157bd",
+            "label": "but"
+          },
+          {
+            "id": "l983eb9f0652b",
+            "label": "tea"
+          },
+          {
+            "id": "l8e723a041c7a",
+            "label": "coffee"
+          }
+        ],
+        "right": [
+          {
+            "id": "r15b24e406f61",
+            "label": "чай"
+          },
+          {
+            "id": "re0bae0fe6077",
+            "label": "кофе"
+          },
+          {
+            "id": "r81a0c5617155",
+            "label": "и"
+          },
+          {
+            "id": "r89a1e3c9ccdf",
+            "label": "но"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lb4501d2c12d0": "r81a0c5617155",
+          "lac98418157bd": "r89a1e3c9ccdf",
+          "l983eb9f0652b": "r15b24e406f61",
+          "l8e723a041c7a": "re0bae0fe6077"
+        }
+      },
+      "reference_answer": {
+        "lb4501d2c12d0": "r81a0c5617155",
+        "lac98418157bd": "r89a1e3c9ccdf",
+        "l983eb9f0652b": "r15b24e406f61",
+        "l8e723a041c7a": "re0bae0fe6077"
+      },
+      "incorrect_answer": {
+        "lb4501d2c12d0": "r89a1e3c9ccdf",
+        "lac98418157bd": "r81a0c5617155",
+        "l983eb9f0652b": "r15b24e406f61",
+        "l8e723a041c7a": "re0bae0fe6077"
+      },
+      "editorial_answer": "and — и; but — но; tea — чай; coffee — кофе",
+      "explanation": "В этих контекстах: and — и; but — но; tea — чай; coffee — кофе.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что объединяет Лену и брата?",
+      "public_payload": {
+        "passage": "Lena likes tea and apple juice, but she does not like coffee. Her brother likes coffee. They both like reading and often visit the library together.",
+        "options": [
+          {
+            "id": "v53a580c23893",
+            "label": "They both like reading."
+          },
+          {
+            "id": "vaf1628bac95a",
+            "label": "They both dislike coffee."
+          },
+          {
+            "id": "v21436916bb56",
+            "label": "They both work in the library."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v53a580c23893"
+      },
+      "reference_answer": "v53a580c23893",
+      "incorrect_answer": "vaf1628bac95a",
+      "editorial_answer": "They both like reading.",
+      "explanation": "Общим названо чтение; о работе сведений нет.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь с ясным контрастом предпочтений.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Do you enjoy both activities?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vd9c5d3c9afc1",
+            "label": "I like walking and but do running."
+          },
+          {
+            "id": "v7b13345c6657",
+            "label": "I like walking, but I do not like running."
+          },
+          {
+            "id": "vadddfdf8fab6",
+            "label": "I like walking, but of running."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7b13345c6657"
+      },
+      "reference_answer": "v7b13345c6657",
+      "incorrect_answer": "vadddfdf8fab6",
+      "editorial_answer": "I like walking, but I do not like running.",
+      "explanation": "But соединяет положительное и отрицательное утверждения.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The drink in “I like tea” is ___.",
+        "options": [
+          {
+            "id": "v39cfa71c8f13",
+            "label": "tea"
+          },
+          {
+            "id": "v83c45dd2a24b",
+            "label": "but"
+          },
+          {
+            "id": "v4a107590486e",
+            "label": "and"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v39cfa71c8f13"
+      },
+      "reference_answer": "v39cfa71c8f13",
+      "incorrect_answer": "v83c45dd2a24b",
+      "editorial_answer": "tea",
+      "explanation": "Tea — напиток, and и but — связки.",
+      "key": "e09"
+    }
+  ]
+}

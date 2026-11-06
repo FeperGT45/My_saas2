@@ -1,0 +1,366 @@
+{
+  "key": "b2/by-time-sequence",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B2 · формы и значения",
+    "position": 40
+  },
+  "position": 1,
+  "title": "К определённому моменту рассказа",
+  "description": "К определённому моменту рассказа: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Сопоставлять событие и уже завершившееся действие с by the time",
+    "Не менять хронологию при пересказе"
+  ],
+  "notes": [
+    "By the time we arrived, the session had ended: завершение предшествовало прибытию.",
+    "When we arrived, the session ended может описывать совпадение событий; это не тот же временной смысл."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/remember-and-stop"],
+  "lexicon": [
+    {
+      "en": "prior",
+      "ru": "предшествующий"
+    },
+    {
+      "en": "subsequent",
+      "ru": "последующий"
+    },
+    {
+      "en": "overlap",
+      "ru": "совпадение во времени"
+    },
+    {
+      "en": "sequence",
+      "ru": "последовательность"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: By the time the observers arrived, the vote ___ already finished.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v731ccaa6ea63",
+            "label": "had"
+          },
+          {
+            "id": "ve9235bada660",
+            "label": "has yesterday"
+          },
+          {
+            "id": "v2a36a4012022",
+            "label": "would having"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v731ccaa6ea63"
+      },
+      "reference_answer": "v731ccaa6ea63",
+      "incorrect_answer": "ve9235bada660",
+      "editorial_answer": "had",
+      "explanation": "Had finished указывает на завершение раньше прибытия в прошлом.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: ending / ended.",
+      "public_payload": {
+        "sentence": "The guests arrived after the demonstration had ___."
+      },
+      "answer_key": {
+        "accepted": ["ended"]
+      },
+      "reference_answer": "ended",
+      "incorrect_answer": "ending",
+      "editorial_answer": "The guests arrived after the demonstration had ended.",
+      "explanation": "После had требуется причастие ended.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «К нашему приходу обсуждение уже закончилось.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "time"
+          },
+          {
+            "id": "t4",
+            "label": "we"
+          },
+          {
+            "id": "t5",
+            "label": "arrived,"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "discussion"
+          },
+          {
+            "id": "t8",
+            "label": "had"
+          },
+          {
+            "id": "t9",
+            "label": "ended."
+          },
+          {
+            "id": "t1",
+            "label": "By"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "By the time we arrived, the discussion had ended.",
+      "explanation": "Эта модель устанавливает, что прибытие было позже завершения.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "By the time I arrived, they has already left."
+      },
+      "answer_key": {
+        "accepted": ["By the time I arrived, they had already left."]
+      },
+      "reference_answer": "By the time I arrived, they had already left.",
+      "incorrect_answer": "By the time I arrived, they has already left.",
+      "editorial_answer": "By the time I arrived, they had already left.",
+      "explanation": "Для предшествующего события в прошлом используется had left.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что наблюдатели не видели?",
+      "public_payload": {
+        "passage": "The summary said that the observers arrived when the vote ended. The meeting record was more precise: by the time they arrived, the vote had already finished and the chair was reading the result. This difference mattered because the observers had not witnessed the voting itself. They could report what happened afterwards, but their presence at the announcement did not make them witnesses to the earlier procedure. The editor revised the summary to preserve that sequence rather than implying an overlap that the record did not establish.",
+        "options": [
+          {
+            "id": "v3ca81f5ad5fd",
+            "label": "The announcement of the result."
+          },
+          {
+            "id": "v1f4bad5e2f1a",
+            "label": "Any part of the meeting afterwards."
+          },
+          {
+            "id": "v39a1ac83e784",
+            "label": "The voting itself."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v39a1ac83e784"
+      },
+      "reference_answer": "v39a1ac83e784",
+      "incorrect_answer": "v3ca81f5ad5fd",
+      "editorial_answer": "The voting itself.",
+      "explanation": "Они прибыли после завершения голосования.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l7649feb518bf",
+            "label": "prior"
+          },
+          {
+            "id": "l83ebb9117eb0",
+            "label": "subsequent"
+          },
+          {
+            "id": "l7c81c725da1e",
+            "label": "overlap"
+          },
+          {
+            "id": "l0d11220c61aa",
+            "label": "sequence"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3839bf82b5e5",
+            "label": "совпадение во времени"
+          },
+          {
+            "id": "rd8e42cef8145",
+            "label": "последовательность"
+          },
+          {
+            "id": "r41fed84c6f2a",
+            "label": "предшествующий"
+          },
+          {
+            "id": "rc8e07cbad970",
+            "label": "последующий"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l7649feb518bf": "r41fed84c6f2a",
+          "l83ebb9117eb0": "rc8e07cbad970",
+          "l7c81c725da1e": "r3839bf82b5e5",
+          "l0d11220c61aa": "rd8e42cef8145"
+        }
+      },
+      "reference_answer": {
+        "l7649feb518bf": "r41fed84c6f2a",
+        "l83ebb9117eb0": "rc8e07cbad970",
+        "l7c81c725da1e": "r3839bf82b5e5",
+        "l0d11220c61aa": "rd8e42cef8145"
+      },
+      "incorrect_answer": {
+        "l7649feb518bf": "rc8e07cbad970",
+        "l83ebb9117eb0": "r41fed84c6f2a",
+        "l7c81c725da1e": "r3839bf82b5e5",
+        "l0d11220c61aa": "rd8e42cef8145"
+      },
+      "editorial_answer": "prior — предшествующий; subsequent — последующий; overlap — совпадение во времени; sequence — последовательность",
+      "explanation": "В этих контекстах: prior — предшествующий; subsequent — последующий; overlap — совпадение во времени; sequence — последовательность.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему потребовалось уточнить by the time?",
+      "public_payload": {
+        "passage": "The summary said that the observers arrived when the vote ended. The meeting record was more precise: by the time they arrived, the vote had already finished and the chair was reading the result. This difference mattered because the observers had not witnessed the voting itself. They could report what happened afterwards, but their presence at the announcement did not make them witnesses to the earlier procedure. The editor revised the summary to preserve that sequence rather than implying an overlap that the record did not establish.",
+        "options": [
+          {
+            "id": "vc0b467a04b11",
+            "label": "To make the result automatically invalid."
+          },
+          {
+            "id": "v50dfd2faadaa",
+            "label": "To avoid implying that arrival and the vote’s ending overlapped."
+          },
+          {
+            "id": "v2a72ed7490d0",
+            "label": "To claim they had arrived before the meeting began."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v50dfd2faadaa"
+      },
+      "reference_answer": "v50dfd2faadaa",
+      "incorrect_answer": "v2a72ed7490d0",
+      "editorial_answer": "To avoid implying that arrival and the vote’s ending overlapped.",
+      "explanation": "Уточнение сохраняет хронологию, не устанавливая новых оценок результата.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи, что демонстрация завершилась до твоего прихода.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Did you see the demonstration?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v1231870da8ae",
+            "label": "No. By the time I arrived, it has ended yesterday."
+          },
+          {
+            "id": "v3fe53305fbd7",
+            "label": "No. By the time I had arriving, it end."
+          },
+          {
+            "id": "v46b7d8eacfeb",
+            "label": "No. By the time I arrived, it had ended."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v46b7d8eacfeb"
+      },
+      "reference_answer": "v46b7d8eacfeb",
+      "incorrect_answer": "v1231870da8ae",
+      "editorial_answer": "No. By the time I arrived, it had ended.",
+      "explanation": "Past Perfect задаёт предшествующее завершение.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An event occurring after another is ___.",
+        "options": [
+          {
+            "id": "ve6f7cd6249a4",
+            "label": "simultaneous necessarily"
+          },
+          {
+            "id": "v8962078deb21",
+            "label": "subsequent"
+          },
+          {
+            "id": "vf211c7e5ab79",
+            "label": "prior"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8962078deb21"
+      },
+      "reference_answer": "v8962078deb21",
+      "incorrect_answer": "vf211c7e5ab79",
+      "editorial_answer": "subsequent",
+      "explanation": "Subsequent означает последующий.",
+      "key": "e09"
+    }
+  ]
+}

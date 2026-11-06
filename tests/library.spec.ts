@@ -38,12 +38,12 @@ test('published library uses real Supabase RPCs, filters by CEFR, plays a new le
       .getByRole('link', { name: 'Открыть полный каталог', exact: true })
       .click();
     await expect(
-      page.getByText('Уроков в каталоге: 171 · Курсов: 7'),
+      page.getByText('Уроков в каталоге: 211 · Курсов: 7'),
     ).toBeVisible();
     await page
       .getByRole('combobox', { name: 'Уровень материалов', exact: true })
-      .selectOption('B2');
-    await expect(page.getByRole('heading', { level: 3 })).toHaveCount(31);
+      .selectOption('C2');
+    await expect(page.getByRole('heading', { level: 3 })).toHaveCount(17);
     await page
       .getByRole('textbox', { name: 'Поиск уроков', exact: true })
       .fill('несуществующий-урок-123');
@@ -66,7 +66,7 @@ test('published library uses real Supabase RPCs, filters by CEFR, plays a new le
       ).violations,
     ).toEqual([]);
     const first = payload.lessons.find(
-      (l) => l.title === 'Привычка и привыкание',
+      (l) => l.title === 'Необходимое условие и гарантия результата',
     )!;
     await page
       .getByRole('textbox', { name: 'Поиск уроков', exact: true })
@@ -156,7 +156,7 @@ test('published library uses real Supabase RPCs, filters by CEFR, plays a new le
       .getByRole('button', { name: 'Повторить загрузку библиотеки' })
       .click();
     await expect(
-      page.getByText('Уроков в каталоге: 171 · Курсов: 7'),
+      page.getByText('Уроков в каталоге: 211 · Курсов: 7'),
     ).toBeVisible();
   } finally {
     await context.close();
@@ -191,12 +191,12 @@ test('library client works on the configured Next or Worker runtime with SQL-bac
     );
     await page.goto('/library');
     await expect(
-      page.getByText('Уроков в каталоге: 171 · Курсов: 7'),
+      page.getByText('Уроков в каталоге: 211 · Курсов: 7'),
     ).toBeVisible();
     await page
       .getByRole('combobox', { name: 'Уровень материалов', exact: true })
       .selectOption('B2');
-    await expect(page.getByRole('heading', { level: 3 })).toHaveCount(31);
+    await expect(page.getByRole('heading', { level: 3 })).toHaveCount(37);
     await page
       .getByRole('textbox', { name: 'Поиск уроков', exact: true })
       .fill('упущенные');

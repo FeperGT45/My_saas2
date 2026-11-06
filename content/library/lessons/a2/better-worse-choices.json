@@ -1,0 +1,366 @@
+{
+  "key": "a2/better-worse-choices",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A2 · формы и значения",
+    "position": 40
+  },
+  "position": 4,
+  "title": "Лучше и хуже: неправильное сравнение",
+  "description": "Лучше и хуже: неправильное сравнение: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать better и worse",
+    "Не добавлять more к готовой сравнительной форме"
+  ],
+  "notes": [
+    "Good → better; bad → worse.",
+    "Сравнение с другим вариантом часто вводится than: better than the old one."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/enough-before-noun"],
+  "lexicon": [
+    {
+      "en": "better",
+      "ru": "лучше"
+    },
+    {
+      "en": "worse",
+      "ru": "хуже"
+    },
+    {
+      "en": "condition",
+      "ru": "состояние"
+    },
+    {
+      "en": "repair",
+      "ru": "ремонт"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: This chair is in ___ condition than the broken one.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v574f7d001931",
+            "label": "gooder"
+          },
+          {
+            "id": "v62bdc174e6dd",
+            "label": "better"
+          },
+          {
+            "id": "vc04fb8f22391",
+            "label": "more good"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v62bdc174e6dd"
+      },
+      "reference_answer": "v62bdc174e6dd",
+      "incorrect_answer": "vc04fb8f22391",
+      "editorial_answer": "better",
+      "explanation": "Better — неправильная сравнительная форма good.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: worse / badder.",
+      "public_payload": {
+        "sentence": "The old road is ___ than the new one after the storm."
+      },
+      "answer_key": {
+        "accepted": ["worse"]
+      },
+      "reference_answer": "worse",
+      "incorrect_answer": "badder",
+      "editorial_answer": "The old road is worse than the new one after the storm.",
+      "explanation": "Bad имеет сравнительную форму worse.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Новая карта лучше старой.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "map"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "better"
+          },
+          {
+            "id": "t6",
+            "label": "than"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "old"
+          },
+          {
+            "id": "t9",
+            "label": "one."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "new"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "The new map is better than the old one.",
+      "explanation": "Better выражает сравнение с good.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "This copy is more better than that one."
+      },
+      "answer_key": {
+        "accepted": ["This copy is better than that one."]
+      },
+      "reference_answer": "This copy is better than that one.",
+      "incorrect_answer": "This copy is more better than that one.",
+      "editorial_answer": "This copy is better than that one.",
+      "explanation": "Better уже сравнительная степень, лишнее more убирается.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему выбрали меньший стол?",
+      "public_payload": {
+        "passage": "The club had two old tables. The larger one had a damaged leg, while the smaller one was in better condition. A volunteer repaired the large table, but it was still less stable. For the children’s activity, the organiser chose the smaller table and put the larger one aside for further repairs.",
+        "options": [
+          {
+            "id": "v38ae3443c76b",
+            "label": "It was in better condition and more stable."
+          },
+          {
+            "id": "v3f4ce278ac19",
+            "label": "It was the largest object in the room."
+          },
+          {
+            "id": "v2035dae8d591",
+            "label": "The larger table had no damage."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v38ae3443c76b"
+      },
+      "reference_answer": "v38ae3443c76b",
+      "incorrect_answer": "v3f4ce278ac19",
+      "editorial_answer": "It was in better condition and more stable.",
+      "explanation": "Размер оказался менее важен, чем состояние и устойчивость.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le6bbcf0d45c2",
+            "label": "better"
+          },
+          {
+            "id": "l6844beca6a2c",
+            "label": "worse"
+          },
+          {
+            "id": "l31eb40d49b89",
+            "label": "condition"
+          },
+          {
+            "id": "l4051ab7970fe",
+            "label": "repair"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3d6c7a6939ec",
+            "label": "состояние"
+          },
+          {
+            "id": "r72ee02fb2f8e",
+            "label": "ремонт"
+          },
+          {
+            "id": "r21efb47ff8b2",
+            "label": "лучше"
+          },
+          {
+            "id": "reb8068bfc517",
+            "label": "хуже"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le6bbcf0d45c2": "r21efb47ff8b2",
+          "l6844beca6a2c": "reb8068bfc517",
+          "l31eb40d49b89": "r3d6c7a6939ec",
+          "l4051ab7970fe": "r72ee02fb2f8e"
+        }
+      },
+      "reference_answer": {
+        "le6bbcf0d45c2": "r21efb47ff8b2",
+        "l6844beca6a2c": "reb8068bfc517",
+        "l31eb40d49b89": "r3d6c7a6939ec",
+        "l4051ab7970fe": "r72ee02fb2f8e"
+      },
+      "incorrect_answer": {
+        "le6bbcf0d45c2": "reb8068bfc517",
+        "l6844beca6a2c": "r21efb47ff8b2",
+        "l31eb40d49b89": "r3d6c7a6939ec",
+        "l4051ab7970fe": "r72ee02fb2f8e"
+      },
+      "editorial_answer": "better — лучше; worse — хуже; condition — состояние; repair — ремонт",
+      "explanation": "В этих контекстах: better — лучше; worse — хуже; condition — состояние; repair — ремонт.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что сделали с большим столом?",
+      "public_payload": {
+        "passage": "The club had two old tables. The larger one had a damaged leg, while the smaller one was in better condition. A volunteer repaired the large table, but it was still less stable. For the children’s activity, the organiser chose the smaller table and put the larger one aside for further repairs.",
+        "options": [
+          {
+            "id": "vd3076721069a",
+            "label": "Used it immediately for the children."
+          },
+          {
+            "id": "vec1479afa655",
+            "label": "Claimed it was perfectly stable."
+          },
+          {
+            "id": "v40697e31f1ef",
+            "label": "Put it aside for more repairs."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v40697e31f1ef"
+      },
+      "reference_answer": "v40697e31f1ef",
+      "incorrect_answer": "vd3076721069a",
+      "editorial_answer": "Put it aside for more repairs.",
+      "explanation": "После первого ремонта проблема устойчивости ещё оставалась.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Дай оценку с неправильной сравнительной формой.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Is this version easier to read?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vf8c3cc3d18f3",
+            "label": "Yes, it is better than the old copy."
+          },
+          {
+            "id": "v436fabca44e7",
+            "label": "Yes, it is more good than the old copy."
+          },
+          {
+            "id": "v021ffeb4a8be",
+            "label": "Yes, it is betterer than the old copy."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf8c3cc3d18f3"
+      },
+      "reference_answer": "vf8c3cc3d18f3",
+      "incorrect_answer": "v436fabca44e7",
+      "editorial_answer": "Yes, it is better than the old copy.",
+      "explanation": "Good → better, без дополнительного окончания.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The opposite comparative to better is ___.",
+        "options": [
+          {
+            "id": "v13a2d85a1a56",
+            "label": "worst only"
+          },
+          {
+            "id": "vc35857e0c2fe",
+            "label": "badly always"
+          },
+          {
+            "id": "v920b4a213f15",
+            "label": "worse"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v920b4a213f15"
+      },
+      "reference_answer": "v920b4a213f15",
+      "incorrect_answer": "v13a2d85a1a56",
+      "editorial_answer": "worse",
+      "explanation": "Worse — сравнительная форма, противопоставленная better.",
+      "key": "e09"
+    }
+  ]
+}

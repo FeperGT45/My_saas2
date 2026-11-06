@@ -1,0 +1,326 @@
+{
+  "key": "a2/enjoy-and-finish",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A2 · формы и значения",
+    "position": 40
+  },
+  "position": 6,
+  "title": "Действие после enjoy и finish",
+  "description": "Действие после enjoy и finish: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать -ing после enjoy",
+    "Использовать -ing после finish"
+  ],
+  "notes": [
+    "Enjoy + -ing: I enjoy reading.",
+    "Finish + -ing: She finished writing. Не подставляйте to-infinitive в эти изучаемые модели."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/also-and-too"],
+  "lexicon": [
+    {
+      "en": "enjoy",
+      "ru": "получать удовольствие"
+    },
+    {
+      "en": "finish",
+      "ru": "заканчивать"
+    },
+    {
+      "en": "drawing",
+      "ru": "рисование"
+    },
+    {
+      "en": "editing",
+      "ru": "редактирование"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: She enjoys ___ short stories.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v9196ee45a0c1",
+            "label": "to writing"
+          },
+          {
+            "id": "vd4e846cd31fa",
+            "label": "write to"
+          },
+          {
+            "id": "v90eab9c7dc41",
+            "label": "writing"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v90eab9c7dc41"
+      },
+      "reference_answer": "v90eab9c7dc41",
+      "incorrect_answer": "v9196ee45a0c1",
+      "editorial_answer": "writing",
+      "explanation": "После enjoys используется writing.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: editing / edit.",
+      "public_payload": {
+        "sentence": "We finished ___ the pictures before lunch."
+      },
+      "answer_key": {
+        "accepted": ["editing"]
+      },
+      "reference_answer": "editing",
+      "incorrect_answer": "edit",
+      "editorial_answer": "We finished editing the pictures before lunch.",
+      "explanation": "После finished требуется -ing-форма.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мне нравится рисовать здания.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "drawing"
+          },
+          {
+            "id": "t4",
+            "label": "buildings."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "enjoy"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4"],
+      "incorrect_answer": ["t2", "t3", "t4", "t1"],
+      "editorial_answer": "I enjoy drawing buildings.",
+      "explanation": "Drawing называет занятие после enjoy.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He finished to write the report."
+      },
+      "answer_key": {
+        "accepted": ["He finished writing the report."]
+      },
+      "reference_answer": "He finished writing the report.",
+      "incorrect_answer": "He finished to write the report.",
+      "editorial_answer": "He finished writing the report.",
+      "explanation": "В этой модели finish сочетается с writing.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что было закончено в среду?",
+      "public_payload": {
+        "passage": "After the trip, the students enjoyed choosing photographs for the school display. They finished editing the pictures on Wednesday. On Thursday, they wrote short labels. The display was ready on Friday, but choosing and editing the photographs had taken longer than they expected.",
+        "options": [
+          {
+            "id": "vb08b9ad708bc",
+            "label": "The entire trip itself."
+          },
+          {
+            "id": "vabe1a75c00dc",
+            "label": "Editing the pictures."
+          },
+          {
+            "id": "vd32f37e2a9fc",
+            "label": "Writing every label."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vabe1a75c00dc"
+      },
+      "reference_answer": "vabe1a75c00dc",
+      "incorrect_answer": "vd32f37e2a9fc",
+      "editorial_answer": "Editing the pictures.",
+      "explanation": "Среда относится к завершению редактирования, подписи писали позже.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lde9f634dd867",
+            "label": "enjoy"
+          },
+          {
+            "id": "l3b65acffb088",
+            "label": "finish"
+          },
+          {
+            "id": "l0521156ffa38",
+            "label": "drawing"
+          },
+          {
+            "id": "lac4544d85eb6",
+            "label": "editing"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1c2ab6c94a4c",
+            "label": "рисование"
+          },
+          {
+            "id": "rf0630acef94d",
+            "label": "редактирование"
+          },
+          {
+            "id": "r56091446c3fe",
+            "label": "получать удовольствие"
+          },
+          {
+            "id": "r9af9c07316a9",
+            "label": "заканчивать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lde9f634dd867": "r56091446c3fe",
+          "l3b65acffb088": "r9af9c07316a9",
+          "l0521156ffa38": "r1c2ab6c94a4c",
+          "lac4544d85eb6": "rf0630acef94d"
+        }
+      },
+      "reference_answer": {
+        "lde9f634dd867": "r56091446c3fe",
+        "l3b65acffb088": "r9af9c07316a9",
+        "l0521156ffa38": "r1c2ab6c94a4c",
+        "lac4544d85eb6": "rf0630acef94d"
+      },
+      "incorrect_answer": {
+        "lde9f634dd867": "r9af9c07316a9",
+        "l3b65acffb088": "r56091446c3fe",
+        "l0521156ffa38": "r1c2ab6c94a4c",
+        "lac4544d85eb6": "rf0630acef94d"
+      },
+      "editorial_answer": "enjoy — получать удовольствие; finish — заканчивать; drawing — рисование; editing — редактирование",
+      "explanation": "В этих контекстах: enjoy — получать удовольствие; finish — заканчивать; drawing — рисование; editing — редактирование.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что заняло больше времени, чем ожидали?",
+      "public_payload": {
+        "passage": "After the trip, the students enjoyed choosing photographs for the school display. They finished editing the pictures on Wednesday. On Thursday, they wrote short labels. The display was ready on Friday, but choosing and editing the photographs had taken longer than they expected.",
+        "options": [
+          {
+            "id": "vf1b246505e84",
+            "label": "Choosing and editing the photographs."
+          },
+          {
+            "id": "v32b742b0f0c3",
+            "label": "Only opening the door on Friday."
+          },
+          {
+            "id": "vedfd6c781492",
+            "label": "Travelling home on Thursday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf1b246505e84"
+      },
+      "reference_answer": "vf1b246505e84",
+      "incorrect_answer": "v32b742b0f0c3",
+      "editorial_answer": "Choosing and editing the photographs.",
+      "explanation": "Последняя фраза перечисляет две длительные части работы.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь с enjoy и названием действия.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Did you like the workshop?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v294da0a01d79",
+            "label": "Yes, I enjoyed make to the model."
+          },
+          {
+            "id": "v980826cf5f90",
+            "label": "Yes, I enjoyed making the model."
+          },
+          {
+            "id": "vd1bfd42af6aa",
+            "label": "Yes, I enjoyed to make the model."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v980826cf5f90"
+      },
+      "reference_answer": "v980826cf5f90",
+      "incorrect_answer": "vd1bfd42af6aa",
+      "editorial_answer": "Yes, I enjoyed making the model.",
+      "explanation": "Enjoyed making использует -ing.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Changing a text or image to improve it is ___.",
+        "options": [
+          {
+            "id": "v4e4d3b564e47",
+            "label": "editing"
+          },
+          {
+            "id": "v4957fe9c245e",
+            "label": "departure"
+          },
+          {
+            "id": "v365fe6f62538",
+            "label": "arrival"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4e4d3b564e47"
+      },
+      "reference_answer": "v4e4d3b564e47",
+      "incorrect_answer": "v4957fe9c245e",
+      "editorial_answer": "editing",
+      "explanation": "Editing — редактирование текста или изображения.",
+      "key": "e09"
+    }
+  ]
+}

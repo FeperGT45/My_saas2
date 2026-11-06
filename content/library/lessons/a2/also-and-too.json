@@ -1,0 +1,330 @@
+{
+  "key": "a2/also-and-too",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A2 · формы и значения",
+    "position": 40
+  },
+  "position": 5,
+  "title": "Тоже: разные места в предложении",
+  "description": "Тоже: разные места в предложении: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать too в конце добавочного утверждения",
+    "Ставить also перед обычным глаголом"
+  ],
+  "notes": [
+    "I read comics too — too может стоять в конце добавочного сообщения.",
+    "I also read comics — also обычно стоит перед смысловым глаголом; с be возможно She is also a teacher."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/better-worse-choices"],
+  "lexicon": [
+    {
+      "en": "also",
+      "ru": "также"
+    },
+    {
+      "en": "too",
+      "ru": "тоже"
+    },
+    {
+      "en": "both",
+      "ru": "оба"
+    },
+    {
+      "en": "shared",
+      "ru": "общий"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I like drawing. My sister likes drawing ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "ve7be83115e80",
+            "label": "too"
+          },
+          {
+            "id": "va6fff1de6416",
+            "label": "too of"
+          },
+          {
+            "id": "v6ff881a7e9fa",
+            "label": "also to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve7be83115e80"
+      },
+      "reference_answer": "ve7be83115e80",
+      "incorrect_answer": "va6fff1de6416",
+      "editorial_answer": "too",
+      "explanation": "Конечное too добавляет сходное предпочтение сестры.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: too of / also.",
+      "public_payload": {
+        "sentence": "He ___ plays chess."
+      },
+      "answer_key": {
+        "accepted": ["also"]
+      },
+      "reference_answer": "also",
+      "incorrect_answer": "too of",
+      "editorial_answer": "He also plays chess.",
+      "explanation": "Also перед plays — правильная позиция.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Она также волонтёр.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "also"
+          },
+          {
+            "id": "t4",
+            "label": "a"
+          },
+          {
+            "id": "t5",
+            "label": "volunteer."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "She is also a volunteer.",
+      "explanation": "Also ставится после is, перед именной частью.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He also is also a student."
+      },
+      "answer_key": {
+        "accepted": ["He is also a student."]
+      },
+      "reference_answer": "He is also a student.",
+      "incorrect_answer": "He also is also a student.",
+      "editorial_answer": "He is also a student.",
+      "explanation": "Убираем повтор also и используем нейтральную позицию после is.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что объединяет Рину и брата?",
+      "public_payload": {
+        "passage": "Rina plays the guitar, and her brother plays it too. She also enjoys drawing, but he prefers photography. Their neighbour is a musician and is also a teacher. The three meet on Saturdays to practise together, although their other interests are different.",
+        "options": [
+          {
+            "id": "vd9ed70d0ff06",
+            "label": "They both prefer photography to drawing."
+          },
+          {
+            "id": "v665d6e0da4d3",
+            "label": "They both work as teachers."
+          },
+          {
+            "id": "v552e1c6c2eed",
+            "label": "They both play the guitar."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v552e1c6c2eed"
+      },
+      "reference_answer": "v552e1c6c2eed",
+      "incorrect_answer": "vd9ed70d0ff06",
+      "editorial_answer": "They both play the guitar.",
+      "explanation": "Общее занятие указано в первом предложении.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l8809e9c76013",
+            "label": "also"
+          },
+          {
+            "id": "lb459c140ee15",
+            "label": "too"
+          },
+          {
+            "id": "l0e28b96aaf2e",
+            "label": "both"
+          },
+          {
+            "id": "lbfda6251298a",
+            "label": "shared"
+          }
+        ],
+        "right": [
+          {
+            "id": "r8a80b59e783c",
+            "label": "оба"
+          },
+          {
+            "id": "r57f934473288",
+            "label": "общий"
+          },
+          {
+            "id": "rf679ee9089bb",
+            "label": "также"
+          },
+          {
+            "id": "r0ee2e292c537",
+            "label": "тоже"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l8809e9c76013": "rf679ee9089bb",
+          "lb459c140ee15": "r0ee2e292c537",
+          "l0e28b96aaf2e": "r8a80b59e783c",
+          "lbfda6251298a": "r57f934473288"
+        }
+      },
+      "reference_answer": {
+        "l8809e9c76013": "rf679ee9089bb",
+        "lb459c140ee15": "r0ee2e292c537",
+        "l0e28b96aaf2e": "r8a80b59e783c",
+        "lbfda6251298a": "r57f934473288"
+      },
+      "incorrect_answer": {
+        "l8809e9c76013": "r0ee2e292c537",
+        "lb459c140ee15": "rf679ee9089bb",
+        "l0e28b96aaf2e": "r8a80b59e783c",
+        "lbfda6251298a": "r57f934473288"
+      },
+      "editorial_answer": "also — также; too — тоже; both — оба; shared — общий",
+      "explanation": "В этих контекстах: also — также; too — тоже; both — оба; shared — общий.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто ещё и преподаватель?",
+      "public_payload": {
+        "passage": "Rina plays the guitar, and her brother plays it too. She also enjoys drawing, but he prefers photography. Their neighbour is a musician and is also a teacher. The three meet on Saturdays to practise together, although their other interests are different.",
+        "options": [
+          {
+            "id": "vf537b3fe9939",
+            "label": "Every member of the group."
+          },
+          {
+            "id": "v2b68e062a823",
+            "label": "The neighbour."
+          },
+          {
+            "id": "v3446a2fc2fcd",
+            "label": "Rina’s brother."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2b68e062a823"
+      },
+      "reference_answer": "v2b68e062a823",
+      "incorrect_answer": "v3446a2fc2fcd",
+      "editorial_answer": "The neighbour.",
+      "explanation": "Is also a teacher относится к соседу.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Добавь сходное положительное сообщение.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I enjoy these classes. Do you?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vfe2e586b7d94",
+            "label": "Yes, I enjoy too of them."
+          },
+          {
+            "id": "v73edad1082cd",
+            "label": "Yes, I also to enjoy them."
+          },
+          {
+            "id": "v4d31e5183469",
+            "label": "Yes, I enjoy them too."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4d31e5183469"
+      },
+      "reference_answer": "v4d31e5183469",
+      "incorrect_answer": "vfe2e586b7d94",
+      "editorial_answer": "Yes, I enjoy them too.",
+      "explanation": "Too в конце предложения означает «тоже».",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An interest enjoyed by two people is a ___ interest.",
+        "options": [
+          {
+            "id": "v6e02ebb0bd2d",
+            "label": "cancelled"
+          },
+          {
+            "id": "v1a70fcd9d176",
+            "label": "shared"
+          },
+          {
+            "id": "v1feffe5a7927",
+            "label": "private to only one"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1a70fcd9d176"
+      },
+      "reference_answer": "v1a70fcd9d176",
+      "incorrect_answer": "v1feffe5a7927",
+      "editorial_answer": "shared",
+      "explanation": "Shared — общий для нескольких людей.",
+      "key": "e09"
+    }
+  ]
+}

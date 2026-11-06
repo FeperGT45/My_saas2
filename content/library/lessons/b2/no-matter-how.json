@@ -1,0 +1,366 @@
+{
+  "key": "b2/no-matter-how",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B2 · формы и значения",
+    "position": 40
+  },
+  "position": 3,
+  "title": "При любой степени признака",
+  "description": "При любой степени признака: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Использовать no matter how + прилагательное",
+    "Отделять уступку от гарантии желаемого результата"
+  ],
+  "notes": [
+    "No matter how careful you are означает «как бы осторожен ты ни был».",
+    "Конструкция может сохранять вывод при разных значениях признака; она не доказывает любой отдельный факт вне контекста."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/ed-ing-reactions"],
+  "lexicon": [
+    {
+      "en": "regardless",
+      "ru": "независимо от"
+    },
+    {
+      "en": "thorough",
+      "ru": "тщательный"
+    },
+    {
+      "en": "limitation",
+      "ru": "ограничение"
+    },
+    {
+      "en": "precaution",
+      "ru": "мера предосторожности"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: No matter ___ carefully we plan, we should allow for delays.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v5fd7971541e1",
+            "label": "whether of"
+          },
+          {
+            "id": "va62d5b21a67a",
+            "label": "how"
+          },
+          {
+            "id": "vb8eab1fdefb1",
+            "label": "what of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va62d5b21a67a"
+      },
+      "reference_answer": "va62d5b21a67a",
+      "incorrect_answer": "vb8eab1fdefb1",
+      "editorial_answer": "how",
+      "explanation": "How связывает уступку со степенью carefully.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: detail / detailed.",
+      "public_payload": {
+        "sentence": "No matter how ___ the schedule is, a backup contact is useful."
+      },
+      "answer_key": {
+        "accepted": ["detailed"]
+      },
+      "reference_answer": "detailed",
+      "incorrect_answer": "detail",
+      "editorial_answer": "No matter how detailed the schedule is, a backup contact is useful.",
+      "explanation": "После how здесь требуется прилагательное detailed.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Как бы тщательно мы ни планировали, задержки всё равно возможны.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "how"
+          },
+          {
+            "id": "t4",
+            "label": "carefully"
+          },
+          {
+            "id": "t5",
+            "label": "we"
+          },
+          {
+            "id": "t6",
+            "label": "plan,"
+          },
+          {
+            "id": "t7",
+            "label": "delays"
+          },
+          {
+            "id": "t8",
+            "label": "remain"
+          },
+          {
+            "id": "t9",
+            "label": "possible."
+          },
+          {
+            "id": "t1",
+            "label": "No"
+          },
+          {
+            "id": "t2",
+            "label": "matter"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "No matter how carefully we plan, delays remain possible.",
+      "explanation": "Уступка не объявляет планирование бесполезным; она сохраняет возможность задержки.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "No matter how careful are we, mistakes remain possible."
+      },
+      "answer_key": {
+        "accepted": ["No matter how careful we are, mistakes remain possible."]
+      },
+      "reference_answer": "No matter how careful we are, mistakes remain possible.",
+      "incorrect_answer": "No matter how careful are we, mistakes remain possible.",
+      "editorial_answer": "No matter how careful we are, mistakes remain possible.",
+      "explanation": "В уступительной части используется прямой порядок we are.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что неверно в прочтении первого читателя?",
+      "public_payload": {
+        "passage": "The organiser wrote that, no matter how detailed the schedule was, volunteers should keep a contact number for unexpected problems. One reader interpreted this as a claim that planning did not matter. The organiser clarified that the schedule still reduced confusion; the point was that preparation could not remove every contingency. The contact number complemented the plan rather than replacing it. The group therefore checked both the timetable and the backup arrangements before the event, recognising a limit without abandoning useful precautions.",
+        "options": [
+          {
+            "id": "v5c260dd4c98d",
+            "label": "It treats a limit on planning as a claim that planning is useless."
+          },
+          {
+            "id": "v332f8eb01b3b",
+            "label": "It preserves the complementary role of the contact number."
+          },
+          {
+            "id": "vc62884f83218",
+            "label": "It establishes that every possible problem has been removed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5c260dd4c98d"
+      },
+      "reference_answer": "v5c260dd4c98d",
+      "incorrect_answer": "v332f8eb01b3b",
+      "editorial_answer": "It treats a limit on planning as a claim that planning is useless.",
+      "explanation": "Из ограничения эффективности не следует полная бесполезность.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc0187a087cbc",
+            "label": "regardless"
+          },
+          {
+            "id": "lbb246d0dda7e",
+            "label": "thorough"
+          },
+          {
+            "id": "ld93fcd7c16ec",
+            "label": "limitation"
+          },
+          {
+            "id": "l7c5dd3ade109",
+            "label": "precaution"
+          }
+        ],
+        "right": [
+          {
+            "id": "rc0dfacd3f947",
+            "label": "ограничение"
+          },
+          {
+            "id": "r82fc161ffa57",
+            "label": "мера предосторожности"
+          },
+          {
+            "id": "rcd2dff8ada05",
+            "label": "независимо от"
+          },
+          {
+            "id": "r97bae604c38e",
+            "label": "тщательный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc0187a087cbc": "rcd2dff8ada05",
+          "lbb246d0dda7e": "r97bae604c38e",
+          "ld93fcd7c16ec": "rc0dfacd3f947",
+          "l7c5dd3ade109": "r82fc161ffa57"
+        }
+      },
+      "reference_answer": {
+        "lc0187a087cbc": "rcd2dff8ada05",
+        "lbb246d0dda7e": "r97bae604c38e",
+        "ld93fcd7c16ec": "rc0dfacd3f947",
+        "l7c5dd3ade109": "r82fc161ffa57"
+      },
+      "incorrect_answer": {
+        "lc0187a087cbc": "r97bae604c38e",
+        "lbb246d0dda7e": "rcd2dff8ada05",
+        "ld93fcd7c16ec": "rc0dfacd3f947",
+        "l7c5dd3ade109": "r82fc161ffa57"
+      },
+      "editorial_answer": "regardless — независимо от; thorough — тщательный; limitation — ограничение; precaution — мера предосторожности",
+      "explanation": "В этих контекстах: regardless — независимо от; thorough — тщательный; limitation — ограничение; precaution — мера предосторожности.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как соотносятся контактный номер и план?",
+      "public_payload": {
+        "passage": "The organiser wrote that, no matter how detailed the schedule was, volunteers should keep a contact number for unexpected problems. One reader interpreted this as a claim that planning did not matter. The organiser clarified that the schedule still reduced confusion; the point was that preparation could not remove every contingency. The contact number complemented the plan rather than replacing it. The group therefore checked both the timetable and the backup arrangements before the event, recognising a limit without abandoning useful precautions.",
+        "options": [
+          {
+            "id": "veff3e2058a08",
+            "label": "The number proves the schedule is unnecessary."
+          },
+          {
+            "id": "v8782000f849c",
+            "label": "The schedule prohibits any backup contact."
+          },
+          {
+            "id": "v9def912fb628",
+            "label": "The contact number complements the plan."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9def912fb628"
+      },
+      "reference_answer": "v9def912fb628",
+      "incorrect_answer": "veff3e2058a08",
+      "editorial_answer": "The contact number complements the plan.",
+      "explanation": "Резервная связь добавляет меру к планированию, а не отменяет его.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери грамматически правильную уступку.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can we acknowledge uncertainty without abandoning preparation?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vf8b11d867f81",
+            "label": "Yes: no matter how thorough the plan is, keep a backup."
+          },
+          {
+            "id": "v7d8418caecae",
+            "label": "Yes: no matter how is thorough the plan, keep a backup."
+          },
+          {
+            "id": "v172d9e745947",
+            "label": "Yes: no matter thorough the plan to be backup."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf8b11d867f81"
+      },
+      "reference_answer": "vf8b11d867f81",
+      "incorrect_answer": "v7d8418caecae",
+      "editorial_answer": "Yes: no matter how thorough the plan is, keep a backup.",
+      "explanation": "После how thorough нужен прямой порядок the plan is.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An action taken in advance to reduce risk is a ___.",
+        "options": [
+          {
+            "id": "vfaa294d6e497",
+            "label": "conclusion automatically"
+          },
+          {
+            "id": "va25a74c78e6f",
+            "label": "reimbursement"
+          },
+          {
+            "id": "va87bdacb9ec9",
+            "label": "precaution"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va87bdacb9ec9"
+      },
+      "reference_answer": "va87bdacb9ec9",
+      "incorrect_answer": "vfaa294d6e497",
+      "editorial_answer": "precaution",
+      "explanation": "Precaution — предупредительная мера.",
+      "key": "e09"
+    }
+  ]
+}

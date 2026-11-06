@@ -1,0 +1,338 @@
+{
+  "key": "c1/should-have-interpretation",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика C1 · формы и значения",
+    "position": 40
+  },
+  "position": 4,
+  "title": "Ожидалось или следовало сделать",
+  "description": "Ожидалось или следовало сделать: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Различать ожидание и ретроспективный совет с should have",
+    "Не считать модальную оценку подтверждением события"
+  ],
+  "notes": [
+    "You should have checked может выражать упрёк или оценку прошлого действия.",
+    "The parcel should have arrived by now может выражать ожидание завершения; факт доставки требует проверки."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/the-more-the-less"],
+  "lexicon": [
+    {
+      "en": "expectation",
+      "ru": "ожидание"
+    },
+    {
+      "en": "criticism",
+      "ru": "критика"
+    },
+    {
+      "en": "verification",
+      "ru": "проверка"
+    },
+    {
+      "en": "overdue",
+      "ru": "просроченный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The parcel should ___ by now, but we have no delivery confirmation.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v5017a2b7c6f1",
+            "label": "have arrived"
+          },
+          {
+            "id": "vb24d181c4163",
+            "label": "has arrived"
+          },
+          {
+            "id": "v29ab375ffd43",
+            "label": "having arrived"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5017a2b7c6f1"
+      },
+      "reference_answer": "v5017a2b7c6f1",
+      "incorrect_answer": "vb24d181c4163",
+      "editorial_answer": "have arrived",
+      "explanation": "После should нужна форма have arrived; отсутствие подтверждения сохраняет неопределённость.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: checked / check.",
+      "public_payload": {
+        "sentence": "You should have ___ the address before sending it."
+      },
+      "answer_key": {
+        "accepted": ["checked"]
+      },
+      "reference_answer": "checked",
+      "incorrect_answer": "check",
+      "editorial_answer": "You should have checked the address before sending it.",
+      "explanation": "После have в этой модальной форме используется checked.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Документы уже должны были прибыть к этому моменту.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "should"
+          },
+          {
+            "id": "t4",
+            "label": "have"
+          },
+          {
+            "id": "t5",
+            "label": "arrived"
+          },
+          {
+            "id": "t6",
+            "label": "by"
+          },
+          {
+            "id": "t7",
+            "label": "now."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "documents"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The documents should have arrived by now.",
+      "explanation": "Контекст может выражать ожидание; предложение не является журналом доставки.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She should has checked the attachment."
+      },
+      "answer_key": {
+        "accepted": ["She should have checked the attachment."]
+      },
+      "reference_answer": "She should have checked the attachment.",
+      "incorrect_answer": "She should has checked the attachment.",
+      "editorial_answer": "She should have checked the attachment.",
+      "explanation": "После should используется have, не has.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую функцию имела первая реплика помощника?",
+      "public_payload": {
+        "passage": "When the courier had not confirmed delivery, the assistant said that the documents should have arrived by now. The manager initially entered them as received. The assistant clarified that the statement expressed an expectation based on the usual delivery time. It did not establish arrival. In a different exchange, “You should have checked the address” criticised an earlier omission. Both sentences used should have, but their functions differed. The team checked the tracking record before updating receipt status, rather than allowing either the grammatical form or the strength of an expectation to stand in for evidence of the event.",
+        "options": [
+          {
+            "id": "v818887b9794b",
+            "label": "A confirmed report of receipt."
+          },
+          {
+            "id": "v7599523ea925",
+            "label": "A guarantee that no delay was possible."
+          },
+          {
+            "id": "v4348bc1ac974",
+            "label": "An expectation based on usual delivery time."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4348bc1ac974"
+      },
+      "reference_answer": "v4348bc1ac974",
+      "incorrect_answer": "v818887b9794b",
+      "editorial_answer": "An expectation based on usual delivery time.",
+      "explanation": "Отсутствовало подтверждение; should have передавало ожидание.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc84b439f31e5",
+            "label": "expectation"
+          },
+          {
+            "id": "l881ff6e94b18",
+            "label": "criticism"
+          },
+          {
+            "id": "lc15337ecd067",
+            "label": "verification"
+          },
+          {
+            "id": "lb02ab940137a",
+            "label": "overdue"
+          }
+        ],
+        "right": [
+          {
+            "id": "r799f0cf5d789",
+            "label": "проверка"
+          },
+          {
+            "id": "r726b5f3b8de7",
+            "label": "просроченный"
+          },
+          {
+            "id": "r1b8b8ce77d19",
+            "label": "ожидание"
+          },
+          {
+            "id": "r7ba23bf645f3",
+            "label": "критика"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc84b439f31e5": "r1b8b8ce77d19",
+          "l881ff6e94b18": "r7ba23bf645f3",
+          "lc15337ecd067": "r799f0cf5d789",
+          "lb02ab940137a": "r726b5f3b8de7"
+        }
+      },
+      "reference_answer": {
+        "lc84b439f31e5": "r1b8b8ce77d19",
+        "l881ff6e94b18": "r7ba23bf645f3",
+        "lc15337ecd067": "r799f0cf5d789",
+        "lb02ab940137a": "r726b5f3b8de7"
+      },
+      "incorrect_answer": {
+        "lc84b439f31e5": "r7ba23bf645f3",
+        "l881ff6e94b18": "r1b8b8ce77d19",
+        "lc15337ecd067": "r799f0cf5d789",
+        "lb02ab940137a": "r726b5f3b8de7"
+      },
+      "editorial_answer": "expectation — ожидание; criticism — критика; verification — проверка; overdue — просроченный",
+      "explanation": "В этих контекстах: expectation — ожидание; criticism — критика; verification — проверка; overdue — просроченный.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что команда сделала перед обновлением статуса?",
+      "public_payload": {
+        "passage": "When the courier had not confirmed delivery, the assistant said that the documents should have arrived by now. The manager initially entered them as received. The assistant clarified that the statement expressed an expectation based on the usual delivery time. It did not establish arrival. In a different exchange, “You should have checked the address” criticised an earlier omission. Both sentences used should have, but their functions differed. The team checked the tracking record before updating receipt status, rather than allowing either the grammatical form or the strength of an expectation to stand in for evidence of the event.",
+        "options": [
+          {
+            "id": "v81335d6b8363",
+            "label": "Deleted every record of the shipment."
+          },
+          {
+            "id": "v0ae41da2a654",
+            "label": "Checked the tracking record."
+          },
+          {
+            "id": "v147790eb2cc1",
+            "label": "Assumed grammar proved delivery."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0ae41da2a654"
+      },
+      "reference_answer": "v0ae41da2a654",
+      "incorrect_answer": "v147790eb2cc1",
+      "editorial_answer": "Checked the tracking record.",
+      "explanation": "Проверка фактического состояния была отделена от модального высказывания.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Отдели модальное ожидание от проверенного факта.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “The train should have arrived” necessarily establish arrival?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vc859d79886b5",
+            "label": "Yes; should have always marks a verified event."
+          },
+          {
+            "id": "v08e38ba193f9",
+            "label": "Yes; every expectation is a completed measurement."
+          },
+          {
+            "id": "vbf4c99b2cadb",
+            "label": "No; it can express an expectation that still needs checking."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbf4c99b2cadb"
+      },
+      "reference_answer": "vbf4c99b2cadb",
+      "incorrect_answer": "vc859d79886b5",
+      "editorial_answer": "No; it can express an expectation that still needs checking.",
+      "explanation": "Should have не служит самостоятельным доказательством прибытия.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An item expected earlier but not yet received is ___.",
+        "options": [
+          {
+            "id": "vc627349d8499",
+            "label": "verified necessarily"
+          },
+          {
+            "id": "v2e1266b536c6",
+            "label": "overdue"
+          },
+          {
+            "id": "v559914fdd3ef",
+            "label": "premature"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2e1266b536c6"
+      },
+      "reference_answer": "v2e1266b536c6",
+      "incorrect_answer": "v559914fdd3ef",
+      "editorial_answer": "overdue",
+      "explanation": "Overdue означает просроченный или запоздавший.",
+      "key": "e09"
+    }
+  ]
+}

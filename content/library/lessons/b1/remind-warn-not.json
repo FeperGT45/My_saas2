@@ -1,0 +1,338 @@
+{
+  "key": "b1/remind-warn-not",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B1 · формы и значения",
+    "position": 40
+  },
+  "position": 8,
+  "title": "Напоминаем и предупреждаем",
+  "description": "Напоминаем и предупреждаем: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать remind someone to do",
+    "Передавать предупреждение с not to"
+  ],
+  "notes": [
+    "Remind me to call — напомни выполнить действие.",
+    "Warn someone not to do — предупредить не делать; not ставится перед to."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/so-neither-agreement"],
+  "lexicon": [
+    {
+      "en": "remind",
+      "ru": "напоминать"
+    },
+    {
+      "en": "warn",
+      "ru": "предупреждать"
+    },
+    {
+      "en": "hazard",
+      "ru": "опасный фактор"
+    },
+    {
+      "en": "notice",
+      "ru": "уведомление"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The supervisor warned us ___ the wet floor.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v4ce9a1ce2f27",
+            "label": "to not crossed"
+          },
+          {
+            "id": "v71cb6670fa13",
+            "label": "not to cross"
+          },
+          {
+            "id": "v03e39028d16d",
+            "label": "not crossing to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v71cb6670fa13"
+      },
+      "reference_answer": "v71cb6670fa13",
+      "incorrect_answer": "v03e39028d16d",
+      "editorial_answer": "not to cross",
+      "explanation": "Warned us not to cross правильно передаёт отрицательное предупреждение.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: to / for.",
+      "public_payload": {
+        "sentence": "Please remind me ___ lock the cupboard."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "for",
+      "editorial_answer": "Please remind me to lock the cupboard.",
+      "explanation": "После remind me нужен to-infinitive.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Она напомнила нам вернуть ключи.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "us"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "return"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "keys."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "reminded"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "She reminded us to return the keys.",
+      "explanation": "Reminded us to return называет адресата и требуемое действие.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He warned me not touch the loose cable."
+      },
+      "answer_key": {
+        "accepted": ["He warned me not to touch the loose cable."]
+      },
+      "reference_answer": "He warned me not to touch the loose cable.",
+      "incorrect_answer": "He warned me not touch the loose cable.",
+      "editorial_answer": "He warned me not to touch the loose cable.",
+      "explanation": "После not в этой конструкции нужен to перед touch.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "О чём предупреждали вначале?",
+      "public_payload": {
+        "passage": "Before the workshop, the supervisor warned everyone not to cross the newly cleaned floor. She put up a sign and showed an alternative route. Later, she reminded the volunteers to return the room keys before leaving. The first message concerned a current hazard, while the second helped people remember a routine task. Neither message meant that the task had already been completed.",
+        "options": [
+          {
+            "id": "vce8b5ecd3771",
+            "label": "Not crossing the newly cleaned floor."
+          },
+          {
+            "id": "v0d43f4062d30",
+            "label": "Returning keys that had already been lost."
+          },
+          {
+            "id": "v6b99ee46a15b",
+            "label": "Cancelling the whole workshop."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vce8b5ecd3771"
+      },
+      "reference_answer": "vce8b5ecd3771",
+      "incorrect_answer": "v0d43f4062d30",
+      "editorial_answer": "Not crossing the newly cleaned floor.",
+      "explanation": "Первое предупреждение связано с состоянием пола.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l7db96a0017a2",
+            "label": "remind"
+          },
+          {
+            "id": "l4d328535e63a",
+            "label": "warn"
+          },
+          {
+            "id": "l0b154cf0fdaa",
+            "label": "hazard"
+          },
+          {
+            "id": "ld6ee7ddbe4c9",
+            "label": "notice"
+          }
+        ],
+        "right": [
+          {
+            "id": "r732b7d05bd20",
+            "label": "опасный фактор"
+          },
+          {
+            "id": "ra1dda51baa36",
+            "label": "уведомление"
+          },
+          {
+            "id": "r86c09e0f339c",
+            "label": "напоминать"
+          },
+          {
+            "id": "r1dbb5ec497b5",
+            "label": "предупреждать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l7db96a0017a2": "r86c09e0f339c",
+          "l4d328535e63a": "r1dbb5ec497b5",
+          "l0b154cf0fdaa": "r732b7d05bd20",
+          "ld6ee7ddbe4c9": "ra1dda51baa36"
+        }
+      },
+      "reference_answer": {
+        "l7db96a0017a2": "r86c09e0f339c",
+        "l4d328535e63a": "r1dbb5ec497b5",
+        "l0b154cf0fdaa": "r732b7d05bd20",
+        "ld6ee7ddbe4c9": "ra1dda51baa36"
+      },
+      "incorrect_answer": {
+        "l7db96a0017a2": "r1dbb5ec497b5",
+        "l4d328535e63a": "r86c09e0f339c",
+        "l0b154cf0fdaa": "r732b7d05bd20",
+        "ld6ee7ddbe4c9": "ra1dda51baa36"
+      },
+      "editorial_answer": "remind — напоминать; warn — предупреждать; hazard — опасный фактор; notice — уведомление",
+      "explanation": "В этих контекстах: remind — напоминать; warn — предупреждать; hazard — опасный фактор; notice — уведомление.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что важно о напоминании вернуть ключи?",
+      "public_payload": {
+        "passage": "Before the workshop, the supervisor warned everyone not to cross the newly cleaned floor. She put up a sign and showed an alternative route. Later, she reminded the volunteers to return the room keys before leaving. The first message concerned a current hazard, while the second helped people remember a routine task. Neither message meant that the task had already been completed.",
+        "options": [
+          {
+            "id": "v455b06d62a48",
+            "label": "It confirms that every key is in the cupboard."
+          },
+          {
+            "id": "ve8254306c25a",
+            "label": "It means returning keys is forbidden."
+          },
+          {
+            "id": "v7b996c650c6a",
+            "label": "It does not prove that the keys have already been returned."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7b996c650c6a"
+      },
+      "reference_answer": "v7b996c650c6a",
+      "incorrect_answer": "v455b06d62a48",
+      "editorial_answer": "It does not prove that the keys have already been returned.",
+      "explanation": "Напоминание о будущем действии не устанавливает факт исполнения.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Предложи помощь с напоминанием.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I often forget to send the attendance list."
+          }
+        ],
+        "options": [
+          {
+            "id": "v26a739d6627a",
+            "label": "Ask a colleague to remind you to send it."
+          },
+          {
+            "id": "v80b2046edf5c",
+            "label": "Ask a colleague to remind you sending to it."
+          },
+          {
+            "id": "v61cf8c982fd3",
+            "label": "Ask a colleague remind to you send it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v26a739d6627a"
+      },
+      "reference_answer": "v26a739d6627a",
+      "incorrect_answer": "v80b2046edf5c",
+      "editorial_answer": "Ask a colleague to remind you to send it.",
+      "explanation": "Remind you to send сохраняет нужную модель.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Something that can cause harm is a ___.",
+        "options": [
+          {
+            "id": "vdb847c6a379f",
+            "label": "guarantee"
+          },
+          {
+            "id": "vc51d19a72df7",
+            "label": "permission"
+          },
+          {
+            "id": "v4e406bb71b0c",
+            "label": "hazard"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4e406bb71b0c"
+      },
+      "reference_answer": "v4e406bb71b0c",
+      "incorrect_answer": "vdb847c6a379f",
+      "editorial_answer": "hazard",
+      "explanation": "Hazard — потенциально опасный фактор.",
+      "key": "e09"
+    }
+  ]
+}

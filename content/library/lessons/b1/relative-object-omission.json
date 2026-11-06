@@ -1,0 +1,342 @@
+{
+  "key": "b1/relative-object-omission",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B1 · формы и значения",
+    "position": 40
+  },
+  "position": 5,
+  "title": "Когда that можно не повторять",
+  "description": "Когда that можно не повторять: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Распознавать определяющую часть с пропущенным объектным местоимением",
+    "Не убирать местоимение, выполняющее роль подлежащего"
+  ],
+  "notes": [
+    "The book that I borrowed → The book I borrowed: I уже является подлежащим части.",
+    "В the person who called местоимение who само является подлежащим; просто убрать его нельзя."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/make-let-actions"],
+  "lexicon": [
+    {
+      "en": "borrow",
+      "ru": "брать взаймы"
+    },
+    {
+      "en": "lend",
+      "ru": "давать взаймы"
+    },
+    {
+      "en": "subject",
+      "ru": "подлежащее"
+    },
+    {
+      "en": "object",
+      "ru": "дополнение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Which version can omit the relative pronoun?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v529b68de5ef6",
+            "label": "The bus that stops here is late."
+          },
+          {
+            "id": "v62cb9f861c4e",
+            "label": "The book that I borrowed is here."
+          },
+          {
+            "id": "vc90fe49af422",
+            "label": "The person who called is here."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v62cb9f861c4e"
+      },
+      "reference_answer": "v62cb9f861c4e",
+      "incorrect_answer": "vc90fe49af422",
+      "editorial_answer": "The book that I borrowed is here.",
+      "explanation": "В первом варианте that — объект при подлежащем I; в остальных местоимение — подлежащее.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: who / that.",
+      "public_payload": {
+        "sentence": "The film ___ we watched was short."
+      },
+      "answer_key": {
+        "accepted": ["that"]
+      },
+      "reference_answer": "that",
+      "incorrect_answer": "who",
+      "editorial_answer": "The film that we watched was short.",
+      "explanation": "Фильм — предмет; that здесь можно также опустить, но who не подходит.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Книга, которую я взял, лежит на столе.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "I"
+          },
+          {
+            "id": "t4",
+            "label": "borrowed"
+          },
+          {
+            "id": "t5",
+            "label": "is"
+          },
+          {
+            "id": "t6",
+            "label": "on"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "desk."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "book"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The book I borrowed is on the desk.",
+      "explanation": "Пропущенное that является объектом borrowed, при этом I остаётся подлежащим.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The person called me yesterday is waiting outside."
+      },
+      "answer_key": {
+        "accepted": ["The person who called me yesterday is waiting outside."]
+      },
+      "reference_answer": "The person who called me yesterday is waiting outside.",
+      "incorrect_answer": "The person called me yesterday is waiting outside.",
+      "editorial_answer": "The person who called me yesterday is waiting outside.",
+      "explanation": "Нужно восстановить подлежащее who в определяющей части.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто рекомендовал руководство?",
+      "public_payload": {
+        "passage": "At the club, Nina showed us a guide she had borrowed from the library. The person who recommended it was waiting nearby. We compared the route the guide described with a newer map. One footpath was missing from the map, so we decided to ask the visitor centre before using it. Omitting a relative object made some phrases shorter, but it did not remove the need to check the route itself.",
+        "options": [
+          {
+            "id": "v26b8a0add82c",
+            "label": "A person waiting nearby."
+          },
+          {
+            "id": "v5aea08607d8b",
+            "label": "The guide itself."
+          },
+          {
+            "id": "v7c3cc138dd86",
+            "label": "Every visitor at the centre."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v26b8a0add82c"
+      },
+      "reference_answer": "v26b8a0add82c",
+      "incorrect_answer": "v5aea08607d8b",
+      "editorial_answer": "A person waiting nearby.",
+      "explanation": "Who recommended it относится к человеку поблизости.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lb7fd579f295f",
+            "label": "borrow"
+          },
+          {
+            "id": "l50e8bfea60e1",
+            "label": "lend"
+          },
+          {
+            "id": "ldde4f627b9b0",
+            "label": "subject"
+          },
+          {
+            "id": "l9108c79c2a77",
+            "label": "object"
+          }
+        ],
+        "right": [
+          {
+            "id": "rd87d4eea9463",
+            "label": "подлежащее"
+          },
+          {
+            "id": "ra2159ce4997c",
+            "label": "дополнение"
+          },
+          {
+            "id": "r244ded9497f3",
+            "label": "брать взаймы"
+          },
+          {
+            "id": "ra273e04913b5",
+            "label": "давать взаймы"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lb7fd579f295f": "r244ded9497f3",
+          "l50e8bfea60e1": "ra273e04913b5",
+          "ldde4f627b9b0": "rd87d4eea9463",
+          "l9108c79c2a77": "ra2159ce4997c"
+        }
+      },
+      "reference_answer": {
+        "lb7fd579f295f": "r244ded9497f3",
+        "l50e8bfea60e1": "ra273e04913b5",
+        "ldde4f627b9b0": "rd87d4eea9463",
+        "l9108c79c2a77": "ra2159ce4997c"
+      },
+      "incorrect_answer": {
+        "lb7fd579f295f": "ra273e04913b5",
+        "l50e8bfea60e1": "r244ded9497f3",
+        "ldde4f627b9b0": "rd87d4eea9463",
+        "l9108c79c2a77": "ra2159ce4997c"
+      },
+      "editorial_answer": "borrow — брать взаймы; lend — давать взаймы; subject — подлежащее; object — дополнение",
+      "explanation": "В этих контекстах: borrow — брать взаймы; lend — давать взаймы; subject — подлежащее; object — дополнение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему решили уточнить маршрут?",
+      "public_payload": {
+        "passage": "At the club, Nina showed us a guide she had borrowed from the library. The person who recommended it was waiting nearby. We compared the route the guide described with a newer map. One footpath was missing from the map, so we decided to ask the visitor centre before using it. Omitting a relative object made some phrases shorter, but it did not remove the need to check the route itself.",
+        "options": [
+          {
+            "id": "v2b02f3984413",
+            "label": "Every map had been lost."
+          },
+          {
+            "id": "vf8cfec2c6874",
+            "label": "The guide had no routes in it."
+          },
+          {
+            "id": "vac615622ab39",
+            "label": "One footpath was absent from the newer map."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vac615622ab39"
+      },
+      "reference_answer": "vac615622ab39",
+      "incorrect_answer": "v2b02f3984413",
+      "editorial_answer": "One footpath was absent from the newer map.",
+      "explanation": "Расхождение источников потребовало проверки.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери объяснение допустимого пропуска.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can I say “the letter I received” instead of “the letter that I received”?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v1913171ad8c9",
+            "label": "Yes; the omitted pronoun is the object of received."
+          },
+          {
+            "id": "va0a98090d1f8",
+            "label": "No; I cannot be a subject."
+          },
+          {
+            "id": "v3b7d3e25a870",
+            "label": "Yes; every relative subject can always be omitted."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1913171ad8c9"
+      },
+      "reference_answer": "v1913171ad8c9",
+      "incorrect_answer": "va0a98090d1f8",
+      "editorial_answer": "Yes; the omitted pronoun is the object of received.",
+      "explanation": "I — подлежащее, поэтому объектное that можно опустить.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "In “I borrowed the book”, “the book” is the ___.",
+        "options": [
+          {
+            "id": "v793face9e6d0",
+            "label": "subject"
+          },
+          {
+            "id": "vade95d301941",
+            "label": "speaker"
+          },
+          {
+            "id": "vfeb090d60a7e",
+            "label": "object"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfeb090d60a7e"
+      },
+      "reference_answer": "vfeb090d60a7e",
+      "incorrect_answer": "v793face9e6d0",
+      "editorial_answer": "object",
+      "explanation": "Book является объектом действия borrowed.",
+      "key": "e09"
+    }
+  ]
+}

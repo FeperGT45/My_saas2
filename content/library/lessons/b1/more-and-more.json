@@ -1,0 +1,338 @@
+{
+  "key": "b1/more-and-more",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B1 · формы и значения",
+    "position": 40
+  },
+  "position": 6,
+  "title": "Всё больше и всё меньше",
+  "description": "Всё больше и всё меньше: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Описывать изменение с more and more",
+    "Использовать сравнительную степень с and"
+  ],
+  "notes": [
+    "More and more people означает растущее количество людей.",
+    "Colder and colder или more and more difficult описывает изменение признака, а не только два фиксированных объекта."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/relative-object-omission"],
+  "lexicon": [
+    {
+      "en": "gradually",
+      "ru": "постепенно"
+    },
+    {
+      "en": "increase",
+      "ru": "увеличиваться"
+    },
+    {
+      "en": "decrease",
+      "ru": "уменьшаться"
+    },
+    {
+      "en": "trend",
+      "ru": "тенденция"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: As winter approached, the evenings became ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v772f92ee37c2",
+            "label": "colder and colder"
+          },
+          {
+            "id": "v08292891b513",
+            "label": "more colder and colder"
+          },
+          {
+            "id": "vd2e76d0332c1",
+            "label": "coldest and colder"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v772f92ee37c2"
+      },
+      "reference_answer": "v772f92ee37c2",
+      "incorrect_answer": "v08292891b513",
+      "editorial_answer": "colder and colder",
+      "explanation": "С коротким прилагательным повторяется сравнительная степень colder.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: more / most.",
+      "public_payload": {
+        "sentence": "More and ___ visitors are using the online form."
+      },
+      "answer_key": {
+        "accepted": ["more"]
+      },
+      "reference_answer": "more",
+      "incorrect_answer": "most",
+      "editorial_answer": "More and more visitors are using the online form.",
+      "explanation": "More and more обозначает рост числа посетителей.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Инструкции становились всё более подробными.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "became"
+          },
+          {
+            "id": "t4",
+            "label": "more"
+          },
+          {
+            "id": "t5",
+            "label": "and"
+          },
+          {
+            "id": "t6",
+            "label": "more"
+          },
+          {
+            "id": "t7",
+            "label": "detailed."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "instructions"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The instructions became more and more detailed.",
+      "explanation": "More and more detailed описывает изменение степени признака.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The queue became more longer and longer."
+      },
+      "answer_key": {
+        "accepted": ["The queue became longer and longer."]
+      },
+      "reference_answer": "The queue became longer and longer.",
+      "incorrect_answer": "The queue became more longer and longer.",
+      "editorial_answer": "The queue became longer and longer.",
+      "explanation": "Longer уже сравнительная степень, лишнее more убирается.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какая тенденция описана?",
+      "public_payload": {
+        "passage": "At first, only a few neighbours used the shared tool cupboard. Over several months, more and more people began borrowing equipment. The organiser added clearer labels and a booking sheet. As use increased, keeping track of returns became more and more important. The group did not assume that growth alone proved the system worked well; it also checked whether borrowed tools came back on time.",
+        "options": [
+          {
+            "id": "vd8f86ceeccf1",
+            "label": "Fewer and fewer tools were ever available, according to the text."
+          },
+          {
+            "id": "vc8b77cb688ab",
+            "label": "Every neighbour stopped borrowing equipment."
+          },
+          {
+            "id": "vb61746d4b5c6",
+            "label": "More people began using the cupboard."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb61746d4b5c6"
+      },
+      "reference_answer": "vb61746d4b5c6",
+      "incorrect_answer": "vd8f86ceeccf1",
+      "editorial_answer": "More people began using the cupboard.",
+      "explanation": "More and more people прямо описывает рост использования.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lcc61bc5c9e54",
+            "label": "gradually"
+          },
+          {
+            "id": "l5be8840a2af3",
+            "label": "increase"
+          },
+          {
+            "id": "lc0553d768111",
+            "label": "decrease"
+          },
+          {
+            "id": "lda961ae357cb",
+            "label": "trend"
+          }
+        ],
+        "right": [
+          {
+            "id": "r9e399f0379f3",
+            "label": "уменьшаться"
+          },
+          {
+            "id": "r40057655fe0b",
+            "label": "тенденция"
+          },
+          {
+            "id": "r61bc374e95f8",
+            "label": "постепенно"
+          },
+          {
+            "id": "r06a45ae8a986",
+            "label": "увеличиваться"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lcc61bc5c9e54": "r61bc374e95f8",
+          "l5be8840a2af3": "r06a45ae8a986",
+          "lc0553d768111": "r9e399f0379f3",
+          "lda961ae357cb": "r40057655fe0b"
+        }
+      },
+      "reference_answer": {
+        "lcc61bc5c9e54": "r61bc374e95f8",
+        "l5be8840a2af3": "r06a45ae8a986",
+        "lc0553d768111": "r9e399f0379f3",
+        "lda961ae357cb": "r40057655fe0b"
+      },
+      "incorrect_answer": {
+        "lcc61bc5c9e54": "r06a45ae8a986",
+        "l5be8840a2af3": "r61bc374e95f8",
+        "lc0553d768111": "r9e399f0379f3",
+        "lda961ae357cb": "r40057655fe0b"
+      },
+      "editorial_answer": "gradually — постепенно; increase — увеличиваться; decrease — уменьшаться; trend — тенденция",
+      "explanation": "В этих контекстах: gradually — постепенно; increase — увеличиваться; decrease — уменьшаться; trend — тенденция.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что ещё проверяла группа помимо роста?",
+      "public_payload": {
+        "passage": "At first, only a few neighbours used the shared tool cupboard. Over several months, more and more people began borrowing equipment. The organiser added clearer labels and a booking sheet. As use increased, keeping track of returns became more and more important. The group did not assume that growth alone proved the system worked well; it also checked whether borrowed tools came back on time.",
+        "options": [
+          {
+            "id": "vba3801020d5d",
+            "label": "Whether all labels had disappeared."
+          },
+          {
+            "id": "vf75781a46231",
+            "label": "Whether tools were returned on time."
+          },
+          {
+            "id": "ve480a5f040b7",
+            "label": "Only whether the cupboard was fashionable."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf75781a46231"
+      },
+      "reference_answer": "vf75781a46231",
+      "incorrect_answer": "ve480a5f040b7",
+      "editorial_answer": "Whether tools were returned on time.",
+      "explanation": "Рост числа пользователей не заменил проверку возвратов.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Опиши постепенно растущую сложность.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How is the task changing?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v75bb159425b6",
+            "label": "It is becoming more difficulter."
+          },
+          {
+            "id": "v854af9ae6ef9",
+            "label": "It is becoming most and more difficult."
+          },
+          {
+            "id": "v12908bb094d0",
+            "label": "It is becoming more and more difficult."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v12908bb094d0"
+      },
+      "reference_answer": "v12908bb094d0",
+      "incorrect_answer": "v75bb159425b6",
+      "editorial_answer": "It is becoming more and more difficult.",
+      "explanation": "More and more difficult — правильная модель.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A general direction of change over time is a ___.",
+        "options": [
+          {
+            "id": "v52de2f12a892",
+            "label": "receipt"
+          },
+          {
+            "id": "v7bb30285a699",
+            "label": "trend"
+          },
+          {
+            "id": "v75332243a6b7",
+            "label": "single exception only"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7bb30285a699"
+      },
+      "reference_answer": "v7bb30285a699",
+      "incorrect_answer": "v75332243a6b7",
+      "editorial_answer": "trend",
+      "explanation": "Trend — тенденция, а не единичный случай.",
+      "key": "e09"
+    }
+  ]
+}

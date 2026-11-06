@@ -1,0 +1,338 @@
+{
+  "key": "a1/floor-numbers",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A1 · формы и значения",
+    "position": 40
+  },
+  "position": 1,
+  "title": "Первый, второй и третий этаж",
+  "description": "Первый, второй и третий этаж: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Различать first/second/third",
+    "Находить комнату по этажу и номеру"
+  ],
+  "notes": [
+    "First, second, third — первый, второй, третий.",
+    "В этом уроке используем британскую нумерацию: ground floor — уровень входа, first floor — следующий этаж выше."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/need-things"],
+  "lexicon": [
+    {
+      "en": "ground floor",
+      "ru": "этаж на уровне входа"
+    },
+    {
+      "en": "first",
+      "ru": "первый"
+    },
+    {
+      "en": "second",
+      "ru": "второй"
+    },
+    {
+      "en": "third",
+      "ru": "третий"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The number 2 in an order is ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v8769ab5e6124",
+            "label": "second"
+          },
+          {
+            "id": "va6b09a9d531f",
+            "label": "third"
+          },
+          {
+            "id": "vdf791a97592e",
+            "label": "first"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8769ab5e6124"
+      },
+      "reference_answer": "v8769ab5e6124",
+      "incorrect_answer": "va6b09a9d531f",
+      "editorial_answer": "second",
+      "explanation": "Second обозначает второй по порядку.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: a / the.",
+      "public_payload": {
+        "sentence": "The café is on ___ ground floor."
+      },
+      "answer_key": {
+        "accepted": ["the"]
+      },
+      "reference_answer": "the",
+      "incorrect_answer": "a",
+      "editorial_answer": "The café is on the ground floor.",
+      "explanation": "В этом указании расположения используется on the ground floor.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Наша комната находится на втором этаже по принятой здесь нумерации.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "on"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "second"
+          },
+          {
+            "id": "t7",
+            "label": "floor."
+          },
+          {
+            "id": "t1",
+            "label": "Our"
+          },
+          {
+            "id": "t2",
+            "label": "room"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "Our room is on the second floor.",
+      "explanation": "On используется для этажа; второй по порядку — second.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The office is in the third floor."
+      },
+      "answer_key": {
+        "accepted": ["The office is on the third floor."]
+      },
+      "reference_answer": "The office is on the third floor.",
+      "incorrect_answer": "The office is in the third floor.",
+      "editorial_answer": "The office is on the third floor.",
+      "explanation": "Перед указанием этажа нужен on.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где проходит занятие?",
+      "public_payload": {
+        "passage": "The café is on the ground floor. Our class is in room six on the first floor. The office is on the second floor.",
+        "options": [
+          {
+            "id": "v0715eb9e2fc7",
+            "label": "The café on the ground floor."
+          },
+          {
+            "id": "v1848671dff3b",
+            "label": "The office on the second floor."
+          },
+          {
+            "id": "v0d1325223ce4",
+            "label": "Room six on the first floor."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0d1325223ce4"
+      },
+      "reference_answer": "v0d1325223ce4",
+      "incorrect_answer": "v0715eb9e2fc7",
+      "editorial_answer": "Room six on the first floor.",
+      "explanation": "Класс и офис находятся на разных этажах.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l716d3910dd27",
+            "label": "ground floor"
+          },
+          {
+            "id": "l2db612b2fdd1",
+            "label": "first"
+          },
+          {
+            "id": "l0ca661097cf1",
+            "label": "second"
+          },
+          {
+            "id": "lbd44cfc793b6",
+            "label": "third"
+          }
+        ],
+        "right": [
+          {
+            "id": "rf2f2e5f83935",
+            "label": "второй"
+          },
+          {
+            "id": "r62fa9a6509a5",
+            "label": "третий"
+          },
+          {
+            "id": "reae611479aa8",
+            "label": "этаж на уровне входа"
+          },
+          {
+            "id": "r61e70c4a288d",
+            "label": "первый"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l716d3910dd27": "reae611479aa8",
+          "l2db612b2fdd1": "r61e70c4a288d",
+          "l0ca661097cf1": "rf2f2e5f83935",
+          "lbd44cfc793b6": "r62fa9a6509a5"
+        }
+      },
+      "reference_answer": {
+        "l716d3910dd27": "reae611479aa8",
+        "l2db612b2fdd1": "r61e70c4a288d",
+        "l0ca661097cf1": "rf2f2e5f83935",
+        "lbd44cfc793b6": "r62fa9a6509a5"
+      },
+      "incorrect_answer": {
+        "l716d3910dd27": "r61e70c4a288d",
+        "l2db612b2fdd1": "reae611479aa8",
+        "l0ca661097cf1": "rf2f2e5f83935",
+        "lbd44cfc793b6": "r62fa9a6509a5"
+      },
+      "editorial_answer": "ground floor — этаж на уровне входа; first — первый; second — второй; third — третий",
+      "explanation": "В этих контекстах: ground floor — этаж на уровне входа; first — первый; second — второй; third — третий.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что находится на уровне входа?",
+      "public_payload": {
+        "passage": "The café is on the ground floor. Our class is in room six on the first floor. The office is on the second floor.",
+        "options": [
+          {
+            "id": "v47a4e7bfd813",
+            "label": "The office."
+          },
+          {
+            "id": "ve7ce01e16663",
+            "label": "The café."
+          },
+          {
+            "id": "vb372ba96c477",
+            "label": "Room six."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve7ce01e16663"
+      },
+      "reference_answer": "ve7ce01e16663",
+      "incorrect_answer": "vb372ba96c477",
+      "editorial_answer": "The café.",
+      "explanation": "Ground floor в принятой нумерации — уровень входа.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Укажи расположение на этаже.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Where is the office?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vda1938a8cb2f",
+            "label": "It is in the second floor."
+          },
+          {
+            "id": "v6392dd4931d1",
+            "label": "It is at second floor on."
+          },
+          {
+            "id": "v546f9566e982",
+            "label": "It is on the second floor."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v546f9566e982"
+      },
+      "reference_answer": "v546f9566e982",
+      "incorrect_answer": "vda1938a8cb2f",
+      "editorial_answer": "It is on the second floor.",
+      "explanation": "On the second floor — стандартная модель.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The item after first and second is ___.",
+        "options": [
+          {
+            "id": "vb4b59fda02f1",
+            "label": "twice"
+          },
+          {
+            "id": "vcfd7556776da",
+            "label": "third"
+          },
+          {
+            "id": "v0e2f90a1b50a",
+            "label": "ground"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vcfd7556776da"
+      },
+      "reference_answer": "vcfd7556776da",
+      "incorrect_answer": "v0e2f90a1b50a",
+      "editorial_answer": "third",
+      "explanation": "Third продолжает последовательность порядковых чисел.",
+      "key": "e09"
+    }
+  ]
+}

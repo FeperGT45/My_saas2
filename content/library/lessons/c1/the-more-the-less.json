@@ -1,0 +1,374 @@
+{
+  "key": "c1/the-more-the-less",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика C1 · формы и значения",
+    "position": 40
+  },
+  "position": 3,
+  "title": "Чем больше, тем меньше",
+  "description": "Чем больше, тем меньше: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Строить парную сравнительную конструкцию",
+    "Не выводить универсальную причинность из грамматической формы"
+  ],
+  "notes": [
+    "The more detail we add, the longer the guide becomes связывает два изменяющихся признака.",
+    "Грамматика описывает заявленную зависимость; истинность и границы этой зависимости требуют контекста и данных."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/essential-that-subjunctive"],
+  "lexicon": [
+    {
+      "en": "correlation",
+      "ru": "связь между изменениями"
+    },
+    {
+      "en": "clarity",
+      "ru": "ясность"
+    },
+    {
+      "en": "proportionate",
+      "ru": "соразмерный"
+    },
+    {
+      "en": "complexity",
+      "ru": "сложность"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The more examples we add, ___ the guide becomes.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "va6e8007f7d01",
+            "label": "most longer"
+          },
+          {
+            "id": "vb1ae1683c7ad",
+            "label": "the longer"
+          },
+          {
+            "id": "v4e32cc1ba236",
+            "label": "than longer"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb1ae1683c7ad"
+      },
+      "reference_answer": "vb1ae1683c7ad",
+      "incorrect_answer": "v4e32cc1ba236",
+      "editorial_answer": "the longer",
+      "explanation": "Парная конструкция требует the + сравнительная степень во второй части.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: clearest / clearer.",
+      "public_payload": {
+        "sentence": "The ___ the wording, the fewer questions readers asked in this trial."
+      },
+      "answer_key": {
+        "accepted": ["clearer"]
+      },
+      "reference_answer": "clearer",
+      "incorrect_answer": "clearest",
+      "editorial_answer": "The clearer the wording, the fewer questions readers asked in this trial.",
+      "explanation": "Используется сравнительная степень clearer.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Чем больше подробностей мы добавляем, тем длиннее становится руководство.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "detail"
+          },
+          {
+            "id": "t4",
+            "label": "we"
+          },
+          {
+            "id": "t5",
+            "label": "add,"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "longer"
+          },
+          {
+            "id": "t8",
+            "label": "the"
+          },
+          {
+            "id": "t9",
+            "label": "guide"
+          },
+          {
+            "id": "t10",
+            "label": "becomes."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "more"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "The more detail we add, the longer the guide becomes.",
+      "explanation": "Обе части используют сравнительную структуру.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The more careful the check, the most reliable the result."
+      },
+      "answer_key": {
+        "accepted": [
+          "The more careful the check, the more reliable the result."
+        ]
+      },
+      "reference_answer": "The more careful the check, the more reliable the result.",
+      "incorrect_answer": "The more careful the check, the most reliable the result.",
+      "editorial_answer": "The more careful the check, the more reliable the result.",
+      "explanation": "Во второй части нужна сравнительная more reliable, не превосходная most reliable.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое ограничение обнаружили при добавлении подробностей?",
+      "public_payload": {
+        "passage": "A team revising a visitor guide noticed a trade-off. The more detail they added, the longer the document became. Initially, this seemed harmless, but some trial readers struggled to locate the instructions relevant to them. The team did not conclude that detail was inherently undesirable. It separated essential steps from optional background and added headings. The relationship between length and difficulty depended on organisation as well as volume. The final report described the observed pattern without turning it into a universal rule that every shorter guide would necessarily be clearer. A comparative construction helped express a relationship, but it did not eliminate the need to specify its context.",
+        "options": [
+          {
+            "id": "v230604e87dbc",
+            "label": "A longer document could make relevant instructions harder to locate."
+          },
+          {
+            "id": "v488e273fb836",
+            "label": "Every extra detail was proved useless."
+          },
+          {
+            "id": "v1ce918744551",
+            "label": "The guide stopped containing any essential steps."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v230604e87dbc"
+      },
+      "reference_answer": "v230604e87dbc",
+      "incorrect_answer": "v488e273fb836",
+      "editorial_answer": "A longer document could make relevant instructions harder to locate.",
+      "explanation": "Проблема заключалась в поиске нужного, а не в бесполезности всех подробностей.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l2d528107852a",
+            "label": "correlation"
+          },
+          {
+            "id": "ld06c25ac30ba",
+            "label": "clarity"
+          },
+          {
+            "id": "l0d5990dd505d",
+            "label": "proportionate"
+          },
+          {
+            "id": "ldf21260af30f",
+            "label": "complexity"
+          }
+        ],
+        "right": [
+          {
+            "id": "r7aa310d52753",
+            "label": "соразмерный"
+          },
+          {
+            "id": "r665ace1a6384",
+            "label": "сложность"
+          },
+          {
+            "id": "rc9b98fe50d03",
+            "label": "связь между изменениями"
+          },
+          {
+            "id": "r267f0c7070bf",
+            "label": "ясность"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l2d528107852a": "rc9b98fe50d03",
+          "ld06c25ac30ba": "r267f0c7070bf",
+          "l0d5990dd505d": "r7aa310d52753",
+          "ldf21260af30f": "r665ace1a6384"
+        }
+      },
+      "reference_answer": {
+        "l2d528107852a": "rc9b98fe50d03",
+        "ld06c25ac30ba": "r267f0c7070bf",
+        "l0d5990dd505d": "r7aa310d52753",
+        "ldf21260af30f": "r665ace1a6384"
+      },
+      "incorrect_answer": {
+        "l2d528107852a": "r267f0c7070bf",
+        "ld06c25ac30ba": "rc9b98fe50d03",
+        "l0d5990dd505d": "r7aa310d52753",
+        "ldf21260af30f": "r665ace1a6384"
+      },
+      "editorial_answer": "correlation — связь между изменениями; clarity — ясность; proportionate — соразмерный; complexity — сложность",
+      "explanation": "В этих контекстах: correlation — связь между изменениями; clarity — ясность; proportionate — соразмерный; complexity — сложность.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему нельзя заключить, что любое короткое руководство яснее?",
+      "public_payload": {
+        "passage": "A team revising a visitor guide noticed a trade-off. The more detail they added, the longer the document became. Initially, this seemed harmless, but some trial readers struggled to locate the instructions relevant to them. The team did not conclude that detail was inherently undesirable. It separated essential steps from optional background and added headings. The relationship between length and difficulty depended on organisation as well as volume. The final report described the observed pattern without turning it into a universal rule that every shorter guide would necessarily be clearer. A comparative construction helped express a relationship, but it did not eliminate the need to specify its context.",
+        "options": [
+          {
+            "id": "v73aa6f05dfef",
+            "label": "Length has no possible relation to use."
+          },
+          {
+            "id": "v1ab4bbe20149",
+            "label": "The comparative grammar forbids every observation."
+          },
+          {
+            "id": "v368584ea662f",
+            "label": "Organisation and context also affected difficulty."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v368584ea662f"
+      },
+      "reference_answer": "v368584ea662f",
+      "incorrect_answer": "v73aa6f05dfef",
+      "editorial_answer": "Organisation and context also affected difficulty.",
+      "explanation": "Наблюдаемая связь не даёт универсальной гарантии для всех документов.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери согласованную парную сравнительную модель.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Which sentence has the paired comparative structure?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vd75f175b03a3",
+            "label": "The clearer the headings, the easier the guide is to navigate."
+          },
+          {
+            "id": "v22705616cc87",
+            "label": "The clearest the headings, the most easier the guide."
+          },
+          {
+            "id": "vdbcc280955e2",
+            "label": "More clearer headings, than easy guide."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd75f175b03a3"
+      },
+      "reference_answer": "vd75f175b03a3",
+      "incorrect_answer": "v22705616cc87",
+      "editorial_answer": "The clearer the headings, the easier the guide is to navigate.",
+      "explanation": "The clearer ... the easier ... использует две сравнительные формы.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The difficulty created by interacting parts is a form of ___.",
+        "options": [
+          {
+            "id": "v6f9920774284",
+            "label": "certainty"
+          },
+          {
+            "id": "vecdcfa988179",
+            "label": "completion necessarily"
+          },
+          {
+            "id": "v26e060bd0086",
+            "label": "complexity"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v26e060bd0086"
+      },
+      "reference_answer": "v26e060bd0086",
+      "incorrect_answer": "v6f9920774284",
+      "editorial_answer": "complexity",
+      "explanation": "Complexity — сложность устройства или отношений.",
+      "key": "e09"
+    }
+  ]
+}

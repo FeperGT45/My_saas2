@@ -1,0 +1,334 @@
+{
+  "key": "b1/so-neither-agreement",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B1 · формы и значения",
+    "position": 40
+  },
+  "position": 7,
+  "title": "Я тоже и я тоже не",
+  "description": "Я тоже и я тоже не: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Соглашаться с положительным утверждением через so",
+    "Соглашаться с отрицательным через neither"
+  ],
+  "notes": [
+    "I am tired. — So am I. В ответе повторяется подходящий вспомогательный глагол.",
+    "I do not drive. — Neither do I. После so/neither в этих коротких ответах используется инверсия."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/more-and-more"],
+  "lexicon": [
+    {
+      "en": "agree",
+      "ru": "соглашаться"
+    },
+    {
+      "en": "positive",
+      "ru": "утвердительный"
+    },
+    {
+      "en": "negative",
+      "ru": "отрицательный"
+    },
+    {
+      "en": "auxiliary",
+      "ru": "вспомогательный глагол"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I can swim. — ___ can I.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vea5b52154c9d",
+            "label": "Neither"
+          },
+          {
+            "id": "vc7f18cafd494",
+            "label": "Either not"
+          },
+          {
+            "id": "v07ce1ca1cfe0",
+            "label": "So"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v07ce1ca1cfe0"
+      },
+      "reference_answer": "v07ce1ca1cfe0",
+      "incorrect_answer": "vea5b52154c9d",
+      "editorial_answer": "So",
+      "explanation": "К положительному can swim присоединяется So can I.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: am / do.",
+      "public_payload": {
+        "sentence": "I do not work on Sundays. — Neither ___ I."
+      },
+      "answer_key": {
+        "accepted": ["do"]
+      },
+      "reference_answer": "do",
+      "incorrect_answer": "am",
+      "editorial_answer": "I do not work on Sundays. — Neither do I.",
+      "explanation": "Нужен тот же вспомогательный do.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я готов. Я тоже.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "ready."
+          },
+          {
+            "id": "t4",
+            "label": "So"
+          },
+          {
+            "id": "t5",
+            "label": "am"
+          },
+          {
+            "id": "t6",
+            "label": "I."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "am"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "I am ready. So am I.",
+      "explanation": "So am I сохраняет be и правильный порядок ответа.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I am tired. So I am, says another tired person."
+      },
+      "answer_key": {
+        "accepted": ["I am tired. So am I, says another tired person."]
+      },
+      "reference_answer": "I am tired. So am I, says another tired person.",
+      "incorrect_answer": "I am tired. So I am, says another tired person.",
+      "editorial_answer": "I am tired. So am I, says another tired person.",
+      "explanation": "Для значения «я тоже» у другого человека требуется So am I.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что выражает первый ответ Бена?",
+      "public_payload": {
+        "passage": "At the start of a training day, Noor said she was nervous. “So am I,” replied Ben. Later, Noor explained that she did not know the building well. “Neither do I,” Ben said, suggesting they find the room together. Their replies showed shared experiences rather than agreement about a factual claim that only one of them could verify.",
+        "options": [
+          {
+            "id": "vb7ddf1d168b3",
+            "label": "He says Noor must be wrong."
+          },
+          {
+            "id": "v2aaa06f6fea1",
+            "label": "He is nervous too."
+          },
+          {
+            "id": "vde9b341e08eb",
+            "label": "He is not nervous."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2aaa06f6fea1"
+      },
+      "reference_answer": "v2aaa06f6fea1",
+      "incorrect_answer": "vde9b341e08eb",
+      "editorial_answer": "He is nervous too.",
+      "explanation": "So am I добавляет такое же состояние у Бена.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l3aa03b28f542",
+            "label": "agree"
+          },
+          {
+            "id": "l901bc09a0287",
+            "label": "positive"
+          },
+          {
+            "id": "l1b1c46795233",
+            "label": "negative"
+          },
+          {
+            "id": "l4ba323340106",
+            "label": "auxiliary"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4e4283a1b1e2",
+            "label": "отрицательный"
+          },
+          {
+            "id": "rbd60da7ecac7",
+            "label": "вспомогательный глагол"
+          },
+          {
+            "id": "r19c4b63835c3",
+            "label": "соглашаться"
+          },
+          {
+            "id": "rcd02e07108f7",
+            "label": "утвердительный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l3aa03b28f542": "r19c4b63835c3",
+          "l901bc09a0287": "rcd02e07108f7",
+          "l1b1c46795233": "r4e4283a1b1e2",
+          "l4ba323340106": "rbd60da7ecac7"
+        }
+      },
+      "reference_answer": {
+        "l3aa03b28f542": "r19c4b63835c3",
+        "l901bc09a0287": "rcd02e07108f7",
+        "l1b1c46795233": "r4e4283a1b1e2",
+        "l4ba323340106": "rbd60da7ecac7"
+      },
+      "incorrect_answer": {
+        "l3aa03b28f542": "rcd02e07108f7",
+        "l901bc09a0287": "r19c4b63835c3",
+        "l1b1c46795233": "r4e4283a1b1e2",
+        "l4ba323340106": "rbd60da7ecac7"
+      },
+      "editorial_answer": "agree — соглашаться; positive — утвердительный; negative — отрицательный; auxiliary — вспомогательный глагол",
+      "explanation": "В этих контекстах: agree — соглашаться; positive — утвердительный; negative — отрицательный; auxiliary — вспомогательный глагол.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как они решили справиться с незнакомым зданием?",
+      "public_payload": {
+        "passage": "At the start of a training day, Noor said she was nervous. “So am I,” replied Ben. Later, Noor explained that she did not know the building well. “Neither do I,” Ben said, suggesting they find the room together. Their replies showed shared experiences rather than agreement about a factual claim that only one of them could verify.",
+        "options": [
+          {
+            "id": "vfcfe4085f065",
+            "label": "Find the room together."
+          },
+          {
+            "id": "vbd5cb8c54c9b",
+            "label": "Ask everyone to leave."
+          },
+          {
+            "id": "v070a7d13e2cf",
+            "label": "Pretend that Ben already knew every room."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfcfe4085f065"
+      },
+      "reference_answer": "vfcfe4085f065",
+      "incorrect_answer": "vbd5cb8c54c9b",
+      "editorial_answer": "Find the room together.",
+      "explanation": "Оба не знают здание хорошо и предлагают совместный поиск.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь, что ты тоже закончил.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I have finished the form."
+          }
+        ],
+        "options": [
+          {
+            "id": "v9003637db089",
+            "label": "Neither have I, meaning I finished too."
+          },
+          {
+            "id": "ve849a38ecdf9",
+            "label": "So have I."
+          },
+          {
+            "id": "v156e571f2b2d",
+            "label": "So am I."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve849a38ecdf9"
+      },
+      "reference_answer": "ve849a38ecdf9",
+      "incorrect_answer": "v156e571f2b2d",
+      "editorial_answer": "So have I.",
+      "explanation": "Положительный Present Perfect получает So have I.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "In “Neither do I”, “do” functions as an ___.",
+        "options": [
+          {
+            "id": "v22aeb807811f",
+            "label": "auxiliary"
+          },
+          {
+            "id": "v0fd3e36acddd",
+            "label": "adjective"
+          },
+          {
+            "id": "v22951d0ad924",
+            "label": "object noun"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v22aeb807811f"
+      },
+      "reference_answer": "v22aeb807811f",
+      "incorrect_answer": "v0fd3e36acddd",
+      "editorial_answer": "auxiliary",
+      "explanation": "Do — вспомогательный глагол.",
+      "key": "e09"
+    }
+  ]
+}

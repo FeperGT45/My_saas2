@@ -1,0 +1,334 @@
+{
+  "key": "c2/consideration-not-commitment",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика C2 · формы и значения",
+    "position": 40
+  },
+  "position": 2,
+  "title": "Обещали рассмотреть — не обещали одобрить",
+  "description": "Обещали рассмотреть — не обещали одобрить: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Различать обязательство рассмотреть и обязательство принять",
+    "Определять предел обещания по формулировке и контексту"
+  ],
+  "notes": [
+    "“We will consider your proposal” обещает рассмотрение, но само по себе не обещает положительное решение.",
+    "“We will consider whether to ...” оставляет открытым содержание решения; пересказ не должен незаметно усиливать обязательство."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/rejecting-a-description"],
+  "lexicon": [
+    {
+      "en": "undertaking",
+      "ru": "принятое обязательство"
+    },
+    {
+      "en": "deliberation",
+      "ru": "обсуждение перед решением"
+    },
+    {
+      "en": "endorsement",
+      "ru": "одобрение"
+    },
+    {
+      "en": "noncommittal",
+      "ru": "не выражающий определённого решения"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “We undertake to consider the request” commits the speaker to ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v853295bf6111",
+            "label": "granting the request regardless of its merits"
+          },
+          {
+            "id": "v36a9827b985e",
+            "label": "having already approved the request"
+          },
+          {
+            "id": "v9b2ed28f543a",
+            "label": "giving the request consideration"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9b2ed28f543a"
+      },
+      "reference_answer": "v9b2ed28f543a",
+      "incorrect_answer": "v853295bf6111",
+      "editorial_answer": "giving the request consideration",
+      "explanation": "Содержание обязательства ограничено рассмотрением.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: considered / considering.",
+      "public_payload": {
+        "sentence": "The promise concerns whether the proposal will be ___, not whether it will be accepted."
+      },
+      "answer_key": {
+        "accepted": ["considered"]
+      },
+      "reference_answer": "considered",
+      "incorrect_answer": "considering",
+      "editorial_answer": "The promise concerns whether the proposal will be considered, not whether it will be accepted.",
+      "explanation": "В пассивном will be considered требуется причастие considered.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Комиссия рассмотрит предложение.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "will"
+          },
+          {
+            "id": "t4",
+            "label": "consider"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "proposal."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "committee"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The committee will consider the proposal.",
+      "explanation": "Фраза не заменяет отдельного решения об одобрении.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "They promised to consider whether to changes the rule."
+      },
+      "answer_key": {
+        "accepted": ["They promised to consider whether to change the rule."]
+      },
+      "reference_answer": "They promised to consider whether to change the rule.",
+      "incorrect_answer": "They promised to consider whether to changes the rule.",
+      "editorial_answer": "They promised to consider whether to change the rule.",
+      "explanation": "После to нужна начальная форма change.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что обращение жителей действительно обеспечило?",
+      "public_payload": {
+        "passage": "A committee replied to a residents’ petition by promising to consider a change to the booking rules. The campaign’s next message announced that the committee had committed to making the change. When challenged, the campaign argued that the reply would otherwise have been meaningless. Yet consideration was itself a procedural undertaking: the proposal would enter discussion, while its outcome remained open. The committee had not promised rejection either. In the subsequent meeting, members reviewed access concerns alongside staffing limits and requested further information. A careful account could acknowledge that the petition had secured a hearing without transforming that achievement into a decision that had not been made. The distinction preserved the actual progress while keeping the unresolved policy question visible.",
+        "options": [
+          {
+            "id": "vbb68bbc783d0",
+            "label": "A promise to reject the request."
+          },
+          {
+            "id": "v6974cbf40c58",
+            "label": "A commitment to consideration, not guaranteed adoption."
+          },
+          {
+            "id": "v3692397639f4",
+            "label": "Unconditional adoption of the new rule."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6974cbf40c58"
+      },
+      "reference_answer": "v6974cbf40c58",
+      "incorrect_answer": "v3692397639f4",
+      "editorial_answer": "A commitment to consideration, not guaranteed adoption.",
+      "explanation": "Обещание процедурного шага не равно обещанию исхода.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lcf63290e2a05",
+            "label": "undertaking"
+          },
+          {
+            "id": "l790ee27c142a",
+            "label": "deliberation"
+          },
+          {
+            "id": "l2747e7240609",
+            "label": "endorsement"
+          },
+          {
+            "id": "l0e81e6b85f46",
+            "label": "noncommittal"
+          }
+        ],
+        "right": [
+          {
+            "id": "r5d2cacdb534e",
+            "label": "одобрение"
+          },
+          {
+            "id": "r028053f1ae68",
+            "label": "не выражающий определённого решения"
+          },
+          {
+            "id": "rcd8babff62d8",
+            "label": "принятое обязательство"
+          },
+          {
+            "id": "rbc5e753e6983",
+            "label": "обсуждение перед решением"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lcf63290e2a05": "rcd8babff62d8",
+          "l790ee27c142a": "rbc5e753e6983",
+          "l2747e7240609": "r5d2cacdb534e",
+          "l0e81e6b85f46": "r028053f1ae68"
+        }
+      },
+      "reference_answer": {
+        "lcf63290e2a05": "rcd8babff62d8",
+        "l790ee27c142a": "rbc5e753e6983",
+        "l2747e7240609": "r5d2cacdb534e",
+        "l0e81e6b85f46": "r028053f1ae68"
+      },
+      "incorrect_answer": {
+        "lcf63290e2a05": "rbc5e753e6983",
+        "l790ee27c142a": "rcd8babff62d8",
+        "l2747e7240609": "r5d2cacdb534e",
+        "l0e81e6b85f46": "r028053f1ae68"
+      },
+      "editorial_answer": "undertaking — принятое обязательство; deliberation — обсуждение перед решением; endorsement — одобрение; noncommittal — не выражающий определённого решения",
+      "explanation": "В этих контекстах: undertaking — принятое обязательство; deliberation — обсуждение перед решением; endorsement — одобрение; noncommittal — не выражающий определённого решения.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему отрицать любой прогресс тоже было бы неточно?",
+      "public_payload": {
+        "passage": "A committee replied to a residents’ petition by promising to consider a change to the booking rules. The campaign’s next message announced that the committee had committed to making the change. When challenged, the campaign argued that the reply would otherwise have been meaningless. Yet consideration was itself a procedural undertaking: the proposal would enter discussion, while its outcome remained open. The committee had not promised rejection either. In the subsequent meeting, members reviewed access concerns alongside staffing limits and requested further information. A careful account could acknowledge that the petition had secured a hearing without transforming that achievement into a decision that had not been made. The distinction preserved the actual progress while keeping the unresolved policy question visible.",
+        "options": [
+          {
+            "id": "v51c2bb488797",
+            "label": "A hearing had been secured even though the decision remained open."
+          },
+          {
+            "id": "v2d68bf3ca50d",
+            "label": "Every undecided issue is automatically approved."
+          },
+          {
+            "id": "v339cef7a0b39",
+            "label": "The reply contained no procedural undertaking at all."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v51c2bb488797"
+      },
+      "reference_answer": "v51c2bb488797",
+      "incorrect_answer": "v2d68bf3ca50d",
+      "editorial_answer": "A hearing had been secured even though the decision remained open.",
+      "explanation": "Рассмотрение — реальный шаг, но его нельзя усиливать до принятия.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани и обещанный шаг, и неопределённый исход.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What is the safest report of “We will consider whether to extend access”?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v613d965ba025",
+            "label": "They have confirmed that extension is impossible."
+          },
+          {
+            "id": "vcdbbdc927a1c",
+            "label": "They have promised to examine an extension, with the outcome open."
+          },
+          {
+            "id": "v398ef753d8a0",
+            "label": "They have guaranteed extended access."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vcdbbdc927a1c"
+      },
+      "reference_answer": "vcdbbdc927a1c",
+      "incorrect_answer": "v398ef753d8a0",
+      "editorial_answer": "They have promised to examine an extension, with the outcome open.",
+      "explanation": "Рассмотрение не устанавливает ни принятие, ни отказ.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An explicit promise to carry out a specified action is an ___.",
+        "options": [
+          {
+            "id": "v13023a0f4911",
+            "label": "undertaking"
+          },
+          {
+            "id": "v9fbc6b464925",
+            "label": "completed outcome necessarily"
+          },
+          {
+            "id": "v9e473224c4a6",
+            "label": "unrecorded possibility only"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v13023a0f4911"
+      },
+      "reference_answer": "v13023a0f4911",
+      "incorrect_answer": "v9fbc6b464925",
+      "editorial_answer": "undertaking",
+      "explanation": "Undertaking — принятое обязательство определённого содержания.",
+      "key": "e09"
+    }
+  ]
+}

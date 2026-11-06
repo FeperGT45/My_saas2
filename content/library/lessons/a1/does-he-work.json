@@ -1,0 +1,334 @@
+{
+  "key": "a1/does-he-work",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A1 · формы и значения",
+    "position": 40
+  },
+  "position": 6,
+  "title": "Вопросы о привычных действиях",
+  "description": "Вопросы о привычных действиях: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Использовать Does с he/she",
+    "Отвечать Yes, she does без повторения действия"
+  ],
+  "notes": [
+    "Does she work here? — в вопросе после does глагол work без -s.",
+    "Короткий ответ: Yes, she does / No, she does not."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/who-is-the-teacher"],
+  "lexicon": [
+    {
+      "en": "start",
+      "ru": "начинать"
+    },
+    {
+      "en": "finish",
+      "ru": "заканчивать"
+    },
+    {
+      "en": "usually",
+      "ru": "обычно"
+    },
+    {
+      "en": "shift",
+      "ru": "рабочая смена"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ he start work at nine?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v6a395cfc35cb",
+            "label": "Is do"
+          },
+          {
+            "id": "v37a3ab99fd01",
+            "label": "Does"
+          },
+          {
+            "id": "v50d90852b074",
+            "label": "Do"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v37a3ab99fd01"
+      },
+      "reference_answer": "v37a3ab99fd01",
+      "incorrect_answer": "v50d90852b074",
+      "editorial_answer": "Does",
+      "explanation": "С he в этом вопросе Present Simple используется Does.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: finish / finishes.",
+      "public_payload": {
+        "sentence": "Does she ___ at six?"
+      },
+      "answer_key": {
+        "accepted": ["finish"]
+      },
+      "reference_answer": "finish",
+      "incorrect_answer": "finishes",
+      "editorial_answer": "Does she finish at six?",
+      "explanation": "После does нужна начальная форма finish.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Твой брат работает по субботам?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "brother"
+          },
+          {
+            "id": "t4",
+            "label": "work"
+          },
+          {
+            "id": "t5",
+            "label": "on"
+          },
+          {
+            "id": "t6",
+            "label": "Saturdays?"
+          },
+          {
+            "id": "t1",
+            "label": "Does"
+          },
+          {
+            "id": "t2",
+            "label": "your"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Does your brother work on Saturdays?",
+      "explanation": "Does относится к your brother; work не получает -s.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Does he starts at eight?"
+      },
+      "answer_key": {
+        "accepted": ["Does he start at eight?"]
+      },
+      "reference_answer": "Does he start at eight?",
+      "incorrect_answer": "Does he starts at eight?",
+      "editorial_answer": "Does he start at eight?",
+      "explanation": "После does убирается -s у start.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда обычно заканчивается её смена?",
+      "public_payload": {
+        "passage": "My sister works in a small hotel. She usually starts at seven and finishes at three. She does not work on Mondays. On Monday she visits our grandmother.",
+        "options": [
+          {
+            "id": "v0964330a6b31",
+            "label": "At three."
+          },
+          {
+            "id": "vd364e43f7a81",
+            "label": "At seven."
+          },
+          {
+            "id": "v5ca30b069000",
+            "label": "At midnight."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0964330a6b31"
+      },
+      "reference_answer": "v0964330a6b31",
+      "incorrect_answer": "vd364e43f7a81",
+      "editorial_answer": "At three.",
+      "explanation": "Seven — начало, three — конец работы.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lf58c7179939d",
+            "label": "start"
+          },
+          {
+            "id": "l866d4c545ecc",
+            "label": "finish"
+          },
+          {
+            "id": "lf398a8712def",
+            "label": "usually"
+          },
+          {
+            "id": "l74ffaa1e4a74",
+            "label": "shift"
+          }
+        ],
+        "right": [
+          {
+            "id": "r96e76ab22dd2",
+            "label": "обычно"
+          },
+          {
+            "id": "rab4c4359d299",
+            "label": "рабочая смена"
+          },
+          {
+            "id": "rb7fc85132e82",
+            "label": "начинать"
+          },
+          {
+            "id": "r7b2725a2d13c",
+            "label": "заканчивать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lf58c7179939d": "rb7fc85132e82",
+          "l866d4c545ecc": "r7b2725a2d13c",
+          "lf398a8712def": "r96e76ab22dd2",
+          "l74ffaa1e4a74": "rab4c4359d299"
+        }
+      },
+      "reference_answer": {
+        "lf58c7179939d": "rb7fc85132e82",
+        "l866d4c545ecc": "r7b2725a2d13c",
+        "lf398a8712def": "r96e76ab22dd2",
+        "l74ffaa1e4a74": "rab4c4359d299"
+      },
+      "incorrect_answer": {
+        "lf58c7179939d": "r7b2725a2d13c",
+        "l866d4c545ecc": "rb7fc85132e82",
+        "lf398a8712def": "r96e76ab22dd2",
+        "l74ffaa1e4a74": "rab4c4359d299"
+      },
+      "editorial_answer": "start — начинать; finish — заканчивать; usually — обычно; shift — рабочая смена",
+      "explanation": "В этих контекстах: start — начинать; finish — заканчивать; usually — обычно; shift — рабочая смена.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что она делает по понедельникам?",
+      "public_payload": {
+        "passage": "My sister works in a small hotel. She usually starts at seven and finishes at three. She does not work on Mondays. On Monday she visits our grandmother.",
+        "options": [
+          {
+            "id": "v6967eb666001",
+            "label": "Starts work at seven."
+          },
+          {
+            "id": "v45dba529ac05",
+            "label": "Works a night shift."
+          },
+          {
+            "id": "v478a3395652a",
+            "label": "Visits her grandmother."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v478a3395652a"
+      },
+      "reference_answer": "v478a3395652a",
+      "incorrect_answer": "v6967eb666001",
+      "editorial_answer": "Visits her grandmother.",
+      "explanation": "Понедельник исключён из работы; назван визит к бабушке.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь коротко на вопрос с does.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does she work here?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vc4b6916fb658",
+            "label": "Yes, she does."
+          },
+          {
+            "id": "v806015f1a767",
+            "label": "Yes, she do."
+          },
+          {
+            "id": "vd4479564b310",
+            "label": "Yes, she is work."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc4b6916fb658"
+      },
+      "reference_answer": "vc4b6916fb658",
+      "incorrect_answer": "v806015f1a767",
+      "editorial_answer": "Yes, she does.",
+      "explanation": "Короткий ответ сохраняет does.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A period of work during the day or night is a ___.",
+        "options": [
+          {
+            "id": "v5a8b0e55391b",
+            "label": "calendar"
+          },
+          {
+            "id": "vb83b43961c85",
+            "label": "question"
+          },
+          {
+            "id": "v0a1ea6a362e2",
+            "label": "shift"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0a1ea6a362e2"
+      },
+      "reference_answer": "v0a1ea6a362e2",
+      "incorrect_answer": "v5a8b0e55391b",
+      "editorial_answer": "shift",
+      "explanation": "Shift — рабочая смена.",
+      "key": "e09"
+    }
+  ]
+}

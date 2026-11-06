@@ -1,0 +1,330 @@
+{
+  "key": "a2/might-next-week",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A2 · формы и значения",
+    "position": 40
+  },
+  "position": 7,
+  "title": "Возможно, но пока не решено",
+  "description": "Возможно, но пока не решено: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Выражать возможное будущее с might",
+    "Отличать возможность от подтверждённого плана"
+  ],
+  "notes": [
+    "Might + инфинитив: We might visit on Sunday.",
+    "Might не означает, что решение уже принято или событие гарантировано."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/enjoy-and-finish"],
+  "lexicon": [
+    {
+      "en": "possible",
+      "ru": "возможный"
+    },
+    {
+      "en": "decide",
+      "ru": "решать"
+    },
+    {
+      "en": "definite",
+      "ru": "определённый"
+    },
+    {
+      "en": "plan",
+      "ru": "план"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We ___ visit on Sunday, but we have not decided.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v5178fc23bd7f",
+            "label": "might will"
+          },
+          {
+            "id": "vb6cfac9f9c48",
+            "label": "might"
+          },
+          {
+            "id": "vda3608c5721f",
+            "label": "might to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb6cfac9f9c48"
+      },
+      "reference_answer": "vb6cfac9f9c48",
+      "incorrect_answer": "vda3608c5721f",
+      "editorial_answer": "might",
+      "explanation": "После might в этой конструкции сразу идёт visit.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: joins / join.",
+      "public_payload": {
+        "sentence": "She might ___ us next week."
+      },
+      "answer_key": {
+        "accepted": ["join"]
+      },
+      "reference_answer": "join",
+      "incorrect_answer": "joins",
+      "editorial_answer": "She might join us next week.",
+      "explanation": "После might используется начальная форма join.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Возможно, мы встретимся после обеда.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "meet"
+          },
+          {
+            "id": "t4",
+            "label": "after"
+          },
+          {
+            "id": "t5",
+            "label": "lunch."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "might"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "We might meet after lunch.",
+      "explanation": "Might сохраняет неопределённость будущей встречи.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He might to come on Friday."
+      },
+      "answer_key": {
+        "accepted": ["He might come on Friday."]
+      },
+      "reference_answer": "He might come on Friday.",
+      "incorrect_answer": "He might to come on Friday.",
+      "editorial_answer": "He might come on Friday.",
+      "explanation": "После might лишнее to убирается.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему поездка ещё не решена?",
+      "public_payload": {
+        "passage": "Ava might visit her cousins next weekend, but she needs to check her work schedule first. She has not bought a ticket. Her cousins say that either Saturday or Sunday is fine. Ava promises to send a definite answer by Thursday.",
+        "options": [
+          {
+            "id": "vb330312d95e7",
+            "label": "Ava must check her work schedule."
+          },
+          {
+            "id": "vf8622b90af13",
+            "label": "Her cousins are away on both days."
+          },
+          {
+            "id": "v55ebd5a92de5",
+            "label": "Every ticket has already been bought."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb330312d95e7"
+      },
+      "reference_answer": "vb330312d95e7",
+      "incorrect_answer": "vf8622b90af13",
+      "editorial_answer": "Ava must check her work schedule.",
+      "explanation": "Рабочее расписание — названная причина неопределённости.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "la05200472d18",
+            "label": "possible"
+          },
+          {
+            "id": "l359eeda6af82",
+            "label": "decide"
+          },
+          {
+            "id": "l27ec58635f8b",
+            "label": "definite"
+          },
+          {
+            "id": "l8b5299bf3156",
+            "label": "plan"
+          }
+        ],
+        "right": [
+          {
+            "id": "r9d3a4f744d43",
+            "label": "определённый"
+          },
+          {
+            "id": "rec95f2e22bdc",
+            "label": "план"
+          },
+          {
+            "id": "r8dda9a4eab06",
+            "label": "возможный"
+          },
+          {
+            "id": "r800216e10cef",
+            "label": "решать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "la05200472d18": "r8dda9a4eab06",
+          "l359eeda6af82": "r800216e10cef",
+          "l27ec58635f8b": "r9d3a4f744d43",
+          "l8b5299bf3156": "rec95f2e22bdc"
+        }
+      },
+      "reference_answer": {
+        "la05200472d18": "r8dda9a4eab06",
+        "l359eeda6af82": "r800216e10cef",
+        "l27ec58635f8b": "r9d3a4f744d43",
+        "l8b5299bf3156": "rec95f2e22bdc"
+      },
+      "incorrect_answer": {
+        "la05200472d18": "r800216e10cef",
+        "l359eeda6af82": "r8dda9a4eab06",
+        "l27ec58635f8b": "r9d3a4f744d43",
+        "l8b5299bf3156": "rec95f2e22bdc"
+      },
+      "editorial_answer": "possible — возможный; decide — решать; definite — определённый; plan — план",
+      "explanation": "В этих контекстах: possible — возможный; decide — решать; definite — определённый; plan — план.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда Ава обещает дать точный ответ?",
+      "public_payload": {
+        "passage": "Ava might visit her cousins next weekend, but she needs to check her work schedule first. She has not bought a ticket. Her cousins say that either Saturday or Sunday is fine. Ava promises to send a definite answer by Thursday.",
+        "options": [
+          {
+            "id": "vaa95e7fbf60b",
+            "label": "Only after next weekend."
+          },
+          {
+            "id": "v778c3ffc0a20",
+            "label": "Immediately last Sunday."
+          },
+          {
+            "id": "v4e696c1aff25",
+            "label": "By Thursday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4e696c1aff25"
+      },
+      "reference_answer": "v4e696c1aff25",
+      "incorrect_answer": "vaa95e7fbf60b",
+      "editorial_answer": "By Thursday.",
+      "explanation": "Срок ответа указан в последней фразе.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани неопределённость правильной формой.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Are you definitely coming?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vea3b33694cfa",
+            "label": "Not yet. I might come, but I need to check."
+          },
+          {
+            "id": "v5c2a6fe2c537",
+            "label": "Yes, might always means definitely."
+          },
+          {
+            "id": "v55a8fd146520",
+            "label": "I might comes, but to checked."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vea3b33694cfa"
+      },
+      "reference_answer": "vea3b33694cfa",
+      "incorrect_answer": "v5c2a6fe2c537",
+      "editorial_answer": "Not yet. I might come, but I need to check.",
+      "explanation": "Might come и need to check не превращают возможность в подтверждение.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A plan that is certain and confirmed is ___.",
+        "options": [
+          {
+            "id": "vbb2228919f74",
+            "label": "possible only"
+          },
+          {
+            "id": "v875526f2450b",
+            "label": "unknown always"
+          },
+          {
+            "id": "vfb9cfc03c3c8",
+            "label": "definite"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfb9cfc03c3c8"
+      },
+      "reference_answer": "vfb9cfc03c3c8",
+      "incorrect_answer": "vbb2228919f74",
+      "editorial_answer": "definite",
+      "explanation": "Definite означает определённый, а не просто возможный.",
+      "key": "e09"
+    }
+  ]
+}

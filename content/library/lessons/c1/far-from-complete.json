@@ -1,0 +1,338 @@
+{
+  "key": "c1/far-from-complete",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика C1 · формы и значения",
+    "position": 40
+  },
+  "position": 6,
+  "title": "Далеко от завершения — не значит ничего не сделано",
+  "description": "Далеко от завершения — не значит ничего не сделано: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Использовать far from + -ing или прилагательное",
+    "Не подменять ограниченную отрицательную оценку крайним выводом"
+  ],
+  "notes": [
+    "Far from being complete означает значительную незавершённость.",
+    "Far from perfect не равно entirely useless: степень несовершенства и полная бесполезность — разные оценки."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/do-so-reference"],
+  "lexicon": [
+    {
+      "en": "partial",
+      "ru": "частичный"
+    },
+    {
+      "en": "incomplete",
+      "ru": "незавершённый"
+    },
+    {
+      "en": "useful",
+      "ru": "полезный"
+    },
+    {
+      "en": "assessment",
+      "ru": "оценка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The catalogue is far from ___ complete.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v72d69fe9c33d",
+            "label": "been to"
+          },
+          {
+            "id": "vecee0786edd6",
+            "label": "being"
+          },
+          {
+            "id": "vba34c40e0dc5",
+            "label": "be"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vecee0786edd6"
+      },
+      "reference_answer": "vecee0786edd6",
+      "incorrect_answer": "vba34c40e0dc5",
+      "editorial_answer": "being",
+      "explanation": "После from как предлога здесь нужна форма being.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: solving / solve.",
+      "public_payload": {
+        "sentence": "Far from ___ the problem, the first patch created another one."
+      },
+      "answer_key": {
+        "accepted": ["solving"]
+      },
+      "reference_answer": "solving",
+      "incorrect_answer": "solve",
+      "editorial_answer": "Far from solving the problem, the first patch created another one.",
+      "explanation": "После from в этой конструкции используется -ing-форма solving.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Каталог далеко не завершён.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "far"
+          },
+          {
+            "id": "t5",
+            "label": "from"
+          },
+          {
+            "id": "t6",
+            "label": "being"
+          },
+          {
+            "id": "t7",
+            "label": "complete."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "catalogue"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The catalogue is far from being complete.",
+      "explanation": "Фраза оценивает незавершённость, не утверждая отсутствия всех записей.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The project is far from be finished."
+      },
+      "answer_key": {
+        "accepted": ["The project is far from being finished."]
+      },
+      "reference_answer": "The project is far from being finished.",
+      "incorrect_answer": "The project is far from be finished.",
+      "editorial_answer": "The project is far from being finished.",
+      "explanation": "После from используется being.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что означала оценка куратора?",
+      "public_payload": {
+        "passage": "The curator called the online catalogue “far from complete”. Several collections had not yet been described, and some existing records needed checking. A report of the discussion paraphrased this as “The catalogue has no value”. The curator rejected that conclusion. Visitors could already use thousands of reliable entries, even though coverage remained uneven. The point of the criticism was to identify unfinished work, not to deny every benefit of the work completed. The revised report stated both facts: the catalogue was useful in its current scope and still required substantial expansion and verification. A negative evaluation of completeness did not establish total uselessness.",
+        "options": [
+          {
+            "id": "v38a6255aa7cc",
+            "label": "Substantial work remained, though existing entries could be useful."
+          },
+          {
+            "id": "v4f273bc2bee4",
+            "label": "No reliable entry existed anywhere."
+          },
+          {
+            "id": "vb1bd5e4f2ef6",
+            "label": "The catalogue was officially complete."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v38a6255aa7cc"
+      },
+      "reference_answer": "v38a6255aa7cc",
+      "incorrect_answer": "v4f273bc2bee4",
+      "editorial_answer": "Substantial work remained, though existing entries could be useful.",
+      "explanation": "Критика полноты не равна отрицанию пользы всех готовых записей.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc07fdf1d77e5",
+            "label": "partial"
+          },
+          {
+            "id": "l1ef3f28ec3f7",
+            "label": "incomplete"
+          },
+          {
+            "id": "lf479657f6ebc",
+            "label": "useful"
+          },
+          {
+            "id": "l96695e0aaf48",
+            "label": "assessment"
+          }
+        ],
+        "right": [
+          {
+            "id": "rca2b56432321",
+            "label": "полезный"
+          },
+          {
+            "id": "r90adbeed41f6",
+            "label": "оценка"
+          },
+          {
+            "id": "r7abb4938aaa7",
+            "label": "частичный"
+          },
+          {
+            "id": "r5542c3099601",
+            "label": "незавершённый"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc07fdf1d77e5": "r7abb4938aaa7",
+          "l1ef3f28ec3f7": "r5542c3099601",
+          "lf479657f6ebc": "rca2b56432321",
+          "l96695e0aaf48": "r90adbeed41f6"
+        }
+      },
+      "reference_answer": {
+        "lc07fdf1d77e5": "r7abb4938aaa7",
+        "l1ef3f28ec3f7": "r5542c3099601",
+        "lf479657f6ebc": "rca2b56432321",
+        "l96695e0aaf48": "r90adbeed41f6"
+      },
+      "incorrect_answer": {
+        "lc07fdf1d77e5": "r5542c3099601",
+        "l1ef3f28ec3f7": "r7abb4938aaa7",
+        "lf479657f6ebc": "rca2b56432321",
+        "l96695e0aaf48": "r90adbeed41f6"
+      },
+      "editorial_answer": "partial — частичный; incomplete — незавершённый; useful — полезный; assessment — оценка",
+      "explanation": "В этих контекстах: partial — частичный; incomplete — незавершённый; useful — полезный; assessment — оценка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что исправили в отчёте?",
+      "public_payload": {
+        "passage": "The curator called the online catalogue “far from complete”. Several collections had not yet been described, and some existing records needed checking. A report of the discussion paraphrased this as “The catalogue has no value”. The curator rejected that conclusion. Visitors could already use thousands of reliable entries, even though coverage remained uneven. The point of the criticism was to identify unfinished work, not to deny every benefit of the work completed. The revised report stated both facts: the catalogue was useful in its current scope and still required substantial expansion and verification. A negative evaluation of completeness did not establish total uselessness.",
+        "options": [
+          {
+            "id": "v1d7617201d8c",
+            "label": "It removed every mention of unfinished collections."
+          },
+          {
+            "id": "vae7749b43c15",
+            "label": "It declared that verification was unnecessary."
+          },
+          {
+            "id": "v8622cc05bafe",
+            "label": "It now preserved usefulness and the need for further work."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8622cc05bafe"
+      },
+      "reference_answer": "v8622cc05bafe",
+      "incorrect_answer": "v1d7617201d8c",
+      "editorial_answer": "It now preserved usefulness and the need for further work.",
+      "explanation": "Исправленный текст удерживает две совместимые оценки.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Не усиливай оценку без основания.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can “far from perfect” be paraphrased as “entirely useless” without context?"
+          }
+        ],
+        "options": [
+          {
+            "id": "ve5e75bf22558",
+            "label": "No; that introduces a stronger and different judgement."
+          },
+          {
+            "id": "v1ae302247ef2",
+            "label": "Yes; imperfect and useless are exact equivalents."
+          },
+          {
+            "id": "vb8ac125772b6",
+            "label": "Yes; every negative modifier cancels all value."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve5e75bf22558"
+      },
+      "reference_answer": "ve5e75bf22558",
+      "incorrect_answer": "v1ae302247ef2",
+      "editorial_answer": "No; that introduces a stronger and different judgement.",
+      "explanation": "Несовершенство и полная бесполезность не равнозначны.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Something finished only in part is ___.",
+        "options": [
+          {
+            "id": "v6f9d51301706",
+            "label": "complete"
+          },
+          {
+            "id": "v5d3acd809338",
+            "label": "universal necessarily"
+          },
+          {
+            "id": "vee61ac477f24",
+            "label": "partial"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vee61ac477f24"
+      },
+      "reference_answer": "vee61ac477f24",
+      "incorrect_answer": "v6f9d51301706",
+      "editorial_answer": "partial",
+      "explanation": "Partial — частичный, не полный.",
+      "key": "e09"
+    }
+  ]
+}

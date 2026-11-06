@@ -1,0 +1,372 @@
+{
+  "key": "b1/imagined-present",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B1 · формы и значения",
+    "position": 40
+  },
+  "position": 3,
+  "title": "Если бы сейчас условия были другими",
+  "description": "Если бы сейчас условия были другими: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать if + Past Simple для гипотезы о настоящем",
+    "Строить следствие с would + инфинитив"
+  ],
+  "notes": [
+    "If I had more space, I would invite more people — гипотеза о нынешнем ограничении.",
+    "Прошедшая форма had здесь не обязана описывать прошлое событие; смысл задаёт условная модель."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/still-anymore"],
+  "lexicon": [
+    {
+      "en": "imagine",
+      "ru": "представлять"
+    },
+    {
+      "en": "space",
+      "ru": "место"
+    },
+    {
+      "en": "choice",
+      "ru": "выбор"
+    },
+    {
+      "en": "possibility",
+      "ru": "возможность"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: If we had a larger room now, we ___ more guests.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v2a524a88fd83",
+            "label": "would invite"
+          },
+          {
+            "id": "vacb4a0a70021",
+            "label": "will invited"
+          },
+          {
+            "id": "vfd16b770c2e5",
+            "label": "would invited"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2a524a88fd83"
+      },
+      "reference_answer": "v2a524a88fd83",
+      "incorrect_answer": "vacb4a0a70021",
+      "editorial_answer": "would invite",
+      "explanation": "Гипотетическому условию о настоящем соответствует would invite.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: live / lived.",
+      "public_payload": {
+        "sentence": "If I ___ closer, I would walk to work."
+      },
+      "answer_key": {
+        "accepted": ["lived"]
+      },
+      "reference_answer": "lived",
+      "incorrect_answer": "live",
+      "editorial_answer": "If I lived closer, I would walk to work.",
+      "explanation": "В изучаемой нереальной гипотезе используется lived.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Если бы у меня была машина, я бы приезжал чаще.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "had"
+          },
+          {
+            "id": "t4",
+            "label": "a"
+          },
+          {
+            "id": "t5",
+            "label": "car,"
+          },
+          {
+            "id": "t6",
+            "label": "I"
+          },
+          {
+            "id": "t7",
+            "label": "would"
+          },
+          {
+            "id": "t8",
+            "label": "visit"
+          },
+          {
+            "id": "t9",
+            "label": "more"
+          },
+          {
+            "id": "t10",
+            "label": "often."
+          },
+          {
+            "id": "t1",
+            "label": "If"
+          },
+          {
+            "id": "t2",
+            "label": "I"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "If I had a car, I would visit more often.",
+      "explanation": "Had и would visit описывают воображаемую нынешнюю ситуацию.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "If I had more time, I would studied another language."
+      },
+      "answer_key": {
+        "accepted": ["If I had more time, I would study another language."]
+      },
+      "reference_answer": "If I had more time, I would study another language.",
+      "incorrect_answer": "If I had more time, I would studied another language.",
+      "editorial_answer": "If I had more time, I would study another language.",
+      "explanation": "После would требуется study.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что ограничивало первоначальный план Лии?",
+      "public_payload": {
+        "passage": "Leah wanted to organise a reading group, but her flat was too small for eight people. She said that if she had more space, she would host it herself. Her friend suggested borrowing a room at the community centre instead. Leah liked the idea because it solved the practical problem without requiring her to move. Her conditional described an imagined alternative, not an actual change of home.",
+        "options": [
+          {
+            "id": "v6e9ffd3745b6",
+            "label": "A rule banning all reading."
+          },
+          {
+            "id": "v27ce5a340e44",
+            "label": "An inability to contact any friend."
+          },
+          {
+            "id": "v0995fbd997b5",
+            "label": "The size of her flat."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0995fbd997b5"
+      },
+      "reference_answer": "v0995fbd997b5",
+      "incorrect_answer": "v6e9ffd3745b6",
+      "editorial_answer": "The size of her flat.",
+      "explanation": "Квартира слишком мала для восьми человек.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1c1086568e31",
+            "label": "imagine"
+          },
+          {
+            "id": "l8fdaee5d4ca2",
+            "label": "space"
+          },
+          {
+            "id": "l920e8a3f720b",
+            "label": "choice"
+          },
+          {
+            "id": "l2069bc72ed5b",
+            "label": "possibility"
+          }
+        ],
+        "right": [
+          {
+            "id": "rd120320a8cb8",
+            "label": "выбор"
+          },
+          {
+            "id": "ree1bb82636ab",
+            "label": "возможность"
+          },
+          {
+            "id": "r7f9fdafe514d",
+            "label": "представлять"
+          },
+          {
+            "id": "rc2cf6e751365",
+            "label": "место"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1c1086568e31": "r7f9fdafe514d",
+          "l8fdaee5d4ca2": "rc2cf6e751365",
+          "l920e8a3f720b": "rd120320a8cb8",
+          "l2069bc72ed5b": "ree1bb82636ab"
+        }
+      },
+      "reference_answer": {
+        "l1c1086568e31": "r7f9fdafe514d",
+        "l8fdaee5d4ca2": "rc2cf6e751365",
+        "l920e8a3f720b": "rd120320a8cb8",
+        "l2069bc72ed5b": "ree1bb82636ab"
+      },
+      "incorrect_answer": {
+        "l1c1086568e31": "rc2cf6e751365",
+        "l8fdaee5d4ca2": "r7f9fdafe514d",
+        "l920e8a3f720b": "rd120320a8cb8",
+        "l2069bc72ed5b": "ree1bb82636ab"
+      },
+      "editorial_answer": "imagine — представлять; space — место; choice — выбор; possibility — возможность",
+      "explanation": "В этих контекстах: imagine — представлять; space — место; choice — выбор; possibility — возможность.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую реальную альтернативу предложили?",
+      "public_payload": {
+        "passage": "Leah wanted to organise a reading group, but her flat was too small for eight people. She said that if she had more space, she would host it herself. Her friend suggested borrowing a room at the community centre instead. Leah liked the idea because it solved the practical problem without requiring her to move. Her conditional described an imagined alternative, not an actual change of home.",
+        "options": [
+          {
+            "id": "veef9ed272a02",
+            "label": "Buy a new flat immediately."
+          },
+          {
+            "id": "veff36cd5e2ed",
+            "label": "Use a room at the community centre."
+          },
+          {
+            "id": "v17daaefcc8a6",
+            "label": "Assume Leah had already moved."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "veff36cd5e2ed"
+      },
+      "reference_answer": "veff36cd5e2ed",
+      "incorrect_answer": "v17daaefcc8a6",
+      "editorial_answer": "Use a room at the community centre.",
+      "explanation": "Предложение решает проблему места без переезда.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь на гипотетический вопрос.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What would you do with an extra free day?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vdac6c3854f72",
+            "label": "I would spent it visiting my family."
+          },
+          {
+            "id": "v98e160f0db38",
+            "label": "I will spent it yesterday."
+          },
+          {
+            "id": "vd2d66d70d95f",
+            "label": "I would spend it visiting my family."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd2d66d70d95f"
+      },
+      "reference_answer": "vd2d66d70d95f",
+      "incorrect_answer": "vdac6c3854f72",
+      "editorial_answer": "I would spend it visiting my family.",
+      "explanation": "Would spend использует начальную форму.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To form a picture of a situation that is not currently real is to ___ it.",
+        "options": [
+          {
+            "id": "v645defc20072",
+            "label": "record as completed"
+          },
+          {
+            "id": "v79ad92cd8f28",
+            "label": "imagine"
+          },
+          {
+            "id": "v739567330e49",
+            "label": "confirm as fact"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v79ad92cd8f28"
+      },
+      "reference_answer": "v79ad92cd8f28",
+      "incorrect_answer": "v739567330e49",
+      "editorial_answer": "imagine",
+      "explanation": "Imagine означает представить, не подтвердить реальность.",
+      "key": "e09"
+    }
+  ]
+}

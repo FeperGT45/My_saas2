@@ -1,0 +1,366 @@
+{
+  "key": "b2/ed-ing-reactions",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B2 · формы и значения",
+    "position": 40
+  },
+  "position": 2,
+  "title": "Интересный текст и заинтересованный читатель",
+  "description": "Интересный текст и заинтересованный читатель: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Различать -ing для вызывающего реакцию и -ed для испытывающего её",
+    "Сохранять различие между описанием материала и аудитории"
+  ],
+  "notes": [
+    "A confusing explanation может вызвать реакцию confused readers.",
+    "Интересующий материал interesting не означает автоматически, что каждый читатель interested."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/by-time-sequence"],
+  "lexicon": [
+    {
+      "en": "confusing",
+      "ru": "сбивающий с толку"
+    },
+    {
+      "en": "confused",
+      "ru": "озадаченный, запутавшийся"
+    },
+    {
+      "en": "engaging",
+      "ru": "увлекательный"
+    },
+    {
+      "en": "engaged",
+      "ru": "вовлечённый"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The instructions were unclear, and several readers felt ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v02c0fc1e273c",
+            "label": "confusing"
+          },
+          {
+            "id": "vb8efec932f55",
+            "label": "confuse to"
+          },
+          {
+            "id": "v9e8f36279d81",
+            "label": "confused"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9e8f36279d81"
+      },
+      "reference_answer": "v9e8f36279d81",
+      "incorrect_answer": "v02c0fc1e273c",
+      "editorial_answer": "confused",
+      "explanation": "О реакции людей сообщается формой confused.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: engaging / engaged.",
+      "public_payload": {
+        "sentence": "The speaker gave an ___ explanation that held our attention."
+      },
+      "answer_key": {
+        "accepted": ["engaging"]
+      },
+      "reference_answer": "engaging",
+      "incorrect_answer": "engaged",
+      "editorial_answer": "The speaker gave an engaging explanation that held our attention.",
+      "explanation": "Объяснение вызывает интерес, поэтому engaging.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Объяснение сбивало с толку, и читатели запутались.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "was"
+          },
+          {
+            "id": "t4",
+            "label": "confusing,"
+          },
+          {
+            "id": "t5",
+            "label": "and"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "readers"
+          },
+          {
+            "id": "t8",
+            "label": "were"
+          },
+          {
+            "id": "t9",
+            "label": "confused."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "explanation"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "The explanation was confusing, and the readers were confused.",
+      "explanation": "Различаются вызывающий реакцию объект и испытывающие её люди.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I felt confusing after reading the unclear notice."
+      },
+      "answer_key": {
+        "accepted": ["I felt confused after reading the unclear notice."]
+      },
+      "reference_answer": "I felt confused after reading the unclear notice.",
+      "incorrect_answer": "I felt confusing after reading the unclear notice.",
+      "editorial_answer": "I felt confused after reading the unclear notice.",
+      "explanation": "Для пережитой реакции после felt нужно confused.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Может ли человек быть interested и confused одновременно?",
+      "public_payload": {
+        "passage": "The draft instructions used several unfamiliar abbreviations. The writer described the topic as interesting, but a trial group found the explanation confusing. Some readers were interested in the subject yet confused about the order of the steps. The editor kept the useful content and added examples rather than assuming that a strong topic would make every explanation clear. The revision separated two judgements: whether the subject attracted attention and whether the instructions helped readers perform the task.",
+        "options": [
+          {
+            "id": "v499dbdc34851",
+            "label": "No; confused describes only the printed page here."
+          },
+          {
+            "id": "v3d6ceece7cab",
+            "label": "Yes; interest in the topic does not guarantee understanding of the steps."
+          },
+          {
+            "id": "vac3c0c4753fe",
+            "label": "No; interest always establishes complete understanding."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3d6ceece7cab"
+      },
+      "reference_answer": "v3d6ceece7cab",
+      "incorrect_answer": "vac3c0c4753fe",
+      "editorial_answer": "Yes; interest in the topic does not guarantee understanding of the steps.",
+      "explanation": "Текст прямо описывает такое сочетание у части читателей.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "la2bad8256063",
+            "label": "confusing"
+          },
+          {
+            "id": "l5927715ec2a9",
+            "label": "confused"
+          },
+          {
+            "id": "l7ce77fbd7cc7",
+            "label": "engaging"
+          },
+          {
+            "id": "l03a9c8468b2d",
+            "label": "engaged"
+          }
+        ],
+        "right": [
+          {
+            "id": "r5e1260b6a3b1",
+            "label": "увлекательный"
+          },
+          {
+            "id": "r6da640facc86",
+            "label": "вовлечённый"
+          },
+          {
+            "id": "r995afb96276a",
+            "label": "сбивающий с толку"
+          },
+          {
+            "id": "r660a56c9ce58",
+            "label": "озадаченный, запутавшийся"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "la2bad8256063": "r995afb96276a",
+          "l5927715ec2a9": "r660a56c9ce58",
+          "l7ce77fbd7cc7": "r5e1260b6a3b1",
+          "l03a9c8468b2d": "r6da640facc86"
+        }
+      },
+      "reference_answer": {
+        "la2bad8256063": "r995afb96276a",
+        "l5927715ec2a9": "r660a56c9ce58",
+        "l7ce77fbd7cc7": "r5e1260b6a3b1",
+        "l03a9c8468b2d": "r6da640facc86"
+      },
+      "incorrect_answer": {
+        "la2bad8256063": "r660a56c9ce58",
+        "l5927715ec2a9": "r995afb96276a",
+        "l7ce77fbd7cc7": "r5e1260b6a3b1",
+        "l03a9c8468b2d": "r6da640facc86"
+      },
+      "editorial_answer": "confusing — сбивающий с толку; confused — озадаченный, запутавшийся; engaging — увлекательный; engaged — вовлечённый",
+      "explanation": "В этих контекстах: confusing — сбивающий с толку; confused — озадаченный, запутавшийся; engaging — увлекательный; engaged — вовлечённый.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что изменил редактор?",
+      "public_payload": {
+        "passage": "The draft instructions used several unfamiliar abbreviations. The writer described the topic as interesting, but a trial group found the explanation confusing. Some readers were interested in the subject yet confused about the order of the steps. The editor kept the useful content and added examples rather than assuming that a strong topic would make every explanation clear. The revision separated two judgements: whether the subject attracted attention and whether the instructions helped readers perform the task.",
+        "options": [
+          {
+            "id": "v061d736257c2",
+            "label": "Added examples while keeping useful content."
+          },
+          {
+            "id": "va6fdd652ef81",
+            "label": "Declared every interested reader incapable."
+          },
+          {
+            "id": "v30e52b75b04c",
+            "label": "Removed the topic because all interest was absent."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v061d736257c2"
+      },
+      "reference_answer": "v061d736257c2",
+      "incorrect_answer": "va6fdd652ef81",
+      "editorial_answer": "Added examples while keeping useful content.",
+      "explanation": "Проблема касалась объяснения, не отсутствия интереса к предмету.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Опиши собственную реакцию.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How did you feel after the unclear briefing?"
+          }
+        ],
+        "options": [
+          {
+            "id": "ve8cfbf91866b",
+            "label": "I was confuse about what to do next."
+          },
+          {
+            "id": "v0a2f52c0e20a",
+            "label": "I was confused about what to do next."
+          },
+          {
+            "id": "ve3eb4165f1ee",
+            "label": "I was confusing about what to do next."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0a2f52c0e20a"
+      },
+      "reference_answer": "v0a2f52c0e20a",
+      "incorrect_answer": "ve3eb4165f1ee",
+      "editorial_answer": "I was confused about what to do next.",
+      "explanation": "Confused относится к состоянию получателя объяснения.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A presentation that holds attention can be described as ___.",
+        "options": [
+          {
+            "id": "v6cb67dc9e681",
+            "label": "engaging"
+          },
+          {
+            "id": "v7da2cbd7f9a2",
+            "label": "engaged with no person implied"
+          },
+          {
+            "id": "vf4b8cbba03f3",
+            "label": "confused"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6cb67dc9e681"
+      },
+      "reference_answer": "v6cb67dc9e681",
+      "incorrect_answer": "v7da2cbd7f9a2",
+      "editorial_answer": "engaging",
+      "explanation": "Engaging описывает вызывающий интерес материал.",
+      "key": "e09"
+    }
+  ]
+}

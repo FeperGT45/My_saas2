@@ -1,0 +1,390 @@
+{
+  "key": "c1/do-so-reference",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика C1 · формы и значения",
+    "position": 40
+  },
+  "position": 5,
+  "title": "Повторяем действие через do so",
+  "description": "Повторяем действие через do so: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Определять действие, заменяемое do so",
+    "Сохранять субъект и отрицание при сокращении"
+  ],
+  "notes": [
+    "Do so может заменить названное действие: They asked us to revise the draft, and we did so.",
+    "Нужно восстановить по контексту, что именно было сделано; did so не означает автоматически выполнение всех соседних действий."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/should-have-interpretation"],
+  "lexicon": [
+    {
+      "en": "substitution",
+      "ru": "замещение"
+    },
+    {
+      "en": "antecedent",
+      "ru": "предшествующий элемент отсылки"
+    },
+    {
+      "en": "revise",
+      "ru": "пересматривать"
+    },
+    {
+      "en": "scope",
+      "ru": "область действия"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: They requested a revision, and the editor ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v8d70d2dff50c",
+            "label": "did it so to"
+          },
+          {
+            "id": "v761a4b207202",
+            "label": "doing so was to"
+          },
+          {
+            "id": "v254bfc0aef1c",
+            "label": "did so"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v254bfc0aef1c"
+      },
+      "reference_answer": "v254bfc0aef1c",
+      "incorrect_answer": "v8d70d2dff50c",
+      "editorial_answer": "did so",
+      "explanation": "Did so заменяет ранее названное действие revision/revise.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: such / so.",
+      "public_payload": {
+        "sentence": "We were asked to notify the applicants and agreed to do ___."
+      },
+      "answer_key": {
+        "accepted": ["so"]
+      },
+      "reference_answer": "so",
+      "incorrect_answer": "such",
+      "editorial_answer": "We were asked to notify the applicants and agreed to do so.",
+      "explanation": "Do so замещает названное действие уведомления.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Нас попросили пересмотреть черновик, и мы это сделали.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "us"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "revise"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "draft,"
+          },
+          {
+            "id": "t8",
+            "label": "and"
+          },
+          {
+            "id": "t9",
+            "label": "we"
+          },
+          {
+            "id": "t10",
+            "label": "did"
+          },
+          {
+            "id": "t11",
+            "label": "so."
+          },
+          {
+            "id": "t1",
+            "label": "They"
+          },
+          {
+            "id": "t2",
+            "label": "asked"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11"
+        ]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11",
+        "t1"
+      ],
+      "editorial_answer": "They asked us to revise the draft, and we did so.",
+      "explanation": "Did so относится к пересмотру черновика, а не к любому другому соседнему процессу.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She promised to update the list and has do so."
+      },
+      "answer_key": {
+        "accepted": ["She promised to update the list and has done so."]
+      },
+      "reference_answer": "She promised to update the list and has done so.",
+      "incorrect_answer": "She promised to update the list and has do so.",
+      "editorial_answer": "She promised to update the list and has done so.",
+      "explanation": "После has требуется причастие done.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое действие было завершено?",
+      "public_payload": {
+        "passage": "The review asked the team to clarify the eligibility rule. The team did so in the next draft, adding an example beneath the relevant paragraph. A separate recommendation asked for a new appeals process, which required board approval and remained unresolved. A summary later said that the team had “done so” in response to all recommendations. That widened the reference beyond its original antecedent. The editor corrected the account: clarification had been completed, while the appeals proposal was still pending. Short substitutions were useful for avoiding repetition, but they had to preserve the scope of the action actually reported rather than implying completion of an entire list.",
+        "options": [
+          {
+            "id": "v59fb82eb2c1f",
+            "label": "Every recommendation without exception."
+          },
+          {
+            "id": "v53cb10eafb29",
+            "label": "Clarifying the eligibility rule."
+          },
+          {
+            "id": "vd275c08d7f0b",
+            "label": "Obtaining board approval for a new appeals process."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v53cb10eafb29"
+      },
+      "reference_answer": "v53cb10eafb29",
+      "incorrect_answer": "vd275c08d7f0b",
+      "editorial_answer": "Clarifying the eligibility rule.",
+      "explanation": "Did so первоначально отсылало к уточнению правила.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l7fc9e39f9e91",
+            "label": "substitution"
+          },
+          {
+            "id": "l52b6f3a979cc",
+            "label": "antecedent"
+          },
+          {
+            "id": "l315bf75f6b8c",
+            "label": "revise"
+          },
+          {
+            "id": "laa9e565e182e",
+            "label": "scope"
+          }
+        ],
+        "right": [
+          {
+            "id": "r30c6bd98e41e",
+            "label": "пересматривать"
+          },
+          {
+            "id": "r66232b916eee",
+            "label": "область действия"
+          },
+          {
+            "id": "r0b8a26e9fdc3",
+            "label": "замещение"
+          },
+          {
+            "id": "rfa6b302c1dd1",
+            "label": "предшествующий элемент отсылки"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l7fc9e39f9e91": "r0b8a26e9fdc3",
+          "l52b6f3a979cc": "rfa6b302c1dd1",
+          "l315bf75f6b8c": "r30c6bd98e41e",
+          "laa9e565e182e": "r66232b916eee"
+        }
+      },
+      "reference_answer": {
+        "l7fc9e39f9e91": "r0b8a26e9fdc3",
+        "l52b6f3a979cc": "rfa6b302c1dd1",
+        "l315bf75f6b8c": "r30c6bd98e41e",
+        "laa9e565e182e": "r66232b916eee"
+      },
+      "incorrect_answer": {
+        "l7fc9e39f9e91": "rfa6b302c1dd1",
+        "l52b6f3a979cc": "r0b8a26e9fdc3",
+        "l315bf75f6b8c": "r30c6bd98e41e",
+        "laa9e565e182e": "r66232b916eee"
+      },
+      "editorial_answer": "substitution — замещение; antecedent — предшествующий элемент отсылки; revise — пересматривать; scope — область действия",
+      "explanation": "В этих контекстах: substitution — замещение; antecedent — предшествующий элемент отсылки; revise — пересматривать; scope — область действия.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что исказил краткий пересказ?",
+      "public_payload": {
+        "passage": "The review asked the team to clarify the eligibility rule. The team did so in the next draft, adding an example beneath the relevant paragraph. A separate recommendation asked for a new appeals process, which required board approval and remained unresolved. A summary later said that the team had “done so” in response to all recommendations. That widened the reference beyond its original antecedent. The editor corrected the account: clarification had been completed, while the appeals proposal was still pending. Short substitutions were useful for avoiding repetition, but they had to preserve the scope of the action actually reported rather than implying completion of an entire list.",
+        "options": [
+          {
+            "id": "veb018fb68888",
+            "label": "It extended a substitution for one action to all recommendations."
+          },
+          {
+            "id": "v9f7417ea7aa3",
+            "label": "It accurately preserved the pending appeals process."
+          },
+          {
+            "id": "vcb34a48fbad2",
+            "label": "It showed that the example was never added."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "veb018fb68888"
+      },
+      "reference_answer": "veb018fb68888",
+      "incorrect_answer": "v9f7417ea7aa3",
+      "editorial_answer": "It extended a substitution for one action to all recommendations.",
+      "explanation": "Область отсылки была расширена без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери принцип точного сокращения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "If “do so” replaces “notify applicants”, what should a careful summary preserve?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v8f4131307033",
+            "label": "The removal of all subjects and timing."
+          },
+          {
+            "id": "vaa78134247ec",
+            "label": "That specific action and its actual completion status."
+          },
+          {
+            "id": "vafbd0b209b7a",
+            "label": "Every other task as automatically completed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vaa78134247ec"
+      },
+      "reference_answer": "vaa78134247ec",
+      "incorrect_answer": "vafbd0b209b7a",
+      "editorial_answer": "That specific action and its actual completion status.",
+      "explanation": "Замещение не должно расширять объём выполненной работы.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The earlier expression to which a substitution refers is its ___.",
+        "options": [
+          {
+            "id": "vd0bdbde1ab51",
+            "label": "antecedent"
+          },
+          {
+            "id": "va83774831249",
+            "label": "consequence necessarily"
+          },
+          {
+            "id": "v248fbb8ef223",
+            "label": "deadline"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd0bdbde1ab51"
+      },
+      "reference_answer": "vd0bdbde1ab51",
+      "incorrect_answer": "va83774831249",
+      "editorial_answer": "antecedent",
+      "explanation": "Antecedent — предшествующий элемент, который подхватывает отсылка.",
+      "key": "e09"
+    }
+  ]
+}

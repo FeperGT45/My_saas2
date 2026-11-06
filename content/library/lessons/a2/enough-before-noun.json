@@ -1,0 +1,334 @@
+{
+  "key": "a2/enough-before-noun",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A2 · формы и значения",
+    "position": 40
+  },
+  "position": 3,
+  "title": "Достаточно стульев и достаточно места",
+  "description": "Достаточно стульев и достаточно места: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Ставить enough перед существительным",
+    "Различать enough chairs и quiet enough"
+  ],
+  "notes": [
+    "Перед существительным: enough chairs, enough space.",
+    "После прилагательного: quiet enough. Положение enough зависит от того, что оно определяет."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/during-or-for"],
+  "lexicon": [
+    {
+      "en": "enough",
+      "ru": "достаточно"
+    },
+    {
+      "en": "space",
+      "ru": "место"
+    },
+    {
+      "en": "chair",
+      "ru": "стул"
+    },
+    {
+      "en": "shortage",
+      "ru": "нехватка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We have ___ for all the guests.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "va75ef6bbaa9a",
+            "label": "chairs enough of"
+          },
+          {
+            "id": "v72f2e1de91a4",
+            "label": "enough of chairs a"
+          },
+          {
+            "id": "v3a2cb9b29eef",
+            "label": "enough chairs"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3a2cb9b29eef"
+      },
+      "reference_answer": "v3a2cb9b29eef",
+      "incorrect_answer": "va75ef6bbaa9a",
+      "editorial_answer": "enough chairs",
+      "explanation": "Перед chairs в обычной модели стоит enough.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: many / enough.",
+      "public_payload": {
+        "sentence": "The table is large ___."
+      },
+      "answer_key": {
+        "accepted": ["enough"]
+      },
+      "reference_answer": "enough",
+      "incorrect_answer": "many",
+      "editorial_answer": "The table is large enough.",
+      "explanation": "После прилагательного large используется enough.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Места достаточно для всех.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "enough"
+          },
+          {
+            "id": "t4",
+            "label": "space"
+          },
+          {
+            "id": "t5",
+            "label": "for"
+          },
+          {
+            "id": "t6",
+            "label": "everyone."
+          },
+          {
+            "id": "t1",
+            "label": "There"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "There is enough space for everyone.",
+      "explanation": "Enough ставится перед неисчисляемым space.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл. Используй нейтральный порядок слов из пояснения урока.",
+      "public_payload": {
+        "sentence": "We do not have chairs enough for the group."
+      },
+      "answer_key": {
+        "accepted": ["We do not have enough chairs for the group."]
+      },
+      "reference_answer": "We do not have enough chairs for the group.",
+      "incorrect_answer": "We do not have chairs enough for the group.",
+      "editorial_answer": "We do not have enough chairs for the group.",
+      "explanation": "В заданной нейтральной модели enough должно стоять перед chairs.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Чего не хватало вначале?",
+      "public_payload": {
+        "passage": "The organiser expected ten people and prepared twelve chairs. When sixteen visitors arrived, there were not enough chairs for everyone. There was enough space in the room, however. Two volunteers brought four more chairs from the next room, so nobody had to stand during the talk.",
+        "options": [
+          {
+            "id": "vec1a405ec909",
+            "label": "Visitors."
+          },
+          {
+            "id": "v1529d800ee1d",
+            "label": "Chairs."
+          },
+          {
+            "id": "v52d2226c2e6c",
+            "label": "Floor space."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1529d800ee1d"
+      },
+      "reference_answer": "v1529d800ee1d",
+      "incorrect_answer": "v52d2226c2e6c",
+      "editorial_answer": "Chairs.",
+      "explanation": "Текст различает нехватку стульев и достаточную площадь.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc5b52bc81bb0",
+            "label": "enough"
+          },
+          {
+            "id": "l73d18000acc0",
+            "label": "space"
+          },
+          {
+            "id": "l115f806f0c9f",
+            "label": "chair"
+          },
+          {
+            "id": "l1e6c7a9fd845",
+            "label": "shortage"
+          }
+        ],
+        "right": [
+          {
+            "id": "r5fe0cc015469",
+            "label": "стул"
+          },
+          {
+            "id": "r2131e03b14c7",
+            "label": "нехватка"
+          },
+          {
+            "id": "rd5952871190a",
+            "label": "достаточно"
+          },
+          {
+            "id": "r32b0026c9f3b",
+            "label": "место"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc5b52bc81bb0": "rd5952871190a",
+          "l73d18000acc0": "r32b0026c9f3b",
+          "l115f806f0c9f": "r5fe0cc015469",
+          "l1e6c7a9fd845": "r2131e03b14c7"
+        }
+      },
+      "reference_answer": {
+        "lc5b52bc81bb0": "rd5952871190a",
+        "l73d18000acc0": "r32b0026c9f3b",
+        "l115f806f0c9f": "r5fe0cc015469",
+        "l1e6c7a9fd845": "r2131e03b14c7"
+      },
+      "incorrect_answer": {
+        "lc5b52bc81bb0": "r32b0026c9f3b",
+        "l73d18000acc0": "rd5952871190a",
+        "l115f806f0c9f": "r5fe0cc015469",
+        "l1e6c7a9fd845": "r2131e03b14c7"
+      },
+      "editorial_answer": "enough — достаточно; space — место; chair — стул; shortage — нехватка",
+      "explanation": "В этих контекстах: enough — достаточно; space — место; chair — стул; shortage — нехватка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько дополнительных стульев принесли?",
+      "public_payload": {
+        "passage": "The organiser expected ten people and prepared twelve chairs. When sixteen visitors arrived, there were not enough chairs for everyone. There was enough space in the room, however. Two volunteers brought four more chairs from the next room, so nobody had to stand during the talk.",
+        "options": [
+          {
+            "id": "v7bcc9088b3e2",
+            "label": "Four."
+          },
+          {
+            "id": "v85e9c931c8fd",
+            "label": "Two."
+          },
+          {
+            "id": "v13ebb0c4c5bd",
+            "label": "Sixteen."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7bcc9088b3e2"
+      },
+      "reference_answer": "v7bcc9088b3e2",
+      "incorrect_answer": "v85e9c931c8fd",
+      "editorial_answer": "Four.",
+      "explanation": "Два — число волонтёров, четыре — число принесённых стульев.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь о достаточном числе предметов.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can the whole group sit down?"
+          }
+        ],
+        "options": [
+          {
+            "id": "ve5901003f648",
+            "label": "Yes, we now enough have of chair."
+          },
+          {
+            "id": "v9139dda29533",
+            "label": "Yes, we now have enough chairs."
+          },
+          {
+            "id": "v88d04aeed919",
+            "label": "Yes, we now have chairs enough of."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9139dda29533"
+      },
+      "reference_answer": "v9139dda29533",
+      "incorrect_answer": "v88d04aeed919",
+      "editorial_answer": "Yes, we now have enough chairs.",
+      "explanation": "Enough chairs — правильная именная группа.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "When there is less of something than needed, there is a ___.",
+        "options": [
+          {
+            "id": "v524f0c960558",
+            "label": "shortage"
+          },
+          {
+            "id": "va060be21e439",
+            "label": "surplus"
+          },
+          {
+            "id": "v83b2b4c5110d",
+            "label": "confirmation"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v524f0c960558"
+      },
+      "reference_answer": "v524f0c960558",
+      "incorrect_answer": "va060be21e439",
+      "editorial_answer": "shortage",
+      "explanation": "Shortage — нехватка, surplus — избыток.",
+      "key": "e09"
+    }
+  ]
+}

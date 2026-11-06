@@ -1,0 +1,338 @@
+{
+  "key": "a2/irregular-story-verbs",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A2 · формы и значения",
+    "position": 40
+  },
+  "position": 1,
+  "title": "Короткий рассказ: gave, took и brought",
+  "description": "Короткий рассказ: gave, took и brought: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать распространённые неправильные формы Past Simple",
+    "Восстанавливать порядок действий по рассказу"
+  ],
+  "notes": [
+    "Give → gave, take → took, bring → brought — неправильные формы прошлого.",
+    "С yesterday и законченной историей используются прошедшие формы, но после did — начальные."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/lets-how-about"],
+  "lexicon": [
+    {
+      "en": "gave",
+      "ru": "дал"
+    },
+    {
+      "en": "took",
+      "ru": "взял, отвёз"
+    },
+    {
+      "en": "brought",
+      "ru": "принёс"
+    },
+    {
+      "en": "returned",
+      "ru": "вернул"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Yesterday, my friend ___ me a map.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v0707913b06f3",
+            "label": "giving"
+          },
+          {
+            "id": "v49c576b7b14f",
+            "label": "gave"
+          },
+          {
+            "id": "vb8d3d2e1a07b",
+            "label": "gived"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v49c576b7b14f"
+      },
+      "reference_answer": "v49c576b7b14f",
+      "incorrect_answer": "vb8d3d2e1a07b",
+      "editorial_answer": "gave",
+      "explanation": "Прошедшая форма give — gave.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: bring / brought.",
+      "public_payload": {
+        "sentence": "She ___ a bag of books to the club last night."
+      },
+      "answer_key": {
+        "accepted": ["brought"]
+      },
+      "reference_answer": "brought",
+      "incorrect_answer": "bring",
+      "editorial_answer": "She brought a bag of books to the club last night.",
+      "explanation": "Завершённое last night требует brought.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Он отнёс книги в библиотеку.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "books"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "library."
+          },
+          {
+            "id": "t1",
+            "label": "He"
+          },
+          {
+            "id": "t2",
+            "label": "took"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "He took the books to the library.",
+      "explanation": "Took — прошедшая форма take.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "They gived us the old photographs."
+      },
+      "answer_key": {
+        "accepted": ["They gave us the old photographs."]
+      },
+      "reference_answer": "They gave us the old photographs.",
+      "incorrect_answer": "They gived us the old photographs.",
+      "editorial_answer": "They gave us the old photographs.",
+      "explanation": "Give имеет неправильную форму gave, не gived.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Мина принесла сама?",
+      "public_payload": {
+        "passage": "Yesterday, Mina brought an old map to the history club. The organiser gave her a newer copy to compare. Mina took both maps to a large table and found a street with two different names. Before leaving, she returned the newer map to the organiser.",
+        "options": [
+          {
+            "id": "v466f006b289d",
+            "label": "An old map."
+          },
+          {
+            "id": "v6ed70a414a8e",
+            "label": "The organiser’s new copy."
+          },
+          {
+            "id": "v8561502ec662",
+            "label": "A list of every street in town."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v466f006b289d"
+      },
+      "reference_answer": "v466f006b289d",
+      "incorrect_answer": "v6ed70a414a8e",
+      "editorial_answer": "An old map.",
+      "explanation": "Старая карта была принесена Миной до получения новой копии.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l0fccfebfb18d",
+            "label": "gave"
+          },
+          {
+            "id": "l2458391efeb4",
+            "label": "took"
+          },
+          {
+            "id": "l709abd1e6db9",
+            "label": "brought"
+          },
+          {
+            "id": "l7ff32de4744e",
+            "label": "returned"
+          }
+        ],
+        "right": [
+          {
+            "id": "rc402539baa93",
+            "label": "принёс"
+          },
+          {
+            "id": "rb9e2f4015c49",
+            "label": "вернул"
+          },
+          {
+            "id": "r74338de1f941",
+            "label": "дал"
+          },
+          {
+            "id": "r678601bb7a00",
+            "label": "взял, отвёз"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l0fccfebfb18d": "r74338de1f941",
+          "l2458391efeb4": "r678601bb7a00",
+          "l709abd1e6db9": "rc402539baa93",
+          "l7ff32de4744e": "rb9e2f4015c49"
+        }
+      },
+      "reference_answer": {
+        "l0fccfebfb18d": "r74338de1f941",
+        "l2458391efeb4": "r678601bb7a00",
+        "l709abd1e6db9": "rc402539baa93",
+        "l7ff32de4744e": "rb9e2f4015c49"
+      },
+      "incorrect_answer": {
+        "l0fccfebfb18d": "r678601bb7a00",
+        "l2458391efeb4": "r74338de1f941",
+        "l709abd1e6db9": "rc402539baa93",
+        "l7ff32de4744e": "rb9e2f4015c49"
+      },
+      "editorial_answer": "gave — дал; took — взял, отвёз; brought — принёс; returned — вернул",
+      "explanation": "В этих контекстах: gave — дал; took — взял, отвёз; brought — принёс; returned — вернул.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что она вернула перед уходом?",
+      "public_payload": {
+        "passage": "Yesterday, Mina brought an old map to the history club. The organiser gave her a newer copy to compare. Mina took both maps to a large table and found a street with two different names. Before leaving, she returned the newer map to the organiser.",
+        "options": [
+          {
+            "id": "vb8393506202e",
+            "label": "Both maps to a museum."
+          },
+          {
+            "id": "v742c303a029a",
+            "label": "Only the large table."
+          },
+          {
+            "id": "v4edf8eb28641",
+            "label": "The newer map."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4edf8eb28641"
+      },
+      "reference_answer": "v4edf8eb28641",
+      "incorrect_answer": "vb8393506202e",
+      "editorial_answer": "The newer map.",
+      "explanation": "Вернула newer map, которую получила для сравнения.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь неправильной формой прошлого.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "What did you bring to the meeting yesterday?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vb0d5ced6533a",
+            "label": "I brought the photographs."
+          },
+          {
+            "id": "va82cfbff34cd",
+            "label": "I bringed the photographs."
+          },
+          {
+            "id": "v10c94cf4ab0b",
+            "label": "I bringing the photographs yesterday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb0d5ced6533a"
+      },
+      "reference_answer": "vb0d5ced6533a",
+      "incorrect_answer": "va82cfbff34cd",
+      "editorial_answer": "I brought the photographs.",
+      "explanation": "Прошедшая форма bring — brought.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The past form of take is ___.",
+        "options": [
+          {
+            "id": "v638ddc46ece0",
+            "label": "taked"
+          },
+          {
+            "id": "v073c00f16637",
+            "label": "taken after no auxiliary here"
+          },
+          {
+            "id": "v5625de74ca55",
+            "label": "took"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5625de74ca55"
+      },
+      "reference_answer": "v5625de74ca55",
+      "incorrect_answer": "v638ddc46ece0",
+      "editorial_answer": "took",
+      "explanation": "Took — нужная форма Past Simple без вспомогательного глагола.",
+      "key": "e09"
+    }
+  ]
+}

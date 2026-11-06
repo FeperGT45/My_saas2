@@ -1,0 +1,342 @@
+{
+  "key": "c1/essential-that-subjunctive",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика C1 · формы и значения",
+    "position": 40
+  },
+  "position": 2,
+  "title": "Требование в формальном тексте",
+  "description": "Требование в формальном тексте: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C1",
+  "objectives": [
+    "Использовать базовую форму в mandative subjunctive",
+    "Не принимать требование за сообщение о выполнении"
+  ],
+  "notes": [
+    "В формальной сослагательной модели: It is essential that every member be informed. Be не меняется по лицу.",
+    "Возможна и модель с should, особенно в британском употреблении. В упражнениях явно тренируется базовая сослагательная форма."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/with-background-clause"],
+  "lexicon": [
+    {
+      "en": "essential",
+      "ru": "необходимый"
+    },
+    {
+      "en": "requirement",
+      "ru": "требование"
+    },
+    {
+      "en": "compliance",
+      "ru": "соблюдение требования"
+    },
+    {
+      "en": "mandate",
+      "ru": "предписание"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: В базовой сослагательной модели: It is essential that the report ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vd32abc1cb0fe",
+            "label": "is submitting yesterday"
+          },
+          {
+            "id": "vd60619763f6d",
+            "label": "was to submitted"
+          },
+          {
+            "id": "v8a20df512ac4",
+            "label": "be submitted on time"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8a20df512ac4"
+      },
+      "reference_answer": "v8a20df512ac4",
+      "incorrect_answer": "vd32abc1cb0fe",
+      "editorial_answer": "be submitted on time",
+      "explanation": "Базовая форма be используется в пассивном требовании be submitted.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: wear / wears.",
+      "public_payload": {
+        "sentence": "В базовой сослагательной модели: They requested that every visitor ___ a badge."
+      },
+      "answer_key": {
+        "accepted": ["wear"]
+      },
+      "reference_answer": "wear",
+      "incorrect_answer": "wears",
+      "editorial_answer": "В базовой сослагательной модели: They requested that every visitor wear a badge.",
+      "explanation": "В указанной модели используется базовая форма wear даже после every visitor.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Необходимо, чтобы каждый участник был уведомлён.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "essential"
+          },
+          {
+            "id": "t4",
+            "label": "that"
+          },
+          {
+            "id": "t5",
+            "label": "every"
+          },
+          {
+            "id": "t6",
+            "label": "member"
+          },
+          {
+            "id": "t7",
+            "label": "be"
+          },
+          {
+            "id": "t8",
+            "label": "informed."
+          },
+          {
+            "id": "t1",
+            "label": "It"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "It is essential that every member be informed.",
+      "explanation": "Фраза задаёт требование, но сама не подтверждает уведомление всех участников.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "It is essential that the notice be to displayed."
+      },
+      "answer_key": {
+        "accepted": ["It is essential that the notice be displayed."]
+      },
+      "reference_answer": "It is essential that the notice be displayed.",
+      "incorrect_answer": "It is essential that the notice be to displayed.",
+      "editorial_answer": "It is essential that the notice be displayed.",
+      "explanation": "В выбранном сослагательном пассиве нужно be displayed без to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "В чём ошибка менеджера?",
+      "public_payload": {
+        "passage": "The procedure stated that it was essential that every participant be informed before the schedule changed. In an audit discussion, one manager cited that sentence as evidence that everyone had received notice. The auditor objected: a requirement described the standard to be met, not a record of compliance. Delivery logs showed that messages had been sent to most participants, while two addresses had failed. The team arranged direct contact with those participants and recorded the result. The grammatical form was appropriate for stating the rule; the error lay in treating the existence of that rule as sufficient evidence that each required action had occurred.",
+        "options": [
+          {
+            "id": "v5a68bcb1eeb8",
+            "label": "He proved that every address had failed."
+          },
+          {
+            "id": "v800684b9d838",
+            "label": "He treated a requirement as evidence of completed compliance."
+          },
+          {
+            "id": "v0138a91ad6e2",
+            "label": "He used the rule only as a standard for checking logs."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v800684b9d838"
+      },
+      "reference_answer": "v800684b9d838",
+      "incorrect_answer": "v0138a91ad6e2",
+      "editorial_answer": "He treated a requirement as evidence of completed compliance.",
+      "explanation": "Текст требования не является записью об исполнении для каждого участника.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l0af01d8c296c",
+            "label": "essential"
+          },
+          {
+            "id": "lc890c1a4905f",
+            "label": "requirement"
+          },
+          {
+            "id": "l648f888ec44c",
+            "label": "compliance"
+          },
+          {
+            "id": "l0d89f021d46e",
+            "label": "mandate"
+          }
+        ],
+        "right": [
+          {
+            "id": "rc52a221ad5ff",
+            "label": "соблюдение требования"
+          },
+          {
+            "id": "r6ceb1ea9ebb3",
+            "label": "предписание"
+          },
+          {
+            "id": "r445431afde20",
+            "label": "необходимый"
+          },
+          {
+            "id": "r6658325bac07",
+            "label": "требование"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l0af01d8c296c": "r445431afde20",
+          "lc890c1a4905f": "r6658325bac07",
+          "l648f888ec44c": "rc52a221ad5ff",
+          "l0d89f021d46e": "r6ceb1ea9ebb3"
+        }
+      },
+      "reference_answer": {
+        "l0af01d8c296c": "r445431afde20",
+        "lc890c1a4905f": "r6658325bac07",
+        "l648f888ec44c": "rc52a221ad5ff",
+        "l0d89f021d46e": "r6ceb1ea9ebb3"
+      },
+      "incorrect_answer": {
+        "l0af01d8c296c": "r6658325bac07",
+        "lc890c1a4905f": "r445431afde20",
+        "l648f888ec44c": "rc52a221ad5ff",
+        "l0d89f021d46e": "r6ceb1ea9ebb3"
+      },
+      "editorial_answer": "essential — необходимый; requirement — требование; compliance — соблюдение требования; mandate — предписание",
+      "explanation": "В этих контекстах: essential — необходимый; requirement — требование; compliance — соблюдение требования; mandate — предписание.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что выявили журналы доставки?",
+      "public_payload": {
+        "passage": "The procedure stated that it was essential that every participant be informed before the schedule changed. In an audit discussion, one manager cited that sentence as evidence that everyone had received notice. The auditor objected: a requirement described the standard to be met, not a record of compliance. Delivery logs showed that messages had been sent to most participants, while two addresses had failed. The team arranged direct contact with those participants and recorded the result. The grammatical form was appropriate for stating the rule; the error lay in treating the existence of that rule as sufficient evidence that each required action had occurred.",
+        "options": [
+          {
+            "id": "v1c897219beda",
+            "label": "Most messages were sent, but two addresses failed."
+          },
+          {
+            "id": "vf3c1df3989b4",
+            "label": "Every participant necessarily read the message."
+          },
+          {
+            "id": "v8b98694435bc",
+            "label": "No attempt to notify anyone existed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1c897219beda"
+      },
+      "reference_answer": "v1c897219beda",
+      "incorrect_answer": "vf3c1df3989b4",
+      "editorial_answer": "Most messages were sent, but two addresses failed.",
+      "explanation": "Даже отправку нужно отличать от всеобщего получения; два сбоя указаны прямо.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани статус предписания.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “We require that the data be checked” establish that they have been checked?"
+          }
+        ],
+        "options": [
+          {
+            "id": "va5d2288be2e8",
+            "label": "Yes; require always means confirmed yesterday."
+          },
+          {
+            "id": "veb93c7a89581",
+            "label": "No; it states a requirement, not its fulfilment."
+          },
+          {
+            "id": "vc856bd57dc26",
+            "label": "Yes; the subjunctive makes every action completed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "veb93c7a89581"
+      },
+      "reference_answer": "veb93c7a89581",
+      "incorrect_answer": "vc856bd57dc26",
+      "editorial_answer": "No; it states a requirement, not its fulfilment.",
+      "explanation": "Требование и доказательство выполнения различаются.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Following an established requirement is ___.",
+        "options": [
+          {
+            "id": "v986747f94b21",
+            "label": "compliance"
+          },
+          {
+            "id": "v572c8542a497",
+            "label": "prediction"
+          },
+          {
+            "id": "vd49c14b92470",
+            "label": "coincidence only"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v986747f94b21"
+      },
+      "reference_answer": "v986747f94b21",
+      "incorrect_answer": "v572c8542a497",
+      "editorial_answer": "compliance",
+      "explanation": "Compliance — соблюдение установленного требования.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,344 @@
+{
+  "key": "c2/necessary-not-sufficient",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика C2 · формы и значения",
+    "position": 40
+  },
+  "position": 4,
+  "title": "Необходимое условие и гарантия результата",
+  "description": "Необходимое условие и гарантия результата: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Различать necessary и sufficient",
+    "Не превращать допуск к рассмотрению в обещание отбора"
+  ],
+  "notes": [
+    "Необходимое условие должно выполняться для результата; достаточное условие обеспечивает результат в заданной системе правил.",
+    "“A score of eighty is necessary” не означает “eighty guarantees selection”: могут действовать другие требования и ограничения."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/voices-in-a-narrative"],
+  "lexicon": [
+    {
+      "en": "necessary",
+      "ru": "необходимый"
+    },
+    {
+      "en": "sufficient",
+      "ru": "достаточный"
+    },
+    {
+      "en": "eligibility",
+      "ru": "соответствие условиям допуска"
+    },
+    {
+      "en": "selection",
+      "ru": "отбор"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “The certificate is necessary but not sufficient for admission” means ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "ve9af1945b30f",
+            "label": "It is required, but other conditions still matter."
+          },
+          {
+            "id": "v3ae84fa8ee7e",
+            "label": "It guarantees admission by itself."
+          },
+          {
+            "id": "v185cc315055a",
+            "label": "It is irrelevant to admission."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve9af1945b30f"
+      },
+      "reference_answer": "ve9af1945b30f",
+      "incorrect_answer": "v3ae84fa8ee7e",
+      "editorial_answer": "It is required, but other conditions still matter.",
+      "explanation": "Фраза утверждает обязательность сертификата без самостоятельной гарантии поступления.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: guarantee / guarantees.",
+      "public_payload": {
+        "sentence": "Meeting one condition does not necessarily ___ the outcome."
+      },
+      "answer_key": {
+        "accepted": ["guarantee"]
+      },
+      "reference_answer": "guarantee",
+      "incorrect_answer": "guarantees",
+      "editorial_answer": "Meeting one condition does not necessarily guarantee the outcome.",
+      "explanation": "После does not требуется guarantee.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Соответствие условиям допуска необходимо, но само по себе недостаточно для отбора.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "necessary"
+          },
+          {
+            "id": "t4",
+            "label": "but"
+          },
+          {
+            "id": "t5",
+            "label": "not"
+          },
+          {
+            "id": "t6",
+            "label": "sufficient"
+          },
+          {
+            "id": "t7",
+            "label": "for"
+          },
+          {
+            "id": "t8",
+            "label": "selection."
+          },
+          {
+            "id": "t1",
+            "label": "Eligibility"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "Eligibility is necessary but not sufficient for selection.",
+      "explanation": "Допуск и положительный итоговый выбор — разные этапы.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The requirement is necessary, but it does not guarantees selection."
+      },
+      "answer_key": {
+        "accepted": [
+          "The requirement is necessary, but it does not guarantee selection."
+        ]
+      },
+      "reference_answer": "The requirement is necessary, but it does not guarantee selection.",
+      "incorrect_answer": "The requirement is necessary, but it does not guarantees selection.",
+      "editorial_answer": "The requirement is necessary, but it does not guarantee selection.",
+      "explanation": "После does not основной глагол guarantee не получает -s.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что обеспечивал балл выше порога?",
+      "public_payload": {
+        "passage": "The fellowship rules required applicants to score at least eighty in an initial assessment before their proposals could be considered. Places were limited, and the final panel also evaluated the proposals against published criteria. One applicant scored eighty-two and announced that selection was therefore guaranteed. The administrator explained that the threshold established eligibility for the next stage, not a sufficient condition for receiving a place. An applicant below the threshold would not pass that stage under the stated rules, but exceeding it did not remove competition or the proposal review. A precise summary had to preserve both directions: the threshold mattered, and the threshold alone did not settle the outcome. Neither “irrelevant” nor “automatic acceptance” represented the rule accurately.",
+        "options": [
+          {
+            "id": "v212e0a0dbe06",
+            "label": "Automatic selection regardless of the proposal."
+          },
+          {
+            "id": "v009ba6ae86ba",
+            "label": "Exemption from every published criterion."
+          },
+          {
+            "id": "v505714f7c6c5",
+            "label": "Eligibility for the next stage, not a guaranteed place."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v505714f7c6c5"
+      },
+      "reference_answer": "v505714f7c6c5",
+      "incorrect_answer": "v212e0a0dbe06",
+      "editorial_answer": "Eligibility for the next stage, not a guaranteed place.",
+      "explanation": "Порог был условием допуска к рассмотрению.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lcd39fcaf9afc",
+            "label": "necessary"
+          },
+          {
+            "id": "le9cdf75afce0",
+            "label": "sufficient"
+          },
+          {
+            "id": "l3eb9d365191e",
+            "label": "eligibility"
+          },
+          {
+            "id": "ld482b7e72b15",
+            "label": "selection"
+          }
+        ],
+        "right": [
+          {
+            "id": "r8f269a3224f8",
+            "label": "соответствие условиям допуска"
+          },
+          {
+            "id": "r9fe4f82ca12b",
+            "label": "отбор"
+          },
+          {
+            "id": "re020f06d27f7",
+            "label": "необходимый"
+          },
+          {
+            "id": "r1957be82dd77",
+            "label": "достаточный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lcd39fcaf9afc": "re020f06d27f7",
+          "le9cdf75afce0": "r1957be82dd77",
+          "l3eb9d365191e": "r8f269a3224f8",
+          "ld482b7e72b15": "r9fe4f82ca12b"
+        }
+      },
+      "reference_answer": {
+        "lcd39fcaf9afc": "re020f06d27f7",
+        "le9cdf75afce0": "r1957be82dd77",
+        "l3eb9d365191e": "r8f269a3224f8",
+        "ld482b7e72b15": "r9fe4f82ca12b"
+      },
+      "incorrect_answer": {
+        "lcd39fcaf9afc": "r1957be82dd77",
+        "le9cdf75afce0": "re020f06d27f7",
+        "l3eb9d365191e": "r8f269a3224f8",
+        "ld482b7e72b15": "r9fe4f82ca12b"
+      },
+      "editorial_answer": "necessary — необходимый; sufficient — достаточный; eligibility — соответствие условиям допуска; selection — отбор",
+      "explanation": "В этих контекстах: necessary — необходимый; sufficient — достаточный; eligibility — соответствие условиям допуска; selection — отбор.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему считать порог неважным тоже неверно?",
+      "public_payload": {
+        "passage": "The fellowship rules required applicants to score at least eighty in an initial assessment before their proposals could be considered. Places were limited, and the final panel also evaluated the proposals against published criteria. One applicant scored eighty-two and announced that selection was therefore guaranteed. The administrator explained that the threshold established eligibility for the next stage, not a sufficient condition for receiving a place. An applicant below the threshold would not pass that stage under the stated rules, but exceeding it did not remove competition or the proposal review. A precise summary had to preserve both directions: the threshold mattered, and the threshold alone did not settle the outcome. Neither “irrelevant” nor “automatic acceptance” represented the rule accurately.",
+        "options": [
+          {
+            "id": "v15e2bed727d5",
+            "label": "Necessary and irrelevant mean the same thing."
+          },
+          {
+            "id": "v60c778908a44",
+            "label": "Applicants below it would not pass that stage under the stated rules."
+          },
+          {
+            "id": "vb3aa513b05ad",
+            "label": "Every below-threshold applicant was guaranteed a place."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v60c778908a44"
+      },
+      "reference_answer": "v60c778908a44",
+      "incorrect_answer": "vb3aa513b05ad",
+      "editorial_answer": "Applicants below it would not pass that stage under the stated rules.",
+      "explanation": "Необходимость порога сохраняется, хотя его недостаточно для итогового отбора.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Различи два логических свойства условия.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How can a condition be necessary without being sufficient?"
+          }
+        ],
+        "options": [
+          {
+            "id": "ve4449a69f9c2",
+            "label": "It need not be met and always guarantees the result."
+          },
+          {
+            "id": "v35ab8957a4b1",
+            "label": "It has no possible relation to the result."
+          },
+          {
+            "id": "v3f28a4a34236",
+            "label": "It must be met, but further conditions may also be required."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3f28a4a34236"
+      },
+      "reference_answer": "v3f28a4a34236",
+      "incorrect_answer": "ve4449a69f9c2",
+      "editorial_answer": "It must be met, but further conditions may also be required.",
+      "explanation": "Обязательность одного условия не исключает дополнительных условий.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Being allowed to enter a selection stage is ___.",
+        "options": [
+          {
+            "id": "vbd20d80ddf80",
+            "label": "unconditional success"
+          },
+          {
+            "id": "va6989eaecf01",
+            "label": "eligibility"
+          },
+          {
+            "id": "ve01d8df464f8",
+            "label": "selection itself necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va6989eaecf01"
+      },
+      "reference_answer": "va6989eaecf01",
+      "incorrect_answer": "ve01d8df464f8",
+      "editorial_answer": "eligibility",
+      "explanation": "Eligibility — соответствие условиям допуска, не сам итоговый отбор.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "key": "a2/during-or-for",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A2 · формы и значения",
+    "position": 40
+  },
+  "position": 2,
+  "title": "Во время события или в течение срока",
+  "description": "Во время события или в течение срока: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Использовать during с названием события",
+    "Использовать for с длительностью"
+  ],
+  "notes": [
+    "During the meeting отвечает на вопрос, во время какого события.",
+    "For two hours сообщает длительность, не название события."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/irregular-story-verbs"],
+  "lexicon": [
+    {
+      "en": "during",
+      "ru": "во время"
+    },
+    {
+      "en": "for",
+      "ru": "в течение"
+    },
+    {
+      "en": "interval",
+      "ru": "перерыв"
+    },
+    {
+      "en": "duration",
+      "ru": "длительность"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Please keep your phone silent ___ the presentation.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v79bdd4e58375",
+            "label": "during"
+          },
+          {
+            "id": "v8e47b9a70cff",
+            "label": "for a"
+          },
+          {
+            "id": "v9eaa4619fa57",
+            "label": "since of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v79bdd4e58375"
+      },
+      "reference_answer": "v79bdd4e58375",
+      "incorrect_answer": "v8e47b9a70cff",
+      "editorial_answer": "during",
+      "explanation": "During + название события означает «во время презентации».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: for / during.",
+      "public_payload": {
+        "sentence": "We waited ___ twenty minutes."
+      },
+      "answer_key": {
+        "accepted": ["for"]
+      },
+      "reference_answer": "for",
+      "incorrect_answer": "during",
+      "editorial_answer": "We waited for twenty minutes.",
+      "explanation": "Twenty minutes — длительность, поэтому for.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы поговорили во время перерыва.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "during"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "interval."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "spoke"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "We spoke during the interval.",
+      "explanation": "During вводит событие или отрезок, названный существительным.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The discussion lasted during two hours."
+      },
+      "answer_key": {
+        "accepted": ["The discussion lasted for two hours."]
+      },
+      "reference_answer": "The discussion lasted for two hours.",
+      "incorrect_answer": "The discussion lasted during two hours.",
+      "editorial_answer": "The discussion lasted for two hours.",
+      "explanation": "Перед численной длительностью нужно for.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда Миа поговорила с соседом?",
+      "public_payload": {
+        "passage": "During the school concert, guests were asked not to use their phones. There was an interval after the first hour. Mia talked to her neighbour during the interval, then listened to the second part for another forty minutes. Afterwards, she said she was glad that the quiet room made the music easy to hear.",
+        "options": [
+          {
+            "id": "v31fd1ac97fc5",
+            "label": "During every performance."
+          },
+          {
+            "id": "v5834d3e704bd",
+            "label": "Before the concert began, according to the text."
+          },
+          {
+            "id": "vda51b187b9c8",
+            "label": "During the interval."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vda51b187b9c8"
+      },
+      "reference_answer": "vda51b187b9c8",
+      "incorrect_answer": "v31fd1ac97fc5",
+      "editorial_answer": "During the interval.",
+      "explanation": "Разговор отнесён к перерыву.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l10ede229b312",
+            "label": "during"
+          },
+          {
+            "id": "l11450d1a4792",
+            "label": "for"
+          },
+          {
+            "id": "l652c8d7621f9",
+            "label": "interval"
+          },
+          {
+            "id": "ld8457c2288e4",
+            "label": "duration"
+          }
+        ],
+        "right": [
+          {
+            "id": "r280c2cd626bc",
+            "label": "перерыв"
+          },
+          {
+            "id": "r2f26e59c2c5f",
+            "label": "длительность"
+          },
+          {
+            "id": "r8c3370a35650",
+            "label": "во время"
+          },
+          {
+            "id": "r59a244c53a07",
+            "label": "в течение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l10ede229b312": "r8c3370a35650",
+          "l11450d1a4792": "r59a244c53a07",
+          "l652c8d7621f9": "r280c2cd626bc",
+          "ld8457c2288e4": "r2f26e59c2c5f"
+        }
+      },
+      "reference_answer": {
+        "l10ede229b312": "r8c3370a35650",
+        "l11450d1a4792": "r59a244c53a07",
+        "l652c8d7621f9": "r280c2cd626bc",
+        "ld8457c2288e4": "r2f26e59c2c5f"
+      },
+      "incorrect_answer": {
+        "l10ede229b312": "r59a244c53a07",
+        "l11450d1a4792": "r8c3370a35650",
+        "l652c8d7621f9": "r280c2cd626bc",
+        "ld8457c2288e4": "r2f26e59c2c5f"
+      },
+      "editorial_answer": "during — во время; for — в течение; interval — перерыв; duration — длительность",
+      "explanation": "В этих контекстах: during — во время; for — в течение; interval — перерыв; duration — длительность.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько длилось её слушание второй части?",
+      "public_payload": {
+        "passage": "During the school concert, guests were asked not to use their phones. There was an interval after the first hour. Mia talked to her neighbour during the interval, then listened to the second part for another forty minutes. Afterwards, she said she was glad that the quiet room made the music easy to hear.",
+        "options": [
+          {
+            "id": "v2eee7d926a33",
+            "label": "Two hours."
+          },
+          {
+            "id": "v05ac8d174673",
+            "label": "Forty minutes."
+          },
+          {
+            "id": "v370d81719159",
+            "label": "Twenty minutes."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v05ac8d174673"
+      },
+      "reference_answer": "v05ac8d174673",
+      "incorrect_answer": "v370d81719159",
+      "editorial_answer": "Forty minutes.",
+      "explanation": "For another forty minutes указывает длительность второй части.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь именно о длительности.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How long did you stay?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v96b71b756fad",
+            "label": "During half an hour."
+          },
+          {
+            "id": "v561c0536e670",
+            "label": "Since half an hour ago for tomorrow."
+          },
+          {
+            "id": "v33efb56ab9f4",
+            "label": "For half an hour."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v33efb56ab9f4"
+      },
+      "reference_answer": "v33efb56ab9f4",
+      "incorrect_answer": "v96b71b756fad",
+      "editorial_answer": "For half an hour.",
+      "explanation": "For + период выражает длительность.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A break between parts of a performance is an ___.",
+        "options": [
+          {
+            "id": "vcd0851896e3b",
+            "label": "address"
+          },
+          {
+            "id": "v2a4edd87bf29",
+            "label": "interval"
+          },
+          {
+            "id": "v36e6fcb31e73",
+            "label": "invitation"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2a4edd87bf29"
+      },
+      "reference_answer": "v2a4edd87bf29",
+      "incorrect_answer": "v36e6fcb31e73",
+      "editorial_answer": "interval",
+      "explanation": "Interval — перерыв между частями.",
+      "key": "e09"
+    }
+  ]
+}

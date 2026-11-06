@@ -1,0 +1,334 @@
+{
+  "key": "b1/been-or-gone",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B1 · формы и значения",
+    "position": 40
+  },
+  "position": 1,
+  "title": "Сходил и вернулся или ещё там",
+  "description": "Сходил и вернулся или ещё там: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Различать has been to и has gone to",
+    "Выбирать форму по присутствию человека сейчас"
+  ],
+  "notes": [
+    "Has been to часто описывает посещение с возвращением или жизненный опыт.",
+    "Has gone to в данном контексте сообщает, что человек ушёл туда и ещё не вернулся."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/reported-yes-no"],
+  "lexicon": [
+    {
+      "en": "return",
+      "ru": "возвращаться"
+    },
+    {
+      "en": "currently",
+      "ru": "сейчас"
+    },
+    {
+      "en": "away",
+      "ru": "в отъезде, не на месте"
+    },
+    {
+      "en": "visit",
+      "ru": "посещение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Mara is not here. She has ___ to the post office and will be back later.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v050557675335",
+            "label": "been back already"
+          },
+          {
+            "id": "v9302252c2de2",
+            "label": "went"
+          },
+          {
+            "id": "v0478850ec73b",
+            "label": "gone"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0478850ec73b"
+      },
+      "reference_answer": "v0478850ec73b",
+      "incorrect_answer": "v050557675335",
+      "editorial_answer": "gone",
+      "explanation": "Человек ещё отсутствует, поэтому has gone to.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: went / been.",
+      "public_payload": {
+        "sentence": "I have ___ to the exhibition twice; both times I came back the same day."
+      },
+      "answer_key": {
+        "accepted": ["been"]
+      },
+      "reference_answer": "been",
+      "incorrect_answer": "went",
+      "editorial_answer": "I have been to the exhibition twice; both times I came back the same day.",
+      "explanation": "После have в описании посещений используется been.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Она ушла в библиотеку и сейчас не здесь.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "gone"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "library."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "has"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "She has gone to the library.",
+      "explanation": "В данном контексте has gone связывает уход с нынешним отсутствием.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He has went to the office."
+      },
+      "answer_key": {
+        "accepted": ["He has gone to the office."]
+      },
+      "reference_answer": "He has gone to the office.",
+      "incorrect_answer": "He has went to the office.",
+      "editorial_answer": "He has gone to the office.",
+      "explanation": "После has требуется причастие gone, не went.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Мары не было в клубе?",
+      "public_payload": {
+        "passage": "When Alex arrived at the club, Mara was away. A volunteer said she had gone to collect a parcel and would return later. Alex had been to the new post office the day before, so he knew the walk was short. He waited in the café. Mara returned twenty minutes later with the parcel, and they began setting up the display.",
+        "options": [
+          {
+            "id": "v4b1332de6af8",
+            "label": "She had never visited a post office."
+          },
+          {
+            "id": "ve8a206b8c0ea",
+            "label": "She had gone to collect a parcel."
+          },
+          {
+            "id": "v348e6031df07",
+            "label": "She had already returned before Alex arrived."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve8a206b8c0ea"
+      },
+      "reference_answer": "ve8a206b8c0ea",
+      "incorrect_answer": "v348e6031df07",
+      "editorial_answer": "She had gone to collect a parcel.",
+      "explanation": "Gone описывает незавершённое к тому моменту отсутствие.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l4aac999e74ea",
+            "label": "return"
+          },
+          {
+            "id": "l359b3486d9ff",
+            "label": "currently"
+          },
+          {
+            "id": "l456140f7111b",
+            "label": "away"
+          },
+          {
+            "id": "le004e609f469",
+            "label": "visit"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2fb938f934c3",
+            "label": "в отъезде, не на месте"
+          },
+          {
+            "id": "r895ae4569838",
+            "label": "посещение"
+          },
+          {
+            "id": "rff881331596f",
+            "label": "возвращаться"
+          },
+          {
+            "id": "r9b942ea55d58",
+            "label": "сейчас"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l4aac999e74ea": "rff881331596f",
+          "l359b3486d9ff": "r9b942ea55d58",
+          "l456140f7111b": "r2fb938f934c3",
+          "le004e609f469": "r895ae4569838"
+        }
+      },
+      "reference_answer": {
+        "l4aac999e74ea": "rff881331596f",
+        "l359b3486d9ff": "r9b942ea55d58",
+        "l456140f7111b": "r2fb938f934c3",
+        "le004e609f469": "r895ae4569838"
+      },
+      "incorrect_answer": {
+        "l4aac999e74ea": "r9b942ea55d58",
+        "l359b3486d9ff": "rff881331596f",
+        "l456140f7111b": "r2fb938f934c3",
+        "le004e609f469": "r895ae4569838"
+      },
+      "editorial_answer": "return — возвращаться; currently — сейчас; away — в отъезде, не на месте; visit — посещение",
+      "explanation": "В этих контекстах: return — возвращаться; currently — сейчас; away — в отъезде, не на месте; visit — посещение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой опыт помог Алексу оценить расстояние?",
+      "public_payload": {
+        "passage": "When Alex arrived at the club, Mara was away. A volunteer said she had gone to collect a parcel and would return later. Alex had been to the new post office the day before, so he knew the walk was short. He waited in the café. Mara returned twenty minutes later with the parcel, and they began setting up the display.",
+        "options": [
+          {
+            "id": "vc392e53edd7c",
+            "label": "He had visited the post office the previous day."
+          },
+          {
+            "id": "v8eb58951abc9",
+            "label": "He had built the post office."
+          },
+          {
+            "id": "v2bc347477b2e",
+            "label": "Mara had promised to take a bus."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc392e53edd7c"
+      },
+      "reference_answer": "vc392e53edd7c",
+      "incorrect_answer": "v8eb58951abc9",
+      "editorial_answer": "He had visited the post office the previous day.",
+      "explanation": "Been to указывает на прежнее посещение, а не строительство или обещание.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи о нынешнем отсутствии после ухода.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Is Kim in the building?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v84c3050f05c5",
+            "label": "No, she have gone to the station."
+          },
+          {
+            "id": "v5a608095292b",
+            "label": "No, she has gone to the station."
+          },
+          {
+            "id": "v365318d55845",
+            "label": "No, she has went to the station."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5a608095292b"
+      },
+      "reference_answer": "v5a608095292b",
+      "incorrect_answer": "v365318d55845",
+      "editorial_answer": "No, she has gone to the station.",
+      "explanation": "Has gone to согласовано с she.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Someone who is not present at their usual place is ___.",
+        "options": [
+          {
+            "id": "ve205b9e426a1",
+            "label": "away"
+          },
+          {
+            "id": "ve6b9dd27e145",
+            "label": "already returned necessarily"
+          },
+          {
+            "id": "vd99a249cef86",
+            "label": "indoors necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve205b9e426a1"
+      },
+      "reference_answer": "ve205b9e426a1",
+      "incorrect_answer": "ve6b9dd27e145",
+      "editorial_answer": "away",
+      "explanation": "Away обозначает отсутствие на месте.",
+      "key": "e09"
+    }
+  ]
+}

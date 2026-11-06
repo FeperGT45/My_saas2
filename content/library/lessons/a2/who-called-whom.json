@@ -1,0 +1,326 @@
+{
+  "key": "a2/who-called-whom",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A2 · формы и значения",
+    "position": 40
+  },
+  "position": 8,
+  "title": "Кто позвонил и кому звонил ты",
+  "description": "Кто позвонил и кому звонил ты: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A2",
+  "objectives": [
+    "Различать вопрос к подлежащему и дополнению",
+    "Не добавлять did к простому Who called?"
+  ],
+  "notes": [
+    "Who called? спрашивает, кто совершил действие; called стоит в прошлом без did.",
+    "Who did you call? спрашивает о другом участнике; you — подлежащее, после did используется call."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/might-next-week"],
+  "lexicon": [
+    {
+      "en": "caller",
+      "ru": "звонящий"
+    },
+    {
+      "en": "call",
+      "ru": "звонить"
+    },
+    {
+      "en": "receive",
+      "ru": "получать"
+    },
+    {
+      "en": "message",
+      "ru": "сообщение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: You heard the phone, but do not know the caller. Ask: ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vf62d60c6d8e8",
+            "label": "Who called?"
+          },
+          {
+            "id": "vd2c14e59f003",
+            "label": "Who did called?"
+          },
+          {
+            "id": "v488df0b184dd",
+            "label": "Who did you called?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf62d60c6d8e8"
+      },
+      "reference_answer": "vf62d60c6d8e8",
+      "incorrect_answer": "vd2c14e59f003",
+      "editorial_answer": "Who called?",
+      "explanation": "Неизвестный caller является подлежащим: Who called?",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: call / called.",
+      "public_payload": {
+        "sentence": "Who did you ___ yesterday?"
+      },
+      "answer_key": {
+        "accepted": ["call"]
+      },
+      "reference_answer": "call",
+      "incorrect_answer": "called",
+      "editorial_answer": "Who did you call yesterday?",
+      "explanation": "После did в вопросе к дополнению используется call.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Кто позвонил тебе вчера?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "you"
+          },
+          {
+            "id": "t4",
+            "label": "yesterday?"
+          },
+          {
+            "id": "t1",
+            "label": "Who"
+          },
+          {
+            "id": "t2",
+            "label": "called"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4"],
+      "incorrect_answer": ["t2", "t3", "t4", "t1"],
+      "editorial_answer": "Who called you yesterday?",
+      "explanation": "Who является подлежащим, you — получателем действия.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Who did you called last night?"
+      },
+      "answer_key": {
+        "accepted": ["Who did you call last night?"]
+      },
+      "reference_answer": "Who did you call last night?",
+      "incorrect_answer": "Who did you called last night?",
+      "editorial_answer": "Who did you call last night?",
+      "explanation": "После did нужна начальная форма call.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто позвонил Нине утром?",
+      "public_payload": {
+        "passage": "Nina received two calls yesterday. Her tutor called in the morning, and her brother called in the evening. Later, Nina called the library herself to ask about a missing book. When her friend asked who she had called, she answered “the library”, not “my tutor”.",
+        "options": [
+          {
+            "id": "ve12c3842a821",
+            "label": "Her brother."
+          },
+          {
+            "id": "v9d873ec1dd81",
+            "label": "A librarian, according to the text."
+          },
+          {
+            "id": "vc2fabee3486d",
+            "label": "Her tutor."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc2fabee3486d"
+      },
+      "reference_answer": "vc2fabee3486d",
+      "incorrect_answer": "ve12c3842a821",
+      "editorial_answer": "Her tutor.",
+      "explanation": "Утренний звонок поступил от преподавателя.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lf8ec6e56385d",
+            "label": "caller"
+          },
+          {
+            "id": "lf163af45712e",
+            "label": "call"
+          },
+          {
+            "id": "l5dc94ae48e83",
+            "label": "receive"
+          },
+          {
+            "id": "lce24ee47b488",
+            "label": "message"
+          }
+        ],
+        "right": [
+          {
+            "id": "rd157713af2d4",
+            "label": "получать"
+          },
+          {
+            "id": "r62da792adc85",
+            "label": "сообщение"
+          },
+          {
+            "id": "r0473855caf4b",
+            "label": "звонящий"
+          },
+          {
+            "id": "rc6e35a852654",
+            "label": "звонить"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lf8ec6e56385d": "r0473855caf4b",
+          "lf163af45712e": "rc6e35a852654",
+          "l5dc94ae48e83": "rd157713af2d4",
+          "lce24ee47b488": "r62da792adc85"
+        }
+      },
+      "reference_answer": {
+        "lf8ec6e56385d": "r0473855caf4b",
+        "lf163af45712e": "rc6e35a852654",
+        "l5dc94ae48e83": "rd157713af2d4",
+        "lce24ee47b488": "r62da792adc85"
+      },
+      "incorrect_answer": {
+        "lf8ec6e56385d": "rc6e35a852654",
+        "lf163af45712e": "r0473855caf4b",
+        "l5dc94ae48e83": "rd157713af2d4",
+        "lce24ee47b488": "r62da792adc85"
+      },
+      "editorial_answer": "caller — звонящий; call — звонить; receive — получать; message — сообщение",
+      "explanation": "В этих контекстах: caller — звонящий; call — звонить; receive — получать; message — сообщение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Куда Нина позвонила сама?",
+      "public_payload": {
+        "passage": "Nina received two calls yesterday. Her tutor called in the morning, and her brother called in the evening. Later, Nina called the library herself to ask about a missing book. When her friend asked who she had called, she answered “the library”, not “my tutor”.",
+        "options": [
+          {
+            "id": "v6db7d4d2512c",
+            "label": "Only her brother."
+          },
+          {
+            "id": "vfbe2ed28e309",
+            "label": "The library."
+          },
+          {
+            "id": "v26167e94de2a",
+            "label": "Only her tutor."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfbe2ed28e309"
+      },
+      "reference_answer": "vfbe2ed28e309",
+      "incorrect_answer": "v26167e94de2a",
+      "editorial_answer": "The library.",
+      "explanation": "Текст различает полученные звонки и её собственный звонок.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Спроси о звонящем, а не об адресате звонка собеседника.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "You want the name of the person who phoned."
+          }
+        ],
+        "options": [
+          {
+            "id": "v15ccf8b3f8b8",
+            "label": "Who did you call?"
+          },
+          {
+            "id": "ve3d36a57907f",
+            "label": "Who you called did?"
+          },
+          {
+            "id": "vec1e912fa45a",
+            "label": "Who called you?"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vec1e912fa45a"
+      },
+      "reference_answer": "vec1e912fa45a",
+      "incorrect_answer": "v15ccf8b3f8b8",
+      "editorial_answer": "Who called you?",
+      "explanation": "Who called you? делает who исполнителем звонка.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The person making a phone call is the ___.",
+        "options": [
+          {
+            "id": "v13c93ff95587",
+            "label": "printer"
+          },
+          {
+            "id": "v90d6706e874b",
+            "label": "caller"
+          },
+          {
+            "id": "v87d3a88cd871",
+            "label": "recipient in every case"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v90d6706e874b"
+      },
+      "reference_answer": "v90d6706e874b",
+      "incorrect_answer": "v87d3a88cd871",
+      "editorial_answer": "caller",
+      "explanation": "Caller — звонящий, не обязательно получатель.",
+      "key": "e09"
+    }
+  ]
+}

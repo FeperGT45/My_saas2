@@ -1,0 +1,336 @@
+{
+  "key": "c2/rejecting-a-description",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика C2 · формы и значения",
+    "position": 40
+  },
+  "position": 1,
+  "title": "Отрицаем формулировку, а не само событие",
+  "description": "Отрицаем формулировку, а не само событие: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "C2",
+  "objectives": [
+    "Распознавать отрицание слишком слабого описания",
+    "Сохранять степень оценки при пересказе"
+  ],
+  "notes": [
+    "“It is not merely late; it is seriously overdue” не отрицает задержку, а отвергает слишком слабую оценку.",
+    "Цитирование отдельных отрицательных слов без продолжения может перевернуть смысл высказывания."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/silence-and-selective-records"],
+  "lexicon": [
+    {
+      "en": "merely",
+      "ru": "всего лишь"
+    },
+    {
+      "en": "understatement",
+      "ru": "преуменьшение"
+    },
+    {
+      "en": "severity",
+      "ru": "серьёзность"
+    },
+    {
+      "en": "description",
+      "ru": "описание"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “It is not merely inconvenient; it prevents access” rejects ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "ve4219fdec3b7",
+            "label": "the adequacy of a weak description"
+          },
+          {
+            "id": "vc69f5be6fa28",
+            "label": "the fact that access is affected"
+          },
+          {
+            "id": "v672b1df74ae1",
+            "label": "all criticism of the arrangement"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve4219fdec3b7"
+      },
+      "reference_answer": "ve4219fdec3b7",
+      "incorrect_answer": "vc69f5be6fa28",
+      "editorial_answer": "the adequacy of a weak description",
+      "explanation": "Отрицается достаточность слова inconvenient, а не наличие проблемы.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: mere / merely.",
+      "public_payload": {
+        "sentence": "The problem is not ___ cosmetic; it affects the whole process."
+      },
+      "answer_key": {
+        "accepted": ["merely"]
+      },
+      "reference_answer": "merely",
+      "incorrect_answer": "mere",
+      "editorial_answer": "The problem is not merely cosmetic; it affects the whole process.",
+      "explanation": "Перед cosmetic в данном значении нужно наречие merely.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Проблема не просто неудобна: оценка этим не исчерпывается.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "not"
+          },
+          {
+            "id": "t5",
+            "label": "merely"
+          },
+          {
+            "id": "t6",
+            "label": "inconvenient."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "problem"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The problem is not merely inconvenient.",
+      "explanation": "Not merely отвергает ограничение оценки одним слабым признаком.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The change is not mere inconvenient; it blocks the entrance."
+      },
+      "answer_key": {
+        "accepted": [
+          "The change is not merely inconvenient; it blocks the entrance."
+        ]
+      },
+      "reference_answer": "The change is not merely inconvenient; it blocks the entrance.",
+      "incorrect_answer": "The change is not mere inconvenient; it blocks the entrance.",
+      "editorial_answer": "The change is not merely inconvenient; it blocks the entrance.",
+      "explanation": "Для ограничения прилагательного используется merely.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что председатель отрицал в полной реплике?",
+      "public_payload": {
+        "passage": "During a discussion of a delayed public notice, the chair said, “It is not merely late; it leaves applicants without time to respond.” A short account quoted only “not late”, making the chair appear to deny the delay. In the full exchange, the chair accepted the lateness and objected to treating it as a minor scheduling inconvenience. The objection concerned the adequacy of the description: it omitted the practical consequence for people receiving the notice. Another member agreed that the delay mattered but questioned whether every applicant had been affected equally. The final minutes retained both qualifications, distinguishing criticism of a weak label from denial of the event and distinguishing a serious consequence from an unsupported claim about every individual.",
+        "options": [
+          {
+            "id": "v903e593b2d01",
+            "label": "That the notice had been delayed at all."
+          },
+          {
+            "id": "v822990e81ca0",
+            "label": "That applicants needed time to respond."
+          },
+          {
+            "id": "v381603f079a9",
+            "label": "That “merely late” adequately described the problem."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v381603f079a9"
+      },
+      "reference_answer": "v381603f079a9",
+      "incorrect_answer": "v903e593b2d01",
+      "editorial_answer": "That “merely late” adequately described the problem.",
+      "explanation": "Полная реплика признаёт задержку и усиливает оценку её последствий.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l90942aec4f69",
+            "label": "merely"
+          },
+          {
+            "id": "lc3547efa693d",
+            "label": "understatement"
+          },
+          {
+            "id": "l51dc680e32cc",
+            "label": "severity"
+          },
+          {
+            "id": "ld58bb54ced22",
+            "label": "description"
+          }
+        ],
+        "right": [
+          {
+            "id": "r00ce24347b49",
+            "label": "серьёзность"
+          },
+          {
+            "id": "r444a96473d8a",
+            "label": "описание"
+          },
+          {
+            "id": "rae2098b47484",
+            "label": "всего лишь"
+          },
+          {
+            "id": "r4a2d7289afbd",
+            "label": "преуменьшение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l90942aec4f69": "rae2098b47484",
+          "lc3547efa693d": "r4a2d7289afbd",
+          "l51dc680e32cc": "r00ce24347b49",
+          "ld58bb54ced22": "r444a96473d8a"
+        }
+      },
+      "reference_answer": {
+        "l90942aec4f69": "rae2098b47484",
+        "lc3547efa693d": "r4a2d7289afbd",
+        "l51dc680e32cc": "r00ce24347b49",
+        "ld58bb54ced22": "r444a96473d8a"
+      },
+      "incorrect_answer": {
+        "l90942aec4f69": "r4a2d7289afbd",
+        "lc3547efa693d": "rae2098b47484",
+        "l51dc680e32cc": "r00ce24347b49",
+        "ld58bb54ced22": "r444a96473d8a"
+      },
+      "editorial_answer": "merely — всего лишь; understatement — преуменьшение; severity — серьёзность; description — описание",
+      "explanation": "В этих контекстах: merely — всего лишь; understatement — преуменьшение; severity — серьёзность; description — описание.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую дополнительную границу сохраняют итоговые протоколы?",
+      "public_payload": {
+        "passage": "During a discussion of a delayed public notice, the chair said, “It is not merely late; it leaves applicants without time to respond.” A short account quoted only “not late”, making the chair appear to deny the delay. In the full exchange, the chair accepted the lateness and objected to treating it as a minor scheduling inconvenience. The objection concerned the adequacy of the description: it omitted the practical consequence for people receiving the notice. Another member agreed that the delay mattered but questioned whether every applicant had been affected equally. The final minutes retained both qualifications, distinguishing criticism of a weak label from denial of the event and distinguishing a serious consequence from an unsupported claim about every individual.",
+        "options": [
+          {
+            "id": "vca6fd2535337",
+            "label": "All practical consequences are unimportant by definition."
+          },
+          {
+            "id": "v0276e81c9f67",
+            "label": "The consequence may be serious without proof that every applicant was affected equally."
+          },
+          {
+            "id": "v3f261f969f5a",
+            "label": "No applicant could possibly have been affected."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0276e81c9f67"
+      },
+      "reference_answer": "v0276e81c9f67",
+      "incorrect_answer": "v3f261f969f5a",
+      "editorial_answer": "The consequence may be serious without proof that every applicant was affected equally.",
+      "explanation": "Тяжесть проблемы не доказывает одинаковый эффект для всех.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани область действия отрицания.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can “not merely difficult” safely become “not difficult”?"
+          }
+        ],
+        "options": [
+          {
+            "id": "va3bbca39af3e",
+            "label": "Yes; merely has no effect on scope."
+          },
+          {
+            "id": "v3b203e5d59d2",
+            "label": "Yes; all negative statements deny the entire event."
+          },
+          {
+            "id": "v1aa8511aca55",
+            "label": "No; it can reject an insufficient description while retaining the difficulty."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1aa8511aca55"
+      },
+      "reference_answer": "v1aa8511aca55",
+      "incorrect_answer": "va3bbca39af3e",
+      "editorial_answer": "No; it can reject an insufficient description while retaining the difficulty.",
+      "explanation": "Удаление merely меняет смысл с усиления оценки на простое отрицание.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A description making something seem less serious than it is can be an ___.",
+        "options": [
+          {
+            "id": "ve113e18bed3c",
+            "label": "independent verification"
+          },
+          {
+            "id": "v236d454fcfc3",
+            "label": "understatement"
+          },
+          {
+            "id": "v227554157ff0",
+            "label": "overstatement"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v236d454fcfc3"
+      },
+      "reference_answer": "v236d454fcfc3",
+      "incorrect_answer": "v227554157ff0",
+      "editorial_answer": "understatement",
+      "explanation": "Understatement — преуменьшение, противоположное overstatement.",
+      "key": "e09"
+    }
+  ]
+}

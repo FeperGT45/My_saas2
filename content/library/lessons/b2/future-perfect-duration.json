@@ -1,0 +1,372 @@
+{
+  "key": "b2/future-perfect-duration",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B2 · формы и значения",
+    "position": 40
+  },
+  "position": 5,
+  "title": "Как долго будет идти процесс к сроку",
+  "description": "Как долго будет идти процесс к сроку: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B2",
+  "objectives": [
+    "Строить will have been + -ing",
+    "Отличать длительность процесса к сроку от завершения всей работы"
+  ],
+  "notes": [
+    "By June, we will have been working for a year обозначает длительность процесса к будущему моменту.",
+    "Эта форма не утверждает, что весь проект закончится к июню; для завершения нужен отдельный контекст."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/likely-and-bound"],
+  "lexicon": [
+    {
+      "en": "duration",
+      "ru": "длительность"
+    },
+    {
+      "en": "milestone",
+      "ru": "контрольная точка"
+    },
+    {
+      "en": "ongoing",
+      "ru": "продолжающийся"
+    },
+    {
+      "en": "completion",
+      "ru": "завершение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: By May, the team ___ on the archive for six months.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vfcfd3bb00909",
+            "label": "will been working"
+          },
+          {
+            "id": "v1bd47e01216b",
+            "label": "will have working"
+          },
+          {
+            "id": "v94020d653121",
+            "label": "will have been working"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v94020d653121"
+      },
+      "reference_answer": "v94020d653121",
+      "incorrect_answer": "vfcfd3bb00909",
+      "editorial_answer": "will have been working",
+      "explanation": "Будущая длительность к границе выражается will have been working.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: trained / training.",
+      "public_payload": {
+        "sentence": "By Friday, she will have been ___ for two weeks."
+      },
+      "answer_key": {
+        "accepted": ["training"]
+      },
+      "reference_answer": "training",
+      "incorrect_answer": "trained",
+      "editorial_answer": "By Friday, she will have been training for two weeks.",
+      "explanation": "Для активного продолжающегося процесса нужна training.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «К июню мы будем работать уже год.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "we"
+          },
+          {
+            "id": "t4",
+            "label": "will"
+          },
+          {
+            "id": "t5",
+            "label": "have"
+          },
+          {
+            "id": "t6",
+            "label": "been"
+          },
+          {
+            "id": "t7",
+            "label": "working"
+          },
+          {
+            "id": "t8",
+            "label": "for"
+          },
+          {
+            "id": "t9",
+            "label": "a"
+          },
+          {
+            "id": "t10",
+            "label": "year."
+          },
+          {
+            "id": "t1",
+            "label": "By"
+          },
+          {
+            "id": "t2",
+            "label": "June,"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "By June, we will have been working for a year.",
+      "explanation": "Форма обозначает накопленную длительность, не завершённость всего проекта.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "By Monday, they will have working for a month."
+      },
+      "answer_key": {
+        "accepted": ["By Monday, they will have been working for a month."]
+      },
+      "reference_answer": "By Monday, they will have been working for a month.",
+      "incorrect_answer": "By Monday, they will have working for a month.",
+      "editorial_answer": "By Monday, they will have been working for a month.",
+      "explanation": "После will have в этой длительной форме требуется been перед working.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что измеряет сообщение о шести месяцах?",
+      "public_payload": {
+        "passage": "The archive team began its project in December. A progress note said that by June it would have been working for six months. A reader assumed this meant the whole archive would be ready in June. The coordinator explained that the sentence measured the duration of the work, not its completion. Some collections were already catalogued, while others required additional checking. The team would publish a separate completion estimate after assessing those remaining collections, rather than treating six months of activity as proof that every item would be finished.",
+        "options": [
+          {
+            "id": "v2a0a87043d9f",
+            "label": "The exact number of remaining documents."
+          },
+          {
+            "id": "v68f0d57ec165",
+            "label": "The duration of the work by June."
+          },
+          {
+            "id": "v682171300e61",
+            "label": "A confirmed completion date for every item."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v68f0d57ec165"
+      },
+      "reference_answer": "v68f0d57ec165",
+      "incorrect_answer": "v682171300e61",
+      "editorial_answer": "The duration of the work by June.",
+      "explanation": "Длительность и завершённость всего архива — разные сведения.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l684497511021",
+            "label": "duration"
+          },
+          {
+            "id": "l6ccd48df33e9",
+            "label": "milestone"
+          },
+          {
+            "id": "lfd8b308dd05a",
+            "label": "ongoing"
+          },
+          {
+            "id": "l6258cb13aee5",
+            "label": "completion"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1e77ce752dec",
+            "label": "продолжающийся"
+          },
+          {
+            "id": "r1d2c9530afe5",
+            "label": "завершение"
+          },
+          {
+            "id": "r1e8b1b986a49",
+            "label": "длительность"
+          },
+          {
+            "id": "reeac395596f0",
+            "label": "контрольная точка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l684497511021": "r1e8b1b986a49",
+          "l6ccd48df33e9": "reeac395596f0",
+          "lfd8b308dd05a": "r1e77ce752dec",
+          "l6258cb13aee5": "r1d2c9530afe5"
+        }
+      },
+      "reference_answer": {
+        "l684497511021": "r1e8b1b986a49",
+        "l6ccd48df33e9": "reeac395596f0",
+        "lfd8b308dd05a": "r1e77ce752dec",
+        "l6258cb13aee5": "r1d2c9530afe5"
+      },
+      "incorrect_answer": {
+        "l684497511021": "reeac395596f0",
+        "l6ccd48df33e9": "r1e8b1b986a49",
+        "lfd8b308dd05a": "r1e77ce752dec",
+        "l6258cb13aee5": "r1d2c9530afe5"
+      },
+      "editorial_answer": "duration — длительность; milestone — контрольная точка; ongoing — продолжающийся; completion — завершение",
+      "explanation": "В этих контекстах: duration — длительность; milestone — контрольная точка; ongoing — продолжающийся; completion — завершение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда собирались дать оценку завершения?",
+      "public_payload": {
+        "passage": "The archive team began its project in December. A progress note said that by June it would have been working for six months. A reader assumed this meant the whole archive would be ready in June. The coordinator explained that the sentence measured the duration of the work, not its completion. Some collections were already catalogued, while others required additional checking. The team would publish a separate completion estimate after assessing those remaining collections, rather than treating six months of activity as proof that every item would be finished.",
+        "options": [
+          {
+            "id": "v0c39007154a7",
+            "label": "After assessing the remaining collections."
+          },
+          {
+            "id": "v485162626886",
+            "label": "Automatically when six months had passed."
+          },
+          {
+            "id": "v5744f4d4b918",
+            "label": "Before the project began, with no review."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0c39007154a7"
+      },
+      "reference_answer": "v0c39007154a7",
+      "incorrect_answer": "v485162626886",
+      "editorial_answer": "After assessing the remaining collections.",
+      "explanation": "Для оценки требовалось понять оставшийся объём проверки.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Отдели длительность процесса от окончания результата.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Will “we will have been building for a year” guarantee a finished building?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v74cc279fd328",
+            "label": "Yes; for a year always means every task is finished."
+          },
+          {
+            "id": "vb8222f692f83",
+            "label": "No; it states duration unless completion is separately established."
+          },
+          {
+            "id": "v722284f5a67b",
+            "label": "Yes; every perfect continuous form guarantees completion."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb8222f692f83"
+      },
+      "reference_answer": "vb8222f692f83",
+      "incorrect_answer": "v722284f5a67b",
+      "editorial_answer": "No; it states duration unless completion is separately established.",
+      "explanation": "Perfect Continuous в этой модели не обещает завершение всей постройки.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A task that continues over time is ___.",
+        "options": [
+          {
+            "id": "va5dff3578143",
+            "label": "ongoing"
+          },
+          {
+            "id": "vb9559751ffec",
+            "label": "completed necessarily"
+          },
+          {
+            "id": "v8f76678f263f",
+            "label": "cancelled automatically"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va5dff3578143"
+      },
+      "reference_answer": "va5dff3578143",
+      "incorrect_answer": "vb9559751ffec",
+      "editorial_answer": "ongoing",
+      "explanation": "Ongoing — продолжающийся.",
+      "key": "e09"
+    }
+  ]
+}

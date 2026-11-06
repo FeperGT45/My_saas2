@@ -1,0 +1,342 @@
+{
+  "key": "a1/calendar-dates",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика A1 · формы и значения",
+    "position": 40
+  },
+  "position": 2,
+  "title": "Дата события в календаре",
+  "description": "Дата события в календаре: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "A1",
+  "objectives": [
+    "Читать дату с порядковым числом",
+    "Использовать on с конкретной датой"
+  ],
+  "notes": [
+    "В британской записи 5 June читается the fifth of June.",
+    "Перед конкретной датой используется on, перед одним месяцем — in."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/floor-numbers"],
+  "lexicon": [
+    {
+      "en": "date",
+      "ru": "дата"
+    },
+    {
+      "en": "June",
+      "ru": "июнь"
+    },
+    {
+      "en": "fifth",
+      "ru": "пятый"
+    },
+    {
+      "en": "calendar",
+      "ru": "календарь"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The exhibition opens ___ 5 June.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v8407dbff63d5",
+            "label": "in"
+          },
+          {
+            "id": "v2e0f22da75db",
+            "label": "at"
+          },
+          {
+            "id": "vf70d668f455e",
+            "label": "on"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf70d668f455e"
+      },
+      "reference_answer": "vf70d668f455e",
+      "incorrect_answer": "v8407dbff63d5",
+      "editorial_answer": "on",
+      "explanation": "С полной датой нужно on.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: fifth / five.",
+      "public_payload": {
+        "sentence": "5 June is the ___ of June."
+      },
+      "answer_key": {
+        "accepted": ["fifth"]
+      },
+      "reference_answer": "fifth",
+      "incorrect_answer": "five",
+      "editorial_answer": "5 June is the fifth of June.",
+      "explanation": "Для даты используется порядковое fifth.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Встреча состоится пятого июня.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "on"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "fifth"
+          },
+          {
+            "id": "t7",
+            "label": "of"
+          },
+          {
+            "id": "t8",
+            "label": "June."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "meeting"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The meeting is on the fifth of June.",
+      "explanation": "Конкретная дата требует on и порядкового числа.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The show starts in 8 July."
+      },
+      "answer_key": {
+        "accepted": ["The show starts on 8 July."]
+      },
+      "reference_answer": "The show starts on 8 July.",
+      "incorrect_answer": "The show starts in 8 July.",
+      "editorial_answer": "The show starts on 8 July.",
+      "explanation": "С полной датой используется on, не in.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда проходит репетиция?",
+      "public_payload": {
+        "passage": "The school show is on 5 June. The practice is on 3 June. Ben writes both dates in his calendar. He needs a costume for the show.",
+        "options": [
+          {
+            "id": "vc843410ddbc7",
+            "label": "8 July."
+          },
+          {
+            "id": "v83385252fbc4",
+            "label": "3 June."
+          },
+          {
+            "id": "v94912416a246",
+            "label": "5 June."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v83385252fbc4"
+      },
+      "reference_answer": "v83385252fbc4",
+      "incorrect_answer": "v94912416a246",
+      "editorial_answer": "3 June.",
+      "explanation": "Дата practice отличается от даты самого выступления.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l5b350a5297f0",
+            "label": "date"
+          },
+          {
+            "id": "l1432591637e5",
+            "label": "June"
+          },
+          {
+            "id": "l6af3c3626d28",
+            "label": "fifth"
+          },
+          {
+            "id": "la2e45e46d776",
+            "label": "calendar"
+          }
+        ],
+        "right": [
+          {
+            "id": "r70e5c7f21885",
+            "label": "пятый"
+          },
+          {
+            "id": "r994af75b88d6",
+            "label": "календарь"
+          },
+          {
+            "id": "ra4941775bd02",
+            "label": "дата"
+          },
+          {
+            "id": "r987c48f9cc92",
+            "label": "июнь"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l5b350a5297f0": "ra4941775bd02",
+          "l1432591637e5": "r987c48f9cc92",
+          "l6af3c3626d28": "r70e5c7f21885",
+          "la2e45e46d776": "r994af75b88d6"
+        }
+      },
+      "reference_answer": {
+        "l5b350a5297f0": "ra4941775bd02",
+        "l1432591637e5": "r987c48f9cc92",
+        "l6af3c3626d28": "r70e5c7f21885",
+        "la2e45e46d776": "r994af75b88d6"
+      },
+      "incorrect_answer": {
+        "l5b350a5297f0": "r987c48f9cc92",
+        "l1432591637e5": "ra4941775bd02",
+        "l6af3c3626d28": "r70e5c7f21885",
+        "la2e45e46d776": "r994af75b88d6"
+      },
+      "editorial_answer": "date — дата; June — июнь; fifth — пятый; calendar — календарь",
+      "explanation": "В этих контекстах: date — дата; June — июнь; fifth — пятый; calendar — календарь.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Для какого события нужен костюм?",
+      "public_payload": {
+        "passage": "The school show is on 5 June. The practice is on 3 June. Ben writes both dates in his calendar. He needs a costume for the show.",
+        "options": [
+          {
+            "id": "v0be060b0605b",
+            "label": "The school show."
+          },
+          {
+            "id": "vf2ecb9eaacb9",
+            "label": "A July holiday."
+          },
+          {
+            "id": "v460f105851b6",
+            "label": "A meeting at the bank."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0be060b0605b"
+      },
+      "reference_answer": "v0be060b0605b",
+      "incorrect_answer": "vf2ecb9eaacb9",
+      "editorial_answer": "The school show.",
+      "explanation": "Костюм связан с выступлением.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Назови полную дату.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "When is your visit?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v76d534146164",
+            "label": "At the ten May."
+          },
+          {
+            "id": "vdb6d31ac7505",
+            "label": "On the tenth of May."
+          },
+          {
+            "id": "v91c122286b73",
+            "label": "In the tenth of May."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdb6d31ac7505"
+      },
+      "reference_answer": "vdb6d31ac7505",
+      "incorrect_answer": "v91c122286b73",
+      "editorial_answer": "On the tenth of May.",
+      "explanation": "On + порядковое число + of + месяц — правильная модель.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "We write the date of each event in a ___.",
+        "options": [
+          {
+            "id": "v21ecd8c1ac76",
+            "label": "calendar"
+          },
+          {
+            "id": "v955f1792f5e2",
+            "label": "costume"
+          },
+          {
+            "id": "v3ec7b0c5aca6",
+            "label": "platform"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v21ecd8c1ac76"
+      },
+      "reference_answer": "v21ecd8c1ac76",
+      "incorrect_answer": "v955f1792f5e2",
+      "editorial_answer": "calendar",
+      "explanation": "Calendar помогает хранить даты событий.",
+      "key": "e09"
+    }
+  ]
+}

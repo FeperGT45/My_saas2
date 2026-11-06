@@ -1,0 +1,338 @@
+{
+  "key": "b1/still-anymore",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-06",
+    "title": "Практика B1 · формы и значения",
+    "position": 40
+  },
+  "position": 2,
+  "title": "Всё ещё и больше не",
+  "description": "Всё ещё и больше не: применяем правило в новых ситуациях, разбираем словарь, диалог и авторский текст без аудирования.",
+  "level": "B1",
+  "objectives": [
+    "Использовать still для продолжающейся ситуации",
+    "Использовать not ... anymore для прекратившейся ситуации"
+  ],
+  "notes": [
+    "She still works here означает, что работа продолжается.",
+    "She does not work here anymore означает, что прежняя ситуация прекратилась."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/been-or-gone"],
+  "lexicon": [
+    {
+      "en": "still",
+      "ru": "всё ещё"
+    },
+    {
+      "en": "anymore",
+      "ru": "больше (в отрицании)"
+    },
+    {
+      "en": "continue",
+      "ru": "продолжаться"
+    },
+    {
+      "en": "former",
+      "ru": "бывший"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The café closed last year. It does not serve customers ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vb4c6ab2b95f5",
+            "label": "already since"
+          },
+          {
+            "id": "veebc44d1ee9d",
+            "label": "anymore"
+          },
+          {
+            "id": "v07e6073d689f",
+            "label": "still at all"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "veebc44d1ee9d"
+      },
+      "reference_answer": "veebc44d1ee9d",
+      "incorrect_answer": "v07e6073d689f",
+      "editorial_answer": "anymore",
+      "explanation": "Not ... anymore описывает прекращение прежней деятельности.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: still / anymore.",
+      "public_payload": {
+        "sentence": "He ___ lives in the same house; he has not moved."
+      },
+      "answer_key": {
+        "accepted": ["still"]
+      },
+      "reference_answer": "still",
+      "incorrect_answer": "anymore",
+      "editorial_answer": "He still lives in the same house; he has not moved.",
+      "explanation": "Отсутствие переезда подтверждает продолжающееся still lives.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я больше не пользуюсь тем адресом.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "not"
+          },
+          {
+            "id": "t4",
+            "label": "use"
+          },
+          {
+            "id": "t5",
+            "label": "that"
+          },
+          {
+            "id": "t6",
+            "label": "address"
+          },
+          {
+            "id": "t7",
+            "label": "anymore."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "do"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "I do not use that address anymore.",
+      "explanation": "Not ... anymore сообщает об изменении по сравнению с прошлым.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She does not works here anymore."
+      },
+      "answer_key": {
+        "accepted": ["She does not work here anymore."]
+      },
+      "reference_answer": "She does not work here anymore.",
+      "incorrect_answer": "She does not works here anymore.",
+      "editorial_answer": "She does not work here anymore.",
+      "explanation": "После does not нужен work, а anymore остаётся в конце.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что прекратилось?",
+      "public_payload": {
+        "passage": "The old café near our school does not open anymore. Its former owner still lives upstairs, but the ground floor is now a small bookshop. Some neighbours still call the building “the café”, which can confuse new visitors. The bookshop owner has put a clear sign outside, although she does not mind people remembering the earlier business.",
+        "options": [
+          {
+            "id": "v9d4e6b678508",
+            "label": "The café business."
+          },
+          {
+            "id": "vd35fb400946e",
+            "label": "The former owner’s residence upstairs."
+          },
+          {
+            "id": "v531d06e3139b",
+            "label": "Every use of the building."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9d4e6b678508"
+      },
+      "reference_answer": "v9d4e6b678508",
+      "incorrect_answer": "vd35fb400946e",
+      "editorial_answer": "The café business.",
+      "explanation": "Кафе закрыто, но здание используется и бывший владелец продолжает жить наверху.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l9f2ff88c1224",
+            "label": "still"
+          },
+          {
+            "id": "lf5527bdf180e",
+            "label": "anymore"
+          },
+          {
+            "id": "ld792570049a9",
+            "label": "continue"
+          },
+          {
+            "id": "l1b74fccd8bb9",
+            "label": "former"
+          }
+        ],
+        "right": [
+          {
+            "id": "re63ee638f0ac",
+            "label": "продолжаться"
+          },
+          {
+            "id": "r1ba8f404433f",
+            "label": "бывший"
+          },
+          {
+            "id": "rd6ce65b3e83b",
+            "label": "всё ещё"
+          },
+          {
+            "id": "r94acaa2f37b1",
+            "label": "больше (в отрицании)"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l9f2ff88c1224": "rd6ce65b3e83b",
+          "lf5527bdf180e": "r94acaa2f37b1",
+          "ld792570049a9": "re63ee638f0ac",
+          "l1b74fccd8bb9": "r1ba8f404433f"
+        }
+      },
+      "reference_answer": {
+        "l9f2ff88c1224": "rd6ce65b3e83b",
+        "lf5527bdf180e": "r94acaa2f37b1",
+        "ld792570049a9": "re63ee638f0ac",
+        "l1b74fccd8bb9": "r1ba8f404433f"
+      },
+      "incorrect_answer": {
+        "l9f2ff88c1224": "r94acaa2f37b1",
+        "lf5527bdf180e": "rd6ce65b3e83b",
+        "ld792570049a9": "re63ee638f0ac",
+        "l1b74fccd8bb9": "r1ba8f404433f"
+      },
+      "editorial_answer": "still — всё ещё; anymore — больше (в отрицании); continue — продолжаться; former — бывший",
+      "explanation": "В этих контекстах: still — всё ещё; anymore — больше (в отрицании); continue — продолжаться; former — бывший.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему новые посетители иногда путаются?",
+      "public_payload": {
+        "passage": "The old café near our school does not open anymore. Its former owner still lives upstairs, but the ground floor is now a small bookshop. Some neighbours still call the building “the café”, which can confuse new visitors. The bookshop owner has put a clear sign outside, although she does not mind people remembering the earlier business.",
+        "options": [
+          {
+            "id": "v58fafe946a83",
+            "label": "The bookshop has no entrance."
+          },
+          {
+            "id": "vb9b8edd16daa",
+            "label": "The former owner sells books only upstairs."
+          },
+          {
+            "id": "v487b4f4f8aa6",
+            "label": "Some neighbours still use the old name."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v487b4f4f8aa6"
+      },
+      "reference_answer": "v487b4f4f8aa6",
+      "incorrect_answer": "v58fafe946a83",
+      "editorial_answer": "Some neighbours still use the old name.",
+      "explanation": "Старая привычка называния сохраняется после смены бизнеса.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сообщи о прекращении посещения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Do you still attend the Tuesday class?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vacdc68751c07",
+            "label": "No, I do not attend it anymore."
+          },
+          {
+            "id": "v9c2ab027fd85",
+            "label": "No, I not attend it still anymore."
+          },
+          {
+            "id": "v210f86b70ba7",
+            "label": "No, I do not attends it anymore."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vacdc68751c07"
+      },
+      "reference_answer": "vacdc68751c07",
+      "incorrect_answer": "v9c2ab027fd85",
+      "editorial_answer": "No, I do not attend it anymore.",
+      "explanation": "Do not attend ... anymore сохраняет отрицание и начальную форму.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A person who held a role previously is a ___ holder of that role.",
+        "options": [
+          {
+            "id": "veee6a2f706e4",
+            "label": "current"
+          },
+          {
+            "id": "v3cd1219c5b09",
+            "label": "future necessarily"
+          },
+          {
+            "id": "v914fb4041211",
+            "label": "former"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v914fb4041211"
+      },
+      "reference_answer": "v914fb4041211",
+      "incorrect_answer": "veee6a2f706e4",
+      "editorial_answer": "former",
+      "explanation": "Former обозначает прежнюю, уже не текущую роль.",
+      "key": "e09"
+    }
+  ]
+}
