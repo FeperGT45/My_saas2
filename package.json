@@ -23,6 +23,7 @@
     "test:supabase": "node --import tsx --test tests/supabase/*.test.ts",
     "test:social": "node scripts/test-social.mjs",
     "test:payments": "node --import tsx --test tests/payments/*.test.ts && node scripts/test-payments.mjs",
+    "test:stars-official": "node --env-file-if-exists=.env.stars-test.local --import tsx scripts/test-stars-official.ts",
     "stars:refund": "node --env-file-if-exists=.env.local --conditions=react-server --import tsx scripts/refund-stars.ts",
     "test:admin": "node --import tsx --test tests/admin/*.test.ts && node scripts/test-admin.mjs",
     "dev:vinext": "vite dev --port 3001",
