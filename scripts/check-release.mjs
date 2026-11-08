@@ -12,15 +12,26 @@ assert(
     origin.pathname === '/',
 );
 const results = [];
-async function read(path, expected) {
+async function read(path, expected, method = 'GET') {
   const start = performance.now(),
     r = await fetch(new URL(path, origin), {
+      method,
+      ...(method === 'POST'
+        ? {
+            headers: {
+              Origin: origin.origin,
+              'Content-Type': 'application/json',
+            },
+            body: '{}',
+          }
+        : {}),
       signal: AbortSignal.timeout(15000),
     }),
     text = await r.text();
   assert.equal(r.status, expected, path);
   results.push({
     path,
+    method,
     status: r.status,
     ms: Math.round(performance.now() - start),
   });
@@ -47,7 +58,7 @@ for (const path of [
   '/api/overview',
   '/api/premium',
   '/api/premium/features',
-  '/api/weekly-plan',
+  '/api/learning-plan',
   '/api/analytics',
   '/api/dictionary',
   '/api/stories',
@@ -57,6 +68,7 @@ for (const path of [
   '/api/appearance',
 ])
   await read(path, 401);
+await read('/api/weekly-plan', 401, 'POST');
 const checkout = await fetch(new URL('/api/premium/invoice', origin), {
   method: 'POST',
   headers: { Origin: origin.origin, 'Content-Type': 'application/json' },

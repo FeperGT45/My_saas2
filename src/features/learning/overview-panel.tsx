@@ -129,6 +129,9 @@ function AccountOverview({ mode }: { mode: 'map' | 'profile' | 'home' }) {
     );
   if (!data) return <p role="status">Загружаем твою карту и статистику…</p>;
   const stats = data.statistics;
+  const selectedCourse = data.plan.courses.find(
+    (c) => c.id === data.plan.courseId,
+  );
   if (mode === 'home' && !data.plan.level) return null;
   return (
     <div className="space-y-4">
@@ -149,7 +152,9 @@ function AccountOverview({ mode }: { mode: 'map' | 'profile' | 'home' }) {
         {data.next ? (
           <>
             <p className="mt-2 text-xs text-teal-200">
-              {reasons[data.next.reason]}
+              {selectedCourse && data.next.reason === 'advance'
+                ? `Урок из выбранного курса ${selectedCourse.level}`
+                : reasons[data.next.reason]}
             </p>
             <Link
               className="bg-primary text-primary-foreground mt-3 flex min-h-12 items-center justify-center gap-2 rounded-2xl px-4 py-3 font-bold"
@@ -185,6 +190,20 @@ function AccountOverview({ mode }: { mode: 'map' | 'profile' | 'home' }) {
             Ориентир маршрута: {data.plan.targetLevel ?? data.plan.level}. Это
             не сертификат CEFR.
           </p>
+        )}
+        {selectedCourse && (
+          <div className="text-muted-foreground mt-3 text-xs">
+            <p>
+              Выбран курс: {selectedCourse.title}. Чтобы вернуть подбор по
+              уровню, на карте выбери «Все доступные курсы».
+            </p>
+            <Link
+              className="text-primary inline-flex min-h-11 items-center"
+              href="/learn"
+            >
+              Изменить выбранный курс →
+            </Link>
+          </div>
         )}
       </Card>
       <Link
