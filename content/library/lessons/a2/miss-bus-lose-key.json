@@ -1,0 +1,339 @@
+{
+  "key": "a2/miss-bus-lose-key",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика A2 · точное описание",
+    "position": 70
+  },
+  "position": 2,
+  "title": "Не успеть на автобус или потерять ключ",
+  "description": "Не успеть на автобус или потерять ключ: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "A2",
+  "objectives": ["Использовать miss a bus", "Использовать lose an object"],
+  "notes": [
+    "Miss the bus — не успеть на автобус.",
+    "Lose a key — потерять ключ; перевод «пропустить» не подходит для потери предмета."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/bring-take-location"],
+  "lexicon": [
+    {
+      "en": "miss",
+      "ru": "не успеть на транспорт"
+    },
+    {
+      "en": "lose",
+      "ru": "терять"
+    },
+    {
+      "en": "departure",
+      "ru": "отправление"
+    },
+    {
+      "en": "spare",
+      "ru": "запасной"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The bus left before I arrived. I ___ the bus.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vfcc6308ef29c",
+            "label": "missed"
+          },
+          {
+            "id": "ved55774443fa",
+            "label": "lost from"
+          },
+          {
+            "id": "va5b6f4f11098",
+            "label": "borrowed away"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfcc6308ef29c"
+      },
+      "reference_answer": "vfcc6308ef29c",
+      "incorrect_answer": "ved55774443fa",
+      "editorial_answer": "missed",
+      "explanation": "Missed the bus означает не успел на отправившийся автобус.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: missed to / lost.",
+      "public_payload": {
+        "sentence": "I cannot find my key. I think I have ___ it."
+      },
+      "answer_key": {
+        "accepted": ["lost"]
+      },
+      "reference_answer": "lost",
+      "incorrect_answer": "missed to",
+      "editorial_answer": "I cannot find my key. I think I have lost it.",
+      "explanation": "Для потери предмета используется lost.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я не успел на автобус и потерял ключ.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "bus"
+          },
+          {
+            "id": "t5",
+            "label": "and"
+          },
+          {
+            "id": "t6",
+            "label": "lost"
+          },
+          {
+            "id": "t7",
+            "label": "my"
+          },
+          {
+            "id": "t8",
+            "label": "key."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "missed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "I missed the bus and lost my key.",
+      "explanation": "Это два разных события с разными глаголами.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I have lose my key."
+      },
+      "answer_key": {
+        "accepted": ["I have lost my key."]
+      },
+      "reference_answer": "I have lost my key.",
+      "incorrect_answer": "I have lose my key.",
+      "editorial_answer": "I have lost my key.",
+      "explanation": "После have требуется причастие lost.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Дэн ждёт?",
+      "public_payload": {
+        "passage": "Dan reaches the stop after the bus has left. He has missed it and must wait twenty minutes. While waiting, he looks for his house key but cannot find it. He calls his sister, who has a spare. Missing the bus delayed his journey; losing the key created a separate problem.",
+        "options": [
+          {
+            "id": "vcee4b01fa9b4",
+            "label": "His sister drove the bus away."
+          },
+          {
+            "id": "vd24007221c26",
+            "label": "He arrived before every departure."
+          },
+          {
+            "id": "vef5711d53012",
+            "label": "The bus left before he reached the stop."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vef5711d53012"
+      },
+      "reference_answer": "vef5711d53012",
+      "incorrect_answer": "vcee4b01fa9b4",
+      "editorial_answer": "The bus left before he reached the stop.",
+      "explanation": "Он пришёл после отправления.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l041a917a43b7",
+            "label": "miss"
+          },
+          {
+            "id": "la8c0e7869df5",
+            "label": "lose"
+          },
+          {
+            "id": "lf8df6d98246f",
+            "label": "departure"
+          },
+          {
+            "id": "l7ec951c3b45f",
+            "label": "spare"
+          }
+        ],
+        "right": [
+          {
+            "id": "rff5ef0a4b224",
+            "label": "отправление"
+          },
+          {
+            "id": "rd98748ee1265",
+            "label": "запасной"
+          },
+          {
+            "id": "r7cd07288efac",
+            "label": "не успеть на транспорт"
+          },
+          {
+            "id": "r1dbcc31e4cb0",
+            "label": "терять"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l041a917a43b7": "r7cd07288efac",
+          "la8c0e7869df5": "r1dbcc31e4cb0",
+          "lf8df6d98246f": "rff5ef0a4b224",
+          "l7ec951c3b45f": "rd98748ee1265"
+        }
+      },
+      "reference_answer": {
+        "l041a917a43b7": "r7cd07288efac",
+        "la8c0e7869df5": "r1dbcc31e4cb0",
+        "lf8df6d98246f": "rff5ef0a4b224",
+        "l7ec951c3b45f": "rd98748ee1265"
+      },
+      "incorrect_answer": {
+        "l041a917a43b7": "r1dbcc31e4cb0",
+        "la8c0e7869df5": "r7cd07288efac",
+        "lf8df6d98246f": "rff5ef0a4b224",
+        "l7ec951c3b45f": "rd98748ee1265"
+      },
+      "editorial_answer": "miss — не успеть на транспорт; lose — терять; departure — отправление; spare — запасной",
+      "explanation": "В этих контекстах: miss — не успеть на транспорт; lose — терять; departure — отправление; spare — запасной.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто может помочь с ключом?",
+      "public_payload": {
+        "passage": "Dan reaches the stop after the bus has left. He has missed it and must wait twenty minutes. While waiting, he looks for his house key but cannot find it. He calls his sister, who has a spare. Missing the bus delayed his journey; losing the key created a separate problem.",
+        "options": [
+          {
+            "id": "v507ce765d677",
+            "label": "His sister, who has a spare."
+          },
+          {
+            "id": "v40b1ef867e16",
+            "label": "The bus timetable."
+          },
+          {
+            "id": "vc535b5369a65",
+            "label": "Every passenger automatically."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v507ce765d677"
+      },
+      "reference_answer": "v507ce765d677",
+      "incorrect_answer": "v40b1ef867e16",
+      "editorial_answer": "His sister, who has a spare.",
+      "explanation": "У сестры есть запасной ключ.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Опиши опоздание на транспорт.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Why are you late? The train left just before I arrived."
+          }
+        ],
+        "options": [
+          {
+            "id": "vd1d380edb0fe",
+            "label": "I lost the train in my bag."
+          },
+          {
+            "id": "vaef0e7a65617",
+            "label": "I borrowed the train from my sister."
+          },
+          {
+            "id": "v1459179ece49",
+            "label": "I missed the train."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1459179ece49"
+      },
+      "reference_answer": "v1459179ece49",
+      "incorrect_answer": "vd1d380edb0fe",
+      "editorial_answer": "I missed the train.",
+      "explanation": "Missed the train обозначает нужное событие.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An extra key kept for use when needed is a ___ key.",
+        "options": [
+          {
+            "id": "v850288b5328c",
+            "label": "late"
+          },
+          {
+            "id": "v98cf8eb5ed92",
+            "label": "spare"
+          },
+          {
+            "id": "v484344b27fe8",
+            "label": "missing necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v98cf8eb5ed92"
+      },
+      "reference_answer": "v98cf8eb5ed92",
+      "incorrect_answer": "v484344b27fe8",
+      "editorial_answer": "spare",
+      "explanation": "Spare — запасной.",
+      "key": "e09"
+    }
+  ]
+}

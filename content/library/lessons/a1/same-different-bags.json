@@ -1,0 +1,334 @@
+{
+  "key": "a1/same-different-bags",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика A1 · точное описание",
+    "position": 70
+  },
+  "position": 1,
+  "title": "Одинаковые и разные вещи",
+  "description": "Одинаковые и разные вещи: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Описывать сходство через the same",
+    "Называть различие цвета"
+  ],
+  "notes": [
+    "The same colour — одинаковый цвет.",
+    "Different colours — разные цвета; сравнивай названное свойство."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/whose-bag-question"],
+  "lexicon": [
+    {
+      "en": "same",
+      "ru": "одинаковый"
+    },
+    {
+      "en": "different",
+      "ru": "разный"
+    },
+    {
+      "en": "size",
+      "ru": "размер"
+    },
+    {
+      "en": "colour",
+      "ru": "цвет"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Both bags are blue. They are ___ colour.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vd9a5f79e8f8a",
+            "label": "the same"
+          },
+          {
+            "id": "v925c9290e8a5",
+            "label": "different of"
+          },
+          {
+            "id": "v602e25837e24",
+            "label": "a two"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd9a5f79e8f8a"
+      },
+      "reference_answer": "vd9a5f79e8f8a",
+      "incorrect_answer": "v925c9290e8a5",
+      "editorial_answer": "the same",
+      "explanation": "Один и тот же цвет — the same colour.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: different / same of.",
+      "public_payload": {
+        "sentence": "These hats are ___ colours: red and blue."
+      },
+      "answer_key": {
+        "accepted": ["different"]
+      },
+      "reference_answer": "different",
+      "incorrect_answer": "same of",
+      "editorial_answer": "These hats are different colours: red and blue.",
+      "explanation": "Красный и синий — разные цвета.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Сумки одинакового размера.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "are"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "same"
+          },
+          {
+            "id": "t6",
+            "label": "size."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "bags"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The bags are the same size.",
+      "explanation": "The same size сравнивает размер.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The bags are same size."
+      },
+      "answer_key": {
+        "accepted": ["The bags are the same size."]
+      },
+      "reference_answer": "The bags are the same size.",
+      "incorrect_answer": "The bags are same size.",
+      "editorial_answer": "The bags are the same size.",
+      "explanation": "Перед same в этой модели нужен the.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Чем похожи сумки?",
+      "public_payload": {
+        "passage": "Two bags are on the table. They are the same size. One bag is blue, and one is green. Leo takes the blue bag. The green bag is for Sara.",
+        "options": [
+          {
+            "id": "v8431f89cc9c8",
+            "label": "They are both blue."
+          },
+          {
+            "id": "vb91344a4c80b",
+            "label": "They are both green."
+          },
+          {
+            "id": "v9ef610d6d3b8",
+            "label": "They are the same size."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9ef610d6d3b8"
+      },
+      "reference_answer": "v9ef610d6d3b8",
+      "incorrect_answer": "v8431f89cc9c8",
+      "editorial_answer": "They are the same size.",
+      "explanation": "Совпадает размер, цвета различаются.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l0f5a12307ecb",
+            "label": "same"
+          },
+          {
+            "id": "l1223868794f0",
+            "label": "different"
+          },
+          {
+            "id": "l2346034300a6",
+            "label": "size"
+          },
+          {
+            "id": "l8d17ba2776b8",
+            "label": "colour"
+          }
+        ],
+        "right": [
+          {
+            "id": "r36d8878df88e",
+            "label": "размер"
+          },
+          {
+            "id": "radd9d5ce9e1e",
+            "label": "цвет"
+          },
+          {
+            "id": "rc068adf70460",
+            "label": "одинаковый"
+          },
+          {
+            "id": "r8de866d7e608",
+            "label": "разный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l0f5a12307ecb": "rc068adf70460",
+          "l1223868794f0": "r8de866d7e608",
+          "l2346034300a6": "r36d8878df88e",
+          "l8d17ba2776b8": "radd9d5ce9e1e"
+        }
+      },
+      "reference_answer": {
+        "l0f5a12307ecb": "rc068adf70460",
+        "l1223868794f0": "r8de866d7e608",
+        "l2346034300a6": "r36d8878df88e",
+        "l8d17ba2776b8": "radd9d5ce9e1e"
+      },
+      "incorrect_answer": {
+        "l0f5a12307ecb": "r8de866d7e608",
+        "l1223868794f0": "rc068adf70460",
+        "l2346034300a6": "r36d8878df88e",
+        "l8d17ba2776b8": "radd9d5ce9e1e"
+      },
+      "editorial_answer": "same — одинаковый; different — разный; size — размер; colour — цвет",
+      "explanation": "В этих контекстах: same — одинаковый; different — разный; size — размер; colour — цвет.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую сумку берёт Лео?",
+      "public_payload": {
+        "passage": "Two bags are on the table. They are the same size. One bag is blue, and one is green. Leo takes the blue bag. The green bag is for Sara.",
+        "options": [
+          {
+            "id": "vfc6d7f25ef25",
+            "label": "The blue bag."
+          },
+          {
+            "id": "v246d74cc980f",
+            "label": "The green bag."
+          },
+          {
+            "id": "vaca49c3314c5",
+            "label": "Both bags."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfc6d7f25ef25"
+      },
+      "reference_answer": "vfc6d7f25ef25",
+      "incorrect_answer": "v246d74cc980f",
+      "editorial_answer": "The blue bag.",
+      "explanation": "Лео берёт синюю, зелёная для Сары.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сравни цвет по тексту.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Are the two bags the same colour?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v7151c137ae81",
+            "label": "Yes, both are green."
+          },
+          {
+            "id": "v79ee4af59f80",
+            "label": "Yes, both are blue."
+          },
+          {
+            "id": "v76d525128ede",
+            "label": "No, one is blue and one is green."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v76d525128ede"
+      },
+      "reference_answer": "v76d525128ede",
+      "incorrect_answer": "v7151c137ae81",
+      "editorial_answer": "No, one is blue and one is green.",
+      "explanation": "Одинаковый размер не означает одинаковый цвет.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Red and blue are two ___ colours.",
+        "options": [
+          {
+            "id": "v95dcae9dae08",
+            "label": "empty"
+          },
+          {
+            "id": "vc717690bd18c",
+            "label": "different"
+          },
+          {
+            "id": "v7637d717bbba",
+            "label": "identical"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc717690bd18c"
+      },
+      "reference_answer": "vc717690bd18c",
+      "incorrect_answer": "v7637d717bbba",
+      "editorial_answer": "different",
+      "explanation": "Different — разные.",
+      "key": "e09"
+    }
+  ]
+}

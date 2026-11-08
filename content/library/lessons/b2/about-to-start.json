@@ -1,0 +1,366 @@
+{
+  "key": "b2/about-to-start",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика B2 · точное описание",
+    "position": 70
+  },
+  "position": 1,
+  "title": "Be about to: вот-вот начнётся",
+  "description": "Be about to: вот-вот начнётся: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "B2",
+  "objectives": [
+    "Описывать ближайшее ожидаемое действие",
+    "Не представлять подготовку как завершённое событие"
+  ],
+  "notes": [
+    "Be about to start — вот-вот начаться.",
+    "Was about to leave не доказывает, что уход состоялся; дальнейший текст может сообщать о прерывании."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/regret-to-inform"],
+  "lexicon": [
+    {
+      "en": "imminent",
+      "ru": "ожидаемый в ближайшее время"
+    },
+    {
+      "en": "interruption",
+      "ru": "прерывание"
+    },
+    {
+      "en": "departure",
+      "ru": "уход или отправление"
+    },
+    {
+      "en": "preparation",
+      "ru": "подготовка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I was about ___ leave when the phone rang.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v3c3ae9f71db4",
+            "label": "to"
+          },
+          {
+            "id": "vbb4227643ad5",
+            "label": "for"
+          },
+          {
+            "id": "v3b01bd6955cf",
+            "label": "of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3c3ae9f71db4"
+      },
+      "reference_answer": "v3c3ae9f71db4",
+      "incorrect_answer": "vbb4227643ad5",
+      "editorial_answer": "to",
+      "explanation": "Be about to требует инфинитив с to.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: begin / begun.",
+      "public_payload": {
+        "sentence": "The show is about to ___."
+      },
+      "answer_key": {
+        "accepted": ["begin"]
+      },
+      "reference_answer": "begin",
+      "incorrect_answer": "begun",
+      "editorial_answer": "The show is about to begin.",
+      "explanation": "После to нужен инфинитив begin.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Она собиралась вот-вот уйти, когда зазвонил телефон.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "about"
+          },
+          {
+            "id": "t4",
+            "label": "to"
+          },
+          {
+            "id": "t5",
+            "label": "leave"
+          },
+          {
+            "id": "t6",
+            "label": "when"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "phone"
+          },
+          {
+            "id": "t9",
+            "label": "rang."
+          },
+          {
+            "id": "t1",
+            "label": "She"
+          },
+          {
+            "id": "t2",
+            "label": "was"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "She was about to leave when the phone rang.",
+      "explanation": "Фраза помещает звонок в момент перед ожидаемым уходом.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The train is about leaving."
+      },
+      "answer_key": {
+        "accepted": ["The train is about to leave."]
+      },
+      "reference_answer": "The train is about to leave.",
+      "incorrect_answer": "The train is about leaving.",
+      "editorial_answer": "The train is about to leave.",
+      "explanation": "Для значения ближайшего действия нужна модель about to leave.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что прервало закрытие?",
+      "public_payload": {
+        "passage": "The caretaker was about to lock the hall when a volunteer noticed a bag under a chair. They paused to find its owner, who returned a few minutes later. A brief incident report said the hall had already been locked before the discovery. The caretaker corrected the sequence. Preparations to close were under way, but the final action had been interrupted. The eventual closure happened only after the bag was collected.",
+        "options": [
+          {
+            "id": "ve8e4975f2968",
+            "label": "A completed closure before anyone noticed the bag."
+          },
+          {
+            "id": "v6b694019fc8c",
+            "label": "The cancellation of every future event."
+          },
+          {
+            "id": "v1ac2844dd756",
+            "label": "The discovery of a bag."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1ac2844dd756"
+      },
+      "reference_answer": "v1ac2844dd756",
+      "incorrect_answer": "ve8e4975f2968",
+      "editorial_answer": "The discovery of a bag.",
+      "explanation": "Сумку заметили до окончательного закрытия.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc5c7b4ea85ea",
+            "label": "imminent"
+          },
+          {
+            "id": "l2e800b7e60e1",
+            "label": "interruption"
+          },
+          {
+            "id": "l36d0c136b63f",
+            "label": "departure"
+          },
+          {
+            "id": "la8aa56ff15b2",
+            "label": "preparation"
+          }
+        ],
+        "right": [
+          {
+            "id": "r51a1e0be252a",
+            "label": "уход или отправление"
+          },
+          {
+            "id": "r00fc5ce17bb7",
+            "label": "подготовка"
+          },
+          {
+            "id": "rcf78d4ad1f40",
+            "label": "ожидаемый в ближайшее время"
+          },
+          {
+            "id": "ref19b984103b",
+            "label": "прерывание"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc5c7b4ea85ea": "rcf78d4ad1f40",
+          "l2e800b7e60e1": "ref19b984103b",
+          "l36d0c136b63f": "r51a1e0be252a",
+          "la8aa56ff15b2": "r00fc5ce17bb7"
+        }
+      },
+      "reference_answer": {
+        "lc5c7b4ea85ea": "rcf78d4ad1f40",
+        "l2e800b7e60e1": "ref19b984103b",
+        "l36d0c136b63f": "r51a1e0be252a",
+        "la8aa56ff15b2": "r00fc5ce17bb7"
+      },
+      "incorrect_answer": {
+        "lc5c7b4ea85ea": "ref19b984103b",
+        "l2e800b7e60e1": "rcf78d4ad1f40",
+        "l36d0c136b63f": "r51a1e0be252a",
+        "la8aa56ff15b2": "r00fc5ce17bb7"
+      },
+      "editorial_answer": "imminent — ожидаемый в ближайшее время; interruption — прерывание; departure — уход или отправление; preparation — подготовка",
+      "explanation": "В этих контекстах: imminent — ожидаемый в ближайшее время; interruption — прерывание; departure — уход или отправление; preparation — подготовка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда зал в итоге закрыли?",
+      "public_payload": {
+        "passage": "The caretaker was about to lock the hall when a volunteer noticed a bag under a chair. They paused to find its owner, who returned a few minutes later. A brief incident report said the hall had already been locked before the discovery. The caretaker corrected the sequence. Preparations to close were under way, but the final action had been interrupted. The eventual closure happened only after the bag was collected.",
+        "options": [
+          {
+            "id": "v7aafc98ed32b",
+            "label": "After the owner collected the bag."
+          },
+          {
+            "id": "v6c44d03cce44",
+            "label": "Before the bag was discovered."
+          },
+          {
+            "id": "v616385087295",
+            "label": "The text says it never closed again."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7aafc98ed32b"
+      },
+      "reference_answer": "v7aafc98ed32b",
+      "incorrect_answer": "v6c44d03cce44",
+      "editorial_answer": "After the owner collected the bag.",
+      "explanation": "Окончательное закрытие произошло после передачи сумки.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани временную последовательность.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “was about to lock” prove the door was already locked?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v6a11ef5532fb",
+            "label": "Yes, about to always means already completed."
+          },
+          {
+            "id": "v35acb38e6ea2",
+            "label": "Yes, it removes all later events."
+          },
+          {
+            "id": "v2c7cc17a4563",
+            "label": "No, it describes an imminent action that may be interrupted."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2c7cc17a4563"
+      },
+      "reference_answer": "v2c7cc17a4563",
+      "incorrect_answer": "v6a11ef5532fb",
+      "editorial_answer": "No, it describes an imminent action that may be interrupted.",
+      "explanation": "Ожидаемое действие и выполненное действие различаются.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Something expected very soon is ___.",
+        "options": [
+          {
+            "id": "vae624bd31dd7",
+            "label": "historical only"
+          },
+          {
+            "id": "vebda21646aaa",
+            "label": "imminent"
+          },
+          {
+            "id": "v389d8aa0cc5e",
+            "label": "completed necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vebda21646aaa"
+      },
+      "reference_answer": "vebda21646aaa",
+      "incorrect_answer": "v389d8aa0cc5e",
+      "editorial_answer": "imminent",
+      "explanation": "Imminent — ожидаемый совсем скоро.",
+      "key": "e09"
+    }
+  ]
+}

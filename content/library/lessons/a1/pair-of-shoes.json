@@ -1,0 +1,334 @@
+{
+  "key": "a1/pair-of-shoes",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика A1 · точное описание",
+    "position": 70
+  },
+  "position": 3,
+  "title": "Пара обуви и отдельный предмет",
+  "description": "Пара обуви и отдельный предмет: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Использовать a pair of shoes",
+    "Соотносить one shoe и two shoes"
+  ],
+  "notes": [
+    "One shoe — один ботинок; a pair of shoes — пара обуви.",
+    "В обычной паре два предмета; three pairs — три пары."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/push-pull-door"],
+  "lexicon": [
+    {
+      "en": "shoe",
+      "ru": "ботинок"
+    },
+    {
+      "en": "pair",
+      "ru": "пара"
+    },
+    {
+      "en": "sock",
+      "ru": "носок"
+    },
+    {
+      "en": "box",
+      "ru": "коробка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: There are two shoes together. This is a ___ of shoes.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v310837d1aec9",
+            "label": "pair"
+          },
+          {
+            "id": "vceadea65fe6b",
+            "label": "single shoe"
+          },
+          {
+            "id": "v6e9b6acc9d69",
+            "label": "colour"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v310837d1aec9"
+      },
+      "reference_answer": "v310837d1aec9",
+      "incorrect_answer": "vceadea65fe6b",
+      "editorial_answer": "pair",
+      "explanation": "Два ботинка составляют пару.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: shoe / shoes.",
+      "public_payload": {
+        "sentence": "One shoe is here. The other ___ is under the bed."
+      },
+      "answer_key": {
+        "accepted": ["shoe"]
+      },
+      "reference_answer": "shoe",
+      "incorrect_answer": "shoes",
+      "editorial_answer": "One shoe is here. The other shoe is under the bed.",
+      "explanation": "The other shoe обозначает один оставшийся ботинок.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мне нужна пара носков.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "a"
+          },
+          {
+            "id": "t4",
+            "label": "pair"
+          },
+          {
+            "id": "t5",
+            "label": "of"
+          },
+          {
+            "id": "t6",
+            "label": "socks."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "need"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "I need a pair of socks.",
+      "explanation": "A pair of socks обозначает два носка как пару.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I need a pair of shoe."
+      },
+      "answer_key": {
+        "accepted": ["I need a pair of shoes."]
+      },
+      "reference_answer": "I need a pair of shoes.",
+      "incorrect_answer": "I need a pair of shoe.",
+      "editorial_answer": "I need a pair of shoes.",
+      "explanation": "После a pair of здесь используется множественное shoes.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько чёрных ботинок в коробке?",
+      "public_payload": {
+        "passage": "A pair of black shoes is in the box. One red shoe is under the chair. Eva finds the other red shoe by the bed. Now she has two pairs of shoes.",
+        "options": [
+          {
+            "id": "v18e12036f7af",
+            "label": "One."
+          },
+          {
+            "id": "v07d3fc3ef397",
+            "label": "Four."
+          },
+          {
+            "id": "v9d285fb6d1f7",
+            "label": "Two."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9d285fb6d1f7"
+      },
+      "reference_answer": "v9d285fb6d1f7",
+      "incorrect_answer": "v18e12036f7af",
+      "editorial_answer": "Two.",
+      "explanation": "A pair — два ботинка.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "ld0a778ad3f0a",
+            "label": "shoe"
+          },
+          {
+            "id": "la1e96d08cb95",
+            "label": "pair"
+          },
+          {
+            "id": "l88733bdafae8",
+            "label": "sock"
+          },
+          {
+            "id": "lc47729763e33",
+            "label": "box"
+          }
+        ],
+        "right": [
+          {
+            "id": "r71d56e851f5a",
+            "label": "носок"
+          },
+          {
+            "id": "rfde8145cf0ac",
+            "label": "коробка"
+          },
+          {
+            "id": "r3363cf775679",
+            "label": "ботинок"
+          },
+          {
+            "id": "r5f6f8539adc4",
+            "label": "пара"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "ld0a778ad3f0a": "r3363cf775679",
+          "la1e96d08cb95": "r5f6f8539adc4",
+          "l88733bdafae8": "r71d56e851f5a",
+          "lc47729763e33": "rfde8145cf0ac"
+        }
+      },
+      "reference_answer": {
+        "ld0a778ad3f0a": "r3363cf775679",
+        "la1e96d08cb95": "r5f6f8539adc4",
+        "l88733bdafae8": "r71d56e851f5a",
+        "lc47729763e33": "rfde8145cf0ac"
+      },
+      "incorrect_answer": {
+        "ld0a778ad3f0a": "r5f6f8539adc4",
+        "la1e96d08cb95": "r3363cf775679",
+        "l88733bdafae8": "r71d56e851f5a",
+        "lc47729763e33": "rfde8145cf0ac"
+      },
+      "editorial_answer": "shoe — ботинок; pair — пара; sock — носок; box — коробка",
+      "explanation": "В этих контекстах: shoe — ботинок; pair — пара; sock — носок; box — коробка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где Ева находит второй красный ботинок?",
+      "public_payload": {
+        "passage": "A pair of black shoes is in the box. One red shoe is under the chair. Eva finds the other red shoe by the bed. Now she has two pairs of shoes.",
+        "options": [
+          {
+            "id": "vbd32bc296a19",
+            "label": "By the bed."
+          },
+          {
+            "id": "v8931317c472c",
+            "label": "Inside the black box."
+          },
+          {
+            "id": "ved2277c01bfb",
+            "label": "On the table."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbd32bc296a19"
+      },
+      "reference_answer": "vbd32bc296a19",
+      "incorrect_answer": "v8931317c472c",
+      "editorial_answer": "By the bed.",
+      "explanation": "Другой красный ботинок находится у кровати.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Дополните пару одним предметом.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I have one sock. What do I need for a pair?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v515d7da55272",
+            "label": "Two more pairs."
+          },
+          {
+            "id": "v9734c70de828",
+            "label": "No other sock."
+          },
+          {
+            "id": "v1c1e45cf3886",
+            "label": "One more sock."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1c1e45cf3886"
+      },
+      "reference_answer": "v1c1e45cf3886",
+      "incorrect_answer": "v515d7da55272",
+      "editorial_answer": "One more sock.",
+      "explanation": "Для двух носков к одному нужен ещё один.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Two matching socks make a ___.",
+        "options": [
+          {
+            "id": "v2bd96ea515e2",
+            "label": "bed"
+          },
+          {
+            "id": "ve05a01d297bb",
+            "label": "pair"
+          },
+          {
+            "id": "v4f02ee116eed",
+            "label": "single sock"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve05a01d297bb"
+      },
+      "reference_answer": "ve05a01d297bb",
+      "incorrect_answer": "v4f02ee116eed",
+      "editorial_answer": "pair",
+      "explanation": "Pair — пара.",
+      "key": "e09"
+    }
+  ]
+}

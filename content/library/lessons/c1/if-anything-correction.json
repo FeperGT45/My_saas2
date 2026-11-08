@@ -1,0 +1,342 @@
+{
+  "key": "c1/if-anything-correction",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика C1 · точное описание",
+    "position": 70
+  },
+  "position": 2,
+  "title": "If anything: осторожная поправка",
+  "description": "If anything: осторожная поправка: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "C1",
+  "objectives": [
+    "Понимать if anything как поправку к направлению оценки",
+    "Сохранять степень уверенности автора"
+  ],
+  "notes": [
+    "If anything, it is slightly slower — если уж на то пошло, немного медленнее.",
+    "Оборот не означает отсутствия любых данных; дальнейшие слова задают направление и степень оценки."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/all-but-two"],
+  "lexicon": [
+    {
+      "en": "qualification",
+      "ru": "оговорка"
+    },
+    {
+      "en": "tendency",
+      "ru": "тенденция"
+    },
+    {
+      "en": "revision",
+      "ru": "пересмотр"
+    },
+    {
+      "en": "modest",
+      "ru": "небольшой по масштабу"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “It is not faster; if anything, it is slightly slower.” What is the correction?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "ve5bfc76db7a4",
+            "label": "The tendency is towards being slower, not faster."
+          },
+          {
+            "id": "v02c7cc9962e2",
+            "label": "It is certainly much faster."
+          },
+          {
+            "id": "v2de7d70f475a",
+            "label": "There can be no comparison of any kind."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve5bfc76db7a4"
+      },
+      "reference_answer": "ve5bfc76db7a4",
+      "incorrect_answer": "v02c7cc9962e2",
+      "editorial_answer": "The tendency is towards being slower, not faster.",
+      "explanation": "Оборот поправляет направление, а slightly ограничивает величину.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: nothing of / anything.",
+      "public_payload": {
+        "sentence": "If ___, the revised process is slightly slower."
+      },
+      "answer_key": {
+        "accepted": ["anything"]
+      },
+      "reference_answer": "anything",
+      "incorrect_answer": "nothing of",
+      "editorial_answer": "If anything, the revised process is slightly slower.",
+      "explanation": "Устойчивый вводный оборот — if anything.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Если уж на то пошло, изменённый процесс немного медленнее.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "revised"
+          },
+          {
+            "id": "t5",
+            "label": "process"
+          },
+          {
+            "id": "t6",
+            "label": "is"
+          },
+          {
+            "id": "t7",
+            "label": "slightly"
+          },
+          {
+            "id": "t8",
+            "label": "slower."
+          },
+          {
+            "id": "t1",
+            "label": "If"
+          },
+          {
+            "id": "t2",
+            "label": "anything,"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "If anything, the revised process is slightly slower.",
+      "explanation": "Сохраняется осторожная небольшая поправка.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "If anything, the revised process are slightly slower."
+      },
+      "answer_key": {
+        "accepted": ["If anything, the revised process is slightly slower."]
+      },
+      "reference_answer": "If anything, the revised process is slightly slower.",
+      "incorrect_answer": "If anything, the revised process are slightly slower.",
+      "editorial_answer": "If anything, the revised process is slightly slower.",
+      "explanation": "С единственным process требуется is.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой вывод поддерживала формулировка координатора?",
+      "public_payload": {
+        "passage": "A team expected a revised filing process to save time. After a small trial, the coordinator wrote that it was not faster and, if anything, was slightly slower. A later headline called the trial proof of a dramatic collapse in efficiency. The coordinator objected to the scale and certainty of that claim. Her wording offered a modest correction to the expected direction, based on a limited trial. It neither supported the original promise of improvement nor established a large effect across every future setting. She recommended a larger comparison before deciding whether the procedure should be retained or changed again.",
+        "options": [
+          {
+            "id": "v1e7b51479f71",
+            "label": "A dramatic collapse proved in every setting."
+          },
+          {
+            "id": "v7a659e2d723e",
+            "label": "A confirmed substantial speed improvement."
+          },
+          {
+            "id": "vc7618575c1b8",
+            "label": "A limited tendency towards slightly slower work in the trial."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc7618575c1b8"
+      },
+      "reference_answer": "vc7618575c1b8",
+      "incorrect_answer": "v1e7b51479f71",
+      "editorial_answer": "A limited tendency towards slightly slower work in the trial.",
+      "explanation": "Slightly и малый пробный запуск ограничивают силу оценки.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l16ee89026fe7",
+            "label": "qualification"
+          },
+          {
+            "id": "labfad093375f",
+            "label": "tendency"
+          },
+          {
+            "id": "l684dce5cd559",
+            "label": "revision"
+          },
+          {
+            "id": "l74459ff02d97",
+            "label": "modest"
+          }
+        ],
+        "right": [
+          {
+            "id": "re30ec49179ab",
+            "label": "пересмотр"
+          },
+          {
+            "id": "r0e5e80994833",
+            "label": "небольшой по масштабу"
+          },
+          {
+            "id": "rabce5d3284b2",
+            "label": "оговорка"
+          },
+          {
+            "id": "r7d9a8e1eb100",
+            "label": "тенденция"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l16ee89026fe7": "rabce5d3284b2",
+          "labfad093375f": "r7d9a8e1eb100",
+          "l684dce5cd559": "re30ec49179ab",
+          "l74459ff02d97": "r0e5e80994833"
+        }
+      },
+      "reference_answer": {
+        "l16ee89026fe7": "rabce5d3284b2",
+        "labfad093375f": "r7d9a8e1eb100",
+        "l684dce5cd559": "re30ec49179ab",
+        "l74459ff02d97": "r0e5e80994833"
+      },
+      "incorrect_answer": {
+        "l16ee89026fe7": "r7d9a8e1eb100",
+        "labfad093375f": "rabce5d3284b2",
+        "l684dce5cd559": "re30ec49179ab",
+        "l74459ff02d97": "r0e5e80994833"
+      },
+      "editorial_answer": "qualification — оговорка; tendency — тенденция; revision — пересмотр; modest — небольшой по масштабу",
+      "explanation": "В этих контекстах: qualification — оговорка; tendency — тенденция; revision — пересмотр; modest — небольшой по масштабу.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что она предложила перед окончательным решением?",
+      "public_payload": {
+        "passage": "A team expected a revised filing process to save time. After a small trial, the coordinator wrote that it was not faster and, if anything, was slightly slower. A later headline called the trial proof of a dramatic collapse in efficiency. The coordinator objected to the scale and certainty of that claim. Her wording offered a modest correction to the expected direction, based on a limited trial. It neither supported the original promise of improvement nor established a large effect across every future setting. She recommended a larger comparison before deciding whether the procedure should be retained or changed again.",
+        "options": [
+          {
+            "id": "vc15aef705e14",
+            "label": "A larger comparison."
+          },
+          {
+            "id": "vdc19ee440c0c",
+            "label": "Ignoring all observations."
+          },
+          {
+            "id": "vd589a983281f",
+            "label": "Claiming a universal result immediately."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc15aef705e14"
+      },
+      "reference_answer": "vc15aef705e14",
+      "incorrect_answer": "vdc19ee440c0c",
+      "editorial_answer": "A larger comparison.",
+      "explanation": "Для решения нужны более широкие сопоставимые данные.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани размер и уверенность оценки.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does if anything justify replacing slightly with dramatically?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v1f1506d9d9b9",
+            "label": "Yes, the phrase always intensifies every adjective."
+          },
+          {
+            "id": "v40b65af1ae83",
+            "label": "Yes, modest trials prove universal effects."
+          },
+          {
+            "id": "v8efd389bcb22",
+            "label": "No, that would strengthen the claim beyond its wording."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8efd389bcb22"
+      },
+      "reference_answer": "v8efd389bcb22",
+      "incorrect_answer": "v1f1506d9d9b9",
+      "editorial_answer": "No, that would strengthen the claim beyond its wording.",
+      "explanation": "Вводный оборот не отменяет ограничение slightly.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An effect described as small in scale is ___.",
+        "options": [
+          {
+            "id": "vf61c391fc4f5",
+            "label": "universal necessarily"
+          },
+          {
+            "id": "vfe5ff649c13b",
+            "label": "modest"
+          },
+          {
+            "id": "vd6556db572eb",
+            "label": "dramatic necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfe5ff649c13b"
+      },
+      "reference_answer": "vfe5ff649c13b",
+      "incorrect_answer": "vd6556db572eb",
+      "editorial_answer": "modest",
+      "explanation": "Modest — небольшой по масштабу.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,0 +1,330 @@
+{
+  "key": "a2/bring-take-location",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика A2 · точное описание",
+    "position": 70
+  },
+  "position": 1,
+  "title": "Bring и take: точка назначения",
+  "description": "Bring и take: точка назначения: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "A2",
+  "objectives": [
+    "Выбирать bring для движения к месту встречи",
+    "Выбирать take для движения в другое названное место"
+  ],
+  "notes": [
+    "Bring часто описывает движение к говорящему или согласованному месту встречи.",
+    "Take может описывать перенос в другое место; ориентируйся на явно заданную ситуацию, а не только на перевод."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/either-of-two"],
+  "lexicon": [
+    {
+      "en": "bring",
+      "ru": "приносить к месту встречи"
+    },
+    {
+      "en": "take",
+      "ru": "относить в другое место"
+    },
+    {
+      "en": "destination",
+      "ru": "место назначения"
+    },
+    {
+      "en": "folder",
+      "ru": "папка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I am at the office. Please ___ the folder here to me.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vacbfba897172",
+            "label": "bring"
+          },
+          {
+            "id": "v004896e8c8a9",
+            "label": "leave behind"
+          },
+          {
+            "id": "v2f06ad33dc5e",
+            "label": "throw away"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vacbfba897172"
+      },
+      "reference_answer": "vacbfba897172",
+      "incorrect_answer": "v004896e8c8a9",
+      "editorial_answer": "bring",
+      "explanation": "Here to me задаёт движение к говорящему: bring.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: take / remain.",
+      "public_payload": {
+        "sentence": "Please ___ this box from here to the store next door."
+      },
+      "answer_key": {
+        "accepted": ["take"]
+      },
+      "reference_answer": "take",
+      "incorrect_answer": "remain",
+      "editorial_answer": "Please take this box from here to the store next door.",
+      "explanation": "Take передаёт перенос из текущего места в другое.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Пожалуйста, принесите папку сюда.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "the"
+          },
+          {
+            "id": "t4",
+            "label": "folder"
+          },
+          {
+            "id": "t5",
+            "label": "here."
+          },
+          {
+            "id": "t1",
+            "label": "Please"
+          },
+          {
+            "id": "t2",
+            "label": "bring"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Please bring the folder here.",
+      "explanation": "Here задаёт конечную точку около говорящего.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Please brings the folder here."
+      },
+      "answer_key": {
+        "accepted": ["Please bring the folder here."]
+      },
+      "reference_answer": "Please bring the folder here.",
+      "incorrect_answer": "Please brings the folder here.",
+      "editorial_answer": "Please bring the folder here.",
+      "explanation": "В повелительном предложении используется bring без -s.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Куда Эли приносит папку?",
+      "public_payload": {
+        "passage": "Nora is at the club office. She calls Eli and asks him to bring a folder there for their meeting. When Eli arrives, Nora gives him a box to take to the shop next door. The folder stays at the office. The box goes to a different place.",
+        "options": [
+          {
+            "id": "vc52510d7c6e2",
+            "label": "To his home."
+          },
+          {
+            "id": "v4cfcbde6c447",
+            "label": "To the shop next door."
+          },
+          {
+            "id": "v8fb9fcb356c4",
+            "label": "To the club office."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8fb9fcb356c4"
+      },
+      "reference_answer": "v8fb9fcb356c4",
+      "incorrect_answer": "vc52510d7c6e2",
+      "editorial_answer": "To the club office.",
+      "explanation": "Папка нужна для встречи в офисе.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le4b6e0e1d0fb",
+            "label": "bring"
+          },
+          {
+            "id": "l02d14ed1879c",
+            "label": "take"
+          },
+          {
+            "id": "l1ba6ae9c2cc8",
+            "label": "destination"
+          },
+          {
+            "id": "la3140e52284c",
+            "label": "folder"
+          }
+        ],
+        "right": [
+          {
+            "id": "r157e627ca65c",
+            "label": "место назначения"
+          },
+          {
+            "id": "r268eca4a1acf",
+            "label": "папка"
+          },
+          {
+            "id": "r644f9ead66a0",
+            "label": "приносить к месту встречи"
+          },
+          {
+            "id": "rfb03916269be",
+            "label": "относить в другое место"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le4b6e0e1d0fb": "r644f9ead66a0",
+          "l02d14ed1879c": "rfb03916269be",
+          "l1ba6ae9c2cc8": "r157e627ca65c",
+          "la3140e52284c": "r268eca4a1acf"
+        }
+      },
+      "reference_answer": {
+        "le4b6e0e1d0fb": "r644f9ead66a0",
+        "l02d14ed1879c": "rfb03916269be",
+        "l1ba6ae9c2cc8": "r157e627ca65c",
+        "la3140e52284c": "r268eca4a1acf"
+      },
+      "incorrect_answer": {
+        "le4b6e0e1d0fb": "rfb03916269be",
+        "l02d14ed1879c": "r644f9ead66a0",
+        "l1ba6ae9c2cc8": "r157e627ca65c",
+        "la3140e52284c": "r268eca4a1acf"
+      },
+      "editorial_answer": "bring — приносить к месту встречи; take — относить в другое место; destination — место назначения; folder — папка",
+      "explanation": "В этих контекстах: bring — приносить к месту встречи; take — относить в другое место; destination — место назначения; folder — папка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что нужно отнести в магазин?",
+      "public_payload": {
+        "passage": "Nora is at the club office. She calls Eli and asks him to bring a folder there for their meeting. When Eli arrives, Nora gives him a box to take to the shop next door. The folder stays at the office. The box goes to a different place.",
+        "options": [
+          {
+            "id": "v39be753c5e52",
+            "label": "The box."
+          },
+          {
+            "id": "va84fb8c8b2ba",
+            "label": "The folder."
+          },
+          {
+            "id": "v8db25a668333",
+            "label": "Every item in the office."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v39be753c5e52"
+      },
+      "reference_answer": "v39be753c5e52",
+      "incorrect_answer": "va84fb8c8b2ba",
+      "editorial_answer": "The box.",
+      "explanation": "В магазин отправляется коробка, папка остаётся.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Согласуй движение к ожидающему собеседнику.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "I am waiting at reception. Can you come here with the keys?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v53ba7acd2097",
+            "label": "Yes, I will leave them at home."
+          },
+          {
+            "id": "veccf6e3c99be",
+            "label": "Yes, the keys are not objects."
+          },
+          {
+            "id": "v98d8faf5d505",
+            "label": "Yes, I will bring them to you."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v98d8faf5d505"
+      },
+      "reference_answer": "v98d8faf5d505",
+      "incorrect_answer": "v53ba7acd2097",
+      "editorial_answer": "Yes, I will bring them to you.",
+      "explanation": "Bring them to you соответствует заданной точке назначения.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The place something is going to is its ___.",
+        "options": [
+          {
+            "id": "v3e31479e999a",
+            "label": "owner necessarily"
+          },
+          {
+            "id": "v6f589ae26d60",
+            "label": "destination"
+          },
+          {
+            "id": "v57857c41f649",
+            "label": "departure only"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6f589ae26d60"
+      },
+      "reference_answer": "v6f589ae26d60",
+      "incorrect_answer": "v57857c41f649",
+      "editorial_answer": "destination",
+      "explanation": "Destination — место назначения.",
+      "key": "e09"
+    }
+  ]
+}

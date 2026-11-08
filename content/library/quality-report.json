@@ -1,18 +1,18 @@
 {
   "package": "english-path-core",
-  "revision": 9,
+  "revision": 10,
   "summary": {
-    "lessons": 248,
-    "exercises": 2140,
-    "levels": { "A1": 56, "A2": 51, "B1": 50, "B2": 43, "C1": 25, "C2": 23 }
+    "lessons": 260,
+    "exercises": 2248,
+    "levels": { "A1": 60, "A2": 53, "B1": 52, "B2": 45, "C1": 27, "C2": 23 }
   },
   "availability": {
-    "publishedNonAudioFullLessons": 245,
+    "publishedNonAudioFullLessons": 257,
     "archivedAudioLessons": 3,
     "introductoryLessonsIncluded": false,
     "targetFullLessons": 300,
-    "remaining": 55,
-    "byLevel": { "A1": 55, "A2": 50, "B1": 49, "B2": 43, "C1": 25, "C2": 23 },
+    "remaining": 43,
+    "byLevel": { "A1": 59, "A2": 52, "B1": 51, "B2": 45, "C1": 27, "C2": 23 },
     "basis": "Local modular sources after audio retirement; verify production count separately after import."
   },
   "structure": "passed",
@@ -20,19 +20,19 @@
   "gradingCheck": "npm run test:library verifies all positive/negative references with the production SQL grader",
   "methodology": "Author review and automated checks; CEFR labels remain provisional, without external psychometric calibration.",
   "types": {
-    "context_choice": 241,
-    "correction": 239,
-    "dialogue": 234,
+    "context_choice": 253,
+    "correction": 251,
+    "dialogue": 246,
     "dictation": 3,
     "error_identification": 4,
-    "gap": 239,
+    "gap": 251,
     "grammar": 1,
-    "matching": 163,
+    "matching": 175,
     "multiple_choice": 15,
-    "reading": 438,
+    "reading": 462,
     "response_choice": 9,
-    "sentence": 227,
-    "single_choice": 228,
+    "sentence": 239,
+    "single_choice": 240,
     "spelling": 1,
     "synonym_antonym": 8,
     "tenses": 7,
@@ -2025,6 +2025,102 @@
       "types": 8,
       "readingWords": [120, 120],
       "sha256": "a0f2f150a0bdfc3ef7117f2597503a40e6672ca24478855c597866f137aa0a15"
+    },
+    {
+      "key": "a1/same-different-bags",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [30, 30],
+      "sha256": "60555e0bee14c6eb3c320e5fd198711477f3b0e194722d5461aa7ac22ce661b0"
+    },
+    {
+      "key": "a1/push-pull-door",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [30, 30],
+      "sha256": "ef40eb0649f979cdcfdb5d08b725403ae0c3c68b6641808bac710eb4f529134b"
+    },
+    {
+      "key": "a1/pair-of-shoes",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [32, 32],
+      "sha256": "70b4c83ccba55c6cb13ef26e20853e6e4e41dc8b8ea1750b288819a3ab11bc78"
+    },
+    {
+      "key": "a1/parcel-from-to",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [29, 29],
+      "sha256": "59109ab7c552799935f5e0dfda9bad0baced47b716af97ecbc80fa09682fc992"
+    },
+    {
+      "key": "a2/bring-take-location",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [48, 48],
+      "sha256": "8e814563ccd597dfdd134f59bec291db95e3919ad3ffd6bd362a936d47524b89"
+    },
+    {
+      "key": "a2/miss-bus-lose-key",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [51, 51],
+      "sha256": "aba084dcf922fd60d8f6187ac7b2ae62dea7078c4cb7427c6181ffc0857baf02"
+    },
+    {
+      "key": "b1/prevent-from-action",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [58, 58],
+      "sha256": "ce648563536a6434d4366eab887ed38694f1de7f486b920220520223ec307214"
+    },
+    {
+      "key": "b1/spend-time-doing",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [60, 60],
+      "sha256": "2c0d0cab9ef160d74687776ac32928c28b6ec62318fd855c660c6d60ef65eef8"
+    },
+    {
+      "key": "b2/about-to-start",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [71, 71],
+      "sha256": "c814b612f906e95afafe1a0dd31517f8246361f3942999e3a3eff5b2bf5be8c9"
+    },
+    {
+      "key": "b2/high-time-past-form",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [78, 78],
+      "sha256": "06122bf2ac81c2dddcd12ace98a3b5004e23203331bc1eeb679991e97273edf7"
+    },
+    {
+      "key": "c1/all-but-two",
+      "level": "C1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [99, 99],
+      "sha256": "d5bcb8c544c084fc77838f6b0dc496bd75726dc29e69f5ef9aebf1076b4f7f36"
+    },
+    {
+      "key": "c1/if-anything-correction",
+      "level": "C1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [100, 100],
+      "sha256": "0b324abe2dd13c06e2305d8ed4e5942d80c74edcbf2c42392a14655e22881ddb"
     }
   ]
 }

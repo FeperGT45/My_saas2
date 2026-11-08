@@ -1,0 +1,334 @@
+{
+  "key": "b1/prevent-from-action",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика B1 · точное описание",
+    "position": 70
+  },
+  "position": 1,
+  "title": "Prevent: помешать действию",
+  "description": "Prevent: помешать действию: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Строить prevent someone from doing",
+    "Отличать предотвращённое действие от выполненного"
+  ],
+  "notes": [
+    "Prevent someone from entering — помешать кому-либо войти.",
+    "После from используется -ing; контекст уточняет, чьё действие было предотвращено."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/until-and-by"],
+  "lexicon": [
+    {
+      "en": "prevent",
+      "ru": "предотвращать"
+    },
+    {
+      "en": "barrier",
+      "ru": "преграда"
+    },
+    {
+      "en": "entry",
+      "ru": "вход внутрь"
+    },
+    {
+      "en": "access",
+      "ru": "доступ"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: A locked gate prevented us ___ entering.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "va65900db8e5e",
+            "label": "from"
+          },
+          {
+            "id": "v5988e66ce123",
+            "label": "to"
+          },
+          {
+            "id": "ve81d88ea008c",
+            "label": "for to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va65900db8e5e"
+      },
+      "reference_answer": "va65900db8e5e",
+      "incorrect_answer": "v5988e66ce123",
+      "editorial_answer": "from",
+      "explanation": "Prevent someone from doing — целевая модель.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: using / use.",
+      "public_payload": {
+        "sentence": "The barrier prevented cars from ___ the path."
+      },
+      "answer_key": {
+        "accepted": ["using"]
+      },
+      "reference_answer": "using",
+      "incorrect_answer": "use",
+      "editorial_answer": "The barrier prevented cars from using the path.",
+      "explanation": "После from нужен герундий using.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Преграда не позволила машинам въехать.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "prevented"
+          },
+          {
+            "id": "t4",
+            "label": "cars"
+          },
+          {
+            "id": "t5",
+            "label": "from"
+          },
+          {
+            "id": "t6",
+            "label": "entering."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "barrier"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The barrier prevented cars from entering.",
+      "explanation": "Prevented from entering описывает предотвращённый въезд.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The gate prevented us from enter."
+      },
+      "answer_key": {
+        "accepted": ["The gate prevented us from entering."]
+      },
+      "reference_answer": "The gate prevented us from entering.",
+      "incorrect_answer": "The gate prevented us from enter.",
+      "editorial_answer": "The gate prevented us from entering.",
+      "explanation": "После from нужно entering.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Для кого въезд был закрыт?",
+      "public_payload": {
+        "passage": "A barrier prevented cars from entering the narrow path, but pedestrians could still use a side gate. The first notice described the path as completely inaccessible. A walker asked for a correction because that wording included people the barrier had not stopped. The revised notice distinguished vehicle access from pedestrian access and explained where walkers could enter safely.",
+        "options": [
+          {
+            "id": "v536e499cbde5",
+            "label": "All pedestrians without exception."
+          },
+          {
+            "id": "ve17a896a1f1a",
+            "label": "Nobody at all."
+          },
+          {
+            "id": "vf7c09fb4b5a7",
+            "label": "Cars."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf7c09fb4b5a7"
+      },
+      "reference_answer": "vf7c09fb4b5a7",
+      "incorrect_answer": "v536e499cbde5",
+      "editorial_answer": "Cars.",
+      "explanation": "Преграда останавливала машины; пешеходам оставили калитку.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc15d35645745",
+            "label": "prevent"
+          },
+          {
+            "id": "l6a47f8f7f6bf",
+            "label": "barrier"
+          },
+          {
+            "id": "lf0aeaaac1e5f",
+            "label": "entry"
+          },
+          {
+            "id": "l4f09d1f26789",
+            "label": "access"
+          }
+        ],
+        "right": [
+          {
+            "id": "r542cb79b89f5",
+            "label": "вход внутрь"
+          },
+          {
+            "id": "rbe1357379238",
+            "label": "доступ"
+          },
+          {
+            "id": "r75e83e391463",
+            "label": "предотвращать"
+          },
+          {
+            "id": "rdd07ffb9cb09",
+            "label": "преграда"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc15d35645745": "r75e83e391463",
+          "l6a47f8f7f6bf": "rdd07ffb9cb09",
+          "lf0aeaaac1e5f": "r542cb79b89f5",
+          "l4f09d1f26789": "rbe1357379238"
+        }
+      },
+      "reference_answer": {
+        "lc15d35645745": "r75e83e391463",
+        "l6a47f8f7f6bf": "rdd07ffb9cb09",
+        "lf0aeaaac1e5f": "r542cb79b89f5",
+        "l4f09d1f26789": "rbe1357379238"
+      },
+      "incorrect_answer": {
+        "lc15d35645745": "rdd07ffb9cb09",
+        "l6a47f8f7f6bf": "r75e83e391463",
+        "lf0aeaaac1e5f": "r542cb79b89f5",
+        "l4f09d1f26789": "rbe1357379238"
+      },
+      "editorial_answer": "prevent — предотвращать; barrier — преграда; entry — вход внутрь; access — доступ",
+      "explanation": "В этих контекстах: prevent — предотвращать; barrier — преграда; entry — вход внутрь; access — доступ.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем исправили уведомление?",
+      "public_payload": {
+        "passage": "A barrier prevented cars from entering the narrow path, but pedestrians could still use a side gate. The first notice described the path as completely inaccessible. A walker asked for a correction because that wording included people the barrier had not stopped. The revised notice distinguished vehicle access from pedestrian access and explained where walkers could enter safely.",
+        "options": [
+          {
+            "id": "v8331c9ddeff0",
+            "label": "It had overstated who was prevented from entering."
+          },
+          {
+            "id": "vd22e42d0da89",
+            "label": "It had correctly said every side gate was locked."
+          },
+          {
+            "id": "ve3534ca5e09e",
+            "label": "It proved all cars could enter freely."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8331c9ddeff0"
+      },
+      "reference_answer": "v8331c9ddeff0",
+      "incorrect_answer": "vd22e42d0da89",
+      "editorial_answer": "It had overstated who was prevented from entering.",
+      "explanation": "Исходная формулировка слишком широко описывала запрет.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани различие видов доступа.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Did the barrier stop everyone?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v8121cc775a6a",
+            "label": "Yes, nobody could enter by any route."
+          },
+          {
+            "id": "v8d71f13a16c1",
+            "label": "No, all cars could drive through it."
+          },
+          {
+            "id": "v6d7d0c4c6d53",
+            "label": "No, pedestrians could use a side gate."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6d7d0c4c6d53"
+      },
+      "reference_answer": "v6d7d0c4c6d53",
+      "incorrect_answer": "v8121cc775a6a",
+      "editorial_answer": "No, pedestrians could use a side gate.",
+      "explanation": "Нельзя расширять ограничение для машин на всех людей.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A physical object that blocks a route is a ___.",
+        "options": [
+          {
+            "id": "vb4f0e5e56888",
+            "label": "destination"
+          },
+          {
+            "id": "vb15f1de7210d",
+            "label": "barrier"
+          },
+          {
+            "id": "v0811b0bded47",
+            "label": "permission"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb15f1de7210d"
+      },
+      "reference_answer": "vb15f1de7210d",
+      "incorrect_answer": "v0811b0bded47",
+      "editorial_answer": "barrier",
+      "explanation": "Barrier — преграда.",
+      "key": "e09"
+    }
+  ]
+}

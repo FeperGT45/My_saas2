@@ -1,0 +1,338 @@
+{
+  "key": "a1/parcel-from-to",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика A1 · точное описание",
+    "position": 70
+  },
+  "position": 4,
+  "title": "Посылка: от кого и кому",
+  "description": "Посылка: от кого и кому: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Читать From и To на посылке",
+    "Различать отправителя и получателя"
+  ],
+  "notes": [
+    "From: Ana — от Аны.",
+    "To: Ben — Бену; имена после From и To выполняют разные роли."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/pair-of-shoes"],
+  "lexicon": [
+    {
+      "en": "parcel",
+      "ru": "посылка"
+    },
+    {
+      "en": "from",
+      "ru": "от"
+    },
+    {
+      "en": "to",
+      "ru": "кому, к"
+    },
+    {
+      "en": "address",
+      "ru": "адрес"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: A parcel says “From: Ana. To: Ben.” It is for ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v1228e822324c",
+            "label": "Ben"
+          },
+          {
+            "id": "v611e38e4eba9",
+            "label": "Ana"
+          },
+          {
+            "id": "va7265ebb6220",
+            "label": "both people equally"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1228e822324c"
+      },
+      "reference_answer": "v1228e822324c",
+      "incorrect_answer": "v611e38e4eba9",
+      "editorial_answer": "Ben",
+      "explanation": "После To указан получатель Бен.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: to / from.",
+      "public_payload": {
+        "sentence": "This card is ___ Mia. She sends it to Tom."
+      },
+      "answer_key": {
+        "accepted": ["from"]
+      },
+      "reference_answer": "from",
+      "incorrect_answer": "to",
+      "editorial_answer": "This card is from Mia. She sends it to Tom.",
+      "explanation": "Mia отправляет карточку, поэтому from.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Эта посылка от Аны Бену.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "from"
+          },
+          {
+            "id": "t5",
+            "label": "Ana"
+          },
+          {
+            "id": "t6",
+            "label": "to"
+          },
+          {
+            "id": "t7",
+            "label": "Ben."
+          },
+          {
+            "id": "t1",
+            "label": "This"
+          },
+          {
+            "id": "t2",
+            "label": "parcel"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "This parcel is from Ana to Ben.",
+      "explanation": "From вводит отправителя, to — получателя.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "This parcel is from Ana for to Ben."
+      },
+      "answer_key": {
+        "accepted": ["This parcel is from Ana to Ben."]
+      },
+      "reference_answer": "This parcel is from Ana to Ben.",
+      "incorrect_answer": "This parcel is from Ana for to Ben.",
+      "editorial_answer": "This parcel is from Ana to Ben.",
+      "explanation": "В указанной модели from ... to ... не нужен for.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто отправил посылку?",
+      "public_payload": {
+        "passage": "A small parcel is on Ben’s desk. The label says “From: Ana. To: Ben.” Ana lives in York. Ben lives in Leeds. The parcel has Ben’s address in Leeds.",
+        "options": [
+          {
+            "id": "v51c12893ed8e",
+            "label": "Ben."
+          },
+          {
+            "id": "vac3e14c973f4",
+            "label": "The desk."
+          },
+          {
+            "id": "v857c0d25af7d",
+            "label": "Ana."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v857c0d25af7d"
+      },
+      "reference_answer": "v857c0d25af7d",
+      "incorrect_answer": "v51c12893ed8e",
+      "editorial_answer": "Ana.",
+      "explanation": "После From стоит имя отправителя.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l5c8db8efec43",
+            "label": "parcel"
+          },
+          {
+            "id": "l10ba0a299be8",
+            "label": "from"
+          },
+          {
+            "id": "l529b15631971",
+            "label": "to"
+          },
+          {
+            "id": "ld0e85c984364",
+            "label": "address"
+          }
+        ],
+        "right": [
+          {
+            "id": "rfb5a8d46cce1",
+            "label": "кому, к"
+          },
+          {
+            "id": "rcefa3ac994b7",
+            "label": "адрес"
+          },
+          {
+            "id": "r374d1255c787",
+            "label": "посылка"
+          },
+          {
+            "id": "rabec9ceb49ad",
+            "label": "от"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l5c8db8efec43": "r374d1255c787",
+          "l10ba0a299be8": "rabec9ceb49ad",
+          "l529b15631971": "rfb5a8d46cce1",
+          "ld0e85c984364": "rcefa3ac994b7"
+        }
+      },
+      "reference_answer": {
+        "l5c8db8efec43": "r374d1255c787",
+        "l10ba0a299be8": "rabec9ceb49ad",
+        "l529b15631971": "rfb5a8d46cce1",
+        "ld0e85c984364": "rcefa3ac994b7"
+      },
+      "incorrect_answer": {
+        "l5c8db8efec43": "rabec9ceb49ad",
+        "l10ba0a299be8": "r374d1255c787",
+        "l529b15631971": "rfb5a8d46cce1",
+        "ld0e85c984364": "rcefa3ac994b7"
+      },
+      "editorial_answer": "parcel — посылка; from — от; to — кому, к; address — адрес",
+      "explanation": "В этих контекстах: parcel — посылка; from — от; to — кому, к; address — адрес.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "В каком городе адрес получателя?",
+      "public_payload": {
+        "passage": "A small parcel is on Ben’s desk. The label says “From: Ana. To: Ben.” Ana lives in York. Ben lives in Leeds. The parcel has Ben’s address in Leeds.",
+        "options": [
+          {
+            "id": "vafc12727efad",
+            "label": "Leeds."
+          },
+          {
+            "id": "v1187b42aca34",
+            "label": "York."
+          },
+          {
+            "id": "v5fc1eb20bf3d",
+            "label": "London."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vafc12727efad"
+      },
+      "reference_answer": "vafc12727efad",
+      "incorrect_answer": "v1187b42aca34",
+      "editorial_answer": "Leeds.",
+      "explanation": "Получатель Бен живёт в Лидсе.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Назови получателя по ярлыку.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Who is this parcel for? The label says “To: Ben”."
+          }
+        ],
+        "options": [
+          {
+            "id": "v02d332ed4dfe",
+            "label": "It is from Ben."
+          },
+          {
+            "id": "v57b136825c1d",
+            "label": "It is for Ana."
+          },
+          {
+            "id": "v1b5576e7dc3b",
+            "label": "It is for Ben."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1b5576e7dc3b"
+      },
+      "reference_answer": "v1b5576e7dc3b",
+      "incorrect_answer": "v02d332ed4dfe",
+      "editorial_answer": "It is for Ben.",
+      "explanation": "To: Ben означает, что посылка предназначена Бену.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A package sent to someone is a ___.",
+        "options": [
+          {
+            "id": "v84ea67c6a6e0",
+            "label": "desk"
+          },
+          {
+            "id": "v7e107fba3fbe",
+            "label": "parcel"
+          },
+          {
+            "id": "v30d1e067a085",
+            "label": "city"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7e107fba3fbe"
+      },
+      "reference_answer": "v7e107fba3fbe",
+      "incorrect_answer": "v30d1e067a085",
+      "editorial_answer": "parcel",
+      "explanation": "Parcel — посылка.",
+      "key": "e09"
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "packageId": "english-path-core",
-  "revision": 9,
+  "revision": 10,
   "language": "en",
   "interfaceLocale": "ru",
   "courses": [
@@ -296,6 +296,18 @@
     "lessons/c1/lest-precaution.json",
     "lessons/c1/inasmuch-as-limits.json",
     "lessons/c2/unless-boundary.json",
-    "lessons/c2/quotation-versus-endorsement.json"
+    "lessons/c2/quotation-versus-endorsement.json",
+    "lessons/a1/same-different-bags.json",
+    "lessons/a1/push-pull-door.json",
+    "lessons/a1/pair-of-shoes.json",
+    "lessons/a1/parcel-from-to.json",
+    "lessons/a2/bring-take-location.json",
+    "lessons/a2/miss-bus-lose-key.json",
+    "lessons/b1/prevent-from-action.json",
+    "lessons/b1/spend-time-doing.json",
+    "lessons/b2/about-to-start.json",
+    "lessons/b2/high-time-past-form.json",
+    "lessons/c1/all-but-two.json",
+    "lessons/c1/if-anything-correction.json"
   ]
 }

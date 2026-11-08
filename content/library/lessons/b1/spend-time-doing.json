@@ -1,0 +1,338 @@
+{
+  "key": "b1/spend-time-doing",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика B1 · точное описание",
+    "position": 70
+  },
+  "position": 2,
+  "title": "Как потратили время",
+  "description": "Как потратили время: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Использовать spend time doing",
+    "Отличать затраченное время от доказанного результата"
+  ],
+  "notes": [
+    "Spend an hour checking — потратить час на проверку.",
+    "Длительность работы сама по себе не сообщает, завершена ли вся задача."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/prevent-from-action"],
+  "lexicon": [
+    {
+      "en": "spend",
+      "ru": "тратить"
+    },
+    {
+      "en": "duration",
+      "ru": "длительность"
+    },
+    {
+      "en": "task",
+      "ru": "задача"
+    },
+    {
+      "en": "remaining",
+      "ru": "оставшийся"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We spent an hour ___ the records.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v20969c652a70",
+            "label": "checking"
+          },
+          {
+            "id": "vcd44b895bc2f",
+            "label": "to checking"
+          },
+          {
+            "id": "v666b39339deb",
+            "label": "check to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v20969c652a70"
+      },
+      "reference_answer": "v20969c652a70",
+      "incorrect_answer": "vcd44b895bc2f",
+      "editorial_answer": "checking",
+      "explanation": "После spent time здесь используется checking.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: sort / sorting.",
+      "public_payload": {
+        "sentence": "She spent ten minutes ___ the labels."
+      },
+      "answer_key": {
+        "accepted": ["sorting"]
+      },
+      "reference_answer": "sorting",
+      "incorrect_answer": "sort",
+      "editorial_answer": "She spent ten minutes sorting the labels.",
+      "explanation": "Spend time сочетается с -ing-формой.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мы потратили час на проверку записей.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "an"
+          },
+          {
+            "id": "t4",
+            "label": "hour"
+          },
+          {
+            "id": "t5",
+            "label": "checking"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "records."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "spent"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "We spent an hour checking the records.",
+      "explanation": "Фраза сообщает о длительности действия.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She spent an hour to checking the list."
+      },
+      "answer_key": {
+        "accepted": ["She spent an hour checking the list."]
+      },
+      "reference_answer": "She spent an hour checking the list.",
+      "incorrect_answer": "She spent an hour to checking the list.",
+      "editorial_answer": "She spent an hour checking the list.",
+      "explanation": "В модели spend time doing убирается to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Проверили ли весь каталог?",
+      "public_payload": {
+        "passage": "The volunteers spent two hours checking the old catalogue. They corrected several entries, but a large section remained unchecked. In the activity log, the coordinator recorded both the time spent and the work still outstanding. A shorter summary claimed that the whole catalogue had been verified. The coordinator restored the distinction between time devoted to a task and its completion.",
+        "options": [
+          {
+            "id": "vd5987d543509",
+            "label": "Yes, two hours proves complete verification."
+          },
+          {
+            "id": "v5547edb416c1",
+            "label": "No entry was examined."
+          },
+          {
+            "id": "v41988fbaff12",
+            "label": "No, a large section remained unchecked."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v41988fbaff12"
+      },
+      "reference_answer": "v41988fbaff12",
+      "incorrect_answer": "vd5987d543509",
+      "editorial_answer": "No, a large section remained unchecked.",
+      "explanation": "Проверена часть записей, но оставался большой раздел.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l8379180fe281",
+            "label": "spend"
+          },
+          {
+            "id": "l9f04102effac",
+            "label": "duration"
+          },
+          {
+            "id": "ld716a665a3e2",
+            "label": "task"
+          },
+          {
+            "id": "l7b6526f11f7e",
+            "label": "remaining"
+          }
+        ],
+        "right": [
+          {
+            "id": "r19e6d317489e",
+            "label": "задача"
+          },
+          {
+            "id": "r9182927e38ff",
+            "label": "оставшийся"
+          },
+          {
+            "id": "r5484153e64f2",
+            "label": "тратить"
+          },
+          {
+            "id": "rfd3c7cbee331",
+            "label": "длительность"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l8379180fe281": "r5484153e64f2",
+          "l9f04102effac": "rfd3c7cbee331",
+          "ld716a665a3e2": "r19e6d317489e",
+          "l7b6526f11f7e": "r9182927e38ff"
+        }
+      },
+      "reference_answer": {
+        "l8379180fe281": "r5484153e64f2",
+        "l9f04102effac": "rfd3c7cbee331",
+        "ld716a665a3e2": "r19e6d317489e",
+        "l7b6526f11f7e": "r9182927e38ff"
+      },
+      "incorrect_answer": {
+        "l8379180fe281": "rfd3c7cbee331",
+        "l9f04102effac": "r5484153e64f2",
+        "ld716a665a3e2": "r19e6d317489e",
+        "l7b6526f11f7e": "r9182927e38ff"
+      },
+      "editorial_answer": "spend — тратить; duration — длительность; task — задача; remaining — оставшийся",
+      "explanation": "В этих контекстах: spend — тратить; duration — длительность; task — задача; remaining — оставшийся.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что журнал сохранял кроме времени?",
+      "public_payload": {
+        "passage": "The volunteers spent two hours checking the old catalogue. They corrected several entries, but a large section remained unchecked. In the activity log, the coordinator recorded both the time spent and the work still outstanding. A shorter summary claimed that the whole catalogue had been verified. The coordinator restored the distinction between time devoted to a task and its completion.",
+        "options": [
+          {
+            "id": "v1e3afa36513b",
+            "label": "The work still outstanding."
+          },
+          {
+            "id": "v09ca767124e2",
+            "label": "A claim that nobody worked."
+          },
+          {
+            "id": "v52fd1658e770",
+            "label": "A guarantee of complete accuracy forever."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1e3afa36513b"
+      },
+      "reference_answer": "v1e3afa36513b",
+      "incorrect_answer": "v09ca767124e2",
+      "editorial_answer": "The work still outstanding.",
+      "explanation": "Остаток работы был указан отдельно.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Различи длительность и завершённость.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does spending an hour on a task prove it is finished?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v9cfa2c078907",
+            "label": "Yes, every hour completes every task."
+          },
+          {
+            "id": "v408fe7444a83",
+            "label": "Yes, spend means finish completely."
+          },
+          {
+            "id": "v8f4ff2a57691",
+            "label": "No, completion needs separate information."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8f4ff2a57691"
+      },
+      "reference_answer": "v8f4ff2a57691",
+      "incorrect_answer": "v9cfa2c078907",
+      "editorial_answer": "No, completion needs separate information.",
+      "explanation": "Spend сообщает о затраченном времени.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Work that is not finished yet is ___.",
+        "options": [
+          {
+            "id": "vd4dafe93cf30",
+            "label": "irrelevant necessarily"
+          },
+          {
+            "id": "vb707f45827d6",
+            "label": "remaining"
+          },
+          {
+            "id": "vb6aae25816ac",
+            "label": "completed necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb707f45827d6"
+      },
+      "reference_answer": "vb707f45827d6",
+      "incorrect_answer": "vb6aae25816ac",
+      "editorial_answer": "remaining",
+      "explanation": "Remaining — оставшийся.",
+      "key": "e09"
+    }
+  ]
+}

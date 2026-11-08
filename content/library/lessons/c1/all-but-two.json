@@ -1,0 +1,330 @@
+{
+  "key": "c1/all-but-two",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика C1 · точное описание",
+    "position": 70
+  },
+  "position": 1,
+  "title": "All but: исключение или почти",
+  "description": "All but: исключение или почти: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "C1",
+  "objectives": [
+    "Различать all but two и all but complete",
+    "Определять охват по конструкции"
+  ],
+  "notes": [
+    "All but two agreed — все, кроме двоих, согласились.",
+    "All but complete — почти завершённый; одинаковые слова получают разные значения в разных конструкциях."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/inasmuch-as-limits"],
+  "lexicon": [
+    {
+      "en": "exception",
+      "ru": "исключение"
+    },
+    {
+      "en": "nearly",
+      "ru": "почти"
+    },
+    {
+      "en": "unanimous",
+      "ru": "единогласный"
+    },
+    {
+      "en": "outstanding",
+      "ru": "ещё не выполненный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “All but two members agreed.” Which meaning is accurate?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v74f97595b631",
+            "label": "Every member except two agreed."
+          },
+          {
+            "id": "v203b495f48ec",
+            "label": "Exactly two members agreed."
+          },
+          {
+            "id": "v35f72e1f5f93",
+            "label": "Every member agreed without exception."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v74f97595b631"
+      },
+      "reference_answer": "v74f97595b631",
+      "incorrect_answer": "v203b495f48ec",
+      "editorial_answer": "Every member except two agreed.",
+      "explanation": "После all but названо числовое исключение.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: but / than.",
+      "public_payload": {
+        "sentence": "The work is all ___ complete: only one label remains."
+      },
+      "answer_key": {
+        "accepted": ["but"]
+      },
+      "reference_answer": "but",
+      "incorrect_answer": "than",
+      "editorial_answer": "The work is all but complete: only one label remains.",
+      "explanation": "All but complete означает почти завершён.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Все участники, кроме двоих, согласились.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "two"
+          },
+          {
+            "id": "t4",
+            "label": "members"
+          },
+          {
+            "id": "t5",
+            "label": "agreed."
+          },
+          {
+            "id": "t1",
+            "label": "All"
+          },
+          {
+            "id": "t2",
+            "label": "but"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "All but two members agreed.",
+      "explanation": "Оговорка исключает двоих из согласившихся.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "All but two members agrees."
+      },
+      "answer_key": {
+        "accepted": ["All but two members agree."]
+      },
+      "reference_answer": "All but two members agree.",
+      "incorrect_answer": "All but two members agrees.",
+      "editorial_answer": "All but two members agree.",
+      "explanation": "Множественное members требует agree.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Сколько участников исключено из поддержавших?",
+      "public_payload": {
+        "passage": "The draft minutes stated that all but two members supported the new timetable. A summary converted this into unanimous support, while another reader assumed that only two members had supported it. Both readings changed the numerical exception. The same minutes described the room preparation as all but complete, with one label still to be installed. There, the phrase marked near completion rather than an exception involving two people. The secretary retained both statements and added clearer paraphrases. Accurate interpretation depended on the structure surrounding all but, not a single replacement meaning that could be applied mechanically to every occurrence.",
+        "options": [
+          {
+            "id": "v1777c37a2759",
+            "label": "None."
+          },
+          {
+            "id": "v402088a6093f",
+            "label": "All except exactly two supporters."
+          },
+          {
+            "id": "vb5654ba4b0eb",
+            "label": "Two."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb5654ba4b0eb"
+      },
+      "reference_answer": "vb5654ba4b0eb",
+      "incorrect_answer": "v1777c37a2759",
+      "editorial_answer": "Two.",
+      "explanation": "All but two означает всех за исключением двоих.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l99d317dd1d28",
+            "label": "exception"
+          },
+          {
+            "id": "lc2a7414f60b1",
+            "label": "nearly"
+          },
+          {
+            "id": "l2efc13f47053",
+            "label": "unanimous"
+          },
+          {
+            "id": "ldd35314d57c7",
+            "label": "outstanding"
+          }
+        ],
+        "right": [
+          {
+            "id": "rcb360536638e",
+            "label": "единогласный"
+          },
+          {
+            "id": "rc425a54eb833",
+            "label": "ещё не выполненный"
+          },
+          {
+            "id": "rcf6f06a997e2",
+            "label": "исключение"
+          },
+          {
+            "id": "r47ff3b5de3dd",
+            "label": "почти"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l99d317dd1d28": "rcf6f06a997e2",
+          "lc2a7414f60b1": "r47ff3b5de3dd",
+          "l2efc13f47053": "rcb360536638e",
+          "ldd35314d57c7": "rc425a54eb833"
+        }
+      },
+      "reference_answer": {
+        "l99d317dd1d28": "rcf6f06a997e2",
+        "lc2a7414f60b1": "r47ff3b5de3dd",
+        "l2efc13f47053": "rcb360536638e",
+        "ldd35314d57c7": "rc425a54eb833"
+      },
+      "incorrect_answer": {
+        "l99d317dd1d28": "r47ff3b5de3dd",
+        "lc2a7414f60b1": "rcf6f06a997e2",
+        "l2efc13f47053": "rcb360536638e",
+        "ldd35314d57c7": "rc425a54eb833"
+      },
+      "editorial_answer": "exception — исключение; nearly — почти; unanimous — единогласный; outstanding — ещё не выполненный",
+      "explanation": "В этих контекстах: exception — исключение; nearly — почти; unanimous — единогласный; outstanding — ещё не выполненный.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему подготовка была all but complete?",
+      "public_payload": {
+        "passage": "The draft minutes stated that all but two members supported the new timetable. A summary converted this into unanimous support, while another reader assumed that only two members had supported it. Both readings changed the numerical exception. The same minutes described the room preparation as all but complete, with one label still to be installed. There, the phrase marked near completion rather than an exception involving two people. The secretary retained both statements and added clearer paraphrases. Accurate interpretation depended on the structure surrounding all but, not a single replacement meaning that could be applied mechanically to every occurrence.",
+        "options": [
+          {
+            "id": "v31a3ea26274d",
+            "label": "One label still remained to be installed."
+          },
+          {
+            "id": "v3fcfa3dee8a1",
+            "label": "Exactly two members had opposed the room."
+          },
+          {
+            "id": "v0296bfde667e",
+            "label": "No preparation had begun."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v31a3ea26274d"
+      },
+      "reference_answer": "v31a3ea26274d",
+      "incorrect_answer": "v3fcfa3dee8a1",
+      "editorial_answer": "One label still remained to be installed.",
+      "explanation": "Во втором употреблении описана почти завершённая работа.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Проверь грамматическое окружение.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can all but always be replaced with except?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v9ab486b83381",
+            "label": "Yes, regardless of structure."
+          },
+          {
+            "id": "vecf7e94535d2",
+            "label": "Yes, complete is always a number."
+          },
+          {
+            "id": "v140e3993a7df",
+            "label": "No, all but complete has the meaning nearly complete."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v140e3993a7df"
+      },
+      "reference_answer": "v140e3993a7df",
+      "incorrect_answer": "v9ab486b83381",
+      "editorial_answer": "No, all but complete has the meaning nearly complete.",
+      "explanation": "Одна замена не покрывает оба употребления.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Agreement by every member without exception is ___.",
+        "options": [
+          {
+            "id": "veb2aa6fff85c",
+            "label": "outstanding"
+          },
+          {
+            "id": "v50bb916b84e4",
+            "label": "unanimous"
+          },
+          {
+            "id": "v8004c4c5651e",
+            "label": "nearly complete"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v50bb916b84e4"
+      },
+      "reference_answer": "v50bb916b84e4",
+      "incorrect_answer": "v8004c4c5651e",
+      "editorial_answer": "unanimous",
+      "explanation": "Unanimous — единогласный.",
+      "key": "e09"
+    }
+  ]
+}

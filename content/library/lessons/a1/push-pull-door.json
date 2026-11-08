@@ -1,0 +1,327 @@
+{
+  "key": "a1/push-pull-door",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика A1 · точное описание",
+    "position": 70
+  },
+  "position": 2,
+  "title": "Дверь: толкнуть или потянуть",
+  "description": "Дверь: толкнуть или потянуть: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "A1",
+  "objectives": ["Читать инструкции push/pull", "Следовать короткой команде"],
+  "notes": [
+    "Push — толкать от себя; pull — тянуть к себе.",
+    "Короткая инструкция Push the door начинается с глагола без to."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/same-different-bags"],
+  "lexicon": [
+    {
+      "en": "push",
+      "ru": "толкать"
+    },
+    {
+      "en": "pull",
+      "ru": "тянуть"
+    },
+    {
+      "en": "handle",
+      "ru": "ручка двери"
+    },
+    {
+      "en": "entrance",
+      "ru": "вход"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The sign says PULL. You need to ___ the door towards you.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v471c70b08f09",
+            "label": "pull"
+          },
+          {
+            "id": "v7b7c8145891e",
+            "label": "push"
+          },
+          {
+            "id": "vdde184575fc4",
+            "label": "paint"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v471c70b08f09"
+      },
+      "reference_answer": "v471c70b08f09",
+      "incorrect_answer": "v7b7c8145891e",
+      "editorial_answer": "pull",
+      "explanation": "Pull означает тянуть к себе.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: Pull / Push.",
+      "public_payload": {
+        "sentence": "The sign says PUSH. ___ the door away from you."
+      },
+      "answer_key": {
+        "accepted": ["Push"]
+      },
+      "reference_answer": "Push",
+      "incorrect_answer": "Pull",
+      "editorial_answer": "The sign says PUSH. Push the door away from you.",
+      "explanation": "Away from you задаёт направление от себя.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Потяните ручку к себе.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "handle"
+          },
+          {
+            "id": "t4",
+            "label": "towards"
+          },
+          {
+            "id": "t5",
+            "label": "you."
+          },
+          {
+            "id": "t1",
+            "label": "Pull"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Pull the handle towards you.",
+      "explanation": "Pull и towards you согласуют действие и направление.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Pushes the door, please."
+      },
+      "answer_key": {
+        "accepted": ["Push the door, please."]
+      },
+      "reference_answer": "Push the door, please.",
+      "incorrect_answer": "Pushes the door, please.",
+      "editorial_answer": "Push the door, please.",
+      "explanation": "В повелительной инструкции нужен Push без окончания -s.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему первое действие не помогло?",
+      "public_payload": {
+        "passage": "The café door has a small sign: PULL. Max pushes the door, but it does not open. He reads the sign and pulls the handle. Now he can go inside.",
+        "options": [
+          {
+            "id": "va0672a97e67a",
+            "label": "The café had no door."
+          },
+          {
+            "id": "v59c342d169c4",
+            "label": "The sign said PAINT."
+          },
+          {
+            "id": "v3b925a34df12",
+            "label": "Max pushed a door marked PULL."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3b925a34df12"
+      },
+      "reference_answer": "v3b925a34df12",
+      "incorrect_answer": "va0672a97e67a",
+      "editorial_answer": "Max pushed a door marked PULL.",
+      "explanation": "Он сначала толкал дверь вместо того, чтобы потянуть.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l8dad337cb588",
+            "label": "push"
+          },
+          {
+            "id": "le5369a0ba7f9",
+            "label": "pull"
+          },
+          {
+            "id": "lc29e1bf5677d",
+            "label": "handle"
+          },
+          {
+            "id": "lfdb073697c57",
+            "label": "entrance"
+          }
+        ],
+        "right": [
+          {
+            "id": "r22f80c3c13f9",
+            "label": "ручка двери"
+          },
+          {
+            "id": "r31272a3b1208",
+            "label": "вход"
+          },
+          {
+            "id": "ra452c64b5539",
+            "label": "толкать"
+          },
+          {
+            "id": "rdbd3d569a6d5",
+            "label": "тянуть"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l8dad337cb588": "ra452c64b5539",
+          "le5369a0ba7f9": "rdbd3d569a6d5",
+          "lc29e1bf5677d": "r22f80c3c13f9",
+          "lfdb073697c57": "r31272a3b1208"
+        }
+      },
+      "reference_answer": {
+        "l8dad337cb588": "ra452c64b5539",
+        "le5369a0ba7f9": "rdbd3d569a6d5",
+        "lc29e1bf5677d": "r22f80c3c13f9",
+        "lfdb073697c57": "r31272a3b1208"
+      },
+      "incorrect_answer": {
+        "l8dad337cb588": "rdbd3d569a6d5",
+        "le5369a0ba7f9": "ra452c64b5539",
+        "lc29e1bf5677d": "r22f80c3c13f9",
+        "lfdb073697c57": "r31272a3b1208"
+      },
+      "editorial_answer": "push — толкать; pull — тянуть; handle — ручка двери; entrance — вход",
+      "explanation": "В этих контекстах: push — толкать; pull — тянуть; handle — ручка двери; entrance — вход.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Макс делает после чтения таблички?",
+      "public_payload": {
+        "passage": "The café door has a small sign: PULL. Max pushes the door, but it does not open. He reads the sign and pulls the handle. Now he can go inside.",
+        "options": [
+          {
+            "id": "v0b119ae05edc",
+            "label": "He pulls the handle."
+          },
+          {
+            "id": "vb730278df39c",
+            "label": "He paints the door."
+          },
+          {
+            "id": "v6b4b509d1214",
+            "label": "He removes the sign."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0b119ae05edc"
+      },
+      "reference_answer": "v0b119ae05edc",
+      "incorrect_answer": "vb730278df39c",
+      "editorial_answer": "He pulls the handle.",
+      "explanation": "После чтения он тянет ручку.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери действие по табличке.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How do I open this door? It says PULL."
+          }
+        ],
+        "options": [
+          {
+            "id": "vd9492bf8d6d8",
+            "label": "Push it away from you."
+          },
+          {
+            "id": "vaa30f615d090",
+            "label": "Paint it blue first."
+          },
+          {
+            "id": "v1f49df0fdd80",
+            "label": "Pull it towards you."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1f49df0fdd80"
+      },
+      "reference_answer": "v1f49df0fdd80",
+      "incorrect_answer": "vd9492bf8d6d8",
+      "editorial_answer": "Pull it towards you.",
+      "explanation": "Pull задаёт движение к себе.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The part of a door you hold is its ___.",
+        "options": [
+          {
+            "id": "v49774ac696df",
+            "label": "floor"
+          },
+          {
+            "id": "v8a8b1d612cb8",
+            "label": "handle"
+          },
+          {
+            "id": "va38aefece46f",
+            "label": "ceiling"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8a8b1d612cb8"
+      },
+      "reference_answer": "v8a8b1d612cb8",
+      "incorrect_answer": "va38aefece46f",
+      "editorial_answer": "handle",
+      "explanation": "Handle — ручка двери.",
+      "key": "e09"
+    }
+  ]
+}

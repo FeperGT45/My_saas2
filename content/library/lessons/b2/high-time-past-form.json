@@ -1,0 +1,330 @@
+{
+  "key": "b2/high-time-past-form",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-09",
+    "title": "Практика B2 · точное описание",
+    "position": 70
+  },
+  "position": 2,
+  "title": "It’s time: действие пора выполнить",
+  "description": "It’s time: действие пора выполнить: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "B2",
+  "objectives": [
+    "Использовать прошедшую форму после It is time с подлежащим",
+    "Отличать форму прошлого от времени действия"
+  ],
+  "notes": [
+    "It is time we left означает «нам пора уходить».",
+    "В этой модели left относится к желательному действию сейчас; это не рассказ о завершённом уходе."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/about-to-start"],
+  "lexicon": [
+    {
+      "en": "overdue",
+      "ru": "давно ожидаемый"
+    },
+    {
+      "en": "urgency",
+      "ru": "срочность"
+    },
+    {
+      "en": "suggestion",
+      "ru": "предложение"
+    },
+    {
+      "en": "departure",
+      "ru": "отправление"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Choose the past-form pattern: It is time we ___ home.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v027c16042aab",
+            "label": "went"
+          },
+          {
+            "id": "v52e144370c8e",
+            "label": "goes"
+          },
+          {
+            "id": "v2e95f1504cb6",
+            "label": "going"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v027c16042aab"
+      },
+      "reference_answer": "v027c16042aab",
+      "incorrect_answer": "v52e144370c8e",
+      "editorial_answer": "went",
+      "explanation": "В заданной модели после we нужна прошедшая форма went.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: takes / took.",
+      "public_payload": {
+        "sentence": "It is time she ___ a break."
+      },
+      "answer_key": {
+        "accepted": ["took"]
+      },
+      "reference_answer": "took",
+      "incorrect_answer": "takes",
+      "editorial_answer": "It is time she took a break.",
+      "explanation": "С отдельным подлежащим she здесь используется took.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Нам пора уходить.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "time"
+          },
+          {
+            "id": "t4",
+            "label": "we"
+          },
+          {
+            "id": "t5",
+            "label": "left."
+          },
+          {
+            "id": "t1",
+            "label": "It"
+          },
+          {
+            "id": "t2",
+            "label": "is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "It is time we left.",
+      "explanation": "Форма left не утверждает, что уход уже произошёл.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "It is time we leaving."
+      },
+      "answer_key": {
+        "accepted": ["It is time we left."]
+      },
+      "reference_answer": "It is time we left.",
+      "incorrect_answer": "It is time we leaving.",
+      "editorial_answer": "It is time we left.",
+      "explanation": "Для заданной модели нужна форма left, не leaving.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Лео сделал своей репликой?",
+      "public_payload": {
+        "passage": "During a long planning meeting, Leo said it was time they took a break. A colleague reading the minutes later assumed the phrase recorded a break that had already happened. The chair explained that Leo had been making a suggestion about what should happen next. The group actually continued for another ten minutes before stopping. The revised minutes separated the suggestion from the later action, preserving the difference between grammatical past form and the timing of the event.",
+        "options": [
+          {
+            "id": "v175f9860b401",
+            "label": "Confirmed a break that was already over."
+          },
+          {
+            "id": "v41fdbb010819",
+            "label": "Cancelled every break for the day."
+          },
+          {
+            "id": "ve648082a2bfd",
+            "label": "Suggested that they take a break next."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve648082a2bfd"
+      },
+      "reference_answer": "ve648082a2bfd",
+      "incorrect_answer": "v175f9860b401",
+      "editorial_answer": "Suggested that they take a break next.",
+      "explanation": "Реплика предлагала действие, а не фиксировала его выполнение.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l7c9cceeaae4a",
+            "label": "overdue"
+          },
+          {
+            "id": "l8e77a1290bcf",
+            "label": "urgency"
+          },
+          {
+            "id": "la29222ac8a66",
+            "label": "suggestion"
+          },
+          {
+            "id": "l62debf68a82b",
+            "label": "departure"
+          }
+        ],
+        "right": [
+          {
+            "id": "r756e41aeb87d",
+            "label": "предложение"
+          },
+          {
+            "id": "r74f63c308b73",
+            "label": "отправление"
+          },
+          {
+            "id": "rc83dcee93762",
+            "label": "давно ожидаемый"
+          },
+          {
+            "id": "r78d4cbbd9862",
+            "label": "срочность"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l7c9cceeaae4a": "rc83dcee93762",
+          "l8e77a1290bcf": "r78d4cbbd9862",
+          "la29222ac8a66": "r756e41aeb87d",
+          "l62debf68a82b": "r74f63c308b73"
+        }
+      },
+      "reference_answer": {
+        "l7c9cceeaae4a": "rc83dcee93762",
+        "l8e77a1290bcf": "r78d4cbbd9862",
+        "la29222ac8a66": "r756e41aeb87d",
+        "l62debf68a82b": "r74f63c308b73"
+      },
+      "incorrect_answer": {
+        "l7c9cceeaae4a": "r78d4cbbd9862",
+        "l8e77a1290bcf": "rc83dcee93762",
+        "la29222ac8a66": "r756e41aeb87d",
+        "l62debf68a82b": "r74f63c308b73"
+      },
+      "editorial_answer": "overdue — давно ожидаемый; urgency — срочность; suggestion — предложение; departure — отправление",
+      "explanation": "В этих контекстах: overdue — давно ожидаемый; urgency — срочность; suggestion — предложение; departure — отправление.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда группа остановилась?",
+      "public_payload": {
+        "passage": "During a long planning meeting, Leo said it was time they took a break. A colleague reading the minutes later assumed the phrase recorded a break that had already happened. The chair explained that Leo had been making a suggestion about what should happen next. The group actually continued for another ten minutes before stopping. The revised minutes separated the suggestion from the later action, preserving the difference between grammatical past form and the timing of the event.",
+        "options": [
+          {
+            "id": "v0caafb6d2363",
+            "label": "Ten minutes after the suggestion."
+          },
+          {
+            "id": "v6165a9881310",
+            "label": "Before Leo spoke."
+          },
+          {
+            "id": "v2ce89966710b",
+            "label": "At no point according to the text."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0caafb6d2363"
+      },
+      "reference_answer": "v0caafb6d2363",
+      "incorrect_answer": "v6165a9881310",
+      "editorial_answer": "Ten minutes after the suggestion.",
+      "explanation": "В тексте указано продолжение на десять минут.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Учитывай указанную грамматическую модель.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "In “It is time we left”, has departure necessarily happened?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v46aeb60e5d1e",
+            "label": "Yes, left always records a completed departure here."
+          },
+          {
+            "id": "vc1c4feca5782",
+            "label": "Yes, the phrase is a travel receipt."
+          },
+          {
+            "id": "v70d746938e28",
+            "label": "No, the past form expresses a present need for action."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v70d746938e28"
+      },
+      "reference_answer": "v70d746938e28",
+      "incorrect_answer": "v46aeb60e5d1e",
+      "editorial_answer": "No, the past form expresses a present need for action.",
+      "explanation": "Форма прошлого не определяет фактическое время действия без контекста.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A proposal about what people should do is a ___.",
+        "options": [
+          {
+            "id": "v6882432c1f24",
+            "label": "record of departure necessarily"
+          },
+          {
+            "id": "v99763d56683f",
+            "label": "suggestion"
+          },
+          {
+            "id": "vf9fa53356d53",
+            "label": "proof of completion"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v99763d56683f"
+      },
+      "reference_answer": "v99763d56683f",
+      "incorrect_answer": "vf9fa53356d53",
+      "editorial_answer": "suggestion",
+      "explanation": "Suggestion — предложение действия.",
+      "key": "e09"
+    }
+  ]
+}
