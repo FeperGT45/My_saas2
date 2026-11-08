@@ -71,7 +71,9 @@ test('six mobile exercise types use database grading, recover a lost response, s
       });
     });
     await page.setViewportSize({ width: 320, height: 780 });
-    await page.goto('/lesson');
+    // The default route now opens the one-question introductory lesson.
+    // Exercise the dedicated six-format compatibility fixture explicitly.
+    await page.goto('/lesson?lesson=40000000-0000-0000-0000-000000000002');
     await page
       .getByRole('button', { name: 'Начать урок', exact: true })
       .click();

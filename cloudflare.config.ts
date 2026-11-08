@@ -6,6 +6,13 @@ export default defineConfig({
     entrypoint: 'vinext/server/fetch-handler',
     compatibilityDate: '2026-11-02',
     compatibilityFlags: ['nodejs_compat'],
+    observability: {
+      enabled: true,
+      headSamplingRate: 0.05,
+      redactQueryString: true,
+      logs: { enabled: true, invocationLogs: true },
+      traces: { enabled: false },
+    },
     assets: {
       htmlHandling: 'none',
       notFoundHandling: 'none',
@@ -26,6 +33,12 @@ export default defineConfig({
       ),
       TELEGRAM_MINI_APP_SLUG: bindings.text(
         process.env.TELEGRAM_MINI_APP_SLUG ?? '',
+      ),
+      PREMIUM_TERMS_URL: bindings.text(
+        process.env.PREMIUM_TERMS_URL ??
+          (process.env.APP_URL
+            ? new URL('/premium/terms', process.env.APP_URL).href
+            : ''),
       ),
       TELEGRAM_BOT_TOKEN: bindings.secret(),
       TELEGRAM_WEBHOOK_SECRET: bindings.secret(),

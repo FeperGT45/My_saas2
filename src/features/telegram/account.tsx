@@ -13,8 +13,9 @@ export function TelegramAccount() {
     return authError ? (
       <Card className="mb-4">
         <p role="alert" className="text-sm text-rose-300">
-          Не удалось войти. Закрой и снова открой Mini App. Проверь подключение;
-          демоверсия остаётся доступной.
+          Не удалось сохранить вход. Закрой и снова открой Mini App. Если ошибка
+          повторяется в Telegram Web, открой Voklumi в приложении Telegram на
+          телефоне. Прогресс уже пройденных уроков сохранён на сервере.
         </p>
       </Card>
     ) : null;

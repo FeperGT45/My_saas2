@@ -1,6 +1,7 @@
 // Isolated HTTPS PostgREST fixture + the real production Next server. No auth bypass in app code.
 import { createServer } from 'node:https';
 import { createServer as createTcpServer } from 'node:net';
+import { request as proxyRequest } from 'node:http';
 import { mkdtemp, readFile, readdir, rm, writeFile } from 'node:fs/promises';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -9,7 +10,11 @@ import { generate } from 'selfsigned';
 import { createHash } from 'node:crypto';
 import { PGlite } from '@electric-sql/pglite';
 export async function adminServer(
-  options: { currentCatalog?: boolean; billingWebhook?: boolean } = {},
+  options: {
+    currentCatalog?: boolean;
+    billingWebhook?: boolean;
+    secureOrigin?: boolean;
+  } = {},
 ) {
   const db = new PGlite(),
     dir = await mkdtemp(join(tmpdir(), 'voklumi-admin-'));
@@ -59,7 +64,13 @@ export async function adminServer(
       notAfterDate: new Date(Date.now() + 86400000),
       extensions: [
         { name: 'basicConstraints', cA: true },
-        { name: 'subjectAltName', altNames: [{ type: 7, ip: '127.0.0.1' }] },
+        {
+          name: 'subjectAltName',
+          altNames: [
+            { type: 7, ip: '127.0.0.1' },
+            { type: 2, value: 'localhost' },
+          ],
+        },
       ],
     },
   );
@@ -79,7 +90,16 @@ export async function adminServer(
       try {
         const url = new URL(req.url!, 'https://fixture.test');
         let data: unknown;
-        if (url.pathname === '/rest/v1/telegram_sessions')
+        if (
+          url.pathname === '/rest/v1/telegram_sessions' &&
+          req.method === 'DELETE'
+        ) {
+          await db.query(
+            'DELETE FROM public.telegram_sessions WHERE token_hash=$1',
+            [url.searchParams.get('token_hash')?.slice(3)],
+          );
+          data = null;
+        } else if (url.pathname === '/rest/v1/telegram_sessions')
           data =
             (
               await db.query(
@@ -91,15 +111,36 @@ export async function adminServer(
           data =
             (
               await db.query(
-                'SELECT id,display_name,avatar_url,telegram_id FROM public.users WHERE id=$1',
-                [url.searchParams.get('id')?.slice(3)],
+                `SELECT id,display_name,avatar_url,telegram_id FROM public.users WHERE ${url.searchParams.has('telegram_id') ? 'telegram_id' : 'id'}=$1`,
+                [
+                  (
+                    url.searchParams.get('telegram_id') ??
+                    url.searchParams.get('id')
+                  )?.slice(3),
+                ],
               )
             ).rows[0] ?? null;
         else if (req.method === 'POST') {
           const chunks: Buffer[] = [];
           for await (const chunk of req) chunks.push(Buffer.from(chunk));
           const b = JSON.parse(Buffer.concat(chunks).toString());
-          if (url.pathname === '/rest/v1/rpc/appearance_read')
+          if (url.pathname === '/rest/v1/rpc/create_social_telegram_session')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.create_social_telegram_session($1,$2,$3,$4,$5,$6,$7,$8) AS data',
+                [
+                  b.p_auth_id,
+                  b.p_telegram_id,
+                  b.p_name,
+                  b.p_username,
+                  b.p_avatar,
+                  b.p_token_hash,
+                  b.p_init_hash,
+                  b.p_referral_code,
+                ],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/appearance_read')
             data = (
               await db.query<{ data: unknown }>(
                 'SELECT public.appearance_read($1) AS data',
@@ -485,7 +526,40 @@ export async function adminServer(
   await new Promise<void>((resolve) => socket.listen(0, '127.0.0.1', resolve));
   const port = (socket.address() as { port: number }).port;
   await new Promise<void>((resolve) => socket.close(() => resolve()));
-  const origin = `http://127.0.0.1:${port}`;
+  let front: ReturnType<typeof createServer> | undefined;
+  let origin = `http://127.0.0.1:${port}`;
+  if (options.secureOrigin) {
+    front = createServer(
+      { key: certificate.private, cert: certificate.cert },
+      (req, res) => {
+        const upstream = proxyRequest(
+          {
+            hostname: '127.0.0.1',
+            port,
+            path: req.url,
+            method: req.method,
+            headers: { ...req.headers, 'x-forwarded-proto': 'https' },
+          },
+          (r) => {
+            res.writeHead(r.statusCode ?? 500, r.headers);
+            r.pipe(res);
+          },
+        );
+        upstream.on('error', () => {
+          if (!res.headersSent && !res.destroyed) {
+            res.writeHead(502);
+            res.end();
+          } else if (!res.destroyed) res.destroy();
+        });
+        req.on('aborted', () => upstream.destroy());
+        req.pipe(upstream);
+      },
+    );
+    await new Promise<void>((resolve) =>
+      front!.listen(0, '127.0.0.1', resolve),
+    );
+    origin = `https://127.0.0.1:${(front.address() as { port: number }).port}`;
+  }
   const child = spawn(
     process.execPath,
     [
@@ -507,7 +581,7 @@ export async function adminServer(
         APP_URL: origin,
         TELEGRAM_STARS_PAYMENTS_ENABLED: 'false',
         TELEGRAM_STARS_OWNER_REVIEWED: 'false',
-        ...(options.billingWebhook
+        ...(options.billingWebhook || options.secureOrigin
           ? {
               TELEGRAM_BOT_TOKEN: 'test-token-never-used-for-network',
               TELEGRAM_WEBHOOK_SECRET: 'x'.repeat(32),
@@ -519,6 +593,10 @@ export async function adminServer(
   );
   async function close() {
     child.kill('SIGTERM');
+    if (front) {
+      front.closeAllConnections();
+      await new Promise<void>((resolve) => front!.close(() => resolve()));
+    }
     backend.closeAllConnections();
     await new Promise<void>((resolve) => backend.close(() => resolve()));
     await db.close();
@@ -526,7 +604,7 @@ export async function adminServer(
   }
   for (let i = 0; i < 100; i++) {
     try {
-      const r = await fetch(`${origin}/api/health`);
+      const r = await fetch(`http://127.0.0.1:${port}/api/health`);
       if (r.ok) return { origin, db, tokens, admin, student, close };
     } catch {}
     await new Promise((resolve) => setTimeout(resolve, 100));

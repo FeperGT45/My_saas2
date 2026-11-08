@@ -1,5 +1,7 @@
 # Текущее размещение Voklumi
 
+> Историческая запись от 3 ноября. Актуальные данные библиотеки и схемы: [отчёт релиза](RELEASE-2026-11-09.md). Публикация, откат и восстановление: [инструкция эксплуатации](RELEASE-OPERATIONS.md).
+
 Проверено 3 ноября 2026 года. Адрес: https://voklumi.voklumi67.workers.dev.
 
 GitHub main подключён к Workers Builds. Production build: `npm run build:production`.

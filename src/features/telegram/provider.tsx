@@ -3,6 +3,7 @@ import { createContext, useContext, useEffect, useRef, useState } from 'react';
 import { fetchWithTimeout, readJson } from '@/lib/http/client';
 import { usePathname, useRouter } from 'next/navigation';
 import { isLocalDemo } from '@/config/env';
+import { matchesLaunchAccount } from './session-resume';
 type Account = {
   id: string;
   name: string;
@@ -14,13 +15,13 @@ type TelegramState = {
   status: 'loading' | 'telegram' | 'demo' | 'outside' | 'error';
   account: Account | null;
   authError: boolean;
-  refresh: () => Promise<void>;
+  refresh: () => Promise<Account | null>;
 };
 const TelegramContext = createContext<TelegramState>({
   status: 'loading',
   account: null,
   authError: false,
-  refresh: async () => {},
+  refresh: async () => null,
 });
 export function TelegramProvider({ children }: { children: React.ReactNode }) {
   const [status, setStatus] = useState<TelegramState['status']>('loading');
@@ -35,21 +36,23 @@ export function TelegramProvider({ children }: { children: React.ReactNode }) {
       const response = await fetchWithTimeout('/api/auth/session', {
         cache: 'no-store',
       });
-      if (version !== refreshVersion.current) return;
+      if (version !== refreshVersion.current) return null;
       if (response.status === 401) {
         setAccount(null);
         setAuthError(false);
-        return;
+        return null;
       }
       if (!response.ok) throw new Error();
       const data = await readJson(response);
-      if (version !== refreshVersion.current) return;
+      if (version !== refreshVersion.current) return null;
       setAccount(data.user);
       setAuthError(false);
+      return data.user as Account;
     } catch {
-      if (version !== refreshVersion.current) return;
+      if (version !== refreshVersion.current) return null;
       setAccount(null);
       setAuthError(true);
+      return null;
     }
   }
   useEffect(() => {
@@ -74,6 +77,12 @@ export function TelegramProvider({ children }: { children: React.ReactNode }) {
         setStatus('telegram');
         const initData = sdk.retrieveRawInitData();
         if (!initData) throw new Error();
+        // A valid server session outlives the five-minute initData login window.
+        // A different Telegram account must still pass fresh server signature validation.
+        const existing = await refresh();
+        if (!active) return;
+        if (matchesLaunchAccount(existing, initData)) return;
+        setAccount(null);
         const response = await fetchWithTimeout('/api/auth/telegram', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -83,7 +92,7 @@ export function TelegramProvider({ children }: { children: React.ReactNode }) {
           if (active) setAuthError(true);
           return;
         }
-        if (active) await refresh();
+        if (active && !(await refresh())) setAuthError(true);
       } catch {
         if (active) {
           setStatus('error');

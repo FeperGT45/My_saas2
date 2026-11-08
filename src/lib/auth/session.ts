@@ -4,18 +4,14 @@ import { cookies } from 'next/headers';
 import { createServiceClient } from '@/lib/supabase/service';
 import type { TelegramIdentity } from '@/lib/telegram/validate';
 import { localAuthAllowed, validLocalSession } from './security';
-export const sessionCookie =
-  process.env.NODE_ENV === 'production'
-    ? '__Host-voklumi_session'
-    : 'voklumi_session';
+import { sessionCookieNames, sessionCookieOptions } from './cookie-policy';
+// A separate name avoids collisions between old unpartitioned and new CHIPS cookies.
+export const { name: sessionCookie, legacy: legacySessionCookie } =
+  sessionCookieNames(process.env.NODE_ENV === 'production');
 export const localCookie = 'voklumi_local';
-export const cookieOptions = {
-  httpOnly: true,
-  secure: process.env.NODE_ENV === 'production',
-  sameSite: 'lax' as const,
-  path: '/',
-  maxAge: 86400,
-};
+export const cookieOptions = sessionCookieOptions(
+  process.env.NODE_ENV === 'production',
+);
 export const hashToken = (value: string) =>
   createHash('sha256').update(value).digest('hex');
 export const adminClient = createServiceClient;
@@ -45,7 +41,8 @@ export async function getSessionUser(
       telegramId: null,
       mode: 'local',
     };
-  const token = jar.get(sessionCookie)?.value;
+  const token =
+    jar.get(sessionCookie)?.value ?? jar.get(legacySessionCookie)?.value;
   if (!token || !/^[a-f0-9]{64}$/.test(token)) return null;
   const db = adminClient();
   const { data, error } = await db

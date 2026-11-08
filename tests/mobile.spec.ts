@@ -13,6 +13,14 @@ const routes = [
   '/profile',
   '/friends',
   '/premium',
+  '/premium/terms',
+  '/analytics',
+  '/dictionary',
+  '/stories',
+  '/weak-training',
+  '/challenges',
+  '/appearance',
+  '/extended-test',
   '/admin',
   '/settings',
 ];
@@ -42,9 +50,9 @@ test('navigation follows the real catalog, learning plan and profile screens', a
   await page.goto('/');
   const nav = page.getByRole('navigation');
   for (const [label, path] of [
-    ['Карта', '/learn'],
-    ['Курсы', '/courses'],
-    ['Рейтинг', '/leaderboard'],
+    ['Мои уроки', '/learn'],
+    ['Все уроки', '/courses'],
+    ['Повторение', '/review'],
     ['Профиль', '/profile'],
     ['Главная', '/'],
   ]) {

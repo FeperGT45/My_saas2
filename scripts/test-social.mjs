@@ -129,8 +129,22 @@ try {
     true,
   );
   assert.equal(global.myPosition, 1);
-  for (const row of global.entries)
-    assert.deepEqual(Object.keys(row).sort(), ['alias', 'isMe', 'rank', 'xp']);
+  for (const row of global.entries) {
+    assert.deepEqual(Object.keys(row).sort(), [
+      'alias',
+      'appearance',
+      'isMe',
+      'rank',
+      'xp',
+    ]);
+    assert.deepEqual(row.appearance, {
+      theme: 'base',
+      frame: 'plain',
+      badge: 'none',
+      effect: 'none',
+      decoration: 'none',
+    });
+  }
   assert.equal(JSON.stringify(global).includes('PRIVATE NAME'), false);
   assert.equal(JSON.stringify(global).includes('private.invalid'), false);
   assert.equal(JSON.stringify(global).includes(friend.id), false);
