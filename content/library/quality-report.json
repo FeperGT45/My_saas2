@@ -1,18 +1,18 @@
 {
   "package": "english-path-core",
-  "revision": 8,
+  "revision": 9,
   "summary": {
-    "lessons": 236,
-    "exercises": 2032,
-    "levels": { "A1": 54, "A2": 49, "B1": 48, "B2": 41, "C1": 23, "C2": 21 }
+    "lessons": 248,
+    "exercises": 2140,
+    "levels": { "A1": 56, "A2": 51, "B1": 50, "B2": 43, "C1": 25, "C2": 23 }
   },
   "availability": {
-    "publishedNonAudioFullLessons": 233,
+    "publishedNonAudioFullLessons": 245,
     "archivedAudioLessons": 3,
     "introductoryLessonsIncluded": false,
     "targetFullLessons": 300,
-    "remaining": 67,
-    "byLevel": { "A1": 53, "A2": 48, "B1": 47, "B2": 41, "C1": 23, "C2": 21 },
+    "remaining": 55,
+    "byLevel": { "A1": 55, "A2": 50, "B1": 49, "B2": 43, "C1": 25, "C2": 23 },
     "basis": "Local modular sources after audio retirement; verify production count separately after import."
   },
   "structure": "passed",
@@ -20,19 +20,19 @@
   "gradingCheck": "npm run test:library verifies all positive/negative references with the production SQL grader",
   "methodology": "Author review and automated checks; CEFR labels remain provisional, without external psychometric calibration.",
   "types": {
-    "context_choice": 229,
-    "correction": 227,
-    "dialogue": 222,
+    "context_choice": 241,
+    "correction": 239,
+    "dialogue": 234,
     "dictation": 3,
     "error_identification": 4,
-    "gap": 227,
+    "gap": 239,
     "grammar": 1,
-    "matching": 151,
+    "matching": 163,
     "multiple_choice": 15,
-    "reading": 414,
+    "reading": 438,
     "response_choice": 9,
-    "sentence": 215,
-    "single_choice": 216,
+    "sentence": 227,
+    "single_choice": 228,
     "spelling": 1,
     "synonym_antonym": 8,
     "tenses": 7,
@@ -1929,6 +1929,102 @@
       "types": 8,
       "readingWords": [129, 129],
       "sha256": "811745e0ce59620c856c8bd01eac4168488448f45ea81dde35a89b24313d61fd"
+    },
+    {
+      "key": "a1/open-closed-signs",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [28, 28],
+      "sha256": "54f3b800ab162b98343b27a2f02fbfa144aebfb3ff751a85f4f1492bf973da7f"
+    },
+    {
+      "key": "a1/whose-bag-question",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [30, 30],
+      "sha256": "a7e6e1a74a4c841b9368a26d3c31314fee5bff7ba8f1187fcd8014cf42ccb76e"
+    },
+    {
+      "key": "a2/lend-and-borrow",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [48, 48],
+      "sha256": "b546374088971d944900d0390fa1b7229c88148d8610449775a2401c3643719b"
+    },
+    {
+      "key": "a2/either-of-two",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [48, 48],
+      "sha256": "34490e37fa5d25e26da1d85afdeaf2b19db8d922af63dc10b8f33e6b5655c66a"
+    },
+    {
+      "key": "b1/despite-noun",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [56, 56],
+      "sha256": "5dfa3a2416fe4234021004d309c903e3feefbb22d0795ef0ef48863ce0d4bbdf"
+    },
+    {
+      "key": "b1/until-and-by",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [62, 62],
+      "sha256": "46dddea945a086f2dde022fe82110e2f6ac0fb714e55ccac180a48223304570a"
+    },
+    {
+      "key": "b2/no-longer",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [76, 76],
+      "sha256": "63b3594aa00b508c64feaa678e7c82e7b96cc96325cba6207084283acbceefc7"
+    },
+    {
+      "key": "b2/regret-to-inform",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [77, 77],
+      "sha256": "25b6b3dcb3c6c7cf985931a6d805e719a4c7232a832c8f92bd664032d4883db8"
+    },
+    {
+      "key": "c1/lest-precaution",
+      "level": "C1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [97, 97],
+      "sha256": "107c89cb01ff336cb134489b6c0b1410b5be1051e0ece6542d9d63dd30b1e01c"
+    },
+    {
+      "key": "c1/inasmuch-as-limits",
+      "level": "C1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [101, 101],
+      "sha256": "48b32e9a47e42f53cb20650595b1c815b0b09d8ce29dce2872228b98d52ba5bb"
+    },
+    {
+      "key": "c2/unless-boundary",
+      "level": "C2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [120, 120],
+      "sha256": "420aa22e2d1ac1fb0dffc6f66091c0d9016e37977ad9dde91ecaeb4b6ada8654"
+    },
+    {
+      "key": "c2/quotation-versus-endorsement",
+      "level": "C2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [120, 120],
+      "sha256": "a0f2f150a0bdfc3ef7117f2597503a40e6672ca24478855c597866f137aa0a15"
     }
   ]
 }

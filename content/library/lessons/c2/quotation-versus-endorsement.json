@@ -1,0 +1,342 @@
+{
+  "key": "c2/quotation-versus-endorsement",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика C2 · смысл и границы",
+    "position": 60
+  },
+  "position": 2,
+  "title": "Цитирование и согласие с оценкой",
+  "description": "Цитирование и согласие с оценкой: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "C2",
+  "objectives": [
+    "Отличать приведённую оценку от позиции автора",
+    "Сохранять источник и контекст цитаты"
+  ],
+  "notes": [
+    "Кавычки и reporting clause могут приписывать слова другому человеку.",
+    "Сам факт цитирования не устанавливает согласие автора; позицию проверяют по продолжению."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/unless-boundary"],
+  "lexicon": [
+    {
+      "en": "quotation",
+      "ru": "цитата"
+    },
+    {
+      "en": "endorsement",
+      "ru": "одобрение"
+    },
+    {
+      "en": "attribution",
+      "ru": "указание авторства"
+    },
+    {
+      "en": "rebuttal",
+      "ru": "возражение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “The mayor called it flawless; the reviewer disputed that.” Who endorsed flawless?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v321b0e73cc56",
+            "label": "The mayor."
+          },
+          {
+            "id": "v370e73e37bc1",
+            "label": "The reviewer."
+          },
+          {
+            "id": "v878f094686fd",
+            "label": "Both necessarily."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v321b0e73cc56"
+      },
+      "reference_answer": "v321b0e73cc56",
+      "incorrect_answer": "v370e73e37bc1",
+      "editorial_answer": "The mayor.",
+      "explanation": "Оценка приписана мэру, а рецензент спорит с ней.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: at / to.",
+      "public_payload": {
+        "sentence": "The phrase was attributed ___ the mayor."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "at",
+      "editorial_answer": "The phrase was attributed to the mayor.",
+      "explanation": "Модель указания источника — attributed to.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Цитирование оценки не обязательно означает её одобрение.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "judgement"
+          },
+          {
+            "id": "t4",
+            "label": "does"
+          },
+          {
+            "id": "t5",
+            "label": "not"
+          },
+          {
+            "id": "t6",
+            "label": "necessarily"
+          },
+          {
+            "id": "t7",
+            "label": "endorse"
+          },
+          {
+            "id": "t8",
+            "label": "it."
+          },
+          {
+            "id": "t1",
+            "label": "Quoting"
+          },
+          {
+            "id": "t2",
+            "label": "a"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "Quoting a judgement does not necessarily endorse it.",
+      "explanation": "Нужны источник и окружающий контекст.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The judgement was attributed at the speaker."
+      },
+      "answer_key": {
+        "accepted": ["The judgement was attributed to the speaker."]
+      },
+      "reference_answer": "The judgement was attributed to the speaker.",
+      "incorrect_answer": "The judgement was attributed at the speaker.",
+      "editorial_answer": "The judgement was attributed to the speaker.",
+      "explanation": "При указании источника используется to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кому принадлежала исходная оценка flawless?",
+      "public_payload": {
+        "passage": "A review opened by quoting the organiser’s description of the exhibition as flawless. The following paragraphs questioned that description, pointing to unclear labels and a missing explanation of the central display. A promotional extract reproduced the word flawless beside the reviewer’s name, omitting the attribution and the objections. The reviewer requested its removal. Her article had accurately reported the organiser’s praise before examining it critically; it had not adopted that praise as its own conclusion. Correcting the extract required more than keeping quotation marks around one adjective. Readers needed to know whose judgement it was and how the review treated it. Without that context, an accurate fragment could convey a position opposite to the one developed in the complete article.",
+        "options": [
+          {
+            "id": "v03679a9a87e7",
+            "label": "The reviewer as her final conclusion."
+          },
+          {
+            "id": "v4ad9d61faacf",
+            "label": "Every visitor unanimously."
+          },
+          {
+            "id": "v1e9b3b66a0c4",
+            "label": "The organiser."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1e9b3b66a0c4"
+      },
+      "reference_answer": "v1e9b3b66a0c4",
+      "incorrect_answer": "v03679a9a87e7",
+      "editorial_answer": "The organiser.",
+      "explanation": "Статья приводила слова организатора перед критикой.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "laed5b5524d22",
+            "label": "quotation"
+          },
+          {
+            "id": "l29af7f57b7ba",
+            "label": "endorsement"
+          },
+          {
+            "id": "l39b3b39f0a0c",
+            "label": "attribution"
+          },
+          {
+            "id": "l7f4a679ecf2c",
+            "label": "rebuttal"
+          }
+        ],
+        "right": [
+          {
+            "id": "ra1f4575fc88e",
+            "label": "указание авторства"
+          },
+          {
+            "id": "rb9a358930645",
+            "label": "возражение"
+          },
+          {
+            "id": "ra76cb0e0c1bd",
+            "label": "цитата"
+          },
+          {
+            "id": "r1f10943cb3c8",
+            "label": "одобрение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "laed5b5524d22": "ra76cb0e0c1bd",
+          "l29af7f57b7ba": "r1f10943cb3c8",
+          "l39b3b39f0a0c": "ra1f4575fc88e",
+          "l7f4a679ecf2c": "rb9a358930645"
+        }
+      },
+      "reference_answer": {
+        "laed5b5524d22": "ra76cb0e0c1bd",
+        "l29af7f57b7ba": "r1f10943cb3c8",
+        "l39b3b39f0a0c": "ra1f4575fc88e",
+        "l7f4a679ecf2c": "rb9a358930645"
+      },
+      "incorrect_answer": {
+        "laed5b5524d22": "r1f10943cb3c8",
+        "l29af7f57b7ba": "ra76cb0e0c1bd",
+        "l39b3b39f0a0c": "ra1f4575fc88e",
+        "l7f4a679ecf2c": "rb9a358930645"
+      },
+      "editorial_answer": "quotation — цитата; endorsement — одобрение; attribution — указание авторства; rebuttal — возражение",
+      "explanation": "В этих контекстах: quotation — цитата; endorsement — одобрение; attribution — указание авторства; rebuttal — возражение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему одних кавычек недостаточно?",
+      "public_payload": {
+        "passage": "A review opened by quoting the organiser’s description of the exhibition as flawless. The following paragraphs questioned that description, pointing to unclear labels and a missing explanation of the central display. A promotional extract reproduced the word flawless beside the reviewer’s name, omitting the attribution and the objections. The reviewer requested its removal. Her article had accurately reported the organiser’s praise before examining it critically; it had not adopted that praise as its own conclusion. Correcting the extract required more than keeping quotation marks around one adjective. Readers needed to know whose judgement it was and how the review treated it. Without that context, an accurate fragment could convey a position opposite to the one developed in the complete article.",
+        "options": [
+          {
+            "id": "vdf1c7bfbbe4d",
+            "label": "The source and the critical treatment are also needed."
+          },
+          {
+            "id": "v35003627d076",
+            "label": "Quotation marks guarantee endorsement."
+          },
+          {
+            "id": "v249de832f41f",
+            "label": "Every isolated adjective proves the full argument."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdf1c7bfbbe4d"
+      },
+      "reference_answer": "vdf1c7bfbbe4d",
+      "incorrect_answer": "v35003627d076",
+      "editorial_answer": "The source and the critical treatment are also needed.",
+      "explanation": "Фрагмент без источника и контекста может исказить позицию.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани источник и отношение автора.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can we put the quoted praise beside the reviewer’s name as her verdict?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v1d64d1831eee",
+            "label": "Yes; quoting always means agreement."
+          },
+          {
+            "id": "v50c4f279b825",
+            "label": "Yes; objections cancel attribution automatically."
+          },
+          {
+            "id": "v34dfc3863a31",
+            "label": "No; her article attributed it to someone else and disputed it."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v34dfc3863a31"
+      },
+      "reference_answer": "v34dfc3863a31",
+      "incorrect_answer": "v1d64d1831eee",
+      "editorial_answer": "No; her article attributed it to someone else and disputed it.",
+      "explanation": "Цитирование чужой оценки не передаёт её авторство рецензенту.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Naming the source of a statement is ___.",
+        "options": [
+          {
+            "id": "vcc9b07bbc3b3",
+            "label": "silence"
+          },
+          {
+            "id": "v7dec74cc82dc",
+            "label": "attribution"
+          },
+          {
+            "id": "v0128eeb528bb",
+            "label": "endorsement necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7dec74cc82dc"
+      },
+      "reference_answer": "v7dec74cc82dc",
+      "incorrect_answer": "v0128eeb528bb",
+      "editorial_answer": "attribution",
+      "explanation": "Attribution — указание источника высказывания.",
+      "key": "e09"
+    }
+  ]
+}

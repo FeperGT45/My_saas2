@@ -1,0 +1,327 @@
+{
+  "key": "a1/open-closed-signs",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика A1 · смысл и границы",
+    "position": 60
+  },
+  "position": 1,
+  "title": "Открыто или закрыто",
+  "description": "Открыто или закрыто: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "A1",
+  "objectives": ["Читать таблички open/closed", "Сообщать время открытия"],
+  "notes": [
+    "Open — открытый; closed — закрытый.",
+    "The shop opens at nine описывает время открытия; is open — состояние."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/its-or-it-is"],
+  "lexicon": [
+    {
+      "en": "shop",
+      "ru": "магазин"
+    },
+    {
+      "en": "sign",
+      "ru": "табличка"
+    },
+    {
+      "en": "open",
+      "ru": "открытый"
+    },
+    {
+      "en": "closed",
+      "ru": "закрытый"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The door sign says CLOSED. The shop is ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v5e778ab5dd5f",
+            "label": "closed"
+          },
+          {
+            "id": "v5d94f9900cbe",
+            "label": "open"
+          },
+          {
+            "id": "vfca5ef9ce15e",
+            "label": "a customer"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5e778ab5dd5f"
+      },
+      "reference_answer": "v5e778ab5dd5f",
+      "incorrect_answer": "v5d94f9900cbe",
+      "editorial_answer": "closed",
+      "explanation": "Closed сообщает, что магазин закрыт.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: opens / opening.",
+      "public_payload": {
+        "sentence": "The shop ___ at nine."
+      },
+      "answer_key": {
+        "accepted": ["opens"]
+      },
+      "reference_answer": "opens",
+      "incorrect_answer": "opening",
+      "editorial_answer": "The shop opens at nine.",
+      "explanation": "С the shop в Present Simple используется opens.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Магазин сейчас открыт.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "open"
+          },
+          {
+            "id": "t5",
+            "label": "now."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "shop"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "The shop is open now.",
+      "explanation": "Is open описывает текущее состояние.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The shop open at nine."
+      },
+      "answer_key": {
+        "accepted": ["The shop opens at nine."]
+      },
+      "reference_answer": "The shop opens at nine.",
+      "incorrect_answer": "The shop open at nine.",
+      "editorial_answer": "The shop opens at nine.",
+      "explanation": "В утверждении о времени открытия нужен opens.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Миа ждёт?",
+      "public_payload": {
+        "passage": "The bookshop opens at nine. It is eight now, and the sign says CLOSED. Mia waits in the café next door. She wants a book for her brother.",
+        "options": [
+          {
+            "id": "vb92b8a421fee",
+            "label": "She works in the café."
+          },
+          {
+            "id": "vbf4182ca79f7",
+            "label": "She has no brother."
+          },
+          {
+            "id": "v92234d1c7a73",
+            "label": "The bookshop is not open yet."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v92234d1c7a73"
+      },
+      "reference_answer": "v92234d1c7a73",
+      "incorrect_answer": "vb92b8a421fee",
+      "editorial_answer": "The bookshop is not open yet.",
+      "explanation": "Сейчас восемь, а магазин открывается в девять.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "ld4a474900329",
+            "label": "shop"
+          },
+          {
+            "id": "lee860db8f5a6",
+            "label": "sign"
+          },
+          {
+            "id": "ld5872923be9c",
+            "label": "open"
+          },
+          {
+            "id": "l0dc2b0f665c5",
+            "label": "closed"
+          }
+        ],
+        "right": [
+          {
+            "id": "re931f8b587dd",
+            "label": "открытый"
+          },
+          {
+            "id": "ra881b0fb5f83",
+            "label": "закрытый"
+          },
+          {
+            "id": "r97cb6dfe8898",
+            "label": "магазин"
+          },
+          {
+            "id": "rcefb4f20a111",
+            "label": "табличка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "ld4a474900329": "r97cb6dfe8898",
+          "lee860db8f5a6": "rcefb4f20a111",
+          "ld5872923be9c": "re931f8b587dd",
+          "l0dc2b0f665c5": "ra881b0fb5f83"
+        }
+      },
+      "reference_answer": {
+        "ld4a474900329": "r97cb6dfe8898",
+        "lee860db8f5a6": "rcefb4f20a111",
+        "ld5872923be9c": "re931f8b587dd",
+        "l0dc2b0f665c5": "ra881b0fb5f83"
+      },
+      "incorrect_answer": {
+        "ld4a474900329": "rcefb4f20a111",
+        "lee860db8f5a6": "r97cb6dfe8898",
+        "ld5872923be9c": "re931f8b587dd",
+        "l0dc2b0f665c5": "ra881b0fb5f83"
+      },
+      "editorial_answer": "shop — магазин; sign — табличка; open — открытый; closed — закрытый",
+      "explanation": "В этих контекстах: shop — магазин; sign — табличка; open — открытый; closed — закрытый.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Для кого нужна книга?",
+      "public_payload": {
+        "passage": "The bookshop opens at nine. It is eight now, and the sign says CLOSED. Mia waits in the café next door. She wants a book for her brother.",
+        "options": [
+          {
+            "id": "v6d3c79b22e81",
+            "label": "For her brother."
+          },
+          {
+            "id": "v951c30b92ea3",
+            "label": "For the café owner."
+          },
+          {
+            "id": "v84b6604cac8d",
+            "label": "For every customer."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6d3c79b22e81"
+      },
+      "reference_answer": "v6d3c79b22e81",
+      "incorrect_answer": "v951c30b92ea3",
+      "editorial_answer": "For her brother.",
+      "explanation": "Адресат назван в последнем предложении.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь по тексту.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Is the shop open at eight?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v4ffabe66d6e5",
+            "label": "Yes, it closes at nine."
+          },
+          {
+            "id": "v8b55dac3011b",
+            "label": "No, it opens at seven."
+          },
+          {
+            "id": "vc1bdd8ea0a05",
+            "label": "No, it opens at nine."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc1bdd8ea0a05"
+      },
+      "reference_answer": "vc1bdd8ea0a05",
+      "incorrect_answer": "v4ffabe66d6e5",
+      "editorial_answer": "No, it opens at nine.",
+      "explanation": "В тексте указано открытие в девять.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A notice on a door can be a ___.",
+        "options": [
+          {
+            "id": "v457f106b25a4",
+            "label": "customer"
+          },
+          {
+            "id": "va99b53aec403",
+            "label": "sign"
+          },
+          {
+            "id": "v4f86b67b2156",
+            "label": "brother"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va99b53aec403"
+      },
+      "reference_answer": "va99b53aec403",
+      "incorrect_answer": "v4f86b67b2156",
+      "editorial_answer": "sign",
+      "explanation": "Sign — табличка.",
+      "key": "e09"
+    }
+  ]
+}

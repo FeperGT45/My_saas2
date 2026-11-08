@@ -1,0 +1,334 @@
+{
+  "key": "a2/lend-and-borrow",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика A2 · смысл и границы",
+    "position": 60
+  },
+  "position": 1,
+  "title": "Одолжить: дать или взять",
+  "description": "Одолжить: дать или взять: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "A2",
+  "objectives": [
+    "Различать lend и borrow",
+    "Называть направление передачи предмета"
+  ],
+  "notes": [
+    "Lend something to someone — дать во временное пользование.",
+    "Borrow something from someone — взять во временное пользование."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/prefer-a-to-b"],
+  "lexicon": [
+    {
+      "en": "lend",
+      "ru": "давать взаймы"
+    },
+    {
+      "en": "borrow",
+      "ru": "брать взаймы"
+    },
+    {
+      "en": "return",
+      "ru": "возвращать"
+    },
+    {
+      "en": "charger",
+      "ru": "зарядное устройство"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: May I ___ your charger until lunch?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v0bb231967c9b",
+            "label": "borrow"
+          },
+          {
+            "id": "v29e43b9b1275",
+            "label": "lend"
+          },
+          {
+            "id": "v448e485c0149",
+            "label": "returning"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0bb231967c9b"
+      },
+      "reference_answer": "v0bb231967c9b",
+      "incorrect_answer": "v29e43b9b1275",
+      "editorial_answer": "borrow",
+      "explanation": "Говорящий хочет взять зарядку: borrow.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: to / from.",
+      "public_payload": {
+        "sentence": "I can lend my spare cable ___ you."
+      },
+      "answer_key": {
+        "accepted": ["to"]
+      },
+      "reference_answer": "to",
+      "incorrect_answer": "from",
+      "editorial_answer": "I can lend my spare cable to you.",
+      "explanation": "Lend to указывает получателя.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я взял зарядку у Джо на время.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "a"
+          },
+          {
+            "id": "t4",
+            "label": "charger"
+          },
+          {
+            "id": "t5",
+            "label": "from"
+          },
+          {
+            "id": "t6",
+            "label": "Jo."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "borrowed"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "I borrowed a charger from Jo.",
+      "explanation": "Borrow from показывает, от кого взят предмет.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Jo lend me a spare charger."
+      },
+      "answer_key": {
+        "accepted": ["Jo lends me a spare charger."]
+      },
+      "reference_answer": "Jo lends me a spare charger.",
+      "incorrect_answer": "Jo lend me a spare charger.",
+      "editorial_answer": "Jo lends me a spare charger.",
+      "explanation": "С единственным Jo в настоящем времени используется lends.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто даёт зарядку на время?",
+      "public_payload": {
+        "passage": "Jo has two chargers at work. Kim asks to borrow one because her phone battery is low. Jo lends her the spare charger until lunch. Kim returns it before leaving for the café. Later, Jo needs the same charger for a visitor and finds it on her desk.",
+        "options": [
+          {
+            "id": "vb03f35b9ce52",
+            "label": "Kim’s visitor."
+          },
+          {
+            "id": "v4b5ec2d6685f",
+            "label": "The café owner."
+          },
+          {
+            "id": "veed6db53ea0a",
+            "label": "Jo."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "veed6db53ea0a"
+      },
+      "reference_answer": "veed6db53ea0a",
+      "incorrect_answer": "vb03f35b9ce52",
+      "editorial_answer": "Jo.",
+      "explanation": "Jo lends, а Kim borrows.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l62d0e0038614",
+            "label": "lend"
+          },
+          {
+            "id": "l4c294161b44b",
+            "label": "borrow"
+          },
+          {
+            "id": "lff91f4320c3d",
+            "label": "return"
+          },
+          {
+            "id": "l32c6b05d1ffc",
+            "label": "charger"
+          }
+        ],
+        "right": [
+          {
+            "id": "r22f075651b39",
+            "label": "возвращать"
+          },
+          {
+            "id": "r14c30f53dfd3",
+            "label": "зарядное устройство"
+          },
+          {
+            "id": "r560c5ceb22cb",
+            "label": "давать взаймы"
+          },
+          {
+            "id": "r4b0697bc0436",
+            "label": "брать взаймы"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l62d0e0038614": "r560c5ceb22cb",
+          "l4c294161b44b": "r4b0697bc0436",
+          "lff91f4320c3d": "r22f075651b39",
+          "l32c6b05d1ffc": "r14c30f53dfd3"
+        }
+      },
+      "reference_answer": {
+        "l62d0e0038614": "r560c5ceb22cb",
+        "l4c294161b44b": "r4b0697bc0436",
+        "lff91f4320c3d": "r22f075651b39",
+        "l32c6b05d1ffc": "r14c30f53dfd3"
+      },
+      "incorrect_answer": {
+        "l62d0e0038614": "r4b0697bc0436",
+        "l4c294161b44b": "r560c5ceb22cb",
+        "lff91f4320c3d": "r22f075651b39",
+        "l32c6b05d1ffc": "r14c30f53dfd3"
+      },
+      "editorial_answer": "lend — давать взаймы; borrow — брать взаймы; return — возвращать; charger — зарядное устройство",
+      "explanation": "В этих контекстах: lend — давать взаймы; borrow — брать взаймы; return — возвращать; charger — зарядное устройство.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Вернула ли Ким зарядку?",
+      "public_payload": {
+        "passage": "Jo has two chargers at work. Kim asks to borrow one because her phone battery is low. Jo lends her the spare charger until lunch. Kim returns it before leaving for the café. Later, Jo needs the same charger for a visitor and finds it on her desk.",
+        "options": [
+          {
+            "id": "v6ac0498fcc91",
+            "label": "Yes, before going to the café."
+          },
+          {
+            "id": "v885a22d595e1",
+            "label": "No, she kept both chargers."
+          },
+          {
+            "id": "v389a83fd3cc9",
+            "label": "Only after the visitor left."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6ac0498fcc91"
+      },
+      "reference_answer": "v6ac0498fcc91",
+      "incorrect_answer": "v885a22d595e1",
+      "editorial_answer": "Yes, before going to the café.",
+      "explanation": "Возврат прямо описан до ухода в кафе.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Выбери подходящий ответ на просьбу.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Could you lend me your spare cable?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v97810a6f985c",
+            "label": "Yes, I will borrow it from you yesterday."
+          },
+          {
+            "id": "v04fac5ae0971",
+            "label": "No, lend means keep forever."
+          },
+          {
+            "id": "ve9cfdb0922f4",
+            "label": "Yes, please return it this afternoon."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve9cfdb0922f4"
+      },
+      "reference_answer": "ve9cfdb0922f4",
+      "incorrect_answer": "v97810a6f985c",
+      "editorial_answer": "Yes, please return it this afternoon.",
+      "explanation": "Ответ согласует временную передачу и возврат.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To give an item back is to ___.",
+        "options": [
+          {
+            "id": "ve4814422fa1c",
+            "label": "lose it"
+          },
+          {
+            "id": "v9dc8d34b5c72",
+            "label": "return it"
+          },
+          {
+            "id": "vb49a030aab5c",
+            "label": "borrow it forever"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9dc8d34b5c72"
+      },
+      "reference_answer": "v9dc8d34b5c72",
+      "incorrect_answer": "vb49a030aab5c",
+      "editorial_answer": "return it",
+      "explanation": "Return — вернуть.",
+      "key": "e09"
+    }
+  ]
+}

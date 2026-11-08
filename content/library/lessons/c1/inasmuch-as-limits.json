@@ -1,0 +1,374 @@
+{
+  "key": "c1/inasmuch-as-limits",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика C1 · смысл и границы",
+    "position": 60
+  },
+  "position": 2,
+  "title": "Inasmuch as: в той мере, в какой",
+  "description": "Inasmuch as: в той мере, в какой: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "C1",
+  "objectives": [
+    "Понимать ограничение inasmuch as",
+    "Сохранять явно ограниченную область оценки"
+  ],
+  "notes": [
+    "В данном уроке inasmuch as означает to the extent that — в той мере, в какой.",
+    "У конструкции бывают причинные употребления; значение выбирается по полному контексту."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/lest-precaution"],
+  "lexicon": [
+    {
+      "en": "extent",
+      "ru": "степень"
+    },
+    {
+      "en": "coverage",
+      "ru": "охват"
+    },
+    {
+      "en": "qualification",
+      "ru": "оговорка"
+    },
+    {
+      "en": "criterion",
+      "ru": "критерий"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: In the explicit “to the extent that” sense, inasmuch as limits the ___ of a claim.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v3bdf77c66e3c",
+            "label": "scope"
+          },
+          {
+            "id": "v512f8c95025a",
+            "label": "alphabet"
+          },
+          {
+            "id": "vffe132c7c115",
+            "label": "speaker’s name"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3bdf77c66e3c"
+      },
+      "reference_answer": "v3bdf77c66e3c",
+      "incorrect_answer": "v512f8c95025a",
+      "editorial_answer": "scope",
+      "explanation": "В заданном значении конструкция ограничивает область утверждения.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: than / that.",
+      "public_payload": {
+        "sentence": "The review is useful to the extent ___ it covers our needs."
+      },
+      "answer_key": {
+        "accepted": ["that"]
+      },
+      "reference_answer": "that",
+      "incorrect_answer": "than",
+      "editorial_answer": "The review is useful to the extent that it covers our needs.",
+      "explanation": "Устойчивая форма — to the extent that.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Отчёт полезен в той мере, в какой отвечает на наш вопрос.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "useful"
+          },
+          {
+            "id": "t5",
+            "label": "inasmuch"
+          },
+          {
+            "id": "t6",
+            "label": "as"
+          },
+          {
+            "id": "t7",
+            "label": "it"
+          },
+          {
+            "id": "t8",
+            "label": "addresses"
+          },
+          {
+            "id": "t9",
+            "label": "our"
+          },
+          {
+            "id": "t10",
+            "label": "question."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "report"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "The report is useful inasmuch as it addresses our question.",
+      "explanation": "Здесь оценка прямо ограничена поставленным вопросом.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The report is useful to the extent than it addresses the question."
+      },
+      "answer_key": {
+        "accepted": [
+          "The report is useful to the extent that it addresses the question."
+        ]
+      },
+      "reference_answer": "The report is useful to the extent that it addresses the question.",
+      "incorrect_answer": "The report is useful to the extent than it addresses the question.",
+      "editorial_answer": "The report is useful to the extent that it addresses the question.",
+      "explanation": "В этой конструкции требуется that.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как контекст определял inasmuch as?",
+      "public_payload": {
+        "passage": "The panel described a report as useful inasmuch as it addressed the narrow question under review. The surrounding paragraph explicitly defined the phrase as meaning to the extent that, then listed several wider questions the report did not consider. A summary removed the qualification and called it a comprehensive assessment. The panel objected: usefulness for a specified purpose did not establish comprehensive coverage. Its correction did not deny that the report helped with the original question. It restored the limited basis of that positive judgement and kept the unexamined questions visible for future work rather than treating them as already settled.",
+        "options": [
+          {
+            "id": "v650519af5249",
+            "label": "As a claim of complete coverage."
+          },
+          {
+            "id": "vcf4b792d0d77",
+            "label": "As a denial of any usefulness."
+          },
+          {
+            "id": "vf78aebea522e",
+            "label": "As to the extent that."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf78aebea522e"
+      },
+      "reference_answer": "vf78aebea522e",
+      "incorrect_answer": "v650519af5249",
+      "editorial_answer": "As to the extent that.",
+      "explanation": "Значение явно задано окружающим абзацем.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "le4bd9b036809",
+            "label": "extent"
+          },
+          {
+            "id": "l9557fdacd557",
+            "label": "coverage"
+          },
+          {
+            "id": "l557d390be0c6",
+            "label": "qualification"
+          },
+          {
+            "id": "lb50485d0074e",
+            "label": "criterion"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb1938cc62a07",
+            "label": "оговорка"
+          },
+          {
+            "id": "r5a87f3f5d1fb",
+            "label": "критерий"
+          },
+          {
+            "id": "rae893df0affe",
+            "label": "степень"
+          },
+          {
+            "id": "r4f131c713309",
+            "label": "охват"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "le4bd9b036809": "rae893df0affe",
+          "l9557fdacd557": "r4f131c713309",
+          "l557d390be0c6": "rb1938cc62a07",
+          "lb50485d0074e": "r5a87f3f5d1fb"
+        }
+      },
+      "reference_answer": {
+        "le4bd9b036809": "rae893df0affe",
+        "l9557fdacd557": "r4f131c713309",
+        "l557d390be0c6": "rb1938cc62a07",
+        "lb50485d0074e": "r5a87f3f5d1fb"
+      },
+      "incorrect_answer": {
+        "le4bd9b036809": "r4f131c713309",
+        "l9557fdacd557": "rae893df0affe",
+        "l557d390be0c6": "rb1938cc62a07",
+        "lb50485d0074e": "r5a87f3f5d1fb"
+      },
+      "editorial_answer": "extent — степень; coverage — охват; qualification — оговорка; criterion — критерий",
+      "explanation": "В этих контекстах: extent — степень; coverage — охват; qualification — оговорка; criterion — критерий.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что исказило слово comprehensive в резюме?",
+      "public_payload": {
+        "passage": "The panel described a report as useful inasmuch as it addressed the narrow question under review. The surrounding paragraph explicitly defined the phrase as meaning to the extent that, then listed several wider questions the report did not consider. A summary removed the qualification and called it a comprehensive assessment. The panel objected: usefulness for a specified purpose did not establish comprehensive coverage. Its correction did not deny that the report helped with the original question. It restored the limited basis of that positive judgement and kept the unexamined questions visible for future work rather than treating them as already settled.",
+        "options": [
+          {
+            "id": "va8cec13133a0",
+            "label": "It extended a limited judgement to broader coverage."
+          },
+          {
+            "id": "v99749e02e110",
+            "label": "It preserved all the original limits."
+          },
+          {
+            "id": "v20c439ae7c52",
+            "label": "It proved the narrow question was irrelevant."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va8cec13133a0"
+      },
+      "reference_answer": "va8cec13133a0",
+      "incorrect_answer": "v99749e02e110",
+      "editorial_answer": "It extended a limited judgement to broader coverage.",
+      "explanation": "Ограниченная полезность не устанавливает полноту охвата.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани область положительной оценки.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "May we call a narrowly useful report comprehensive?"
+          }
+        ],
+        "options": [
+          {
+            "id": "veaa39671ad8a",
+            "label": "Yes, usefulness always proves completeness."
+          },
+          {
+            "id": "v4e8be825ebe1",
+            "label": "Yes, inasmuch as erases every limit."
+          },
+          {
+            "id": "v9c76c1155545",
+            "label": "Only with separate support for that wider coverage."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9c76c1155545"
+      },
+      "reference_answer": "v9c76c1155545",
+      "incorrect_answer": "veaa39671ad8a",
+      "editorial_answer": "Only with separate support for that wider coverage.",
+      "explanation": "Для более широкого вывода нужны отдельные основания.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "How much of a subject a report includes is its ___.",
+        "options": [
+          {
+            "id": "v322e6dc31b38",
+            "label": "author’s identity"
+          },
+          {
+            "id": "vf40626adb3f2",
+            "label": "coverage"
+          },
+          {
+            "id": "v3099d1bf7e46",
+            "label": "certainty necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf40626adb3f2"
+      },
+      "reference_answer": "vf40626adb3f2",
+      "incorrect_answer": "v3099d1bf7e46",
+      "editorial_answer": "coverage",
+      "explanation": "Coverage — охват темы.",
+      "key": "e09"
+    }
+  ]
+}

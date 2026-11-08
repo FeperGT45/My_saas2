@@ -1,0 +1,372 @@
+{
+  "key": "b2/regret-to-inform",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика B2 · смысл и границы",
+    "position": 60
+  },
+  "position": 2,
+  "title": "Regret: сообщение и сожаление о прошлом",
+  "description": "Regret: сообщение и сожаление о прошлом: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "B2",
+  "objectives": [
+    "Различать regret to inform и regret doing",
+    "Определять, к какому действию относится сожаление"
+  ],
+  "notes": [
+    "We regret to inform you — формальное вступление к неприятному сообщению.",
+    "I regret sharing it — сожаление о выполненном действии."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/no-longer"],
+  "lexicon": [
+    {
+      "en": "regret",
+      "ru": "сожаление"
+    },
+    {
+      "en": "notification",
+      "ru": "уведомление"
+    },
+    {
+      "en": "disclosure",
+      "ru": "разглашение"
+    },
+    {
+      "en": "replacement",
+      "ru": "замена"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: We regret ___ you that the visit is cancelled.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v8a4a57a201be",
+            "label": "to inform"
+          },
+          {
+            "id": "v05a0b2c956e3",
+            "label": "inform to"
+          },
+          {
+            "id": "vc7290bf1c3e2",
+            "label": "to informing"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8a4a57a201be"
+      },
+      "reference_answer": "v8a4a57a201be",
+      "incorrect_answer": "v05a0b2c956e3",
+      "editorial_answer": "to inform",
+      "explanation": "Regret to inform — формула неприятного уведомления.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: to shared / sharing.",
+      "public_payload": {
+        "sentence": "I regret ___ the unfinished draft yesterday."
+      },
+      "answer_key": {
+        "accepted": ["sharing"]
+      },
+      "reference_answer": "sharing",
+      "incorrect_answer": "to shared",
+      "editorial_answer": "I regret sharing the unfinished draft yesterday.",
+      "explanation": "О прошлом действии после regret здесь нужна форма sharing.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «С сожалением сообщаем, что визит отменён.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "to"
+          },
+          {
+            "id": "t4",
+            "label": "inform"
+          },
+          {
+            "id": "t5",
+            "label": "you"
+          },
+          {
+            "id": "t6",
+            "label": "that"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "visit"
+          },
+          {
+            "id": "t9",
+            "label": "is"
+          },
+          {
+            "id": "t10",
+            "label": "cancelled."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "regret"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "We regret to inform you that the visit is cancelled.",
+      "explanation": "Это формальное уведомление о неприятной новости.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "We regret to informing you of the change."
+      },
+      "answer_key": {
+        "accepted": ["We regret to inform you of the change."]
+      },
+      "reference_answer": "We regret to inform you of the change.",
+      "incorrect_answer": "We regret to informing you of the change.",
+      "editorial_answer": "We regret to inform you of the change.",
+      "explanation": "После to в этой формуле нужен inform.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что вводило письмо музея?",
+      "public_payload": {
+        "passage": "The museum wrote that it regretted to inform visitors of a cancelled tour. One reader assumed the message meant the museum regretted having sent an earlier announcement. The organiser clarified the difference. This was a formal introduction to disappointing news, not a statement about an earlier disclosure. In a separate note, a guide said she regretted sharing an unfinished timetable the previous day. That sentence did refer to a past action. The two expressions needed different summaries.",
+        "options": [
+          {
+            "id": "v78e4b920de58",
+            "label": "A confession about sending an earlier announcement."
+          },
+          {
+            "id": "v61f13b75a8a7",
+            "label": "A guarantee of an extra tour."
+          },
+          {
+            "id": "v2e7ff33d9dfa",
+            "label": "Disappointing news about a cancelled tour."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2e7ff33d9dfa"
+      },
+      "reference_answer": "v2e7ff33d9dfa",
+      "incorrect_answer": "v78e4b920de58",
+      "editorial_answer": "Disappointing news about a cancelled tour.",
+      "explanation": "Regret to inform вводит текущее неприятное сообщение.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lde464fa6ea4e",
+            "label": "regret"
+          },
+          {
+            "id": "ld90cdcbc1d55",
+            "label": "notification"
+          },
+          {
+            "id": "l87cfdd85a75f",
+            "label": "disclosure"
+          },
+          {
+            "id": "ld9eb86c4fd83",
+            "label": "replacement"
+          }
+        ],
+        "right": [
+          {
+            "id": "r01b24b9da555",
+            "label": "разглашение"
+          },
+          {
+            "id": "r45e81116d604",
+            "label": "замена"
+          },
+          {
+            "id": "r35737c97cad5",
+            "label": "сожаление"
+          },
+          {
+            "id": "r26f37a4b290e",
+            "label": "уведомление"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lde464fa6ea4e": "r35737c97cad5",
+          "ld90cdcbc1d55": "r26f37a4b290e",
+          "l87cfdd85a75f": "r01b24b9da555",
+          "ld9eb86c4fd83": "r45e81116d604"
+        }
+      },
+      "reference_answer": {
+        "lde464fa6ea4e": "r35737c97cad5",
+        "ld90cdcbc1d55": "r26f37a4b290e",
+        "l87cfdd85a75f": "r01b24b9da555",
+        "ld9eb86c4fd83": "r45e81116d604"
+      },
+      "incorrect_answer": {
+        "lde464fa6ea4e": "r26f37a4b290e",
+        "ld90cdcbc1d55": "r35737c97cad5",
+        "l87cfdd85a75f": "r01b24b9da555",
+        "ld9eb86c4fd83": "r45e81116d604"
+      },
+      "editorial_answer": "regret — сожаление; notification — уведомление; disclosure — разглашение; replacement — замена",
+      "explanation": "В этих контекстах: regret — сожаление; notification — уведомление; disclosure — разглашение; replacement — замена.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое действие из прошлого упомянула гид?",
+      "public_payload": {
+        "passage": "The museum wrote that it regretted to inform visitors of a cancelled tour. One reader assumed the message meant the museum regretted having sent an earlier announcement. The organiser clarified the difference. This was a formal introduction to disappointing news, not a statement about an earlier disclosure. In a separate note, a guide said she regretted sharing an unfinished timetable the previous day. That sentence did refer to a past action. The two expressions needed different summaries.",
+        "options": [
+          {
+            "id": "v14a8e25beab0",
+            "label": "Sharing an unfinished timetable."
+          },
+          {
+            "id": "v17a1719749b8",
+            "label": "Completing every tour."
+          },
+          {
+            "id": "vb7661be719d5",
+            "label": "Withdrawing all messages before sending them."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v14a8e25beab0"
+      },
+      "reference_answer": "v14a8e25beab0",
+      "incorrect_answer": "v17a1719749b8",
+      "editorial_answer": "Sharing an unfinished timetable.",
+      "explanation": "В отдельной заметке regret sharing относится к уже выполненной передаче.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Используй форму формального сообщения.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "How do you introduce disappointing news formally?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vdca971c86f9f",
+            "label": "We regret to informing you."
+          },
+          {
+            "id": "vfbb56e7fbe0a",
+            "label": "We regret informed to you."
+          },
+          {
+            "id": "va5d037253c82",
+            "label": "We regret to inform you of the cancellation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va5d037253c82"
+      },
+      "reference_answer": "va5d037253c82",
+      "incorrect_answer": "vdca971c86f9f",
+      "editorial_answer": "We regret to inform you of the cancellation.",
+      "explanation": "Нужен инфинитив to inform.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Giving information to others can be a ___.",
+        "options": [
+          {
+            "id": "vefa0326b5162",
+            "label": "silence necessarily"
+          },
+          {
+            "id": "v640510f1e27d",
+            "label": "disclosure"
+          },
+          {
+            "id": "v776d4f395919",
+            "label": "replacement object"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v640510f1e27d"
+      },
+      "reference_answer": "v640510f1e27d",
+      "incorrect_answer": "v776d4f395919",
+      "editorial_answer": "disclosure",
+      "explanation": "Disclosure — раскрытие или разглашение информации.",
+      "key": "e09"
+    }
+  ]
+}

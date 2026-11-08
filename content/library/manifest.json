@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "packageId": "english-path-core",
-  "revision": 8,
+  "revision": 9,
   "language": "en",
   "interfaceLocale": "ru",
   "courses": [
@@ -284,6 +284,18 @@
     "lessons/c2/up-to-ceiling.json",
     "lessons/c2/changed-operational-definition.json",
     "lessons/c2/some-and-all-context.json",
-    "lessons/c2/unconvinced-versus-refuted.json"
+    "lessons/c2/unconvinced-versus-refuted.json",
+    "lessons/a1/open-closed-signs.json",
+    "lessons/a1/whose-bag-question.json",
+    "lessons/a2/lend-and-borrow.json",
+    "lessons/a2/either-of-two.json",
+    "lessons/b1/despite-noun.json",
+    "lessons/b1/until-and-by.json",
+    "lessons/b2/no-longer.json",
+    "lessons/b2/regret-to-inform.json",
+    "lessons/c1/lest-precaution.json",
+    "lessons/c1/inasmuch-as-limits.json",
+    "lessons/c2/unless-boundary.json",
+    "lessons/c2/quotation-versus-endorsement.json"
   ]
 }

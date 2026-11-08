@@ -1,0 +1,334 @@
+{
+  "key": "b1/despite-noun",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика B1 · смысл и границы",
+    "position": 60
+  },
+  "position": 1,
+  "title": "Despite: препятствие и результат",
+  "description": "Despite: препятствие и результат: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Строить despite с именной группой",
+    "Сохранять уступительное отношение"
+  ],
+  "notes": [
+    "Despite the rain — несмотря на дождь, без of.",
+    "Despite не означает, что препятствие отсутствовало или стало причиной успеха."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/because-of-reason"],
+  "lexicon": [
+    {
+      "en": "despite",
+      "ru": "несмотря на"
+    },
+    {
+      "en": "obstacle",
+      "ru": "препятствие"
+    },
+    {
+      "en": "attendance",
+      "ru": "посещаемость"
+    },
+    {
+      "en": "shelter",
+      "ru": "укрытие"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The outdoor event continued ___ the rain.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v01570a50e760",
+            "label": "despite"
+          },
+          {
+            "id": "v53ae489f90ba",
+            "label": "despite of"
+          },
+          {
+            "id": "v2b9048078af2",
+            "label": "although of"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v01570a50e760"
+      },
+      "reference_answer": "v01570a50e760",
+      "incorrect_answer": "v53ae489f90ba",
+      "editorial_answer": "despite",
+      "explanation": "Перед именной группой rain используется despite без of.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: rain / rained.",
+      "public_payload": {
+        "sentence": "Despite the ___, most people stayed."
+      },
+      "answer_key": {
+        "accepted": ["rain"]
+      },
+      "reference_answer": "rain",
+      "incorrect_answer": "rained",
+      "editorial_answer": "Despite the rain, most people stayed.",
+      "explanation": "The rain — именная группа после despite.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Несмотря на дождь, мероприятие продолжилось.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "rain,"
+          },
+          {
+            "id": "t4",
+            "label": "the"
+          },
+          {
+            "id": "t5",
+            "label": "event"
+          },
+          {
+            "id": "t6",
+            "label": "continued."
+          },
+          {
+            "id": "t1",
+            "label": "Despite"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Despite the rain, the event continued.",
+      "explanation": "Дождь сохраняется как обстоятельство вопреки результату.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Despite of the delay, we finished."
+      },
+      "answer_key": {
+        "accepted": ["Despite the delay, we finished."]
+      },
+      "reference_answer": "Despite the delay, we finished.",
+      "incorrect_answer": "Despite of the delay, we finished.",
+      "editorial_answer": "Despite the delay, we finished.",
+      "explanation": "После despite не нужен of.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что помогло посетителям остаться?",
+      "public_payload": {
+        "passage": "Despite the rain, most visitors stayed for the outdoor exhibition. Volunteers moved the smaller displays under a shelter and offered dry seats. The report praised their response, but did not claim that the weather helped attendance. Rain remained a difficulty that the organisers worked around. Next year, they plan to prepare the covered area before opening.",
+        "options": [
+          {
+            "id": "v66384dc5060c",
+            "label": "A guarantee of sunny weather."
+          },
+          {
+            "id": "v324147018532",
+            "label": "The cancellation of the exhibition."
+          },
+          {
+            "id": "v57960913e610",
+            "label": "Covered displays and dry seats."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v57960913e610"
+      },
+      "reference_answer": "v57960913e610",
+      "incorrect_answer": "v66384dc5060c",
+      "editorial_answer": "Covered displays and dry seats.",
+      "explanation": "Волонтёры приспособили пространство к дождю.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l1c5a73faed7d",
+            "label": "despite"
+          },
+          {
+            "id": "l3be46318c9f5",
+            "label": "obstacle"
+          },
+          {
+            "id": "l0eb0869bb85b",
+            "label": "attendance"
+          },
+          {
+            "id": "lc8f7660585e0",
+            "label": "shelter"
+          }
+        ],
+        "right": [
+          {
+            "id": "r70e686abbbf9",
+            "label": "посещаемость"
+          },
+          {
+            "id": "r4334036d641f",
+            "label": "укрытие"
+          },
+          {
+            "id": "rd115436fe92f",
+            "label": "несмотря на"
+          },
+          {
+            "id": "rc45dce64433e",
+            "label": "препятствие"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l1c5a73faed7d": "rd115436fe92f",
+          "l3be46318c9f5": "rc45dce64433e",
+          "l0eb0869bb85b": "r70e686abbbf9",
+          "lc8f7660585e0": "r4334036d641f"
+        }
+      },
+      "reference_answer": {
+        "l1c5a73faed7d": "rd115436fe92f",
+        "l3be46318c9f5": "rc45dce64433e",
+        "l0eb0869bb85b": "r70e686abbbf9",
+        "lc8f7660585e0": "r4334036d641f"
+      },
+      "incorrect_answer": {
+        "l1c5a73faed7d": "rc45dce64433e",
+        "l3be46318c9f5": "rd115436fe92f",
+        "l0eb0869bb85b": "r70e686abbbf9",
+        "lc8f7660585e0": "r4334036d641f"
+      },
+      "editorial_answer": "despite — несмотря на; obstacle — препятствие; attendance — посещаемость; shelter — укрытие",
+      "explanation": "В этих контекстах: despite — несмотря на; obstacle — препятствие; attendance — посещаемость; shelter — укрытие.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что отчёт НЕ утверждал?",
+      "public_payload": {
+        "passage": "Despite the rain, most visitors stayed for the outdoor exhibition. Volunteers moved the smaller displays under a shelter and offered dry seats. The report praised their response, but did not claim that the weather helped attendance. Rain remained a difficulty that the organisers worked around. Next year, they plan to prepare the covered area before opening.",
+        "options": [
+          {
+            "id": "v79c92d406581",
+            "label": "That rain helped attendance."
+          },
+          {
+            "id": "v5dcdcba896fd",
+            "label": "That rain occurred."
+          },
+          {
+            "id": "vd4a1e5740874",
+            "label": "That volunteers responded."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v79c92d406581"
+      },
+      "reference_answer": "v79c92d406581",
+      "incorrect_answer": "v5dcdcba896fd",
+      "editorial_answer": "That rain helped attendance.",
+      "explanation": "Текст прямо отделяет успешную реакцию от пользы дождя.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани уступку.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Did “despite the rain” mean there was no rain?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vd4b04eb857c9",
+            "label": "Yes, despite means absence."
+          },
+          {
+            "id": "ved8a8b4eb675",
+            "label": "Yes, it proves a dry day."
+          },
+          {
+            "id": "vdc799e8f4750",
+            "label": "No, the event continued although rain was a difficulty."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdc799e8f4750"
+      },
+      "reference_answer": "vdc799e8f4750",
+      "incorrect_answer": "vd4b04eb857c9",
+      "editorial_answer": "No, the event continued although rain was a difficulty.",
+      "explanation": "Despite не отрицает препятствие.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A covered place protecting people from rain is a ___.",
+        "options": [
+          {
+            "id": "v76bc0b41bb27",
+            "label": "delay"
+          },
+          {
+            "id": "vfec340201f2c",
+            "label": "shelter"
+          },
+          {
+            "id": "v675c1984190b",
+            "label": "forecast only"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfec340201f2c"
+      },
+      "reference_answer": "vfec340201f2c",
+      "incorrect_answer": "v675c1984190b",
+      "editorial_answer": "shelter",
+      "explanation": "Shelter — укрытие.",
+      "key": "e09"
+    }
+  ]
+}

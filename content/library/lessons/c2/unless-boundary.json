@@ -1,0 +1,342 @@
+{
+  "key": "c2/unless-boundary",
+  "course": "path-c2",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика C2 · смысл и границы",
+    "position": 60
+  },
+  "position": 1,
+  "title": "Unless: исключение без обратной гарантии",
+  "description": "Unless: исключение без обратной гарантии: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "C2",
+  "objectives": [
+    "Передавать условное исключение",
+    "Не приписывать правилу неуказанное обратное следствие"
+  ],
+  "notes": [
+    "В данном правиле unless вводит исключение: без указанного условия доступ закрыт.",
+    "Разрешение рассмотреть исключение не обязательно гарантирует доступ: читай остальные условия."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/unconvinced-versus-refuted"],
+  "lexicon": [
+    {
+      "en": "exception",
+      "ru": "исключение"
+    },
+    {
+      "en": "authorisation",
+      "ru": "разрешение"
+    },
+    {
+      "en": "restriction",
+      "ru": "ограничение"
+    },
+    {
+      "en": "entitlement",
+      "ru": "право на получение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: “No access unless authorised; capacity limits also apply.” Does authorisation guarantee entry?",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v041f1111798a",
+            "label": "No; the stated capacity limit still applies."
+          },
+          {
+            "id": "v5f3c3e2f017a",
+            "label": "Yes; unless cancels every other condition."
+          },
+          {
+            "id": "vcfc4586ce2ac",
+            "label": "Yes; authorisation means unlimited space."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v041f1111798a"
+      },
+      "reference_answer": "v041f1111798a",
+      "incorrect_answer": "v5f3c3e2f017a",
+      "editorial_answer": "No; the stated capacity limit still applies.",
+      "explanation": "Нужно сохранить оба явно названных ограничения.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: is / are.",
+      "public_payload": {
+        "sentence": "Access is restricted unless authorisation ___ granted."
+      },
+      "answer_key": {
+        "accepted": ["is"]
+      },
+      "reference_answer": "is",
+      "incorrect_answer": "are",
+      "editorial_answer": "Access is restricted unless authorisation is granted.",
+      "explanation": "С единственным authorisation используется is.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Разрешение не отменяет указанное ограничение вместимости.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "not"
+          },
+          {
+            "id": "t4",
+            "label": "remove"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "stated"
+          },
+          {
+            "id": "t7",
+            "label": "capacity"
+          },
+          {
+            "id": "t8",
+            "label": "limit."
+          },
+          {
+            "id": "t1",
+            "label": "Authorisation"
+          },
+          {
+            "id": "t2",
+            "label": "does"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "Authorisation does not remove the stated capacity limit.",
+      "explanation": "Исключение к одному запрету не отменяет другое условие.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Authorisation do not remove the capacity limit."
+      },
+      "answer_key": {
+        "accepted": ["Authorisation does not remove the capacity limit."]
+      },
+      "reference_answer": "Authorisation does not remove the capacity limit.",
+      "incorrect_answer": "Authorisation do not remove the capacity limit.",
+      "editorial_answer": "Authorisation does not remove the capacity limit.",
+      "explanation": "С единственным authorisation требуется does not.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что разрешение меняло?",
+      "public_payload": {
+        "passage": "The archive notice stated that nobody could enter the storage room unless authorised by the curator. The next sentence added that capacity limits still applied to authorised visitors. One researcher obtained authorisation and assumed that entry at any chosen time was therefore guaranteed. The curator explained that the exception removed one barrier, not every possible restriction. When the room was full, authorised visitors still had to wait. This did not make authorisation irrelevant: without it, they could not enter under the stated rule even when space was available. A faithful account had to preserve both the exception and the continuing limit. Reading unless as a promise of unrestricted entry would add an entitlement that the complete notice had never offered.",
+        "options": [
+          {
+            "id": "v10f87007a5b9",
+            "label": "It guaranteed entry regardless of space."
+          },
+          {
+            "id": "vf7cda6b36d61",
+            "label": "It made the notice irrelevant to everyone."
+          },
+          {
+            "id": "v41e08bf1b75d",
+            "label": "It removed one barrier while capacity limits remained."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v41e08bf1b75d"
+      },
+      "reference_answer": "v41e08bf1b75d",
+      "incorrect_answer": "v10f87007a5b9",
+      "editorial_answer": "It removed one barrier while capacity limits remained.",
+      "explanation": "Исключение касалось допуска, но не вместимости.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc5de0f9af362",
+            "label": "exception"
+          },
+          {
+            "id": "l9192ab4248ee",
+            "label": "authorisation"
+          },
+          {
+            "id": "le7fe1ab9c383",
+            "label": "restriction"
+          },
+          {
+            "id": "l394d4479d751",
+            "label": "entitlement"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1dbffd1c4d5c",
+            "label": "ограничение"
+          },
+          {
+            "id": "r9deea5a60a1b",
+            "label": "право на получение"
+          },
+          {
+            "id": "r980790f8b110",
+            "label": "исключение"
+          },
+          {
+            "id": "ra8c022e8905f",
+            "label": "разрешение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc5de0f9af362": "r980790f8b110",
+          "l9192ab4248ee": "ra8c022e8905f",
+          "le7fe1ab9c383": "r1dbffd1c4d5c",
+          "l394d4479d751": "r9deea5a60a1b"
+        }
+      },
+      "reference_answer": {
+        "lc5de0f9af362": "r980790f8b110",
+        "l9192ab4248ee": "ra8c022e8905f",
+        "le7fe1ab9c383": "r1dbffd1c4d5c",
+        "l394d4479d751": "r9deea5a60a1b"
+      },
+      "incorrect_answer": {
+        "lc5de0f9af362": "ra8c022e8905f",
+        "l9192ab4248ee": "r980790f8b110",
+        "le7fe1ab9c383": "r1dbffd1c4d5c",
+        "l394d4479d751": "r9deea5a60a1b"
+      },
+      "editorial_answer": "exception — исключение; authorisation — разрешение; restriction — ограничение; entitlement — право на получение",
+      "explanation": "В этих контекстах: exception — исключение; authorisation — разрешение; restriction — ограничение; entitlement — право на получение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Можно ли входить без разрешения при свободном месте?",
+      "public_payload": {
+        "passage": "The archive notice stated that nobody could enter the storage room unless authorised by the curator. The next sentence added that capacity limits still applied to authorised visitors. One researcher obtained authorisation and assumed that entry at any chosen time was therefore guaranteed. The curator explained that the exception removed one barrier, not every possible restriction. When the room was full, authorised visitors still had to wait. This did not make authorisation irrelevant: without it, they could not enter under the stated rule even when space was available. A faithful account had to preserve both the exception and the continuing limit. Reading unless as a promise of unrestricted entry would add an entitlement that the complete notice had never offered.",
+        "options": [
+          {
+            "id": "vbdad846d0393",
+            "label": "No, not under the stated rule."
+          },
+          {
+            "id": "vdd0d864e6069",
+            "label": "Yes, capacity is the only rule."
+          },
+          {
+            "id": "v110328bea4d3",
+            "label": "Yes, unless means authorisation is irrelevant."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbdad846d0393"
+      },
+      "reference_answer": "vbdad846d0393",
+      "incorrect_answer": "vdd0d864e6069",
+      "editorial_answer": "No, not under the stated rule.",
+      "explanation": "Свободное место не отменяет первое условие.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Учти весь текст правила.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Why must an authorised visitor wait when the room is full?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v9af1c1bba0d9",
+            "label": "Authorisation guarantees immediate entry."
+          },
+          {
+            "id": "vfc55d2405b78",
+            "label": "Unless erases the next sentence."
+          },
+          {
+            "id": "v64fc8e146509",
+            "label": "The notice explicitly retains capacity limits."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v64fc8e146509"
+      },
+      "reference_answer": "v64fc8e146509",
+      "incorrect_answer": "v9af1c1bba0d9",
+      "editorial_answer": "The notice explicitly retains capacity limits.",
+      "explanation": "Второе условие прямо сохранено.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A departure allowed from a general restriction is an ___.",
+        "options": [
+          {
+            "id": "v2e5cc7ef845b",
+            "label": "unlimited guarantee"
+          },
+          {
+            "id": "v8f8e9845f62e",
+            "label": "exception"
+          },
+          {
+            "id": "v16dda2dcb546",
+            "label": "automatic entitlement to everything"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8f8e9845f62e"
+      },
+      "reference_answer": "v8f8e9845f62e",
+      "incorrect_answer": "v16dda2dcb546",
+      "editorial_answer": "exception",
+      "explanation": "Exception — исключение к правилу.",
+      "key": "e09"
+    }
+  ]
+}

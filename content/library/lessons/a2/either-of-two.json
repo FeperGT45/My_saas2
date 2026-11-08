@@ -1,0 +1,334 @@
+{
+  "key": "a2/either-of-two",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика A2 · смысл и границы",
+    "position": 60
+  },
+  "position": 2,
+  "title": "Любой из двух вариантов",
+  "description": "Любой из двух вариантов: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "A2",
+  "objectives": [
+    "Использовать either о двух вариантах",
+    "Отличать свободный выбор от обязательности обоих"
+  ],
+  "notes": [
+    "Either day is fine — подходит любой из двух дней.",
+    "Это разрешает выбрать один; оба одновременно не требуются."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/lend-and-borrow"],
+  "lexicon": [
+    {
+      "en": "either",
+      "ru": "любой из двух"
+    },
+    {
+      "en": "available",
+      "ru": "доступный"
+    },
+    {
+      "en": "arrangement",
+      "ru": "договорённость"
+    },
+    {
+      "en": "choose",
+      "ru": "выбирать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Tuesday or Friday? — ___ day is fine; please choose one.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vb02625023dbe",
+            "label": "Either"
+          },
+          {
+            "id": "ve6686bb3c079",
+            "label": "Every both"
+          },
+          {
+            "id": "v2a459c84139e",
+            "label": "Neither of is"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb02625023dbe"
+      },
+      "reference_answer": "vb02625023dbe",
+      "incorrect_answer": "ve6686bb3c079",
+      "editorial_answer": "Either",
+      "explanation": "Either допускает любой из двух дней.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: are / is.",
+      "public_payload": {
+        "sentence": "Either room ___ available."
+      },
+      "answer_key": {
+        "accepted": ["is"]
+      },
+      "reference_answer": "is",
+      "incorrect_answer": "are",
+      "editorial_answer": "Either room is available.",
+      "explanation": "С either room используется единственное is.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Мне подходит любой из двух дней.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "fine"
+          },
+          {
+            "id": "t5",
+            "label": "for"
+          },
+          {
+            "id": "t6",
+            "label": "me."
+          },
+          {
+            "id": "t1",
+            "label": "Either"
+          },
+          {
+            "id": "t2",
+            "label": "day"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Either day is fine for me.",
+      "explanation": "Фраза допускает один из двух вариантов.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Either room are available."
+      },
+      "answer_key": {
+        "accepted": ["Either room is available."]
+      },
+      "reference_answer": "Either room is available.",
+      "incorrect_answer": "Either room are available.",
+      "editorial_answer": "Either room is available.",
+      "explanation": "Either room согласуется с is.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой день выбрал организатор?",
+      "public_payload": {
+        "passage": "The club offers a meeting on Tuesday or Friday. Amir says either day is fine because he has no classes on those days. The organiser chooses Friday and sends one invitation. Amir does not need to attend twice. When Tuesday becomes busy, the agreed Friday meeting remains unchanged.",
+        "options": [
+          {
+            "id": "vc109404a9b7c",
+            "label": "Tuesday."
+          },
+          {
+            "id": "v63960bb34616",
+            "label": "Both days for two meetings."
+          },
+          {
+            "id": "v1107d4e12a47",
+            "label": "Friday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1107d4e12a47"
+      },
+      "reference_answer": "v1107d4e12a47",
+      "incorrect_answer": "vc109404a9b7c",
+      "editorial_answer": "Friday.",
+      "explanation": "В договорённости закреплена пятница.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc28f7d994935",
+            "label": "either"
+          },
+          {
+            "id": "lc5a967da8ca5",
+            "label": "available"
+          },
+          {
+            "id": "l6a74a41b49f9",
+            "label": "arrangement"
+          },
+          {
+            "id": "l2384a793ec8c",
+            "label": "choose"
+          }
+        ],
+        "right": [
+          {
+            "id": "r6ca8649a2b01",
+            "label": "договорённость"
+          },
+          {
+            "id": "r812ce060d535",
+            "label": "выбирать"
+          },
+          {
+            "id": "r7eab95fe5d1a",
+            "label": "любой из двух"
+          },
+          {
+            "id": "rf2c078693fa8",
+            "label": "доступный"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc28f7d994935": "r7eab95fe5d1a",
+          "lc5a967da8ca5": "rf2c078693fa8",
+          "l6a74a41b49f9": "r6ca8649a2b01",
+          "l2384a793ec8c": "r812ce060d535"
+        }
+      },
+      "reference_answer": {
+        "lc28f7d994935": "r7eab95fe5d1a",
+        "lc5a967da8ca5": "rf2c078693fa8",
+        "l6a74a41b49f9": "r6ca8649a2b01",
+        "l2384a793ec8c": "r812ce060d535"
+      },
+      "incorrect_answer": {
+        "lc28f7d994935": "rf2c078693fa8",
+        "lc5a967da8ca5": "r7eab95fe5d1a",
+        "l6a74a41b49f9": "r6ca8649a2b01",
+        "l2384a793ec8c": "r812ce060d535"
+      },
+      "editorial_answer": "either — любой из двух; available — доступный; arrangement — договорённость; choose — выбирать",
+      "explanation": "В этих контекстах: either — любой из двух; available — доступный; arrangement — договорённость; choose — выбирать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Амиру не нужно приходить дважды?",
+      "public_payload": {
+        "passage": "The club offers a meeting on Tuesday or Friday. Amir says either day is fine because he has no classes on those days. The organiser chooses Friday and sends one invitation. Amir does not need to attend twice. When Tuesday becomes busy, the agreed Friday meeting remains unchanged.",
+        "options": [
+          {
+            "id": "v470bca942db4",
+            "label": "Either allowed a choice of one day."
+          },
+          {
+            "id": "v7a270c030de0",
+            "label": "He cancelled every invitation."
+          },
+          {
+            "id": "vc8fdf11cdf62",
+            "label": "Friday is never available."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v470bca942db4"
+      },
+      "reference_answer": "v470bca942db4",
+      "incorrect_answer": "v7a270c030de0",
+      "editorial_answer": "Either allowed a choice of one day.",
+      "explanation": "Оба варианта подходили, но выбрали один.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Предложи свободный выбор из двух.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "We have a small room and a large room. Which can we use?"
+          }
+        ],
+        "options": [
+          {
+            "id": "va4ae38781c63",
+            "label": "Either room are available."
+          },
+          {
+            "id": "v00c64641721e",
+            "label": "Either means both must be used."
+          },
+          {
+            "id": "v2dde2049dfaf",
+            "label": "Either room is available; choose one."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2dde2049dfaf"
+      },
+      "reference_answer": "v2dde2049dfaf",
+      "incorrect_answer": "va4ae38781c63",
+      "editorial_answer": "Either room is available; choose one.",
+      "explanation": "Either room is передаёт нужный смысл и согласование.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To select one option is to ___.",
+        "options": [
+          {
+            "id": "v5d2c1c597be7",
+            "label": "attend twice"
+          },
+          {
+            "id": "vc1ee17617014",
+            "label": "choose"
+          },
+          {
+            "id": "v3b4bc18ea275",
+            "label": "cancel both necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc1ee17617014"
+      },
+      "reference_answer": "vc1ee17617014",
+      "incorrect_answer": "v3b4bc18ea275",
+      "editorial_answer": "choose",
+      "explanation": "Choose — выбрать.",
+      "key": "e09"
+    }
+  ]
+}

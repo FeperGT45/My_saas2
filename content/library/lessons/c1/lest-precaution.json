@@ -1,0 +1,366 @@
+{
+  "key": "c1/lest-precaution",
+  "course": "path-c1",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика C1 · смысл и границы",
+    "position": 60
+  },
+  "position": 1,
+  "title": "Lest: формальное предостережение",
+  "description": "Lest: формальное предостережение: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "C1",
+  "objectives": [
+    "Понимать lest как отрицательную цель",
+    "Использовать lest should в формальном контексте"
+  ],
+  "notes": [
+    "Lest readers should misunderstand — чтобы читатели не поняли неправильно.",
+    "Lest уже выражает нежелательность результата; дополнительное not может изменить смысл."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c1/parallel-reporting"],
+  "lexicon": [
+    {
+      "en": "lest",
+      "ru": "чтобы не"
+    },
+    {
+      "en": "precaution",
+      "ru": "мера предосторожности"
+    },
+    {
+      "en": "misread",
+      "ru": "неверно прочесть"
+    },
+    {
+      "en": "annotation",
+      "ru": "примечание"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The editor added a note lest readers ___ mistake the example for a rule.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vbe622b67c026",
+            "label": "should"
+          },
+          {
+            "id": "vd9b4ad567ada",
+            "label": "to should"
+          },
+          {
+            "id": "v918c7fe0abbf",
+            "label": "should to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbe622b67c026"
+      },
+      "reference_answer": "vbe622b67c026",
+      "incorrect_answer": "vd9b4ad567ada",
+      "editorial_answer": "should",
+      "explanation": "В целевой формальной модели lest следует should с начальной формой.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: misread / misreading.",
+      "public_payload": {
+        "sentence": "A note was added lest readers should ___ the example."
+      },
+      "answer_key": {
+        "accepted": ["misread"]
+      },
+      "reference_answer": "misread",
+      "incorrect_answer": "misreading",
+      "editorial_answer": "A note was added lest readers should misread the example.",
+      "explanation": "После should нужна начальная форма misread.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Редактор добавил примечание, чтобы читатели не поняли неправильно.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "added"
+          },
+          {
+            "id": "t4",
+            "label": "a"
+          },
+          {
+            "id": "t5",
+            "label": "note"
+          },
+          {
+            "id": "t6",
+            "label": "lest"
+          },
+          {
+            "id": "t7",
+            "label": "readers"
+          },
+          {
+            "id": "t8",
+            "label": "should"
+          },
+          {
+            "id": "t9",
+            "label": "misunderstand."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "editor"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t1"
+      ],
+      "editorial_answer": "The editor added a note lest readers should misunderstand.",
+      "explanation": "Lest вводит предотвращаемый результат.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She added a note lest readers should to misunderstand."
+      },
+      "answer_key": {
+        "accepted": ["She added a note lest readers should misunderstand."]
+      },
+      "reference_answer": "She added a note lest readers should misunderstand.",
+      "incorrect_answer": "She added a note lest readers should to misunderstand.",
+      "editorial_answer": "She added a note lest readers should misunderstand.",
+      "explanation": "После should убирается to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую ошибку хотели предотвратить?",
+      "public_payload": {
+        "passage": "The editor retained a short annotation lest readers should mistake a fictional case for a documented event. A colleague suggested removing the note because the example already sounded plausible. That plausibility was precisely why the annotation mattered. The editor was taking a precaution against misunderstanding; she was not reporting that every reader had already made the mistake. Nor was she trying to prevent readers from understanding the example. The final version kept both the example and its status clearly visible. This preserved the educational purpose while giving readers the information they needed to interpret the case accurately.",
+        "options": [
+          {
+            "id": "v4d0ad67fc871",
+            "label": "Recognising that the example was fictional."
+          },
+          {
+            "id": "vfaeb7bef60a3",
+            "label": "Reading the annotation carefully."
+          },
+          {
+            "id": "v13de9c8c423b",
+            "label": "Taking a fictional case for a documented event."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v13de9c8c423b"
+      },
+      "reference_answer": "v13de9c8c423b",
+      "incorrect_answer": "v4d0ad67fc871",
+      "editorial_answer": "Taking a fictional case for a documented event.",
+      "explanation": "Примечание уточняло вымышленный статус примера.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lbffa54820196",
+            "label": "lest"
+          },
+          {
+            "id": "l911f89c2fbe9",
+            "label": "precaution"
+          },
+          {
+            "id": "ld485b28ad43e",
+            "label": "misread"
+          },
+          {
+            "id": "l68f643b81c91",
+            "label": "annotation"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3315f2f9e7ea",
+            "label": "неверно прочесть"
+          },
+          {
+            "id": "r04896d7f6e30",
+            "label": "примечание"
+          },
+          {
+            "id": "r4d3a1141fabf",
+            "label": "чтобы не"
+          },
+          {
+            "id": "r044cf8ab94ed",
+            "label": "мера предосторожности"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lbffa54820196": "r4d3a1141fabf",
+          "l911f89c2fbe9": "r044cf8ab94ed",
+          "ld485b28ad43e": "r3315f2f9e7ea",
+          "l68f643b81c91": "r04896d7f6e30"
+        }
+      },
+      "reference_answer": {
+        "lbffa54820196": "r4d3a1141fabf",
+        "l911f89c2fbe9": "r044cf8ab94ed",
+        "ld485b28ad43e": "r3315f2f9e7ea",
+        "l68f643b81c91": "r04896d7f6e30"
+      },
+      "incorrect_answer": {
+        "lbffa54820196": "r044cf8ab94ed",
+        "l911f89c2fbe9": "r4d3a1141fabf",
+        "ld485b28ad43e": "r3315f2f9e7ea",
+        "l68f643b81c91": "r04896d7f6e30"
+      },
+      "editorial_answer": "lest — чтобы не; precaution — мера предосторожности; misread — неверно прочесть; annotation — примечание",
+      "explanation": "В этих контекстах: lest — чтобы не; precaution — мера предосторожности; misread — неверно прочесть; annotation — примечание.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Доказывает ли предосторожность уже совершённую всеми ошибку?",
+      "public_payload": {
+        "passage": "The editor retained a short annotation lest readers should mistake a fictional case for a documented event. A colleague suggested removing the note because the example already sounded plausible. That plausibility was precisely why the annotation mattered. The editor was taking a precaution against misunderstanding; she was not reporting that every reader had already made the mistake. Nor was she trying to prevent readers from understanding the example. The final version kept both the example and its status clearly visible. This preserved the educational purpose while giving readers the information they needed to interpret the case accurately.",
+        "options": [
+          {
+            "id": "vc3961fcacab2",
+            "label": "No; it identifies a misunderstanding to prevent."
+          },
+          {
+            "id": "v7337b2a0c3ee",
+            "label": "Yes; every reader had been tested."
+          },
+          {
+            "id": "vc35cb153530e",
+            "label": "Yes; the editor recorded unanimous confusion."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc3961fcacab2"
+      },
+      "reference_answer": "vc3961fcacab2",
+      "incorrect_answer": "v7337b2a0c3ee",
+      "editorial_answer": "No; it identifies a misunderstanding to prevent.",
+      "explanation": "Цель профилактическая, не отчёт о проверенных реакциях всех.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Используй lest с указанной формой should.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Why keep the label on a plausible fictional example?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v72a9af09ed63",
+            "label": "Lest readers should to understand it."
+          },
+          {
+            "id": "v3b5052ab9c9a",
+            "label": "Because plausibility proves historical truth."
+          },
+          {
+            "id": "v598fa4c9538c",
+            "label": "Lest readers should treat it as a verified event."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v598fa4c9538c"
+      },
+      "reference_answer": "v598fa4c9538c",
+      "incorrect_answer": "v72a9af09ed63",
+      "editorial_answer": "Lest readers should treat it as a verified event.",
+      "explanation": "Фраза сохраняет предотвращаемое неверное прочтение.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An action taken to avoid a possible problem is a ___.",
+        "options": [
+          {
+            "id": "ved7cc4100813",
+            "label": "guarantee of confusion"
+          },
+          {
+            "id": "vbf5f6ae60dae",
+            "label": "precaution"
+          },
+          {
+            "id": "va1e4ac7572bb",
+            "label": "proof of a past error"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbf5f6ae60dae"
+      },
+      "reference_answer": "vbf5f6ae60dae",
+      "incorrect_answer": "va1e4ac7572bb",
+      "editorial_answer": "precaution",
+      "explanation": "Precaution — предосторожность.",
+      "key": "e09"
+    }
+  ]
+}

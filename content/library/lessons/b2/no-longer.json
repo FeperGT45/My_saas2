@@ -1,0 +1,338 @@
+{
+  "key": "b2/no-longer",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика B2 · смысл и границы",
+    "position": 60
+  },
+  "position": 1,
+  "title": "No longer: изменившееся положение",
+  "description": "No longer: изменившееся положение: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "B2",
+  "objectives": [
+    "Использовать no longer в утверждении",
+    "Не терять временное сравнение с прошлым"
+  ],
+  "notes": [
+    "The route is no longer available означает, что прежняя доступность прекратилась.",
+    "No longer уже содержит отрицательный смысл; дополнительное not здесь не требуется."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/negative-purpose"],
+  "lexicon": [
+    {
+      "en": "discontinue",
+      "ru": "прекращать"
+    },
+    {
+      "en": "replacement",
+      "ru": "замена"
+    },
+    {
+      "en": "previously",
+      "ru": "ранее"
+    },
+    {
+      "en": "availability",
+      "ru": "доступность"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The evening route has been discontinued. It is ___ available.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v5ca03857abce",
+            "label": "no longer"
+          },
+          {
+            "id": "v29091ff7f598",
+            "label": "not no longer"
+          },
+          {
+            "id": "vf9843557b323",
+            "label": "longer no"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5ca03857abce"
+      },
+      "reference_answer": "v5ca03857abce",
+      "incorrect_answer": "v29091ff7f598",
+      "editorial_answer": "no longer",
+      "explanation": "No longer сообщает о прекращении прежнего состояния.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: longer / longest.",
+      "public_payload": {
+        "sentence": "This entrance is no ___ in use."
+      },
+      "answer_key": {
+        "accepted": ["longer"]
+      },
+      "reference_answer": "longer",
+      "incorrect_answer": "longest",
+      "editorial_answer": "This entrance is no longer in use.",
+      "explanation": "Устойчивая форма — no longer.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Вечерняя услуга больше не доступна.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "service"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "no"
+          },
+          {
+            "id": "t6",
+            "label": "longer"
+          },
+          {
+            "id": "t7",
+            "label": "available."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "evening"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The evening service is no longer available.",
+      "explanation": "Фраза связывает нынешнее отсутствие с изменением прежнего положения.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The entrance is not no longer in use."
+      },
+      "answer_key": {
+        "accepted": ["The entrance is no longer in use."]
+      },
+      "reference_answer": "The entrance is no longer in use.",
+      "incorrect_answer": "The entrance is not no longer in use.",
+      "editorial_answer": "The entrance is no longer in use.",
+      "explanation": "Убираем второе отрицание, сохраняя смысл прекращения использования.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что произошло с вечерним маршрутом?",
+      "public_payload": {
+        "passage": "The information page said that the evening bus service was no longer available. Several visitors read the notice as meaning there had never been an evening route. The transport office clarified that it had operated until the previous month, when the timetable changed. A replacement daytime service remained available, but did not serve everyone who had relied on evening travel. The corrected summary preserved both the historical service and the current limitation instead of erasing either.",
+        "options": [
+          {
+            "id": "v6ece066996dd",
+            "label": "It had never existed."
+          },
+          {
+            "id": "va73b715b6c29",
+            "label": "It now ran every evening."
+          },
+          {
+            "id": "v1638e0c674a7",
+            "label": "It operated before but had recently stopped."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1638e0c674a7"
+      },
+      "reference_answer": "v1638e0c674a7",
+      "incorrect_answer": "v6ece066996dd",
+      "editorial_answer": "It operated before but had recently stopped.",
+      "explanation": "No longer сохраняет противопоставление прошлой и нынешней ситуации.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l826df6e47efe",
+            "label": "discontinue"
+          },
+          {
+            "id": "l3b00c3f98b0a",
+            "label": "replacement"
+          },
+          {
+            "id": "l8f1627f5ccf3",
+            "label": "previously"
+          },
+          {
+            "id": "lb9b1db32173a",
+            "label": "availability"
+          }
+        ],
+        "right": [
+          {
+            "id": "rbb3f61799ef6",
+            "label": "ранее"
+          },
+          {
+            "id": "r218f712afe81",
+            "label": "доступность"
+          },
+          {
+            "id": "r5ac55c64b65d",
+            "label": "прекращать"
+          },
+          {
+            "id": "r25b5c7aec561",
+            "label": "замена"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l826df6e47efe": "r5ac55c64b65d",
+          "l3b00c3f98b0a": "r25b5c7aec561",
+          "l8f1627f5ccf3": "rbb3f61799ef6",
+          "lb9b1db32173a": "r218f712afe81"
+        }
+      },
+      "reference_answer": {
+        "l826df6e47efe": "r5ac55c64b65d",
+        "l3b00c3f98b0a": "r25b5c7aec561",
+        "l8f1627f5ccf3": "rbb3f61799ef6",
+        "lb9b1db32173a": "r218f712afe81"
+      },
+      "incorrect_answer": {
+        "l826df6e47efe": "r25b5c7aec561",
+        "l3b00c3f98b0a": "r5ac55c64b65d",
+        "l8f1627f5ccf3": "rbb3f61799ef6",
+        "lb9b1db32173a": "r218f712afe81"
+      },
+      "editorial_answer": "discontinue — прекращать; replacement — замена; previously — ранее; availability — доступность",
+      "explanation": "В этих контекстах: discontinue — прекращать; replacement — замена; previously — ранее; availability — доступность.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему дневная замена не решала все проблемы?",
+      "public_payload": {
+        "passage": "The information page said that the evening bus service was no longer available. Several visitors read the notice as meaning there had never been an evening route. The transport office clarified that it had operated until the previous month, when the timetable changed. A replacement daytime service remained available, but did not serve everyone who had relied on evening travel. The corrected summary preserved both the historical service and the current limitation instead of erasing either.",
+        "options": [
+          {
+            "id": "v1fc1a0cb6759",
+            "label": "Some users needed evening travel."
+          },
+          {
+            "id": "v5d8291a575f9",
+            "label": "It had no passengers in history."
+          },
+          {
+            "id": "vf93e492a022a",
+            "label": "It proved the evening route still ran."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1fc1a0cb6759"
+      },
+      "reference_answer": "v1fc1a0cb6759",
+      "incorrect_answer": "v5d8291a575f9",
+      "editorial_answer": "Some users needed evening travel.",
+      "explanation": "Другой период обслуживания подходит не всем прежним пассажирам.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Уточни временной смысл.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does “no longer” erase the earlier service?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v60eccd3c3fcf",
+            "label": "Yes, it means never existed."
+          },
+          {
+            "id": "vfaa9a3bbe429",
+            "label": "Yes, it proves permanent future closure."
+          },
+          {
+            "id": "v9673f3b7cfd1",
+            "label": "No, it marks a change from the previous situation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9673f3b7cfd1"
+      },
+      "reference_answer": "v9673f3b7cfd1",
+      "incorrect_answer": "v60eccd3c3fcf",
+      "editorial_answer": "No, it marks a change from the previous situation.",
+      "explanation": "Текущее прекращение не стирает прошлое.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "To stop providing a service is to ___ it.",
+        "options": [
+          {
+            "id": "vcacb1a2e6201",
+            "label": "extend automatically"
+          },
+          {
+            "id": "vf0e17b740f3d",
+            "label": "discontinue"
+          },
+          {
+            "id": "va20ca05a9603",
+            "label": "guarantee"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf0e17b740f3d"
+      },
+      "reference_answer": "vf0e17b740f3d",
+      "incorrect_answer": "va20ca05a9603",
+      "editorial_answer": "discontinue",
+      "explanation": "Discontinue — прекратить предоставление.",
+      "key": "e09"
+    }
+  ]
+}

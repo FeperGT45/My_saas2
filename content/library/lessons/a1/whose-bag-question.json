@@ -1,0 +1,331 @@
+{
+  "key": "a1/whose-bag-question",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика A1 · смысл и границы",
+    "position": 60
+  },
+  "position": 2,
+  "title": "Чья это сумка",
+  "description": "Чья это сумка: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "A1",
+  "objectives": ["Задавать вопрос Whose", "Отличать владельца от предмета"],
+  "notes": [
+    "Whose bag? — чья сумка?",
+    "Whose спрашивает о принадлежности; who — о человеке."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/open-closed-signs"],
+  "lexicon": [
+    {
+      "en": "owner",
+      "ru": "владелец"
+    },
+    {
+      "en": "bag",
+      "ru": "сумка"
+    },
+    {
+      "en": "coat",
+      "ru": "пальто"
+    },
+    {
+      "en": "label",
+      "ru": "ярлык"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: ___ bag is this? — It is Nina’s.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v3f45306d5fc9",
+            "label": "Whose"
+          },
+          {
+            "id": "v70c67894085a",
+            "label": "Where"
+          },
+          {
+            "id": "ve6b5e0661e5b",
+            "label": "When"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3f45306d5fc9"
+      },
+      "reference_answer": "v3f45306d5fc9",
+      "incorrect_answer": "v70c67894085a",
+      "editorial_answer": "Whose",
+      "explanation": "Ответ о владельце требует Whose.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: are / is.",
+      "public_payload": {
+        "sentence": "Whose coat ___ this?"
+      },
+      "answer_key": {
+        "accepted": ["is"]
+      },
+      "reference_answer": "is",
+      "incorrect_answer": "are",
+      "editorial_answer": "Whose coat is this?",
+      "explanation": "This coat — единственное число.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Чья сумка на стуле?»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "on"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "chair?"
+          },
+          {
+            "id": "t1",
+            "label": "Whose"
+          },
+          {
+            "id": "t2",
+            "label": "bag"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "Whose bag is on the chair?",
+      "explanation": "Whose задаёт вопрос о владельце.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "Whose bag are this?"
+      },
+      "answer_key": {
+        "accepted": ["Whose bag is this?"]
+      },
+      "reference_answer": "Whose bag is this?",
+      "incorrect_answer": "Whose bag are this?",
+      "editorial_answer": "Whose bag is this?",
+      "explanation": "С единственным bag и this используется is.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кому принадлежит сумка?",
+      "public_payload": {
+        "passage": "A blue bag is on the chair. Its label says Nina. A black coat is next to it. The coat is Tom’s. Nina takes her bag and leaves the coat.",
+        "options": [
+          {
+            "id": "va840e2291fdd",
+            "label": "Tom."
+          },
+          {
+            "id": "v54eef8e15c3f",
+            "label": "The chair."
+          },
+          {
+            "id": "v2d25cd57f0d6",
+            "label": "Nina."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2d25cd57f0d6"
+      },
+      "reference_answer": "v2d25cd57f0d6",
+      "incorrect_answer": "va840e2291fdd",
+      "editorial_answer": "Nina.",
+      "explanation": "На ярлыке имя Нины.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l16b37e247b7d",
+            "label": "owner"
+          },
+          {
+            "id": "ld31b20885675",
+            "label": "bag"
+          },
+          {
+            "id": "le3d39b94b1e3",
+            "label": "coat"
+          },
+          {
+            "id": "lebbba055e2c8",
+            "label": "label"
+          }
+        ],
+        "right": [
+          {
+            "id": "rde9a379e8d01",
+            "label": "пальто"
+          },
+          {
+            "id": "rfa5e79203cf3",
+            "label": "ярлык"
+          },
+          {
+            "id": "r01ee2d66fea2",
+            "label": "владелец"
+          },
+          {
+            "id": "r81245a49cba6",
+            "label": "сумка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l16b37e247b7d": "r01ee2d66fea2",
+          "ld31b20885675": "r81245a49cba6",
+          "le3d39b94b1e3": "rde9a379e8d01",
+          "lebbba055e2c8": "rfa5e79203cf3"
+        }
+      },
+      "reference_answer": {
+        "l16b37e247b7d": "r01ee2d66fea2",
+        "ld31b20885675": "r81245a49cba6",
+        "le3d39b94b1e3": "rde9a379e8d01",
+        "lebbba055e2c8": "rfa5e79203cf3"
+      },
+      "incorrect_answer": {
+        "l16b37e247b7d": "r81245a49cba6",
+        "ld31b20885675": "r01ee2d66fea2",
+        "le3d39b94b1e3": "rde9a379e8d01",
+        "lebbba055e2c8": "rfa5e79203cf3"
+      },
+      "editorial_answer": "owner — владелец; bag — сумка; coat — пальто; label — ярлык",
+      "explanation": "В этих контекстах: owner — владелец; bag — сумка; coat — пальто; label — ярлык.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Нина оставляет?",
+      "public_payload": {
+        "passage": "A blue bag is on the chair. Its label says Nina. A black coat is next to it. The coat is Tom’s. Nina takes her bag and leaves the coat.",
+        "options": [
+          {
+            "id": "vd6b46be3703b",
+            "label": "The black coat."
+          },
+          {
+            "id": "v2370a0a0e152",
+            "label": "Her blue bag."
+          },
+          {
+            "id": "v440eb4108941",
+            "label": "Every label."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd6b46be3703b"
+      },
+      "reference_answer": "vd6b46be3703b",
+      "incorrect_answer": "v2370a0a0e152",
+      "editorial_answer": "The black coat.",
+      "explanation": "Она забирает сумку, но оставляет пальто Тома.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Назови владельца пальто из текста.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Whose coat is it?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v6dafb32fac11",
+            "label": "It is blue."
+          },
+          {
+            "id": "vaa5a9b2abfce",
+            "label": "It is next to the chair."
+          },
+          {
+            "id": "vc39daacb5091",
+            "label": "It is Tom’s."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc39daacb5091"
+      },
+      "reference_answer": "vc39daacb5091",
+      "incorrect_answer": "v6dafb32fac11",
+      "editorial_answer": "It is Tom’s.",
+      "explanation": "Tom’s выражает принадлежность Тому.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The person something belongs to is its ___.",
+        "options": [
+          {
+            "id": "v565835a00d8c",
+            "label": "label"
+          },
+          {
+            "id": "v44015911556a",
+            "label": "owner"
+          },
+          {
+            "id": "vbb7c57e0154a",
+            "label": "colour"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v44015911556a"
+      },
+      "reference_answer": "v44015911556a",
+      "incorrect_answer": "vbb7c57e0154a",
+      "editorial_answer": "owner",
+      "explanation": "Owner — владелец.",
+      "key": "e09"
+    }
+  ]
+}

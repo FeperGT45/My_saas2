@@ -1,0 +1,330 @@
+{
+  "key": "b1/until-and-by",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-08",
+    "title": "Практика B1 · смысл и границы",
+    "position": 60
+  },
+  "position": 2,
+  "title": "До какого момента или не позднее",
+  "description": "До какого момента или не позднее: словарь, грамматическая модель и авторский текст с разбором смысла и объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Различать until и by",
+    "Сообщать срок возврата и длительность пользования"
+  ],
+  "notes": [
+    "Keep it until Friday — хранить до пятницы.",
+    "Return it by Friday — вернуть не позднее пятницы; раньше тоже можно."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/despite-noun"],
+  "lexicon": [
+    {
+      "en": "deadline",
+      "ru": "крайний срок"
+    },
+    {
+      "en": "retain",
+      "ru": "сохранять у себя"
+    },
+    {
+      "en": "extension",
+      "ru": "продление"
+    },
+    {
+      "en": "due",
+      "ru": "подлежащий возврату"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Please return the form ___ Monday; Friday is also acceptable.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v3fde406c550e",
+            "label": "by"
+          },
+          {
+            "id": "v48ff0cd277d9",
+            "label": "until for"
+          },
+          {
+            "id": "v3e6c03eda64f",
+            "label": "during to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3fde406c550e"
+      },
+      "reference_answer": "v3fde406c550e",
+      "incorrect_answer": "v48ff0cd277d9",
+      "editorial_answer": "by",
+      "explanation": "By задаёт крайний срок и допускает более ранний возврат.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: by of / until.",
+      "public_payload": {
+        "sentence": "You can keep the key ___ Friday."
+      },
+      "answer_key": {
+        "accepted": ["until"]
+      },
+      "reference_answer": "until",
+      "incorrect_answer": "by of",
+      "editorial_answer": "You can keep the key until Friday.",
+      "explanation": "Until обозначает предел продолжающегося состояния.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Верните ключ не позднее пятницы.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "key"
+          },
+          {
+            "id": "t4",
+            "label": "by"
+          },
+          {
+            "id": "t5",
+            "label": "Friday."
+          },
+          {
+            "id": "t1",
+            "label": "Return"
+          },
+          {
+            "id": "t2",
+            "label": "the"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "Return the key by Friday.",
+      "explanation": "By допускает возврат раньше пятницы.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "You can keep the book until to Friday."
+      },
+      "answer_key": {
+        "accepted": ["You can keep the book until Friday."]
+      },
+      "reference_answer": "You can keep the book until Friday.",
+      "incorrect_answer": "You can keep the book until to Friday.",
+      "editorial_answer": "You can keep the book until Friday.",
+      "explanation": "После until перед днём недели не нужен to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему возврат в среду допустим?",
+      "public_payload": {
+        "passage": "The library lets Ella keep a reference book until Friday, but asks her to return it by closing time that day. She finishes her work on Wednesday and brings it back then. The librarian accepts it. The permission covered the remaining days; it did not require her to retain the book for the full period or wait until Friday to return it.",
+        "options": [
+          {
+            "id": "v5aeb937fe3d0",
+            "label": "Friday was already over."
+          },
+          {
+            "id": "v05023086a868",
+            "label": "The book had no return date."
+          },
+          {
+            "id": "v01fe15b81129",
+            "label": "The deadline allowed an earlier return."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v01fe15b81129"
+      },
+      "reference_answer": "v01fe15b81129",
+      "incorrect_answer": "v5aeb937fe3d0",
+      "editorial_answer": "The deadline allowed an earlier return.",
+      "explanation": "Крайний срок не требует ждать последнего дня.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l546ecbd73837",
+            "label": "deadline"
+          },
+          {
+            "id": "l22abaef7aa95",
+            "label": "retain"
+          },
+          {
+            "id": "l88c6a54e0b1b",
+            "label": "extension"
+          },
+          {
+            "id": "l4b7a9e2cc291",
+            "label": "due"
+          }
+        ],
+        "right": [
+          {
+            "id": "rcff6a43a0903",
+            "label": "продление"
+          },
+          {
+            "id": "r453f235eeb73",
+            "label": "подлежащий возврату"
+          },
+          {
+            "id": "r566c74462cd4",
+            "label": "крайний срок"
+          },
+          {
+            "id": "rc4666fdb0b1d",
+            "label": "сохранять у себя"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l546ecbd73837": "r566c74462cd4",
+          "l22abaef7aa95": "rc4666fdb0b1d",
+          "l88c6a54e0b1b": "rcff6a43a0903",
+          "l4b7a9e2cc291": "r453f235eeb73"
+        }
+      },
+      "reference_answer": {
+        "l546ecbd73837": "r566c74462cd4",
+        "l22abaef7aa95": "rc4666fdb0b1d",
+        "l88c6a54e0b1b": "rcff6a43a0903",
+        "l4b7a9e2cc291": "r453f235eeb73"
+      },
+      "incorrect_answer": {
+        "l546ecbd73837": "rc4666fdb0b1d",
+        "l22abaef7aa95": "r566c74462cd4",
+        "l88c6a54e0b1b": "rcff6a43a0903",
+        "l4b7a9e2cc291": "r453f235eeb73"
+      },
+      "editorial_answer": "deadline — крайний срок; retain — сохранять у себя; extension — продление; due — подлежащий возврату",
+      "explanation": "В этих контекстах: deadline — крайний срок; retain — сохранять у себя; extension — продление; due — подлежащий возврату.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что разрешало keep until Friday?",
+      "public_payload": {
+        "passage": "The library lets Ella keep a reference book until Friday, but asks her to return it by closing time that day. She finishes her work on Wednesday and brings it back then. The librarian accepts it. The permission covered the remaining days; it did not require her to retain the book for the full period or wait until Friday to return it.",
+        "options": [
+          {
+            "id": "v9505c470188a",
+            "label": "Keeping the book for the remaining period."
+          },
+          {
+            "id": "v12a6ce3cf32d",
+            "label": "Keeping it forever."
+          },
+          {
+            "id": "va053ce5d230b",
+            "label": "Returning it only after Friday."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9505c470188a"
+      },
+      "reference_answer": "v9505c470188a",
+      "incorrect_answer": "v12a6ce3cf32d",
+      "editorial_answer": "Keeping the book for the remaining period.",
+      "explanation": "Разрешённый период имел определённую границу.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Различи крайний срок и обязательное ожидание.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Must I wait until the deadline to submit?"
+          }
+        ],
+        "options": [
+          {
+            "id": "vcfcae45878e8",
+            "label": "Yes, by always prohibits early submission."
+          },
+          {
+            "id": "vf82ed3412799",
+            "label": "Yes, a deadline means no date exists."
+          },
+          {
+            "id": "v40d80f456c46",
+            "label": "No, submitting earlier is allowed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v40d80f456c46"
+      },
+      "reference_answer": "v40d80f456c46",
+      "incorrect_answer": "vcfcae45878e8",
+      "editorial_answer": "No, submitting earlier is allowed.",
+      "explanation": "By ограничивает поздний срок.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "Extra time formally allowed is an ___.",
+        "options": [
+          {
+            "id": "v5b418454e00a",
+            "label": "absence"
+          },
+          {
+            "id": "v895657fe33d8",
+            "label": "extension"
+          },
+          {
+            "id": "v75696f0bfcac",
+            "label": "early return"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v895657fe33d8"
+      },
+      "reference_answer": "v895657fe33d8",
+      "incorrect_answer": "v75696f0bfcac",
+      "editorial_answer": "extension",
+      "explanation": "Extension — продление.",
+      "key": "e09"
+    }
+  ]
+}
