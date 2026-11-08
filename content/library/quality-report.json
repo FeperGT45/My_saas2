@@ -1,18 +1,18 @@
 {
   "package": "english-path-core",
-  "revision": 10,
+  "revision": 11,
   "summary": {
-    "lessons": 260,
-    "exercises": 2248,
-    "levels": { "A1": 60, "A2": 53, "B1": 52, "B2": 45, "C1": 27, "C2": 23 }
+    "lessons": 266,
+    "exercises": 2302,
+    "levels": { "A1": 62, "A2": 54, "B1": 53, "B2": 46, "C1": 28, "C2": 23 }
   },
   "availability": {
-    "publishedNonAudioFullLessons": 257,
+    "publishedNonAudioFullLessons": 263,
     "archivedAudioLessons": 3,
     "introductoryLessonsIncluded": false,
     "targetFullLessons": 300,
-    "remaining": 43,
-    "byLevel": { "A1": 59, "A2": 52, "B1": 51, "B2": 45, "C1": 27, "C2": 23 },
+    "remaining": 37,
+    "byLevel": { "A1": 61, "A2": 53, "B1": 52, "B2": 46, "C1": 28, "C2": 23 },
     "basis": "Local modular sources after audio retirement; verify production count separately after import."
   },
   "structure": "passed",
@@ -20,19 +20,19 @@
   "gradingCheck": "npm run test:library verifies all positive/negative references with the production SQL grader",
   "methodology": "Author review and automated checks; CEFR labels remain provisional, without external psychometric calibration.",
   "types": {
-    "context_choice": 253,
-    "correction": 251,
-    "dialogue": 246,
+    "context_choice": 259,
+    "correction": 257,
+    "dialogue": 252,
     "dictation": 3,
     "error_identification": 4,
-    "gap": 251,
+    "gap": 257,
     "grammar": 1,
-    "matching": 175,
+    "matching": 181,
     "multiple_choice": 15,
-    "reading": 462,
+    "reading": 474,
     "response_choice": 9,
-    "sentence": 239,
-    "single_choice": 240,
+    "sentence": 245,
+    "single_choice": 246,
     "spelling": 1,
     "synonym_antonym": 8,
     "tenses": 7,
@@ -2121,6 +2121,54 @@
       "types": 8,
       "readingWords": [100, 100],
       "sha256": "0b324abe2dd13c06e2305d8ed4e5942d80c74edcbf2c42392a14655e22881ddb"
+    },
+    {
+      "key": "a1/morning-afternoon-evening",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [45, 45],
+      "sha256": "a8874b54fcf481f944371aa7f2e213a5d75f3357f17436e6eea979a36424408b"
+    },
+    {
+      "key": "a1/can-cant-ability",
+      "level": "A1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [48, 48],
+      "sha256": "08daf606b81073ca95b2215770091ae7e9d3179cb0adefbc856d0fb66751395e"
+    },
+    {
+      "key": "a2/look-for-find",
+      "level": "A2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [46, 46],
+      "sha256": "f9b8aa31b57fd5f1252fd961ee8be42d8c1ef25ddcbedc1e52d66a28c37f52a7"
+    },
+    {
+      "key": "b1/used-to-past-state",
+      "level": "B1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [55, 55],
+      "sha256": "6b73628ddebf4265dd1ed5c1731881457a6afeb5fc7937291bd3309282f67bfa"
+    },
+    {
+      "key": "b2/even-so-contrast",
+      "level": "B2",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [70, 70],
+      "sha256": "42fc5b0839922e0fea830a1d110498a80c3f8c25df07fb86f04e15d4bd505511"
+    },
+    {
+      "key": "c1/not-so-much-as",
+      "level": "C1",
+      "exercises": 9,
+      "types": 8,
+      "readingWords": [96, 96],
+      "sha256": "5f5b03076dd7f18e20249738174b3849bc3413dd79f9200f99aa7577b99338ce"
     }
   ]
 }

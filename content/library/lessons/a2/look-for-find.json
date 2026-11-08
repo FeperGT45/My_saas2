@@ -1,0 +1,372 @@
+{
+  "key": "a2/look-for-find",
+  "course": "path-a2",
+  "unit": {
+    "slug": "practice-10",
+    "title": "Практика A2 · новая ситуация",
+    "position": 80
+  },
+  "position": 1,
+  "title": "Искать и найти",
+  "description": "Искать и найти: словарь, грамматика и авторский текст с объяснениями ответов.",
+  "level": "A2",
+  "objectives": [
+    "Различать поиск и результат find",
+    "Использовать look for с предметом поиска"
+  ],
+  "notes": [
+    "Look for describes trying to locate something.",
+    "Find сообщает, что предмет обнаружен; поиск может не завершиться успехом."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 9,
+  "prerequisites": ["a2/miss-bus-lose-key"],
+  "lexicon": [
+    {
+      "en": "search",
+      "ru": "искать"
+    },
+    {
+      "en": "find",
+      "ru": "находить"
+    },
+    {
+      "en": "wallet",
+      "ru": "бумажник"
+    },
+    {
+      "en": "drawer",
+      "ru": "ящик"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: I cannot see my wallet. I will ___ it.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vfd28cec6d7fd",
+            "label": "look for"
+          },
+          {
+            "id": "v54a225920a19",
+            "label": "finded"
+          },
+          {
+            "id": "v5dceab07d9ae",
+            "label": "look after"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfd28cec6d7fd"
+      },
+      "reference_answer": "vfd28cec6d7fd",
+      "incorrect_answer": "v54a225920a19",
+      "editorial_answer": "look for",
+      "explanation": "Look for описывает поиск бумажника.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: for / to.",
+      "public_payload": {
+        "sentence": "She looked ___ her ticket but did not find it."
+      },
+      "answer_key": {
+        "accepted": ["for"]
+      },
+      "reference_answer": "for",
+      "incorrect_answer": "to",
+      "editorial_answer": "She looked for her ticket but did not find it.",
+      "explanation": "Look for обозначает поиск чего-либо.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Я искал ключи, но не смог их найти.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "for"
+          },
+          {
+            "id": "t4",
+            "label": "my"
+          },
+          {
+            "id": "t5",
+            "label": "keys"
+          },
+          {
+            "id": "t6",
+            "label": "but"
+          },
+          {
+            "id": "t7",
+            "label": "could"
+          },
+          {
+            "id": "t8",
+            "label": "not"
+          },
+          {
+            "id": "t9",
+            "label": "find"
+          },
+          {
+            "id": "t10",
+            "label": "them."
+          },
+          {
+            "id": "t1",
+            "label": "I"
+          },
+          {
+            "id": "t2",
+            "label": "looked"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8", "t9", "t10"]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t1"
+      ],
+      "editorial_answer": "I looked for my keys but could not find them.",
+      "explanation": "Looked for и find описывают разные этапы.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "He looked the ticket."
+      },
+      "answer_key": {
+        "accepted": ["He looked for the ticket."]
+      },
+      "reference_answer": "He looked for the ticket.",
+      "incorrect_answer": "He looked the ticket.",
+      "editorial_answer": "He looked for the ticket.",
+      "explanation": "После look при значении поиска используется for.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где Нина сначала ищет бумажник?",
+      "public_payload": {
+        "passage": "Nina looks for her wallet in the kitchen drawer. It is not there. She checks her coat pocket and finds the wallet beside a bus ticket. Her brother had moved both items while cleaning the table. Nina thanks him and puts the wallet in her bag.",
+        "options": [
+          {
+            "id": "v3ed742a4f286",
+            "label": "In her bag."
+          },
+          {
+            "id": "ve8103c022a48",
+            "label": "At the bus stop."
+          },
+          {
+            "id": "v8b34dee606f3",
+            "label": "In the kitchen drawer."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8b34dee606f3"
+      },
+      "reference_answer": "v8b34dee606f3",
+      "incorrect_answer": "v3ed742a4f286",
+      "editorial_answer": "In the kitchen drawer.",
+      "explanation": "Первое место поиска названо прямо.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lac42cf431e87",
+            "label": "search"
+          },
+          {
+            "id": "lcb8e9349b7eb",
+            "label": "find"
+          },
+          {
+            "id": "lb9bf232a4afb",
+            "label": "wallet"
+          },
+          {
+            "id": "ldd95b0b86160",
+            "label": "drawer"
+          }
+        ],
+        "right": [
+          {
+            "id": "r930a9244d56d",
+            "label": "бумажник"
+          },
+          {
+            "id": "refd888e6e104",
+            "label": "ящик"
+          },
+          {
+            "id": "rce8758ff7a82",
+            "label": "искать"
+          },
+          {
+            "id": "r139c04a05647",
+            "label": "находить"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lac42cf431e87": "rce8758ff7a82",
+          "lcb8e9349b7eb": "r139c04a05647",
+          "lb9bf232a4afb": "r930a9244d56d",
+          "ldd95b0b86160": "refd888e6e104"
+        }
+      },
+      "reference_answer": {
+        "lac42cf431e87": "rce8758ff7a82",
+        "lcb8e9349b7eb": "r139c04a05647",
+        "lb9bf232a4afb": "r930a9244d56d",
+        "ldd95b0b86160": "refd888e6e104"
+      },
+      "incorrect_answer": {
+        "lac42cf431e87": "r139c04a05647",
+        "lcb8e9349b7eb": "rce8758ff7a82",
+        "lb9bf232a4afb": "r930a9244d56d",
+        "ldd95b0b86160": "refd888e6e104"
+      },
+      "editorial_answer": "search — искать; find — находить; wallet — бумажник; drawer — ящик",
+      "explanation": "В этих контекстах: search — искать; find — находить; wallet — бумажник; drawer — ящик.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где она находит бумажник?",
+      "public_payload": {
+        "passage": "Nina looks for her wallet in the kitchen drawer. It is not there. She checks her coat pocket and finds the wallet beside a bus ticket. Her brother had moved both items while cleaning the table. Nina thanks him and puts the wallet in her bag.",
+        "options": [
+          {
+            "id": "v1fa69dbb218e",
+            "label": "Beside a bus ticket in her coat pocket."
+          },
+          {
+            "id": "v5def163e58e2",
+            "label": "Inside the kitchen drawer."
+          },
+          {
+            "id": "vfa51e4c3b1ad",
+            "label": "With her brother at the station."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1fa69dbb218e"
+      },
+      "reference_answer": "v1fa69dbb218e",
+      "incorrect_answer": "v5def163e58e2",
+      "editorial_answer": "Beside a bus ticket in her coat pocket.",
+      "explanation": "Кармaн пальто и билет указаны вместе.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сравни поиск и место находки.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Did Nina find the wallet in the drawer?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v9266ae0dbb3f",
+            "label": "Yes, it was under the table."
+          },
+          {
+            "id": "v602856138406",
+            "label": "She did not find it anywhere."
+          },
+          {
+            "id": "ve8e92109328a",
+            "label": "No, she found it in her coat pocket."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve8e92109328a"
+      },
+      "reference_answer": "ve8e92109328a",
+      "incorrect_answer": "v9266ae0dbb3f",
+      "editorial_answer": "No, she found it in her coat pocket.",
+      "explanation": "Первая попытка поиска не завершилась находкой.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A small container sewn into clothing is a ___.",
+        "options": [
+          {
+            "id": "v9aedae54d2b6",
+            "label": "ticket"
+          },
+          {
+            "id": "vde6046a02935",
+            "label": "pocket"
+          },
+          {
+            "id": "vf823b9c7e888",
+            "label": "wallet necessarily"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vde6046a02935"
+      },
+      "reference_answer": "vde6046a02935",
+      "incorrect_answer": "vf823b9c7e888",
+      "editorial_answer": "pocket",
+      "key": "e09",
+      "explanation": "Правило урока: Look for describes trying to locate something."
+    }
+  ]
+}

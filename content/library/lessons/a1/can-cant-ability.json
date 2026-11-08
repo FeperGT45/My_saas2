@@ -1,0 +1,322 @@
+{
+  "key": "a1/can-cant-ability",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-10",
+    "title": "Практика A1 · новая ситуация",
+    "position": 80
+  },
+  "position": 2,
+  "title": "Могу или не умею",
+  "description": "Могу или не умею: словарь, грамматика и авторский текст с объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Использовать can и can’t с начальной формой",
+    "Спрашивать о простом умении"
+  ],
+  "notes": [
+    "После can/can’t используется начальная форма без to.",
+    "Can you swim? спрашивает об умении; ответ может быть коротким."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/morning-afternoon-evening"],
+  "lexicon": [
+    {
+      "en": "ability",
+      "ru": "умение"
+    },
+    {
+      "en": "swim",
+      "ru": "плавать"
+    },
+    {
+      "en": "cycle",
+      "ru": "ездить на велосипеде"
+    },
+    {
+      "en": "draw",
+      "ru": "рисовать"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Mila ___ swim, but she cannot cycle.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v77afb009aff3",
+            "label": "can"
+          },
+          {
+            "id": "v91846b07d92d",
+            "label": "does"
+          },
+          {
+            "id": "v857f36a356f9",
+            "label": "has"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v77afb009aff3"
+      },
+      "reference_answer": "v77afb009aff3",
+      "incorrect_answer": "v91846b07d92d",
+      "editorial_answer": "can",
+      "explanation": "Умение плавать подтверждено прямым противопоставлением.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: draw / drawing.",
+      "public_payload": {
+        "sentence": "I can ___ this picture."
+      },
+      "answer_key": {
+        "accepted": ["draw"]
+      },
+      "reference_answer": "draw",
+      "incorrect_answer": "drawing",
+      "editorial_answer": "I can draw this picture.",
+      "explanation": "После can нужна начальная форма draw.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Он умеет плавать.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "swim."
+          },
+          {
+            "id": "t1",
+            "label": "He"
+          },
+          {
+            "id": "t2",
+            "label": "can"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3"]
+      },
+      "reference_answer": ["t1", "t2", "t3"],
+      "incorrect_answer": ["t2", "t3", "t1"],
+      "editorial_answer": "He can swim.",
+      "explanation": "Can выражает способность.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "She can to draw."
+      },
+      "answer_key": {
+        "accepted": ["She can draw."]
+      },
+      "reference_answer": "She can draw.",
+      "incorrect_answer": "She can to draw.",
+      "editorial_answer": "She can draw.",
+      "explanation": "После can не ставится to.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что умеет Рави?",
+      "public_payload": {
+        "passage": "Ravi can swim, but he cannot ride a bicycle. His sister Lea can cycle and can draw a map. At the sports centre, Ravi joins the swimming group. Lea rides to the centre and brings her map to show the coach. Neither sibling can do both activities yet.",
+        "options": [
+          {
+            "id": "v6dd9ac05a3f8",
+            "label": "Ride a bicycle."
+          },
+          {
+            "id": "v5a590ea4903c",
+            "label": "Draw a map."
+          },
+          {
+            "id": "v2a3e2a8c09d3",
+            "label": "Swim."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2a3e2a8c09d3"
+      },
+      "reference_answer": "v2a3e2a8c09d3",
+      "incorrect_answer": "v6dd9ac05a3f8",
+      "editorial_answer": "Swim.",
+      "explanation": "Возможность плавать противопоставлена велосипеду.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "ld2c560b9a8d6",
+            "label": "ability"
+          },
+          {
+            "id": "l69478bcad09f",
+            "label": "swim"
+          },
+          {
+            "id": "l275386c1159b",
+            "label": "cycle"
+          },
+          {
+            "id": "la32a62565cf7",
+            "label": "draw"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3d8e2f74a8ca",
+            "label": "ездить на велосипеде"
+          },
+          {
+            "id": "r549cb39a3337",
+            "label": "рисовать"
+          },
+          {
+            "id": "r7a82de909e41",
+            "label": "умение"
+          },
+          {
+            "id": "r73fb24952b19",
+            "label": "плавать"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "ld2c560b9a8d6": "r7a82de909e41",
+          "l69478bcad09f": "r73fb24952b19",
+          "l275386c1159b": "r3d8e2f74a8ca",
+          "la32a62565cf7": "r549cb39a3337"
+        }
+      },
+      "reference_answer": {
+        "ld2c560b9a8d6": "r7a82de909e41",
+        "l69478bcad09f": "r73fb24952b19",
+        "l275386c1159b": "r3d8e2f74a8ca",
+        "la32a62565cf7": "r549cb39a3337"
+      },
+      "incorrect_answer": {
+        "ld2c560b9a8d6": "r73fb24952b19",
+        "l69478bcad09f": "r7a82de909e41",
+        "l275386c1159b": "r3d8e2f74a8ca",
+        "la32a62565cf7": "r549cb39a3337"
+      },
+      "editorial_answer": "ability — умение; swim — плавать; cycle — ездить на велосипеде; draw — рисовать",
+      "explanation": "В этих контекстах: ability — умение; swim — плавать; cycle — ездить на велосипеде; draw — рисовать.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Леа приносит тренеру?",
+      "public_payload": {
+        "passage": "Ravi can swim, but he cannot ride a bicycle. His sister Lea can cycle and can draw a map. At the sports centre, Ravi joins the swimming group. Lea rides to the centre and brings her map to show the coach. Neither sibling can do both activities yet.",
+        "options": [
+          {
+            "id": "vbab922432311",
+            "label": "A map."
+          },
+          {
+            "id": "va4df8c9f5a3b",
+            "label": "A bicycle for Ravi."
+          },
+          {
+            "id": "v331cb5760c80",
+            "label": "A swimming pool."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbab922432311"
+      },
+      "reference_answer": "vbab922432311",
+      "incorrect_answer": "va4df8c9f5a3b",
+      "editorial_answer": "A map.",
+      "explanation": "Она хочет показать тренеру карту.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Ответь по тексту.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Can Ravi cycle?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v47c1ae16997a",
+            "label": "Yes, he can cycle very well."
+          },
+          {
+            "id": "vb16b3a87b168",
+            "label": "The text does not mention bicycles."
+          },
+          {
+            "id": "v30131c8e111a",
+            "label": "No, he cannot ride a bicycle."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v30131c8e111a"
+      },
+      "reference_answer": "v30131c8e111a",
+      "incorrect_answer": "v47c1ae16997a",
+      "editorial_answer": "No, he cannot ride a bicycle.",
+      "explanation": "Cannot ride означает пока не умеет ездить.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "A person who teaches a sport is a ___.",
+        "options": [
+          {
+            "id": "vfe1135987c3d",
+            "label": "centre"
+          },
+          {
+            "id": "v825751f76539",
+            "label": "coach"
+          },
+          {
+            "id": "veff36d59eecc",
+            "label": "map"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v825751f76539"
+      },
+      "reference_answer": "v825751f76539",
+      "incorrect_answer": "veff36d59eecc",
+      "editorial_answer": "coach",
+      "key": "e09",
+      "explanation": "Правило урока: После can/can’t используется начальная форма без to."
+    }
+  ]
+}

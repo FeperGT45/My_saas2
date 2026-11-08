@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "packageId": "english-path-core",
-  "revision": 10,
+  "revision": 11,
   "language": "en",
   "interfaceLocale": "ru",
   "courses": [
@@ -10,42 +10,59 @@
       "title": "A1 · Первые самостоятельные ситуации",
       "description": "Практические уроки: первые самостоятельные ситуации. Учебный уровень CEFR ориентировочный; материалы не являются сертификационным экзаменом.",
       "level": "A1",
-      "goals": ["general", "communication"]
+      "goals": [
+        "general",
+        "communication"
+      ]
     },
     {
       "slug": "path-a2",
       "title": "A2 · Повседневные решения",
       "description": "Практические уроки: повседневные решения. Учебный уровень CEFR ориентировочный; материалы не являются сертификационным экзаменом.",
       "level": "A2",
-      "goals": ["travel", "communication"]
+      "goals": [
+        "travel",
+        "communication"
+      ]
     },
     {
       "slug": "path-b1",
       "title": "B1 · Опыт и связная речь",
       "description": "Практические уроки: опыт и связная речь. Учебный уровень CEFR ориентировочный; материалы не являются сертификационным экзаменом.",
       "level": "B1",
-      "goals": ["general", "travel"]
+      "goals": [
+        "general",
+        "travel"
+      ]
     },
     {
       "slug": "path-b2",
       "title": "B2 · Аргументы и гипотезы",
       "description": "Практические уроки: аргументы и гипотезы. Учебный уровень CEFR ориентировочный; материалы не являются сертификационным экзаменом.",
       "level": "B2",
-      "goals": ["study", "communication"]
+      "goals": [
+        "study",
+        "communication"
+      ]
     },
     {
       "slug": "path-c1",
       "title": "C1 · Точная академическая речь",
       "description": "Практические уроки: точная академическая речь. Учебный уровень CEFR ориентировочный; материалы не являются сертификационным экзаменом.",
       "level": "C1",
-      "goals": ["study"]
+      "goals": [
+        "study"
+      ]
     },
     {
       "slug": "path-c2",
       "title": "C2 · Подтекст и стиль",
       "description": "Практические уроки: подтекст и стиль. Учебный уровень CEFR ориентировочный; материалы не являются сертификационным экзаменом.",
       "level": "C2",
-      "goals": ["study", "general"]
+      "goals": [
+        "study",
+        "general"
+      ]
     }
   ],
   "lessons": [
@@ -308,6 +325,12 @@
     "lessons/b2/about-to-start.json",
     "lessons/b2/high-time-past-form.json",
     "lessons/c1/all-but-two.json",
-    "lessons/c1/if-anything-correction.json"
+    "lessons/c1/if-anything-correction.json",
+    "lessons/a1/morning-afternoon-evening.json",
+    "lessons/a1/can-cant-ability.json",
+    "lessons/a2/look-for-find.json",
+    "lessons/b1/used-to-past-state.json",
+    "lessons/b2/even-so-contrast.json",
+    "lessons/c1/not-so-much-as.json"
   ]
 }

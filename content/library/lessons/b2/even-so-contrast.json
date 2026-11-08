@@ -1,0 +1,390 @@
+{
+  "key": "b2/even-so-contrast",
+  "course": "path-b2",
+  "unit": {
+    "slug": "practice-10",
+    "title": "Практика B2 · новая ситуация",
+    "position": 80
+  },
+  "position": 1,
+  "title": "Even so: вывод вопреки факту",
+  "description": "Even so: вывод вопреки факту: словарь, грамматика и авторский текст с объяснениями ответов.",
+  "level": "B2",
+  "objectives": [
+    "Использовать even so для контраста",
+    "Не удалять предыдущий факт при контрасте"
+  ],
+  "notes": [
+    "Even so связывает уступленное обстоятельство с последующим выводом.",
+    "Связка не означает, что обстоятельство было неважным или не происходило."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 13,
+  "prerequisites": ["b2/high-time-past-form"],
+  "lexicon": [
+    {
+      "en": "concession",
+      "ru": "уступка"
+    },
+    {
+      "en": "constraint",
+      "ru": "ограничение"
+    },
+    {
+      "en": "nevertheless",
+      "ru": "тем не менее"
+    },
+    {
+      "en": "outcome",
+      "ru": "результат"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The route was longer. Even so, we arrived ___ time.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v24025dec05ca",
+            "label": "on"
+          },
+          {
+            "id": "vccb8c7774156",
+            "label": "in despite"
+          },
+          {
+            "id": "v8484388d038e",
+            "label": "Even so вводит контраст; устойчиво on time означает вовремя."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v24025dec05ca"
+      },
+      "reference_answer": "v24025dec05ca",
+      "incorrect_answer": "vccb8c7774156",
+      "editorial_answer": "on",
+      "key": "e01",
+      "explanation": "Вариант выбран по грамматической модели и контексту урока."
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: so / such.",
+      "public_payload": {
+        "sentence": "The cost was high. Even ___, the team approved a small trial."
+      },
+      "answer_key": {
+        "accepted": ["so"]
+      },
+      "reference_answer": "so",
+      "incorrect_answer": "such",
+      "editorial_answer": "The cost was high. Even so, the team approved a small trial.",
+      "explanation": "Устойчивое сочетание — even so.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Срок был коротким. И всё же команда проверила цифры.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "was"
+          },
+          {
+            "id": "t4",
+            "label": "tight."
+          },
+          {
+            "id": "t5",
+            "label": "Even"
+          },
+          {
+            "id": "t6",
+            "label": "so,"
+          },
+          {
+            "id": "t7",
+            "label": "the"
+          },
+          {
+            "id": "t8",
+            "label": "team"
+          },
+          {
+            "id": "t9",
+            "label": "checked"
+          },
+          {
+            "id": "t10",
+            "label": "the"
+          },
+          {
+            "id": "t11",
+            "label": "figures."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "deadline"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": [
+          "t1",
+          "t2",
+          "t3",
+          "t4",
+          "t5",
+          "t6",
+          "t7",
+          "t8",
+          "t9",
+          "t10",
+          "t11"
+        ]
+      },
+      "reference_answer": [
+        "t1",
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11"
+      ],
+      "incorrect_answer": [
+        "t2",
+        "t3",
+        "t4",
+        "t5",
+        "t6",
+        "t7",
+        "t8",
+        "t9",
+        "t10",
+        "t11",
+        "t1"
+      ],
+      "editorial_answer": "The deadline was tight. Even so, the team checked the figures.",
+      "explanation": "Контраст связывает трудность и выполненную проверку.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The weather was poor. Even so but, they continued."
+      },
+      "answer_key": {
+        "accepted": ["The weather was poor. Even so, they continued."]
+      },
+      "reference_answer": "The weather was poor. Even so, they continued.",
+      "incorrect_answer": "The weather was poor. Even so but, they continued.",
+      "editorial_answer": "The weather was poor. Even so, they continued.",
+      "explanation": "Even so уже задаёт контраст; дополнительный but здесь лишний.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что произошло несмотря на трудности?",
+      "public_payload": {
+        "passage": "The delivery deadline was unusually tight, and two suppliers were unavailable. Even so, the team completed a small trial on schedule. Its report also noted that the trial involved fewer products than the full launch would require. A later summary quoted the successful date but omitted the limited scope. Another summary mentioned only the obstacles and omitted the completed trial. Neither account preserved both the constraints and the qualified result.",
+        "options": [
+          {
+            "id": "vf8ec1480b4ec",
+            "label": "Every supplier became available."
+          },
+          {
+            "id": "va3597966f947",
+            "label": "The full launch was completed."
+          },
+          {
+            "id": "v12938bded34c",
+            "label": "A small trial finished on schedule."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v12938bded34c"
+      },
+      "reference_answer": "v12938bded34c",
+      "incorrect_answer": "vf8ec1480b4ec",
+      "editorial_answer": "A small trial finished on schedule.",
+      "explanation": "Текст прямо ограничивает результат небольшим испытанием.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l4a507af3c1ea",
+            "label": "concession"
+          },
+          {
+            "id": "l50cb6e293a0e",
+            "label": "constraint"
+          },
+          {
+            "id": "l56e778e5d5a2",
+            "label": "nevertheless"
+          },
+          {
+            "id": "le666e83a4470",
+            "label": "outcome"
+          }
+        ],
+        "right": [
+          {
+            "id": "rc1181dc32f68",
+            "label": "тем не менее"
+          },
+          {
+            "id": "r4aec5fffa489",
+            "label": "результат"
+          },
+          {
+            "id": "r4d83c5a2c293",
+            "label": "уступка"
+          },
+          {
+            "id": "re71134b2767a",
+            "label": "ограничение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l4a507af3c1ea": "r4d83c5a2c293",
+          "l50cb6e293a0e": "re71134b2767a",
+          "l56e778e5d5a2": "rc1181dc32f68",
+          "le666e83a4470": "r4aec5fffa489"
+        }
+      },
+      "reference_answer": {
+        "l4a507af3c1ea": "r4d83c5a2c293",
+        "l50cb6e293a0e": "re71134b2767a",
+        "l56e778e5d5a2": "rc1181dc32f68",
+        "le666e83a4470": "r4aec5fffa489"
+      },
+      "incorrect_answer": {
+        "l4a507af3c1ea": "re71134b2767a",
+        "l50cb6e293a0e": "r4d83c5a2c293",
+        "l56e778e5d5a2": "rc1181dc32f68",
+        "le666e83a4470": "r4aec5fffa489"
+      },
+      "editorial_answer": "concession — уступка; constraint — ограничение; nevertheless — тем не менее; outcome — результат",
+      "explanation": "В этих контекстах: concession — уступка; constraint — ограничение; nevertheless — тем не менее; outcome — результат.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое ограничение опустили в позднем пересказе?",
+      "public_payload": {
+        "passage": "The delivery deadline was unusually tight, and two suppliers were unavailable. Even so, the team completed a small trial on schedule. Its report also noted that the trial involved fewer products than the full launch would require. A later summary quoted the successful date but omitted the limited scope. Another summary mentioned only the obstacles and omitted the completed trial. Neither account preserved both the constraints and the qualified result.",
+        "options": [
+          {
+            "id": "v822058d62cc8",
+            "label": "The trial involved fewer products than a full launch."
+          },
+          {
+            "id": "v69d5e98cc0fc",
+            "label": "The team did not check a date."
+          },
+          {
+            "id": "v1aa819076ad5",
+            "label": "There were no unavailable suppliers."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v822058d62cc8"
+      },
+      "reference_answer": "v822058d62cc8",
+      "incorrect_answer": "v69d5e98cc0fc",
+      "editorial_answer": "The trial involved fewer products than a full launch.",
+      "explanation": "Объём испытания был ограничен.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Сохрани факт и последующий результат.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does even so erase the stated obstacles?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v70f1ea781867",
+            "label": "Yes, it means no obstacles existed."
+          },
+          {
+            "id": "v7a5ee9e99fe9",
+            "label": "Yes, it proves the full launch was complete."
+          },
+          {
+            "id": "v3dc9ea244605",
+            "label": "No, it connects them to a result that happened despite them."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3dc9ea244605"
+      },
+      "reference_answer": "v3dc9ea244605",
+      "incorrect_answer": "v70f1ea781867",
+      "editorial_answer": "No, it connects them to a result that happened despite them.",
+      "explanation": "Уступка не снимает обстоятельство.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An outcome that is limited in size or range is ___.",
+        "options": [
+          {
+            "id": "v195f881068fd",
+            "label": "unavailable"
+          },
+          {
+            "id": "vf134c3f7b679",
+            "label": "qualified"
+          },
+          {
+            "id": "v537f4b1a1618",
+            "label": "unrestricted"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf134c3f7b679"
+      },
+      "reference_answer": "vf134c3f7b679",
+      "incorrect_answer": "v537f4b1a1618",
+      "editorial_answer": "qualified",
+      "key": "e09",
+      "explanation": "Правило урока: Even so связывает уступленное обстоятельство с последующим выводом."
+    }
+  ]
+}

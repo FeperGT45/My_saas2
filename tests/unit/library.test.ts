@@ -55,16 +55,16 @@ afterAll(async () => {
   await db.close();
 });
 describe('modular learning content quality', () => {
-  it('contains 260 modular lessons and 2248 varied exercises, including twelve new lessons across A1-C1', () => {
+  it('contains 266 modular lessons and 2302 varied exercises, including twelve new lessons across A1-C1', () => {
     expect(validateLibrary(library)).toEqual({
-      lessons: 260,
-      exercises: 2248,
+      lessons: 266,
+      exercises: 2302,
       levels: { A1: 60, A2: 53, B1: 52, B2: 45, C1: 27, C2: 23 },
     });
     expect(
       new Set(payload.exercises.map((e) => e.kind)).size,
     ).toBeGreaterThanOrEqual(17);
-    expect(new Set(payload.exercises.map((e) => e.id)).size).toBe(2248);
+    expect(new Set(payload.exercises.map((e) => e.id)).size).toBe(2302);
     const batch = library.lessons.slice(60, 92);
     expect(batch).toHaveLength(32);
     for (const level of ['B1', 'B2', 'C1', 'C2'])
@@ -122,7 +122,7 @@ describe('modular learning content quality', () => {
     expect(eighth).toHaveLength(12);
     for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'])
       expect(eighth.filter((l) => l.level === level)).toHaveLength(2);
-    const current = library.lessons.slice(248);
+    const current = library.lessons.slice(260);
     expect(current).toHaveLength(12);
     for (const [level, count] of Object.entries({
       A1: 4,
@@ -348,9 +348,9 @@ describe('transactional curriculum import', () => {
       await db.exec('ROLLBACK');
     }
   });
-  it('expands revision nine without changing any of its 248 existing lessons or exercise keys', async () => {
+  it('expands revision ten without changing any of its 260 existing lessons or exercise keys', async () => {
     const old = structuredClone(payload);
-    const originalIds = new Set(old.lessons.slice(0, 248).map((l) => l.id));
+    const originalIds = new Set(old.lessons.slice(0, 260).map((l) => l.id));
     old.revision = 9;
     old.lessons = old.lessons.filter((l) => originalIds.has(l.id));
     old.exercises = old.exercises.filter((e) => originalIds.has(e.lesson_id));
@@ -368,7 +368,7 @@ describe('transactional curriculum import', () => {
       ).rows;
       expect(
         await rpc('import_curriculum_package', [JSON.stringify(payload)]),
-      ).toMatchObject({ lessons: 260, exercises: 2248, unchanged: false });
+      ).toMatchObject({ lessons: 266, exercises: 2302, unchanged: false });
       const expandedRows = (
         await db.query<{ id: string; lesson_id: string; answer_key: unknown }>(
           'SELECT id,lesson_id,answer_key FROM public.exercises WHERE content_package_id=$1 ORDER BY id',
@@ -407,7 +407,7 @@ describe('transactional curriculum import', () => {
     await db.exec('SET ROLE service_role');
     expect(
       await rpc('import_curriculum_package', [JSON.stringify(payload)]),
-    ).toMatchObject({ lessons: 260, exercises: 2248, unchanged: false });
+    ).toMatchObject({ lessons: 266, exercises: 2302, unchanged: false });
     const versions = (
       await db.query(
         'SELECT id,admin_version FROM public.exercises WHERE content_package_id=$1 ORDER BY id',
@@ -503,7 +503,7 @@ describe('transactional curriculum import', () => {
       await rpc<{ level: string; lessons: { id: string }[] }[]>(
         'curriculum_library',
       );
-    expect(catalog.flatMap((c) => c.lessons)).toHaveLength(258);
+    expect(catalog.flatMap((c) => c.lessons)).toHaveLength(264);
     expect(JSON.stringify(catalog)).not.toMatch(
       /answer_key|reference_answer|incorrect_answer|accepted/,
     );

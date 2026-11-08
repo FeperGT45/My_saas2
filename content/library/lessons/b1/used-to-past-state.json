@@ -1,0 +1,338 @@
+{
+  "key": "b1/used-to-past-state",
+  "course": "path-b1",
+  "unit": {
+    "slug": "practice-10",
+    "title": "Практика B1 · новая ситуация",
+    "position": 80
+  },
+  "position": 1,
+  "title": "Used to: прежнее состояние",
+  "description": "Used to: прежнее состояние: словарь, грамматика и авторский текст с объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Описывать прошлую привычку used to",
+    "Отличать привычку от одного события"
+  ],
+  "notes": [
+    "Used to + начальная форма описывает регулярное прошлое действие.",
+    "Однократное действие в конкретный день обычно передаётся обычным Past Simple."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 11,
+  "prerequisites": ["b1/spend-time-doing"],
+  "lexicon": [
+    {
+      "en": "habit",
+      "ru": "привычка"
+    },
+    {
+      "en": "formerly",
+      "ru": "раньше"
+    },
+    {
+      "en": "occasion",
+      "ru": "случай"
+    },
+    {
+      "en": "routine",
+      "ru": "распорядок"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: Nora ___ take the same bus every day, but now she works from home.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v386cc27be173",
+            "label": "used to"
+          },
+          {
+            "id": "v0443b27c9940",
+            "label": "use to past"
+          },
+          {
+            "id": "va5c1c17b3652",
+            "label": "was use to"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v386cc27be173"
+      },
+      "reference_answer": "v386cc27be173",
+      "incorrect_answer": "v0443b27c9940",
+      "editorial_answer": "used to",
+      "explanation": "Прежняя регулярная привычка: used to take.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: study / studied.",
+      "public_payload": {
+        "sentence": "He used to ___ at the library after work."
+      },
+      "answer_key": {
+        "accepted": ["study"]
+      },
+      "reference_answer": "study",
+      "incorrect_answer": "studied",
+      "editorial_answer": "He used to study at the library after work.",
+      "explanation": "После used to следует начальная форма.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Раньше мы встречались там каждую пятницу.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "to"
+          },
+          {
+            "id": "t4",
+            "label": "meet"
+          },
+          {
+            "id": "t5",
+            "label": "there"
+          },
+          {
+            "id": "t6",
+            "label": "every"
+          },
+          {
+            "id": "t7",
+            "label": "Friday."
+          },
+          {
+            "id": "t1",
+            "label": "We"
+          },
+          {
+            "id": "t2",
+            "label": "used"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "We used to meet there every Friday.",
+      "explanation": "Every Friday указывает на привычное повторение.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "They used to visited us every week."
+      },
+      "answer_key": {
+        "accepted": ["They used to visit us every week."]
+      },
+      "reference_answer": "They used to visit us every week.",
+      "incorrect_answer": "They used to visited us every week.",
+      "editorial_answer": "They used to visit us every week.",
+      "explanation": "После used to используется visit без прошедшего окончания.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что было привычкой Аруна?",
+      "public_payload": {
+        "passage": "For several years, Arun used to take the early train to the city office. He visited the same café before work and knew the staff. Last month, his employer moved the team to another building. Arun took a different train on Monday, a single event that does not by itself describe a new daily routine.",
+        "options": [
+          {
+            "id": "v6ade9e108537",
+            "label": "Moving the team last month."
+          },
+          {
+            "id": "v3e1f4b626057",
+            "label": "Taking a different train once on Monday."
+          },
+          {
+            "id": "v6ffef8fea817",
+            "label": "Taking the early train and visiting the café."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6ffef8fea817"
+      },
+      "reference_answer": "v6ffef8fea817",
+      "incorrect_answer": "v6ade9e108537",
+      "editorial_answer": "Taking the early train and visiting the café.",
+      "explanation": "Used to относится к повторявшемуся расписанию.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "la8f85dede3c5",
+            "label": "habit"
+          },
+          {
+            "id": "l91e2c4769442",
+            "label": "formerly"
+          },
+          {
+            "id": "l0b2622c8a5fc",
+            "label": "occasion"
+          },
+          {
+            "id": "lc0e0cd5489c9",
+            "label": "routine"
+          }
+        ],
+        "right": [
+          {
+            "id": "r8ffdc3f895eb",
+            "label": "случай"
+          },
+          {
+            "id": "r8c55d3d864f7",
+            "label": "распорядок"
+          },
+          {
+            "id": "r1889b0675af9",
+            "label": "привычка"
+          },
+          {
+            "id": "r33814ad3ab02",
+            "label": "раньше"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "la8f85dede3c5": "r1889b0675af9",
+          "l91e2c4769442": "r33814ad3ab02",
+          "l0b2622c8a5fc": "r8ffdc3f895eb",
+          "lc0e0cd5489c9": "r8c55d3d864f7"
+        }
+      },
+      "reference_answer": {
+        "la8f85dede3c5": "r1889b0675af9",
+        "l91e2c4769442": "r33814ad3ab02",
+        "l0b2622c8a5fc": "r8ffdc3f895eb",
+        "lc0e0cd5489c9": "r8c55d3d864f7"
+      },
+      "incorrect_answer": {
+        "la8f85dede3c5": "r33814ad3ab02",
+        "l91e2c4769442": "r1889b0675af9",
+        "l0b2622c8a5fc": "r8ffdc3f895eb",
+        "lc0e0cd5489c9": "r8c55d3d864f7"
+      },
+      "editorial_answer": "habit — привычка; formerly — раньше; occasion — случай; routine — распорядок",
+      "explanation": "В этих контекстах: habit — привычка; formerly — раньше; occasion — случай; routine — распорядок.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что произошло в понедельник?",
+      "public_payload": {
+        "passage": "For several years, Arun used to take the early train to the city office. He visited the same café before work and knew the staff. Last month, his employer moved the team to another building. Arun took a different train on Monday, a single event that does not by itself describe a new daily routine.",
+        "options": [
+          {
+            "id": "v284c2c9b0dfb",
+            "label": "He took a different train once."
+          },
+          {
+            "id": "v66d74295389d",
+            "label": "He moved the office by himself."
+          },
+          {
+            "id": "v97987519974e",
+            "label": "He returned to the old café every day."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v284c2c9b0dfb"
+      },
+      "reference_answer": "v284c2c9b0dfb",
+      "incorrect_answer": "v66d74295389d",
+      "editorial_answer": "He took a different train once.",
+      "explanation": "В тексте это отдельное событие.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Отличи привычку от единичного случая.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "Does one Monday journey prove a repeated habit?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v89baf258c0e5",
+            "label": "Yes, every single event establishes a daily routine."
+          },
+          {
+            "id": "ve2f7a08cf2bf",
+            "label": "Yes, used to always means tomorrow."
+          },
+          {
+            "id": "v87e3f579b963",
+            "label": "No, it reports one occasion."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v87e3f579b963"
+      },
+      "reference_answer": "v87e3f579b963",
+      "incorrect_answer": "v89baf258c0e5",
+      "editorial_answer": "No, it reports one occasion.",
+      "explanation": "Однократное действие дано в Past Simple.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "An action repeated regularly is part of a ___.",
+        "options": [
+          {
+            "id": "v31ac6997ccaf",
+            "label": "building"
+          },
+          {
+            "id": "va4a06a06bc00",
+            "label": "routine"
+          },
+          {
+            "id": "vc51b2e8f92e5",
+            "label": "single occasion"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va4a06a06bc00"
+      },
+      "reference_answer": "va4a06a06bc00",
+      "incorrect_answer": "vc51b2e8f92e5",
+      "editorial_answer": "routine",
+      "key": "e09",
+      "explanation": "Правило урока: Used to + начальная форма описывает регулярное прошлое действие."
+    }
+  ]
+}

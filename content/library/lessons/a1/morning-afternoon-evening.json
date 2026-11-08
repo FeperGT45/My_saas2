@@ -1,0 +1,334 @@
+{
+  "key": "a1/morning-afternoon-evening",
+  "course": "path-a1",
+  "unit": {
+    "slug": "practice-10",
+    "title": "Практика A1 · новая ситуация",
+    "position": 80
+  },
+  "position": 1,
+  "title": "Части суток в расписании",
+  "description": "Части суток в расписании: словарь, грамматика и авторский текст с объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Называть morning, afternoon, evening",
+    "Соотносить событие со временем суток"
+  ],
+  "notes": [
+    "In the morning — утром; in the afternoon — днём.",
+    "At night обычно обозначает ночью; выбор зависит от времени события."
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 7,
+  "prerequisites": ["a1/parcel-from-to"],
+  "lexicon": [
+    {
+      "en": "morning",
+      "ru": "утро"
+    },
+    {
+      "en": "afternoon",
+      "ru": "день"
+    },
+    {
+      "en": "evening",
+      "ru": "вечер"
+    },
+    {
+      "en": "night",
+      "ru": "ночь"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "Выбери точный вариант: The sun is going down. It is ___.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v4a5dbb55b538",
+            "label": "evening"
+          },
+          {
+            "id": "v1f2cb5203db6",
+            "label": "morning"
+          },
+          {
+            "id": "v6113a48f6f33",
+            "label": "midnight"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4a5dbb55b538"
+      },
+      "reference_answer": "v4a5dbb55b538",
+      "incorrect_answer": "v1f2cb5203db6",
+      "editorial_answer": "evening",
+      "explanation": "Вечер наступает после дня, когда солнце садится.",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары: in / on.",
+      "public_payload": {
+        "sentence": "We eat breakfast ___ the morning."
+      },
+      "answer_key": {
+        "accepted": ["in"]
+      },
+      "reference_answer": "in",
+      "incorrect_answer": "on",
+      "editorial_answer": "We eat breakfast in the morning.",
+      "explanation": "Перед частью суток в этой модели используется in.",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Занятие проходит днём.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "in"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "afternoon."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "class"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The class is in the afternoon.",
+      "explanation": "Afternoon — часть дня после утра.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь ошибку в указанной конструкции, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "I read in night."
+      },
+      "answer_key": {
+        "accepted": ["I read at night."]
+      },
+      "reference_answer": "I read at night.",
+      "incorrect_answer": "I read in night.",
+      "editorial_answer": "I read at night.",
+      "explanation": "Устойчивая форма времени суток — at night.",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда открывается бассейн?",
+      "public_payload": {
+        "passage": "The swimming pool opens at seven in the morning. It closes at noon for cleaning. On Tuesday, a short class starts in the afternoon. The café next door stays open in the evening. Ben visits the pool before work, so he arrives in the morning.",
+        "options": [
+          {
+            "id": "v48f287d0000f",
+            "label": "At noon."
+          },
+          {
+            "id": "vc3cfa9b55086",
+            "label": "In the evening."
+          },
+          {
+            "id": "vf76142288eb5",
+            "label": "At seven in the morning."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf76142288eb5"
+      },
+      "reference_answer": "vf76142288eb5",
+      "incorrect_answer": "v48f287d0000f",
+      "editorial_answer": "At seven in the morning.",
+      "explanation": "Время открытия указано в первом предложении.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова с переводом в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l99cf0f42f874",
+            "label": "morning"
+          },
+          {
+            "id": "lc767936b8241",
+            "label": "afternoon"
+          },
+          {
+            "id": "l7cd177a0b2a6",
+            "label": "evening"
+          },
+          {
+            "id": "lc4ad09e9dd28",
+            "label": "night"
+          }
+        ],
+        "right": [
+          {
+            "id": "rd9e1cf46c21c",
+            "label": "вечер"
+          },
+          {
+            "id": "r1f58b9a05e89",
+            "label": "ночь"
+          },
+          {
+            "id": "r7e20c9db8d74",
+            "label": "утро"
+          },
+          {
+            "id": "rdfa966e7f408",
+            "label": "день"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l99cf0f42f874": "r7e20c9db8d74",
+          "lc767936b8241": "rdfa966e7f408",
+          "l7cd177a0b2a6": "rd9e1cf46c21c",
+          "lc4ad09e9dd28": "r1f58b9a05e89"
+        }
+      },
+      "reference_answer": {
+        "l99cf0f42f874": "r7e20c9db8d74",
+        "lc767936b8241": "rdfa966e7f408",
+        "l7cd177a0b2a6": "rd9e1cf46c21c",
+        "lc4ad09e9dd28": "r1f58b9a05e89"
+      },
+      "incorrect_answer": {
+        "l99cf0f42f874": "rdfa966e7f408",
+        "lc767936b8241": "r7e20c9db8d74",
+        "l7cd177a0b2a6": "rd9e1cf46c21c",
+        "lc4ad09e9dd28": "r1f58b9a05e89"
+      },
+      "editorial_answer": "morning — утро; afternoon — день; evening — вечер; night — ночь",
+      "explanation": "В этих контекстах: morning — утро; afternoon — день; evening — вечер; night — ночь.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда проходит короткое занятие?",
+      "public_payload": {
+        "passage": "The swimming pool opens at seven in the morning. It closes at noon for cleaning. On Tuesday, a short class starts in the afternoon. The café next door stays open in the evening. Ben visits the pool before work, so he arrives in the morning.",
+        "options": [
+          {
+            "id": "vdad24d0bf370",
+            "label": "In the afternoon."
+          },
+          {
+            "id": "v6afa5624efbd",
+            "label": "Before seven."
+          },
+          {
+            "id": "va44507717fe0",
+            "label": "At midnight."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdad24d0bf370"
+      },
+      "reference_answer": "vdad24d0bf370",
+      "incorrect_answer": "v6afa5624efbd",
+      "editorial_answer": "In the afternoon.",
+      "explanation": "Вторник и часть суток названы вместе.",
+      "key": "e07"
+    },
+    {
+      "kind": "dialogue",
+      "prompt": "Назови время работы кафе.",
+      "public_payload": {
+        "lines": [
+          {
+            "speaker": "Собеседник",
+            "text": "When does the café stay open?"
+          }
+        ],
+        "options": [
+          {
+            "id": "v148d63a5471a",
+            "label": "In the morning only."
+          },
+          {
+            "id": "vc0825e7f1e62",
+            "label": "At noon only."
+          },
+          {
+            "id": "v9fe11368115a",
+            "label": "In the evening."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9fe11368115a"
+      },
+      "reference_answer": "v9fe11368115a",
+      "incorrect_answer": "v148d63a5471a",
+      "editorial_answer": "In the evening.",
+      "explanation": "Текст сообщает evening.",
+      "key": "e08"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "Выбери слово по смыслу контекста.",
+      "public_payload": {
+        "sentence": "The time after afternoon and before night is ___.",
+        "options": [
+          {
+            "id": "v2873641cfb10",
+            "label": "noon"
+          },
+          {
+            "id": "vfab28db47536",
+            "label": "evening"
+          },
+          {
+            "id": "v8965687d5715",
+            "label": "morning"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfab28db47536"
+      },
+      "reference_answer": "vfab28db47536",
+      "incorrect_answer": "v8965687d5715",
+      "editorial_answer": "evening",
+      "key": "e09",
+      "explanation": "Правило урока: In the morning — утром; in the afternoon — днём."
+    }
+  ]
+}
