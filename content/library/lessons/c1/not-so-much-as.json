@@ -61,7 +61,7 @@
           },
           {
             "id": "v10b77938f214",
-            "label": "В этой конструкции вторая часть вводится as."
+            "label": "like to"
           }
         ]
       },
@@ -72,7 +72,7 @@
       "incorrect_answer": "vc2dcd663f0e3",
       "editorial_answer": "as",
       "key": "e01",
-      "explanation": "Вариант выбран по грамматической модели и контексту урока."
+      "explanation": "В этой конструкции вторая часть вводится as."
     },
     {
       "kind": "gap",
@@ -218,7 +218,7 @@
       "kind": "reading",
       "prompt": "Какой фактор совет выделил сильнее?",
       "public_payload": {
-        "passage": "The board said the reduced attendance was not so much the ticket price as the late schedule change. Prices had stayed the same throughout the season, while the new timetable had been announced only a few days before the event. One commentator paraphrased the statement as saying that price played no role at all. The board clarified that it was ranking the explanations, not proving that every visitor ignored price. It also said that the timing explanation was supported by the feedback they had received, while further evidence would be needed to estimate the effect precisely.",
+        "passage": "The board said the reduced attendance was due not so much to the ticket price as to the late schedule change. Prices had stayed the same throughout the season, while the new timetable had been announced only a few days before the event. One commentator paraphrased the statement as saying that price played no role at all. The board clarified that it was ranking the explanations, not proving that every visitor ignored price. It also said that the timing explanation was supported by the feedback they had received, while further evidence would be needed to estimate the effect precisely.",
         "options": [
           {
             "id": "vbfd48e69fc45",
@@ -312,7 +312,7 @@
       "kind": "reading",
       "prompt": "Что было неверно в пересказе комментатора?",
       "public_payload": {
-        "passage": "The board said the reduced attendance was not so much the ticket price as the late schedule change. Prices had stayed the same throughout the season, while the new timetable had been announced only a few days before the event. One commentator paraphrased the statement as saying that price played no role at all. The board clarified that it was ranking the explanations, not proving that every visitor ignored price. It also said that the timing explanation was supported by the feedback they had received, while further evidence would be needed to estimate the effect precisely.",
+        "passage": "The board said the reduced attendance was due not so much to the ticket price as to the late schedule change. Prices had stayed the same throughout the season, while the new timetable had been announced only a few days before the event. One commentator paraphrased the statement as saying that price played no role at all. The board clarified that it was ranking the explanations, not proving that every visitor ignored price. It also said that the timing explanation was supported by the feedback they had received, while further evidence would be needed to estimate the effect precisely.",
         "options": [
           {
             "id": "vfa9cbdb881e2",
@@ -398,7 +398,7 @@
       "incorrect_answer": "v3ad77406c7d0",
       "editorial_answer": "factor",
       "key": "e09",
-      "explanation": "Правило урока: Not so much the cost as the delay — не столько стоимость, сколько задержка."
+      "explanation": "Factor — обстоятельство, влияющее на результат, то есть фактор."
     }
   ]
 }

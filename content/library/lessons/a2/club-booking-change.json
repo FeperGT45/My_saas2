@@ -1,0 +1,300 @@
+{
+  "key": "a2/club-booking-change",
+  "course": "path-a2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 2,
+  "title": "Перенести встречу клуба",
+  "description": "Перенести встречу клуба: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что изменили в брони?»",
+    "Различать значения booking и confirm в теме «Перенести встречу клуба»"
+  ],
+  "notes": [
+    "В предложении «The new booking is for Wednesday.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «An email confirmation.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a2/repair-dropoff"],
+  "lexicon": [
+    {
+      "en": "booking",
+      "ru": "бронь"
+    },
+    {
+      "en": "confirm",
+      "ru": "подтверждать"
+    },
+    {
+      "en": "available",
+      "ru": "свободный"
+    },
+    {
+      "en": "alternative",
+      "ru": "альтернатива"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Перенести встречу клуба»: выбери значение слова «booking» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "va3ba46d4b593",
+            "label": "бронь"
+          },
+          {
+            "id": "v6c6f7050722d",
+            "label": "подтверждать"
+          },
+          {
+            "id": "v79ab9f8c7d60",
+            "label": "свободный"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va3ba46d4b593"
+      },
+      "reference_answer": "va3ba46d4b593",
+      "incorrect_answer": "v6c6f7050722d",
+      "editorial_answer": "бронь",
+      "explanation": "В этом контексте booking означает «бронь».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары Wednesday / booking. Значение: «Новая бронь оформлена на среду.»",
+      "public_payload": {
+        "sentence": "The new booking is for ___."
+      },
+      "answer_key": {
+        "accepted": ["Wednesday"]
+      },
+      "reference_answer": "Wednesday",
+      "incorrect_answer": "booking",
+      "editorial_answer": "The new booking is for Wednesday.",
+      "explanation": "Нужен вариант Wednesday: полное предложение означает «Новая бронь оформлена на среду.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Новая бронь оформлена на среду.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "booking"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "for"
+          },
+          {
+            "id": "t6",
+            "label": "Wednesday."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "new"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The new booking is for Wednesday.",
+      "explanation": "Порядок слов передаёт смысл «Новая бронь оформлена на среду.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The new booking are for Wednesday."
+      },
+      "answer_key": {
+        "accepted": ["The new booking is for Wednesday."]
+      },
+      "reference_answer": "The new booking is for Wednesday.",
+      "incorrect_answer": "The new booking are for Wednesday.",
+      "editorial_answer": "The new booking is for Wednesday.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The new booking is for Wednesday.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что изменили в брони?",
+      "public_payload": {
+        "passage": "The club booked a room for Tuesday, but the building needs repairs that day. The manager offers Wednesday at the same time. All members can come, so Sara accepts the alternative and asks for an email confirmation. She deletes the old date from the club calendar.",
+        "options": [
+          {
+            "id": "ved21b2df2e3d",
+            "label": "The time, but not the day."
+          },
+          {
+            "id": "v9f5ff6d7302a",
+            "label": "The day, from Tuesday to Wednesday."
+          },
+          {
+            "id": "v28463c205875",
+            "label": "The room size only."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9f5ff6d7302a"
+      },
+      "reference_answer": "v9f5ff6d7302a",
+      "incorrect_answer": "v28463c205875",
+      "editorial_answer": "The day, from Tuesday to Wednesday.",
+      "explanation": "Ответ подтверждён текстом: «The day, from Tuesday to Wednesday.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l2a5141a8be80",
+            "label": "booking"
+          },
+          {
+            "id": "l17013ed0c79d",
+            "label": "confirm"
+          },
+          {
+            "id": "l8e50bb66d4e1",
+            "label": "available"
+          },
+          {
+            "id": "lf9cf7c4570b0",
+            "label": "alternative"
+          }
+        ],
+        "right": [
+          {
+            "id": "r788e4d04f814",
+            "label": "бронь"
+          },
+          {
+            "id": "rd77da53f9299",
+            "label": "подтверждать"
+          },
+          {
+            "id": "rbc4b3413f856",
+            "label": "свободный"
+          },
+          {
+            "id": "r30d3ee14f646",
+            "label": "альтернатива"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l2a5141a8be80": "r788e4d04f814",
+          "l17013ed0c79d": "rd77da53f9299",
+          "l8e50bb66d4e1": "rbc4b3413f856",
+          "lf9cf7c4570b0": "r30d3ee14f646"
+        }
+      },
+      "reference_answer": {
+        "l2a5141a8be80": "r788e4d04f814",
+        "l17013ed0c79d": "rd77da53f9299",
+        "l8e50bb66d4e1": "rbc4b3413f856",
+        "lf9cf7c4570b0": "r30d3ee14f646"
+      },
+      "incorrect_answer": {
+        "l2a5141a8be80": "rd77da53f9299",
+        "l17013ed0c79d": "r788e4d04f814",
+        "l8e50bb66d4e1": "rbc4b3413f856",
+        "lf9cf7c4570b0": "r30d3ee14f646"
+      },
+      "editorial_answer": "booking — бронь; confirm — подтверждать; available — свободный; alternative — альтернатива",
+      "explanation": "Контекстные значения: booking — бронь; confirm — подтверждать; available — свободный; alternative — альтернатива.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Сара просит у менеджера?",
+      "public_payload": {
+        "passage": "The club booked a room for Tuesday, but the building needs repairs that day. The manager offers Wednesday at the same time. All members can come, so Sara accepts the alternative and asks for an email confirmation. She deletes the old date from the club calendar.",
+        "options": [
+          {
+            "id": "v4cbee1808a57",
+            "label": "A refund for new chairs."
+          },
+          {
+            "id": "vd37874486dd5",
+            "label": "An email confirmation."
+          },
+          {
+            "id": "vae8d9304ce90",
+            "label": "A list of repair tools."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd37874486dd5"
+      },
+      "reference_answer": "vd37874486dd5",
+      "incorrect_answer": "v4cbee1808a57",
+      "editorial_answer": "An email confirmation.",
+      "explanation": "Сохраняем информацию текста: «An email confirmation.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Перенести встречу клуба»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “confirm” means ___.",
+        "options": [
+          {
+            "id": "vd0c03bc23daf",
+            "label": "подтверждать"
+          },
+          {
+            "id": "v777e37a3f2c2",
+            "label": "альтернатива"
+          },
+          {
+            "id": "v533b21ab9627",
+            "label": "свободный"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd0c03bc23daf"
+      },
+      "reference_answer": "vd0c03bc23daf",
+      "incorrect_answer": "v533b21ab9627",
+      "editorial_answer": "подтверждать",
+      "explanation": "Здесь confirm — «подтверждать», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

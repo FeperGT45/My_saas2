@@ -1,0 +1,300 @@
+{
+  "key": "b1/volunteer-handover",
+  "course": "path-b1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 2,
+  "title": "Передать дела следующему волонтёру",
+  "description": "Передать дела следующему волонтёру: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что Прия уже сделала?»",
+    "Различать значения handover и outstanding в теме «Передать дела следующему волонтёру»"
+  ],
+  "notes": [
+    "В предложении «The handover is in the logbook.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «Replies had not arrived.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/shared-file-versions"],
+  "lexicon": [
+    {
+      "en": "handover",
+      "ru": "передача дел"
+    },
+    {
+      "en": "outstanding",
+      "ru": "незавершённый"
+    },
+    {
+      "en": "logbook",
+      "ru": "журнал"
+    },
+    {
+      "en": "follow-up",
+      "ru": "последующее действие"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Передать дела следующему волонтёру»: выбери значение слова «handover» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v95ee36910995",
+            "label": "передача дел"
+          },
+          {
+            "id": "vd6fc807efdd9",
+            "label": "журнал"
+          },
+          {
+            "id": "va72e8fece6c6",
+            "label": "незавершённый"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v95ee36910995"
+      },
+      "reference_answer": "v95ee36910995",
+      "incorrect_answer": "va72e8fece6c6",
+      "editorial_answer": "передача дел",
+      "explanation": "В этом контексте handover означает «передача дел».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары handover / logbook. Значение: «Передача дел зафиксирована в журнале.»",
+      "public_payload": {
+        "sentence": "The handover is in the ___."
+      },
+      "answer_key": {
+        "accepted": ["logbook"]
+      },
+      "reference_answer": "logbook",
+      "incorrect_answer": "handover",
+      "editorial_answer": "The handover is in the logbook.",
+      "explanation": "Нужен вариант logbook: полное предложение означает «Передача дел зафиксирована в журнале.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Передача дел зафиксирована в журнале.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "in"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "logbook."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "handover"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The handover is in the logbook.",
+      "explanation": "Порядок слов передаёт смысл «Передача дел зафиксирована в журнале.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The handover are in the logbook."
+      },
+      "answer_key": {
+        "accepted": ["The handover is in the logbook."]
+      },
+      "reference_answer": "The handover is in the logbook.",
+      "incorrect_answer": "The handover are in the logbook.",
+      "editorial_answer": "The handover is in the logbook.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The handover is in the logbook.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Прия уже сделала?",
+      "public_payload": {
+        "passage": "Before leaving, Priya wrote that she had contacted two speakers but had not yet received their replies. The next volunteer almost marked the invitations as confirmed. After reading the full handover, he left them pending and set a reminder. Sending a request was a completed action; receiving agreement was a different step that still needed to happen.",
+        "options": [
+          {
+            "id": "v9e6a47921c6b",
+            "label": "Cancelled both invitations."
+          },
+          {
+            "id": "vb4a1a1a1a52e",
+            "label": "Received two confirmations."
+          },
+          {
+            "id": "vb6727b2fac88",
+            "label": "Contacted two speakers."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb6727b2fac88"
+      },
+      "reference_answer": "vb6727b2fac88",
+      "incorrect_answer": "vb4a1a1a1a52e",
+      "editorial_answer": "Contacted two speakers.",
+      "explanation": "Ответ подтверждён текстом: «Contacted two speakers.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l382158ac503a",
+            "label": "handover"
+          },
+          {
+            "id": "l7873c182e0c8",
+            "label": "outstanding"
+          },
+          {
+            "id": "l75ef377ac8f0",
+            "label": "logbook"
+          },
+          {
+            "id": "l7d370b22d5a1",
+            "label": "follow-up"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4957a9961e02",
+            "label": "журнал"
+          },
+          {
+            "id": "rb3538f556cae",
+            "label": "незавершённый"
+          },
+          {
+            "id": "r879b206b865f",
+            "label": "передача дел"
+          },
+          {
+            "id": "r8d9f6f51a5df",
+            "label": "последующее действие"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l382158ac503a": "r879b206b865f",
+          "l7873c182e0c8": "rb3538f556cae",
+          "l75ef377ac8f0": "r4957a9961e02",
+          "l7d370b22d5a1": "r8d9f6f51a5df"
+        }
+      },
+      "reference_answer": {
+        "l382158ac503a": "r879b206b865f",
+        "l7873c182e0c8": "rb3538f556cae",
+        "l75ef377ac8f0": "r4957a9961e02",
+        "l7d370b22d5a1": "r8d9f6f51a5df"
+      },
+      "incorrect_answer": {
+        "l382158ac503a": "rb3538f556cae",
+        "l7873c182e0c8": "r879b206b865f",
+        "l75ef377ac8f0": "r4957a9961e02",
+        "l7d370b22d5a1": "r8d9f6f51a5df"
+      },
+      "editorial_answer": "handover — передача дел; outstanding — незавершённый; logbook — журнал; follow-up — последующее действие",
+      "explanation": "Контекстные значения: handover — передача дел; outstanding — незавершённый; logbook — журнал; follow-up — последующее действие.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему приглашения остались в ожидании?",
+      "public_payload": {
+        "passage": "Before leaving, Priya wrote that she had contacted two speakers but had not yet received their replies. The next volunteer almost marked the invitations as confirmed. After reading the full handover, he left them pending and set a reminder. Sending a request was a completed action; receiving agreement was a different step that still needed to happen.",
+        "options": [
+          {
+            "id": "v991e33ab1192",
+            "label": "The logbook was empty."
+          },
+          {
+            "id": "vca089a4bfa21",
+            "label": "Replies had not arrived."
+          },
+          {
+            "id": "vb2c10860f0dc",
+            "label": "The speakers had both refused."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vca089a4bfa21"
+      },
+      "reference_answer": "vca089a4bfa21",
+      "incorrect_answer": "vb2c10860f0dc",
+      "editorial_answer": "Replies had not arrived.",
+      "explanation": "Сохраняем информацию текста: «Replies had not arrived.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Передать дела следующему волонтёру»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “outstanding” means ___.",
+        "options": [
+          {
+            "id": "v517aada03f54",
+            "label": "незавершённый"
+          },
+          {
+            "id": "v8379ad7655b6",
+            "label": "последующее действие"
+          },
+          {
+            "id": "v2a1252ed87d4",
+            "label": "журнал"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v517aada03f54"
+      },
+      "reference_answer": "v517aada03f54",
+      "incorrect_answer": "v2a1252ed87d4",
+      "editorial_answer": "незавершённый",
+      "explanation": "Здесь outstanding — «незавершённый», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

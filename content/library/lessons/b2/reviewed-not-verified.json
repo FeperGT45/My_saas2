@@ -1,0 +1,300 @@
+{
+  "key": "b2/reviewed-not-verified",
+  "course": "path-b2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 2,
+  "title": "Прочитано и независимо проверено",
+  "description": "Прочитано и независимо проверено: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Какую работу выполнила редактор?»",
+    "Различать значения review и verification в теме «Прочитано и независимо проверено»"
+  ],
+  "notes": [
+    "В предложении «The review is separate from verification.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «It overstated the scope of the review.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/trial-extension"],
+  "lexicon": [
+    {
+      "en": "review",
+      "ru": "обзор"
+    },
+    {
+      "en": "verification",
+      "ru": "проверка достоверности"
+    },
+    {
+      "en": "source",
+      "ru": "источник"
+    },
+    {
+      "en": "discrepancy",
+      "ru": "расхождение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Прочитано и независимо проверено»: выбери значение слова «review» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vf508a1172440",
+            "label": "обзор"
+          },
+          {
+            "id": "v7083ceec007f",
+            "label": "источник"
+          },
+          {
+            "id": "v6d0d276e5707",
+            "label": "проверка достоверности"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf508a1172440"
+      },
+      "reference_answer": "vf508a1172440",
+      "incorrect_answer": "v6d0d276e5707",
+      "editorial_answer": "обзор",
+      "explanation": "В этом контексте review означает «обзор».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары review / verification. Значение: «Обзор отделён от проверки достоверности.»",
+      "public_payload": {
+        "sentence": "The review is separate from ___."
+      },
+      "answer_key": {
+        "accepted": ["verification"]
+      },
+      "reference_answer": "verification",
+      "incorrect_answer": "review",
+      "editorial_answer": "The review is separate from verification.",
+      "explanation": "Нужен вариант verification: полное предложение означает «Обзор отделён от проверки достоверности.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Обзор отделён от проверки достоверности.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "separate"
+          },
+          {
+            "id": "t5",
+            "label": "from"
+          },
+          {
+            "id": "t6",
+            "label": "verification."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "review"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The review is separate from verification.",
+      "explanation": "Порядок слов передаёт смысл «Обзор отделён от проверки достоверности.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The review are separate from verification."
+      },
+      "answer_key": {
+        "accepted": ["The review is separate from verification."]
+      },
+      "reference_answer": "The review is separate from verification.",
+      "incorrect_answer": "The review are separate from verification.",
+      "editorial_answer": "The review is separate from verification.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The review is separate from verification.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую работу выполнила редактор?",
+      "public_payload": {
+        "passage": "An editor had reviewed a contributor’s account for clarity and structure. A caption later said that every factual claim had been independently verified. The editor asked for a correction: she had improved the wording but had not checked the underlying records. Two dates still differed from those in the source documents. The revised caption described the actual editorial work and marked the dates for verification. A useful review had occurred, yet its scope did not support the stronger assurance.",
+        "options": [
+          {
+            "id": "v9d48f79dedd0",
+            "label": "Independently verified every factual claim."
+          },
+          {
+            "id": "v79432763de5d",
+            "label": "Reviewed clarity and structure."
+          },
+          {
+            "id": "v7a453f96a9ff",
+            "label": "Replaced the source records."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v79432763de5d"
+      },
+      "reference_answer": "v79432763de5d",
+      "incorrect_answer": "v9d48f79dedd0",
+      "editorial_answer": "Reviewed clarity and structure.",
+      "explanation": "Ответ подтверждён текстом: «Reviewed clarity and structure.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l6e3968869b4c",
+            "label": "review"
+          },
+          {
+            "id": "lba50be87612a",
+            "label": "verification"
+          },
+          {
+            "id": "l0f617748eb58",
+            "label": "source"
+          },
+          {
+            "id": "l04cf1b401c42",
+            "label": "discrepancy"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1b3102bba603",
+            "label": "проверка достоверности"
+          },
+          {
+            "id": "r2de4594538a6",
+            "label": "обзор"
+          },
+          {
+            "id": "r14cc4c143554",
+            "label": "источник"
+          },
+          {
+            "id": "rb487f818361a",
+            "label": "расхождение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l6e3968869b4c": "r2de4594538a6",
+          "lba50be87612a": "r1b3102bba603",
+          "l0f617748eb58": "r14cc4c143554",
+          "l04cf1b401c42": "rb487f818361a"
+        }
+      },
+      "reference_answer": {
+        "l6e3968869b4c": "r2de4594538a6",
+        "lba50be87612a": "r1b3102bba603",
+        "l0f617748eb58": "r14cc4c143554",
+        "l04cf1b401c42": "rb487f818361a"
+      },
+      "incorrect_answer": {
+        "l6e3968869b4c": "r1b3102bba603",
+        "lba50be87612a": "r2de4594538a6",
+        "l0f617748eb58": "r14cc4c143554",
+        "l04cf1b401c42": "rb487f818361a"
+      },
+      "editorial_answer": "review — обзор; verification — проверка достоверности; source — источник; discrepancy — расхождение",
+      "explanation": "Контекстные значения: review — обзор; verification — проверка достоверности; source — источник; discrepancy — расхождение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему исправили подпись?",
+      "public_payload": {
+        "passage": "An editor had reviewed a contributor’s account for clarity and structure. A caption later said that every factual claim had been independently verified. The editor asked for a correction: she had improved the wording but had not checked the underlying records. Two dates still differed from those in the source documents. The revised caption described the actual editorial work and marked the dates for verification. A useful review had occurred, yet its scope did not support the stronger assurance.",
+        "options": [
+          {
+            "id": "ve1faefd726a7",
+            "label": "It overstated the scope of the review."
+          },
+          {
+            "id": "v56e8ad7b8b38",
+            "label": "No editing had occurred at all."
+          },
+          {
+            "id": "v92336526cf9e",
+            "label": "The dates had already been proved identical."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve1faefd726a7"
+      },
+      "reference_answer": "ve1faefd726a7",
+      "incorrect_answer": "v56e8ad7b8b38",
+      "editorial_answer": "It overstated the scope of the review.",
+      "explanation": "Сохраняем информацию текста: «It overstated the scope of the review.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Прочитано и независимо проверено»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “verification” means ___.",
+        "options": [
+          {
+            "id": "vde90fc23430a",
+            "label": "проверка достоверности"
+          },
+          {
+            "id": "v9da0aa497ef3",
+            "label": "расхождение"
+          },
+          {
+            "id": "v1df498f3b618",
+            "label": "источник"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vde90fc23430a"
+      },
+      "reference_answer": "vde90fc23430a",
+      "incorrect_answer": "v1df498f3b618",
+      "editorial_answer": "проверка достоверности",
+      "explanation": "Здесь verification — «проверка достоверности», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

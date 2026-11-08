@@ -1,0 +1,304 @@
+{
+  "key": "c1/respectively-mapping",
+  "course": "path-c1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика C1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 3,
+  "title": "Respectively: порядок соответствий",
+  "description": "Respectively: порядок соответствий: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "C1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Когда закрывался северный вход?»",
+    "Различать значения respectively и sequence в теме «Respectively: порядок соответствий»"
+  ],
+  "notes": [
+    "В предложении «The sequence is essential to the mapping.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «Respectively pairs the lists by order.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 14,
+  "prerequisites": ["c1/subject-to-confirmation"],
+  "lexicon": [
+    {
+      "en": "respectively",
+      "ru": "соответственно"
+    },
+    {
+      "en": "sequence",
+      "ru": "последовательность"
+    },
+    {
+      "en": "mapping",
+      "ru": "соответствие"
+    },
+    {
+      "en": "reversal",
+      "ru": "перестановка в обратном порядке"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Respectively: порядок соответствий»: выбери значение слова «respectively» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v0bc76cc7ce57",
+            "label": "соответственно"
+          },
+          {
+            "id": "v927b7b18f0d6",
+            "label": "последовательность"
+          },
+          {
+            "id": "v131d4276c088",
+            "label": "соответствие"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0bc76cc7ce57"
+      },
+      "reference_answer": "v0bc76cc7ce57",
+      "incorrect_answer": "v927b7b18f0d6",
+      "editorial_answer": "соответственно",
+      "explanation": "В этом контексте respectively означает «соответственно».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары mapping / respectively. Значение: «Последовательность важна для соответствия.»",
+      "public_payload": {
+        "sentence": "The sequence is essential to the ___."
+      },
+      "answer_key": {
+        "accepted": ["mapping"]
+      },
+      "reference_answer": "mapping",
+      "incorrect_answer": "respectively",
+      "editorial_answer": "The sequence is essential to the mapping.",
+      "explanation": "Нужен вариант mapping: полное предложение означает «Последовательность важна для соответствия.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Последовательность важна для соответствия.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "essential"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "mapping."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "sequence"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The sequence is essential to the mapping.",
+      "explanation": "Порядок слов передаёт смысл «Последовательность важна для соответствия.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The sequence are essential to the mapping."
+      },
+      "answer_key": {
+        "accepted": ["The sequence is essential to the mapping."]
+      },
+      "reference_answer": "The sequence is essential to the mapping.",
+      "incorrect_answer": "The sequence are essential to the mapping.",
+      "editorial_answer": "The sequence is essential to the mapping.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The sequence is essential to the mapping.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда закрывался северный вход?",
+      "public_payload": {
+        "passage": "The report stated that the north and south entrances would close at six and eight respectively. A revised notice swapped the names of the entrances but left the times in their original order. The editor noticed that this had changed the practical instructions: respectively links the first item in one list to the first in the other. The report had not merely supplied two independent collections of words and numbers. To preserve its meaning, the editor restored the original pairing and added a small table. Visitors could now see that the north entrance closed earlier, while the south entrance remained available for another two hours.",
+        "options": [
+          {
+            "id": "v6e9c6ead2d1c",
+            "label": "At six."
+          },
+          {
+            "id": "v9a13d644405e",
+            "label": "At eight."
+          },
+          {
+            "id": "v89eac47c098e",
+            "label": "At an unspecified identical time."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6e9c6ead2d1c"
+      },
+      "reference_answer": "v6e9c6ead2d1c",
+      "incorrect_answer": "v9a13d644405e",
+      "editorial_answer": "At six.",
+      "explanation": "Ответ подтверждён текстом: «At six.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l67b9c5a62ff0",
+            "label": "respectively"
+          },
+          {
+            "id": "l7e3af4aad2e1",
+            "label": "sequence"
+          },
+          {
+            "id": "l866f0d8949ea",
+            "label": "mapping"
+          },
+          {
+            "id": "lc16e1176a5c5",
+            "label": "reversal"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb127acee25ee",
+            "label": "соответственно"
+          },
+          {
+            "id": "r7afdbb7de36f",
+            "label": "последовательность"
+          },
+          {
+            "id": "r99fe64f793fd",
+            "label": "перестановка в обратном порядке"
+          },
+          {
+            "id": "rb0aa42e1fe27",
+            "label": "соответствие"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l67b9c5a62ff0": "rb127acee25ee",
+          "l7e3af4aad2e1": "r7afdbb7de36f",
+          "l866f0d8949ea": "rb0aa42e1fe27",
+          "lc16e1176a5c5": "r99fe64f793fd"
+        }
+      },
+      "reference_answer": {
+        "l67b9c5a62ff0": "rb127acee25ee",
+        "l7e3af4aad2e1": "r7afdbb7de36f",
+        "l866f0d8949ea": "rb0aa42e1fe27",
+        "lc16e1176a5c5": "r99fe64f793fd"
+      },
+      "incorrect_answer": {
+        "l67b9c5a62ff0": "r7afdbb7de36f",
+        "l7e3af4aad2e1": "rb127acee25ee",
+        "l866f0d8949ea": "rb0aa42e1fe27",
+        "lc16e1176a5c5": "r99fe64f793fd"
+      },
+      "editorial_answer": "respectively — соответственно; sequence — последовательность; mapping — соответствие; reversal — перестановка в обратном порядке",
+      "explanation": "Контекстные значения: respectively — соответственно; sequence — последовательность; mapping — соответствие; reversal — перестановка в обратном порядке.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему перестановка названий изменила смысл?",
+      "public_payload": {
+        "passage": "The report stated that the north and south entrances would close at six and eight respectively. A revised notice swapped the names of the entrances but left the times in their original order. The editor noticed that this had changed the practical instructions: respectively links the first item in one list to the first in the other. The report had not merely supplied two independent collections of words and numbers. To preserve its meaning, the editor restored the original pairing and added a small table. Visitors could now see that the north entrance closed earlier, while the south entrance remained available for another two hours.",
+        "options": [
+          {
+            "id": "v94917f3a32ea",
+            "label": "Numbers lose meaning beside entrance names."
+          },
+          {
+            "id": "vdcd9f802c64a",
+            "label": "Respectively pairs the lists by order."
+          },
+          {
+            "id": "v0c022d1f42f3",
+            "label": "The word means both times apply to both entrances."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdcd9f802c64a"
+      },
+      "reference_answer": "vdcd9f802c64a",
+      "incorrect_answer": "v0c022d1f42f3",
+      "editorial_answer": "Respectively pairs the lists by order.",
+      "explanation": "Сохраняем информацию текста: «Respectively pairs the lists by order.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Respectively: порядок соответствий»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “sequence” means ___.",
+        "options": [
+          {
+            "id": "vccff5b7cd024",
+            "label": "соответствие"
+          },
+          {
+            "id": "va8b0a4005f00",
+            "label": "последовательность"
+          },
+          {
+            "id": "v653eba8e8e5a",
+            "label": "перестановка в обратном порядке"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va8b0a4005f00"
+      },
+      "reference_answer": "va8b0a4005f00",
+      "incorrect_answer": "vccff5b7cd024",
+      "editorial_answer": "последовательность",
+      "explanation": "Здесь sequence — «последовательность», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

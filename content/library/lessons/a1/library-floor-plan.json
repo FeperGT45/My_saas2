@@ -1,0 +1,300 @@
+{
+  "key": "a1/library-floor-plan",
+  "course": "path-a1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 6,
+  "title": "План библиотеки",
+  "description": "План библиотеки: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Где карта?»",
+    "Различать значения stairs и map в теме «План библиотеки»"
+  ],
+  "notes": [
+    "В предложении «The map is near the stairs.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «Upstairs.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 6,
+  "prerequisites": ["a1/lost-umbrella-desk"],
+  "lexicon": [
+    {
+      "en": "stairs",
+      "ru": "лестница"
+    },
+    {
+      "en": "map",
+      "ru": "карта"
+    },
+    {
+      "en": "desk",
+      "ru": "письменный стол"
+    },
+    {
+      "en": "quiet",
+      "ru": "тихий"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«План библиотеки»: выбери значение слова «stairs» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v56dab5d59ed2",
+            "label": "лестница"
+          },
+          {
+            "id": "vcb7e309d06e8",
+            "label": "письменный стол"
+          },
+          {
+            "id": "v45dc833cb67a",
+            "label": "карта"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v56dab5d59ed2"
+      },
+      "reference_answer": "v56dab5d59ed2",
+      "incorrect_answer": "v45dc833cb67a",
+      "editorial_answer": "лестница",
+      "explanation": "В этом контексте stairs означает «лестница».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары map / stairs. Значение: «Карта находится рядом с лестницей.»",
+      "public_payload": {
+        "sentence": "The map is near the ___."
+      },
+      "answer_key": {
+        "accepted": ["stairs"]
+      },
+      "reference_answer": "stairs",
+      "incorrect_answer": "map",
+      "editorial_answer": "The map is near the stairs.",
+      "explanation": "Нужен вариант stairs: полное предложение означает «Карта находится рядом с лестницей.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Карта находится рядом с лестницей.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "near"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "stairs."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "map"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The map is near the stairs.",
+      "explanation": "Порядок слов передаёт смысл «Карта находится рядом с лестницей.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The map are near the stairs."
+      },
+      "answer_key": {
+        "accepted": ["The map is near the stairs."]
+      },
+      "reference_answer": "The map is near the stairs.",
+      "incorrect_answer": "The map are near the stairs.",
+      "editorial_answer": "The map is near the stairs.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The map is near the stairs.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где карта?",
+      "public_payload": {
+        "passage": "A map is near the stairs in our library. The children’s room is on the ground floor. The quiet room is upstairs. We read there. We leave our bags by the desk.",
+        "options": [
+          {
+            "id": "vf882eaf5d13e",
+            "label": "Inside a bag."
+          },
+          {
+            "id": "v7e47cefe3d61",
+            "label": "Near the stairs."
+          },
+          {
+            "id": "vf0800074d113",
+            "label": "On the roof."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7e47cefe3d61"
+      },
+      "reference_answer": "v7e47cefe3d61",
+      "incorrect_answer": "vf882eaf5d13e",
+      "editorial_answer": "Near the stairs.",
+      "explanation": "Ответ подтверждён текстом: «Near the stairs.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lce0aca46a774",
+            "label": "stairs"
+          },
+          {
+            "id": "l25e7891055b4",
+            "label": "map"
+          },
+          {
+            "id": "l7df3debbec96",
+            "label": "desk"
+          },
+          {
+            "id": "lde6c4de874e4",
+            "label": "quiet"
+          }
+        ],
+        "right": [
+          {
+            "id": "rf3033216060f",
+            "label": "карта"
+          },
+          {
+            "id": "re10d85fa6f54",
+            "label": "лестница"
+          },
+          {
+            "id": "ra3c3e184fd7e",
+            "label": "письменный стол"
+          },
+          {
+            "id": "rf6ca8d6d9259",
+            "label": "тихий"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lce0aca46a774": "re10d85fa6f54",
+          "l25e7891055b4": "rf3033216060f",
+          "l7df3debbec96": "ra3c3e184fd7e",
+          "lde6c4de874e4": "rf6ca8d6d9259"
+        }
+      },
+      "reference_answer": {
+        "lce0aca46a774": "re10d85fa6f54",
+        "l25e7891055b4": "rf3033216060f",
+        "l7df3debbec96": "ra3c3e184fd7e",
+        "lde6c4de874e4": "rf6ca8d6d9259"
+      },
+      "incorrect_answer": {
+        "lce0aca46a774": "rf3033216060f",
+        "l25e7891055b4": "re10d85fa6f54",
+        "l7df3debbec96": "ra3c3e184fd7e",
+        "lde6c4de874e4": "rf6ca8d6d9259"
+      },
+      "editorial_answer": "stairs — лестница; map — карта; desk — письменный стол; quiet — тихий",
+      "explanation": "Контекстные значения: stairs — лестница; map — карта; desk — письменный стол; quiet — тихий.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где тихая комната?",
+      "public_payload": {
+        "passage": "A map is near the stairs in our library. The children’s room is on the ground floor. The quiet room is upstairs. We read there. We leave our bags by the desk.",
+        "options": [
+          {
+            "id": "v3212176e31cf",
+            "label": "Outside the library."
+          },
+          {
+            "id": "v463e787e3462",
+            "label": "Upstairs."
+          },
+          {
+            "id": "ve7f857a35bb3",
+            "label": "In the children’s room."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v463e787e3462"
+      },
+      "reference_answer": "v463e787e3462",
+      "incorrect_answer": "ve7f857a35bb3",
+      "editorial_answer": "Upstairs.",
+      "explanation": "Сохраняем информацию текста: «Upstairs.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«План библиотеки»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “map” means ___.",
+        "options": [
+          {
+            "id": "vd9c0c71dbadc",
+            "label": "тихий"
+          },
+          {
+            "id": "v58b4566acdc6",
+            "label": "карта"
+          },
+          {
+            "id": "v28e9adba2730",
+            "label": "письменный стол"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v58b4566acdc6"
+      },
+      "reference_answer": "v58b4566acdc6",
+      "incorrect_answer": "v28e9adba2730",
+      "editorial_answer": "карта",
+      "explanation": "Здесь map — «карта», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,292 @@
+{
+  "key": "a1/sports-shirt-number",
+  "course": "path-a1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 4,
+  "title": "Номер на футболке",
+  "description": "Номер на футболке: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Какой номер у рассказчика?»",
+    "Различать значения shirt и number в теме «Номер на футболке»"
+  ],
+  "notes": [
+    "В предложении «The shirt is red.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «In a bag.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 6,
+  "prerequisites": ["a1/picnic-blanket"],
+  "lexicon": [
+    {
+      "en": "shirt",
+      "ru": "футболка"
+    },
+    {
+      "en": "number",
+      "ru": "номер"
+    },
+    {
+      "en": "team",
+      "ru": "команда"
+    },
+    {
+      "en": "player",
+      "ru": "игрок"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Номер на футболке»: выбери значение слова «shirt» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v3d4a3c006af9",
+            "label": "команда"
+          },
+          {
+            "id": "v8e03350a2e19",
+            "label": "номер"
+          },
+          {
+            "id": "v687a2f18fb5a",
+            "label": "футболка"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v687a2f18fb5a"
+      },
+      "reference_answer": "v687a2f18fb5a",
+      "incorrect_answer": "v8e03350a2e19",
+      "editorial_answer": "футболка",
+      "explanation": "В этом контексте shirt означает «футболка».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары shirt / red. Значение: «Футболка красная.»",
+      "public_payload": {
+        "sentence": "The shirt is ___."
+      },
+      "answer_key": {
+        "accepted": ["red"]
+      },
+      "reference_answer": "red",
+      "incorrect_answer": "shirt",
+      "editorial_answer": "The shirt is red.",
+      "explanation": "Нужен вариант red: полное предложение означает «Футболка красная.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Футболка красная.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "red."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "shirt"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4"],
+      "incorrect_answer": ["t2", "t3", "t4", "t1"],
+      "editorial_answer": "The shirt is red.",
+      "explanation": "Порядок слов передаёт смысл «Футболка красная.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The shirt are red."
+      },
+      "answer_key": {
+        "accepted": ["The shirt is red."]
+      },
+      "reference_answer": "The shirt is red.",
+      "incorrect_answer": "The shirt are red.",
+      "editorial_answer": "The shirt is red.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The shirt is red.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой номер у рассказчика?",
+      "public_payload": {
+        "passage": "Our team has red shirts. My number is six. Jo has number nine. We play in the park on Saturday. Jo puts her shirt in a bag after the game.",
+        "options": [
+          {
+            "id": "v0cb237e7b8a4",
+            "label": "Six."
+          },
+          {
+            "id": "v4fe378e68cdc",
+            "label": "Saturday."
+          },
+          {
+            "id": "v5a4d7c8090d7",
+            "label": "Nine."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0cb237e7b8a4"
+      },
+      "reference_answer": "v0cb237e7b8a4",
+      "incorrect_answer": "v5a4d7c8090d7",
+      "editorial_answer": "Six.",
+      "explanation": "Ответ подтверждён текстом: «Six.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l9a4df43c32eb",
+            "label": "shirt"
+          },
+          {
+            "id": "lb604136d465b",
+            "label": "number"
+          },
+          {
+            "id": "l00d3c39e153d",
+            "label": "team"
+          },
+          {
+            "id": "l9c181474e6b4",
+            "label": "player"
+          }
+        ],
+        "right": [
+          {
+            "id": "rf099f655ecc0",
+            "label": "игрок"
+          },
+          {
+            "id": "raa6d60d94abc",
+            "label": "футболка"
+          },
+          {
+            "id": "rf93b96acdf3e",
+            "label": "номер"
+          },
+          {
+            "id": "r43872ccd1546",
+            "label": "команда"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l9a4df43c32eb": "raa6d60d94abc",
+          "lb604136d465b": "rf93b96acdf3e",
+          "l00d3c39e153d": "r43872ccd1546",
+          "l9c181474e6b4": "rf099f655ecc0"
+        }
+      },
+      "reference_answer": {
+        "l9a4df43c32eb": "raa6d60d94abc",
+        "lb604136d465b": "rf93b96acdf3e",
+        "l00d3c39e153d": "r43872ccd1546",
+        "l9c181474e6b4": "rf099f655ecc0"
+      },
+      "incorrect_answer": {
+        "l9a4df43c32eb": "rf93b96acdf3e",
+        "lb604136d465b": "raa6d60d94abc",
+        "l00d3c39e153d": "r43872ccd1546",
+        "l9c181474e6b4": "rf099f655ecc0"
+      },
+      "editorial_answer": "shirt — футболка; number — номер; team — команда; player — игрок",
+      "explanation": "Контекстные значения: shirt — футболка; number — номер; team — команда; player — игрок.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Куда Джо кладёт футболку?",
+      "public_payload": {
+        "passage": "Our team has red shirts. My number is six. Jo has number nine. We play in the park on Saturday. Jo puts her shirt in a bag after the game.",
+        "options": [
+          {
+            "id": "va2c8379aeba1",
+            "label": "On a tree."
+          },
+          {
+            "id": "vd9d8c962bd0e",
+            "label": "In a bag."
+          },
+          {
+            "id": "veec55b16791c",
+            "label": "Under a ball."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd9d8c962bd0e"
+      },
+      "reference_answer": "vd9d8c962bd0e",
+      "incorrect_answer": "va2c8379aeba1",
+      "editorial_answer": "In a bag.",
+      "explanation": "Сохраняем информацию текста: «In a bag.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Номер на футболке»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “number” means ___.",
+        "options": [
+          {
+            "id": "v41d28bce1f45",
+            "label": "команда"
+          },
+          {
+            "id": "vdeccae50d876",
+            "label": "номер"
+          },
+          {
+            "id": "v1bb2fedb4a45",
+            "label": "игрок"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdeccae50d876"
+      },
+      "reference_answer": "vdeccae50d876",
+      "incorrect_answer": "v41d28bce1f45",
+      "editorial_answer": "номер",
+      "explanation": "Здесь number — «номер», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

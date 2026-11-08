@@ -1,0 +1,300 @@
+{
+  "key": "c1/on-balance-judgement",
+  "course": "path-c1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика C1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 6,
+  "title": "On balance: итог с оговорками",
+  "description": "On balance: итог с оговорками: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "C1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Какой компромисс назван?»",
+    "Различать значения balance и trade-off в теме «On balance: итог с оговорками»"
+  ],
+  "notes": [
+    "В предложении «The assessment is favourable on balance.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «It preserves that the judgement weighed competing considerations.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 14,
+  "prerequisites": ["c1/inasmuch-not-insofar"],
+  "lexicon": [
+    {
+      "en": "balance",
+      "ru": "соотношение факторов"
+    },
+    {
+      "en": "trade-off",
+      "ru": "компромисс"
+    },
+    {
+      "en": "drawback",
+      "ru": "недостаток"
+    },
+    {
+      "en": "assessment",
+      "ru": "оценка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«On balance: итог с оговорками»: выбери значение слова «balance» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v322d661ee086",
+            "label": "недостаток"
+          },
+          {
+            "id": "vaa15587b7002",
+            "label": "компромисс"
+          },
+          {
+            "id": "v5f6701bd753e",
+            "label": "соотношение факторов"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5f6701bd753e"
+      },
+      "reference_answer": "v5f6701bd753e",
+      "incorrect_answer": "vaa15587b7002",
+      "editorial_answer": "соотношение факторов",
+      "explanation": "В этом контексте balance означает «соотношение факторов».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары trade-off / balance. Значение: «В целом оценка положительная.»",
+      "public_payload": {
+        "sentence": "The assessment is favourable on ___."
+      },
+      "answer_key": {
+        "accepted": ["balance"]
+      },
+      "reference_answer": "balance",
+      "incorrect_answer": "trade-off",
+      "editorial_answer": "The assessment is favourable on balance.",
+      "explanation": "Нужен вариант balance: полное предложение означает «В целом оценка положительная.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «В целом оценка положительная.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "favourable"
+          },
+          {
+            "id": "t5",
+            "label": "on"
+          },
+          {
+            "id": "t6",
+            "label": "balance."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "assessment"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The assessment is favourable on balance.",
+      "explanation": "Порядок слов передаёт смысл «В целом оценка положительная.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The assessment are favourable on balance."
+      },
+      "answer_key": {
+        "accepted": ["The assessment is favourable on balance."]
+      },
+      "reference_answer": "The assessment is favourable on balance.",
+      "incorrect_answer": "The assessment are favourable on balance.",
+      "editorial_answer": "The assessment is favourable on balance.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The assessment is favourable on balance.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой компромисс назван?",
+      "public_payload": {
+        "passage": "After weighing the benefits and drawbacks, the committee described the pilot as successful on balance. A publicity draft removed the final phrase and claimed that the committee had found no drawbacks. The chair asked for it to be restored. The positive overall judgement reflected a comparison of competing considerations, not the disappearance of every disadvantage. In particular, the pilot had improved access while increasing administrative work. The committee recommended continuing it with a simpler registration process. That recommendation was compatible with both the favourable assessment and the identified problem; it did not require pretending that every part of the arrangement had worked equally well.",
+        "options": [
+          {
+            "id": "v614ca4c24774",
+            "label": "Less access with no administrative work."
+          },
+          {
+            "id": "va023a74ae930",
+            "label": "No benefit and no drawback."
+          },
+          {
+            "id": "vfe28a1242009",
+            "label": "Improved access with more administrative work."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vfe28a1242009"
+      },
+      "reference_answer": "vfe28a1242009",
+      "incorrect_answer": "v614ca4c24774",
+      "editorial_answer": "Improved access with more administrative work.",
+      "explanation": "Ответ подтверждён текстом: «Improved access with more administrative work.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l9d48ced141b5",
+            "label": "balance"
+          },
+          {
+            "id": "l21ec8191a603",
+            "label": "trade-off"
+          },
+          {
+            "id": "leae4703b126d",
+            "label": "drawback"
+          },
+          {
+            "id": "lb4a6ee177558",
+            "label": "assessment"
+          }
+        ],
+        "right": [
+          {
+            "id": "r9d2e9c87c1fd",
+            "label": "оценка"
+          },
+          {
+            "id": "r7d14e95e456a",
+            "label": "соотношение факторов"
+          },
+          {
+            "id": "r5dd29b551fb2",
+            "label": "недостаток"
+          },
+          {
+            "id": "r2114a434e684",
+            "label": "компромисс"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l9d48ced141b5": "r7d14e95e456a",
+          "l21ec8191a603": "r2114a434e684",
+          "leae4703b126d": "r5dd29b551fb2",
+          "lb4a6ee177558": "r9d2e9c87c1fd"
+        }
+      },
+      "reference_answer": {
+        "l9d48ced141b5": "r7d14e95e456a",
+        "l21ec8191a603": "r2114a434e684",
+        "leae4703b126d": "r5dd29b551fb2",
+        "lb4a6ee177558": "r9d2e9c87c1fd"
+      },
+      "incorrect_answer": {
+        "l9d48ced141b5": "r2114a434e684",
+        "l21ec8191a603": "r7d14e95e456a",
+        "leae4703b126d": "r5dd29b551fb2",
+        "lb4a6ee177558": "r9d2e9c87c1fd"
+      },
+      "editorial_answer": "balance — соотношение факторов; trade-off — компромисс; drawback — недостаток; assessment — оценка",
+      "explanation": "Контекстные значения: balance — соотношение факторов; trade-off — компромисс; drawback — недостаток; assessment — оценка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему вернули on balance?",
+      "public_payload": {
+        "passage": "After weighing the benefits and drawbacks, the committee described the pilot as successful on balance. A publicity draft removed the final phrase and claimed that the committee had found no drawbacks. The chair asked for it to be restored. The positive overall judgement reflected a comparison of competing considerations, not the disappearance of every disadvantage. In particular, the pilot had improved access while increasing administrative work. The committee recommended continuing it with a simpler registration process. That recommendation was compatible with both the favourable assessment and the identified problem; it did not require pretending that every part of the arrangement had worked equally well.",
+        "options": [
+          {
+            "id": "vfcd059d66b67",
+            "label": "It makes every drawback disappear."
+          },
+          {
+            "id": "vda8ca9dd1c1e",
+            "label": "It changes the recommendation into a permanent ban."
+          },
+          {
+            "id": "v3a84a689c040",
+            "label": "It preserves that the judgement weighed competing considerations."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3a84a689c040"
+      },
+      "reference_answer": "v3a84a689c040",
+      "incorrect_answer": "vfcd059d66b67",
+      "editorial_answer": "It preserves that the judgement weighed competing considerations.",
+      "explanation": "Сохраняем информацию текста: «It preserves that the judgement weighed competing considerations.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«On balance: итог с оговорками»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “trade-off” means ___.",
+        "options": [
+          {
+            "id": "v56e139542041",
+            "label": "компромисс"
+          },
+          {
+            "id": "v776a3792a7bf",
+            "label": "оценка"
+          },
+          {
+            "id": "v41c32167daf3",
+            "label": "недостаток"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v56e139542041"
+      },
+      "reference_answer": "v56e139542041",
+      "incorrect_answer": "v41c32167daf3",
+      "editorial_answer": "компромисс",
+      "explanation": "Здесь trade-off — «компромисс», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

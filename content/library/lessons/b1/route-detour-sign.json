@@ -1,0 +1,296 @@
+{
+  "key": "b1/route-detour-sign",
+  "course": "path-b1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 6,
+  "title": "Объезд и конечная цель",
+  "description": "Объезд и конечная цель: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что было закрыто?»",
+    "Различать значения detour и destination в теме «Объезд и конечная цель»"
+  ],
+  "notes": [
+    "В предложении «The detour is clearly marked.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «It added ten minutes.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/appointment-reminder"],
+  "lexicon": [
+    {
+      "en": "detour",
+      "ru": "объезд"
+    },
+    {
+      "en": "destination",
+      "ru": "конечная цель"
+    },
+    {
+      "en": "closure",
+      "ru": "закрытие"
+    },
+    {
+      "en": "temporary",
+      "ru": "временный"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Объезд и конечная цель»: выбери значение слова «detour» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v6c09b8f8d533",
+            "label": "конечная цель"
+          },
+          {
+            "id": "v5c4e588fde76",
+            "label": "закрытие"
+          },
+          {
+            "id": "vbd783a62e5e7",
+            "label": "объезд"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbd783a62e5e7"
+      },
+      "reference_answer": "vbd783a62e5e7",
+      "incorrect_answer": "v6c09b8f8d533",
+      "editorial_answer": "объезд",
+      "explanation": "В этом контексте detour означает «объезд».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары detour / marked. Значение: «Объезд чётко обозначен.»",
+      "public_payload": {
+        "sentence": "The detour is clearly ___."
+      },
+      "answer_key": {
+        "accepted": ["marked"]
+      },
+      "reference_answer": "marked",
+      "incorrect_answer": "detour",
+      "editorial_answer": "The detour is clearly marked.",
+      "explanation": "Нужен вариант marked: полное предложение означает «Объезд чётко обозначен.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Объезд чётко обозначен.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "clearly"
+          },
+          {
+            "id": "t5",
+            "label": "marked."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "detour"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "The detour is clearly marked.",
+      "explanation": "Порядок слов передаёт смысл «Объезд чётко обозначен.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The detour are clearly marked."
+      },
+      "answer_key": {
+        "accepted": ["The detour is clearly marked."]
+      },
+      "reference_answer": "The detour is clearly marked.",
+      "incorrect_answer": "The detour are clearly marked.",
+      "editorial_answer": "The detour is clearly marked.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The detour is clearly marked.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что было закрыто?",
+      "public_payload": {
+        "passage": "The main road to the sports hall was closed for repairs. Signs directed drivers along a temporary detour that added ten minutes to the journey. Sam initially thought the hall itself was closed. A notice explained that activities were continuing as normal. The road closure changed how visitors reached the building, not whether the building was open.",
+        "options": [
+          {
+            "id": "v517f84ffe854",
+            "label": "Every entrance to the town."
+          },
+          {
+            "id": "v9b2939805764",
+            "label": "The sports hall."
+          },
+          {
+            "id": "va88c2154832b",
+            "label": "The main road."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va88c2154832b"
+      },
+      "reference_answer": "va88c2154832b",
+      "incorrect_answer": "v9b2939805764",
+      "editorial_answer": "The main road.",
+      "explanation": "Ответ подтверждён текстом: «The main road.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lf5035ba0fb25",
+            "label": "detour"
+          },
+          {
+            "id": "l1c4a6acc1b72",
+            "label": "destination"
+          },
+          {
+            "id": "l5315d43b94bb",
+            "label": "closure"
+          },
+          {
+            "id": "lb259a6954eb0",
+            "label": "temporary"
+          }
+        ],
+        "right": [
+          {
+            "id": "r3b07f958596e",
+            "label": "временный"
+          },
+          {
+            "id": "r398fe232b1d1",
+            "label": "конечная цель"
+          },
+          {
+            "id": "r510a1e0cf843",
+            "label": "объезд"
+          },
+          {
+            "id": "r5b2ba493cf5c",
+            "label": "закрытие"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lf5035ba0fb25": "r510a1e0cf843",
+          "l1c4a6acc1b72": "r398fe232b1d1",
+          "l5315d43b94bb": "r5b2ba493cf5c",
+          "lb259a6954eb0": "r3b07f958596e"
+        }
+      },
+      "reference_answer": {
+        "lf5035ba0fb25": "r510a1e0cf843",
+        "l1c4a6acc1b72": "r398fe232b1d1",
+        "l5315d43b94bb": "r5b2ba493cf5c",
+        "lb259a6954eb0": "r3b07f958596e"
+      },
+      "incorrect_answer": {
+        "lf5035ba0fb25": "r398fe232b1d1",
+        "l1c4a6acc1b72": "r510a1e0cf843",
+        "l5315d43b94bb": "r5b2ba493cf5c",
+        "lb259a6954eb0": "r3b07f958596e"
+      },
+      "editorial_answer": "detour — объезд; destination — конечная цель; closure — закрытие; temporary — временный",
+      "explanation": "Контекстные значения: detour — объезд; destination — конечная цель; closure — закрытие; temporary — временный.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Как объезд влиял на поездку?",
+      "public_payload": {
+        "passage": "The main road to the sports hall was closed for repairs. Signs directed drivers along a temporary detour that added ten minutes to the journey. Sam initially thought the hall itself was closed. A notice explained that activities were continuing as normal. The road closure changed how visitors reached the building, not whether the building was open.",
+        "options": [
+          {
+            "id": "v6e67c73a01de",
+            "label": "It cancelled all activities."
+          },
+          {
+            "id": "v3e9a9540cdd5",
+            "label": "It removed the need to travel."
+          },
+          {
+            "id": "vbde8fed8a8ec",
+            "label": "It added ten minutes."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbde8fed8a8ec"
+      },
+      "reference_answer": "vbde8fed8a8ec",
+      "incorrect_answer": "v6e67c73a01de",
+      "editorial_answer": "It added ten minutes.",
+      "explanation": "Сохраняем информацию текста: «It added ten minutes.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Объезд и конечная цель»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “destination” means ___.",
+        "options": [
+          {
+            "id": "v422bc507329e",
+            "label": "временный"
+          },
+          {
+            "id": "v0bada7c7a60e",
+            "label": "закрытие"
+          },
+          {
+            "id": "v318f1b622bf7",
+            "label": "конечная цель"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v318f1b622bf7"
+      },
+      "reference_answer": "v318f1b622bf7",
+      "incorrect_answer": "v0bada7c7a60e",
+      "editorial_answer": "конечная цель",
+      "explanation": "Здесь destination — «конечная цель», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

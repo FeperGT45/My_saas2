@@ -1,0 +1,300 @@
+{
+  "key": "a1/lost-umbrella-desk",
+  "course": "path-a1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 5,
+  "title": "Забытый зонт",
+  "description": "Забытый зонт: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Чей полосатый зонт?»",
+    "Различать значения umbrella и desk в теме «Забытый зонт»"
+  ],
+  "notes": [
+    "В предложении «The umbrella is at the desk.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «Plain green.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 6,
+  "prerequisites": ["a1/sports-shirt-number"],
+  "lexicon": [
+    {
+      "en": "umbrella",
+      "ru": "зонт"
+    },
+    {
+      "en": "desk",
+      "ru": "стойка"
+    },
+    {
+      "en": "striped",
+      "ru": "полосатый"
+    },
+    {
+      "en": "rain",
+      "ru": "дождь"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Забытый зонт»: выбери значение слова «umbrella» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v362cf5ad573d",
+            "label": "зонт"
+          },
+          {
+            "id": "v6b0ddd056c67",
+            "label": "полосатый"
+          },
+          {
+            "id": "v9b63cde0db55",
+            "label": "стойка"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v362cf5ad573d"
+      },
+      "reference_answer": "v362cf5ad573d",
+      "incorrect_answer": "v9b63cde0db55",
+      "editorial_answer": "зонт",
+      "explanation": "В этом контексте umbrella означает «зонт».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары desk / umbrella. Значение: «Зонт находится у стойки.»",
+      "public_payload": {
+        "sentence": "The umbrella is at the ___."
+      },
+      "answer_key": {
+        "accepted": ["desk"]
+      },
+      "reference_answer": "desk",
+      "incorrect_answer": "umbrella",
+      "editorial_answer": "The umbrella is at the desk.",
+      "explanation": "Нужен вариант desk: полное предложение означает «Зонт находится у стойки.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Зонт находится у стойки.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "at"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "desk."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "umbrella"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The umbrella is at the desk.",
+      "explanation": "Порядок слов передаёт смысл «Зонт находится у стойки.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The umbrella are at the desk."
+      },
+      "answer_key": {
+        "accepted": ["The umbrella is at the desk."]
+      },
+      "reference_answer": "The umbrella is at the desk.",
+      "incorrect_answer": "The umbrella are at the desk.",
+      "editorial_answer": "The umbrella is at the desk.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The umbrella is at the desk.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Чей полосатый зонт?",
+      "public_payload": {
+        "passage": "A striped umbrella is at the school desk. It is not mine. My umbrella is plain green. The teacher asks the class about the striped umbrella. Max says it is his.",
+        "options": [
+          {
+            "id": "vf9462c141d4e",
+            "label": "Max’s."
+          },
+          {
+            "id": "vd99ce60862fb",
+            "label": "The narrator’s."
+          },
+          {
+            "id": "v798e60ae7f01",
+            "label": "The teacher’s."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf9462c141d4e"
+      },
+      "reference_answer": "vf9462c141d4e",
+      "incorrect_answer": "vd99ce60862fb",
+      "editorial_answer": "Max’s.",
+      "explanation": "Ответ подтверждён текстом: «Max’s.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l2c4a3b4dba34",
+            "label": "umbrella"
+          },
+          {
+            "id": "l14e2ee699ea6",
+            "label": "desk"
+          },
+          {
+            "id": "lf926ab926ca8",
+            "label": "striped"
+          },
+          {
+            "id": "l82627abb1d67",
+            "label": "rain"
+          }
+        ],
+        "right": [
+          {
+            "id": "r2ea5abc9c98a",
+            "label": "зонт"
+          },
+          {
+            "id": "r9c14f045276a",
+            "label": "полосатый"
+          },
+          {
+            "id": "rbb8f64798506",
+            "label": "дождь"
+          },
+          {
+            "id": "r4d453506d99c",
+            "label": "стойка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l2c4a3b4dba34": "r2ea5abc9c98a",
+          "l14e2ee699ea6": "r4d453506d99c",
+          "lf926ab926ca8": "r9c14f045276a",
+          "l82627abb1d67": "rbb8f64798506"
+        }
+      },
+      "reference_answer": {
+        "l2c4a3b4dba34": "r2ea5abc9c98a",
+        "l14e2ee699ea6": "r4d453506d99c",
+        "lf926ab926ca8": "r9c14f045276a",
+        "l82627abb1d67": "rbb8f64798506"
+      },
+      "incorrect_answer": {
+        "l2c4a3b4dba34": "r4d453506d99c",
+        "l14e2ee699ea6": "r2ea5abc9c98a",
+        "lf926ab926ca8": "r9c14f045276a",
+        "l82627abb1d67": "rbb8f64798506"
+      },
+      "editorial_answer": "umbrella — зонт; desk — стойка; striped — полосатый; rain — дождь",
+      "explanation": "Контекстные значения: umbrella — зонт; desk — стойка; striped — полосатый; rain — дождь.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой зонт у рассказчика?",
+      "public_payload": {
+        "passage": "A striped umbrella is at the school desk. It is not mine. My umbrella is plain green. The teacher asks the class about the striped umbrella. Max says it is his.",
+        "options": [
+          {
+            "id": "v7f47a410c00c",
+            "label": "Plain green."
+          },
+          {
+            "id": "v2c93dbfa569c",
+            "label": "Striped blue."
+          },
+          {
+            "id": "va195d806441d",
+            "label": "Plain red."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7f47a410c00c"
+      },
+      "reference_answer": "v7f47a410c00c",
+      "incorrect_answer": "v2c93dbfa569c",
+      "editorial_answer": "Plain green.",
+      "explanation": "Сохраняем информацию текста: «Plain green.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Забытый зонт»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “desk” means ___.",
+        "options": [
+          {
+            "id": "vb06d6d1c900e",
+            "label": "стойка"
+          },
+          {
+            "id": "vf0dcb7e61360",
+            "label": "дождь"
+          },
+          {
+            "id": "v895f24b9a582",
+            "label": "полосатый"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb06d6d1c900e"
+      },
+      "reference_answer": "vb06d6d1c900e",
+      "incorrect_answer": "v895f24b9a582",
+      "editorial_answer": "стойка",
+      "explanation": "Здесь desk — «стойка», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

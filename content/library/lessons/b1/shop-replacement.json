@@ -1,0 +1,300 @@
+{
+  "key": "b1/shop-replacement",
+  "course": "path-b1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 3,
+  "title": "Замена товара с уточнением",
+  "description": "Замена товара с уточнением: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что магазин предложил Мие?»",
+    "Различать значения replacement и faulty в теме «Замена товара с уточнением»"
+  ],
+  "notes": [
+    "В предложении «The replacement is ready for inspection.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «In case another problem appeared.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/volunteer-handover"],
+  "lexicon": [
+    {
+      "en": "replacement",
+      "ru": "замена"
+    },
+    {
+      "en": "faulty",
+      "ru": "неисправный"
+    },
+    {
+      "en": "inspection",
+      "ru": "проверка"
+    },
+    {
+      "en": "refund",
+      "ru": "возврат денег"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Замена товара с уточнением»: выбери значение слова «replacement» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v634ebc0e6ca2",
+            "label": "проверка"
+          },
+          {
+            "id": "vbda1927ca9ac",
+            "label": "замена"
+          },
+          {
+            "id": "v039b412a2b05",
+            "label": "неисправный"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbda1927ca9ac"
+      },
+      "reference_answer": "vbda1927ca9ac",
+      "incorrect_answer": "v039b412a2b05",
+      "editorial_answer": "замена",
+      "explanation": "В этом контексте replacement означает «замена».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары inspection / replacement. Значение: «Замена готова к проверке.»",
+      "public_payload": {
+        "sentence": "The replacement is ready for ___."
+      },
+      "answer_key": {
+        "accepted": ["inspection"]
+      },
+      "reference_answer": "inspection",
+      "incorrect_answer": "replacement",
+      "editorial_answer": "The replacement is ready for inspection.",
+      "explanation": "Нужен вариант inspection: полное предложение означает «Замена готова к проверке.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Замена готова к проверке.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "ready"
+          },
+          {
+            "id": "t5",
+            "label": "for"
+          },
+          {
+            "id": "t6",
+            "label": "inspection."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "replacement"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The replacement is ready for inspection.",
+      "explanation": "Порядок слов передаёт смысл «Замена готова к проверке.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The replacement are ready for inspection."
+      },
+      "answer_key": {
+        "accepted": ["The replacement is ready for inspection."]
+      },
+      "reference_answer": "The replacement is ready for inspection.",
+      "incorrect_answer": "The replacement are ready for inspection.",
+      "editorial_answer": "The replacement is ready for inspection.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The replacement is ready for inspection.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что магазин предложил Мие?",
+      "public_payload": {
+        "passage": "The shop offered a replacement kettle after inspecting Mia’s faulty one. She could test the new kettle at the counter before taking it home. The assistant explained that the offer concerned replacing the item, not refunding its price. Mia checked that the replacement worked and kept the new receipt in case another problem appeared.",
+        "options": [
+          {
+            "id": "vd72866b673ec",
+            "label": "A replacement kettle."
+          },
+          {
+            "id": "v8d3ed9e7dc9b",
+            "label": "Only a discount on an unrelated item."
+          },
+          {
+            "id": "veb1afb3b3744",
+            "label": "Both a full refund and a free kettle."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd72866b673ec"
+      },
+      "reference_answer": "vd72866b673ec",
+      "incorrect_answer": "veb1afb3b3744",
+      "editorial_answer": "A replacement kettle.",
+      "explanation": "Ответ подтверждён текстом: «A replacement kettle.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lb189b2f872a6",
+            "label": "replacement"
+          },
+          {
+            "id": "l6d793f68392b",
+            "label": "faulty"
+          },
+          {
+            "id": "l582c28eb2d2a",
+            "label": "inspection"
+          },
+          {
+            "id": "lc1576a89266a",
+            "label": "refund"
+          }
+        ],
+        "right": [
+          {
+            "id": "r6c9ba60fc368",
+            "label": "замена"
+          },
+          {
+            "id": "r7bf8dc5caa66",
+            "label": "возврат денег"
+          },
+          {
+            "id": "r171f40b9f40b",
+            "label": "неисправный"
+          },
+          {
+            "id": "rcad93032643a",
+            "label": "проверка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lb189b2f872a6": "r6c9ba60fc368",
+          "l6d793f68392b": "r171f40b9f40b",
+          "l582c28eb2d2a": "rcad93032643a",
+          "lc1576a89266a": "r7bf8dc5caa66"
+        }
+      },
+      "reference_answer": {
+        "lb189b2f872a6": "r6c9ba60fc368",
+        "l6d793f68392b": "r171f40b9f40b",
+        "l582c28eb2d2a": "rcad93032643a",
+        "lc1576a89266a": "r7bf8dc5caa66"
+      },
+      "incorrect_answer": {
+        "lb189b2f872a6": "r171f40b9f40b",
+        "l6d793f68392b": "r6c9ba60fc368",
+        "l582c28eb2d2a": "rcad93032643a",
+        "lc1576a89266a": "r7bf8dc5caa66"
+      },
+      "editorial_answer": "replacement — замена; faulty — неисправный; inspection — проверка; refund — возврат денег",
+      "explanation": "Контекстные значения: replacement — замена; faulty — неисправный; inspection — проверка; refund — возврат денег.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Зачем Мия сохранила квитанцию?",
+      "public_payload": {
+        "passage": "The shop offered a replacement kettle after inspecting Mia’s faulty one. She could test the new kettle at the counter before taking it home. The assistant explained that the offer concerned replacing the item, not refunding its price. Mia checked that the replacement worked and kept the new receipt in case another problem appeared.",
+        "options": [
+          {
+            "id": "v91bc9f53930a",
+            "label": "In case another problem appeared."
+          },
+          {
+            "id": "va43f390c97cd",
+            "label": "To prove she had rejected the replacement."
+          },
+          {
+            "id": "vdf71bb89de83",
+            "label": "Because the shop had not inspected anything."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v91bc9f53930a"
+      },
+      "reference_answer": "v91bc9f53930a",
+      "incorrect_answer": "va43f390c97cd",
+      "editorial_answer": "In case another problem appeared.",
+      "explanation": "Сохраняем информацию текста: «In case another problem appeared.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Замена товара с уточнением»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “faulty” means ___.",
+        "options": [
+          {
+            "id": "v56586896ca08",
+            "label": "возврат денег"
+          },
+          {
+            "id": "v111a194ec1b5",
+            "label": "неисправный"
+          },
+          {
+            "id": "v1674b1e88396",
+            "label": "проверка"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v111a194ec1b5"
+      },
+      "reference_answer": "v111a194ec1b5",
+      "incorrect_answer": "v1674b1e88396",
+      "editorial_answer": "неисправный",
+      "explanation": "Здесь faulty — «неисправный», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

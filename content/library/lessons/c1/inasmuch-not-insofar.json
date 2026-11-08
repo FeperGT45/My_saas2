@@ -1,0 +1,304 @@
+{
+  "key": "c1/inasmuch-not-insofar",
+  "course": "path-c1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика C1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 5,
+  "title": "Insofar as: границы применимости",
+  "description": "Insofar as: границы применимости: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "C1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Чем ограничена применимость модели?»",
+    "Различать значения applicability и boundary в теме «Insofar as: границы применимости»"
+  ],
+  "notes": [
+    "В предложении «The conclusion is limited by its assumptions.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «Check the assumptions again.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 14,
+  "prerequisites": ["c1/not-until-focus"],
+  "lexicon": [
+    {
+      "en": "applicability",
+      "ru": "применимость"
+    },
+    {
+      "en": "boundary",
+      "ru": "граница"
+    },
+    {
+      "en": "assumption",
+      "ru": "предположение"
+    },
+    {
+      "en": "transfer",
+      "ru": "перенос"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Insofar as: границы применимости»: выбери значение слова «applicability» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "ve876f7649319",
+            "label": "предположение"
+          },
+          {
+            "id": "v2b13b8dc3eee",
+            "label": "применимость"
+          },
+          {
+            "id": "v504845f25a57",
+            "label": "граница"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2b13b8dc3eee"
+      },
+      "reference_answer": "v2b13b8dc3eee",
+      "incorrect_answer": "v504845f25a57",
+      "editorial_answer": "применимость",
+      "explanation": "В этом контексте applicability означает «применимость».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары assumptions / applicability. Значение: «Вывод ограничен своими предположениями.»",
+      "public_payload": {
+        "sentence": "The conclusion is limited by its ___."
+      },
+      "answer_key": {
+        "accepted": ["assumptions"]
+      },
+      "reference_answer": "assumptions",
+      "incorrect_answer": "applicability",
+      "editorial_answer": "The conclusion is limited by its assumptions.",
+      "explanation": "Нужен вариант assumptions: полное предложение означает «Вывод ограничен своими предположениями.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Вывод ограничен своими предположениями.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "limited"
+          },
+          {
+            "id": "t5",
+            "label": "by"
+          },
+          {
+            "id": "t6",
+            "label": "its"
+          },
+          {
+            "id": "t7",
+            "label": "assumptions."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "conclusion"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The conclusion is limited by its assumptions.",
+      "explanation": "Порядок слов передаёт смысл «Вывод ограничен своими предположениями.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The conclusion are limited by its assumptions."
+      },
+      "answer_key": {
+        "accepted": ["The conclusion is limited by its assumptions."]
+      },
+      "reference_answer": "The conclusion is limited by its assumptions.",
+      "incorrect_answer": "The conclusion are limited by its assumptions.",
+      "editorial_answer": "The conclusion is limited by its assumptions.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The conclusion is limited by its assumptions.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Чем ограничена применимость модели?",
+      "public_payload": {
+        "passage": "The analyst said that the model was useful insofar as its assumptions matched the conditions in the workshop. A training slide removed the qualifying phrase and presented the model as a universal guide. The analyst restored the limitation. The original judgement neither rejected the model nor declared it reliable everywhere. It identified the conditions under which its usefulness had been assessed. A different workshop could share some features but differ in staffing or equipment, so transfer required checking the assumptions again. The revised slide made this practical step explicit rather than allowing a positive local result to stand in for evidence about every possible setting.",
+        "options": [
+          {
+            "id": "v494079966c02",
+            "label": "How well its assumptions match the conditions."
+          },
+          {
+            "id": "v9357f96b16c7",
+            "label": "A claim that no model can ever help."
+          },
+          {
+            "id": "v7a298fb4db77",
+            "label": "Only the colour of the training slide."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v494079966c02"
+      },
+      "reference_answer": "v494079966c02",
+      "incorrect_answer": "v7a298fb4db77",
+      "editorial_answer": "How well its assumptions match the conditions.",
+      "explanation": "Ответ подтверждён текстом: «How well its assumptions match the conditions.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "ldecfd5b1003b",
+            "label": "applicability"
+          },
+          {
+            "id": "l78960e32e9a7",
+            "label": "boundary"
+          },
+          {
+            "id": "l075ff1b6b103",
+            "label": "assumption"
+          },
+          {
+            "id": "lcc690cb43ee7",
+            "label": "transfer"
+          }
+        ],
+        "right": [
+          {
+            "id": "rf27b86c5206c",
+            "label": "перенос"
+          },
+          {
+            "id": "r2a376f839da4",
+            "label": "граница"
+          },
+          {
+            "id": "rfc879ce54474",
+            "label": "предположение"
+          },
+          {
+            "id": "r7203b00441d6",
+            "label": "применимость"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "ldecfd5b1003b": "r7203b00441d6",
+          "l78960e32e9a7": "r2a376f839da4",
+          "l075ff1b6b103": "rfc879ce54474",
+          "lcc690cb43ee7": "rf27b86c5206c"
+        }
+      },
+      "reference_answer": {
+        "ldecfd5b1003b": "r7203b00441d6",
+        "l78960e32e9a7": "r2a376f839da4",
+        "l075ff1b6b103": "rfc879ce54474",
+        "lcc690cb43ee7": "rf27b86c5206c"
+      },
+      "incorrect_answer": {
+        "ldecfd5b1003b": "r2a376f839da4",
+        "l78960e32e9a7": "r7203b00441d6",
+        "l075ff1b6b103": "rfc879ce54474",
+        "lcc690cb43ee7": "rf27b86c5206c"
+      },
+      "editorial_answer": "applicability — применимость; boundary — граница; assumption — предположение; transfer — перенос",
+      "explanation": "Контекстные значения: applicability — применимость; boundary — граница; assumption — предположение; transfer — перенос.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что нужно перед переносом в другую мастерскую?",
+      "public_payload": {
+        "passage": "The analyst said that the model was useful insofar as its assumptions matched the conditions in the workshop. A training slide removed the qualifying phrase and presented the model as a universal guide. The analyst restored the limitation. The original judgement neither rejected the model nor declared it reliable everywhere. It identified the conditions under which its usefulness had been assessed. A different workshop could share some features but differ in staffing or equipment, so transfer required checking the assumptions again. The revised slide made this practical step explicit rather than allowing a positive local result to stand in for evidence about every possible setting.",
+        "options": [
+          {
+            "id": "va123d227106e",
+            "label": "Ignore differences in staffing and equipment."
+          },
+          {
+            "id": "vfc1424fa2df4",
+            "label": "Assume usefulness is universal."
+          },
+          {
+            "id": "vaec08fe4bf4c",
+            "label": "Check the assumptions again."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vaec08fe4bf4c"
+      },
+      "reference_answer": "vaec08fe4bf4c",
+      "incorrect_answer": "vfc1424fa2df4",
+      "editorial_answer": "Check the assumptions again.",
+      "explanation": "Сохраняем информацию текста: «Check the assumptions again.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Insofar as: границы применимости»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “boundary” means ___.",
+        "options": [
+          {
+            "id": "ve1cfddacf469",
+            "label": "перенос"
+          },
+          {
+            "id": "vb5c453b5b457",
+            "label": "предположение"
+          },
+          {
+            "id": "va5c74f69626f",
+            "label": "граница"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va5c74f69626f"
+      },
+      "reference_answer": "va5c74f69626f",
+      "incorrect_answer": "vb5c453b5b457",
+      "editorial_answer": "граница",
+      "explanation": "Здесь boundary — «граница», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

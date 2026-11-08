@@ -1,0 +1,300 @@
+{
+  "key": "c1/subject-to-confirmation",
+  "course": "path-c1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика C1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 2,
+  "title": "Subject to: действующее условие",
+  "description": "Subject to: действующее условие: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "C1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Какое условие сохранялось?»",
+    "Различать значения conditional и confirmation в теме «Subject to: действующее условие»"
+  ],
+  "notes": [
+    "В предложении «The allocation is subject to confirmation.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «The condition had not yet been met.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 14,
+  "prerequisites": ["c1/as-yet-unresolved"],
+  "lexicon": [
+    {
+      "en": "conditional",
+      "ru": "условный"
+    },
+    {
+      "en": "confirmation",
+      "ru": "подтверждение"
+    },
+    {
+      "en": "allocation",
+      "ru": "выделение ресурса"
+    },
+    {
+      "en": "assurance",
+      "ru": "заверение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Subject to: действующее условие»: выбери значение слова «conditional» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v67ae9d3f3b4b",
+            "label": "выделение ресурса"
+          },
+          {
+            "id": "v8b0eadd79f63",
+            "label": "условный"
+          },
+          {
+            "id": "vb583442cc959",
+            "label": "подтверждение"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8b0eadd79f63"
+      },
+      "reference_answer": "v8b0eadd79f63",
+      "incorrect_answer": "vb583442cc959",
+      "editorial_answer": "условный",
+      "explanation": "В этом контексте conditional означает «условный».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары conditional / confirmation. Значение: «Выделение ресурса требует подтверждения.»",
+      "public_payload": {
+        "sentence": "The allocation is subject to ___."
+      },
+      "answer_key": {
+        "accepted": ["confirmation"]
+      },
+      "reference_answer": "confirmation",
+      "incorrect_answer": "conditional",
+      "editorial_answer": "The allocation is subject to confirmation.",
+      "explanation": "Нужен вариант confirmation: полное предложение означает «Выделение ресурса требует подтверждения.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Выделение ресурса требует подтверждения.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "subject"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "confirmation."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "allocation"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The allocation is subject to confirmation.",
+      "explanation": "Порядок слов передаёт смысл «Выделение ресурса требует подтверждения.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The allocation are subject to confirmation."
+      },
+      "answer_key": {
+        "accepted": ["The allocation is subject to confirmation."]
+      },
+      "reference_answer": "The allocation is subject to confirmation.",
+      "incorrect_answer": "The allocation are subject to confirmation.",
+      "editorial_answer": "The allocation is subject to confirmation.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The allocation is subject to confirmation.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какое условие сохранялось?",
+      "public_payload": {
+        "passage": "The venue offered the group a provisional room allocation, subject to confirmation of staffing. An enthusiastic announcement described the room as secured and encouraged members to make travel arrangements. The venue manager intervened because the condition had not been met. The offer was meaningful, but it remained conditional; calling it worthless would misrepresent it just as calling it guaranteed would. The group revised its announcement and explained when confirmation was expected. It also made clear that an expected date was not itself evidence that staffing had been arranged. Readers could then assess the current position without being asked to treat a hopeful timetable as a settled assurance.",
+        "options": [
+          {
+            "id": "v1d82adf10207",
+            "label": "Confirmation of staffing."
+          },
+          {
+            "id": "vc5d731619cd4",
+            "label": "Approval of every future event."
+          },
+          {
+            "id": "vc4bdda3858d6",
+            "label": "Payment for unrelated travel."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1d82adf10207"
+      },
+      "reference_answer": "v1d82adf10207",
+      "incorrect_answer": "vc4bdda3858d6",
+      "editorial_answer": "Confirmation of staffing.",
+      "explanation": "Ответ подтверждён текстом: «Confirmation of staffing.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l4781cdaf85ef",
+            "label": "conditional"
+          },
+          {
+            "id": "l674917429e9e",
+            "label": "confirmation"
+          },
+          {
+            "id": "lc152ae6833cd",
+            "label": "allocation"
+          },
+          {
+            "id": "l3d5df453116c",
+            "label": "assurance"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4ba287692ca6",
+            "label": "подтверждение"
+          },
+          {
+            "id": "r3af4b42c45a2",
+            "label": "условный"
+          },
+          {
+            "id": "r0f3f9cbb978e",
+            "label": "выделение ресурса"
+          },
+          {
+            "id": "rb706fd6b8312",
+            "label": "заверение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l4781cdaf85ef": "r3af4b42c45a2",
+          "l674917429e9e": "r4ba287692ca6",
+          "lc152ae6833cd": "r0f3f9cbb978e",
+          "l3d5df453116c": "rb706fd6b8312"
+        }
+      },
+      "reference_answer": {
+        "l4781cdaf85ef": "r3af4b42c45a2",
+        "l674917429e9e": "r4ba287692ca6",
+        "lc152ae6833cd": "r0f3f9cbb978e",
+        "l3d5df453116c": "rb706fd6b8312"
+      },
+      "incorrect_answer": {
+        "l4781cdaf85ef": "r4ba287692ca6",
+        "l674917429e9e": "r3af4b42c45a2",
+        "lc152ae6833cd": "r0f3f9cbb978e",
+        "l3d5df453116c": "rb706fd6b8312"
+      },
+      "editorial_answer": "conditional — условный; confirmation — подтверждение; allocation — выделение ресурса; assurance — заверение",
+      "explanation": "Контекстные значения: conditional — условный; confirmation — подтверждение; allocation — выделение ресурса; assurance — заверение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему слово secured было преждевременным?",
+      "public_payload": {
+        "passage": "The venue offered the group a provisional room allocation, subject to confirmation of staffing. An enthusiastic announcement described the room as secured and encouraged members to make travel arrangements. The venue manager intervened because the condition had not been met. The offer was meaningful, but it remained conditional; calling it worthless would misrepresent it just as calling it guaranteed would. The group revised its announcement and explained when confirmation was expected. It also made clear that an expected date was not itself evidence that staffing had been arranged. Readers could then assess the current position without being asked to treat a hopeful timetable as a settled assurance.",
+        "options": [
+          {
+            "id": "v28e716ec40b0",
+            "label": "The room had been permanently demolished."
+          },
+          {
+            "id": "vfddc34342923",
+            "label": "No offer of any kind existed."
+          },
+          {
+            "id": "v7d28c532ce00",
+            "label": "The condition had not yet been met."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v7d28c532ce00"
+      },
+      "reference_answer": "v7d28c532ce00",
+      "incorrect_answer": "vfddc34342923",
+      "editorial_answer": "The condition had not yet been met.",
+      "explanation": "Сохраняем информацию текста: «The condition had not yet been met.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Subject to: действующее условие»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “confirmation” means ___.",
+        "options": [
+          {
+            "id": "vbb320e1c5bc7",
+            "label": "подтверждение"
+          },
+          {
+            "id": "v25701e2d03dc",
+            "label": "выделение ресурса"
+          },
+          {
+            "id": "v6f50e006d8a2",
+            "label": "заверение"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbb320e1c5bc7"
+      },
+      "reference_answer": "vbb320e1c5bc7",
+      "incorrect_answer": "v25701e2d03dc",
+      "editorial_answer": "подтверждение",
+      "explanation": "Здесь confirmation — «подтверждение», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

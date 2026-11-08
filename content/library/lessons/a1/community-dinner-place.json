@@ -1,0 +1,300 @@
+{
+  "key": "a1/community-dinner-place",
+  "course": "path-a1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 9,
+  "title": "Место за общим столом",
+  "description": "Место за общим столом: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Кто новый гость?»",
+    "Различать значения plate и seat в теме «Место за общим столом»"
+  ],
+  "notes": [
+    "В предложении «The plate is beside the napkin.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «Bread.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 6,
+  "prerequisites": ["a1/train-platform-display"],
+  "lexicon": [
+    {
+      "en": "plate",
+      "ru": "тарелка"
+    },
+    {
+      "en": "seat",
+      "ru": "место"
+    },
+    {
+      "en": "napkin",
+      "ru": "салфетка"
+    },
+    {
+      "en": "guest",
+      "ru": "гость"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Место за общим столом»: выбери значение слова «plate» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v019dbdad4a36",
+            "label": "место"
+          },
+          {
+            "id": "v55d24f9de742",
+            "label": "тарелка"
+          },
+          {
+            "id": "v7b7a114de187",
+            "label": "салфетка"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v55d24f9de742"
+      },
+      "reference_answer": "v55d24f9de742",
+      "incorrect_answer": "v019dbdad4a36",
+      "editorial_answer": "тарелка",
+      "explanation": "В этом контексте plate означает «тарелка».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары napkin / plate. Значение: «Тарелка находится рядом с салфеткой.»",
+      "public_payload": {
+        "sentence": "The plate is beside the ___."
+      },
+      "answer_key": {
+        "accepted": ["napkin"]
+      },
+      "reference_answer": "napkin",
+      "incorrect_answer": "plate",
+      "editorial_answer": "The plate is beside the napkin.",
+      "explanation": "Нужен вариант napkin: полное предложение означает «Тарелка находится рядом с салфеткой.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Тарелка находится рядом с салфеткой.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "beside"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "napkin."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "plate"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The plate is beside the napkin.",
+      "explanation": "Порядок слов передаёт смысл «Тарелка находится рядом с салфеткой.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The plate are beside the napkin."
+      },
+      "answer_key": {
+        "accepted": ["The plate is beside the napkin."]
+      },
+      "reference_answer": "The plate is beside the napkin.",
+      "incorrect_answer": "The plate are beside the napkin.",
+      "editorial_answer": "The plate is beside the napkin.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The plate is beside the napkin.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто новый гость?",
+      "public_payload": {
+        "passage": "There are six seats at our dinner table. One seat is for our new guest, Lily. Her plate is beside a yellow napkin. Lily sits next to Grandad. She brings bread.",
+        "options": [
+          {
+            "id": "va3ce52ca62fd",
+            "label": "Grandad."
+          },
+          {
+            "id": "v51b6004bc232",
+            "label": "Lily."
+          },
+          {
+            "id": "v3d02b1ccbd75",
+            "label": "The narrator."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v51b6004bc232"
+      },
+      "reference_answer": "v51b6004bc232",
+      "incorrect_answer": "va3ce52ca62fd",
+      "editorial_answer": "Lily.",
+      "explanation": "Ответ подтверждён текстом: «Lily.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l63ad64c2206f",
+            "label": "plate"
+          },
+          {
+            "id": "l9c797c5a7a73",
+            "label": "seat"
+          },
+          {
+            "id": "l844ebfc16b0f",
+            "label": "napkin"
+          },
+          {
+            "id": "lb5c7b642105c",
+            "label": "guest"
+          }
+        ],
+        "right": [
+          {
+            "id": "rf0023b37527d",
+            "label": "салфетка"
+          },
+          {
+            "id": "r1949263b8630",
+            "label": "тарелка"
+          },
+          {
+            "id": "rc0db440a13f0",
+            "label": "гость"
+          },
+          {
+            "id": "rd1c22c42843f",
+            "label": "место"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l63ad64c2206f": "r1949263b8630",
+          "l9c797c5a7a73": "rd1c22c42843f",
+          "l844ebfc16b0f": "rf0023b37527d",
+          "lb5c7b642105c": "rc0db440a13f0"
+        }
+      },
+      "reference_answer": {
+        "l63ad64c2206f": "r1949263b8630",
+        "l9c797c5a7a73": "rd1c22c42843f",
+        "l844ebfc16b0f": "rf0023b37527d",
+        "lb5c7b642105c": "rc0db440a13f0"
+      },
+      "incorrect_answer": {
+        "l63ad64c2206f": "rd1c22c42843f",
+        "l9c797c5a7a73": "r1949263b8630",
+        "l844ebfc16b0f": "rf0023b37527d",
+        "lb5c7b642105c": "rc0db440a13f0"
+      },
+      "editorial_answer": "plate — тарелка; seat — место; napkin — салфетка; guest — гость",
+      "explanation": "Контекстные значения: plate — тарелка; seat — место; napkin — салфетка; guest — гость.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что приносит Лили?",
+      "public_payload": {
+        "passage": "There are six seats at our dinner table. One seat is for our new guest, Lily. Her plate is beside a yellow napkin. Lily sits next to Grandad. She brings bread.",
+        "options": [
+          {
+            "id": "ve5b75145b4b4",
+            "label": "Six chairs."
+          },
+          {
+            "id": "vbdee7c0e6458",
+            "label": "A yellow plate."
+          },
+          {
+            "id": "v1051826e75ab",
+            "label": "Bread."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1051826e75ab"
+      },
+      "reference_answer": "v1051826e75ab",
+      "incorrect_answer": "ve5b75145b4b4",
+      "editorial_answer": "Bread.",
+      "explanation": "Сохраняем информацию текста: «Bread.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Место за общим столом»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “seat” means ___.",
+        "options": [
+          {
+            "id": "vefa657271fcf",
+            "label": "салфетка"
+          },
+          {
+            "id": "v237ec9ce99d0",
+            "label": "место"
+          },
+          {
+            "id": "v93621c1c50e6",
+            "label": "гость"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v237ec9ce99d0"
+      },
+      "reference_answer": "v237ec9ce99d0",
+      "incorrect_answer": "vefa657271fcf",
+      "editorial_answer": "место",
+      "explanation": "Здесь seat — «место», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

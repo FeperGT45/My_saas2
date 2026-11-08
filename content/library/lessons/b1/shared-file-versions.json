@@ -1,0 +1,308 @@
+{
+  "key": "b1/shared-file-versions",
+  "course": "path-b1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 1,
+  "title": "Выбрать верную версию файла",
+  "description": "Выбрать верную версию файла: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Почему Ли не выбрал просто самый новый файл?»",
+    "Различать значения draft и version в теме «Выбрать верную версию файла»"
+  ],
+  "notes": [
+    "В предложении «The approved version is in the shared folder.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «The approval message.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/used-to-past-state"],
+  "lexicon": [
+    {
+      "en": "draft",
+      "ru": "черновик"
+    },
+    {
+      "en": "version",
+      "ru": "версия"
+    },
+    {
+      "en": "timestamp",
+      "ru": "временная отметка"
+    },
+    {
+      "en": "approved",
+      "ru": "утверждённый"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Выбрать верную версию файла»: выбери значение слова «draft» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "ve96faf86cd46",
+            "label": "черновик"
+          },
+          {
+            "id": "v3aecf91c975e",
+            "label": "версия"
+          },
+          {
+            "id": "v25eb0a5bf96c",
+            "label": "временная отметка"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve96faf86cd46"
+      },
+      "reference_answer": "ve96faf86cd46",
+      "incorrect_answer": "v3aecf91c975e",
+      "editorial_answer": "черновик",
+      "explanation": "В этом контексте draft означает «черновик».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары folder / draft. Значение: «Утверждённая версия находится в общей папке.»",
+      "public_payload": {
+        "sentence": "The approved version is in the shared ___."
+      },
+      "answer_key": {
+        "accepted": ["folder"]
+      },
+      "reference_answer": "folder",
+      "incorrect_answer": "draft",
+      "editorial_answer": "The approved version is in the shared folder.",
+      "explanation": "Нужен вариант folder: полное предложение означает «Утверждённая версия находится в общей папке.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Утверждённая версия находится в общей папке.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "version"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "in"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "shared"
+          },
+          {
+            "id": "t8",
+            "label": "folder."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "approved"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The approved version is in the shared folder.",
+      "explanation": "Порядок слов передаёт смысл «Утверждённая версия находится в общей папке.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The approved version are in the shared folder."
+      },
+      "answer_key": {
+        "accepted": ["The approved version is in the shared folder."]
+      },
+      "reference_answer": "The approved version is in the shared folder.",
+      "incorrect_answer": "The approved version are in the shared folder.",
+      "editorial_answer": "The approved version is in the shared folder.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The approved version is in the shared folder.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Ли не выбрал просто самый новый файл?",
+      "public_payload": {
+        "passage": "Three versions of a poster were saved on the team drive. The newest file was an unfinished experiment, while an older file had already been approved. Lee checked the approval message before sending anything to print. A recent timestamp showed when a file changed, not whether anyone had accepted its content. He renamed the approved file clearly to prevent confusion.",
+        "options": [
+          {
+            "id": "v201591a7276b",
+            "label": "It was an unfinished experiment."
+          },
+          {
+            "id": "v53515e374a54",
+            "label": "The printer could only read yesterday’s files."
+          },
+          {
+            "id": "v6fc00be92d05",
+            "label": "Every old file was corrupted."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v201591a7276b"
+      },
+      "reference_answer": "v201591a7276b",
+      "incorrect_answer": "v6fc00be92d05",
+      "editorial_answer": "It was an unfinished experiment.",
+      "explanation": "Ответ подтверждён текстом: «It was an unfinished experiment.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l02f88a33e3e8",
+            "label": "draft"
+          },
+          {
+            "id": "l7d0a3e1e4745",
+            "label": "version"
+          },
+          {
+            "id": "l7280c2b003b7",
+            "label": "timestamp"
+          },
+          {
+            "id": "l9e6262e4ccdd",
+            "label": "approved"
+          }
+        ],
+        "right": [
+          {
+            "id": "ra458ab65b7f3",
+            "label": "временная отметка"
+          },
+          {
+            "id": "r28d453f7bfbf",
+            "label": "утверждённый"
+          },
+          {
+            "id": "r25687d96f2a9",
+            "label": "версия"
+          },
+          {
+            "id": "rd118da0d8019",
+            "label": "черновик"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l02f88a33e3e8": "rd118da0d8019",
+          "l7d0a3e1e4745": "r25687d96f2a9",
+          "l7280c2b003b7": "ra458ab65b7f3",
+          "l9e6262e4ccdd": "r28d453f7bfbf"
+        }
+      },
+      "reference_answer": {
+        "l02f88a33e3e8": "rd118da0d8019",
+        "l7d0a3e1e4745": "r25687d96f2a9",
+        "l7280c2b003b7": "ra458ab65b7f3",
+        "l9e6262e4ccdd": "r28d453f7bfbf"
+      },
+      "incorrect_answer": {
+        "l02f88a33e3e8": "r25687d96f2a9",
+        "l7d0a3e1e4745": "rd118da0d8019",
+        "l7280c2b003b7": "ra458ab65b7f3",
+        "l9e6262e4ccdd": "r28d453f7bfbf"
+      },
+      "editorial_answer": "draft — черновик; version — версия; timestamp — временная отметка; approved — утверждённый",
+      "explanation": "Контекстные значения: draft — черновик; version — версия; timestamp — временная отметка; approved — утверждённый.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что подтверждало выбор?",
+      "public_payload": {
+        "passage": "Three versions of a poster were saved on the team drive. The newest file was an unfinished experiment, while an older file had already been approved. Lee checked the approval message before sending anything to print. A recent timestamp showed when a file changed, not whether anyone had accepted its content. He renamed the approved file clearly to prevent confusion.",
+        "options": [
+          {
+            "id": "vde2c54e986d2",
+            "label": "The timestamp alone."
+          },
+          {
+            "id": "vcfaa867f3988",
+            "label": "The number of letters in the filename."
+          },
+          {
+            "id": "va9e96c11f230",
+            "label": "The approval message."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va9e96c11f230"
+      },
+      "reference_answer": "va9e96c11f230",
+      "incorrect_answer": "vde2c54e986d2",
+      "editorial_answer": "The approval message.",
+      "explanation": "Сохраняем информацию текста: «The approval message.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Выбрать верную версию файла»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “version” means ___.",
+        "options": [
+          {
+            "id": "ved2fb7f3213e",
+            "label": "версия"
+          },
+          {
+            "id": "vc12d1a7efc82",
+            "label": "утверждённый"
+          },
+          {
+            "id": "vd819a4af145e",
+            "label": "временная отметка"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ved2fb7f3213e"
+      },
+      "reference_answer": "ved2fb7f3213e",
+      "incorrect_answer": "vd819a4af145e",
+      "editorial_answer": "версия",
+      "explanation": "Здесь version — «версия», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

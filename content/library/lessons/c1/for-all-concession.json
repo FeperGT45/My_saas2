@@ -1,0 +1,304 @@
+{
+  "key": "c1/for-all-concession",
+  "course": "path-c1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика C1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 7,
+  "title": "For all: признанная трудность",
+  "description": "For all: признанная трудность: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "C1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Какую пользу давало руководство?»",
+    "Различать значения concession и limitation в теме «For all: признанная трудность»"
+  ],
+  "notes": [
+    "В предложении «The guide is useful despite its limitations.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «It acknowledges limitations while retaining a limited positive judgement.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 14,
+  "prerequisites": ["c1/on-balance-judgement"],
+  "lexicon": [
+    {
+      "en": "concession",
+      "ru": "уступка"
+    },
+    {
+      "en": "limitation",
+      "ru": "ограничение"
+    },
+    {
+      "en": "utility",
+      "ru": "практическая польза"
+    },
+    {
+      "en": "precision",
+      "ru": "точность"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«For all: признанная трудность»: выбери значение слова «concession» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v9db37be4c2ee",
+            "label": "уступка"
+          },
+          {
+            "id": "vc4300b2a2300",
+            "label": "ограничение"
+          },
+          {
+            "id": "ve269803c1af2",
+            "label": "практическая польза"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9db37be4c2ee"
+      },
+      "reference_answer": "v9db37be4c2ee",
+      "incorrect_answer": "vc4300b2a2300",
+      "editorial_answer": "уступка",
+      "explanation": "В этом контексте concession означает «уступка».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары limitations / concession. Значение: «Руководство полезно, несмотря на ограничения.»",
+      "public_payload": {
+        "sentence": "The guide is useful despite its ___."
+      },
+      "answer_key": {
+        "accepted": ["limitations"]
+      },
+      "reference_answer": "limitations",
+      "incorrect_answer": "concession",
+      "editorial_answer": "The guide is useful despite its limitations.",
+      "explanation": "Нужен вариант limitations: полное предложение означает «Руководство полезно, несмотря на ограничения.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Руководство полезно, несмотря на ограничения.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "useful"
+          },
+          {
+            "id": "t5",
+            "label": "despite"
+          },
+          {
+            "id": "t6",
+            "label": "its"
+          },
+          {
+            "id": "t7",
+            "label": "limitations."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "guide"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The guide is useful despite its limitations.",
+      "explanation": "Порядок слов передаёт смысл «Руководство полезно, несмотря на ограничения.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The guide are useful despite its limitations."
+      },
+      "answer_key": {
+        "accepted": ["The guide is useful despite its limitations."]
+      },
+      "reference_answer": "The guide is useful despite its limitations.",
+      "incorrect_answer": "The guide are useful despite its limitations.",
+      "editorial_answer": "The guide is useful despite its limitations.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The guide is useful despite its limitations.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какую пользу давало руководство?",
+      "public_payload": {
+        "passage": "For all its limitations, the guide helped new volunteers identify the correct contact for common questions. A reviewer paraphrased the sentence as saying that the limitations were imaginary. The author objected: the concessive phrase acknowledged them while retaining a positive judgement about a particular use. The guide still omitted unusual cases and needed updating when staff roles changed. Its usefulness did not establish completeness, and incompleteness did not establish total uselessness. The revised review named the limited task the guide supported and the situations in which readers would need additional help. This gave prospective users a more precise account of what they could reasonably expect.",
+        "options": [
+          {
+            "id": "v65ee42a9453a",
+            "label": "Answering every unusual case permanently."
+          },
+          {
+            "id": "v503987c003f4",
+            "label": "Finding the correct contact for common questions."
+          },
+          {
+            "id": "v0cfe521c249a",
+            "label": "Preventing staff roles from ever changing."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v503987c003f4"
+      },
+      "reference_answer": "v503987c003f4",
+      "incorrect_answer": "v65ee42a9453a",
+      "editorial_answer": "Finding the correct contact for common questions.",
+      "explanation": "Ответ подтверждён текстом: «Finding the correct contact for common questions.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l96926e4f135e",
+            "label": "concession"
+          },
+          {
+            "id": "l7b9df5f88edd",
+            "label": "limitation"
+          },
+          {
+            "id": "lbc5ec9d41b20",
+            "label": "utility"
+          },
+          {
+            "id": "la65fe7dee1d8",
+            "label": "precision"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0cd2cfd2195b",
+            "label": "ограничение"
+          },
+          {
+            "id": "r7f8baaddd45c",
+            "label": "практическая польза"
+          },
+          {
+            "id": "r5da8fed99366",
+            "label": "уступка"
+          },
+          {
+            "id": "rb9a844e7cea3",
+            "label": "точность"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l96926e4f135e": "r5da8fed99366",
+          "l7b9df5f88edd": "r0cd2cfd2195b",
+          "lbc5ec9d41b20": "r7f8baaddd45c",
+          "la65fe7dee1d8": "rb9a844e7cea3"
+        }
+      },
+      "reference_answer": {
+        "l96926e4f135e": "r5da8fed99366",
+        "l7b9df5f88edd": "r0cd2cfd2195b",
+        "lbc5ec9d41b20": "r7f8baaddd45c",
+        "la65fe7dee1d8": "rb9a844e7cea3"
+      },
+      "incorrect_answer": {
+        "l96926e4f135e": "r0cd2cfd2195b",
+        "l7b9df5f88edd": "r5da8fed99366",
+        "lbc5ec9d41b20": "r7f8baaddd45c",
+        "la65fe7dee1d8": "rb9a844e7cea3"
+      },
+      "editorial_answer": "concession — уступка; limitation — ограничение; utility — практическая польза; precision — точность",
+      "explanation": "Контекстные значения: concession — уступка; limitation — ограничение; utility — практическая польза; precision — точность.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что означает for all its limitations здесь?",
+      "public_payload": {
+        "passage": "For all its limitations, the guide helped new volunteers identify the correct contact for common questions. A reviewer paraphrased the sentence as saying that the limitations were imaginary. The author objected: the concessive phrase acknowledged them while retaining a positive judgement about a particular use. The guide still omitted unusual cases and needed updating when staff roles changed. Its usefulness did not establish completeness, and incompleteness did not establish total uselessness. The revised review named the limited task the guide supported and the situations in which readers would need additional help. This gave prospective users a more precise account of what they could reasonably expect.",
+        "options": [
+          {
+            "id": "vb6270f96a055",
+            "label": "It acknowledges limitations while retaining a limited positive judgement."
+          },
+          {
+            "id": "vcca2b86579e8",
+            "label": "It declares the limitations imaginary."
+          },
+          {
+            "id": "ved051ec74e5a",
+            "label": "It denies that any volunteer found it useful."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb6270f96a055"
+      },
+      "reference_answer": "vb6270f96a055",
+      "incorrect_answer": "vcca2b86579e8",
+      "editorial_answer": "It acknowledges limitations while retaining a limited positive judgement.",
+      "explanation": "Сохраняем информацию текста: «It acknowledges limitations while retaining a limited positive judgement.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«For all: признанная трудность»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “limitation” means ___.",
+        "options": [
+          {
+            "id": "v64c7f3d666e0",
+            "label": "ограничение"
+          },
+          {
+            "id": "vaea8ce3a598f",
+            "label": "практическая польза"
+          },
+          {
+            "id": "v609c84121f0b",
+            "label": "точность"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v64c7f3d666e0"
+      },
+      "reference_answer": "v64c7f3d666e0",
+      "incorrect_answer": "vaea8ce3a598f",
+      "editorial_answer": "ограничение",
+      "explanation": "Здесь limitation — «ограничение», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

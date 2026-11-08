@@ -1,0 +1,300 @@
+{
+  "key": "a2/repair-dropoff",
+  "course": "path-a2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 1,
+  "title": "Отдать лампу в ремонт",
+  "description": "Отдать лампу в ремонт: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Когда можно забрать лампу?»",
+    "Различать значения repair и lamp в теме «Отдать лампу в ремонт»"
+  ],
+  "notes": [
+    "В предложении «The receipt is in Owen’s wallet.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «He wants the old lamp repaired.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a2/look-for-find"],
+  "lexicon": [
+    {
+      "en": "repair",
+      "ru": "ремонт"
+    },
+    {
+      "en": "lamp",
+      "ru": "лампа"
+    },
+    {
+      "en": "receipt",
+      "ru": "квитанция"
+    },
+    {
+      "en": "collection",
+      "ru": "получение вещи"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Отдать лампу в ремонт»: выбери значение слова «repair» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vcd3a73ea26a2",
+            "label": "ремонт"
+          },
+          {
+            "id": "vbe0147a178f7",
+            "label": "лампа"
+          },
+          {
+            "id": "v6f88179fe98a",
+            "label": "квитанция"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vcd3a73ea26a2"
+      },
+      "reference_answer": "vcd3a73ea26a2",
+      "incorrect_answer": "vbe0147a178f7",
+      "editorial_answer": "ремонт",
+      "explanation": "В этом контексте repair означает «ремонт».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары repair / wallet. Значение: «Квитанция находится в бумажнике Оуэна.»",
+      "public_payload": {
+        "sentence": "The receipt is in Owen’s ___."
+      },
+      "answer_key": {
+        "accepted": ["wallet"]
+      },
+      "reference_answer": "wallet",
+      "incorrect_answer": "repair",
+      "editorial_answer": "The receipt is in Owen’s wallet.",
+      "explanation": "Нужен вариант wallet: полное предложение означает «Квитанция находится в бумажнике Оуэна.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Квитанция находится в бумажнике Оуэна.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "in"
+          },
+          {
+            "id": "t5",
+            "label": "Owen’s"
+          },
+          {
+            "id": "t6",
+            "label": "wallet."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "receipt"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The receipt is in Owen’s wallet.",
+      "explanation": "Порядок слов передаёт смысл «Квитанция находится в бумажнике Оуэна.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The receipt are in Owen’s wallet."
+      },
+      "answer_key": {
+        "accepted": ["The receipt is in Owen’s wallet."]
+      },
+      "reference_answer": "The receipt is in Owen’s wallet.",
+      "incorrect_answer": "The receipt are in Owen’s wallet.",
+      "editorial_answer": "The receipt is in Owen’s wallet.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The receipt is in Owen’s wallet.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда можно забрать лампу?",
+      "public_payload": {
+        "passage": "Owen takes his broken lamp to a repair shop. The assistant gives him a receipt and says he can collect the lamp on Thursday afternoon. Owen puts the receipt in his wallet. He does not pay for a new lamp because he wants to repair the old one.",
+        "options": [
+          {
+            "id": "v1b2cc08c5f8f",
+            "label": "Immediately on arrival."
+          },
+          {
+            "id": "vcdfa47152656",
+            "label": "Thursday afternoon."
+          },
+          {
+            "id": "v81149df557c9",
+            "label": "Wednesday morning."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vcdfa47152656"
+      },
+      "reference_answer": "vcdfa47152656",
+      "incorrect_answer": "v81149df557c9",
+      "editorial_answer": "Thursday afternoon.",
+      "explanation": "Ответ подтверждён текстом: «Thursday afternoon.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lc7a0fd64cb7d",
+            "label": "repair"
+          },
+          {
+            "id": "le8dfff593ef0",
+            "label": "lamp"
+          },
+          {
+            "id": "l16f4e7d49f8d",
+            "label": "receipt"
+          },
+          {
+            "id": "l53f9a132f5fa",
+            "label": "collection"
+          }
+        ],
+        "right": [
+          {
+            "id": "rcc4623b2d59a",
+            "label": "лампа"
+          },
+          {
+            "id": "ra77db031d4dd",
+            "label": "ремонт"
+          },
+          {
+            "id": "r63db355e39f8",
+            "label": "квитанция"
+          },
+          {
+            "id": "rb7ac6fd37e93",
+            "label": "получение вещи"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lc7a0fd64cb7d": "ra77db031d4dd",
+          "le8dfff593ef0": "rcc4623b2d59a",
+          "l16f4e7d49f8d": "r63db355e39f8",
+          "l53f9a132f5fa": "rb7ac6fd37e93"
+        }
+      },
+      "reference_answer": {
+        "lc7a0fd64cb7d": "ra77db031d4dd",
+        "le8dfff593ef0": "rcc4623b2d59a",
+        "l16f4e7d49f8d": "r63db355e39f8",
+        "l53f9a132f5fa": "rb7ac6fd37e93"
+      },
+      "incorrect_answer": {
+        "lc7a0fd64cb7d": "rcc4623b2d59a",
+        "le8dfff593ef0": "ra77db031d4dd",
+        "l16f4e7d49f8d": "r63db355e39f8",
+        "l53f9a132f5fa": "rb7ac6fd37e93"
+      },
+      "editorial_answer": "repair — ремонт; lamp — лампа; receipt — квитанция; collection — получение вещи",
+      "explanation": "Контекстные значения: repair — ремонт; lamp — лампа; receipt — квитанция; collection — получение вещи.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Оуэн не покупает новую?",
+      "public_payload": {
+        "passage": "Owen takes his broken lamp to a repair shop. The assistant gives him a receipt and says he can collect the lamp on Thursday afternoon. Owen puts the receipt in his wallet. He does not pay for a new lamp because he wants to repair the old one.",
+        "options": [
+          {
+            "id": "v82baae40fa0d",
+            "label": "He wants the old lamp repaired."
+          },
+          {
+            "id": "v407e62518819",
+            "label": "He has already collected it."
+          },
+          {
+            "id": "vedb8e87c4088",
+            "label": "The shop sells only wallets."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v82baae40fa0d"
+      },
+      "reference_answer": "v82baae40fa0d",
+      "incorrect_answer": "vedb8e87c4088",
+      "editorial_answer": "He wants the old lamp repaired.",
+      "explanation": "Сохраняем информацию текста: «He wants the old lamp repaired.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Отдать лампу в ремонт»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “lamp” means ___.",
+        "options": [
+          {
+            "id": "v3a5b12ea09f1",
+            "label": "квитанция"
+          },
+          {
+            "id": "v533d98444163",
+            "label": "лампа"
+          },
+          {
+            "id": "vd09ee5ae6fb2",
+            "label": "получение вещи"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v533d98444163"
+      },
+      "reference_answer": "v533d98444163",
+      "incorrect_answer": "v3a5b12ea09f1",
+      "editorial_answer": "лампа",
+      "explanation": "Здесь lamp — «лампа», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

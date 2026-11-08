@@ -61,7 +61,7 @@
           },
           {
             "id": "v8484388d038e",
-            "label": "Even so вводит контраст; устойчиво on time означает вовремя."
+            "label": "by of"
           }
         ]
       },
@@ -72,7 +72,7 @@
       "incorrect_answer": "vccb8c7774156",
       "editorial_answer": "on",
       "key": "e01",
-      "explanation": "Вариант выбран по грамматической модели и контексту урока."
+      "explanation": "Even so вводит контраст; устойчиво on time означает вовремя."
     },
     {
       "kind": "gap",
@@ -361,7 +361,7 @@
       "kind": "context_choice",
       "prompt": "Выбери слово по смыслу контекста.",
       "public_payload": {
-        "sentence": "An outcome that is limited in size or range is ___.",
+        "sentence": "An assessment that includes reservations is ___.",
         "options": [
           {
             "id": "v195f881068fd",
@@ -384,7 +384,7 @@
       "incorrect_answer": "v537f4b1a1618",
       "editorial_answer": "qualified",
       "key": "e09",
-      "explanation": "Правило урока: Even so связывает уступленное обстоятельство с последующим выводом."
+      "explanation": "Qualified assessment — оценка с оговорками; unrestricted — неограниченный."
     }
   ]
 }

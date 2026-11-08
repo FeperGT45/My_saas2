@@ -1,0 +1,300 @@
+{
+  "key": "a1/fruit-stall-basket",
+  "course": "path-a1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 7,
+  "title": "Фрукты на прилавке",
+  "description": "Фрукты на прилавке: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что выбирает Мина?»",
+    "Различать значения stall и pear в теме «Фрукты на прилавке»"
+  ],
+  "notes": [
+    "В предложении «The pear is in the basket.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «For her brother’s apples.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 6,
+  "prerequisites": ["a1/library-floor-plan"],
+  "lexicon": [
+    {
+      "en": "stall",
+      "ru": "прилавок"
+    },
+    {
+      "en": "pear",
+      "ru": "груша"
+    },
+    {
+      "en": "apple",
+      "ru": "яблоко"
+    },
+    {
+      "en": "ripe",
+      "ru": "спелый"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Фрукты на прилавке»: выбери значение слова «stall» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v22ec3b177390",
+            "label": "прилавок"
+          },
+          {
+            "id": "ve2e5b14ada97",
+            "label": "груша"
+          },
+          {
+            "id": "v2975f50172d3",
+            "label": "яблоко"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v22ec3b177390"
+      },
+      "reference_answer": "v22ec3b177390",
+      "incorrect_answer": "ve2e5b14ada97",
+      "editorial_answer": "прилавок",
+      "explanation": "В этом контексте stall означает «прилавок».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары basket / stall. Значение: «Груша находится в корзине.»",
+      "public_payload": {
+        "sentence": "The pear is in the ___."
+      },
+      "answer_key": {
+        "accepted": ["basket"]
+      },
+      "reference_answer": "basket",
+      "incorrect_answer": "stall",
+      "editorial_answer": "The pear is in the basket.",
+      "explanation": "Нужен вариант basket: полное предложение означает «Груша находится в корзине.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Груша находится в корзине.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "in"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "basket."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "pear"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The pear is in the basket.",
+      "explanation": "Порядок слов передаёт смысл «Груша находится в корзине.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The pear are in the basket."
+      },
+      "answer_key": {
+        "accepted": ["The pear is in the basket."]
+      },
+      "reference_answer": "The pear is in the basket.",
+      "incorrect_answer": "The pear are in the basket.",
+      "editorial_answer": "The pear is in the basket.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The pear is in the basket.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что выбирает Мина?",
+      "public_payload": {
+        "passage": "At the fruit stall, Mina chooses one ripe pear. She puts it in her basket. Her brother wants two apples. The seller gives him a paper bag for the apples.",
+        "options": [
+          {
+            "id": "vd70170ef6ccc",
+            "label": "A paper box."
+          },
+          {
+            "id": "v8dcee0fb0a25",
+            "label": "Two apples."
+          },
+          {
+            "id": "v45c37ae5a430",
+            "label": "One ripe pear."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v45c37ae5a430"
+      },
+      "reference_answer": "v45c37ae5a430",
+      "incorrect_answer": "v8dcee0fb0a25",
+      "editorial_answer": "One ripe pear.",
+      "explanation": "Ответ подтверждён текстом: «One ripe pear.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l015f25f2445b",
+            "label": "stall"
+          },
+          {
+            "id": "l38e49be7fb9f",
+            "label": "pear"
+          },
+          {
+            "id": "l64d4464e4aa6",
+            "label": "apple"
+          },
+          {
+            "id": "l3384ad97fa22",
+            "label": "ripe"
+          }
+        ],
+        "right": [
+          {
+            "id": "re2584fbca19b",
+            "label": "яблоко"
+          },
+          {
+            "id": "r03514adb8c0a",
+            "label": "прилавок"
+          },
+          {
+            "id": "r08e4793ea5ca",
+            "label": "груша"
+          },
+          {
+            "id": "r870d3dfe2093",
+            "label": "спелый"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l015f25f2445b": "r03514adb8c0a",
+          "l38e49be7fb9f": "r08e4793ea5ca",
+          "l64d4464e4aa6": "re2584fbca19b",
+          "l3384ad97fa22": "r870d3dfe2093"
+        }
+      },
+      "reference_answer": {
+        "l015f25f2445b": "r03514adb8c0a",
+        "l38e49be7fb9f": "r08e4793ea5ca",
+        "l64d4464e4aa6": "re2584fbca19b",
+        "l3384ad97fa22": "r870d3dfe2093"
+      },
+      "incorrect_answer": {
+        "l015f25f2445b": "r08e4793ea5ca",
+        "l38e49be7fb9f": "r03514adb8c0a",
+        "l64d4464e4aa6": "re2584fbca19b",
+        "l3384ad97fa22": "r870d3dfe2093"
+      },
+      "editorial_answer": "stall — прилавок; pear — груша; apple — яблоко; ripe — спелый",
+      "explanation": "Контекстные значения: stall — прилавок; pear — груша; apple — яблоко; ripe — спелый.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Для чего продавец даёт пакет?",
+      "public_payload": {
+        "passage": "At the fruit stall, Mina chooses one ripe pear. She puts it in her basket. Her brother wants two apples. The seller gives him a paper bag for the apples.",
+        "options": [
+          {
+            "id": "vb51de5c7361a",
+            "label": "For her brother’s apples."
+          },
+          {
+            "id": "v5542d2f8dc6f",
+            "label": "For the stall sign."
+          },
+          {
+            "id": "v473ef462b791",
+            "label": "For Mina’s shoes."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb51de5c7361a"
+      },
+      "reference_answer": "vb51de5c7361a",
+      "incorrect_answer": "v473ef462b791",
+      "editorial_answer": "For her brother’s apples.",
+      "explanation": "Сохраняем информацию текста: «For her brother’s apples.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Фрукты на прилавке»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “pear” means ___.",
+        "options": [
+          {
+            "id": "vaf41fedd5793",
+            "label": "спелый"
+          },
+          {
+            "id": "v14f09cf68cc9",
+            "label": "яблоко"
+          },
+          {
+            "id": "vc9fc63d23c7e",
+            "label": "груша"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc9fc63d23c7e"
+      },
+      "reference_answer": "vc9fc63d23c7e",
+      "incorrect_answer": "v14f09cf68cc9",
+      "editorial_answer": "груша",
+      "explanation": "Здесь pear — «груша», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

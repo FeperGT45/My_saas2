@@ -1,18 +1,18 @@
 {
   "package": "english-path-core",
-  "revision": 11,
+  "revision": 12,
   "summary": {
-    "lessons": 266,
-    "exercises": 2302,
-    "levels": { "A1": 62, "A2": 54, "B1": 53, "B2": 46, "C1": 28, "C2": 23 }
+    "lessons": 303,
+    "exercises": 2598,
+    "levels": { "A1": 71, "A2": 61, "B1": 61, "B2": 50, "C1": 35, "C2": 25 }
   },
   "availability": {
-    "publishedNonAudioFullLessons": 263,
+    "publishedNonAudioFullLessons": 300,
     "archivedAudioLessons": 3,
     "introductoryLessonsIncluded": false,
     "targetFullLessons": 300,
-    "remaining": 37,
-    "byLevel": { "A1": 61, "A2": 53, "B1": 52, "B2": 46, "C1": 28, "C2": 23 },
+    "remaining": 0,
+    "byLevel": { "A1": 70, "A2": 60, "B1": 60, "B2": 50, "C1": 35, "C2": 25 },
     "basis": "Local modular sources after audio retirement; verify production count separately after import."
   },
   "structure": "passed",
@@ -20,19 +20,19 @@
   "gradingCheck": "npm run test:library verifies all positive/negative references with the production SQL grader",
   "methodology": "Author review and automated checks; CEFR labels remain provisional, without external psychometric calibration.",
   "types": {
-    "context_choice": 259,
-    "correction": 257,
+    "context_choice": 296,
+    "correction": 294,
     "dialogue": 252,
     "dictation": 3,
     "error_identification": 4,
-    "gap": 257,
+    "gap": 294,
     "grammar": 1,
-    "matching": 181,
+    "matching": 218,
     "multiple_choice": 15,
-    "reading": 474,
+    "reading": 548,
     "response_choice": 9,
-    "sentence": 245,
-    "single_choice": 246,
+    "sentence": 282,
+    "single_choice": 283,
     "spelling": 1,
     "synonym_antonym": 8,
     "tenses": 7,
@@ -2128,7 +2128,7 @@
       "exercises": 9,
       "types": 8,
       "readingWords": [45, 45],
-      "sha256": "a8874b54fcf481f944371aa7f2e213a5d75f3357f17436e6eea979a36424408b"
+      "sha256": "49f7ff0d57aed1998a1a504ba3e96624e032bd8cb5e7a72099139623f174b885"
     },
     {
       "key": "a1/can-cant-ability",
@@ -2136,7 +2136,7 @@
       "exercises": 9,
       "types": 8,
       "readingWords": [48, 48],
-      "sha256": "08daf606b81073ca95b2215770091ae7e9d3179cb0adefbc856d0fb66751395e"
+      "sha256": "a428f739cdd71b3128ae9a7d35f53a5300affb8377d6fc4ea69ad22d4a0a11c7"
     },
     {
       "key": "a2/look-for-find",
@@ -2144,7 +2144,7 @@
       "exercises": 9,
       "types": 8,
       "readingWords": [46, 46],
-      "sha256": "f9b8aa31b57fd5f1252fd961ee8be42d8c1ef25ddcbedc1e52d66a28c37f52a7"
+      "sha256": "080b6cbb6833140644baf4883a1695231dad4ebac1e7ef411374de62eec2c726"
     },
     {
       "key": "b1/used-to-past-state",
@@ -2152,7 +2152,7 @@
       "exercises": 9,
       "types": 8,
       "readingWords": [55, 55],
-      "sha256": "6b73628ddebf4265dd1ed5c1731881457a6afeb5fc7937291bd3309282f67bfa"
+      "sha256": "545dd1cdb68b1203fabdb1da3a980a00f26b3724be860163609fe79f0962c6f1"
     },
     {
       "key": "b2/even-so-contrast",
@@ -2160,15 +2160,311 @@
       "exercises": 9,
       "types": 8,
       "readingWords": [70, 70],
-      "sha256": "42fc5b0839922e0fea830a1d110498a80c3f8c25df07fb86f04e15d4bd505511"
+      "sha256": "8792bd443c6628e7faf96e0435491a6054e4f5e567d7fbc931470347881afd65"
     },
     {
       "key": "c1/not-so-much-as",
       "level": "C1",
       "exercises": 9,
       "types": 8,
-      "readingWords": [96, 96],
-      "sha256": "5f5b03076dd7f18e20249738174b3849bc3413dd79f9200f99aa7577b99338ce"
+      "readingWords": [99, 99],
+      "sha256": "264cbd3532d43af25b9883ca8adfdf9617d3bd516697b2de70ddc21341711eaf"
+    },
+    {
+      "key": "a1/water-bottle-label",
+      "level": "A1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [26, 26],
+      "sha256": "8eb5b9d5148a254d3f1375b4adb44d6bbba4189414caf94d6dfae8e89b67ecc0"
+    },
+    {
+      "key": "a1/garden-tools-shelf",
+      "level": "A1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [30, 30],
+      "sha256": "7901b32e7df2bd7f155a1d20793c5ef81260a26b92810c0f4d7d67e9a0fc8417"
+    },
+    {
+      "key": "a1/picnic-blanket",
+      "level": "A1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [31, 31],
+      "sha256": "0c94d29d0a8230daff6d9a20c70cc38ee3c8fa4f6ca9f2401b10c61ff5bc715c"
+    },
+    {
+      "key": "a1/sports-shirt-number",
+      "level": "A1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [30, 30],
+      "sha256": "7e7cc955199c1c4474ff3fbd17256e311d954ebeb6fd673aec5f05c9e3c40754"
+    },
+    {
+      "key": "a1/lost-umbrella-desk",
+      "level": "A1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [31, 31],
+      "sha256": "ed3cb0eb49c67824573e27a3d8e145049ee2444dac5e1eb2ac15f807aabf7a31"
+    },
+    {
+      "key": "a1/library-floor-plan",
+      "level": "A1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [32, 32],
+      "sha256": "52161a6eec28d38f527df4fbc75a874d5aed30a8064cd7a86db61d04e7862a6e"
+    },
+    {
+      "key": "a1/fruit-stall-basket",
+      "level": "A1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [30, 30],
+      "sha256": "f7b970e3320f799be1cee79ff32b83735b12fff4b1ce0cfbb8c83a6e401b79ec"
+    },
+    {
+      "key": "a1/train-platform-display",
+      "level": "A1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [31, 31],
+      "sha256": "b1a3b416cabdb52807d8a40ee002ba16d43b66f4b1945d87c234bc4c3789dd3f"
+    },
+    {
+      "key": "a1/community-dinner-place",
+      "level": "A1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [31, 31],
+      "sha256": "e6ac62c86f3c354b3897c3e1169e49aa7f08bcf024895bd32f199cf32d72594f"
+    },
+    {
+      "key": "a2/repair-dropoff",
+      "level": "A2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [48, 48],
+      "sha256": "9ea002be273c12ad226046198d09bb2b759cfe43c6062f78c4a99d8d968a3307"
+    },
+    {
+      "key": "a2/club-booking-change",
+      "level": "A2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [46, 46],
+      "sha256": "cbffeeea4e2ca8988f4c35460ef0982bc2c14f8603245dff6b9a0571ab6b7e66"
+    },
+    {
+      "key": "a2/package-delivery-note",
+      "level": "A2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [49, 49],
+      "sha256": "d01838c9e6e4ed938aa8062d71e0fc4ea7c0c7d708643dc2828d6d099ef817b7"
+    },
+    {
+      "key": "a2/swapping-work-shifts",
+      "level": "A2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [45, 45],
+      "sha256": "043b40fb7b69a77537a018748d2c538fa0e768cc6fb8bc7cd38f60b148a5efbd"
+    },
+    {
+      "key": "a2/museum-lockers",
+      "level": "A2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [45, 45],
+      "sha256": "1aeb48f0ad11a9597b497b9da25c286e0d52a392c6267281ae1e9c9ff68807d6"
+    },
+    {
+      "key": "a2/shared-kitchen-rota",
+      "level": "A2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [49, 49],
+      "sha256": "2f8b2deda253ae9581d9cfe7b2670d17c19dd7cd7e2198c255c38c3c92f546ad"
+    },
+    {
+      "key": "a2/walking-meeting-point",
+      "level": "A2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [44, 44],
+      "sha256": "985af7456de3fc1ef30a9f88ece88d10db4da06fa37334ed4289f0fad39fa14f"
+    },
+    {
+      "key": "b1/shared-file-versions",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [60, 60],
+      "sha256": "7b7f80e6b5e7287caf1e85fc7803a8583367b6184068b16ee53cf8f480891448"
+    },
+    {
+      "key": "b1/volunteer-handover",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [57, 57],
+      "sha256": "2cab79232473ee247745f58eccd887c5e3b6fb3e2dd32932ba99f132a732875d"
+    },
+    {
+      "key": "b1/shop-replacement",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [54, 54],
+      "sha256": "10231b84abf24043c9a751832ce4acd3842a3a7c0c9e85ceb32c4db97ee56fb0"
+    },
+    {
+      "key": "b1/study-group-feedback",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [62, 62],
+      "sha256": "232df461d8a173cbb609b1302a2f3b77c38615a7addd9fee31c36d4e9e60c370"
+    },
+    {
+      "key": "b1/appointment-reminder",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [61, 61],
+      "sha256": "da1b4f54a8172f4b7c4f2bd37311ececcf553116288ac70545b3421b6430ae31"
+    },
+    {
+      "key": "b1/route-detour-sign",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [57, 57],
+      "sha256": "72bdae0392967941a828dec3fe62dd99a79ff1fc34090f80494a91697553fe89"
+    },
+    {
+      "key": "b1/equipment-booking",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [60, 60],
+      "sha256": "2678934187806acdd3552952481624f1cc230f22b8f723b34cbeecb9983f390a"
+    },
+    {
+      "key": "b1/community-survey",
+      "level": "B1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [60, 60],
+      "sha256": "6bc185ce4fcbaddbd73824b1a83ee4cb1bf68784cc95bc350d20191c7755da45"
+    },
+    {
+      "key": "b2/trial-extension",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [75, 75],
+      "sha256": "8d2ea2c5ce7ded2911047d78da9b05031ef7621c8c1da47bdd016227f0dd0c71"
+    },
+    {
+      "key": "b2/reviewed-not-verified",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [79, 79],
+      "sha256": "6c1846ed51b766e1f15d66b4d9e1a3b92b2a9973bcfa22e69b64c39843f708f7"
+    },
+    {
+      "key": "b2/deadline-exception",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [77, 77],
+      "sha256": "95d6c31173700cbc8ed46595afcee78fb9b2d4651a6f74b8e63a9a09468fe75e"
+    },
+    {
+      "key": "b2/reported-estimate",
+      "level": "B2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [79, 79],
+      "sha256": "b53f0b1a57fda8020c8cc2bbeaddedf9729fdb63a58036c38a949f9536dca2e9"
+    },
+    {
+      "key": "c1/as-yet-unresolved",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [101, 101],
+      "sha256": "b7e6b0f742c9cc587f91e080120dd6a8ae5c1c6736a0fa7870931ffa69182e0c"
+    },
+    {
+      "key": "c1/subject-to-confirmation",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [107, 107],
+      "sha256": "7df9898196b57e8ad4f11007f7550c816d055bb73717b73c6c76d6b726c9afa5"
+    },
+    {
+      "key": "c1/respectively-mapping",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [105, 105],
+      "sha256": "38f3aff09aba7473dfe151b6c70a4455ffcb850f268614c0495d54ec66261089"
+    },
+    {
+      "key": "c1/not-until-focus",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [103, 103],
+      "sha256": "4b515db9e24ee9a20d75e4806fb88bf26d519b7a3dd3f76b4a2f61e1170e6f30"
+    },
+    {
+      "key": "c1/inasmuch-not-insofar",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [105, 105],
+      "sha256": "aeb65b50371f73459ff10fc1baf44412ec48ddcb4cab33b02f4da7da1d384d55"
+    },
+    {
+      "key": "c1/on-balance-judgement",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [104, 104],
+      "sha256": "ce755f0114da016aa28c8bb828647b4e00815cf355bea2410d570a333b05aa8e"
+    },
+    {
+      "key": "c1/for-all-concession",
+      "level": "C1",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [105, 105],
+      "sha256": "c6bcd961d709e2659354211b75fb45d20aa6e46e503d1c1150b9f3968d59b7fd"
+    },
+    {
+      "key": "c2/counterfactual-baseline",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [118, 118],
+      "sha256": "88f8e14e8826d34170aa4928b39b867edb29f0034e1e09d9f76a2593d9195d3d"
+    },
+    {
+      "key": "c2/reported-denial-scope",
+      "level": "C2",
+      "exercises": 8,
+      "types": 7,
+      "readingWords": [119, 119],
+      "sha256": "bc0b20a5d954db19c18aa238111cf46c5a85aa9b40dabf0606c97f89bb305d22"
     }
   ]
 }

@@ -1,0 +1,296 @@
+{
+  "key": "b2/reported-estimate",
+  "course": "path-b2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 4,
+  "title": "Оценка и точный подсчёт",
+  "description": "Оценка и точный подсчёт: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «На чём основывалось первое число?»",
+    "Различать значения estimate и count в теме «Оценка и точный подсчёт»"
+  ],
+  "notes": [
+    "В предложении «The estimate is explicitly provisional.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «The provisional nature of the estimate.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/deadline-exception"],
+  "lexicon": [
+    {
+      "en": "estimate",
+      "ru": "приблизительная оценка"
+    },
+    {
+      "en": "count",
+      "ru": "подсчёт"
+    },
+    {
+      "en": "attendance",
+      "ru": "посещаемость"
+    },
+    {
+      "en": "revision",
+      "ru": "пересмотр"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Оценка и точный подсчёт»: выбери значение слова «estimate» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v22f07c625f30",
+            "label": "подсчёт"
+          },
+          {
+            "id": "v32314ce5ec6a",
+            "label": "посещаемость"
+          },
+          {
+            "id": "va963a3117fd2",
+            "label": "приблизительная оценка"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va963a3117fd2"
+      },
+      "reference_answer": "va963a3117fd2",
+      "incorrect_answer": "v22f07c625f30",
+      "editorial_answer": "приблизительная оценка",
+      "explanation": "В этом контексте estimate означает «приблизительная оценка».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары estimate / provisional. Значение: «Приблизительная оценка явно предварительная.»",
+      "public_payload": {
+        "sentence": "The estimate is explicitly ___."
+      },
+      "answer_key": {
+        "accepted": ["provisional"]
+      },
+      "reference_answer": "provisional",
+      "incorrect_answer": "estimate",
+      "editorial_answer": "The estimate is explicitly provisional.",
+      "explanation": "Нужен вариант provisional: полное предложение означает «Приблизительная оценка явно предварительная.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Приблизительная оценка явно предварительная.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "explicitly"
+          },
+          {
+            "id": "t5",
+            "label": "provisional."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "estimate"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "The estimate is explicitly provisional.",
+      "explanation": "Порядок слов передаёт смысл «Приблизительная оценка явно предварительная.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The estimate are explicitly provisional."
+      },
+      "answer_key": {
+        "accepted": ["The estimate is explicitly provisional."]
+      },
+      "reference_answer": "The estimate is explicitly provisional.",
+      "incorrect_answer": "The estimate are explicitly provisional.",
+      "editorial_answer": "The estimate is explicitly provisional.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The estimate is explicitly provisional.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "На чём основывалось первое число?",
+      "public_payload": {
+        "passage": "The organiser estimated that around two hundred people had visited the exhibition, using a partial door count and the volunteers’ observations. A report printed the figure as an exact total. When the remaining records arrived, the organiser revised the estimate downward. This did not show that the original number had been a certified count or that every observation was worthless. It showed why the words around and estimated mattered, and why later information could legitimately change a provisional figure.",
+        "options": [
+          {
+            "id": "v2cb5c09ed615",
+            "label": "A partial count and volunteers’ observations."
+          },
+          {
+            "id": "v34a717190496",
+            "label": "A figure chosen without any observations."
+          },
+          {
+            "id": "v660e7bf0be89",
+            "label": "A complete certified count of every visitor."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2cb5c09ed615"
+      },
+      "reference_answer": "v2cb5c09ed615",
+      "incorrect_answer": "v660e7bf0be89",
+      "editorial_answer": "A partial count and volunteers’ observations.",
+      "explanation": "Ответ подтверждён текстом: «A partial count and volunteers’ observations.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l0ebe2c668484",
+            "label": "estimate"
+          },
+          {
+            "id": "l738c9dde8cbb",
+            "label": "count"
+          },
+          {
+            "id": "l748bda6f8e5e",
+            "label": "attendance"
+          },
+          {
+            "id": "l71d32a60efde",
+            "label": "revision"
+          }
+        ],
+        "right": [
+          {
+            "id": "r29ca5010d169",
+            "label": "приблизительная оценка"
+          },
+          {
+            "id": "r76acbe3920a9",
+            "label": "посещаемость"
+          },
+          {
+            "id": "rd5b44745b90d",
+            "label": "подсчёт"
+          },
+          {
+            "id": "rb63e9251e3df",
+            "label": "пересмотр"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l0ebe2c668484": "r29ca5010d169",
+          "l738c9dde8cbb": "rd5b44745b90d",
+          "l748bda6f8e5e": "r76acbe3920a9",
+          "l71d32a60efde": "rb63e9251e3df"
+        }
+      },
+      "reference_answer": {
+        "l0ebe2c668484": "r29ca5010d169",
+        "l738c9dde8cbb": "rd5b44745b90d",
+        "l748bda6f8e5e": "r76acbe3920a9",
+        "l71d32a60efde": "rb63e9251e3df"
+      },
+      "incorrect_answer": {
+        "l0ebe2c668484": "rd5b44745b90d",
+        "l738c9dde8cbb": "r29ca5010d169",
+        "l748bda6f8e5e": "r76acbe3920a9",
+        "l71d32a60efde": "rb63e9251e3df"
+      },
+      "editorial_answer": "estimate — приблизительная оценка; count — подсчёт; attendance — посещаемость; revision — пересмотр",
+      "explanation": "Контекстные значения: estimate — приблизительная оценка; count — подсчёт; attendance — посещаемость; revision — пересмотр.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что потерялось при публикации точного числа?",
+      "public_payload": {
+        "passage": "The organiser estimated that around two hundred people had visited the exhibition, using a partial door count and the volunteers’ observations. A report printed the figure as an exact total. When the remaining records arrived, the organiser revised the estimate downward. This did not show that the original number had been a certified count or that every observation was worthless. It showed why the words around and estimated mattered, and why later information could legitimately change a provisional figure.",
+        "options": [
+          {
+            "id": "ve0c6de8cb53e",
+            "label": "The provisional nature of the estimate."
+          },
+          {
+            "id": "v4eb7b9cd02f4",
+            "label": "The fact that an exhibition existed."
+          },
+          {
+            "id": "vb40f54b6c460",
+            "label": "A guarantee that later records were irrelevant."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve0c6de8cb53e"
+      },
+      "reference_answer": "ve0c6de8cb53e",
+      "incorrect_answer": "v4eb7b9cd02f4",
+      "editorial_answer": "The provisional nature of the estimate.",
+      "explanation": "Сохраняем информацию текста: «The provisional nature of the estimate.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Оценка и точный подсчёт»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “count” means ___.",
+        "options": [
+          {
+            "id": "vf25fdda60de5",
+            "label": "пересмотр"
+          },
+          {
+            "id": "v9096507098c4",
+            "label": "посещаемость"
+          },
+          {
+            "id": "vbcfa3f2e7dc0",
+            "label": "подсчёт"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbcfa3f2e7dc0"
+      },
+      "reference_answer": "vbcfa3f2e7dc0",
+      "incorrect_answer": "v9096507098c4",
+      "editorial_answer": "подсчёт",
+      "explanation": "Здесь count — «подсчёт», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

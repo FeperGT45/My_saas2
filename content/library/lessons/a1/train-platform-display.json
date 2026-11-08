@@ -1,0 +1,300 @@
+{
+  "key": "a1/train-platform-display",
+  "course": "path-a1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 8,
+  "title": "Табло на платформе",
+  "description": "Табло на платформе: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «У какой платформы поезд?»",
+    "Различать значения platform и screen в теме «Табло на платформе»"
+  ],
+  "notes": [
+    "В предложении «The train is at platform four.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «In a coat pocket.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 6,
+  "prerequisites": ["a1/fruit-stall-basket"],
+  "lexicon": [
+    {
+      "en": "platform",
+      "ru": "платформа"
+    },
+    {
+      "en": "screen",
+      "ru": "экран"
+    },
+    {
+      "en": "train",
+      "ru": "поезд"
+    },
+    {
+      "en": "ticket",
+      "ru": "билет"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Табло на платформе»: выбери значение слова «platform» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v61302d54fc6b",
+            "label": "платформа"
+          },
+          {
+            "id": "v6ac9a62ab0ae",
+            "label": "поезд"
+          },
+          {
+            "id": "vca712f5a1e66",
+            "label": "экран"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v61302d54fc6b"
+      },
+      "reference_answer": "v61302d54fc6b",
+      "incorrect_answer": "vca712f5a1e66",
+      "editorial_answer": "платформа",
+      "explanation": "В этом контексте platform означает «платформа».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары platform / four. Значение: «Поезд находится у четвёртой платформы.»",
+      "public_payload": {
+        "sentence": "The train is at platform ___."
+      },
+      "answer_key": {
+        "accepted": ["four"]
+      },
+      "reference_answer": "four",
+      "incorrect_answer": "platform",
+      "editorial_answer": "The train is at platform four.",
+      "explanation": "Нужен вариант four: полное предложение означает «Поезд находится у четвёртой платформы.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Поезд находится у четвёртой платформы.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "at"
+          },
+          {
+            "id": "t5",
+            "label": "platform"
+          },
+          {
+            "id": "t6",
+            "label": "four."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "train"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The train is at platform four.",
+      "explanation": "Порядок слов передаёт смысл «Поезд находится у четвёртой платформы.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The train are at platform four."
+      },
+      "answer_key": {
+        "accepted": ["The train is at platform four."]
+      },
+      "reference_answer": "The train is at platform four.",
+      "incorrect_answer": "The train are at platform four.",
+      "editorial_answer": "The train is at platform four.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The train is at platform four.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "У какой платформы поезд?",
+      "public_payload": {
+        "passage": "Our train is at platform four. The screen shows York. My ticket is in my coat pocket. Mum carries the bags. We wait by the screen and check the train name.",
+        "options": [
+          {
+            "id": "v81cbd8b1da2a",
+            "label": "York."
+          },
+          {
+            "id": "vbc839bfdf938",
+            "label": "Two."
+          },
+          {
+            "id": "ve89d10b4c040",
+            "label": "Four."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve89d10b4c040"
+      },
+      "reference_answer": "ve89d10b4c040",
+      "incorrect_answer": "v81cbd8b1da2a",
+      "editorial_answer": "Four.",
+      "explanation": "Ответ подтверждён текстом: «Four.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l63e307917aa0",
+            "label": "platform"
+          },
+          {
+            "id": "l84a601442d29",
+            "label": "screen"
+          },
+          {
+            "id": "l20a6b780dddf",
+            "label": "train"
+          },
+          {
+            "id": "lc2614b074c79",
+            "label": "ticket"
+          }
+        ],
+        "right": [
+          {
+            "id": "r80a55dbd69c8",
+            "label": "платформа"
+          },
+          {
+            "id": "rcebc7e8bbe4f",
+            "label": "поезд"
+          },
+          {
+            "id": "r612c27c4ab16",
+            "label": "экран"
+          },
+          {
+            "id": "rf8b5a81eea51",
+            "label": "билет"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l63e307917aa0": "r80a55dbd69c8",
+          "l84a601442d29": "r612c27c4ab16",
+          "l20a6b780dddf": "rcebc7e8bbe4f",
+          "lc2614b074c79": "rf8b5a81eea51"
+        }
+      },
+      "reference_answer": {
+        "l63e307917aa0": "r80a55dbd69c8",
+        "l84a601442d29": "r612c27c4ab16",
+        "l20a6b780dddf": "rcebc7e8bbe4f",
+        "lc2614b074c79": "rf8b5a81eea51"
+      },
+      "incorrect_answer": {
+        "l63e307917aa0": "r612c27c4ab16",
+        "l84a601442d29": "r80a55dbd69c8",
+        "l20a6b780dddf": "rcebc7e8bbe4f",
+        "lc2614b074c79": "rf8b5a81eea51"
+      },
+      "editorial_answer": "platform — платформа; screen — экран; train — поезд; ticket — билет",
+      "explanation": "Контекстные значения: platform — платформа; screen — экран; train — поезд; ticket — билет.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где билет рассказчика?",
+      "public_payload": {
+        "passage": "Our train is at platform four. The screen shows York. My ticket is in my coat pocket. Mum carries the bags. We wait by the screen and check the train name.",
+        "options": [
+          {
+            "id": "vc9c2a7171a40",
+            "label": "In Mum’s bag."
+          },
+          {
+            "id": "v69399d36f3dc",
+            "label": "On the screen."
+          },
+          {
+            "id": "v555484fda4a5",
+            "label": "In a coat pocket."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v555484fda4a5"
+      },
+      "reference_answer": "v555484fda4a5",
+      "incorrect_answer": "vc9c2a7171a40",
+      "editorial_answer": "In a coat pocket.",
+      "explanation": "Сохраняем информацию текста: «In a coat pocket.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Табло на платформе»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “screen” means ___.",
+        "options": [
+          {
+            "id": "v3a69961d0644",
+            "label": "поезд"
+          },
+          {
+            "id": "v151747640432",
+            "label": "билет"
+          },
+          {
+            "id": "va516e92124e5",
+            "label": "экран"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va516e92124e5"
+      },
+      "reference_answer": "va516e92124e5",
+      "incorrect_answer": "v3a69961d0644",
+      "editorial_answer": "экран",
+      "explanation": "Здесь screen — «экран», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

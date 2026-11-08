@@ -1,0 +1,308 @@
+{
+  "key": "b1/study-group-feedback",
+  "course": "path-b1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 4,
+  "title": "Замечание к учебной работе",
+  "description": "Замечание к учебной работе: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что требовало исправления?»",
+    "Различать значения feedback и revise в теме «Замечание к учебной работе»"
+  ],
+  "notes": [
+    "В предложении «The revised outline is on the first page.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «Examples that supported his argument.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/shop-replacement"],
+  "lexicon": [
+    {
+      "en": "feedback",
+      "ru": "обратная связь"
+    },
+    {
+      "en": "revise",
+      "ru": "перерабатывать"
+    },
+    {
+      "en": "example",
+      "ru": "пример"
+    },
+    {
+      "en": "outline",
+      "ru": "план текста"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Замечание к учебной работе»: выбери значение слова «feedback» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v6ad200aa78f4",
+            "label": "перерабатывать"
+          },
+          {
+            "id": "v88502b728d13",
+            "label": "пример"
+          },
+          {
+            "id": "v4629736ff7f0",
+            "label": "обратная связь"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4629736ff7f0"
+      },
+      "reference_answer": "v4629736ff7f0",
+      "incorrect_answer": "v6ad200aa78f4",
+      "editorial_answer": "обратная связь",
+      "explanation": "В этом контексте feedback означает «обратная связь».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары feedback / page. Значение: «Переработанный план находится на первой странице.»",
+      "public_payload": {
+        "sentence": "The revised outline is on the first ___."
+      },
+      "answer_key": {
+        "accepted": ["page"]
+      },
+      "reference_answer": "page",
+      "incorrect_answer": "feedback",
+      "editorial_answer": "The revised outline is on the first page.",
+      "explanation": "Нужен вариант page: полное предложение означает «Переработанный план находится на первой странице.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Переработанный план находится на первой странице.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "outline"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "on"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "first"
+          },
+          {
+            "id": "t8",
+            "label": "page."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "revised"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The revised outline is on the first page.",
+      "explanation": "Порядок слов передаёт смысл «Переработанный план находится на первой странице.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The revised outline are on the first page."
+      },
+      "answer_key": {
+        "accepted": ["The revised outline is on the first page."]
+      },
+      "reference_answer": "The revised outline is on the first page.",
+      "incorrect_answer": "The revised outline are on the first page.",
+      "editorial_answer": "The revised outline is on the first page.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The revised outline is on the first page.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что требовало исправления?",
+      "public_payload": {
+        "passage": "A study partner liked the examples in Noah’s essay but found its order difficult to follow. Noah first thought he needed to replace every example. On rereading the feedback, he realised the problem was organisation. He rewrote the outline and moved two paragraphs, keeping the examples that already supported his argument. The next review focused on whether the new sequence was clearer.",
+        "options": [
+          {
+            "id": "vff9636b44f34",
+            "label": "The organisation of the essay."
+          },
+          {
+            "id": "vb1bce1e2a04f",
+            "label": "The choice of study partner."
+          },
+          {
+            "id": "v6429b9545884",
+            "label": "Every example without exception."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vff9636b44f34"
+      },
+      "reference_answer": "vff9636b44f34",
+      "incorrect_answer": "v6429b9545884",
+      "editorial_answer": "The organisation of the essay.",
+      "explanation": "Ответ подтверждён текстом: «The organisation of the essay.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l027517cd439e",
+            "label": "feedback"
+          },
+          {
+            "id": "l4a2660179207",
+            "label": "revise"
+          },
+          {
+            "id": "l28e3d4a25a65",
+            "label": "example"
+          },
+          {
+            "id": "l408dcc9f446e",
+            "label": "outline"
+          }
+        ],
+        "right": [
+          {
+            "id": "r71ddfad89907",
+            "label": "перерабатывать"
+          },
+          {
+            "id": "r6324b2e9d578",
+            "label": "пример"
+          },
+          {
+            "id": "r6e267392cc69",
+            "label": "обратная связь"
+          },
+          {
+            "id": "re9540280715d",
+            "label": "план текста"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l027517cd439e": "r6e267392cc69",
+          "l4a2660179207": "r71ddfad89907",
+          "l28e3d4a25a65": "r6324b2e9d578",
+          "l408dcc9f446e": "re9540280715d"
+        }
+      },
+      "reference_answer": {
+        "l027517cd439e": "r6e267392cc69",
+        "l4a2660179207": "r71ddfad89907",
+        "l28e3d4a25a65": "r6324b2e9d578",
+        "l408dcc9f446e": "re9540280715d"
+      },
+      "incorrect_answer": {
+        "l027517cd439e": "r71ddfad89907",
+        "l4a2660179207": "r6e267392cc69",
+        "l28e3d4a25a65": "r6324b2e9d578",
+        "l408dcc9f446e": "re9540280715d"
+      },
+      "editorial_answer": "feedback — обратная связь; revise — перерабатывать; example — пример; outline — план текста",
+      "explanation": "Контекстные значения: feedback — обратная связь; revise — перерабатывать; example — пример; outline — план текста.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Ной сохранил?",
+      "public_payload": {
+        "passage": "A study partner liked the examples in Noah’s essay but found its order difficult to follow. Noah first thought he needed to replace every example. On rereading the feedback, he realised the problem was organisation. He rewrote the outline and moved two paragraphs, keeping the examples that already supported his argument. The next review focused on whether the new sequence was clearer.",
+        "options": [
+          {
+            "id": "v3f341b3757b1",
+            "label": "Examples that supported his argument."
+          },
+          {
+            "id": "v0ece84658edf",
+            "label": "The original confusing order unchanged."
+          },
+          {
+            "id": "vb25695542e11",
+            "label": "Only the title, removing all paragraphs."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3f341b3757b1"
+      },
+      "reference_answer": "v3f341b3757b1",
+      "incorrect_answer": "v0ece84658edf",
+      "editorial_answer": "Examples that supported his argument.",
+      "explanation": "Сохраняем информацию текста: «Examples that supported his argument.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Замечание к учебной работе»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “revise” means ___.",
+        "options": [
+          {
+            "id": "v5f6a6f29e602",
+            "label": "план текста"
+          },
+          {
+            "id": "vdf3dce6cc6a0",
+            "label": "перерабатывать"
+          },
+          {
+            "id": "vdf79b60c28cf",
+            "label": "пример"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdf3dce6cc6a0"
+      },
+      "reference_answer": "vdf3dce6cc6a0",
+      "incorrect_answer": "vdf79b60c28cf",
+      "editorial_answer": "перерабатывать",
+      "explanation": "Здесь revise — «перерабатывать», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

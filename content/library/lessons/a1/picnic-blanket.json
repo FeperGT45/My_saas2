@@ -1,0 +1,300 @@
+{
+  "key": "a1/picnic-blanket",
+  "course": "path-a1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 3,
+  "title": "Место для пикника",
+  "description": "Место для пикника: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Где корзина?»",
+    "Различать значения blanket и grass в теме «Место для пикника»"
+  ],
+  "notes": [
+    "В предложении «The basket is in the shade.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «In a blue bag.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 6,
+  "prerequisites": ["a1/garden-tools-shelf"],
+  "lexicon": [
+    {
+      "en": "blanket",
+      "ru": "одеяло"
+    },
+    {
+      "en": "grass",
+      "ru": "трава"
+    },
+    {
+      "en": "basket",
+      "ru": "корзина"
+    },
+    {
+      "en": "shade",
+      "ru": "тень"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Место для пикника»: выбери значение слова «blanket» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v854eb8e4ae02",
+            "label": "корзина"
+          },
+          {
+            "id": "vb8419ded32a9",
+            "label": "одеяло"
+          },
+          {
+            "id": "v09ce76e0a258",
+            "label": "трава"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb8419ded32a9"
+      },
+      "reference_answer": "vb8419ded32a9",
+      "incorrect_answer": "v09ce76e0a258",
+      "editorial_answer": "одеяло",
+      "explanation": "В этом контексте blanket означает «одеяло».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары shade / blanket. Значение: «Корзина находится в тени.»",
+      "public_payload": {
+        "sentence": "The basket is in the ___."
+      },
+      "answer_key": {
+        "accepted": ["shade"]
+      },
+      "reference_answer": "shade",
+      "incorrect_answer": "blanket",
+      "editorial_answer": "The basket is in the shade.",
+      "explanation": "Нужен вариант shade: полное предложение означает «Корзина находится в тени.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Корзина находится в тени.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "in"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "shade."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "basket"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The basket is in the shade.",
+      "explanation": "Порядок слов передаёт смысл «Корзина находится в тени.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The basket are in the shade."
+      },
+      "answer_key": {
+        "accepted": ["The basket is in the shade."]
+      },
+      "reference_answer": "The basket is in the shade.",
+      "incorrect_answer": "The basket are in the shade.",
+      "editorial_answer": "The basket is in the shade.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The basket is in the shade.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где корзина?",
+      "public_payload": {
+        "passage": "We put a blanket on the grass. Our basket is in the shade under a tree. There are sandwiches in it. The drinks are in a blue bag beside the blanket.",
+        "options": [
+          {
+            "id": "v6f4b5f570a7d",
+            "label": "Under a tree."
+          },
+          {
+            "id": "vb52c1cb2a324",
+            "label": "On a chair."
+          },
+          {
+            "id": "v4bb65eae632b",
+            "label": "In a blue bag."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6f4b5f570a7d"
+      },
+      "reference_answer": "v6f4b5f570a7d",
+      "incorrect_answer": "v4bb65eae632b",
+      "editorial_answer": "Under a tree.",
+      "explanation": "Ответ подтверждён текстом: «Under a tree.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l7b6a509570c6",
+            "label": "blanket"
+          },
+          {
+            "id": "l0660e1f5c362",
+            "label": "grass"
+          },
+          {
+            "id": "l09c341921dcc",
+            "label": "basket"
+          },
+          {
+            "id": "l739c0f728328",
+            "label": "shade"
+          }
+        ],
+        "right": [
+          {
+            "id": "ra16a1023bdaa",
+            "label": "трава"
+          },
+          {
+            "id": "re1721dd6c685",
+            "label": "тень"
+          },
+          {
+            "id": "r6856d3c5022c",
+            "label": "корзина"
+          },
+          {
+            "id": "r5aec9a3cd715",
+            "label": "одеяло"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l7b6a509570c6": "r5aec9a3cd715",
+          "l0660e1f5c362": "ra16a1023bdaa",
+          "l09c341921dcc": "r6856d3c5022c",
+          "l739c0f728328": "re1721dd6c685"
+        }
+      },
+      "reference_answer": {
+        "l7b6a509570c6": "r5aec9a3cd715",
+        "l0660e1f5c362": "ra16a1023bdaa",
+        "l09c341921dcc": "r6856d3c5022c",
+        "l739c0f728328": "re1721dd6c685"
+      },
+      "incorrect_answer": {
+        "l7b6a509570c6": "ra16a1023bdaa",
+        "l0660e1f5c362": "r5aec9a3cd715",
+        "l09c341921dcc": "r6856d3c5022c",
+        "l739c0f728328": "re1721dd6c685"
+      },
+      "editorial_answer": "blanket — одеяло; grass — трава; basket — корзина; shade — тень",
+      "explanation": "Контекстные значения: blanket — одеяло; grass — трава; basket — корзина; shade — тень.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где напитки?",
+      "public_payload": {
+        "passage": "We put a blanket on the grass. Our basket is in the shade under a tree. There are sandwiches in it. The drinks are in a blue bag beside the blanket.",
+        "options": [
+          {
+            "id": "vd21c7b963d62",
+            "label": "Under the sandwiches."
+          },
+          {
+            "id": "v9340278dac95",
+            "label": "In a blue bag."
+          },
+          {
+            "id": "v8b7ced066bf7",
+            "label": "Inside the basket."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9340278dac95"
+      },
+      "reference_answer": "v9340278dac95",
+      "incorrect_answer": "v8b7ced066bf7",
+      "editorial_answer": "In a blue bag.",
+      "explanation": "Сохраняем информацию текста: «In a blue bag.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Место для пикника»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “grass” means ___.",
+        "options": [
+          {
+            "id": "vc68732b24c65",
+            "label": "корзина"
+          },
+          {
+            "id": "v08f5d14c4821",
+            "label": "трава"
+          },
+          {
+            "id": "vd95e30964d45",
+            "label": "тень"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v08f5d14c4821"
+      },
+      "reference_answer": "v08f5d14c4821",
+      "incorrect_answer": "vc68732b24c65",
+      "editorial_answer": "трава",
+      "explanation": "Здесь grass — «трава», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

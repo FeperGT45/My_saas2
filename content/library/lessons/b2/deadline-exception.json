@@ -1,0 +1,304 @@
+{
+  "key": "b2/deadline-exception",
+  "course": "path-b2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 3,
+  "title": "Исключение к сроку",
+  "description": "Исключение к сроку: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Почему приняли опоздавшую заявку?»",
+    "Различать значения exception и deadline в теме «Исключение к сроку»"
+  ],
+  "notes": [
+    "В предложении «The exception is limited to this case.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «Their own assessment.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/reviewed-not-verified"],
+  "lexicon": [
+    {
+      "en": "exception",
+      "ru": "исключение"
+    },
+    {
+      "en": "deadline",
+      "ru": "крайний срок"
+    },
+    {
+      "en": "discretion",
+      "ru": "право усмотрения"
+    },
+    {
+      "en": "precedent",
+      "ru": "прецедент"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Исключение к сроку»: выбери значение слова «exception» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "ve757d448445e",
+            "label": "крайний срок"
+          },
+          {
+            "id": "vf2337c96bfe2",
+            "label": "исключение"
+          },
+          {
+            "id": "v913ab71bf728",
+            "label": "право усмотрения"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf2337c96bfe2"
+      },
+      "reference_answer": "vf2337c96bfe2",
+      "incorrect_answer": "ve757d448445e",
+      "editorial_answer": "исключение",
+      "explanation": "В этом контексте exception означает «исключение».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары case / exception. Значение: «Исключение ограничено этим случаем.»",
+      "public_payload": {
+        "sentence": "The exception is limited to this ___."
+      },
+      "answer_key": {
+        "accepted": ["case"]
+      },
+      "reference_answer": "case",
+      "incorrect_answer": "exception",
+      "editorial_answer": "The exception is limited to this case.",
+      "explanation": "Нужен вариант case: полное предложение означает «Исключение ограничено этим случаем.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Исключение ограничено этим случаем.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "limited"
+          },
+          {
+            "id": "t5",
+            "label": "to"
+          },
+          {
+            "id": "t6",
+            "label": "this"
+          },
+          {
+            "id": "t7",
+            "label": "case."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "exception"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The exception is limited to this case.",
+      "explanation": "Порядок слов передаёт смысл «Исключение ограничено этим случаем.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The exception are limited to this case."
+      },
+      "answer_key": {
+        "accepted": ["The exception is limited to this case."]
+      },
+      "reference_answer": "The exception is limited to this case.",
+      "incorrect_answer": "The exception are limited to this case.",
+      "editorial_answer": "The exception is limited to this case.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The exception is limited to this case.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему приняли опоздавшую заявку?",
+      "public_payload": {
+        "passage": "A course organiser accepted one late application after a documented system failure prevented submission. The notice made clear that the normal deadline remained in force. Another applicant argued that the exception meant all future late applications must be accepted automatically. The organiser disagreed. The decision addressed a specific obstacle supported by evidence, while other cases would need their own assessment. A fair account had to preserve both the general deadline and the stated reason for this exception.",
+        "options": [
+          {
+            "id": "v99375ac0cb49",
+            "label": "The deadline had been abolished for everyone."
+          },
+          {
+            "id": "v3b581e57e004",
+            "label": "All evidence requirements had been removed."
+          },
+          {
+            "id": "vf49830f45a16",
+            "label": "A documented system failure prevented submission."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf49830f45a16"
+      },
+      "reference_answer": "vf49830f45a16",
+      "incorrect_answer": "v99375ac0cb49",
+      "editorial_answer": "A documented system failure prevented submission.",
+      "explanation": "Ответ подтверждён текстом: «A documented system failure prevented submission.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "la560b9717537",
+            "label": "exception"
+          },
+          {
+            "id": "lcf9903732ff4",
+            "label": "deadline"
+          },
+          {
+            "id": "lb668e7afddee",
+            "label": "discretion"
+          },
+          {
+            "id": "l374371d671a2",
+            "label": "precedent"
+          }
+        ],
+        "right": [
+          {
+            "id": "r5674a74095ad",
+            "label": "прецедент"
+          },
+          {
+            "id": "ra0fb1f7637e8",
+            "label": "право усмотрения"
+          },
+          {
+            "id": "rfa8ee4e95522",
+            "label": "крайний срок"
+          },
+          {
+            "id": "rbecd8d6728d3",
+            "label": "исключение"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "la560b9717537": "rbecd8d6728d3",
+          "lcf9903732ff4": "rfa8ee4e95522",
+          "lb668e7afddee": "ra0fb1f7637e8",
+          "l374371d671a2": "r5674a74095ad"
+        }
+      },
+      "reference_answer": {
+        "la560b9717537": "rbecd8d6728d3",
+        "lcf9903732ff4": "rfa8ee4e95522",
+        "lb668e7afddee": "ra0fb1f7637e8",
+        "l374371d671a2": "r5674a74095ad"
+      },
+      "incorrect_answer": {
+        "la560b9717537": "rfa8ee4e95522",
+        "lcf9903732ff4": "rbecd8d6728d3",
+        "lb668e7afddee": "ra0fb1f7637e8",
+        "l374371d671a2": "r5674a74095ad"
+      },
+      "editorial_answer": "exception — исключение; deadline — крайний срок; discretion — право усмотрения; precedent — прецедент",
+      "explanation": "Контекстные значения: exception — исключение; deadline — крайний срок; discretion — право усмотрения; precedent — прецедент.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что требовалось для других случаев?",
+      "public_payload": {
+        "passage": "A course organiser accepted one late application after a documented system failure prevented submission. The notice made clear that the normal deadline remained in force. Another applicant argued that the exception meant all future late applications must be accepted automatically. The organiser disagreed. The decision addressed a specific obstacle supported by evidence, while other cases would need their own assessment. A fair account had to preserve both the general deadline and the stated reason for this exception.",
+        "options": [
+          {
+            "id": "vbdb2914e3756",
+            "label": "A claim that no deadline ever existed."
+          },
+          {
+            "id": "vab818af1717e",
+            "label": "Their own assessment."
+          },
+          {
+            "id": "v58a552f99054",
+            "label": "Automatic acceptance without review."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vab818af1717e"
+      },
+      "reference_answer": "vab818af1717e",
+      "incorrect_answer": "v58a552f99054",
+      "editorial_answer": "Their own assessment.",
+      "explanation": "Сохраняем информацию текста: «Their own assessment.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Исключение к сроку»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “deadline” means ___.",
+        "options": [
+          {
+            "id": "vb5f81f5a64dd",
+            "label": "прецедент"
+          },
+          {
+            "id": "vcd03802aad64",
+            "label": "право усмотрения"
+          },
+          {
+            "id": "v2bd9e908caf6",
+            "label": "крайний срок"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2bd9e908caf6"
+      },
+      "reference_answer": "v2bd9e908caf6",
+      "incorrect_answer": "vcd03802aad64",
+      "editorial_answer": "крайний срок",
+      "explanation": "Здесь deadline — «крайний срок», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+  "key": "c1/as-yet-unresolved",
+  "course": "path-c1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика C1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 1,
+  "title": "As yet: пока не решено",
+  "description": "As yet: пока не решено: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "C1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что означало as yet unresolved?»",
+    "Различать значения unresolved и pending в теме «As yet: пока не решено»"
+  ],
+  "notes": [
+    "В предложении «The issue is as yet unresolved.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «A later finding remains possible but is not promised.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 14,
+  "prerequisites": ["c1/not-so-much-as"],
+  "lexicon": [
+    {
+      "en": "unresolved",
+      "ru": "нерешённый"
+    },
+    {
+      "en": "pending",
+      "ru": "ожидающий решения"
+    },
+    {
+      "en": "inquiry",
+      "ru": "исследование вопроса"
+    },
+    {
+      "en": "verdict",
+      "ru": "вердикт"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«As yet: пока не решено»: выбери значение слова «unresolved» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "ve6b53ff52224",
+            "label": "исследование вопроса"
+          },
+          {
+            "id": "v8a3e271608c9",
+            "label": "ожидающий решения"
+          },
+          {
+            "id": "v4ba4ca0bc300",
+            "label": "нерешённый"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4ba4ca0bc300"
+      },
+      "reference_answer": "v4ba4ca0bc300",
+      "incorrect_answer": "v8a3e271608c9",
+      "editorial_answer": "нерешённый",
+      "explanation": "В этом контексте unresolved означает «нерешённый».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары unresolved / pending. Значение: «Вопрос пока остаётся нерешённым.»",
+      "public_payload": {
+        "sentence": "The issue is as yet ___."
+      },
+      "answer_key": {
+        "accepted": ["unresolved"]
+      },
+      "reference_answer": "unresolved",
+      "incorrect_answer": "pending",
+      "editorial_answer": "The issue is as yet unresolved.",
+      "explanation": "Нужен вариант unresolved: полное предложение означает «Вопрос пока остаётся нерешённым.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Вопрос пока остаётся нерешённым.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "as"
+          },
+          {
+            "id": "t5",
+            "label": "yet"
+          },
+          {
+            "id": "t6",
+            "label": "unresolved."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "issue"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The issue is as yet unresolved.",
+      "explanation": "Порядок слов передаёт смысл «Вопрос пока остаётся нерешённым.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The issue are as yet unresolved."
+      },
+      "answer_key": {
+        "accepted": ["The issue is as yet unresolved."]
+      },
+      "reference_answer": "The issue is as yet unresolved.",
+      "incorrect_answer": "The issue are as yet unresolved.",
+      "editorial_answer": "The issue is as yet unresolved.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The issue is as yet unresolved.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что означало as yet unresolved?",
+      "public_payload": {
+        "passage": "The panel described the source of the repeated delays as yet unresolved. A newspaper summary treated this as a verdict that the cause could never be discovered. Panel members objected to the change in time horizon. Their statement concerned the present state of the inquiry, not the permanent limits of knowledge. Several records had still to be examined, and competing explanations remained under consideration. The phrase as yet left room for a later finding without promising one. The corrected summary therefore retained both the current uncertainty and the ongoing investigation, avoiding an unsupported claim of either inevitable success or permanent impossibility.",
+        "options": [
+          {
+            "id": "v534ff5c1c6ff",
+            "label": "Impossible to resolve at any future time."
+          },
+          {
+            "id": "vf5f7dbc04c58",
+            "label": "Unresolved at the present stage."
+          },
+          {
+            "id": "v227f1e2f9f06",
+            "label": "Already resolved beyond dispute."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf5f7dbc04c58"
+      },
+      "reference_answer": "vf5f7dbc04c58",
+      "incorrect_answer": "v534ff5c1c6ff",
+      "editorial_answer": "Unresolved at the present stage.",
+      "explanation": "Ответ подтверждён текстом: «Unresolved at the present stage.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l58192df88d10",
+            "label": "unresolved"
+          },
+          {
+            "id": "l08b8e7797d1e",
+            "label": "pending"
+          },
+          {
+            "id": "l6c267455fd2a",
+            "label": "inquiry"
+          },
+          {
+            "id": "leb460b280d07",
+            "label": "verdict"
+          }
+        ],
+        "right": [
+          {
+            "id": "re26c6aef9543",
+            "label": "нерешённый"
+          },
+          {
+            "id": "re70a2f65b050",
+            "label": "исследование вопроса"
+          },
+          {
+            "id": "r7b5cc223223c",
+            "label": "ожидающий решения"
+          },
+          {
+            "id": "re4d55667a74e",
+            "label": "вердикт"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l58192df88d10": "re26c6aef9543",
+          "l08b8e7797d1e": "r7b5cc223223c",
+          "l6c267455fd2a": "re70a2f65b050",
+          "leb460b280d07": "re4d55667a74e"
+        }
+      },
+      "reference_answer": {
+        "l58192df88d10": "re26c6aef9543",
+        "l08b8e7797d1e": "r7b5cc223223c",
+        "l6c267455fd2a": "re70a2f65b050",
+        "leb460b280d07": "re4d55667a74e"
+      },
+      "incorrect_answer": {
+        "l58192df88d10": "r7b5cc223223c",
+        "l08b8e7797d1e": "re26c6aef9543",
+        "l6c267455fd2a": "re70a2f65b050",
+        "leb460b280d07": "re4d55667a74e"
+      },
+      "editorial_answer": "unresolved — нерешённый; pending — ожидающий решения; inquiry — исследование вопроса; verdict — вердикт",
+      "explanation": "Контекстные значения: unresolved — нерешённый; pending — ожидающий решения; inquiry — исследование вопроса; verdict — вердикт.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой вывод о будущем текст разрешает?",
+      "public_payload": {
+        "passage": "The panel described the source of the repeated delays as yet unresolved. A newspaper summary treated this as a verdict that the cause could never be discovered. Panel members objected to the change in time horizon. Their statement concerned the present state of the inquiry, not the permanent limits of knowledge. Several records had still to be examined, and competing explanations remained under consideration. The phrase as yet left room for a later finding without promising one. The corrected summary therefore retained both the current uncertainty and the ongoing investigation, avoiding an unsupported claim of either inevitable success or permanent impossibility.",
+        "options": [
+          {
+            "id": "v17dde36d4f66",
+            "label": "A later finding remains possible but is not promised."
+          },
+          {
+            "id": "v83a0c7a815ec",
+            "label": "Success is inevitable."
+          },
+          {
+            "id": "v314e23c003fa",
+            "label": "Investigation is pointless by definition."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v17dde36d4f66"
+      },
+      "reference_answer": "v17dde36d4f66",
+      "incorrect_answer": "v83a0c7a815ec",
+      "editorial_answer": "A later finding remains possible but is not promised.",
+      "explanation": "Сохраняем информацию текста: «A later finding remains possible but is not promised.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«As yet: пока не решено»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “pending” means ___.",
+        "options": [
+          {
+            "id": "v15cb5a4d7fcd",
+            "label": "исследование вопроса"
+          },
+          {
+            "id": "v8304ed8dbef0",
+            "label": "ожидающий решения"
+          },
+          {
+            "id": "v18beea28da26",
+            "label": "вердикт"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8304ed8dbef0"
+      },
+      "reference_answer": "v8304ed8dbef0",
+      "incorrect_answer": "v15cb5a4d7fcd",
+      "editorial_answer": "ожидающий решения",
+      "explanation": "Здесь pending — «ожидающий решения», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

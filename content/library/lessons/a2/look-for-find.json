@@ -15,7 +15,7 @@
     "Использовать look for с предметом поиска"
   ],
   "notes": [
-    "Look for describes trying to locate something.",
+    "Look for описывает попытку найти что-либо, а не её обязательный успех.",
     "Find сообщает, что предмет обнаружен; поиск может не завершиться успехом."
   ],
   "skills": ["grammar", "vocabulary", "reading"],
@@ -366,7 +366,7 @@
       "incorrect_answer": "vf823b9c7e888",
       "editorial_answer": "pocket",
       "key": "e09",
-      "explanation": "Правило урока: Look for describes trying to locate something."
+      "explanation": "Pocket — карман в одежде. Wallet — бумажник, ticket — билет."
     }
   ]
 }

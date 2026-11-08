@@ -1,0 +1,296 @@
+{
+  "key": "a2/museum-lockers",
+  "course": "path-a2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 5,
+  "title": "Шкафчики в музее",
+  "description": "Шкафчики в музее: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что Нина хранит в кармане?»",
+    "Различать значения locker и token в теме «Шкафчики в музее»"
+  ],
+  "notes": [
+    "В предложении «The locker is near reception.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «When the token is handed back.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a2/swapping-work-shifts"],
+  "lexicon": [
+    {
+      "en": "locker",
+      "ru": "шкафчик"
+    },
+    {
+      "en": "token",
+      "ru": "жетон"
+    },
+    {
+      "en": "belongings",
+      "ru": "личные вещи"
+    },
+    {
+      "en": "deposit",
+      "ru": "возвращаемый залог"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Шкафчики в музее»: выбери значение слова «locker» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v06a2f547e494",
+            "label": "шкафчик"
+          },
+          {
+            "id": "v0142f5571e70",
+            "label": "личные вещи"
+          },
+          {
+            "id": "v0deaa116c0f6",
+            "label": "жетон"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v06a2f547e494"
+      },
+      "reference_answer": "v06a2f547e494",
+      "incorrect_answer": "v0deaa116c0f6",
+      "editorial_answer": "шкафчик",
+      "explanation": "В этом контексте locker означает «шкафчик».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары locker / reception. Значение: «Шкафчик находится рядом со стойкой приёма.»",
+      "public_payload": {
+        "sentence": "The locker is near ___."
+      },
+      "answer_key": {
+        "accepted": ["reception"]
+      },
+      "reference_answer": "reception",
+      "incorrect_answer": "locker",
+      "editorial_answer": "The locker is near reception.",
+      "explanation": "Нужен вариант reception: полное предложение означает «Шкафчик находится рядом со стойкой приёма.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Шкафчик находится рядом со стойкой приёма.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "near"
+          },
+          {
+            "id": "t5",
+            "label": "reception."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "locker"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "The locker is near reception.",
+      "explanation": "Порядок слов передаёт смысл «Шкафчик находится рядом со стойкой приёма.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The locker are near reception."
+      },
+      "answer_key": {
+        "accepted": ["The locker is near reception."]
+      },
+      "reference_answer": "The locker is near reception.",
+      "incorrect_answer": "The locker are near reception.",
+      "editorial_answer": "The locker is near reception.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The locker is near reception.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Нина хранит в кармане?",
+      "public_payload": {
+        "passage": "Visitors leave large bags in lockers near reception. A token opens each locker. Nina puts her backpack inside and keeps the token in her pocket. After the visit, she opens the locker and returns the token. The deposit is returned when she hands it back.",
+        "options": [
+          {
+            "id": "v1ab24e339785",
+            "label": "The token."
+          },
+          {
+            "id": "vf5be0c6ae6d5",
+            "label": "Her backpack."
+          },
+          {
+            "id": "vb413e86fbf62",
+            "label": "The locker door."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v1ab24e339785"
+      },
+      "reference_answer": "v1ab24e339785",
+      "incorrect_answer": "vf5be0c6ae6d5",
+      "editorial_answer": "The token.",
+      "explanation": "Ответ подтверждён текстом: «The token.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "leff23bd0fb7f",
+            "label": "locker"
+          },
+          {
+            "id": "lb49d125f9cf6",
+            "label": "token"
+          },
+          {
+            "id": "l7f59d6a4aa3e",
+            "label": "belongings"
+          },
+          {
+            "id": "l09002dfbb328",
+            "label": "deposit"
+          }
+        ],
+        "right": [
+          {
+            "id": "r9cbf686bb82b",
+            "label": "шкафчик"
+          },
+          {
+            "id": "r7d98a08565e3",
+            "label": "личные вещи"
+          },
+          {
+            "id": "re0c3574b6d7d",
+            "label": "возвращаемый залог"
+          },
+          {
+            "id": "r07234db0bf29",
+            "label": "жетон"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "leff23bd0fb7f": "r9cbf686bb82b",
+          "lb49d125f9cf6": "r07234db0bf29",
+          "l7f59d6a4aa3e": "r7d98a08565e3",
+          "l09002dfbb328": "re0c3574b6d7d"
+        }
+      },
+      "reference_answer": {
+        "leff23bd0fb7f": "r9cbf686bb82b",
+        "lb49d125f9cf6": "r07234db0bf29",
+        "l7f59d6a4aa3e": "r7d98a08565e3",
+        "l09002dfbb328": "re0c3574b6d7d"
+      },
+      "incorrect_answer": {
+        "leff23bd0fb7f": "r07234db0bf29",
+        "lb49d125f9cf6": "r9cbf686bb82b",
+        "l7f59d6a4aa3e": "r7d98a08565e3",
+        "l09002dfbb328": "re0c3574b6d7d"
+      },
+      "editorial_answer": "locker — шкафчик; token — жетон; belongings — личные вещи; deposit — возвращаемый залог",
+      "explanation": "Контекстные значения: locker — шкафчик; token — жетон; belongings — личные вещи; deposit — возвращаемый залог.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда возвращают залог?",
+      "public_payload": {
+        "passage": "Visitors leave large bags in lockers near reception. A token opens each locker. Nina puts her backpack inside and keeps the token in her pocket. After the visit, she opens the locker and returns the token. The deposit is returned when she hands it back.",
+        "options": [
+          {
+            "id": "v0c728e5172f6",
+            "label": "Only if she buys a souvenir."
+          },
+          {
+            "id": "v4e909b859bb1",
+            "label": "Before any locker is used."
+          },
+          {
+            "id": "v0020257f3c5c",
+            "label": "When the token is handed back."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0020257f3c5c"
+      },
+      "reference_answer": "v0020257f3c5c",
+      "incorrect_answer": "v0c728e5172f6",
+      "editorial_answer": "When the token is handed back.",
+      "explanation": "Сохраняем информацию текста: «When the token is handed back.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Шкафчики в музее»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “token” means ___.",
+        "options": [
+          {
+            "id": "v41bb130ba439",
+            "label": "возвращаемый залог"
+          },
+          {
+            "id": "vf1fa8fd2ed4c",
+            "label": "личные вещи"
+          },
+          {
+            "id": "v99ce3cc9785e",
+            "label": "жетон"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v99ce3cc9785e"
+      },
+      "reference_answer": "v99ce3cc9785e",
+      "incorrect_answer": "vf1fa8fd2ed4c",
+      "editorial_answer": "жетон",
+      "explanation": "Здесь token — «жетон», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

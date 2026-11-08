@@ -1,0 +1,296 @@
+{
+  "key": "b1/equipment-booking",
+  "course": "path-b1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 7,
+  "title": "Забронировать оборудование",
+  "description": "Забронировать оборудование: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что покрывала первая бронь?»",
+    "Различать значения reservation и availability в теме «Забронировать оборудование»"
+  ],
+  "notes": [
+    "В предложении «The camera reservation is confirmed.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «The room needed a separate booking.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/route-detour-sign"],
+  "lexicon": [
+    {
+      "en": "reservation",
+      "ru": "резервирование"
+    },
+    {
+      "en": "availability",
+      "ru": "доступность"
+    },
+    {
+      "en": "collection",
+      "ru": "получение"
+    },
+    {
+      "en": "return",
+      "ru": "возврат"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Забронировать оборудование»: выбери значение слова «reservation» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v46d14f852f2c",
+            "label": "получение"
+          },
+          {
+            "id": "v2e232635a3c0",
+            "label": "доступность"
+          },
+          {
+            "id": "v2f6d4586d086",
+            "label": "резервирование"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2f6d4586d086"
+      },
+      "reference_answer": "v2f6d4586d086",
+      "incorrect_answer": "v2e232635a3c0",
+      "editorial_answer": "резервирование",
+      "explanation": "В этом контексте reservation означает «резервирование».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары confirmed / reservation. Значение: «Бронь камеры подтверждена.»",
+      "public_payload": {
+        "sentence": "The camera reservation is ___."
+      },
+      "answer_key": {
+        "accepted": ["confirmed"]
+      },
+      "reference_answer": "confirmed",
+      "incorrect_answer": "reservation",
+      "editorial_answer": "The camera reservation is confirmed.",
+      "explanation": "Нужен вариант confirmed: полное предложение означает «Бронь камеры подтверждена.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Бронь камеры подтверждена.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "reservation"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "confirmed."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "camera"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t1"],
+      "editorial_answer": "The camera reservation is confirmed.",
+      "explanation": "Порядок слов передаёт смысл «Бронь камеры подтверждена.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The camera reservation are confirmed."
+      },
+      "answer_key": {
+        "accepted": ["The camera reservation is confirmed."]
+      },
+      "reference_answer": "The camera reservation is confirmed.",
+      "incorrect_answer": "The camera reservation are confirmed.",
+      "editorial_answer": "The camera reservation is confirmed.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The camera reservation is confirmed.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что покрывала первая бронь?",
+      "public_payload": {
+        "passage": "The film club reserved a camera for Saturday, but the confirmation only covered the equipment. It did not include the editing room, which required a separate booking. Jules checked both arrangements before inviting the group. She then reserved the room for Sunday, allowing time to return the camera and copy the footage first. Each confirmation applied to a different resource.",
+        "options": [
+          {
+            "id": "vc0fcbc1b6c80",
+            "label": "The camera and editing room together."
+          },
+          {
+            "id": "v32436ce347eb",
+            "label": "The camera only."
+          },
+          {
+            "id": "v7c05f3cb4092",
+            "label": "Every piece of club equipment."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v32436ce347eb"
+      },
+      "reference_answer": "v32436ce347eb",
+      "incorrect_answer": "vc0fcbc1b6c80",
+      "editorial_answer": "The camera only.",
+      "explanation": "Ответ подтверждён текстом: «The camera only.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l61af8797573e",
+            "label": "reservation"
+          },
+          {
+            "id": "lae5714d3dd35",
+            "label": "availability"
+          },
+          {
+            "id": "l9325017be08f",
+            "label": "collection"
+          },
+          {
+            "id": "lce16eb9b73d1",
+            "label": "return"
+          }
+        ],
+        "right": [
+          {
+            "id": "r02e6d113b65f",
+            "label": "доступность"
+          },
+          {
+            "id": "rbf66f2bbfd12",
+            "label": "получение"
+          },
+          {
+            "id": "r53b6201f4ae0",
+            "label": "резервирование"
+          },
+          {
+            "id": "rc91c4231676f",
+            "label": "возврат"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l61af8797573e": "r53b6201f4ae0",
+          "lae5714d3dd35": "r02e6d113b65f",
+          "l9325017be08f": "rbf66f2bbfd12",
+          "lce16eb9b73d1": "rc91c4231676f"
+        }
+      },
+      "reference_answer": {
+        "l61af8797573e": "r53b6201f4ae0",
+        "lae5714d3dd35": "r02e6d113b65f",
+        "l9325017be08f": "rbf66f2bbfd12",
+        "lce16eb9b73d1": "rc91c4231676f"
+      },
+      "incorrect_answer": {
+        "l61af8797573e": "r02e6d113b65f",
+        "lae5714d3dd35": "r53b6201f4ae0",
+        "l9325017be08f": "rbf66f2bbfd12",
+        "lce16eb9b73d1": "rc91c4231676f"
+      },
+      "editorial_answer": "reservation — резервирование; availability — доступность; collection — получение; return — возврат",
+      "explanation": "Контекстные значения: reservation — резервирование; availability — доступность; collection — получение; return — возврат.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Жюль проверила обе договорённости?",
+      "public_payload": {
+        "passage": "The film club reserved a camera for Saturday, but the confirmation only covered the equipment. It did not include the editing room, which required a separate booking. Jules checked both arrangements before inviting the group. She then reserved the room for Sunday, allowing time to return the camera and copy the footage first. Each confirmation applied to a different resource.",
+        "options": [
+          {
+            "id": "v3ab72b1d62c3",
+            "label": "The club had stopped making films."
+          },
+          {
+            "id": "vb523fe1fae91",
+            "label": "No equipment had been reserved."
+          },
+          {
+            "id": "vc5319f674a61",
+            "label": "The room needed a separate booking."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc5319f674a61"
+      },
+      "reference_answer": "vc5319f674a61",
+      "incorrect_answer": "vb523fe1fae91",
+      "editorial_answer": "The room needed a separate booking.",
+      "explanation": "Сохраняем информацию текста: «The room needed a separate booking.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Забронировать оборудование»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “availability” means ___.",
+        "options": [
+          {
+            "id": "vbe0a21c12f0c",
+            "label": "получение"
+          },
+          {
+            "id": "v2cb007f737de",
+            "label": "возврат"
+          },
+          {
+            "id": "vc65763af68a5",
+            "label": "доступность"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vc65763af68a5"
+      },
+      "reference_answer": "vc65763af68a5",
+      "incorrect_answer": "vbe0a21c12f0c",
+      "editorial_answer": "доступность",
+      "explanation": "Здесь availability — «доступность», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

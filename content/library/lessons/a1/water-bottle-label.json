@@ -1,0 +1,300 @@
+{
+  "key": "a1/water-bottle-label",
+  "course": "path-a1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 1,
+  "title": "Подписанная бутылка",
+  "description": "Подписанная бутылка: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Где бутылка?»",
+    "Различать значения bottle и cap в теме «Подписанная бутылка»"
+  ],
+  "notes": [
+    "В предложении «The bottle is on the bench.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «Yellow.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 6,
+  "prerequisites": ["a1/can-cant-ability"],
+  "lexicon": [
+    {
+      "en": "bottle",
+      "ru": "бутылка"
+    },
+    {
+      "en": "cap",
+      "ru": "крышка"
+    },
+    {
+      "en": "water",
+      "ru": "вода"
+    },
+    {
+      "en": "sticker",
+      "ru": "наклейка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Подписанная бутылка»: выбери значение слова «bottle» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v1e622e1ecde0",
+            "label": "крышка"
+          },
+          {
+            "id": "vf522f797b487",
+            "label": "вода"
+          },
+          {
+            "id": "vebc92699cd1c",
+            "label": "бутылка"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vebc92699cd1c"
+      },
+      "reference_answer": "vebc92699cd1c",
+      "incorrect_answer": "v1e622e1ecde0",
+      "editorial_answer": "бутылка",
+      "explanation": "В этом контексте bottle означает «бутылка».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары bench / bottle. Значение: «Бутылка находится на скамейке.»",
+      "public_payload": {
+        "sentence": "The bottle is on the ___."
+      },
+      "answer_key": {
+        "accepted": ["bench"]
+      },
+      "reference_answer": "bench",
+      "incorrect_answer": "bottle",
+      "editorial_answer": "The bottle is on the bench.",
+      "explanation": "Нужен вариант bench: полное предложение означает «Бутылка находится на скамейке.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Бутылка находится на скамейке.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "on"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "bench."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "bottle"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The bottle is on the bench.",
+      "explanation": "Порядок слов передаёт смысл «Бутылка находится на скамейке.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The bottle are on the bench."
+      },
+      "answer_key": {
+        "accepted": ["The bottle is on the bench."]
+      },
+      "reference_answer": "The bottle is on the bench.",
+      "incorrect_answer": "The bottle are on the bench.",
+      "editorial_answer": "The bottle is on the bench.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The bottle is on the bench.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где бутылка?",
+      "public_payload": {
+        "passage": "A bottle is on the bench. Its cap is yellow. A sticker says Emma. The bottle has water in it. Emma takes it after her walk.",
+        "options": [
+          {
+            "id": "v136168d15ac8",
+            "label": "On the bench."
+          },
+          {
+            "id": "v9c1f2a3a7571",
+            "label": "Under the bed."
+          },
+          {
+            "id": "v8021fec861bf",
+            "label": "Inside a cupboard."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v136168d15ac8"
+      },
+      "reference_answer": "v136168d15ac8",
+      "incorrect_answer": "v9c1f2a3a7571",
+      "editorial_answer": "On the bench.",
+      "explanation": "Ответ подтверждён текстом: «On the bench.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l95bae12d2f63",
+            "label": "bottle"
+          },
+          {
+            "id": "lf02a908eaf57",
+            "label": "cap"
+          },
+          {
+            "id": "l3c55bcb428f1",
+            "label": "water"
+          },
+          {
+            "id": "l4dccba936553",
+            "label": "sticker"
+          }
+        ],
+        "right": [
+          {
+            "id": "rdaeecfc50659",
+            "label": "наклейка"
+          },
+          {
+            "id": "ra3b5c8a2f47d",
+            "label": "вода"
+          },
+          {
+            "id": "r00716fda156c",
+            "label": "крышка"
+          },
+          {
+            "id": "r76353deb9bc7",
+            "label": "бутылка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l95bae12d2f63": "r76353deb9bc7",
+          "lf02a908eaf57": "r00716fda156c",
+          "l3c55bcb428f1": "ra3b5c8a2f47d",
+          "l4dccba936553": "rdaeecfc50659"
+        }
+      },
+      "reference_answer": {
+        "l95bae12d2f63": "r76353deb9bc7",
+        "lf02a908eaf57": "r00716fda156c",
+        "l3c55bcb428f1": "ra3b5c8a2f47d",
+        "l4dccba936553": "rdaeecfc50659"
+      },
+      "incorrect_answer": {
+        "l95bae12d2f63": "r00716fda156c",
+        "lf02a908eaf57": "r76353deb9bc7",
+        "l3c55bcb428f1": "ra3b5c8a2f47d",
+        "l4dccba936553": "rdaeecfc50659"
+      },
+      "editorial_answer": "bottle — бутылка; cap — крышка; water — вода; sticker — наклейка",
+      "explanation": "Контекстные значения: bottle — бутылка; cap — крышка; water — вода; sticker — наклейка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какого цвета крышка?",
+      "public_payload": {
+        "passage": "A bottle is on the bench. Its cap is yellow. A sticker says Emma. The bottle has water in it. Emma takes it after her walk.",
+        "options": [
+          {
+            "id": "v526ef316ff96",
+            "label": "Black."
+          },
+          {
+            "id": "v31369d227489",
+            "label": "Blue."
+          },
+          {
+            "id": "vf997530f7e42",
+            "label": "Yellow."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vf997530f7e42"
+      },
+      "reference_answer": "vf997530f7e42",
+      "incorrect_answer": "v31369d227489",
+      "editorial_answer": "Yellow.",
+      "explanation": "Сохраняем информацию текста: «Yellow.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Подписанная бутылка»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “cap” means ___.",
+        "options": [
+          {
+            "id": "vd3923ff63077",
+            "label": "наклейка"
+          },
+          {
+            "id": "v8ddea063d7ea",
+            "label": "крышка"
+          },
+          {
+            "id": "v762383c93fc0",
+            "label": "вода"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8ddea063d7ea"
+      },
+      "reference_answer": "v8ddea063d7ea",
+      "incorrect_answer": "v762383c93fc0",
+      "editorial_answer": "крышка",
+      "explanation": "Здесь cap — «крышка», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

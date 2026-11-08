@@ -16,9 +16,9 @@ try {
     data?.ready !== true ||
     data?.version !== 'curriculum-v2' ||
     !pack ||
-    pack.revision < 11 ||
-    pack.lessons < 266 ||
-    pack.exercises < 2302
+    pack.revision < 12 ||
+    pack.lessons < 303 ||
+    pack.exercises < 2598
   )
     throw Error();
   console.log(

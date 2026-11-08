@@ -1,0 +1,300 @@
+{
+  "key": "b1/community-survey",
+  "course": "path-b1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 8,
+  "title": "Предложение и результат опроса",
+  "description": "Предложение и результат опроса: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что показал опрос?»",
+    "Различать значения survey и respondent в теме «Предложение и результат опроса»"
+  ],
+  "notes": [
+    "В предложении «The proposal is still under discussion.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «No opening decision had been made.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/equipment-booking"],
+  "lexicon": [
+    {
+      "en": "survey",
+      "ru": "опрос"
+    },
+    {
+      "en": "respondent",
+      "ru": "участник опроса"
+    },
+    {
+      "en": "proposal",
+      "ru": "предложение"
+    },
+    {
+      "en": "majority",
+      "ru": "большинство"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Предложение и результат опроса»: выбери значение слова «survey» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vaae91425ad62",
+            "label": "предложение"
+          },
+          {
+            "id": "v81af3048e47f",
+            "label": "опрос"
+          },
+          {
+            "id": "v35715cfc6d2e",
+            "label": "участник опроса"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v81af3048e47f"
+      },
+      "reference_answer": "v81af3048e47f",
+      "incorrect_answer": "v35715cfc6d2e",
+      "editorial_answer": "опрос",
+      "explanation": "В этом контексте survey означает «опрос».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары survey / discussion. Значение: «Предложение всё ещё обсуждается.»",
+      "public_payload": {
+        "sentence": "The proposal is still under ___."
+      },
+      "answer_key": {
+        "accepted": ["discussion"]
+      },
+      "reference_answer": "discussion",
+      "incorrect_answer": "survey",
+      "editorial_answer": "The proposal is still under discussion.",
+      "explanation": "Нужен вариант discussion: полное предложение означает «Предложение всё ещё обсуждается.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Предложение всё ещё обсуждается.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "still"
+          },
+          {
+            "id": "t5",
+            "label": "under"
+          },
+          {
+            "id": "t6",
+            "label": "discussion."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "proposal"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The proposal is still under discussion.",
+      "explanation": "Порядок слов передаёт смысл «Предложение всё ещё обсуждается.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The proposal are still under discussion."
+      },
+      "answer_key": {
+        "accepted": ["The proposal is still under discussion."]
+      },
+      "reference_answer": "The proposal is still under discussion.",
+      "incorrect_answer": "The proposal are still under discussion.",
+      "editorial_answer": "The proposal is still under discussion.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The proposal is still under discussion.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что показал опрос?",
+      "public_payload": {
+        "passage": "A community survey asked residents whether they would use a weekend reading room. Most respondents liked the idea, but the council had not yet chosen a site or agreed a budget. A social media post announced that the room would open the next month. The survey team corrected it: support for a proposal was useful information, not an opening decision.",
+        "options": [
+          {
+            "id": "v41c7bcb18dfb",
+            "label": "Most respondents liked the idea."
+          },
+          {
+            "id": "v0eb74df1fed4",
+            "label": "A site had been chosen."
+          },
+          {
+            "id": "v3cc7ac4bc1a9",
+            "label": "A budget had been agreed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v41c7bcb18dfb"
+      },
+      "reference_answer": "v41c7bcb18dfb",
+      "incorrect_answer": "v0eb74df1fed4",
+      "editorial_answer": "Most respondents liked the idea.",
+      "explanation": "Ответ подтверждён текстом: «Most respondents liked the idea.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l3da17f94e0a3",
+            "label": "survey"
+          },
+          {
+            "id": "laad5bf69de09",
+            "label": "respondent"
+          },
+          {
+            "id": "lb8f91e2c89f3",
+            "label": "proposal"
+          },
+          {
+            "id": "lce83fb1cccc8",
+            "label": "majority"
+          }
+        ],
+        "right": [
+          {
+            "id": "rba63bd271013",
+            "label": "большинство"
+          },
+          {
+            "id": "r79369d30ee74",
+            "label": "предложение"
+          },
+          {
+            "id": "rd1c96919c5ef",
+            "label": "участник опроса"
+          },
+          {
+            "id": "r6db4f2db0e21",
+            "label": "опрос"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l3da17f94e0a3": "r6db4f2db0e21",
+          "laad5bf69de09": "rd1c96919c5ef",
+          "lb8f91e2c89f3": "r79369d30ee74",
+          "lce83fb1cccc8": "rba63bd271013"
+        }
+      },
+      "reference_answer": {
+        "l3da17f94e0a3": "r6db4f2db0e21",
+        "laad5bf69de09": "rd1c96919c5ef",
+        "lb8f91e2c89f3": "r79369d30ee74",
+        "lce83fb1cccc8": "rba63bd271013"
+      },
+      "incorrect_answer": {
+        "l3da17f94e0a3": "rd1c96919c5ef",
+        "laad5bf69de09": "r6db4f2db0e21",
+        "lb8f91e2c89f3": "r79369d30ee74",
+        "lce83fb1cccc8": "rba63bd271013"
+      },
+      "editorial_answer": "survey — опрос; respondent — участник опроса; proposal — предложение; majority — большинство",
+      "explanation": "Контекстные значения: survey — опрос; respondent — участник опроса; proposal — предложение; majority — большинство.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему исправили сообщение об открытии?",
+      "public_payload": {
+        "passage": "A community survey asked residents whether they would use a weekend reading room. Most respondents liked the idea, but the council had not yet chosen a site or agreed a budget. A social media post announced that the room would open the next month. The survey team corrected it: support for a proposal was useful information, not an opening decision.",
+        "options": [
+          {
+            "id": "v0e58fe649665",
+            "label": "The survey had already opened a building."
+          },
+          {
+            "id": "vc198a6ff58fb",
+            "label": "Every respondent opposed the idea."
+          },
+          {
+            "id": "va50dad15f4a1",
+            "label": "No opening decision had been made."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "va50dad15f4a1"
+      },
+      "reference_answer": "va50dad15f4a1",
+      "incorrect_answer": "vc198a6ff58fb",
+      "editorial_answer": "No opening decision had been made.",
+      "explanation": "Сохраняем информацию текста: «No opening decision had been made.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Предложение и результат опроса»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “respondent” means ___.",
+        "options": [
+          {
+            "id": "v22585b35856e",
+            "label": "большинство"
+          },
+          {
+            "id": "v9007d72a6238",
+            "label": "участник опроса"
+          },
+          {
+            "id": "vab4f0a4bf4ce",
+            "label": "предложение"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9007d72a6238"
+      },
+      "reference_answer": "v9007d72a6238",
+      "incorrect_answer": "vab4f0a4bf4ce",
+      "editorial_answer": "участник опроса",
+      "explanation": "Здесь respondent — «участник опроса», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

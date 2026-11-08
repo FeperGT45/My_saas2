@@ -1,0 +1,300 @@
+{
+  "key": "c1/not-until-focus",
+  "course": "path-c1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика C1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 4,
+  "title": "Not until: событие после условия",
+  "description": "Not until: событие после условия: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "C1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что должно предшествовать публикации?»",
+    "Различать значения sequence и release в теме «Not until: событие после условия»"
+  ],
+  "notes": [
+    "В предложении «The release is dependent on authorisation.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «Immediate delivery upon recording permission alone.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 14,
+  "prerequisites": ["c1/respectively-mapping"],
+  "lexicon": [
+    {
+      "en": "sequence",
+      "ru": "очерёдность"
+    },
+    {
+      "en": "release",
+      "ru": "публикация"
+    },
+    {
+      "en": "authorisation",
+      "ru": "разрешение"
+    },
+    {
+      "en": "restriction",
+      "ru": "ограничение"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Not until: событие после условия»: выбери значение слова «sequence» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v70fdd7ec6bcd",
+            "label": "публикация"
+          },
+          {
+            "id": "v2cd6250547f0",
+            "label": "разрешение"
+          },
+          {
+            "id": "v8033c66bc5e2",
+            "label": "очерёдность"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8033c66bc5e2"
+      },
+      "reference_answer": "v8033c66bc5e2",
+      "incorrect_answer": "v70fdd7ec6bcd",
+      "editorial_answer": "очерёдность",
+      "explanation": "В этом контексте sequence означает «очерёдность».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары sequence / authorisation. Значение: «Публикация зависит от разрешения.»",
+      "public_payload": {
+        "sentence": "The release is dependent on ___."
+      },
+      "answer_key": {
+        "accepted": ["authorisation"]
+      },
+      "reference_answer": "authorisation",
+      "incorrect_answer": "sequence",
+      "editorial_answer": "The release is dependent on authorisation.",
+      "explanation": "Нужен вариант authorisation: полное предложение означает «Публикация зависит от разрешения.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Публикация зависит от разрешения.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "dependent"
+          },
+          {
+            "id": "t5",
+            "label": "on"
+          },
+          {
+            "id": "t6",
+            "label": "authorisation."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "release"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The release is dependent on authorisation.",
+      "explanation": "Порядок слов передаёт смысл «Публикация зависит от разрешения.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The release are dependent on authorisation."
+      },
+      "answer_key": {
+        "accepted": ["The release is dependent on authorisation."]
+      },
+      "reference_answer": "The release is dependent on authorisation.",
+      "incorrect_answer": "The release are dependent on authorisation.",
+      "editorial_answer": "The release is dependent on authorisation.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The release is dependent on authorisation.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что должно предшествовать публикации?",
+      "public_payload": {
+        "passage": "The archive would not release the photographs until the donor’s permission had been recorded. A researcher read the rule as a promise that recording permission alone would guarantee immediate delivery. The archivist explained that the wording established a temporal restriction, while the accompanying procedure still required a condition check and preparation of copies. Permission was necessary before release, but the rule did not abolish those later steps. Another reader had made the opposite mistake, treating the temporary restriction as a permanent refusal. The archivist’s clarification preserved the possibility of release without inventing a guarantee about its precise timing or removing the stated prerequisites.",
+        "options": [
+          {
+            "id": "vaffe1412909b",
+            "label": "Recording the donor’s permission."
+          },
+          {
+            "id": "v9880cdb90442",
+            "label": "A permanent refusal of every request."
+          },
+          {
+            "id": "vbbc9e92141c5",
+            "label": "The researcher’s unrelated travel."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vaffe1412909b"
+      },
+      "reference_answer": "vaffe1412909b",
+      "incorrect_answer": "vbbc9e92141c5",
+      "editorial_answer": "Recording the donor’s permission.",
+      "explanation": "Ответ подтверждён текстом: «Recording the donor’s permission.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l70e2d75ee14a",
+            "label": "sequence"
+          },
+          {
+            "id": "l08acc295784d",
+            "label": "release"
+          },
+          {
+            "id": "l413610846500",
+            "label": "authorisation"
+          },
+          {
+            "id": "l4de6b606c318",
+            "label": "restriction"
+          }
+        ],
+        "right": [
+          {
+            "id": "rf928462e5075",
+            "label": "разрешение"
+          },
+          {
+            "id": "r4d76bbe01d75",
+            "label": "ограничение"
+          },
+          {
+            "id": "r40c6df6370f6",
+            "label": "очерёдность"
+          },
+          {
+            "id": "r88eef8a5b6ad",
+            "label": "публикация"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l70e2d75ee14a": "r40c6df6370f6",
+          "l08acc295784d": "r88eef8a5b6ad",
+          "l413610846500": "rf928462e5075",
+          "l4de6b606c318": "r4d76bbe01d75"
+        }
+      },
+      "reference_answer": {
+        "l70e2d75ee14a": "r40c6df6370f6",
+        "l08acc295784d": "r88eef8a5b6ad",
+        "l413610846500": "rf928462e5075",
+        "l4de6b606c318": "r4d76bbe01d75"
+      },
+      "incorrect_answer": {
+        "l70e2d75ee14a": "r88eef8a5b6ad",
+        "l08acc295784d": "r40c6df6370f6",
+        "l413610846500": "rf928462e5075",
+        "l4de6b606c318": "r4d76bbe01d75"
+      },
+      "editorial_answer": "sequence — очерёдность; release — публикация; authorisation — разрешение; restriction — ограничение",
+      "explanation": "Контекстные значения: sequence — очерёдность; release — публикация; authorisation — разрешение; restriction — ограничение.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что правило не гарантировало?",
+      "public_payload": {
+        "passage": "The archive would not release the photographs until the donor’s permission had been recorded. A researcher read the rule as a promise that recording permission alone would guarantee immediate delivery. The archivist explained that the wording established a temporal restriction, while the accompanying procedure still required a condition check and preparation of copies. Permission was necessary before release, but the rule did not abolish those later steps. Another reader had made the opposite mistake, treating the temporary restriction as a permanent refusal. The archivist’s clarification preserved the possibility of release without inventing a guarantee about its precise timing or removing the stated prerequisites.",
+        "options": [
+          {
+            "id": "vbed842837a88",
+            "label": "Immediate delivery upon recording permission alone."
+          },
+          {
+            "id": "v62bdd6ffd5ab",
+            "label": "That condition checks remained part of the procedure."
+          },
+          {
+            "id": "v4a7be8117919",
+            "label": "That any permission was needed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbed842837a88"
+      },
+      "reference_answer": "vbed842837a88",
+      "incorrect_answer": "v4a7be8117919",
+      "editorial_answer": "Immediate delivery upon recording permission alone.",
+      "explanation": "Сохраняем информацию текста: «Immediate delivery upon recording permission alone.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Not until: событие после условия»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “release” means ___.",
+        "options": [
+          {
+            "id": "v16b6196bf411",
+            "label": "разрешение"
+          },
+          {
+            "id": "v0f84166a7493",
+            "label": "публикация"
+          },
+          {
+            "id": "v1ed1a983e2f9",
+            "label": "ограничение"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v0f84166a7493"
+      },
+      "reference_answer": "v0f84166a7493",
+      "incorrect_answer": "v16b6196bf411",
+      "editorial_answer": "публикация",
+      "explanation": "Здесь release — «публикация», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

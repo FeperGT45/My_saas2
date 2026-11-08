@@ -1,0 +1,300 @@
+{
+  "key": "a2/shared-kitchen-rota",
+  "course": "path-a2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 6,
+  "title": "Дежурство на общей кухне",
+  "description": "Дежурство на общей кухне: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что делает Луис на этой неделе?»",
+    "Различать значения rota и wipe в теме «Дежурство на общей кухне»"
+  ],
+  "notes": [
+    "В предложении «The rota is on the fridge.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «To check which task is hers.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a2/museum-lockers"],
+  "lexicon": [
+    {
+      "en": "rota",
+      "ru": "график дежурств"
+    },
+    {
+      "en": "wipe",
+      "ru": "протирать"
+    },
+    {
+      "en": "surface",
+      "ru": "поверхность"
+    },
+    {
+      "en": "recycle",
+      "ru": "сдавать на переработку"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Дежурство на общей кухне»: выбери значение слова «rota» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v238c5910e0b9",
+            "label": "график дежурств"
+          },
+          {
+            "id": "vb221776077a5",
+            "label": "поверхность"
+          },
+          {
+            "id": "vbcc2881183d7",
+            "label": "протирать"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v238c5910e0b9"
+      },
+      "reference_answer": "v238c5910e0b9",
+      "incorrect_answer": "vbcc2881183d7",
+      "editorial_answer": "график дежурств",
+      "explanation": "В этом контексте rota означает «график дежурств».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары fridge / rota. Значение: «График дежурств находится на холодильнике.»",
+      "public_payload": {
+        "sentence": "The rota is on the ___."
+      },
+      "answer_key": {
+        "accepted": ["fridge"]
+      },
+      "reference_answer": "fridge",
+      "incorrect_answer": "rota",
+      "editorial_answer": "The rota is on the fridge.",
+      "explanation": "Нужен вариант fridge: полное предложение означает «График дежурств находится на холодильнике.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «График дежурств находится на холодильнике.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "on"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "fridge."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "rota"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The rota is on the fridge.",
+      "explanation": "Порядок слов передаёт смысл «График дежурств находится на холодильнике.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The rota are on the fridge."
+      },
+      "answer_key": {
+        "accepted": ["The rota is on the fridge."]
+      },
+      "reference_answer": "The rota is on the fridge.",
+      "incorrect_answer": "The rota are on the fridge.",
+      "editorial_answer": "The rota is on the fridge.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The rota is on the fridge.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что делает Луис на этой неделе?",
+      "public_payload": {
+        "passage": "Three flatmates share a kitchen. Their cleaning rota is on the fridge. This week, Hana wipes the surfaces, Raj washes the floor, and Luis takes the recycling outside. Next week they change jobs. Hana checks the rota before cleaning because she does not want to do the wrong task.",
+        "options": [
+          {
+            "id": "ve2d5cca28ab6",
+            "label": "Washes the floor."
+          },
+          {
+            "id": "vd94982aeb092",
+            "label": "Takes the recycling outside."
+          },
+          {
+            "id": "v1d75519f1a49",
+            "label": "Wipes the surfaces."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd94982aeb092"
+      },
+      "reference_answer": "vd94982aeb092",
+      "incorrect_answer": "ve2d5cca28ab6",
+      "editorial_answer": "Takes the recycling outside.",
+      "explanation": "Ответ подтверждён текстом: «Takes the recycling outside.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l5a66c44676f4",
+            "label": "rota"
+          },
+          {
+            "id": "l2fda8d160a3e",
+            "label": "wipe"
+          },
+          {
+            "id": "lc2945f3722f0",
+            "label": "surface"
+          },
+          {
+            "id": "l007b4d451b44",
+            "label": "recycle"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1a4cc1903c9c",
+            "label": "протирать"
+          },
+          {
+            "id": "r8785e3f18d1b",
+            "label": "график дежурств"
+          },
+          {
+            "id": "rdc53664a1b19",
+            "label": "поверхность"
+          },
+          {
+            "id": "r68674ef18f61",
+            "label": "сдавать на переработку"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l5a66c44676f4": "r8785e3f18d1b",
+          "l2fda8d160a3e": "r1a4cc1903c9c",
+          "lc2945f3722f0": "rdc53664a1b19",
+          "l007b4d451b44": "r68674ef18f61"
+        }
+      },
+      "reference_answer": {
+        "l5a66c44676f4": "r8785e3f18d1b",
+        "l2fda8d160a3e": "r1a4cc1903c9c",
+        "lc2945f3722f0": "rdc53664a1b19",
+        "l007b4d451b44": "r68674ef18f61"
+      },
+      "incorrect_answer": {
+        "l5a66c44676f4": "r1a4cc1903c9c",
+        "l2fda8d160a3e": "r8785e3f18d1b",
+        "lc2945f3722f0": "rdc53664a1b19",
+        "l007b4d451b44": "r68674ef18f61"
+      },
+      "editorial_answer": "rota — график дежурств; wipe — протирать; surface — поверхность; recycle — сдавать на переработку",
+      "explanation": "Контекстные значения: rota — график дежурств; wipe — протирать; surface — поверхность; recycle — сдавать на переработку.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему Хана смотрит график?",
+      "public_payload": {
+        "passage": "Three flatmates share a kitchen. Their cleaning rota is on the fridge. This week, Hana wipes the surfaces, Raj washes the floor, and Luis takes the recycling outside. Next week they change jobs. Hana checks the rota before cleaning because she does not want to do the wrong task.",
+        "options": [
+          {
+            "id": "vb37f51e47c3e",
+            "label": "To choose a new flat."
+          },
+          {
+            "id": "v93c6989eee88",
+            "label": "To cancel every cleaning job."
+          },
+          {
+            "id": "v2a3df4bdafa5",
+            "label": "To check which task is hers."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2a3df4bdafa5"
+      },
+      "reference_answer": "v2a3df4bdafa5",
+      "incorrect_answer": "vb37f51e47c3e",
+      "editorial_answer": "To check which task is hers.",
+      "explanation": "Сохраняем информацию текста: «To check which task is hers.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Дежурство на общей кухне»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “wipe” means ___.",
+        "options": [
+          {
+            "id": "vdef0ac6fb479",
+            "label": "поверхность"
+          },
+          {
+            "id": "v50cdf87094b8",
+            "label": "протирать"
+          },
+          {
+            "id": "vea293125df4d",
+            "label": "сдавать на переработку"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v50cdf87094b8"
+      },
+      "reference_answer": "v50cdf87094b8",
+      "incorrect_answer": "vdef0ac6fb479",
+      "editorial_answer": "протирать",
+      "explanation": "Здесь wipe — «протирать», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

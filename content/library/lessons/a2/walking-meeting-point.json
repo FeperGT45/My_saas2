@@ -1,0 +1,308 @@
+{
+  "key": "a2/walking-meeting-point",
+  "course": "path-a2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 7,
+  "title": "Точка встречи перед прогулкой",
+  "description": "Точка встречи перед прогулкой: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что изменилось?»",
+    "Различать значения meeting point и entrance в теме «Точка встречи перед прогулкой»"
+  ],
+  "notes": [
+    "В предложении «The meeting point is at the south entrance.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «A map.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a2/shared-kitchen-rota"],
+  "lexicon": [
+    {
+      "en": "meeting point",
+      "ru": "место встречи"
+    },
+    {
+      "en": "entrance",
+      "ru": "вход"
+    },
+    {
+      "en": "route",
+      "ru": "маршрут"
+    },
+    {
+      "en": "forecast",
+      "ru": "прогноз"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Точка встречи перед прогулкой»: выбери значение слова «meeting point» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v0d505a992d09",
+            "label": "вход"
+          },
+          {
+            "id": "v30dc961ae609",
+            "label": "маршрут"
+          },
+          {
+            "id": "v4834e1bb7970",
+            "label": "место встречи"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4834e1bb7970"
+      },
+      "reference_answer": "v4834e1bb7970",
+      "incorrect_answer": "v0d505a992d09",
+      "editorial_answer": "место встречи",
+      "explanation": "В этом контексте meeting point означает «место встречи».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары meeting point / entrance. Значение: «Место встречи находится у южного входа.»",
+      "public_payload": {
+        "sentence": "The meeting point is at the south ___."
+      },
+      "answer_key": {
+        "accepted": ["entrance"]
+      },
+      "reference_answer": "entrance",
+      "incorrect_answer": "meeting point",
+      "editorial_answer": "The meeting point is at the south entrance.",
+      "explanation": "Нужен вариант entrance: полное предложение означает «Место встречи находится у южного входа.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Место встречи находится у южного входа.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "point"
+          },
+          {
+            "id": "t4",
+            "label": "is"
+          },
+          {
+            "id": "t5",
+            "label": "at"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "south"
+          },
+          {
+            "id": "t8",
+            "label": "entrance."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "meeting"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7", "t8"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t8", "t1"],
+      "editorial_answer": "The meeting point is at the south entrance.",
+      "explanation": "Порядок слов передаёт смысл «Место встречи находится у южного входа.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The meeting point are at the south entrance."
+      },
+      "answer_key": {
+        "accepted": ["The meeting point is at the south entrance."]
+      },
+      "reference_answer": "The meeting point is at the south entrance.",
+      "incorrect_answer": "The meeting point are at the south entrance.",
+      "editorial_answer": "The meeting point is at the south entrance.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The meeting point is at the south entrance.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что изменилось?",
+      "public_payload": {
+        "passage": "The walking group usually meets by the café. This Sunday the café entrance is closed, so the organiser chooses the park’s south entrance. She sends a map and asks everyone to arrive at ten. The route stays the same. Only the meeting point changes.",
+        "options": [
+          {
+            "id": "ve9e07caf9301",
+            "label": "The route through the park."
+          },
+          {
+            "id": "v3067969a0e57",
+            "label": "The start time from ten to eleven."
+          },
+          {
+            "id": "v96061957fc2a",
+            "label": "The meeting point."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v96061957fc2a"
+      },
+      "reference_answer": "v96061957fc2a",
+      "incorrect_answer": "ve9e07caf9301",
+      "editorial_answer": "The meeting point.",
+      "explanation": "Ответ подтверждён текстом: «The meeting point.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l8aaae7645fb7",
+            "label": "meeting point"
+          },
+          {
+            "id": "lffd34020dbae",
+            "label": "entrance"
+          },
+          {
+            "id": "lcbfe0ec513d3",
+            "label": "route"
+          },
+          {
+            "id": "l07f2ec530f9d",
+            "label": "forecast"
+          }
+        ],
+        "right": [
+          {
+            "id": "r4851ab686775",
+            "label": "прогноз"
+          },
+          {
+            "id": "r28940f1bd237",
+            "label": "маршрут"
+          },
+          {
+            "id": "r866199482eeb",
+            "label": "место встречи"
+          },
+          {
+            "id": "r0bbb198b3b2c",
+            "label": "вход"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l8aaae7645fb7": "r866199482eeb",
+          "lffd34020dbae": "r0bbb198b3b2c",
+          "lcbfe0ec513d3": "r28940f1bd237",
+          "l07f2ec530f9d": "r4851ab686775"
+        }
+      },
+      "reference_answer": {
+        "l8aaae7645fb7": "r866199482eeb",
+        "lffd34020dbae": "r0bbb198b3b2c",
+        "lcbfe0ec513d3": "r28940f1bd237",
+        "l07f2ec530f9d": "r4851ab686775"
+      },
+      "incorrect_answer": {
+        "l8aaae7645fb7": "r0bbb198b3b2c",
+        "lffd34020dbae": "r866199482eeb",
+        "lcbfe0ec513d3": "r28940f1bd237",
+        "l07f2ec530f9d": "r4851ab686775"
+      },
+      "editorial_answer": "meeting point — место встречи; entrance — вход; route — маршрут; forecast — прогноз",
+      "explanation": "Контекстные значения: meeting point — место встречи; entrance — вход; route — маршрут; forecast — прогноз.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что прислал организатор?",
+      "public_payload": {
+        "passage": "The walking group usually meets by the café. This Sunday the café entrance is closed, so the organiser chooses the park’s south entrance. She sends a map and asks everyone to arrive at ten. The route stays the same. Only the meeting point changes.",
+        "options": [
+          {
+            "id": "v55eaf56fc10e",
+            "label": "A cancellation notice for every walk."
+          },
+          {
+            "id": "v24118f804379",
+            "label": "New café tickets."
+          },
+          {
+            "id": "v94bcfa14369a",
+            "label": "A map."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v94bcfa14369a"
+      },
+      "reference_answer": "v94bcfa14369a",
+      "incorrect_answer": "v24118f804379",
+      "editorial_answer": "A map.",
+      "explanation": "Сохраняем информацию текста: «A map.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Точка встречи перед прогулкой»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “entrance” means ___.",
+        "options": [
+          {
+            "id": "v060fabe8ae24",
+            "label": "маршрут"
+          },
+          {
+            "id": "v9296766626d3",
+            "label": "вход"
+          },
+          {
+            "id": "v506fc2e63b3f",
+            "label": "прогноз"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v9296766626d3"
+      },
+      "reference_answer": "v9296766626d3",
+      "incorrect_answer": "v060fabe8ae24",
+      "editorial_answer": "вход",
+      "explanation": "Здесь entrance — «вход», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

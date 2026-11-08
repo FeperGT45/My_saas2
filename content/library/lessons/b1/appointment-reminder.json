@@ -1,0 +1,300 @@
+{
+  "key": "b1/appointment-reminder",
+  "course": "path-b1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 5,
+  "title": "Напоминание и подтверждение визита",
+  "description": "Напоминание и подтверждение визита: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что подтверждал ответ Лены?»",
+    "Различать значения reminder и confirm в теме «Напоминание и подтверждение визита»"
+  ],
+  "notes": [
+    "В предложении «The reminder is in her inbox.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «When she arrived.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 10,
+  "prerequisites": ["b1/study-group-feedback"],
+  "lexicon": [
+    {
+      "en": "reminder",
+      "ru": "напоминание"
+    },
+    {
+      "en": "confirm",
+      "ru": "подтверждать"
+    },
+    {
+      "en": "reschedule",
+      "ru": "переносить"
+    },
+    {
+      "en": "attendance",
+      "ru": "присутствие"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Напоминание и подтверждение визита»: выбери значение слова «reminder» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v53f6133b9299",
+            "label": "напоминание"
+          },
+          {
+            "id": "v0a64c3eec7dd",
+            "label": "переносить"
+          },
+          {
+            "id": "v1faf687adb01",
+            "label": "подтверждать"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v53f6133b9299"
+      },
+      "reference_answer": "v53f6133b9299",
+      "incorrect_answer": "v1faf687adb01",
+      "editorial_answer": "напоминание",
+      "explanation": "В этом контексте reminder означает «напоминание».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары inbox / reminder. Значение: «Напоминание находится в её входящих письмах.»",
+      "public_payload": {
+        "sentence": "The reminder is in her ___."
+      },
+      "answer_key": {
+        "accepted": ["inbox"]
+      },
+      "reference_answer": "inbox",
+      "incorrect_answer": "reminder",
+      "editorial_answer": "The reminder is in her inbox.",
+      "explanation": "Нужен вариант inbox: полное предложение означает «Напоминание находится в её входящих письмах.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Напоминание находится в её входящих письмах.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "in"
+          },
+          {
+            "id": "t5",
+            "label": "her"
+          },
+          {
+            "id": "t6",
+            "label": "inbox."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "reminder"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The reminder is in her inbox.",
+      "explanation": "Порядок слов передаёт смысл «Напоминание находится в её входящих письмах.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The reminder are in her inbox."
+      },
+      "answer_key": {
+        "accepted": ["The reminder is in her inbox."]
+      },
+      "reference_answer": "The reminder is in her inbox.",
+      "incorrect_answer": "The reminder are in her inbox.",
+      "editorial_answer": "The reminder is in her inbox.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The reminder is in her inbox.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что подтверждал ответ Лены?",
+      "public_payload": {
+        "passage": "Lena received a reminder about a workshop she had booked weeks earlier. The message asked her to confirm that she still planned to come. Her reply confirmed her intention, but the organiser did not mark her as present until she arrived. If her plans changed, she could use the same link to reschedule. The records kept plans and actual attendance separate.",
+        "options": [
+          {
+            "id": "v1b8794c33fa0",
+            "label": "That the workshop had finished."
+          },
+          {
+            "id": "v4ad7913e1e56",
+            "label": "Her intention to attend."
+          },
+          {
+            "id": "v090b51b2a522",
+            "label": "That she was already in the room."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4ad7913e1e56"
+      },
+      "reference_answer": "v4ad7913e1e56",
+      "incorrect_answer": "v090b51b2a522",
+      "editorial_answer": "Her intention to attend.",
+      "explanation": "Ответ подтверждён текстом: «Her intention to attend.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l4d365339b702",
+            "label": "reminder"
+          },
+          {
+            "id": "l1a04f5673dcd",
+            "label": "confirm"
+          },
+          {
+            "id": "l39e3599f443c",
+            "label": "reschedule"
+          },
+          {
+            "id": "l2436eeb04fae",
+            "label": "attendance"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb175ded56afe",
+            "label": "напоминание"
+          },
+          {
+            "id": "r58883a72d521",
+            "label": "переносить"
+          },
+          {
+            "id": "rbd0bd02831fc",
+            "label": "подтверждать"
+          },
+          {
+            "id": "ra5056a1f4994",
+            "label": "присутствие"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l4d365339b702": "rb175ded56afe",
+          "l1a04f5673dcd": "rbd0bd02831fc",
+          "l39e3599f443c": "r58883a72d521",
+          "l2436eeb04fae": "ra5056a1f4994"
+        }
+      },
+      "reference_answer": {
+        "l4d365339b702": "rb175ded56afe",
+        "l1a04f5673dcd": "rbd0bd02831fc",
+        "l39e3599f443c": "r58883a72d521",
+        "l2436eeb04fae": "ra5056a1f4994"
+      },
+      "incorrect_answer": {
+        "l4d365339b702": "rbd0bd02831fc",
+        "l1a04f5673dcd": "rb175ded56afe",
+        "l39e3599f443c": "r58883a72d521",
+        "l2436eeb04fae": "ra5056a1f4994"
+      },
+      "editorial_answer": "reminder — напоминание; confirm — подтверждать; reschedule — переносить; attendance — присутствие",
+      "explanation": "Контекстные значения: reminder — напоминание; confirm — подтверждать; reschedule — переносить; attendance — присутствие.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда её отметили как присутствующую?",
+      "public_payload": {
+        "passage": "Lena received a reminder about a workshop she had booked weeks earlier. The message asked her to confirm that she still planned to come. Her reply confirmed her intention, but the organiser did not mark her as present until she arrived. If her plans changed, she could use the same link to reschedule. The records kept plans and actual attendance separate.",
+        "options": [
+          {
+            "id": "vd613647e1794",
+            "label": "When she first opened her inbox."
+          },
+          {
+            "id": "v3d0012693f45",
+            "label": "When the reminder was sent."
+          },
+          {
+            "id": "v6d277dd67562",
+            "label": "When she arrived."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6d277dd67562"
+      },
+      "reference_answer": "v6d277dd67562",
+      "incorrect_answer": "v3d0012693f45",
+      "editorial_answer": "When she arrived.",
+      "explanation": "Сохраняем информацию текста: «When she arrived.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Напоминание и подтверждение визита»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “confirm” means ___.",
+        "options": [
+          {
+            "id": "vbe27914867d1",
+            "label": "подтверждать"
+          },
+          {
+            "id": "v7be84889e434",
+            "label": "переносить"
+          },
+          {
+            "id": "v564af10e126d",
+            "label": "присутствие"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbe27914867d1"
+      },
+      "reference_answer": "vbe27914867d1",
+      "incorrect_answer": "v7be84889e434",
+      "editorial_answer": "подтверждать",
+      "explanation": "Здесь confirm — «подтверждать», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

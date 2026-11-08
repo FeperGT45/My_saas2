@@ -1,0 +1,304 @@
+{
+  "key": "c2/reported-denial-scope",
+  "course": "path-c2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика C2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 2,
+  "title": "Границы переданного отрицания",
+  "description": "Границы переданного отрицания: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "C2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что отрицала председатель?»",
+    "Различать значения denial и scope в теме «Границы переданного отрицания»"
+  ],
+  "notes": [
+    "В предложении «The denial is narrower than the headline.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «An outright rejection of the plan.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/counterfactual-baseline"],
+  "lexicon": [
+    {
+      "en": "denial",
+      "ru": "отрицание"
+    },
+    {
+      "en": "scope",
+      "ru": "область действия"
+    },
+    {
+      "en": "implication",
+      "ru": "подразумеваемый вывод"
+    },
+    {
+      "en": "attribution",
+      "ru": "указание источника"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Границы переданного отрицания»: выбери значение слова «denial» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "va74d4b0fa59a",
+            "label": "подразумеваемый вывод"
+          },
+          {
+            "id": "v2fde31c65efe",
+            "label": "отрицание"
+          },
+          {
+            "id": "v5a4136418a80",
+            "label": "область действия"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2fde31c65efe"
+      },
+      "reference_answer": "v2fde31c65efe",
+      "incorrect_answer": "v5a4136418a80",
+      "editorial_answer": "отрицание",
+      "explanation": "В этом контексте denial означает «отрицание».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары headline / denial. Значение: «Отрицание уже по охвату, чем заголовок.»",
+      "public_payload": {
+        "sentence": "The denial is narrower than the ___."
+      },
+      "answer_key": {
+        "accepted": ["headline"]
+      },
+      "reference_answer": "headline",
+      "incorrect_answer": "denial",
+      "editorial_answer": "The denial is narrower than the headline.",
+      "explanation": "Нужен вариант headline: полное предложение означает «Отрицание уже по охвату, чем заголовок.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Отрицание уже по охвату, чем заголовок.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "narrower"
+          },
+          {
+            "id": "t5",
+            "label": "than"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "headline."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "denial"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The denial is narrower than the headline.",
+      "explanation": "Порядок слов передаёт смысл «Отрицание уже по охвату, чем заголовок.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The denial are narrower than the headline."
+      },
+      "answer_key": {
+        "accepted": ["The denial is narrower than the headline."]
+      },
+      "reference_answer": "The denial is narrower than the headline.",
+      "incorrect_answer": "The denial are narrower than the headline.",
+      "editorial_answer": "The denial is narrower than the headline.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The denial is narrower than the headline.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что отрицала председатель?",
+      "public_payload": {
+        "passage": "Asked whether the committee had approved the entire redevelopment plan, its chair replied that no final approval had been given. A headline reported that the committee had rejected the plan outright. The full exchange, however, distinguished approval of preliminary surveys from approval of the complete proposal. The chair’s denial concerned the latter and did not settle whether the eventual decision would be favourable or unfavourable. Nor did it withdraw the limited permission already granted for surveys. An accurate account needed to preserve the object and timing of the denial. Replacing the absence of final approval with a conclusive rejection supplied a decision that the speaker had explicitly said was still pending, while erasing an earlier decision of narrower scope.",
+        "options": [
+          {
+            "id": "vdf855c016ab5",
+            "label": "That final approval of the whole plan had been given."
+          },
+          {
+            "id": "vb9d16cce0fb3",
+            "label": "That any committee existed."
+          },
+          {
+            "id": "vc74c61643c2d",
+            "label": "That preliminary surveys had permission."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vdf855c016ab5"
+      },
+      "reference_answer": "vdf855c016ab5",
+      "incorrect_answer": "vc74c61643c2d",
+      "editorial_answer": "That final approval of the whole plan had been given.",
+      "explanation": "Ответ подтверждён текстом: «That final approval of the whole plan had been given.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l646ed90b6564",
+            "label": "denial"
+          },
+          {
+            "id": "la712e0bf92c3",
+            "label": "scope"
+          },
+          {
+            "id": "l3c9cdf1c1750",
+            "label": "implication"
+          },
+          {
+            "id": "l62ff2b021061",
+            "label": "attribution"
+          }
+        ],
+        "right": [
+          {
+            "id": "rb819a64cca14",
+            "label": "подразумеваемый вывод"
+          },
+          {
+            "id": "r05863ad0e0b5",
+            "label": "указание источника"
+          },
+          {
+            "id": "r3f8cca06b82b",
+            "label": "область действия"
+          },
+          {
+            "id": "r5684aa681b85",
+            "label": "отрицание"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l646ed90b6564": "r5684aa681b85",
+          "la712e0bf92c3": "r3f8cca06b82b",
+          "l3c9cdf1c1750": "rb819a64cca14",
+          "l62ff2b021061": "r05863ad0e0b5"
+        }
+      },
+      "reference_answer": {
+        "l646ed90b6564": "r5684aa681b85",
+        "la712e0bf92c3": "r3f8cca06b82b",
+        "l3c9cdf1c1750": "rb819a64cca14",
+        "l62ff2b021061": "r05863ad0e0b5"
+      },
+      "incorrect_answer": {
+        "l646ed90b6564": "r3f8cca06b82b",
+        "la712e0bf92c3": "r5684aa681b85",
+        "l3c9cdf1c1750": "rb819a64cca14",
+        "l62ff2b021061": "r05863ad0e0b5"
+      },
+      "editorial_answer": "denial — отрицание; scope — область действия; implication — подразумеваемый вывод; attribution — указание источника",
+      "explanation": "Контекстные значения: denial — отрицание; scope — область действия; implication — подразумеваемый вывод; attribution — указание источника.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что добавил заголовок без основания?",
+      "public_payload": {
+        "passage": "Asked whether the committee had approved the entire redevelopment plan, its chair replied that no final approval had been given. A headline reported that the committee had rejected the plan outright. The full exchange, however, distinguished approval of preliminary surveys from approval of the complete proposal. The chair’s denial concerned the latter and did not settle whether the eventual decision would be favourable or unfavourable. Nor did it withdraw the limited permission already granted for surveys. An accurate account needed to preserve the object and timing of the denial. Replacing the absence of final approval with a conclusive rejection supplied a decision that the speaker had explicitly said was still pending, while erasing an earlier decision of narrower scope.",
+        "options": [
+          {
+            "id": "va9efffbafe01",
+            "label": "The distinction between surveys and the full plan."
+          },
+          {
+            "id": "v071e670b214c",
+            "label": "The fact that a final decision was still pending."
+          },
+          {
+            "id": "vde30a0efd990",
+            "label": "An outright rejection of the plan."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vde30a0efd990"
+      },
+      "reference_answer": "vde30a0efd990",
+      "incorrect_answer": "va9efffbafe01",
+      "editorial_answer": "An outright rejection of the plan.",
+      "explanation": "Сохраняем информацию текста: «An outright rejection of the plan.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Границы переданного отрицания»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “scope” means ___.",
+        "options": [
+          {
+            "id": "vbddd53298aed",
+            "label": "подразумеваемый вывод"
+          },
+          {
+            "id": "v34339b7c47ca",
+            "label": "указание источника"
+          },
+          {
+            "id": "v2c5e7784f221",
+            "label": "область действия"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2c5e7784f221"
+      },
+      "reference_answer": "v2c5e7784f221",
+      "incorrect_answer": "vbddd53298aed",
+      "editorial_answer": "область действия",
+      "explanation": "Здесь scope — «область действия», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

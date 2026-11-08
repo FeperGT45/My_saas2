@@ -1,0 +1,300 @@
+{
+  "key": "a1/garden-tools-shelf",
+  "course": "path-a1",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A1 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 2,
+  "title": "Вещи в садовом сарае",
+  "description": "Вещи в садовом сарае: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A1",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что Том берёт?»",
+    "Различать значения shelf и glove в теме «Вещи в садовом сарае»"
+  ],
+  "notes": [
+    "В предложении «The bucket is beside the door.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «On a shelf.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 6,
+  "prerequisites": ["a1/water-bottle-label"],
+  "lexicon": [
+    {
+      "en": "shelf",
+      "ru": "полка"
+    },
+    {
+      "en": "glove",
+      "ru": "перчатка"
+    },
+    {
+      "en": "seed",
+      "ru": "семя"
+    },
+    {
+      "en": "bucket",
+      "ru": "ведро"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Вещи в садовом сарае»: выбери значение слова «shelf» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vb9205fa1c483",
+            "label": "полка"
+          },
+          {
+            "id": "ved5aec74f327",
+            "label": "перчатка"
+          },
+          {
+            "id": "v62d7d711f200",
+            "label": "семя"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vb9205fa1c483"
+      },
+      "reference_answer": "vb9205fa1c483",
+      "incorrect_answer": "ved5aec74f327",
+      "editorial_answer": "полка",
+      "explanation": "В этом контексте shelf означает «полка».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары shelf / door. Значение: «Ведро находится рядом с дверью.»",
+      "public_payload": {
+        "sentence": "The bucket is beside the ___."
+      },
+      "answer_key": {
+        "accepted": ["door"]
+      },
+      "reference_answer": "door",
+      "incorrect_answer": "shelf",
+      "editorial_answer": "The bucket is beside the door.",
+      "explanation": "Нужен вариант door: полное предложение означает «Ведро находится рядом с дверью.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Ведро находится рядом с дверью.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "beside"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "door."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "bucket"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The bucket is beside the door.",
+      "explanation": "Порядок слов передаёт смысл «Ведро находится рядом с дверью.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The bucket are beside the door."
+      },
+      "answer_key": {
+        "accepted": ["The bucket is beside the door."]
+      },
+      "reference_answer": "The bucket is beside the door.",
+      "incorrect_answer": "The bucket are beside the door.",
+      "editorial_answer": "The bucket is beside the door.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The bucket is beside the door.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что Том берёт?",
+      "public_payload": {
+        "passage": "In the garden shed, two gloves are on a shelf. The seeds are in a small box. The bucket is beside the door. Tom takes the seeds, not the gloves.",
+        "options": [
+          {
+            "id": "vb7696bf1cdc7",
+            "label": "The gloves."
+          },
+          {
+            "id": "v56c4d77c0cdc",
+            "label": "The bucket."
+          },
+          {
+            "id": "v5db91f4dea83",
+            "label": "The seeds."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v5db91f4dea83"
+      },
+      "reference_answer": "v5db91f4dea83",
+      "incorrect_answer": "vb7696bf1cdc7",
+      "editorial_answer": "The seeds.",
+      "explanation": "Ответ подтверждён текстом: «The seeds.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l49604a8cae3e",
+            "label": "shelf"
+          },
+          {
+            "id": "l5f311e49ffa9",
+            "label": "glove"
+          },
+          {
+            "id": "leb4c0ae09e72",
+            "label": "seed"
+          },
+          {
+            "id": "lf517cad3adf9",
+            "label": "bucket"
+          }
+        ],
+        "right": [
+          {
+            "id": "r1d54273912cc",
+            "label": "перчатка"
+          },
+          {
+            "id": "rc166d42571c8",
+            "label": "ведро"
+          },
+          {
+            "id": "r76da25d78b3a",
+            "label": "семя"
+          },
+          {
+            "id": "rb44b38e4cc16",
+            "label": "полка"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l49604a8cae3e": "rb44b38e4cc16",
+          "l5f311e49ffa9": "r1d54273912cc",
+          "leb4c0ae09e72": "r76da25d78b3a",
+          "lf517cad3adf9": "rc166d42571c8"
+        }
+      },
+      "reference_answer": {
+        "l49604a8cae3e": "rb44b38e4cc16",
+        "l5f311e49ffa9": "r1d54273912cc",
+        "leb4c0ae09e72": "r76da25d78b3a",
+        "lf517cad3adf9": "rc166d42571c8"
+      },
+      "incorrect_answer": {
+        "l49604a8cae3e": "r1d54273912cc",
+        "l5f311e49ffa9": "rb44b38e4cc16",
+        "leb4c0ae09e72": "r76da25d78b3a",
+        "lf517cad3adf9": "rc166d42571c8"
+      },
+      "editorial_answer": "shelf — полка; glove — перчатка; seed — семя; bucket — ведро",
+      "explanation": "Контекстные значения: shelf — полка; glove — перчатка; seed — семя; bucket — ведро.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где лежат перчатки?",
+      "public_payload": {
+        "passage": "In the garden shed, two gloves are on a shelf. The seeds are in a small box. The bucket is beside the door. Tom takes the seeds, not the gloves.",
+        "options": [
+          {
+            "id": "v2fb3c29c00a4",
+            "label": "In the bucket."
+          },
+          {
+            "id": "v6a323f46b47f",
+            "label": "Outside the shed."
+          },
+          {
+            "id": "v2d4974ce5e98",
+            "label": "On a shelf."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v2d4974ce5e98"
+      },
+      "reference_answer": "v2d4974ce5e98",
+      "incorrect_answer": "v2fb3c29c00a4",
+      "editorial_answer": "On a shelf.",
+      "explanation": "Сохраняем информацию текста: «On a shelf.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Вещи в садовом сарае»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “glove” means ___.",
+        "options": [
+          {
+            "id": "vf3b2a4063443",
+            "label": "семя"
+          },
+          {
+            "id": "vd4bb40858564",
+            "label": "перчатка"
+          },
+          {
+            "id": "v9c665acfeb27",
+            "label": "ведро"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vd4bb40858564"
+      },
+      "reference_answer": "vd4bb40858564",
+      "incorrect_answer": "vf3b2a4063443",
+      "editorial_answer": "перчатка",
+      "explanation": "Здесь glove — «перчатка», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

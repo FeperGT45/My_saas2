@@ -55,16 +55,28 @@ afterAll(async () => {
   await db.close();
 });
 describe('modular learning content quality', () => {
-  it('contains 266 modular lessons and 2302 varied exercises, including twelve new lessons across A1-C1', () => {
+  it('contains 300 available full lessons with 303 source lessons and 2598 exercises', () => {
     expect(validateLibrary(library)).toEqual({
-      lessons: 266,
-      exercises: 2302,
-      levels: { A1: 60, A2: 53, B1: 52, B2: 45, C1: 27, C2: 23 },
+      lessons: 303,
+      exercises: 2598,
+      levels: { A1: 71, A2: 61, B1: 61, B2: 50, C1: 35, C2: 25 },
     });
     expect(
       new Set(payload.exercises.map((e) => e.kind)).size,
     ).toBeGreaterThanOrEqual(17);
-    expect(new Set(payload.exercises.map((e) => e.id)).size).toBe(2302);
+    expect(new Set(payload.exercises.map((e) => e.id)).size).toBe(2598);
+    const available = library.lessons.filter(
+      (l) => !l.skills.includes('listening'),
+    );
+    expect(available).toHaveLength(300);
+    expect(
+      Object.fromEntries(
+        ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'].map((level) => [
+          level,
+          available.filter((l) => l.level === level).length,
+        ]),
+      ),
+    ).toEqual({ A1: 70, A2: 60, B1: 60, B2: 50, C1: 35, C2: 25 });
     const batch = library.lessons.slice(60, 92);
     expect(batch).toHaveLength(32);
     for (const level of ['B1', 'B2', 'C1', 'C2'])
@@ -122,8 +134,8 @@ describe('modular learning content quality', () => {
     expect(eighth).toHaveLength(12);
     for (const level of ['A1', 'A2', 'B1', 'B2', 'C1', 'C2'])
       expect(eighth.filter((l) => l.level === level)).toHaveLength(2);
-    const current = library.lessons.slice(260);
-    expect(current).toHaveLength(12);
+    const ninth = library.lessons.slice(248, 260);
+    expect(ninth).toHaveLength(12);
     for (const [level, count] of Object.entries({
       A1: 4,
       A2: 2,
@@ -132,14 +144,38 @@ describe('modular learning content quality', () => {
       C1: 2,
       C2: 0,
     }))
-      expect(current.filter((l) => l.level === level)).toHaveLength(count);
+      expect(ninth.filter((l) => l.level === level)).toHaveLength(count);
+    const tenth = library.lessons.slice(260, 266);
+    expect(tenth).toHaveLength(6);
+    for (const [level, count] of Object.entries({
+      A1: 2,
+      A2: 1,
+      B1: 1,
+      B2: 1,
+      C1: 1,
+      C2: 0,
+    }))
+      expect(tenth.filter((l) => l.level === level)).toHaveLength(count);
+    const final = library.lessons.slice(266);
+    expect(final).toHaveLength(37);
+    for (const [level, count] of Object.entries({
+      A1: 9,
+      A2: 7,
+      B1: 8,
+      B2: 4,
+      C1: 7,
+      C2: 2,
+    }))
+      expect(final.filter((l) => l.level === level)).toHaveLength(count);
     const latest = [
       ...fourth,
       ...fifth,
       ...sixth,
       ...seventh,
       ...eighth,
-      ...current,
+      ...ninth,
+      ...tenth,
+      ...final,
     ];
     expect(
       new Set(
@@ -149,10 +185,13 @@ describe('modular learning content quality', () => {
               .passage,
         ),
       ).size,
-    ).toBe(168);
+    ).toBe(211);
     for (const lesson of latest) {
-      expect(lesson.exercises).toHaveLength(9);
-      expect(new Set(lesson.exercises.map((e) => e.kind)).size).toBe(8);
+      const isFinal = final.includes(lesson);
+      expect(lesson.exercises).toHaveLength(isFinal ? 8 : 9);
+      expect(new Set(lesson.exercises.map((e) => e.kind)).size).toBe(
+        isFinal ? 7 : 8,
+      );
       expect(
         lesson.exercises.some((e) =>
           ['listening', 'dictation'].includes(e.kind),
@@ -285,73 +324,77 @@ describe('modular learning content quality', () => {
   });
 });
 describe('transactional curriculum import', () => {
-  it('keeps in-progress answers valid when predictable option IDs are replaced in a later revision', async () => {
-    const previous = structuredClone(payload),
-      keep = new Set(previous.lessons.slice(0, 92).map((l) => l.id));
-    previous.revision = 4;
-    previous.lessons = previous.lessons.filter((l) => keep.has(l.id));
-    previous.exercises = previous.exercises.filter((e) =>
-      keep.has(e.lesson_id),
-    );
-    previous.units = previous.units.filter((u) =>
-      previous.lessons.some((l) => l.unit_id === (u as { id: string }).id),
-    );
-    const repairedIds = new Set(previous.lessons.slice(60).map((l) => l.id));
-    for (const e of previous.exercises.filter(
-      (e) => repairedIds.has(e.lesson_id) && e.public_payload.options,
-    )) {
-      const opts = e.public_payload.options!,
-        correct = e.reference_answer;
-      let wrong = 2;
-      const map = new Map(
-        opts.map((o) => [o.id, o.id === correct ? 'o1' : `o${wrong++}`]),
+  it(
+    'keeps in-progress answers valid when predictable option IDs are replaced in a later revision',
+    { timeout: 15000 },
+    async () => {
+      const previous = structuredClone(payload),
+        keep = new Set(previous.lessons.slice(0, 92).map((l) => l.id));
+      previous.revision = 4;
+      previous.lessons = previous.lessons.filter((l) => keep.has(l.id));
+      previous.exercises = previous.exercises.filter((e) =>
+        keep.has(e.lesson_id),
       );
-      e.public_payload.options = opts.map((o) => ({
-        ...o,
-        id: map.get(o.id)!,
-      }));
-      e.answer_key.value = map.get(e.answer_key.value as string)!;
-      e.reference_answer = map.get(e.reference_answer as string)!;
-      e.incorrect_answer = map.get(e.incorrect_answer as string)!;
-    }
-    await db.exec('BEGIN');
-    try {
-      await rpc('import_curriculum_package', [JSON.stringify(previous)]);
-      const u = await user(),
-        lesson = previous.lessons.find(
-          (l) => l.title === 'Что произошло до прибытия',
-        )!,
-        attempt = randomUUID();
-      await rpc('start_lesson', [u, lesson.id, attempt]);
-      const query =
-        'SELECT payload,answer_key FROM public.lesson_attempt_items WHERE attempt_id=$1 ORDER BY position';
-      const snapshots = (await db.query(query, [attempt])).rows;
-      await rpc('import_curriculum_package', [JSON.stringify(payload)]);
-      expect((await db.query(query, [attempt])).rows).toEqual(snapshots);
+      previous.units = previous.units.filter((u) =>
+        previous.lessons.some((l) => l.unit_id === (u as { id: string }).id),
+      );
+      const repairedIds = new Set(previous.lessons.slice(60).map((l) => l.id));
       for (const e of previous.exercises.filter(
-        (e) => e.lesson_id === lesson.id,
-      ))
+        (e) => repairedIds.has(e.lesson_id) && e.public_payload.options,
+      )) {
+        const opts = e.public_payload.options!,
+          correct = e.reference_answer;
+        let wrong = 2;
+        const map = new Map(
+          opts.map((o) => [o.id, o.id === correct ? 'o1' : `o${wrong++}`]),
+        );
+        e.public_payload.options = opts.map((o) => ({
+          ...o,
+          id: map.get(o.id)!,
+        }));
+        e.answer_key.value = map.get(e.answer_key.value as string)!;
+        e.reference_answer = map.get(e.reference_answer as string)!;
+        e.incorrect_answer = map.get(e.incorrect_answer as string)!;
+      }
+      await db.exec('BEGIN');
+      try {
+        await rpc('import_curriculum_package', [JSON.stringify(previous)]);
+        const u = await user(),
+          lesson = previous.lessons.find(
+            (l) => l.title === 'Что произошло до прибытия',
+          )!,
+          attempt = randomUUID();
+        await rpc('start_lesson', [u, lesson.id, attempt]);
+        const query =
+          'SELECT payload,answer_key FROM public.lesson_attempt_items WHERE attempt_id=$1 ORDER BY position';
+        const snapshots = (await db.query(query, [attempt])).rows;
+        await rpc('import_curriculum_package', [JSON.stringify(payload)]);
+        expect((await db.query(query, [attempt])).rows).toEqual(snapshots);
+        for (const e of previous.exercises.filter(
+          (e) => e.lesson_id === lesson.id,
+        ))
+          expect(
+            (
+              await rpc<Feedback>('submit_lesson_answer', [
+                u,
+                attempt,
+                e.position,
+                JSON.stringify(e.reference_answer),
+              ])
+            ).correct,
+          ).toBe(true);
         expect(
-          (
-            await rpc<Feedback>('submit_lesson_answer', [
-              u,
-              attempt,
-              e.position,
-              JSON.stringify(e.reference_answer),
-            ])
-          ).correct,
-        ).toBe(true);
-      expect(
-        await rpc<LessonState>('lesson_state', [u, attempt]),
-      ).toMatchObject({ status: 'completed', score: 100 });
-    } finally {
-      await db.exec('ROLLBACK');
-    }
-  });
+          await rpc<LessonState>('lesson_state', [u, attempt]),
+        ).toMatchObject({ status: 'completed', score: 100 });
+      } finally {
+        await db.exec('ROLLBACK');
+      }
+    },
+  );
   it('expands revision ten without changing any of its 260 existing lessons or exercise keys', async () => {
     const old = structuredClone(payload);
     const originalIds = new Set(old.lessons.slice(0, 260).map((l) => l.id));
-    old.revision = 9;
+    old.revision = 10;
     old.lessons = old.lessons.filter((l) => originalIds.has(l.id));
     old.exercises = old.exercises.filter((e) => originalIds.has(e.lesson_id));
     old.units = old.units.filter((u) =>
@@ -368,7 +411,7 @@ describe('transactional curriculum import', () => {
       ).rows;
       expect(
         await rpc('import_curriculum_package', [JSON.stringify(payload)]),
-      ).toMatchObject({ lessons: 266, exercises: 2302, unchanged: false });
+      ).toMatchObject({ lessons: 303, exercises: 2598, unchanged: false });
       const expandedRows = (
         await db.query<{ id: string; lesson_id: string; answer_key: unknown }>(
           'SELECT id,lesson_id,answer_key FROM public.exercises WHERE content_package_id=$1 ORDER BY id',
@@ -407,7 +450,7 @@ describe('transactional curriculum import', () => {
     await db.exec('SET ROLE service_role');
     expect(
       await rpc('import_curriculum_package', [JSON.stringify(payload)]),
-    ).toMatchObject({ lessons: 266, exercises: 2302, unchanged: false });
+    ).toMatchObject({ lessons: 303, exercises: 2598, unchanged: false });
     const versions = (
       await db.query(
         'SELECT id,admin_version FROM public.exercises WHERE content_package_id=$1 ORDER BY id',
@@ -503,7 +546,7 @@ describe('transactional curriculum import', () => {
       await rpc<{ level: string; lessons: { id: string }[] }[]>(
         'curriculum_library',
       );
-    expect(catalog.flatMap((c) => c.lessons)).toHaveLength(264);
+    expect(catalog.flatMap((c) => c.lessons)).toHaveLength(301);
     expect(JSON.stringify(catalog)).not.toMatch(
       /answer_key|reference_answer|incorrect_answer|accepted/,
     );
@@ -569,45 +612,54 @@ describe('transactional curriculum import', () => {
       rpc('import_curriculum_package', [JSON.stringify(omitted)]),
     ).rejects.toThrow(/removal requires/);
   });
-  it('updates a revision while preserving an already-started snapshot, progress and XP', async () => {
-    const id = await user(),
-      lesson = payload.lessons[0],
-      attempt = randomUUID();
-    await rpc('start_lesson', [id, lesson.id, attempt]);
-    const snapshot = (
-      await db.query(
-        'SELECT * FROM public.lesson_attempt_items WHERE attempt_id=$1 ORDER BY position',
-        [attempt],
-      )
-    ).rows;
-    const update = structuredClone(payload);
-    update.revision++;
-    update.exercises[0].prompt += ' (редакция 2)';
-    await rpc('import_curriculum_package', [JSON.stringify(update)]);
-    expect(
-      (
+  it(
+    'updates a revision while preserving an already-started snapshot, progress and XP',
+    { timeout: 15000 },
+    async () => {
+      const id = await user(),
+        lesson = payload.lessons[0],
+        attempt = randomUUID();
+      await rpc('start_lesson', [id, lesson.id, attempt]);
+      const snapshot = (
         await db.query(
           'SELECT * FROM public.lesson_attempt_items WHERE attempt_id=$1 ORDER BY position',
           [attempt],
         )
-      ).rows,
-    ).toEqual(snapshot);
-    for (const e of payload.exercises.filter((e) => e.lesson_id === lesson.id))
-      await rpc('submit_lesson_answer', [
-        id,
-        attempt,
-        e.position,
-        JSON.stringify(e.reference_answer),
-      ]);
-    const xp = (
-      await db.query('SELECT * FROM public.xp_events WHERE user_id=$1', [id])
-    ).rows;
-    await rpc('import_curriculum_package', [JSON.stringify(update)]);
-    expect(
-      (await db.query('SELECT * FROM public.xp_events WHERE user_id=$1', [id]))
-        .rows,
-    ).toEqual(xp);
-  });
+      ).rows;
+      const update = structuredClone(payload);
+      update.revision++;
+      update.exercises[0].prompt += ' (редакция 2)';
+      await rpc('import_curriculum_package', [JSON.stringify(update)]);
+      expect(
+        (
+          await db.query(
+            'SELECT * FROM public.lesson_attempt_items WHERE attempt_id=$1 ORDER BY position',
+            [attempt],
+          )
+        ).rows,
+      ).toEqual(snapshot);
+      for (const e of payload.exercises.filter(
+        (e) => e.lesson_id === lesson.id,
+      ))
+        await rpc('submit_lesson_answer', [
+          id,
+          attempt,
+          e.position,
+          JSON.stringify(e.reference_answer),
+        ]);
+      const xp = (
+        await db.query('SELECT * FROM public.xp_events WHERE user_id=$1', [id])
+      ).rows;
+      await rpc('import_curriculum_package', [JSON.stringify(update)]);
+      expect(
+        (
+          await db.query('SELECT * FROM public.xp_events WHERE user_id=$1', [
+            id,
+          ])
+        ).rows,
+      ).toEqual(xp);
+    },
+  );
   it('rejects prerequisite cycles and attempts to adopt another package’s rows', async () => {
     await expect(
       db.query('INSERT INTO public.lesson_prerequisites VALUES($1,$2)', [

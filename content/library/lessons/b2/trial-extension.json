@@ -1,0 +1,300 @@
+{
+  "key": "b2/trial-extension",
+  "course": "path-b2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика B2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 1,
+  "title": "Продление пробного проекта",
+  "description": "Продление пробного проекта: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "B2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Почему пробный период продлили?»",
+    "Различать значения extension и trial в теме «Продление пробного проекта»"
+  ],
+  "notes": [
+    "В предложении «The extension is conditional on review.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «Staffing costs and seasonal variation.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 12,
+  "prerequisites": ["b2/even-so-contrast"],
+  "lexicon": [
+    {
+      "en": "extension",
+      "ru": "продление"
+    },
+    {
+      "en": "trial",
+      "ru": "пробный проект"
+    },
+    {
+      "en": "commitment",
+      "ru": "обязательство"
+    },
+    {
+      "en": "evaluation",
+      "ru": "оценка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Продление пробного проекта»: выбери значение слова «extension» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v91332f6c1f7a",
+            "label": "обязательство"
+          },
+          {
+            "id": "v050d9a8bfdd7",
+            "label": "продление"
+          },
+          {
+            "id": "v9ff01000c502",
+            "label": "пробный проект"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v050d9a8bfdd7"
+      },
+      "reference_answer": "v050d9a8bfdd7",
+      "incorrect_answer": "v9ff01000c502",
+      "editorial_answer": "продление",
+      "explanation": "В этом контексте extension означает «продление».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары review / extension. Значение: «Продление зависит от пересмотра результатов.»",
+      "public_payload": {
+        "sentence": "The extension is conditional on ___."
+      },
+      "answer_key": {
+        "accepted": ["review"]
+      },
+      "reference_answer": "review",
+      "incorrect_answer": "extension",
+      "editorial_answer": "The extension is conditional on review.",
+      "explanation": "Нужен вариант review: полное предложение означает «Продление зависит от пересмотра результатов.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Продление зависит от пересмотра результатов.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "conditional"
+          },
+          {
+            "id": "t5",
+            "label": "on"
+          },
+          {
+            "id": "t6",
+            "label": "review."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "extension"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The extension is conditional on review.",
+      "explanation": "Порядок слов передаёт смысл «Продление зависит от пересмотра результатов.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The extension are conditional on review."
+      },
+      "answer_key": {
+        "accepted": ["The extension is conditional on review."]
+      },
+      "reference_answer": "The extension is conditional on review.",
+      "incorrect_answer": "The extension are conditional on review.",
+      "editorial_answer": "The extension is conditional on review.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The extension is conditional on review.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Почему пробный период продлили?",
+      "public_payload": {
+        "passage": "A library extended its evening opening trial for another month so it could gather evidence from a quieter period. Some supporters described the extension as a permanent commitment. The manager clarified that the extra month was part of the evaluation, not its conclusion. Initial attendance had been promising, but staffing costs and seasonal variation still needed to be considered. Continuing an experiment can mean that a question remains open, even when early observations are encouraging.",
+        "options": [
+          {
+            "id": "v87ea1ee120e5",
+            "label": "To avoid collecting any more information."
+          },
+          {
+            "id": "v3442c69c52cf",
+            "label": "To gather evidence from a quieter period."
+          },
+          {
+            "id": "v9cffccb64b68",
+            "label": "Because permanent funding was already guaranteed."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v3442c69c52cf"
+      },
+      "reference_answer": "v3442c69c52cf",
+      "incorrect_answer": "v9cffccb64b68",
+      "editorial_answer": "To gather evidence from a quieter period.",
+      "explanation": "Ответ подтверждён текстом: «To gather evidence from a quieter period.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l9ea1dcaa688b",
+            "label": "extension"
+          },
+          {
+            "id": "l11890d17c26e",
+            "label": "trial"
+          },
+          {
+            "id": "ld2602cfc145f",
+            "label": "commitment"
+          },
+          {
+            "id": "lcf63c6d44691",
+            "label": "evaluation"
+          }
+        ],
+        "right": [
+          {
+            "id": "r62df9ca6a4f0",
+            "label": "оценка"
+          },
+          {
+            "id": "rc6c86d8b998b",
+            "label": "пробный проект"
+          },
+          {
+            "id": "r461815fd8478",
+            "label": "обязательство"
+          },
+          {
+            "id": "ra8a32416566c",
+            "label": "продление"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l9ea1dcaa688b": "ra8a32416566c",
+          "l11890d17c26e": "rc6c86d8b998b",
+          "ld2602cfc145f": "r461815fd8478",
+          "lcf63c6d44691": "r62df9ca6a4f0"
+        }
+      },
+      "reference_answer": {
+        "l9ea1dcaa688b": "ra8a32416566c",
+        "l11890d17c26e": "rc6c86d8b998b",
+        "ld2602cfc145f": "r461815fd8478",
+        "lcf63c6d44691": "r62df9ca6a4f0"
+      },
+      "incorrect_answer": {
+        "l9ea1dcaa688b": "rc6c86d8b998b",
+        "l11890d17c26e": "ra8a32416566c",
+        "ld2602cfc145f": "r461815fd8478",
+        "lcf63c6d44691": "r62df9ca6a4f0"
+      },
+      "editorial_answer": "extension — продление; trial — пробный проект; commitment — обязательство; evaluation — оценка",
+      "explanation": "Контекстные значения: extension — продление; trial — пробный проект; commitment — обязательство; evaluation — оценка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что ещё требовало оценки?",
+      "public_payload": {
+        "passage": "A library extended its evening opening trial for another month so it could gather evidence from a quieter period. Some supporters described the extension as a permanent commitment. The manager clarified that the extra month was part of the evaluation, not its conclusion. Initial attendance had been promising, but staffing costs and seasonal variation still needed to be considered. Continuing an experiment can mean that a question remains open, even when early observations are encouraging.",
+        "options": [
+          {
+            "id": "v2785bb2f74eb",
+            "label": "Only the colour of the entrance sign."
+          },
+          {
+            "id": "v24c7c09a11e3",
+            "label": "Whether the library had ever existed."
+          },
+          {
+            "id": "v732542f42298",
+            "label": "Staffing costs and seasonal variation."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v732542f42298"
+      },
+      "reference_answer": "v732542f42298",
+      "incorrect_answer": "v24c7c09a11e3",
+      "editorial_answer": "Staffing costs and seasonal variation.",
+      "explanation": "Сохраняем информацию текста: «Staffing costs and seasonal variation.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Продление пробного проекта»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “trial” means ___.",
+        "options": [
+          {
+            "id": "ve478b8b5e6a5",
+            "label": "обязательство"
+          },
+          {
+            "id": "ve84c0081c83d",
+            "label": "пробный проект"
+          },
+          {
+            "id": "v372b461236d8",
+            "label": "оценка"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve84c0081c83d"
+      },
+      "reference_answer": "ve84c0081c83d",
+      "incorrect_answer": "ve478b8b5e6a5",
+      "editorial_answer": "пробный проект",
+      "explanation": "Здесь trial — «пробный проект», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

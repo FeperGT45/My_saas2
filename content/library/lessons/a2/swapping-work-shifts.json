@@ -1,0 +1,304 @@
+{
+  "key": "a2/swapping-work-shifts",
+  "course": "path-a2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 4,
+  "title": "Обменяться сменами",
+  "description": "Обменяться сменами: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Когда Иnez работает после обмена?»",
+    "Различать значения shift и swap в теме «Обменяться сменами»"
+  ],
+  "notes": [
+    "В предложении «The swap is on the staff calendar.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «The manager.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a2/package-delivery-note"],
+  "lexicon": [
+    {
+      "en": "shift",
+      "ru": "смена"
+    },
+    {
+      "en": "swap",
+      "ru": "обмениваться"
+    },
+    {
+      "en": "permission",
+      "ru": "разрешение"
+    },
+    {
+      "en": "notice",
+      "ru": "уведомление"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Обменяться сменами»: выбери значение слова «shift» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v34e312729db1",
+            "label": "обмениваться"
+          },
+          {
+            "id": "v99f6577970a2",
+            "label": "разрешение"
+          },
+          {
+            "id": "v6c4ebdd408bd",
+            "label": "смена"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v6c4ebdd408bd"
+      },
+      "reference_answer": "v6c4ebdd408bd",
+      "incorrect_answer": "v34e312729db1",
+      "editorial_answer": "смена",
+      "explanation": "В этом контексте shift означает «смена».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары calendar / shift. Значение: «Обмен сменами отмечен в календаре сотрудников.»",
+      "public_payload": {
+        "sentence": "The swap is on the staff ___."
+      },
+      "answer_key": {
+        "accepted": ["calendar"]
+      },
+      "reference_answer": "calendar",
+      "incorrect_answer": "shift",
+      "editorial_answer": "The swap is on the staff calendar.",
+      "explanation": "Нужен вариант calendar: полное предложение означает «Обмен сменами отмечен в календаре сотрудников.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Обмен сменами отмечен в календаре сотрудников.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "on"
+          },
+          {
+            "id": "t5",
+            "label": "the"
+          },
+          {
+            "id": "t6",
+            "label": "staff"
+          },
+          {
+            "id": "t7",
+            "label": "calendar."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "swap"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The swap is on the staff calendar.",
+      "explanation": "Порядок слов передаёт смысл «Обмен сменами отмечен в календаре сотрудников.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The swap are on the staff calendar."
+      },
+      "answer_key": {
+        "accepted": ["The swap is on the staff calendar."]
+      },
+      "reference_answer": "The swap is on the staff calendar.",
+      "incorrect_answer": "The swap are on the staff calendar.",
+      "editorial_answer": "The swap is on the staff calendar.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The swap is on the staff calendar.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда Инес работает после обмена?",
+      "public_payload": {
+        "passage": "Inez works on Friday mornings, but this week she has a college appointment. Ben agrees to swap his Thursday shift with her. Their manager approves the change and updates the staff calendar. Inez checks both dates, so she does not arrive on the wrong day.",
+        "options": [
+          {
+            "id": "vbe5d4934e14d",
+            "label": "Thursday."
+          },
+          {
+            "id": "v3634b15a11a3",
+            "label": "Neither day."
+          },
+          {
+            "id": "v4782dae1e1bc",
+            "label": "Friday morning as usual."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vbe5d4934e14d"
+      },
+      "reference_answer": "vbe5d4934e14d",
+      "incorrect_answer": "v4782dae1e1bc",
+      "editorial_answer": "Thursday.",
+      "explanation": "Ответ подтверждён текстом: «Thursday.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "l326d89a18096",
+            "label": "shift"
+          },
+          {
+            "id": "l1afbd41bc5a7",
+            "label": "swap"
+          },
+          {
+            "id": "la8c1c65e5d09",
+            "label": "permission"
+          },
+          {
+            "id": "l77afdfc4032d",
+            "label": "notice"
+          }
+        ],
+        "right": [
+          {
+            "id": "r0a5afeb711ea",
+            "label": "разрешение"
+          },
+          {
+            "id": "rc245c247b1cb",
+            "label": "уведомление"
+          },
+          {
+            "id": "r63e221409671",
+            "label": "обмениваться"
+          },
+          {
+            "id": "r5884723de02e",
+            "label": "смена"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "l326d89a18096": "r5884723de02e",
+          "l1afbd41bc5a7": "r63e221409671",
+          "la8c1c65e5d09": "r0a5afeb711ea",
+          "l77afdfc4032d": "rc245c247b1cb"
+        }
+      },
+      "reference_answer": {
+        "l326d89a18096": "r5884723de02e",
+        "l1afbd41bc5a7": "r63e221409671",
+        "la8c1c65e5d09": "r0a5afeb711ea",
+        "l77afdfc4032d": "rc245c247b1cb"
+      },
+      "incorrect_answer": {
+        "l326d89a18096": "r63e221409671",
+        "l1afbd41bc5a7": "r5884723de02e",
+        "la8c1c65e5d09": "r0a5afeb711ea",
+        "l77afdfc4032d": "rc245c247b1cb"
+      },
+      "editorial_answer": "shift — смена; swap — обмениваться; permission — разрешение; notice — уведомление",
+      "explanation": "Контекстные значения: shift — смена; swap — обмениваться; permission — разрешение; notice — уведомление.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Кто одобряет изменение?",
+      "public_payload": {
+        "passage": "Inez works on Friday mornings, but this week she has a college appointment. Ben agrees to swap his Thursday shift with her. Their manager approves the change and updates the staff calendar. Inez checks both dates, so she does not arrive on the wrong day.",
+        "options": [
+          {
+            "id": "v5d8513e5208a",
+            "label": "Every customer."
+          },
+          {
+            "id": "va44d0c43a928",
+            "label": "A college visitor."
+          },
+          {
+            "id": "ve0e931d1a81c",
+            "label": "The manager."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ve0e931d1a81c"
+      },
+      "reference_answer": "ve0e931d1a81c",
+      "incorrect_answer": "va44d0c43a928",
+      "editorial_answer": "The manager.",
+      "explanation": "Сохраняем информацию текста: «The manager.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Обменяться сменами»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “swap” means ___.",
+        "options": [
+          {
+            "id": "v4e93d318b327",
+            "label": "разрешение"
+          },
+          {
+            "id": "v65c8f7c06eb1",
+            "label": "уведомление"
+          },
+          {
+            "id": "v788a1d440cea",
+            "label": "обмениваться"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v788a1d440cea"
+      },
+      "reference_answer": "v788a1d440cea",
+      "incorrect_answer": "v4e93d318b327",
+      "editorial_answer": "обмениваться",
+      "explanation": "Здесь swap — «обмениваться», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

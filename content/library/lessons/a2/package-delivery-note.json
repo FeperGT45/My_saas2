@@ -1,0 +1,300 @@
+{
+  "key": "a2/package-delivery-note",
+  "course": "path-a2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика A2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 3,
+  "title": "Записка о доставке",
+  "description": "Записка о доставке: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "A2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Где оставили посылку?»",
+    "Различать значения delivery и neighbour в теме «Записка о доставке»"
+  ],
+  "notes": [
+    "В предложении «The parcel is with a neighbour.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «After work.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 8,
+  "prerequisites": ["a2/club-booking-change"],
+  "lexicon": [
+    {
+      "en": "delivery",
+      "ru": "доставка"
+    },
+    {
+      "en": "neighbour",
+      "ru": "сосед"
+    },
+    {
+      "en": "signature",
+      "ru": "подпись"
+    },
+    {
+      "en": "parcel",
+      "ru": "посылка"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Записка о доставке»: выбери значение слова «delivery» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "v474a6e70b36d",
+            "label": "сосед"
+          },
+          {
+            "id": "vef69ba859f34",
+            "label": "доставка"
+          },
+          {
+            "id": "v3dc76188c54e",
+            "label": "подпись"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "vef69ba859f34"
+      },
+      "reference_answer": "vef69ba859f34",
+      "incorrect_answer": "v474a6e70b36d",
+      "editorial_answer": "доставка",
+      "explanation": "В этом контексте delivery означает «доставка».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары delivery / neighbour. Значение: «Посылка находится у соседа.»",
+      "public_payload": {
+        "sentence": "The parcel is with a ___."
+      },
+      "answer_key": {
+        "accepted": ["neighbour"]
+      },
+      "reference_answer": "neighbour",
+      "incorrect_answer": "delivery",
+      "editorial_answer": "The parcel is with a neighbour.",
+      "explanation": "Нужен вариант neighbour: полное предложение означает «Посылка находится у соседа.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Посылка находится у соседа.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "with"
+          },
+          {
+            "id": "t5",
+            "label": "a"
+          },
+          {
+            "id": "t6",
+            "label": "neighbour."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "parcel"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t1"],
+      "editorial_answer": "The parcel is with a neighbour.",
+      "explanation": "Порядок слов передаёт смысл «Посылка находится у соседа.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The parcel are with a neighbour."
+      },
+      "answer_key": {
+        "accepted": ["The parcel is with a neighbour."]
+      },
+      "reference_answer": "The parcel is with a neighbour.",
+      "incorrect_answer": "The parcel are with a neighbour.",
+      "editorial_answer": "The parcel is with a neighbour.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The parcel is with a neighbour.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Где оставили посылку?",
+      "public_payload": {
+        "passage": "A delivery driver finds nobody at home. With the customer’s permission, she leaves the parcel with the neighbour at number eight. She puts a note through the customer’s door. The note gives the neighbour’s address and says that a signature was received. The customer collects the parcel after work.",
+        "options": [
+          {
+            "id": "v4c7ecf40cb08",
+            "label": "With the neighbour at number eight."
+          },
+          {
+            "id": "v39d0728024a8",
+            "label": "Outside on the pavement."
+          },
+          {
+            "id": "v097ced8476f4",
+            "label": "At the driver’s home."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v4c7ecf40cb08"
+      },
+      "reference_answer": "v4c7ecf40cb08",
+      "incorrect_answer": "v39d0728024a8",
+      "editorial_answer": "With the neighbour at number eight.",
+      "explanation": "Ответ подтверждён текстом: «With the neighbour at number eight.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "laa9021cb72a2",
+            "label": "delivery"
+          },
+          {
+            "id": "la32f7b8dcc9b",
+            "label": "neighbour"
+          },
+          {
+            "id": "l710a8b520fc8",
+            "label": "signature"
+          },
+          {
+            "id": "lac93bfa1ac43",
+            "label": "parcel"
+          }
+        ],
+        "right": [
+          {
+            "id": "r8d6c2903d5b0",
+            "label": "доставка"
+          },
+          {
+            "id": "r8123936fc1f2",
+            "label": "подпись"
+          },
+          {
+            "id": "rc8bc30753ac1",
+            "label": "посылка"
+          },
+          {
+            "id": "r50b825279eb7",
+            "label": "сосед"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "laa9021cb72a2": "r8d6c2903d5b0",
+          "la32f7b8dcc9b": "r50b825279eb7",
+          "l710a8b520fc8": "r8123936fc1f2",
+          "lac93bfa1ac43": "rc8bc30753ac1"
+        }
+      },
+      "reference_answer": {
+        "laa9021cb72a2": "r8d6c2903d5b0",
+        "la32f7b8dcc9b": "r50b825279eb7",
+        "l710a8b520fc8": "r8123936fc1f2",
+        "lac93bfa1ac43": "rc8bc30753ac1"
+      },
+      "incorrect_answer": {
+        "laa9021cb72a2": "r50b825279eb7",
+        "la32f7b8dcc9b": "r8d6c2903d5b0",
+        "l710a8b520fc8": "r8123936fc1f2",
+        "lac93bfa1ac43": "rc8bc30753ac1"
+      },
+      "editorial_answer": "delivery — доставка; neighbour — сосед; signature — подпись; parcel — посылка",
+      "explanation": "Контекстные значения: delivery — доставка; neighbour — сосед; signature — подпись; parcel — посылка.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Когда клиент забирает посылку?",
+      "public_payload": {
+        "passage": "A delivery driver finds nobody at home. With the customer’s permission, she leaves the parcel with the neighbour at number eight. She puts a note through the customer’s door. The note gives the neighbour’s address and says that a signature was received. The customer collects the parcel after work.",
+        "options": [
+          {
+            "id": "v96f5ae2e4b1f",
+            "label": "After work."
+          },
+          {
+            "id": "v15a93505bd6d",
+            "label": "During the neighbour’s holiday."
+          },
+          {
+            "id": "v2669110fc724",
+            "label": "Before the driver arrives."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v96f5ae2e4b1f"
+      },
+      "reference_answer": "v96f5ae2e4b1f",
+      "incorrect_answer": "v2669110fc724",
+      "editorial_answer": "After work.",
+      "explanation": "Сохраняем информацию текста: «After work.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Записка о доставке»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “neighbour” means ___.",
+        "options": [
+          {
+            "id": "v5357c7fffcff",
+            "label": "посылка"
+          },
+          {
+            "id": "v961890d7ab36",
+            "label": "сосед"
+          },
+          {
+            "id": "v3f73b94e8586",
+            "label": "подпись"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v961890d7ab36"
+      },
+      "reference_answer": "v961890d7ab36",
+      "incorrect_answer": "v3f73b94e8586",
+      "editorial_answer": "сосед",
+      "explanation": "Здесь neighbour — «сосед», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}

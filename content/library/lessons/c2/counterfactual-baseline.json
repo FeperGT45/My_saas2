@@ -1,0 +1,304 @@
+{
+  "key": "c2/counterfactual-baseline",
+  "course": "path-c2",
+  "unit": {
+    "slug": "completion-12",
+    "title": "Практика C2 · итоговые ситуации",
+    "position": 90
+  },
+  "position": 1,
+  "title": "Контрфактическая точка сравнения",
+  "description": "Контрфактическая точка сравнения: чтение оригинального текста, контекстный словарь и точное описание ситуации с объяснениями ответов.",
+  "level": "C2",
+  "objectives": [
+    "Найти в тексте ответ на вопрос «Что ставила под сомнение критик?»",
+    "Различать значения counterfactual и baseline в теме «Контрфактическая точка сравнения»"
+  ],
+  "notes": [
+    "В предложении «The attribution is dependent on the comparison.» подлежащее в единственном числе согласуется с is.",
+    "При чтении важно сохранить факт или границу вывода: «The criticism proves the reminders failed.»"
+  ],
+  "skills": ["grammar", "vocabulary", "reading"],
+  "estimated_minutes": 15,
+  "prerequisites": ["c2/quotation-versus-endorsement"],
+  "lexicon": [
+    {
+      "en": "counterfactual",
+      "ru": "контрфактический"
+    },
+    {
+      "en": "baseline",
+      "ru": "база сравнения"
+    },
+    {
+      "en": "attribution",
+      "ru": "приписывание причины"
+    },
+    {
+      "en": "intervention",
+      "ru": "вмешательство"
+    }
+  ],
+  "quality": {
+    "status": "checked",
+    "method": "author-review + schema/grader/editorial-reference checks; no independent teacher review",
+    "cefr": "provisional",
+    "license": "original"
+  },
+  "exercises": [
+    {
+      "kind": "single_choice",
+      "prompt": "«Контрфактическая точка сравнения»: выбери значение слова «counterfactual» в контексте урока.",
+      "public_payload": {
+        "options": [
+          {
+            "id": "vb3b25a68106c",
+            "label": "приписывание причины"
+          },
+          {
+            "id": "vd4f83028c21f",
+            "label": "база сравнения"
+          },
+          {
+            "id": "v94fde676a53a",
+            "label": "контрфактический"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v94fde676a53a"
+      },
+      "reference_answer": "v94fde676a53a",
+      "incorrect_answer": "vd4f83028c21f",
+      "editorial_answer": "контрфактический",
+      "explanation": "В этом контексте counterfactual означает «контрфактический».",
+      "key": "e01"
+    },
+    {
+      "kind": "gap",
+      "prompt": "Вставь слово из пары counterfactual / comparison. Значение: «Приписывание причины зависит от сравнения.»",
+      "public_payload": {
+        "sentence": "The attribution is dependent on the ___."
+      },
+      "answer_key": {
+        "accepted": ["comparison"]
+      },
+      "reference_answer": "comparison",
+      "incorrect_answer": "counterfactual",
+      "editorial_answer": "The attribution is dependent on the comparison.",
+      "explanation": "Нужен вариант comparison: полное предложение означает «Приписывание причины зависит от сравнения.».",
+      "key": "e02"
+    },
+    {
+      "kind": "sentence",
+      "prompt": "Собери предложение: «Приписывание причины зависит от сравнения.»",
+      "public_payload": {
+        "tokens": [
+          {
+            "id": "t3",
+            "label": "is"
+          },
+          {
+            "id": "t4",
+            "label": "dependent"
+          },
+          {
+            "id": "t5",
+            "label": "on"
+          },
+          {
+            "id": "t6",
+            "label": "the"
+          },
+          {
+            "id": "t7",
+            "label": "comparison."
+          },
+          {
+            "id": "t1",
+            "label": "The"
+          },
+          {
+            "id": "t2",
+            "label": "attribution"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"]
+      },
+      "reference_answer": ["t1", "t2", "t3", "t4", "t5", "t6", "t7"],
+      "incorrect_answer": ["t2", "t3", "t4", "t5", "t6", "t7", "t1"],
+      "editorial_answer": "The attribution is dependent on the comparison.",
+      "explanation": "Порядок слов передаёт смысл «Приписывание причины зависит от сравнения.». Подлежащее предшествует is.",
+      "key": "e03"
+    },
+    {
+      "kind": "correction",
+      "prompt": "Исправь только согласование глагола с подлежащим, сохраняя остальные слова и смысл.",
+      "public_payload": {
+        "sentence": "The attribution are dependent on the comparison."
+      },
+      "answer_key": {
+        "accepted": ["The attribution is dependent on the comparison."]
+      },
+      "reference_answer": "The attribution is dependent on the comparison.",
+      "incorrect_answer": "The attribution are dependent on the comparison.",
+      "editorial_answer": "The attribution is dependent on the comparison.",
+      "explanation": "Подлежащее здесь в единственном числе, поэтому нужен is: «The attribution is dependent on the comparison.»",
+      "key": "e04"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Что ставила под сомнение критик?",
+      "public_payload": {
+        "passage": "A report credited a new reminder system with reducing missed appointments because the number fell after its introduction. A critical response asked what would probably have happened without the system. The same period included a timetable change and fewer appointments overall. The critic did not deny that reminders might have helped; she challenged the assumption that the observed before-and-after difference measured their effect by itself. A defensible comparison would need to address the alternative changes and the relevant baseline. Rephrasing her objection as proof that reminders had failed would repeat the same mistake in the opposite direction. The response called for a better basis for attribution, while leaving open more than one possible explanation of the observed reduction.",
+        "options": [
+          {
+            "id": "v630222ebdfe7",
+            "label": "The fact that any appointments existed."
+          },
+          {
+            "id": "vfb3e34645412",
+            "label": "The possibility that reminders helped at all."
+          },
+          {
+            "id": "v8e655e1faede",
+            "label": "Attributing the whole reduction to reminders from before-and-after counts alone."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8e655e1faede"
+      },
+      "reference_answer": "v8e655e1faede",
+      "incorrect_answer": "vfb3e34645412",
+      "editorial_answer": "Attributing the whole reduction to reminders from before-and-after counts alone.",
+      "explanation": "Ответ подтверждён текстом: «Attributing the whole reduction to reminders from before-and-after counts alone.». Другие варианты изменяют указанное обстоятельство.",
+      "key": "e05"
+    },
+    {
+      "kind": "matching",
+      "prompt": "Соедини слова со значениями в контексте урока.",
+      "public_payload": {
+        "left": [
+          {
+            "id": "lf497cf5ae28c",
+            "label": "counterfactual"
+          },
+          {
+            "id": "l25db96f2a1c5",
+            "label": "baseline"
+          },
+          {
+            "id": "l4165f1b54b58",
+            "label": "attribution"
+          },
+          {
+            "id": "l69d1056a49e0",
+            "label": "intervention"
+          }
+        ],
+        "right": [
+          {
+            "id": "r9ebdb87b3132",
+            "label": "контрфактический"
+          },
+          {
+            "id": "r7fdb9c305355",
+            "label": "база сравнения"
+          },
+          {
+            "id": "r6d68c6490517",
+            "label": "приписывание причины"
+          },
+          {
+            "id": "re0d1bfacdf82",
+            "label": "вмешательство"
+          }
+        ]
+      },
+      "answer_key": {
+        "pairs": {
+          "lf497cf5ae28c": "r9ebdb87b3132",
+          "l25db96f2a1c5": "r7fdb9c305355",
+          "l4165f1b54b58": "r6d68c6490517",
+          "l69d1056a49e0": "re0d1bfacdf82"
+        }
+      },
+      "reference_answer": {
+        "lf497cf5ae28c": "r9ebdb87b3132",
+        "l25db96f2a1c5": "r7fdb9c305355",
+        "l4165f1b54b58": "r6d68c6490517",
+        "l69d1056a49e0": "re0d1bfacdf82"
+      },
+      "incorrect_answer": {
+        "lf497cf5ae28c": "r7fdb9c305355",
+        "l25db96f2a1c5": "r9ebdb87b3132",
+        "l4165f1b54b58": "r6d68c6490517",
+        "l69d1056a49e0": "re0d1bfacdf82"
+      },
+      "editorial_answer": "counterfactual — контрфактический; baseline — база сравнения; attribution — приписывание причины; intervention — вмешательство",
+      "explanation": "Контекстные значения: counterfactual — контрфактический; baseline — база сравнения; attribution — приписывание причины; intervention — вмешательство.",
+      "key": "e06"
+    },
+    {
+      "kind": "reading",
+      "prompt": "Какой пересказ её позиции ошибочен?",
+      "public_payload": {
+        "passage": "A report credited a new reminder system with reducing missed appointments because the number fell after its introduction. A critical response asked what would probably have happened without the system. The same period included a timetable change and fewer appointments overall. The critic did not deny that reminders might have helped; she challenged the assumption that the observed before-and-after difference measured their effect by itself. A defensible comparison would need to address the alternative changes and the relevant baseline. Rephrasing her objection as proof that reminders had failed would repeat the same mistake in the opposite direction. The response called for a better basis for attribution, while leaving open more than one possible explanation of the observed reduction.",
+        "options": [
+          {
+            "id": "vae3e221e417d",
+            "label": "Alternative changes need consideration."
+          },
+          {
+            "id": "ved48c690cf5e",
+            "label": "The criticism proves the reminders failed."
+          },
+          {
+            "id": "vb9d47e43839a",
+            "label": "The relevant baseline matters."
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "ved48c690cf5e"
+      },
+      "reference_answer": "ved48c690cf5e",
+      "incorrect_answer": "vae3e221e417d",
+      "editorial_answer": "The criticism proves the reminders failed.",
+      "explanation": "Сохраняем информацию текста: «The criticism proves the reminders failed.». Другие варианты не передают названный факт или усиливают вывод без основания.",
+      "key": "e07"
+    },
+    {
+      "kind": "context_choice",
+      "prompt": "«Контрфактическая точка сравнения»: выбери перевод выделенного слова в данном контексте.",
+      "public_payload": {
+        "sentence": "In this lesson, “baseline” means ___.",
+        "options": [
+          {
+            "id": "v762311fb46ee",
+            "label": "вмешательство"
+          },
+          {
+            "id": "va11c5bc04dc2",
+            "label": "приписывание причины"
+          },
+          {
+            "id": "v8a804c8daa74",
+            "label": "база сравнения"
+          }
+        ]
+      },
+      "answer_key": {
+        "value": "v8a804c8daa74"
+      },
+      "reference_answer": "v8a804c8daa74",
+      "incorrect_answer": "va11c5bc04dc2",
+      "editorial_answer": "база сравнения",
+      "explanation": "Здесь baseline — «база сравнения», а не значение других слов из списка.",
+      "key": "e08"
+    }
+  ]
+}
