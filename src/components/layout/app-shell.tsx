@@ -9,6 +9,7 @@ import {
   Zap,
   Layers,
   Settings,
+  Crown,
 } from 'lucide-react';
 import { getDictionary } from '@/lib/i18n';
 import { cn } from '@/lib/utils';
@@ -19,6 +20,7 @@ const links = [
   { href: '/learn', label: t.nav.learn, icon: BookOpen },
   { href: '/courses', label: t.nav.courses, icon: Layers },
   { href: '/review', label: 'Повторение', icon: RotateCcw },
+  { href: '/premium', label: 'Premium', icon: Crown },
   { href: '/profile', label: t.nav.profile, icon: UserRound },
 ];
 export function AppShell({ children }: { children: React.ReactNode }) {
@@ -63,33 +65,32 @@ export function AppShell({ children }: { children: React.ReactNode }) {
       </main>
       <nav
         aria-label="Основная навигация"
-        className="border-border bg-background/95 fixed bottom-0 z-20 grid w-full max-w-lg grid-cols-5 border-t px-2 pt-2 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur-xl"
+        className="border-border bg-background/95 fixed bottom-0 z-20 grid w-full max-w-lg grid-cols-6 border-t px-1 pt-2 pb-[max(0.75rem,env(safe-area-inset-bottom))] backdrop-blur-xl"
       >
         {links.map(({ href, label, icon: Icon }) => {
           const active =
             path === href ||
-            (href === '/learn' &&
-              [
-                '/lesson',
-                '/placement',
-                '/learning-plan',
-                '/stories',
-                '/weak-training',
-              ].includes(path)) ||
+            (href === '/learn' && ['/lesson', '/placement'].includes(path)) ||
             (href === '/courses' && path === '/library') ||
+            (href === '/premium' &&
+              (path.startsWith('/premium/') ||
+                [
+                  '/learning-plan',
+                  '/stories',
+                  '/weak-training',
+                  '/analytics',
+                  '/dictionary',
+                  '/challenges',
+                  '/appearance',
+                  '/extended-test',
+                ].includes(path))) ||
             (href === '/profile' &&
               [
                 '/settings',
                 '/achievements',
                 '/leaderboard',
                 '/friends',
-                '/premium',
                 '/admin',
-                '/analytics',
-                '/dictionary',
-                '/challenges',
-                '/appearance',
-                '/extended-test',
               ].includes(path));
           return (
             <Link

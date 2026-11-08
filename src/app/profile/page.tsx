@@ -25,67 +25,7 @@ export default function ProfilePage() {
         }
       />
       <TelegramAccount />
-      <Link
-        href="/appearance"
-        className="text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
-      >
-        Оформление интерфейса →
-      </Link>
-      <Link
-        href="/extended-test"
-        className="text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
-      >
-        Расширенный тест английского →
-      </Link>
       <ChallengeProfileStyle />
-      <Link
-        href="/challenges"
-        className="border-primary/30 bg-primary/10 text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
-      >
-        Испытания и косметические награды →
-      </Link>
-      <Link
-        href="/weak-training"
-        className="border-primary/30 bg-primary/10 text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
-      >
-        Тренировка слабых тем · Premium →
-      </Link>
-      <Link
-        href="/stories"
-        className="border-primary/30 bg-primary/10 text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
-      >
-        Интерактивные истории →
-      </Link>
-      <Link
-        href="/dictionary"
-        className="border-primary/30 bg-primary/10 text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
-      >
-        Мой словарь →
-      </Link>
-      <Link
-        href="/analytics"
-        className="border-primary/40 bg-primary/10 text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
-      >
-        Аналитика английского · Premium →
-      </Link>
-      <Link
-        href="/friends"
-        className="border-border bg-card text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
-      >
-        Друзья и приглашения →
-      </Link>
-      <Link
-        href="/premium"
-        className="border-primary/40 bg-primary/10 text-primary mb-4 flex min-h-12 items-center rounded-2xl border px-4 text-sm font-bold"
-      >
-        Premium · статус и возможности →
-      </Link>
-      <Link
-        href="/admin"
-        className="text-muted-foreground mb-5 flex min-h-11 items-center text-xs"
-      >
-        Администрирование →
-      </Link>
       <PlacementProfile />
       <LearnerOverviewPanel mode="profile" />
       <LearningPlanLink />
@@ -102,6 +42,23 @@ export default function ProfilePage() {
         Рейтинг учеников →
       </Link>
       <GameDashboard />
+      <nav
+        aria-label="Дополнительно в профиле"
+        className="mt-5 space-y-2 border-t pt-4"
+      >
+        <Link
+          href="/friends"
+          className="text-primary flex min-h-12 items-center text-sm"
+        >
+          Друзья и приглашения →
+        </Link>
+        <Link
+          href="/admin"
+          className="text-muted-foreground flex min-h-11 items-center text-xs"
+        >
+          Администрирование →
+        </Link>
+      </nav>
     </>
   );
 }

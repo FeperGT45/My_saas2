@@ -24,7 +24,7 @@ type Features = {
     reviewAfter: string;
   }[];
 };
-export function PremiumPanel() {
+export function PremiumPanel({ children }: { children?: React.ReactNode }) {
   const { account } = useTelegram();
   const { status, error: accessError, refresh, can } = usePremium();
   const [featureState, setFeatures] = useState<{
@@ -154,6 +154,7 @@ export function PremiumPanel() {
             </p>
           )}
       </Card>
+      {children}
       <PremiumShowcase />
       <div className="my-5 space-y-4">
         {[

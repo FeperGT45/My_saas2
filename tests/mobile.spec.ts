@@ -53,6 +53,7 @@ test('navigation follows the real catalog, learning plan and profile screens', a
     ['Мои уроки', '/learn'],
     ['Все уроки', '/courses'],
     ['Повторение', '/review'],
+    ['Premium', '/premium'],
     ['Профиль', '/profile'],
     ['Главная', '/'],
   ]) {

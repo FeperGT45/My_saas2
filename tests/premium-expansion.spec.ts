@@ -225,7 +225,7 @@ test('appearance, 36-question assessment and signed Stars delivery work on isola
       p.getByRole('heading', { name: 'Premium в действии' }),
     ).toBeVisible();
     await expect(
-      p.getByRole('link', { name: 'Посмотреть возможность →' }),
+      p.getByRole('region', { name: 'Все функции Premium' }).getByRole('link'),
     ).toHaveCount(8);
     expect(
       (
@@ -280,9 +280,24 @@ test('new pages render on configured runtime and protected endpoints deny anonym
   request,
 }) => {
   await page.setViewportSize({ width: 320, height: 844 });
-  for (const path of ['/appearance', '/extended-test', '/premium']) {
+  for (const path of [
+    '/learning-plan',
+    '/analytics',
+    '/dictionary',
+    '/stories',
+    '/weak-training',
+    '/challenges',
+    '/appearance',
+    '/extended-test',
+    '/premium',
+  ]) {
     await page.goto(path);
     await expect(page.getByRole('main')).toBeVisible();
+    await expect(
+      page
+        .getByRole('navigation', { name: 'Основная навигация' })
+        .getByRole('link', { name: 'Premium', exact: true }),
+    ).toHaveAttribute('aria-current', 'page');
   }
   await expect(page.getByText('49 ⭐', { exact: true })).toBeVisible();
   await expect(page.getByText('149 ⭐', { exact: true })).toBeVisible();

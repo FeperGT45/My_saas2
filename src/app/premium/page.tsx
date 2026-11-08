@@ -1,5 +1,6 @@
 import { PageTitle } from '@/components/ui/game';
 import { PremiumPanel } from '@/features/premium/premium-panel';
+import { PremiumFeatureHub } from '@/features/premium/feature-hub';
 export const metadata = { title: 'Premium' };
 export default function PremiumPage() {
   return (
@@ -7,9 +8,11 @@ export default function PremiumPage() {
       <PageTitle
         eyebrow="Твой следующий шаг"
         title="Voklumi Premium"
-        description="Учись в своём темпе — возможности под твои цели."
+        description="Все расширенные возможности в одном месте. Выбери, чем заняться сегодня."
       />
-      <PremiumPanel />
+      <PremiumPanel>
+        <PremiumFeatureHub />
+      </PremiumPanel>
     </>
   );
 }
