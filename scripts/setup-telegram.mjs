@@ -43,6 +43,8 @@ await call('setMyCommands', {
       command: 'support',
       description: 'Написать в поддержку: ошибки, баги, советы',
     },
+    { command: 'tickets', description: 'Мои заявки поддержки' },
+    { command: 'cancel', description: 'Выйти из переписки с поддержкой' },
     { command: 'paysupport', description: 'Помощь с покупками' },
     { command: 'terms', description: 'Условия покупки' },
     { command: 'privacy', description: 'Конфиденциальность и удаление данных' },
@@ -58,20 +60,25 @@ await call('setChatMenuButton', {
 await call('setWebhook', {
   url: new URL('/api/telegram/webhook', url).href,
   secret_token: secret,
-  allowed_updates: ['message', 'pre_checkout_query'],
+  allowed_updates: ['message', 'pre_checkout_query', 'callback_query'],
   drop_pending_updates: false,
 });
 const commands = await call('getMyCommands', {});
-if (!Array.isArray(commands) || !commands.some((c) => c.command === 'support'))
+if (
+  !Array.isArray(commands) ||
+  !['support', 'tickets', 'cancel', 'paysupport'].every((name) =>
+    commands.some((c) => c.command === name),
+  )
+)
   throw new Error('Telegram support command was not confirmed.');
 const webhook = await call('getWebhookInfo', {});
 if (
   webhook.url !== new URL('/api/telegram/webhook', url).href ||
-  !['message', 'pre_checkout_query'].every((type) =>
+  !['message', 'pre_checkout_query', 'callback_query'].every((type) =>
     webhook.allowed_updates?.includes(type),
   )
 )
   throw new Error('Telegram payment webhook configuration was not confirmed.');
 console.log(
-  'Voklumi bot, general and payment support commands and message/pre-checkout webhook verified.',
+  'Voklumi bot, general and payment support commands and message/pre-checkout/callback webhook verified.',
 );

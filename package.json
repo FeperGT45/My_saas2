@@ -71,7 +71,8 @@
     "premium:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-premium.ts",
     "test:devices": "playwright test --config playwright.devices.config.ts",
     "release:load": "node scripts/check-load.mjs",
-    "ops:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-ops.ts"
+    "ops:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-ops.ts",
+    "support:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-support.ts"
   },
   "repository": {
     "type": "git",

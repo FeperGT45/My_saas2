@@ -3,12 +3,8 @@ import { handleStarsWebhook } from '@/lib/billing/webhook';
 import { telegramCall } from '@/lib/billing/telegram';
 import { readBodyText } from '@/lib/auth/body';
 import { equalSecret } from '@/lib/auth/security';
-import {
-  startMessage,
-  startReply,
-  supportMessage,
-  supportReply,
-} from '@/lib/telegram/bot';
+import { startMessage, startReply } from '@/lib/telegram/bot';
+import { handleSupportWebhook } from '@/lib/support/server';
 import { premiumSupportUrl } from '@/lib/billing/plans';
 export const runtime = 'nodejs';
 export async function POST(request: Request) {
@@ -33,24 +29,8 @@ export async function POST(request: Request) {
       update?.message?.refunded_payment,
     );
     if (await handleStarsWebhook(update)) return Response.json({ ok: true });
+    if (await handleSupportWebhook(update)) return Response.json({ ok: true });
     const message = update.message;
-    const help =
-      message?.chat?.type === 'private' &&
-      Number.isSafeInteger(message.chat.id) &&
-      message.chat.id === message.from?.id &&
-      typeof message.text === 'string'
-        ? supportMessage(
-            message.text,
-            process.env.TELEGRAM_BOT_USERNAME ?? 'Voklumi_bot',
-          )
-        : null;
-    if (help) {
-      await telegramCall('sendMessage', {
-        chat_id: message.chat.id,
-        ...supportReply(help === 'paysupport'),
-      });
-      return Response.json({ ok: true });
-    }
     if (
       message?.chat?.type === 'private' &&
       message.chat.id === message.from?.id &&
@@ -64,8 +44,7 @@ export async function POST(request: Request) {
           text:
             'Конфиденциальность и запрос удаления аккаунта: ' +
             new URL('/privacy', process.env.APP_URL).href +
-            '\nЗаявка отправляется после входа в Mini App. Если вход недоступен, напиши в поддержку: ' +
-            premiumSupportUrl,
+            '\nЗаявка отправляется после входа в Mini App. Если вход недоступен, создай тикет в этом боте: /support',
         });
         return Response.json({ ok: true });
       }

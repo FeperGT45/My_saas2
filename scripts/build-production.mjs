@@ -77,6 +77,7 @@ try {
   await run('challenges:check', env);
   await run('premium:expansion-check', env);
   await run('ops:check', env);
+  await run('support:check', env);
   await run('build:cloudflare', env);
 } catch (error) {
   console.error(

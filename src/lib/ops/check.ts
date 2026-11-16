@@ -1,4 +1,5 @@
 import 'server-only';
+import { deliverSupport } from '@/lib/support/server';
 import { createServiceClient } from '@/lib/supabase/service';
 import { telegramCall } from '@/lib/billing/telegram';
 import { billingConfiguration } from '@/lib/billing/config';
@@ -102,7 +103,7 @@ export async function checkOperations() {
     checks.webhook =
       webhook.url ===
         new URL('/api/telegram/webhook', process.env.APP_URL).href &&
-      ['message', 'pre_checkout_query'].every((t) =>
+      ['message', 'pre_checkout_query', 'callback_query'].every((t) =>
         webhook.allowed_updates?.includes(t),
       ) &&
       !(
@@ -111,6 +112,12 @@ export async function checkOperations() {
       );
   } catch {
     checks.webhook = false;
+  }
+  try {
+    await deliverSupport(null, 10);
+    checks.support = true;
+  } catch {
+    checks.support = false;
   }
   const [events, requests] = await Promise.all([
     db
