@@ -63,10 +63,10 @@ it('never edits an issue created by another person, even with a copied marker', 
 });
 
 it('logs only allowlisted boolean checks when operations are degraded', async () => {
-  const fetcher = async (url: string) =>
+  const fetcher = async (input: RequestInfo | URL) =>
     new Response(
       JSON.stringify(
-        url.endsWith('/api/ops/check')
+        String(input).endsWith('/api/ops/check')
           ? {
               checks: {
                 database: true,
@@ -79,7 +79,7 @@ it('logs only allowlisted boolean checks when operations are degraded', async ()
             }
           : { status: 'ok' },
       ),
-      { status: url.endsWith('/api/ops/check') ? 503 : 200 },
+      { status: String(input).endsWith('/api/ops/check') ? 503 : 200 },
     );
   const results = await probe(fetcher, 'fake-oidc');
   expect(results[1]).toEqual({
