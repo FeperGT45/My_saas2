@@ -25,23 +25,35 @@ const routes = [
   '/settings',
 ];
 for (const width of [320, 390, 768]) {
-  test(`screens fit ${width}px without client errors`, async ({ page }) => {
-    await page.setViewportSize({ width, height: 844 });
-    const errors: string[] = [];
-    page.on('pageerror', (e) => errors.push(e.message));
+  test(`screens fit ${width}px without client errors`, async ({ context }) => {
+    test.setTimeout(90000);
     for (const route of routes) {
-      await page.goto(route);
-      await expect(page.getByRole('heading', { level: 1 })).toBeVisible();
-      await expect(
-        page.getByRole('navigation', { name: 'Основная навигация' }),
-      ).toBeVisible();
-      expect(
-        await page.evaluate(
-          () => document.documentElement.scrollWidth <= innerWidth,
-        ),
-      ).toBe(true);
+      // Independent direct entries: do not cancel Next prefetch by replacing a live document.
+      // Client-side navigation is covered separately below.
+      const screen = await context.newPage();
+      const errors: string[] = [];
+      screen.on('pageerror', (e) => errors.push(e.message));
+      try {
+        await screen.setViewportSize({ width, height: 844 });
+        await screen.goto(route);
+        await expect(
+          screen.getByText('Обзор в браузере', { exact: false }),
+        ).toBeVisible();
+        await expect(screen.getByRole('heading', { level: 1 })).toBeVisible();
+        await expect(
+          screen.getByRole('navigation', { name: 'Основная навигация' }),
+        ).toBeVisible();
+        expect(
+          await screen.evaluate(
+            () => document.documentElement.scrollWidth <= innerWidth,
+          ),
+          route,
+        ).toBe(true);
+        expect(errors, route).toEqual([]);
+      } finally {
+        await screen.close();
+      }
     }
-    expect(errors).toEqual([]);
   });
 }
 test('navigation follows the real catalog, learning plan and profile screens', async ({

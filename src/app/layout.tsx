@@ -3,6 +3,7 @@ import { AppShell } from '@/components/layout/app-shell';
 import { TelegramProvider } from '@/features/telegram/provider';
 import { SoundProvider } from '@/features/sound/sound-provider';
 import './globals.css';
+import { ExperienceProvider } from '@/features/experience/experience-provider';
 import { AppearanceProvider } from '@/features/personalization/appearance';
 export const metadata: Metadata = {
   title: { default: 'Voklumi — учись играя', template: '%s · Voklumi' },
@@ -20,13 +21,15 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body>
-        <SoundProvider>
-          <TelegramProvider>
-            <AppearanceProvider>
-              <AppShell>{children}</AppShell>
-            </AppearanceProvider>
-          </TelegramProvider>
-        </SoundProvider>
+        <ExperienceProvider>
+          <SoundProvider>
+            <TelegramProvider>
+              <AppearanceProvider>
+                <AppShell>{children}</AppShell>
+              </AppearanceProvider>
+            </TelegramProvider>
+          </SoundProvider>
+        </ExperienceProvider>
       </body>
     </html>
   );

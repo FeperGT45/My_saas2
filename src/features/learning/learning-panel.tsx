@@ -1,7 +1,8 @@
 'use client';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion } from 'motion/react';
+import { useReducedEffects } from '@/features/experience/experience-provider';
 import { ArrowRight, Route, CheckCircle2, RotateCcw } from 'lucide-react';
 import { Card } from '@/components/ui/game';
 import { Button } from '@/components/ui/button';
@@ -43,7 +44,7 @@ export function LearningPanel() {
 }
 function AccountLearningPanel() {
   const { account, status, authError } = useTelegram();
-  const reduced = useReducedMotion();
+  const reduced = useReducedEffects();
   const [data, setData] = useState<LearningPlan | null>(null);
   const [error, setError] = useState('');
   const [busy, setBusy] = useState(false);

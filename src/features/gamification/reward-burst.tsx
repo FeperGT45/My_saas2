@@ -1,11 +1,12 @@
 'use client';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion } from 'motion/react';
+import { useReducedEffects } from '@/features/experience/experience-provider';
 import { Coins, Sparkles, Flame, Trophy } from 'lucide-react';
 import { Card } from '@/components/ui/game';
 import type { Rewards } from './types';
 import { LessonFinishEffect } from '@/features/personalization/appearance';
 export function RewardBurst({ rewards }: { rewards?: Rewards }) {
-  const reduced = useReducedMotion();
+  const reduced = useReducedEffects();
   if (!rewards || rewards.eligible === undefined) return null;
   if (!rewards.eligible)
     return (

@@ -2,7 +2,8 @@
 import Link from 'next/link';
 import { useRef, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion } from 'motion/react';
+import { useReducedEffects } from '@/features/experience/experience-provider';
 import {
   Sparkles,
   CheckCircle2,
@@ -83,7 +84,7 @@ function Result({
   onRoute: (level: (typeof cefrLevels)[number]) => void;
   onRetest: () => void;
 }) {
-  const reduced = useReducedMotion();
+  const reduced = useReducedEffects();
   const assessment = data.assessment!;
   const detail = levelDetails[assessment.level];
   const first = data.recommendations[0];
@@ -258,7 +259,7 @@ export function PlacementPanel(props: { retest?: boolean }) {
 function PlacementPanelForAccount({ retest = false }: { retest?: boolean }) {
   const model = usePlacement();
   const { data, account, busy, error, refresh, mutate } = model;
-  const reduced = useReducedMotion();
+  const reduced = useReducedEffects();
   const [retake, setRetake] = useState(retest);
   const [selected, setSelected] = useState('');
   const [feedback, setFeedback] = useState<{

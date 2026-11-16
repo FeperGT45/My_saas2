@@ -158,3 +158,12 @@ nav[aria-label='Основная навигация'] {
     var(--tg-viewport-safe-area-inset-bottom, 0px)
   );
 }
+
+/* User preference also covers CSS animations outside Motion. */
+html[data-effects='off'] *,
+html[data-effects='off'] *::before,
+html[data-effects='off'] *::after {
+  animation: none !important;
+  transition: none !important;
+  scroll-behavior: auto !important;
+}

@@ -2,7 +2,8 @@
 import { fetchWithTimeout, readJson } from '@/lib/http/client';
 import { useEffect, useRef, useState, useSyncExternalStore } from 'react';
 import Link from 'next/link';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion } from 'motion/react';
+import { useReducedEffects } from '@/features/experience/experience-provider';
 import { X, ArrowRight, RotateCcw, CheckCircle2, Info } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, Progress } from '@/components/ui/game';
@@ -45,7 +46,7 @@ export function LessonPlayer({
   const [error, setError] = useState<string | null>(null);
   const locked = useRef(false);
   const requestId = useRef<string | null>(null);
-  const reduced = useReducedMotion();
+  const reduced = useReducedEffects();
   const playSound = useSoundEffects();
   const hydrated = useSyncExternalStore(
     subscribeHydration,

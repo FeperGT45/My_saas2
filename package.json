@@ -68,7 +68,9 @@
     "dictionary:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-dictionary.ts",
     "analytics:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-analytics.ts",
     "weekly:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-weekly.ts",
-    "premium:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-premium.ts"
+    "premium:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-premium.ts",
+    "test:devices": "playwright test --config playwright.devices.config.ts",
+    "release:load": "node scripts/check-load.mjs"
   },
   "repository": {
     "type": "git",

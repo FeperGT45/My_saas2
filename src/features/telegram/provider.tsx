@@ -1,4 +1,5 @@
 'use client';
+import { setHapticBridge } from '@/lib/experience/preferences';
 import { createContext, useContext, useEffect, useRef, useState } from 'react';
 import { fetchWithTimeout, readJson } from '@/lib/http/client';
 import { usePathname, useRouter } from 'next/navigation';
@@ -67,7 +68,21 @@ export function TelegramProvider({ children }: { children: React.ReactNode }) {
           await refresh();
           return;
         }
-        cleanup = sdk.init();
+        const disposeSdk = sdk.init();
+        setHapticBridge({
+          impact: () => {
+            if (sdk.hapticFeedback.impactOccurred.isAvailable())
+              sdk.hapticFeedback.impactOccurred('light');
+          },
+          notification: (type) => {
+            if (sdk.hapticFeedback.notificationOccurred.isAvailable())
+              sdk.hapticFeedback.notificationOccurred(type);
+          },
+        });
+        cleanup = () => {
+          setHapticBridge(null);
+          disposeSdk();
+        };
         if (sdk.miniApp.mount.isAvailable()) await sdk.miniApp.mount();
         if (sdk.viewport.mount.isAvailable()) await sdk.viewport.mount();
         if (!active) return;

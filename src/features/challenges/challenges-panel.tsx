@@ -1,7 +1,8 @@
 'use client';
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion } from 'motion/react';
+import { useReducedEffects } from '@/features/experience/experience-provider';
 import { Sparkles, Trophy, Timer, LockKeyhole } from 'lucide-react';
 import { Card, Progress } from '@/components/ui/game';
 import { Button } from '@/components/ui/button';
@@ -85,7 +86,7 @@ export function ChallengesPanel() {
 }
 function AccountChallenges() {
   const { account } = useTelegram(),
-    reduced = useReducedMotion(),
+    reduced = useReducedEffects(),
     sound = useSoundEffects();
   const [data, setData] = useState<Challenges | null>(null),
     [run, setRun] = useState<SprintState | null>(null),

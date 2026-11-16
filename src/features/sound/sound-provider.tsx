@@ -1,4 +1,5 @@
 'use client';
+import { playHaptic } from '@/lib/experience/preferences';
 import { useEffect, useSyncExternalStore, useRef, useCallback } from 'react';
 import {
   defaultSoundPreferences,
@@ -30,7 +31,10 @@ export function useSoundEffects() {
     };
   }, []);
   return useCallback((cue: SoundCue) => {
-    if (mounted.current) playSound(cue);
+    if (mounted.current) {
+      playSound(cue);
+      playHaptic(cue);
+    }
   }, []);
 }
 export function SoundProvider({ children }: { children: React.ReactNode }) {

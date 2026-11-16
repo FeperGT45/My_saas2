@@ -16,3 +16,4 @@ test-results-cloudflare/
 .dev.vars*
 
 supabase/.temp/
+/test-results-devices/

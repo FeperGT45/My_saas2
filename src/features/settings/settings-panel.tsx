@@ -9,6 +9,11 @@ import {
   ShieldCheck,
   RotateCcw,
 } from 'lucide-react';
+import { useExperiencePreferences } from '@/features/experience/experience-provider';
+import {
+  setExperiencePreferences,
+  defaultExperiencePreferences,
+} from '@/lib/experience/preferences';
 import { Card, PageTitle } from '@/components/ui/game';
 import { Button } from '@/components/ui/button';
 import { useSoundPreferences } from '@/features/sound/sound-provider';
@@ -19,26 +24,21 @@ import {
   playSound,
 } from '@/lib/sound/audio';
 export function SettingsPanel() {
-  const [settings, setSettings] = useState({
-    sound: true,
-    speech: true,
-    haptics: false,
-    effects: true,
-  });
+  const experience = useExperiencePreferences();
   const [notice, setNotice] = useState('');
   const sound = useSoundPreferences();
-  const checked = (key: keyof typeof settings) =>
+  const checked = (key: 'sound' | 'speech' | 'haptics' | 'effects') =>
     key === 'sound'
       ? sound.enabled
       : key === 'speech'
         ? sound.speech
-        : settings[key];
+        : experience[key];
   return (
     <>
       <PageTitle
         eyebrow="Твой ритм"
         title="Всё под тебя"
-        description="Настройки звука сохраняются на этом устройстве. Виброотклик и эффекты пока работают в демонстрационном режиме."
+        description="Настройки сохраняются на этом устройстве. Виброотклик доступен в поддерживаемых клиентах Telegram."
       />
       <Card>
         <h2 className="eyebrow mb-2">Впечатления</h2>
@@ -60,13 +60,13 @@ export function SettingsPanel() {
             key: 'haptics' as const,
             icon: Vibrate,
             label: 'Виброотклик',
-            description: 'Пример настройки отклика',
+            description: 'Отклик на нажатия и результаты ответов в Telegram',
           },
           {
             key: 'effects' as const,
             icon: Sparkles,
             label: 'Эффекты',
-            description: 'Пример настройки анимаций',
+            description: 'Анимации переходов, карточек и наград',
           },
         ].map(({ key, icon: Icon, label, description }) => (
           <div
@@ -94,11 +94,9 @@ export function SettingsPanel() {
                   setSoundPreferences({ enabled: !sound.enabled });
                 else if (key === 'speech')
                   setSoundPreferences({ speech: !sound.speech });
-                else setSettings((s) => ({ ...s, [key]: !s[key] }));
+                else setExperiencePreferences({ [key]: !experience[key] });
                 setNotice(
-                  key === 'sound' || key === 'speech'
-                    ? 'Настройки звука применены.'
-                    : 'Демонстрационный переключатель изменён. Настройка не сохранена.',
+                  'Настройки применены и сохранены на этом устройстве.',
                 );
               }}
               className="flex min-h-11 min-w-12 items-center justify-center"
@@ -143,12 +141,7 @@ export function SettingsPanel() {
         variant="outline"
         className="mt-5 w-full"
         onClick={() => {
-          setSettings({
-            sound: true,
-            speech: true,
-            haptics: false,
-            effects: true,
-          });
+          setExperiencePreferences(defaultExperiencePreferences);
           setSoundPreferences(defaultSoundPreferences);
           setNotice('Настройки сброшены.');
         }}
@@ -165,11 +158,11 @@ export function SettingsPanel() {
       <p className="text-muted-foreground mt-3 flex gap-2 text-[11px] leading-relaxed">
         <ShieldCheck size={18} className="shrink-0" />
         Системная настройка уменьшения движения учитывается автоматически.
-        Громкость устройства регулируется отдельно. Виброотклик и эффекты
-        остаются демонстрационными.
+        Громкость устройства регулируется отдельно. В браузере без поддержки
+        Telegram виброотклик недоступен.
       </p>
       <p className="text-muted-foreground mt-6 text-center text-[10px]">
-        VOKLUMI · UI PREVIEW 0.2
+        VOKLUMI · НАСТРОЙКИ УСТРОЙСТВА
       </p>
     </>
   );

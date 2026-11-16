@@ -1,7 +1,8 @@
 'use client';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion } from 'motion/react';
+import { useReducedEffects } from '@/features/experience/experience-provider';
 export function Reveal({ children }: { children: React.ReactNode }) {
-  const reduced = useReducedMotion();
+  const reduced = useReducedEffects();
   return (
     <motion.div
       initial={reduced ? false : { opacity: 0, y: 8 }}

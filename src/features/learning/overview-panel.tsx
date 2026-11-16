@@ -1,7 +1,8 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
-import { motion, useReducedMotion } from 'motion/react';
+import { motion } from 'motion/react';
+import { useReducedEffects } from '@/features/experience/experience-provider';
 import { Check, Flag, Play, BookOpen, RotateCcw } from 'lucide-react';
 import { useTelegram } from '@/features/telegram/provider';
 import { fetchWithTimeout, readJson } from '@/lib/http/client';
@@ -52,7 +53,7 @@ function AccountOverview({ mode }: { mode: 'map' | 'profile' | 'home' }) {
     [retry, setRetry] = useState(0),
     [course, setCourse] = useState(''),
     [saving, setSaving] = useState(false);
-  const reduced = useReducedMotion(),
+  const reduced = useReducedEffects(),
     active = useRef(true),
     locked = useRef(false);
   useEffect(() => {
