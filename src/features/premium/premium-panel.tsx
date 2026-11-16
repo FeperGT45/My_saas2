@@ -132,16 +132,18 @@ function PremiumContent({ children }: { children?: React.ReactNode }) {
       }
       const outcome = await sdk.invoice.openUrl(data.invoiceUrl);
       if (!mounted.current) return;
-      if (outcome === 'paid') {
+      if (outcome === 'paid' || outcome === 'pending') {
         setPaymentPending(true);
         setPolling(true);
       }
       setNotice(
         outcome === 'paid'
           ? 'Telegram сообщил об оплате. Ожидаем подтверждение сервера.'
-          : outcome === 'failed'
-            ? 'Telegram не подтвердил оплату. Проверь статус перед повтором.'
-            : 'Окно оплаты закрыто. Можно проверить статус Premium.',
+          : outcome === 'pending'
+            ? 'Telegram обрабатывает платёж. Ожидаем подтверждение сервера.'
+            : outcome === 'failed'
+              ? 'Telegram не подтвердил оплату. Проверь статус перед повтором.'
+              : 'Окно оплаты закрыто. Можно проверить статус Premium.',
       );
       refresh();
     } catch (e) {

@@ -240,3 +240,44 @@ test('delayed confirmation blocks duplicate purchase, stops fast polling and can
   );
   expect(invoices).toBe(1);
 });
+test('pending Telegram payment polls the server without claiming success or offering a second purchase', async ({
+  page,
+}) => {
+  await launch(page);
+  let confirmed = false;
+  await page.route(/\/api\/premium$/, (r) =>
+    r.fulfill({ json: access(confirmed) }),
+  );
+  await page.route('**/api/premium/invoice', (r) =>
+    r.fulfill({ json: { invoiceUrl: 'https://t.me/$isolated_fixture' } }),
+  );
+  await page.goto('/premium');
+  await expect(
+    page.getByText('Telegram · вход выполнен', { exact: false }),
+  ).toBeVisible();
+  await page.evaluate(() => {
+    (window as unknown as { outcome: string }).outcome = 'pending';
+  });
+  await page.getByRole('checkbox').check();
+  await page
+    .getByRole('button', { name: 'Открыть оплату Telegram Stars', exact: true })
+    .click();
+  await expect(
+    page.getByText('Telegram обрабатывает платёж.', { exact: false }),
+  ).toBeVisible();
+  await expect(
+    page.getByRole('button', {
+      name: 'Ожидаем подтверждение сервера',
+      exact: true,
+    }),
+  ).toBeDisabled();
+  await expect(page.getByRole('status', { name: 'Статус Premium' })).toHaveText(
+    'Текущий доступ: Free',
+  );
+  confirmed = true;
+  await expect(
+    page.getByText('Оплата подтверждена сервером. Premium активен!', {
+      exact: true,
+    }),
+  ).toBeVisible({ timeout: 10000 });
+});
