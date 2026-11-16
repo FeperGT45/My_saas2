@@ -19,11 +19,33 @@ export async function probe(fetcher = fetch, oidc = '') {
         redirect: 'error',
       });
       let valid = r.status === expected;
+      let checks;
       if (valid) {
         const data = await r.json();
         valid = data.status === 'ok';
+      } else if (path === '/api/ops/check' && r.status === 503) {
+        // Only explicit boolean health flags; never log arbitrary API error bodies.
+        const body = await r.json().catch(() => null);
+        const known = [
+          'database',
+          'operations',
+          'billing',
+          'webhook',
+          'support',
+        ];
+        if (body?.checks && typeof body.checks === 'object')
+          checks = Object.fromEntries(
+            known
+              .filter((key) => typeof body.checks[key] === 'boolean')
+              .map((key) => [key, body.checks[key]]),
+          );
       } else await r.body?.cancel();
-      results.push({ path, status: r.status, ok: valid });
+      results.push({
+        path,
+        status: r.status,
+        ok: valid,
+        ...(checks ? { checks } : {}),
+      });
     } catch {
       results.push({ path, status: 0, ok: false });
     }

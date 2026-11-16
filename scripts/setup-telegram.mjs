@@ -35,28 +35,46 @@ async function call(method, body) {
     throw new Error(`Telegram ${method} failed (details redacted)`);
   }
 }
-await call('setMyName', { name: 'Voklumi' });
-await call('setMyCommands', {
-  commands: [
-    { command: 'start', description: 'Открыть Voklumi' },
-    {
-      command: 'support',
-      description: 'Написать в поддержку: ошибки, баги, советы',
-    },
-    { command: 'tickets', description: 'Мои заявки поддержки' },
-    { command: 'cancel', description: 'Выйти из переписки с поддержкой' },
-    { command: 'paysupport', description: 'Помощь с покупками' },
-    { command: 'terms', description: 'Условия покупки' },
-    { command: 'privacy', description: 'Конфиденциальность и удаление данных' },
-  ],
-});
-await call('setChatMenuButton', {
-  menu_button: {
-    type: 'web_app',
-    text: 'Открыть Voklumi',
-    web_app: { url: url.href },
+// Avoid repeated profile/menu writes on every build: Telegram can rate-limit setters.
+const currentName = await call('getMyName', {});
+if (currentName?.name !== 'Voklumi')
+  await call('setMyName', { name: 'Voklumi' });
+const desiredCommands = [
+  { command: 'start', description: 'Открыть Voklumi' },
+  {
+    command: 'support',
+    description: 'Написать в поддержку: ошибки, баги, советы',
   },
-});
+  { command: 'tickets', description: 'Мои заявки поддержки' },
+  { command: 'cancel', description: 'Выйти из переписки с поддержкой' },
+  { command: 'paysupport', description: 'Помощь с покупками' },
+  { command: 'terms', description: 'Условия покупки' },
+  { command: 'privacy', description: 'Конфиденциальность и удаление данных' },
+];
+const existingCommands = await call('getMyCommands', {});
+if (
+  !Array.isArray(existingCommands) ||
+  existingCommands.length !== desiredCommands.length ||
+  desiredCommands.some(
+    (c, i) =>
+      existingCommands[i]?.command !== c.command ||
+      existingCommands[i]?.description !== c.description,
+  )
+)
+  await call('setMyCommands', { commands: desiredCommands });
+const desiredMenu = {
+  type: 'web_app',
+  text: 'Открыть Voklumi',
+  web_app: { url: url.href },
+};
+const existingMenu = await call('getChatMenuButton', {});
+if (
+  existingMenu?.type !== desiredMenu.type ||
+  existingMenu?.text !== desiredMenu.text ||
+  existingMenu?.web_app?.url !== url.href
+)
+  await call('setChatMenuButton', { menu_button: desiredMenu });
+// Always apply the webhook: the secret may have rotated even if its public URL is unchanged.
 await call('setWebhook', {
   url: new URL('/api/telegram/webhook', url).href,
   secret_token: secret,

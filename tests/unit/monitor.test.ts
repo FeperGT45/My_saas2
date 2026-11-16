@@ -61,3 +61,32 @@ it('never edits an issue created by another person, even with a copied marker', 
   await reconcileIssue(api, failed, 'https://github.com/test/run');
   expect(api.mock.calls.map((c) => c[0])).toEqual(['GET', 'POST']);
 });
+
+it('logs only allowlisted boolean checks when operations are degraded', async () => {
+  const fetcher = async (url: string) =>
+    new Response(
+      JSON.stringify(
+        url.endsWith('/api/ops/check')
+          ? {
+              checks: {
+                database: true,
+                webhook: false,
+                support: true,
+                privateText: 'secret',
+                billing: 'token',
+              },
+              secret: 'never-log',
+            }
+          : { status: 'ok' },
+      ),
+      { status: url.endsWith('/api/ops/check') ? 503 : 200 },
+    );
+  const results = await probe(fetcher, 'fake-oidc');
+  expect(results[1]).toEqual({
+    path: '/api/ops/check',
+    status: 503,
+    ok: false,
+    checks: { database: true, webhook: false, support: true },
+  });
+  expect(JSON.stringify(results)).not.toContain('secret');
+});
