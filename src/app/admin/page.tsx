@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { PageTitle } from '@/components/ui/game';
 import { AdminPanel } from '@/features/admin/panel';
 import { AdminAccessMessage } from '@/features/admin/access-message';
@@ -29,7 +30,21 @@ export default async function AdminPage() {
         description="Контент, учебная активность и подписки."
       />
       {permitted ? (
-        <AdminPanel owner={owner} />
+        <>
+          <Link
+            href="/admin/privacy"
+            className="text-primary mb-4 flex min-h-12 items-center rounded-2xl border p-4"
+          >
+            Заявки на удаление аккаунтов →
+          </Link>
+          <Link
+            href="/admin/operations"
+            className="text-primary mb-4 flex min-h-12 items-center rounded-2xl border p-4"
+          >
+            Мониторинг и уведомления →
+          </Link>
+          <AdminPanel owner={owner} />
+        </>
       ) : (
         <AdminAccessMessage unavailable={unavailable} />
       )}

@@ -70,7 +70,8 @@
     "weekly:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-weekly.ts",
     "premium:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-premium.ts",
     "test:devices": "playwright test --config playwright.devices.config.ts",
-    "release:load": "node scripts/check-load.mjs"
+    "release:load": "node scripts/check-load.mjs",
+    "ops:check": "node --env-file-if-exists=.env.local --import tsx scripts/check-ops.ts"
   },
   "repository": {
     "type": "git",

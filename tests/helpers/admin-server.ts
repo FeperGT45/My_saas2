@@ -120,11 +120,47 @@ export async function adminServer(
                 ],
               )
             ).rows[0] ?? null;
-        else if (req.method === 'POST') {
+        else if (url.pathname === '/rest/v1/privacy_deletion_requests') {
+          const owner = url.searchParams.get('user_id')?.slice(3);
+          data = (
+            await db.query(
+              'SELECT id,user_id,status,created_at FROM public.privacy_deletion_requests ' +
+                (owner ? 'WHERE user_id=$1 ' : '') +
+                'ORDER BY created_at DESC LIMIT ' +
+                (owner ? '1' : '50'),
+              owner ? [owner] : [],
+            )
+          ).rows;
+        } else if (url.pathname === '/rest/v1/ops_error_counters') {
+          data = (
+            await db.query(
+              'SELECT code,occurrences,last_seen_at FROM public.ops_error_counters ORDER BY last_seen_at DESC',
+            )
+          ).rows;
+        } else if (url.pathname === '/rest/v1/ops_notification_leases') {
+          data = (
+            await db.query(
+              'SELECT delivered_at FROM public.ops_notification_leases WHERE key=$1',
+              [url.searchParams.get('key')?.slice(3)],
+            )
+          ).rows;
+        } else if (req.method === 'POST') {
           const chunks: Buffer[] = [];
           for await (const chunk of req) chunks.push(Buffer.from(chunk));
           const b = JSON.parse(Buffer.concat(chunks).toString());
-          if (url.pathname === '/rest/v1/rpc/create_social_telegram_session')
+          if (url.pathname === '/rest/v1/rpc/request_account_deletion')
+            data = (
+              await db.query<{ data: unknown }>(
+                'SELECT public.request_account_deletion($1,$2) AS data',
+                [b.p_user, b.p_request],
+              )
+            ).rows[0].data;
+          else if (url.pathname === '/rest/v1/rpc/record_ops_error') {
+            await db.query('SELECT public.record_ops_error($1)', [b.p_code]);
+            data = null;
+          } else if (
+            url.pathname === '/rest/v1/rpc/create_social_telegram_session'
+          )
             data = (
               await db.query<{ data: unknown }>(
                 'SELECT public.create_social_telegram_session($1,$2,$3,$4,$5,$6,$7,$8) AS data',

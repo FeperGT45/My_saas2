@@ -1,3 +1,4 @@
+import { recordOpsError } from '@/lib/ops/events';
 import { handleStarsWebhook } from '@/lib/billing/webhook';
 import { telegramCall } from '@/lib/billing/telegram';
 import { readBodyText } from '@/lib/auth/body';
@@ -16,17 +17,36 @@ export async function POST(request: Request) {
     )
   )
     return new Response(null, { status: 403 });
+  let paymentEvent = false;
   try {
     const raw = await readBodyText(request, 32768);
     if (raw.length > 32768) return new Response(null, { status: 413 });
     const update = JSON.parse(raw);
+    paymentEvent = Boolean(
+      update?.pre_checkout_query ||
+      update?.message?.successful_payment ||
+      update?.message?.refunded_payment,
+    );
     if (await handleStarsWebhook(update)) return Response.json({ ok: true });
     const message = update.message;
     if (
       message?.chat?.type === 'private' &&
       message.chat.id === message.from?.id &&
-      /^\/(paysupport|support|terms)(?:@\w+)?(?:\s|$)/.test(message.text ?? '')
+      /^\/(paysupport|support|terms|privacy|delete_account)(?:@\w+)?(?:\s|$)/.test(
+        message.text ?? '',
+      )
     ) {
+      if (/^\/(privacy|delete_account)(?:@\w+)?(?:\s|$)/.test(message.text)) {
+        await telegramCall('sendMessage', {
+          chat_id: message.chat.id,
+          text:
+            'Конфиденциальность и запрос удаления аккаунта: ' +
+            new URL('/privacy', process.env.APP_URL).href +
+            '\nЗаявка отправляется после входа в Mini App. Если вход недоступен, напиши в поддержку: ' +
+            premiumSupportUrl,
+        });
+        return Response.json({ ok: true });
+      }
       const isTerms = message.text.startsWith('/terms');
       const url = isTerms ? process.env.PREMIUM_TERMS_URL : premiumSupportUrl;
       await telegramCall('sendMessage', {
@@ -72,6 +92,7 @@ export async function POST(request: Request) {
     if (!response.ok || !result.ok) throw new Error();
     return Response.json({ ok: true });
   } catch {
+    await recordOpsError(paymentEvent ? 'payment_webhook' : 'telegram_webhook');
     return Response.json({ error: 'Unable to handle update' }, { status: 503 });
   }
 }

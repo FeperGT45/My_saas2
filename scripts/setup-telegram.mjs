@@ -41,6 +41,7 @@ await call('setMyCommands', {
     { command: 'start', description: 'Открыть Voklumi' },
     { command: 'paysupport', description: 'Помощь с покупками' },
     { command: 'terms', description: 'Условия покупки' },
+    { command: 'privacy', description: 'Конфиденциальность и удаление данных' },
   ],
 });
 await call('setChatMenuButton', {

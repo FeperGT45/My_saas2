@@ -63,6 +63,12 @@ export default function PremiumTermsPage() {
         </p>
       </Card>
       <Link
+        href="/privacy"
+        className="text-primary mt-4 flex min-h-12 items-center underline"
+      >
+        Конфиденциальность и удаление данных
+      </Link>
+      <Link
         className="text-primary mt-4 inline-flex min-h-12 items-center"
         href="/premium"
       >

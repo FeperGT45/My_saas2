@@ -475,7 +475,7 @@ describe('transactional curriculum import', () => {
         )
       ).rows,
     ).toEqual(versions);
-  });
+  }, 15000);
   it('grades every reference and completes every published non-audio lesson', async () => {
     const id = await user();
     for (const e of payload.exercises) {

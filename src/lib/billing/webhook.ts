@@ -1,4 +1,5 @@
 import 'server-only';
+import { recordOpsError } from '@/lib/ops/events';
 import { createServiceClient } from '@/lib/supabase/service';
 import { billingConfiguration } from './config';
 import { processStarsUpdate } from './events';
@@ -16,6 +17,7 @@ export async function handleStarsWebhook(update: unknown) {
           p_query: q.id,
         })
         .abortSignal(AbortSignal.timeout(2500));
+      if (error) await recordOpsError('payment_webhook');
       return !error && data === true;
     },
     answer: async (id, ok) => {

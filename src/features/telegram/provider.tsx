@@ -134,34 +134,38 @@ export function TelegramProvider({ children }: { children: React.ReactNode }) {
       if (sdk.backButton.onClick.isAvailable())
         off = sdk.backButton.onClick(() =>
           router.push(
-            pathname.startsWith('/premium/') ||
-              [
-                '/learning-plan',
-                '/analytics',
-                '/dictionary',
-                '/stories',
-                '/weak-training',
-                '/challenges',
-                '/appearance',
-                '/extended-test',
-              ].includes(pathname)
-              ? '/premium'
-              : pathname === '/library'
-                ? '/courses'
-                : pathname === '/lesson'
-                  ? '/learn'
-                  : [
-                        '/settings',
-                        '/achievements',
-                        '/friends',
-                        '/premium',
-                        '/admin',
-                        '/placement',
-                        '/learning-plan',
-                        '/review',
-                      ].includes(pathname)
-                    ? '/profile'
-                    : '/',
+            pathname === '/privacy'
+              ? '/settings'
+              : pathname.startsWith('/admin/')
+                ? '/admin'
+                : pathname.startsWith('/premium/') ||
+                    [
+                      '/learning-plan',
+                      '/analytics',
+                      '/dictionary',
+                      '/stories',
+                      '/weak-training',
+                      '/challenges',
+                      '/appearance',
+                      '/extended-test',
+                    ].includes(pathname)
+                  ? '/premium'
+                  : pathname === '/library'
+                    ? '/courses'
+                    : pathname === '/lesson'
+                      ? '/learn'
+                      : [
+                            '/settings',
+                            '/achievements',
+                            '/friends',
+                            '/premium',
+                            '/admin',
+                            '/placement',
+                            '/learning-plan',
+                            '/review',
+                          ].includes(pathname)
+                        ? '/profile'
+                        : '/',
           ),
         );
     });

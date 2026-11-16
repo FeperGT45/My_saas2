@@ -1,4 +1,5 @@
 import 'server-only';
+import { recordOpsError } from '@/lib/ops/events';
 import { assertSameOrigin } from '@/lib/auth/security';
 import { getSessionUser, adminClient } from '@/lib/auth/session';
 export const isUuid = (s: unknown): s is string =>
@@ -18,6 +19,11 @@ export async function lessonRequest(
     db: ReturnType<typeof adminClient>,
   ) => Promise<Response>,
 ) {
+  const errorCode = new URL(request.url).pathname.startsWith('/api/premium')
+    ? 'payment_invoice'
+    : new URL(request.url).pathname.startsWith('/api/privacy')
+      ? 'privacy_api'
+      : 'lesson_api';
   if (write) {
     try {
       assertSameOrigin(request);
@@ -40,8 +46,11 @@ export async function lessonRequest(
         },
         403,
       );
-    return await run(user.id, adminClient());
+    const response = await run(user.id, adminClient());
+    if (response.status >= 500) await recordOpsError(errorCode);
+    return response;
   } catch {
+    await recordOpsError(errorCode);
     return json(
       {
         error:

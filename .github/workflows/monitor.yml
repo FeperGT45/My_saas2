@@ -1,0 +1,35 @@
+name: Voklumi availability
+on:
+  schedule:
+    - cron: '7,22,37,52 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/monitor.yml'
+      - 'scripts/monitor.mjs'
+      - 'src/lib/ops/**'
+      - 'src/app/api/ops/**'
+permissions:
+  contents: read
+  issues: write
+  id-token: write
+concurrency:
+  group: voklumi-availability
+  cancel-in-progress: false
+jobs:
+  monitor:
+    if: github.repository == 'FeperGT45/My_saas2' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24.22.0'
+      - name: Check application, database, webhook and alerts
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: node scripts/monitor.mjs

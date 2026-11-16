@@ -38,6 +38,7 @@ async function read(path, expected, method = 'GET') {
   return text;
 }
 await read('/api/health', 200);
+await read('/privacy', 200);
 const body = await read('/api/library', 200),
   courses = JSON.parse(body),
   lessons = courses.flatMap((c) => c.lessons);
@@ -55,6 +56,8 @@ assert(
 );
 for (const path of [
   '/api/auth/session',
+  '/api/privacy/deletion',
+  '/api/admin/privacy',
   '/api/overview',
   '/api/premium',
   '/api/premium/features',
@@ -70,6 +73,7 @@ for (const path of [
   await read(path, 401);
 await read('/api/weekly-plan', 401, 'POST');
 await read('/api/telegram/webhook', 403, 'POST');
+await read('/api/ops/check', 401, 'POST');
 const checkout = await fetch(new URL('/api/premium/invoice', origin), {
   method: 'POST',
   headers: { Origin: origin.origin, 'Content-Type': 'application/json' },

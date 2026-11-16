@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import Link from 'next/link';
 import {
   Volume2,
   Vibrate,
@@ -137,6 +138,12 @@ export function SettingsPanel() {
           <span className="text-muted-foreground text-xs">Тёмная</span>
         </div>
       </Card>
+      <Link
+        href="/privacy"
+        className="text-primary mt-5 flex min-h-12 items-center rounded-2xl border p-4 text-sm font-bold"
+      >
+        Конфиденциальность и удаление аккаунта →
+      </Link>
       <Button
         variant="outline"
         className="mt-5 w-full"

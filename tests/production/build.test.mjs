@@ -40,7 +40,8 @@ function scenario(overrides = {}) {
         if (process.argv[3] === 'stories:check' && process.env.TEST_STORIES_FAIL) process.exit(1);
         if (process.argv[3] === 'weak:check' && process.env.TEST_WEAK_FAIL) process.exit(1);
         if (process.argv[3] === 'challenges:check' && process.env.TEST_CHALLENGES_FAIL) process.exit(1);
-        if (process.argv[3] === 'premium:expansion-check' && process.env.TEST_EXPANSION_FAIL) process.exit(1);
+        if (process.argv[3] === 'ops:check' && process.env.TEST_OPS_FAIL) process.exit(1);
+      if (process.argv[3] === 'premium:expansion-check' && process.env.TEST_EXPANSION_FAIL) process.exit(1);
     `,
       { mode: 0o700 },
     );
@@ -96,6 +97,7 @@ test('production build verifies database first and uses the verified bot usernam
     { script: 'weak:check', username: 'Verified_bot' },
     { script: 'challenges:check', username: 'Verified_bot' },
     { script: 'premium:expansion-check', username: 'Verified_bot' },
+    { script: 'ops:check', username: 'Verified_bot' },
     { script: 'build:cloudflare', username: 'Verified_bot' },
   ]);
 });
@@ -223,4 +225,9 @@ test('appearance and extended assessment readiness blocks incomplete publication
   assert.equal(r.status, 1);
   assert.match(r.output, /premium:expansion-check failed/);
   assert.ok(!r.calls.some((c) => c.script === 'build:cloudflare'));
+});
+
+test('missing privacy/operations schema blocks publication', () => {
+  const result = scenario({ TEST_OPS_FAIL: '1' });
+  assert.notEqual(result.status, 0);
 });
