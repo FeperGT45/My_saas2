@@ -39,6 +39,10 @@ await call('setMyName', { name: 'Voklumi' });
 await call('setMyCommands', {
   commands: [
     { command: 'start', description: 'Открыть Voklumi' },
+    {
+      command: 'support',
+      description: 'Написать в поддержку: ошибки, баги, советы',
+    },
     { command: 'paysupport', description: 'Помощь с покупками' },
     { command: 'terms', description: 'Условия покупки' },
     { command: 'privacy', description: 'Конфиденциальность и удаление данных' },
@@ -57,6 +61,9 @@ await call('setWebhook', {
   allowed_updates: ['message', 'pre_checkout_query'],
   drop_pending_updates: false,
 });
+const commands = await call('getMyCommands', {});
+if (!Array.isArray(commands) || !commands.some((c) => c.command === 'support'))
+  throw new Error('Telegram support command was not confirmed.');
 const webhook = await call('getWebhookInfo', {});
 if (
   webhook.url !== new URL('/api/telegram/webhook', url).href ||
@@ -66,5 +73,5 @@ if (
 )
   throw new Error('Telegram payment webhook configuration was not confirmed.');
 console.log(
-  'Voklumi bot, payment support commands and message/pre-checkout webhook verified.',
+  'Voklumi bot, general and payment support commands and message/pre-checkout webhook verified.',
 );

@@ -3,7 +3,12 @@ import { handleStarsWebhook } from '@/lib/billing/webhook';
 import { telegramCall } from '@/lib/billing/telegram';
 import { readBodyText } from '@/lib/auth/body';
 import { equalSecret } from '@/lib/auth/security';
-import { miniAppUrl, startMessage } from '@/lib/telegram/bot';
+import {
+  startMessage,
+  startReply,
+  supportMessage,
+  supportReply,
+} from '@/lib/telegram/bot';
 import { premiumSupportUrl } from '@/lib/billing/plans';
 export const runtime = 'nodejs';
 export async function POST(request: Request) {
@@ -29,10 +34,27 @@ export async function POST(request: Request) {
     );
     if (await handleStarsWebhook(update)) return Response.json({ ok: true });
     const message = update.message;
+    const help =
+      message?.chat?.type === 'private' &&
+      Number.isSafeInteger(message.chat.id) &&
+      message.chat.id === message.from?.id &&
+      typeof message.text === 'string'
+        ? supportMessage(
+            message.text,
+            process.env.TELEGRAM_BOT_USERNAME ?? 'Voklumi_bot',
+          )
+        : null;
+    if (help) {
+      await telegramCall('sendMessage', {
+        chat_id: message.chat.id,
+        ...supportReply(help === 'paysupport'),
+      });
+      return Response.json({ ok: true });
+    }
     if (
       message?.chat?.type === 'private' &&
       message.chat.id === message.from?.id &&
-      /^\/(paysupport|support|terms|privacy|delete_account)(?:@\w+)?(?:\s|$)/.test(
+      /^\/(terms|privacy|delete_account)(?:@\w+)?(?:\s|$)/.test(
         message.text ?? '',
       )
     ) {
@@ -70,7 +92,6 @@ export async function POST(request: Request) {
       )
     )
       return Response.json({ ok: true });
-    const url = miniAppUrl(process.env.APP_URL);
     const response = await fetch(
       `https://api.telegram.org/bot${token}/sendMessage`,
       {
@@ -78,12 +99,7 @@ export async function POST(request: Request) {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           chat_id: message.chat.id,
-          text: 'Привет! Это Voklumi — твоя языковая вселенная. Начнём с одного нового слова?',
-          reply_markup: {
-            inline_keyboard: [
-              [{ text: 'Открыть Voklumi ✦', web_app: { url } }],
-            ],
-          },
+          ...startReply(process.env.APP_URL),
         }),
         signal: AbortSignal.timeout(8000),
       },
