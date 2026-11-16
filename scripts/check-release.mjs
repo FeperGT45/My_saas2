@@ -69,13 +69,23 @@ for (const path of [
 ])
   await read(path, 401);
 await read('/api/weekly-plan', 401, 'POST');
+await read('/api/telegram/webhook', 403, 'POST');
 const checkout = await fetch(new URL('/api/premium/invoice', origin), {
   method: 'POST',
   headers: { Origin: origin.origin, 'Content-Type': 'application/json' },
   body: '{}',
   signal: AbortSignal.timeout(15000),
 });
-assert.equal(checkout.status, 503, 'Live checkout must remain disabled');
+const checkoutMode = process.env.RELEASE_CHECKOUT_MODE ?? 'enabled';
+assert(
+  ['enabled', 'disabled'].includes(checkoutMode),
+  'Invalid RELEASE_CHECKOUT_MODE',
+);
+assert.equal(
+  checkout.status,
+  checkoutMode === 'enabled' ? 401 : 503,
+  'Enabled checkout must reject anonymous callers without creating invoices',
+);
 await checkout.body?.cancel();
 const timings = [];
 let next = 0;
@@ -102,7 +112,7 @@ console.log(
       courses: courses.length,
       lessons: lessons.length,
       checks: results,
-      checkoutDisabled: true,
+      checkoutEnabled: checkoutMode === 'enabled',
       readLoad: {
         requests: 20,
         concurrency: 4,

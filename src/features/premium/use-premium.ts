@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useCallback } from 'react';
 import { useTelegram } from '@/features/telegram/provider';
 import { fetchWithTimeout, readJson } from '@/lib/http/client';
 import {
@@ -9,7 +9,7 @@ import {
 } from '@/lib/premium/permissions';
 
 /** Display helper only. Every paid API independently verifies current database permissions. */
-export function usePremium() {
+export function usePremium(pendingRefreshMs = 60000) {
   const { account } = useTelegram();
   const id = account?.mode === 'telegram' ? account.id : null;
   const [revision, setRevision] = useState(0);
@@ -52,11 +52,11 @@ export function usePremium() {
                 Date.parse(boundary) - Date.parse(data.serverTime),
               ),
             )
-          : 60000;
+          : pendingRefreshMs;
         timer = setTimeout(() => setRevision((v) => v + 1), delay);
       })
       .catch((e) => {
-        if (!controller.signal.aborted)
+        if (!controller.signal.aborted) {
           setResult({
             owner: id,
             data: null,
@@ -64,19 +64,25 @@ export function usePremium() {
               e instanceof Error ? e.message : 'Не удалось проверить Premium.',
             receivedAt: performance.now(),
           });
+          if (pendingRefreshMs < 60000)
+            timer = setTimeout(
+              () => setRevision((v) => v + 1),
+              pendingRefreshMs,
+            );
+        }
       });
     return () => {
       controller.abort();
       if (timer) clearTimeout(timer);
     };
-  }, [id, revision]);
+  }, [id, revision, pendingRefreshMs]);
   const current = result?.owner === id ? result : null;
   const data = current?.data ?? null;
   return {
     status: data,
     loading: !!id && !current,
     error: current?.error ?? null,
-    refresh: () => setRevision((v) => v + 1),
+    refresh: useCallback(() => setRevision((v) => v + 1), []),
     can: (feature: PremiumFeature) => {
       if (!data || !current || data.features[feature] !== true) return false;
       // Never continue showing paid controls after the last confirmed window, even if refresh fails.

@@ -26,7 +26,20 @@ type Features = {
 };
 export function PremiumPanel({ children }: { children?: React.ReactNode }) {
   const { account } = useTelegram();
-  const { status, error: accessError, refresh, can } = usePremium();
+  return (
+    <PremiumContent key={account?.id ?? 'anonymous'}>{children}</PremiumContent>
+  );
+}
+function PremiumContent({ children }: { children?: React.ReactNode }) {
+  const { account } = useTelegram();
+  const [polling, setPolling] = useState(false);
+  const [paymentPending, setPaymentPending] = useState(false);
+  const {
+    status,
+    error: accessError,
+    refresh,
+    can,
+  } = usePremium(polling ? 2000 : 60000);
   const [featureState, setFeatures] = useState<{
     owner: string;
     data: Features;
@@ -41,6 +54,33 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
   const [notice, setNotice] = useState('');
   const [selectedPlan, setSelectedPlan] = useState<PremiumPlanId>('month');
   const request = useRef<string | null>(null);
+  const mounted = useRef(false);
+  const buying = useRef(false);
+  useEffect(() => {
+    mounted.current = true;
+    return () => {
+      mounted.current = false;
+    };
+  }, []);
+  useEffect(() => {
+    if (!polling) return;
+    const timer = setTimeout(() => {
+      setPolling(false);
+      setNotice(
+        'Подтверждение задерживается. Не оплачивай повторно: проверь статус или обратись в поддержку.',
+      );
+    }, 30000);
+    return () => clearTimeout(timer);
+  }, [polling]);
+  useEffect(() => {
+    if (!paymentPending || !status?.premium) return;
+    const timer = setTimeout(() => {
+      setPaymentPending(false);
+      setPolling(false);
+      setNotice('Оплата подтверждена сервером. Premium активен!');
+    }, 0);
+    return () => clearTimeout(timer);
+  }, [paymentPending, status?.premium]);
   useEffect(() => {
     if (
       account?.mode !== 'telegram' ||
@@ -65,12 +105,14 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
     };
   }, [account, status]);
   async function buy() {
-    if (busy) return;
+    if (buying.current || paymentPending) return;
+    buying.current = true;
     setBusy(true);
     setError(null);
     try {
       request.current ??= crypto.randomUUID();
       const sdk = await import('@tma.js/sdk-react');
+      if (!mounted.current) return;
       if (!sdk.invoice.openUrl.isAvailable())
         throw new Error('Открой Premium в мобильном Telegram.');
       const response = await fetchWithTimeout('/api/premium/invoice', {
@@ -83,11 +125,17 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
         }),
       });
       const data = await readJson(response);
+      if (!mounted.current) return;
       if (!response.ok) {
         if (response.status === 409) request.current = null;
         throw new Error(data.error);
       }
       const outcome = await sdk.invoice.openUrl(data.invoiceUrl);
+      if (!mounted.current) return;
+      if (outcome === 'paid') {
+        setPaymentPending(true);
+        setPolling(true);
+      }
       setNotice(
         outcome === 'paid'
           ? 'Telegram сообщил об оплате. Ожидаем подтверждение сервера.'
@@ -97,9 +145,11 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
       );
       refresh();
     } catch (e) {
-      setError(e instanceof Error ? e.message : 'Оплата недоступна.');
+      if (mounted.current)
+        setError(e instanceof Error ? e.message : 'Оплата недоступна.');
     } finally {
-      setBusy(false);
+      buying.current = false;
+      if (mounted.current) setBusy(false);
     }
   }
   return (
@@ -215,13 +265,16 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
           Проверяем подписку…
         </p>
       )}
-      {!status?.enabled && (
+      {status && !status.enabled && (
         <p className="bg-muted text-muted-foreground mb-4 rounded-2xl p-4 text-sm">
           Покупки пока выключены. Тарифы утверждены; запуск оплаты ожидает
           проверки условий и разрешения владельца.
         </p>
       )}
-      <fieldset className="mb-4 grid grid-cols-2 gap-3" disabled={busy}>
+      <fieldset
+        className="mb-4 grid grid-cols-2 gap-3"
+        disabled={busy || paymentPending}
+      >
         <legend className="mb-3 font-bold">Выбери срок Premium</legend>
         {premiumPlans.map((plan) => (
           <label
@@ -265,7 +318,13 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
         </>
       )}
       <Button
-        disabled={!status?.enabled || status.premium || !agreed || busy}
+        disabled={
+          !status?.enabled ||
+          status.premium ||
+          !agreed ||
+          busy ||
+          paymentPending
+        }
         className="w-full"
         onClick={buy}
       >
@@ -273,7 +332,9 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
           ? 'Открываем Telegram…'
           : status?.premium
             ? 'Premium активен'
-            : 'Открыть оплату Telegram Stars'}
+            : paymentPending
+              ? 'Ожидаем подтверждение сервера'
+              : 'Открыть оплату Telegram Stars'}
       </Button>
       <Button
         variant="outline"
@@ -293,7 +354,9 @@ export function PremiumPanel({ children }: { children?: React.ReactNode }) {
       </p>
       {notice && (
         <p role="status" className="my-3 text-sm">
-          {notice}
+          {paymentPending && status?.premium
+            ? 'Оплата подтверждена сервером. Premium активен!'
+            : notice}
         </p>
       )}
       <Card className="mt-4">

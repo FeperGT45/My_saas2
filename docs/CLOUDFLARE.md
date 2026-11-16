@@ -72,7 +72,7 @@ Node для сборки: **24.22.0**, записан в `.node-version`. Тре
 | `TELEGRAM_BOT_USERNAME`                | Фактический username бота без `@` из BotFather                                                   |
 | `TELEGRAM_MINI_APP_SLUG`               | Необязательно, short name Mini App; иначе оставить пустым                                        |
 
-Для runtime эти public Supabase значения, APP_URL и параметры бота задаёт `cloudflare.config.ts`. NODE_ENV зафиксирован как production. Локальная авторизация и три переключателя реальных Stars-операций зафиксированы `false`. Включение монетизации — отдельная проверка владельцем, не часть размещения.
+Для runtime эти public Supabase значения, APP_URL и параметры бота задаёт `cloudflare.config.ts`. NODE_ENV зафиксирован как production. Локальная авторизация зафиксирована `false`. После разрешения владельца 16 ноября два production-флага покупки Stars включены; операторский флаг возвратов остаётся `false`. См. [платёжную поставку](STARS-LIVE-2026-11-16.md).
 
 ### Runtime secrets
 
@@ -84,7 +84,7 @@ Node для сборки: **24.22.0**, записан в `.node-version`. Тре
 | `ADMIN_USER_IDS`              | Необязательно: внутренние UUID владельцев, через запятую. Отсутствие закрывает административный доступ                                                                       |
 | `SUPABASE_HEALTHCHECK_SECRET` | Необязательно: независимый секрет от 32 символов для защищённого DB health endpoint                                                                                          |
 
-Остальные платежные параметры из `.env.example` пока не нужны: покупки остаются отключены. Пароль БД, Supabase access token и project ref нужны только оператору миграций, не Worker runtime. `LOCAL_AUTH_SECRET` не добавлять в production. `NODE_USE_ENV_PROXY=1` нужен только в данном проксируемом Codex Cloud, в Cloudflare runtime не требуется.
+Платёжные параметры берутся из production-конфигурации и серверных секретов; тестовые токены в неё не добавляются. Пароль БД, Supabase access token и project ref нужны только оператору миграций, не Worker runtime. `LOCAL_AUTH_SECRET` не добавлять в production. `NODE_USE_ENV_PROXY=1` нужен только в данном проксируемом Codex Cloud, в Cloudflare runtime не требуется.
 
 Для CLI-публикации вместо dashboard: `CLOUDFLARE_API_TOKEN` — Secret CI с разрешением редактирования Workers выбранного аккаунта (и Workers Builds, если CI их управляет); `CLOUDFLARE_ACCOUNT_ID` — идентификатор аккаунта, доступный CI. Локально допустим `cf auth login`. Эти параметры не являются секретами приложения и не передаются пользователям. Runtime secrets можно настроить в dashboard или через поддерживаемую операторскую загрузку secrets; нельзя коммитить файл со значениями.
 

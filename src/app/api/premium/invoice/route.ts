@@ -39,10 +39,21 @@ export async function POST(request: Request) {
       data.days !== plan.days
     )
       return json({ error: 'Счёт недоступен или Premium уже активен.' }, 409);
-    const result = await telegramCall(
-      'createInvoiceLink',
-      invoiceParameters(data.payload, data.amount, plan.days),
-    );
+    let result: unknown;
+    try {
+      result = await telegramCall(
+        'createInvoiceLink',
+        invoiceParameters(data.payload, data.amount, plan.days),
+      );
+    } catch {
+      return json(
+        {
+          error:
+            'Не удалось создать счёт Telegram. Проверь статус и повтори попытку.',
+        },
+        503,
+      );
+    }
     if (typeof result !== 'string' || !/^https:\/\/t.me\//.test(result))
       return json({ error: 'Не удалось создать счёт.' }, 503);
     return json({ invoiceUrl: result });

@@ -50,8 +50,9 @@ export default defineConfig({
         ? { SUPABASE_HEALTHCHECK_SECRET: bindings.secret() }
         : {}),
       ENABLE_LOCAL_AUTH: bindings.text('false'),
-      TELEGRAM_STARS_PAYMENTS_ENABLED: bindings.text('false'),
-      TELEGRAM_STARS_OWNER_REVIEWED: bindings.text('false'),
+      // Owner approved live 49/149 XTR purchases after test payments/refunds, 2026-11-16.
+      TELEGRAM_STARS_PAYMENTS_ENABLED: bindings.text('true'),
+      TELEGRAM_STARS_OWNER_REVIEWED: bindings.text('true'),
       TELEGRAM_STARS_REFUNDS_ENABLED: bindings.text('false'),
     },
   }),

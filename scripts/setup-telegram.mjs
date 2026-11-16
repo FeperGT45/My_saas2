@@ -56,4 +56,14 @@ await call('setWebhook', {
   allowed_updates: ['message', 'pre_checkout_query'],
   drop_pending_updates: false,
 });
-console.log('Voklumi bot name, /start, menu button and webhook configured.');
+const webhook = await call('getWebhookInfo', {});
+if (
+  webhook.url !== new URL('/api/telegram/webhook', url).href ||
+  !['message', 'pre_checkout_query'].every((type) =>
+    webhook.allowed_updates?.includes(type),
+  )
+)
+  throw new Error('Telegram payment webhook configuration was not confirmed.');
+console.log(
+  'Voklumi bot, payment support commands and message/pre-checkout webhook verified.',
+);
