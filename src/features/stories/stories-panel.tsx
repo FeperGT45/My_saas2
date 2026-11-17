@@ -482,7 +482,9 @@ function AccountStories() {
             </section>
             {catalog.stories.length === 0 && (
               <Card>
-                <p>Новые истории готовятся. Загляни позже.</p>
+                <p>
+                  Истории не найдены. Обнови каталог или выбери другой уровень.
+                </p>
               </Card>
             )}
             <Card>

@@ -61,7 +61,6 @@ export function GameDashboard({
       <Card>
         <p className="text-muted-foreground text-sm leading-relaxed">
           Войди через Telegram, чтобы увидеть свои XP, монеты и достижения.
-          Локальная сессия не начисляет реальные награды.
         </p>
         <Button asChild variant="outline" className="mt-4 w-full">
           <Link href="/learn">К учебным урокам</Link>
@@ -320,8 +319,8 @@ export function GameDashboard({
         )}
       </Card>
       <p className="text-muted-foreground mt-5 text-[11px] leading-relaxed">
-        Монеты — внутренняя учебная валюта без денежной стоимости. Покупки на
-        этом этапе не подключены.
+        Монеты — внутренняя учебная валюта без денежной стоимости. Premium
+        оплачивается отдельно в Telegram Stars.
       </p>
     </>
   );

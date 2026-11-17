@@ -7,7 +7,10 @@ export async function POST(request: Request) {
   const config = billingConfiguration(process.env);
   if (!config.enabled)
     return json(
-      { error: 'Платежи выключены. Владелец ещё не подтвердил запуск.' },
+      {
+        error:
+          'Оплата временно недоступна. Попробуй позже или обратись в поддержку.',
+      },
       503,
     );
   return lessonRequest(request, true, async (userId, db) => {

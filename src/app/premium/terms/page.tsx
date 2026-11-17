@@ -58,8 +58,8 @@ export default function PremiumTermsPage() {
           </a>
         </section>
         <p className="text-muted-foreground text-sm">
-          Проверяй сумму и срок в счёте Telegram перед подтверждением. Пока
-          покупки отключены владельцем, приложение не создаёт платёжные счета.
+          Premium оплачивается в Telegram Stars. Проверяй сумму и срок в счёте
+          Telegram перед подтверждением покупки.
         </p>
       </Card>
       <Link

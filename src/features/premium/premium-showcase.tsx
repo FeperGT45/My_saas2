@@ -17,8 +17,7 @@ export function PremiumShowcase() {
       <h2 className="text-xl font-bold">Premium в действии</h2>
       <Card>
         <p className="text-muted-foreground mb-3 text-sm">
-          Предпросмотр оформления — реальный компонент профиля, не статистика
-          вымышленного пользователя.
+          Попробуй темы оформления и выбери стиль своего профиля.
         </p>
         <div
           className="bg-background rounded-2xl p-3"
@@ -61,7 +60,7 @@ export function PremiumShowcase() {
             }}
           />
           <p className="text-sm">
-            Пример косметической награды. Её получение проверяет сервер.
+            Значки и другие награды открываются за достижения.
           </p>
         </div>
       </Card>

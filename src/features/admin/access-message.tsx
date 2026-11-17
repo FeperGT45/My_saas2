@@ -18,7 +18,7 @@ export function AdminAccessMessage({
       <p className="text-muted-foreground my-4 text-sm">
         {unavailable
           ? 'Не удалось проверить серверную сессию. Повтори попытку позже.'
-          : 'Нужен вход через Telegram и права администратора. После входа обнови доступ. Локальный деморежим панель не открывает.'}
+          : 'Нужен вход через Telegram и права администратора. После входа обнови доступ.'}
       </p>
       <Button variant="outline" onClick={() => router.refresh()}>
         Обновить доступ

@@ -269,8 +269,7 @@ function PremiumContent({ children }: { children?: React.ReactNode }) {
       )}
       {status && !status.enabled && (
         <p className="bg-muted text-muted-foreground mb-4 rounded-2xl p-4 text-sm">
-          Покупки пока выключены. Тарифы утверждены; запуск оплаты ожидает
-          проверки условий и разрешения владельца.
+          Оплата временно недоступна. Попробуй позже или обратись в поддержку.
         </p>
       )}
       <fieldset

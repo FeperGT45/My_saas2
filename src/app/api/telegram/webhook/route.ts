@@ -5,7 +5,6 @@ import { readBodyText } from '@/lib/auth/body';
 import { equalSecret } from '@/lib/auth/security';
 import { startMessage, startReply } from '@/lib/telegram/bot';
 import { handleSupportWebhook } from '@/lib/support/server';
-import { premiumSupportUrl } from '@/lib/billing/plans';
 export const runtime = 'nodejs';
 export async function POST(request: Request) {
   const token = process.env.TELEGRAM_BOT_TOKEN,
@@ -48,14 +47,15 @@ export async function POST(request: Request) {
         });
         return Response.json({ ok: true });
       }
-      const isTerms = message.text.startsWith('/terms');
-      const url = isTerms ? process.env.PREMIUM_TERMS_URL : premiumSupportUrl;
+      const termsUrl =
+        process.env.PREMIUM_TERMS_URL ||
+        new URL('/premium/terms', process.env.APP_URL).href;
       await telegramCall('sendMessage', {
         chat_id: message.chat.id,
-        text: url
-          ? (isTerms ? 'Условия покупки: ' : 'Поддержка покупок Voklumi: ') +
-            url
-          : 'Платные покупки пока выключены. Условия и канал поддержки ещё готовятся.',
+        text:
+          'Условия покупки Voklumi Premium: ' +
+          termsUrl +
+          '\nПо вопросам оплаты и возвратов создай тикет: /paysupport',
       });
       return Response.json({ ok: true });
     }
